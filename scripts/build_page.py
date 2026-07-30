@@ -2,18 +2,18 @@
 """
 FKC Trading Academy — lesson archive page builder.
 
-Reads ALL lessons/day-XX.md files and writes docs/index.html as a
-running archive: newest lesson on top, every older lesson stays
-below it (never overwritten). Each lesson keeps its own reading
-material, Assignment box, WhatsApp share button, and student
-submit box. Adds: table of contents, search, progress tag per
-course phase, and a fixed risk disclaimer.
+Reads lessons/day-XX.md files up to the count in lessons/.last-posted
+(so pre-written future lessons never leak early) and writes
+docs/index.html as a running archive: newest posted lesson on top,
+every older lesson stays below it. Each lesson keeps its own reading
+material, Assignment box, WhatsApp share button, and student submit
+box. Adds: table of contents, search, progress tag per course phase.
 
 Usage: python3 scripts/build_page.py <lessons_dir> <out_html>
 """
 import sys
 import re
-import glob
+import os
 import html
 from urllib.parse import quote
 
@@ -184,16 +184,6 @@ def render_page(blocks_html: str, toc_html: str, latest_padded: str) -> str:
   }}
   .ticker .sym {{ font-weight: 600; }}
   .ticker .lbl {{ color: var(--muted); font-weight: 400; }}
-  .disclaimer {{
-    background: #1a1210;
-    border: 1px solid #3a2420;
-    border-left: 3px solid var(--red);
-    border-radius: 6px;
-    padding: 12px 16px;
-    font-size: 12.5px;
-    color: var(--muted);
-    margin-bottom: 20px;
-  }}
   .toc {{
     display: flex;
     flex-wrap: wrap;
@@ -337,10 +327,6 @@ def render_page(blocks_html: str, toc_html: str, latest_padded: str) -> str:
       <span class="lbl">daily lessons — archive</span>
     </div>
 
-    <div class="disclaimer">
-      Yeh content sirf taleemi (educational) maqsad ke liye hai. Trading/investment mein risk shamil hota hai — khud tehqeeq (research) kiye baghair paisa na lagayen.
-    </div>
-
     <div class="toc">
 {toc_html}
     </div>
@@ -393,16 +379,27 @@ if __name__ == "__main__":
 
     lessons_dir, out_path = sys.argv[1], sys.argv[2]
 
-    files = glob.glob(f"{lessons_dir}/day-*.md")
+    last_posted_file = os.path.join(lessons_dir, ".last-posted")
+    if not os.path.exists(last_posted_file):
+        print("lessons/.last-posted nahi mili — abhi tak koi lesson post nahi hua.", file=sys.stderr)
+        sys.exit(1)
+
+    with open(last_posted_file, encoding="utf-8") as f:
+        last_posted = int(f.read().strip())
+
+    # Sirf wahi din include karo jo abhi tak officially post ho chuke hain
+    # (future/pre-written files ko chhupaye rakhta hai jab tak unka din na aaye)
     day_files = []
-    for f in files:
-        m = re.search(r"day-(\d+)\.md$", f)
-        if m:
-            day_files.append((int(m.group(1)), f))
+    for day_num in range(1, last_posted + 1):
+        padded = padded_str(day_num)
+        path = os.path.join(lessons_dir, f"day-{padded}.md")
+        if os.path.exists(path):
+            day_files.append((day_num, path))
+
     day_files.sort(key=lambda x: x[0], reverse=True)  # newest first
 
     if not day_files:
-        print("Koi lesson file nahi mili.", file=sys.stderr)
+        print("Koi posted lesson file nahi mili.", file=sys.stderr)
         sys.exit(1)
 
     blocks_html_parts = []
@@ -425,4 +422,4 @@ if __name__ == "__main__":
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(html_out)
 
-    print(f"Archive page likh di ({len(day_files)} lessons): {out_path}")
+    print(f"Archive page likh di ({len(day_files)} posted lessons): {out_path}")
