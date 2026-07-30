@@ -1,20 +1,19 @@
 #!/usr/bin/env python3
 """
-FKC Trading Academy — lesson page builder.
+FKC Trading Academy — lesson archive page builder.
 
-Reads one lessons/day-XX.md file and writes docs/index.html:
-  - the lesson (concept / example) as reading material
-  - a separate "Assignment" box (practice / mini project)
-  - a "Share on WhatsApp" button for the teacher (opens WhatsApp's
-    chat picker with the lesson pre-filled — no bot/API needed)
-  - a small "Submit assignment" box where a student types their
-    answer and taps a button that opens WhatsApp with it pre-filled,
-    so they can pick the class group and send it themselves
+Reads ALL lessons/day-XX.md files and writes docs/index.html as a
+running archive: newest lesson on top, every older lesson stays
+below it (never overwritten). Each lesson keeps its own reading
+material, Assignment box, WhatsApp share button, and student
+submit box. Adds: table of contents, search, progress tag per
+course phase, and a fixed risk disclaimer.
 
-Usage: python3 scripts/build_page.py <lesson_file> <day_number> <out_html>
+Usage: python3 scripts/build_page.py <lessons_dir> <out_html>
 """
 import sys
 import re
+import glob
 import html
 from urllib.parse import quote
 
@@ -39,7 +38,7 @@ def parse_lesson(text: str):
     parts = pattern.split(rest)
     preamble = parts[0].strip()
 
-    sections = []  # list of (label, content) — keeps original order
+    sections = []
     for i in range(1, len(parts), 2):
         label = parts[i].strip()
         content = parts[i + 1].strip() if i + 1 < len(parts) else ""
@@ -60,7 +59,6 @@ def classify(sections):
 
 
 def md_to_html(text: str) -> str:
-    """Very small markdown->html: fenced code blocks + paragraphs."""
     if not text:
         return ""
     blocks = re.split(r"```(?:\w+)?\n(.*?)```", text, flags=re.S)
@@ -85,7 +83,25 @@ def plain_text_for_share(day_num, title, preamble, sections):
     return "\n\n".join(chunks)
 
 
-def render(day_num: int, title: str, preamble: str, lesson_parts, assignment_parts, share_text: str) -> str:
+def phase_info(day_num: int):
+    """Returns (phase_label, day_in_phase, total_in_phase_or_None)."""
+    if day_num <= 90:
+        return "Coding · Python", day_num, 90
+    elif day_num <= 120:
+        return "E-commerce", day_num - 90, 30
+    else:
+        return "Trading / Markets", day_num - 120, None
+
+
+def padded_str(day_num: int) -> str:
+    return f"{day_num:02d}" if day_num < 100 else f"{day_num:03d}"
+
+
+def render_lesson_block(day_num: int, title: str, preamble: str, lesson_parts, assignment_parts, is_latest: bool):
+    padded = padded_str(day_num)
+    phase_label, day_in_phase, total_in_phase = phase_info(day_num)
+    progress_text = f"{phase_label} · Day {day_in_phase}/{total_in_phase}" if total_in_phase else f"{phase_label} · Day {day_in_phase}"
+
     lesson_html = md_to_html(preamble)
     for label, content in lesson_parts:
         lesson_html += f'<h3>{html.escape(label)}</h3>\n{md_to_html(content)}'
@@ -96,15 +112,42 @@ def render(day_num: int, title: str, preamble: str, lesson_parts, assignment_par
     if not assignment_html:
         assignment_html = "<p>Aaj koi alag assignment nahi — lesson mein diya gaya practice karein.</p>"
 
+    all_sections = lesson_parts + assignment_parts
+    share_text = plain_text_for_share(day_num, title, preamble, all_sections)
     wa_share_lesson = f"https://wa.me/?text={quote(share_text)}"
-    padded = f"{day_num:02d}" if day_num < 100 else f"{day_num:03d}"
 
+    search_blob = html.escape((title + " " + preamble + " " + " ".join(c for _, c in all_sections)).lower())
+    latest_badge = '<span class="latest-tag">Latest</span>' if is_latest else ""
+
+    return f"""
+    <div class="lesson-block" id="day-{padded}" data-search="{search_blob}">
+      {latest_badge}
+      <span class="phase-tag">{html.escape(progress_text)}</span>
+      <h1>{html.escape(title) if title else f"Day {padded}"}</h1>
+      <div class="card lesson">
+        {lesson_html}
+        <a class="btn" href="{wa_share_lesson}" target="_blank" rel="noopener">Share lesson on WhatsApp</a>
+      </div>
+      <div class="card assignment">
+        <h2>Assignment</h2>
+        <div class="sub">Aaj ka kaam — mukammal karke neeche apna jawab likhein aur WhatsApp par group ko bhej dein.</div>
+        {assignment_html}
+        <input type="text" id="student-name-{padded}" placeholder="Apna naam likhein">
+        <textarea id="student-answer-{padded}" placeholder="Apna code ya jawab yahan paste/likhein..."></textarea>
+        <br>
+        <button class="btn green" onclick="submitAssignment('{padded}')">Send via WhatsApp</button>
+      </div>
+    </div>
+"""
+
+
+def render_page(blocks_html: str, toc_html: str, latest_padded: str) -> str:
     return f"""<!DOCTYPE html>
 <html lang="ur" dir="ltr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FKC Trading Academy — Day {padded}</title>
+<title>FKC Trading Academy — Day {latest_padded}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -137,10 +180,67 @@ def render(day_num: int, title: str, preamble: str, lesson_parts, assignment_par
     font-size: 14px;
     border-bottom: 1px solid var(--line);
     padding-bottom: 14px;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }}
   .ticker .sym {{ font-weight: 600; }}
   .ticker .lbl {{ color: var(--muted); font-weight: 400; }}
+  .disclaimer {{
+    background: #1a1210;
+    border: 1px solid #3a2420;
+    border-left: 3px solid var(--red);
+    border-radius: 6px;
+    padding: 12px 16px;
+    font-size: 12.5px;
+    color: var(--muted);
+    margin-bottom: 20px;
+  }}
+  .toc {{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 14px;
+  }}
+  .toc a {{
+    color: var(--gold);
+    text-decoration: none;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 4px 10px;
+    font-size: 12px;
+  }}
+  .toc a:hover {{ border-color: var(--gold); }}
+  #search-box {{
+    width: 100%;
+    background: #060a12;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    color: var(--ink);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    padding: 10px 12px;
+    margin-bottom: 28px;
+  }}
+  .lesson-block {{ margin-bottom: 44px; }}
+  .lesson-block:not(:first-child) {{ padding-top: 36px; border-top: 1px dashed var(--line); }}
+  .lesson-block h1 {{ font-size: 26px; margin: 6px 0 20px; }}
+  .latest-tag {{
+    display: inline-block;
+    background: var(--gold);
+    color: #0B1220;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 3px;
+    margin-right: 8px;
+  }}
+  .phase-tag {{
+    display: inline-block;
+    color: var(--muted);
+    font-size: 11px;
+    letter-spacing: 0.04em;
+  }}
   h1 {{
     font-family: 'Fraunces', serif;
     font-weight: 700;
@@ -233,25 +333,21 @@ def render(day_num: int, title: str, preamble: str, lesson_parts, assignment_par
 <body>
   <div class="wrap">
     <div class="ticker">
-      <span class="sym">FKC · {padded}</span>
-      <span class="lbl">daily lesson</span>
+      <span class="sym">FKC</span>
+      <span class="lbl">daily lessons — archive</span>
     </div>
 
-    <h1>{html.escape(title) if title else f"Day {padded}"}</h1>
-
-    <div class="card lesson">
-      {lesson_html}
-      <a class="btn" href="{wa_share_lesson}" target="_blank" rel="noopener">Share lesson on WhatsApp</a>
+    <div class="disclaimer">
+      Yeh content sirf taleemi (educational) maqsad ke liye hai. Trading/investment mein risk shamil hota hai — khud tehqeeq (research) kiye baghair paisa na lagayen.
     </div>
 
-    <div class="card assignment">
-      <h2>Assignment</h2>
-      <div class="sub">Aaj ka kaam — mukammal karke neeche apna jawab likhein aur WhatsApp par group ko bhej dein.</div>
-      {assignment_html}
-      <input type="text" id="student-name" placeholder="Apna naam likhein">
-      <textarea id="student-answer" placeholder="Apna code ya jawab yahan paste/likhein..."></textarea>
-      <br>
-      <button class="btn green" onclick="submitAssignment()">Send via WhatsApp</button>
+    <div class="toc">
+{toc_html}
+    </div>
+    <input type="text" id="search-box" placeholder="Purana lesson dhoondein (jaise: variables, loops, risk)..." oninput="filterLessons()">
+
+    <div id="lessons-container">
+{blocks_html}
     </div>
 
     <footer>FKC Trading Academy — automatically updated</footer>
@@ -260,21 +356,29 @@ def render(day_num: int, title: str, preamble: str, lesson_parts, assignment_par
 <script>
 const SHEET_WEBHOOK_URL = "{SHEET_WEBHOOK_URL}";
 
-function submitAssignment() {{
-  const name = document.getElementById('student-name').value.trim() || 'Student';
-  const answer = document.getElementById('student-answer').value.trim();
+function submitAssignment(day) {{
+  const name = document.getElementById('student-name-' + day).value.trim() || 'Student';
+  const answer = document.getElementById('student-answer-' + day).value.trim();
   if (!answer) {{ alert('Pehle apna jawab likhein.'); return; }}
 
   if (SHEET_WEBHOOK_URL) {{
     const formData = new URLSearchParams();
-    formData.append('day', '{padded}');
+    formData.append('day', day);
     formData.append('name', name);
     formData.append('answer', answer);
     fetch(SHEET_WEBHOOK_URL, {{ method: 'POST', mode: 'no-cors', body: formData }}).catch(() => {{}});
   }}
 
-  const text = "Day {padded} Assignment — " + name + ":\\n\\n" + answer;
+  const text = "Day " + day + " Assignment — " + name + ":\\n\\n" + answer;
   window.open("https://wa.me/?text=" + encodeURIComponent(text), "_blank");
+}}
+
+function filterLessons() {{
+  const q = document.getElementById('search-box').value.trim().toLowerCase();
+  document.querySelectorAll('.lesson-block').forEach(block => {{
+    const hay = block.getAttribute('data-search') || '';
+    block.style.display = (!q || hay.includes(q)) ? '' : 'none';
+  }});
 }}
 </script>
 </body>
@@ -283,22 +387,42 @@ function submitAssignment() {{
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 4:
-        print("Usage: build_page.py <lesson_file> <day_number> <out_html>", file=sys.stderr)
+    if len(sys.argv) != 3:
+        print("Usage: build_page.py <lessons_dir> <out_html>", file=sys.stderr)
         sys.exit(1)
 
-    lesson_file, day_arg, out_path = sys.argv[1], sys.argv[2], sys.argv[3]
-    DAY_NUM = int(day_arg)
+    lessons_dir, out_path = sys.argv[1], sys.argv[2]
 
-    with open(lesson_file, encoding="utf-8") as f:
-        raw = f.read()
+    files = glob.glob(f"{lessons_dir}/day-*.md")
+    day_files = []
+    for f in files:
+        m = re.search(r"day-(\d+)\.md$", f)
+        if m:
+            day_files.append((int(m.group(1)), f))
+    day_files.sort(key=lambda x: x[0], reverse=True)  # newest first
 
-    title, preamble, sections = parse_lesson(raw)
-    lesson_parts, assignment_parts = classify(sections)
-    share_text = plain_text_for_share(DAY_NUM, title, preamble, sections)
-    html_out = render(DAY_NUM, title, preamble, lesson_parts, assignment_parts, share_text)
+    if not day_files:
+        print("Koi lesson file nahi mili.", file=sys.stderr)
+        sys.exit(1)
+
+    blocks_html_parts = []
+    toc_parts = []
+    latest_padded = padded_str(day_files[0][0])
+
+    for i, (day_num, path) in enumerate(day_files):
+        with open(path, encoding="utf-8") as f:
+            raw = f.read()
+        title, preamble, sections = parse_lesson(raw)
+        lesson_parts, assignment_parts = classify(sections)
+        block = render_lesson_block(day_num, title, preamble, lesson_parts, assignment_parts, is_latest=(i == 0))
+        blocks_html_parts.append(block)
+
+        padded = padded_str(day_num)
+        toc_parts.append(f'      <a href="#day-{padded}">Day {padded}</a>')
+
+    html_out = render_page("\n".join(blocks_html_parts), "\n".join(toc_parts), latest_padded)
 
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(html_out)
 
-    print(f"Page likh di: {out_path}")
+    print(f"Archive page likh di ({len(day_files)} lessons): {out_path}")
