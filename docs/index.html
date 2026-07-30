@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FKC Trading Academy — Day 02</title>
+<title>FKC Trading Academy — Lessons</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -47,6 +47,21 @@
     line-height: 1.15;
     margin: 0 0 28px;
     color: var(--ink);
+  }
+  .lesson-block { margin-bottom: 44px; }
+  .lesson-block:not(:first-child) { padding-top: 36px; border-top: 1px dashed var(--line); }
+  .lesson-block h1 { font-size: 26px; margin-bottom: 20px; }
+  .latest-tag {
+    display: inline-block;
+    background: var(--gold);
+    color: #0B1220;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 3px;
+    margin-bottom: 10px;
   }
   h3 {
     font-family: 'Fraunces', serif;
@@ -132,54 +147,92 @@
 <body>
   <div class="wrap">
     <div class="ticker">
-      <span class="sym">FKC · 02</span>
-      <span class="lbl">daily lesson</span>
+      <span class="sym">FKC</span>
+      <span class="lbl">daily lessons — archive</span>
     </div>
-
-    <h1>Day 2 — Variables</h1>
-
-    <div class="card lesson">
-      <p>-</p><h3>Concept</h3>
-<p>Variable ek dabba hai jisme value store hoti hai<br>-</p><h3>Example</h3>
-<pre><code>naam = &quot;Ali&quot;
-  age = 10
-  print(naam, &quot;ki age&quot;, age, &quot;saal hai&quot;)</code></pre>
-<p>-</p>
-      <a class="btn" href="https://wa.me/?text=Day%202%20%E2%80%94%20Variables%0A%0A-%0A%0AConcept%3A%0AVariable%20ek%20dabba%20hai%20jisme%20value%20store%20hoti%20hai%0A-%0A%0AExample%3A%0A%60%60%60python%0A%20%20naam%20%3D%20%22Ali%22%0A%20%20age%20%3D%2010%0A%20%20print%28naam%2C%20%22ki%20age%22%2C%20age%2C%20%22saal%20hai%22%29%0A%20%20%60%60%60%0A-%0A%0APractice%3A%0AApna%20naam%2C%20age%2C%20favorite%20color%20variables%20mein%20store%20karke%20print%20karwayen%0A-%0A%0AMini%20Project%3A%0A%22Digital%20ID%20Card%22%20banwayen%20%28naam%2C%20age%2C%20class%2C%20roll%20number%29" target="_blank" rel="noopener">Share lesson on WhatsApp</a>
-    </div>
-
-    <div class="card assignment">
-      <h2>Assignment</h2>
-      <div class="sub">Aaj ka kaam — mukammal karke neeche apna jawab likhein aur WhatsApp par group ko bhej dein.</div>
-      <h3>Practice</h3>
-<p>Apna naam, age, favorite color variables mein store karke print karwayen<br>-</p><h3>Mini Project</h3>
-<p>&quot;Digital ID Card&quot; banwayen (naam, age, class, roll number)</p>
-      <input type="text" id="student-name" placeholder="Apna naam likhein">
-      <textarea id="student-answer" placeholder="Apna code ya jawab yahan paste/likhein..."></textarea>
-      <br>
-      <button class="btn green" onclick="submitAssignment()">Send via WhatsApp</button>
-    </div>
-
+    <div id="lessons-container"></div>
     <footer>FKC Trading Academy — automatically updated</footer>
   </div>
 
 <script>
+/* ============================================================
+   LESSON DATA
+   Naya lesson add karne ke liye: neeche "lessons" array ke
+   SABSE UPAR (index 0 se pehle) ek naya object add karein.
+   Purane lessons ko chhedein mat — wo apne aap neeche
+   list ho jaayenge. Sabse pehla (top) object = latest lesson.
+   ============================================================ */
+const lessons = [
+  {
+    day: "02",
+    title: "Day 2 — Variables",
+    concept: "Variable ek dabba hai jisme value store hoti hai",
+    example: `naam = "Ali"
+  age = 10
+  print(naam, "ki age", age, "saal hai")`,
+    practice: "Apna naam, age, favorite color variables mein store karke print karwayen",
+    miniProject: `"Digital ID Card" banwayen (naam, age, class, roll number)`
+  },
+  {
+    day: "01",
+    title: "Day 1 — Introduction",
+    concept: "Trading seekhne ka pehla kadam — basics samajhna",
+    example: `print("Welcome to FKC Trading Academy")`,
+    practice: "Apna trading goal ek line mein likhein",
+    miniProject: `Apna "Trading Journal" ka pehla page banwayen (naam, goal, target)`
+  }
+];
+
+const container = document.getElementById('lessons-container');
+
+lessons.forEach((lesson, index) => {
+  const isLatest = index === 0;
+
+  const waText = `Day ${lesson.day} — ${lesson.title.split('—')[1] ? lesson.title.split('—')[1].trim() : lesson.title}\n\n-\n\nConcept:\n${lesson.concept}\n-\n\nExample:\n\`\`\`python\n  ${lesson.example}\n  \`\`\`\n-\n\nPractice:\n${lesson.practice}\n-\n\nMini Project:\n${lesson.miniProject}`;
+
+  const block = document.createElement('div');
+  block.className = 'lesson-block';
+  block.innerHTML = `
+    ${isLatest ? '<span class="latest-tag">Latest</span>' : ''}
+    <h1>${lesson.title}</h1>
+    <div class="card lesson">
+      <p>-</p><h3>Concept</h3>
+      <p>${lesson.concept}<br>-</p><h3>Example</h3>
+      <pre><code>${lesson.example.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</code></pre>
+      <p>-</p>
+      <a class="btn" href="https://wa.me/?text=${encodeURIComponent(waText)}" target="_blank" rel="noopener">Share lesson on WhatsApp</a>
+    </div>
+    <div class="card assignment">
+      <h2>Assignment</h2>
+      <div class="sub">Aaj ka kaam — mukammal karke neeche apna jawab likhein aur WhatsApp par group ko bhej dein.</div>
+      <h3>Practice</h3>
+      <p>${lesson.practice}<br>-</p><h3>Mini Project</h3>
+      <p>${lesson.miniProject}</p>
+      <input type="text" id="student-name-${lesson.day}" placeholder="Apna naam likhein">
+      <textarea id="student-answer-${lesson.day}" placeholder="Apna code ya jawab yahan paste/likhein..."></textarea>
+      <br>
+      <button class="btn green" onclick="submitAssignment('${lesson.day}')">Send via WhatsApp</button>
+    </div>
+  `;
+  container.appendChild(block);
+});
+
 const SHEET_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbx1UBGM5GyFx4xYOIt5BbRE0k-LaURaZXXwuU3hJWYTYq3fEMiFGeb68gdXtutKJmBi/exec";
 
-function submitAssignment() {
-  const name = document.getElementById('student-name').value.trim() || 'Student';
-  const answer = document.getElementById('student-answer').value.trim();
+function submitAssignment(day) {
+  const name = document.getElementById('student-name-' + day).value.trim() || 'Student';
+  const answer = document.getElementById('student-answer-' + day).value.trim();
   if (!answer) { alert('Pehle apna jawab likhein.'); return; }
 
   if (SHEET_WEBHOOK_URL) {
     const formData = new URLSearchParams();
-    formData.append('day', '02');
+    formData.append('day', day);
     formData.append('name', name);
     formData.append('answer', answer);
     fetch(SHEET_WEBHOOK_URL, { method: 'POST', mode: 'no-cors', body: formData }).catch(() => {});
   }
 
-  const text = "Day 02 Assignment — " + name + ":\n\n" + answer;
+  const text = "Day " + day + " Assignment — " + name + ":\n\n" + answer;
   window.open("https://wa.me/?text=" + encodeURIComponent(text), "_blank");
 }
 </script>
