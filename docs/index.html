@@ -4,6 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FKC Trading Academy — Day 01</title>
+
+<!-- ===== PWA LINES (APP KE LIYE) ===== -->
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="theme-color" content="#D4A73A">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -170,6 +176,13 @@ function submitAssignment() {
   const text = "Day 01 Assignment — " + name + ":\n\n" + answer;
   window.open("https://wa.me/?text=" + encodeURIComponent(text), "_blank");
 }
+</script>
+
+<!-- ===== SERVICE WORKER REGISTER (APP INSTALL KE LIYE) ===== -->
+<script>
+  if('serviceWorker' in navigator){
+    navigator.serviceWorker.register('/fkc-trading-academy/sw.js');
+  }
 </script>
 </body>
 </html>
