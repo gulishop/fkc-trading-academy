@@ -4,8 +4,8 @@
   "description": "Learn Python Programming - Free Daily Lessons",
   "start_url": "/fkc-trading-academy/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#1a73e8",
+  "background_color": "#0B1220",
+  "theme_color": "#D4A73A",
   "icons": [
     {
       "src": "icon-192.png",
