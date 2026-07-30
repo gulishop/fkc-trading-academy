@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FKC Trading Academy — Day 00</title>
+<title>FKC Trading Academy — Day 01</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -132,26 +132,27 @@
 <body>
   <div class="wrap">
     <div class="ticker">
-      <span class="sym">FKC · 00</span>
+      <span class="sym">FKC · 01</span>
       <span class="lbl">daily lesson</span>
     </div>
 
-    <h1>FKC Trading Academy</h1>
+    <h1>Day 1 — Print aur Basic Syntax</h1>
 
     <div class="card lesson">
-      <p>Yeh page automatic hai — jab bhi agla lesson Telegram par post hoga, yahan bhi khud-ba-khud update ho jayega.</p>
-      <h3>Chota Example</h3>
-      <p>Abhi tak koi lesson is page par nahi aaya. Pehla daily run hone ke baad yeh section aaj ke lesson se replace ho jayega.</p>
-      <a class="btn" href="https://wa.me/?text=FKC%20Trading%20Academy" target="_blank" rel="noopener">Share lesson on WhatsApp</a>
+      <p>-</p><h3>Concept</h3>
+<p>Computer ko kaise bolte hain &quot;yeh dikhao&quot; — `print()`<br>-</p><h3>Example</h3>
+<pre><code>print(&quot;Assalam-o-Alaikum&quot;)
+  print(&quot;Mera naam Ali hai&quot;)</code></pre>
+<p>-</p>
+      <a class="btn" href="https://wa.me/?text=Day%201%20%E2%80%94%20Print%20aur%20Basic%20Syntax%0A%0A-%0A%0AConcept%3A%0AComputer%20ko%20kaise%20bolte%20hain%20%22yeh%20dikhao%22%20%E2%80%94%20%60print%28%29%60%0A-%0A%0AExample%3A%0A%60%60%60python%0A%20%20print%28%22Assalam-o-Alaikum%22%29%0A%20%20print%28%22Mera%20naam%20Ali%20hai%22%29%0A%20%20%60%60%60%0A-%0A%0APractice%3A%0AApna%20naam%2C%20apni%20class%2C%20apna%20shehar%203%20alag%20lines%20mein%20print%20karwayen%0A-%0A%0AMini%20Project%3A%0A%22Apna%20Intro%20Card%22%20%E2%80%94%20naam%2C%20age%2C%20hobby%20print%20karne%20wala%20chota%20program" target="_blank" rel="noopener">Share lesson on WhatsApp</a>
     </div>
 
     <div class="card assignment">
       <h2>Assignment</h2>
       <div class="sub">Aaj ka kaam — mukammal karke neeche apna jawab likhein aur WhatsApp par group ko bhej dein.</div>
       <h3>Practice</h3>
-      <p>Kal ka intezar karein — pehla lesson yahan khud aa jayega.</p>
-      <h3>Mini Project</h3>
-      <p>Filhaal kuch nahi.</p>
+<p>Apna naam, apni class, apna shehar 3 alag lines mein print karwayen<br>-</p><h3>Mini Project</h3>
+<p>&quot;Apna Intro Card&quot; — naam, age, hobby print karne wala chota program</p>
       <input type="text" id="student-name" placeholder="Apna naam likhein">
       <textarea id="student-answer" placeholder="Apna code ya jawab yahan paste/likhein..."></textarea>
       <br>
@@ -166,7 +167,7 @@ function submitAssignment() {
   const name = document.getElementById('student-name').value.trim() || 'Student';
   const answer = document.getElementById('student-answer').value.trim();
   if (!answer) { alert('Pehle apna jawab likhein.'); return; }
-  const text = "Assignment — " + name + ":\n\n" + answer;
+  const text = "Day 01 Assignment — " + name + ":\n\n" + answer;
   window.open("https://wa.me/?text=" + encodeURIComponent(text), "_blank");
 }
 </script>
