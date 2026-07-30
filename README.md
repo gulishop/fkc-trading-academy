@@ -12,7 +12,9 @@ Students group mein lesson parhte hain, practice karte hain, aur apni assignment
 coding-academy-repo/
 ├── lessons/              → Har din ka lesson (day-01.md, day-02.md... jitne bhi ban jayen)
 ├── assignments/          → Students yahan apna code upload/submit karenge
-├── .github/workflows/    → Automation jo har din "agla" lesson Telegram par bhejta hai
+├── scripts/              → build_page.py — lesson ko docs/index.html page mein badalta hai
+├── docs/                 → GitHub Pages yahan se site banata hai (index.html khud-ba-khud update hoti hai)
+├── .github/workflows/    → Automation jo har din "agla" lesson Telegram par bhejta hai + page banata hai
 └── README.md             → Yeh file
 ```
 
@@ -67,15 +69,36 @@ System ko har lesson bhejne ke baad ek chota "counter" file save karni hoti hai 
 3. **"Read and write permissions"** select karein
 4. **"Save"** dabayen
 
-### Step 7: Test Karein
+### Step 7: GitHub Pages On Karein (lesson page + WhatsApp share ke liye)
+1. Repo mein **Settings → Pages** par jayen
+2. **"Build and deployment" → Source** mein select karein: **Deploy from a branch**
+3. Branch: **main**, folder: **/docs** — phir **Save** dabayen
+4. Thodi der baad yahan ek link mil jayegi jaise: `https://gulishop.github.io/fkc-trading-academy/` — yeh aapki lesson page hai
+
+### Step 8: Test Karein
 1. GitHub repo mein **Actions** tab par jayen
 2. "Daily Lesson Post" workflow chunein
 3. "Run workflow" button dabayen (manual test ke liye)
 4. Telegram group check karein — lesson message aa jani chahiye
+5. Step 7 wali Pages link kholein — aaj ka lesson page par bhi dikhna chahiye
 
 Bas! Ab yeh har roz **automatic, 3:00 PM Pakistan time par** us din ka lesson khud group mein post karta rahega:
 - **Day 1–30:** pehle se likhe hue lessons post honge
 - **Day 31 se aage:** agar aap khud naya lesson nahi likhte, to **Gemini AI khud us din ka lesson likh kar** post kar dega aur repo mein save bhi kar dega — matlab system kabhi nahi rukega
+- Har post ke sath **docs/index.html** (aapki Pages site) bhi khud-ba-khud update ho jayegi
+
+---
+
+## 🌐 Lesson Page + WhatsApp Share (Naya Feature)
+
+Har din jab lesson post hota hai, system usi lesson se ek chhoti web page bhi bana deta hai (`docs/index.html`, Step 7 wali link par live).
+
+**WhatsApp ka koi free/official group-bot API nahi hai** (Telegram jaisa), isliye poori posting automatic nahi ho sakti — is wajah se page par do buttons diye gaye hain:
+
+- **"Share lesson on WhatsApp"** — yeh button aap dabayen: WhatsApp khud khulega, lesson ka poora text pehle se likha hoga, aap sirf apna students wala WhatsApp group choose karke bhej dein. Isi tarah aap keh rahe the ke "jab bhi lesson post hoga mai students k WhatsApp group mai share kroga" — yeh button wahi kaam ek tap mein karta hai.
+- **Assignment box** — page ke neeche ek alag section hai jahan student apna naam aur jawab/code likh kar **"Send via WhatsApp"** dabata hai — uska WhatsApp bhi khud khulega, jawab pehle se likha hoga, student apna group choose karke submit kar dega.
+
+Yeh Telegram wali automatic posting ko replace nahi karta — Telegram post hota rehta hai jaisa pehle tha, page sirf WhatsApp ke liye ek aasan tareeqa hai.
 
 ---
 
