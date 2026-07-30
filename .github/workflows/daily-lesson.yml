@@ -8,9 +8,10 @@ name: Daily Lesson Post
 # Day 121 se aage: Trading/Markets course, hamesha chalta rahega (Gemini AI).
 #
 # Har successful post ke baad yeh docs/index.html (GitHub Pages) bhi
-# banata hai — usi lesson ke sath, ek "Share on WhatsApp" button aur
-# ek alag Assignment box (student apna jawab likh kar seedha WhatsApp
-# group mein bhej sakta hai).
+# banata hai — ab poori archive ke sath (sab purane lessons bhi
+# saath rehte hain, naya sabse upar), har lesson ke sath ek
+# "Share on WhatsApp" button aur ek alag Assignment box (student
+# apna jawab likh kar seedha WhatsApp group mein bhej sakta hai).
 on:
   schedule:
     # 3:00 PM PKT (Pakistan) = 10:00 UTC  (PKT = UTC+5)
@@ -97,15 +98,10 @@ jobs:
             echo "sent=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Lesson page banayein (docs/index.html) — WhatsApp share + Assignment
+      - name: Lesson page banayein (docs/index.html) — poori archive, WhatsApp share + Assignment
         if: steps.send.outputs.sent == 'true'
-        env:
-          NEXT: ${{ steps.next.outputs.next }}
         run: |
-          PADDED=$(printf "%02d" "$NEXT")
-          FILE="lessons/day-${PADDED}.md"
-          mkdir -p docs
-          python3 scripts/build_page.py "$FILE" "$NEXT" docs/index.html
+          python3 scripts/build_page.py lessons docs/index.html
 
       - name: Naye/generated files aur counter save karein
         if: steps.send.outputs.sent == 'true'
