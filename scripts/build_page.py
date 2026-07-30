@@ -7,7 +7,10 @@ Reads lessons/day-XX.md files up to the count in lessons/.last-posted
 docs/index.html as a running archive: newest posted lesson on top,
 every older lesson stays below it. Each lesson keeps its own reading
 material, Assignment box, WhatsApp share button, and student submit
-box. Adds: table of contents, search, progress tag per course phase.
+box. An "Answer Key" section (if present in the .md) is parsed out,
+hidden from display, and used by JS to give the student instant
+feedback ("Excellent!" / "Try again") before their answer goes to
+WhatsApp.
 
 Usage: python3 scripts/build_page.py <lessons_dir> <out_html>
 """
@@ -48,14 +51,18 @@ def parse_lesson(text: str):
 
 
 def classify(sections):
-    lesson_parts, assignment_parts = [], []
+    lesson_parts, assignment_parts, answer_key_parts = [], [], []
     assignment_words = ["practice", "assignment", "project", "kaam", "amaliyat", "mashq"]
+    answer_key_words = ["answer key", "sahi jawab", "jawab key"]
     for label, content in sections:
-        if any(w in label.lower() for w in assignment_words):
+        low = label.lower()
+        if any(w in low for w in answer_key_words):
+            answer_key_parts.append((label, content))
+        elif any(w in low for w in assignment_words):
             assignment_parts.append((label, content))
         else:
             lesson_parts.append((label, content))
-    return lesson_parts, assignment_parts
+    return lesson_parts, assignment_parts, answer_key_parts
 
 
 def md_to_html(text: str) -> str:
@@ -97,7 +104,16 @@ def padded_str(day_num: int) -> str:
     return f"{day_num:02d}" if day_num < 100 else f"{day_num:03d}"
 
 
-def render_lesson_block(day_num: int, title: str, preamble: str, lesson_parts, assignment_parts, is_latest: bool):
+def answer_key_keywords(answer_key_parts) -> str:
+    """Combine all Answer Key section content into a comma-separated,
+    lowercased keyword string used for client-side matching."""
+    raw = ", ".join(content for _, content in answer_key_parts)
+    # split on commas, clean each keyword
+    keywords = [k.strip().lower() for k in raw.split(",") if k.strip()]
+    return ", ".join(keywords)
+
+
+def render_lesson_block(day_num: int, title: str, preamble: str, lesson_parts, assignment_parts, answer_key_parts, is_latest: bool):
     padded = padded_str(day_num)
     phase_label, day_in_phase, total_in_phase = phase_info(day_num)
     progress_text = f"{phase_label} · Day {day_in_phase}/{total_in_phase}" if total_in_phase else f"{phase_label} · Day {day_in_phase}"
@@ -119,6 +135,8 @@ def render_lesson_block(day_num: int, title: str, preamble: str, lesson_parts, a
     search_blob = html.escape((title + " " + preamble + " " + " ".join(c for _, c in all_sections)).lower())
     latest_badge = '<span class="latest-tag">Latest</span>' if is_latest else ""
 
+    answer_key = html.escape(answer_key_keywords(answer_key_parts))
+
     return f"""
     <div class="lesson-block" id="day-{padded}" data-search="{search_blob}">
       {latest_badge}
@@ -133,7 +151,7 @@ def render_lesson_block(day_num: int, title: str, preamble: str, lesson_parts, a
         <div class="sub">Aaj ka kaam — mukammal karke neeche apna jawab likhein aur WhatsApp par group ko bhej dein.</div>
         {assignment_html}
         <input type="text" id="student-name-{padded}" placeholder="Apna naam likhein">
-        <textarea id="student-answer-{padded}" placeholder="Apna code ya jawab yahan paste/likhein..."></textarea>
+        <textarea id="student-answer-{padded}" placeholder="Apna code ya jawab yahan paste/likhein..." data-answer-key="{answer_key}"></textarea>
         <br>
         <button class="btn green" onclick="submitAssignment('{padded}')">Send via WhatsApp</button>
       </div>
@@ -318,6 +336,35 @@ def render_page(blocks_html: str, toc_html: str, latest_padded: str) -> str:
   .btn.green {{ background: var(--green); }}
   .btn:active {{ transform: translateY(1px); }}
   footer {{ color: var(--muted); font-size: 12px; margin-top: 40px; text-align: center; }}
+
+  /* Feedback popup */
+  .popup-overlay {{
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(6, 10, 18, 0.75);
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    padding: 20px;
+  }}
+  .popup-overlay.show {{ display: flex; }}
+  .popup-box {{
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--green);
+    border-radius: 8px;
+    padding: 24px;
+    max-width: 340px;
+    width: 100%;
+    text-align: center;
+  }}
+  .popup-box.wrong {{ border-left-color: var(--red); }}
+  .popup-box .emoji {{ font-size: 34px; margin-bottom: 8px; }}
+  .popup-box h3 {{ color: var(--ink); margin: 0 0 8px; text-transform: none; font-size: 19px; }}
+  .popup-box.wrong h3 {{ color: var(--ink); }}
+  .popup-box p {{ color: var(--muted); font-size: 13.5px; margin-bottom: 16px; }}
+  .popup-box .btn {{ width: 100%; text-align: center; justify-content: center; }}
 </style>
 </head>
 <body>
@@ -339,13 +386,69 @@ def render_page(blocks_html: str, toc_html: str, latest_padded: str) -> str:
     <footer>FKC Trading Academy — automatically updated</footer>
   </div>
 
+  <div class="popup-overlay" id="feedback-popup">
+    <div class="popup-box" id="feedback-box">
+      <div class="emoji" id="feedback-emoji"></div>
+      <h3 id="feedback-title"></h3>
+      <p id="feedback-msg"></p>
+      <button class="btn green" onclick="closePopupAndSend()">Theek hai — WhatsApp par bhejein</button>
+    </div>
+  </div>
+
 <script>
 const SHEET_WEBHOOK_URL = "{SHEET_WEBHOOK_URL}";
+let pendingSend = null;
+
+function checkAnswer(answer, keyStr) {{
+  if (!keyStr) return null; // no answer key set for this lesson — skip check
+  const keywords = keyStr.split(",").map(k => k.trim()).filter(Boolean);
+  if (keywords.length === 0) return null;
+  const a = answer.toLowerCase();
+  return keywords.some(k => a.includes(k));
+}}
 
 function submitAssignment(day) {{
-  const name = document.getElementById('student-name-' + day).value.trim() || 'Student';
-  const answer = document.getElementById('student-answer-' + day).value.trim();
+  const nameEl = document.getElementById('student-name-' + day);
+  const answerEl = document.getElementById('student-answer-' + day);
+  const name = nameEl.value.trim() || 'Student';
+  const answer = answerEl.value.trim();
   if (!answer) {{ alert('Pehle apna jawab likhein.'); return; }}
+
+  pendingSend = {{ day, name, answer }};
+
+  const keyStr = answerEl.getAttribute('data-answer-key') || '';
+  const isCorrect = checkAnswer(answer, keyStr);
+
+  const box = document.getElementById('feedback-box');
+  const emoji = document.getElementById('feedback-emoji');
+  const title = document.getElementById('feedback-title');
+  const msg = document.getElementById('feedback-msg');
+
+  if (isCorrect === null) {{
+    // No answer key available — just confirm submission
+    box.className = 'popup-box';
+    emoji.textContent = '📩';
+    title.textContent = 'Jawab tayyar hai';
+    msg.textContent = 'Ab WhatsApp par bhej dein.';
+  }} else if (isCorrect) {{
+    box.className = 'popup-box';
+    emoji.textContent = '🎉';
+    title.textContent = 'Excellent! Sahi jawab';
+    msg.textContent = 'Shabash! Bilkul theek — ab isse WhatsApp par bhej dein.';
+  }} else {{
+    box.className = 'popup-box wrong';
+    emoji.textContent = '🤔';
+    title.textContent = 'Dobara koshish karein';
+    msg.textContent = 'Ye jawab pura sahi nahi lag raha — lesson dobara padh kar ek baar aur try karein. Chahen to abhi bhi bhej sakte hain.';
+  }}
+
+  document.getElementById('feedback-popup').classList.add('show');
+}}
+
+function closePopupAndSend() {{
+  document.getElementById('feedback-popup').classList.remove('show');
+  if (!pendingSend) return;
+  const {{ day, name, answer }} = pendingSend;
 
   if (SHEET_WEBHOOK_URL) {{
     const formData = new URLSearchParams();
@@ -357,6 +460,7 @@ function submitAssignment(day) {{
 
   const text = "Day " + day + " Assignment — " + name + ":\\n\\n" + answer;
   window.open("https://wa.me/?text=" + encodeURIComponent(text), "_blank");
+  pendingSend = null;
 }}
 
 function filterLessons() {{
@@ -387,8 +491,6 @@ if __name__ == "__main__":
     with open(last_posted_file, encoding="utf-8") as f:
         last_posted = int(f.read().strip())
 
-    # Sirf wahi din include karo jo abhi tak officially post ho chuke hain
-    # (future/pre-written files ko chhupaye rakhta hai jab tak unka din na aaye)
     day_files = []
     for day_num in range(1, last_posted + 1):
         padded = padded_str(day_num)
@@ -410,8 +512,8 @@ if __name__ == "__main__":
         with open(path, encoding="utf-8") as f:
             raw = f.read()
         title, preamble, sections = parse_lesson(raw)
-        lesson_parts, assignment_parts = classify(sections)
-        block = render_lesson_block(day_num, title, preamble, lesson_parts, assignment_parts, is_latest=(i == 0))
+        lesson_parts, assignment_parts, answer_key_parts = classify(sections)
+        block = render_lesson_block(day_num, title, preamble, lesson_parts, assignment_parts, answer_key_parts, is_latest=(i == 0))
         blocks_html_parts.append(block)
 
         padded = padded_str(day_num)
