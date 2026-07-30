@@ -18,6 +18,11 @@ import re
 import html
 from urllib.parse import quote
 
+# Paste your Google Apps Script "Web app" URL here after Step 2 setup
+# (ends in /exec). Every assignment submission gets sent here so it
+# lands as a row in your Google Sheet automatically.
+SHEET_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbx1UBGM5GyFx4xYOIt5BbRE0k-LaURaZXXwuU3hJWYTYq3fEMiFGeb68gdXtutKJmBi/exec"
+
 
 def parse_lesson(text: str):
     lines = text.strip("\n").split("\n")
@@ -253,10 +258,21 @@ def render(day_num: int, title: str, preamble: str, lesson_parts, assignment_par
   </div>
 
 <script>
+const SHEET_WEBHOOK_URL = "{SHEET_WEBHOOK_URL}";
+
 function submitAssignment() {{
   const name = document.getElementById('student-name').value.trim() || 'Student';
   const answer = document.getElementById('student-answer').value.trim();
   if (!answer) {{ alert('Pehle apna jawab likhein.'); return; }}
+
+  if (SHEET_WEBHOOK_URL) {{
+    const formData = new URLSearchParams();
+    formData.append('day', '{padded}');
+    formData.append('name', name);
+    formData.append('answer', answer);
+    fetch(SHEET_WEBHOOK_URL, {{ method: 'POST', mode: 'no-cors', body: formData }}).catch(() => {{}});
+  }}
+
   const text = "Day {padded} Assignment — " + name + ":\\n\\n" + answer;
   window.open("https://wa.me/?text=" + encodeURIComponent(text), "_blank");
 }}
