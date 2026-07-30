@@ -3,7 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FKC Trading Academy — Day 01</title>
+<title>FKC Trading Academy — Day 02</title>
+
+<!-- PWA / Add-to-Home-Screen icon setup -->
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="theme-color" content="#0B1220">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -213,11 +221,46 @@
     </div>
 
     <div class="toc">
+      <a href="#day-02">Day 02</a>
       <a href="#day-01">Day 01</a>
     </div>
     <input type="text" id="search-box" placeholder="Purana lesson dhoondein (jaise: variables, loops, risk)..." oninput="filterLessons()">
 
     <div id="lessons-container">
+
+    <div class="lesson-block" id="day-02" data-search="day 2 — variables - variable ek dabba hai jisme value store hoti hai
+- ```python
+  naam = &quot;ali&quot;
+  age = 10
+  print(naam, &quot;ki age&quot;, age, &quot;saal hai&quot;)
+  ```
+- apna naam, age, favorite color variables mein store karke print karwayen
+- &quot;digital id card&quot; banwayen (naam, age, class, roll number)">
+      <span class="latest-tag">Latest</span>
+      <span class="phase-tag">Coding · Python · Day 2/90</span>
+      <h1>Day 2 — Variables</h1>
+      <div class="card lesson">
+        <p>-</p><h3>Concept</h3>
+<p>Variable ek dabba hai jisme value store hoti hai<br>-</p><h3>Example</h3>
+<pre><code>naam = &quot;Ali&quot;
+  age = 10
+  print(naam, &quot;ki age&quot;, age, &quot;saal hai&quot;)</code></pre>
+<p>-</p>
+        <a class="btn" href="https://wa.me/?text=Day%202%20%E2%80%94%20Variables%0A%0A-%0A%0AConcept%3A%0AVariable%20ek%20dabba%20hai%20jisme%20value%20store%20hoti%20hai%0A-%0A%0AExample%3A%0A%60%60%60python%0A%20%20naam%20%3D%20%22Ali%22%0A%20%20age%20%3D%2010%0A%20%20print%28naam%2C%20%22ki%20age%22%2C%20age%2C%20%22saal%20hai%22%29%0A%20%20%60%60%60%0A-%0A%0APractice%3A%0AApna%20naam%2C%20age%2C%20favorite%20color%20variables%20mein%20store%20karke%20print%20karwayen%0A-%0A%0AMini%20Project%3A%0A%22Digital%20ID%20Card%22%20banwayen%20%28naam%2C%20age%2C%20class%2C%20roll%20number%29" target="_blank" rel="noopener">Share lesson on WhatsApp</a>
+      </div>
+      <div class="card assignment">
+        <h2>Assignment</h2>
+        <div class="sub">Aaj ka kaam — mukammal karke neeche apna jawab likhein aur WhatsApp par group ko bhej dein.</div>
+        <h3>Practice</h3>
+<p>Apna naam, age, favorite color variables mein store karke print karwayen<br>-</p><h3>Mini Project</h3>
+<p>&quot;Digital ID Card&quot; banwayen (naam, age, class, roll number)</p>
+        <input type="text" id="student-name-02" placeholder="Apna naam likhein">
+        <textarea id="student-answer-02" placeholder="Apna code ya jawab yahan paste/likhein..." data-answer-key=""></textarea>
+        <br>
+        <button class="btn green" onclick="submitAssignment('02')">Send via WhatsApp</button>
+      </div>
+    </div>
+
 
     <div class="lesson-block" id="day-01" data-search="day 1 — print aur basic syntax - computer ko kaise bolte hain &quot;yeh dikhao&quot; — `print()`
 - ```python
@@ -226,7 +269,7 @@
   ```
 - apna naam, apni class, apna shehar 3 alag lines mein print karwayen
 - &quot;apna intro card&quot; — naam, age, hobby print karne wala chota program">
-      <span class="latest-tag">Latest</span>
+      
       <span class="phase-tag">Coding · Python · Day 1/90</span>
       <h1>Day 1 — Print aur Basic Syntax</h1>
       <div class="card lesson">
@@ -268,8 +311,14 @@
 const SHEET_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbx1UBGM5GyFx4xYOIt5BbRE0k-LaURaZXXwuU3hJWYTYq3fEMiFGeb68gdXtutKJmBi/exec";
 let pendingSend = null;
 
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js').catch(() => {});
+  });
+}
+
 function checkAnswer(answer, keyStr) {
-  if (!keyStr) return null; // no answer key set for this lesson — skip check
+  if (!keyStr) return null;
   const keywords = keyStr.split(",").map(k => k.trim()).filter(Boolean);
   if (keywords.length === 0) return null;
   const a = answer.toLowerCase();
@@ -294,7 +343,6 @@ function submitAssignment(day) {
   const msg = document.getElementById('feedback-msg');
 
   if (isCorrect === null) {
-    // No answer key available — just confirm submission
     box.className = 'popup-box';
     emoji.textContent = '📩';
     title.textContent = 'Jawab tayyar hai';
