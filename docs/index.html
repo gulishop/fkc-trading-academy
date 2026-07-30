@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ur" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FKC Trading Academy — Day 00</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #EDECE4;
+    --paper: #0B1220;
+    --panel: #111a2b;
+    --line: #22304a;
+    --gold: #D4A73A;
+    --green: #3FB68B;
+    --red: #E2574C;
+    --muted: #93a0b8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'IBM Plex Mono', monospace;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 32px 20px 80px; }
+  .ticker {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    font-family: 'IBM Plex Mono', monospace;
+    color: var(--gold);
+    letter-spacing: 0.08em;
+    font-size: 14px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 14px;
+    margin-bottom: 24px;
+  }
+  .ticker .sym { font-weight: 600; }
+  .ticker .lbl { color: var(--muted); font-weight: 400; }
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1.15;
+    margin: 0 0 28px;
+    color: var(--ink);
+  }
+  h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--gold);
+    margin: 22px 0 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  p { margin: 8px 0; color: var(--ink); font-size: 15px; }
+  pre {
+    background: #060a12;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 14px;
+    overflow-x: auto;
+    font-size: 13.5px;
+  }
+  code { font-family: 'IBM Plex Mono', monospace; }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--gold);
+    border-radius: 6px;
+    padding: 20px 22px;
+    margin-bottom: 22px;
+  }
+  .card.assignment { border-left-color: var(--green); }
+  .card.assignment h2 { color: var(--green); }
+  h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+    margin: 0 0 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .sub { color: var(--muted); font-size: 13px; margin-bottom: 14px; }
+  textarea {
+    width: 100%;
+    min-height: 110px;
+    background: #060a12;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    color: var(--ink);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    padding: 12px;
+    resize: vertical;
+  }
+  input[type=text] {
+    width: 100%;
+    background: #060a12;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    color: var(--ink);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--gold);
+    color: #0B1220;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 8px;
+  }
+  .btn.green { background: var(--green); }
+  .btn:active { transform: translateY(1px); }
+  footer { color: var(--muted); font-size: 12px; margin-top: 40px; text-align: center; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="ticker">
+      <span class="sym">FKC · 00</span>
+      <span class="lbl">daily lesson</span>
+    </div>
+
+    <h1>FKC Trading Academy</h1>
+
+    <div class="card lesson">
+      <p>Yeh page automatic hai — jab bhi agla lesson Telegram par post hoga, yahan bhi khud-ba-khud update ho jayega.</p>
+      <h3>Chota Example</h3>
+      <p>Abhi tak koi lesson is page par nahi aaya. Pehla daily run hone ke baad yeh section aaj ke lesson se replace ho jayega.</p>
+      <a class="btn" href="https://wa.me/?text=FKC%20Trading%20Academy" target="_blank" rel="noopener">Share lesson on WhatsApp</a>
+    </div>
+
+    <div class="card assignment">
+      <h2>Assignment</h2>
+      <div class="sub">Aaj ka kaam — mukammal karke neeche apna jawab likhein aur WhatsApp par group ko bhej dein.</div>
+      <h3>Practice</h3>
+      <p>Kal ka intezar karein — pehla lesson yahan khud aa jayega.</p>
+      <h3>Mini Project</h3>
+      <p>Filhaal kuch nahi.</p>
+      <input type="text" id="student-name" placeholder="Apna naam likhein">
+      <textarea id="student-answer" placeholder="Apna code ya jawab yahan paste/likhein..."></textarea>
+      <br>
+      <button class="btn green" onclick="submitAssignment()">Send via WhatsApp</button>
+    </div>
+
+    <footer>FKC Trading Academy — automatically updated</footer>
+  </div>
+
+<script>
+function submitAssignment() {
+  const name = document.getElementById('student-name').value.trim() || 'Student';
+  const answer = document.getElementById('student-answer').value.trim();
+  if (!answer) { alert('Pehle apna jawab likhein.'); return; }
+  const text = "Assignment — " + name + ":\n\n" + answer;
+  window.open("https://wa.me/?text=" + encodeURIComponent(text), "_blank");
+}
+</script>
+</body>
+</html>
