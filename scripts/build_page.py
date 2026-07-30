@@ -10,7 +10,9 @@ material, Assignment box, WhatsApp share button, and student submit
 box. An "Answer Key" section (if present in the .md) is parsed out,
 hidden from display, and used by JS to give the student instant
 feedback ("Excellent!" / "Try again") before their answer goes to
-WhatsApp.
+WhatsApp. Also links the PWA manifest + icons (docs/manifest.json,
+docs/icon-192.png, docs/icon-512.png, docs/sw.js) so "Add to Home
+Screen" shows the real app icon instead of a generic letter.
 
 Usage: python3 scripts/build_page.py <lessons_dir> <out_html>
 """
@@ -108,7 +110,6 @@ def answer_key_keywords(answer_key_parts) -> str:
     """Combine all Answer Key section content into a comma-separated,
     lowercased keyword string used for client-side matching."""
     raw = ", ".join(content for _, content in answer_key_parts)
-    # split on commas, clean each keyword
     keywords = [k.strip().lower() for k in raw.split(",") if k.strip()]
     return ", ".join(keywords)
 
@@ -166,6 +167,14 @@ def render_page(blocks_html: str, toc_html: str, latest_padded: str) -> str:
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FKC Trading Academy — Day {latest_padded}</title>
+
+<!-- PWA / Add-to-Home-Screen icon setup -->
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="theme-color" content="#0B1220">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -399,8 +408,14 @@ def render_page(blocks_html: str, toc_html: str, latest_padded: str) -> str:
 const SHEET_WEBHOOK_URL = "{SHEET_WEBHOOK_URL}";
 let pendingSend = null;
 
+if ('serviceWorker' in navigator) {{
+  window.addEventListener('load', () => {{
+    navigator.serviceWorker.register('sw.js').catch(() => {{}});
+  }});
+}}
+
 function checkAnswer(answer, keyStr) {{
-  if (!keyStr) return null; // no answer key set for this lesson — skip check
+  if (!keyStr) return null;
   const keywords = keyStr.split(",").map(k => k.trim()).filter(Boolean);
   if (keywords.length === 0) return null;
   const a = answer.toLowerCase();
@@ -425,7 +440,6 @@ function submitAssignment(day) {{
   const msg = document.getElementById('feedback-msg');
 
   if (isCorrect === null) {{
-    // No answer key available — just confirm submission
     box.className = 'popup-box';
     emoji.textContent = '📩';
     title.textContent = 'Jawab tayyar hai';
@@ -498,7 +512,7 @@ if __name__ == "__main__":
         if os.path.exists(path):
             day_files.append((day_num, path))
 
-    day_files.sort(key=lambda x: x[0], reverse=True)  # newest first
+    day_files.sort(key=lambda x: x[0], reverse=True)
 
     if not day_files:
         print("Koi posted lesson file nahi mili.", file=sys.stderr)
