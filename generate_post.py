@@ -29,11 +29,13 @@ Usage (GitHub Action isay khud chalata hai):
 import os
 import re
 import sys
+import time
 import json
 import html
 import datetime
 import urllib.request
 import urllib.parse
+import urllib.error
 
 # ---------------------------------------------------------------------
 # 1. COURSES — yahan naya course add/hata/edit karein
@@ -336,7 +338,7 @@ def save_posts(posts):
 # ---------------------------------------------------------------------
 # 3. Lesson content — Gemini generate ya manual file parhein
 # ---------------------------------------------------------------------
-def gemini_generate(prompt_text):
+def gemini_generate(prompt_text, max_retries=5):
     if not GEMINI_API_KEY:
         raise RuntimeError("GEMINI_API_KEY set nahi hai.")
     url = (
@@ -344,11 +346,23 @@ def gemini_generate(prompt_text):
         f"gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}"
     )
     body = json.dumps({"contents": [{"parts": [{"text": prompt_text}]}]}).encode()
-    req = urllib.request.Request(
-        url, data=body, headers={"Content-Type": "application/json"}
-    )
-    with urllib.request.urlopen(req, timeout=60) as resp:
-        data = json.load(resp)
+
+    wait = 20
+    for attempt in range(1, max_retries + 1):
+        req = urllib.request.Request(
+            url, data=body, headers={"Content-Type": "application/json"}
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                data = json.load(resp)
+            break
+        except urllib.error.HTTPError as e:
+            if e.code in (429, 500, 502, 503) and attempt < max_retries:
+                print(f"Gemini {e.code} mila (attempt {attempt}) — {wait}s ruk kar dobara koshish...", file=sys.stderr)
+                time.sleep(wait)
+                wait = min(wait * 2, 120)
+                continue
+            raise
     try:
         return data["candidates"][0]["content"]["parts"][0]["text"].strip()
     except (KeyError, IndexError):
@@ -425,12 +439,17 @@ def get_or_generate_lesson(slug, course, day_num, previous_titles):
     else:
         print(f"[{slug}] Day {day_num} Gemini se generate ho raha hai...")
         prompt = build_prompt(slug, course, day_num, previous_titles)
-        raw = gemini_generate(prompt)
+        try:
+            raw = gemini_generate(prompt)
+        except Exception as e:
+            print(f"[{slug}] Gemini call fail ho gayi, aaj yeh course skip: {e}", file=sys.stderr)
+            return None
         if not raw:
             print(f"[{slug}] Gemini se lesson nahi mila, aaj skip.", file=sys.stderr)
             return None
         with open(md_path, "w", encoding="utf-8") as f:
             f.write(raw)
+        time.sleep(5)  # free-tier per-minute rate limit se bachne ke liye
 
     title, preamble, sections, answer_key = parse_lesson_text(raw, day_num)
     today = datetime.date.today().isoformat()
