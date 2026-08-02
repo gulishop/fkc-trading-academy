@@ -305,6 +305,27 @@ COURSES = {
             "No-code ki limitations samajhna",
         ],
     },
+    "forex-trading": {
+        "name": "Forex Trading",
+        "icon": "💹",
+        "tagline": "Currency market mein trading karna sikhein — basics se lekar strategy tak",
+        "topics": [
+            "Forex market kya hai aur kaise kaam karta hai",
+            "Currency pairs, pip, aur lot size samajhna",
+            "Broker aur trading account (Exness) setup karna",
+            "MetaTrader/platform use karna",
+            "Leverage aur margin samajhna",
+            "Technical analysis basics (charts, candlesticks)",
+            "Fundamental analysis aur news ka asar",
+            "Risk management aur stop-loss lagana",
+            "Ek simple trading strategy banana",
+            "Trading psychology aur discipline",
+            "Demo se live trading tak jana",
+            "Trades ka record aur performance track karna",
+        ],
+        "affiliate_url": "https://one.exnessonelink.com/a/buhyli14un",
+        "affiliate_label": "💹 Exness Par Free Account Banayein",
+    },
 }
 
 BRAND_NAME = "FKC Trading Academy"
@@ -331,6 +352,19 @@ DIRECT_LINK_URL = "https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418f
 def direct_link_button_html(label="🚀 Aur Seekhein"):
     return (
         f'<a class="btn green" href="{DIRECT_LINK_URL}" target="_blank" '
+        f'rel="noopener sponsored">{html.escape(label)}</a>'
+    )
+
+
+def course_affiliate_button_html(course):
+    """Agar course ke sath koi affiliate link ho (jaise Forex Trading ke
+    liye Exness), to ek alag button return karta hai — warna khaali string."""
+    url = course.get("affiliate_url")
+    if not url:
+        return ""
+    label = course.get("affiliate_label", "🚀 Account Banayein")
+    return (
+        f'<a class="btn alt" href="{url}" target="_blank" '
         f'rel="noopener sponsored">{html.escape(label)}</a>'
     )
 
@@ -766,6 +800,8 @@ def render_course_page(slug, course, lessons):
             f'<span class="d">{lesson["day"]:02d}</span>{html.escape(lesson["title"])}</a>'
         )
     listing = "".join(items) if items else '<p class="muted">Abhi koi lesson nahi — pehla jald aayega.</p>'
+    affiliate_btn = course_affiliate_button_html(course)
+    affiliate_block = f'<p>{affiliate_btn}</p>' if affiliate_btn else ""
 
     logo_href = f"../../{BRAND_LOGO}"
     body = f"""
@@ -773,6 +809,7 @@ def render_course_page(slug, course, lessons):
     <h1>{course['icon']} {html.escape(course['name'])}</h1>
     <p class="muted">{html.escape(course['tagline'])}</p>
     <p class="muted">📅 Naya lesson roz 3:00 PM Pakistan time par yahan add hota hai.</p>
+    {affiliate_block}
     <div class="plist">{listing}</div>
     {brand_footer_html(logo_href)}
     """
@@ -809,6 +846,8 @@ def render_lesson_page(slug, course, lesson, is_latest):
 
     badge = '<span class="badge">Latest</span>' if is_latest else ""
     logo_href = f"../../../{BRAND_LOGO}"
+    affiliate_btn = course_affiliate_button_html(course)
+    affiliate_block = f'<p>{affiliate_btn}</p>' if affiliate_btn else ""
 
     body = f"""
     <div class="top"><a href="../../../index.html">← {html.escape(BRAND_NAME)}</a>
@@ -818,6 +857,7 @@ def render_lesson_page(slug, course, lesson, is_latest):
     <h1>{html.escape(lesson['title'])}</h1>
     <div class="card">
       {lesson_html}
+      {affiliate_block}
       <div>
         <a class="btn" href="{wa_link}" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="{tg_link}" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
