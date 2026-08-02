@@ -296,6 +296,13 @@ COURSES = {
     },
 }
 
+BRAND_NAME = "FKC Trading Academy"
+BRAND_LOGO = "logo.png"  # docs/logo.png — repo mein khud upload karein
+BRAND_CONTACT_NAME = "Fazul Khan Chandio"
+BRAND_CONTACT_TITLE = "Director / CEO"
+BRAND_CONTACT_PHONE = "+92 333 3909816"
+BRAND_LINE = f"{BRAND_CONTACT_NAME} — {BRAND_CONTACT_TITLE} — {BRAND_CONTACT_PHONE}"
+
 SITE_URL = os.environ.get("SITE_URL", "").rstrip("/")
 TELEGRAM_CHANNEL_LINK = os.environ.get("TELEGRAM_CHANNEL_LINK", "")
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
@@ -490,17 +497,45 @@ color:var(--ink);}
 font-size:.72em;font-weight:700;padding:2px 8px;border-radius:20px;
 margin-bottom:8px;}
 footer{color:var(--muted);font-size:12px;margin-top:40px;text-align:center;}
+.brand-bar{display:flex;align-items:center;gap:12px;margin-bottom:18px;}
+.brand-bar img{width:52px;height:52px;border-radius:50%;flex-shrink:0;
+border:1px solid var(--line);}
+.brand-bar .bname{font-family:'Fraunces',serif;font-weight:700;
+color:var(--gold);font-size:1.15em;line-height:1.2;}
+.brand-bar .btag{color:var(--muted);font-size:.82em;}
+.brand-footer{border-top:1px solid var(--line);margin-top:34px;
+padding-top:16px;display:flex;align-items:center;gap:12px;}
+.brand-footer img{width:38px;height:38px;border-radius:50%;flex-shrink:0;}
+.brand-footer .txt{font-size:.82em;color:var(--muted);line-height:1.5;}
+.brand-footer .txt b{color:var(--ink);}
 """
 
 HEAD = """<!DOCTYPE html>
 <html lang="ur"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{title}</title>
+<meta property="og:title" content="{title}">
+<meta property="og:description" content="{ogdesc}">
+<meta property="og:image" content="{ogimage}">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="{logo_href}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>{css}</style></head><body><div class="wrap">
+<div class="brand-bar"><img src="{logo_href}" alt="{brand}">
+<div><div class="bname">{brand}</div><div class="btag">Learn · Earn · Grow</div></div></div>
 """
-FOOT = "</div><footer>Skill Academy — daily lessons, automatically updated</footer></body></html>"
+
+
+def brand_footer_html(logo_href):
+    return (
+        f'<div class="brand-footer"><img src="{logo_href}" alt="{BRAND_NAME}">'
+        f'<div class="txt"><b>{html.escape(BRAND_NAME)}</b><br>'
+        f'{html.escape(BRAND_LINE)}</div></div>'
+    )
+
+
+FOOT_TAIL = "</div><footer>Skill Academy — daily lessons, automatically updated</footer></body></html>"
 
 
 def md_lite(text):
@@ -528,15 +563,26 @@ def render_home(posts):
       <div class="arrow">›</div>
     </a>""")
 
+    logo_href = BRAND_LOGO
     body = f"""
-    <div class="top"><span style="color:var(--gold);font-weight:700">Skill Academy</span>
-    <span class="lbl">daily lessons — apni pasand ka course chunein</span></div>
+    <div class="top"><span style="color:var(--gold);font-weight:700">{html.escape(BRAND_NAME)}</span>
+    <span class="lbl">Digital Hub — apni pasand ka course chunein</span></div>
     <h1>🎓 Roz ek naya practical lesson</h1>
     <p class="muted">📅 Har course ka naya lesson roz <b>3:00 PM Pakistan time</b> par yahan post hota hai.
     Jis course mein interest ho us par tap karein — daily lesson step-by-step parhein aur practice karein.</p>
     <div class="grid">{''.join(cards)}</div>
+    {brand_footer_html(logo_href)}
     """
-    return HEAD.format(title="Skill Academy — Daily Lessons", css=BASE_CSS) + body + FOOT
+    og_image = f"{SITE_URL}/{BRAND_LOGO}" if SITE_URL else BRAND_LOGO
+    head = HEAD.format(
+        title=f"{BRAND_NAME} — Daily Lessons",
+        ogdesc="Har course ka daily lesson, step-by-step. Learn · Earn · Grow.",
+        ogimage=og_image,
+        logo_href=logo_href,
+        brand=html.escape(BRAND_NAME),
+        css=BASE_CSS,
+    )
+    return head + body + FOOT_TAIL
 
 
 def render_course_page(slug, course, lessons):
@@ -548,14 +594,25 @@ def render_course_page(slug, course, lessons):
         )
     listing = "".join(items) if items else '<p class="muted">Abhi koi lesson nahi — pehla jald aayega.</p>'
 
+    logo_href = f"../../{BRAND_LOGO}"
     body = f"""
-    <div class="top"><a href="../../index.html">← Skill Academy</a></div>
+    <div class="top"><a href="../../index.html">← {html.escape(BRAND_NAME)}</a></div>
     <h1>{course['icon']} {html.escape(course['name'])}</h1>
     <p class="muted">{html.escape(course['tagline'])}</p>
     <p class="muted">📅 Naya lesson roz 3:00 PM Pakistan time par yahan add hota hai.</p>
     <div class="plist">{listing}</div>
+    {brand_footer_html(logo_href)}
     """
-    return HEAD.format(title=f"{course['name']} — Skill Academy", css=BASE_CSS) + body + FOOT
+    og_image = f"{SITE_URL}/{BRAND_LOGO}" if SITE_URL else logo_href
+    head = HEAD.format(
+        title=f"{course['name']} — {BRAND_NAME}",
+        ogdesc=course["tagline"],
+        ogimage=og_image,
+        logo_href=logo_href,
+        brand=html.escape(BRAND_NAME),
+        css=BASE_CSS,
+    )
+    return head + body + FOOT_TAIL
 
 
 def render_lesson_page(slug, course, lesson, is_latest):
@@ -563,22 +620,24 @@ def render_lesson_page(slug, course, lesson, is_latest):
     for label, content in lesson["sections"]:
         lesson_html += f"<h3>{html.escape(label)}</h3>{md_lite(content)}"
 
-    share_chunks = [lesson["title"]]
+    share_chunks = [f"📚 {BRAND_NAME} — {course['name']} (Day {lesson['day']:02d})", lesson["title"]]
     if lesson["preamble"]:
         share_chunks.append(lesson["preamble"])
     for label, content in lesson["sections"]:
         share_chunks.append(f"{label}:\n{content}")
+    share_chunks.append(f"— {BRAND_LINE}")
     share_text = "\n\n".join(share_chunks)
     if SITE_URL:
         share_text += f"\n\n{SITE_URL}/courses/{slug}/posts/{lesson['date']}-{lesson['id']}.html"
     wa_link = f"https://wa.me/?text={urllib.parse.quote(share_text)}"
     fb_link = f"https://www.facebook.com/sharer/sharer.php?u={urllib.parse.quote(SITE_URL or '')}"
-    tg_link = f"https://t.me/share/url?url={urllib.parse.quote(SITE_URL or '')}&text={urllib.parse.quote(lesson['title'])}"
+    tg_link = f"https://t.me/share/url?url={urllib.parse.quote(SITE_URL or '')}&text={urllib.parse.quote(lesson['title'] + ' — ' + BRAND_NAME)}"
 
     badge = '<span class="badge">Latest</span>' if is_latest else ""
+    logo_href = f"../../../{BRAND_LOGO}"
 
     body = f"""
-    <div class="top"><a href="../../../index.html">← Skill Academy</a>
+    <div class="top"><a href="../../../index.html">← {html.escape(BRAND_NAME)}</a>
     <a href="../index.html" class="course-back-link">/ {html.escape(course['name'])}</a></div>
     {badge}
     <p class="muted">{course['icon']} {html.escape(course['name'])} · Day {lesson['day']:02d}</p>
@@ -591,8 +650,18 @@ def render_lesson_page(slug, course, lesson, is_latest):
         <a class="btn alt" href="{fb_link}" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
       </div>
     </div>
+    {brand_footer_html(logo_href)}
     """
-    return HEAD.format(title=f"{lesson['title']} — {course['name']}", css=BASE_CSS) + body + FOOT
+    og_image = f"{SITE_URL}/{BRAND_LOGO}" if SITE_URL else logo_href
+    head = HEAD.format(
+        title=f"{lesson['title']} — {course['name']}",
+        ogdesc=f"{BRAND_NAME} · {course['name']} · Day {lesson['day']:02d}",
+        ogimage=og_image,
+        logo_href=logo_href,
+        brand=html.escape(BRAND_NAME),
+        css=BASE_CSS,
+    )
+    return head + body + FOOT_TAIL
 
 
 # ---------------------------------------------------------------------
@@ -601,10 +670,20 @@ def render_lesson_page(slug, course, lesson, is_latest):
 def post_to_telegram(course, lesson):
     if not (TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID):
         return
-    text = f"📚 {course['icon']} {course['name']} — Day {lesson['day']:02d}\n\n{lesson['title']}\n\n{lesson['preamble']}"
-    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-    data = urllib.parse.urlencode({"chat_id": TELEGRAM_CHAT_ID, "text": text}).encode()
+    text = (
+        f"📚 {BRAND_NAME}\n{course['icon']} {course['name']} — Day {lesson['day']:02d}\n\n"
+        f"{lesson['title']}\n\n{lesson['preamble']}\n\n— {BRAND_LINE}"
+    )
+    logo_url = f"{SITE_URL}/{BRAND_LOGO}" if SITE_URL else ""
     try:
+        if logo_url:
+            url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendPhoto"
+            data = urllib.parse.urlencode(
+                {"chat_id": TELEGRAM_CHAT_ID, "photo": logo_url, "caption": text[:1024]}
+            ).encode()
+        else:
+            url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+            data = urllib.parse.urlencode({"chat_id": TELEGRAM_CHAT_ID, "text": text}).encode()
         urllib.request.urlopen(urllib.request.Request(url, data=data), timeout=20)
     except Exception as e:
         print(f"Telegram post fail ({course['name']}): {e}", file=sys.stderr)
@@ -613,10 +692,20 @@ def post_to_telegram(course, lesson):
 def post_to_facebook(course, lesson):
     if not (FB_PAGE_ID and FB_PAGE_ACCESS_TOKEN):
         return
-    text = f"📚 {course['icon']} {course['name']} — Day {lesson['day']:02d}\n\n{lesson['title']}\n\n{lesson['preamble']}"
-    url = f"https://graph.facebook.com/{FB_PAGE_ID}/feed"
-    data = urllib.parse.urlencode({"message": text, "access_token": FB_PAGE_ACCESS_TOKEN}).encode()
+    text = (
+        f"📚 {BRAND_NAME}\n{course['icon']} {course['name']} — Day {lesson['day']:02d}\n\n"
+        f"{lesson['title']}\n\n{lesson['preamble']}\n\n— {BRAND_LINE}"
+    )
+    logo_url = f"{SITE_URL}/{BRAND_LOGO}" if SITE_URL else ""
     try:
+        if logo_url:
+            url = f"https://graph.facebook.com/{FB_PAGE_ID}/photos"
+            data = urllib.parse.urlencode(
+                {"url": logo_url, "caption": text, "access_token": FB_PAGE_ACCESS_TOKEN}
+            ).encode()
+        else:
+            url = f"https://graph.facebook.com/{FB_PAGE_ID}/feed"
+            data = urllib.parse.urlencode({"message": text, "access_token": FB_PAGE_ACCESS_TOKEN}).encode()
         urllib.request.urlopen(urllib.request.Request(url, data=data), timeout=20)
     except Exception as e:
         print(f"Facebook post fail ({course['name']}): {e}", file=sys.stderr)

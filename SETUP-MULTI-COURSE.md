@@ -20,6 +20,24 @@ sab shamil hain. Naya course add karna ho to `generate_post.py` mein
 `COURSES` dictionary mein bas ek naya entry add kar dein — baaki sab
 (home card, course page, lessons, posting) khud ban jayega.
 
+## Logo aur branding
+
+Har page (home, course, lesson) par ab **FKC Trading Academy ka logo**
+header mein aur neeche ek chhota "brand footer" mein dikhta hai — sath
+mein **Fazul Khan Chandio — Director / CEO — +92 333 3909816**.
+
+Jab bhi koi student **"Share lesson on WhatsApp/Telegram/Facebook"**
+button dabata hai, share hone wale text ke sath yeh contact line bhi
+khud chali jaati hai. Aur agar `SITE_URL` secret set ho, to jab bhi
+lesson ka link kahin bhi paste hoga (WhatsApp/Telegram/Facebook sab
+jagah), link preview mein **yehi logo image** apne aap dikhega —
+kyunke page ke andar "og:image" tag us logo ki taraf point karta hai.
+
+**Zaroori step:** logo file ko apne repo mein `docs/logo.png` ke naam
+se (bilkul yehi naam) upload kar dein — GitHub website par "Add file →
+Upload files", `docs` folder ke andar. Ek dafa daal dein, phir har run
+par khud reh jayegi (script isay delete/replace nahi karta).
+
 ## Deploy karne ke steps
 
 1. **In files ko apne repo mein daal dein** (GitHub website par "Add
