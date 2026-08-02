@@ -4,7 +4,7 @@ Skill Academy — Multi-Course Daily Lesson Generator.
 
 Har din (GitHub Action se, 3:00 PM Pakistan time par) yeh script chalta
 hai aur COURSES dictionary mein diye gaye HAR course ke liye us course
-ka "agla" daily lesson generate karta hai (OpenRouter AI se, agar lessons/
+ka "agla" daily lesson generate karta hai (Mistral AI se, agar lessons/
 mein file pehle se maujood nahi), phir poori site (docs/) dobara
 banata hai:
 
@@ -16,7 +16,7 @@ banata hai:
                                                     (source of truth)
   lessons/<slug>/day-XX.md                      -> raw lesson text (aap
                                                     khud bhi yahan file
-                                                    daal kar AI ko
+                                                    daal kar Mistral ko
                                                     us din ke liye skip
                                                     kar sakte hain)
 
@@ -336,18 +336,7 @@ BRAND_CONTACT_PHONE = "+92 333 3909816"
 BRAND_LINE = f"{BRAND_CONTACT_NAME} — {BRAND_CONTACT_TITLE} — {BRAND_CONTACT_PHONE}"
 
 SITE_URL = os.environ.get("SITE_URL", "").rstrip("/")
-
-# ============ OPENROUTER API ============
-OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
-# Best free model on OpenRouter
-OPENROUTER_MODEL = "meta-llama/llama-3.3-70b-instruct"
-OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
-# Fallback models agar main model fail ho
-FALLBACK_MODELS = [
-    "mistralai/mistral-7b-instruct",
-    "google/gemma-2-9b-it",
-    "meta-llama/llama-3.1-8b-instruct",
-]
+MISTRAL_API_KEY = os.environ.get("MISTRAL_API_KEY", "")
 
 POSTS_JSON = "posts.json"
 LESSONS_DIR = "lessons"
@@ -465,46 +454,53 @@ def save_posts(posts):
 
 
 # ---------------------------------------------------------------------
-# 3. Lesson content — OpenRouter (Llama) generate ya manual file parhein
+# 3. Lesson content — Mistral generate ya manual file parhein
 # ---------------------------------------------------------------------
-def _openrouter_call_once(model_name, prompt_text, max_retries=5):
-    """Ek model ke sath OpenRouter call karta hai, retry handles 429/500/502/503."""
+# Model fallback list — pehle wala try hota hai, agar wo 404 de (retire/
+# not-found ho jaye) to script khud agla wala try karta hai. Naya model
+# list mein upar add kar sakte hain jab Mistral koi naya release kare.
+MODEL_NAMES = ["mistral-small-latest", "open-mistral-nemo", "mistral-large-latest"]
+
+MISTRAL_URL = "https://api.mistral.ai/v1/chat/completions"
+
+
+def _mistral_call_once(model_name, prompt_text, max_retries=5):
+    """Ek model ke sath chat completion call karta hai, 429/500/502/503
+    (aur 403 jo account-block na ho) par retry karta hai. 404 (model not
+    found) par turant raise karta hai taake caller agla model try kar sake."""
     body = json.dumps({
         "model": model_name,
-        "messages": [
-            {"role": "system", "content": "You are a helpful instructor who teaches in Roman Urdu/Hindi. Keep responses practical and concise."},
-            {"role": "user", "content": prompt_text}
-        ],
+        "messages": [{"role": "user", "content": prompt_text}],
     }).encode()
 
     wait = 20
     for attempt in range(1, max_retries + 1):
         req = urllib.request.Request(
-            OPENROUTER_URL,
+            MISTRAL_URL,
             data=body,
             headers={
                 "Content-Type": "application/json",
-                "Authorization": f"Bearer {OPENROUTER_API_KEY}",
-                "HTTP-Referer": SITE_URL or "https://github.com",
-                "X-Title": BRAND_NAME,
+                "Authorization": f"Bearer {MISTRAL_API_KEY}",
             },
         )
         try:
             with urllib.request.urlopen(req, timeout=60) as resp:
                 return json.load(resp)
         except urllib.error.HTTPError as e:
+            # Body padho taake asli wajah pata chale (quota / permission /
+            # invalid key) — sirf "403: Forbidden" kaafi nahi hota debug ke liye.
             try:
                 err_body = e.read().decode("utf-8", errors="replace")[:500]
             except Exception:
                 err_body = "(body nahi mil saka)"
-            print(f"OpenRouter {e.code} detail ({model_name}, attempt {attempt}): {err_body}", file=sys.stderr)
+            print(f"Mistral {e.code} detail ({model_name}, attempt {attempt}): {err_body}", file=sys.stderr)
 
             if e.code == 403:
-                print("OpenRouter 403 — API key invalid/blocked ya quota exhaust. Key check karein.", file=sys.stderr)
+                print("Mistral 403 — ye account/key-level block ho sakta hai, retry se theek nahi hoga. Key check karein.", file=sys.stderr)
                 raise
 
             if e.code in (429, 500, 502, 503) and attempt < max_retries:
-                print(f"OpenRouter {e.code} mila ({model_name}, attempt {attempt}) — {wait}s ruk kar dobara koshish...", file=sys.stderr)
+                print(f"Mistral {e.code} mila ({model_name}, attempt {attempt}) — {wait}s ruk kar dobara koshish...", file=sys.stderr)
                 time.sleep(wait)
                 wait = min(wait * 2, 120)
                 continue
@@ -512,41 +508,28 @@ def _openrouter_call_once(model_name, prompt_text, max_retries=5):
 
 
 def ai_generate(prompt_text, max_retries=5):
-    if not OPENROUTER_API_KEY:
-        raise RuntimeError("OPENROUTER_API_KEY set nahi hai. GitHub Secret mein daalein.")
+    if not MISTRAL_API_KEY:
+        raise RuntimeError("MISTRAL_API_KEY set nahi hai.")
 
     data = None
     last_error = None
-    
-    # Pehle primary model try karein
-    all_models = [OPENROUTER_MODEL] + FALLBACK_MODELS
-    
-    for model_name in all_models:
+    for model_name in MODEL_NAMES:
         try:
-            data = _openrouter_call_once(model_name, prompt_text, max_retries=max_retries)
+            data = _mistral_call_once(model_name, prompt_text, max_retries=max_retries)
             break
         except urllib.error.HTTPError as e:
             last_error = e
             if e.code == 404:
-                print(f"Model '{model_name}' 404 (not found) — agla model try kar rahe hain...", file=sys.stderr)
+                print(f"Model '{model_name}' 404 (not found/retired) — agla model try kar rahe hain...", file=sys.stderr)
                 continue
-            elif e.code == 403:
-                print(f"Model '{model_name}' 403 — quota/access issue, agla try kar rahe hain...", file=sys.stderr)
-                continue
-            else:
-                raise
-        except Exception as e:
-            last_error = e
-            print(f"Model '{model_name}' mein error: {e} — agla try...", file=sys.stderr)
-            continue
-
+            raise
     if data is None:
-        raise last_error or RuntimeError("Sab models fail ho gaye.")
+        raise last_error
 
     try:
         return data["choices"][0]["message"]["content"].strip()
     except (KeyError, IndexError):
-        print("OpenRouter response se text nahi mila:", data, file=sys.stderr)
+        print("Mistral response se text nahi mila:", data, file=sys.stderr)
         return ""
 
 
@@ -617,15 +600,15 @@ def get_or_generate_lesson(slug, course, day_num, previous_titles):
         with open(md_path, encoding="utf-8") as f:
             raw = f.read()
     else:
-        print(f"[{slug}] Day {day_num} OpenRouter se generate ho raha hai...")
+        print(f"[{slug}] Day {day_num} Mistral se generate ho raha hai...")
         prompt = build_prompt(slug, course, day_num, previous_titles)
         try:
             raw = ai_generate(prompt)
         except Exception as e:
-            print(f"[{slug}] OpenRouter call fail ho gayi, aaj yeh course skip: {e}", file=sys.stderr)
+            print(f"[{slug}] Mistral call fail ho gayi, aaj yeh course skip: {e}", file=sys.stderr)
             return None
         if not raw:
-            print(f"[{slug}] OpenRouter se lesson nahi mila, aaj skip.", file=sys.stderr)
+            print(f"[{slug}] Mistral se lesson nahi mila, aaj skip.", file=sys.stderr)
             return None
         with open(md_path, "w", encoding="utf-8") as f:
             f.write(raw)
