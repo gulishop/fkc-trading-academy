@@ -326,7 +326,7 @@ POSTS_JSON = "posts.json"
 LESSONS_DIR = "lessons"
 DOCS_DIR = "docs"
 
-ACCENTS = ["#D4A73A", "#3FB68B", "#5B8DEF", "#E2574C", "#9B6BD8", "#2FB6C4"]
+ACCENTS = ["#0056D2", "#2BAF66", "#6D28D9", "#D9730D", "#0EA5A5", "#DB4C77"]
 
 # Adsterra Direct Link / Smartlink — home page aur har lesson page par
 # ek button ke tor par dikhta hai. Click = earning.
@@ -585,66 +585,82 @@ def get_or_generate_lesson(slug, course, day_num, previous_titles):
 # 4. HTML rendering — shared style
 # ---------------------------------------------------------------------
 BASE_CSS = """
-:root{--ink:#EDECE4;--paper:#0B1220;--panel:#111a2b;--line:#22304a;
---gold:#D4A73A;--green:#3FB68B;--muted:#93a0b8;}
+:root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
+--ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
+--accent:#2BAF66;--purple:#6D28D9;}
 *{box-sizing:border-box;}
+@media (prefers-reduced-motion: no-preference){
+  .fade-in{animation:fadeUp .45s ease both;}
+  .fade-in.d2{animation-delay:.06s;} .fade-in.d3{animation-delay:.12s;}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
+}
 body{margin:0;background:var(--paper);color:var(--ink);
-font-family:'IBM Plex Mono',monospace;line-height:1.6;}
-.wrap{max-width:760px;margin:0 auto;padding:28px 18px 70px;}
-a{color:var(--gold);}
-.top{display:flex;align-items:baseline;gap:10px;color:var(--gold);
-letter-spacing:.06em;font-size:14px;border-bottom:1px solid var(--line);
-padding-bottom:14px;margin-bottom:22px;}
+font-family:'Inter','IBM Plex Sans',sans-serif;line-height:1.55;}
+.wrap{max-width:720px;margin:0 auto;padding:24px 16px 70px;}
+a{color:var(--primary);}
+.top{display:flex;align-items:baseline;gap:10px;color:var(--ink);
+font-weight:600;font-size:14px;border-bottom:1px solid var(--line);
+padding-bottom:14px;margin-bottom:20px;}
 .top .lbl{color:var(--muted);font-weight:400;}
-h1{font-family:'Fraunces',serif;font-size:1.6em;margin:.2em 0;}
-h2{font-family:'Fraunces',serif;font-size:1.25em;margin:1em 0 .4em;}
-h3{color:var(--gold);font-size:1em;margin:1.2em 0 .3em;}
-p{margin:.4em 0;}
+h1{font-family:'Inter',sans-serif;font-weight:800;font-size:1.55em;
+margin:.2em 0;letter-spacing:-.01em;color:var(--ink);}
+h2{font-family:'Inter',sans-serif;font-weight:700;font-size:1.12em;
+margin:1em 0 .35em;color:var(--ink);}
+h3{color:var(--primary);font-size:.95em;margin:1.2em 0 .3em;font-weight:700;}
+p{margin:.45em 0;}
 .muted{color:var(--muted);font-size:.9em;}
+.eyebrow{display:inline-block;color:var(--primary);font-size:.72em;
+font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px;}
 .card{background:var(--panel);border:1px solid var(--line);
-border-radius:10px;padding:18px;margin:16px 0;}
-.btn{display:inline-flex;align-items:center;gap:8px;background:var(--gold);
-color:#0B1220;font-weight:600;font-size:14px;text-decoration:none;
-padding:11px 16px;border:none;border-radius:6px;cursor:pointer;
+border-radius:10px;padding:18px;margin:16px 0;
+box-shadow:0 1px 3px rgba(20,23,28,.06);}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--primary);
+color:#fff;font-weight:600;font-size:14px;text-decoration:none;
+padding:11px 18px;border:none;border-radius:6px;cursor:pointer;
 margin:6px 6px 0 0;}
-.btn.alt{background:var(--panel);color:var(--ink);border:1px solid var(--line);}
-.btn.green{background:var(--green);}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
-gap:14px;margin:18px 0 30px;}
+.btn.alt{background:#fff;color:var(--ink);border:1px solid var(--line);}
+.btn.green{background:var(--accent);}
+.grid{display:flex;flex-direction:column;gap:12px;margin:18px 0 30px;}
 .ccard{display:flex;align-items:center;gap:14px;background:var(--panel);
-border:1px solid var(--line);border-left:4px solid var(--gold);
-border-radius:12px;padding:16px;text-decoration:none;color:inherit;}
-.ccard:hover{border-color:var(--gold);}
-.ccard .icon{font-size:1.8em;width:50px;height:50px;flex-shrink:0;
-display:flex;align-items:center;justify-content:center;
-background:rgba(212,167,58,.12);border-radius:12px;}
+border:1px solid var(--line);border-radius:10px;padding:14px;
+text-decoration:none;color:inherit;box-shadow:0 1px 3px rgba(20,23,28,.05);}
+.ccard:hover{border-color:var(--primary);box-shadow:0 2px 8px rgba(0,86,210,.12);}
+.ccard .stamp{width:52px;height:52px;flex-shrink:0;display:flex;
+align-items:center;justify-content:center;font-size:1.5em;border-radius:10px;
+background:var(--accent-bg,rgba(0,86,210,.08));}
 .ccard .body{flex:1;min-width:0;}
-.ccard .body h2{margin:0 0 3px;font-size:1.05em;}
+.ccard .body h2{margin:0 0 3px;font-size:1.02em;}
 .ccard .tag{font-size:.82em;color:var(--muted);margin:0 0 4px;}
 .ccard .latest{font-size:.8em;margin:0;overflow:hidden;text-overflow:ellipsis;
-white-space:nowrap;}
-.ccard .arrow{font-size:1.5em;color:var(--muted);}
-.plist a{display:block;background:var(--panel);border:1px solid var(--line);
-border-radius:8px;padding:12px 14px;margin:8px 0;text-decoration:none;
-color:var(--ink);}
-.plist a:hover{border-color:var(--gold);}
-.plist .d{color:var(--gold);font-size:.85em;margin-right:8px;}
-.badge{display:inline-block;background:var(--gold);color:#0B1220;
-font-size:.72em;font-weight:700;padding:2px 8px;border-radius:20px;
-margin-bottom:8px;}
+white-space:nowrap;color:var(--ink);opacity:.75;}
+.ccard .stub{flex-shrink:0;text-align:center;padding-left:10px;
+border-left:1px solid var(--line);}
+.ccard .stub-n{font-weight:800;font-size:1.15em;color:var(--primary);line-height:1;}
+.ccard .stub-l{font-size:.62em;color:var(--muted);text-transform:uppercase;
+letter-spacing:.03em;margin-top:2px;}
+.plist a{display:flex;align-items:center;gap:12px;background:var(--panel);
+border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin:8px 0;
+text-decoration:none;color:var(--ink);box-shadow:0 1px 2px rgba(20,23,28,.04);}
+.plist a:hover{border-color:var(--primary);}
+.plist .d{display:flex;align-items:center;justify-content:center;
+flex-shrink:0;width:34px;height:34px;border-radius:50%;
+background:rgba(0,86,210,.09);color:var(--primary);font-weight:700;
+font-size:.72em;}
+.badge{display:inline-block;background:var(--accent);color:#fff;
+font-size:.7em;font-weight:700;padding:3px 10px;border-radius:20px;
+margin-bottom:8px;text-transform:uppercase;letter-spacing:.04em;}
 footer{color:var(--muted);font-size:12px;margin-top:40px;text-align:center;}
-.brand-bar{display:flex;align-items:center;gap:12px;margin-bottom:18px;}
-.brand-bar img{width:52px;height:52px;border-radius:50%;flex-shrink:0;
-object-fit:cover;background:transparent;
-border:1px solid var(--line);}
-.brand-bar .bname{font-family:'Fraunces',serif;font-weight:700;
-color:var(--gold);font-size:1.15em;line-height:1.2;}
-.brand-bar .btag{color:var(--muted);font-size:.82em;}
+.brand-bar{display:flex;align-items:center;gap:12px;margin-bottom:6px;}
+.brand-bar img{width:46px;height:46px;border-radius:10px;flex-shrink:0;
+object-fit:cover;background:#fff;border:1px solid var(--line);}
+.brand-bar .bname{font-family:'Inter',sans-serif;font-weight:800;
+color:var(--ink);font-size:1.1em;line-height:1.25;}
+.brand-bar .btag{color:var(--muted);font-size:.78em;}
 .brand-footer{border-top:1px solid var(--line);margin-top:34px;
 padding-top:16px;display:flex;align-items:center;gap:12px;}
-.brand-footer img{width:38px;height:38px;border-radius:50%;flex-shrink:0;
-object-fit:cover;background:transparent;}
-.brand-footer .txt{font-size:.82em;color:var(--muted);line-height:1.5;}
+.brand-footer img{width:36px;height:36px;border-radius:8px;flex-shrink:0;
+object-fit:cover;background:#fff;border:1px solid var(--line);}
+.brand-footer .txt{font-size:.8em;color:var(--muted);line-height:1.5;}
 .brand-footer .txt b{color:var(--ink);}
 """
 
@@ -661,9 +677,9 @@ HEAD = """<!DOCTYPE html>
 <link rel="icon" href="{logo_href}">
 {pwa_extra}
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>{css}</style></head><body><div class="wrap">
-<div class="brand-bar"><img src="{logo_href}" alt="{brand}">
+<div class="brand-bar fade-in"><img src="{logo_href}" alt="{brand}">
 <div><div class="bname">{brand}</div><div class="btag">Learn · Earn · Grow</div></div></div>
 """
 
@@ -695,26 +711,26 @@ def render_home(posts):
         latest = lessons[-1]["title"] if lessons else "Pehla lesson jald aa raha hai"
         accent = ACCENTS[i % len(ACCENTS)]
         cards.append(f"""
-    <a class="ccard" style="border-left-color:{accent}" href="courses/{slug}/index.html">
-      <div class="icon">{course['icon']}</div>
+    <a class="ccard fade-in" href="courses/{slug}/index.html">
+      <div class="stamp" style="--accent-bg:{accent}1a;color:{accent}">{course['icon']}</div>
       <div class="body">
         <h2>{html.escape(course['name'])}</h2>
         <p class="tag">{html.escape(course['tagline'])}</p>
         <p class="latest">📖 {html.escape(latest)}</p>
-        <p class="muted">{count} daily lesson{'s' if count != 1 else ''} so far</p>
       </div>
-      <div class="arrow">›</div>
+      <div class="stub" style="color:{accent}"><span class="stub-n" style="color:{accent}">{count:02d}</span><span class="stub-l">{'lesson' if count == 1 else 'lessons'}</span></div>
     </a>""")
 
     logo_href = BRAND_LOGO
     body = f"""
-    <div class="top"><span style="color:var(--gold);font-weight:700">{html.escape(BRAND_NAME)}</span>
+    <div class="top"><span>{html.escape(BRAND_NAME)}</span>
     <span class="lbl">Digital Hub — apni pasand ka course chunein</span></div>
-    <h1>🎓 Roz ek naya practical lesson</h1>
-    <p class="muted">📅 Har course ka naya lesson roz <b>3:00 PM Pakistan time</b> par yahan post hota hai.
+    <span class="eyebrow fade-in">Course Library</span>
+    <h1 class="fade-in">🎓 Roz ek naya practical lesson</h1>
+    <p class="muted fade-in d2">📅 Har course ka naya lesson roz <b>3:00 PM Pakistan time</b> par yahan post hota hai.
     Jis course mein interest ho us par tap karein — daily lesson step-by-step parhein aur practice karein.</p>
-    <p>{direct_link_button_html("🚀 Start Learning")}</p>
-    <p>{bell_button_html()}</p>
+    <p class="fade-in d2">{direct_link_button_html("🚀 Start Learning")}</p>
+    <p class="fade-in d2">{bell_button_html()}</p>
     <div class="grid">{''.join(cards)}</div>
     {brand_footer_html(logo_href)}
     """
@@ -736,7 +752,7 @@ def render_course_page(slug, course, lessons):
     for lesson in reversed(lessons):
         items.append(
             f'<a href="posts/{lesson["date"]}-{lesson["id"]}.html">'
-            f'<span class="d">Day {lesson["day"]:02d}</span>{html.escape(lesson["title"])}</a>'
+            f'<span class="d">{lesson["day"]:02d}</span>{html.escape(lesson["title"])}</a>'
         )
     listing = "".join(items) if items else '<p class="muted">Abhi koi lesson nahi — pehla jald aayega.</p>'
 
