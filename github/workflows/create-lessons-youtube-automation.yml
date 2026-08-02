@@ -1,0 +1,37 @@
+name: create-lessons-youtube-automation
+
+on:
+  schedule:
+    - cron: '0 8 * * *'
+  workflow_dispatch: {}
+
+concurrency:
+  group: create-lessons-youtube-automation
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: YouTube Automation ka lesson generate karo
+        env:
+          COURSE_SLUG: youtube-automation
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          SITE_URL: ${{ secrets.SITE_URL }}
+        run: python generate_post.py
+      - name: Commit aur push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "Auto: YouTube Automation — naya lesson [skip ci]"
+          git pull --rebase origin main
+          git push
