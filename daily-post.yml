@@ -1,9 +1,13 @@
 name: Daily Course Lessons
 
+# Har din 3:00 PM Pakistan time par chalta hai, aur COURSES dictionary
+# (generate_post.py ke andar) mein diye gaye HAR course ka agla daily
+# lesson generate + post karta hai, phir poori docs/ site update karta hai.
+
 on:
   schedule:
     - cron: "0 10 * * *"   # 3:00 PM Pakistan Time (PKT = UTC+5)
-  workflow_dispatch: {}
+  workflow_dispatch: {}     # Actions tab se manual "Run workflow" ke liye
 
 permissions:
   contents: write
@@ -38,7 +42,7 @@ jobs:
         run: |
           git config user.name "auto-post-bot"
           git config user.email "actions@github.com"
-          git add .
+          git add lessons/ docs/ posts.json
           git commit -m "Daily lessons: $(date +'%d-%m-%Y %H:%M')" || echo "Kuch naya nahi hai"
           git pull --rebase
           git push
