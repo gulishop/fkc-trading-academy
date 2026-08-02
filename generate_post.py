@@ -352,7 +352,7 @@ def gemini_generate(prompt_text, max_retries=5):
         raise RuntimeError("GEMINI_API_KEY set nahi hai.")
     url = (
         "https://generativelanguage.googleapis.com/v1beta/models/"
-        f"gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}"
+        f"gemini-2.5-flash-lite:generateContent?key={GEMINI_API_KEY}"
     )
     body = json.dumps({"contents": [{"parts": [{"text": prompt_text}]}]}).encode()
 
