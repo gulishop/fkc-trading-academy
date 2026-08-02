@@ -25,6 +25,15 @@ kar dein — baaki sab khud ban jayega.
 
 Usage (GitHub Action isay khud chalata hai):
     python generate_post.py
+
+Sirf EK course generate karna ho (alag scheduled runs ke liye), COURSE_SLUG
+environment variable set karein ya slug ko pehle argument ke tor par dein:
+    COURSE_SLUG=amazon-fba python generate_post.py
+    python generate_post.py amazon-fba
+
+Is case mein sirf usi course ka lesson generate + rebuild hota hai, lekin
+docs/index.html (home page) hamesha SAB courses ke latest data se dobara
+banta hai — is liye home page kabhi purana nahi rehta.
 """
 import os
 import re
@@ -736,7 +745,17 @@ def post_to_facebook(course, lesson):
 def main():
     posts = load_posts()
 
-    for slug, course in COURSES.items():
+    # Sirf ek course chalana ho to COURSE_SLUG env var ya CLI arg se slug lein.
+    target_slug = os.environ.get("COURSE_SLUG") or (sys.argv[1] if len(sys.argv) > 1 else None)
+    if target_slug:
+        if target_slug not in COURSES:
+            print(f"Course slug '{target_slug}' COURSES dictionary mein nahi mila.", file=sys.stderr)
+            sys.exit(1)
+        courses_to_run = {target_slug: COURSES[target_slug]}
+    else:
+        courses_to_run = COURSES
+
+    for slug, course in courses_to_run.items():
         existing = posts.get(slug, [])
         next_day = len(existing) + 1
         previous_titles = [l["title"] for l in existing]
@@ -761,8 +780,9 @@ def main():
 
     save_posts(posts)
 
-    # rebuild course pages + home page (based on full posts.json, not just today)
-    for slug, course in COURSES.items():
+    # rebuild course pages (sirf jo is run mein chalay) + home page (hamesha
+    # full posts.json se, taake home page sab courses ke sath up-to-date rahe)
+    for slug, course in courses_to_run.items():
         lessons = posts.get(slug, [])
         os.makedirs(os.path.join(DOCS_DIR, "courses", slug), exist_ok=True)
         with open(os.path.join(DOCS_DIR, "courses", slug, "index.html"), "w", encoding="utf-8") as f:
