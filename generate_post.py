@@ -549,6 +549,7 @@ HEAD = """<!DOCTYPE html>
 <meta property="og:image" content="{ogimage}">
 <meta name="twitter:card" content="summary_large_image">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5639688573760714" crossorigin="anonymous"></script>
+<script src="https://pl30647963.effectivecpmnetwork.com/35/50/90/355090180a90a458c3f1895b8e9f6607.js"></script>
 <link rel="icon" href="{logo_href}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
