@@ -1,4 +1,0 @@
-# generate_post.py sirf Python ki built-in libraries use karta hai
-# (json, urllib, re, os, html, datetime) — is liye koi extra package
-# zaroori nahi. Yeh file sirf isliye rakhi gayi hai taake workflow ka
-# "pip install -r requirements.txt" step bina error ke chal jaye.
