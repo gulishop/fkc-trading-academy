@@ -1,70 +1,59 @@
+#!/usr/bin/env python3
 """
-Multi-Course Daily Lesson Generator
--------------------------------------
-Ye script har course ke liye EK daily lesson generate karta hai (roz 3:00 PM
-Pakistan time par GitHub Actions se chalta hai) aur:
+Skill Academy — Multi-Course Daily Lesson Generator.
 
-1. Google Gemini (FREE API) se har course ka naya step-by-step lesson likhta hai
-2. Har lesson ko uske course ke apne folder mein HTML page banata hai
-   (courses/<course-slug>/posts/<date>-<id>.html)
-3. Har course ka apna index page update karta hai (courses/<course-slug>/index.html)
-   jisme us course ke saare lessons list hote hain (daily order mein)
-4. Main homepage (index.html) update karta hai jahan har course ek tappable
-   card ke through dikhta hai (logo/icon ke sath)
-5. Har lesson page par Share buttons (WhatsApp/Facebook/Telegram/Instagram/Other) hote hain
-6. Optionally har naye lesson ko Facebook Page aur Telegram par bhi post karta hai
+Har din (GitHub Action se, 3:00 PM Pakistan time par) yeh script chalta
+hai aur COURSES dictionary mein diye gaye HAR course ke liye us course
+ka "agla" daily lesson generate karta hai (Gemini AI se, agar lessons/
+mein file pehle se maujood nahi), phir poori site (docs/) dobara
+banata hai:
 
-Naya course add karna ho to bas neeche "COURSES" dictionary mein ek naya
-entry add karo — baaki sab automatically kaam karega (index, pages, posting).
+  docs/index.html                              -> home page, course cards
+  docs/courses/<slug>/index.html                -> us course ke sab lessons
+  docs/courses/<slug>/posts/<date>-day-XX.html  -> ek individual lesson,
+                                                    Share buttons ke sath
+  posts.json                                    -> har course ki history
+                                                    (source of truth)
+  lessons/<slug>/day-XX.md                      -> raw lesson text (aap
+                                                    khud bhi yahan file
+                                                    daal kar Gemini ko
+                                                    us din ke liye skip
+                                                    kar sakte hain)
 
-Environment variables (GitHub Secrets se aate hain):
-- GEMINI_API_KEY        -> Google AI Studio se free API key
-- FB_PAGE_ID / FB_PAGE_ACCESS_TOKEN  -> (optional) Facebook auto-posting
-- TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID -> (optional) Telegram auto-posting
+Naya course add karna ho to bas COURSES dictionary mein ek entry add
+kar dein — baaki sab khud ban jayega.
+
+Usage (GitHub Action isay khud chalata hai):
+    python generate_post.py
 """
-
 import os
+import re
 import sys
 import json
-import random
-import time
-from datetime import datetime
-from google import genai
-import requests
+import html
+import datetime
+import urllib.request
+import urllib.parse
 
-# ---------- SITE CONFIG ----------
-SITE_TITLE = "Skill Academy — Daily Lessons"
-SITE_TAGLINE = "✨ Har Roz Ek Naya Practical Lesson — Apni Pasand Ka Course Chuno"
-SITE_URL = os.environ.get("SITE_URL", "https://example.github.io/skill-academy/")
-TELEGRAM_CHANNEL_LINK = os.environ.get("TELEGRAM_CHANNEL_LINK", "https://t.me/YourChannel")
-
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
-
-FB_PAGE_ID = os.environ.get("FB_PAGE_ID")
-FB_PAGE_ACCESS_TOKEN = os.environ.get("FB_PAGE_ACCESS_TOKEN")
-TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
-TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
-
-# ---------- COURSES ----------
-# Naya course add karna ho to bas ek naya entry yahan add kar dein.
-# "topics" list mein jitne zyada items honge utna lamba cycle chalega
-# (ek dafa sab topics cover hone ke baad dubara shuru ho jata hai).
+# ---------------------------------------------------------------------
+# 1. COURSES — yahan naya course add/hata/edit karein
+# ---------------------------------------------------------------------
 COURSES = {
     "youtube-automation": {
         "name": "YouTube Automation",
         "icon": "🎬",
         "tagline": "Bina face show kiye YouTube channel banayein aur grow karein",
         "topics": [
-            "YouTube Automation channel kaise start karein - complete roadmap",
-            "Faceless YouTube channel ke liye niche kaise choose karein",
-            "AI voiceover aur script se video kaise banayein",
-            "YouTube SEO - title, tags aur description sahi kaise likhein",
-            "Thumbnail design ke rules jo CTR barhate hain",
-            "YouTube Monetization (AdSense) ke liye eligibility aur steps",
-            "Video editing tools jo beginners free mein use kar sakte hain",
-            "YouTube Shorts se channel ko fast grow kaise karein",
-            "Copyright se bachne ke liye content sourcing ke sahi tareeke",
-            "Consistency aur upload schedule kaise maintain karein",
+            "Niche select karna aur channel setup",
+            "Script likhna AI se",
+            "Faceless video banane ke tools (CapCut, Pictory, etc.)",
+            "Voiceover aur background music",
+            "Thumbnail aur title jo click karwaye",
+            "YouTube SEO aur tags",
+            "Monetization (AdSense) ke rules",
+            "Upload schedule aur consistency",
+            "Analytics padhna aur improve karna",
+            "Channel ko scale karna / team banana",
         ],
     },
     "social-media-marketing": {
@@ -72,135 +61,135 @@ COURSES = {
         "icon": "📱",
         "tagline": "Brands aur businesses ke liye social media grow karna seekhein",
         "topics": [
-            "Social Media Marketing kya hai aur beginners kahan se shuru karein",
-            "Content calendar kaise banayein jo consistent posting yaqeeni banaye",
-            "Instagram par organic reach barhane ke practical tarike",
-            "Facebook Ads ka basic structure - campaign, ad set, ad",
-            "Engaging captions aur hooks likhne ka formula",
-            "Hashtag research sahi tarike se kaise karein",
-            "Client ke liye social media report kaise banayein",
-            "Reels aur short-form video trends ko kaise use karein",
-            "Community management - comments aur DMs handle karna",
-            "Personal brand banane ke 3 zaroori steps",
+            "Social media strategy banana",
+            "Content calendar planning",
+            "Reels/Shorts jo viral hon",
+            "Instagram growth tactics",
+            "Engagement aur community building",
+            "Paid ads basics (Meta Ads Manager)",
+            "Influencer collaborations",
+            "Analytics aur reporting client ko",
+            "Client dhoondna aur pitch karna",
+            "Ek chhoti agency shuru karna",
         ],
     },
     "ai-tools": {
         "name": "AI Tools & Automation",
         "icon": "🤖",
-        "tagline": "Roz kaam aasan banane wale AI tools aur prompts seekhein",
+        "tagline": "Roz kaam aasan banane wale AI tools aur automation seekhein",
         "topics": [
-            "ChatGPT se roz ka kaam fast kaise karein - practical examples",
-            "AI se content writing ke liye prompt engineering basics",
-            "AI image generation tools (jaise Midjourney) ka istemal",
-            "AI se video script aur voiceover kaise banayein",
-            "No-code automation tools (Zapier/Make) ka basic use",
-            "AI se resume aur cover letter kaise improve karein",
-            "AI chatbot business mein kaise use hota hai",
-            "Freelancers ke liye best AI productivity tools",
-            "AI se data analysis aur Excel tasks fast karna",
-            "AI tools use karte waqt privacy aur accuracy ka khayal",
+            "ChatGPT/Gemini se prompt likhna (prompt engineering basics)",
+            "AI se content, captions, aur emails likhwana",
+            "AI image generation (Midjourney/Ideogram)",
+            "AI video tools",
+            "No-code automation (Zapier/Make) se workflows",
+            "AI chatbot banana business ke liye",
+            "AI se data/Excel kaam automate karna",
+            "AI tools bech kar service dena (freelance AI agency)",
+            "Latest AI tools jo naye aa rahe hain",
+            "AI ko responsibly aur safely use karna",
         ],
     },
     "facebook-page-growth": {
         "name": "Facebook Page Growth",
         "icon": "👍",
-        "tagline": "Apna Facebook Page organic tareeke se grow karein",
+        "tagline": "Facebook Page se organic reach aur sales badhana seekhein",
         "topics": [
-            "Naya Facebook Page banate waqt zaroori settings",
-            "Page ke liye pehle 1000 followers kaise laayein",
-            "Facebook algorithm 2026 mein kis tarah ka content push karta hai",
-            "Facebook Page insights padhna aur samajhna",
-            "Engagement barhane wale post formats (poll, question, carousel)",
-            "Facebook Groups se Page traffic kaise laayein",
-            "Boost post vs proper Ads campaign - kab kya use karein",
-            "Page ko monetize karne ke tareeke (In-stream ads, stars)",
-            "Negative comments aur reviews handle karne ka sahi tareeka",
-            "Consistent branding - cover photo, bio aur CTA button",
+            "Facebook Page professional setup karna",
+            "Content jo Facebook par chalta hai",
+            "Reels aur video content",
+            "Groups se traffic lana",
+            "Facebook Ads basics",
+            "Messenger se sales close karna",
+            "Facebook Marketplace se bechna",
+            "Page ko monetize karna",
+            "Fake/copyright issues se bachna",
+            "Page ko brand mein badalna",
         ],
     },
     "amazon-fba": {
         "name": "Amazon FBA",
         "icon": "📦",
-        "tagline": "Amazon par apna private label product bech na seekhein",
+        "tagline": "Amazon par apna private-label product bech kar business banayein",
         "topics": [
-            "Amazon FBA kya hai aur ye kaise kaam karta hai",
-            "Product research kaise karein - winning product ke signs",
-            "Supplier (Alibaba) se sample mangwane ka process",
-            "Amazon listing optimize karna - title, bullet points, images",
-            "FBA fees aur profit margin calculate kaise karein",
-            "PPC ads se Amazon listing ko rank kaise karayein",
-            "Inventory management aur restocking ki planning",
-            "Amazon account suspension se bachne ke rules",
-            "Reviews aur ratings improve karne ke tareeke",
-            "Private label vs Wholesale vs Dropshipping - farq samjhein",
+            "Amazon FBA model samajhna",
+            "Product research (demand, competition, margin)",
+            "Supplier dhoondna (Alibaba)",
+            "Sample order aur quality check",
+            "Amazon seller account banana",
+            "Listing banana (title, bullet points, images)",
+            "FBA shipment bhejna",
+            "PPC ads chalana",
+            "Reviews aur ranking badhana",
+            "Numbers/profit track karna",
         ],
     },
     "daraz-seller": {
         "name": "Daraz Seller",
         "icon": "🛒",
-        "tagline": "Pakistan ke sabse bade marketplace par seller banein",
+        "tagline": "Pakistan ke sabse bade marketplace par apni dukaan banayein",
         "topics": [
-            "Daraz par seller account kaise banayein - step by step",
-            "Winning product Daraz ke liye kaise dhoondein",
-            "Daraz listing ke liye achi photos aur description",
-            "Daraz Seller Center dashboard samajhna",
-            "Pricing strategy jo competitors se better convert kare",
-            "Daraz Ads (Sponsored) se sales kaise barhayein",
-            "Order aur return process sahi tarike se handle karna",
-            "Daraz performance metrics jo seller rating par asar dalte hain",
-            "Local suppliers se product sourcing ke tips",
-            "Daraz par seasonal sales (11.11, 12.12) ke liye tayari",
+            "Daraz Seller Center account banana",
+            "Product research Pakistan market ke liye",
+            "Listing aur pricing strategy",
+            "Product photos jo bikte hain",
+            "Daraz Ads (Sponsored Discovery)",
+            "Orders aur delivery (Daraz Express/Dropship)",
+            "Rating aur reviews manage karna",
+            "Vouchers aur campaigns mein hissa lena",
+            "Return/refund handle karna",
+            "Store ko monthly scale karna",
         ],
     },
     "dropshipping": {
         "name": "Dropshipping",
         "icon": "🚚",
-        "tagline": "Bina inventory rakhe online store se product bechna seekhein",
+        "tagline": "Bina stock rakhe online store se products bechna seekhein",
         "topics": [
-            "Dropshipping business model beginners ke liye explained",
-            "Winning product research ke practical tarike",
-            "Shopify store setup karne ka step-by-step guide",
-            "Reliable supplier (AliExpress/local) kaise choose karein",
-            "Facebook/TikTok Ads se dropshipping store par traffic laana",
-            "Store ki conversion rate improve karne ke tips",
-            "Customer service aur delivery delays handle karna",
-            "Dropshipping mein profit margin sahi kaise calculate karein",
-            "Branding se generic dropshipping store ko alag banana",
-            "Common mistakes jo naye dropshippers karte hain",
+            "Dropshipping model samajhna",
+            "Winning product dhoondna",
+            "Supplier dhoondna (local ya AliExpress)",
+            "Shopify/WhatsApp store banana",
+            "Product page jo convert kare",
+            "Facebook/TikTok ads se traffic lana",
+            "Cash on delivery orders handle karna (Pakistan)",
+            "Customer support aur trust banana",
+            "Return/refund policy",
+            "Store ko scale karna",
         ],
     },
     "freelancing": {
         "name": "Freelancing",
-        "icon": "💻",
-        "tagline": "Fiverr, Upwork aur online kaam se ghar baithe kamayein",
+        "icon": "💼",
+        "tagline": "Fiverr, Upwork jaisi platforms se ghar baithe kamana seekhein",
         "topics": [
-            "Freelancing shuru karne ke liye sahi skill kaise choose karein",
-            "Fiverr par winning gig kaise banayein",
-            "Upwork proposal likhne ka formula jo replies laata hai",
-            "Client se sahi tarike se communicate karna",
-            "Freelancing rates sahi tarike se set karna",
-            "Pehla client kaise laayein - beginner strategy",
-            "Portfolio banane ke liye bina experience ke bhi options",
-            "Time management - multiple clients ek sath handle karna",
-            "Payment safely receive karne ke tareeke Pakistan se",
-            "Long-term client relationships kaise banayein",
+            "Sahi skill choose karna",
+            "Fiverr/Upwork profile banana jo client ko impress kare",
+            "Winning gig/proposal likhna",
+            "Portfolio banana bina experience ke",
+            "Client se communication",
+            "Pricing aur negotiation",
+            "Pehla order lena",
+            "5-star review lena",
+            "Multiple platforms par expand karna",
+            "Freelancing se agency tak jana",
         ],
     },
     "digital-marketing-seo": {
         "name": "Digital Marketing & SEO",
-        "icon": "📊",
-        "tagline": "Websites aur brands ko Google par rank karana seekhein",
+        "icon": "📈",
+        "tagline": "Websites aur brands ko Google par rank karwana seekhein",
         "topics": [
-            "SEO kya hai aur ye kaam kaise karta hai - basics",
-            "Keyword research free tools se kaise karein",
-            "On-page SEO checklist - har blog post ke liye",
-            "Backlinks kya hote hain aur inhe safely kaise banayein",
-            "Google My Business se local business rank karana",
-            "Email marketing se leads ko customer mein convert karna",
-            "Google Ads ka basic campaign structure",
-            "Website speed aur SEO ka taalluq",
-            "Content marketing strategy jo organic traffic laaye",
-            "Analytics (Google Analytics) padhna seekhein",
+            "Digital marketing ka poora landscape",
+            "SEO basics (keywords, on-page)",
+            "Google search console aur analytics",
+            "Content marketing strategy",
+            "Email marketing basics",
+            "Google Ads basics",
+            "Local SEO (Google Business Profile)",
+            "Backlinks aur off-page SEO",
+            "SEO client kaise dhoondein",
+            "Ek chhota SEO audit khud karna",
         ],
     },
     "graphic-design-canva": {
@@ -208,393 +197,482 @@ COURSES = {
         "icon": "🎨",
         "tagline": "Bina design background ke professional graphics banayein",
         "topics": [
-            "Canva ka interface aur zaroori tools samajhna",
-            "Social media post design ke liye sahi size aur layout",
-            "Color combinations jo professional lagti hain",
-            "Fonts pairing ke basic design rules",
-            "Logo design ke liye beginner-friendly tareeka",
-            "Canva templates ko apne brand ke mutabiq customize karna",
-            "Design se clients ke liye income kaise banayein",
-            "Thumbnail aur banner design ke practical tips",
-            "Free stock photos aur elements kahan se milte hain",
-            "Design consistency - brand kit kaise banayein",
+            "Canva interface aur basics",
+            "Color aur font combinations",
+            "Social media post templates",
+            "Logo aur brand kit banana",
+            "Thumbnail aur banner design",
+            "Presentation/pitch deck design",
+            "Mockups aur product design",
+            "AI tools Canva ke andar",
+            "Design bech kar paisa kamana (Fiverr/Etsy)",
+            "Apna design portfolio banana",
+        ],
+    },
+    "ai-content-writing": {
+        "name": "AI Content Writing & Copywriting",
+        "icon": "✍️",
+        "tagline": "AI ki madad se paisa kamane wala content aur copy likhein",
+        "topics": [
+            "Copywriting ke basics (hook, benefit, CTA)",
+            "AI se blog articles likhwana aur edit karna",
+            "Social captions aur ad copy",
+            "Sales page/landing page copy",
+            "Email sequences likhna",
+            "SEO content likhna",
+            "Apni writing ko AI se better banana",
+            "Content writing gigs dhoondna",
+            "Ek content writing portfolio banana",
+            "Content agency ka idea",
+        ],
+    },
+    "video-editing": {
+        "name": "Video Editing (CapCut/Premiere)",
+        "icon": "🎞️",
+        "tagline": "Reels se le kar YouTube tak — video editing ek in-demand skill",
+        "topics": [
+            "CapCut/Premiere interface basics",
+            "Cutting aur pacing jo attention rakhe",
+            "Captions/subtitles add karna",
+            "Transitions aur effects",
+            "Color grading basics",
+            "Sound design aur music sync",
+            "Short-form (Reels/Shorts) editing style",
+            "Long-form YouTube editing style",
+            "Export settings har platform ke liye",
+            "Editing services bech kar kamana",
+        ],
+    },
+    "affiliate-marketing": {
+        "name": "Affiliate Marketing",
+        "icon": "🔗",
+        "tagline": "Doosron ke products promote kar ke commission kamayein",
+        "topics": [
+            "Affiliate marketing model samajhna",
+            "Sahi niche aur platform choose karna",
+            "Amazon Associates / Daraz Affiliate program",
+            "Content banana jo bikri karwaye",
+            "Link placement aur disclosure",
+            "Social media se affiliate traffic",
+            "Email list se affiliate sales",
+            "Tracking aur analytics",
+            "Multiple income sources banana",
+            "Long-term affiliate brand banana",
+        ],
+    },
+    "print-on-demand": {
+        "name": "Print on Demand",
+        "icon": "👕",
+        "tagline": "Apni design se t-shirts/mugs bech kar bina inventory ke kamayein",
+        "topics": [
+            "Print on demand model samajhna",
+            "Platform choose karna (Printful/local vendors)",
+            "Design ideas aur trends dhoondna",
+            "Canva/AI se designs banana",
+            "Mockups banana",
+            "Store setup karna",
+            "Marketing (social/ads)",
+            "Pricing aur profit margin",
+            "Orders aur quality control",
+            "Store ko scale karna",
+        ],
+    },
+    "no-code-app-dev": {
+        "name": "No-Code App & Website Building",
+        "icon": "🧩",
+        "tagline": "Bina coding seekhe apps aur websites banana seekhein",
+        "topics": [
+            "No-code kya hai aur kyun demand mein hai",
+            "Website builders (Framer/Webflow/Wix)",
+            "App builders (FlutterFlow/Glide)",
+            "Database aur automation (Airtable/Notion)",
+            "AI se no-code development",
+            "Client project ka basic structure",
+            "MVP banana startup idea ke liye",
+            "No-code se freelancing",
+            "Hosting aur domain basics",
+            "No-code ki limitations samajhna",
         ],
     },
 }
 
-DEFAULT_HASHTAGS = ["#SkillDevelopment", "#OnlineEarning", "#LearnOnline", "#Pakistan"]
-BRAND_HASHTAGS = ["#SkillAcademy", "#DailyLesson"]
+SITE_URL = os.environ.get("SITE_URL", "").rstrip("/")
+TELEGRAM_CHANNEL_LINK = os.environ.get("TELEGRAM_CHANNEL_LINK", "")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
+TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
+FB_PAGE_ID = os.environ.get("FB_PAGE_ID", "")
+FB_PAGE_ACCESS_TOKEN = os.environ.get("FB_PAGE_ACCESS_TOKEN", "")
 
-# ---------- SETUP GEMINI ----------
-client = genai.Client(api_key=GEMINI_API_KEY)
-GEMINI_MODEL = "gemini-flash-latest"
+POSTS_JSON = "posts.json"
+LESSONS_DIR = "lessons"
+DOCS_DIR = "docs"
 
-
-class QuotaExceededError(Exception):
-    """Jab Gemini free-tier quota/rate-limit khatam ho jaye."""
-    pass
-
-
-def _is_quota_error(e):
-    text = str(e).lower()
-    return any(k in text for k in ["quota", "rate limit", "429", "resource_exhausted"])
+ACCENTS = ["#D4A73A", "#3FB68B", "#5B8DEF", "#E2574C", "#9B6BD8", "#2FB6C4"]
 
 
-def call_gemini(prompt, retries=3, delay=20):
-    last_err = None
-    for attempt in range(1, retries + 1):
-        try:
-            response = client.models.generate_content(model=GEMINI_MODEL, contents=prompt)
-            return response.text.strip()
-        except Exception as e:
-            last_err = e
-            if _is_quota_error(e):
-                if attempt < retries:
-                    print(f"⚠️ Quota/rate-limit hit (attempt {attempt}/{retries}), {delay}s baad retry karenge...")
-                    time.sleep(delay)
-                    continue
-                raise QuotaExceededError(str(e)) from e
-            raise
-    raise QuotaExceededError(str(last_err)) from last_err
-
-
-def pick_topic(course_slug, all_posts):
-    topics = COURSES[course_slug]["topics"]
-    course_posts = all_posts.get(course_slug, [])
-    recent_used = [p.get("topic") for p in course_posts[-(len(topics) - 1):] if p.get("topic")]
-    available = [t for t in topics if t not in recent_used]
-    if not available:
-        available = topics
-    return random.choice(available)
-
-
-def generate_content(topic, course_name):
-    prompt = f"""
-    Tum ek professional "{course_name}" mentor/instructor ho, jo daily step-by-step
-    lessons deta hai apne students ko (jaise ek online academy mein).
-    Aaj ka topic: "{topic}"
-
-    Ek chota, modern aur engaging daily lesson likho (Roman Urdu/Hindi + English mix,
-    jaisa online course communities mein likha jata hai). Requirements:
-    - 250-350 words
-    - Ek catchy heading do (pehli line, bina # ke) jisme relevant emoji ho, aur heading
-      se clearly pata chale lesson mein kya milega
-    - Content ko step-by-step ya bullet points mein likho (jaise Step 1, Step 2...) taake
-      student practice kar sake
-    - Har step/point ke shuru mein ek relevant emoji use karo
-    - Beginner-friendly, practical aur actionable tone rakho
-    - Ant mein ek short "Aaj ka practice task" line do jo student ko turant kuch karne ko kahe
-    - Koi "guaranteed income" ya "overnight success" jaisa jhoota claim mat karo
-    - Emojis natural lagne chahiye, overuse mat karo (max 1-2 per line)
-    """
-    return call_gemini(prompt)
-
-
-def generate_hashtags(topic, course_name):
-    prompt = f"""
-    Topic: "{topic}" (Course: {course_name})
-    Is online-course topic ke liye 6 relevant English hashtags do (jaise #Freelancing #OnlineEarning).
-    Sirf hashtags do, koi extra text nahi, ek line mein space se separate karke.
-    """
-    tags = None
-    try:
-        text = call_gemini(prompt, retries=1)
-        generated = [t for t in text.strip().split() if t.startswith("#")]
-        if len(generated) >= 3:
-            tags = generated
-    except Exception:
-        pass
-    if tags is None:
-        tags = DEFAULT_HASHTAGS
-
-    final_tags = list(BRAND_HASHTAGS)
-    for t in tags:
-        if t not in final_tags:
-            final_tags.append(t)
-    return final_tags
-
-
-def build_lesson_html(course_slug, title, body_text, date_str, slug, hashtags):
-    course = COURSES[course_slug]
-    paragraphs = "\n".join(f"<p>{line.strip()}</p>" for line in body_text.split("\n") if line.strip())
-    hashtags_html = " ".join(f'<span class="hashtag">{h}</span>' for h in hashtags)
-    hashtags_line = " ".join(hashtags)
-    post_url = f"{SITE_URL.rstrip('/')}/courses/{course_slug}/posts/{slug}.html"
-
-    share_text = (
-        f"{title}\n\n"
-        f"{body_text.strip()}\n\n"
-        f"{hashtags_line}\n\n"
-        f"📚 Course: {course['name']}\n"
-        f"📖 Ye lesson yahan padhein: {post_url}\n\n"
-        f"📢 Telegram Channel Join karein: {TELEGRAM_CHANNEL_LINK}"
-    )
-    share_text_json = json.dumps(share_text)
-    post_url_json = json.dumps(post_url)
-
-    return f"""<!DOCTYPE html>
-<html lang="ur">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{title} | {course['name']} | {SITE_TITLE}</title>
-<link rel="stylesheet" href="../../style.css">
-<link rel="stylesheet" href="../../courses.css">
-</head>
-<body>
-<div class="container">
-  <a href="../../index.html" class="back-link">&larr; Home</a>
-  <a href="../index.html" class="back-link course-back-link">{course['icon']} {course['name']} ke saare lessons</a>
-  <div class="post-card">
-    <p class="course-tag">{course['icon']} {course['name']}</p>
-    <h1>{title}</h1>
-    <p class="date">📅 {date_str}</p>
-    {paragraphs}
-    <p class="hashtags">{hashtags_html}</p>
-    <div class="share-box">
-      <p class="share-label">📤 Is lesson ko share karein:</p>
-      <div class="share-icons">
-        <a href="#" class="share-icon share-whatsapp" onclick="shareWhatsapp(); return false;" aria-label="Share on WhatsApp">💬 WhatsApp</a>
-        <a href="#" class="share-icon share-facebook" onclick="shareFacebook(); return false;" aria-label="Share on Facebook">📘 Facebook</a>
-        <a href="#" class="share-icon share-telegram" onclick="shareTelegram(); return false;" aria-label="Share on Telegram">✈️ Telegram</a>
-        <a href="#" class="share-icon share-instagram" onclick="shareInstagram(); return false;" aria-label="Share on Instagram">📸 Instagram</a>
-        <button class="share-icon share-other" onclick="shareOther()" aria-label="Other share options">🔗 Other</button>
-      </div>
-      <span class="share-copied" id="shareCopied">Link copied! ✅</span>
-    </div>
-    <p class="disclaimer">⚠️ Ye lesson sirf educational purpose ke liye hai. Practice consistently karein, results waqt lete hain.</p>
-  </div>
-</div>
-<script>
-const shareText = {share_text_json};
-const postUrl = {post_url_json};
-
-function copyAndNotify() {{
-  navigator.clipboard.writeText(shareText).then(() => {{
-    const el = document.getElementById("shareCopied");
-    el.classList.add("visible");
-    setTimeout(() => el.classList.remove("visible"), 2500);
-  }});
-}}
-
-function shareWhatsapp() {{
-  window.open("https://wa.me/?text=" + encodeURIComponent(shareText), "_blank");
-}}
-
-function shareFacebook() {{
-  copyAndNotify();
-  window.open("https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(postUrl), "_blank");
-}}
-
-function shareTelegram() {{
-  window.open("https://t.me/share/url?url=" + encodeURIComponent(postUrl) + "&text=" + encodeURIComponent(shareText), "_blank");
-}}
-
-function shareInstagram() {{
-  copyAndNotify();
-  window.open("https://www.instagram.com/", "_blank");
-}}
-
-function shareOther() {{
-  const shareData = {{ title: document.title, text: shareText }};
-  if (navigator.share) {{
-    navigator.share(shareData).catch(() => {{}});
-  }} else {{
-    copyAndNotify();
-  }}
-}}
-</script>
-</body>
-</html>"""
-
-
-def update_course_index(course_slug, all_posts):
-    course = COURSES[course_slug]
-    posts = all_posts.get(course_slug, [])
-    items = "\n".join(
-        f'<li><a href="posts/{p["slug"]}.html">{course["icon"]} {p["title"]}</a><span class="date">{p["date"]}</span></li>'
-        for p in reversed(posts)
-    )
-    html = f"""<!DOCTYPE html>
-<html lang="ur">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{course['name']} | {SITE_TITLE}</title>
-<link rel="stylesheet" href="../style.css">
-<link rel="stylesheet" href="../courses.css">
-</head>
-<body>
-<div class="container">
-  <a href="../index.html" class="back-link">&larr; Home / Saare Courses</a>
-  <h1>{course['icon']} {course['name']}</h1>
-  <p class="subtitle">{course['tagline']}</p>
-  <ul class="post-list">
-  {items if items else '<li class="empty">Pehla lesson jald aa raha hai — kal 3 PM PKT par wapis check karein! 🙂</li>'}
-  </ul>
-</div>
-</body>
-</html>"""
-    os.makedirs(f"courses/{course_slug}", exist_ok=True)
-    with open(f"courses/{course_slug}/index.html", "w", encoding="utf-8") as f:
-        f.write(html)
-
-
-def update_home_index(all_posts):
-    cards = []
-    for slug, course in COURSES.items():
-        posts = all_posts.get(slug, [])
-        lesson_count = len(posts)
-        latest = posts[-1]["title"] if posts else "Pehla lesson jald aa raha hai"
-        cards.append(f"""
-    <a class="course-card" href="courses/{slug}/index.html">
-      <div class="course-card-icon">{course['icon']}</div>
-      <div class="course-card-body">
-        <h2>{course['name']}</h2>
-        <p class="course-card-tagline">{course['tagline']}</p>
-        <p class="course-card-latest">📖 {latest}</p>
-        <p class="course-card-count">{lesson_count} daily lessons so far</p>
-      </div>
-      <div class="course-card-arrow">›</div>
-    </a>""")
-
-    html = f"""<!DOCTYPE html>
-<html lang="ur">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{SITE_TITLE}</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="courses.css">
-</head>
-<body>
-<div class="container">
-  <h1>🎓 {SITE_TITLE}</h1>
-  <p class="subtitle">{SITE_TAGLINE}</p>
-  <p class="home-note">📅 Har course ka naya lesson roz <strong>3:00 PM Pakistan time</strong> par post hota hai. Jis course mein interest ho, us par tap karein!</p>
-  <div class="course-grid">
-  {''.join(cards)}
-  </div>
-  <p class="footer-note">📢 Updates ke liye Telegram Channel Join karein 👉 <a href="{TELEGRAM_CHANNEL_LINK}" target="_blank" rel="noopener">{TELEGRAM_CHANNEL_LINK}</a></p>
-</div>
-</body>
-</html>"""
-    with open("index.html", "w", encoding="utf-8") as f:
-        f.write(html)
-
-
-def post_to_facebook(course, title, body_text, hashtags, post_url):
-    if not FB_PAGE_ID or not FB_PAGE_ACCESS_TOKEN:
-        return
-    hashtags_line = " ".join(hashtags)
-    message = (
-        f"{course['icon']} {course['name']} — Daily Lesson\n\n"
-        f"{title}\n\n"
-        f"{body_text.strip()}\n\n"
-        f"{hashtags_line}\n\n"
-        f"📖 Poora lesson: {post_url}\n"
-        f"📢 Telegram Channel: {TELEGRAM_CHANNEL_LINK}"
-    )
-    url = f"https://graph.facebook.com/v25.0/{FB_PAGE_ID}/feed"
-    payload = {"message": message, "link": post_url, "access_token": FB_PAGE_ACCESS_TOKEN}
-    try:
-        response = requests.post(url, data=payload, timeout=30)
-        data = response.json()
-        if "id" in data:
-            print(f"✅ Facebook pe post ho gaya ({course['name']}): {data['id']}")
-        else:
-            print(f"⚠️ Facebook post failed ({course['name']}): {data}")
-    except Exception as e:
-        print(f"⚠️ Facebook post error ({course['name']}): {e}")
-
-
-def post_to_telegram(course, title, body_text, hashtags, post_url):
-    if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
-        return
-    chat_ids = [c.strip() for c in TELEGRAM_CHAT_ID.split(",") if c.strip()]
-    hashtags_line = " ".join(hashtags)
-    message = (
-        f"{course['icon']} {course['name']} — Daily Lesson\n\n"
-        f"{title}\n\n"
-        f"{body_text.strip()}\n\n"
-        f"{hashtags_line}\n\n"
-        f"📖 Poora lesson: {post_url}\n"
-        f"📢 Channel Share karein 👉 {TELEGRAM_CHANNEL_LINK}"
-    )
-    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-    for chat_id in chat_ids:
-        payload = {"chat_id": chat_id, "text": message, "disable_web_page_preview": False}
-        try:
-            response = requests.post(url, data=payload, timeout=30)
-            data = response.json()
-            if data.get("ok"):
-                print(f"✅ Telegram ({chat_id}) pe post ho gaya ({course['name']})")
-            else:
-                print(f"⚠️ Telegram post failed ({chat_id}, {course['name']}): {data}")
-        except Exception as e:
-            print(f"⚠️ Telegram post error ({chat_id}, {course['name']}): {e}")
-
-
-def load_posts(posts_file):
-    if os.path.exists(posts_file):
-        with open(posts_file, "r", encoding="utf-8") as f:
+# ---------------------------------------------------------------------
+# 2. Helpers — posts.json load/save
+# ---------------------------------------------------------------------
+def load_posts():
+    if os.path.exists(POSTS_JSON):
+        with open(POSTS_JSON, encoding="utf-8") as f:
             return json.load(f)
     return {}
 
 
-def save_posts(posts_file, all_posts):
-    with open(posts_file, "w", encoding="utf-8") as f:
-        json.dump(all_posts, f, ensure_ascii=False, indent=2)
+def save_posts(posts):
+    with open(POSTS_JSON, "w", encoding="utf-8") as f:
+        json.dump(posts, f, ensure_ascii=False, indent=2)
 
 
-def generate_lesson_for_course(course_slug, all_posts):
-    course = COURSES[course_slug]
-    topic = pick_topic(course_slug, all_posts)
-    print(f"➡️ {course['icon']} {course['name']}: topic = {topic}")
-
+# ---------------------------------------------------------------------
+# 3. Lesson content — Gemini generate ya manual file parhein
+# ---------------------------------------------------------------------
+def gemini_generate(prompt_text):
+    if not GEMINI_API_KEY:
+        raise RuntimeError("GEMINI_API_KEY set nahi hai.")
+    url = (
+        "https://generativelanguage.googleapis.com/v1beta/models/"
+        f"gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}"
+    )
+    body = json.dumps({"contents": [{"parts": [{"text": prompt_text}]}]}).encode()
+    req = urllib.request.Request(
+        url, data=body, headers={"Content-Type": "application/json"}
+    )
+    with urllib.request.urlopen(req, timeout=60) as resp:
+        data = json.load(resp)
     try:
-        content = generate_content(topic, course["name"])
-    except QuotaExceededError as e:
-        print(f"⚠️ Gemini quota khatam ho gaya - {course['name']} ka lesson skip kiya. Details: {e}")
-        return
+        return data["candidates"][0]["content"]["parts"][0]["text"].strip()
+    except (KeyError, IndexError):
+        print("Gemini response se text nahi mila:", data, file=sys.stderr)
+        return ""
 
-    hashtags = generate_hashtags(topic, course["name"])
-    lines = content.split("\n")
-    title = lines[0].strip().lstrip("#").strip()
-    body = "\n".join(lines[1:]).strip()
 
-    today = datetime.now()
-    date_str = today.strftime("%d-%m-%Y")
-    slug = today.strftime("%Y-%m-%d") + "-" + str(random.randint(100, 999))
-
-    lesson_html = build_lesson_html(course_slug, title, body, date_str, slug, hashtags)
-    os.makedirs(f"courses/{course_slug}/posts", exist_ok=True)
-    with open(f"courses/{course_slug}/posts/{slug}.html", "w", encoding="utf-8") as f:
-        f.write(lesson_html)
-
-    all_posts.setdefault(course_slug, []).append(
-        {"title": title, "date": date_str, "slug": slug, "hashtags": hashtags, "topic": topic}
+def build_prompt(slug, course, day_num, previous_titles):
+    topics = course["topics"]
+    topic_hint = topics[(day_num - 1) % len(topics)]
+    prev = "; ".join(previous_titles[-6:]) if previous_titles else "(koi nahi, yeh pehla lesson hai)"
+    return (
+        f"Tum '{course['name']}' course ke ek teacher ho, Roman Urdu/Hindi mein "
+        f"beginner-to-intermediate students ke liye. Yeh course ka Day {day_num} hai. "
+        f"Poora curriculum yeh topics cover karta hai (order mein): {', '.join(topics)}. "
+        f"Aaj ka focus topic: '{topic_hint}' — lekin agar pichle lessons already isse "
+        f"cover kar chuke hain to agla logical topic khud choose kar lo aur curriculum se "
+        f"aage badhte raho, kabhi mat rukna (curriculum khatam ho jaye to isi field ke "
+        f"advanced/trending topics par khud aage likhte raho). "
+        f"Pichle lessons ke titles (dobara mat likhna): {prev}. "
+        "Format bilkul yeh follow karo, aur kuch mat likho: "
+        f"'# Day {day_num} — <chhota, clear title>' phir "
+        "'**Concept:**' (2-3 lines mein aaj ka topic samjhao), "
+        "'**Example:**' (ek practical/real misal ya chhota step-by-step tarika), "
+        "'**Practice:**' (1 kaam jo student abhi khud kare), "
+        "'**Mini Project:**' (agar is topic ke liye banta ho to 1 chhota project, warna skip kar do), "
+        "'**Answer Key:**' (Practice ka result represent karne wale 2-4 chhote keywords, comma se separate — sirf checking ke liye, student ko show nahi hoga). "
+        "Total length chhoti rakho (max ~350 words), practical aur step-by-step, koi extra intro/outro nahi."
     )
 
-    update_course_index(course_slug, all_posts)
 
-    post_url = f"{SITE_URL.rstrip('/')}/courses/{course_slug}/posts/{slug}.html"
-    post_to_facebook(course, title, body, hashtags, post_url)
-    post_to_telegram(course, title, body, hashtags, post_url)
+def parse_lesson_text(text, day_num):
+    lines = text.strip("\n").split("\n")
+    title = f"Day {day_num}"
+    body_start = 0
+    for i, line in enumerate(lines):
+        if line.strip().startswith("#"):
+            title = line.strip().lstrip("#").strip()
+            body_start = i + 1
+            break
+    rest = "\n".join(lines[body_start:]).strip()
 
-    print(f"✅ Lesson ban gaya: [{course['name']}] {title}")
+    pattern = re.compile(r"\*\*([^*\n]+):\*\*")
+    parts = pattern.split(rest)
+    preamble = parts[0].strip()
+
+    sections = []
+    for i in range(1, len(parts), 2):
+        label = parts[i].strip()
+        content = parts[i + 1].strip() if i + 1 < len(parts) else ""
+        sections.append([label, content])
+
+    answer_key = ""
+    kept_sections = []
+    for label, content in sections:
+        if "answer key" in label.lower():
+            answer_key = ", ".join(k.strip().lower() for k in content.split(",") if k.strip())
+        else:
+            kept_sections.append([label, content])
+
+    return title, preamble, kept_sections, answer_key
 
 
+def get_or_generate_lesson(slug, course, day_num, previous_titles):
+    padded = f"{day_num:03d}"
+    course_lessons_dir = os.path.join(LESSONS_DIR, slug)
+    os.makedirs(course_lessons_dir, exist_ok=True)
+    md_path = os.path.join(course_lessons_dir, f"day-{padded}.md")
+
+    if os.path.exists(md_path):
+        print(f"[{slug}] Pehle se likhi hui file mil gayi: {md_path}")
+        with open(md_path, encoding="utf-8") as f:
+            raw = f.read()
+    else:
+        print(f"[{slug}] Day {day_num} Gemini se generate ho raha hai...")
+        prompt = build_prompt(slug, course, day_num, previous_titles)
+        raw = gemini_generate(prompt)
+        if not raw:
+            print(f"[{slug}] Gemini se lesson nahi mila, aaj skip.", file=sys.stderr)
+            return None
+        with open(md_path, "w", encoding="utf-8") as f:
+            f.write(raw)
+
+    title, preamble, sections, answer_key = parse_lesson_text(raw, day_num)
+    today = datetime.date.today().isoformat()
+    return {
+        "day": day_num,
+        "id": f"day-{padded}",
+        "date": today,
+        "title": title,
+        "preamble": preamble,
+        "sections": sections,
+        "answer_key": answer_key,
+    }
+
+
+# ---------------------------------------------------------------------
+# 4. HTML rendering — shared style
+# ---------------------------------------------------------------------
+BASE_CSS = """
+:root{--ink:#EDECE4;--paper:#0B1220;--panel:#111a2b;--line:#22304a;
+--gold:#D4A73A;--green:#3FB68B;--muted:#93a0b8;}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--paper);color:var(--ink);
+font-family:'IBM Plex Mono',monospace;line-height:1.6;}
+.wrap{max-width:760px;margin:0 auto;padding:28px 18px 70px;}
+a{color:var(--gold);}
+.top{display:flex;align-items:baseline;gap:10px;color:var(--gold);
+letter-spacing:.06em;font-size:14px;border-bottom:1px solid var(--line);
+padding-bottom:14px;margin-bottom:22px;}
+.top .lbl{color:var(--muted);font-weight:400;}
+h1{font-family:'Fraunces',serif;font-size:1.6em;margin:.2em 0;}
+h2{font-family:'Fraunces',serif;font-size:1.25em;margin:1em 0 .4em;}
+h3{color:var(--gold);font-size:1em;margin:1.2em 0 .3em;}
+p{margin:.4em 0;}
+.muted{color:var(--muted);font-size:.9em;}
+.card{background:var(--panel);border:1px solid var(--line);
+border-radius:10px;padding:18px;margin:16px 0;}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--gold);
+color:#0B1220;font-weight:600;font-size:14px;text-decoration:none;
+padding:11px 16px;border:none;border-radius:6px;cursor:pointer;
+margin:6px 6px 0 0;}
+.btn.alt{background:var(--panel);color:var(--ink);border:1px solid var(--line);}
+.btn.green{background:var(--green);}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+gap:14px;margin:18px 0 30px;}
+.ccard{display:flex;align-items:center;gap:14px;background:var(--panel);
+border:1px solid var(--line);border-left:4px solid var(--gold);
+border-radius:12px;padding:16px;text-decoration:none;color:inherit;}
+.ccard:hover{border-color:var(--gold);}
+.ccard .icon{font-size:1.8em;width:50px;height:50px;flex-shrink:0;
+display:flex;align-items:center;justify-content:center;
+background:rgba(212,167,58,.12);border-radius:12px;}
+.ccard .body{flex:1;min-width:0;}
+.ccard .body h2{margin:0 0 3px;font-size:1.05em;}
+.ccard .tag{font-size:.82em;color:var(--muted);margin:0 0 4px;}
+.ccard .latest{font-size:.8em;margin:0;overflow:hidden;text-overflow:ellipsis;
+white-space:nowrap;}
+.ccard .arrow{font-size:1.5em;color:var(--muted);}
+.plist a{display:block;background:var(--panel);border:1px solid var(--line);
+border-radius:8px;padding:12px 14px;margin:8px 0;text-decoration:none;
+color:var(--ink);}
+.plist a:hover{border-color:var(--gold);}
+.plist .d{color:var(--gold);font-size:.85em;margin-right:8px;}
+.badge{display:inline-block;background:var(--gold);color:#0B1220;
+font-size:.72em;font-weight:700;padding:2px 8px;border-radius:20px;
+margin-bottom:8px;}
+footer{color:var(--muted);font-size:12px;margin-top:40px;text-align:center;}
+"""
+
+HEAD = """<!DOCTYPE html>
+<html lang="ur"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{title}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>{css}</style></head><body><div class="wrap">
+"""
+FOOT = "</div><footer>Skill Academy — daily lessons, automatically updated</footer></body></html>"
+
+
+def md_lite(text):
+    if not text:
+        return ""
+    return "".join(f"<p>{html.escape(p).replace(chr(10), '<br>')}</p>" for p in text.strip().split("\n\n") if p.strip())
+
+
+def render_home(posts):
+    cards = []
+    for i, (slug, course) in enumerate(COURSES.items()):
+        lessons = posts.get(slug, [])
+        count = len(lessons)
+        latest = lessons[-1]["title"] if lessons else "Pehla lesson jald aa raha hai"
+        accent = ACCENTS[i % len(ACCENTS)]
+        cards.append(f"""
+    <a class="ccard" style="border-left-color:{accent}" href="courses/{slug}/index.html">
+      <div class="icon">{course['icon']}</div>
+      <div class="body">
+        <h2>{html.escape(course['name'])}</h2>
+        <p class="tag">{html.escape(course['tagline'])}</p>
+        <p class="latest">📖 {html.escape(latest)}</p>
+        <p class="muted">{count} daily lesson{'s' if count != 1 else ''} so far</p>
+      </div>
+      <div class="arrow">›</div>
+    </a>""")
+
+    body = f"""
+    <div class="top"><span style="color:var(--gold);font-weight:700">Skill Academy</span>
+    <span class="lbl">daily lessons — apni pasand ka course chunein</span></div>
+    <h1>🎓 Roz ek naya practical lesson</h1>
+    <p class="muted">📅 Har course ka naya lesson roz <b>3:00 PM Pakistan time</b> par yahan post hota hai.
+    Jis course mein interest ho us par tap karein — daily lesson step-by-step parhein aur practice karein.</p>
+    <div class="grid">{''.join(cards)}</div>
+    """
+    return HEAD.format(title="Skill Academy — Daily Lessons", css=BASE_CSS) + body + FOOT
+
+
+def render_course_page(slug, course, lessons):
+    items = []
+    for lesson in reversed(lessons):
+        items.append(
+            f'<a href="posts/{lesson["date"]}-{lesson["id"]}.html">'
+            f'<span class="d">Day {lesson["day"]:02d}</span>{html.escape(lesson["title"])}</a>'
+        )
+    listing = "".join(items) if items else '<p class="muted">Abhi koi lesson nahi — pehla jald aayega.</p>'
+
+    body = f"""
+    <div class="top"><a href="../../index.html">← Skill Academy</a></div>
+    <h1>{course['icon']} {html.escape(course['name'])}</h1>
+    <p class="muted">{html.escape(course['tagline'])}</p>
+    <p class="muted">📅 Naya lesson roz 3:00 PM Pakistan time par yahan add hota hai.</p>
+    <div class="plist">{listing}</div>
+    """
+    return HEAD.format(title=f"{course['name']} — Skill Academy", css=BASE_CSS) + body + FOOT
+
+
+def render_lesson_page(slug, course, lesson, is_latest):
+    lesson_html = md_lite(lesson["preamble"])
+    for label, content in lesson["sections"]:
+        lesson_html += f"<h3>{html.escape(label)}</h3>{md_lite(content)}"
+
+    share_chunks = [lesson["title"]]
+    if lesson["preamble"]:
+        share_chunks.append(lesson["preamble"])
+    for label, content in lesson["sections"]:
+        share_chunks.append(f"{label}:\n{content}")
+    share_text = "\n\n".join(share_chunks)
+    if SITE_URL:
+        share_text += f"\n\n{SITE_URL}/courses/{slug}/posts/{lesson['date']}-{lesson['id']}.html"
+    wa_link = f"https://wa.me/?text={urllib.parse.quote(share_text)}"
+    fb_link = f"https://www.facebook.com/sharer/sharer.php?u={urllib.parse.quote(SITE_URL or '')}"
+    tg_link = f"https://t.me/share/url?url={urllib.parse.quote(SITE_URL or '')}&text={urllib.parse.quote(lesson['title'])}"
+
+    badge = '<span class="badge">Latest</span>' if is_latest else ""
+
+    body = f"""
+    <div class="top"><a href="../../../index.html">← Skill Academy</a>
+    <a href="../index.html" class="course-back-link">/ {html.escape(course['name'])}</a></div>
+    {badge}
+    <p class="muted">{course['icon']} {html.escape(course['name'])} · Day {lesson['day']:02d}</p>
+    <h1>{html.escape(lesson['title'])}</h1>
+    <div class="card">
+      {lesson_html}
+      <div>
+        <a class="btn" href="{wa_link}" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
+        <a class="btn alt" href="{tg_link}" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
+        <a class="btn alt" href="{fb_link}" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
+      </div>
+    </div>
+    """
+    return HEAD.format(title=f"{lesson['title']} — {course['name']}", css=BASE_CSS) + body + FOOT
+
+
+# ---------------------------------------------------------------------
+# 5. Optional posting — Telegram + Facebook (best-effort, silent fail)
+# ---------------------------------------------------------------------
+def post_to_telegram(course, lesson):
+    if not (TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID):
+        return
+    text = f"📚 {course['icon']} {course['name']} — Day {lesson['day']:02d}\n\n{lesson['title']}\n\n{lesson['preamble']}"
+    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+    data = urllib.parse.urlencode({"chat_id": TELEGRAM_CHAT_ID, "text": text}).encode()
+    try:
+        urllib.request.urlopen(urllib.request.Request(url, data=data), timeout=20)
+    except Exception as e:
+        print(f"Telegram post fail ({course['name']}): {e}", file=sys.stderr)
+
+
+def post_to_facebook(course, lesson):
+    if not (FB_PAGE_ID and FB_PAGE_ACCESS_TOKEN):
+        return
+    text = f"📚 {course['icon']} {course['name']} — Day {lesson['day']:02d}\n\n{lesson['title']}\n\n{lesson['preamble']}"
+    url = f"https://graph.facebook.com/{FB_PAGE_ID}/feed"
+    data = urllib.parse.urlencode({"message": text, "access_token": FB_PAGE_ACCESS_TOKEN}).encode()
+    try:
+        urllib.request.urlopen(urllib.request.Request(url, data=data), timeout=20)
+    except Exception as e:
+        print(f"Facebook post fail ({course['name']}): {e}", file=sys.stderr)
+
+
+# ---------------------------------------------------------------------
+# 6. Main
+# ---------------------------------------------------------------------
 def main():
-    posts_file = "posts.json"
-    all_posts = load_posts(posts_file)
+    posts = load_posts()
 
-    for course_slug in COURSES:
-        generate_lesson_for_course(course_slug, all_posts)
-        save_posts(posts_file, all_posts)  # har course ke baad save, taake partial failure pe data na khoye
+    for slug, course in COURSES.items():
+        existing = posts.get(slug, [])
+        next_day = len(existing) + 1
+        previous_titles = [l["title"] for l in existing]
 
-    update_home_index(all_posts)
-    print("🎉 Aaj ke saare course lessons taiyar ho gaye!")
+        lesson = get_or_generate_lesson(slug, course, next_day, previous_titles)
+        if lesson is None:
+            continue
+
+        existing.append(lesson)
+        posts[slug] = existing
+
+        post_to_telegram(course, lesson)
+        post_to_facebook(course, lesson)
+
+        os.makedirs(os.path.join(DOCS_DIR, "courses", slug, "posts"), exist_ok=True)
+        page = render_lesson_page(slug, course, lesson, is_latest=True)
+        with open(
+            os.path.join(DOCS_DIR, "courses", slug, "posts", f"{lesson['date']}-{lesson['id']}.html"),
+            "w", encoding="utf-8",
+        ) as f:
+            f.write(page)
+
+    save_posts(posts)
+
+    # rebuild course pages + home page (based on full posts.json, not just today)
+    for slug, course in COURSES.items():
+        lessons = posts.get(slug, [])
+        os.makedirs(os.path.join(DOCS_DIR, "courses", slug), exist_ok=True)
+        with open(os.path.join(DOCS_DIR, "courses", slug, "index.html"), "w", encoding="utf-8") as f:
+            f.write(render_course_page(slug, course, lessons))
+        # re-render every lesson page so only the newest carries "Latest"
+        for i, lesson in enumerate(lessons):
+            page = render_lesson_page(slug, course, lesson, is_latest=(i == len(lessons) - 1))
+            with open(
+                os.path.join(DOCS_DIR, "courses", slug, "posts", f"{lesson['date']}-{lesson['id']}.html"),
+                "w", encoding="utf-8",
+            ) as f:
+                f.write(page)
+
+    os.makedirs(DOCS_DIR, exist_ok=True)
+    with open(os.path.join(DOCS_DIR, "index.html"), "w", encoding="utf-8") as f:
+        f.write(render_home(posts))
+
+    print("Done — site docs/ mein update ho gayi.")
 
 
 if __name__ == "__main__":
