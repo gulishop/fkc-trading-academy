@@ -341,6 +341,103 @@ def direct_link_button_html(label="🚀 Aur Seekhein"):
 
 
 # ---------------------------------------------------------------------
+# PWA — installable app support ("Add to Home Screen" / Chrome install)
+# ---------------------------------------------------------------------
+MANIFEST_FILENAME = "manifest.json"
+SW_FILENAME = "service-worker.js"
+ICON_192 = "icons/icon-192.png"
+ICON_512 = "icons/icon-512.png"
+
+
+def pwa_head_extra(manifest_href, icon192_href):
+    return (
+        f'<link rel="manifest" href="{manifest_href}">'
+        '<meta name="theme-color" content="#0B1220">'
+        f'<link rel="apple-touch-icon" href="{icon192_href}">'
+        '<meta name="apple-mobile-web-app-capable" content="yes">'
+        '<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">'
+    )
+
+
+def pwa_register_script(sw_href):
+    return (
+        "<script>if('serviceWorker' in navigator){"
+        "window.addEventListener('load',function(){"
+        f"navigator.serviceWorker.register('{sw_href}').catch(function(){{}});"
+        "});}</script>"
+    )
+
+
+def build_manifest_json():
+    manifest = {
+        "name": BRAND_NAME,
+        "short_name": BRAND_NAME[:12],
+        "start_url": ".",
+        "scope": ".",
+        "display": "standalone",
+        "background_color": "#0B1220",
+        "theme_color": "#0B1220",
+        "icons": [
+            {"src": ICON_192, "sizes": "192x192", "type": "image/png"},
+            {"src": ICON_512, "sizes": "512x512", "type": "image/png", "purpose": "any maskable"},
+        ],
+    }
+    return json.dumps(manifest, ensure_ascii=False, indent=2)
+
+
+def build_service_worker_js():
+    return (
+        "self.addEventListener('install',e=>self.skipWaiting());\n"
+        "self.addEventListener('activate',e=>self.clients.claim());\n"
+        "self.addEventListener('fetch',e=>{\n"
+        "  e.respondWith(fetch(e.request).catch(()=>caches.match(e.request)));\n"
+        "});\n"
+    )
+
+
+ONESIGNAL_APP_ID = os.environ.get("ONESIGNAL_APP_ID", "")
+ONESIGNAL_REST_API_KEY = os.environ.get("ONESIGNAL_REST_API_KEY", "")
+
+
+def onesignal_head_extra():
+    if not ONESIGNAL_APP_ID:
+        return ""
+    return (
+        '<script defer src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"></script>'
+        "<script>window.OneSignalDeferred=window.OneSignalDeferred||[];"
+        "OneSignalDeferred.push(function(OneSignal){"
+        f"OneSignal.init({{appId:'{ONESIGNAL_APP_ID}'}});"
+        "});</script>"
+    )
+
+
+def bell_button_html():
+    if not ONESIGNAL_APP_ID:
+        return ""
+    return (
+        '<a class="btn alt" href="javascript:void(0)" '
+        "onclick=\"window.OneSignalDeferred=window.OneSignalDeferred||[];"
+        "OneSignalDeferred.push(function(OneSignal){OneSignal.Slidedown."
+        'promptPush();});">🔔 Notifications On karein</a>'
+    )
+
+
+def pwa_extra_for(logo_href):
+    if logo_href.endswith(BRAND_LOGO):
+        prefix = logo_href[: -len(BRAND_LOGO)]
+    else:
+        prefix = ""
+    manifest_href = prefix + MANIFEST_FILENAME
+    icon_href = prefix + ICON_192
+    sw_href = prefix + SW_FILENAME
+    return (
+        pwa_head_extra(manifest_href, icon_href)
+        + pwa_register_script(sw_href)
+        + onesignal_head_extra()
+    )
+
+
+# ---------------------------------------------------------------------
 # 2. Helpers — posts.json load/save
 # ---------------------------------------------------------------------
 def load_posts():
@@ -562,6 +659,7 @@ HEAD = """<!DOCTYPE html>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5639688573760714" crossorigin="anonymous"></script>
 <script src="https://pl30647963.effectivecpmnetwork.com/35/50/90/355090180a90a458c3f1895b8e9f6607.js"></script>
 <link rel="icon" href="{logo_href}">
+{pwa_extra}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>{css}</style></head><body><div class="wrap">
@@ -616,6 +714,7 @@ def render_home(posts):
     <p class="muted">📅 Har course ka naya lesson roz <b>3:00 PM Pakistan time</b> par yahan post hota hai.
     Jis course mein interest ho us par tap karein — daily lesson step-by-step parhein aur practice karein.</p>
     <p>{direct_link_button_html("🚀 Start Learning")}</p>
+    <p>{bell_button_html()}</p>
     <div class="grid">{''.join(cards)}</div>
     {brand_footer_html(logo_href)}
     """
@@ -627,6 +726,7 @@ def render_home(posts):
         logo_href=logo_href,
         brand=html.escape(BRAND_NAME),
         css=BASE_CSS,
+        pwa_extra=pwa_extra_for(logo_href),
     )
     return head + body + FOOT_TAIL
 
@@ -657,6 +757,7 @@ def render_course_page(slug, course, lessons):
         logo_href=logo_href,
         brand=html.escape(BRAND_NAME),
         css=BASE_CSS,
+        pwa_extra=pwa_extra_for(logo_href),
     )
     return head + body + FOOT_TAIL
 
@@ -707,6 +808,7 @@ def render_lesson_page(slug, course, lesson, is_latest):
         logo_href=logo_href,
         brand=html.escape(BRAND_NAME),
         css=BASE_CSS,
+        pwa_extra=pwa_extra_for(logo_href),
     )
     return head + body + FOOT_TAIL
 
@@ -758,6 +860,39 @@ def post_to_facebook(course, lesson):
         print(f"Facebook post fail ({course['name']}): {e}", file=sys.stderr)
 
 
+def post_to_onesignal(slug, course, lesson):
+    """Naya lesson banne par sab subscribers ko browser push
+    notification (🔔 bell + device ki default tune) bhejta hai.
+    ONESIGNAL_APP_ID aur ONESIGNAL_REST_API_KEY (GitHub secrets) chahiye."""
+    if not (ONESIGNAL_APP_ID and ONESIGNAL_REST_API_KEY):
+        return
+    url_target = (
+        f"{SITE_URL}/courses/{slug}/posts/{lesson['date']}-{lesson['id']}.html"
+        if SITE_URL else None
+    )
+    payload = {
+        "app_id": ONESIGNAL_APP_ID,
+        "included_segments": ["Subscribed Users"],
+        "headings": {"en": f"🔔 {course['icon']} {course['name']} — Day {lesson['day']:02d}"},
+        "contents": {"en": lesson["title"]},
+    }
+    if url_target:
+        payload["url"] = url_target
+    try:
+        data = json.dumps(payload).encode()
+        req = urllib.request.Request(
+            "https://onesignal.com/api/v1/notifications",
+            data=data,
+            headers={
+                "Content-Type": "application/json; charset=utf-8",
+                "Authorization": f"Basic {ONESIGNAL_REST_API_KEY}",
+            },
+        )
+        urllib.request.urlopen(req, timeout=20)
+    except Exception as e:
+        print(f"OneSignal push fail ({course['name']}): {e}", file=sys.stderr)
+
+
 # ---------------------------------------------------------------------
 # 6. Main
 # ---------------------------------------------------------------------
@@ -788,6 +923,7 @@ def main():
 
         post_to_telegram(course, lesson)
         post_to_facebook(course, lesson)
+        post_to_onesignal(slug, course, lesson)
 
         os.makedirs(os.path.join(DOCS_DIR, "courses", slug, "posts"), exist_ok=True)
         page = render_lesson_page(slug, course, lesson, is_latest=True)
@@ -820,6 +956,14 @@ def main():
     os.makedirs(DOCS_DIR, exist_ok=True)
     with open(os.path.join(DOCS_DIR, "index.html"), "w", encoding="utf-8") as f:
         f.write(render_home(posts))
+
+    # PWA files — har build par (taake naye icons/manifest changes turant
+    # reflect hon). Icons khud PNG hain, unhe docs/icons/ mein manually
+    # daalna hoga (script text files hi generate kar sakta hai).
+    with open(os.path.join(DOCS_DIR, MANIFEST_FILENAME), "w", encoding="utf-8") as f:
+        f.write(build_manifest_json())
+    with open(os.path.join(DOCS_DIR, SW_FILENAME), "w", encoding="utf-8") as f:
+        f.write(build_service_worker_js())
 
     print("Done — site docs/ mein update ho gayi.")
 
