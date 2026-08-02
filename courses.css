@@ -1,0 +1,129 @@
+/* courses.css — multi-course homepage & lesson styling
+   Loads alongside the existing style.css, doesn't override its base rules. */
+
+:root {
+  --sa-accent-1: #2563eb;
+  --sa-accent-2: #16a34a;
+  --sa-accent-3: #ea580c;
+  --sa-accent-4: #9333ea;
+  --sa-accent-5: #0891b2;
+  --sa-card-bg: #ffffff;
+  --sa-card-border: rgba(0, 0, 0, 0.08);
+  --sa-text-muted: #6b7280;
+}
+
+.home-note {
+  background: rgba(37, 99, 235, 0.08);
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 0.95em;
+  margin: 16px 0 28px;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  margin: 20px 0 32px;
+}
+
+.course-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--sa-card-bg);
+  border: 1px solid var(--sa-card-border);
+  border-left: 5px solid var(--sa-accent-1);
+  border-radius: 14px;
+  padding: 16px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.course-card:hover,
+.course-card:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  outline: none;
+}
+
+.course-grid .course-card:nth-child(5n+1) { border-left-color: var(--sa-accent-1); }
+.course-grid .course-card:nth-child(5n+2) { border-left-color: var(--sa-accent-2); }
+.course-grid .course-card:nth-child(5n+3) { border-left-color: var(--sa-accent-3); }
+.course-grid .course-card:nth-child(5n+4) { border-left-color: var(--sa-accent-4); }
+.course-grid .course-card:nth-child(5n+5) { border-left-color: var(--sa-accent-5); }
+
+.course-card-icon {
+  font-size: 2em;
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 12px;
+}
+
+.course-card-body { flex: 1; min-width: 0; }
+
+.course-card-body h2 {
+  font-size: 1.05em;
+  margin: 0 0 4px;
+}
+
+.course-card-tagline {
+  font-size: 0.85em;
+  color: var(--sa-text-muted);
+  margin: 0 0 6px;
+}
+
+.course-card-latest {
+  font-size: 0.82em;
+  margin: 0 0 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.course-card-count {
+  font-size: 0.78em;
+  color: var(--sa-text-muted);
+  margin: 0;
+}
+
+.course-card-arrow {
+  font-size: 1.6em;
+  color: var(--sa-text-muted);
+  flex-shrink: 0;
+}
+
+.footer-note {
+  font-size: 0.85em;
+  color: var(--sa-text-muted);
+  margin-top: 24px;
+}
+
+.course-back-link {
+  display: block;
+  margin-top: 6px;
+}
+
+.course-tag {
+  display: inline-block;
+  font-size: 0.85em;
+  font-weight: 600;
+  background: rgba(37, 99, 235, 0.1);
+  color: var(--sa-accent-1);
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+
+.post-list .empty {
+  color: var(--sa-text-muted);
+  font-style: italic;
+}
