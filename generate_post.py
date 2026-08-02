@@ -527,13 +527,15 @@ margin-bottom:8px;}
 footer{color:var(--muted);font-size:12px;margin-top:40px;text-align:center;}
 .brand-bar{display:flex;align-items:center;gap:12px;margin-bottom:18px;}
 .brand-bar img{width:52px;height:52px;border-radius:50%;flex-shrink:0;
+object-fit:cover;background:transparent;
 border:1px solid var(--line);}
 .brand-bar .bname{font-family:'Fraunces',serif;font-weight:700;
 color:var(--gold);font-size:1.15em;line-height:1.2;}
 .brand-bar .btag{color:var(--muted);font-size:.82em;}
 .brand-footer{border-top:1px solid var(--line);margin-top:34px;
 padding-top:16px;display:flex;align-items:center;gap:12px;}
-.brand-footer img{width:38px;height:38px;border-radius:50%;flex-shrink:0;}
+.brand-footer img{width:38px;height:38px;border-radius:50%;flex-shrink:0;
+object-fit:cover;background:transparent;}
 .brand-footer .txt{font-size:.82em;color:var(--muted);line-height:1.5;}
 .brand-footer .txt b{color:var(--ink);}
 """
@@ -566,7 +568,7 @@ def brand_footer_html(logo_href):
     )
 
 
-FOOT_TAIL = "</div><footer>Skill Academy — daily lessons, automatically updated</footer></body></html>"
+FOOT_TAIL = f"</div><footer>{BRAND_NAME} — daily lessons, automatically updated</footer></body></html>"
 
 
 def md_lite(text):
@@ -783,9 +785,11 @@ def main():
 
     save_posts(posts)
 
-    # rebuild course pages (sirf jo is run mein chalay) + home page (hamesha
-    # full posts.json se, taake home page sab courses ke sath up-to-date rahe)
-    for slug, course in courses_to_run.items():
+    # rebuild course pages — HAMESHA sab COURSES ke liye (chahe generation
+    # sirf ek course ke liye hui ho), taake har course ka page hamesha
+    # maujood rahe (warna jin courses ka pehla run abhi nahi hua unke
+    # courses/<slug>/index.html missing reh jate hain aur 404 aata hai)
+    for slug, course in COURSES.items():
         lessons = posts.get(slug, [])
         os.makedirs(os.path.join(DOCS_DIR, "courses", slug), exist_ok=True)
         with open(os.path.join(DOCS_DIR, "courses", slug, "index.html"), "w", encoding="utf-8") as f:
