@@ -449,7 +449,18 @@ def _gemini_call_once(model_name, prompt_text, max_retries=5):
             with urllib.request.urlopen(req, timeout=60) as resp:
                 return json.load(resp)
         except urllib.error.HTTPError as e:
-            if e.code in (429, 500, 502, 503) and attempt < max_retries:
+            # Body padho taake asli wajah pata chale (quota / permission /
+            # region-block) — sirf "403: Forbidden" kaafi nahi hota debug ke liye.
+            try:
+                err_body = e.read().decode("utf-8", errors="replace")[:500]
+            except Exception:
+                err_body = "(body nahi mil saka)"
+            print(f"Gemini {e.code} detail ({model_name}, attempt {attempt}): {err_body}", file=sys.stderr)
+
+            # 403 aksar CI runner ki IP/region ki wajah se transient hota hai
+            # (Google har request ek alag datacenter se dekh sakta hai), is
+            # liye ise bhi retryable treat karte hain — 429/500/502/503 ki tarah.
+            if e.code in (403, 429, 500, 502, 503) and attempt < max_retries:
                 print(f"Gemini {e.code} mila ({model_name}, attempt {attempt}) — {wait}s ruk kar dobara koshish...", file=sys.stderr)
                 time.sleep(wait)
                 wait = min(wait * 2, 120)
