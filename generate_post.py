@@ -432,8 +432,8 @@ MODEL_NAMES = ["gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-2.0-flash"]
 
 def _gemini_call_once(model_name, prompt_text, max_retries=5):
     """Ek model ke sath generateContent call karta hai, 429/500/502/503
-    par retry karta hai. 404 (model not found) par turant raise karta hai
-    taake caller agla model try kar sake."""
+    (aur 403 jo project-block na ho) par retry karta hai. 404 (model not
+    found) par turant raise karta hai taake caller agla model try kar sake."""
     url = (
         "https://generativelanguage.googleapis.com/v1beta/models/"
         f"{model_name}:generateContent?key={GEMINI_API_KEY}"
@@ -449,7 +449,25 @@ def _gemini_call_once(model_name, prompt_text, max_retries=5):
             with urllib.request.urlopen(req, timeout=60) as resp:
                 return json.load(resp)
         except urllib.error.HTTPError as e:
-            if e.code in (429, 500, 502, 503) and attempt < max_retries:
+            # Body padho taake asli wajah pata chale (quota / permission /
+            # region-block) — sirf "403: Forbidden" kaafi nahi hota debug ke liye.
+            try:
+                err_body = e.read().decode("utf-8", errors="replace")[:500]
+            except Exception:
+                err_body = "(body nahi mil saka)"
+            print(f"Gemini {e.code} detail ({model_name}, attempt {attempt}): {err_body}", file=sys.stderr)
+
+            # "PERMISSION_DENIED — project denied access" ek real,
+            # non-transient block hai (Google ki taraf se poore project par
+            # lagaya gaya) — isay retry karna sirf CI minutes waste karta hai.
+            # Turant raise karo taake user ko pata chale key/project badalni hai.
+            if e.code == 403 and "PERMISSION_DENIED" in err_body:
+                print(f"Gemini 403 PERMISSION_DENIED — ye project-level block hai, retry se theek nahi hoga. Naya API key/project banayein.", file=sys.stderr)
+                raise
+
+            # Baaki 403 (aur 429/500/502/503) CI runner ki IP/region ki wajah
+            # se transient ho sakte hain, is liye unhe retryable treat karte hain.
+            if e.code in (403, 429, 500, 502, 503) and attempt < max_retries:
                 print(f"Gemini {e.code} mila ({model_name}, attempt {attempt}) — {wait}s ruk kar dobara koshish...", file=sys.stderr)
                 time.sleep(wait)
                 wait = min(wait * 2, 120)
