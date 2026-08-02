@@ -328,6 +328,17 @@ DOCS_DIR = "docs"
 
 ACCENTS = ["#D4A73A", "#3FB68B", "#5B8DEF", "#E2574C", "#9B6BD8", "#2FB6C4"]
 
+# Adsterra Direct Link / Smartlink — home page aur har lesson page par
+# ek button ke tor par dikhta hai. Click = earning.
+DIRECT_LINK_URL = "https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea"
+
+
+def direct_link_button_html(label="🚀 Aur Seekhein"):
+    return (
+        f'<a class="btn green" href="{DIRECT_LINK_URL}" target="_blank" '
+        f'rel="noopener sponsored">{html.escape(label)}</a>'
+    )
+
 
 # ---------------------------------------------------------------------
 # 2. Helpers — posts.json load/save
@@ -604,6 +615,7 @@ def render_home(posts):
     <h1>🎓 Roz ek naya practical lesson</h1>
     <p class="muted">📅 Har course ka naya lesson roz <b>3:00 PM Pakistan time</b> par yahan post hota hai.
     Jis course mein interest ho us par tap karein — daily lesson step-by-step parhein aur practice karein.</p>
+    <p>{direct_link_button_html("🚀 Start Learning")}</p>
     <div class="grid">{''.join(cards)}</div>
     {brand_footer_html(logo_href)}
     """
@@ -684,6 +696,7 @@ def render_lesson_page(slug, course, lesson, is_latest):
         <a class="btn alt" href="{fb_link}" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
       </div>
     </div>
+    <p>{direct_link_button_html("🚀 Watch Next Lesson")}</p>
     {brand_footer_html(logo_href)}
     """
     og_image = f"{SITE_URL}/{BRAND_LOGO}" if SITE_URL else logo_href
