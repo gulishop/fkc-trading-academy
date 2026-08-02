@@ -1,1 +1,30 @@
-{}
+{
+  "affiliate-marketing": [
+    {
+      "day": 1,
+      "id": "day-001",
+      "date": "2026-08-02",
+      "title": "Day 1 — Affiliate Marketing Kaise Kam Karta Hai? (Basics Se Shuru)",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Affiliate marketing ek aisa business model hai jahan tum kisi company/product ka promotion karte ho, aur har successful sale ya lead ke bad tumhe commission milti hai. Yeh ek \"win-win\" system hai: company ko extra sales milti hain, aur tumhe paise milte hain bina koi product banaye. Isme 4 key players hote hain: **Merchant** (product owner), **Affiliate** (tum), **Consumer** (customer), aur **Network** (Amazon Associates, ClickBank, etc.)."
+        ],
+        [
+          "Example",
+          "Imagine tum ek fitness blogger ho. Tum ek protein powder ka affiliate link apne blog par share karte ho. Koi reader us link se protein powder khareedta hai, toh tumhe har sale par 10% commission milti hai. Yeh process automatic hota hai—tumhe direct customer se deal karne ki zaroorat nahi."
+        ],
+        [
+          "Practice",
+          "Apne phone ya laptop se ek product search karo jo tum bech sakte ho (e.g., wireless earbuds, skincare product). Uske affiliate program ke liye apply karo (Amazon Associates, Daraz, etc.). Agar approval mil jaye, toh us product ka affiliate link generate karo."
+        ],
+        [
+          "Mini Project",
+          "Ek WhatsApp group ya Facebook post banaye jisme tum ek affiliate product promote karo. Post mein product ka naam, price, aur affiliate link share karo. (Note: Disclosure add karna mat bhulna—\"Affiliate link\" likh dena.)"
+        ]
+      ],
+      "answer_key": "affiliate link generate, commission structure, product promotion, approval process"
+    }
+  ]
+}
