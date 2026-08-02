@@ -315,12 +315,7 @@ BRAND_CONTACT_PHONE = "+92 333 3909816"
 BRAND_LINE = f"{BRAND_CONTACT_NAME} — {BRAND_CONTACT_TITLE} — {BRAND_CONTACT_PHONE}"
 
 SITE_URL = os.environ.get("SITE_URL", "").rstrip("/")
-TELEGRAM_CHANNEL_LINK = os.environ.get("TELEGRAM_CHANNEL_LINK", "")
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
-TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
-TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
-FB_PAGE_ID = os.environ.get("FB_PAGE_ID", "")
-FB_PAGE_ACCESS_TOKEN = os.environ.get("FB_PAGE_ACCESS_TOKEN", "")
 
 POSTS_JSON = "posts.json"
 LESSONS_DIR = "lessons"
@@ -395,33 +390,6 @@ def build_service_worker_js():
     )
 
 
-ONESIGNAL_APP_ID = os.environ.get("ONESIGNAL_APP_ID", "")
-ONESIGNAL_REST_API_KEY = os.environ.get("ONESIGNAL_REST_API_KEY", "")
-
-
-def onesignal_head_extra():
-    if not ONESIGNAL_APP_ID:
-        return ""
-    return (
-        '<script defer src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"></script>'
-        "<script>window.OneSignalDeferred=window.OneSignalDeferred||[];"
-        "OneSignalDeferred.push(function(OneSignal){"
-        f"OneSignal.init({{appId:'{ONESIGNAL_APP_ID}'}});"
-        "});</script>"
-    )
-
-
-def bell_button_html():
-    if not ONESIGNAL_APP_ID:
-        return ""
-    return (
-        '<a class="btn alt" href="javascript:void(0)" '
-        "onclick=\"window.OneSignalDeferred=window.OneSignalDeferred||[];"
-        "OneSignalDeferred.push(function(OneSignal){OneSignal.Slidedown."
-        'promptPush();});">🔔 Notifications On karein</a>'
-    )
-
-
 def pwa_extra_for(logo_href):
     if logo_href.endswith(BRAND_LOGO):
         prefix = logo_href[: -len(BRAND_LOGO)]
@@ -433,7 +401,6 @@ def pwa_extra_for(logo_href):
     return (
         pwa_head_extra(manifest_href, icon_href)
         + pwa_register_script(sw_href)
-        + onesignal_head_extra()
     )
 
 
@@ -455,19 +422,21 @@ def save_posts(posts):
 # ---------------------------------------------------------------------
 # 3. Lesson content — Gemini generate ya manual file parhein
 # ---------------------------------------------------------------------
-# NOTE: "gemini-2.5-flash-lite" retire ho chuka hai (22 July 2026 ko
-# support khatam hua), isi liye pehle 404 aa raha tha. Ab "gemini-2.5-flash"
-# use kar rahe hain jo abhi (Aug 2026) active/GA hai. Agar aage yeh bhi
-# retire ho jaye to sirf yahan neeche wala MODEL_NAME badal dein.
-MODEL_NAME = "gemini-2.5-flash"
+# Model fallback list — pehle wala try hota hai, agar wo 404 de (retire/
+# not-found ho jaye) to script khud agla wala try karta hai. Isliye ab
+# manually model name badalne ki zarurat nahi — jo bhi is list mein se
+# chal raha ho, wahi use ho jayega. Naya model list mein upar add kar
+# sakte hain jab Google koi naya release kare.
+MODEL_NAMES = ["gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-2.0-flash"]
 
 
-def gemini_generate(prompt_text, max_retries=5):
-    if not GEMINI_API_KEY:
-        raise RuntimeError("GEMINI_API_KEY set nahi hai.")
+def _gemini_call_once(model_name, prompt_text, max_retries=5):
+    """Ek model ke sath generateContent call karta hai, 429/500/502/503
+    par retry karta hai. 404 (model not found) par turant raise karta hai
+    taake caller agla model try kar sake."""
     url = (
         "https://generativelanguage.googleapis.com/v1beta/models/"
-        f"{MODEL_NAME}:generateContent?key={GEMINI_API_KEY}"
+        f"{model_name}:generateContent?key={GEMINI_API_KEY}"
     )
     body = json.dumps({"contents": [{"parts": [{"text": prompt_text}]}]}).encode()
 
@@ -478,15 +447,35 @@ def gemini_generate(prompt_text, max_retries=5):
         )
         try:
             with urllib.request.urlopen(req, timeout=60) as resp:
-                data = json.load(resp)
-            break
+                return json.load(resp)
         except urllib.error.HTTPError as e:
             if e.code in (429, 500, 502, 503) and attempt < max_retries:
-                print(f"Gemini {e.code} mila (attempt {attempt}) — {wait}s ruk kar dobara koshish...", file=sys.stderr)
+                print(f"Gemini {e.code} mila ({model_name}, attempt {attempt}) — {wait}s ruk kar dobara koshish...", file=sys.stderr)
                 time.sleep(wait)
                 wait = min(wait * 2, 120)
                 continue
             raise
+
+
+def gemini_generate(prompt_text, max_retries=5):
+    if not GEMINI_API_KEY:
+        raise RuntimeError("GEMINI_API_KEY set nahi hai.")
+
+    data = None
+    last_error = None
+    for model_name in MODEL_NAMES:
+        try:
+            data = _gemini_call_once(model_name, prompt_text, max_retries=max_retries)
+            break
+        except urllib.error.HTTPError as e:
+            last_error = e
+            if e.code == 404:
+                print(f"Model '{model_name}' 404 (not found/retired) — agla model try kar rahe hain...", file=sys.stderr)
+                continue
+            raise
+    if data is None:
+        raise last_error
+
     try:
         return data["candidates"][0]["content"]["parts"][0]["text"].strip()
     except (KeyError, IndexError):
@@ -737,7 +726,6 @@ def render_home(posts):
     <p class="muted fade-in d2">📅 Har course ka naya lesson roz <b>3:00 PM Pakistan time</b> par yahan post hota hai.
     Jis course mein interest ho us par tap karein — daily lesson step-by-step parhein aur practice karein.</p>
     <p class="fade-in d2">{direct_link_button_html("🚀 Start Learning")}</p>
-    <p class="fade-in d2">{bell_button_html()}</p>
     <div class="grid">{''.join(cards)}</div>
     {brand_footer_html(logo_href)}
     """
@@ -837,87 +825,7 @@ def render_lesson_page(slug, course, lesson, is_latest):
 
 
 # ---------------------------------------------------------------------
-# 5. Optional posting — Telegram + Facebook (best-effort, silent fail)
-# ---------------------------------------------------------------------
-def post_to_telegram(course, lesson):
-    if not (TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID):
-        return
-    text = (
-        f"📚 {BRAND_NAME}\n{course['icon']} {course['name']} — Day {lesson['day']:02d}\n\n"
-        f"{lesson['title']}\n\n{lesson['preamble']}\n\n— {BRAND_LINE}"
-    )
-    logo_url = f"{SITE_URL}/{BRAND_LOGO}" if SITE_URL else ""
-    try:
-        if logo_url:
-            url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendPhoto"
-            data = urllib.parse.urlencode(
-                {"chat_id": TELEGRAM_CHAT_ID, "photo": logo_url, "caption": text[:1024]}
-            ).encode()
-        else:
-            url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-            data = urllib.parse.urlencode({"chat_id": TELEGRAM_CHAT_ID, "text": text}).encode()
-        urllib.request.urlopen(urllib.request.Request(url, data=data), timeout=20)
-    except Exception as e:
-        print(f"Telegram post fail ({course['name']}): {e}", file=sys.stderr)
-
-
-def post_to_facebook(course, lesson):
-    if not (FB_PAGE_ID and FB_PAGE_ACCESS_TOKEN):
-        return
-    text = (
-        f"📚 {BRAND_NAME}\n{course['icon']} {course['name']} — Day {lesson['day']:02d}\n\n"
-        f"{lesson['title']}\n\n{lesson['preamble']}\n\n— {BRAND_LINE}"
-    )
-    logo_url = f"{SITE_URL}/{BRAND_LOGO}" if SITE_URL else ""
-    try:
-        if logo_url:
-            url = f"https://graph.facebook.com/{FB_PAGE_ID}/photos"
-            data = urllib.parse.urlencode(
-                {"url": logo_url, "caption": text, "access_token": FB_PAGE_ACCESS_TOKEN}
-            ).encode()
-        else:
-            url = f"https://graph.facebook.com/{FB_PAGE_ID}/feed"
-            data = urllib.parse.urlencode({"message": text, "access_token": FB_PAGE_ACCESS_TOKEN}).encode()
-        urllib.request.urlopen(urllib.request.Request(url, data=data), timeout=20)
-    except Exception as e:
-        print(f"Facebook post fail ({course['name']}): {e}", file=sys.stderr)
-
-
-def post_to_onesignal(slug, course, lesson):
-    """Naya lesson banne par sab subscribers ko browser push
-    notification (🔔 bell + device ki default tune) bhejta hai.
-    ONESIGNAL_APP_ID aur ONESIGNAL_REST_API_KEY (GitHub secrets) chahiye."""
-    if not (ONESIGNAL_APP_ID and ONESIGNAL_REST_API_KEY):
-        return
-    url_target = (
-        f"{SITE_URL}/courses/{slug}/posts/{lesson['date']}-{lesson['id']}.html"
-        if SITE_URL else None
-    )
-    payload = {
-        "app_id": ONESIGNAL_APP_ID,
-        "included_segments": ["Subscribed Users"],
-        "headings": {"en": f"🔔 {course['icon']} {course['name']} — Day {lesson['day']:02d}"},
-        "contents": {"en": lesson["title"]},
-    }
-    if url_target:
-        payload["url"] = url_target
-    try:
-        data = json.dumps(payload).encode()
-        req = urllib.request.Request(
-            "https://onesignal.com/api/v1/notifications",
-            data=data,
-            headers={
-                "Content-Type": "application/json; charset=utf-8",
-                "Authorization": f"Basic {ONESIGNAL_REST_API_KEY}",
-            },
-        )
-        urllib.request.urlopen(req, timeout=20)
-    except Exception as e:
-        print(f"OneSignal push fail ({course['name']}): {e}", file=sys.stderr)
-
-
-# ---------------------------------------------------------------------
-# 6. Main
+# 5. Main
 # ---------------------------------------------------------------------
 def main():
     posts = load_posts()
@@ -943,10 +851,6 @@ def main():
 
         existing.append(lesson)
         posts[slug] = existing
-
-        post_to_telegram(course, lesson)
-        post_to_facebook(course, lesson)
-        post_to_onesignal(slug, course, lesson)
 
         os.makedirs(os.path.join(DOCS_DIR, "courses", slug, "posts"), exist_ok=True)
         page = render_lesson_page(slug, course, lesson, is_latest=True)
