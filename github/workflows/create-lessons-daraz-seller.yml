@@ -1,12 +1,12 @@
-name: create-lessons-youtube-automation
+name: create-lessons-daraz-seller
 
 on:
   schedule:
-    - cron: '0 10 * * *'
+    - cron: '50 10 * * *'
   workflow_dispatch: {}
 
 concurrency:
-  group: create-lessons-youtube-automation
+  group: create-lessons-daraz-seller
   cancel-in-progress: false
 
 permissions:
@@ -28,9 +28,9 @@ jobs:
         run: |
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      - name: Youtube Automation ka lesson generate karo
+      - name: Daraz Seller ka lesson generate karo
         env:
-          COURSE_SLUG: youtube-automation
+          COURSE_SLUG: daraz-seller
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           SITE_URL: ${{ secrets.SITE_URL }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -44,6 +44,6 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
-          git diff --staged --quiet || git commit -m "Auto: Youtube Automation — naya lesson [skip ci]"
+          git diff --staged --quiet || git commit -m "Auto: Daraz Seller — naya lesson [skip ci]"
           git pull --rebase origin main
           git push
