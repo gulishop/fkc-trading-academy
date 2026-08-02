@@ -556,10 +556,12 @@ HEAD = """<!DOCTYPE html>
 
 
 def brand_footer_html(logo_href):
+    privacy_href = logo_href.replace(BRAND_LOGO, "privacy.html")
     return (
         f'<div class="brand-footer"><img src="{logo_href}" alt="{BRAND_NAME}">'
         f'<div class="txt"><b>{html.escape(BRAND_NAME)}</b><br>'
-        f'{html.escape(BRAND_LINE)}</div></div>'
+        f'{html.escape(BRAND_LINE)}<br>'
+        f'<a href="{privacy_href}">Privacy Policy</a></div></div>'
     )
 
 
