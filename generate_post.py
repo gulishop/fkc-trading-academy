@@ -455,12 +455,19 @@ def save_posts(posts):
 # ---------------------------------------------------------------------
 # 3. Lesson content — Gemini generate ya manual file parhein
 # ---------------------------------------------------------------------
+# NOTE: "gemini-2.5-flash-lite" retire ho chuka hai (22 July 2026 ko
+# support khatam hua), isi liye pehle 404 aa raha tha. Ab "gemini-2.5-flash"
+# use kar rahe hain jo abhi (Aug 2026) active/GA hai. Agar aage yeh bhi
+# retire ho jaye to sirf yahan neeche wala MODEL_NAME badal dein.
+MODEL_NAME = "gemini-2.5-flash"
+
+
 def gemini_generate(prompt_text, max_retries=5):
     if not GEMINI_API_KEY:
         raise RuntimeError("GEMINI_API_KEY set nahi hai.")
     url = (
         "https://generativelanguage.googleapis.com/v1beta/models/"
-        f"gemini-2.5-flash-lite:generateContent?key={GEMINI_API_KEY}"
+        f"{MODEL_NAME}:generateContent?key={GEMINI_API_KEY}"
     )
     body = json.dumps({"contents": [{"parts": [{"text": prompt_text}]}]}).encode()
 
