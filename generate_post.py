@@ -315,7 +315,7 @@ BRAND_CONTACT_PHONE = "+92 333 3909816"
 BRAND_LINE = f"{BRAND_CONTACT_NAME} — {BRAND_CONTACT_TITLE} — {BRAND_CONTACT_PHONE}"
 
 SITE_URL = os.environ.get("SITE_URL", "").rstrip("/")
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
 
 POSTS_JSON = "posts.json"
 LESSONS_DIR = "lessons"
@@ -420,70 +420,68 @@ def save_posts(posts):
 
 
 # ---------------------------------------------------------------------
-# 3. Lesson content — Gemini generate ya manual file parhein
+# 3. Lesson content — Groq (Llama) generate ya manual file parhein
 # ---------------------------------------------------------------------
 # Model fallback list — pehle wala try hota hai, agar wo 404 de (retire/
-# not-found ho jaye) to script khud agla wala try karta hai. Isliye ab
-# manually model name badalne ki zarurat nahi — jo bhi is list mein se
-# chal raha ho, wahi use ho jayega. Naya model list mein upar add kar
-# sakte hain jab Google koi naya release kare.
-MODEL_NAMES = ["gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-2.0-flash"]
+# not-found ho jaye) to script khud agla wala try karta hai. Naya model
+# list mein upar add kar sakte hain jab Groq koi naya release kare.
+MODEL_NAMES = ["llama-3.3-70b-versatile", "llama-3.1-8b-instant", "gemma2-9b-it"]
+
+GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 
 
-def _gemini_call_once(model_name, prompt_text, max_retries=5):
-    """Ek model ke sath generateContent call karta hai, 429/500/502/503
-    (aur 403 jo project-block na ho) par retry karta hai. 404 (model not
+def _groq_call_once(model_name, prompt_text, max_retries=5):
+    """Ek model ke sath chat completion call karta hai, 429/500/502/503
+    (aur 403 jo account-block na ho) par retry karta hai. 404 (model not
     found) par turant raise karta hai taake caller agla model try kar sake."""
-    url = (
-        "https://generativelanguage.googleapis.com/v1beta/models/"
-        f"{model_name}:generateContent?key={GEMINI_API_KEY}"
-    )
-    body = json.dumps({"contents": [{"parts": [{"text": prompt_text}]}]}).encode()
+    body = json.dumps({
+        "model": model_name,
+        "messages": [{"role": "user", "content": prompt_text}],
+    }).encode()
 
     wait = 20
     for attempt in range(1, max_retries + 1):
         req = urllib.request.Request(
-            url, data=body, headers={"Content-Type": "application/json"}
+            GROQ_URL,
+            data=body,
+            headers={
+                "Content-Type": "application/json",
+                "Authorization": f"Bearer {GROQ_API_KEY}",
+            },
         )
         try:
             with urllib.request.urlopen(req, timeout=60) as resp:
                 return json.load(resp)
         except urllib.error.HTTPError as e:
             # Body padho taake asli wajah pata chale (quota / permission /
-            # region-block) — sirf "403: Forbidden" kaafi nahi hota debug ke liye.
+            # invalid key) — sirf "403: Forbidden" kaafi nahi hota debug ke liye.
             try:
                 err_body = e.read().decode("utf-8", errors="replace")[:500]
             except Exception:
                 err_body = "(body nahi mil saka)"
-            print(f"Gemini {e.code} detail ({model_name}, attempt {attempt}): {err_body}", file=sys.stderr)
+            print(f"Groq {e.code} detail ({model_name}, attempt {attempt}): {err_body}", file=sys.stderr)
 
-            # "PERMISSION_DENIED — project denied access" ek real,
-            # non-transient block hai (Google ki taraf se poore project par
-            # lagaya gaya) — isay retry karna sirf CI minutes waste karta hai.
-            # Turant raise karo taake user ko pata chale key/project badalni hai.
-            if e.code == 403 and "PERMISSION_DENIED" in err_body:
-                print(f"Gemini 403 PERMISSION_DENIED — ye project-level block hai, retry se theek nahi hoga. Naya API key/project banayein.", file=sys.stderr)
+            if e.code == 403:
+                print("Groq 403 — ye account/key-level block ho sakta hai, retry se theek nahi hoga. Key check karein.", file=sys.stderr)
                 raise
 
-            # Baaki 403 (aur 429/500/502/503) CI runner ki IP/region ki wajah
-            # se transient ho sakte hain, is liye unhe retryable treat karte hain.
-            if e.code in (403, 429, 500, 502, 503) and attempt < max_retries:
-                print(f"Gemini {e.code} mila ({model_name}, attempt {attempt}) — {wait}s ruk kar dobara koshish...", file=sys.stderr)
+            if e.code in (429, 500, 502, 503) and attempt < max_retries:
+                print(f"Groq {e.code} mila ({model_name}, attempt {attempt}) — {wait}s ruk kar dobara koshish...", file=sys.stderr)
                 time.sleep(wait)
                 wait = min(wait * 2, 120)
                 continue
             raise
 
 
-def gemini_generate(prompt_text, max_retries=5):
-    if not GEMINI_API_KEY:
-        raise RuntimeError("GEMINI_API_KEY set nahi hai.")
+def ai_generate(prompt_text, max_retries=5):
+    if not GROQ_API_KEY:
+        raise RuntimeError("GROQ_API_KEY set nahi hai.")
 
     data = None
     last_error = None
     for model_name in MODEL_NAMES:
         try:
-            data = _gemini_call_once(model_name, prompt_text, max_retries=max_retries)
+            data = _groq_call_once(model_name, prompt_text, max_retries=max_retries)
             break
         except urllib.error.HTTPError as e:
             last_error = e
@@ -495,9 +493,9 @@ def gemini_generate(prompt_text, max_retries=5):
         raise last_error
 
     try:
-        return data["candidates"][0]["content"]["parts"][0]["text"].strip()
+        return data["choices"][0]["message"]["content"].strip()
     except (KeyError, IndexError):
-        print("Gemini response se text nahi mila:", data, file=sys.stderr)
+        print("Groq response se text nahi mila:", data, file=sys.stderr)
         return ""
 
 
@@ -571,7 +569,7 @@ def get_or_generate_lesson(slug, course, day_num, previous_titles):
         print(f"[{slug}] Day {day_num} Gemini se generate ho raha hai...")
         prompt = build_prompt(slug, course, day_num, previous_titles)
         try:
-            raw = gemini_generate(prompt)
+            raw = ai_generate(prompt)
         except Exception as e:
             print(f"[{slug}] Gemini call fail ho gayi, aaj yeh course skip: {e}", file=sys.stderr)
             return None
