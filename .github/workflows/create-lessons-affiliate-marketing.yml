@@ -31,7 +31,7 @@ jobs:
       - name: Affiliate Marketing ka lesson generate karo
         env:
           COURSE_SLUG: affiliate-marketing
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           SITE_URL: ${{ secrets.SITE_URL }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
