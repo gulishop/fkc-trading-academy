@@ -1027,6 +1027,32 @@
         ]
       ],
       "answer_key": "compiler, ide, g++, vs code, hello world"
+    },
+    {
+      "day": 2,
+      "id": "day-002",
+      "date": "2026-08-03",
+      "title": "Day 2 — Variables aur Data Types: Apne Programs Ko Smarter Banana",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Variables memory mein storage ke liye containers hote hain. Har variable ka ek data type hota hai (jaise int, float, char) jo batata hai ke usme kya type ka data store hoga. Input/output (cin/cout) se user se data le sakte hain aur results show kar sakte hain."
+        ],
+        [
+          "Example",
+          "```cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n    int age = 25;          // Integer variable\n    float price = 19.99;   // Floating-point variable\n    char grade = 'A';      // Character variable\n\n    cout << \"Age: \" << age << endl;\n    cout << \"Price: $\" << price << endl;\n    cout << \"Grade: \" << grade << endl;\n\n    return 0;\n}\n```"
+        ],
+        [
+          "Practice",
+          "Ek program banayein jo user se **name** (string), **age** (int), aur **height** (float) input le aur phir sabko ek line mein print kare."
+        ],
+        [
+          "Mini Project",
+          "Ek **Simple Calculator** banayein jo do numbers input le aur un par +, -, *, / operations perform karke results show kare."
+        ]
+      ],
+      "answer_key": "age, name, height, calculator"
     }
   ]
 }
