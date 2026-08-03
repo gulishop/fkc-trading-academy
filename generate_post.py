@@ -1735,6 +1735,7 @@ function loadRequests(){{
       var tbody = document.getElementById("req-tbody");
       tbody.innerHTML = "";
       document.getElementById("req-empty").style.display = snap.empty ? "block" : "none";
+      document.getElementById("req-empty").textContent = "Abhi koi certificate request nahi aayi.";
       snap.forEach(function(doc){{
         var d = doc.data();
         var dt = d.created && d.created.toDate ? d.created.toDate().toLocaleDateString() : "-";
@@ -1753,6 +1754,12 @@ function loadRequests(){{
         }});
         tbody.appendChild(tr);
       }});
+    }}, function(err){{
+      var empty = document.getElementById("req-empty");
+      empty.style.display = "block";
+      empty.style.color = "#B45309";
+      empty.textContent = "⚠️ Data load nahi ho saka: " + err.message +
+        " — Firestore Database bana hai ya nahi, aur security rules check karein.";
     }});
 }}
 
