@@ -834,7 +834,85 @@ def ensure_pwa_icons():
         img.save(full_path, "PNG")
 
 
-def pwa_extra_for(logo_href):
+def pwa_install_prompt_html():
+    """Naye visitors ko 'Add to Home Screen' ka nudge deta hai — Android
+    par native install prompt trigger karta hai, iOS Safari par manual
+    instructions dikhata hai (kyunki iOS beforeinstallprompt support
+    nahi karta). Agar already installed (standalone mode) ho to kabhi
+    nahi dikhta. Ek baar band karne par 7 din tak dobara nahi aata."""
+    return """
+<style>
+#pwa-install-banner{position:fixed;left:12px;right:12px;bottom:12px;
+background:#0B1220;color:#fff;border-radius:14px;padding:14px 16px;
+display:none;align-items:center;gap:12px;box-shadow:0 8px 24px rgba(0,0,0,.25);
+z-index:9999;font-size:.88em;}
+#pwa-install-banner.show{display:flex;}
+#pwa-install-banner .txt{flex:1;line-height:1.4;}
+#pwa-install-banner .txt b{display:block;margin-bottom:2px;}
+#pwa-install-banner button{background:#0056D2;color:#fff;border:none;
+border-radius:10px;padding:8px 14px;font-weight:600;font-size:.92em;
+flex-shrink:0;}
+#pwa-install-banner .close-x{background:transparent;color:#9aa4b2;
+padding:4px 6px;font-size:1.1em;}
+</style>
+<div id="pwa-install-banner">
+  <div class="txt"><b>📲 App install karein</b><span id="pwa-install-txt">Fullscreen experience aur roz ke reminders ke liye Home Screen par add karein.</span></div>
+  <button id="pwa-install-btn" type="button">Install</button>
+  <button class="close-x" type="button" id="pwa-install-close" aria-label="Band karein">✕</button>
+</div>
+<script>
+(function(){
+  var KEY = "fkc_install_dismissed_until";
+  var banner = document.getElementById("pwa-install-banner");
+  if(!banner) return;
+
+  function isStandalone(){
+    return window.matchMedia("(display-mode: standalone)").matches
+      || window.matchMedia("(display-mode: fullscreen)").matches
+      || window.navigator.standalone === true;
+  }
+  function dismissedRecently(){
+    var until = parseInt(localStorage.getItem(KEY) || "0", 10);
+    return Date.now() < until;
+  }
+  function dismiss(){
+    localStorage.setItem(KEY, String(Date.now() + 7*24*60*60*1000));
+    banner.classList.remove("show");
+  }
+  document.getElementById("pwa-install-close").addEventListener("click", dismiss);
+
+  if(isStandalone() || dismissedRecently()) return;
+
+  var isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent) && !window.MSStream;
+
+  if(isIOS){
+    document.getElementById("pwa-install-txt").textContent =
+      "Safari ke Share ⬆️ button se 'Add to Home Screen' choose karein.";
+    banner.classList.add("show");
+    document.getElementById("pwa-install-btn").style.display = "none";
+    return;
+  }
+
+  var deferredPrompt = null;
+  window.addEventListener("beforeinstallprompt", function(e){
+    e.preventDefault();
+    deferredPrompt = e;
+    banner.classList.add("show");
+  });
+  document.getElementById("pwa-install-btn").addEventListener("click", function(){
+    if(!deferredPrompt) return;
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.finally(function(){
+      banner.classList.remove("show");
+      deferredPrompt = null;
+    });
+  });
+  window.addEventListener("appinstalled", function(){ banner.classList.remove("show"); });
+})();
+</script>"""
+
+
+
     if logo_href.endswith(BRAND_LOGO):
         prefix = logo_href[: -len(BRAND_LOGO)]
     else:
@@ -1221,7 +1299,7 @@ def render_home(posts):
         css=BASE_CSS,
         pwa_extra=pwa_extra_for(logo_href),
     )
-    return head + body + FOOT_TAIL + notify_script_html()
+    return head + body + FOOT_TAIL + notify_script_html() + pwa_install_prompt_html()
 
 
 def render_course_page(slug, course, lessons):
@@ -1256,7 +1334,7 @@ def render_course_page(slug, course, lessons):
         css=BASE_CSS,
         pwa_extra=pwa_extra_for(logo_href),
     )
-    return head + body + FOOT_TAIL + notify_script_html()
+    return head + body + FOOT_TAIL + notify_script_html() + pwa_install_prompt_html()
 
 
 def render_lesson_page(slug, course, lesson, is_latest):
@@ -1310,7 +1388,7 @@ def render_lesson_page(slug, course, lesson, is_latest):
         css=BASE_CSS,
         pwa_extra=pwa_extra_for(logo_href),
     )
-    return head + body + FOOT_TAIL
+    return head + body + FOOT_TAIL + pwa_install_prompt_html()
 
 
 # ---------------------------------------------------------------------
