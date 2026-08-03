@@ -701,6 +701,32 @@
         ]
       ],
       "answer_key": "seo, social media, email marketing"
+    },
+    {
+      "day": 2,
+      "id": "day-002",
+      "date": "2026-08-03",
+      "title": "Day 2",
+      "preamble": "**Day 2 — SEO Basics: Keywords Aur On-Page SEO Ko Samajhein**",
+      "sections": [
+        [
+          "Concept",
+          "SEO ka sabse pehle step hai **keywords** samajhna aur unhe apni website par **on-page SEO** ke zariye apply karna. Keywords woh words hain jo log Google par search karte hain. On-page SEO ka matlab hai apni website ke andar hi SEO karna—jaise titles, meta descriptions, headings, aur content ko optimize karna taake search engines samajh saken ke aapka content relevant hai."
+        ],
+        [
+          "Example",
+          "Maana ke aap ek **bakery** chalate hain. Log \"best chocolate cake in Lahore\" search karte hain. Aapko apne website ke:\n- **Title Tag** mein: \"Best Chocolate Cake in Lahore | [Bakery Name]\"\n- **Meta Description** mein: \"Order fresh chocolate cake in Lahore with free delivery. Try our famous recipes!\"\n- **Content** mein: \"Our chocolate cake is made with...\" (yeh phrase repeat karna avoid karen, warna \"keyword stuffing\" ho jayega)."
+        ],
+        [
+          "Practice",
+          "Apne ya kisi doosre business ka **1 keyword** choose karen (jaise \"organic face cream in Karachi\"). Us keyword ko apne **website ke title, meta description, aur first 100 words** mein use karen. (Agar website nahi hai, toh ek simple blog post likh kar practice karen.)"
+        ],
+        [
+          "Mini Project",
+          "Ek **dummy webpage** banayein (Google Docs ya Notion mein) jisme:\n1. Title: Apna chosen keyword shamil ho.\n2. Meta description: 150-160 characters mein keyword use karke.\n3. First paragraph: Keyword naturally 2-3 baar use karen (overdo na karen)."
+        ]
+      ],
+      "answer_key": "keyword placement, title tag, meta description, natural density"
     }
   ],
   "video-editing": [
