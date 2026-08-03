@@ -761,6 +761,40 @@
         ]
       ],
       "answer_key": "homepage, heading, button, publish"
+    },
+    {
+      "day": 2,
+      "id": "day-002",
+      "date": "2026-08-03",
+      "title": "Day 2 — Website Builders: Framer, Webflow aur Wix se Professional Website Banana",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Website builders jaise Framer, Webflow aur Wix no-code tools hain jo drag-and-drop interface ke zariye professional websites banane mein madad karte hain. Inme templates, animations aur hosting built-in hote hain, isliye coding ki zarurat nahi hoti. Ye platforms beginners se lekar intermediate users ke liye perfect hain."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Wix",
+          "Simple drag-and-drop se ek portfolio website banane ke liye:\n   - Wix.com par jao aur \"Create a Site\" select karo.\n   - Template choose karo (e.g., \"Portfolio & CV\").\n   - Left panel se elements drag karke add karo (text, images, buttons).\n   - \"Publish\" par click karo aur apni website ka link share karo.\n\n2."
+        ],
+        [
+          "Webflow",
+          "Advanced designs ke liye:\n   - Webflow.com par signup karo.\n   - \"New Project\" > \"Blank\" select karo.\n   - Left panel se elements drag karke ek responsive navbar banayo.\n   - Right panel se styles adjust karo (fonts, colors).\n   - \"Publish\" par click karo."
+        ],
+        [
+          "Practice",
+          "Apne liye ek simple 3-page website banane ka try karo (Home, About, Contact). Kisi bhi platform (Wix/Webflow/Framer) ka use kar sakte ho. Minimum 5 elements (text, image, button) add karo."
+        ],
+        [
+          "Mini Project",
+          "Ek \"Restaurant Menu\" website banayo:\n- Homepage par menu items ki list ho.\n- About page par restaurant ki story ho.\n- Contact page par location aur contact form ho.\n- Sab pages ko navbar se link karo.\n- Website ko mobile-friendly banao."
+        ]
+      ],
+      "answer_key": "homepage, about page, contact page, navbar, mobile-responsive"
     }
   ],
   "digital-marketing-seo": [
