@@ -813,6 +813,32 @@
         ]
       ],
       "answer_key": "media import, timeline, preview, transition"
+    },
+    {
+      "day": 2,
+      "id": "day-002",
+      "date": "2026-08-03",
+      "title": "Day 2 — \"Pacing Ka Rahasya: Rozmarra Ke Content Ko Kaise Banayein Engaging\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Pacing ka matlab hai apne video ki speed ko control karna taake audience ka attention barqarar rahe. Zyada slow ho to bore ho jayega, zyada fast ho to samajh na aaye. Har platform (Reels, Shorts, YouTube) ke liye pacing alag hoti hai. Aaj seekhenge ki kaise apne cuts aur transitions ko timing de taake video engaging rahe."
+        ],
+        [
+          "Example",
+          "Ek 15-second Reel ke liye:\n1. 0-3 sec: Ek shocking clip ya hook (e.g., \"Yeh trick ne meri life badal di!\")\n2. 3-10 sec: Main content (step-by-step process)\n3. 10-15 sec: Call-to-action (e.g., \"Full tutorial link bio mein hai!\")"
+        ],
+        [
+          "Practice",
+          "Apne phone se 10-second ka ek clip shoot karo (ya existing footage use karo). Usme 3-4 cuts lagao taake pacing natural lage. Har cut ke beech 1-2 second ka gap rakhna."
+        ],
+        [
+          "Mini Project",
+          "Ek 30-second ka \"Tips\" video banayein jisme:\n- 0-5 sec: Hook (e.g., \"Aap bhi yeh galti karte hain!\")\n- 5-20 sec: 3 tips (har tip ke beech 2-3 sec ka gap)\n- 20-30 sec: Conclusion + CTA"
+        ]
+      ],
+      "answer_key": "hook, main content, gap, cta"
     }
   ],
   "print-on-demand": [
