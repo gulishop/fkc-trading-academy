@@ -150,5 +150,33 @@
       ],
       "answer_key": "logo, cover photo, about section, username, page roles"
     }
+  ],
+  "forex-trading": [
+    {
+      "day": 1,
+      "id": "day-001",
+      "date": "2026-08-03",
+      "title": "Day 1 — Forex Market Kya Hai? Aur Kaise Kaam Karta Hai?",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Forex (Foreign Exchange) market duniya ka sabse bara financial market hai jahan currencies ka exchange hota hai. Yeh 24/5 chalta hai (Monday se Friday, 24 ghante), kyunki har country ke markets alag-alag time zones mein khulte hain. Is market ka main purpose international trade aur investments ko facilitate karna hai. Yahan traders profit kamane ke liye currencies ki price movements par bet lagate hain."
+        ],
+        [
+          "Example",
+          "Imagine aap India se USA travel karne ja rahe hain. Aapko $1000 chahiye. Forex market mein aap INR se USD exchange karenge. Agar 1 USD = 83 INR hai, toh aapko 83,000 INR dena hoga. Agar aapne 10,000 INR se USD liya aur next day 1 USD = 84 INR ho gaya, toh aapka profit 10,000 INR ka ho gaya (1000 USD * 1 INR ka change)."
+        ],
+        [
+          "Practice",
+          "Apne mobile ya laptop se \"USD to INR exchange rate\" search karein. Dekhein aaj ka rate kya hai. Ab imagine kijiye aap 1000 USD khareed rahe hain. 1 week baad agar rate badh kar 85 INR ho jata hai, toh aapko kitna profit hoga?"
+        ],
+        [
+          "Mini Project",
+          "Ek simple chart banaen jismein aap 3 currencies (e.g., USD, EUR, GBP) ke rates ko 5 dinon ke liye track karen. Har din ka rate note karen aur dekhein ki kya koi trend nazar aata hai."
+        ]
+      ],
+      "answer_key": "usd/inr rate, 1000 usd, 2000 inr profit"
+    }
   ]
 }
