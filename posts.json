@@ -363,6 +363,32 @@
         ]
       ],
       "answer_key": "email/phone, verification, business type, cnic/ntn, bank details"
+    },
+    {
+      "day": 2,
+      "id": "day-002",
+      "date": "2026-08-03",
+      "title": "Day 2 — Pakistan Market Mein Best Selling Products Kaise Dhunde",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj seekhoge ke Daraz par Pakistan mein konsi products zyada bikti hain. Product research ka matlab hai market ki demand, competition, aur profit margin check karna. Aise products chuno jo zyada search kiye ja rahe hon, kam competition ho, aur aapke budget mein aaye."
+        ],
+        [
+          "Example",
+          "1. Daraz Seller Center > \"Product Research\" section mein jao.\n2. \"Trending Products\" ya \"Hot Searches\" dekho.\n3. \"Fashion\" category mein \"Women's Kurtas\" search karo — agar 10,000+ searches/month hain aur competition kam hai, to yeh product choose kar sakte ho."
+        ],
+        [
+          "Practice",
+          "Apne Daraz Seller Center account mein jao aur \"Product Research\" tool use karke **3 products** select karo jo aapko Pakistan market ke liye suitable lagte hain. Har product ke liye 2 reasons bhi likhna."
+        ],
+        [
+          "Mini Project",
+          "Ek Excel sheet banao jismein:\n- Product name\n- Monthly searches (Daraz se le sakte ho)\n- Competition level (Low/Medium/High)\n- Estimated profit margin (Price - Cost)\n- Apka final decision (Yes/No)"
+        ]
+      ],
+      "answer_key": "trending products, low competition, high demand, profit margin"
     }
   ],
   "ai-content-writing": [
