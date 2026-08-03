@@ -342,5 +342,33 @@
       ],
       "answer_key": "product name, supplier price, your selling price"
     }
+  ],
+  "freelancing": [
+    {
+      "day": 1,
+      "id": "day-001",
+      "date": "2026-08-03",
+      "title": "Day 1 — Apni Skills Kaise Choose Karein Jo Freelancing Mein Kamayein Badhayein",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Freelancing mein pehla aur sabse important step hai apni skills choose karna. Aapko woh skills select karni hain jo aapko pasand hain, market demand mein hain, aur aap unpar confidently kaam kar sakte hain. Zyada tar beginners yeh galti karte hain ke woh koi bhi skill choose kar lete hain bina research kiye. Aapko apni skills ka selection aise karna hai jo aapko long-term mein success dilaye."
+        ],
+        [
+          "Example",
+          "1. Apni hobbies ya interests list karein (e.g., writing, graphic design, programming).\n2. Check karein ke yeh skills ke liye market demand hai ya nahi (Upwork/Fiverr par job posts dekhein).\n3. Skills ka combination banayein jo aapko unique banaye (e.g., \"Graphic Design + Social Media Marketing\")."
+        ],
+        [
+          "Practice",
+          "Apni 3 skills select karein jo aap freelancing ke liye choose kar sakte hain. Har skill ke liye 1 reason likhein ke kyun aap usko choose kar rahe hain."
+        ],
+        [
+          "Mini Project",
+          "Ek simple Google Sheet banayein jismein aap 5 skills list karein jo aapko pasand hain, unke liye market demand (Upwork/Fiverr par job posts ka count), aur aapki proficiency level (Beginner/Intermediate/Expert)."
+        ]
+      ],
+      "answer_key": "skills list, market demand, proficiency, google sheet"
+    }
   ]
 }
