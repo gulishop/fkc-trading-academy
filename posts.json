@@ -426,5 +426,33 @@
       ],
       "answer_key": "template select, text add, color change, shape add"
     }
+  ],
+  "no-code-app-dev": [
+    {
+      "day": 1,
+      "id": "day-001",
+      "date": "2026-08-03",
+      "title": "Day 1 — No-Code Kya Hai? Aur Kyun Demand Mein Hai",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "No-code ka matlab hai programming ke bina software, websites, ya apps banana. Aajkal companies aur freelancers isko isliye use kar rahe hain kyunki yeh time aur cost bachaata hai. Coding seekhne ki zaroorat nahi, drag-and-drop se kaam ho jata hai. Startups bhi isko apne MVP (Minimum Viable Product) banane ke liye use kar rahe hain."
+        ],
+        [
+          "Example",
+          "Imagine aapko ek simple website banana hai. Normally coding seekhne mein mahine lag jate, lekin no-code tools jaise Wix ya Framer se sirf kuch ghante mein ready ho jati hai. Bas drag karke elements place karo, content add karo, aur publish kar do!"
+        ],
+        [
+          "Practice",
+          "Apne phone ya laptop par Wix ya Framer ki website kholo aur ek basic \"Hello World\" page banane ki koshish karo. Sirf 3-4 elements (jaise heading, paragraph, button) use karo."
+        ],
+        [
+          "Mini Project",
+          "Ek 1-pager portfolio website banayein jisme aapka naam, ek photo, aur ek \"Contact Me\" button ho. (Use Framer ya Wix ka free plan.)"
+        ]
+      ],
+      "answer_key": "homepage, heading, button, publish"
+    }
   ]
 }
