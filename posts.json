@@ -1250,5 +1250,33 @@
       ],
       "answer_key": "interest, demand, competition, sub-niches"
     }
+  ],
+  "photography-editing": [
+    {
+      "day": 1,
+      "id": "day-001",
+      "date": "2026-08-03",
+      "title": "Day 1",
+      "preamble": "**Day 1 — Camera/Phone Settings: Basics Se Shuru Karain**",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhein ge ke camera ya phone ki basic settings (ISO, aperture, shutter speed, white balance) kya hain aur yeh photos par kaise asar dalte hain. Har setting ki importance samajh kar, aap apne device ko better control kar sakte hain—chahe wo DSLR ho ya smartphone."
+        ],
+        [
+          "Example",
+          "*Smartphone example:* Agar aap koi photo low light mein le rahe hain, toh ISO badha kar (e.g., 800-1600) photo bright ho sakti hai, lekin noise (grain) bhi aayega. Agar aap fast-moving object (e.g., running dog) capture kar rahe hain, toh shutter speed 1/500s ya zyada rakhein warna blur aayega."
+        ],
+        [
+          "Practice",
+          "Apne phone ya camera ki settings mein ja kar:\n1. ISO ko 100 (daylight) se 800 (low light) tak manually badha kar dekhain.\n2. Shutter speed ko 1/60s (slow) aur 1/500s (fast) par set kar ke ek hi object ki 2 photos leain."
+        ],
+        [
+          "Mini Project",
+          "Ek hi scene ki 3 photos leain:\n- ISO 100 (bright light, no noise)\n- ISO 1600 (low light, check noise)\n- Shutter speed 1/30s (blur if hand moves) vs 1/500s (sharp)."
+        ]
+      ],
+      "answer_key": "iso 100, iso 1600, 1/30s blur, 1/500s sharp"
+    }
   ]
 }
