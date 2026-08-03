@@ -345,7 +345,7 @@ COURSES = {
     "cpp-daily-coding": {
         "name": "C++ Daily Coding",
         "icon": "💻",
-        "post_time": "11:40 AM",
+        "post_time": "12:00 PM",
         "tagline": "C++ zero se seekhein — roz ek naya coding lesson, practice ke sath",
         "topics": [
             "C++ setup karna (compiler, IDE) aur pehla program",
