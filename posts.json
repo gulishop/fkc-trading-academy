@@ -497,6 +497,44 @@
         ]
       ],
       "answer_key": "product name, supplier price, your selling price"
+    },
+    {
+      "day": 2,
+      "id": "day-002",
+      "date": "2026-08-03",
+      "title": "Day 2 — Winning Product Ki Pehchaan: 5 Key Metrics Se Filter Karna",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Winning product dhoondna dropshipping ka sabse important step hai. Aise product chunne hain jo:\n1) **High demand** ho (trending ya problem solve karne wala),\n2) **Low competition** ho (niche mein unique value ho),\n3) **High perceived value** ho (logo ko lagta ho yeh zaroori hai),\n4) **Easy to ship** ho (lightweight, no fragile items),\n5) **Emotional trigger** ho (happy, angry, curious ya \"must-have\" feeling)."
+        ],
+        [
+          "Example",
+          "Ek product search karte waqt:\n-"
+        ],
+        [
+          "Trending niche",
+          "\"Pet lovers\" → \"Automatic pet feeder\" (demand high, competition medium).\n-"
+        ],
+        [
+          "Problem solve",
+          "\"Back pain\" → \"Lumbar support pillow\" (emotional trigger + value).\n-"
+        ],
+        [
+          "Avoid",
+          "\"Custom jewelry\" (high competition, long shipping)."
+        ],
+        [
+          "Practice",
+          "Apne niche ke 3-5 trending products ko AliExpress par search karo. Har product ke liye yeh check karo:\n✅ Price range (₨500–₨3000 ideal hai)\n✅ Orders count (1000+ orders = demand proof)\n✅ Reviews (4+ stars, 50+ reviews = trust)\n✅ Shipping time (AliExpress Standard ya ePacket)"
+        ],
+        [
+          "Mini Project",
+          "Ek simple spreadsheet banao:\n| Product Name | Niche | Price | Orders | Avg Rating | Shipping Time | Notes |\n|--------------|-------|-------|--------|------------|---------------|-------|\n| Automatic Pet Feeder | Pet Lovers | $29.99 | 5,000 | 4.8 | 15-20 days | Trending, high demand |"
+        ]
+      ],
+      "answer_key": "trending niche, emotional trigger, 1000+ orders, 4+ stars"
     }
   ],
   "freelancing": [
