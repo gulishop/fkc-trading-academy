@@ -616,6 +616,146 @@ def course_affiliate_button_html(course):
 
 
 # ---------------------------------------------------------------------
+# 🎓 Certificates — progress tracking (localStorage, static site — koi
+# login/database zaroori nahi), WhatsApp par apply, aur (optional)
+# Firebase backend jisse aap (Fazul Khan) admin panel se requests dekh
+# kar auto-signature wala certificate generate kar saken.
+# ---------------------------------------------------------------------
+CERTIFICATE_FEE_DEFAULT = "Rs. 500"
+
+
+def course_certificate_fee(course):
+    """Har course ka apna certificate fee ho sakta hai — COURSES dictionary
+    mein us course ke andar "certificate_fee": "Rs. 800" jaisi key add
+    karke override kar dein, warna CERTIFICATE_FEE_DEFAULT use hoga."""
+    return course.get("certificate_fee", CERTIFICATE_FEE_DEFAULT)
+
+
+# Firebase sirf admin certificate-panel (docs/admin-certificates.html) ke
+# liye use hota hai — jab tak neeche config khaali hai, WhatsApp wala
+# apply-flow bilkul normal chalta rahega (Firebase yahan optional hai).
+# Setup ke steps is response ke aakhir mein diye hain.
+FIREBASE_CONFIG = {
+    "apiKey": "AIzaSyA-HvEX3q6QChPRPJsuKZg6CYL6cYo5jd0",
+    "authDomain": "fkc-trading--certificate.firebaseapp.com",
+    "projectId": "fkc-trading--certificate",
+    "storageBucket": "fkc-trading--certificate.firebasestorage.app",
+    "messagingSenderId": "657947527934",
+    "appId": "1:657947527934:web:5671cf0cf8b52603c3b3af",
+}
+FIREBASE_ENABLED = bool(FIREBASE_CONFIG.get("apiKey"))
+
+
+def firebase_init_html():
+    """Firebase compat SDK load + init — sirf tab jab FIREBASE_CONFIG fill
+    ho. window.fkcSaveCertRequest() define karta hai jise certificate
+    apply-flow call karta hai taake request Firestore mein bhi save ho
+    jaye (admin panel ke liye), WhatsApp message ke sath-sath."""
+    if not FIREBASE_ENABLED:
+        return ""
+    return f"""
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script>
+(function(){{
+  try{{
+    firebase.initializeApp({json.dumps(FIREBASE_CONFIG)});
+    window.fkcDb = firebase.firestore();
+    window.fkcSaveCertRequest = function(data){{
+      try{{
+        window.fkcDb.collection("certificate_requests").add({{
+          slug: data.slug, course: data.course, name: data.name,
+          fee: data.fee, status: "pending",
+          created: firebase.firestore.FieldValue.serverTimestamp()
+        }});
+      }}catch(e){{}}
+    }};
+  }}catch(e){{}}
+}})();
+</script>"""
+
+
+def certificate_progress_script_html():
+    """Lesson-complete tracking + course progress bar + certificate-apply
+    button — sab kuch localStorage ("fkc_progress") mein, kyunki site
+    static hai (bina login/database ke). Jab student certificate ke liye
+    apply karta hai, naam poochta hai aur WhatsApp khol deta hai jisme
+    course ka naam + student ka naam + fee pehle se likha hota hai."""
+    return f"""<script>
+(function(){{
+  function getProgress(){{
+    try{{ return JSON.parse(localStorage.getItem("fkc_progress")||"{{}}"); }}catch(e){{ return {{}}; }}
+  }}
+  function setProgress(obj){{ localStorage.setItem("fkc_progress", JSON.stringify(obj)); }}
+  function isDone(slug, lessonId){{
+    var p = getProgress();
+    return !!(p[slug] && p[slug].indexOf(lessonId) !== -1);
+  }}
+
+  window.fkcToggleComplete = function(btn){{
+    var slug = btn.getAttribute("data-slug");
+    var lessonId = btn.getAttribute("data-lesson");
+    var p = getProgress();
+    if(!p[slug]) p[slug] = [];
+    var idx = p[slug].indexOf(lessonId);
+    if(idx === -1){{
+      p[slug].push(lessonId);
+      btn.textContent = "✅ Complete Ho Gaya";
+      btn.classList.add("done");
+    }} else {{
+      p[slug].splice(idx,1);
+      btn.textContent = "✅ Complete Mark Karein";
+      btn.classList.remove("done");
+    }}
+    setProgress(p);
+  }};
+
+  window.fkcApplyCertificate = function(slug, courseName, fee){{
+    var name = prompt("Apna poora naam likhein (certificate par yahi naam print hoga):");
+    if(!name || !name.trim()) return;
+    name = name.trim();
+    var text = "🎓 Certificate Application\\n\\nCourse: " + courseName +
+      "\\nStudent Name: " + name + "\\nCertificate Fee: " + fee;
+    if(window.fkcSaveCertRequest){{
+      window.fkcSaveCertRequest({{slug: slug, course: courseName, name: name, fee: fee}});
+    }}
+    var wa = "https://wa.me/{BRAND_WHATSAPP_DIGITS}?text=" + encodeURIComponent(text);
+    window.open(wa, "_blank");
+  }};
+
+  document.addEventListener("DOMContentLoaded", function(){{
+    var btn = document.getElementById("fkc-complete-btn");
+    if(btn){{
+      var slug = btn.getAttribute("data-slug");
+      var lessonId = btn.getAttribute("data-lesson");
+      if(isDone(slug, lessonId)){{
+        btn.textContent = "✅ Complete Ho Gaya";
+        btn.classList.add("done");
+      }}
+    }}
+    var wrap = document.getElementById("fkc-progress-wrap");
+    if(wrap){{
+      var slug = wrap.getAttribute("data-slug");
+      var total = parseInt(wrap.getAttribute("data-total"),10) || 0;
+      var p = getProgress();
+      var done = (p[slug]||[]).length;
+      if(done > total) done = total;
+      var pct = total > 0 ? Math.round((done/total)*100) : 0;
+      var fill = document.getElementById("fkc-progress-fill");
+      var txt = document.getElementById("fkc-progress-text");
+      if(fill) fill.style.width = pct + "%";
+      if(txt) txt.textContent = done + "/" + total + " lessons complete";
+      var certBtn = document.getElementById("fkc-cert-btn");
+      if(certBtn && total > 0 && done >= total){{
+        certBtn.style.display = "inline-flex";
+      }}
+    }}
+  }});
+}})();
+</script>"""
+
+
+# ---------------------------------------------------------------------
 # 🔔 Notify Me — client-side reminder (browser Notification + beep tone).
 # Kaam sirf tab tak karta hai jab site ka koi tab khula ho (background
 # push ke liye backend/OneSignal chahiye hoga) — lekin jab bhi user site
@@ -1218,6 +1358,13 @@ font-size:.76em;font-weight:700;padding:5px 12px;cursor:pointer;
 margin-top:6px;white-space:nowrap;}
 .notify-btn.subscribed{background:var(--accent);color:#fff;border-color:var(--accent);}
 .ccard .notify-btn{margin-top:8px;}
+.progress-wrap{margin:14px 0 22px;}
+.progress-track{background:var(--line);border-radius:20px;height:10px;
+overflow:hidden;}
+.progress-fill{background:var(--accent);height:100%;width:0%;
+transition:width .4s ease;}
+.complete-btn.done{background:var(--accent);}
+#fkc-cert-btn{background:var(--purple);}
 """
 
 HEAD = """<!DOCTYPE html>
@@ -1326,6 +1473,21 @@ def render_course_page(slug, course, lessons):
     affiliate_btn = course_affiliate_button_html(course)
     affiliate_block = f'<p>{affiliate_btn}</p>' if affiliate_btn else ""
 
+    total_lessons = len(lessons)
+    course_name_js = json.dumps(course["name"], ensure_ascii=False)
+    fee_js = json.dumps(course_certificate_fee(course), ensure_ascii=False)
+    progress_block = ""
+    if total_lessons > 0:
+        progress_block = f"""
+    <div class="card progress-wrap" id="fkc-progress-wrap" data-slug="{slug}" data-total="{total_lessons}">
+      <div class="progress-track"><div class="progress-fill" id="fkc-progress-fill"></div></div>
+      <p class="muted" id="fkc-progress-text">0/{total_lessons} lessons complete</p>
+      <button type="button" class="btn" id="fkc-cert-btn" style="display:none"
+        onclick="fkcApplyCertificate('{slug}', {course_name_js}, {fee_js})">
+        🎓 Certificate ke liye Apply Karein
+      </button>
+    </div>"""
+
     logo_href = f"../../{BRAND_LOGO}"
     body = f"""
     <div class="top"><a href="../../index.html">← {html.escape(BRAND_NAME)}</a></div>
@@ -1334,6 +1496,7 @@ def render_course_page(slug, course, lessons):
     <p class="muted">📅 Naya lesson roz <b>{html.escape(course.get('post_time', ''))} Pakistan time</b> par yahan add hota hai.</p>
     <p>{notify_bell_html(slug)}</p>
     {affiliate_block}
+    {progress_block}
     <div class="plist">{listing}</div>
     {brand_footer_html(logo_href)}
     """
@@ -1347,7 +1510,11 @@ def render_course_page(slug, course, lessons):
         css=BASE_CSS,
         pwa_extra=pwa_extra_for(logo_href),
     )
-    return head + body + FOOT_TAIL + notify_script_html() + pwa_install_prompt_html()
+    return (
+        head + body + FOOT_TAIL + notify_script_html()
+        + certificate_progress_script_html() + firebase_init_html()
+        + pwa_install_prompt_html()
+    )
 
 
 def render_lesson_page(slug, course, lesson, is_latest):
@@ -1387,6 +1554,11 @@ def render_lesson_page(slug, course, lesson, is_latest):
         <a class="btn alt" href="{tg_link}" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="{fb_link}" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
       </div>
+      <div>
+        <button type="button" class="btn complete-btn" id="fkc-complete-btn"
+          data-slug="{slug}" data-lesson="{lesson['id']}"
+          onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
+      </div>
     </div>
     <p>{direct_link_button_html("🚀 Watch Next Lesson")}</p>
     {brand_footer_html(logo_href)}
@@ -1401,7 +1573,229 @@ def render_lesson_page(slug, course, lesson, is_latest):
         css=BASE_CSS,
         pwa_extra=pwa_extra_for(logo_href),
     )
-    return head + body + FOOT_TAIL + pwa_install_prompt_html()
+    return (
+        head + body + FOOT_TAIL + certificate_progress_script_html()
+        + firebase_init_html() + pwa_install_prompt_html()
+    )
+
+
+def render_admin_certificates_page():
+    """docs/admin-certificates.html — sirf aap (Fazul Khan) ke liye. Firebase
+    email/password se login karke certificate-requests ki list dikhata
+    hai; har request ke liye ek click mein PNG certificate generate hota
+    hai jis par student ka naam, course ka naam, date, aur automatic
+    signature stamp (docs/signature.png agar upload ki ho, warna ek
+    script-font wala fallback signature) laga hota hai. Ye page tabhi
+    kaam karega jab FIREBASE_CONFIG (upar Python file mein) fill ho."""
+    logo_href = BRAND_LOGO
+    if not FIREBASE_ENABLED:
+        body = f"""
+    <div class="top"><a href="index.html">← {html.escape(BRAND_NAME)}</a></div>
+    <h1>🎓 Certificate Admin Panel</h1>
+    <div class="card">
+      <p>Ye panel Firebase ke bina kaam nahi karega. <code>generate_post.py</code>
+      mein <code>FIREBASE_CONFIG</code> fill karein aur site dobara build karein.
+      Steps neeche chat mein diye gaye hain.</p>
+    </div>
+    {brand_footer_html(logo_href)}
+    """
+        head = HEAD.format(
+            title=f"Admin — {BRAND_NAME}", ogdesc="Certificate admin panel",
+            ogimage=f"{SITE_URL}/{BRAND_LOGO}" if SITE_URL else logo_href,
+            logo_href=logo_href, brand=html.escape(BRAND_NAME), css=BASE_CSS,
+            pwa_extra="",
+        )
+        return head + body + FOOT_TAIL
+
+    fb_cfg_json = json.dumps(FIREBASE_CONFIG)
+    extra_css = """
+    #admin-login{max-width:340px;margin:40px auto;}
+    #admin-login input{width:100%;padding:10px;margin:6px 0;
+      border:1px solid var(--line);border-radius:6px;font-size:14px;}
+    table.req{width:100%;border-collapse:collapse;font-size:.88em;margin-top:10px;}
+    table.req th,table.req td{border-bottom:1px solid var(--line);
+      padding:8px 6px;text-align:left;vertical-align:middle;}
+    .status-pill{padding:2px 9px;border-radius:20px;font-size:.75em;font-weight:700;}
+    .status-pending{background:#FFF4E5;color:#B45309;}
+    .status-issued{background:#E7F8EE;color:#0F7A3D;}
+    #cert-modal{position:fixed;inset:0;background:rgba(0,0,0,.55);
+      display:none;align-items:center;justify-content:center;z-index:999;padding:16px;}
+    #cert-modal.show{display:flex;}
+    #cert-modal .box{background:#fff;border-radius:12px;padding:16px;
+      max-width:100%;max-height:90vh;overflow:auto;text-align:center;}
+    #cert-canvas{max-width:100%;height:auto;border:1px solid var(--line);}
+    """
+    body = f"""
+    <div class="top"><a href="index.html">← {html.escape(BRAND_NAME)}</a></div>
+    <h1>🎓 Certificate Admin Panel</h1>
+    <p class="muted">Sirf {html.escape(BRAND_CONTACT_NAME)} ke liye — certificate requests dekhein aur issue karein.</p>
+
+    <div id="admin-login" class="card">
+      <h3>Login</h3>
+      <input type="email" id="admin-email" placeholder="Email">
+      <input type="password" id="admin-pass" placeholder="Password">
+      <button type="button" class="btn" onclick="fkcAdminLogin()">Login</button>
+      <p class="muted" id="admin-login-err"></p>
+    </div>
+
+    <div id="admin-panel" style="display:none">
+      <p><button type="button" class="btn alt" onclick="fkcAdminLogout()">Logout</button></p>
+      <div class="card">
+        <h3>Certificate Requests</h3>
+        <table class="req" id="req-table"><thead>
+          <tr><th>Date</th><th>Student</th><th>Course</th><th>Fee</th><th>Status</th><th></th></tr>
+        </thead><tbody id="req-tbody"></tbody></table>
+        <p class="muted" id="req-empty">Loading...</p>
+      </div>
+    </div>
+
+    <div id="cert-modal">
+      <div class="box">
+        <canvas id="cert-canvas" width="1600" height="1131"></canvas><br>
+        <button type="button" class="btn" onclick="fkcDownloadCert()">⬇️ Download Certificate (PNG)</button>
+        <button type="button" class="btn alt" onclick="document.getElementById('cert-modal').classList.remove('show')">Band Karein</button>
+      </div>
+    </div>
+    {brand_footer_html(logo_href)}
+
+<script>
+firebase.initializeApp({fb_cfg_json});
+var auth = firebase.auth();
+var db = firebase.firestore();
+var currentReq = null;
+
+function fkcAdminLogin(){{
+  var email = document.getElementById("admin-email").value;
+  var pass = document.getElementById("admin-pass").value;
+  auth.signInWithEmailAndPassword(email, pass).catch(function(err){{
+    document.getElementById("admin-login-err").textContent = err.message;
+  }});
+}}
+function fkcAdminLogout(){{ auth.signOut(); }}
+
+auth.onAuthStateChanged(function(user){{
+  document.getElementById("admin-login").style.display = user ? "none" : "block";
+  document.getElementById("admin-panel").style.display = user ? "block" : "none";
+  if(user) loadRequests();
+}});
+
+function loadRequests(){{
+  db.collection("certificate_requests").orderBy("created", "desc").limit(200)
+    .onSnapshot(function(snap){{
+      var tbody = document.getElementById("req-tbody");
+      tbody.innerHTML = "";
+      document.getElementById("req-empty").style.display = snap.empty ? "block" : "none";
+      snap.forEach(function(doc){{
+        var d = doc.data();
+        var dt = d.created && d.created.toDate ? d.created.toDate().toLocaleDateString() : "-";
+        var statusClass = d.status === "issued" ? "status-issued" : "status-pending";
+        var tr = document.createElement("tr");
+        tr.innerHTML =
+          "<td>" + dt + "</td>" +
+          "<td>" + (d.name||"") + "</td>" +
+          "<td>" + (d.course||"") + "</td>" +
+          "<td>" + (d.fee||"") + "</td>" +
+          "<td><span class='status-pill " + statusClass + "'>" + (d.status||"pending") + "</span></td>" +
+          "<td><button type='button' class='btn' style='margin:0;padding:6px 12px;font-size:.8em;'>Generate</button></td>";
+        tr.querySelector("button").addEventListener("click", function(){{
+          currentReq = {{ id: doc.id, name: d.name, course: d.course, date: dt }};
+          openCertModal(currentReq);
+        }});
+        tbody.appendChild(tr);
+      }});
+    }});
+}}
+
+function openCertModal(req){{
+  var canvas = document.getElementById("cert-canvas");
+  var ctx = canvas.getContext("2d");
+  ctx.fillStyle = "#FFFFFF"; ctx.fillRect(0,0,canvas.width,canvas.height);
+  ctx.strokeStyle = "#0056D2"; ctx.lineWidth = 10;
+  ctx.strokeRect(30,30,canvas.width-60,canvas.height-60);
+  ctx.strokeStyle = "#6D28D9"; ctx.lineWidth = 3;
+  ctx.strokeRect(55,55,canvas.width-110,canvas.height-110);
+
+  ctx.textAlign = "center";
+  ctx.fillStyle = "#1C1D1F";
+  ctx.font = "bold 40px Arial";
+  ctx.fillText({json.dumps(BRAND_NAME)}, canvas.width/2, 150);
+
+  ctx.font = "bold 60px Georgia";
+  ctx.fillStyle = "#0056D2";
+  ctx.fillText("Certificate of Completion", canvas.width/2, 260);
+
+  ctx.font = "26px Arial";
+  ctx.fillStyle = "#6A6F73";
+  ctx.fillText("This is to certify that", canvas.width/2, 420);
+
+  ctx.font = "italic bold 64px Georgia";
+  ctx.fillStyle = "#1C1D1F";
+  ctx.fillText(req.name || "", canvas.width/2, 500);
+
+  ctx.font = "26px Arial";
+  ctx.fillStyle = "#6A6F73";
+  ctx.fillText("has successfully completed the course", canvas.width/2, 570);
+
+  ctx.font = "bold 40px Arial";
+  ctx.fillStyle = "#2BAF66";
+  ctx.fillText(req.course || "", canvas.width/2, 630);
+
+  ctx.font = "22px Arial";
+  ctx.fillStyle = "#6A6F73";
+  ctx.fillText("Date: " + (req.date || ""), canvas.width/2, 700);
+
+  drawSignature(ctx, canvas);
+}}
+
+function drawSignature(ctx, canvas){{
+  var sigImg = new Image();
+  sigImg.crossOrigin = "anonymous";
+  sigImg.onload = function(){{
+    ctx.drawImage(sigImg, canvas.width-480, canvas.height-260, 260, 110);
+    finishSignatureBlock(ctx, canvas);
+  }};
+  sigImg.onerror = function(){{
+    ctx.font = "italic 46px 'Brush Script MT', cursive";
+    ctx.fillStyle = "#0056D2";
+    ctx.textAlign = "center";
+    ctx.fillText({json.dumps(BRAND_CONTACT_NAME)}, canvas.width-350, canvas.height-190);
+    finishSignatureBlock(ctx, canvas);
+  }};
+  sigImg.src = "signature.png";
+}}
+function finishSignatureBlock(ctx, canvas){{
+  ctx.strokeStyle = "#1C1D1F"; ctx.lineWidth = 2;
+  ctx.beginPath(); ctx.moveTo(canvas.width-490, canvas.height-140);
+  ctx.lineTo(canvas.width-210, canvas.height-140); ctx.stroke();
+  ctx.font = "bold 20px Arial"; ctx.fillStyle = "#1C1D1F"; ctx.textAlign = "center";
+  ctx.fillText({json.dumps(BRAND_CONTACT_NAME)}, canvas.width-350, canvas.height-115);
+  ctx.font = "16px Arial"; ctx.fillStyle = "#6A6F73";
+  ctx.fillText({json.dumps(BRAND_CONTACT_TITLE)}, canvas.width-350, canvas.height-90);
+  document.getElementById("cert-modal").classList.add("show");
+}}
+
+function fkcDownloadCert(){{
+  if(!currentReq) return;
+  var canvas = document.getElementById("cert-canvas");
+  var link = document.createElement("a");
+  link.download = "Certificate-" + (currentReq.name||"student").replace(/\\s+/g,"_") + ".png";
+  link.href = canvas.toDataURL("image/png");
+  link.click();
+  db.collection("certificate_requests").doc(currentReq.id).update({{ status: "issued" }});
+}}
+</script>
+    """
+    head_html = f"""<!DOCTYPE html>
+<html lang="ur"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin — {html.escape(BRAND_NAME)}</title>
+<meta name="robots" content="noindex, nofollow">
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<style>{BASE_CSS}{extra_css}</style></head><body><div class="wrap">
+"""
+    return head_html + body + FOOT_TAIL
 
 
 # ---------------------------------------------------------------------
@@ -1463,6 +1857,11 @@ def main():
     os.makedirs(DOCS_DIR, exist_ok=True)
     with open(os.path.join(DOCS_DIR, "index.html"), "w", encoding="utf-8") as f:
         f.write(render_home(posts))
+
+    # Certificate admin panel — sirf Fazul Khan ke liye (Firebase config
+    # fill hone par hi actual kaam karega, warna setup-instructions dikhata hai).
+    with open(os.path.join(DOCS_DIR, "admin-certificates.html"), "w", encoding="utf-8") as f:
+        f.write(render_admin_certificates_page())
 
     # PWA files — har build par (taake naye icons/manifest changes turant
     # reflect hon). Icons khud generate ho jate hain (agar manually upload
