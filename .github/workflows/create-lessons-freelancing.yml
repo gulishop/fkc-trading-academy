@@ -2,7 +2,7 @@ name: create-lessons-freelancing
 
 on:
   schedule:
-    - cron: '10 11 * * *'
+    - cron: '10 5 * * *'
   workflow_dispatch: {}
 
 concurrency:
