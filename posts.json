@@ -1078,5 +1078,33 @@
       ],
       "answer_key": "python.org, path, print(), hello.py, python hello.py"
     }
+  ],
+  "web-development": [
+    {
+      "day": 1,
+      "id": "day-001",
+      "date": "2026-08-03",
+      "title": "Day 1 — HTML Basics: Apni Pehli Webpage Banana",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "HTML (HyperText Markup Language) webpages ki backbone hai. Isse hum apne content ko structure dete hain—jaise headings, paragraphs, images aur links. Har webpage ek `<html>` tag se shuru hoti hai, jisme `<head>` (metadata ke liye) aur `<body>` (visible content ke liye) hote hain."
+        ],
+        [
+          "Example",
+          "Ek basic HTML file banane ke liye:\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <title>Meri Pehli Webpage</title>\n</head>\n<body>\n    <h1>Hello World!</h1>\n    <p>Ye meri pehli webpage hai.</p>\n    <a href=\"https://google.com\">Google par jao</a>\n</body>\n</html>\n```\n1. `!DOCTYPE html` browser ko batata hai ye HTML5 hai.\n2. `<html>` root tag hai.\n3. `<head>` mein page ka title aur metadata hota hai.\n4. `<body>` mein jo content dikhna hai, wo hota hai."
+        ],
+        [
+          "Practice",
+          "Apni `index.html` file banao aur usme:\n- Ek `<h2>` heading add karo: \"Mera Pehla Project\"\n- Ek `<p>` paragraph add karo: \"Ye mera practice ka hissa hai.\"\n- Ek `<a>` link add karo jo \"Google\" par le jaaye."
+        ],
+        [
+          "Mini Project",
+          "Ek 3-page website banao:\n1. `index.html` (homepage)\n2. `about.html` (apne baare mein)\n3. `contact.html` (contact details)\nHar page par ek navigation bar banao jo doosre pages par ja sake."
+        ]
+      ],
+      "answer_key": "index.html, h2, p, a, about.html, contact.html"
+    }
   ]
 }
