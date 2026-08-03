@@ -905,7 +905,13 @@ def pwa_register_script(sw_href):
         "window.addEventListener('load',function(){"
         f"navigator.serviceWorker.register('{sw_href}').then(function(reg){{"
         "reg.update();"
-        "setInterval(function(){reg.update();},60000);"
+        "setInterval(function(){reg.update();},20000);"
+        # app background se wapas khulte hi turant naya version check karo,
+        # taake 20s wait na karna pade
+        "document.addEventListener('visibilitychange',function(){"
+        "if(!document.hidden){reg.update();}"
+        "});"
+        "window.addEventListener('focus',function(){reg.update();});"
         "}}).catch(function(){});"
         "var fkcReloaded=false;"
         "navigator.serviceWorker.addEventListener('controllerchange',function(){"
@@ -1448,6 +1454,9 @@ def render_home(posts):
     <p class="fade-in d2">{direct_link_button_html("🚀 Start Learning")}</p>
     <div class="grid">{''.join(cards)}</div>
     {brand_footer_html(logo_href)}
+    <p style="text-align:center;margin-top:8px;">
+      <a href="admin-certificates.html" style="color:var(--muted);font-size:11px;text-decoration:none;">⚙️ Admin</a>
+    </p>
     """
     og_image = f"{SITE_URL}/{BRAND_LOGO}" if SITE_URL else BRAND_LOGO
     head = HEAD.format(
