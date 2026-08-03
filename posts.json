@@ -206,5 +206,33 @@
       ],
       "answer_key": "product research, warehouse, prime, fees"
     }
+  ],
+  "daraz-seller": [
+    {
+      "day": 1,
+      "id": "day-001",
+      "date": "2026-08-03",
+      "title": "Day 1 — Daraz Seller Center Account Banana",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Daraz Seller Center he Daraz par apna online store banane ka pehla qadam hai. Yahan par aap apne products list kar sakte hain, orders manage kar sakte hain, aur apne business ko grow kar sakte hain. Pehle aapko ek verified seller account banana hota hai, jismein aapki business details, bank account, aur tax information (agar lagti hai) share karni hoti hai."
+        ],
+        [
+          "Example",
+          "1. Daraz Seller Center ki website ya mobile app kholiye.\n2. \"Register as Seller\" par click karein.\n3. Apna email ya phone number enter karein, aur verification code enter karke verify karein.\n4. Apni business type (individual ya company) select karein, aur apna CNIC ya NTN number (agar company hai) upload karein.\n5. Bank details (account number, IBAN) aur tax information (agar applicable hai) fill karein.\n6. Final submission ke baad, Daraz ki team aapki details verify karegi (1-3 din lag sakte hain)."
+        ],
+        [
+          "Practice",
+          "Apna Daraz Seller Center account banane ka process start karein. Apni sari required documents (CNIC, bank details, etc.) ready rakhein."
+        ],
+        [
+          "Mini Project",
+          "Ek simple document taiyar karein jismein aapke business ki details (business name, address, contact number) aur bank details likh dein. Isse next step mein help milegi."
+        ]
+      ],
+      "answer_key": "email/phone, verification, business type, cnic/ntn, bank details"
+    }
   ]
 }
