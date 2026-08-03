@@ -98,6 +98,9 @@ padding-top:16px;display:flex;align-items:center;gap:12px;}
 object-fit:cover;background:#fff;border:1px solid var(--line);}
 .brand-footer .txt{font-size:.8em;color:var(--muted);line-height:1.5;}
 .brand-footer .txt b{color:var(--ink);}
+.wa-btn{display:inline-flex;align-items:center;gap:6px;background:#25D366;
+color:#fff!important;border-radius:16px;padding:4px 12px;font-size:.85em;
+font-weight:600;margin:4px 0;text-decoration:none;}
 .notify-btn{display:inline-flex;align-items:center;gap:6px;background:#fff;
 color:var(--primary);border:1px solid var(--line);border-radius:20px;
 font-size:.76em;font-weight:700;padding:5px 12px;cursor:pointer;
@@ -117,11 +120,80 @@ margin-top:6px;white-space:nowrap;}
       <h3>Concept</h3><p>Aaj hum C++ programming shuru karne se pehle apne system par C++ compiler aur IDE (Integrated Development Environment) setup karenge. Compiler code ko machine language mein translate karta hai, jabki IDE coding, debugging aur running ko asaan banata hai. Pehle program ko &quot;Hello World&quot; kehte hain—yeh programming ki starting point hoti hai.</p><h3>Example</h3><p>1.</p><h3>Compiler Install karein</h3><p>- Windows: [MinGW-w64](https://www.mingw-w64.org/) download karein (ya [MSYS2](https://www.msys2.org/)).<br>   - Mac: Terminal mein `xcode-select --install` run karein.<br>   - Linux: `sudo apt install g++` (Ubuntu/Debian) ya `sudo dnf install gcc-c++` (Fedora).</p><p>2.</p><h3>IDE Install karein</h3><p>- [VS Code](https://code.visualstudio.com/) (lightweight, extensions: &quot;C/C++&quot; aur &quot;Code Runner&quot;).<br>   - Ya [Code::Blocks](https://www.codeblocks.org/) (simple IDE).</p><p>3.</p><h3>Pehl program likhein</h3><p>```cpp<br>   #include &lt;iostream&gt;<br>   using namespace std;</p><p>   int main() {<br>       cout &lt;&lt; &quot;Hello World!&quot; &lt;&lt; endl;<br>       return 0;<br>   }<br>   ```<br>   - `g++ hello.cpp -o hello` se compile karein.<br>   - `./hello` (Linux/Mac) ya `hello.exe` (Windows) se run karein.</p><h3>Practice</h3><p>Apne system par C++ compiler aur VS Code setup karein, aur upar wala &quot;Hello World&quot; program run karein. Screenshot ya terminal output share karein.</p>
       
       <div>
-        <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20C%2B%2B%20Daily%20Coding%20%28Day%2001%29%0A%0ADay%201%20%E2%80%94%20C%2B%2B%20Setup%20aur%20%22Hello%20World%22%20Program%0A%0AConcept%3A%0AAaj%20hum%20C%2B%2B%20programming%20shuru%20karne%20se%20pehle%20apne%20system%20par%20C%2B%2B%20compiler%20aur%20IDE%20%28Integrated%20Development%20Environment%29%20setup%20karenge.%20Compiler%20code%20ko%20machine%20language%20mein%20translate%20karta%20hai%2C%20jabki%20IDE%20coding%2C%20debugging%20aur%20running%20ko%20asaan%20banata%20hai.%20Pehle%20program%20ko%20%22Hello%20World%22%20kehte%20hain%E2%80%94yeh%20programming%20ki%20starting%20point%20hoti%20hai.%0A%0AExample%3A%0A1.%0A%0ACompiler%20Install%20karein%3A%0A-%20Windows%3A%20%5BMinGW-w64%5D%28https%3A//www.mingw-w64.org/%29%20download%20karein%20%28ya%20%5BMSYS2%5D%28https%3A//www.msys2.org/%29%29.%0A%20%20%20-%20Mac%3A%20Terminal%20mein%20%60xcode-select%20--install%60%20run%20karein.%0A%20%20%20-%20Linux%3A%20%60sudo%20apt%20install%20g%2B%2B%60%20%28Ubuntu/Debian%29%20ya%20%60sudo%20dnf%20install%20gcc-c%2B%2B%60%20%28Fedora%29.%0A%0A2.%0A%0AIDE%20Install%20karein%3A%0A-%20%5BVS%20Code%5D%28https%3A//code.visualstudio.com/%29%20%28lightweight%2C%20extensions%3A%20%22C/C%2B%2B%22%20aur%20%22Code%20Runner%22%29.%0A%20%20%20-%20Ya%20%5BCode%3A%3ABlocks%5D%28https%3A//www.codeblocks.org/%29%20%28simple%20IDE%29.%0A%0A3.%0A%0APehl%20program%20likhein%3A%0A%60%60%60cpp%0A%20%20%20%23include%20%3Ciostream%3E%0A%20%20%20using%20namespace%20std%3B%0A%0A%20%20%20int%20main%28%29%20%7B%0A%20%20%20%20%20%20%20cout%20%3C%3C%20%22Hello%20World%21%22%20%3C%3C%20endl%3B%0A%20%20%20%20%20%20%20return%200%3B%0A%20%20%20%7D%0A%20%20%20%60%60%60%0A%20%20%20-%20%60g%2B%2B%20hello.cpp%20-o%20hello%60%20se%20compile%20karein.%0A%20%20%20-%20%60./hello%60%20%28Linux/Mac%29%20ya%20%60hello.exe%60%20%28Windows%29%20se%20run%20karein.%0A%0APractice%3A%0AApne%20system%20par%20C%2B%2B%20compiler%20aur%20VS%20Code%20setup%20karein%2C%20aur%20upar%20wala%20%22Hello%20World%22%20program%20run%20karein.%20Screenshot%20ya%20terminal%20output%20share%20karein.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Director%20/%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
+        <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20C%2B%2B%20Daily%20Coding%20%28Day%2001%29%0A%0ADay%201%20%E2%80%94%20C%2B%2B%20Setup%20aur%20%22Hello%20World%22%20Program%0A%0AConcept%3A%0AAaj%20hum%20C%2B%2B%20programming%20shuru%20karne%20se%20pehle%20apne%20system%20par%20C%2B%2B%20compiler%20aur%20IDE%20%28Integrated%20Development%20Environment%29%20setup%20karenge.%20Compiler%20code%20ko%20machine%20language%20mein%20translate%20karta%20hai%2C%20jabki%20IDE%20coding%2C%20debugging%20aur%20running%20ko%20asaan%20banata%20hai.%20Pehle%20program%20ko%20%22Hello%20World%22%20kehte%20hain%E2%80%94yeh%20programming%20ki%20starting%20point%20hoti%20hai.%0A%0AExample%3A%0A1.%0A%0ACompiler%20Install%20karein%3A%0A-%20Windows%3A%20%5BMinGW-w64%5D%28https%3A//www.mingw-w64.org/%29%20download%20karein%20%28ya%20%5BMSYS2%5D%28https%3A//www.msys2.org/%29%29.%0A%20%20%20-%20Mac%3A%20Terminal%20mein%20%60xcode-select%20--install%60%20run%20karein.%0A%20%20%20-%20Linux%3A%20%60sudo%20apt%20install%20g%2B%2B%60%20%28Ubuntu/Debian%29%20ya%20%60sudo%20dnf%20install%20gcc-c%2B%2B%60%20%28Fedora%29.%0A%0A2.%0A%0AIDE%20Install%20karein%3A%0A-%20%5BVS%20Code%5D%28https%3A//code.visualstudio.com/%29%20%28lightweight%2C%20extensions%3A%20%22C/C%2B%2B%22%20aur%20%22Code%20Runner%22%29.%0A%20%20%20-%20Ya%20%5BCode%3A%3ABlocks%5D%28https%3A//www.codeblocks.org/%29%20%28simple%20IDE%29.%0A%0A3.%0A%0APehl%20program%20likhein%3A%0A%60%60%60cpp%0A%20%20%20%23include%20%3Ciostream%3E%0A%20%20%20using%20namespace%20std%3B%0A%0A%20%20%20int%20main%28%29%20%7B%0A%20%20%20%20%20%20%20cout%20%3C%3C%20%22Hello%20World%21%22%20%3C%3C%20endl%3B%0A%20%20%20%20%20%20%20return%200%3B%0A%20%20%20%7D%0A%20%20%20%60%60%60%0A%20%20%20-%20%60g%2B%2B%20hello.cpp%20-o%20hello%60%20se%20compile%20karein.%0A%20%20%20-%20%60./hello%60%20%28Linux/Mac%29%20ya%20%60hello.exe%60%20%28Windows%29%20se%20run%20karein.%0A%0APractice%3A%0AApne%20system%20par%20C%2B%2B%20compiler%20aur%20VS%20Code%20setup%20karein%2C%20aur%20upar%20wala%20%22Hello%20World%22%20program%20run%20karein.%20Screenshot%20ya%20terminal%20output%20share%20karein.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://t.me/share/url?url=&text=Day%201%20%E2%80%94%20C%2B%2B%20Setup%20aur%20%22Hello%20World%22%20Program%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
       </div>
     </div>
     <p><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
-    <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Director / CEO — +92 333 3909816<br><a href="../../../privacy.html">Privacy Policy</a></div></div>
+    <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html>
+<style>
+#pwa-install-banner{position:fixed;left:12px;right:12px;bottom:12px;
+background:#0B1220;color:#fff;border-radius:14px;padding:14px 16px;
+display:none;align-items:center;gap:12px;box-shadow:0 8px 24px rgba(0,0,0,.25);
+z-index:9999;font-size:.88em;}
+#pwa-install-banner.show{display:flex;}
+#pwa-install-banner .txt{flex:1;line-height:1.4;}
+#pwa-install-banner .txt b{display:block;margin-bottom:2px;}
+#pwa-install-banner button{background:#0056D2;color:#fff;border:none;
+border-radius:10px;padding:8px 14px;font-weight:600;font-size:.92em;
+flex-shrink:0;}
+#pwa-install-banner .close-x{background:transparent;color:#9aa4b2;
+padding:4px 6px;font-size:1.1em;}
+</style>
+<div id="pwa-install-banner">
+  <div class="txt"><b>📲 App install karein</b><span id="pwa-install-txt">Fullscreen experience aur roz ke reminders ke liye Home Screen par add karein.</span></div>
+  <button id="pwa-install-btn" type="button">Install</button>
+  <button class="close-x" type="button" id="pwa-install-close" aria-label="Band karein">✕</button>
+</div>
+<script>
+(function(){
+  var KEY = "fkc_install_dismissed_until";
+  var banner = document.getElementById("pwa-install-banner");
+  if(!banner) return;
+
+  function isStandalone(){
+    return window.matchMedia("(display-mode: standalone)").matches
+      || window.matchMedia("(display-mode: fullscreen)").matches
+      || window.navigator.standalone === true;
+  }
+  function dismissedRecently(){
+    var until = parseInt(localStorage.getItem(KEY) || "0", 10);
+    return Date.now() < until;
+  }
+  function dismiss(){
+    localStorage.setItem(KEY, String(Date.now() + 7*24*60*60*1000));
+    banner.classList.remove("show");
+  }
+  document.getElementById("pwa-install-close").addEventListener("click", dismiss);
+
+  if(isStandalone() || dismissedRecently()) return;
+
+  var isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent) && !window.MSStream;
+
+  if(isIOS){
+    document.getElementById("pwa-install-txt").textContent =
+      "Safari ke Share ⬆️ button se 'Add to Home Screen' choose karein.";
+    banner.classList.add("show");
+    document.getElementById("pwa-install-btn").style.display = "none";
+    return;
+  }
+
+  var deferredPrompt = null;
+  window.addEventListener("beforeinstallprompt", function(e){
+    e.preventDefault();
+    deferredPrompt = e;
+    banner.classList.add("show");
+  });
+  document.getElementById("pwa-install-btn").addEventListener("click", function(){
+    if(!deferredPrompt) return;
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.finally(function(){
+      banner.classList.remove("show");
+      deferredPrompt = null;
+    });
+  });
+  window.addEventListener("appinstalled", function(){ banner.classList.remove("show"); });
+})();
+</script>

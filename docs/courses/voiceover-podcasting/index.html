@@ -98,6 +98,9 @@ padding-top:16px;display:flex;align-items:center;gap:12px;}
 object-fit:cover;background:#fff;border:1px solid var(--line);}
 .brand-footer .txt{font-size:.8em;color:var(--muted);line-height:1.5;}
 .brand-footer .txt b{color:var(--ink);}
+.wa-btn{display:inline-flex;align-items:center;gap:6px;background:#25D366;
+color:#fff!important;border-radius:16px;padding:4px 12px;font-size:.85em;
+font-weight:600;margin:4px 0;text-decoration:none;}
 .notify-btn{display:inline-flex;align-items:center;gap:6px;background:#fff;
 color:var(--primary);border:1px solid var(--line);border-radius:20px;
 font-size:.76em;font-weight:700;padding:5px 12px;cursor:pointer;
@@ -115,7 +118,7 @@ margin-top:6px;white-space:nowrap;}
     <p><button type="button" class="notify-btn" data-notify-slug="voiceover-podcasting" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('voiceover-podcasting', this);">🔔 Notify Me</button></p>
     
     <div class="plist"><p class="muted">Abhi koi lesson nahi — pehla jald aayega.</p></div>
-    <div class="brand-footer"><img src="../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Director / CEO — +92 333 3909816<br><a href="../../privacy.html">Privacy Policy</a></div></div>
+    <div class="brand-footer"><img src="../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../privacy.html">Privacy Policy</a></div></div>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
   var COURSE_TIMES = {"youtube-automation": "9:00 AM", "social-media-marketing": "9:10 AM", "ai-tools": "9:20 AM", "facebook-page-growth": "9:30 AM", "amazon-fba": "9:40 AM", "daraz-seller": "9:50 AM", "dropshipping": "10:00 AM", "freelancing": "10:10 AM", "digital-marketing-seo": "10:20 AM", "graphic-design-canva": "10:30 AM", "ai-content-writing": "10:40 AM", "video-editing": "10:50 AM", "affiliate-marketing": "11:00 AM", "print-on-demand": "11:10 AM", "no-code-app-dev": "11:20 AM", "forex-trading": "11:30 AM", "cpp-daily-coding": "12:00 PM", "python-programming": "1:00 PM", "web-development": "1:10 PM", "excel-data-analysis": "1:20 PM", "crypto-blockchain": "1:30 PM", "psx-stock-trading": "1:40 PM", "tiktok-growth": "1:50 PM", "blogging-adsense": "2:00 PM", "photography-editing": "2:10 PM", "voiceover-podcasting": "2:20 PM", "real-estate-business": "2:30 PM", "mobile-repairing": "2:40 PM"};
@@ -219,5 +222,74 @@ margin-top:6px;white-space:nowrap;}
   }
   setInterval(checkTimes, 30000);
   checkTimes();
+})();
+</script>
+<style>
+#pwa-install-banner{position:fixed;left:12px;right:12px;bottom:12px;
+background:#0B1220;color:#fff;border-radius:14px;padding:14px 16px;
+display:none;align-items:center;gap:12px;box-shadow:0 8px 24px rgba(0,0,0,.25);
+z-index:9999;font-size:.88em;}
+#pwa-install-banner.show{display:flex;}
+#pwa-install-banner .txt{flex:1;line-height:1.4;}
+#pwa-install-banner .txt b{display:block;margin-bottom:2px;}
+#pwa-install-banner button{background:#0056D2;color:#fff;border:none;
+border-radius:10px;padding:8px 14px;font-weight:600;font-size:.92em;
+flex-shrink:0;}
+#pwa-install-banner .close-x{background:transparent;color:#9aa4b2;
+padding:4px 6px;font-size:1.1em;}
+</style>
+<div id="pwa-install-banner">
+  <div class="txt"><b>📲 App install karein</b><span id="pwa-install-txt">Fullscreen experience aur roz ke reminders ke liye Home Screen par add karein.</span></div>
+  <button id="pwa-install-btn" type="button">Install</button>
+  <button class="close-x" type="button" id="pwa-install-close" aria-label="Band karein">✕</button>
+</div>
+<script>
+(function(){
+  var KEY = "fkc_install_dismissed_until";
+  var banner = document.getElementById("pwa-install-banner");
+  if(!banner) return;
+
+  function isStandalone(){
+    return window.matchMedia("(display-mode: standalone)").matches
+      || window.matchMedia("(display-mode: fullscreen)").matches
+      || window.navigator.standalone === true;
+  }
+  function dismissedRecently(){
+    var until = parseInt(localStorage.getItem(KEY) || "0", 10);
+    return Date.now() < until;
+  }
+  function dismiss(){
+    localStorage.setItem(KEY, String(Date.now() + 7*24*60*60*1000));
+    banner.classList.remove("show");
+  }
+  document.getElementById("pwa-install-close").addEventListener("click", dismiss);
+
+  if(isStandalone() || dismissedRecently()) return;
+
+  var isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent) && !window.MSStream;
+
+  if(isIOS){
+    document.getElementById("pwa-install-txt").textContent =
+      "Safari ke Share ⬆️ button se 'Add to Home Screen' choose karein.";
+    banner.classList.add("show");
+    document.getElementById("pwa-install-btn").style.display = "none";
+    return;
+  }
+
+  var deferredPrompt = null;
+  window.addEventListener("beforeinstallprompt", function(e){
+    e.preventDefault();
+    deferredPrompt = e;
+    banner.classList.add("show");
+  });
+  document.getElementById("pwa-install-btn").addEventListener("click", function(){
+    if(!deferredPrompt) return;
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.finally(function(){
+      banner.classList.remove("show");
+      deferredPrompt = null;
+    });
+  });
+  window.addEventListener("appinstalled", function(){ banner.classList.remove("show"); });
 })();
 </script>

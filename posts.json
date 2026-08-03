@@ -285,6 +285,56 @@
         ]
       ],
       "answer_key": "product research, warehouse, prime, fees"
+    },
+    {
+      "day": 2,
+      "id": "day-002",
+      "date": "2026-08-03",
+      "title": "Day 2",
+      "preamble": "**Day 2 — Product Research: Demand, Competition aur Margin Kaise Check Karein**",
+      "sections": [
+        [
+          "Concept",
+          "Product research Amazon FBA ka sabse important step hai. Ismein hum 3 cheezon par focus karte hain:\n1."
+        ],
+        [
+          "Demand",
+          "Kya log yeh product khareed rahe hain? (Search volume, BSR, trends)\n2."
+        ],
+        [
+          "Competition",
+          "Kitne sellers hain? Kitne reviews hain? (Low-competition niches dhundhein)\n3."
+        ],
+        [
+          "Margin",
+          "Profit kitna bachega? (Cost vs. Selling Price vs. Amazon fees)"
+        ],
+        [
+          "Example",
+          "Maana aap \"Wireless Charging Pad\" bechna chahte hain. Aapko pata karna hai:\n-"
+        ],
+        [
+          "Demand",
+          "Amazon par \"Wireless Charging Pad\" search karne par 50,000+ monthly searches hain (Helium 10 ya Jungle Scout se check karein).\n-"
+        ],
+        [
+          "Competition",
+          "Top 10 listings mein 1,000+ reviews hain → High competition. Lekin niche product \"Wireless Charging Pad for Car\" mein 500+ searches aur 200+ reviews hain → Better opportunity.\n-"
+        ],
+        [
+          "Margin",
+          "Agar supplier se Rs. 1,000 mein milta hai, aur aap Rs. 2,500 mein bechte hain, toh Amazon fees (15%) + shipping = Rs. 2,000 cost → Rs. 500 profit per unit."
+        ],
+        [
+          "Practice",
+          "Apne laptop ya phone se **Helium 10** (free trial) ya **Jungle Scout** (Chrome extension) install karein. Koi ek product category chunein (e.g., kitchen accessories) aur 3-5 products ka **demand, competition, aur estimated margin** check karein."
+        ],
+        [
+          "Mini Project",
+          "Ek **Google Sheet** banayein jismein aap 5 products ke liye:\n- Product Name\n- Monthly Searches (Demand)\n- Top 3 Sellers’ Reviews (Competition)\n- Estimated Profit (Margin)\n- Final Verdict (Buy/Don’t Buy)\nFill karein."
+        ]
+      ],
+      "answer_key": "demand, competition, margin, niche"
     }
   ],
   "daraz-seller": [

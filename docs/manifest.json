@@ -3,7 +3,11 @@
   "short_name": "FKC Trading ",
   "start_url": ".",
   "scope": ".",
-  "display": "standalone",
+  "display": "fullscreen",
+  "display_override": [
+    "fullscreen",
+    "standalone"
+  ],
   "background_color": "#0B1220",
   "theme_color": "#0B1220",
   "icons": [
