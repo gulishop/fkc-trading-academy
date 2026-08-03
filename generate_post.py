@@ -342,6 +342,30 @@ COURSES = {
         "affiliate_url": "https://one.exnessonelink.com/a/buhyli14un",
         "affiliate_label": "💹 Exness Par Free Account Banayein",
     },
+    "cpp-daily-coding": {
+        "name": "C++ Daily Coding",
+        "icon": "💻",
+        "post_time": "11:40 AM",
+        "tagline": "C++ zero se seekhein — roz ek naya coding lesson, practice ke sath",
+        "topics": [
+            "C++ setup karna (compiler, IDE) aur pehla program",
+            "Variables, data types, aur input/output",
+            "Operators aur type conversion",
+            "Conditional statements (if/else, switch)",
+            "Loops (for, while, do-while)",
+            "Arrays samajhna aur use karna",
+            "Strings aur string functions",
+            "Functions banana aur parameter passing",
+            "Pointers ki basics",
+            "References aur pointers ka farak",
+            "Structures (struct) banana",
+            "Object-Oriented Programming — classes aur objects",
+            "Constructors, destructors, aur encapsulation",
+            "Inheritance aur polymorphism",
+            "STL basics (vectors, maps, sets)",
+            "Ek chhota project bana kar sab kuch practice karna",
+        ],
+    },
 }
 
 BRAND_NAME = "FKC Trading Academy"
