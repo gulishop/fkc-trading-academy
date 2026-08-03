@@ -6,6 +6,14 @@
 <meta property="og:description" content="Doosron ke products promote kar ke commission kamayein">
 <meta property="og:image" content="../../logo.png">
 <meta name="twitter:card" content="summary_large_image">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z5FV45KG2C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Z5FV45KG2C');
+</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5639688573760714" crossorigin="anonymous"></script>
 <script src="https://pl30647963.effectivecpmnetwork.com/35/50/90/355090180a90a458c3f1895b8e9f6607.js"></script>
 <link rel="icon" href="../../logo.png">
@@ -90,6 +98,12 @@ padding-top:16px;display:flex;align-items:center;gap:12px;}
 object-fit:cover;background:#fff;border:1px solid var(--line);}
 .brand-footer .txt{font-size:.8em;color:var(--muted);line-height:1.5;}
 .brand-footer .txt b{color:var(--ink);}
+.notify-btn{display:inline-flex;align-items:center;gap:6px;background:#fff;
+color:var(--primary);border:1px solid var(--line);border-radius:20px;
+font-size:.76em;font-weight:700;padding:5px 12px;cursor:pointer;
+margin-top:6px;white-space:nowrap;}
+.notify-btn.subscribed{background:var(--accent);color:#fff;border-color:var(--accent);}
+.ccard .notify-btn{margin-top:8px;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -97,8 +111,113 @@ object-fit:cover;background:#fff;border:1px solid var(--line);}
     <div class="top"><a href="../../index.html">← FKC Trading Academy</a></div>
     <h1>🔗 Affiliate Marketing</h1>
     <p class="muted">Doosron ke products promote kar ke commission kamayein</p>
-    <p class="muted">📅 Naya lesson roz 3:00 PM Pakistan time par yahan add hota hai.</p>
+    <p class="muted">📅 Naya lesson roz <b>11:00 AM Pakistan time</b> par yahan add hota hai.</p>
+    <p><button type="button" class="notify-btn" data-notify-slug="affiliate-marketing" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('affiliate-marketing', this);">🔔 Notify Me</button></p>
     
     <div class="plist"><a href="posts/2026-08-02-day-001.html"><span class="d">01</span>Day 1 — Affiliate Marketing Kaise Kam Karta Hai? (Basics Se Shuru)</a></div>
     <div class="brand-footer"><img src="../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Director / CEO — +92 333 3909816<br><a href="../../privacy.html">Privacy Policy</a></div></div>
-    </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html>
+    </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
+(function(){
+  var COURSE_TIMES = {"youtube-automation": "9:00 AM", "social-media-marketing": "9:10 AM", "ai-tools": "9:20 AM", "facebook-page-growth": "9:30 AM", "amazon-fba": "9:40 AM", "daraz-seller": "9:50 AM", "dropshipping": "10:00 AM", "freelancing": "10:10 AM", "digital-marketing-seo": "10:20 AM", "graphic-design-canva": "10:30 AM", "ai-content-writing": "10:40 AM", "video-editing": "10:50 AM", "affiliate-marketing": "11:00 AM", "print-on-demand": "11:10 AM", "no-code-app-dev": "11:20 AM", "forex-trading": "11:30 AM"};
+  var COURSE_NAMES = {"youtube-automation": "YouTube Automation", "social-media-marketing": "Social Media Marketing", "ai-tools": "AI Tools & Automation", "facebook-page-growth": "Facebook Page Growth", "amazon-fba": "Amazon FBA", "daraz-seller": "Daraz Seller", "dropshipping": "Dropshipping", "freelancing": "Freelancing", "digital-marketing-seo": "Digital Marketing & SEO", "graphic-design-canva": "Graphic Design (Canva)", "ai-content-writing": "AI Content Writing & Copywriting", "video-editing": "Video Editing (CapCut/Premiere)", "affiliate-marketing": "Affiliate Marketing", "print-on-demand": "Print on Demand", "no-code-app-dev": "No-Code App & Website Building", "forex-trading": "Forex Trading"};
+
+  function parseTimeToday(t){
+    var m = /(\d+):(\d+)\s*(AM|PM)/i.exec(t);
+    if(!m) return null;
+    var h = parseInt(m[1],10), min = parseInt(m[2],10);
+    var ap = m[3].toUpperCase();
+    if(ap==="PM" && h!==12) h+=12;
+    if(ap==="AM" && h===12) h=0;
+    var d = new Date();
+    d.setHours(h, min, 0, 0);
+    return d;
+  }
+
+  function beep(){
+    try{
+      var ctx = new (window.AudioContext||window.webkitAudioContext)();
+      var o = ctx.createOscillator(), g = ctx.createGain();
+      o.connect(g); g.connect(ctx.destination);
+      o.type = "sine";
+      o.frequency.setValueAtTime(880, ctx.currentTime);
+      o.frequency.setValueAtTime(660, ctx.currentTime+0.15);
+      g.gain.setValueAtTime(0.001, ctx.currentTime);
+      g.gain.exponentialRampToValueAtTime(0.25, ctx.currentTime+0.02);
+      g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime+0.35);
+      o.start(); o.stop(ctx.currentTime+0.4);
+    }catch(e){}
+  }
+
+  function getSubs(){
+    try{ return JSON.parse(localStorage.getItem("fkc_notify")||"{}"); }catch(e){ return {}; }
+  }
+  function isSub(slug){ return !!getSubs()[slug]; }
+  function setSub(slug, val){
+    var obj = getSubs();
+    if(val) obj[slug]=true; else delete obj[slug];
+    localStorage.setItem("fkc_notify", JSON.stringify(obj));
+  }
+
+  window.fkcToggleNotify = function(slug, btn){
+    if(isSub(slug)){
+      setSub(slug, false);
+      btn.textContent = "🔔 Notify Me";
+      btn.classList.remove("subscribed");
+      return;
+    }
+    function subscribe(){
+      setSub(slug, true);
+      btn.textContent = "🔕 Subscribed";
+      btn.classList.add("subscribed");
+      beep();
+    }
+    if("Notification" in window && Notification.permission === "default"){
+      Notification.requestPermission().then(function(perm){ subscribe(); });
+    } else {
+      subscribe();
+    }
+  };
+
+  document.addEventListener("DOMContentLoaded", function(){
+    var subs = getSubs();
+    var btns = document.querySelectorAll("[data-notify-slug]");
+    for(var i=0;i<btns.length;i++){
+      var slug = btns[i].getAttribute("data-notify-slug");
+      if(subs[slug]){
+        btns[i].textContent = "🔕 Subscribed";
+        btns[i].classList.add("subscribed");
+      }
+    }
+  });
+
+  function checkTimes(){
+    var now = new Date();
+    var todayStr = now.toDateString();
+    var fired = {};
+    try{ fired = JSON.parse(localStorage.getItem("fkc_notify_fired")||"{}"); }catch(e){}
+    var subs = getSubs();
+    var changed = false;
+    for(var slug in COURSE_TIMES){
+      if(!subs[slug]) continue;
+      var t = parseTimeToday(COURSE_TIMES[slug]);
+      if(!t) continue;
+      var diff = now - t;
+      if(diff >= 0 && diff < 90000 && fired[slug] !== todayStr){
+        beep();
+        if("Notification" in window && Notification.permission === "granted"){
+          try{
+            new Notification("📚 " + COURSE_NAMES[slug] + " — Naya Lesson!", {
+              body: "Aaj ka naya lesson post ho gaya hai, abhi check karein!"
+            });
+          }catch(e){}
+        }
+        fired[slug] = todayStr;
+        changed = true;
+      }
+    }
+    if(changed) localStorage.setItem("fkc_notify_fired", JSON.stringify(fired));
+  }
+  setInterval(checkTimes, 30000);
+  checkTimes();
+})();
+</script>
