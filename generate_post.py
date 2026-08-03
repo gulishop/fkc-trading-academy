@@ -763,7 +763,14 @@ def pwa_register_script(sw_href):
     return (
         "<script>if('serviceWorker' in navigator){"
         "window.addEventListener('load',function(){"
-        f"navigator.serviceWorker.register('{sw_href}').catch(function(){{}});"
+        f"navigator.serviceWorker.register('{sw_href}').then(function(reg){{"
+        "reg.update();"
+        "setInterval(function(){reg.update();},60000);"
+        "}}).catch(function(){});"
+        "var fkcReloaded=false;"
+        "navigator.serviceWorker.addEventListener('controllerchange',function(){"
+        "if(fkcReloaded)return;fkcReloaded=true;window.location.reload();"
+        "});"
         "});}</script>"
     )
 
@@ -787,11 +794,17 @@ def build_manifest_json():
 
 
 def build_service_worker_js():
+    # Build timestamp is a comment (not code) so it changes every run —
+    # browser sirf byte-for-byte diff check karta hai naya SW detect
+    # karne ke liye. Bina isके, agar SW file ka logic kabhi na badle,
+    # to browser kabhi update hi nahi samjhega.
+    build_stamp = datetime.datetime.utcnow().isoformat()
     return (
+        f"// build: {build_stamp}\n"
         "self.addEventListener('install',e=>self.skipWaiting());\n"
         "self.addEventListener('activate',e=>self.clients.claim());\n"
         "self.addEventListener('fetch',e=>{\n"
-        "  e.respondWith(fetch(e.request).catch(()=>caches.match(e.request)));\n"
+        "  e.respondWith(fetch(e.request,{cache:'no-store'}).catch(()=>caches.match(e.request)));\n"
         "});\n"
     )
 
