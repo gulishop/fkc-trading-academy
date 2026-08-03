@@ -370,5 +370,61 @@
       ],
       "answer_key": "skills list, market demand, proficiency, google sheet"
     }
+  ],
+  "graphic-design-canva": [
+    {
+      "day": 1,
+      "id": "day-001",
+      "date": "2026-08-03",
+      "title": "Day 1 — Canva Ka Pehla Parichay: Interface aur Basic Controls",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum Canva ke dashboard aur uski basic settings se familiar honge. Canva ek drag-and-drop design tool hai jo beginners ke liye bhi bohat aasan hai. Yahan templates, elements (shapes, icons, etc.), text options, aur upload features milte hain. Pehle hum iske interface ko samajhein gaye takay agle lessons mein confidently kaam kar saken."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Sign Up/Login",
+          "Canva.com par jayein, Google ya email se account banayein.\n2."
+        ],
+        [
+          "Homepage",
+          "Left side mein \"Create a design\" button par click karen. Yahan se custom size (jaise 1080x1080px for Instagram) ya pre-set templates (jaise \"Instagram Post\") select karen.\n3."
+        ],
+        [
+          "Interface Breakdown",
+          "-"
+        ],
+        [
+          "Top Bar",
+          "Undo/Redo, save, share, aur export options.\n   -"
+        ],
+        [
+          "Left Panel",
+          "Templates, elements (icons, shapes), text, uploads, aur background options.\n   -"
+        ],
+        [
+          "Canvas",
+          "Apna design yahan banayein—drag karke elements add karen.\n   -"
+        ],
+        [
+          "Right Panel",
+          "Har selected element ki properties (color, size, effects) edit karen."
+        ],
+        [
+          "Practice",
+          "Ek naya design create karen (jaise \"Facebook Post\" template). Left panel se ek \"Text\" box add karen, usme apna naam type karen, aur right panel se font style aur color change karen."
+        ],
+        [
+          "Mini Project",
+          "Ek simple Instagram Post (1080x1080px) banayein jisme:\n- Ek background color ho (left panel > \"Background\" > color pick karen).\n- Ek text box ho \"Hello World!\" (font: \"Poppins\", color: white).\n- Ek simple shape (jaise circle) add karen (left panel > \"Elements\" > \"Shapes\")."
+        ]
+      ],
+      "answer_key": "template select, text add, color change, shape add"
+    }
   ]
 }
