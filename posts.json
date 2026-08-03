@@ -1346,5 +1346,33 @@
       ],
       "answer_key": "defence, bahria, gulberg, johar"
     }
+  ],
+  "mobile-repairing": [
+    {
+      "day": 1,
+      "id": "day-001",
+      "date": "2026-08-03",
+      "title": "Day 1 — Mobile Repairing Ke Liye Zaroori Basic Tools",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Mobile repairing ke liye sabse pehle aapko kuch basic tools ki pehchaan ho jani chahiye. Yeh tools aapki repair ko aasan aur professional banate hain. Har repair ke liye alag tool ki zarurat hoti hai, isliye inki pehchaan aur istemal ka tareeka aana zaroori hai."
+        ],
+        [
+          "Example",
+          "Agar aapko kisi mobile ki screen replace karni hai, toh aapko **Pentalobe screwdriver**, **plastic pry tools**, **suction cup**, aur **heat gun** ki zarurat hogi. Pehle screws ko nikalne ke liye Pentalobe screwdriver use karo, phir plastic pry tools se screen ko gently lift karo."
+        ],
+        [
+          "Practice",
+          "Apne paas ek purana mobile le kar aao, aur uske screws ko nikal kar dekhho ke kaunsa screwdriver kaam karega (Phillips, Flathead, ya Pentalobe)."
+        ],
+        [
+          "Mini Project",
+          "Ek chhota sa toolkit banao jismein 3-4 basic tools hon (jaise screwdriver set, tweezer, plastic pry tool). Inhe ek box mein arrange karo taake repair ke waqt aasani ho."
+        ]
+      ],
+      "answer_key": "phillips, pentalobe, tweezer, suction cup"
+    }
   ]
 }
