@@ -1318,5 +1318,33 @@
       ],
       "answer_key": "usb mic, room quiet, 6-12 inches, pop filter"
     }
+  ],
+  "real-estate-business": [
+    {
+      "day": 1,
+      "id": "day-001",
+      "date": "2026-08-03",
+      "title": "Day 1 — Pakistan ke Real Estate Market ki Basics",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Pakistan ka real estate market dynamic hai—shahar se lekar gaon tak har jagah alag trends hain. Yahan property ki demand, prices, aur legal rules city aur region ke hisaab se badalti rehti hain. Shuruat mein market ko samajhna zaroori hai taake aap informed decisions le saken."
+        ],
+        [
+          "Example",
+          "Karachi mein Defence Housing Authority (DHA) aur Bahria Town ki properties zyada demand mein hain, jabke Lahore mein Gulberg aur Johar Town popular hain. Property prices bhi in areas mein zyada hoti hain."
+        ],
+        [
+          "Practice",
+          "Apne local area mein 3 popular residential projects ya societies ka naam likhein jo abhi demand mein hain."
+        ],
+        [
+          "Mini Project",
+          "Ek simple market research karke ek table banaein:\n| Area Name | Popular Society/Project | Avg. Price (per kanal/sq.ft) | Demand Reason |"
+        ]
+      ],
+      "answer_key": "defence, bahria, gulberg, johar"
+    }
   ]
 }
