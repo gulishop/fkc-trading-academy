@@ -234,5 +234,49 @@
       ],
       "answer_key": "email/phone, verification, business type, cnic/ntn, bank details"
     }
+  ],
+  "ai-content-writing": [
+    {
+      "day": 1,
+      "id": "day-001",
+      "date": "2026-08-03",
+      "title": "Day 1 — Copywriting Basics: Hook, Benefit & CTA",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Copywriting ka matlab hai words ko istemal karke readers ko action lene par majboor karna. Aaj hum 3 core elements seekhenge:\n1. **Hook** – Pehla sentence jo padhne wale ko roke rakhe.\n2. **Benefit** – Reader ko yeh batao ke tum usko kya dene jaa rahe ho.\n3. **CTA (Call-to-Action)** – Reader ko kya karna hai, clear instruction do."
+        ],
+        [
+          "Example",
+          "Imagine you’re selling a *\"10-Minute Morning Routine\"* ebook.\n❌"
+        ],
+        [
+          "Bad Hook",
+          "\"This book is about morning routines.\"\n✅"
+        ],
+        [
+          "Good Hook",
+          "\"Wake up tired? This 10-minute routine will give you energy for the whole day—without coffee!\""
+        ],
+        [
+          "Benefit",
+          "\"Learn 5 science-backed habits to boost focus and lose weight effortlessly.\""
+        ],
+        [
+          "CTA",
+          "\"Download now and start tomorrow!\""
+        ],
+        [
+          "Practice",
+          "Apne favorite product/service ka ad copy likho. Pehle 1 sentence ka **hook**, phir 1 line ka **benefit**, aur last mein **CTA** likhna hai."
+        ],
+        [
+          "Mini Project",
+          "Ek WhatsApp status ya Instagram caption likho jo:\n- Hook: \"Tired of wasting hours on social media?\"\n- Benefit: \"This free tool blocks distractions and saves 2 hours daily.\"\n- CTA: \"DM me ‘FOCUS’ to get it now!\""
+        ]
+      ],
+      "answer_key": "hook, benefit, cta"
+    }
   ]
 }
