@@ -482,5 +482,41 @@
       ],
       "answer_key": "seo, social media, email marketing"
     }
+  ],
+  "video-editing": [
+    {
+      "day": 1,
+      "id": "day-001",
+      "date": "2026-08-03",
+      "title": "Day 1 — \"CapCut/Premiere Ka Interface Samajhiye\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum video editing software (CapCut ya Premiere Pro) ka interface samajhenge. Har tool ki location, menus, timeline, preview panel — sabko pehchaan karna seekhenge. Yeh foundation hai editing ka, iske bina aage kuch nahi ho sakta."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "CapCut",
+          "Open karo → Top par \"Media\" (import files), \"Timeline\" (cutting ka area), \"Preview\" (right side).\n2."
+        ],
+        [
+          "Premiere Pro",
+          "\"Project Panel\" (left, files), \"Timeline\" (bottom), \"Program Monitor\" (right, preview)."
+        ],
+        [
+          "Practice",
+          "Apne software mein ek naya project banayein. 3-4 photos/videos import karo. Timeline par drag karo. Preview mein dekhein."
+        ],
+        [
+          "Mini Project",
+          "Ek 10-second clip banayein — 2 photos ko timeline par lagayein, unke beech ek transition add karo. Export karo."
+        ]
+      ],
+      "answer_key": "media import, timeline, preview, transition"
+    }
   ]
 }
