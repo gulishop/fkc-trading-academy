@@ -102,5 +102,53 @@
       ],
       "answer_key": "goals define karna, audience research, content types"
     }
+  ],
+  "facebook-page-growth": [
+    {
+      "day": 1,
+      "id": "day-001",
+      "date": "2026-08-03",
+      "title": "Day 1 — Facebook Page ko Professional Setup Karna",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke apni Facebook Page ko professional banane ke liye kaunse important steps hain. Ek professional Page sehi pehchaan banta hai, credibility badhti hai aur audience trust karti hai. Iske liye profile picture, cover photo, about section, username aur privacy settings ko sahi tareeke se set karna zaroori hai."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Profile Picture",
+          "180x180 pixels ka logo ya brand image upload karo.\n2."
+        ],
+        [
+          "Cover Photo",
+          "820x312 pixels ki attractive image jo aapke business ko represent kare.\n3."
+        ],
+        [
+          "About Section",
+          "2-3 lines mein apne page ka purpose clear likho (e.g., \"Hum quality products provide karte hain\").\n4."
+        ],
+        [
+          "Username",
+          "@YourPageName (e.g., @TechGuruPK) set karo jo easy yaad rahe.\n5."
+        ],
+        [
+          "Page Roles",
+          "Admin, Editor ya Moderator ko add karo agar team hai."
+        ],
+        [
+          "Practice",
+          "Apni ek existing Facebook Page ya new page bana kar upar diye gaye 5 steps ko follow karo. Har step ko screenshot lo."
+        ],
+        [
+          "Mini Project",
+          "Ek 100-word ka \"About\" section likho jo professional ho aur apne niche ke audience ko attract kare. Iske baad usko apni Facebook Page ke \"About\" section mein save karo."
+        ]
+      ],
+      "answer_key": "logo, cover photo, about section, username, page roles"
+    }
   ]
 }
