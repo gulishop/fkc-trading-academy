@@ -46,6 +46,12 @@ import urllib.request
 import urllib.parse
 import urllib.error
 
+try:
+    from PIL import Image, ImageDraw, ImageFont
+    PIL_AVAILABLE = True
+except ImportError:
+    PIL_AVAILABLE = False
+
 # ---------------------------------------------------------------------
 # 1. COURSES — yahan naya course add/hata/edit karein
 # ---------------------------------------------------------------------
@@ -569,9 +575,11 @@ COURSES = {
 BRAND_NAME = "FKC Trading Academy"
 BRAND_LOGO = "logo.png"  # docs/logo.png — repo mein khud upload karein
 BRAND_CONTACT_NAME = "Fazul Khan Chandio"
-BRAND_CONTACT_TITLE = "Director / CEO"
+BRAND_CONTACT_TITLE = "Founder & CEO"
 BRAND_CONTACT_PHONE = "+92 333 3909816"
+BRAND_WHATSAPP_DIGITS = re.sub(r"\D", "", BRAND_CONTACT_PHONE)  # wa.me link ke liye sirf digits
 BRAND_LINE = f"{BRAND_CONTACT_NAME} — {BRAND_CONTACT_TITLE} — {BRAND_CONTACT_PHONE}"
+BRAND_NAME_TITLE_LINE = f"{BRAND_CONTACT_NAME} — {BRAND_CONTACT_TITLE}"
 
 SITE_URL = os.environ.get("SITE_URL", "").rstrip("/")
 MISTRAL_API_KEY = os.environ.get("MISTRAL_API_KEY", "")
@@ -766,7 +774,8 @@ def build_manifest_json():
         "short_name": BRAND_NAME[:12],
         "start_url": ".",
         "scope": ".",
-        "display": "standalone",
+        "display": "fullscreen",
+        "display_override": ["fullscreen", "standalone"],
         "background_color": "#0B1220",
         "theme_color": "#0B1220",
         "icons": [
@@ -785,6 +794,44 @@ def build_service_worker_js():
         "  e.respondWith(fetch(e.request).catch(()=>caches.match(e.request)));\n"
         "});\n"
     )
+
+
+def ensure_pwa_icons():
+    """PWA install icon ke liye docs/icons/icon-192.png aur icon-512.png
+    chahiye. Agar koi already (manually) upload ki hui ho to usay chorr
+    dete hain — sirf missing size ko khud generate karte hain, taake
+    "Add to Home Screen" par icon hamesha dikhe, chahe koi manual PNG
+    upload na kiya ho."""
+    if not PIL_AVAILABLE:
+        return
+    icons_dir = os.path.join(DOCS_DIR, "icons")
+    os.makedirs(icons_dir, exist_ok=True)
+    initials = "".join(w[0] for w in BRAND_NAME.split()[:3]).upper() or "F"
+    for rel_path, size in ((ICON_192, 192), (ICON_512, 512)):
+        full_path = os.path.join(DOCS_DIR, rel_path)
+        if os.path.exists(full_path):
+            continue  # already manually uploaded — mat overwrite karo
+        os.makedirs(os.path.dirname(full_path), exist_ok=True)
+        img = Image.new("RGB", (size, size), "#0B1220")
+        draw = ImageDraw.Draw(img)
+        pad = int(size * 0.08)
+        draw.rounded_rectangle(
+            [pad, pad, size - pad, size - pad], radius=int(size * 0.16), fill="#0056D2"
+        )
+        font_size = int(size * 0.4)
+        try:
+            font = ImageFont.truetype(
+                "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", font_size
+            )
+        except Exception:
+            font = ImageFont.load_default()
+        bbox = draw.textbbox((0, 0), initials, font=font)
+        tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
+        draw.text(
+            ((size - tw) / 2 - bbox[0], (size - th) / 2 - bbox[1]),
+            initials, fill="#FFFFFF", font=font,
+        )
+        img.save(full_path, "PNG")
 
 
 def pwa_extra_for(logo_href):
@@ -1071,6 +1118,9 @@ padding-top:16px;display:flex;align-items:center;gap:12px;}
 object-fit:cover;background:#fff;border:1px solid var(--line);}
 .brand-footer .txt{font-size:.8em;color:var(--muted);line-height:1.5;}
 .brand-footer .txt b{color:var(--ink);}
+.wa-btn{display:inline-flex;align-items:center;gap:6px;background:#25D366;
+color:#fff!important;border-radius:16px;padding:4px 12px;font-size:.85em;
+font-weight:600;margin:4px 0;text-decoration:none;}
 .notify-btn{display:inline-flex;align-items:center;gap:6px;background:#fff;
 color:var(--primary);border:1px solid var(--line);border-radius:20px;
 font-size:.76em;font-weight:700;padding:5px 12px;cursor:pointer;
@@ -1109,10 +1159,13 @@ HEAD = """<!DOCTYPE html>
 
 def brand_footer_html(logo_href):
     privacy_href = logo_href.replace(BRAND_LOGO, "privacy.html")
+    wa_link = f"https://wa.me/{BRAND_WHATSAPP_DIGITS}"
     return (
         f'<div class="brand-footer"><img src="{logo_href}" alt="{BRAND_NAME}">'
         f'<div class="txt"><b>{html.escape(BRAND_NAME)}</b><br>'
-        f'{html.escape(BRAND_LINE)}<br>'
+        f'{html.escape(BRAND_NAME_TITLE_LINE)}<br>'
+        f'<a class="wa-btn" href="{wa_link}" target="_blank" rel="noopener">'
+        f'💬 WhatsApp par Contact karein</a><br>'
         f'<a href="{privacy_href}">Privacy Policy</a></div></div>'
     )
 
@@ -1321,12 +1374,13 @@ def main():
         f.write(render_home(posts))
 
     # PWA files — har build par (taake naye icons/manifest changes turant
-    # reflect hon). Icons khud PNG hain, unhe docs/icons/ mein manually
-    # daalna hoga (script text files hi generate kar sakta hai).
+    # reflect hon). Icons khud generate ho jate hain (agar manually upload
+    # nahi kiye) taake install icon hamesha dikhe.
     with open(os.path.join(DOCS_DIR, MANIFEST_FILENAME), "w", encoding="utf-8") as f:
         f.write(build_manifest_json())
     with open(os.path.join(DOCS_DIR, SW_FILENAME), "w", encoding="utf-8") as f:
         f.write(build_service_worker_js())
+    ensure_pwa_icons()
 
     print("Done — site docs/ mein update ho gayi.")
 
