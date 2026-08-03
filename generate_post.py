@@ -478,7 +478,7 @@ def notify_script_html():
     }}
     function subscribe(){{
       setSub(slug, true);
-      btn.textContent = "🔕 Subscribed";
+      btn.textContent = "✅ Subscribed";
       btn.classList.add("subscribed");
       beep();
     }}
@@ -495,7 +495,7 @@ def notify_script_html():
     for(var i=0;i<btns.length;i++){{
       var slug = btns[i].getAttribute("data-notify-slug");
       if(subs[slug]){{
-        btns[i].textContent = "🔕 Subscribed";
+        btns[i].textContent = "✅ Subscribed";
         btns[i].classList.add("subscribed");
       }}
     }}
