@@ -22,7 +22,7 @@
 <link rel="icon" href="../../logo.png">
 <link rel="manifest" href="../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-03T11:52:59.107598";
+  var FKC_BUILD = "2026-08-03T12:00:12.560758";
   function fkcCheckVersion(){
     fetch("../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -147,7 +147,15 @@ transition:width .4s ease;}
     <p><button type="button" class="notify-btn" data-notify-slug="psx-stock-trading" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('psx-stock-trading', this);">🔔 Notify Me</button></p>
     
     
-    <div class="plist"><p class="muted">Abhi koi lesson nahi — pehla jald aayega.</p></div>
+    <div class="card progress-wrap" id="fkc-progress-wrap" data-slug="psx-stock-trading" data-total="1">
+      <div class="progress-track"><div class="progress-fill" id="fkc-progress-fill"></div></div>
+      <p class="muted" id="fkc-progress-text">0/1 lessons complete</p>
+      <button type="button" class="btn" id="fkc-cert-btn" style="display:none"
+        onclick="fkcApplyCertificate('psx-stock-trading', "Stock Market Trading (PSX)", "Rs. 500")">
+        🎓 Certificate ke liye Apply Karein
+      </button>
+    </div>
+    <div class="plist"><a href="posts/2026-08-03-day-001.html"><span class="d">01</span>Day 1 — PSX Ki Pehchaan: Pakistan Stock Exchange Kya Hai?</a></div>
     <div class="brand-footer"><img src="../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../privacy.html">Privacy Policy</a></div></div>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
