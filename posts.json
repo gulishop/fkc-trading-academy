@@ -1106,5 +1106,33 @@
       ],
       "answer_key": "index.html, h2, p, a, about.html, contact.html"
     }
+  ],
+  "excel-data-analysis": [
+    {
+      "day": 1,
+      "id": "day-001",
+      "date": "2026-08-03",
+      "title": "Day 1 — Excel Interface aur Pehla Formula: `SUM`",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum Excel ka basic interface samajhein ge aur pehla formula `SUM` use karna seekhein ge. Excel ka ribbon (top menu), formula bar, cells, aur sheets ka basic structure dekhein ge. `SUM` formula numbers ko add karne ka sabse easy tareeka hai—bas numbers select karo ya type karo aur result milega."
+        ],
+        [
+          "Example",
+          "1. Excel kholo, ek naya sheet banayein.\n2. A1 mein `5`, B1 mein `10`, C1 mein `15` type karen.\n3. D1 mein cursor rakhein, `=` type karen, phir `SUM(` likhein.\n4. A1:C1 select karen (ya `A1,B1,C1` type karen), phir `)` close karen.\n5. Enter press karen—D1 mein `30` aana chahiye."
+        ],
+        [
+          "Practice",
+          "Ek naya sheet banayein aur A1:A5 mein yeh numbers type karen: `20, 35, 10, 45, 50`. Phir B1 mein `SUM` formula use karke in sabka total nikalain."
+        ],
+        [
+          "Mini Project",
+          "Ek simple \"Monthly Expense Tracker\" banayein:\n- A1:A7 mein yeh labels type karen: `Rent, Groceries, Transport, Bills, Entertainment, Savings, Total`\n- B1:B6 mein yeh amounts type karen (apne hisaab se, e.g., `15000, 8000, 3000, 2000, 5000, 10000`)\n- B7 mein `SUM(B1:B6)` formula use karke total expenses nikalain."
+        ]
+      ],
+      "answer_key": "b7 ka result, `43000`"
+    }
   ]
 }
