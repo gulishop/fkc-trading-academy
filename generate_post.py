@@ -1706,71 +1706,166 @@ function loadRequests(){{
     }});
 }}
 
+function drawCircularText(ctx, text, cx, cy, radius, startAngle, arcSpan, color, fontPx, fontFamily){{
+  ctx.save();
+  ctx.fillStyle = color;
+  ctx.font = "bold " + fontPx + "px " + fontFamily;
+  ctx.textAlign = "center";
+  ctx.textBaseline = "middle";
+  ctx.translate(cx, cy);
+  ctx.rotate(startAngle);
+  var step = text.length > 1 ? arcSpan / (text.length - 1) : 0;
+  ctx.rotate(-arcSpan/2);
+  for(var i=0;i<text.length;i++){{
+    ctx.save();
+    ctx.rotate(step * i);
+    ctx.translate(0, -radius);
+    ctx.fillText(text[i], 0, 0);
+    ctx.restore();
+  }}
+  ctx.restore();
+}}
+
+function drawSeal(ctx, cx, cy){{
+  var gold = "#B8860B", goldLight = "#D4AF37";
+  ctx.save();
+  ctx.strokeStyle = goldLight; ctx.lineWidth = 5;
+  ctx.beginPath(); ctx.arc(cx, cy, 95, 0, Math.PI*2); ctx.stroke();
+  ctx.strokeStyle = gold; ctx.lineWidth = 2;
+  ctx.beginPath(); ctx.arc(cx, cy, 80, 0, Math.PI*2); ctx.stroke();
+  ctx.fillStyle = "rgba(212,175,55,.08)";
+  ctx.beginPath(); ctx.arc(cx, cy, 78, 0, Math.PI*2); ctx.fill();
+
+  drawCircularText(ctx, {json.dumps(BRAND_NAME.upper())}, cx, cy, 68, -Math.PI/2, Math.PI*1.15, gold, 13, "Arial");
+  drawCircularText(ctx, "★ VERIFIED ★ CERTIFIED", cx, cy, 68, Math.PI/2 + 0.35, Math.PI*0.85, gold, 12, "Arial");
+
+  ctx.fillStyle = goldLight;
+  ctx.font = "40px Arial";
+  ctx.textAlign = "center"; ctx.textBaseline = "middle";
+  ctx.fillText("🎓", cx, cy - 2);
+
+  // neeche ribbon tails
+  ctx.fillStyle = gold;
+  ctx.beginPath();
+  ctx.moveTo(cx-30, cy+72); ctx.lineTo(cx-45, cy+140); ctx.lineTo(cx-14, cy+118); ctx.closePath(); ctx.fill();
+  ctx.beginPath();
+  ctx.moveTo(cx+30, cy+72); ctx.lineTo(cx+45, cy+140); ctx.lineTo(cx+14, cy+118); ctx.closePath(); ctx.fill();
+  ctx.restore();
+}}
+
+function drawCorner(ctx, x, y, sx, sy){{
+  ctx.save();
+  ctx.translate(x, y); ctx.scale(sx, sy);
+  ctx.strokeStyle = "#B8860B"; ctx.lineWidth = 3;
+  ctx.beginPath(); ctx.moveTo(0,60); ctx.lineTo(0,0); ctx.lineTo(60,0); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(0,40); ctx.lineTo(40,0); ctx.stroke();
+  ctx.beginPath(); ctx.arc(14,14,5,0,Math.PI*2); ctx.fill();
+  ctx.restore();
+}}
+
 function openCertModal(req){{
   var canvas = document.getElementById("cert-canvas");
   var ctx = canvas.getContext("2d");
-  ctx.fillStyle = "#FFFFFF"; ctx.fillRect(0,0,canvas.width,canvas.height);
-  ctx.strokeStyle = "#0056D2"; ctx.lineWidth = 10;
-  ctx.strokeRect(30,30,canvas.width-60,canvas.height-60);
-  ctx.strokeStyle = "#6D28D9"; ctx.lineWidth = 3;
-  ctx.strokeRect(55,55,canvas.width-110,canvas.height-110);
+  var w = canvas.width, h = canvas.height;
 
-  ctx.textAlign = "center";
-  ctx.fillStyle = "#1C1D1F";
-  ctx.font = "bold 40px Arial";
-  ctx.fillText({json.dumps(BRAND_NAME)}, canvas.width/2, 150);
+  Promise.all([
+    document.fonts.load("italic 90px 'Great Vibes'"),
+    document.fonts.load("900 46px 'Playfair Display'"),
+    document.fonts.load("700 30px 'Playfair Display'"),
+    document.fonts.load("400 22px 'Playfair Display'")
+  ]).catch(function(){{}}).then(function(){{ paint(); }});
 
-  ctx.font = "bold 60px Georgia";
-  ctx.fillStyle = "#0056D2";
-  ctx.fillText("Certificate of Completion", canvas.width/2, 260);
+  function paint(){{
+    ctx.fillStyle = "#FFFDF8"; ctx.fillRect(0,0,w,h);
 
-  ctx.font = "26px Arial";
-  ctx.fillStyle = "#6A6F73";
-  ctx.fillText("This is to certify that", canvas.width/2, 420);
+    ctx.strokeStyle = "#0B1220"; ctx.lineWidth = 8;
+    ctx.strokeRect(28,28,w-56,h-56);
+    ctx.strokeStyle = "#D4AF37"; ctx.lineWidth = 3;
+    ctx.strokeRect(44,44,w-88,h-88);
+    ctx.strokeStyle = "#0B1220"; ctx.lineWidth = 1;
+    ctx.strokeRect(56,56,w-112,h-112);
 
-  ctx.font = "italic bold 64px Georgia";
-  ctx.fillStyle = "#1C1D1F";
-  ctx.fillText(req.name || "", canvas.width/2, 500);
+    drawCorner(ctx, 56, 56, 1, 1);
+    drawCorner(ctx, w-56, 56, -1, 1);
+    drawCorner(ctx, 56, h-56, 1, -1);
+    drawCorner(ctx, w-56, h-56, -1, -1);
 
-  ctx.font = "26px Arial";
-  ctx.fillStyle = "#6A6F73";
-  ctx.fillText("has successfully completed the course", canvas.width/2, 570);
+    ctx.textAlign = "center";
+    ctx.fillStyle = "#0B1220";
+    ctx.font = "700 24px 'Playfair Display', Georgia";
+    ctx.fillText({json.dumps(BRAND_NAME.upper())}, w/2, 128);
 
-  ctx.font = "bold 40px Arial";
-  ctx.fillStyle = "#2BAF66";
-  ctx.fillText(req.course || "", canvas.width/2, 630);
+    ctx.font = "900 54px 'Playfair Display', Georgia";
+    ctx.fillStyle = "#0B1220";
+    ctx.fillText("CERTIFICATE", w/2, 205);
+    ctx.font = "700 26px 'Playfair Display', Georgia";
+    ctx.fillStyle = "#B8860B";
+    ctx.save(); ctx.letterSpacing = "6px";
+    ctx.fillText("O F   A C H I E V E M E N T", w/2, 245);
+    ctx.restore();
 
-  ctx.font = "22px Arial";
-  ctx.fillStyle = "#6A6F73";
-  ctx.fillText("Date: " + (req.date || ""), canvas.width/2, 700);
+    ctx.strokeStyle = "#D4AF37"; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.moveTo(w/2-90, 270); ctx.lineTo(w/2-14, 270); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(w/2+14, 270); ctx.lineTo(w/2+90, 270); ctx.stroke();
+    ctx.fillStyle = "#D4AF37";
+    ctx.beginPath(); ctx.moveTo(w/2,262); ctx.lineTo(w/2+8,270); ctx.lineTo(w/2,278); ctx.lineTo(w/2-8,270); ctx.closePath(); ctx.fill();
 
-  drawSignature(ctx, canvas);
+    ctx.font = "italic 22px 'Playfair Display', Georgia";
+    ctx.fillStyle = "#4A4F55";
+    ctx.fillText("This certificate is proudly presented to", w/2, 335);
+
+    ctx.font = "italic 90px 'Great Vibes', cursive";
+    ctx.fillStyle = "#0B1220";
+    ctx.fillText(req.name || "", w/2, 440);
+    ctx.strokeStyle = "#D4AF37"; ctx.lineWidth = 1.5;
+    var nameWidth = Math.min(ctx.measureText(req.name||"").width + 40, 900);
+    ctx.beginPath(); ctx.moveTo(w/2-nameWidth/2, 465); ctx.lineTo(w/2+nameWidth/2, 465); ctx.stroke();
+
+    ctx.font = "22px 'Playfair Display', Georgia";
+    ctx.fillStyle = "#4A4F55";
+    ctx.fillText("for successfully completing the course", w/2, 515);
+
+    ctx.font = "700 34px 'Playfair Display', Georgia";
+    ctx.fillStyle = "#0056D2";
+    ctx.fillText(req.course || "", w/2, 565);
+
+    drawSeal(ctx, w/2, 780);
+
+    ctx.textAlign = "left";
+    ctx.font = "16px Arial"; ctx.fillStyle = "#6A6F73";
+    ctx.fillText("Date: " + (req.date || ""), 130, h-190);
+    ctx.fillText("Certificate ID: " + (req.id ? req.id.slice(0,8).toUpperCase() : ""), 130, h-165);
+
+    drawSignature(ctx, canvas);
+  }}
 }}
 
 function drawSignature(ctx, canvas){{
+  var w = canvas.width, h = canvas.height;
   var sigImg = new Image();
   sigImg.crossOrigin = "anonymous";
   sigImg.onload = function(){{
-    ctx.drawImage(sigImg, canvas.width-480, canvas.height-260, 260, 110);
+    var sw = 260, sh = sw * (sigImg.height/sigImg.width);
+    ctx.drawImage(sigImg, w-sw-160, h-sh-215, sw, sh);
     finishSignatureBlock(ctx, canvas);
   }};
   sigImg.onerror = function(){{
-    ctx.font = "italic 46px 'Brush Script MT', cursive";
-    ctx.fillStyle = "#0056D2";
+    ctx.font = "italic 46px 'Great Vibes', cursive";
+    ctx.fillStyle = "#0B1220";
     ctx.textAlign = "center";
-    ctx.fillText({json.dumps(BRAND_CONTACT_NAME)}, canvas.width-350, canvas.height-190);
+    ctx.fillText({json.dumps(BRAND_CONTACT_NAME)}, w-290, h-155);
     finishSignatureBlock(ctx, canvas);
   }};
   sigImg.src = "signature.png";
 }}
 function finishSignatureBlock(ctx, canvas){{
-  ctx.strokeStyle = "#1C1D1F"; ctx.lineWidth = 2;
-  ctx.beginPath(); ctx.moveTo(canvas.width-490, canvas.height-140);
-  ctx.lineTo(canvas.width-210, canvas.height-140); ctx.stroke();
-  ctx.font = "bold 20px Arial"; ctx.fillStyle = "#1C1D1F"; ctx.textAlign = "center";
-  ctx.fillText({json.dumps(BRAND_CONTACT_NAME)}, canvas.width-350, canvas.height-115);
+  var w = canvas.width, h = canvas.height;
+  ctx.strokeStyle = "#0B1220"; ctx.lineWidth = 1.5;
+  ctx.beginPath(); ctx.moveTo(w-420, h-140); ctx.lineTo(w-160, h-140); ctx.stroke();
+  ctx.font = "700 20px 'Playfair Display', Georgia"; ctx.fillStyle = "#0B1220"; ctx.textAlign = "center";
+  ctx.fillText({json.dumps(BRAND_CONTACT_NAME)}, w-290, h-115);
   ctx.font = "16px Arial"; ctx.fillStyle = "#6A6F73";
-  ctx.fillText({json.dumps(BRAND_CONTACT_TITLE)}, canvas.width-350, canvas.height-90);
+  ctx.fillText({json.dumps(BRAND_CONTACT_TITLE)}, w-290, h-92);
   document.getElementById("cert-modal").classList.add("show");
 }}
 
@@ -1790,6 +1885,8 @@ function fkcDownloadCert(){{
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Admin — {html.escape(BRAND_NAME)}</title>
 <meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
