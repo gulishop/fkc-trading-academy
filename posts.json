@@ -580,5 +580,41 @@
       ],
       "answer_key": "design upload, inventory zero, supplier prints"
     }
+  ],
+  "cpp-daily-coding": [
+    {
+      "day": 1,
+      "id": "day-001",
+      "date": "2026-08-03",
+      "title": "Day 1 — C++ Setup aur \"Hello World\" Program",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum C++ programming shuru karne se pehle apne system par C++ compiler aur IDE (Integrated Development Environment) setup karenge. Compiler code ko machine language mein translate karta hai, jabki IDE coding, debugging aur running ko asaan banata hai. Pehle program ko \"Hello World\" kehte hain—yeh programming ki starting point hoti hai."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Compiler Install karein",
+          "- Windows: [MinGW-w64](https://www.mingw-w64.org/) download karein (ya [MSYS2](https://www.msys2.org/)).\n   - Mac: Terminal mein `xcode-select --install` run karein.\n   - Linux: `sudo apt install g++` (Ubuntu/Debian) ya `sudo dnf install gcc-c++` (Fedora).\n\n2."
+        ],
+        [
+          "IDE Install karein",
+          "- [VS Code](https://code.visualstudio.com/) (lightweight, extensions: \"C/C++\" aur \"Code Runner\").\n   - Ya [Code::Blocks](https://www.codeblocks.org/) (simple IDE).\n\n3."
+        ],
+        [
+          "Pehl program likhein",
+          "```cpp\n   #include <iostream>\n   using namespace std;\n\n   int main() {\n       cout << \"Hello World!\" << endl;\n       return 0;\n   }\n   ```\n   - `g++ hello.cpp -o hello` se compile karein.\n   - `./hello` (Linux/Mac) ya `hello.exe` (Windows) se run karein."
+        ],
+        [
+          "Practice",
+          "Apne system par C++ compiler aur VS Code setup karein, aur upar wala \"Hello World\" program run karein. Screenshot ya terminal output share karein."
+        ]
+      ],
+      "answer_key": "compiler, ide, g++, vs code, hello world"
+    }
   ]
 }
