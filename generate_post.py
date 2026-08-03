@@ -588,6 +588,11 @@ POSTS_JSON = "posts.json"
 LESSONS_DIR = "lessons"
 DOCS_DIR = "docs"
 
+# Har build ka apna unique stamp — version.json mein likha jata hai taake
+# khuli hui tabs/PWA khud check kar sakein ke naya build aaya hai ya nahi
+# (live-update mechanism, neeche live_update_script_html dekhein).
+BUILD_STAMP = datetime.datetime.utcnow().isoformat()
+
 ACCENTS = ["#0056D2", "#2BAF66", "#6D28D9", "#D9730D", "#0EA5A5", "#DB4C77"]
 
 # Adsterra Direct Link / Smartlink — home page aur har lesson page par
@@ -1071,6 +1076,37 @@ padding:4px 6px;font-size:1.1em;}
 </script>"""
 
 
+VERSION_FILENAME = "version.json"
+
+
+def live_update_script_html(version_href):
+    """Har {LIVE_UPDATE_INTERVAL}ms mein version.json check karta hai
+    (cache:no-store se, taake browser/CDN cache kabhi beech mein na aaye).
+    Naya build detect hote hi page khud reload ho jata hai — normal
+    browser tab ho ya installed PWA, dono mein kaam karta hai, aur
+    service worker update se bhi zyada tez hai."""
+    return f"""<script>
+(function(){{
+  var FKC_BUILD = {json.dumps(BUILD_STAMP)};
+  function fkcCheckVersion(){{
+    fetch("{version_href}?t=" + Date.now(), {{cache:"no-store"}})
+      .then(function(r){{ return r.json(); }})
+      .then(function(data){{
+        if(data && data.build && data.build !== FKC_BUILD){{
+          window.location.reload();
+        }}
+      }})
+      .catch(function(){{}});
+  }}
+  setInterval(fkcCheckVersion, 8000);
+  document.addEventListener("visibilitychange", function(){{
+    if(!document.hidden) fkcCheckVersion();
+  }});
+  window.addEventListener("focus", fkcCheckVersion);
+}})();
+</script>"""
+
+
 def pwa_extra_for(logo_href):
     if logo_href.endswith(BRAND_LOGO):
         prefix = logo_href[: -len(BRAND_LOGO)]
@@ -1079,9 +1115,11 @@ def pwa_extra_for(logo_href):
     manifest_href = prefix + MANIFEST_FILENAME
     icon_href = prefix + ICON_192
     sw_href = prefix + SW_FILENAME
+    version_href = prefix + VERSION_FILENAME
     return (
         pwa_head_extra(manifest_href, icon_href)
         + pwa_register_script(sw_href)
+        + live_update_script_html(version_href)
     )
 
 
@@ -1376,6 +1414,9 @@ transition:width .4s ease;}
 HEAD = """<!DOCTYPE html>
 <html lang="ur"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>{title}</title>
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{ogdesc}">
@@ -1977,6 +2018,11 @@ def main():
     with open(os.path.join(DOCS_DIR, SW_FILENAME), "w", encoding="utf-8") as f:
         f.write(build_service_worker_js())
     ensure_pwa_icons()
+
+    # version.json — live-update check ke liye (khuli tabs/PWA har 8s
+    # mein ye file check karte hain; build_stamp badalte hi khud reload).
+    with open(os.path.join(DOCS_DIR, VERSION_FILENAME), "w", encoding="utf-8") as f:
+        json.dump({"build": BUILD_STAMP}, f)
 
     print("Done — site docs/ mein update ho gayi.")
 
