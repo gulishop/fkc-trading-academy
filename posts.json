@@ -1054,5 +1054,29 @@
       ],
       "answer_key": "age, name, height, calculator"
     }
+  ],
+  "python-programming": [
+    {
+      "day": 1,
+      "id": "day-001",
+      "date": "2026-08-03",
+      "title": "Day 1 — Python Install Karna aur Pehla Program",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Python install karna ek beginner ke liye sabse pehla aur zaroori step hai. Hum Python ki official website se installer download karke install karenge. Phir ek simple \"Hello World\" program likhenge taake Python ka basic structure samajh aaye. Yehi program Python ki coding ka foundation hai."
+        ],
+        [
+          "Example",
+          "1. [Python ki official website](https://www.python.org/downloads/) par jao.\n2. \"Download Python\" button par click karo (latest version select karna).\n3. Installer run karo, **\"Add Python to PATH\"** checkbox check karna mat bhulna.\n4. \"Install Now\" par click karo aur wait karo.\n5. Command Prompt (Windows) ya Terminal (Mac/Linux) kholo aur `python --version` ya `python3 --version` type karo taake confirm ho jaaye ke Python install ho gaya hai.\n6. Ab ek file `hello.py` banao aur usme yeh code likho:\n   ```python\n   print(\"Hello World!\")\n   ```\n7. Terminal mein `python hello.py` ya `python3 hello.py` likh kar Enter dabao. Output aana chahiye: `Hello World!`"
+        ],
+        [
+          "Practice",
+          "Apne system par Python install karo aur ek file `first.py` banao. Usme apna naam print karne wala code likho (e.g., `print(\"Mera naam [Apna Naam] hai\")`). Terminal se run karo."
+        ]
+      ],
+      "answer_key": "python.org, path, print(), hello.py, python hello.py"
+    }
   ]
 }
