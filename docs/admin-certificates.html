@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ur"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin — FKC Trading Academy</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<style>
+:root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
+--ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
+--accent:#2BAF66;--purple:#6D28D9;}
+*{box-sizing:border-box;}
+@media (prefers-reduced-motion: no-preference){
+  .fade-in{animation:fadeUp .45s ease both;}
+  .fade-in.d2{animation-delay:.06s;} .fade-in.d3{animation-delay:.12s;}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
+}
+body{margin:0;background:var(--paper);color:var(--ink);
+font-family:'Inter','IBM Plex Sans',sans-serif;line-height:1.55;}
+.wrap{max-width:720px;margin:0 auto;padding:24px 16px 70px;}
+a{color:var(--primary);}
+.top{display:flex;align-items:baseline;gap:10px;color:var(--ink);
+font-weight:600;font-size:14px;border-bottom:1px solid var(--line);
+padding-bottom:14px;margin-bottom:20px;}
+.top .lbl{color:var(--muted);font-weight:400;}
+h1{font-family:'Inter',sans-serif;font-weight:800;font-size:1.55em;
+margin:.2em 0;letter-spacing:-.01em;color:var(--ink);}
+h2{font-family:'Inter',sans-serif;font-weight:700;font-size:1.12em;
+margin:1em 0 .35em;color:var(--ink);}
+h3{color:var(--primary);font-size:.95em;margin:1.2em 0 .3em;font-weight:700;}
+p{margin:.45em 0;}
+.muted{color:var(--muted);font-size:.9em;}
+.eyebrow{display:inline-block;color:var(--primary);font-size:.72em;
+font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px;}
+.card{background:var(--panel);border:1px solid var(--line);
+border-radius:10px;padding:18px;margin:16px 0;
+box-shadow:0 1px 3px rgba(20,23,28,.06);}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--primary);
+color:#fff;font-weight:600;font-size:14px;text-decoration:none;
+padding:11px 18px;border:none;border-radius:6px;cursor:pointer;
+margin:6px 6px 0 0;}
+.btn.alt{background:#fff;color:var(--ink);border:1px solid var(--line);}
+.btn.green{background:var(--accent);}
+.grid{display:flex;flex-direction:column;gap:12px;margin:18px 0 30px;}
+.ccard{display:flex;align-items:center;gap:14px;background:var(--panel);
+border:1px solid var(--line);border-radius:10px;padding:14px;
+text-decoration:none;color:inherit;box-shadow:0 1px 3px rgba(20,23,28,.05);}
+.ccard:hover{border-color:var(--primary);box-shadow:0 2px 8px rgba(0,86,210,.12);}
+.ccard .stamp{width:52px;height:52px;flex-shrink:0;display:flex;
+align-items:center;justify-content:center;font-size:1.5em;border-radius:10px;
+background:var(--accent-bg,rgba(0,86,210,.08));}
+.ccard .body{flex:1;min-width:0;}
+.ccard .body h2{margin:0 0 3px;font-size:1.02em;}
+.ccard .tag{font-size:.82em;color:var(--muted);margin:0 0 4px;}
+.ccard .latest{font-size:.8em;margin:0;overflow:hidden;text-overflow:ellipsis;
+white-space:nowrap;color:var(--ink);opacity:.75;}
+.ccard .stub{flex-shrink:0;text-align:center;padding-left:10px;
+border-left:1px solid var(--line);}
+.ccard .stub-n{font-weight:800;font-size:1.15em;color:var(--primary);line-height:1;}
+.ccard .stub-l{font-size:.62em;color:var(--muted);text-transform:uppercase;
+letter-spacing:.03em;margin-top:2px;}
+.plist a{display:flex;align-items:center;gap:12px;background:var(--panel);
+border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin:8px 0;
+text-decoration:none;color:var(--ink);box-shadow:0 1px 2px rgba(20,23,28,.04);}
+.plist a:hover{border-color:var(--primary);}
+.plist .d{display:flex;align-items:center;justify-content:center;
+flex-shrink:0;width:34px;height:34px;border-radius:50%;
+background:rgba(0,86,210,.09);color:var(--primary);font-weight:700;
+font-size:.72em;}
+.badge{display:inline-block;background:var(--accent);color:#fff;
+font-size:.7em;font-weight:700;padding:3px 10px;border-radius:20px;
+margin-bottom:8px;text-transform:uppercase;letter-spacing:.04em;}
+footer{color:var(--muted);font-size:12px;margin-top:40px;text-align:center;}
+.brand-bar{display:flex;align-items:center;gap:12px;margin-bottom:6px;}
+.brand-bar img{width:46px;height:46px;border-radius:10px;flex-shrink:0;
+object-fit:cover;background:#fff;border:1px solid var(--line);}
+.brand-bar .bname{font-family:'Inter',sans-serif;font-weight:800;
+color:var(--ink);font-size:1.1em;line-height:1.25;}
+.brand-bar .btag{color:var(--muted);font-size:.78em;}
+.brand-footer{border-top:1px solid var(--line);margin-top:34px;
+padding-top:16px;display:flex;align-items:center;gap:12px;}
+.brand-footer img{width:36px;height:36px;border-radius:8px;flex-shrink:0;
+object-fit:cover;background:#fff;border:1px solid var(--line);}
+.brand-footer .txt{font-size:.8em;color:var(--muted);line-height:1.5;}
+.brand-footer .txt b{color:var(--ink);}
+.wa-btn{display:inline-flex;align-items:center;gap:6px;background:#25D366;
+color:#fff!important;border-radius:16px;padding:4px 12px;font-size:.85em;
+font-weight:600;margin:4px 0;text-decoration:none;}
+.notify-btn{display:inline-flex;align-items:center;gap:6px;background:#fff;
+color:var(--primary);border:1px solid var(--line);border-radius:20px;
+font-size:.76em;font-weight:700;padding:5px 12px;cursor:pointer;
+margin-top:6px;white-space:nowrap;}
+.notify-btn.subscribed{background:var(--accent);color:#fff;border-color:var(--accent);}
+.ccard .notify-btn{margin-top:8px;}
+.progress-wrap{margin:14px 0 22px;}
+.progress-track{background:var(--line);border-radius:20px;height:10px;
+overflow:hidden;}
+.progress-fill{background:var(--accent);height:100%;width:0%;
+transition:width .4s ease;}
+.complete-btn.done{background:var(--accent);}
+#fkc-cert-btn{background:var(--purple);}
+
+    #admin-login{max-width:340px;margin:40px auto;}
+    #admin-login input{width:100%;padding:10px;margin:6px 0;
+      border:1px solid var(--line);border-radius:6px;font-size:14px;}
+    table.req{width:100%;border-collapse:collapse;font-size:.88em;margin-top:10px;}
+    table.req th,table.req td{border-bottom:1px solid var(--line);
+      padding:8px 6px;text-align:left;vertical-align:middle;}
+    .status-pill{padding:2px 9px;border-radius:20px;font-size:.75em;font-weight:700;}
+    .status-pending{background:#FFF4E5;color:#B45309;}
+    .status-issued{background:#E7F8EE;color:#0F7A3D;}
+    #cert-modal{position:fixed;inset:0;background:rgba(0,0,0,.55);
+      display:none;align-items:center;justify-content:center;z-index:999;padding:16px;}
+    #cert-modal.show{display:flex;}
+    #cert-modal .box{background:#fff;border-radius:12px;padding:16px;
+      max-width:100%;max-height:90vh;overflow:auto;text-align:center;}
+    #cert-canvas{max-width:100%;height:auto;border:1px solid var(--line);}
+    </style></head><body><div class="wrap">
+
+    <div class="top"><a href="index.html">← FKC Trading Academy</a></div>
+    <h1>🎓 Certificate Admin Panel</h1>
+    <p class="muted">Sirf Fazul Khan Chandio ke liye — certificate requests dekhein aur issue karein.</p>
+
+    <div id="admin-login" class="card">
+      <h3>Login</h3>
+      <input type="email" id="admin-email" placeholder="Email">
+      <input type="password" id="admin-pass" placeholder="Password">
+      <button type="button" class="btn" onclick="fkcAdminLogin()">Login</button>
+      <p class="muted" id="admin-login-err"></p>
+    </div>
+
+    <div id="admin-panel" style="display:none">
+      <p><button type="button" class="btn alt" onclick="fkcAdminLogout()">Logout</button></p>
+      <div class="card">
+        <h3>Certificate Requests</h3>
+        <table class="req" id="req-table"><thead>
+          <tr><th>Date</th><th>Student</th><th>Course</th><th>Fee</th><th>Status</th><th></th></tr>
+        </thead><tbody id="req-tbody"></tbody></table>
+        <p class="muted" id="req-empty">Loading...</p>
+      </div>
+    </div>
+
+    <div id="cert-modal">
+      <div class="box">
+        <canvas id="cert-canvas" width="1600" height="1131"></canvas><br>
+        <button type="button" class="btn" onclick="fkcDownloadCert()">⬇️ Download Certificate (PNG)</button>
+        <button type="button" class="btn alt" onclick="document.getElementById('cert-modal').classList.remove('show')">Band Karein</button>
+      </div>
+    </div>
+    <div class="brand-footer"><img src="logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="privacy.html">Privacy Policy</a></div></div>
+
+<script>
+firebase.initializeApp({"apiKey": "AIzaSyA-HvEX3q6QChPRPJsuKZg6CYL6cYo5jd0", "authDomain": "fkc-trading--certificate.firebaseapp.com", "projectId": "fkc-trading--certificate", "storageBucket": "fkc-trading--certificate.firebasestorage.app", "messagingSenderId": "657947527934", "appId": "1:657947527934:web:5671cf0cf8b52603c3b3af"});
+var auth = firebase.auth();
+var db = firebase.firestore();
+var currentReq = null;
+
+function fkcAdminLogin(){
+  var email = document.getElementById("admin-email").value;
+  var pass = document.getElementById("admin-pass").value;
+  auth.signInWithEmailAndPassword(email, pass).catch(function(err){
+    document.getElementById("admin-login-err").textContent = err.message;
+  });
+}
+function fkcAdminLogout(){ auth.signOut(); }
+
+auth.onAuthStateChanged(function(user){
+  document.getElementById("admin-login").style.display = user ? "none" : "block";
+  document.getElementById("admin-panel").style.display = user ? "block" : "none";
+  if(user) loadRequests();
+});
+
+function loadRequests(){
+  db.collection("certificate_requests").orderBy("created", "desc").limit(200)
+    .onSnapshot(function(snap){
+      var tbody = document.getElementById("req-tbody");
+      tbody.innerHTML = "";
+      document.getElementById("req-empty").style.display = snap.empty ? "block" : "none";
+      snap.forEach(function(doc){
+        var d = doc.data();
+        var dt = d.created && d.created.toDate ? d.created.toDate().toLocaleDateString() : "-";
+        var statusClass = d.status === "issued" ? "status-issued" : "status-pending";
+        var tr = document.createElement("tr");
+        tr.innerHTML =
+          "<td>" + dt + "</td>" +
+          "<td>" + (d.name||"") + "</td>" +
+          "<td>" + (d.course||"") + "</td>" +
+          "<td>" + (d.fee||"") + "</td>" +
+          "<td><span class='status-pill " + statusClass + "'>" + (d.status||"pending") + "</span></td>" +
+          "<td><button type='button' class='btn' style='margin:0;padding:6px 12px;font-size:.8em;'>Generate</button></td>";
+        tr.querySelector("button").addEventListener("click", function(){
+          currentReq = { id: doc.id, name: d.name, course: d.course, date: dt };
+          openCertModal(currentReq);
+        });
+        tbody.appendChild(tr);
+      });
+    });
+}
+
+function drawCircularText(ctx, text, cx, cy, radius, startAngle, arcSpan, color, fontPx, fontFamily){
+  ctx.save();
+  ctx.fillStyle = color;
+  ctx.font = "bold " + fontPx + "px " + fontFamily;
+  ctx.textAlign = "center";
+  ctx.textBaseline = "middle";
+  ctx.translate(cx, cy);
+  ctx.rotate(startAngle);
+  var step = text.length > 1 ? arcSpan / (text.length - 1) : 0;
+  ctx.rotate(-arcSpan/2);
+  for(var i=0;i<text.length;i++){
+    ctx.save();
+    ctx.rotate(step * i);
+    ctx.translate(0, -radius);
+    ctx.fillText(text[i], 0, 0);
+    ctx.restore();
+  }
+  ctx.restore();
+}
+
+function drawSeal(ctx, cx, cy){
+  var gold = "#B8860B", goldLight = "#D4AF37";
+  ctx.save();
+  ctx.strokeStyle = goldLight; ctx.lineWidth = 5;
+  ctx.beginPath(); ctx.arc(cx, cy, 95, 0, Math.PI*2); ctx.stroke();
+  ctx.strokeStyle = gold; ctx.lineWidth = 2;
+  ctx.beginPath(); ctx.arc(cx, cy, 80, 0, Math.PI*2); ctx.stroke();
+  ctx.fillStyle = "rgba(212,175,55,.08)";
+  ctx.beginPath(); ctx.arc(cx, cy, 78, 0, Math.PI*2); ctx.fill();
+
+  drawCircularText(ctx, "FKC TRADING ACADEMY", cx, cy, 68, -Math.PI/2, Math.PI*1.15, gold, 13, "Arial");
+  drawCircularText(ctx, "★ VERIFIED ★ CERTIFIED", cx, cy, 68, Math.PI/2 + 0.35, Math.PI*0.85, gold, 12, "Arial");
+
+  ctx.fillStyle = goldLight;
+  ctx.font = "40px Arial";
+  ctx.textAlign = "center"; ctx.textBaseline = "middle";
+  ctx.fillText("🎓", cx, cy - 2);
+
+  // neeche ribbon tails
+  ctx.fillStyle = gold;
+  ctx.beginPath();
+  ctx.moveTo(cx-30, cy+72); ctx.lineTo(cx-45, cy+140); ctx.lineTo(cx-14, cy+118); ctx.closePath(); ctx.fill();
+  ctx.beginPath();
+  ctx.moveTo(cx+30, cy+72); ctx.lineTo(cx+45, cy+140); ctx.lineTo(cx+14, cy+118); ctx.closePath(); ctx.fill();
+  ctx.restore();
+}
+
+function drawCorner(ctx, x, y, sx, sy){
+  ctx.save();
+  ctx.translate(x, y); ctx.scale(sx, sy);
+  ctx.strokeStyle = "#B8860B"; ctx.lineWidth = 3;
+  ctx.beginPath(); ctx.moveTo(0,60); ctx.lineTo(0,0); ctx.lineTo(60,0); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(0,40); ctx.lineTo(40,0); ctx.stroke();
+  ctx.beginPath(); ctx.arc(14,14,5,0,Math.PI*2); ctx.fill();
+  ctx.restore();
+}
+
+function openCertModal(req){
+  var canvas = document.getElementById("cert-canvas");
+  var ctx = canvas.getContext("2d");
+  var w = canvas.width, h = canvas.height;
+
+  Promise.all([
+    document.fonts.load("italic 90px 'Great Vibes'"),
+    document.fonts.load("900 46px 'Playfair Display'"),
+    document.fonts.load("700 30px 'Playfair Display'"),
+    document.fonts.load("400 22px 'Playfair Display'")
+  ]).catch(function(){}).then(function(){ paint(); });
+
+  function paint(){
+    ctx.fillStyle = "#FFFDF8"; ctx.fillRect(0,0,w,h);
+
+    ctx.strokeStyle = "#0B1220"; ctx.lineWidth = 8;
+    ctx.strokeRect(28,28,w-56,h-56);
+    ctx.strokeStyle = "#D4AF37"; ctx.lineWidth = 3;
+    ctx.strokeRect(44,44,w-88,h-88);
+    ctx.strokeStyle = "#0B1220"; ctx.lineWidth = 1;
+    ctx.strokeRect(56,56,w-112,h-112);
+
+    drawCorner(ctx, 56, 56, 1, 1);
+    drawCorner(ctx, w-56, 56, -1, 1);
+    drawCorner(ctx, 56, h-56, 1, -1);
+    drawCorner(ctx, w-56, h-56, -1, -1);
+
+    ctx.textAlign = "center";
+    ctx.fillStyle = "#0B1220";
+    ctx.font = "700 24px 'Playfair Display', Georgia";
+    ctx.fillText("FKC TRADING ACADEMY", w/2, 128);
+
+    ctx.font = "900 54px 'Playfair Display', Georgia";
+    ctx.fillStyle = "#0B1220";
+    ctx.fillText("CERTIFICATE", w/2, 205);
+    ctx.font = "700 26px 'Playfair Display', Georgia";
+    ctx.fillStyle = "#B8860B";
+    ctx.save(); ctx.letterSpacing = "6px";
+    ctx.fillText("O F   A C H I E V E M E N T", w/2, 245);
+    ctx.restore();
+
+    ctx.strokeStyle = "#D4AF37"; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.moveTo(w/2-90, 270); ctx.lineTo(w/2-14, 270); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(w/2+14, 270); ctx.lineTo(w/2+90, 270); ctx.stroke();
+    ctx.fillStyle = "#D4AF37";
+    ctx.beginPath(); ctx.moveTo(w/2,262); ctx.lineTo(w/2+8,270); ctx.lineTo(w/2,278); ctx.lineTo(w/2-8,270); ctx.closePath(); ctx.fill();
+
+    ctx.font = "italic 22px 'Playfair Display', Georgia";
+    ctx.fillStyle = "#4A4F55";
+    ctx.fillText("This certificate is proudly presented to", w/2, 335);
+
+    ctx.font = "italic 90px 'Great Vibes', cursive";
+    ctx.fillStyle = "#0B1220";
+    ctx.fillText(req.name || "", w/2, 440);
+    ctx.strokeStyle = "#D4AF37"; ctx.lineWidth = 1.5;
+    var nameWidth = Math.min(ctx.measureText(req.name||"").width + 40, 900);
+    ctx.beginPath(); ctx.moveTo(w/2-nameWidth/2, 465); ctx.lineTo(w/2+nameWidth/2, 465); ctx.stroke();
+
+    ctx.font = "22px 'Playfair Display', Georgia";
+    ctx.fillStyle = "#4A4F55";
+    ctx.fillText("for successfully completing the course", w/2, 515);
+
+    ctx.font = "700 34px 'Playfair Display', Georgia";
+    ctx.fillStyle = "#0056D2";
+    ctx.fillText(req.course || "", w/2, 565);
+
+    drawSeal(ctx, w/2, 780);
+
+    ctx.textAlign = "left";
+    ctx.font = "16px Arial"; ctx.fillStyle = "#6A6F73";
+    ctx.fillText("Date: " + (req.date || ""), 130, h-190);
+    ctx.fillText("Certificate ID: " + (req.id ? req.id.slice(0,8).toUpperCase() : ""), 130, h-165);
+
+    drawSignature(ctx, canvas);
+  }
+}
+
+function drawSignature(ctx, canvas){
+  var w = canvas.width, h = canvas.height;
+  var sigImg = new Image();
+  sigImg.crossOrigin = "anonymous";
+  sigImg.onload = function(){
+    var sw = 260, sh = sw * (sigImg.height/sigImg.width);
+    ctx.drawImage(sigImg, w-sw-160, h-sh-215, sw, sh);
+    finishSignatureBlock(ctx, canvas);
+  };
+  sigImg.onerror = function(){
+    ctx.font = "italic 46px 'Great Vibes', cursive";
+    ctx.fillStyle = "#0B1220";
+    ctx.textAlign = "center";
+    ctx.fillText("Fazul Khan Chandio", w-290, h-155);
+    finishSignatureBlock(ctx, canvas);
+  };
+  sigImg.src = "signature.png";
+}
+function finishSignatureBlock(ctx, canvas){
+  var w = canvas.width, h = canvas.height;
+  ctx.strokeStyle = "#0B1220"; ctx.lineWidth = 1.5;
+  ctx.beginPath(); ctx.moveTo(w-420, h-140); ctx.lineTo(w-160, h-140); ctx.stroke();
+  ctx.font = "700 20px 'Playfair Display', Georgia"; ctx.fillStyle = "#0B1220"; ctx.textAlign = "center";
+  ctx.fillText("Fazul Khan Chandio", w-290, h-115);
+  ctx.font = "16px Arial"; ctx.fillStyle = "#6A6F73";
+  ctx.fillText("Founder & CEO", w-290, h-92);
+  document.getElementById("cert-modal").classList.add("show");
+}
+
+function fkcDownloadCert(){
+  if(!currentReq) return;
+  var canvas = document.getElementById("cert-canvas");
+  var link = document.createElement("a");
+  link.download = "Certificate-" + (currentReq.name||"student").replace(/\s+/g,"_") + ".png";
+  link.href = canvas.toDataURL("image/png");
+  link.click();
+  db.collection("certificate_requests").doc(currentReq.id).update({ status: "issued" });
+}
+</script>
+    </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html>

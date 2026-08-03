@@ -17,7 +17,7 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5639688573760714" crossorigin="anonymous"></script>
 <script src="https://pl30647963.effectivecpmnetwork.com/35/50/90/355090180a90a458c3f1895b8e9f6607.js"></script>
 <link rel="icon" href="logo.png">
-<link rel="manifest" href="manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},60000);}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script>
+<link rel="manifest" href="manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -107,6 +107,13 @@ font-size:.76em;font-weight:700;padding:5px 12px;cursor:pointer;
 margin-top:6px;white-space:nowrap;}
 .notify-btn.subscribed{background:var(--accent);color:#fff;border-color:var(--accent);}
 .ccard .notify-btn{margin-top:8px;}
+.progress-wrap{margin:14px 0 22px;}
+.progress-track{background:var(--line);border-radius:20px;height:10px;
+overflow:hidden;}
+.progress-fill{background:var(--accent);height:100%;width:0%;
+transition:width .4s ease;}
+.complete-btn.done{background:var(--accent);}
+#fkc-cert-btn{background:var(--purple);}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -256,11 +263,11 @@ margin-top:6px;white-space:nowrap;}
       <div class="body">
         <h2>Affiliate Marketing</h2>
         <p class="tag">Doosron ke products promote kar ke commission kamayein</p>
-        <p class="latest">📖 Day 1 — Affiliate Marketing Kaise Kam Karta Hai? (Basics Se Shuru)</p>
+        <p class="latest">📖 Day 2</p>
         <p class="tag" style="margin-top:4px">🕒 Roz 11:00 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="affiliate-marketing" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('affiliate-marketing', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#0056D2"><span class="stub-n" style="color:#0056D2">01</span><span class="stub-l">lesson</span></div>
+      <div class="stub" style="color:#0056D2"><span class="stub-n" style="color:#0056D2">02</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/print-on-demand/index.html">
       <div class="stamp" style="--accent-bg:#2BAF661a;color:#2BAF66">👕</div>
@@ -428,6 +435,9 @@ margin-top:6px;white-space:nowrap;}
       <div class="stub" style="color:#D9730D"><span class="stub-n" style="color:#D9730D">00</span><span class="stub-l">lessons</span></div>
     </a></div>
     <div class="brand-footer"><img src="logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="privacy.html">Privacy Policy</a></div></div>
+    <p style="text-align:center;margin-top:8px;">
+      <a href="admin-certificates.html" style="color:var(--muted);font-size:11px;text-decoration:none;">⚙️ Admin</a>
+    </p>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
   var COURSE_TIMES = {"youtube-automation": "9:00 AM", "social-media-marketing": "9:10 AM", "ai-tools": "9:20 AM", "facebook-page-growth": "9:30 AM", "amazon-fba": "9:40 AM", "daraz-seller": "9:50 AM", "dropshipping": "10:00 AM", "freelancing": "10:10 AM", "digital-marketing-seo": "10:20 AM", "graphic-design-canva": "10:30 AM", "ai-content-writing": "10:40 AM", "video-editing": "10:50 AM", "affiliate-marketing": "11:00 AM", "print-on-demand": "11:10 AM", "no-code-app-dev": "11:20 AM", "forex-trading": "11:30 AM", "cpp-daily-coding": "12:00 PM", "python-programming": "1:00 PM", "web-development": "1:10 PM", "excel-data-analysis": "1:20 PM", "crypto-blockchain": "1:30 PM", "psx-stock-trading": "1:40 PM", "tiktok-growth": "1:50 PM", "blogging-adsense": "2:00 PM", "photography-editing": "2:10 PM", "voiceover-podcasting": "2:20 PM", "real-estate-business": "2:30 PM", "mobile-repairing": "2:40 PM"};

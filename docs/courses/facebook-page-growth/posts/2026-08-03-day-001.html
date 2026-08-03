@@ -17,7 +17,7 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5639688573760714" crossorigin="anonymous"></script>
 <script src="https://pl30647963.effectivecpmnetwork.com/35/50/90/355090180a90a458c3f1895b8e9f6607.js"></script>
 <link rel="icon" href="../../../logo.png">
-<link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},60000);}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script>
+<link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -107,6 +107,13 @@ font-size:.76em;font-weight:700;padding:5px 12px;cursor:pointer;
 margin-top:6px;white-space:nowrap;}
 .notify-btn.subscribed{background:var(--accent);color:#fff;border-color:var(--accent);}
 .ccard .notify-btn{margin-top:8px;}
+.progress-wrap{margin:14px 0 22px;}
+.progress-track{background:var(--line);border-radius:20px;height:10px;
+overflow:hidden;}
+.progress-fill{background:var(--accent);height:100%;width:0%;
+transition:width .4s ease;}
+.complete-btn.done{background:var(--accent);}
+#fkc-cert-btn{background:var(--purple);}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -124,10 +131,105 @@ margin-top:6px;white-space:nowrap;}
         <a class="btn alt" href="https://t.me/share/url?url=&text=Day%201%20%E2%80%94%20Facebook%20Page%20ko%20Professional%20Setup%20Karna%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
       </div>
+      <div>
+        <button type="button" class="btn complete-btn" id="fkc-complete-btn"
+          data-slug="facebook-page-growth" data-lesson="day-001"
+          onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
+      </div>
     </div>
     <p><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
-    </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html>
+    </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
+(function(){
+  function getProgress(){
+    try{ return JSON.parse(localStorage.getItem("fkc_progress")||"{}"); }catch(e){ return {}; }
+  }
+  function setProgress(obj){ localStorage.setItem("fkc_progress", JSON.stringify(obj)); }
+  function isDone(slug, lessonId){
+    var p = getProgress();
+    return !!(p[slug] && p[slug].indexOf(lessonId) !== -1);
+  }
+
+  window.fkcToggleComplete = function(btn){
+    var slug = btn.getAttribute("data-slug");
+    var lessonId = btn.getAttribute("data-lesson");
+    var p = getProgress();
+    if(!p[slug]) p[slug] = [];
+    var idx = p[slug].indexOf(lessonId);
+    if(idx === -1){
+      p[slug].push(lessonId);
+      btn.textContent = "✅ Complete Ho Gaya";
+      btn.classList.add("done");
+    } else {
+      p[slug].splice(idx,1);
+      btn.textContent = "✅ Complete Mark Karein";
+      btn.classList.remove("done");
+    }
+    setProgress(p);
+  };
+
+  window.fkcApplyCertificate = function(slug, courseName, fee){
+    var name = prompt("Apna poora naam likhein (certificate par yahi naam print hoga):");
+    if(!name || !name.trim()) return;
+    name = name.trim();
+    var text = "🎓 Certificate Application\n\nCourse: " + courseName +
+      "\nStudent Name: " + name + "\nCertificate Fee: " + fee;
+    if(window.fkcSaveCertRequest){
+      window.fkcSaveCertRequest({slug: slug, course: courseName, name: name, fee: fee});
+    }
+    var wa = "https://wa.me/923333909816?text=" + encodeURIComponent(text);
+    window.open(wa, "_blank");
+  };
+
+  document.addEventListener("DOMContentLoaded", function(){
+    var btn = document.getElementById("fkc-complete-btn");
+    if(btn){
+      var slug = btn.getAttribute("data-slug");
+      var lessonId = btn.getAttribute("data-lesson");
+      if(isDone(slug, lessonId)){
+        btn.textContent = "✅ Complete Ho Gaya";
+        btn.classList.add("done");
+      }
+    }
+    var wrap = document.getElementById("fkc-progress-wrap");
+    if(wrap){
+      var slug = wrap.getAttribute("data-slug");
+      var total = parseInt(wrap.getAttribute("data-total"),10) || 0;
+      var p = getProgress();
+      var done = (p[slug]||[]).length;
+      if(done > total) done = total;
+      var pct = total > 0 ? Math.round((done/total)*100) : 0;
+      var fill = document.getElementById("fkc-progress-fill");
+      var txt = document.getElementById("fkc-progress-text");
+      if(fill) fill.style.width = pct + "%";
+      if(txt) txt.textContent = done + "/" + total + " lessons complete";
+      var certBtn = document.getElementById("fkc-cert-btn");
+      if(certBtn && total > 0 && done >= total){
+        certBtn.style.display = "inline-flex";
+      }
+    }
+  });
+})();
+</script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script>
+(function(){
+  try{
+    firebase.initializeApp({"apiKey": "AIzaSyA-HvEX3q6QChPRPJsuKZg6CYL6cYo5jd0", "authDomain": "fkc-trading--certificate.firebaseapp.com", "projectId": "fkc-trading--certificate", "storageBucket": "fkc-trading--certificate.firebasestorage.app", "messagingSenderId": "657947527934", "appId": "1:657947527934:web:5671cf0cf8b52603c3b3af"});
+    window.fkcDb = firebase.firestore();
+    window.fkcSaveCertRequest = function(data){
+      try{
+        window.fkcDb.collection("certificate_requests").add({
+          slug: data.slug, course: data.course, name: data.name,
+          fee: data.fee, status: "pending",
+          created: firebase.firestore.FieldValue.serverTimestamp()
+        });
+      }catch(e){}
+    };
+  }catch(e){}
+})();
+</script>
 <style>
 #pwa-install-banner{position:fixed;left:12px;right:12px;bottom:12px;
 background:#0B1220;color:#fff;border-radius:14px;padding:14px 16px;
