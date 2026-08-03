@@ -278,5 +278,41 @@
       ],
       "answer_key": "hook, benefit, cta"
     }
+  ],
+  "ai-tools": [
+    {
+      "day": 1,
+      "id": "day-001",
+      "date": "2026-08-03",
+      "title": "Day 1 — AI Prompts Likhna: Basics Seekhiye",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "AI se behtareen jawab hasil karne ke liye \"prompt engineering\" aaj ka sabse zaroori skill hai. Ek achha prompt clear, specific aur structured hona chahiye. Basics mein hum seekhenge ki kaise simple prompts ko improve karke AI se accurate aur useful jawab len."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Ghalat Prompt",
+          "\"Mujhe ek email likhna hai.\"\n2."
+        ],
+        [
+          "Behtareen Prompt",
+          "\"Ek professional email draft karo jo ek freelancer ne apne client ko payment reminder ke liye likha hai. Email short, polite aur 3 lines se zyada na ho.\""
+        ],
+        [
+          "Practice",
+          "Apne mobile phone ya laptop ke liye ek **3-line ka prompt** likhiye jo AI se ek \"birthday wish message\" generate karne ke liye ho. (Hint: Recipient ka naam, occasion, aur tone specify karna hai.)"
+        ],
+        [
+          "Mini Project",
+          "Ek **ChatGPT prompt library** banao (Google Sheets ya Notion mein) jismein 5 common tasks ke liye prompts hon, jaise:\n- Blog post introduction\n- Social media caption\n- Excel formula generator\n- Product description\n- Meeting agenda"
+        ]
+      ],
+      "answer_key": "recipient ka naam, occasion, tone, length"
+    }
   ]
 }
