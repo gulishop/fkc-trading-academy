@@ -912,7 +912,7 @@ padding:4px 6px;font-size:1.1em;}
 </script>"""
 
 
-
+def pwa_extra_for(logo_href):
     if logo_href.endswith(BRAND_LOGO):
         prefix = logo_href[: -len(BRAND_LOGO)]
     else:
