@@ -924,7 +924,7 @@ def main():
     # courses/<slug>/index.html missing reh jate hain aur 404 aata hai)
     for slug, course in COURSES.items():
         lessons = posts.get(slug, [])
-        os.makedirs(os.path.join(DOCS_DIR, "courses", slug), exist_ok=True)
+        os.makedirs(os.path.join(DOCS_DIR, "courses", slug, "posts"), exist_ok=True)
         with open(os.path.join(DOCS_DIR, "courses", slug, "index.html"), "w", encoding="utf-8") as f:
             f.write(render_course_page(slug, course, lessons))
         # re-render every lesson page so only the newest carries "Latest"
