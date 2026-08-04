@@ -28,6 +28,9 @@ jobs:
         run: |
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
+      - name: ffmpeg install karo (AI video ke liye)
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
       - name: Mobile Repairing Business ka lesson generate karo
         env:
           COURSE_SLUG: mobile-repairing
