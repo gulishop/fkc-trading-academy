@@ -1853,13 +1853,23 @@ TRANSLATION_LANGS = {
 }
 
 
-def build_translation_prompt(lang_label, title, preamble, sections):
+def build_translation_prompt(lang_label, title, preamble, sections, other_lang_label=None):
     sections_text = "\n".join(f"- {label}: {content}" for label, content in sections)
+    extra_distinctness_rule = ""
+    if other_lang_label:
+        extra_distinctness_rule = (
+            f"0) DHYAAN RAHE: {lang_label} aur {other_lang_label} dono Arabic-based "
+            "script use karte hain lekin yeh do ALAG zabanein hain, ek dusre se "
+            f"mukhtalif grammar/alfaz ke sath. Sirf {other_lang_label} wala matn copy "
+            f"karke {lang_label} ka label lagana BILKUL mana hai — asli {lang_label} "
+            "zaban ke apne alfaz aur jumla-saazi (sentence structure) use karo, jo "
+            f"{other_lang_label} se clearly mukhtalif lage. "
+        )
     return (
         f"Neeche diya gaya ek lesson hai, Roman Urdu mein likha hua. Isay poora "
         f"{lang_label} translate karo — matlab, tone, aur structure bilkul wahi rakho, "
         "sirf zaban/script badlo, kuch add ya remove mat karo. "
-        "Zaroori rules: "
+        f"Zaroori rules: {extra_distinctness_rule}"
         "1) Poora jawab Arabic/Nastaliq huroof (جیسے: ا، ب، پ، ت، ٹ، ث، ج، چ، ح، خ، د، "
         "ڈ، ر، ڑ، ز، ژ، س، ش، ص، ض، ط، ظ، ع، غ، ف، ق، ک، گ، ل، م، ن، و، ہ، ی، ے) mein "
         "likho — Roman/Latin alphabet (a, b, c...) mein HARGIZ kuch mat likho, khaas "
@@ -1993,7 +2003,20 @@ def _word_overlap_ratio(a, b, min_len=40):
     return len(wa & wb) / len(wa | wb)
 
 
-def _translation_is_sane(data, code=None, orig_preamble=None):
+def _flatten_translation_text(data):
+    """Ek translation dict (title/preamble/sections) ko ek single string mein
+    jod deta hai, taake do languages ke poore content ko compare kiya ja
+    sake (cross-language duplicate check ke liye)."""
+    if not data:
+        return ""
+    parts = [data.get("title", ""), data.get("preamble", "")]
+    for sec in data.get("sections", []) or []:
+        if isinstance(sec, dict):
+            parts.append(_strip_code_blocks(sec.get("content", "")))
+    return " ".join(p for p in parts if p)
+
+
+def _translation_is_sane(data, code=None, orig_preamble=None, other_lang_data=None):
     preamble = data.get("preamble", "") or ""
     if _is_degenerate_text(preamble):
         return False
@@ -2027,6 +2050,19 @@ def _translation_is_sane(data, code=None, orig_preamble=None):
     # ur/sd ke liye asal script (Nastaliq/Arabic) mein hona zaroori hai
     if not _script_matches_lang(data, code):
         return False
+    # Urdu aur Sindhi dono Arabic-based script use karte hain, is liye AI
+    # kabhi kabhi "Sindhi" maang'ne par bhi wahi Urdu text copy-paste kar
+    # deta hai (screenshot wala bug — Urdu aur Sindhi tab mein bilkul same
+    # matn). Agar doosri zaban ka translation already maujood hai, to yeh
+    # confirm karo ke yeh us se ALAG hai — warna yeh Sindhi nahi, chhupi
+    # hui Urdu duplicate hai.
+    if other_lang_data:
+        this_text = _flatten_translation_text(data)
+        other_text = _flatten_translation_text(other_lang_data)
+        if _texts_are_near_duplicate(this_text, other_text, min_len=60):
+            return False
+        if _word_overlap_ratio(this_text, other_text, min_len=60) > 0.7:
+            return False
     return True
 
 
@@ -2035,26 +2071,33 @@ def get_or_generate_translations(slug, day_num, title, preamble, sections):
     course_dir = os.path.join(LESSONS_DIR, slug)
     os.makedirs(course_dir, exist_ok=True)
     translations = {}
+    # "ur" pehle process hota hai (dict order), is liye jab "sd" ki baari aaye
+    # tab tak translations["ur"] maujood hota hai — us se compare karke pata
+    # chal jata hai ke Sindhi translation asal mein Urdu ka copy-paste to
+    # nahi hai (screenshot wala bug).
     for code, lang_label in TRANSLATION_LANGS.items():
+        other_code = next((c for c in TRANSLATION_LANGS if c != code), None)
+        other_lang_label = TRANSLATION_LANGS.get(other_code) if other_code else None
+
         cache_path = os.path.join(course_dir, f"day-{padded}.{code}.json")
         if os.path.exists(cache_path):
             try:
                 with open(cache_path, encoding="utf-8") as f:
                     cached = json.load(f)
-                if _translation_is_sane(cached, code, preamble):
+                if _translation_is_sane(cached, code, preamble, translations.get(other_code)):
                     translations[code] = cached
                     continue
-                print(f"[{slug}] Day {day_num} {lang_label} cache garbled (repetitive) mila, dobara generate ho raha hai.")
+                print(f"[{slug}] Day {day_num} {lang_label} cache garbled (repetitive/duplicate) mila, dobara generate ho raha hai.")
             except Exception:
                 pass  # cache file kharab, neeche dobara generate karte hain
 
         last_err = None
         for attempt in range(1, 4):  # degenerate output aaye to 3 dafa retry
             try:
-                prompt = build_translation_prompt(lang_label, title, preamble, sections)
+                prompt = build_translation_prompt(lang_label, title, preamble, sections, other_lang_label)
                 raw = ai_generate(prompt)
                 data = _parse_translation_json(raw)
-                if not _translation_is_sane(data, code, preamble):
+                if not _translation_is_sane(data, code, preamble, translations.get(other_code)):
                     raise ValueError("AI ne repetitive/galat-script/duplicate-paragraph output diya")
                 translations[code] = data
                 with open(cache_path, "w", encoding="utf-8") as f:
@@ -2858,6 +2901,24 @@ function fkcDownloadCert(){{
 # lessons mein translations hain hi nahi, ya theek hain) bilkul chhoo
 # nahi mate — sirf broken cheez fix hoti hai.
 # ---------------------------------------------------------------------
+def _purge_lesson_video_cache(slug, day_num):
+    """Lesson ka cached narration video/audio/captions hata deta hai, taake
+    agli build mein wo dobara (sahi awaaz/zaban ke sath) generate ho.
+    Zaroori hai jab translations heal hoti hain — warna purana video
+    (jo galat/fallback awaaz se bana tha) hamesha ke liye cached reh
+    jata, kyunke generate_lesson_narration_video sirf missing file par
+    hi kaam karta hai."""
+    padded = f"{day_num:03d}"
+    work_dir = os.path.join(VIDEOS_DIR, slug)
+    for ext in ("mp4", "mp3", "srt", "narration.txt"):
+        p = os.path.join(work_dir, f"day-{padded}.{ext}")
+        if os.path.exists(p):
+            try:
+                os.remove(p)
+            except Exception:
+                pass
+
+
 def heal_degenerate_translations(posts):
     changed = False
     for slug, lessons in posts.items():
@@ -2868,13 +2929,15 @@ def heal_degenerate_translations(posts):
             translations = lesson.get("translations")
             if not translations:
                 continue
-            bad_codes = [
-                c for c, d in translations.items()
-                if not _translation_is_sane(d, c, lesson.get("preamble", ""))
-            ]
+            bad_codes = set()
+            for c, d in translations.items():
+                other_code = next((oc for oc in translations if oc != c), None)
+                other_data = translations.get(other_code) if other_code else None
+                if not _translation_is_sane(d, c, lesson.get("preamble", ""), other_data):
+                    bad_codes.add(c)
             if not bad_codes:
                 continue
-            print(f"[{slug}] Day {lesson['day']} mein degenerate translation mili ({', '.join(bad_codes)}), heal ho raha hai...")
+            print(f"[{slug}] Day {lesson['day']} mein degenerate/duplicate translation mili ({', '.join(sorted(bad_codes))}), heal ho raha hai...")
             padded = f"{lesson['day']:03d}"
             for code in bad_codes:
                 cache_path = os.path.join(LESSONS_DIR, slug, f"day-{padded}.{code}.json")
@@ -2889,6 +2952,11 @@ def heal_degenerate_translations(posts):
             )
             translations.update(fresh)
             lesson["translations"] = translations
+            # "ur" heal hui ho to video ka cached voiceover bhi purani/fallback
+            # awaaz mein ho sakta hai — usay hata do taake sahi Urdu awaaz
+            # (NARRATION_VOICE_UR) ke sath dobara ban jaye.
+            if "ur" in bad_codes:
+                _purge_lesson_video_cache(slug, lesson["day"])
             changed = True
     return changed
 
