@@ -433,6 +433,78 @@
         ]
       ],
       "answer_key": "gbp/jpy, 1 micro lot = $10 (standard), $1 (mini), $0.10 (micro), pip value = 0.01"
+    },
+    {
+      "day": 3,
+      "id": "day-003",
+      "date": "2026-08-04",
+      "title": "Day 3 — Leverage aur Margin: Apne Trading Ko Powerful Banane ka Secret",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Leverage ek aisa tool hai jo aapko chhote amount se bade positions kholne deta hai. Jaise agar aapka account $100 ka hai aur leverage 1:100 hai, to aap $10,000 ki position bana sakte hain. Margin wo amount hai jo aapka broker aapke account se \"lock\" kar leta hai taake yeh position maintain ho sake. Zyada leverage se profit bhi zyada ho sakta hai, lekin loss bhi utna hi zyada hota hai!"
+        ],
+        [
+          "Example",
+          "Maana aap EUR/USD pair par 0.1 lot (10,000 units) ka buy order lagana chahte hain. Broker ka leverage 1:100 hai.\n- Lot size = 10,000 units\n- Leverage = 1:100 → Required margin = (10,000 / 100) = $100\n- Agar EUR/USD 1.1000 se 1.1010 ho jata hai (10 pips gain), to aapka profit = 10 pips × $1 = $10 (har pip ka value 0.1 lot ke liye $1 hota hai)."
+        ],
+        [
+          "Practice",
+          "Apne MetaTrader 4/5 mein:\n1. Kisi bhi currency pair par 0.01 lot ka order lagao.\n2. Leverage 1:100 set karke margin calculate karo.\n3. Order ko cancel kar do."
+        ],
+        [
+          "Mini Project",
+          "Ek spreadsheet banao jismein:\n- 3 alag-alag leverage levels (1:10, 1:50, 1:100) ke liye margin calculation karo.\n- Har leverage ke liye 0.1 lot ka order lagane par kitna margin chahiye, yeh likho.\n- Agar price 50 pips badhta hai, to har leverage ke hisaab se profit/loss kitna hoga."
+        ]
+      ],
+      "answer_key": "margin calculation, lot size, leverage ratio, pip value",
+      "translations": {
+        "ur": {
+          "title": "Day 3 — لیوریج اور مارجن: اپنے ٹریڈنگ کو پاورفل بنانے کا سیکرٹ",
+          "preamble": "آج ہم ایک ایسا ٹول دیکھیں گے جو ٹریڈنگ میں آپ کی قوتِ خرید کو کئی گنا بڑھا دیتا ہے۔ لیوریج اور مارجن کے تصور کو سمجھ کر آپ اپنے ٹریڈنگ کو مزید موثر بنا سکتے ہیں۔",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "لیوریج ایک ایسا ٹول ہے جو آپ کو چھوٹے اماؤنٹ سے بڑے پوزیشن کھولنے دیتا ہے۔ جیسے اگر آپ کا اکاؤنٹ $100 کا ہے اور لیوریج 1:100 ہے، تو آپ $10,000 کی پوزیشن بنا سکتے ہیں۔ مارجن وہ اماؤنٹ ہے جو آپ کا بروکر آپ کے اکاؤنٹ سے \"lock\" کر لیتا ہے تاکہ یہ پوزیشن برقرار رہ سکے۔ زیادہ لیوریج سے منافع بھی زیادہ ہو سکتا ہے، لیکن نقصان بھی اتنا ہی زیادہ ہوتا ہے!"
+            },
+            {
+              "label": "Example",
+              "content": "مانا آپ EUR/USD پئیر پر 0.1 lot (10,000 units) کا buy order لگانا چاہتے ہیں۔ بروکر کا لیوریج 1:100 ہے۔\n\n- Lot size = 10,000 units\n- Leverage = 1:100 → Required margin = (10,000 / 100) = $100\n\nاگر EUR/USD 1.1000 سے 1.1010 ہو جاتا ہے (10 pips gain)، تو آپ کا منافع = 10 pips × $1 = $10 (ہر pip کا value 0.1 lot کے لیے $1 ہوتا ہے)۔"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے MetaTrader 4/5 میں:\n\n1. کسی بھی currency pair پر 0.01 lot کا order لگاؤ۔\n2. Leverage 1:100 set کرکے margin calculate کرو۔\n3. Order کو cancel کر دو۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک spreadsheet بناؤ جس میں:\n\n- 3 الگ الگ leverage levels (1:10, 1:50, 1:100) کے لیے margin calculation کرو۔\n- ہر leverage کے لیے 0.1 lot کا order لگانے پر کتنا margin چاہیے، یہ لکھو۔\n- اگر price 50 pips بڑھتا ہے، تو ہر leverage کے हिसاب سے profit/loss کتنا ہوگا۔"
+            }
+          ]
+        },
+        "sd": {
+          "title": "Day 3 — Leverage аур Margin: Apne Trading جو Powerful بنانے جو Secret",
+          "preamble": "Trading دوران leverage аур margin جو concept سمجھنا ضرور ہے، کیون تہڑن کان استعمال تہڑن کان بعد آپ جو trading experience بہتر ہو سکندو аур آپ جو risk management بہتر ہو سکندو.",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "Leverage اهو ايک tool ہے جو آپ کي چھوٹي سي رقم کان بڑي پوزيشنز کھولن کي اجازت ديو ہے. جيسا اگ آپ جو اکاوٽ $100 جو ہے аур leverage 1:100 ہے، تہڑن تي آپ $10,000 جو پوزيشن بنا سکندا آهيون. Margin اهو رقم ہے جو آپ جو broker آپ جي اکاوٽ کان 'lock' کرندو آهي تہڑي پوزيشن قائم رهي سکے. زيارو leverage کان فائدو توهان کي زيارو زيادو هوندو آهي، پر نقصان توهان جو اتو ہي زيادو هوندو!"
+            },
+            {
+              "label": "Example",
+              "content": "مانو آپ EUR/USD جو پئير تي 0.1 lot (10,000 units) جو buy order لگائڻ چاهندا آهيون. Broker جو leverage 1:100 ہے.\n\n- Lot size = 10,000 units\n- Leverage = 1:100 → Required margin = (10,000 / 100) = $100\n- اگ EUR/USD 1.1000 کان 1.1010 تي چڑھندو (10 pips gain), تہڑي پوزيشن جو فائدو = 10 pips × $1 = $10 (هر pip جو value 0.1 lot کان ليي $1 هوندو)."
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے MetaTrader 4/5 کان:\n1. کسي به currency pair تي 0.01 lot جو order لگائو.\n2. Leverage 1:100 set کرکے margin calculate کرائو.\n3. Order کي cancel کر ديو."
+            },
+            {
+              "label": "Mini Project",
+              "content": "ايک spreadsheet بنائو جتي:\n- 3 الگ الگ leverage levels (1:10, 1:50, 1:100) کان ليي margin calculation کرائو.\n- هر leverage کان ليي 0.1 lot جو order لگائڻ تي کتن margin چاهجي، تہڑو لکھو.\n- اگ price 50 pips بڑھندو آهي، تہڑي هر leverage کان حساب کان فائدو/نقصان کتن هوندو."
+            }
+          ]
+        }
+      }
     }
   ],
   "amazon-fba": [
@@ -1632,19 +1704,19 @@
           "sections": [
             {
               "label": "Concept",
-              "content": "Variables Python mein boxes jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon joon ahin. Har variable ka ek data type hota ahe (jaise number, text, ya boolean). Input/output da matlab ahe program aur user beech communication—user to data lena (input) aur results show karna (output)."
+              "content": "Variables Python mein boxes jaa khaan jaa andar hum data store karin. Har variable ka ek data type houn (jaise number, text, ya boolean). Input/output ka matlab program aur user beech communication—user to data lena (input) aur results show karna (output)."
             },
             {
               "label": "Example",
-              "content": "# Variable declare karna\nnaam = \"Ali\"  # String (text)\nage = 25      # Integer (number)\nheight = 5.9  # Float (decimal number)\nis_student = True  # Boolean (True/False)\n\n# Input lena\nuser_name = input(\"Apna naam likhein: \")\nprint(\"Hello, \", user_name)\n\n# Data type check karna\nprint(type(age))  # Output: <class 'int'>"
+              "content": "# Variable declare karna\nnaam = \"علی\"  # String (text)\nage = 25      # Integer (number)\nheight = 5.9  # Float (decimal number)\nis_student = True  # Boolean (True/False)\n\n# Input lena\nuser_name = input(\"اپنا نام تحریر کریو: \")\nprint(\"Hello, \", user_name)\n\n# Data type check karna\nprint(type(age))  # Output: <class 'int'>"
             },
             {
               "label": "Practice",
-              "content": "Ek program likhein jo user to 2 numbers input le, unko add karke result print kare."
+              "content": "ایک پروگرام تحریر کریو جو user to 2 numbers input لیو، انھن کي جمع کريو، پوء result print کريو."
             },
             {
               "label": "Mini Project",
-              "content": "Ek simple calculator banayein jo user to 2 numbers input le aur unke liye +, -, *, / operations perform kare."
+              "content": "ایک simple calculator تیار کریو جو user to 2 numbers input لیو، پوء انھن کي +, -, *, / operations perform کريو."
             }
           ]
         }
