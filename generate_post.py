@@ -44,6 +44,7 @@ import shutil
 import json
 import html
 import datetime
+import subprocess
 import urllib.request
 import urllib.parse
 import urllib.error
@@ -837,6 +838,156 @@ def generate_lesson_image(slug, course, day_num, title, topic_hint=None, concept
         except Exception as e:
             print(f"[{slug}] Day {day_num} image attempt {attempt} fail ho gayi: {e}", file=sys.stderr)
     print(f"[{slug}] Day {day_num} image generate nahi ho saki (dono attempts fail), skip kar rahe hain.", file=sys.stderr)
+
+
+# ---------------------------------------------------------------------
+# 🎬 AI video explanation — YEH 100% FREE hai, avatar/chehra NAHI hota
+# (koi paid avatar API kabhi automate ke liye free nahi milti). Iski
+# jagah: (1) Microsoft Edge ka free "edge-tts" awaaz (koi API key
+# nahi chahiye) lesson ko bolta hai, (2) wahi awaaz lesson ki
+# already-generated image/slide ke sath ffmpeg se mila kar ek chhota
+# .mp4 ban jata hai. Agar lesson ka Urdu-script translation (["ur"])
+# maujood ho to behtar quality ke liye wahi bola jata hai (asli Urdu
+# awaaz), warna Roman Urdu wala original text ek English awaaz se
+# bola jata hai (thora accent, lekin samajh aata hai).
+#
+# System mein "edge-tts" (pip) aur "ffmpeg" (apt) dono maujood hone
+# chahiye — GitHub Actions workflow mein add karne honge (neeche
+# instructions). Agar koi bhi step fail ho (tool missing, TTS error,
+# ffmpeg error), video sirf chup chaap skip ho jata hai — lesson ka
+# baaki sab (text, image, translations) kabhi iski wajah se nahi
+# rukta. Ek dafa video ban jaye to cache ho jata hai (dobara nahi
+# banta), bilkul images ki tarah.
+# ---------------------------------------------------------------------
+VIDEOS_DIR = "videos"
+NARRATION_VOICE_UR = "ur-PK-UzmaNeural"        # Urdu-script text ke liye (behtar quality)
+NARRATION_VOICE_FALLBACK = "en-US-AndrewNeural"  # Roman Urdu text ke liye (jab Urdu script na ho)
+NARRATION_MAX_CHARS = 1600  # video zyada lamba na ho, isliye script yahan tak cap hoti hai
+
+
+def find_lesson_video(slug, day_num):
+    padded = f"{day_num:03d}"
+    src = os.path.join(VIDEOS_DIR, slug, f"day-{padded}.mp4")
+    return src if os.path.exists(src) else None
+
+
+def _build_narration_text(title, preamble, sections):
+    parts = [title or ""]
+    if preamble:
+        parts.append(preamble)
+    for label, content in sections:
+        if not content:
+            continue
+        parts.append(f"{label}. {content}")
+    text = "\n".join(p for p in parts if p)
+    text = re.sub(r"```.*?```", " ", text, flags=re.S)   # code blocks hata do
+    text = re.sub(r"`([^`]*)`", r"\1", text)
+    text = re.sub(r"\*\*([^*]+)\*\*", r"\1", text)
+    text = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", text)  # markdown links -> sirf text
+    text = re.sub(r"[#>*_]", " ", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return text[:NARRATION_MAX_CHARS]
+
+
+def _run_edge_tts(text_file_path, voice, out_mp3):
+    try:
+        result = subprocess.run(
+            ["edge-tts", "--voice", voice, "--file", text_file_path, "--write-media", out_mp3],
+            capture_output=True, timeout=120,
+        )
+        if result.returncode != 0:
+            print(f"edge-tts error: {result.stderr.decode(errors='ignore')[:300]}", file=sys.stderr)
+            return False
+        return os.path.exists(out_mp3) and os.path.getsize(out_mp3) > 1000
+    except Exception as e:
+        print(f"edge-tts call fail: {e}", file=sys.stderr)
+        return False
+
+
+def _run_ffmpeg_image_audio(image_path, audio_path, out_mp4):
+    cmd = [
+        "ffmpeg", "-y", "-loop", "1", "-i", image_path, "-i", audio_path,
+        "-c:v", "libx264", "-tune", "stillimage", "-c:a", "aac", "-b:a", "128k",
+        "-pix_fmt", "yuv420p", "-shortest",
+        "-vf", "scale=1024:576:force_original_aspect_ratio=decrease,pad=1024:576:(ow-iw)/2:(oh-ih)/2",
+        out_mp4,
+    ]
+    try:
+        result = subprocess.run(cmd, capture_output=True, timeout=180)
+        if result.returncode != 0:
+            print(f"ffmpeg error: {result.stderr.decode(errors='ignore')[:300]}", file=sys.stderr)
+            return False
+        return os.path.exists(out_mp4) and os.path.getsize(out_mp4) > 5000
+    except Exception as e:
+        print(f"ffmpeg call fail: {e}", file=sys.stderr)
+        return False
+
+
+def generate_lesson_narration_video(slug, course, lesson, image_source_path):
+    day_num = lesson["day"]
+    if find_lesson_video(slug, day_num):
+        return  # already ban chuka hai, dobara nahi banana
+
+    if not image_source_path or not os.path.exists(image_source_path):
+        return  # koi slide/image nahi mili, video ke liye kuch nahi hai
+
+    translations = lesson.get("translations") or {}
+    ur = translations.get("ur")
+    if ur and ur.get("sections"):
+        title = ur.get("title", lesson["title"])
+        preamble = ur.get("preamble", "")
+        sections = [(s.get("label", ""), s.get("content", "")) for s in ur.get("sections", [])]
+        voice = NARRATION_VOICE_UR
+    else:
+        title = lesson["title"]
+        preamble = lesson.get("preamble", "")
+        sections = lesson["sections"]
+        voice = NARRATION_VOICE_FALLBACK
+
+    script_text = _build_narration_text(title, preamble, sections)
+    if not script_text:
+        return
+
+    padded = f"{day_num:03d}"
+    work_dir = os.path.join(VIDEOS_DIR, slug)
+    os.makedirs(work_dir, exist_ok=True)
+    txt_path = os.path.join(work_dir, f"day-{padded}.narration.txt")
+    mp3_path = os.path.join(work_dir, f"day-{padded}.mp3")
+    mp4_path = os.path.join(work_dir, f"day-{padded}.mp4")
+
+    with open(txt_path, "w", encoding="utf-8") as f:
+        f.write(script_text)
+
+    if not _run_edge_tts(txt_path, voice, mp3_path):
+        if voice != NARRATION_VOICE_FALLBACK:
+            print(f"[{slug}] Day {day_num} {voice} se TTS fail, English fallback try ho raha hai.")
+            if not _run_edge_tts(txt_path, NARRATION_VOICE_FALLBACK, mp3_path):
+                print(f"[{slug}] Day {day_num} video skip: TTS dono attempts fail.", file=sys.stderr)
+                return
+        else:
+            print(f"[{slug}] Day {day_num} video skip: TTS fail.", file=sys.stderr)
+            return
+
+    if not _run_ffmpeg_image_audio(image_source_path, mp3_path, mp4_path):
+        print(f"[{slug}] Day {day_num} video skip: ffmpeg fail.", file=sys.stderr)
+        return
+
+    print(f"[{slug}] Day {day_num} AI video explanation ban gayi (free, voice+slide).")
+
+
+def publish_lesson_video(slug, day_num):
+    """Agar us lesson ka video maujood ho, docs/courses/<slug>/posts/videos/
+    mein copy kar deta hai aur lesson page ke liye relative href return
+    karta hai — warna None."""
+    padded = f"{day_num:03d}"
+    src = os.path.join(VIDEOS_DIR, slug, f"day-{padded}.mp4")
+    if not os.path.exists(src):
+        return None
+    dest_dir = os.path.join(DOCS_DIR, "courses", slug, "posts", "videos")
+    os.makedirs(dest_dir, exist_ok=True)
+    dest = os.path.join(dest_dir, f"day-{padded}.mp4")
+    shutil.copyfile(src, dest)
+    return f"videos/day-{padded}.mp4"
 
 
 # Har build ka apna unique stamp — version.json mein likha jata hai taake
@@ -2024,7 +2175,7 @@ def lang_tabs_script_html():
 </script>"""
 
 
-def render_lesson_page(slug, course, lesson, is_latest, image_href=None):
+def render_lesson_page(slug, course, lesson, is_latest, image_href=None, video_href=None):
     lesson_html = md_lite(lesson["preamble"])
     for label, content in lesson["sections"]:
         lesson_html += f"<h3>{html.escape(label)}</h3>{md_lite(content)}"
@@ -2060,6 +2211,15 @@ def render_lesson_page(slug, course, lesson, is_latest, image_href=None):
             'style="width:100%;border-radius:12px;margin-bottom:14px;">'
         )
 
+    video_block = ""
+    if video_href:
+        poster_attr = f' poster="{image_href}"' if image_href else ""
+        video_block = (
+            '<p class="muted" style="margin:0 0 6px;">🎬 AI Video Explanation</p>'
+            f'<video src="{video_href}" controls preload="metadata"{poster_attr} '
+            'style="width:100%;border-radius:12px;margin-bottom:14px;background:#000;"></video>'
+        )
+
     share_chunks = [f"📚 {BRAND_NAME} — {course['name']} (Day {lesson['day']:02d})", lesson["title"]]
     if lesson["preamble"]:
         share_chunks.append(lesson["preamble"])
@@ -2086,6 +2246,7 @@ def render_lesson_page(slug, course, lesson, is_latest, image_href=None):
     <h1>{html.escape(lesson['title'])}</h1>
     <div class="card">
       {image_block}
+      {video_block}
       {tabs_html}
       {content_html}
       {affiliate_block}
@@ -2517,10 +2678,14 @@ def main():
             slug, course, lesson["day"], lesson["title"],
             topic_hint=topic_hint, concept_text=concept_text,
         )
+        generate_lesson_narration_video(
+            slug, course, lesson, image_source_path=find_lesson_image(slug, lesson["day"])
+        )
 
         os.makedirs(os.path.join(DOCS_DIR, "courses", slug, "posts"), exist_ok=True)
         image_href = publish_lesson_image(slug, lesson["day"])
-        page = render_lesson_page(slug, course, lesson, is_latest=True, image_href=image_href)
+        video_href = publish_lesson_video(slug, lesson["day"])
+        page = render_lesson_page(slug, course, lesson, is_latest=True, image_href=image_href, video_href=video_href)
         with open(
             os.path.join(DOCS_DIR, "courses", slug, "posts", f"{lesson['date']}-{lesson['id']}.html"),
             "w", encoding="utf-8",
@@ -2541,8 +2706,13 @@ def main():
         # re-render every lesson page so only the newest carries "Latest"
         for i, lesson in enumerate(lessons):
             image_href = publish_lesson_image(slug, lesson["day"])
+            generate_lesson_narration_video(
+                slug, course, lesson, image_source_path=find_lesson_image(slug, lesson["day"])
+            )
+            video_href = publish_lesson_video(slug, lesson["day"])
             page = render_lesson_page(
-                slug, course, lesson, is_latest=(i == len(lessons) - 1), image_href=image_href
+                slug, course, lesson, is_latest=(i == len(lessons) - 1),
+                image_href=image_href, video_href=video_href,
             )
             with open(
                 os.path.join(DOCS_DIR, "courses", slug, "posts", f"{lesson['date']}-{lesson['id']}.html"),
