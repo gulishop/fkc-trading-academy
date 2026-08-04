@@ -1474,19 +1474,43 @@ def build_service_worker_js():
 def ensure_pwa_icons():
     """PWA install icon ke liye docs/icons/icon-192.png aur icon-512.png
     chahiye. Agar koi already (manually) upload ki hui ho to usay chorr
-    dete hain — sirf missing size ko khud generate karte hain, taake
-    "Add to Home Screen" par icon hamesha dikhe, chahe koi manual PNG
-    upload na kiya ho."""
+    dete hain. Missing size ke liye pehle asal brand logo (docs/logo.png)
+    se hi icon banate hain — sirf agar wo logo bhi na mile to fallback
+    ke tor par generic initials wala icon banta hai (taake install
+    button par icon hamesha kuch na kuch dikhe, khaali na rahe)."""
     if not PIL_AVAILABLE:
         return
     icons_dir = os.path.join(DOCS_DIR, "icons")
     os.makedirs(icons_dir, exist_ok=True)
+    logo_path = os.path.join(DOCS_DIR, BRAND_LOGO)
+    logo_img = None
+    if os.path.exists(logo_path):
+        try:
+            logo_img = Image.open(logo_path).convert("RGBA")
+        except Exception as e:
+            print(f"Logo ({logo_path}) icon ke liye load nahi ho saka: {e}", file=sys.stderr)
+
     initials = "".join(w[0] for w in BRAND_NAME.split()[:3]).upper() or "F"
     for rel_path, size in ((ICON_192, 192), (ICON_512, 512)):
         full_path = os.path.join(DOCS_DIR, rel_path)
         if os.path.exists(full_path):
             continue  # already manually uploaded — mat overwrite karo
+
         os.makedirs(os.path.dirname(full_path), exist_ok=True)
+
+        if logo_img is not None:
+            # asal logo ko square canvas ke beech mein fit karte hain
+            # (aspect ratio kharab kiye bagair), taake install icon
+            # bilkul wahi dikhe jo brand ka asal logo hai
+            canvas = Image.new("RGBA", (size, size), (0, 0, 0, 0))
+            fitted = logo_img.copy()
+            fitted.thumbnail((size, size), Image.LANCZOS)
+            x = (size - fitted.width) // 2
+            y = (size - fitted.height) // 2
+            canvas.paste(fitted, (x, y), fitted if fitted.mode == "RGBA" else None)
+            canvas.convert("RGB").save(full_path, "PNG")
+            continue
+
         img = Image.new("RGB", (size, size), "#0B1220")
         draw = ImageDraw.Draw(img)
         pad = int(size * 0.08)
