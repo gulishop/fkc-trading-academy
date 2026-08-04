@@ -39,6 +39,8 @@ import os
 import re
 import sys
 import time
+import math
+import shutil
 import json
 import html
 import datetime
@@ -348,6 +350,26 @@ COURSES = {
         "affiliate_url": "https://one.exnessonelink.com/a/buhyli14un",
         "affiliate_label": "💹 Exness Par Free Account Banayein",
     },
+    "kids-safety-education": {
+        "name": "Bachon Ki Hifazat (Good Touch, Bad Touch)",
+        "icon": "🛡️",
+        "post_time": "11:40 AM",
+        "for_kids": True,
+        "certificate_fee": "Free",
+        "tagline": "Bachon ko apni hifazat, apne jism ke huq, aur 'na' kehna sikhayein — asaan, pyaar bhare andaz mein. Ammi/Abbu ke sath milkar padhayein.",
+        "topics": [
+            "Mera jism sirf mera hai",
+            "Achi choo aur buri choo mein farak",
+            "Private parts private kyun hote hain (swimsuit rule)",
+            "Jab koi ajeeb tarike se choo raha ho to 'NA' kehna aur door hatna",
+            "Acha secret aur bura secret mein farak",
+            "Trusted adult kaun hota hai aur unhe foran batana",
+            "Jaan-pehchaan wale se bhi khabardar rehna",
+            "Online/video-call par ajnabiyon se safety",
+            "Apne jazbaat (dar, sharm, confusion) ko pehchanna — yeh sab normal hai",
+            "Madad kaise mangein — baar baar batana, kisi ne na maane to doosre trusted adult ko batana",
+        ],
+    },
     "cpp-daily-coding": {
         "name": "C++ Daily Coding",
         "icon": "💻",
@@ -587,6 +609,211 @@ MISTRAL_API_KEY = os.environ.get("MISTRAL_API_KEY", "")
 POSTS_JSON = "posts.json"
 LESSONS_DIR = "lessons"
 DOCS_DIR = "docs"
+IMAGES_DIR = "images"  # optional, manually-added lesson illustrations —
+# admin khud is folder mein images/<slug>/day-XXX.(png|jpg|jpeg|webp) daal
+# sakta hai; agar file maujood ho to woh lesson page par khud-b-khud
+# lag jati hai (koi AI image generation nahi — sirf jo aap khud daalein).
+IMAGE_EXTS = (".png", ".jpg", ".jpeg", ".webp")
+
+
+def find_lesson_image(slug, day_num):
+    """Agar images/<slug>/day-XXX.<ext> maujood ho to uska path return karta
+    hai, warna None. Isse admin har lesson ke sath apni illustration
+    manually add kar sakta hai (khaas taur par kids courses ke liye)."""
+    padded = f"{day_num:03d}"
+    for ext in IMAGE_EXTS:
+        src = os.path.join(IMAGES_DIR, slug, f"day-{padded}{ext}")
+        if os.path.exists(src):
+            return src
+    return None
+
+
+def publish_lesson_image(slug, day_num):
+    """Agar us lesson ke liye images/<slug>/day-XXX.<ext> maujood ho, use
+    docs/courses/<slug>/posts/images/ mein copy kar deta hai aur lesson
+    page ke liye relative href (posts/ folder ke andar se) return karta
+    hai — warna None."""
+    src = find_lesson_image(slug, day_num)
+    if not src:
+        return None
+    ext = os.path.splitext(src)[1]
+    padded = f"{day_num:03d}"
+    dest_dir = os.path.join(DOCS_DIR, "courses", slug, "posts", "images")
+    os.makedirs(dest_dir, exist_ok=True)
+    dest = os.path.join(dest_dir, f"day-{padded}{ext}")
+    shutil.copyfile(src, dest)
+    return f"images/day-{padded}{ext}"
+
+
+# ---------------------------------------------------------------------
+# 🛡️ Kids-safety course images — YEH KABHI bhi kisi AI/third-party image
+# API se generate NAHI hoti. Sirf 10 FIXED, hand-drawn abstract symbols
+# hain (shield, heart, umbrella, stop-sign, key, speech-bubble, star,
+# compass, sun, house) — koi bacha/jism/touch scene kabhi nahi, sirf
+# geometric shapes jo hum khud PIL se banate hain. Rule STRICT hai:
+# is course ke liye koi bhi naya "AI-generated" ya "prompt se banaya"
+# image path kabhi add nahi karna — hamesha isi fixed set se.
+# ---------------------------------------------------------------------
+KIDS_SYMBOL_PALETTE = [
+    ("shield",        "#EAF2FF", "#0056D2"),
+    ("heart",         "#FFF0F3", "#E1477E"),
+    ("umbrella",      "#EFFBF3", "#2BAF66"),
+    ("stop_hand",     "#FFF3E8", "#D97706"),
+    ("key",           "#F5F0FF", "#6D28D9"),
+    ("speech_bubble", "#EAFBFF", "#0891B2"),
+    ("star",          "#FFFBEA", "#CA8A04"),
+    ("compass",       "#EEF2FF", "#4338CA"),
+    ("sun",           "#FFF7ED", "#EA580C"),
+    ("house",         "#F0FDF4", "#16A34A"),
+]
+
+
+def _draw_shield(d, cx, cy, s, c):
+    pts = [(cx, cy-s), (cx+s*0.8, cy-s*0.55), (cx+s*0.8, cy+s*0.15),
+           (cx, cy+s), (cx-s*0.8, cy+s*0.15), (cx-s*0.8, cy-s*0.55)]
+    d.polygon(pts, fill=c)
+
+
+def _draw_heart(d, cx, cy, s, c):
+    r = s*0.55
+    d.ellipse([cx-s, cy-s*0.5-r*0.3, cx, cy-s*0.5+r*1.1], fill=c)
+    d.ellipse([cx, cy-s*0.5-r*0.3, cx+s, cy-s*0.5+r*1.1], fill=c)
+    d.polygon([(cx-s, cy), (cx+s, cy), (cx, cy+s*1.2)], fill=c)
+
+
+def _draw_umbrella(d, cx, cy, s, c):
+    d.pieslice([cx-s, cy-s, cx+s, cy+s*0.6], 180, 360, fill=c)
+    d.line([cx, cy, cx, cy+s*1.1], fill=c, width=max(6, int(s*0.08)))
+    d.arc([cx-s*0.15, cy+s*0.9, cx+s*0.15, cy+s*1.3], 0, 180, fill=c, width=max(6, int(s*0.08)))
+
+
+def _draw_stop_hand(d, cx, cy, s, c):
+    n = 8
+    pts = [(cx + s*math.cos(math.radians(a)), cy + s*math.sin(math.radians(a)))
+           for a in range(22, 360, 45)]
+    d.polygon(pts, fill=c)
+
+
+def _draw_key(d, cx, cy, s, c):
+    d.ellipse([cx-s, cy-s*0.6, cx-s*0.2, cy+s*0.2], outline=c, width=max(8, int(s*0.14)))
+    d.line([cx-s*0.35, cy-0.05*s, cx+s, cy-0.05*s], fill=c, width=max(6, int(s*0.1)))
+    d.line([cx+s*0.6, cy-0.05*s, cx+s*0.6, cy+s*0.35], fill=c, width=max(6, int(s*0.1)))
+    d.line([cx+s*0.85, cy-0.05*s, cx+s*0.85, cy+s*0.3], fill=c, width=max(6, int(s*0.1)))
+
+
+def _draw_speech_bubble(d, cx, cy, s, c):
+    d.rounded_rectangle([cx-s, cy-s*0.7, cx+s, cy+s*0.45], radius=int(s*0.3), fill=c)
+    d.polygon([(cx-s*0.35, cy+s*0.4), (cx-s*0.05, cy+s*0.4), (cx-s*0.45, cy+s*0.95)], fill=c)
+
+
+def _draw_star(d, cx, cy, s, c):
+    pts = []
+    for i in range(10):
+        r = s if i % 2 == 0 else s*0.42
+        a = math.radians(-90 + i*36)
+        pts.append((cx + r*math.cos(a), cy + r*math.sin(a)))
+    d.polygon(pts, fill=c)
+
+
+def _draw_compass(d, cx, cy, s, c):
+    d.ellipse([cx-s, cy-s, cx+s, cy+s], outline=c, width=max(8, int(s*0.12)))
+    d.polygon([(cx, cy-s*0.75), (cx+s*0.22, cy), (cx, cy+s*0.75), (cx-s*0.22, cy)], fill=c)
+    d.ellipse([cx-s*0.08, cy-s*0.08, cx+s*0.08, cy+s*0.08], fill=c)
+
+
+def _draw_sun(d, cx, cy, s, c):
+    d.ellipse([cx-s*0.55, cy-s*0.55, cx+s*0.55, cy+s*0.55], fill=c)
+    for i in range(8):
+        a = math.radians(i*45)
+        x1, y1 = cx + s*0.75*math.cos(a), cy + s*0.75*math.sin(a)
+        x2, y2 = cx + s*1.05*math.cos(a), cy + s*1.05*math.sin(a)
+        d.line([x1, y1, x2, y2], fill=c, width=max(6, int(s*0.1)))
+
+
+def _draw_house(d, cx, cy, s, c):
+    d.polygon([(cx-s, cy+s*0.1), (cx, cy-s*0.6), (cx+s, cy+s*0.1)], fill=c)
+    d.rectangle([cx-s*0.7, cy+s*0.1, cx+s*0.7, cy+s], fill=c)
+
+
+_KIDS_SYMBOL_DRAWERS = {
+    "shield": _draw_shield, "heart": _draw_heart, "umbrella": _draw_umbrella,
+    "stop_hand": _draw_stop_hand, "key": _draw_key, "speech_bubble": _draw_speech_bubble,
+    "star": _draw_star, "compass": _draw_compass, "sun": _draw_sun, "house": _draw_house,
+}
+
+
+def generate_kids_safety_symbol_image(slug, day_num, topic_index):
+    """Sirf FIXED abstract symbols draw karta hai (upar dekhein) — koi AI
+    generation, koi network call, koi free-form prompt kabhi nahi. Agar
+    PIL maujood na ho to chup chaap skip (lesson generation nahi rukti)."""
+    if not PIL_AVAILABLE:
+        return
+    name, bg, fg = KIDS_SYMBOL_PALETTE[topic_index % len(KIDS_SYMBOL_PALETTE)]
+    padded = f"{day_num:03d}"
+    dest_dir = os.path.join(IMAGES_DIR, slug)
+    os.makedirs(dest_dir, exist_ok=True)
+    dest = os.path.join(dest_dir, f"day-{padded}.png")
+    try:
+        w, h = 1024, 576
+        img = Image.new("RGB", (w, h), bg)
+        d = ImageDraw.Draw(img)
+        d.ellipse([w/2-170, h/2-170, w/2+170, h/2+170], fill="#FFFFFF")
+        _KIDS_SYMBOL_DRAWERS[name](d, w/2, h/2, 100, fg)
+        img.save(dest, "PNG")
+        print(f"[{slug}] Day {day_num} symbol image ban gayi ({name}).")
+    except Exception as e:
+        print(f"[{slug}] Day {day_num} symbol image nahi ban saki, skip: {e}", file=sys.stderr)
+
+
+# ---------------------------------------------------------------------
+# 🖼️ Automatic lesson images — Pollinations (https://pollinations.ai),
+# bilkul FREE aur bina API key ke, sirf ek URL fetch karke image milti
+# hai. Yeh sirf normal (non-kids) courses ke liye chalta hai — kids
+# safety course ke liye images upar wale FIXED symbol set se bantay
+# hain, kabhi AI/network se nahi.
+# ---------------------------------------------------------------------
+POLLINATIONS_BASE = "https://image.pollinations.ai/prompt/"
+
+
+def generate_lesson_image(slug, course, day_num, title):
+    """Agar is lesson ke liye pehle se image nahi hai (manual ya purani
+    generated), naya image bana kar images/<slug>/day-XXX.png mein save
+    kar deta hai. Kids-safety course ke liye sirf fixed abstract symbol
+    use hota hai; baaki sab courses ke liye Pollinations se AI image.
+    Fail ho jaye to chup chaap skip — lesson generation kabhi iski
+    wajah se nahi rukni chahiye."""
+    if find_lesson_image(slug, day_num):
+        return  # already maujood (manual ya pehle se generate ki hui)
+
+    if course.get("for_kids"):
+        topic_index = (day_num - 1) % len(course["topics"])
+        generate_kids_safety_symbol_image(slug, day_num, topic_index)
+        return
+
+    padded = f"{day_num:03d}"
+    dest_dir = os.path.join(IMAGES_DIR, slug)
+    os.makedirs(dest_dir, exist_ok=True)
+    dest = os.path.join(dest_dir, f"day-{padded}.png")
+
+    prompt = (
+        f"clean modern flat-illustration style educational thumbnail about "
+        f"'{title}', topic: {course['name']}, no text, no watermark, "
+        f"professional, vibrant colors"
+    )
+    url = POLLINATIONS_BASE + urllib.parse.quote(prompt) + (
+        "?width=1024&height=576&nologo=true&seed=" + str(abs(hash(slug + padded)) % 100000)
+    )
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            data = resp.read()
+        if not data:
+            raise ValueError("khaali response mila")
+        with open(dest, "wb") as f:
+            f.write(data)
+        print(f"[{slug}] Day {day_num} image generate ho gayi (Pollinations).")
+    except Exception as e:
+        print(f"[{slug}] Day {day_num} image generate nahi ho saki, skip kar rahe hain: {e}", file=sys.stderr)
 
 # Har build ka apna unique stamp — version.json mein likha jata hai taake
 # khuli hui tabs/PWA khud check kar sakein ke naya build aaya hai ya nahi
@@ -750,9 +977,31 @@ def certificate_progress_script_html():
       var txt = document.getElementById("fkc-progress-text");
       if(fill) fill.style.width = pct + "%";
       if(txt) txt.textContent = done + "/" + total + " lessons complete";
+
+      // Certificate ab lesson-count par nahi, TIME par unlock hota hai:
+      // jis din student pehli baar is course ka page kholta hai, uski
+      // date "fkc_start" mein save ho jati hai; usse 60 din (~2 months)
+      // baad certificate button apne aap dikh jata hai — chahe naye
+      // lessons roz aate rehte hain, course kabhi "khatam" nahi hota.
+      var CERT_UNLOCK_DAYS = 60;
+      var starts = {{}};
+      try{{ starts = JSON.parse(localStorage.getItem("fkc_start")||"{{}}"); }}catch(e){{}}
+      if(!starts[slug]){{
+        starts[slug] = new Date().toISOString();
+        localStorage.setItem("fkc_start", JSON.stringify(starts));
+      }}
+      var startDate = new Date(starts[slug]);
+      var daysSinceStart = (Date.now() - startDate.getTime()) / 86400000;
+      var daysLeft = Math.max(0, Math.ceil(CERT_UNLOCK_DAYS - daysSinceStart));
+
       var certBtn = document.getElementById("fkc-cert-btn");
-      if(certBtn && total > 0 && done >= total){{
-        certBtn.style.display = "inline-flex";
+      if(certBtn){{
+        if(daysSinceStart >= CERT_UNLOCK_DAYS){{
+          certBtn.style.display = "inline-flex";
+        }} else if(txt){{
+          txt.textContent = done + "/" + total + " lessons complete — certificate " +
+            daysLeft + " din mein unlock hoga";
+        }}
       }}
     }}
   }});
@@ -1218,10 +1467,40 @@ def ai_generate(prompt_text, max_retries=5):
         return ""
 
 
+def build_kids_safety_prompt(course, day_num, topic_hint, prev):
+    """Bachon ki hifazat wale course ke liye alag, nazuk andaz ka prompt —
+    koi 'practice/mini-project' jo bacha akela kare nahi (is jagah
+    ammi/abbu ke sath baat karne ki activity), koi graphic/explicit
+    detail nahi, sirf warm, simple, age 5-10 ke liye samajh aane wali
+    zaban, aur hamesha trusted adult ko batane ka message."""
+    return (
+        f"Tum bachon (age 5-10) ke liye 'Bachon Ki Hifazat' course ke ek pyaar bhare, "
+        f"nazuk andaz wale teacher ho, Roman Urdu mein — is tarah likho ke ek parent apne "
+        f"bachay ko zor se padh kar sunaye. Yeh Day {day_num} hai. "
+        f"Aaj ka topic: '{topic_hint}'. "
+        f"Pichle dinon ke titles (dobara mat likhna): {prev}. "
+        "Zaruri usool: koi graphic ya explicit tafseel bilkul mat likho, sirf general/safe "
+        "zaban use karo (jaise school mein sikhaya jata hai). Hamesha yeh message rakho ke "
+        "bachay ka jism sirf uska hai, use 'na' kehne ka pura huq hai, aur agar kuch bhi ajeeb "
+        "ya uncomfortable lage to foran ammi/abbu ya kisi trusted bade insaan ko batana chahiye "
+        "— chahe kisi ne kaha ho ke yeh 'secret' rakho. Tone hamesha reassuring aur pyaar bhara "
+        "rakho, dara wala nahi. "
+        "Format bilkul yeh follow karo, aur kuch mat likho: "
+        f"'# Day {day_num} — <chhota, pyaara title>' phir "
+        "'**Concept:**' (2-3 simple lines mein aaj ka safety point samjhao, seedha bachay se baat karte hue), "
+        "'**Chhoti Kahani:**' (ek chhoti, reassuring misal ya scenario jisse bacha samajh sake — koi graphic detail nahi), "
+        "'**Ammi Abbu Ke Sath Baat Karein:**' (1 simple sawal jo parent bachay se poochein taake woh khul kar baat kare), "
+        "'**Yaad Rakhein:**' (1 chhota, positive safety reminder). "
+        "Total length chhoti rakho (max ~200 words), simple alfaz, koi 'Mini Project' ya 'Answer Key' section mat likho."
+    )
+
+
 def build_prompt(slug, course, day_num, previous_titles):
     topics = course["topics"]
     topic_hint = topics[(day_num - 1) % len(topics)]
     prev = "; ".join(previous_titles[-6:]) if previous_titles else "(koi nahi, yeh pehla lesson hai)"
+    if course.get("for_kids"):
+        return build_kids_safety_prompt(course, day_num, topic_hint, prev)
     return (
         f"Tum '{course['name']}' course ke ek teacher ho, Roman Urdu/Hindi mein "
         f"beginner-to-intermediate students ke liye. Yeh course ka Day {day_num} hai. "
@@ -1567,10 +1846,16 @@ def render_course_page(slug, course, lessons):
     )
 
 
-def render_lesson_page(slug, course, lesson, is_latest):
+def render_lesson_page(slug, course, lesson, is_latest, image_href=None):
     lesson_html = md_lite(lesson["preamble"])
     for label, content in lesson["sections"]:
         lesson_html += f"<h3>{html.escape(label)}</h3>{md_lite(content)}"
+    image_block = ""
+    if image_href:
+        image_block = (
+            f'<img src="{image_href}" alt="{html.escape(lesson["title"])}" '
+            'style="width:100%;border-radius:12px;margin-bottom:14px;">'
+        )
 
     share_chunks = [f"📚 {BRAND_NAME} — {course['name']} (Day {lesson['day']:02d})", lesson["title"]]
     if lesson["preamble"]:
@@ -1597,6 +1882,7 @@ def render_lesson_page(slug, course, lesson, is_latest):
     <p class="muted">{course['icon']} {html.escape(course['name'])} · Day {lesson['day']:02d}</p>
     <h1>{html.escape(lesson['title'])}</h1>
     <div class="card">
+      {image_block}
       {lesson_html}
       {affiliate_block}
       <div>
@@ -1980,8 +2266,11 @@ def main():
         existing.append(lesson)
         posts[slug] = existing
 
+        generate_lesson_image(slug, course, lesson["day"], lesson["title"])
+
         os.makedirs(os.path.join(DOCS_DIR, "courses", slug, "posts"), exist_ok=True)
-        page = render_lesson_page(slug, course, lesson, is_latest=True)
+        image_href = publish_lesson_image(slug, lesson["day"])
+        page = render_lesson_page(slug, course, lesson, is_latest=True, image_href=image_href)
         with open(
             os.path.join(DOCS_DIR, "courses", slug, "posts", f"{lesson['date']}-{lesson['id']}.html"),
             "w", encoding="utf-8",
@@ -2001,7 +2290,10 @@ def main():
             f.write(render_course_page(slug, course, lessons))
         # re-render every lesson page so only the newest carries "Latest"
         for i, lesson in enumerate(lessons):
-            page = render_lesson_page(slug, course, lesson, is_latest=(i == len(lessons) - 1))
+            image_href = publish_lesson_image(slug, lesson["day"])
+            page = render_lesson_page(
+                slug, course, lesson, is_latest=(i == len(lessons) - 1), image_href=image_href
+            )
             with open(
                 os.path.join(DOCS_DIR, "courses", slug, "posts", f"{lesson['date']}-{lesson['id']}.html"),
                 "w", encoding="utf-8",
