@@ -1147,6 +1147,82 @@
         ]
       ],
       "answer_key": "homepage, about page, contact page, navbar, mobile-responsive"
+    },
+    {
+      "day": 3,
+      "id": "day-003",
+      "date": "2026-08-04",
+      "title": "Day 3 — FlutterFlow aur Glide se App Banana: No-Code App Development Ka Aasan Rasta",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "FlutterFlow aur Glide no-code app builders hain jo drag-and-drop interface se mobile apps banane mein madad karte hain. FlutterFlow Flutter-based apps banata hai (jabki isko no-code samajhna galat hai—yeh low-code hai), jabki Glide spreadsheets (Google Sheets) se directly mobile apps generate karta hai. Dono beginner-friendly hain aur app development ki complexity ko kam karte hain."
+        ],
+        [
+          "Example",
+          ""
+        ],
+        [
+          "Glide se ek simple task manager app banane ke steps",
+          "1. Google Sheets mein 3 columns banayein: `Task`, `Status`, `Due Date`.\n2. [Glide Apps](https://www.glideapps.com/) par jaayein, \"New App\" > \"From Google Sheets\" select karen.\n3. \"Layout\" mein \"List\" ya \"Grid\" view choose karen.\n4. App ko customize karen (colors, icons, buttons add karen).\n5. \"Publish\" par click karen aur app ka link ya QR code share karen."
+        ],
+        [
+          "Practice",
+          "Apne Google Sheets mein ek simple \"Grocery List\" banayein (3 columns: `Item`, `Quantity`, `Purchased`). Phir Glide se usko ek mobile app mein convert karen. App ka preview dekhein aur ek screenshot lein."
+        ],
+        [
+          "Mini Project",
+          "Ek **Weather App** banayein jo Google Sheets se weather data (City, Temperature, Condition) display kare. Steps:\n1. Google Sheets mein 3 columns banayein: `City`, `Temperature (°C)`, `Condition`.\n2. Glide par ek \"Card\" layout select karen.\n3. App ko publish karen aur apne phone par test karen."
+        ]
+      ],
+      "answer_key": "google sheets data, glide app generator, card layout, publish link",
+      "translations": {
+        "ur": {
+          "title": "Day 3 — فلٹر فلو اور گلائیڈ سے ایپ بنانا: ناکوڈ ایپ ڈویلپمنٹ کا آسان راستہ",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "فلٹر فلو اور گلائیڈ ناکوڈ ایپ بلڈرز ہیں جو ڈریگ اینڈ ڈراپ انٹرفیس سے موبائل ایپس بنانے میں مدد کرتے ہیں۔ فلٹر فلو فلٹر-بیسڈ ایپس بناتا ہے (حالانکہ اسے ناکوڈ سمجھنا غلط ہے—یہ لو-کوڈ ہے)، جبکہ گلائیڈ سپریڈشیٹس (گوگل شیٹس) سے ڈائریکٹلی موبائل ایپس جنریٹ کرتا ہے۔ دونوں بیگنر-فرینڈلی ہیں اور ایپ ڈویلپمنٹ کی کمپلیکسٹی کو کم کرتے ہیں۔"
+            },
+            {
+              "label": "Example",
+              "content": "گلائیڈ سے ایک simple task manager app بنانے کے steps: 1. گوگل شیٹس میں 3 کالم بنائیں: `Task`, `Status`, `Due Date`۔ 2. [گلائیڈ ایپس](https://www.glideapps.com/) پر جائیں، \"New App\" > \"From Google Sheets\" select کریں۔ 3. \"Layout\" میں \"List\" یا \"Grid\" view choose کریں۔ 4. ایپ کو customise کریں (colors, icons, buttons add کریں۔) 5. \"Publish\" پر کلک کریں اور ایپ کا لنک یا QR code share کریں۔"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے گوگل شیٹس میں ایک simple \"Grocery List\" بنائیں (3 کالم: `Item`, `Quantity`, `Purchased`۔ پھر گلائیڈ سے اسے ایک موبائل ایپ میں convert کریں۔ ایپ کا preview دیکھیں اور ایک screenshot لیں۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک **Weather App** بنائیں جو گوگل شیٹس سے weather data (City, Temperature, Condition) display کرے۔ Steps: 1. گوگل شیٹس میں 3 کالم بنائیں: `City`, `Temperature (°C)`, `Condition`۔ 2. گلائیڈ پر ایک \"Card\" layout select کریں۔ 3. ایپ کو publish کریں اور اپنے فون پر test کریں۔"
+            }
+          ]
+        },
+        "sd": {
+          "title": "Day 3 — FlutterFlow ۽ Glide ذِڪري سائٽ اپٽِڪريشن: نٿ ڪٽ اپٽِڪريشن جو آسان رستو",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "FlutterFlow ۽ Glide نٿ ڪٽ اپٽِڪريشن بنڊر هئن جو drag-and-drop interface ذِڪري سائٽ اپٽِڪريشن بنڌن ۾ مدد ڪرڻ ۾ شامل آهن. FlutterFlow Flutter-بنيٽ اپٽِڪريشن بنائندا آهن (جڏهنڪ ڪو نٿ ڪٽ سمجھڻ غلط آهي—ايهي low-code آهي)، جڏهنڪ Glide spreadsheets (Google Sheets) ذِڪري directly mobile apps generate ڪندا آهي. ٻنٽ beginner-friendly هئن ۽ اپٽِڪريشن جي complexity کي ڪم ڪندا هئن."
+            },
+            {
+              "label": "Example",
+              "content": "Glide ذِڪري اڪ ساده task manager app بنڌن جي هدايت: 1. Google Sheets ۾ 3 columns بنائو: `Task`, `Status`, `Due Date`. 2. [Glide Apps](https://www.glideapps.com/) تي جائو، \"New App\" > \"From Google Sheets\" منتخب ڪريو. 3. \"Layout\" ۾ \"List\" يا \"Grid\" view چنڻ. 4. اپٽِڪريشن کي customize ڪريو (colors, icons, buttons شامل ڪريو). 5. \"Publish\" تي ڪلڪ ڪريو ۽ اپٽِڪريشن جو لنڪ يا QR code share ڪريو."
+            },
+            {
+              "label": "Practice",
+              "content": "آپڻ جي Google Sheets ۾ اڪ ساده \"Grocery List\" بنائو (3 columns: `Item`, `Quantity`, `Purchased`). هونٽ Glide ذِڪري ٿي ٿي ٿي اڪ mobile app ۾ convert ڪريو. اپٽِڪريشن جو preview ڏيو ۽ اڪ screenshot حاصل ڪريو."
+            },
+            {
+              "label": "Mini Project",
+              "content": "اڪ **Weather App** بنائو جو Google Sheets ذِڪري weather data (City, Temperature, Condition) display ڪري. هدايت: 1. Google Sheets ۾ 3 columns بنائو: `City`, `Temperature (°C)`, `Condition`. 2. Glide تي اڪ \"Card\" layout چنڻ. 3. اپٽِڪريشن کي publish ڪريو ۽ اپڻ جي فون تي test ڪريو."
+            }
+          ]
+        }
+      }
     }
   ],
   "digital-marketing-seo": [

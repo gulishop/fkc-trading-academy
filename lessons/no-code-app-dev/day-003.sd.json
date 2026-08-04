@@ -1,0 +1,22 @@
+{
+  "title": "Day 3 — FlutterFlow ۽ Glide ذِڪري سائٽ اپٽِڪريشن: نٿ ڪٽ اپٽِڪريشن جو آسان رستو",
+  "preamble": "",
+  "sections": [
+    {
+      "label": "Concept",
+      "content": "FlutterFlow ۽ Glide نٿ ڪٽ اپٽِڪريشن بنڊر هئن جو drag-and-drop interface ذِڪري سائٽ اپٽِڪريشن بنڌن ۾ مدد ڪرڻ ۾ شامل آهن. FlutterFlow Flutter-بنيٽ اپٽِڪريشن بنائندا آهن (جڏهنڪ ڪو نٿ ڪٽ سمجھڻ غلط آهي—ايهي low-code آهي)، جڏهنڪ Glide spreadsheets (Google Sheets) ذِڪري directly mobile apps generate ڪندا آهي. ٻنٽ beginner-friendly هئن ۽ اپٽِڪريشن جي complexity کي ڪم ڪندا هئن."
+    },
+    {
+      "label": "Example",
+      "content": "Glide ذِڪري اڪ ساده task manager app بنڌن جي هدايت: 1. Google Sheets ۾ 3 columns بنائو: `Task`, `Status`, `Due Date`. 2. [Glide Apps](https://www.glideapps.com/) تي جائو، \"New App\" > \"From Google Sheets\" منتخب ڪريو. 3. \"Layout\" ۾ \"List\" يا \"Grid\" view چنڻ. 4. اپٽِڪريشن کي customize ڪريو (colors, icons, buttons شامل ڪريو). 5. \"Publish\" تي ڪلڪ ڪريو ۽ اپٽِڪريشن جو لنڪ يا QR code share ڪريو."
+    },
+    {
+      "label": "Practice",
+      "content": "آپڻ جي Google Sheets ۾ اڪ ساده \"Grocery List\" بنائو (3 columns: `Item`, `Quantity`, `Purchased`). هونٽ Glide ذِڪري ٿي ٿي ٿي اڪ mobile app ۾ convert ڪريو. اپٽِڪريشن جو preview ڏيو ۽ اڪ screenshot حاصل ڪريو."
+    },
+    {
+      "label": "Mini Project",
+      "content": "اڪ **Weather App** بنائو جو Google Sheets ذِڪري weather data (City, Temperature, Condition) display ڪري. هدايت: 1. Google Sheets ۾ 3 columns بنائو: `City`, `Temperature (°C)`, `Condition`. 2. Glide تي اڪ \"Card\" layout چنڻ. 3. اپٽِڪريشن کي publish ڪريو ۽ اپڻ جي فون تي test ڪريو."
+    }
+  ]
+}

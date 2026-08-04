@@ -1,0 +1,22 @@
+{
+  "title": "Day 3 — فلٹر فلو اور گلائیڈ سے ایپ بنانا: ناکوڈ ایپ ڈویلپمنٹ کا آسان راستہ",
+  "preamble": "",
+  "sections": [
+    {
+      "label": "Concept",
+      "content": "فلٹر فلو اور گلائیڈ ناکوڈ ایپ بلڈرز ہیں جو ڈریگ اینڈ ڈراپ انٹرفیس سے موبائل ایپس بنانے میں مدد کرتے ہیں۔ فلٹر فلو فلٹر-بیسڈ ایپس بناتا ہے (حالانکہ اسے ناکوڈ سمجھنا غلط ہے—یہ لو-کوڈ ہے)، جبکہ گلائیڈ سپریڈشیٹس (گوگل شیٹس) سے ڈائریکٹلی موبائل ایپس جنریٹ کرتا ہے۔ دونوں بیگنر-فرینڈلی ہیں اور ایپ ڈویلپمنٹ کی کمپلیکسٹی کو کم کرتے ہیں۔"
+    },
+    {
+      "label": "Example",
+      "content": "گلائیڈ سے ایک simple task manager app بنانے کے steps: 1. گوگل شیٹس میں 3 کالم بنائیں: `Task`, `Status`, `Due Date`۔ 2. [گلائیڈ ایپس](https://www.glideapps.com/) پر جائیں، \"New App\" > \"From Google Sheets\" select کریں۔ 3. \"Layout\" میں \"List\" یا \"Grid\" view choose کریں۔ 4. ایپ کو customise کریں (colors, icons, buttons add کریں۔) 5. \"Publish\" پر کلک کریں اور ایپ کا لنک یا QR code share کریں۔"
+    },
+    {
+      "label": "Practice",
+      "content": "اپنے گوگل شیٹس میں ایک simple \"Grocery List\" بنائیں (3 کالم: `Item`, `Quantity`, `Purchased`۔ پھر گلائیڈ سے اسے ایک موبائل ایپ میں convert کریں۔ ایپ کا preview دیکھیں اور ایک screenshot لیں۔"
+    },
+    {
+      "label": "Mini Project",
+      "content": "ایک **Weather App** بنائیں جو گوگل شیٹس سے weather data (City, Temperature, Condition) display کرے۔ Steps: 1. گوگل شیٹس میں 3 کالم بنائیں: `City`, `Temperature (°C)`, `Condition`۔ 2. گلائیڈ پر ایک \"Card\" layout select کریں۔ 3. ایپ کو publish کریں اور اپنے فون پر test کریں۔"
+    }
+  ]
+}
