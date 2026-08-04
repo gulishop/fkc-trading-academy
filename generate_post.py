@@ -775,13 +775,18 @@ def generate_kids_safety_symbol_image(slug, day_num, topic_index):
 POLLINATIONS_BASE = "https://image.pollinations.ai/prompt/"
 
 
-def generate_lesson_image(slug, course, day_num, title):
+def generate_lesson_image(slug, course, day_num, title, topic_hint=None, concept_text=None):
     """Agar is lesson ke liye pehle se image nahi hai (manual ya purani
     generated), naya image bana kar images/<slug>/day-XXX.png mein save
     kar deta hai. Kids-safety course ke liye sirf fixed abstract symbol
     use hota hai; baaki sab courses ke liye Pollinations se AI image.
-    Fail ho jaye to chup chaap skip — lesson generation kabhi iski
-    wajah se nahi rukni chahiye."""
+    Mismatch kam karne ke liye: (1) prompt mein us din ka exact topic +
+    lesson ke Concept se ek snippet bhi diya jata hai (sirf course ka
+    naam kaafi generic hota hai), (2) response ko basic sanity-check
+    karte hain (khaali/chhota/corrupt na ho), (3) agar pehli koshish
+    fail/kharab lage to ek simpler fallback prompt se dobara try hota
+    hai. Fail ho jaye to chup chaap skip — lesson generation kabhi
+    iski wajah se nahi rukni chahiye."""
     if find_lesson_image(slug, day_num):
         return  # already maujood (manual ya pehle se generate ki hui)
 
@@ -795,25 +800,44 @@ def generate_lesson_image(slug, course, day_num, title):
     os.makedirs(dest_dir, exist_ok=True)
     dest = os.path.join(dest_dir, f"day-{padded}.png")
 
-    prompt = (
-        f"clean modern flat-illustration style educational thumbnail about "
-        f"'{title}', topic: {course['name']}, no text, no watermark, "
-        f"professional, vibrant colors"
+    focus = (topic_hint or title or course["name"]).strip()
+    concept_snippet = re.sub(r"\s+", " ", (concept_text or "")).strip()[:160]
+
+    primary_prompt = (
+        f"flat-illustration style educational thumbnail that CLEARLY and LITERALLY "
+        f"depicts this exact topic: '{focus}'. "
+        + (f"Context/details to depict: {concept_snippet}. " if concept_snippet else "")
+        + f"Course subject: {course['name']}. One clear focal subject directly showing "
+        "the topic above — no random unrelated objects, no generic stock-photo people, "
+        "no text, no watermark, clean modern vibrant colors, professional."
     )
-    url = POLLINATIONS_BASE + urllib.parse.quote(prompt) + (
-        "?width=1024&height=576&nologo=true&seed=" + str(abs(hash(slug + padded)) % 100000)
+    fallback_prompt = (
+        f"simple flat icon illustration representing '{course['name']}' — "
+        f"specifically about {focus}, minimal, vibrant colors, no text, no watermark"
     )
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=60) as resp:
-            data = resp.read()
-        if not data:
-            raise ValueError("khaali response mila")
-        with open(dest, "wb") as f:
-            f.write(data)
-        print(f"[{slug}] Day {day_num} image generate ho gayi (Pollinations).")
-    except Exception as e:
-        print(f"[{slug}] Day {day_num} image generate nahi ho saki, skip kar rahe hain: {e}", file=sys.stderr)
+
+    for attempt, prompt in enumerate((primary_prompt, fallback_prompt), start=1):
+        seed = str(abs(hash(slug + padded + str(attempt))) % 100000)
+        url = POLLINATIONS_BASE + urllib.parse.quote(prompt) + (
+            f"?width=1024&height=576&nologo=true&seed={seed}"
+        )
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                data = resp.read()
+            # Sanity check: khaali/bohot chhoti (error page) ya bina valid
+            # image-magic-bytes ke response ko reject kar dete hain.
+            looks_like_image = data[:8].startswith(b"\x89PNG") or data[:3] == b"\xff\xd8\xff"
+            if not data or len(data) < 3000 or not looks_like_image:
+                raise ValueError(f"response image jaisa nahi lagta (size={len(data) if data else 0})")
+            with open(dest, "wb") as f:
+                f.write(data)
+            print(f"[{slug}] Day {day_num} image generate ho gayi (Pollinations, attempt {attempt}).")
+            return
+        except Exception as e:
+            print(f"[{slug}] Day {day_num} image attempt {attempt} fail ho gayi: {e}", file=sys.stderr)
+    print(f"[{slug}] Day {day_num} image generate nahi ho saki (dono attempts fail), skip kar rahe hain.", file=sys.stderr)
+
 
 # Har build ka apna unique stamp — version.json mein likha jata hai taake
 # khuli hui tabs/PWA khud check kar sakein ke naya build aaya hai ya nahi
@@ -2398,7 +2422,12 @@ def main():
         existing.append(lesson)
         posts[slug] = existing
 
-        generate_lesson_image(slug, course, lesson["day"], lesson["title"])
+        topic_hint = course["topics"][(lesson["day"] - 1) % len(course["topics"])]
+        concept_text = lesson["sections"][0][1] if lesson["sections"] else lesson.get("preamble", "")
+        generate_lesson_image(
+            slug, course, lesson["day"], lesson["title"],
+            topic_hint=topic_hint, concept_text=concept_text,
+        )
 
         os.makedirs(os.path.join(DOCS_DIR, "courses", slug, "posts"), exist_ok=True)
         image_href = publish_lesson_image(slug, lesson["day"])
