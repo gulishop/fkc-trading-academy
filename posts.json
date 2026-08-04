@@ -635,6 +635,44 @@
         ]
       ],
       "answer_key": "recipient ka naam, occasion, tone, length"
+    },
+    {
+      "day": 2,
+      "id": "day-002",
+      "date": "2026-08-04",
+      "title": "Day 2 — AI Se Content, Captions, Aur Emails Likhwana",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke AI tools (jaise ChatGPT, Gemini, Jasper) ko istemal karke professional aur engaging content, social media captions, aur business emails kaise likhe. AI se drafts generate karne ke baad unhe customize karna bhi seekhenge taake wo natural aur brand voice ke hisab se ho."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Content Generation",
+          "- Prompt: *\"Write a 300-word blog post about 'How to Start Freelancing in 2024' for beginners in Hindi/Urdu.\"*\n   - AI output ko edit karke: Add local examples (e.g., \"Indian freelancers ke liye Fiverr/Upwork par kaise start kare\"), simple language mein convert karna.\n\n2."
+        ],
+        [
+          "Captions",
+          "- Prompt: *\"Generate 5 Instagram captions for a post about 'AI tools for small businesses' in Hindi/Urdu, with emojis and hashtags.\"*\n   - Example output: *\"AI se apna business badhaana hai? 🚀 Yeh 5 AI tools free mein try karein! 🔥 #AI #BusinessGrowth\"*\n\n3."
+        ],
+        [
+          "Emails",
+          "- Prompt: *\"Write a professional email to a client proposing a content writing service in Hindi/Urdu, with a polite tone.\"*\n   - AI output ko customize karke: Client ka naam add karna, service details ko specific karna."
+        ],
+        [
+          "Practice",
+          "Apne liye ek prompt likho aur AI se ek **50-70 words ka Instagram caption** generate karo for a post about \"AI se time save karna\". Us caption ko apne brand voice (ya personal style) ke hisab se edit karo."
+        ],
+        [
+          "Mini Project",
+          "Ek **3-email sequence** create karo for a hypothetical client (e.g., a small business owner) using AI:\n1. Introduction email (AI se draft karo)\n2. Follow-up email after 3 days (AI se draft karo)\n3. Final email with a CTA (Call-to-Action) like \"Book a free consultation\""
+        ]
+      ],
+      "answer_key": "caption, brand voice, edit, emojis"
     }
   ],
   "dropshipping": [
