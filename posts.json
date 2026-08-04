@@ -1103,6 +1103,40 @@
         ]
       ],
       "answer_key": "keyword placement, title tag, meta description, natural density"
+    },
+    {
+      "day": 3,
+      "id": "day-003",
+      "date": "2026-08-04",
+      "title": "Day 3 — Google Search Console aur Analytics: Apne Website ke Performance ko Samajhein",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Google Search Console (GSC) aur Google Analytics (GA4) aapki website ke health aur performance ko track karne ke liye essential tools hain. GSC aapko indexing, crawl errors, aur search rankings dikhata hai, jabki GA4 visitors, traffic sources, aur user behavior analyze karta hai. In dono ko samajh kar aap apni SEO strategy ko improve kar sakte hain."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "GSC mein URL Inspection",
+          "Kisi bhi page ka URL enter karke check karen ki Google usko crawl kar raha hai ya nahi.\n2."
+        ],
+        [
+          "GA4 mein Traffic Sources",
+          "\"Acquisition\" > \"All Traffic\" > \"Source/Medium\" dekh kar pata karen ke visitors aapki site par kahan se aa rahe hain (Google Search, Social Media, etc.)."
+        ],
+        [
+          "Practice",
+          "1. Apni website (ya kisi dummy site) ka GSC account mein add karen.\n2. \"Coverage\" report check karen aur koi crawl errors fix karne ki koshish karen.\n3. GA4 mein ek basic report banaen (e.g., \"Users by Country\")."
+        ],
+        [
+          "Mini Project",
+          "Ek 1-page report taiyar karen jismein aap GSC se top 3 search queries aur GA4 se top 3 traffic sources mention karen. (Format: \"Query/Source - Clicks/Users\")"
+        ]
+      ],
+      "answer_key": "crawl errors, search queries, traffic sources, user behavior"
     }
   ],
   "video-editing": [
