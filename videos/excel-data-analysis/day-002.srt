@@ -1,0 +1,139 @@
+1
+00:00:00,000 --> 00:00:03,335
+Day 2 — AVERAGE aur COUNTIF:
+
+2
+00:00:03,335 --> 00:00:06,671
+Data ko samajhne ke liye zaroori
+
+3
+00:00:06,671 --> 00:00:10,006
+functions Concept. Aaj hum AVERAGE aur
+
+4
+00:00:10,006 --> 00:00:13,341
+COUNTIF functions seekhenge jo data ko
+
+5
+00:00:13,341 --> 00:00:16,677
+analyze karne mein madad karte hain.
+
+6
+00:00:16,677 --> 00:00:20,012
+AVERAGE kisi range ke numbers ka
+
+7
+00:00:20,012 --> 00:00:23,347
+mean nikalta hai, jabki COUNTIF kisi
+
+8
+00:00:23,347 --> 00:00:26,683
+condition ke hisaab se cells count
+
+9
+00:00:26,683 --> 00:00:30,018
+karta hai (jaise "kitne students ne
+
+10
+00:00:30,018 --> 00:00:33,353
+80+ marks liye"). Ye functions data
+
+11
+00:00:33,353 --> 00:00:36,688
+ko summarize karne ke liye bohat
+
+12
+00:00:36,688 --> 00:00:40,024
+useful hain. Example. 1. AVERAGE. =AVERAGE(B2:B10)
+
+13
+00:00:40,024 --> 00:00:43,359
+— Excel sheet mein cells B2
+
+14
+00:00:43,359 --> 00:00:46,694
+se B10 tak ke numbers ka
+
+15
+00:00:46,694 --> 00:00:50,030
+average calculate karega. 2. COUNTIF. =COUNTIF(C2:C10,
+
+16
+00:00:50,030 --> 00:00:53,365
+" 50") — Column C mein
+
+17
+00:00:53,365 --> 00:00:56,700
+50 se zyada values wali cells
+
+18
+00:00:56,700 --> 00:01:00,036
+count karega. Practice. Ek Excel file
+
+19
+00:01:00,036 --> 00:01:03,371
+mein ek column mein 10 students
+
+20
+00:01:03,371 --> 00:01:06,706
+ke marks hain (50, 65, 72,
+
+21
+00:01:06,706 --> 00:01:10,042
+80, 45, 90, 78, 60, 85,
+
+22
+00:01:10,042 --> 00:01:13,377
+55). Inke liye: 1. AVERAGE function
+
+23
+00:01:13,377 --> 00:01:16,712
+use karke sabka average marks nikalho.
+
+24
+00:01:16,712 --> 00:01:20,048
+2. COUNTIF use karke kitne students
+
+25
+00:01:20,048 --> 00:01:23,383
+ke 70+ marks hain, count karho.
+
+26
+00:01:23,383 --> 00:01:26,718
+Mini Project. Ek small Excel sheet
+
+27
+00:01:26,718 --> 00:01:30,053
+banayo jismein ek column mein 15
+
+28
+00:01:30,053 --> 00:01:33,389
+employees ke salaries hain (50000, 60000,
+
+29
+00:01:33,389 --> 00:01:36,724
+75000, 80000, 45000, 90000, 65000, 70000,
+
+30
+00:01:36,724 --> 00:01:40,059
+55000, 85000, 72000, 68000, 95000, 52000,
+
+31
+00:01:40,059 --> 00:01:43,395
+78000). Inke liye: 1. Average salary
+
+32
+00:01:43,395 --> 00:01:46,730
+calculate karo. 2. Kitne employees ki
+
+33
+00:01:46,730 --> 00:01:50,065
+salary 70000 se zyada hai, count
+
+34
+00:01:50,065 --> 00:01:53,401
+karo. 3. Kitne employees ki salary
+
+35
+00:01:53,401 --> 00:01:56,736
+50000 se kam hai, count karo.

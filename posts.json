@@ -1639,6 +1639,33 @@
       ],
       "answer_key": "user_input, while_loop, condition_check, exit_command",
       "translations": {}
+    },
+    {
+      "day": 5,
+      "id": "day-005",
+      "date": "2026-08-04",
+      "title": "Day 5 — Arrays: Ek Se Zyada Data Ko Store Karna",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Arrays ek hi type ke multiple values ko store karne ka tareeka hai. Jaise 5 students ke marks store karne hain, to ek array banayenge `marks[5]` — har index par ek mark. Arrays se code sath mein manage hota hai aur loops ke saath bohat kaam aata hai."
+        ],
+        [
+          "Example",
+          "```cpp\nint marks[5] = {90, 85, 78, 92, 88}; // 5 elements ka array\nfor(int i = 0; i < 5; i++) {\n    cout << \"Student \" << i+1 << \" ka mark: \" << marks[i] << endl;\n}\n```\nYeh 5 students ke marks print karega."
+        ],
+        [
+          "Practice",
+          "Ek array `numbers[10]` banayein jo 1 se 10 tak numbers store kare. Phir ek loop chalayein jo sab numbers ko print kare *aur* unka sum bhi calculate kare."
+        ],
+        [
+          "Mini Project",
+          "**Even/Odd Counter**\nEk array `arr[10]` mein 10 random numbers store karayein (1-100 ke beech). Phir ek program likhein jo:\n1. Array ke har element ko print kare.\n2. Count kare ke kitne even numbers hain aur kitne odd.\n3. Sabse bade aur sabse chhote number ko bhi print kare."
+        ]
+      ],
+      "answer_key": "numbers array, sum variable, loop, even/odd check, max/min find",
+      "translations": {}
     }
   ],
   "python-programming": [

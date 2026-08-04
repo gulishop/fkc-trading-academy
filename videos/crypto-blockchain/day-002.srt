@@ -1,0 +1,131 @@
+1
+00:00:00,000 --> 00:00:02,930
+Day 2 — Bitcoin vs Ethereum:
+
+2
+00:00:02,930 --> 00:00:05,860
+Digital Gold vs Programmable Money Concept.
+
+3
+00:00:05,860 --> 00:00:08,791
+Bitcoin (BTC) aur Ethereum (ETH) crypto
+
+4
+00:00:08,791 --> 00:00:11,721
+ki do sabse famous currencies hain.
+
+5
+00:00:11,721 --> 00:00:14,651
+Bitcoin ko "digital gold" kaha jata
+
+6
+00:00:14,651 --> 00:00:17,581
+hai—yeh ek decentralized currency hai jo
+
+7
+00:00:17,581 --> 00:00:20,511
+transactions record karta hai. Ethereum, on
+
+8
+00:00:20,511 --> 00:00:23,441
+the other hand, ek "programmable blockchain"
+
+9
+00:00:23,441 --> 00:00:26,372
+hai jo smart contracts (self-executing agreements)
+
+10
+00:00:26,372 --> 00:00:29,302
+aur decentralized apps (DApps) ko support
+
+11
+00:00:29,302 --> 00:00:32,232
+karta hai. Bitcoin limited supply (21M
+
+12
+00:00:32,232 --> 00:00:35,162
+coins) ke saath inflation-resistant hai, jabki
+
+13
+00:00:35,162 --> 00:00:38,092
+Ethereum flexible hai aur developers ko
+
+14
+00:00:38,092 --> 00:00:41,023
+innovative projects build karne deta hai.
+
+15
+00:00:41,023 --> 00:00:43,953
+Example. Imagine Bitcoin ek gold coin
+
+16
+00:00:43,953 --> 00:00:46,883
+hai—limited supply, stable value, aur sirf
+
+17
+00:00:46,883 --> 00:00:49,813
+transactions record karta hai. Ethereum ek
+
+18
+00:00:49,813 --> 00:00:52,743
+digital computer hai—jisme developers "if-this-then-that" rules
+
+19
+00:00:52,743 --> 00:00:55,673
+(smart contracts) likh sakte hain, jaise
+
+20
+00:00:55,673 --> 00:00:58,604
+ek vending machine jo automatically payment
+
+21
+00:00:58,604 --> 00:01:01,534
+lekar product deta hai. Practice. 1.
+
+22
+00:01:01,534 --> 00:01:04,464
+CoinGecko ya CoinMarketCap par Bitcoin (BTC)
+
+23
+00:01:04,464 --> 00:01:07,394
+aur Ethereum (ETH) ki current prices
+
+24
+00:01:07,394 --> 00:01:10,324
+check karen. 2. Difference note karen:
+
+25
+00:01:10,324 --> 00:01:13,255
+Bitcoin ka focus "store of value"
+
+26
+00:01:13,255 --> 00:01:16,185
+hai, jabki Ethereum ka focus "platform
+
+27
+00:01:16,185 --> 00:01:19,115
+for apps" hai. Smart Contract Simulation.
+
+28
+00:01:19,115 --> 00:01:22,045
+- Ethereum ke Remix IDE par
+
+29
+00:01:22,045 --> 00:01:24,975
+jaen. - Ek simple smart contract
+
+30
+00:01:24,975 --> 00:01:27,905
+likhen jo "Hello, [Apna Naam]" print
+
+31
+00:01:27,905 --> 00:01:30,836
+kare. - (Step-by-step guide ke liye
+
+32
+00:01:30,836 --> 00:01:33,766
+YouTube par "Remix IDE tutorial" search
+
+33
+00:01:33,766 --> 00:01:36,696
+karen.)
