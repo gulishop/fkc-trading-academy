@@ -1625,6 +1625,78 @@
         ]
       ],
       "answer_key": "age, name, height, calculator"
+    },
+    {
+      "day": 3,
+      "id": "day-003",
+      "date": "2026-08-04",
+      "title": "Day 3 — Operators aur Type Conversion: Apne Programs Ko Aur Powerful Banana",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Operators C++ mein calculations aur decisions karne ke liye hote hain (jaise +, -, *, /, %, ==, !=, &&, ||). Type conversion matlab ek data type ko doosre mein convert karna (jaise `int` ko `float` mein). Ye sab programming ko flexible aur efficient banata hai."
+        ],
+        [
+          "Example",
+          "```cpp\n#include <iostream>\nusing namespace std;\nint main() {\n    int a = 5, b = 2;\n    float result = a / b; // Implicit conversion (int/float → float)\n    cout << \"Division: \" << result << endl; // Output: 2.5\n\n    // Explicit conversion (C-style)\n    int x = 10;\n    float y = (float)x / 3; // Output: 3.333...\n    cout << \"Explicit: \" << y << endl;\n    return 0;\n}\n```"
+        ],
+        [
+          "Practice",
+          "Ek program likho jo user se 2 numbers input le aur unka:\n1. Sum (int)\n2. Average (float, 2 decimal places tak)\n3. Remainder (modulus operator use karke)"
+        ],
+        [
+          "Mini Project",
+          "**\"Simple Calculator\"** — User se 2 numbers aur ek operator (+, -, *, /) input lo, phir result calculate karke dikhao. Type conversion ka use karke decimal results bhi handle karo."
+        ]
+      ],
+      "answer_key": "int sum, remainder; float average",
+      "translations": {
+        "ur": {
+          "title": "Day 3 — آپریٹرز اور ٹائپ کنورژن: اپنے پروگرامز کو اور پاورفل بنانا",
+          "preamble": "C++ میں آپریٹرز اور ٹائپ کنورژن کا استعمال پروگرامز کو زیادہ طاقتور اور لچکدار بناتا ہے۔ آپریٹرز کی مدد سے ہم حسابات اور فیصلے کرتے ہیں، جبکہ ٹائپ کنورژن سے مختلف ڈیٹا ٹائپس کو آپس میں تبدیل کر کے کوڈ کو مزید موثر بنایا جا سکتا ہے۔",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "C++ میں آپریٹرز حسابات اور فیصلے کرنے کے لیے استعمال ہوتے ہیں (جیسے +، -، *، /، %، ==، !=، &&، ||)۔ ٹائپ کنورژن کا مطلب ہے ایک ڈیٹا ٹائپ کو دوسرے میں تبدیل کرنا (جیسے `int` کو `float` میں)۔ یہ سب پروگرامنگ کو لچکدار اور موثر بناتا ہے۔"
+            },
+            {
+              "label": "Example",
+              "content": "#include <iostream>\nusing namespace std;\nint main() {\n    int a = 5, b = 2;\n    float result = a / b; // Implicit conversion (int/float → float)\n    cout << \"تقسیم: \" << result << endl; // Output: 2.5\n\n    // Explicit conversion (C-style)\n    int x = 10;\n    float y = (float)x / 3; // Output: 3.333...\n    cout << \"مخصوص کنورژن: \" << y << endl;\n    return 0;\n}"
+            },
+            {
+              "label": "Practice",
+              "content": "ایک پروگرام لکھیں جو صارف سے 2 نمبرز ان پٹ لے اور ان کا:\n1. جمع (int)\n2. اوسط (float، 2 ڈیسیمل جگہوں تک)\n3. باقی ماندہ (ماڈیولس آپریٹر استعمال کرتے ہوئے)\nکا حساب لگائے۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "\"سادہ کیلکولیٹر\" — صارف سے 2 نمبرز اور ایک آپریٹر (+، -، *، /) ان پٹ لو، پھر نتیجہ حساب کر کے دکھائیں۔ ٹائپ کنورژن کا استعمال کرتے ہوئے ڈیسیمل نتائج کو بھی ہینڈل کریں۔"
+            }
+          ]
+        },
+        "sd": {
+          "title": "Day 3 — آپریٹرز اور ٹائپ کنورشن: اپنے پروگرامز کو اور پاورفل بنانا",
+          "preamble": "C++ میں آپریٹرز مختلف حساب کتاب اور فیصلے کرنے کے لیے استعمال ہوتے ہیں، جیسے +، -، *، /، %، ==، !=، &&، ||۔ ٹائپ کنورشن کا مطلب ہے ایک ڈیٹا ٹائپ کو دوسرے میں تبدیل کرنا، جیسے int کو float میں۔ یہ سب پروگرامنگ کو لچکدار اور موثر بناتا ہے۔",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "C++ میں آپریٹرز مختلف حساب کتاب اور فیصلے کرنے کے لیے استعمال ہوتے ہیں (جیسے +، -، *، /، %، ==، !=، &&، ||)۔ ٹائپ کنورشن کا مطلب ہے ایک ڈیٹا ٹائپ کو دوسرے میں تبدیل کرنا (جیسے int کو float میں)۔ یہ سب پروگرامنگ کو لچکدار اور موثر بناتا ہے۔"
+            },
+            {
+              "label": "Example",
+              "content": "#include <iostream>\nusing namespace std;\nint main() {\n    int a = 5, b = 2;\n    float result = a / b; // Implicit conversion (int/float → float)\n    cout << \"تقسیم: \" << result << endl; // Output: 2.5\n\n    // Explicit conversion (C-style)\n    int x = 10;\n    float y = (float)x / 3; // Output: 3.333...\n    cout << \"مخصوص: \" << y << endl;\n    return 0;\n}"
+            },
+            {
+              "label": "Practice",
+              "content": "ایک پروگرام لکھو جو یوزر سے 2 نمبرز ان پٹ لے اور ان کا:\n1. جمع (int)\n2. اوسط (float، 2 دسیمیل جگہوں تک)\n3. باقی ماندہ (ماڈیولس آپریٹر استعمال کرکے)\n"
+            },
+            {
+              "label": "Mini Project",
+              "content": "\"سادہ کیلکولیٹر\" — یوزر سے 2 نمبرز اور ایک آپریٹر (+، -، *، /) ان پٹ لو، پھر رزلٹ کیلکولیٹ کرکے دکھاؤ۔ ٹائپ کنورشن کا استعمال کرکے دسیمیل رزلٹس بھی ہینڈل کرو۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "python-programming": [

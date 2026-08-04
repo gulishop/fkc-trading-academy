@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T09:19:20.793794";
+  var FKC_BUILD = "2026-08-04T09:40:46.722297";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -152,6 +152,7 @@ font-size:1.05em;text-align:right;}
     <p class="muted">📊 Excel &amp; Data Analysis · Day 01</p>
     <h1>Day 1 — Excel Interface aur Pehla Formula: `SUM`</h1>
     <div class="card">
+      
       
       
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Aaj hum Excel ka basic interface samajhein ge aur pehla formula `SUM` use karna seekhein ge. Excel ka ribbon (top menu), formula bar, cells, aur sheets ka basic structure dekhein ge. `SUM` formula numbers ko add karne ka sabse easy tareeka hai—bas numbers select karo ya type karo aur result milega.</p><h3>Example</h3><p>1. Excel kholo, ek naya sheet banayein.<br>2. A1 mein `5`, B1 mein `10`, C1 mein `15` type karen.<br>3. D1 mein cursor rakhein, `=` type karen, phir `SUM(` likhein.<br>4. A1:C1 select karen (ya `A1,B1,C1` type karen), phir `)` close karen.<br>5. Enter press karen—D1 mein `30` aana chahiye.</p><h3>Practice</h3><p>Ek naya sheet banayein aur A1:A5 mein yeh numbers type karen: `20, 35, 10, 45, 50`. Phir B1 mein `SUM` formula use karke in sabka total nikalain.</p><h3>Mini Project</h3><p>Ek simple &quot;Monthly Expense Tracker&quot; banayein:<br>- A1:A7 mein yeh labels type karen: `Rent, Groceries, Transport, Bills, Entertainment, Savings, Total`<br>- B1:B6 mein yeh amounts type karen (apne hisaab se, e.g., `15000, 8000, 3000, 2000, 5000, 10000`)<br>- B7 mein `SUM(B1:B6)` formula use karke total expenses nikalain.</p></div>

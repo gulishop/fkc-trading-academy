@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T09:19:20.793794";
+  var FKC_BUILD = "2026-08-04T09:40:46.722297";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -152,6 +152,7 @@ font-size:1.05em;text-align:right;}
     <p class="muted">🐍 Python Programming · Day 01</p>
     <h1>Day 1 — Python Install Karna aur Pehla Program</h1>
     <div class="card">
+      
       
       
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Python install karna ek beginner ke liye sabse pehla aur zaroori step hai. Hum Python ki official website se installer download karke install karenge. Phir ek simple &quot;Hello World&quot; program likhenge taake Python ka basic structure samajh aaye. Yehi program Python ki coding ka foundation hai.</p><h3>Example</h3><p>1. [Python ki official website](https://www.python.org/downloads/) par jao.<br>2. &quot;Download Python&quot; button par click karo (latest version select karna).<br>3. Installer run karo, **&quot;Add Python to PATH&quot;** checkbox check karna mat bhulna.<br>4. &quot;Install Now&quot; par click karo aur wait karo.<br>5. Command Prompt (Windows) ya Terminal (Mac/Linux) kholo aur `python --version` ya `python3 --version` type karo taake confirm ho jaaye ke Python install ho gaya hai.<br>6. Ab ek file `hello.py` banao aur usme yeh code likho:<br>   ```python<br>   print(&quot;Hello World!&quot;)<br>   ```<br>7. Terminal mein `python hello.py` ya `python3 hello.py` likh kar Enter dabao. Output aana chahiye: `Hello World!`</p><h3>Practice</h3><p>Apne system par Python install karo aur ek file `first.py` banao. Usme apna naam print karne wala code likho (e.g., `print(&quot;Mera naam [Apna Naam] hai&quot;)`). Terminal se run karo.</p></div>

@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T09:19:20.793794";
+  var FKC_BUILD = "2026-08-04T09:40:46.722297";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -152,6 +152,7 @@ font-size:1.05em;text-align:right;}
     <p class="muted">💻 C++ Daily Coding · Day 01</p>
     <h1>Day 1 — C++ Setup aur &quot;Hello World&quot; Program</h1>
     <div class="card">
+      
       
       
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Aaj hum C++ programming shuru karne se pehle apne system par C++ compiler aur IDE (Integrated Development Environment) setup karenge. Compiler code ko machine language mein translate karta hai, jabki IDE coding, debugging aur running ko asaan banata hai. Pehle program ko &quot;Hello World&quot; kehte hain—yeh programming ki starting point hoti hai.</p><h3>Example</h3><p>1.</p><h3>Compiler Install karein</h3><p>- Windows: [MinGW-w64](https://www.mingw-w64.org/) download karein (ya [MSYS2](https://www.msys2.org/)).<br>   - Mac: Terminal mein `xcode-select --install` run karein.<br>   - Linux: `sudo apt install g++` (Ubuntu/Debian) ya `sudo dnf install gcc-c++` (Fedora).</p><p>2.</p><h3>IDE Install karein</h3><p>- [VS Code](https://code.visualstudio.com/) (lightweight, extensions: &quot;C/C++&quot; aur &quot;Code Runner&quot;).<br>   - Ya [Code::Blocks](https://www.codeblocks.org/) (simple IDE).</p><p>3.</p><h3>Pehl program likhein</h3><p>```cpp<br>   #include &lt;iostream&gt;<br>   using namespace std;</p><p>   int main() {<br>       cout &lt;&lt; &quot;Hello World!&quot; &lt;&lt; endl;<br>       return 0;<br>   }<br>   ```<br>   - `g++ hello.cpp -o hello` se compile karein.<br>   - `./hello` (Linux/Mac) ya `hello.exe` (Windows) se run karein.</p><h3>Practice</h3><p>Apne system par C++ compiler aur VS Code setup karein, aur upar wala &quot;Hello World&quot; program run karein. Screenshot ya terminal output share karein.</p></div>

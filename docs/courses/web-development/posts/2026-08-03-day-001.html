@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T09:19:20.793794";
+  var FKC_BUILD = "2026-08-04T09:40:46.722297";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -152,6 +152,7 @@ font-size:1.05em;text-align:right;}
     <p class="muted">🌐 Web Development · Day 01</p>
     <h1>Day 1 — HTML Basics: Apni Pehli Webpage Banana</h1>
     <div class="card">
+      
       
       
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>HTML (HyperText Markup Language) webpages ki backbone hai. Isse hum apne content ko structure dete hain—jaise headings, paragraphs, images aur links. Har webpage ek `&lt;html&gt;` tag se shuru hoti hai, jisme `&lt;head&gt;` (metadata ke liye) aur `&lt;body&gt;` (visible content ke liye) hote hain.</p><h3>Example</h3><p>Ek basic HTML file banane ke liye:<br>```html<br>&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>    &lt;title&gt;Meri Pehli Webpage&lt;/title&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>    &lt;h1&gt;Hello World!&lt;/h1&gt;<br>    &lt;p&gt;Ye meri pehli webpage hai.&lt;/p&gt;<br>    &lt;a href=&quot;https://google.com&quot;&gt;Google par jao&lt;/a&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;<br>```<br>1. `!DOCTYPE html` browser ko batata hai ye HTML5 hai.<br>2. `&lt;html&gt;` root tag hai.<br>3. `&lt;head&gt;` mein page ka title aur metadata hota hai.<br>4. `&lt;body&gt;` mein jo content dikhna hai, wo hota hai.</p><h3>Practice</h3><p>Apni `index.html` file banao aur usme:<br>- Ek `&lt;h2&gt;` heading add karo: &quot;Mera Pehla Project&quot;<br>- Ek `&lt;p&gt;` paragraph add karo: &quot;Ye mera practice ka hissa hai.&quot;<br>- Ek `&lt;a&gt;` link add karo jo &quot;Google&quot; par le jaaye.</p><h3>Mini Project</h3><p>Ek 3-page website banao:<br>1. `index.html` (homepage)<br>2. `about.html` (apne baare mein)<br>3. `contact.html` (contact details)<br>Har page par ek navigation bar banao jo doosre pages par ja sake.</p></div>
