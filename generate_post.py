@@ -1553,6 +1553,74 @@ def parse_lesson_text(text, day_num):
     return title, preamble, kept_sections, answer_key
 
 
+# ---------------------------------------------------------------------
+# 🌐 Lesson translations — Roman Urdu (jo already har lesson ka default
+# hai) ke sath-sath, Urdu aur Sindhi script mein bhi lesson generate
+# hota hai. Cache ki jati hai (day-XXX.ur.json / day-XXX.sd.json) taake
+# dobara build hone par translation dobara na maangni pade. Fail ho
+# jaye to sirf wo zaban skip hoti hai — Roman Urdu wala lesson kabhi
+# iski wajah se nahi rukta.
+# ---------------------------------------------------------------------
+TRANSLATION_LANGS = {
+    "ur": "Urdu (Nastaliq/Urdu script mein)",
+    "sd": "Sindhi (Sindhi/Arabic script mein)",
+}
+
+
+def build_translation_prompt(lang_label, title, preamble, sections):
+    sections_text = "\n".join(f"- {label}: {content}" for label, content in sections)
+    return (
+        f"Neeche diya gaya ek lesson hai, Roman Urdu mein likha hua. Isay poora "
+        f"{lang_label} translate karo — matlab, tone, aur structure bilkul wahi rakho, "
+        "sirf zaban/script badlo, kuch add ya remove mat karo. "
+        "SIRF valid JSON return karo, koi extra text, koi markdown code-fence nahi, "
+        "bilkul is shape mein: "
+        '{"title": "...", "preamble": "...", "sections": [{"label": "...", "content": "..."}]}. '
+        f"Original Title: {title}\n"
+        f"Original Preamble: {preamble}\n"
+        f"Original Sections:\n{sections_text}"
+    )
+
+
+def _parse_translation_json(raw):
+    cleaned = raw.strip()
+    if cleaned.startswith("```"):
+        cleaned = re.sub(r"^```[a-zA-Z]*\n?", "", cleaned)
+        cleaned = re.sub(r"```\s*$", "", cleaned)
+    data = json.loads(cleaned.strip())
+    if not isinstance(data, dict) or "sections" not in data:
+        raise ValueError("translation JSON ka shape galat hai")
+    return data
+
+
+def get_or_generate_translations(slug, day_num, title, preamble, sections):
+    padded = f"{day_num:03d}"
+    course_dir = os.path.join(LESSONS_DIR, slug)
+    os.makedirs(course_dir, exist_ok=True)
+    translations = {}
+    for code, lang_label in TRANSLATION_LANGS.items():
+        cache_path = os.path.join(course_dir, f"day-{padded}.{code}.json")
+        if os.path.exists(cache_path):
+            try:
+                with open(cache_path, encoding="utf-8") as f:
+                    translations[code] = json.load(f)
+                continue
+            except Exception:
+                pass  # cache file kharab, neeche dobara generate karte hain
+        try:
+            prompt = build_translation_prompt(lang_label, title, preamble, sections)
+            raw = ai_generate(prompt)
+            data = _parse_translation_json(raw)
+            translations[code] = data
+            with open(cache_path, "w", encoding="utf-8") as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
+            print(f"[{slug}] Day {day_num} {lang_label} translation ban gayi.")
+            time.sleep(3)
+        except Exception as e:
+            print(f"[{slug}] Day {day_num} {lang_label} translation fail, skip: {e}", file=sys.stderr)
+    return translations
+
+
 def get_or_generate_lesson(slug, course, day_num, previous_titles):
     padded = f"{day_num:03d}"
     course_lessons_dir = os.path.join(LESSONS_DIR, slug)
@@ -1579,6 +1647,7 @@ def get_or_generate_lesson(slug, course, day_num, previous_titles):
         time.sleep(5)  # free-tier per-minute rate limit se bachne ke liye
 
     title, preamble, sections, answer_key = parse_lesson_text(raw, day_num)
+    translations = get_or_generate_translations(slug, day_num, title, preamble, sections)
     today = datetime.date.today().isoformat()
     return {
         "day": day_num,
@@ -1588,6 +1657,7 @@ def get_or_generate_lesson(slug, course, day_num, previous_titles):
         "preamble": preamble,
         "sections": sections,
         "answer_key": answer_key,
+        "translations": translations,
     }
 
 
@@ -1688,6 +1758,12 @@ overflow:hidden;}
 transition:width .4s ease;}
 .complete-btn.done{background:var(--accent);}
 #fkc-cert-btn{background:var(--purple);}
+.lang-tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;}
+.lang-tab{background:var(--paper);border:1px solid var(--line);color:var(--muted);
+border-radius:20px;font-size:.82em;font-weight:700;padding:6px 16px;cursor:pointer;}
+.lang-tab.active{background:var(--primary);color:#fff;border-color:var(--primary);}
+.lang-content[dir="rtl"]{font-family:'Noto Nastaliq Urdu',serif;line-height:2.1;
+font-size:1.05em;text-align:right;}
 """
 
 HEAD = """<!DOCTYPE html>
@@ -1714,7 +1790,7 @@ HEAD = """<!DOCTYPE html>
 <link rel="icon" href="{logo_href}">
 {pwa_extra}
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
 <style>{css}</style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="{logo_href}" alt="{brand}">
 <div><div class="bname">{brand}</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -1846,10 +1922,65 @@ def render_course_page(slug, course, lessons):
     )
 
 
+def render_translation_html(data):
+    out = md_lite(data.get("preamble", ""))
+    for sec in data.get("sections", []):
+        label = sec.get("label", "")
+        content = sec.get("content", "")
+        out += f"<h3>{html.escape(label)}</h3>{md_lite(content)}"
+    return out
+
+
+LANG_TAB_LABELS = {"rm": "Roman Urdu", "ur": "اردو", "sd": "سنڌي"}
+
+
+def lang_tabs_script_html():
+    return """<script>
+(function(){
+  window.fkcSwitchLang = function(btn){
+    var lang = btn.getAttribute("data-lang");
+    var tabs = document.querySelectorAll(".lang-tab");
+    var blocks = document.querySelectorAll(".lang-content");
+    for(var i=0;i<tabs.length;i++){
+      tabs[i].classList.toggle("active", tabs[i].getAttribute("data-lang")===lang);
+    }
+    for(var j=0;j<blocks.length;j++){
+      blocks[j].style.display = (blocks[j].getAttribute("data-lang")===lang) ? "" : "none";
+    }
+  };
+})();
+</script>"""
+
+
 def render_lesson_page(slug, course, lesson, is_latest, image_href=None):
     lesson_html = md_lite(lesson["preamble"])
     for label, content in lesson["sections"]:
         lesson_html += f"<h3>{html.escape(label)}</h3>{md_lite(content)}"
+
+    translations = lesson.get("translations") or {}
+    lang_blocks = [("rm", lesson_html, False)]
+    for code in ("ur", "sd"):
+        if code in translations:
+            lang_blocks.append((code, render_translation_html(translations[code]), True))
+
+    if len(lang_blocks) > 1:
+        tab_buttons = "".join(
+            f'<button type="button" class="lang-tab{" active" if code=="rm" else ""}" '
+            f'data-lang="{code}" onclick="fkcSwitchLang(this)">{LANG_TAB_LABELS[code]}</button>'
+            for code, _, _ in lang_blocks
+        )
+        tabs_html = f'<div class="lang-tabs">{tab_buttons}</div>'
+    else:
+        tabs_html = ""
+
+    content_html = "".join(
+        f'<div class="lang-content" data-lang="{code}"'
+        + (' dir="rtl"' if rtl else "")
+        + (' style="display:none"' if code != "rm" else "")
+        + f'>{block}</div>'
+        for code, block, rtl in lang_blocks
+    )
+
     image_block = ""
     if image_href:
         image_block = (
@@ -1883,7 +2014,8 @@ def render_lesson_page(slug, course, lesson, is_latest, image_href=None):
     <h1>{html.escape(lesson['title'])}</h1>
     <div class="card">
       {image_block}
-      {lesson_html}
+      {tabs_html}
+      {content_html}
       {affiliate_block}
       <div>
         <a class="btn" href="{wa_link}" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
@@ -1911,7 +2043,7 @@ def render_lesson_page(slug, course, lesson, is_latest, image_href=None):
     )
     return (
         head + body + FOOT_TAIL + certificate_progress_script_html()
-        + firebase_init_html() + pwa_install_prompt_html()
+        + lang_tabs_script_html() + firebase_init_html() + pwa_install_prompt_html()
     )
 
 
