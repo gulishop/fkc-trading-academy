@@ -1617,6 +1617,41 @@ def _parse_translation_json(raw):
     return data
 
 
+def _is_degenerate_text(text, min_len=40):
+    """AI kabhi kabhi ek chhota word/phrase loop mein baar baar repeat kar
+    deta hai (jaise 'jaa'oon jaa'oon jaa'oon...'). Yeh function aisa
+    repetitive/garbled output detect karta hai taake wo cache na ho."""
+    if not text:
+        return False
+    words = text.split()
+    if len(words) < 8 or len(text) < min_len:
+        return False
+    unique_ratio = len(set(words)) / len(words)
+    if unique_ratio < 0.35:
+        return True
+    # ek hi word ka lagataar 5+ dafa repeat hona bhi degenerate output hai
+    run = 1
+    for i in range(1, len(words)):
+        if words[i] == words[i - 1]:
+            run += 1
+            if run >= 5:
+                return True
+        else:
+            run = 1
+    return False
+
+
+def _translation_is_sane(data):
+    preamble = data.get("preamble", "") or ""
+    if _is_degenerate_text(preamble):
+        return False
+    for sec in data.get("sections", []):
+        content = sec.get("content", "") if isinstance(sec, dict) else ""
+        if _is_degenerate_text(content):
+            return False
+    return True
+
+
 def get_or_generate_translations(slug, day_num, title, preamble, sections):
     padded = f"{day_num:03d}"
     course_dir = os.path.join(LESSONS_DIR, slug)
@@ -1627,21 +1662,34 @@ def get_or_generate_translations(slug, day_num, title, preamble, sections):
         if os.path.exists(cache_path):
             try:
                 with open(cache_path, encoding="utf-8") as f:
-                    translations[code] = json.load(f)
-                continue
+                    cached = json.load(f)
+                if _translation_is_sane(cached):
+                    translations[code] = cached
+                    continue
+                print(f"[{slug}] Day {day_num} {lang_label} cache garbled (repetitive) mila, dobara generate ho raha hai.")
             except Exception:
                 pass  # cache file kharab, neeche dobara generate karte hain
-        try:
-            prompt = build_translation_prompt(lang_label, title, preamble, sections)
-            raw = ai_generate(prompt)
-            data = _parse_translation_json(raw)
-            translations[code] = data
-            with open(cache_path, "w", encoding="utf-8") as f:
-                json.dump(data, f, ensure_ascii=False, indent=2)
-            print(f"[{slug}] Day {day_num} {lang_label} translation ban gayi.")
+
+        last_err = None
+        for attempt in range(1, 4):  # degenerate output aaye to 3 dafa retry
+            try:
+                prompt = build_translation_prompt(lang_label, title, preamble, sections)
+                raw = ai_generate(prompt)
+                data = _parse_translation_json(raw)
+                if not _translation_is_sane(data):
+                    raise ValueError("AI ne repetitive/garbled output diya (loop detect hua)")
+                translations[code] = data
+                with open(cache_path, "w", encoding="utf-8") as f:
+                    json.dump(data, f, ensure_ascii=False, indent=2)
+                print(f"[{slug}] Day {day_num} {lang_label} translation ban gayi (attempt {attempt}).")
+                last_err = None
+                break
+            except Exception as e:
+                last_err = e
+                print(f"[{slug}] Day {day_num} {lang_label} attempt {attempt} fail: {e}", file=sys.stderr)
             time.sleep(3)
-        except Exception as e:
-            print(f"[{slug}] Day {day_num} {lang_label} translation fail, skip: {e}", file=sys.stderr)
+        if last_err is not None:
+            print(f"[{slug}] Day {day_num} {lang_label} translation 3 attempts ke baad bhi fail, skip: {last_err}", file=sys.stderr)
     return translations
 
 
@@ -2395,10 +2443,51 @@ function fkcDownloadCert(){{
 
 
 # ---------------------------------------------------------------------
+# 4b. Self-heal — pehle se published lessons mein agar koi translation
+# degenerate/repetitive nikle (jaise "jaa'oon jaa'oon..." wala Sindhi
+# bug), to sirf usi lang ko dobara generate karo. Baaki sab (jin
+# lessons mein translations hain hi nahi, ya theek hain) bilkul chhoo
+# nahi mate — sirf broken cheez fix hoti hai.
+# ---------------------------------------------------------------------
+def heal_degenerate_translations(posts):
+    changed = False
+    for slug, lessons in posts.items():
+        course = COURSES.get(slug)
+        if not course:
+            continue
+        for lesson in lessons:
+            translations = lesson.get("translations")
+            if not translations:
+                continue
+            bad_codes = [c for c, d in translations.items() if not _translation_is_sane(d)]
+            if not bad_codes:
+                continue
+            print(f"[{slug}] Day {lesson['day']} mein degenerate translation mili ({', '.join(bad_codes)}), heal ho raha hai...")
+            padded = f"{lesson['day']:03d}"
+            for code in bad_codes:
+                cache_path = os.path.join(LESSONS_DIR, slug, f"day-{padded}.{code}.json")
+                if os.path.exists(cache_path):
+                    try:
+                        os.remove(cache_path)
+                    except Exception:
+                        pass
+                translations.pop(code, None)
+            fresh = get_or_generate_translations(
+                slug, lesson["day"], lesson["title"], lesson["preamble"], lesson["sections"]
+            )
+            translations.update(fresh)
+            lesson["translations"] = translations
+            changed = True
+    return changed
+
+
+# ---------------------------------------------------------------------
 # 5. Main
 # ---------------------------------------------------------------------
 def main():
     posts = load_posts()
+    if heal_degenerate_translations(posts):
+        save_posts(posts)
 
     # Sirf ek course chalana ho to COURSE_SLUG env var ya CLI arg se slug lein.
     target_slug = os.environ.get("COURSE_SLUG") or (sys.argv[1] if len(sys.argv) > 1 else None)
