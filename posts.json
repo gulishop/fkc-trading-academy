@@ -908,6 +908,33 @@
           ]
         }
       }
+    },
+    {
+      "day": 4,
+      "id": "day-004",
+      "date": "2026-08-04",
+      "title": "Day 4 — **Amazon FBA Mein Product Quality Control Kaise Karein (Supplier Se Sample Order Karne Se Leke Final Shipment Tak)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Amazon FBA mein product quality control ka matlab hai ke aapka supplier jo bhi product bhejega, woh Amazon ke standards par khara utre. Agar quality kharab hui to returns, bad reviews, aur account suspension ka risk hai. Isliye sample order se leke final shipment tak har stage par quality check zaroori hai."
+        ],
+        [
+          "Example",
+          "Maana aap ek wireless charger ka supplier dhund rahe hain. Pehle sample order karo (5-10 units). Har charger ko test karo:\n1. Charging speed (fast charging support karta hai ya nahi?)\n2. Build quality (plastic cracking to nahi hai?)\n3. Packaging (Amazon ke FNSKU label lagane ke liye space hai?)\nAgar sample approve ho jaye, to bulk order karne se pehle supplier se yeh confirm karo ke woh same quality maintain karega."
+        ],
+        [
+          "Practice",
+          "Apne selected supplier se **1-2 units ka sample order** karo. Har product ko visually inspect karo, test karo, aur Amazon ke listing requirements (jaise dimensions, weight) se match karein."
+        ],
+        [
+          "Mini Project",
+          "Ek **quality checklist** banao (3-5 points) jo aap har sample order ke saath follow karoge. Jaise:\n- Product packaging (damage-free, correct labeling)\n- Functionality test (on/off, charging speed)\n- Dimensions aur weight (Amazon ke guidelines se match)\n- Supplier se quality guarantee written mein lo"
+        ]
+      ],
+      "answer_key": "sample test karo, packaging check, functionality verify, supplier guarantee, bulk order se pehle",
+      "translations": {}
     }
   ],
   "daraz-seller": [
