@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T08:50:51.269013";
+  var FKC_BUILD = "2026-08-04T09:01:54.537628";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -41,7 +41,7 @@
 })();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
 --ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
@@ -136,6 +136,12 @@ overflow:hidden;}
 transition:width .4s ease;}
 .complete-btn.done{background:var(--accent);}
 #fkc-cert-btn{background:var(--purple);}
+.lang-tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;}
+.lang-tab{background:var(--paper);border:1px solid var(--line);color:var(--muted);
+border-radius:20px;font-size:.82em;font-weight:700;padding:6px 16px;cursor:pointer;}
+.lang-tab.active{background:var(--primary);color:#fff;border-color:var(--primary);}
+.lang-content[dir="rtl"]{font-family:'Noto Nastaliq Urdu',serif;line-height:2.1;
+font-size:1.05em;text-align:right;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -147,7 +153,8 @@ transition:width .4s ease;}
     <h1>Day 2 — &quot;Pacing Ka Rahasya: Rozmarra Ke Content Ko Kaise Banayein Engaging&quot;</h1>
     <div class="card">
       
-      <h3>Concept</h3><p>Pacing ka matlab hai apne video ki speed ko control karna taake audience ka attention barqarar rahe. Zyada slow ho to bore ho jayega, zyada fast ho to samajh na aaye. Har platform (Reels, Shorts, YouTube) ke liye pacing alag hoti hai. Aaj seekhenge ki kaise apne cuts aur transitions ko timing de taake video engaging rahe.</p><h3>Example</h3><p>Ek 15-second Reel ke liye:<br>1. 0-3 sec: Ek shocking clip ya hook (e.g., &quot;Yeh trick ne meri life badal di!&quot;)<br>2. 3-10 sec: Main content (step-by-step process)<br>3. 10-15 sec: Call-to-action (e.g., &quot;Full tutorial link bio mein hai!&quot;)</p><h3>Practice</h3><p>Apne phone se 10-second ka ek clip shoot karo (ya existing footage use karo). Usme 3-4 cuts lagao taake pacing natural lage. Har cut ke beech 1-2 second ka gap rakhna.</p><h3>Mini Project</h3><p>Ek 30-second ka &quot;Tips&quot; video banayein jisme:<br>- 0-5 sec: Hook (e.g., &quot;Aap bhi yeh galti karte hain!&quot;)<br>- 5-20 sec: 3 tips (har tip ke beech 2-3 sec ka gap)<br>- 20-30 sec: Conclusion + CTA</p>
+      
+      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Pacing ka matlab hai apne video ki speed ko control karna taake audience ka attention barqarar rahe. Zyada slow ho to bore ho jayega, zyada fast ho to samajh na aaye. Har platform (Reels, Shorts, YouTube) ke liye pacing alag hoti hai. Aaj seekhenge ki kaise apne cuts aur transitions ko timing de taake video engaging rahe.</p><h3>Example</h3><p>Ek 15-second Reel ke liye:<br>1. 0-3 sec: Ek shocking clip ya hook (e.g., &quot;Yeh trick ne meri life badal di!&quot;)<br>2. 3-10 sec: Main content (step-by-step process)<br>3. 10-15 sec: Call-to-action (e.g., &quot;Full tutorial link bio mein hai!&quot;)</p><h3>Practice</h3><p>Apne phone se 10-second ka ek clip shoot karo (ya existing footage use karo). Usme 3-4 cuts lagao taake pacing natural lage. Har cut ke beech 1-2 second ka gap rakhna.</p><h3>Mini Project</h3><p>Ek 30-second ka &quot;Tips&quot; video banayein jisme:<br>- 0-5 sec: Hook (e.g., &quot;Aap bhi yeh galti karte hain!&quot;)<br>- 5-20 sec: 3 tips (har tip ke beech 2-3 sec ka gap)<br>- 20-30 sec: Conclusion + CTA</p></div>
       
       <div>
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Video%20Editing%20%28CapCut/Premiere%29%20%28Day%2002%29%0A%0ADay%202%20%E2%80%94%20%22Pacing%20Ka%20Rahasya%3A%20Rozmarra%20Ke%20Content%20Ko%20Kaise%20Banayein%20Engaging%22%0A%0AConcept%3A%0APacing%20ka%20matlab%20hai%20apne%20video%20ki%20speed%20ko%20control%20karna%20taake%20audience%20ka%20attention%20barqarar%20rahe.%20Zyada%20slow%20ho%20to%20bore%20ho%20jayega%2C%20zyada%20fast%20ho%20to%20samajh%20na%20aaye.%20Har%20platform%20%28Reels%2C%20Shorts%2C%20YouTube%29%20ke%20liye%20pacing%20alag%20hoti%20hai.%20Aaj%20seekhenge%20ki%20kaise%20apne%20cuts%20aur%20transitions%20ko%20timing%20de%20taake%20video%20engaging%20rahe.%0A%0AExample%3A%0AEk%2015-second%20Reel%20ke%20liye%3A%0A1.%200-3%20sec%3A%20Ek%20shocking%20clip%20ya%20hook%20%28e.g.%2C%20%22Yeh%20trick%20ne%20meri%20life%20badal%20di%21%22%29%0A2.%203-10%20sec%3A%20Main%20content%20%28step-by-step%20process%29%0A3.%2010-15%20sec%3A%20Call-to-action%20%28e.g.%2C%20%22Full%20tutorial%20link%20bio%20mein%20hai%21%22%29%0A%0APractice%3A%0AApne%20phone%20se%2010-second%20ka%20ek%20clip%20shoot%20karo%20%28ya%20existing%20footage%20use%20karo%29.%20Usme%203-4%20cuts%20lagao%20taake%20pacing%20natural%20lage.%20Har%20cut%20ke%20beech%201-2%20second%20ka%20gap%20rakhna.%0A%0AMini%20Project%3A%0AEk%2030-second%20ka%20%22Tips%22%20video%20banayein%20jisme%3A%0A-%200-5%20sec%3A%20Hook%20%28e.g.%2C%20%22Aap%20bhi%20yeh%20galti%20karte%20hain%21%22%29%0A-%205-20%20sec%3A%203%20tips%20%28har%20tip%20ke%20beech%202-3%20sec%20ka%20gap%29%0A-%2020-30%20sec%3A%20Conclusion%20%2B%20CTA%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
@@ -254,6 +261,20 @@ transition:width .4s ease;}
       }
     }
   });
+})();
+</script><script>
+(function(){
+  window.fkcSwitchLang = function(btn){
+    var lang = btn.getAttribute("data-lang");
+    var tabs = document.querySelectorAll(".lang-tab");
+    var blocks = document.querySelectorAll(".lang-content");
+    for(var i=0;i<tabs.length;i++){
+      tabs[i].classList.toggle("active", tabs[i].getAttribute("data-lang")===lang);
+    }
+    for(var j=0;j<blocks.length;j++){
+      blocks[j].style.display = (blocks[j].getAttribute("data-lang")===lang) ? "" : "none";
+    }
+  };
 })();
 </script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>

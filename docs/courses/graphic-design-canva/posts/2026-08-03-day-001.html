@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T08:50:51.269013";
+  var FKC_BUILD = "2026-08-04T09:01:54.537628";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -41,7 +41,7 @@
 })();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
 --ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
@@ -136,6 +136,12 @@ overflow:hidden;}
 transition:width .4s ease;}
 .complete-btn.done{background:var(--accent);}
 #fkc-cert-btn{background:var(--purple);}
+.lang-tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;}
+.lang-tab{background:var(--paper);border:1px solid var(--line);color:var(--muted);
+border-radius:20px;font-size:.82em;font-weight:700;padding:6px 16px;cursor:pointer;}
+.lang-tab.active{background:var(--primary);color:#fff;border-color:var(--primary);}
+.lang-content[dir="rtl"]{font-family:'Noto Nastaliq Urdu',serif;line-height:2.1;
+font-size:1.05em;text-align:right;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -147,7 +153,8 @@ transition:width .4s ease;}
     <h1>Day 1 — Canva Ka Pehla Parichay: Interface aur Basic Controls</h1>
     <div class="card">
       
-      <h3>Concept</h3><p>Aaj hum Canva ke dashboard aur uski basic settings se familiar honge. Canva ek drag-and-drop design tool hai jo beginners ke liye bhi bohat aasan hai. Yahan templates, elements (shapes, icons, etc.), text options, aur upload features milte hain. Pehle hum iske interface ko samajhein gaye takay agle lessons mein confidently kaam kar saken.</p><h3>Example</h3><p>1.</p><h3>Sign Up/Login</h3><p>Canva.com par jayein, Google ya email se account banayein.<br>2.</p><h3>Homepage</h3><p>Left side mein &quot;Create a design&quot; button par click karen. Yahan se custom size (jaise 1080x1080px for Instagram) ya pre-set templates (jaise &quot;Instagram Post&quot;) select karen.<br>3.</p><h3>Interface Breakdown</h3><p>-</p><h3>Top Bar</h3><p>Undo/Redo, save, share, aur export options.<br>   -</p><h3>Left Panel</h3><p>Templates, elements (icons, shapes), text, uploads, aur background options.<br>   -</p><h3>Canvas</h3><p>Apna design yahan banayein—drag karke elements add karen.<br>   -</p><h3>Right Panel</h3><p>Har selected element ki properties (color, size, effects) edit karen.</p><h3>Practice</h3><p>Ek naya design create karen (jaise &quot;Facebook Post&quot; template). Left panel se ek &quot;Text&quot; box add karen, usme apna naam type karen, aur right panel se font style aur color change karen.</p><h3>Mini Project</h3><p>Ek simple Instagram Post (1080x1080px) banayein jisme:<br>- Ek background color ho (left panel &gt; &quot;Background&quot; &gt; color pick karen).<br>- Ek text box ho &quot;Hello World!&quot; (font: &quot;Poppins&quot;, color: white).<br>- Ek simple shape (jaise circle) add karen (left panel &gt; &quot;Elements&quot; &gt; &quot;Shapes&quot;).</p>
+      
+      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Aaj hum Canva ke dashboard aur uski basic settings se familiar honge. Canva ek drag-and-drop design tool hai jo beginners ke liye bhi bohat aasan hai. Yahan templates, elements (shapes, icons, etc.), text options, aur upload features milte hain. Pehle hum iske interface ko samajhein gaye takay agle lessons mein confidently kaam kar saken.</p><h3>Example</h3><p>1.</p><h3>Sign Up/Login</h3><p>Canva.com par jayein, Google ya email se account banayein.<br>2.</p><h3>Homepage</h3><p>Left side mein &quot;Create a design&quot; button par click karen. Yahan se custom size (jaise 1080x1080px for Instagram) ya pre-set templates (jaise &quot;Instagram Post&quot;) select karen.<br>3.</p><h3>Interface Breakdown</h3><p>-</p><h3>Top Bar</h3><p>Undo/Redo, save, share, aur export options.<br>   -</p><h3>Left Panel</h3><p>Templates, elements (icons, shapes), text, uploads, aur background options.<br>   -</p><h3>Canvas</h3><p>Apna design yahan banayein—drag karke elements add karen.<br>   -</p><h3>Right Panel</h3><p>Har selected element ki properties (color, size, effects) edit karen.</p><h3>Practice</h3><p>Ek naya design create karen (jaise &quot;Facebook Post&quot; template). Left panel se ek &quot;Text&quot; box add karen, usme apna naam type karen, aur right panel se font style aur color change karen.</p><h3>Mini Project</h3><p>Ek simple Instagram Post (1080x1080px) banayein jisme:<br>- Ek background color ho (left panel &gt; &quot;Background&quot; &gt; color pick karen).<br>- Ek text box ho &quot;Hello World!&quot; (font: &quot;Poppins&quot;, color: white).<br>- Ek simple shape (jaise circle) add karen (left panel &gt; &quot;Elements&quot; &gt; &quot;Shapes&quot;).</p></div>
       
       <div>
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Graphic%20Design%20%28Canva%29%20%28Day%2001%29%0A%0ADay%201%20%E2%80%94%20Canva%20Ka%20Pehla%20Parichay%3A%20Interface%20aur%20Basic%20Controls%0A%0AConcept%3A%0AAaj%20hum%20Canva%20ke%20dashboard%20aur%20uski%20basic%20settings%20se%20familiar%20honge.%20Canva%20ek%20drag-and-drop%20design%20tool%20hai%20jo%20beginners%20ke%20liye%20bhi%20bohat%20aasan%20hai.%20Yahan%20templates%2C%20elements%20%28shapes%2C%20icons%2C%20etc.%29%2C%20text%20options%2C%20aur%20upload%20features%20milte%20hain.%20Pehle%20hum%20iske%20interface%20ko%20samajhein%20gaye%20takay%20agle%20lessons%20mein%20confidently%20kaam%20kar%20saken.%0A%0AExample%3A%0A1.%0A%0ASign%20Up/Login%3A%0ACanva.com%20par%20jayein%2C%20Google%20ya%20email%20se%20account%20banayein.%0A2.%0A%0AHomepage%3A%0ALeft%20side%20mein%20%22Create%20a%20design%22%20button%20par%20click%20karen.%20Yahan%20se%20custom%20size%20%28jaise%201080x1080px%20for%20Instagram%29%20ya%20pre-set%20templates%20%28jaise%20%22Instagram%20Post%22%29%20select%20karen.%0A3.%0A%0AInterface%20Breakdown%3A%0A-%0A%0ATop%20Bar%3A%0AUndo/Redo%2C%20save%2C%20share%2C%20aur%20export%20options.%0A%20%20%20-%0A%0ALeft%20Panel%3A%0ATemplates%2C%20elements%20%28icons%2C%20shapes%29%2C%20text%2C%20uploads%2C%20aur%20background%20options.%0A%20%20%20-%0A%0ACanvas%3A%0AApna%20design%20yahan%20banayein%E2%80%94drag%20karke%20elements%20add%20karen.%0A%20%20%20-%0A%0ARight%20Panel%3A%0AHar%20selected%20element%20ki%20properties%20%28color%2C%20size%2C%20effects%29%20edit%20karen.%0A%0APractice%3A%0AEk%20naya%20design%20create%20karen%20%28jaise%20%22Facebook%20Post%22%20template%29.%20Left%20panel%20se%20ek%20%22Text%22%20box%20add%20karen%2C%20usme%20apna%20naam%20type%20karen%2C%20aur%20right%20panel%20se%20font%20style%20aur%20color%20change%20karen.%0A%0AMini%20Project%3A%0AEk%20simple%20Instagram%20Post%20%281080x1080px%29%20banayein%20jisme%3A%0A-%20Ek%20background%20color%20ho%20%28left%20panel%20%3E%20%22Background%22%20%3E%20color%20pick%20karen%29.%0A-%20Ek%20text%20box%20ho%20%22Hello%20World%21%22%20%28font%3A%20%22Poppins%22%2C%20color%3A%20white%29.%0A-%20Ek%20simple%20shape%20%28jaise%20circle%29%20add%20karen%20%28left%20panel%20%3E%20%22Elements%22%20%3E%20%22Shapes%22%29.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
@@ -254,6 +261,20 @@ transition:width .4s ease;}
       }
     }
   });
+})();
+</script><script>
+(function(){
+  window.fkcSwitchLang = function(btn){
+    var lang = btn.getAttribute("data-lang");
+    var tabs = document.querySelectorAll(".lang-tab");
+    var blocks = document.querySelectorAll(".lang-content");
+    for(var i=0;i<tabs.length;i++){
+      tabs[i].classList.toggle("active", tabs[i].getAttribute("data-lang")===lang);
+    }
+    for(var j=0;j<blocks.length;j++){
+      blocks[j].style.display = (blocks[j].getAttribute("data-lang")===lang) ? "" : "none";
+    }
+  };
 })();
 </script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>

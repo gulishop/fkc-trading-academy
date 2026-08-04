@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T08:50:51.269013";
+  var FKC_BUILD = "2026-08-04T09:01:54.537628";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -41,7 +41,7 @@
 })();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
 --ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
@@ -136,6 +136,12 @@ overflow:hidden;}
 transition:width .4s ease;}
 .complete-btn.done{background:var(--accent);}
 #fkc-cert-btn{background:var(--purple);}
+.lang-tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;}
+.lang-tab{background:var(--paper);border:1px solid var(--line);color:var(--muted);
+border-radius:20px;font-size:.82em;font-weight:700;padding:6px 16px;cursor:pointer;}
+.lang-tab.active{background:var(--primary);color:#fff;border-color:var(--primary);}
+.lang-content[dir="rtl"]{font-family:'Noto Nastaliq Urdu',serif;line-height:2.1;
+font-size:1.05em;text-align:right;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -147,7 +153,8 @@ transition:width .4s ease;}
     <h1>Day 3 — **Subtitles Ki Power: Accessibility aur Engagement Badhaein**</h1>
     <div class="card">
       
-      <h3>Concept</h3><p>Subtitles sirf unke liye nahi hain jo sun nahi sakte—instead, yeh engagement badhane ka *secret weapon* hain. Studies ke mutabiq, 85% social media users videos mute kar ke dekhte hain, lekin subtitles add karne se *retention* 40% tak badh jati hai. Aaj hum seekhenge ke kaise accurate, stylish aur engaging subtitles banayein jo content ko professional bana dein.</p><h3>Example</h3><p>CapCut mein subtitles add karne ka *fastest* tarika:<br>1. **Auto-Caption** (15 sec ka clip select kar ke &quot;Text&quot; &gt; &quot;Auto Caption&quot; par click karen).<br>2. **Edit** kar ke timing adjust karen (drag kar ke words ko split/merge karen).<br>3. **Style** change karen: Font (Montserrat), Size (48-60), Color (white with black outline), Position (bottom-center).<br>4. **Background** add karen (optional: 50% opacity black rectangle).</p><h3>Practice</h3><p>Apne *Day 2* ke edited clip mein subtitles add karen. 3-5 seconds ke har shot ke liye 1 line ka caption likhein (e.g., &quot;Yeh hai mera favorite editing trick!&quot;).</p><h3>Mini Project</h3><p>Ek 15-second ka *Reel/Short* banayein jisme:<br>- 3 different caption styles hon (bold, italic, colored).<br>- 1 transition ke saath caption appear ho.<br>- Background music sync ho.</p>
+      
+      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Subtitles sirf unke liye nahi hain jo sun nahi sakte—instead, yeh engagement badhane ka *secret weapon* hain. Studies ke mutabiq, 85% social media users videos mute kar ke dekhte hain, lekin subtitles add karne se *retention* 40% tak badh jati hai. Aaj hum seekhenge ke kaise accurate, stylish aur engaging subtitles banayein jo content ko professional bana dein.</p><h3>Example</h3><p>CapCut mein subtitles add karne ka *fastest* tarika:<br>1. **Auto-Caption** (15 sec ka clip select kar ke &quot;Text&quot; &gt; &quot;Auto Caption&quot; par click karen).<br>2. **Edit** kar ke timing adjust karen (drag kar ke words ko split/merge karen).<br>3. **Style** change karen: Font (Montserrat), Size (48-60), Color (white with black outline), Position (bottom-center).<br>4. **Background** add karen (optional: 50% opacity black rectangle).</p><h3>Practice</h3><p>Apne *Day 2* ke edited clip mein subtitles add karen. 3-5 seconds ke har shot ke liye 1 line ka caption likhein (e.g., &quot;Yeh hai mera favorite editing trick!&quot;).</p><h3>Mini Project</h3><p>Ek 15-second ka *Reel/Short* banayein jisme:<br>- 3 different caption styles hon (bold, italic, colored).<br>- 1 transition ke saath caption appear ho.<br>- Background music sync ho.</p></div>
       
       <div>
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Video%20Editing%20%28CapCut/Premiere%29%20%28Day%2003%29%0A%0ADay%203%20%E2%80%94%20%2A%2ASubtitles%20Ki%20Power%3A%20Accessibility%20aur%20Engagement%20Badhaein%2A%2A%0A%0AConcept%3A%0ASubtitles%20sirf%20unke%20liye%20nahi%20hain%20jo%20sun%20nahi%20sakte%E2%80%94instead%2C%20yeh%20engagement%20badhane%20ka%20%2Asecret%20weapon%2A%20hain.%20Studies%20ke%20mutabiq%2C%2085%25%20social%20media%20users%20videos%20mute%20kar%20ke%20dekhte%20hain%2C%20lekin%20subtitles%20add%20karne%20se%20%2Aretention%2A%2040%25%20tak%20badh%20jati%20hai.%20Aaj%20hum%20seekhenge%20ke%20kaise%20accurate%2C%20stylish%20aur%20engaging%20subtitles%20banayein%20jo%20content%20ko%20professional%20bana%20dein.%0A%0AExample%3A%0ACapCut%20mein%20subtitles%20add%20karne%20ka%20%2Afastest%2A%20tarika%3A%0A1.%20%2A%2AAuto-Caption%2A%2A%20%2815%20sec%20ka%20clip%20select%20kar%20ke%20%22Text%22%20%3E%20%22Auto%20Caption%22%20par%20click%20karen%29.%0A2.%20%2A%2AEdit%2A%2A%20kar%20ke%20timing%20adjust%20karen%20%28drag%20kar%20ke%20words%20ko%20split/merge%20karen%29.%0A3.%20%2A%2AStyle%2A%2A%20change%20karen%3A%20Font%20%28Montserrat%29%2C%20Size%20%2848-60%29%2C%20Color%20%28white%20with%20black%20outline%29%2C%20Position%20%28bottom-center%29.%0A4.%20%2A%2ABackground%2A%2A%20add%20karen%20%28optional%3A%2050%25%20opacity%20black%20rectangle%29.%0A%0APractice%3A%0AApne%20%2ADay%202%2A%20ke%20edited%20clip%20mein%20subtitles%20add%20karen.%203-5%20seconds%20ke%20har%20shot%20ke%20liye%201%20line%20ka%20caption%20likhein%20%28e.g.%2C%20%22Yeh%20hai%20mera%20favorite%20editing%20trick%21%22%29.%0A%0AMini%20Project%3A%0AEk%2015-second%20ka%20%2AReel/Short%2A%20banayein%20jisme%3A%0A-%203%20different%20caption%20styles%20hon%20%28bold%2C%20italic%2C%20colored%29.%0A-%201%20transition%20ke%20saath%20caption%20appear%20ho.%0A-%20Background%20music%20sync%20ho.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
@@ -254,6 +261,20 @@ transition:width .4s ease;}
       }
     }
   });
+})();
+</script><script>
+(function(){
+  window.fkcSwitchLang = function(btn){
+    var lang = btn.getAttribute("data-lang");
+    var tabs = document.querySelectorAll(".lang-tab");
+    var blocks = document.querySelectorAll(".lang-content");
+    for(var i=0;i<tabs.length;i++){
+      tabs[i].classList.toggle("active", tabs[i].getAttribute("data-lang")===lang);
+    }
+    for(var j=0;j<blocks.length;j++){
+      blocks[j].style.display = (blocks[j].getAttribute("data-lang")===lang) ? "" : "none";
+    }
+  };
 })();
 </script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>

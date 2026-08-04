@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T08:50:51.269013";
+  var FKC_BUILD = "2026-08-04T09:01:54.537628";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -41,7 +41,7 @@
 })();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
 --ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
@@ -136,6 +136,12 @@ overflow:hidden;}
 transition:width .4s ease;}
 .complete-btn.done{background:var(--accent);}
 #fkc-cert-btn{background:var(--purple);}
+.lang-tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;}
+.lang-tab{background:var(--paper);border:1px solid var(--line);color:var(--muted);
+border-radius:20px;font-size:.82em;font-weight:700;padding:6px 16px;cursor:pointer;}
+.lang-tab.active{background:var(--primary);color:#fff;border-color:var(--primary);}
+.lang-content[dir="rtl"]{font-family:'Noto Nastaliq Urdu',serif;line-height:2.1;
+font-size:1.05em;text-align:right;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -147,7 +153,8 @@ transition:width .4s ease;}
     <h1>Day 1 — Apna Blog Ka Niche Kaise Choose Karein? (Beginner-Friendly Guide)</h1>
     <div class="card">
       
-      <h3>Concept</h3><p>Blog ka niche select karna sabse pehla aur sabse important step hai. Niche matlab aapka blog kis topic par hoga—jaise technology, health, finance, ya travel. Ek achha niche choose karne se aapka content focused rahega, readers engage honge, aur Adsense approval bhi asaan ho jata hai. Aapka interest, market demand, aur competition ko balance karna hoga.</p><h3>Example</h3><p>1.</p><h3>Interest vs Demand</h3><p>Agar aapko cooking pasand hai, lekin &quot;10-minute recipes&quot; ka demand zyada hai, to yeh niche choose kar sakte hain.<br>2.</p><h3>Competition Check</h3><p>Google par &quot;best budget smartphones 2024&quot; search karke dekhiye kitne blogs hain. Agar 10,000+ results hain, to competition zyada hai—niche narrow karne ki zaroorat hai.</p><h3>Practice</h3><p>Apne 3 topics list karein jo aapko pasand hain (e.g., fitness, personal finance, parenting). Har topic ke liye 3 sub-niches banaein (e.g., &quot;home workouts for beginners,&quot; &quot;side hustles for students,&quot; &quot;toddler meal plans&quot;).</p><h3>Mini Project</h3><p>Ek Google Sheets banayein jismein:<br>- Column 1: Main niche<br>- Column 2: Sub-niche<br>- Column 3: Google Trends par search volume (trends.google.com)<br>- Column 4: Competition score (1-10, 10 = zyada competition)</p>
+      
+      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Blog ka niche select karna sabse pehla aur sabse important step hai. Niche matlab aapka blog kis topic par hoga—jaise technology, health, finance, ya travel. Ek achha niche choose karne se aapka content focused rahega, readers engage honge, aur Adsense approval bhi asaan ho jata hai. Aapka interest, market demand, aur competition ko balance karna hoga.</p><h3>Example</h3><p>1.</p><h3>Interest vs Demand</h3><p>Agar aapko cooking pasand hai, lekin &quot;10-minute recipes&quot; ka demand zyada hai, to yeh niche choose kar sakte hain.<br>2.</p><h3>Competition Check</h3><p>Google par &quot;best budget smartphones 2024&quot; search karke dekhiye kitne blogs hain. Agar 10,000+ results hain, to competition zyada hai—niche narrow karne ki zaroorat hai.</p><h3>Practice</h3><p>Apne 3 topics list karein jo aapko pasand hain (e.g., fitness, personal finance, parenting). Har topic ke liye 3 sub-niches banaein (e.g., &quot;home workouts for beginners,&quot; &quot;side hustles for students,&quot; &quot;toddler meal plans&quot;).</p><h3>Mini Project</h3><p>Ek Google Sheets banayein jismein:<br>- Column 1: Main niche<br>- Column 2: Sub-niche<br>- Column 3: Google Trends par search volume (trends.google.com)<br>- Column 4: Competition score (1-10, 10 = zyada competition)</p></div>
       
       <div>
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Blogging%20%26%20Adsense%20%28Day%2001%29%0A%0ADay%201%20%E2%80%94%20Apna%20Blog%20Ka%20Niche%20Kaise%20Choose%20Karein%3F%20%28Beginner-Friendly%20Guide%29%0A%0AConcept%3A%0ABlog%20ka%20niche%20select%20karna%20sabse%20pehla%20aur%20sabse%20important%20step%20hai.%20Niche%20matlab%20aapka%20blog%20kis%20topic%20par%20hoga%E2%80%94jaise%20technology%2C%20health%2C%20finance%2C%20ya%20travel.%20Ek%20achha%20niche%20choose%20karne%20se%20aapka%20content%20focused%20rahega%2C%20readers%20engage%20honge%2C%20aur%20Adsense%20approval%20bhi%20asaan%20ho%20jata%20hai.%20Aapka%20interest%2C%20market%20demand%2C%20aur%20competition%20ko%20balance%20karna%20hoga.%0A%0AExample%3A%0A1.%0A%0AInterest%20vs%20Demand%3A%0AAgar%20aapko%20cooking%20pasand%20hai%2C%20lekin%20%2210-minute%20recipes%22%20ka%20demand%20zyada%20hai%2C%20to%20yeh%20niche%20choose%20kar%20sakte%20hain.%0A2.%0A%0ACompetition%20Check%3A%0AGoogle%20par%20%22best%20budget%20smartphones%202024%22%20search%20karke%20dekhiye%20kitne%20blogs%20hain.%20Agar%2010%2C000%2B%20results%20hain%2C%20to%20competition%20zyada%20hai%E2%80%94niche%20narrow%20karne%20ki%20zaroorat%20hai.%0A%0APractice%3A%0AApne%203%20topics%20list%20karein%20jo%20aapko%20pasand%20hain%20%28e.g.%2C%20fitness%2C%20personal%20finance%2C%20parenting%29.%20Har%20topic%20ke%20liye%203%20sub-niches%20banaein%20%28e.g.%2C%20%22home%20workouts%20for%20beginners%2C%22%20%22side%20hustles%20for%20students%2C%22%20%22toddler%20meal%20plans%22%29.%0A%0AMini%20Project%3A%0AEk%20Google%20Sheets%20banayein%20jismein%3A%0A-%20Column%201%3A%20Main%20niche%0A-%20Column%202%3A%20Sub-niche%0A-%20Column%203%3A%20Google%20Trends%20par%20search%20volume%20%28trends.google.com%29%0A-%20Column%204%3A%20Competition%20score%20%281-10%2C%2010%20%3D%20zyada%20competition%29%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
@@ -254,6 +261,20 @@ transition:width .4s ease;}
       }
     }
   });
+})();
+</script><script>
+(function(){
+  window.fkcSwitchLang = function(btn){
+    var lang = btn.getAttribute("data-lang");
+    var tabs = document.querySelectorAll(".lang-tab");
+    var blocks = document.querySelectorAll(".lang-content");
+    for(var i=0;i<tabs.length;i++){
+      tabs[i].classList.toggle("active", tabs[i].getAttribute("data-lang")===lang);
+    }
+    for(var j=0;j<blocks.length;j++){
+      blocks[j].style.display = (blocks[j].getAttribute("data-lang")===lang) ? "" : "none";
+    }
+  };
 })();
 </script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>

@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T08:50:51.269013";
+  var FKC_BUILD = "2026-08-04T09:01:54.537628";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -41,7 +41,7 @@
 })();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
 --ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
@@ -136,6 +136,12 @@ overflow:hidden;}
 transition:width .4s ease;}
 .complete-btn.done{background:var(--accent);}
 #fkc-cert-btn{background:var(--purple);}
+.lang-tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;}
+.lang-tab{background:var(--paper);border:1px solid var(--line);color:var(--muted);
+border-radius:20px;font-size:.82em;font-weight:700;padding:6px 16px;cursor:pointer;}
+.lang-tab.active{background:var(--primary);color:#fff;border-color:var(--primary);}
+.lang-content[dir="rtl"]{font-family:'Noto Nastaliq Urdu',serif;line-height:2.1;
+font-size:1.05em;text-align:right;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -147,7 +153,8 @@ transition:width .4s ease;}
     <h1>Day 2 — AI Se Blog Articles: Draft Se Publish Tak</h1>
     <div class="card">
       
-      <h3>Concept</h3><p>Aaj seekhoge ke AI se blog article kaise draft karein, usko human-like banayein, aur publish ke liye edit karein. AI se content generate karna aasan hai, lekin usko authentic, engaging aur SEO-friendly banana zaroori hai. Aaj hum AI-generated draft ko refine karne ke practical steps dekhenge.</p><h3>Example</h3><p>1.</p><h3>Prompt Design</h3><p>&quot;Write a 500-word blog post in simple Urdu/Hindi about &#x27;How to Start a Blog in 2024&#x27; for beginners. Include 3 subheadings, a hook, and a CTA.&quot;<br>2.</p><h3>AI Output</h3><p>AI dega ek basic draft. Ab usko edit karna hai:<br>   -</p><h3>Language</h3><p>Urdu/Hindi ka mix remove karke ek consistent style choose karo (e.g., pure Urdu).<br>   -</p><h3>Tone</h3><p>Friendly aur motivational rakho (e.g., &quot;Aap bhi blogging shuru kar sakte hain!&quot;).<br>   -</p><h3>SEO</h3><p>Keywords add karo (e.g., &quot;blogging kaise shuru karein,&quot; &quot;free blogging platforms&quot;).<br>   -</p><h3>Structure</h3><p>Paragraphs ko short karo, bullet points add karo.</p><h3>Practice</h3><p>AI se ek 300-word draft generate karo &quot;5 Gharelu Nuskay Hair Loss Rokein&quot; topic par. Us draft ko edit karke pure Urdu mein convert karo, 2 keywords add karo, aur ek engaging CTA likho.</p><h3>Mini Project</h3><p>Ek 500-word blog post draft karo (AI se generate karke ya khud likh kar), phir usko AI tools (jaise Grammarly, Hemingway) se check karo. Improve karke ek final version taiyar karo jo publish ke liye ready ho.</p>
+      
+      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Aaj seekhoge ke AI se blog article kaise draft karein, usko human-like banayein, aur publish ke liye edit karein. AI se content generate karna aasan hai, lekin usko authentic, engaging aur SEO-friendly banana zaroori hai. Aaj hum AI-generated draft ko refine karne ke practical steps dekhenge.</p><h3>Example</h3><p>1.</p><h3>Prompt Design</h3><p>&quot;Write a 500-word blog post in simple Urdu/Hindi about &#x27;How to Start a Blog in 2024&#x27; for beginners. Include 3 subheadings, a hook, and a CTA.&quot;<br>2.</p><h3>AI Output</h3><p>AI dega ek basic draft. Ab usko edit karna hai:<br>   -</p><h3>Language</h3><p>Urdu/Hindi ka mix remove karke ek consistent style choose karo (e.g., pure Urdu).<br>   -</p><h3>Tone</h3><p>Friendly aur motivational rakho (e.g., &quot;Aap bhi blogging shuru kar sakte hain!&quot;).<br>   -</p><h3>SEO</h3><p>Keywords add karo (e.g., &quot;blogging kaise shuru karein,&quot; &quot;free blogging platforms&quot;).<br>   -</p><h3>Structure</h3><p>Paragraphs ko short karo, bullet points add karo.</p><h3>Practice</h3><p>AI se ek 300-word draft generate karo &quot;5 Gharelu Nuskay Hair Loss Rokein&quot; topic par. Us draft ko edit karke pure Urdu mein convert karo, 2 keywords add karo, aur ek engaging CTA likho.</p><h3>Mini Project</h3><p>Ek 500-word blog post draft karo (AI se generate karke ya khud likh kar), phir usko AI tools (jaise Grammarly, Hemingway) se check karo. Improve karke ek final version taiyar karo jo publish ke liye ready ho.</p></div>
       
       <div>
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20AI%20Content%20Writing%20%26%20Copywriting%20%28Day%2002%29%0A%0ADay%202%20%E2%80%94%20AI%20Se%20Blog%20Articles%3A%20Draft%20Se%20Publish%20Tak%0A%0AConcept%3A%0AAaj%20seekhoge%20ke%20AI%20se%20blog%20article%20kaise%20draft%20karein%2C%20usko%20human-like%20banayein%2C%20aur%20publish%20ke%20liye%20edit%20karein.%20AI%20se%20content%20generate%20karna%20aasan%20hai%2C%20lekin%20usko%20authentic%2C%20engaging%20aur%20SEO-friendly%20banana%20zaroori%20hai.%20Aaj%20hum%20AI-generated%20draft%20ko%20refine%20karne%20ke%20practical%20steps%20dekhenge.%0A%0AExample%3A%0A1.%0A%0APrompt%20Design%3A%0A%22Write%20a%20500-word%20blog%20post%20in%20simple%20Urdu/Hindi%20about%20%27How%20to%20Start%20a%20Blog%20in%202024%27%20for%20beginners.%20Include%203%20subheadings%2C%20a%20hook%2C%20and%20a%20CTA.%22%0A2.%0A%0AAI%20Output%3A%0AAI%20dega%20ek%20basic%20draft.%20Ab%20usko%20edit%20karna%20hai%3A%0A%20%20%20-%0A%0ALanguage%3A%0AUrdu/Hindi%20ka%20mix%20remove%20karke%20ek%20consistent%20style%20choose%20karo%20%28e.g.%2C%20pure%20Urdu%29.%0A%20%20%20-%0A%0ATone%3A%0AFriendly%20aur%20motivational%20rakho%20%28e.g.%2C%20%22Aap%20bhi%20blogging%20shuru%20kar%20sakte%20hain%21%22%29.%0A%20%20%20-%0A%0ASEO%3A%0AKeywords%20add%20karo%20%28e.g.%2C%20%22blogging%20kaise%20shuru%20karein%2C%22%20%22free%20blogging%20platforms%22%29.%0A%20%20%20-%0A%0AStructure%3A%0AParagraphs%20ko%20short%20karo%2C%20bullet%20points%20add%20karo.%0A%0APractice%3A%0AAI%20se%20ek%20300-word%20draft%20generate%20karo%20%225%20Gharelu%20Nuskay%20Hair%20Loss%20Rokein%22%20topic%20par.%20Us%20draft%20ko%20edit%20karke%20pure%20Urdu%20mein%20convert%20karo%2C%202%20keywords%20add%20karo%2C%20aur%20ek%20engaging%20CTA%20likho.%0A%0AMini%20Project%3A%0AEk%20500-word%20blog%20post%20draft%20karo%20%28AI%20se%20generate%20karke%20ya%20khud%20likh%20kar%29%2C%20phir%20usko%20AI%20tools%20%28jaise%20Grammarly%2C%20Hemingway%29%20se%20check%20karo.%20Improve%20karke%20ek%20final%20version%20taiyar%20karo%20jo%20publish%20ke%20liye%20ready%20ho.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
@@ -254,6 +261,20 @@ transition:width .4s ease;}
       }
     }
   });
+})();
+</script><script>
+(function(){
+  window.fkcSwitchLang = function(btn){
+    var lang = btn.getAttribute("data-lang");
+    var tabs = document.querySelectorAll(".lang-tab");
+    var blocks = document.querySelectorAll(".lang-content");
+    for(var i=0;i<tabs.length;i++){
+      tabs[i].classList.toggle("active", tabs[i].getAttribute("data-lang")===lang);
+    }
+    for(var j=0;j<blocks.length;j++){
+      blocks[j].style.display = (blocks[j].getAttribute("data-lang")===lang) ? "" : "none";
+    }
+  };
 })();
 </script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>

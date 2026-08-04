@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T08:50:51.269013";
+  var FKC_BUILD = "2026-08-04T09:01:54.537628";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -41,7 +41,7 @@
 })();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
 --ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
@@ -136,6 +136,12 @@ overflow:hidden;}
 transition:width .4s ease;}
 .complete-btn.done{background:var(--accent);}
 #fkc-cert-btn{background:var(--purple);}
+.lang-tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;}
+.lang-tab{background:var(--paper);border:1px solid var(--line);color:var(--muted);
+border-radius:20px;font-size:.82em;font-weight:700;padding:6px 16px;cursor:pointer;}
+.lang-tab.active{background:var(--primary);color:#fff;border-color:var(--primary);}
+.lang-content[dir="rtl"]{font-family:'Noto Nastaliq Urdu',serif;line-height:2.1;
+font-size:1.05em;text-align:right;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -147,7 +153,8 @@ transition:width .4s ease;}
     <h1>Day 1 — Niche Select Karna: Apna YouTube Channel Ka Foundation</h1>
     <div class="card">
       
-      <h3>Concept</h3><p>Niche select karna YouTube channel ka sabse pehla aur sabse important step hai. Niche matlab aapka channel ka topic ya subject jismein aap videos banayenge. Ek achha niche aapko consistent content ideas deta hai, audience attract karta hai, aur competition bhi manage karne mein help karta hai. Apna niche choose karte waqt apne interests, skills, aur market demand ko consider karna zaroori hai.</p><h3>Example</h3><p>Maana aapko fitness pasand hai. Ab aapko decide karna hai ki aap fitness ke kis specific area par focus karna chahte hain. Jaise:<br>- Gym beginners guide<br>- Home workout for women<br>- Weight loss diet plans<br>- Yoga for stress relief<br>Is tarah se niche select karne se aapko content ideas bhi easily mil jayenge aur audience bhi targeted rahegi.</p><h3>Practice</h3><p>Apne interests aur skills list karein. Fir 3-5 topics select karein jinpar aap videos bana sakte hain. Har topic ke liye 3-5 content ideas sochiye.</p><h3>Mini Project</h3><p>Ek simple Google search karein aur har topic ke liye competition check karein. Har topic ke liye YouTube search bar mein type karein aur dekhein ki kitne videos hain aur unke views kya hain. Isse aapko pata chalega ki aapka selected niche kitna competitive hai.</p>
+      
+      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Niche select karna YouTube channel ka sabse pehla aur sabse important step hai. Niche matlab aapka channel ka topic ya subject jismein aap videos banayenge. Ek achha niche aapko consistent content ideas deta hai, audience attract karta hai, aur competition bhi manage karne mein help karta hai. Apna niche choose karte waqt apne interests, skills, aur market demand ko consider karna zaroori hai.</p><h3>Example</h3><p>Maana aapko fitness pasand hai. Ab aapko decide karna hai ki aap fitness ke kis specific area par focus karna chahte hain. Jaise:<br>- Gym beginners guide<br>- Home workout for women<br>- Weight loss diet plans<br>- Yoga for stress relief<br>Is tarah se niche select karne se aapko content ideas bhi easily mil jayenge aur audience bhi targeted rahegi.</p><h3>Practice</h3><p>Apne interests aur skills list karein. Fir 3-5 topics select karein jinpar aap videos bana sakte hain. Har topic ke liye 3-5 content ideas sochiye.</p><h3>Mini Project</h3><p>Ek simple Google search karein aur har topic ke liye competition check karein. Har topic ke liye YouTube search bar mein type karein aur dekhein ki kitne videos hain aur unke views kya hain. Isse aapko pata chalega ki aapka selected niche kitna competitive hai.</p></div>
       
       <div>
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20YouTube%20Automation%20%28Day%2001%29%0A%0ADay%201%20%E2%80%94%20Niche%20Select%20Karna%3A%20Apna%20YouTube%20Channel%20Ka%20Foundation%0A%0AConcept%3A%0ANiche%20select%20karna%20YouTube%20channel%20ka%20sabse%20pehla%20aur%20sabse%20important%20step%20hai.%20Niche%20matlab%20aapka%20channel%20ka%20topic%20ya%20subject%20jismein%20aap%20videos%20banayenge.%20Ek%20achha%20niche%20aapko%20consistent%20content%20ideas%20deta%20hai%2C%20audience%20attract%20karta%20hai%2C%20aur%20competition%20bhi%20manage%20karne%20mein%20help%20karta%20hai.%20Apna%20niche%20choose%20karte%20waqt%20apne%20interests%2C%20skills%2C%20aur%20market%20demand%20ko%20consider%20karna%20zaroori%20hai.%0A%0AExample%3A%0AMaana%20aapko%20fitness%20pasand%20hai.%20Ab%20aapko%20decide%20karna%20hai%20ki%20aap%20fitness%20ke%20kis%20specific%20area%20par%20focus%20karna%20chahte%20hain.%20Jaise%3A%0A-%20Gym%20beginners%20guide%0A-%20Home%20workout%20for%20women%0A-%20Weight%20loss%20diet%20plans%0A-%20Yoga%20for%20stress%20relief%0AIs%20tarah%20se%20niche%20select%20karne%20se%20aapko%20content%20ideas%20bhi%20easily%20mil%20jayenge%20aur%20audience%20bhi%20targeted%20rahegi.%0A%0APractice%3A%0AApne%20interests%20aur%20skills%20list%20karein.%20Fir%203-5%20topics%20select%20karein%20jinpar%20aap%20videos%20bana%20sakte%20hain.%20Har%20topic%20ke%20liye%203-5%20content%20ideas%20sochiye.%0A%0AMini%20Project%3A%0AEk%20simple%20Google%20search%20karein%20aur%20har%20topic%20ke%20liye%20competition%20check%20karein.%20Har%20topic%20ke%20liye%20YouTube%20search%20bar%20mein%20type%20karein%20aur%20dekhein%20ki%20kitne%20videos%20hain%20aur%20unke%20views%20kya%20hain.%20Isse%20aapko%20pata%20chalega%20ki%20aapka%20selected%20niche%20kitna%20competitive%20hai.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
@@ -254,6 +261,20 @@ transition:width .4s ease;}
       }
     }
   });
+})();
+</script><script>
+(function(){
+  window.fkcSwitchLang = function(btn){
+    var lang = btn.getAttribute("data-lang");
+    var tabs = document.querySelectorAll(".lang-tab");
+    var blocks = document.querySelectorAll(".lang-content");
+    for(var i=0;i<tabs.length;i++){
+      tabs[i].classList.toggle("active", tabs[i].getAttribute("data-lang")===lang);
+    }
+    for(var j=0;j<blocks.length;j++){
+      blocks[j].style.display = (blocks[j].getAttribute("data-lang")===lang) ? "" : "none";
+    }
+  };
 })();
 </script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>

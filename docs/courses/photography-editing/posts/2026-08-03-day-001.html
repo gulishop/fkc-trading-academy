@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T08:50:51.269013";
+  var FKC_BUILD = "2026-08-04T09:01:54.537628";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -41,7 +41,7 @@
 })();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
 --ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
@@ -136,6 +136,12 @@ overflow:hidden;}
 transition:width .4s ease;}
 .complete-btn.done{background:var(--accent);}
 #fkc-cert-btn{background:var(--purple);}
+.lang-tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;}
+.lang-tab{background:var(--paper);border:1px solid var(--line);color:var(--muted);
+border-radius:20px;font-size:.82em;font-weight:700;padding:6px 16px;cursor:pointer;}
+.lang-tab.active{background:var(--primary);color:#fff;border-color:var(--primary);}
+.lang-content[dir="rtl"]{font-family:'Noto Nastaliq Urdu',serif;line-height:2.1;
+font-size:1.05em;text-align:right;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -147,7 +153,8 @@ transition:width .4s ease;}
     <h1>Day 1</h1>
     <div class="card">
       
-      <p>**Day 1 — Camera/Phone Settings: Basics Se Shuru Karain**</p><h3>Concept</h3><p>Aaj hum seekhein ge ke camera ya phone ki basic settings (ISO, aperture, shutter speed, white balance) kya hain aur yeh photos par kaise asar dalte hain. Har setting ki importance samajh kar, aap apne device ko better control kar sakte hain—chahe wo DSLR ho ya smartphone.</p><h3>Example</h3><p>*Smartphone example:* Agar aap koi photo low light mein le rahe hain, toh ISO badha kar (e.g., 800-1600) photo bright ho sakti hai, lekin noise (grain) bhi aayega. Agar aap fast-moving object (e.g., running dog) capture kar rahe hain, toh shutter speed 1/500s ya zyada rakhein warna blur aayega.</p><h3>Practice</h3><p>Apne phone ya camera ki settings mein ja kar:<br>1. ISO ko 100 (daylight) se 800 (low light) tak manually badha kar dekhain.<br>2. Shutter speed ko 1/60s (slow) aur 1/500s (fast) par set kar ke ek hi object ki 2 photos leain.</p><h3>Mini Project</h3><p>Ek hi scene ki 3 photos leain:<br>- ISO 100 (bright light, no noise)<br>- ISO 1600 (low light, check noise)<br>- Shutter speed 1/30s (blur if hand moves) vs 1/500s (sharp).</p>
+      
+      <div class="lang-content" data-lang="rm"><p>**Day 1 — Camera/Phone Settings: Basics Se Shuru Karain**</p><h3>Concept</h3><p>Aaj hum seekhein ge ke camera ya phone ki basic settings (ISO, aperture, shutter speed, white balance) kya hain aur yeh photos par kaise asar dalte hain. Har setting ki importance samajh kar, aap apne device ko better control kar sakte hain—chahe wo DSLR ho ya smartphone.</p><h3>Example</h3><p>*Smartphone example:* Agar aap koi photo low light mein le rahe hain, toh ISO badha kar (e.g., 800-1600) photo bright ho sakti hai, lekin noise (grain) bhi aayega. Agar aap fast-moving object (e.g., running dog) capture kar rahe hain, toh shutter speed 1/500s ya zyada rakhein warna blur aayega.</p><h3>Practice</h3><p>Apne phone ya camera ki settings mein ja kar:<br>1. ISO ko 100 (daylight) se 800 (low light) tak manually badha kar dekhain.<br>2. Shutter speed ko 1/60s (slow) aur 1/500s (fast) par set kar ke ek hi object ki 2 photos leain.</p><h3>Mini Project</h3><p>Ek hi scene ki 3 photos leain:<br>- ISO 100 (bright light, no noise)<br>- ISO 1600 (low light, check noise)<br>- Shutter speed 1/30s (blur if hand moves) vs 1/500s (sharp).</p></div>
       
       <div>
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Photography%20%26%20Editing%20%28Day%2001%29%0A%0ADay%201%0A%0A%2A%2ADay%201%20%E2%80%94%20Camera/Phone%20Settings%3A%20Basics%20Se%20Shuru%20Karain%2A%2A%0A%0AConcept%3A%0AAaj%20hum%20seekhein%20ge%20ke%20camera%20ya%20phone%20ki%20basic%20settings%20%28ISO%2C%20aperture%2C%20shutter%20speed%2C%20white%20balance%29%20kya%20hain%20aur%20yeh%20photos%20par%20kaise%20asar%20dalte%20hain.%20Har%20setting%20ki%20importance%20samajh%20kar%2C%20aap%20apne%20device%20ko%20better%20control%20kar%20sakte%20hain%E2%80%94chahe%20wo%20DSLR%20ho%20ya%20smartphone.%0A%0AExample%3A%0A%2ASmartphone%20example%3A%2A%20Agar%20aap%20koi%20photo%20low%20light%20mein%20le%20rahe%20hain%2C%20toh%20ISO%20badha%20kar%20%28e.g.%2C%20800-1600%29%20photo%20bright%20ho%20sakti%20hai%2C%20lekin%20noise%20%28grain%29%20bhi%20aayega.%20Agar%20aap%20fast-moving%20object%20%28e.g.%2C%20running%20dog%29%20capture%20kar%20rahe%20hain%2C%20toh%20shutter%20speed%201/500s%20ya%20zyada%20rakhein%20warna%20blur%20aayega.%0A%0APractice%3A%0AApne%20phone%20ya%20camera%20ki%20settings%20mein%20ja%20kar%3A%0A1.%20ISO%20ko%20100%20%28daylight%29%20se%20800%20%28low%20light%29%20tak%20manually%20badha%20kar%20dekhain.%0A2.%20Shutter%20speed%20ko%201/60s%20%28slow%29%20aur%201/500s%20%28fast%29%20par%20set%20kar%20ke%20ek%20hi%20object%20ki%202%20photos%20leain.%0A%0AMini%20Project%3A%0AEk%20hi%20scene%20ki%203%20photos%20leain%3A%0A-%20ISO%20100%20%28bright%20light%2C%20no%20noise%29%0A-%20ISO%201600%20%28low%20light%2C%20check%20noise%29%0A-%20Shutter%20speed%201/30s%20%28blur%20if%20hand%20moves%29%20vs%201/500s%20%28sharp%29.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
@@ -254,6 +261,20 @@ transition:width .4s ease;}
       }
     }
   });
+})();
+</script><script>
+(function(){
+  window.fkcSwitchLang = function(btn){
+    var lang = btn.getAttribute("data-lang");
+    var tabs = document.querySelectorAll(".lang-tab");
+    var blocks = document.querySelectorAll(".lang-content");
+    for(var i=0;i<tabs.length;i++){
+      tabs[i].classList.toggle("active", tabs[i].getAttribute("data-lang")===lang);
+    }
+    for(var j=0;j<blocks.length;j++){
+      blocks[j].style.display = (blocks[j].getAttribute("data-lang")===lang) ? "" : "none";
+    }
+  };
 })();
 </script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>

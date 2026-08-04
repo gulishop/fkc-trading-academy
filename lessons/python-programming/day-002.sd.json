@@ -1,0 +1,22 @@
+{
+  "title": "Day 2 — Variables, Data Types, Input/Output",
+  "preamble": "",
+  "sections": [
+    {
+      "label": "Concept",
+      "content": "Variables Python mein boxes jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon joon ahin. Har variable ka ek data type hota ahe (jaise number, text, ya boolean). Input/output da matlab ahe program aur user beech communication—user to data lena (input) aur results show karna (output)."
+    },
+    {
+      "label": "Example",
+      "content": "# Variable declare karna\nnaam = \"Ali\"  # String (text)\nage = 25      # Integer (number)\nheight = 5.9  # Float (decimal number)\nis_student = True  # Boolean (True/False)\n\n# Input lena\nuser_name = input(\"Apna naam likhein: \")\nprint(\"Hello, \", user_name)\n\n# Data type check karna\nprint(type(age))  # Output: <class 'int'>"
+    },
+    {
+      "label": "Practice",
+      "content": "Ek program likhein jo user to 2 numbers input le, unko add karke result print kare."
+    },
+    {
+      "label": "Mini Project",
+      "content": "Ek simple calculator banayein jo user to 2 numbers input le aur unke liye +, -, *, / operations perform kare."
+    }
+  ]
+}

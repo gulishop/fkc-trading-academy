@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T08:50:51.269013";
+  var FKC_BUILD = "2026-08-04T09:01:54.537628";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -41,7 +41,7 @@
 })();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
 --ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
@@ -136,6 +136,12 @@ overflow:hidden;}
 transition:width .4s ease;}
 .complete-btn.done{background:var(--accent);}
 #fkc-cert-btn{background:var(--purple);}
+.lang-tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;}
+.lang-tab{background:var(--paper);border:1px solid var(--line);color:var(--muted);
+border-radius:20px;font-size:.82em;font-weight:700;padding:6px 16px;cursor:pointer;}
+.lang-tab.active{background:var(--primary);color:#fff;border-color:var(--primary);}
+.lang-content[dir="rtl"]{font-family:'Noto Nastaliq Urdu',serif;line-height:2.1;
+font-size:1.05em;text-align:right;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -147,7 +153,8 @@ transition:width .4s ease;}
     <h1>Day 1 — Excel Interface aur Pehla Formula: `SUM`</h1>
     <div class="card">
       
-      <h3>Concept</h3><p>Aaj hum Excel ka basic interface samajhein ge aur pehla formula `SUM` use karna seekhein ge. Excel ka ribbon (top menu), formula bar, cells, aur sheets ka basic structure dekhein ge. `SUM` formula numbers ko add karne ka sabse easy tareeka hai—bas numbers select karo ya type karo aur result milega.</p><h3>Example</h3><p>1. Excel kholo, ek naya sheet banayein.<br>2. A1 mein `5`, B1 mein `10`, C1 mein `15` type karen.<br>3. D1 mein cursor rakhein, `=` type karen, phir `SUM(` likhein.<br>4. A1:C1 select karen (ya `A1,B1,C1` type karen), phir `)` close karen.<br>5. Enter press karen—D1 mein `30` aana chahiye.</p><h3>Practice</h3><p>Ek naya sheet banayein aur A1:A5 mein yeh numbers type karen: `20, 35, 10, 45, 50`. Phir B1 mein `SUM` formula use karke in sabka total nikalain.</p><h3>Mini Project</h3><p>Ek simple &quot;Monthly Expense Tracker&quot; banayein:<br>- A1:A7 mein yeh labels type karen: `Rent, Groceries, Transport, Bills, Entertainment, Savings, Total`<br>- B1:B6 mein yeh amounts type karen (apne hisaab se, e.g., `15000, 8000, 3000, 2000, 5000, 10000`)<br>- B7 mein `SUM(B1:B6)` formula use karke total expenses nikalain.</p>
+      
+      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Aaj hum Excel ka basic interface samajhein ge aur pehla formula `SUM` use karna seekhein ge. Excel ka ribbon (top menu), formula bar, cells, aur sheets ka basic structure dekhein ge. `SUM` formula numbers ko add karne ka sabse easy tareeka hai—bas numbers select karo ya type karo aur result milega.</p><h3>Example</h3><p>1. Excel kholo, ek naya sheet banayein.<br>2. A1 mein `5`, B1 mein `10`, C1 mein `15` type karen.<br>3. D1 mein cursor rakhein, `=` type karen, phir `SUM(` likhein.<br>4. A1:C1 select karen (ya `A1,B1,C1` type karen), phir `)` close karen.<br>5. Enter press karen—D1 mein `30` aana chahiye.</p><h3>Practice</h3><p>Ek naya sheet banayein aur A1:A5 mein yeh numbers type karen: `20, 35, 10, 45, 50`. Phir B1 mein `SUM` formula use karke in sabka total nikalain.</p><h3>Mini Project</h3><p>Ek simple &quot;Monthly Expense Tracker&quot; banayein:<br>- A1:A7 mein yeh labels type karen: `Rent, Groceries, Transport, Bills, Entertainment, Savings, Total`<br>- B1:B6 mein yeh amounts type karen (apne hisaab se, e.g., `15000, 8000, 3000, 2000, 5000, 10000`)<br>- B7 mein `SUM(B1:B6)` formula use karke total expenses nikalain.</p></div>
       
       <div>
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Excel%20%26%20Data%20Analysis%20%28Day%2001%29%0A%0ADay%201%20%E2%80%94%20Excel%20Interface%20aur%20Pehla%20Formula%3A%20%60SUM%60%0A%0AConcept%3A%0AAaj%20hum%20Excel%20ka%20basic%20interface%20samajhein%20ge%20aur%20pehla%20formula%20%60SUM%60%20use%20karna%20seekhein%20ge.%20Excel%20ka%20ribbon%20%28top%20menu%29%2C%20formula%20bar%2C%20cells%2C%20aur%20sheets%20ka%20basic%20structure%20dekhein%20ge.%20%60SUM%60%20formula%20numbers%20ko%20add%20karne%20ka%20sabse%20easy%20tareeka%20hai%E2%80%94bas%20numbers%20select%20karo%20ya%20type%20karo%20aur%20result%20milega.%0A%0AExample%3A%0A1.%20Excel%20kholo%2C%20ek%20naya%20sheet%20banayein.%0A2.%20A1%20mein%20%605%60%2C%20B1%20mein%20%6010%60%2C%20C1%20mein%20%6015%60%20type%20karen.%0A3.%20D1%20mein%20cursor%20rakhein%2C%20%60%3D%60%20type%20karen%2C%20phir%20%60SUM%28%60%20likhein.%0A4.%20A1%3AC1%20select%20karen%20%28ya%20%60A1%2CB1%2CC1%60%20type%20karen%29%2C%20phir%20%60%29%60%20close%20karen.%0A5.%20Enter%20press%20karen%E2%80%94D1%20mein%20%6030%60%20aana%20chahiye.%0A%0APractice%3A%0AEk%20naya%20sheet%20banayein%20aur%20A1%3AA5%20mein%20yeh%20numbers%20type%20karen%3A%20%6020%2C%2035%2C%2010%2C%2045%2C%2050%60.%20Phir%20B1%20mein%20%60SUM%60%20formula%20use%20karke%20in%20sabka%20total%20nikalain.%0A%0AMini%20Project%3A%0AEk%20simple%20%22Monthly%20Expense%20Tracker%22%20banayein%3A%0A-%20A1%3AA7%20mein%20yeh%20labels%20type%20karen%3A%20%60Rent%2C%20Groceries%2C%20Transport%2C%20Bills%2C%20Entertainment%2C%20Savings%2C%20Total%60%0A-%20B1%3AB6%20mein%20yeh%20amounts%20type%20karen%20%28apne%20hisaab%20se%2C%20e.g.%2C%20%6015000%2C%208000%2C%203000%2C%202000%2C%205000%2C%2010000%60%29%0A-%20B7%20mein%20%60SUM%28B1%3AB6%29%60%20formula%20use%20karke%20total%20expenses%20nikalain.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
@@ -254,6 +261,20 @@ transition:width .4s ease;}
       }
     }
   });
+})();
+</script><script>
+(function(){
+  window.fkcSwitchLang = function(btn){
+    var lang = btn.getAttribute("data-lang");
+    var tabs = document.querySelectorAll(".lang-tab");
+    var blocks = document.querySelectorAll(".lang-content");
+    for(var i=0;i<tabs.length;i++){
+      tabs[i].classList.toggle("active", tabs[i].getAttribute("data-lang")===lang);
+    }
+    for(var j=0;j<blocks.length;j++){
+      blocks[j].style.display = (blocks[j].getAttribute("data-lang")===lang) ? "" : "none";
+    }
+  };
 })();
 </script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>

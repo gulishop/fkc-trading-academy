@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T08:50:51.269013";
+  var FKC_BUILD = "2026-08-04T09:01:54.537628";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -41,7 +41,7 @@
 })();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
 --ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
@@ -136,6 +136,12 @@ overflow:hidden;}
 transition:width .4s ease;}
 .complete-btn.done{background:var(--accent);}
 #fkc-cert-btn{background:var(--purple);}
+.lang-tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;}
+.lang-tab{background:var(--paper);border:1px solid var(--line);color:var(--muted);
+border-radius:20px;font-size:.82em;font-weight:700;padding:6px 16px;cursor:pointer;}
+.lang-tab.active{background:var(--primary);color:#fff;border-color:var(--primary);}
+.lang-content[dir="rtl"]{font-family:'Noto Nastaliq Urdu',serif;line-height:2.1;
+font-size:1.05em;text-align:right;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -147,7 +153,8 @@ transition:width .4s ease;}
     <h1>Day 3 — Google Search Console aur Analytics: Apne Website ke Performance ko Samajhein</h1>
     <div class="card">
       
-      <h3>Concept</h3><p>Google Search Console (GSC) aur Google Analytics (GA4) aapki website ke health aur performance ko track karne ke liye essential tools hain. GSC aapko indexing, crawl errors, aur search rankings dikhata hai, jabki GA4 visitors, traffic sources, aur user behavior analyze karta hai. In dono ko samajh kar aap apni SEO strategy ko improve kar sakte hain.</p><h3>Example</h3><p>1.</p><h3>GSC mein URL Inspection</h3><p>Kisi bhi page ka URL enter karke check karen ki Google usko crawl kar raha hai ya nahi.<br>2.</p><h3>GA4 mein Traffic Sources</h3><p>&quot;Acquisition&quot; &gt; &quot;All Traffic&quot; &gt; &quot;Source/Medium&quot; dekh kar pata karen ke visitors aapki site par kahan se aa rahe hain (Google Search, Social Media, etc.).</p><h3>Practice</h3><p>1. Apni website (ya kisi dummy site) ka GSC account mein add karen.<br>2. &quot;Coverage&quot; report check karen aur koi crawl errors fix karne ki koshish karen.<br>3. GA4 mein ek basic report banaen (e.g., &quot;Users by Country&quot;).</p><h3>Mini Project</h3><p>Ek 1-page report taiyar karen jismein aap GSC se top 3 search queries aur GA4 se top 3 traffic sources mention karen. (Format: &quot;Query/Source - Clicks/Users&quot;)</p>
+      
+      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Google Search Console (GSC) aur Google Analytics (GA4) aapki website ke health aur performance ko track karne ke liye essential tools hain. GSC aapko indexing, crawl errors, aur search rankings dikhata hai, jabki GA4 visitors, traffic sources, aur user behavior analyze karta hai. In dono ko samajh kar aap apni SEO strategy ko improve kar sakte hain.</p><h3>Example</h3><p>1.</p><h3>GSC mein URL Inspection</h3><p>Kisi bhi page ka URL enter karke check karen ki Google usko crawl kar raha hai ya nahi.<br>2.</p><h3>GA4 mein Traffic Sources</h3><p>&quot;Acquisition&quot; &gt; &quot;All Traffic&quot; &gt; &quot;Source/Medium&quot; dekh kar pata karen ke visitors aapki site par kahan se aa rahe hain (Google Search, Social Media, etc.).</p><h3>Practice</h3><p>1. Apni website (ya kisi dummy site) ka GSC account mein add karen.<br>2. &quot;Coverage&quot; report check karen aur koi crawl errors fix karne ki koshish karen.<br>3. GA4 mein ek basic report banaen (e.g., &quot;Users by Country&quot;).</p><h3>Mini Project</h3><p>Ek 1-page report taiyar karen jismein aap GSC se top 3 search queries aur GA4 se top 3 traffic sources mention karen. (Format: &quot;Query/Source - Clicks/Users&quot;)</p></div>
       
       <div>
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Digital%20Marketing%20%26%20SEO%20%28Day%2003%29%0A%0ADay%203%20%E2%80%94%20Google%20Search%20Console%20aur%20Analytics%3A%20Apne%20Website%20ke%20Performance%20ko%20Samajhein%0A%0AConcept%3A%0AGoogle%20Search%20Console%20%28GSC%29%20aur%20Google%20Analytics%20%28GA4%29%20aapki%20website%20ke%20health%20aur%20performance%20ko%20track%20karne%20ke%20liye%20essential%20tools%20hain.%20GSC%20aapko%20indexing%2C%20crawl%20errors%2C%20aur%20search%20rankings%20dikhata%20hai%2C%20jabki%20GA4%20visitors%2C%20traffic%20sources%2C%20aur%20user%20behavior%20analyze%20karta%20hai.%20In%20dono%20ko%20samajh%20kar%20aap%20apni%20SEO%20strategy%20ko%20improve%20kar%20sakte%20hain.%0A%0AExample%3A%0A1.%0A%0AGSC%20mein%20URL%20Inspection%3A%0AKisi%20bhi%20page%20ka%20URL%20enter%20karke%20check%20karen%20ki%20Google%20usko%20crawl%20kar%20raha%20hai%20ya%20nahi.%0A2.%0A%0AGA4%20mein%20Traffic%20Sources%3A%0A%22Acquisition%22%20%3E%20%22All%20Traffic%22%20%3E%20%22Source/Medium%22%20dekh%20kar%20pata%20karen%20ke%20visitors%20aapki%20site%20par%20kahan%20se%20aa%20rahe%20hain%20%28Google%20Search%2C%20Social%20Media%2C%20etc.%29.%0A%0APractice%3A%0A1.%20Apni%20website%20%28ya%20kisi%20dummy%20site%29%20ka%20GSC%20account%20mein%20add%20karen.%0A2.%20%22Coverage%22%20report%20check%20karen%20aur%20koi%20crawl%20errors%20fix%20karne%20ki%20koshish%20karen.%0A3.%20GA4%20mein%20ek%20basic%20report%20banaen%20%28e.g.%2C%20%22Users%20by%20Country%22%29.%0A%0AMini%20Project%3A%0AEk%201-page%20report%20taiyar%20karen%20jismein%20aap%20GSC%20se%20top%203%20search%20queries%20aur%20GA4%20se%20top%203%20traffic%20sources%20mention%20karen.%20%28Format%3A%20%22Query/Source%20-%20Clicks/Users%22%29%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
@@ -254,6 +261,20 @@ transition:width .4s ease;}
       }
     }
   });
+})();
+</script><script>
+(function(){
+  window.fkcSwitchLang = function(btn){
+    var lang = btn.getAttribute("data-lang");
+    var tabs = document.querySelectorAll(".lang-tab");
+    var blocks = document.querySelectorAll(".lang-content");
+    for(var i=0;i<tabs.length;i++){
+      tabs[i].classList.toggle("active", tabs[i].getAttribute("data-lang")===lang);
+    }
+    for(var j=0;j<blocks.length;j++){
+      blocks[j].style.display = (blocks[j].getAttribute("data-lang")===lang) ? "" : "none";
+    }
+  };
 })();
 </script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>

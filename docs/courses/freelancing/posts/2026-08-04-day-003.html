@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T08:50:51.269013";
+  var FKC_BUILD = "2026-08-04T09:01:54.537628";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -41,7 +41,7 @@
 })();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
 --ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
@@ -136,6 +136,12 @@ overflow:hidden;}
 transition:width .4s ease;}
 .complete-btn.done{background:var(--accent);}
 #fkc-cert-btn{background:var(--purple);}
+.lang-tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;}
+.lang-tab{background:var(--paper);border:1px solid var(--line);color:var(--muted);
+border-radius:20px;font-size:.82em;font-weight:700;padding:6px 16px;cursor:pointer;}
+.lang-tab.active{background:var(--primary);color:#fff;border-color:var(--primary);}
+.lang-content[dir="rtl"]{font-family:'Noto Nastaliq Urdu',serif;line-height:2.1;
+font-size:1.05em;text-align:right;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -147,7 +153,8 @@ transition:width .4s ease;}
     <h1>Day 3 — **Client Communication: First Message Se Hi Impress Kaise Karein**</h1>
     <div class="card">
       
-      <h3>Concept</h3><p>Freelancing mein pehla impression aapki communication se hi banta hai. Client ko yeh feel hona chahiye ke aap professional, responsive aur solution-oriented hain. Pehla message sirf &quot;Hi&quot; ya &quot;I can do this&quot; se kaam nahi chalta—usmein specificity, confidence aur call-to-action hona zaroori hai.</p><h3>Example</h3><p>Ek client ne Fiverr par &quot;Logo design&quot; ka project post kiya hai. Aapki response yeh na ho:<br>❌ *&quot;Hi, I can make logo for you. Pls msg me.&quot;*</p><p>Balke yeh ho:<br>✅ *&quot;Hi [Client Name],<br>I noticed your project for a modern logo for your [business type]. I’ve designed 50+ logos in this niche, including for [similar client/project]. Here’s my approach:<br>1. We’ll discuss your brand colors &amp; style in a quick call<br>2. I’ll send 3 concepts within 24 hours<br>3. Unlimited revisions till you’re 100% satisfied<br>Can we schedule a 10-min call today at 3 PM? Looking forward to your reply.<br>Best,<br>[Your Name]&quot;*</p><h3>Practice</h3><p>Apne Fiverr/Upwork inbox se kisi bhi 1 pending proposal ya message ka draft likhein jo aapne abhi tak send kiya hai. Use edit karke pehle paragraph ko 3x zyada effective banayein (specificity + call-to-action add karke).</p><h3>Mini Project</h3><p>Ek dummy client ka message banaayein (jaise &quot;I need a WordPress website for my restaurant&quot;) aur uske liye 3 different first-message drafts likhein—ek for Fiverr, ek for Upwork, aur ek for cold email.</p>
+      
+      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Freelancing mein pehla impression aapki communication se hi banta hai. Client ko yeh feel hona chahiye ke aap professional, responsive aur solution-oriented hain. Pehla message sirf &quot;Hi&quot; ya &quot;I can do this&quot; se kaam nahi chalta—usmein specificity, confidence aur call-to-action hona zaroori hai.</p><h3>Example</h3><p>Ek client ne Fiverr par &quot;Logo design&quot; ka project post kiya hai. Aapki response yeh na ho:<br>❌ *&quot;Hi, I can make logo for you. Pls msg me.&quot;*</p><p>Balke yeh ho:<br>✅ *&quot;Hi [Client Name],<br>I noticed your project for a modern logo for your [business type]. I’ve designed 50+ logos in this niche, including for [similar client/project]. Here’s my approach:<br>1. We’ll discuss your brand colors &amp; style in a quick call<br>2. I’ll send 3 concepts within 24 hours<br>3. Unlimited revisions till you’re 100% satisfied<br>Can we schedule a 10-min call today at 3 PM? Looking forward to your reply.<br>Best,<br>[Your Name]&quot;*</p><h3>Practice</h3><p>Apne Fiverr/Upwork inbox se kisi bhi 1 pending proposal ya message ka draft likhein jo aapne abhi tak send kiya hai. Use edit karke pehle paragraph ko 3x zyada effective banayein (specificity + call-to-action add karke).</p><h3>Mini Project</h3><p>Ek dummy client ka message banaayein (jaise &quot;I need a WordPress website for my restaurant&quot;) aur uske liye 3 different first-message drafts likhein—ek for Fiverr, ek for Upwork, aur ek for cold email.</p></div>
       
       <div>
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Freelancing%20%28Day%2003%29%0A%0ADay%203%20%E2%80%94%20%2A%2AClient%20Communication%3A%20First%20Message%20Se%20Hi%20Impress%20Kaise%20Karein%2A%2A%0A%0AConcept%3A%0AFreelancing%20mein%20pehla%20impression%20aapki%20communication%20se%20hi%20banta%20hai.%20Client%20ko%20yeh%20feel%20hona%20chahiye%20ke%20aap%20professional%2C%20responsive%20aur%20solution-oriented%20hain.%20Pehla%20message%20sirf%20%22Hi%22%20ya%20%22I%20can%20do%20this%22%20se%20kaam%20nahi%20chalta%E2%80%94usmein%20specificity%2C%20confidence%20aur%20call-to-action%20hona%20zaroori%20hai.%0A%0AExample%3A%0AEk%20client%20ne%20Fiverr%20par%20%22Logo%20design%22%20ka%20project%20post%20kiya%20hai.%20Aapki%20response%20yeh%20na%20ho%3A%0A%E2%9D%8C%20%2A%22Hi%2C%20I%20can%20make%20logo%20for%20you.%20Pls%20msg%20me.%22%2A%0A%0ABalke%20yeh%20ho%3A%0A%E2%9C%85%20%2A%22Hi%20%5BClient%20Name%5D%2C%0AI%20noticed%20your%20project%20for%20a%20modern%20logo%20for%20your%20%5Bbusiness%20type%5D.%20I%E2%80%99ve%20designed%2050%2B%20logos%20in%20this%20niche%2C%20including%20for%20%5Bsimilar%20client/project%5D.%20Here%E2%80%99s%20my%20approach%3A%0A1.%20We%E2%80%99ll%20discuss%20your%20brand%20colors%20%26%20style%20in%20a%20quick%20call%0A2.%20I%E2%80%99ll%20send%203%20concepts%20within%2024%20hours%0A3.%20Unlimited%20revisions%20till%20you%E2%80%99re%20100%25%20satisfied%0ACan%20we%20schedule%20a%2010-min%20call%20today%20at%203%20PM%3F%20Looking%20forward%20to%20your%20reply.%0ABest%2C%0A%5BYour%20Name%5D%22%2A%0A%0APractice%3A%0AApne%20Fiverr/Upwork%20inbox%20se%20kisi%20bhi%201%20pending%20proposal%20ya%20message%20ka%20draft%20likhein%20jo%20aapne%20abhi%20tak%20send%20kiya%20hai.%20Use%20edit%20karke%20pehle%20paragraph%20ko%203x%20zyada%20effective%20banayein%20%28specificity%20%2B%20call-to-action%20add%20karke%29.%0A%0AMini%20Project%3A%0AEk%20dummy%20client%20ka%20message%20banaayein%20%28jaise%20%22I%20need%20a%20WordPress%20website%20for%20my%20restaurant%22%29%20aur%20uske%20liye%203%20different%20first-message%20drafts%20likhein%E2%80%94ek%20for%20Fiverr%2C%20ek%20for%20Upwork%2C%20aur%20ek%20for%20cold%20email.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
@@ -254,6 +261,20 @@ transition:width .4s ease;}
       }
     }
   });
+})();
+</script><script>
+(function(){
+  window.fkcSwitchLang = function(btn){
+    var lang = btn.getAttribute("data-lang");
+    var tabs = document.querySelectorAll(".lang-tab");
+    var blocks = document.querySelectorAll(".lang-content");
+    for(var i=0;i<tabs.length;i++){
+      tabs[i].classList.toggle("active", tabs[i].getAttribute("data-lang")===lang);
+    }
+    for(var j=0;j<blocks.length;j++){
+      blocks[j].style.display = (blocks[j].getAttribute("data-lang")===lang) ? "" : "none";
+    }
+  };
 })();
 </script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>

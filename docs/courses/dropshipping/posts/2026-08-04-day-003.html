@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T08:50:51.269013";
+  var FKC_BUILD = "2026-08-04T09:01:54.537628";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -41,7 +41,7 @@
 })();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
 --ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
@@ -136,6 +136,12 @@ overflow:hidden;}
 transition:width .4s ease;}
 .complete-btn.done{background:var(--accent);}
 #fkc-cert-btn{background:var(--purple);}
+.lang-tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;}
+.lang-tab{background:var(--paper);border:1px solid var(--line);color:var(--muted);
+border-radius:20px;font-size:.82em;font-weight:700;padding:6px 16px;cursor:pointer;}
+.lang-tab.active{background:var(--primary);color:#fff;border-color:var(--primary);}
+.lang-content[dir="rtl"]{font-family:'Noto Nastaliq Urdu',serif;line-height:2.1;
+font-size:1.05em;text-align:right;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -147,7 +153,8 @@ transition:width .4s ease;}
     <h1>Day 3 — **Local vs AliExpress Suppliers: Kaunsa Choose Karein?**</h1>
     <div class="card">
       
-      <h3>Concept</h3><p>Dropshipping mein supplier hi aapka business ka backbone hai. AliExpress global suppliers deta hai lekin shipping time zyada hai (15-45 days), jabki local suppliers (Pakistan se) 3-7 days mein delivery kar sakte hain lekin prices thode zyada hoti hain. Har ek ka apna faida-nuksan hai—samajh kar choose karna zaroori hai.</p><h3>Example</h3><p>Agar aap *wireless earbuds* bech rahe hain:<br>-</p><h3>AliExpress</h3><p>Supplier China se ₹800 mein lekar ₹1500 mein bech sakte hain, lekin customer ko 20-30 days wait karna hoga.<br>-</p><h3>Local Supplier</h3><p>Karachi se ₹1200 mein lekar ₹2000 mein bech sakte hain, delivery 3-5 days mein ho jayegi.</p><h3>Practice</h3><p>Apne 1-2 winning products ke liye **AliExpress** aur **local suppliers** (Facebook Groups, WhatsApp, OLX) par search karke prices, shipping time, aur reviews compare karo. Ek Excel sheet bana kar note kar lo.</p><h3>Mini Project</h3><p>Ek **supplier comparison table** banao jismein:<br>- Product name<br>- AliExpress vs Local price<br>- Shipping time<br>- Return policy<br>- Customer reviews (rating)</p>
+      
+      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Dropshipping mein supplier hi aapka business ka backbone hai. AliExpress global suppliers deta hai lekin shipping time zyada hai (15-45 days), jabki local suppliers (Pakistan se) 3-7 days mein delivery kar sakte hain lekin prices thode zyada hoti hain. Har ek ka apna faida-nuksan hai—samajh kar choose karna zaroori hai.</p><h3>Example</h3><p>Agar aap *wireless earbuds* bech rahe hain:<br>-</p><h3>AliExpress</h3><p>Supplier China se ₹800 mein lekar ₹1500 mein bech sakte hain, lekin customer ko 20-30 days wait karna hoga.<br>-</p><h3>Local Supplier</h3><p>Karachi se ₹1200 mein lekar ₹2000 mein bech sakte hain, delivery 3-5 days mein ho jayegi.</p><h3>Practice</h3><p>Apne 1-2 winning products ke liye **AliExpress** aur **local suppliers** (Facebook Groups, WhatsApp, OLX) par search karke prices, shipping time, aur reviews compare karo. Ek Excel sheet bana kar note kar lo.</p><h3>Mini Project</h3><p>Ek **supplier comparison table** banao jismein:<br>- Product name<br>- AliExpress vs Local price<br>- Shipping time<br>- Return policy<br>- Customer reviews (rating)</p></div>
       
       <div>
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Dropshipping%20%28Day%2003%29%0A%0ADay%203%20%E2%80%94%20%2A%2ALocal%20vs%20AliExpress%20Suppliers%3A%20Kaunsa%20Choose%20Karein%3F%2A%2A%0A%0AConcept%3A%0ADropshipping%20mein%20supplier%20hi%20aapka%20business%20ka%20backbone%20hai.%20AliExpress%20global%20suppliers%20deta%20hai%20lekin%20shipping%20time%20zyada%20hai%20%2815-45%20days%29%2C%20jabki%20local%20suppliers%20%28Pakistan%20se%29%203-7%20days%20mein%20delivery%20kar%20sakte%20hain%20lekin%20prices%20thode%20zyada%20hoti%20hain.%20Har%20ek%20ka%20apna%20faida-nuksan%20hai%E2%80%94samajh%20kar%20choose%20karna%20zaroori%20hai.%0A%0AExample%3A%0AAgar%20aap%20%2Awireless%20earbuds%2A%20bech%20rahe%20hain%3A%0A-%0A%0AAliExpress%3A%0ASupplier%20China%20se%20%E2%82%B9800%20mein%20lekar%20%E2%82%B91500%20mein%20bech%20sakte%20hain%2C%20lekin%20customer%20ko%2020-30%20days%20wait%20karna%20hoga.%0A-%0A%0ALocal%20Supplier%3A%0AKarachi%20se%20%E2%82%B91200%20mein%20lekar%20%E2%82%B92000%20mein%20bech%20sakte%20hain%2C%20delivery%203-5%20days%20mein%20ho%20jayegi.%0A%0APractice%3A%0AApne%201-2%20winning%20products%20ke%20liye%20%2A%2AAliExpress%2A%2A%20aur%20%2A%2Alocal%20suppliers%2A%2A%20%28Facebook%20Groups%2C%20WhatsApp%2C%20OLX%29%20par%20search%20karke%20prices%2C%20shipping%20time%2C%20aur%20reviews%20compare%20karo.%20Ek%20Excel%20sheet%20bana%20kar%20note%20kar%20lo.%0A%0AMini%20Project%3A%0AEk%20%2A%2Asupplier%20comparison%20table%2A%2A%20banao%20jismein%3A%0A-%20Product%20name%0A-%20AliExpress%20vs%20Local%20price%0A-%20Shipping%20time%0A-%20Return%20policy%0A-%20Customer%20reviews%20%28rating%29%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
@@ -254,6 +261,20 @@ transition:width .4s ease;}
       }
     }
   });
+})();
+</script><script>
+(function(){
+  window.fkcSwitchLang = function(btn){
+    var lang = btn.getAttribute("data-lang");
+    var tabs = document.querySelectorAll(".lang-tab");
+    var blocks = document.querySelectorAll(".lang-content");
+    for(var i=0;i<tabs.length;i++){
+      tabs[i].classList.toggle("active", tabs[i].getAttribute("data-lang")===lang);
+    }
+    for(var j=0;j<blocks.length;j++){
+      blocks[j].style.display = (blocks[j].getAttribute("data-lang")===lang) ? "" : "none";
+    }
+  };
 })();
 </script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>

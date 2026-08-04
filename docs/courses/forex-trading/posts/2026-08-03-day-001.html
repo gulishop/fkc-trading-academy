@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T08:50:51.269013";
+  var FKC_BUILD = "2026-08-04T09:01:54.537628";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -41,7 +41,7 @@
 })();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
 --ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
@@ -136,6 +136,12 @@ overflow:hidden;}
 transition:width .4s ease;}
 .complete-btn.done{background:var(--accent);}
 #fkc-cert-btn{background:var(--purple);}
+.lang-tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;}
+.lang-tab{background:var(--paper);border:1px solid var(--line);color:var(--muted);
+border-radius:20px;font-size:.82em;font-weight:700;padding:6px 16px;cursor:pointer;}
+.lang-tab.active{background:var(--primary);color:#fff;border-color:var(--primary);}
+.lang-content[dir="rtl"]{font-family:'Noto Nastaliq Urdu',serif;line-height:2.1;
+font-size:1.05em;text-align:right;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -147,7 +153,8 @@ transition:width .4s ease;}
     <h1>Day 1 — Forex Market Kya Hai? Aur Kaise Kaam Karta Hai?</h1>
     <div class="card">
       
-      <h3>Concept</h3><p>Forex (Foreign Exchange) market duniya ka sabse bara financial market hai jahan currencies ka exchange hota hai. Yeh 24/5 chalta hai (Monday se Friday, 24 ghante), kyunki har country ke markets alag-alag time zones mein khulte hain. Is market ka main purpose international trade aur investments ko facilitate karna hai. Yahan traders profit kamane ke liye currencies ki price movements par bet lagate hain.</p><h3>Example</h3><p>Imagine aap India se USA travel karne ja rahe hain. Aapko $1000 chahiye. Forex market mein aap INR se USD exchange karenge. Agar 1 USD = 83 INR hai, toh aapko 83,000 INR dena hoga. Agar aapne 10,000 INR se USD liya aur next day 1 USD = 84 INR ho gaya, toh aapka profit 10,000 INR ka ho gaya (1000 USD * 1 INR ka change).</p><h3>Practice</h3><p>Apne mobile ya laptop se &quot;USD to INR exchange rate&quot; search karein. Dekhein aaj ka rate kya hai. Ab imagine kijiye aap 1000 USD khareed rahe hain. 1 week baad agar rate badh kar 85 INR ho jata hai, toh aapko kitna profit hoga?</p><h3>Mini Project</h3><p>Ek simple chart banaen jismein aap 3 currencies (e.g., USD, EUR, GBP) ke rates ko 5 dinon ke liye track karen. Har din ka rate note karen aur dekhein ki kya koi trend nazar aata hai.</p>
+      
+      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Forex (Foreign Exchange) market duniya ka sabse bara financial market hai jahan currencies ka exchange hota hai. Yeh 24/5 chalta hai (Monday se Friday, 24 ghante), kyunki har country ke markets alag-alag time zones mein khulte hain. Is market ka main purpose international trade aur investments ko facilitate karna hai. Yahan traders profit kamane ke liye currencies ki price movements par bet lagate hain.</p><h3>Example</h3><p>Imagine aap India se USA travel karne ja rahe hain. Aapko $1000 chahiye. Forex market mein aap INR se USD exchange karenge. Agar 1 USD = 83 INR hai, toh aapko 83,000 INR dena hoga. Agar aapne 10,000 INR se USD liya aur next day 1 USD = 84 INR ho gaya, toh aapka profit 10,000 INR ka ho gaya (1000 USD * 1 INR ka change).</p><h3>Practice</h3><p>Apne mobile ya laptop se &quot;USD to INR exchange rate&quot; search karein. Dekhein aaj ka rate kya hai. Ab imagine kijiye aap 1000 USD khareed rahe hain. 1 week baad agar rate badh kar 85 INR ho jata hai, toh aapko kitna profit hoga?</p><h3>Mini Project</h3><p>Ek simple chart banaen jismein aap 3 currencies (e.g., USD, EUR, GBP) ke rates ko 5 dinon ke liye track karen. Har din ka rate note karen aur dekhein ki kya koi trend nazar aata hai.</p></div>
       <p><a class="btn alt" href="https://one.exnessonelink.com/a/buhyli14un" target="_blank" rel="noopener sponsored">💹 Exness Par Free Account Banayein</a></p>
       <div>
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Forex%20Trading%20%28Day%2001%29%0A%0ADay%201%20%E2%80%94%20Forex%20Market%20Kya%20Hai%3F%20Aur%20Kaise%20Kaam%20Karta%20Hai%3F%0A%0AConcept%3A%0AForex%20%28Foreign%20Exchange%29%20market%20duniya%20ka%20sabse%20bara%20financial%20market%20hai%20jahan%20currencies%20ka%20exchange%20hota%20hai.%20Yeh%2024/5%20chalta%20hai%20%28Monday%20se%20Friday%2C%2024%20ghante%29%2C%20kyunki%20har%20country%20ke%20markets%20alag-alag%20time%20zones%20mein%20khulte%20hain.%20Is%20market%20ka%20main%20purpose%20international%20trade%20aur%20investments%20ko%20facilitate%20karna%20hai.%20Yahan%20traders%20profit%20kamane%20ke%20liye%20currencies%20ki%20price%20movements%20par%20bet%20lagate%20hain.%0A%0AExample%3A%0AImagine%20aap%20India%20se%20USA%20travel%20karne%20ja%20rahe%20hain.%20Aapko%20%241000%20chahiye.%20Forex%20market%20mein%20aap%20INR%20se%20USD%20exchange%20karenge.%20Agar%201%20USD%20%3D%2083%20INR%20hai%2C%20toh%20aapko%2083%2C000%20INR%20dena%20hoga.%20Agar%20aapne%2010%2C000%20INR%20se%20USD%20liya%20aur%20next%20day%201%20USD%20%3D%2084%20INR%20ho%20gaya%2C%20toh%20aapka%20profit%2010%2C000%20INR%20ka%20ho%20gaya%20%281000%20USD%20%2A%201%20INR%20ka%20change%29.%0A%0APractice%3A%0AApne%20mobile%20ya%20laptop%20se%20%22USD%20to%20INR%20exchange%20rate%22%20search%20karein.%20Dekhein%20aaj%20ka%20rate%20kya%20hai.%20Ab%20imagine%20kijiye%20aap%201000%20USD%20khareed%20rahe%20hain.%201%20week%20baad%20agar%20rate%20badh%20kar%2085%20INR%20ho%20jata%20hai%2C%20toh%20aapko%20kitna%20profit%20hoga%3F%0A%0AMini%20Project%3A%0AEk%20simple%20chart%20banaen%20jismein%20aap%203%20currencies%20%28e.g.%2C%20USD%2C%20EUR%2C%20GBP%29%20ke%20rates%20ko%205%20dinon%20ke%20liye%20track%20karen.%20Har%20din%20ka%20rate%20note%20karen%20aur%20dekhein%20ki%20kya%20koi%20trend%20nazar%20aata%20hai.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
@@ -254,6 +261,20 @@ transition:width .4s ease;}
       }
     }
   });
+})();
+</script><script>
+(function(){
+  window.fkcSwitchLang = function(btn){
+    var lang = btn.getAttribute("data-lang");
+    var tabs = document.querySelectorAll(".lang-tab");
+    var blocks = document.querySelectorAll(".lang-content");
+    for(var i=0;i<tabs.length;i++){
+      tabs[i].classList.toggle("active", tabs[i].getAttribute("data-lang")===lang);
+    }
+    for(var j=0;j<blocks.length;j++){
+      blocks[j].style.display = (blocks[j].getAttribute("data-lang")===lang) ? "" : "none";
+    }
+  };
 })();
 </script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>

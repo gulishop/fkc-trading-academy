@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T08:50:51.269013";
+  var FKC_BUILD = "2026-08-04T09:01:54.537628";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -41,7 +41,7 @@
 })();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
 --ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
@@ -136,6 +136,12 @@ overflow:hidden;}
 transition:width .4s ease;}
 .complete-btn.done{background:var(--accent);}
 #fkc-cert-btn{background:var(--purple);}
+.lang-tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;}
+.lang-tab{background:var(--paper);border:1px solid var(--line);color:var(--muted);
+border-radius:20px;font-size:.82em;font-weight:700;padding:6px 16px;cursor:pointer;}
+.lang-tab.active{background:var(--primary);color:#fff;border-color:var(--primary);}
+.lang-content[dir="rtl"]{font-family:'Noto Nastaliq Urdu',serif;line-height:2.1;
+font-size:1.05em;text-align:right;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -147,7 +153,8 @@ transition:width .4s ease;}
     <h1>Day 1 — Blockchain: Digital Ledger Jo Sabko Trust Karta Hai</h1>
     <div class="card">
       
-      <h3>Concept</h3><p>Blockchain ek digital ledger (record book) hai jo transactions ko secure, transparent aur decentralized tareeqe se record karta hai. Har &quot;block&quot; mein transactions ka group hota hai, aur har block ko cryptographic hash se link kiya jata hai—jaise ek digital finger print. Isse koi bhi cheat nahi kar sakta, kyunki agar koi block change karega toh saare subsequent blocks invalid ho jayenge.</p><h3>Example</h3><p>Imagine a Google Sheet jo sabke phone par open hai, lekin koi bhi ek line edit nahi kar sakta bina sabke agreement ke. Agar koi line change karega, toh saare logko pata chal jayega. Yeh hi blockchain ka basic idea hai—ek shared, unchangeable record.</p><h3>Practice</h3><p>Apne phone ya laptop par ek simple blockchain explorer open karo (jaise [blockchain.com/explorer](https://www.blockchain.com/explorer)). Bitcoin network par koi recent transaction search karo aur dekh lo:<br>- Transaction ID (TXID)<br>- Sender aur Receiver ke addresses<br>- Amount (kitne Bitcoin transfer hue)</p>
+      
+      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Blockchain ek digital ledger (record book) hai jo transactions ko secure, transparent aur decentralized tareeqe se record karta hai. Har &quot;block&quot; mein transactions ka group hota hai, aur har block ko cryptographic hash se link kiya jata hai—jaise ek digital finger print. Isse koi bhi cheat nahi kar sakta, kyunki agar koi block change karega toh saare subsequent blocks invalid ho jayenge.</p><h3>Example</h3><p>Imagine a Google Sheet jo sabke phone par open hai, lekin koi bhi ek line edit nahi kar sakta bina sabke agreement ke. Agar koi line change karega, toh saare logko pata chal jayega. Yeh hi blockchain ka basic idea hai—ek shared, unchangeable record.</p><h3>Practice</h3><p>Apne phone ya laptop par ek simple blockchain explorer open karo (jaise [blockchain.com/explorer](https://www.blockchain.com/explorer)). Bitcoin network par koi recent transaction search karo aur dekh lo:<br>- Transaction ID (TXID)<br>- Sender aur Receiver ke addresses<br>- Amount (kitne Bitcoin transfer hue)</p></div>
       
       <div>
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Crypto%20%26%20Blockchain%20Basics%20%28Day%2001%29%0A%0ADay%201%20%E2%80%94%20Blockchain%3A%20Digital%20Ledger%20Jo%20Sabko%20Trust%20Karta%20Hai%0A%0AConcept%3A%0ABlockchain%20ek%20digital%20ledger%20%28record%20book%29%20hai%20jo%20transactions%20ko%20secure%2C%20transparent%20aur%20decentralized%20tareeqe%20se%20record%20karta%20hai.%20Har%20%22block%22%20mein%20transactions%20ka%20group%20hota%20hai%2C%20aur%20har%20block%20ko%20cryptographic%20hash%20se%20link%20kiya%20jata%20hai%E2%80%94jaise%20ek%20digital%20finger%20print.%20Isse%20koi%20bhi%20cheat%20nahi%20kar%20sakta%2C%20kyunki%20agar%20koi%20block%20change%20karega%20toh%20saare%20subsequent%20blocks%20invalid%20ho%20jayenge.%0A%0AExample%3A%0AImagine%20a%20Google%20Sheet%20jo%20sabke%20phone%20par%20open%20hai%2C%20lekin%20koi%20bhi%20ek%20line%20edit%20nahi%20kar%20sakta%20bina%20sabke%20agreement%20ke.%20Agar%20koi%20line%20change%20karega%2C%20toh%20saare%20logko%20pata%20chal%20jayega.%20Yeh%20hi%20blockchain%20ka%20basic%20idea%20hai%E2%80%94ek%20shared%2C%20unchangeable%20record.%0A%0APractice%3A%0AApne%20phone%20ya%20laptop%20par%20ek%20simple%20blockchain%20explorer%20open%20karo%20%28jaise%20%5Bblockchain.com/explorer%5D%28https%3A//www.blockchain.com/explorer%29%29.%20Bitcoin%20network%20par%20koi%20recent%20transaction%20search%20karo%20aur%20dekh%20lo%3A%0A-%20Transaction%20ID%20%28TXID%29%0A-%20Sender%20aur%20Receiver%20ke%20addresses%0A-%20Amount%20%28kitne%20Bitcoin%20transfer%20hue%29%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
@@ -254,6 +261,20 @@ transition:width .4s ease;}
       }
     }
   });
+})();
+</script><script>
+(function(){
+  window.fkcSwitchLang = function(btn){
+    var lang = btn.getAttribute("data-lang");
+    var tabs = document.querySelectorAll(".lang-tab");
+    var blocks = document.querySelectorAll(".lang-content");
+    for(var i=0;i<tabs.length;i++){
+      tabs[i].classList.toggle("active", tabs[i].getAttribute("data-lang")===lang);
+    }
+    for(var j=0;j<blocks.length;j++){
+      blocks[j].style.display = (blocks[j].getAttribute("data-lang")===lang) ? "" : "none";
+    }
+  };
 })();
 </script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>

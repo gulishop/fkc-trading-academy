@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T08:50:51.269013";
+  var FKC_BUILD = "2026-08-04T09:01:54.537628";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -41,7 +41,7 @@
 })();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
 --ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
@@ -136,6 +136,12 @@ overflow:hidden;}
 transition:width .4s ease;}
 .complete-btn.done{background:var(--accent);}
 #fkc-cert-btn{background:var(--purple);}
+.lang-tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;}
+.lang-tab{background:var(--paper);border:1px solid var(--line);color:var(--muted);
+border-radius:20px;font-size:.82em;font-weight:700;padding:6px 16px;cursor:pointer;}
+.lang-tab.active{background:var(--primary);color:#fff;border-color:var(--primary);}
+.lang-content[dir="rtl"]{font-family:'Noto Nastaliq Urdu',serif;line-height:2.1;
+font-size:1.05em;text-align:right;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -147,7 +153,8 @@ transition:width .4s ease;}
     <h1>Day 1 — C++ Setup aur &quot;Hello World&quot; Program</h1>
     <div class="card">
       
-      <h3>Concept</h3><p>Aaj hum C++ programming shuru karne se pehle apne system par C++ compiler aur IDE (Integrated Development Environment) setup karenge. Compiler code ko machine language mein translate karta hai, jabki IDE coding, debugging aur running ko asaan banata hai. Pehle program ko &quot;Hello World&quot; kehte hain—yeh programming ki starting point hoti hai.</p><h3>Example</h3><p>1.</p><h3>Compiler Install karein</h3><p>- Windows: [MinGW-w64](https://www.mingw-w64.org/) download karein (ya [MSYS2](https://www.msys2.org/)).<br>   - Mac: Terminal mein `xcode-select --install` run karein.<br>   - Linux: `sudo apt install g++` (Ubuntu/Debian) ya `sudo dnf install gcc-c++` (Fedora).</p><p>2.</p><h3>IDE Install karein</h3><p>- [VS Code](https://code.visualstudio.com/) (lightweight, extensions: &quot;C/C++&quot; aur &quot;Code Runner&quot;).<br>   - Ya [Code::Blocks](https://www.codeblocks.org/) (simple IDE).</p><p>3.</p><h3>Pehl program likhein</h3><p>```cpp<br>   #include &lt;iostream&gt;<br>   using namespace std;</p><p>   int main() {<br>       cout &lt;&lt; &quot;Hello World!&quot; &lt;&lt; endl;<br>       return 0;<br>   }<br>   ```<br>   - `g++ hello.cpp -o hello` se compile karein.<br>   - `./hello` (Linux/Mac) ya `hello.exe` (Windows) se run karein.</p><h3>Practice</h3><p>Apne system par C++ compiler aur VS Code setup karein, aur upar wala &quot;Hello World&quot; program run karein. Screenshot ya terminal output share karein.</p>
+      
+      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Aaj hum C++ programming shuru karne se pehle apne system par C++ compiler aur IDE (Integrated Development Environment) setup karenge. Compiler code ko machine language mein translate karta hai, jabki IDE coding, debugging aur running ko asaan banata hai. Pehle program ko &quot;Hello World&quot; kehte hain—yeh programming ki starting point hoti hai.</p><h3>Example</h3><p>1.</p><h3>Compiler Install karein</h3><p>- Windows: [MinGW-w64](https://www.mingw-w64.org/) download karein (ya [MSYS2](https://www.msys2.org/)).<br>   - Mac: Terminal mein `xcode-select --install` run karein.<br>   - Linux: `sudo apt install g++` (Ubuntu/Debian) ya `sudo dnf install gcc-c++` (Fedora).</p><p>2.</p><h3>IDE Install karein</h3><p>- [VS Code](https://code.visualstudio.com/) (lightweight, extensions: &quot;C/C++&quot; aur &quot;Code Runner&quot;).<br>   - Ya [Code::Blocks](https://www.codeblocks.org/) (simple IDE).</p><p>3.</p><h3>Pehl program likhein</h3><p>```cpp<br>   #include &lt;iostream&gt;<br>   using namespace std;</p><p>   int main() {<br>       cout &lt;&lt; &quot;Hello World!&quot; &lt;&lt; endl;<br>       return 0;<br>   }<br>   ```<br>   - `g++ hello.cpp -o hello` se compile karein.<br>   - `./hello` (Linux/Mac) ya `hello.exe` (Windows) se run karein.</p><h3>Practice</h3><p>Apne system par C++ compiler aur VS Code setup karein, aur upar wala &quot;Hello World&quot; program run karein. Screenshot ya terminal output share karein.</p></div>
       
       <div>
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20C%2B%2B%20Daily%20Coding%20%28Day%2001%29%0A%0ADay%201%20%E2%80%94%20C%2B%2B%20Setup%20aur%20%22Hello%20World%22%20Program%0A%0AConcept%3A%0AAaj%20hum%20C%2B%2B%20programming%20shuru%20karne%20se%20pehle%20apne%20system%20par%20C%2B%2B%20compiler%20aur%20IDE%20%28Integrated%20Development%20Environment%29%20setup%20karenge.%20Compiler%20code%20ko%20machine%20language%20mein%20translate%20karta%20hai%2C%20jabki%20IDE%20coding%2C%20debugging%20aur%20running%20ko%20asaan%20banata%20hai.%20Pehle%20program%20ko%20%22Hello%20World%22%20kehte%20hain%E2%80%94yeh%20programming%20ki%20starting%20point%20hoti%20hai.%0A%0AExample%3A%0A1.%0A%0ACompiler%20Install%20karein%3A%0A-%20Windows%3A%20%5BMinGW-w64%5D%28https%3A//www.mingw-w64.org/%29%20download%20karein%20%28ya%20%5BMSYS2%5D%28https%3A//www.msys2.org/%29%29.%0A%20%20%20-%20Mac%3A%20Terminal%20mein%20%60xcode-select%20--install%60%20run%20karein.%0A%20%20%20-%20Linux%3A%20%60sudo%20apt%20install%20g%2B%2B%60%20%28Ubuntu/Debian%29%20ya%20%60sudo%20dnf%20install%20gcc-c%2B%2B%60%20%28Fedora%29.%0A%0A2.%0A%0AIDE%20Install%20karein%3A%0A-%20%5BVS%20Code%5D%28https%3A//code.visualstudio.com/%29%20%28lightweight%2C%20extensions%3A%20%22C/C%2B%2B%22%20aur%20%22Code%20Runner%22%29.%0A%20%20%20-%20Ya%20%5BCode%3A%3ABlocks%5D%28https%3A//www.codeblocks.org/%29%20%28simple%20IDE%29.%0A%0A3.%0A%0APehl%20program%20likhein%3A%0A%60%60%60cpp%0A%20%20%20%23include%20%3Ciostream%3E%0A%20%20%20using%20namespace%20std%3B%0A%0A%20%20%20int%20main%28%29%20%7B%0A%20%20%20%20%20%20%20cout%20%3C%3C%20%22Hello%20World%21%22%20%3C%3C%20endl%3B%0A%20%20%20%20%20%20%20return%200%3B%0A%20%20%20%7D%0A%20%20%20%60%60%60%0A%20%20%20-%20%60g%2B%2B%20hello.cpp%20-o%20hello%60%20se%20compile%20karein.%0A%20%20%20-%20%60./hello%60%20%28Linux/Mac%29%20ya%20%60hello.exe%60%20%28Windows%29%20se%20run%20karein.%0A%0APractice%3A%0AApne%20system%20par%20C%2B%2B%20compiler%20aur%20VS%20Code%20setup%20karein%2C%20aur%20upar%20wala%20%22Hello%20World%22%20program%20run%20karein.%20Screenshot%20ya%20terminal%20output%20share%20karein.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
@@ -254,6 +261,20 @@ transition:width .4s ease;}
       }
     }
   });
+})();
+</script><script>
+(function(){
+  window.fkcSwitchLang = function(btn){
+    var lang = btn.getAttribute("data-lang");
+    var tabs = document.querySelectorAll(".lang-tab");
+    var blocks = document.querySelectorAll(".lang-content");
+    for(var i=0;i<tabs.length;i++){
+      tabs[i].classList.toggle("active", tabs[i].getAttribute("data-lang")===lang);
+    }
+    for(var j=0;j<blocks.length;j++){
+      blocks[j].style.display = (blocks[j].getAttribute("data-lang")===lang) ? "" : "none";
+    }
+  };
 })();
 </script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>

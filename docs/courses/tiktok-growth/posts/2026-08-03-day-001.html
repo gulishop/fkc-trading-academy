@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T08:50:51.269013";
+  var FKC_BUILD = "2026-08-04T09:01:54.537628";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -41,7 +41,7 @@
 })();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
 --ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
@@ -136,6 +136,12 @@ overflow:hidden;}
 transition:width .4s ease;}
 .complete-btn.done{background:var(--accent);}
 #fkc-cert-btn{background:var(--purple);}
+.lang-tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;}
+.lang-tab{background:var(--paper);border:1px solid var(--line);color:var(--muted);
+border-radius:20px;font-size:.82em;font-weight:700;padding:6px 16px;cursor:pointer;}
+.lang-tab.active{background:var(--primary);color:#fff;border-color:var(--primary);}
+.lang-content[dir="rtl"]{font-family:'Noto Nastaliq Urdu',serif;line-height:2.1;
+font-size:1.05em;text-align:right;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -147,7 +153,8 @@ transition:width .4s ease;}
     <h1>Day 1 — TikTok Algorithm Ki Powerful Secrets</h1>
     <div class="card">
       
-      <h3>Concept</h3><p>TikTok ka algorithm har user ki har activity track karta hai—watch time, likes, shares, comments, even video completion rate. Ye dekh kar decide karta hai ke kya content recommend karna hai. Key factors: **Retention** (kitna time user ne video dekha), **Engagement** (kitne fast reactions aaye), aur **Trending Topics** (jo viral ho rahe hain). Algorithm fresh creators ko bhi chance deta hai agar content engaging ho.</p><h3>Example</h3><p>Ek new creator ne 15-second dance video banaya. Uske 10 followers ne 100% video dekhi, 3 ne like kiya, 1 ne share kiya. Algorithm samjha ke ye engaging hai, isliye usko &quot;For You Page&quot; par recommend kiya. Next video par uske 500 followers ho gaye.</p><h3>Practice</h3><p>Apne TikTok app mein jayein → &quot;For You&quot; page par scroll karein → 3 videos select karein jo aapko pasand aaye. Har video ke niche &quot;Why this?&quot; ka reason sochain (e.g., &quot;Isme sound viral hai&quot; ya &quot;User ne 90% video dekhi&quot;).</p><h3>Mini Project</h3><p>Apne phone ke gallery se 3-5 videos select karein jo aapke hisaab se engaging hon (chahay wo aapke na bhi ho). Har video ke liye note karein:<br>- Video length<br>- First 3 seconds mein kya hua<br>- Kya sound use hua<br>- Engagement rate (likes/shares/comments)</p>
+      
+      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>TikTok ka algorithm har user ki har activity track karta hai—watch time, likes, shares, comments, even video completion rate. Ye dekh kar decide karta hai ke kya content recommend karna hai. Key factors: **Retention** (kitna time user ne video dekha), **Engagement** (kitne fast reactions aaye), aur **Trending Topics** (jo viral ho rahe hain). Algorithm fresh creators ko bhi chance deta hai agar content engaging ho.</p><h3>Example</h3><p>Ek new creator ne 15-second dance video banaya. Uske 10 followers ne 100% video dekhi, 3 ne like kiya, 1 ne share kiya. Algorithm samjha ke ye engaging hai, isliye usko &quot;For You Page&quot; par recommend kiya. Next video par uske 500 followers ho gaye.</p><h3>Practice</h3><p>Apne TikTok app mein jayein → &quot;For You&quot; page par scroll karein → 3 videos select karein jo aapko pasand aaye. Har video ke niche &quot;Why this?&quot; ka reason sochain (e.g., &quot;Isme sound viral hai&quot; ya &quot;User ne 90% video dekhi&quot;).</p><h3>Mini Project</h3><p>Apne phone ke gallery se 3-5 videos select karein jo aapke hisaab se engaging hon (chahay wo aapke na bhi ho). Har video ke liye note karein:<br>- Video length<br>- First 3 seconds mein kya hua<br>- Kya sound use hua<br>- Engagement rate (likes/shares/comments)</p></div>
       
       <div>
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20TikTok%20Growth%20%26%20Monetization%20%28Day%2001%29%0A%0ADay%201%20%E2%80%94%20TikTok%20Algorithm%20Ki%20Powerful%20Secrets%0A%0AConcept%3A%0ATikTok%20ka%20algorithm%20har%20user%20ki%20har%20activity%20track%20karta%20hai%E2%80%94watch%20time%2C%20likes%2C%20shares%2C%20comments%2C%20even%20video%20completion%20rate.%20Ye%20dekh%20kar%20decide%20karta%20hai%20ke%20kya%20content%20recommend%20karna%20hai.%20Key%20factors%3A%20%2A%2ARetention%2A%2A%20%28kitna%20time%20user%20ne%20video%20dekha%29%2C%20%2A%2AEngagement%2A%2A%20%28kitne%20fast%20reactions%20aaye%29%2C%20aur%20%2A%2ATrending%20Topics%2A%2A%20%28jo%20viral%20ho%20rahe%20hain%29.%20Algorithm%20fresh%20creators%20ko%20bhi%20chance%20deta%20hai%20agar%20content%20engaging%20ho.%0A%0AExample%3A%0AEk%20new%20creator%20ne%2015-second%20dance%20video%20banaya.%20Uske%2010%20followers%20ne%20100%25%20video%20dekhi%2C%203%20ne%20like%20kiya%2C%201%20ne%20share%20kiya.%20Algorithm%20samjha%20ke%20ye%20engaging%20hai%2C%20isliye%20usko%20%22For%20You%20Page%22%20par%20recommend%20kiya.%20Next%20video%20par%20uske%20500%20followers%20ho%20gaye.%0A%0APractice%3A%0AApne%20TikTok%20app%20mein%20jayein%20%E2%86%92%20%22For%20You%22%20page%20par%20scroll%20karein%20%E2%86%92%203%20videos%20select%20karein%20jo%20aapko%20pasand%20aaye.%20Har%20video%20ke%20niche%20%22Why%20this%3F%22%20ka%20reason%20sochain%20%28e.g.%2C%20%22Isme%20sound%20viral%20hai%22%20ya%20%22User%20ne%2090%25%20video%20dekhi%22%29.%0A%0AMini%20Project%3A%0AApne%20phone%20ke%20gallery%20se%203-5%20videos%20select%20karein%20jo%20aapke%20hisaab%20se%20engaging%20hon%20%28chahay%20wo%20aapke%20na%20bhi%20ho%29.%20Har%20video%20ke%20liye%20note%20karein%3A%0A-%20Video%20length%0A-%20First%203%20seconds%20mein%20kya%20hua%0A-%20Kya%20sound%20use%20hua%0A-%20Engagement%20rate%20%28likes/shares/comments%29%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
@@ -254,6 +261,20 @@ transition:width .4s ease;}
       }
     }
   });
+})();
+</script><script>
+(function(){
+  window.fkcSwitchLang = function(btn){
+    var lang = btn.getAttribute("data-lang");
+    var tabs = document.querySelectorAll(".lang-tab");
+    var blocks = document.querySelectorAll(".lang-content");
+    for(var i=0;i<tabs.length;i++){
+      tabs[i].classList.toggle("active", tabs[i].getAttribute("data-lang")===lang);
+    }
+    for(var j=0;j<blocks.length;j++){
+      blocks[j].style.display = (blocks[j].getAttribute("data-lang")===lang) ? "" : "none";
+    }
+  };
 })();
 </script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>

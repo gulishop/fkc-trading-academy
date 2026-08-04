@@ -1501,6 +1501,78 @@
         ]
       ],
       "answer_key": "python.org, path, print(), hello.py, python hello.py"
+    },
+    {
+      "day": 2,
+      "id": "day-002",
+      "date": "2026-08-04",
+      "title": "Day 2 — Variables, Data Types aur Input/Output",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Variables Python mein boxes ki tarah hain jinme hum data store karte hain. Har variable ka ek data type hota hai (jaise number, text, ya boolean). Input/output ka matlab hai program aur user ke beech communication—user se data lena (input) aur results show karna (output)."
+        ],
+        [
+          "Example",
+          "```python\n# Variable declare karna\nname = \"Ali\"  # String (text)\nage = 25      # Integer (number)\nheight = 5.9  # Float (decimal number)\nis_student = True  # Boolean (True/False)\n\n# Input lena\nuser_name = input(\"Apna naam likhein: \")\nprint(\"Hello,\", user_name)\n\n# Data type check karna\nprint(type(age))  # Output: <class 'int'>\n```"
+        ],
+        [
+          "Practice",
+          "Ek program likhein jo user se 2 numbers input le, unko add karke result print kare."
+        ],
+        [
+          "Mini Project",
+          "Ek simple calculator banayein jo user se 2 numbers input le aur unke liye +, -, *, / operations perform kare."
+        ]
+      ],
+      "answer_key": "user_name, input, print, type",
+      "translations": {
+        "ur": {
+          "title": "Day 2 — متغیرات، ڈیٹا ٹائپس اور ان پٹ/آؤٹ پٹ",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "متغیرات Python میں boxes کی طرح ہیں جن میں ہم data store کرتے ہیں۔ ہر متغیر کا ایک data type ہوتا ہے (جیسے number، text، یا boolean)۔ Input/output کا مطلب ہے program اور user کے بیچ communication—user سے data لینا (input) اور results show کرنا (output)۔"
+            },
+            {
+              "label": "Example",
+              "content": "# Variable declare کرنا\nname = \"علی\"  # String (text)\nage = 25      # Integer (number)\nheight = 5.9  # Float (decimal number)\nis_student = True  # Boolean (True/False)\n\n# Input لینا\nuser_name = input(\"اپنا نام لکھیں: \")\nprint(\"Hello,\", user_name)\n\n# Data type check کرنا\nprint(type(age))  # Output: <class 'int'>"
+            },
+            {
+              "label": "Practice",
+              "content": "ایک program لکھیں جو user سے 2 numbers input لے، انکو add کرکے result print کرے۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک simple calculator بنائیں جو user سے 2 numbers input لے اور انکے لیے +, -, *, / operations perform کرے۔"
+            }
+          ]
+        },
+        "sd": {
+          "title": "Day 2 — Variables, Data Types, Input/Output",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "Variables Python mein boxes jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon jaa'oon joon ahin. Har variable ka ek data type hota ahe (jaise number, text, ya boolean). Input/output da matlab ahe program aur user beech communication—user to data lena (input) aur results show karna (output)."
+            },
+            {
+              "label": "Example",
+              "content": "# Variable declare karna\nnaam = \"Ali\"  # String (text)\nage = 25      # Integer (number)\nheight = 5.9  # Float (decimal number)\nis_student = True  # Boolean (True/False)\n\n# Input lena\nuser_name = input(\"Apna naam likhein: \")\nprint(\"Hello, \", user_name)\n\n# Data type check karna\nprint(type(age))  # Output: <class 'int'>"
+            },
+            {
+              "label": "Practice",
+              "content": "Ek program likhein jo user to 2 numbers input le, unko add karke result print kare."
+            },
+            {
+              "label": "Mini Project",
+              "content": "Ek simple calculator banayein jo user to 2 numbers input le aur unke liye +, -, *, / operations perform kare."
+            }
+          ]
+        }
+      }
     }
   ],
   "web-development": [

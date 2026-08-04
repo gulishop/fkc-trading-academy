@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T08:50:51.269013";
+  var FKC_BUILD = "2026-08-04T09:01:54.537628";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -41,7 +41,7 @@
 })();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
 --ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
@@ -136,6 +136,12 @@ overflow:hidden;}
 transition:width .4s ease;}
 .complete-btn.done{background:var(--accent);}
 #fkc-cert-btn{background:var(--purple);}
+.lang-tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;}
+.lang-tab{background:var(--paper);border:1px solid var(--line);color:var(--muted);
+border-radius:20px;font-size:.82em;font-weight:700;padding:6px 16px;cursor:pointer;}
+.lang-tab.active{background:var(--primary);color:#fff;border-color:var(--primary);}
+.lang-content[dir="rtl"]{font-family:'Noto Nastaliq Urdu',serif;line-height:2.1;
+font-size:1.05em;text-align:right;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -147,7 +153,8 @@ transition:width .4s ease;}
     <h1>Day 2 — AI Se YouTube Script Likhne Ka Step-by-Step Guide</h1>
     <div class="card">
       
-      <h3>Concept</h3><p>Aaj hum seekhenge ke AI tools (jaise ChatGPT, Jasper, ya Copy.ai) ka istemal karke professional YouTube scripts kaise likhe. AI se script likhte waqt inhe &quot;human touch&quot; dena zaroori hai—aisa content jo viewers ko engage kare. Hum AI ko prompt kaise dein, uske output ko improve karein, aur final script ko apne niche ke hisaab se customize karein.</p><h3>Example</h3><p>1.</p><h3>Prompt Design</h3><p>&quot;Ek 5-minute YouTube script likho about &#x27;How to Start a YouTube Channel in 2024&#x27; for beginners. Use simple Urdu/Hindi language, include 3 main points, and end with a call-to-action.&quot;<br>2.</p><h3>AI Output</h3><p>AI ek draft dega—usko edit karke:<br>   - Introduction ko zyada engaging banayein (e.g., &quot;Aaj main aapko bataunga ke YouTube channel kaise start kar sakte hain—bina kisi investment ke!&quot;)<br>   - Points ko real-life examples se samjhayein (e.g., &quot;Jaise maine apne channel par &#x27;Tech Tips&#x27; series shuru ki thi...&quot;)<br>   - CTA ko specific banayein (e.g., &quot;Agar aapko yeh video pasand aaye to &#x27;Subscribe&#x27; zaroor karen aur niche comment mein poochhein ke aapka niche kya hai.&quot;)</p><h3>Practice</h3><p>Apne niche ke hisaab se ek YouTube video ka script likhein. AI tool (jaise ChatGPT) ka istemal karke ek 3-5 minute ke script ka draft taiyar karen. Uske baad usko apne style mein edit karen.</p><h3>Mini Project</h3><p>Ek 1-minute ka &quot;Hook&quot; script likhein jo AI se generate karke usko apne voice ya style mein customize karen. Isse aapko pata chalega ke AI se content kaise modify karna hai.</p>
+      
+      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Aaj hum seekhenge ke AI tools (jaise ChatGPT, Jasper, ya Copy.ai) ka istemal karke professional YouTube scripts kaise likhe. AI se script likhte waqt inhe &quot;human touch&quot; dena zaroori hai—aisa content jo viewers ko engage kare. Hum AI ko prompt kaise dein, uske output ko improve karein, aur final script ko apne niche ke hisaab se customize karein.</p><h3>Example</h3><p>1.</p><h3>Prompt Design</h3><p>&quot;Ek 5-minute YouTube script likho about &#x27;How to Start a YouTube Channel in 2024&#x27; for beginners. Use simple Urdu/Hindi language, include 3 main points, and end with a call-to-action.&quot;<br>2.</p><h3>AI Output</h3><p>AI ek draft dega—usko edit karke:<br>   - Introduction ko zyada engaging banayein (e.g., &quot;Aaj main aapko bataunga ke YouTube channel kaise start kar sakte hain—bina kisi investment ke!&quot;)<br>   - Points ko real-life examples se samjhayein (e.g., &quot;Jaise maine apne channel par &#x27;Tech Tips&#x27; series shuru ki thi...&quot;)<br>   - CTA ko specific banayein (e.g., &quot;Agar aapko yeh video pasand aaye to &#x27;Subscribe&#x27; zaroor karen aur niche comment mein poochhein ke aapka niche kya hai.&quot;)</p><h3>Practice</h3><p>Apne niche ke hisaab se ek YouTube video ka script likhein. AI tool (jaise ChatGPT) ka istemal karke ek 3-5 minute ke script ka draft taiyar karen. Uske baad usko apne style mein edit karen.</p><h3>Mini Project</h3><p>Ek 1-minute ka &quot;Hook&quot; script likhein jo AI se generate karke usko apne voice ya style mein customize karen. Isse aapko pata chalega ke AI se content kaise modify karna hai.</p></div>
       
       <div>
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20YouTube%20Automation%20%28Day%2002%29%0A%0ADay%202%20%E2%80%94%20AI%20Se%20YouTube%20Script%20Likhne%20Ka%20Step-by-Step%20Guide%0A%0AConcept%3A%0AAaj%20hum%20seekhenge%20ke%20AI%20tools%20%28jaise%20ChatGPT%2C%20Jasper%2C%20ya%20Copy.ai%29%20ka%20istemal%20karke%20professional%20YouTube%20scripts%20kaise%20likhe.%20AI%20se%20script%20likhte%20waqt%20inhe%20%22human%20touch%22%20dena%20zaroori%20hai%E2%80%94aisa%20content%20jo%20viewers%20ko%20engage%20kare.%20Hum%20AI%20ko%20prompt%20kaise%20dein%2C%20uske%20output%20ko%20improve%20karein%2C%20aur%20final%20script%20ko%20apne%20niche%20ke%20hisaab%20se%20customize%20karein.%0A%0AExample%3A%0A1.%0A%0APrompt%20Design%3A%0A%22Ek%205-minute%20YouTube%20script%20likho%20about%20%27How%20to%20Start%20a%20YouTube%20Channel%20in%202024%27%20for%20beginners.%20Use%20simple%20Urdu/Hindi%20language%2C%20include%203%20main%20points%2C%20and%20end%20with%20a%20call-to-action.%22%0A2.%0A%0AAI%20Output%3A%0AAI%20ek%20draft%20dega%E2%80%94usko%20edit%20karke%3A%0A%20%20%20-%20Introduction%20ko%20zyada%20engaging%20banayein%20%28e.g.%2C%20%22Aaj%20main%20aapko%20bataunga%20ke%20YouTube%20channel%20kaise%20start%20kar%20sakte%20hain%E2%80%94bina%20kisi%20investment%20ke%21%22%29%0A%20%20%20-%20Points%20ko%20real-life%20examples%20se%20samjhayein%20%28e.g.%2C%20%22Jaise%20maine%20apne%20channel%20par%20%27Tech%20Tips%27%20series%20shuru%20ki%20thi...%22%29%0A%20%20%20-%20CTA%20ko%20specific%20banayein%20%28e.g.%2C%20%22Agar%20aapko%20yeh%20video%20pasand%20aaye%20to%20%27Subscribe%27%20zaroor%20karen%20aur%20niche%20comment%20mein%20poochhein%20ke%20aapka%20niche%20kya%20hai.%22%29%0A%0APractice%3A%0AApne%20niche%20ke%20hisaab%20se%20ek%20YouTube%20video%20ka%20script%20likhein.%20AI%20tool%20%28jaise%20ChatGPT%29%20ka%20istemal%20karke%20ek%203-5%20minute%20ke%20script%20ka%20draft%20taiyar%20karen.%20Uske%20baad%20usko%20apne%20style%20mein%20edit%20karen.%0A%0AMini%20Project%3A%0AEk%201-minute%20ka%20%22Hook%22%20script%20likhein%20jo%20AI%20se%20generate%20karke%20usko%20apne%20voice%20ya%20style%20mein%20customize%20karen.%20Isse%20aapko%20pata%20chalega%20ke%20AI%20se%20content%20kaise%20modify%20karna%20hai.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
@@ -254,6 +261,20 @@ transition:width .4s ease;}
       }
     }
   });
+})();
+</script><script>
+(function(){
+  window.fkcSwitchLang = function(btn){
+    var lang = btn.getAttribute("data-lang");
+    var tabs = document.querySelectorAll(".lang-tab");
+    var blocks = document.querySelectorAll(".lang-content");
+    for(var i=0;i<tabs.length;i++){
+      tabs[i].classList.toggle("active", tabs[i].getAttribute("data-lang")===lang);
+    }
+    for(var j=0;j<blocks.length;j++){
+      blocks[j].style.display = (blocks[j].getAttribute("data-lang")===lang) ? "" : "none";
+    }
+  };
 })();
 </script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>

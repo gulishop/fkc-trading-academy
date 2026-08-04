@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T08:50:51.269013";
+  var FKC_BUILD = "2026-08-04T09:01:54.537628";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -41,7 +41,7 @@
 })();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
 --ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
@@ -136,6 +136,12 @@ overflow:hidden;}
 transition:width .4s ease;}
 .complete-btn.done{background:var(--accent);}
 #fkc-cert-btn{background:var(--purple);}
+.lang-tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;}
+.lang-tab{background:var(--paper);border:1px solid var(--line);color:var(--muted);
+border-radius:20px;font-size:.82em;font-weight:700;padding:6px 16px;cursor:pointer;}
+.lang-tab.active{background:var(--primary);color:#fff;border-color:var(--primary);}
+.lang-content[dir="rtl"]{font-family:'Noto Nastaliq Urdu',serif;line-height:2.1;
+font-size:1.05em;text-align:right;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -147,7 +153,8 @@ transition:width .4s ease;}
     <h1>Day 2 — Website Builders: Framer, Webflow aur Wix se Professional Website Banana</h1>
     <div class="card">
       
-      <h3>Concept</h3><p>Website builders jaise Framer, Webflow aur Wix no-code tools hain jo drag-and-drop interface ke zariye professional websites banane mein madad karte hain. Inme templates, animations aur hosting built-in hote hain, isliye coding ki zarurat nahi hoti. Ye platforms beginners se lekar intermediate users ke liye perfect hain.</p><h3>Example</h3><p>1.</p><h3>Wix</h3><p>Simple drag-and-drop se ek portfolio website banane ke liye:<br>   - Wix.com par jao aur &quot;Create a Site&quot; select karo.<br>   - Template choose karo (e.g., &quot;Portfolio &amp; CV&quot;).<br>   - Left panel se elements drag karke add karo (text, images, buttons).<br>   - &quot;Publish&quot; par click karo aur apni website ka link share karo.</p><p>2.</p><h3>Webflow</h3><p>Advanced designs ke liye:<br>   - Webflow.com par signup karo.<br>   - &quot;New Project&quot; &gt; &quot;Blank&quot; select karo.<br>   - Left panel se elements drag karke ek responsive navbar banayo.<br>   - Right panel se styles adjust karo (fonts, colors).<br>   - &quot;Publish&quot; par click karo.</p><h3>Practice</h3><p>Apne liye ek simple 3-page website banane ka try karo (Home, About, Contact). Kisi bhi platform (Wix/Webflow/Framer) ka use kar sakte ho. Minimum 5 elements (text, image, button) add karo.</p><h3>Mini Project</h3><p>Ek &quot;Restaurant Menu&quot; website banayo:<br>- Homepage par menu items ki list ho.<br>- About page par restaurant ki story ho.<br>- Contact page par location aur contact form ho.<br>- Sab pages ko navbar se link karo.<br>- Website ko mobile-friendly banao.</p>
+      
+      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Website builders jaise Framer, Webflow aur Wix no-code tools hain jo drag-and-drop interface ke zariye professional websites banane mein madad karte hain. Inme templates, animations aur hosting built-in hote hain, isliye coding ki zarurat nahi hoti. Ye platforms beginners se lekar intermediate users ke liye perfect hain.</p><h3>Example</h3><p>1.</p><h3>Wix</h3><p>Simple drag-and-drop se ek portfolio website banane ke liye:<br>   - Wix.com par jao aur &quot;Create a Site&quot; select karo.<br>   - Template choose karo (e.g., &quot;Portfolio &amp; CV&quot;).<br>   - Left panel se elements drag karke add karo (text, images, buttons).<br>   - &quot;Publish&quot; par click karo aur apni website ka link share karo.</p><p>2.</p><h3>Webflow</h3><p>Advanced designs ke liye:<br>   - Webflow.com par signup karo.<br>   - &quot;New Project&quot; &gt; &quot;Blank&quot; select karo.<br>   - Left panel se elements drag karke ek responsive navbar banayo.<br>   - Right panel se styles adjust karo (fonts, colors).<br>   - &quot;Publish&quot; par click karo.</p><h3>Practice</h3><p>Apne liye ek simple 3-page website banane ka try karo (Home, About, Contact). Kisi bhi platform (Wix/Webflow/Framer) ka use kar sakte ho. Minimum 5 elements (text, image, button) add karo.</p><h3>Mini Project</h3><p>Ek &quot;Restaurant Menu&quot; website banayo:<br>- Homepage par menu items ki list ho.<br>- About page par restaurant ki story ho.<br>- Contact page par location aur contact form ho.<br>- Sab pages ko navbar se link karo.<br>- Website ko mobile-friendly banao.</p></div>
       
       <div>
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20No-Code%20App%20%26%20Website%20Building%20%28Day%2002%29%0A%0ADay%202%20%E2%80%94%20Website%20Builders%3A%20Framer%2C%20Webflow%20aur%20Wix%20se%20Professional%20Website%20Banana%0A%0AConcept%3A%0AWebsite%20builders%20jaise%20Framer%2C%20Webflow%20aur%20Wix%20no-code%20tools%20hain%20jo%20drag-and-drop%20interface%20ke%20zariye%20professional%20websites%20banane%20mein%20madad%20karte%20hain.%20Inme%20templates%2C%20animations%20aur%20hosting%20built-in%20hote%20hain%2C%20isliye%20coding%20ki%20zarurat%20nahi%20hoti.%20Ye%20platforms%20beginners%20se%20lekar%20intermediate%20users%20ke%20liye%20perfect%20hain.%0A%0AExample%3A%0A1.%0A%0AWix%3A%0ASimple%20drag-and-drop%20se%20ek%20portfolio%20website%20banane%20ke%20liye%3A%0A%20%20%20-%20Wix.com%20par%20jao%20aur%20%22Create%20a%20Site%22%20select%20karo.%0A%20%20%20-%20Template%20choose%20karo%20%28e.g.%2C%20%22Portfolio%20%26%20CV%22%29.%0A%20%20%20-%20Left%20panel%20se%20elements%20drag%20karke%20add%20karo%20%28text%2C%20images%2C%20buttons%29.%0A%20%20%20-%20%22Publish%22%20par%20click%20karo%20aur%20apni%20website%20ka%20link%20share%20karo.%0A%0A2.%0A%0AWebflow%3A%0AAdvanced%20designs%20ke%20liye%3A%0A%20%20%20-%20Webflow.com%20par%20signup%20karo.%0A%20%20%20-%20%22New%20Project%22%20%3E%20%22Blank%22%20select%20karo.%0A%20%20%20-%20Left%20panel%20se%20elements%20drag%20karke%20ek%20responsive%20navbar%20banayo.%0A%20%20%20-%20Right%20panel%20se%20styles%20adjust%20karo%20%28fonts%2C%20colors%29.%0A%20%20%20-%20%22Publish%22%20par%20click%20karo.%0A%0APractice%3A%0AApne%20liye%20ek%20simple%203-page%20website%20banane%20ka%20try%20karo%20%28Home%2C%20About%2C%20Contact%29.%20Kisi%20bhi%20platform%20%28Wix/Webflow/Framer%29%20ka%20use%20kar%20sakte%20ho.%20Minimum%205%20elements%20%28text%2C%20image%2C%20button%29%20add%20karo.%0A%0AMini%20Project%3A%0AEk%20%22Restaurant%20Menu%22%20website%20banayo%3A%0A-%20Homepage%20par%20menu%20items%20ki%20list%20ho.%0A-%20About%20page%20par%20restaurant%20ki%20story%20ho.%0A-%20Contact%20page%20par%20location%20aur%20contact%20form%20ho.%0A-%20Sab%20pages%20ko%20navbar%20se%20link%20karo.%0A-%20Website%20ko%20mobile-friendly%20banao.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
@@ -254,6 +261,20 @@ transition:width .4s ease;}
       }
     }
   });
+})();
+</script><script>
+(function(){
+  window.fkcSwitchLang = function(btn){
+    var lang = btn.getAttribute("data-lang");
+    var tabs = document.querySelectorAll(".lang-tab");
+    var blocks = document.querySelectorAll(".lang-content");
+    for(var i=0;i<tabs.length;i++){
+      tabs[i].classList.toggle("active", tabs[i].getAttribute("data-lang")===lang);
+    }
+    for(var j=0;j<blocks.length;j++){
+      blocks[j].style.display = (blocks[j].getAttribute("data-lang")===lang) ? "" : "none";
+    }
+  };
 })();
 </script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>

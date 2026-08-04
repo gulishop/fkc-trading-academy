@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T08:50:51.269013";
+  var FKC_BUILD = "2026-08-04T09:01:54.537628";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -41,7 +41,7 @@
 })();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
 --ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
@@ -136,6 +136,12 @@ overflow:hidden;}
 transition:width .4s ease;}
 .complete-btn.done{background:var(--accent);}
 #fkc-cert-btn{background:var(--purple);}
+.lang-tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;}
+.lang-tab{background:var(--paper);border:1px solid var(--line);color:var(--muted);
+border-radius:20px;font-size:.82em;font-weight:700;padding:6px 16px;cursor:pointer;}
+.lang-tab.active{background:var(--primary);color:#fff;border-color:var(--primary);}
+.lang-content[dir="rtl"]{font-family:'Noto Nastaliq Urdu',serif;line-height:2.1;
+font-size:1.05em;text-align:right;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -147,7 +153,8 @@ transition:width .4s ease;}
     <h1>Day 2</h1>
     <div class="card">
       
-      <p>**Day 2 — SEO Basics: Keywords Aur On-Page SEO Ko Samajhein**</p><h3>Concept</h3><p>SEO ka sabse pehle step hai **keywords** samajhna aur unhe apni website par **on-page SEO** ke zariye apply karna. Keywords woh words hain jo log Google par search karte hain. On-page SEO ka matlab hai apni website ke andar hi SEO karna—jaise titles, meta descriptions, headings, aur content ko optimize karna taake search engines samajh saken ke aapka content relevant hai.</p><h3>Example</h3><p>Maana ke aap ek **bakery** chalate hain. Log &quot;best chocolate cake in Lahore&quot; search karte hain. Aapko apne website ke:<br>- **Title Tag** mein: &quot;Best Chocolate Cake in Lahore | [Bakery Name]&quot;<br>- **Meta Description** mein: &quot;Order fresh chocolate cake in Lahore with free delivery. Try our famous recipes!&quot;<br>- **Content** mein: &quot;Our chocolate cake is made with...&quot; (yeh phrase repeat karna avoid karen, warna &quot;keyword stuffing&quot; ho jayega).</p><h3>Practice</h3><p>Apne ya kisi doosre business ka **1 keyword** choose karen (jaise &quot;organic face cream in Karachi&quot;). Us keyword ko apne **website ke title, meta description, aur first 100 words** mein use karen. (Agar website nahi hai, toh ek simple blog post likh kar practice karen.)</p><h3>Mini Project</h3><p>Ek **dummy webpage** banayein (Google Docs ya Notion mein) jisme:<br>1. Title: Apna chosen keyword shamil ho.<br>2. Meta description: 150-160 characters mein keyword use karke.<br>3. First paragraph: Keyword naturally 2-3 baar use karen (overdo na karen).</p>
+      
+      <div class="lang-content" data-lang="rm"><p>**Day 2 — SEO Basics: Keywords Aur On-Page SEO Ko Samajhein**</p><h3>Concept</h3><p>SEO ka sabse pehle step hai **keywords** samajhna aur unhe apni website par **on-page SEO** ke zariye apply karna. Keywords woh words hain jo log Google par search karte hain. On-page SEO ka matlab hai apni website ke andar hi SEO karna—jaise titles, meta descriptions, headings, aur content ko optimize karna taake search engines samajh saken ke aapka content relevant hai.</p><h3>Example</h3><p>Maana ke aap ek **bakery** chalate hain. Log &quot;best chocolate cake in Lahore&quot; search karte hain. Aapko apne website ke:<br>- **Title Tag** mein: &quot;Best Chocolate Cake in Lahore | [Bakery Name]&quot;<br>- **Meta Description** mein: &quot;Order fresh chocolate cake in Lahore with free delivery. Try our famous recipes!&quot;<br>- **Content** mein: &quot;Our chocolate cake is made with...&quot; (yeh phrase repeat karna avoid karen, warna &quot;keyword stuffing&quot; ho jayega).</p><h3>Practice</h3><p>Apne ya kisi doosre business ka **1 keyword** choose karen (jaise &quot;organic face cream in Karachi&quot;). Us keyword ko apne **website ke title, meta description, aur first 100 words** mein use karen. (Agar website nahi hai, toh ek simple blog post likh kar practice karen.)</p><h3>Mini Project</h3><p>Ek **dummy webpage** banayein (Google Docs ya Notion mein) jisme:<br>1. Title: Apna chosen keyword shamil ho.<br>2. Meta description: 150-160 characters mein keyword use karke.<br>3. First paragraph: Keyword naturally 2-3 baar use karen (overdo na karen).</p></div>
       
       <div>
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Digital%20Marketing%20%26%20SEO%20%28Day%2002%29%0A%0ADay%202%0A%0A%2A%2ADay%202%20%E2%80%94%20SEO%20Basics%3A%20Keywords%20Aur%20On-Page%20SEO%20Ko%20Samajhein%2A%2A%0A%0AConcept%3A%0ASEO%20ka%20sabse%20pehle%20step%20hai%20%2A%2Akeywords%2A%2A%20samajhna%20aur%20unhe%20apni%20website%20par%20%2A%2Aon-page%20SEO%2A%2A%20ke%20zariye%20apply%20karna.%20Keywords%20woh%20words%20hain%20jo%20log%20Google%20par%20search%20karte%20hain.%20On-page%20SEO%20ka%20matlab%20hai%20apni%20website%20ke%20andar%20hi%20SEO%20karna%E2%80%94jaise%20titles%2C%20meta%20descriptions%2C%20headings%2C%20aur%20content%20ko%20optimize%20karna%20taake%20search%20engines%20samajh%20saken%20ke%20aapka%20content%20relevant%20hai.%0A%0AExample%3A%0AMaana%20ke%20aap%20ek%20%2A%2Abakery%2A%2A%20chalate%20hain.%20Log%20%22best%20chocolate%20cake%20in%20Lahore%22%20search%20karte%20hain.%20Aapko%20apne%20website%20ke%3A%0A-%20%2A%2ATitle%20Tag%2A%2A%20mein%3A%20%22Best%20Chocolate%20Cake%20in%20Lahore%20%7C%20%5BBakery%20Name%5D%22%0A-%20%2A%2AMeta%20Description%2A%2A%20mein%3A%20%22Order%20fresh%20chocolate%20cake%20in%20Lahore%20with%20free%20delivery.%20Try%20our%20famous%20recipes%21%22%0A-%20%2A%2AContent%2A%2A%20mein%3A%20%22Our%20chocolate%20cake%20is%20made%20with...%22%20%28yeh%20phrase%20repeat%20karna%20avoid%20karen%2C%20warna%20%22keyword%20stuffing%22%20ho%20jayega%29.%0A%0APractice%3A%0AApne%20ya%20kisi%20doosre%20business%20ka%20%2A%2A1%20keyword%2A%2A%20choose%20karen%20%28jaise%20%22organic%20face%20cream%20in%20Karachi%22%29.%20Us%20keyword%20ko%20apne%20%2A%2Awebsite%20ke%20title%2C%20meta%20description%2C%20aur%20first%20100%20words%2A%2A%20mein%20use%20karen.%20%28Agar%20website%20nahi%20hai%2C%20toh%20ek%20simple%20blog%20post%20likh%20kar%20practice%20karen.%29%0A%0AMini%20Project%3A%0AEk%20%2A%2Adummy%20webpage%2A%2A%20banayein%20%28Google%20Docs%20ya%20Notion%20mein%29%20jisme%3A%0A1.%20Title%3A%20Apna%20chosen%20keyword%20shamil%20ho.%0A2.%20Meta%20description%3A%20150-160%20characters%20mein%20keyword%20use%20karke.%0A3.%20First%20paragraph%3A%20Keyword%20naturally%202-3%20baar%20use%20karen%20%28overdo%20na%20karen%29.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
@@ -254,6 +261,20 @@ transition:width .4s ease;}
       }
     }
   });
+})();
+</script><script>
+(function(){
+  window.fkcSwitchLang = function(btn){
+    var lang = btn.getAttribute("data-lang");
+    var tabs = document.querySelectorAll(".lang-tab");
+    var blocks = document.querySelectorAll(".lang-content");
+    for(var i=0;i<tabs.length;i++){
+      tabs[i].classList.toggle("active", tabs[i].getAttribute("data-lang")===lang);
+    }
+    for(var j=0;j<blocks.length;j++){
+      blocks[j].style.display = (blocks[j].getAttribute("data-lang")===lang) ? "" : "none";
+    }
+  };
 })();
 </script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>

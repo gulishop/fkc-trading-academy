@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T08:50:51.269013";
+  var FKC_BUILD = "2026-08-04T09:01:54.537628";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -41,7 +41,7 @@
 })();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
 --ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
@@ -136,6 +136,12 @@ overflow:hidden;}
 transition:width .4s ease;}
 .complete-btn.done{background:var(--accent);}
 #fkc-cert-btn{background:var(--purple);}
+.lang-tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;}
+.lang-tab{background:var(--paper);border:1px solid var(--line);color:var(--muted);
+border-radius:20px;font-size:.82em;font-weight:700;padding:6px 16px;cursor:pointer;}
+.lang-tab.active{background:var(--primary);color:#fff;border-color:var(--primary);}
+.lang-content[dir="rtl"]{font-family:'Noto Nastaliq Urdu',serif;line-height:2.1;
+font-size:1.05em;text-align:right;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -147,7 +153,8 @@ transition:width .4s ease;}
     <h1>Day 2 — **Viral Reels/Shorts Banane ke 5 Golden Rules**</h1>
     <div class="card">
       
-      <h3>Concept</h3><p>Viral Reels ya Shorts banane ke liye 3 cheez zaroori hain: **Attention Grab Karna** (pehle 3 seconds), **Engagement Trigger Karna** (like/comment/share ke liye reason dena), aur **Trend ka Sahi Use Karna**. Bina plan ke upload karne se chance kam hote hain. Aaj hum in 5 rules par focus karenge jo har viral content ki backbone hoti hain.</p><h3>Example</h3><p>Ek **food recipe Reel** ka example lete hain:<br>1.</p><h3>Hook (0-3 sec)</h3><p>&quot;Yeh 1 minute ka recipe aapki dinner ko banaye *chef’s kiss*!&quot; (bold text + fast zoom on dish)<br>2.</p><h3>Trend Use</h3><p>&quot;POV: Aapke fridge mein sirf *2 eggs* hain&quot; (trending audio + text overlay)<br>3.</p><h3>Engagement Prompt</h3><p>&quot;Comment mein batao aapka favorite breakfast kya hai? ⬇️&quot; (screen pe text + arrow)<br>4.</p><h3>CTA (Call-to-Action)</h3><p>&quot;Agar pasand aaya to share zaroor karna!&quot; (caption mein link add karke)<br>5.</p><h3>Hashtags</h3><p>3-5 relevant (#Foodie, #QuickRecipe, #ViralFood) + 1 trending (#FoodTok).</p><h3>Practice</h3><p>Apne phone se ek **15-30 sec ka Reel shoot karo** jisme:<br>- Pehle 3 seconds mein koi shocking/interesting shot ho (e.g., ek cheez ka explosion, fast transition, ya bold text).<br>- Trendy audio use karo (Instagram/Reels explore page se check karo).<br>- Caption mein ek question ya CTA add karo.</p><h3>Mini Project</h3><p>Ek **7-day content calendar** banaye jisme har din ke liye alag type ka Reel idea ho (e.g., Monday: &quot;POV&quot; trend, Tuesday: &quot;Before &amp; After&quot;, Wednesday: &quot;Myth Buster&quot;). Har idea ke saath ek trendy audio ka naam bhi likhna.</p>
+      
+      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Viral Reels ya Shorts banane ke liye 3 cheez zaroori hain: **Attention Grab Karna** (pehle 3 seconds), **Engagement Trigger Karna** (like/comment/share ke liye reason dena), aur **Trend ka Sahi Use Karna**. Bina plan ke upload karne se chance kam hote hain. Aaj hum in 5 rules par focus karenge jo har viral content ki backbone hoti hain.</p><h3>Example</h3><p>Ek **food recipe Reel** ka example lete hain:<br>1.</p><h3>Hook (0-3 sec)</h3><p>&quot;Yeh 1 minute ka recipe aapki dinner ko banaye *chef’s kiss*!&quot; (bold text + fast zoom on dish)<br>2.</p><h3>Trend Use</h3><p>&quot;POV: Aapke fridge mein sirf *2 eggs* hain&quot; (trending audio + text overlay)<br>3.</p><h3>Engagement Prompt</h3><p>&quot;Comment mein batao aapka favorite breakfast kya hai? ⬇️&quot; (screen pe text + arrow)<br>4.</p><h3>CTA (Call-to-Action)</h3><p>&quot;Agar pasand aaya to share zaroor karna!&quot; (caption mein link add karke)<br>5.</p><h3>Hashtags</h3><p>3-5 relevant (#Foodie, #QuickRecipe, #ViralFood) + 1 trending (#FoodTok).</p><h3>Practice</h3><p>Apne phone se ek **15-30 sec ka Reel shoot karo** jisme:<br>- Pehle 3 seconds mein koi shocking/interesting shot ho (e.g., ek cheez ka explosion, fast transition, ya bold text).<br>- Trendy audio use karo (Instagram/Reels explore page se check karo).<br>- Caption mein ek question ya CTA add karo.</p><h3>Mini Project</h3><p>Ek **7-day content calendar** banaye jisme har din ke liye alag type ka Reel idea ho (e.g., Monday: &quot;POV&quot; trend, Tuesday: &quot;Before &amp; After&quot;, Wednesday: &quot;Myth Buster&quot;). Har idea ke saath ek trendy audio ka naam bhi likhna.</p></div>
       
       <div>
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Social%20Media%20Marketing%20%28Day%2002%29%0A%0ADay%202%20%E2%80%94%20%2A%2AViral%20Reels/Shorts%20Banane%20ke%205%20Golden%20Rules%2A%2A%0A%0AConcept%3A%0AViral%20Reels%20ya%20Shorts%20banane%20ke%20liye%203%20cheez%20zaroori%20hain%3A%20%2A%2AAttention%20Grab%20Karna%2A%2A%20%28pehle%203%20seconds%29%2C%20%2A%2AEngagement%20Trigger%20Karna%2A%2A%20%28like/comment/share%20ke%20liye%20reason%20dena%29%2C%20aur%20%2A%2ATrend%20ka%20Sahi%20Use%20Karna%2A%2A.%20Bina%20plan%20ke%20upload%20karne%20se%20chance%20kam%20hote%20hain.%20Aaj%20hum%20in%205%20rules%20par%20focus%20karenge%20jo%20har%20viral%20content%20ki%20backbone%20hoti%20hain.%0A%0AExample%3A%0AEk%20%2A%2Afood%20recipe%20Reel%2A%2A%20ka%20example%20lete%20hain%3A%0A1.%0A%0AHook%20%280-3%20sec%29%3A%0A%22Yeh%201%20minute%20ka%20recipe%20aapki%20dinner%20ko%20banaye%20%2Achef%E2%80%99s%20kiss%2A%21%22%20%28bold%20text%20%2B%20fast%20zoom%20on%20dish%29%0A2.%0A%0ATrend%20Use%3A%0A%22POV%3A%20Aapke%20fridge%20mein%20sirf%20%2A2%20eggs%2A%20hain%22%20%28trending%20audio%20%2B%20text%20overlay%29%0A3.%0A%0AEngagement%20Prompt%3A%0A%22Comment%20mein%20batao%20aapka%20favorite%20breakfast%20kya%20hai%3F%20%E2%AC%87%EF%B8%8F%22%20%28screen%20pe%20text%20%2B%20arrow%29%0A4.%0A%0ACTA%20%28Call-to-Action%29%3A%0A%22Agar%20pasand%20aaya%20to%20share%20zaroor%20karna%21%22%20%28caption%20mein%20link%20add%20karke%29%0A5.%0A%0AHashtags%3A%0A3-5%20relevant%20%28%23Foodie%2C%20%23QuickRecipe%2C%20%23ViralFood%29%20%2B%201%20trending%20%28%23FoodTok%29.%0A%0APractice%3A%0AApne%20phone%20se%20ek%20%2A%2A15-30%20sec%20ka%20Reel%20shoot%20karo%2A%2A%20jisme%3A%0A-%20Pehle%203%20seconds%20mein%20koi%20shocking/interesting%20shot%20ho%20%28e.g.%2C%20ek%20cheez%20ka%20explosion%2C%20fast%20transition%2C%20ya%20bold%20text%29.%0A-%20Trendy%20audio%20use%20karo%20%28Instagram/Reels%20explore%20page%20se%20check%20karo%29.%0A-%20Caption%20mein%20ek%20question%20ya%20CTA%20add%20karo.%0A%0AMini%20Project%3A%0AEk%20%2A%2A7-day%20content%20calendar%2A%2A%20banaye%20jisme%20har%20din%20ke%20liye%20alag%20type%20ka%20Reel%20idea%20ho%20%28e.g.%2C%20Monday%3A%20%22POV%22%20trend%2C%20Tuesday%3A%20%22Before%20%26%20After%22%2C%20Wednesday%3A%20%22Myth%20Buster%22%29.%20Har%20idea%20ke%20saath%20ek%20trendy%20audio%20ka%20naam%20bhi%20likhna.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
@@ -254,6 +261,20 @@ transition:width .4s ease;}
       }
     }
   });
+})();
+</script><script>
+(function(){
+  window.fkcSwitchLang = function(btn){
+    var lang = btn.getAttribute("data-lang");
+    var tabs = document.querySelectorAll(".lang-tab");
+    var blocks = document.querySelectorAll(".lang-content");
+    for(var i=0;i<tabs.length;i++){
+      tabs[i].classList.toggle("active", tabs[i].getAttribute("data-lang")===lang);
+    }
+    for(var j=0;j<blocks.length;j++){
+      blocks[j].style.display = (blocks[j].getAttribute("data-lang")===lang) ? "" : "none";
+    }
+  };
 })();
 </script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>

@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T08:50:51.269013";
+  var FKC_BUILD = "2026-08-04T09:01:54.537628";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -41,7 +41,7 @@
 })();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
 --ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
@@ -136,6 +136,12 @@ overflow:hidden;}
 transition:width .4s ease;}
 .complete-btn.done{background:var(--accent);}
 #fkc-cert-btn{background:var(--purple);}
+.lang-tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;}
+.lang-tab{background:var(--paper);border:1px solid var(--line);color:var(--muted);
+border-radius:20px;font-size:.82em;font-weight:700;padding:6px 16px;cursor:pointer;}
+.lang-tab.active{background:var(--primary);color:#fff;border-color:var(--primary);}
+.lang-content[dir="rtl"]{font-family:'Noto Nastaliq Urdu',serif;line-height:2.1;
+font-size:1.05em;text-align:right;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -147,7 +153,8 @@ transition:width .4s ease;}
     <h1>Day 2 — Pakistan Market Mein Best Selling Products Kaise Dhunde</h1>
     <div class="card">
       
-      <h3>Concept</h3><p>Aaj seekhoge ke Daraz par Pakistan mein konsi products zyada bikti hain. Product research ka matlab hai market ki demand, competition, aur profit margin check karna. Aise products chuno jo zyada search kiye ja rahe hon, kam competition ho, aur aapke budget mein aaye.</p><h3>Example</h3><p>1. Daraz Seller Center &gt; &quot;Product Research&quot; section mein jao.<br>2. &quot;Trending Products&quot; ya &quot;Hot Searches&quot; dekho.<br>3. &quot;Fashion&quot; category mein &quot;Women&#x27;s Kurtas&quot; search karo — agar 10,000+ searches/month hain aur competition kam hai, to yeh product choose kar sakte ho.</p><h3>Practice</h3><p>Apne Daraz Seller Center account mein jao aur &quot;Product Research&quot; tool use karke **3 products** select karo jo aapko Pakistan market ke liye suitable lagte hain. Har product ke liye 2 reasons bhi likhna.</p><h3>Mini Project</h3><p>Ek Excel sheet banao jismein:<br>- Product name<br>- Monthly searches (Daraz se le sakte ho)<br>- Competition level (Low/Medium/High)<br>- Estimated profit margin (Price - Cost)<br>- Apka final decision (Yes/No)</p>
+      
+      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Aaj seekhoge ke Daraz par Pakistan mein konsi products zyada bikti hain. Product research ka matlab hai market ki demand, competition, aur profit margin check karna. Aise products chuno jo zyada search kiye ja rahe hon, kam competition ho, aur aapke budget mein aaye.</p><h3>Example</h3><p>1. Daraz Seller Center &gt; &quot;Product Research&quot; section mein jao.<br>2. &quot;Trending Products&quot; ya &quot;Hot Searches&quot; dekho.<br>3. &quot;Fashion&quot; category mein &quot;Women&#x27;s Kurtas&quot; search karo — agar 10,000+ searches/month hain aur competition kam hai, to yeh product choose kar sakte ho.</p><h3>Practice</h3><p>Apne Daraz Seller Center account mein jao aur &quot;Product Research&quot; tool use karke **3 products** select karo jo aapko Pakistan market ke liye suitable lagte hain. Har product ke liye 2 reasons bhi likhna.</p><h3>Mini Project</h3><p>Ek Excel sheet banao jismein:<br>- Product name<br>- Monthly searches (Daraz se le sakte ho)<br>- Competition level (Low/Medium/High)<br>- Estimated profit margin (Price - Cost)<br>- Apka final decision (Yes/No)</p></div>
       
       <div>
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Daraz%20Seller%20%28Day%2002%29%0A%0ADay%202%20%E2%80%94%20Pakistan%20Market%20Mein%20Best%20Selling%20Products%20Kaise%20Dhunde%0A%0AConcept%3A%0AAaj%20seekhoge%20ke%20Daraz%20par%20Pakistan%20mein%20konsi%20products%20zyada%20bikti%20hain.%20Product%20research%20ka%20matlab%20hai%20market%20ki%20demand%2C%20competition%2C%20aur%20profit%20margin%20check%20karna.%20Aise%20products%20chuno%20jo%20zyada%20search%20kiye%20ja%20rahe%20hon%2C%20kam%20competition%20ho%2C%20aur%20aapke%20budget%20mein%20aaye.%0A%0AExample%3A%0A1.%20Daraz%20Seller%20Center%20%3E%20%22Product%20Research%22%20section%20mein%20jao.%0A2.%20%22Trending%20Products%22%20ya%20%22Hot%20Searches%22%20dekho.%0A3.%20%22Fashion%22%20category%20mein%20%22Women%27s%20Kurtas%22%20search%20karo%20%E2%80%94%20agar%2010%2C000%2B%20searches/month%20hain%20aur%20competition%20kam%20hai%2C%20to%20yeh%20product%20choose%20kar%20sakte%20ho.%0A%0APractice%3A%0AApne%20Daraz%20Seller%20Center%20account%20mein%20jao%20aur%20%22Product%20Research%22%20tool%20use%20karke%20%2A%2A3%20products%2A%2A%20select%20karo%20jo%20aapko%20Pakistan%20market%20ke%20liye%20suitable%20lagte%20hain.%20Har%20product%20ke%20liye%202%20reasons%20bhi%20likhna.%0A%0AMini%20Project%3A%0AEk%20Excel%20sheet%20banao%20jismein%3A%0A-%20Product%20name%0A-%20Monthly%20searches%20%28Daraz%20se%20le%20sakte%20ho%29%0A-%20Competition%20level%20%28Low/Medium/High%29%0A-%20Estimated%20profit%20margin%20%28Price%20-%20Cost%29%0A-%20Apka%20final%20decision%20%28Yes/No%29%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
@@ -254,6 +261,20 @@ transition:width .4s ease;}
       }
     }
   });
+})();
+</script><script>
+(function(){
+  window.fkcSwitchLang = function(btn){
+    var lang = btn.getAttribute("data-lang");
+    var tabs = document.querySelectorAll(".lang-tab");
+    var blocks = document.querySelectorAll(".lang-content");
+    for(var i=0;i<tabs.length;i++){
+      tabs[i].classList.toggle("active", tabs[i].getAttribute("data-lang")===lang);
+    }
+    for(var j=0;j<blocks.length;j++){
+      blocks[j].style.display = (blocks[j].getAttribute("data-lang")===lang) ? "" : "none";
+    }
+  };
 })();
 </script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
