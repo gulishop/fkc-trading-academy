@@ -1043,21 +1043,13 @@ def generate_lesson_narration_video(slug, course, lesson, image_source_path):
         print(f"[{slug}] Day {day_num} video skip: Urdu TTS ({voice}) fail.", file=sys.stderr)
         return
 
-    # Pehle behtar "Ken Burns zoom + captions" wala free jugaad try karo
-    # (asal AI video generation paid hoti hai, yeh iski jagah). Fail ho
-    # jaye (ffmpeg build mein subtitles/zoompan support na ho waghera)
-    # to purane simple still-image version par fallback ho jata hai —
-    # video kabhi bhi banna band nahi hota.
-    srt_path = os.path.join(work_dir, f"day-{padded}.srt")
-    duration = _get_audio_duration(mp3_path)
-    has_srt = duration and _build_caption_srt(script_text, duration, srt_path)
+    # Sirf simple "voice-over + static slide" video banao — Ken Burns
+    # zoom/animated captions wala jugaad ab use nahi hota, sirf slide +
+    # awaaz, jaisa user ne chaha.
     made = False
-    if _run_ffmpeg_kenburns_captions(image_source_path, mp3_path, srt_path if has_srt else None, mp4_path):
+    if _run_ffmpeg_image_audio(image_source_path, mp3_path, mp4_path):
         made = True
-        print(f"[{slug}] Day {day_num} AI video explanation ban gayi (Ken Burns zoom + captions).")
-    elif _run_ffmpeg_image_audio(image_source_path, mp3_path, mp4_path):
-        made = True
-        print(f"[{slug}] Day {day_num} AI video explanation ban gayi (free, voice+slide — fallback).")
+        print(f"[{slug}] Day {day_num} AI video explanation ban gayi (voice-over + static slide).")
 
     if not made:
         print(f"[{slug}] Day {day_num} video skip: ffmpeg dono attempts fail.", file=sys.stderr)
@@ -2197,6 +2189,15 @@ padding:11px 18px;border:none;border-radius:6px;cursor:pointer;
 margin:6px 6px 0 0;}
 .btn.alt{background:#fff;color:var(--ink);border:1px solid var(--line);}
 .btn.green{background:var(--accent);}
+.course-search-wrap{position:relative;margin:14px 0 4px;}
+.course-search{width:100%;box-sizing:border-box;padding:12px 14px 12px 40px;
+font-size:14px;border:1px solid var(--line);border-radius:8px;
+background:var(--panel);color:var(--ink);outline:none;}
+.course-search:focus{border-color:var(--primary);}
+.course-search-wrap::before{content:"🔍";position:absolute;left:13px;top:50%;
+transform:translateY(-50%);font-size:14px;opacity:.6;pointer-events:none;}
+.course-search-empty{display:none;text-align:center;color:var(--muted);
+font-size:.9em;margin:18px 0;}
 .grid{display:flex;flex-direction:column;gap:12px;margin:18px 0 30px;}
 .ccard{display:flex;align-items:center;gap:14px;background:var(--panel);
 border:1px solid var(--line);border-radius:10px;padding:14px;
@@ -2359,8 +2360,9 @@ def render_home(posts):
         count = len(lessons)
         latest = lessons[-1]["title"] if lessons else "Pehla lesson jald aa raha hai"
         accent = ACCENTS[i % len(ACCENTS)]
+        search_key = html.escape(f"{course['name']} {course['tagline']}".lower())
         cards.append(f"""
-    <a class="ccard fade-in" href="courses/{slug}/index.html">
+    <a class="ccard fade-in" href="courses/{slug}/index.html" data-search="{search_key}">
       <div class="stamp" style="--accent-bg:{accent}1a;color:{accent}">{course['icon']}</div>
       <div class="body">
         <h2>{html.escape(course['name'])}</h2>
@@ -2381,7 +2383,28 @@ def render_home(posts):
     <p class="muted fade-in d2">📅 Har course ka naya lesson roz apne fixed time par (9:00 AM se 11:30 AM Pakistan time ke darmiyan) yahan post hota hai — har course card par uska waqt likha hai.
     Jis course mein interest ho us par tap karein — daily lesson step-by-step parhein aur practice karein.</p>
     <p class="fade-in d2">{direct_link_button_html("🚀 Start Learning")}</p>
-    <div class="grid">{''.join(cards)}</div>
+    <div class="course-search-wrap fade-in d2">
+      <input type="text" id="courseSearch" class="course-search"
+        placeholder="Course search karein... (jaise: youtube, amazon, dropshipping)"
+        oninput="fkcFilterCourses(this.value)" autocomplete="off">
+    </div>
+    <div class="grid" id="courseGrid">{''.join(cards)}</div>
+    <p class="course-search-empty" id="courseSearchEmpty">😕 Koi course is naam se nahi mila — koi doosra keyword try karein.</p>
+    <script>
+    function fkcFilterCourses(q){{
+      q = q.trim().toLowerCase();
+      var cards = document.querySelectorAll('#courseGrid .ccard');
+      var shown = 0;
+      cards.forEach(function(c){{
+        var hay = c.getAttribute('data-search') || '';
+        var match = hay.indexOf(q) !== -1;
+        c.style.display = match ? '' : 'none';
+        if (match) shown++;
+      }});
+      var empty = document.getElementById('courseSearchEmpty');
+      if (empty) empty.style.display = (shown === 0 && q.length > 0) ? 'block' : 'none';
+    }}
+    </script>
     {brand_footer_html(logo_href)}
     <p style="text-align:center;margin-top:8px;">
       <a href="admin-certificates.html" style="color:var(--muted);font-size:11px;text-decoration:none;">⚙️ Admin</a>
