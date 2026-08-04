@@ -2016,54 +2016,54 @@ def _flatten_translation_text(data):
     return " ".join(p for p in parts if p)
 
 
-def _translation_is_sane(data, code=None, orig_preamble=None, other_lang_data=None):
+def _translation_sanity_issues(data, code=None, orig_preamble=None, other_lang_data=None):
+    """_translation_is_sane jaisa hi, lekin sirf True/False ki jagah
+    exact wajah (reason strings) wapas karta hai — taake logs mein pata
+    chal sake AI ka output KAUN se rule par reject hua (guessing na
+    karni pade)."""
+    issues = []
     preamble = data.get("preamble", "") or ""
     if _is_degenerate_text(preamble):
-        return False
-    # agar original lesson mein preamble tha hi nahi (khaali), to translation
-    # mein bhi ek naya intro paragraph khud se bana kar nahi daalna chahiye —
-    # yeh fabricated/duplicate content hai (screenshot wala bug: preamble
-    # mein wahi baat likh di jo "Concept" section mein bhi thi)
+        issues.append("preamble degenerate/repetitive hai")
     if orig_preamble is not None and not orig_preamble.strip() and len(preamble.strip()) > 30:
-        return False
+        issues.append("original preamble khaali tha lekin translation ne naya preamble bana diya")
     sections = data.get("sections", []) or []
     contents = []
-    for sec in sections:
+    for idx, sec in enumerate(sections):
         content = sec.get("content", "") if isinstance(sec, dict) else ""
         if _is_degenerate_text(content):
-            return False
+            issues.append(f"section {idx + 1} ('{sec.get('label', '')}') degenerate/repetitive hai")
         contents.append(content)
-    # preamble kisi bhi section ke content se duplicate to nahi (exact ya
-    # lagbhag exact copy-paste)
-    for content in contents:
+    for idx, content in enumerate(contents):
         if _texts_are_near_duplicate(preamble, content):
-            return False
-        if _word_overlap_ratio(preamble, content) > 0.55:
-            return False
-    # do sections aapas mein bhi duplicate to nahi
+            issues.append(f"preamble section {idx + 1} ke content se near-duplicate hai")
+        ratio = _word_overlap_ratio(preamble, content)
+        if ratio > 0.7:
+            issues.append(f"preamble/section {idx + 1} word-overlap {ratio:.2f} (>0.70)")
     for i in range(len(contents)):
         for j in range(i + 1, len(contents)):
             if _texts_are_near_duplicate(contents[i], contents[j]):
-                return False
-            if _word_overlap_ratio(contents[i], contents[j]) > 0.55:
-                return False
-    # ur/sd ke liye asal script (Nastaliq/Arabic) mein hona zaroori hai
+                issues.append(f"section {i + 1} aur section {j + 1} near-duplicate hain")
+            ratio = _word_overlap_ratio(contents[i], contents[j])
+            if ratio > 0.7:
+                issues.append(f"section {i + 1}/section {j + 1} word-overlap {ratio:.2f} (>0.70)")
     if not _script_matches_lang(data, code):
-        return False
-    # Urdu aur Sindhi dono Arabic-based script use karte hain, is liye AI
-    # kabhi kabhi "Sindhi" maang'ne par bhi wahi Urdu text copy-paste kar
-    # deta hai (screenshot wala bug — Urdu aur Sindhi tab mein bilkul same
-    # matn). Agar doosri zaban ka translation already maujood hai, to yeh
-    # confirm karo ke yeh us se ALAG hai — warna yeh Sindhi nahi, chhupi
-    # hui Urdu duplicate hai.
+        ratio = _script_ratio(_strip_code_blocks(_flatten_translation_text(data)))
+        issues.append(f"Arabic-script ratio kaafi kam hai ({ratio})" if ratio is not None else "script ratio nahi napi ja saki")
     if other_lang_data:
         this_text = _flatten_translation_text(data)
         other_text = _flatten_translation_text(other_lang_data)
         if _texts_are_near_duplicate(this_text, other_text, min_len=60):
-            return False
-        if _word_overlap_ratio(this_text, other_text, min_len=60) > 0.7:
-            return False
-    return True
+            issues.append("doosri zaban (ur/sd) ke translation se near-exact duplicate hai")
+        else:
+            ratio = _word_overlap_ratio(this_text, other_text, min_len=60)
+            if ratio > 0.85:
+                issues.append(f"doosri zaban (ur/sd) ke translation se word-overlap {ratio:.2f} (>0.85)")
+    return issues
+
+
+def _translation_is_sane(data, code=None, orig_preamble=None, other_lang_data=None):
+    return not _translation_sanity_issues(data, code, orig_preamble, other_lang_data)
 
 
 def get_or_generate_translations(slug, day_num, title, preamble, sections):
@@ -2092,13 +2092,14 @@ def get_or_generate_translations(slug, day_num, title, preamble, sections):
                 pass  # cache file kharab, neeche dobara generate karte hain
 
         last_err = None
-        for attempt in range(1, 4):  # degenerate output aaye to 3 dafa retry
+        for attempt in range(1, 6):  # degenerate output aaye to 5 dafa retry
             try:
                 prompt = build_translation_prompt(lang_label, title, preamble, sections, other_lang_label)
                 raw = ai_generate(prompt)
                 data = _parse_translation_json(raw)
-                if not _translation_is_sane(data, code, preamble, translations.get(other_code)):
-                    raise ValueError("AI ne repetitive/galat-script/duplicate-paragraph output diya")
+                issues = _translation_sanity_issues(data, code, preamble, translations.get(other_code))
+                if issues:
+                    raise ValueError("AI output reject: " + "; ".join(issues))
                 translations[code] = data
                 with open(cache_path, "w", encoding="utf-8") as f:
                     json.dump(data, f, ensure_ascii=False, indent=2)
@@ -2926,18 +2927,23 @@ def heal_degenerate_translations(posts):
         if not course:
             continue
         for lesson in lessons:
-            translations = lesson.get("translations")
-            if not translations:
-                continue
+            translations = lesson.get("translations") or {}
+            missing_codes = set(TRANSLATION_LANGS) - set(translations)
             bad_codes = set()
             for c, d in translations.items():
                 other_code = next((oc for oc in translations if oc != c), None)
                 other_data = translations.get(other_code) if other_code else None
                 if not _translation_is_sane(d, c, lesson.get("preamble", ""), other_data):
                     bad_codes.add(c)
-            if not bad_codes:
+            # missing_codes = translation kabhi bani hi nahi (us din generation
+            # fail ho gaya tha) — bad_codes = translation bani lekin
+            # corrupt/duplicate nikli. Dono cases mein regenerate karna hai.
+            if not missing_codes and not bad_codes:
                 continue
-            print(f"[{slug}] Day {lesson['day']} mein degenerate/duplicate translation mili ({', '.join(sorted(bad_codes))}), heal ho raha hai...")
+            if bad_codes:
+                print(f"[{slug}] Day {lesson['day']} mein degenerate/duplicate translation mili ({', '.join(sorted(bad_codes))}), heal ho raha hai...")
+            if missing_codes:
+                print(f"[{slug}] Day {lesson['day']} mein translation missing hai ({', '.join(sorted(missing_codes))}), generate ho raha hai...")
             padded = f"{lesson['day']:03d}"
             for code in bad_codes:
                 cache_path = os.path.join(LESSONS_DIR, slug, f"day-{padded}.{code}.json")
@@ -2952,10 +2958,11 @@ def heal_degenerate_translations(posts):
             )
             translations.update(fresh)
             lesson["translations"] = translations
-            # "ur" heal hui ho to video ka cached voiceover bhi purani/fallback
-            # awaaz mein ho sakta hai — usay hata do taake sahi Urdu awaaz
-            # (NARRATION_VOICE_UR) ke sath dobara ban jaye.
-            if "ur" in bad_codes:
+            # "ur" (missing ya bad, dono cases) heal/generate hui ho to video
+            # ka cached voiceover bhi purani/fallback awaaz mein ho sakta hai
+            # — usay hata do taake sahi Urdu awaaz (NARRATION_VOICE_UR) ke
+            # sath dobara ban jaye.
+            if "ur" in bad_codes or "ur" in missing_codes:
                 _purge_lesson_video_cache(slug, lesson["day"])
             changed = True
     return changed
