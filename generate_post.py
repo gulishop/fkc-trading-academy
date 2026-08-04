@@ -1032,6 +1032,7 @@ def generate_lesson_narration_video(slug, course, lesson, image_source_path):
     txt_path = os.path.join(work_dir, f"day-{padded}.narration.txt")
     mp3_path = os.path.join(work_dir, f"day-{padded}.mp3")
     mp4_path = os.path.join(work_dir, f"day-{padded}.mp4")
+    srt_path = os.path.join(work_dir, f"day-{padded}.srt")
 
     with open(txt_path, "w", encoding="utf-8") as f:
         f.write(script_text)
@@ -1043,13 +1044,20 @@ def generate_lesson_narration_video(slug, course, lesson, image_source_path):
         print(f"[{slug}] Day {day_num} video skip: Urdu TTS ({voice}) fail.", file=sys.stderr)
         return
 
-    # Sirf simple "voice-over + static slide" video banao — Ken Burns
-    # zoom/animated captions wala jugaad ab use nahi hota, sirf slide +
-    # awaaz, jaisa user ne chaha.
+    # Pehle Ken Burns zoom + burned-in animated captions wala video banane
+    # ki koshish karo (zinda/animated explainer jaisa lagta hai). Agar
+    # (kisi wajah se) ye fail ho jaye, tab hi plain static slide + awaaz
+    # wale fallback par jao — taake video bilkul hi na banne se behtar,
+    # kam se kam voice-over wala static slide to mile.
     made = False
-    if _run_ffmpeg_image_audio(image_source_path, mp3_path, mp4_path):
+    duration = _get_audio_duration(mp3_path)
+    has_captions = bool(duration) and _build_caption_srt(script_text, duration, srt_path)
+    if _run_ffmpeg_kenburns_captions(image_source_path, mp3_path, srt_path if has_captions else None, mp4_path):
         made = True
-        print(f"[{slug}] Day {day_num} AI video explanation ban gayi (voice-over + static slide).")
+        print(f"[{slug}] Day {day_num} AI video explanation ban gayi (Ken Burns zoom + captions).")
+    elif _run_ffmpeg_image_audio(image_source_path, mp3_path, mp4_path):
+        made = True
+        print(f"[{slug}] Day {day_num} AI video explanation ban gayi (fallback: voice-over + static slide, animation fail ho gayi thi).")
 
     if not made:
         print(f"[{slug}] Day {day_num} video skip: ffmpeg dono attempts fail.", file=sys.stderr)
@@ -2106,7 +2114,7 @@ def get_or_generate_translations(slug, day_num, title, preamble, sections):
                 print(f"[{slug}] Day {day_num} {lang_label} attempt {attempt} fail: {e}", file=sys.stderr)
             time.sleep(3)
         if last_err is not None:
-            print(f"[{slug}] Day {day_num} {lang_label} translation 3 attempts ke baad bhi fail, skip: {last_err}", file=sys.stderr)
+            print(f"[{slug}] Day {day_num} {lang_label} translation 5 attempts ke baad bhi fail, skip: {last_err}", file=sys.stderr)
     return translations
 
 
