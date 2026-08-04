@@ -1891,6 +1891,45 @@
         ]
       ],
       "answer_key": "psx-100, kse-30, indices, market summary"
+    },
+    {
+      "day": 2,
+      "id": "day-002",
+      "date": "2026-08-04",
+      "title": "Day 2 — Trading Account Kholo: Broker Kaise Choose Karein?",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Trading account kholne se pehle sahi broker ka chunao zaroori hai. Broker aapka PSX ka darwaza hota hai—isliye fees, services, aur reliability check karna zaroori hai. Aapko discount broker (kam fees) ya full-service broker (extra guidance) mein se kya chahiye? Ye decide karein."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Fees Compare Karein",
+          "Broker A Rs. 20 per trade le raha hai, Broker B Rs. 50 le raha hai. Agar aap 10 trades/month karte hain, to Broker A Rs. 200 bachaega.\n2."
+        ],
+        [
+          "Platform Check Karein",
+          "Kya broker ka app smooth hai? Real-time data aur charts milte hain?\n3."
+        ],
+        [
+          "Customer Support",
+          "Agar trade lagate waqt problem aaye, to phone/email support kitna responsive hai?"
+        ],
+        [
+          "Practice",
+          "Apne 2-3 brokers ke websites par visit karke in details ko note karein:\n- Account opening fees\n- Per-trade charges\n- Minimum balance requirement\n- Trading platform (web/mobile app)"
+        ],
+        [
+          "Mini Project",
+          "Ek simple comparison table banaein (Excel ya notebook mein) jismein 3 brokers ke fees, features, aur ratings ko compare karein. Example:\n\n| Broker  | Account Fee | Per Trade | Min Balance | Platform Rating |\n|---------|------------|-----------|-------------|-----------------|\n| Broker A | Rs. 500    | Rs. 20    | Rs. 10,000  | ⭐⭐⭐⭐ |\n| Broker B | Rs. 0      | Rs. 50    | Rs. 5,000   | ⭐⭐⭐ |"
+        ]
+      ],
+      "answer_key": "broker a: rs. 500, rs. 20, rs. 10, 000, ⭐⭐⭐⭐; broker b: rs. 0, rs. 50, rs. 5, 000, ⭐⭐⭐",
+      "translations": {}
     }
   ],
   "tiktok-growth": [
