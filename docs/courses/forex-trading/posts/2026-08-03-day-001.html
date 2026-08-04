@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T08:29:11.711139";
+  var FKC_BUILD = "2026-08-04T08:42:28.254774";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,7 @@ transition:width .4s ease;}
     <p class="muted">💹 Forex Trading · Day 01</p>
     <h1>Day 1 — Forex Market Kya Hai? Aur Kaise Kaam Karta Hai?</h1>
     <div class="card">
+      
       <h3>Concept</h3><p>Forex (Foreign Exchange) market duniya ka sabse bara financial market hai jahan currencies ka exchange hota hai. Yeh 24/5 chalta hai (Monday se Friday, 24 ghante), kyunki har country ke markets alag-alag time zones mein khulte hain. Is market ka main purpose international trade aur investments ko facilitate karna hai. Yahan traders profit kamane ke liye currencies ki price movements par bet lagate hain.</p><h3>Example</h3><p>Imagine aap India se USA travel karne ja rahe hain. Aapko $1000 chahiye. Forex market mein aap INR se USD exchange karenge. Agar 1 USD = 83 INR hai, toh aapko 83,000 INR dena hoga. Agar aapne 10,000 INR se USD liya aur next day 1 USD = 84 INR ho gaya, toh aapka profit 10,000 INR ka ho gaya (1000 USD * 1 INR ka change).</p><h3>Practice</h3><p>Apne mobile ya laptop se &quot;USD to INR exchange rate&quot; search karein. Dekhein aaj ka rate kya hai. Ab imagine kijiye aap 1000 USD khareed rahe hain. 1 week baad agar rate badh kar 85 INR ho jata hai, toh aapko kitna profit hoga?</p><h3>Mini Project</h3><p>Ek simple chart banaen jismein aap 3 currencies (e.g., USD, EUR, GBP) ke rates ko 5 dinon ke liye track karen. Har din ka rate note karen aur dekhein ki kya koi trend nazar aata hai.</p>
       <p><a class="btn alt" href="https://one.exnessonelink.com/a/buhyli14un" target="_blank" rel="noopener sponsored">💹 Exness Par Free Account Banayein</a></p>
       <div>
@@ -225,9 +226,31 @@ transition:width .4s ease;}
       var txt = document.getElementById("fkc-progress-text");
       if(fill) fill.style.width = pct + "%";
       if(txt) txt.textContent = done + "/" + total + " lessons complete";
+
+      // Certificate ab lesson-count par nahi, TIME par unlock hota hai:
+      // jis din student pehli baar is course ka page kholta hai, uski
+      // date "fkc_start" mein save ho jati hai; usse 60 din (~2 months)
+      // baad certificate button apne aap dikh jata hai — chahe naye
+      // lessons roz aate rehte hain, course kabhi "khatam" nahi hota.
+      var CERT_UNLOCK_DAYS = 60;
+      var starts = {};
+      try{ starts = JSON.parse(localStorage.getItem("fkc_start")||"{}"); }catch(e){}
+      if(!starts[slug]){
+        starts[slug] = new Date().toISOString();
+        localStorage.setItem("fkc_start", JSON.stringify(starts));
+      }
+      var startDate = new Date(starts[slug]);
+      var daysSinceStart = (Date.now() - startDate.getTime()) / 86400000;
+      var daysLeft = Math.max(0, Math.ceil(CERT_UNLOCK_DAYS - daysSinceStart));
+
       var certBtn = document.getElementById("fkc-cert-btn");
-      if(certBtn && total > 0 && done >= total){
-        certBtn.style.display = "inline-flex";
+      if(certBtn){
+        if(daysSinceStart >= CERT_UNLOCK_DAYS){
+          certBtn.style.display = "inline-flex";
+        } else if(txt){
+          txt.textContent = done + "/" + total + " lessons complete — certificate " +
+            daysLeft + " din mein unlock hoga";
+        }
       }
     }
   });

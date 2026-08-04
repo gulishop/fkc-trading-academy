@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T08:29:11.711139";
+  var FKC_BUILD = "2026-08-04T08:42:28.254774";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,7 @@ transition:width .4s ease;}
     <p class="muted">💹 Forex Trading · Day 02</p>
     <h1>Day 2</h1>
     <div class="card">
+      
       <p>**Day 2 — Currency Pairs, Pips aur Lot Size: Trading Ki Duniya Ki &quot;Mili-Metri&quot;**</p><h3>Concept</h3><p>Forex trading mein har trade ek *currency pair* (do currencies ka combination) par hoti hai, jaise EUR/USD ya USD/JPY. *Pip* (Percentage in Point) ek currency pair ki smallest price movement hoti hai—jaise EUR/USD mein 0.0001 ka change. *Lot size* batata hai kitni units trade ho rahi hain (Standard Lot = 100,000 units, Mini Lot = 10,000, Micro Lot = 1,000). In teen cheezon ko samajhna zaroori hai taake aapka profit/loss calculate ho sake.</p><h3>Example</h3><p>Agar aap **EUR/USD** par trade kar rahe hain aur price 1.1000 se 1.1005 tak jaati hai, to aapka *pip gain* hai (1.1005 – 1.1000 = 0.0005 = **5 pips**). Agar aap **1 Mini Lot (10,000 units)** trade kar rahe hain, to har pip ka value **$1** hota hai (10,000 × 0.0001). Isliye 5 pips × $1 = **$5 profit**.</p><h3>Practice</h3><p>Apne MetaTrader par **GBP/JPY** pair select karein. Chart par dekhein ki current price kya hai, aur agar aap **1 Micro Lot (1,000 units)** buy karte hain, to har pip ka value kitna hoga? (Hint: GBP/JPY mein pip = 0.01, lekin value calculate karne ke liye currency ke hisaab se sochna hoga.)</p><h3>Mini Project</h3><p>Ek Excel sheet banayein jismein aap **3 different currency pairs** (jaise EUR/USD, USD/JPY, GBP/USD) ke liye **1 Standard Lot, 1 Mini Lot, aur 1 Micro Lot** ka har pip ka value calculate karein. (Example: EUR/USD ka 1 pip = $10 (Standard Lot), $1 (Mini Lot), $0.10 (Micro Lot)).</p>
       <p><a class="btn alt" href="https://one.exnessonelink.com/a/buhyli14un" target="_blank" rel="noopener sponsored">💹 Exness Par Free Account Banayein</a></p>
       <div>
@@ -225,9 +226,31 @@ transition:width .4s ease;}
       var txt = document.getElementById("fkc-progress-text");
       if(fill) fill.style.width = pct + "%";
       if(txt) txt.textContent = done + "/" + total + " lessons complete";
+
+      // Certificate ab lesson-count par nahi, TIME par unlock hota hai:
+      // jis din student pehli baar is course ka page kholta hai, uski
+      // date "fkc_start" mein save ho jati hai; usse 60 din (~2 months)
+      // baad certificate button apne aap dikh jata hai — chahe naye
+      // lessons roz aate rehte hain, course kabhi "khatam" nahi hota.
+      var CERT_UNLOCK_DAYS = 60;
+      var starts = {};
+      try{ starts = JSON.parse(localStorage.getItem("fkc_start")||"{}"); }catch(e){}
+      if(!starts[slug]){
+        starts[slug] = new Date().toISOString();
+        localStorage.setItem("fkc_start", JSON.stringify(starts));
+      }
+      var startDate = new Date(starts[slug]);
+      var daysSinceStart = (Date.now() - startDate.getTime()) / 86400000;
+      var daysLeft = Math.max(0, Math.ceil(CERT_UNLOCK_DAYS - daysSinceStart));
+
       var certBtn = document.getElementById("fkc-cert-btn");
-      if(certBtn && total > 0 && done >= total){
-        certBtn.style.display = "inline-flex";
+      if(certBtn){
+        if(daysSinceStart >= CERT_UNLOCK_DAYS){
+          certBtn.style.display = "inline-flex";
+        } else if(txt){
+          txt.textContent = done + "/" + total + " lessons complete — certificate " +
+            daysLeft + " din mein unlock hoga";
+        }
       }
     }
   });

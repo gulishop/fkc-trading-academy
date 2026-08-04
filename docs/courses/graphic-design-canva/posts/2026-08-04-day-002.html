@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T08:29:11.711139";
+  var FKC_BUILD = "2026-08-04T08:42:28.254774";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,7 @@ transition:width .4s ease;}
     <p class="muted">🎨 Graphic Design (Canva) · Day 02</p>
     <h1>Day 2 — Smart Typography: Fonts aur Unka Magic</h1>
     <div class="card">
+      
       <h3>Concept</h3><p>Aaj hum seekhenge ke kaise sahi fonts ka combination use karke design ko professional aur engaging banaya ja sakta hai. Har font ki apni personality hoti hai—kuch formal, kuch playful, kuch bold. Inhe samajh kar aur sahi tarike se pair karke apne designs ko next level par le ja sakte hain.</p><h3>Example</h3><p>Ek Instagram post ke liye fonts choose karte waqt:<br>1. **Heading ke liye** — Bold aur modern font jaise *Poppins Bold* (formal aur clean look ke liye).<br>2. **Subheading ke liye** — Light aur friendly font jaise *Quicksand* (easy to read aur friendly vibe).<br>3. **Body text ke liye** — Simple aur readable font jaise *Open Sans* (sabse zyada user-friendly).</p><h3>Practice</h3><p>Canva mein ek naya design kholo (jaise Instagram post ya poster). 3 alag-alag fonts choose karke dekho ke kaun sa combination best lagta hai. Har font ka use ek alag purpose ke liye karo (heading, subheading, body).</p><h3>Mini Project</h3><p>Ek 3-slide presentation banayein:<br>1.</p><h3>Slide 1</h3><p>Ek heading (bold font) + ek subheading (light font) + ek body text (simple font).<br>2.</p><h3>Slide 2</h3><p>Same content lekin alag fonts use karke (jaise heading ke liye *Montserrat*, subheading ke liye *Pacifico*).<br>3.</p><h3>Slide 3</h3><p>Apne favorite combination ko explain karte hue ek short note add karein (kyun yeh combination best hai).</p>
       
       <div>
@@ -225,9 +226,31 @@ transition:width .4s ease;}
       var txt = document.getElementById("fkc-progress-text");
       if(fill) fill.style.width = pct + "%";
       if(txt) txt.textContent = done + "/" + total + " lessons complete";
+
+      // Certificate ab lesson-count par nahi, TIME par unlock hota hai:
+      // jis din student pehli baar is course ka page kholta hai, uski
+      // date "fkc_start" mein save ho jati hai; usse 60 din (~2 months)
+      // baad certificate button apne aap dikh jata hai — chahe naye
+      // lessons roz aate rehte hain, course kabhi "khatam" nahi hota.
+      var CERT_UNLOCK_DAYS = 60;
+      var starts = {};
+      try{ starts = JSON.parse(localStorage.getItem("fkc_start")||"{}"); }catch(e){}
+      if(!starts[slug]){
+        starts[slug] = new Date().toISOString();
+        localStorage.setItem("fkc_start", JSON.stringify(starts));
+      }
+      var startDate = new Date(starts[slug]);
+      var daysSinceStart = (Date.now() - startDate.getTime()) / 86400000;
+      var daysLeft = Math.max(0, Math.ceil(CERT_UNLOCK_DAYS - daysSinceStart));
+
       var certBtn = document.getElementById("fkc-cert-btn");
-      if(certBtn && total > 0 && done >= total){
-        certBtn.style.display = "inline-flex";
+      if(certBtn){
+        if(daysSinceStart >= CERT_UNLOCK_DAYS){
+          certBtn.style.display = "inline-flex";
+        } else if(txt){
+          txt.textContent = done + "/" + total + " lessons complete — certificate " +
+            daysLeft + " din mein unlock hoga";
+        }
       }
     }
   });

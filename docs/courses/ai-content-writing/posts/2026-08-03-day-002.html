@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T08:29:11.711139";
+  var FKC_BUILD = "2026-08-04T08:42:28.254774";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,7 @@ transition:width .4s ease;}
     <p class="muted">✍️ AI Content Writing &amp; Copywriting · Day 02</p>
     <h1>Day 2 — AI Se Blog Articles: Draft Se Publish Tak</h1>
     <div class="card">
+      
       <h3>Concept</h3><p>Aaj seekhoge ke AI se blog article kaise draft karein, usko human-like banayein, aur publish ke liye edit karein. AI se content generate karna aasan hai, lekin usko authentic, engaging aur SEO-friendly banana zaroori hai. Aaj hum AI-generated draft ko refine karne ke practical steps dekhenge.</p><h3>Example</h3><p>1.</p><h3>Prompt Design</h3><p>&quot;Write a 500-word blog post in simple Urdu/Hindi about &#x27;How to Start a Blog in 2024&#x27; for beginners. Include 3 subheadings, a hook, and a CTA.&quot;<br>2.</p><h3>AI Output</h3><p>AI dega ek basic draft. Ab usko edit karna hai:<br>   -</p><h3>Language</h3><p>Urdu/Hindi ka mix remove karke ek consistent style choose karo (e.g., pure Urdu).<br>   -</p><h3>Tone</h3><p>Friendly aur motivational rakho (e.g., &quot;Aap bhi blogging shuru kar sakte hain!&quot;).<br>   -</p><h3>SEO</h3><p>Keywords add karo (e.g., &quot;blogging kaise shuru karein,&quot; &quot;free blogging platforms&quot;).<br>   -</p><h3>Structure</h3><p>Paragraphs ko short karo, bullet points add karo.</p><h3>Practice</h3><p>AI se ek 300-word draft generate karo &quot;5 Gharelu Nuskay Hair Loss Rokein&quot; topic par. Us draft ko edit karke pure Urdu mein convert karo, 2 keywords add karo, aur ek engaging CTA likho.</p><h3>Mini Project</h3><p>Ek 500-word blog post draft karo (AI se generate karke ya khud likh kar), phir usko AI tools (jaise Grammarly, Hemingway) se check karo. Improve karke ek final version taiyar karo jo publish ke liye ready ho.</p>
       
       <div>
@@ -225,9 +226,31 @@ transition:width .4s ease;}
       var txt = document.getElementById("fkc-progress-text");
       if(fill) fill.style.width = pct + "%";
       if(txt) txt.textContent = done + "/" + total + " lessons complete";
+
+      // Certificate ab lesson-count par nahi, TIME par unlock hota hai:
+      // jis din student pehli baar is course ka page kholta hai, uski
+      // date "fkc_start" mein save ho jati hai; usse 60 din (~2 months)
+      // baad certificate button apne aap dikh jata hai — chahe naye
+      // lessons roz aate rehte hain, course kabhi "khatam" nahi hota.
+      var CERT_UNLOCK_DAYS = 60;
+      var starts = {};
+      try{ starts = JSON.parse(localStorage.getItem("fkc_start")||"{}"); }catch(e){}
+      if(!starts[slug]){
+        starts[slug] = new Date().toISOString();
+        localStorage.setItem("fkc_start", JSON.stringify(starts));
+      }
+      var startDate = new Date(starts[slug]);
+      var daysSinceStart = (Date.now() - startDate.getTime()) / 86400000;
+      var daysLeft = Math.max(0, Math.ceil(CERT_UNLOCK_DAYS - daysSinceStart));
+
       var certBtn = document.getElementById("fkc-cert-btn");
-      if(certBtn && total > 0 && done >= total){
-        certBtn.style.display = "inline-flex";
+      if(certBtn){
+        if(daysSinceStart >= CERT_UNLOCK_DAYS){
+          certBtn.style.display = "inline-flex";
+        } else if(txt){
+          txt.textContent = done + "/" + total + " lessons complete — certificate " +
+            daysLeft + " din mein unlock hoga";
+        }
       }
     }
   });

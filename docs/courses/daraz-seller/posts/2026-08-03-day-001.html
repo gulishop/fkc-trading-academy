@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T08:29:11.711139";
+  var FKC_BUILD = "2026-08-04T08:42:28.254774";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,7 @@ transition:width .4s ease;}
     <p class="muted">🛒 Daraz Seller · Day 01</p>
     <h1>Day 1 — Daraz Seller Center Account Banana</h1>
     <div class="card">
+      
       <h3>Concept</h3><p>Daraz Seller Center he Daraz par apna online store banane ka pehla qadam hai. Yahan par aap apne products list kar sakte hain, orders manage kar sakte hain, aur apne business ko grow kar sakte hain. Pehle aapko ek verified seller account banana hota hai, jismein aapki business details, bank account, aur tax information (agar lagti hai) share karni hoti hai.</p><h3>Example</h3><p>1. Daraz Seller Center ki website ya mobile app kholiye.<br>2. &quot;Register as Seller&quot; par click karein.<br>3. Apna email ya phone number enter karein, aur verification code enter karke verify karein.<br>4. Apni business type (individual ya company) select karein, aur apna CNIC ya NTN number (agar company hai) upload karein.<br>5. Bank details (account number, IBAN) aur tax information (agar applicable hai) fill karein.<br>6. Final submission ke baad, Daraz ki team aapki details verify karegi (1-3 din lag sakte hain).</p><h3>Practice</h3><p>Apna Daraz Seller Center account banane ka process start karein. Apni sari required documents (CNIC, bank details, etc.) ready rakhein.</p><h3>Mini Project</h3><p>Ek simple document taiyar karein jismein aapke business ki details (business name, address, contact number) aur bank details likh dein. Isse next step mein help milegi.</p>
       
       <div>
@@ -225,9 +226,31 @@ transition:width .4s ease;}
       var txt = document.getElementById("fkc-progress-text");
       if(fill) fill.style.width = pct + "%";
       if(txt) txt.textContent = done + "/" + total + " lessons complete";
+
+      // Certificate ab lesson-count par nahi, TIME par unlock hota hai:
+      // jis din student pehli baar is course ka page kholta hai, uski
+      // date "fkc_start" mein save ho jati hai; usse 60 din (~2 months)
+      // baad certificate button apne aap dikh jata hai — chahe naye
+      // lessons roz aate rehte hain, course kabhi "khatam" nahi hota.
+      var CERT_UNLOCK_DAYS = 60;
+      var starts = {};
+      try{ starts = JSON.parse(localStorage.getItem("fkc_start")||"{}"); }catch(e){}
+      if(!starts[slug]){
+        starts[slug] = new Date().toISOString();
+        localStorage.setItem("fkc_start", JSON.stringify(starts));
+      }
+      var startDate = new Date(starts[slug]);
+      var daysSinceStart = (Date.now() - startDate.getTime()) / 86400000;
+      var daysLeft = Math.max(0, Math.ceil(CERT_UNLOCK_DAYS - daysSinceStart));
+
       var certBtn = document.getElementById("fkc-cert-btn");
-      if(certBtn && total > 0 && done >= total){
-        certBtn.style.display = "inline-flex";
+      if(certBtn){
+        if(daysSinceStart >= CERT_UNLOCK_DAYS){
+          certBtn.style.display = "inline-flex";
+        } else if(txt){
+          txt.textContent = done + "/" + total + " lessons complete — certificate " +
+            daysLeft + " din mein unlock hoga";
+        }
       }
     }
   });

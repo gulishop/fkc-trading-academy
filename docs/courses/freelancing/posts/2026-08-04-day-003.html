@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T08:29:11.711139";
+  var FKC_BUILD = "2026-08-04T08:42:28.254774";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,7 @@ transition:width .4s ease;}
     <p class="muted">💼 Freelancing · Day 03</p>
     <h1>Day 3 — **Client Communication: First Message Se Hi Impress Kaise Karein**</h1>
     <div class="card">
+      
       <h3>Concept</h3><p>Freelancing mein pehla impression aapki communication se hi banta hai. Client ko yeh feel hona chahiye ke aap professional, responsive aur solution-oriented hain. Pehla message sirf &quot;Hi&quot; ya &quot;I can do this&quot; se kaam nahi chalta—usmein specificity, confidence aur call-to-action hona zaroori hai.</p><h3>Example</h3><p>Ek client ne Fiverr par &quot;Logo design&quot; ka project post kiya hai. Aapki response yeh na ho:<br>❌ *&quot;Hi, I can make logo for you. Pls msg me.&quot;*</p><p>Balke yeh ho:<br>✅ *&quot;Hi [Client Name],<br>I noticed your project for a modern logo for your [business type]. I’ve designed 50+ logos in this niche, including for [similar client/project]. Here’s my approach:<br>1. We’ll discuss your brand colors &amp; style in a quick call<br>2. I’ll send 3 concepts within 24 hours<br>3. Unlimited revisions till you’re 100% satisfied<br>Can we schedule a 10-min call today at 3 PM? Looking forward to your reply.<br>Best,<br>[Your Name]&quot;*</p><h3>Practice</h3><p>Apne Fiverr/Upwork inbox se kisi bhi 1 pending proposal ya message ka draft likhein jo aapne abhi tak send kiya hai. Use edit karke pehle paragraph ko 3x zyada effective banayein (specificity + call-to-action add karke).</p><h3>Mini Project</h3><p>Ek dummy client ka message banaayein (jaise &quot;I need a WordPress website for my restaurant&quot;) aur uske liye 3 different first-message drafts likhein—ek for Fiverr, ek for Upwork, aur ek for cold email.</p>
       
       <div>
@@ -225,9 +226,31 @@ transition:width .4s ease;}
       var txt = document.getElementById("fkc-progress-text");
       if(fill) fill.style.width = pct + "%";
       if(txt) txt.textContent = done + "/" + total + " lessons complete";
+
+      // Certificate ab lesson-count par nahi, TIME par unlock hota hai:
+      // jis din student pehli baar is course ka page kholta hai, uski
+      // date "fkc_start" mein save ho jati hai; usse 60 din (~2 months)
+      // baad certificate button apne aap dikh jata hai — chahe naye
+      // lessons roz aate rehte hain, course kabhi "khatam" nahi hota.
+      var CERT_UNLOCK_DAYS = 60;
+      var starts = {};
+      try{ starts = JSON.parse(localStorage.getItem("fkc_start")||"{}"); }catch(e){}
+      if(!starts[slug]){
+        starts[slug] = new Date().toISOString();
+        localStorage.setItem("fkc_start", JSON.stringify(starts));
+      }
+      var startDate = new Date(starts[slug]);
+      var daysSinceStart = (Date.now() - startDate.getTime()) / 86400000;
+      var daysLeft = Math.max(0, Math.ceil(CERT_UNLOCK_DAYS - daysSinceStart));
+
       var certBtn = document.getElementById("fkc-cert-btn");
-      if(certBtn && total > 0 && done >= total){
-        certBtn.style.display = "inline-flex";
+      if(certBtn){
+        if(daysSinceStart >= CERT_UNLOCK_DAYS){
+          certBtn.style.display = "inline-flex";
+        } else if(txt){
+          txt.textContent = done + "/" + total + " lessons complete — certificate " +
+            daysLeft + " din mein unlock hoga";
+        }
       }
     }
   });

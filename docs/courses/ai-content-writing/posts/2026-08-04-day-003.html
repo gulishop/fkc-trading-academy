@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T08:29:11.711139";
+  var FKC_BUILD = "2026-08-04T08:42:28.254774";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,7 @@ transition:width .4s ease;}
     <p class="muted">✍️ AI Content Writing &amp; Copywriting · Day 03</p>
     <h1>Day 3 — Social Media Captions &amp; Ad Copy: Engagement Se Conversion Tak</h1>
     <div class="card">
+      
       <h3>Concept</h3><p>Social captions aur ad copy do alag cheez hain lekin inka maqsad ek hi hai: audience ko attract karke unse action lena. Caption wo text hai jo post ke saath jata hai (engagement ke liye), jabke ad copy wo text hai jo direct conversion ke liye design kiya gaya hai (clicks, sales, sign-ups). In dono mein hook, benefit, aur CTA ka combination hota hai—lekin ad copy mein urgency aur social proof zyada hota hai.</p><h3>Example</h3><p>Ek Instagram post ke liye caption:<br>*&quot;Ghar baithe paise kamane ka sabse aasan tareeka? 💰<br>Humara FREE ‘Content Writing Masterclass’ aaj hi join karein aur 10,000+ students ke saath seekhein! 👇<br>🔗 Link in bio&quot;*</p><p>Ad copy (Facebook/Google Ads ke liye):<br>*&quot;🚀 30 Dino Mein Freelance Content Writer Ban Jaeyein!<br>✅ 10+ Real Clients Se Kaam<br>✅ Har Mahine ₹50,000+ Kamayein<br>✅ 24/7 Support<br>👉 Abhi Apply Karen—Seats Limited Hain!&quot;*</p><h3>Practice</h3><p>Apne favourite brand ka ek Instagram post ya ad copy likhein. Use 3-4 lines mein likhein, jismein hook (attention grabber), benefit (kyun follow/click karein), aur CTA (action) ho.</p><h3>Mini Project</h3><p>Ek 3-post series banayein (ek caption + ad copy) ek hypothetical product ke liye (jaise ek online course, fitness supplement, ya local service). Har post ka alag angle ho—ek educational, ek emotional, aur ek discount-focused.</p>
       
       <div>
@@ -225,9 +226,31 @@ transition:width .4s ease;}
       var txt = document.getElementById("fkc-progress-text");
       if(fill) fill.style.width = pct + "%";
       if(txt) txt.textContent = done + "/" + total + " lessons complete";
+
+      // Certificate ab lesson-count par nahi, TIME par unlock hota hai:
+      // jis din student pehli baar is course ka page kholta hai, uski
+      // date "fkc_start" mein save ho jati hai; usse 60 din (~2 months)
+      // baad certificate button apne aap dikh jata hai — chahe naye
+      // lessons roz aate rehte hain, course kabhi "khatam" nahi hota.
+      var CERT_UNLOCK_DAYS = 60;
+      var starts = {};
+      try{ starts = JSON.parse(localStorage.getItem("fkc_start")||"{}"); }catch(e){}
+      if(!starts[slug]){
+        starts[slug] = new Date().toISOString();
+        localStorage.setItem("fkc_start", JSON.stringify(starts));
+      }
+      var startDate = new Date(starts[slug]);
+      var daysSinceStart = (Date.now() - startDate.getTime()) / 86400000;
+      var daysLeft = Math.max(0, Math.ceil(CERT_UNLOCK_DAYS - daysSinceStart));
+
       var certBtn = document.getElementById("fkc-cert-btn");
-      if(certBtn && total > 0 && done >= total){
-        certBtn.style.display = "inline-flex";
+      if(certBtn){
+        if(daysSinceStart >= CERT_UNLOCK_DAYS){
+          certBtn.style.display = "inline-flex";
+        } else if(txt){
+          txt.textContent = done + "/" + total + " lessons complete — certificate " +
+            daysLeft + " din mein unlock hoga";
+        }
       }
     }
   });

@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T08:29:11.711139";
+  var FKC_BUILD = "2026-08-04T08:42:28.254774";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,7 @@ transition:width .4s ease;}
     <p class="muted">🧩 No-Code App &amp; Website Building · Day 02</p>
     <h1>Day 2 — Website Builders: Framer, Webflow aur Wix se Professional Website Banana</h1>
     <div class="card">
+      
       <h3>Concept</h3><p>Website builders jaise Framer, Webflow aur Wix no-code tools hain jo drag-and-drop interface ke zariye professional websites banane mein madad karte hain. Inme templates, animations aur hosting built-in hote hain, isliye coding ki zarurat nahi hoti. Ye platforms beginners se lekar intermediate users ke liye perfect hain.</p><h3>Example</h3><p>1.</p><h3>Wix</h3><p>Simple drag-and-drop se ek portfolio website banane ke liye:<br>   - Wix.com par jao aur &quot;Create a Site&quot; select karo.<br>   - Template choose karo (e.g., &quot;Portfolio &amp; CV&quot;).<br>   - Left panel se elements drag karke add karo (text, images, buttons).<br>   - &quot;Publish&quot; par click karo aur apni website ka link share karo.</p><p>2.</p><h3>Webflow</h3><p>Advanced designs ke liye:<br>   - Webflow.com par signup karo.<br>   - &quot;New Project&quot; &gt; &quot;Blank&quot; select karo.<br>   - Left panel se elements drag karke ek responsive navbar banayo.<br>   - Right panel se styles adjust karo (fonts, colors).<br>   - &quot;Publish&quot; par click karo.</p><h3>Practice</h3><p>Apne liye ek simple 3-page website banane ka try karo (Home, About, Contact). Kisi bhi platform (Wix/Webflow/Framer) ka use kar sakte ho. Minimum 5 elements (text, image, button) add karo.</p><h3>Mini Project</h3><p>Ek &quot;Restaurant Menu&quot; website banayo:<br>- Homepage par menu items ki list ho.<br>- About page par restaurant ki story ho.<br>- Contact page par location aur contact form ho.<br>- Sab pages ko navbar se link karo.<br>- Website ko mobile-friendly banao.</p>
       
       <div>
@@ -225,9 +226,31 @@ transition:width .4s ease;}
       var txt = document.getElementById("fkc-progress-text");
       if(fill) fill.style.width = pct + "%";
       if(txt) txt.textContent = done + "/" + total + " lessons complete";
+
+      // Certificate ab lesson-count par nahi, TIME par unlock hota hai:
+      // jis din student pehli baar is course ka page kholta hai, uski
+      // date "fkc_start" mein save ho jati hai; usse 60 din (~2 months)
+      // baad certificate button apne aap dikh jata hai — chahe naye
+      // lessons roz aate rehte hain, course kabhi "khatam" nahi hota.
+      var CERT_UNLOCK_DAYS = 60;
+      var starts = {};
+      try{ starts = JSON.parse(localStorage.getItem("fkc_start")||"{}"); }catch(e){}
+      if(!starts[slug]){
+        starts[slug] = new Date().toISOString();
+        localStorage.setItem("fkc_start", JSON.stringify(starts));
+      }
+      var startDate = new Date(starts[slug]);
+      var daysSinceStart = (Date.now() - startDate.getTime()) / 86400000;
+      var daysLeft = Math.max(0, Math.ceil(CERT_UNLOCK_DAYS - daysSinceStart));
+
       var certBtn = document.getElementById("fkc-cert-btn");
-      if(certBtn && total > 0 && done >= total){
-        certBtn.style.display = "inline-flex";
+      if(certBtn){
+        if(daysSinceStart >= CERT_UNLOCK_DAYS){
+          certBtn.style.display = "inline-flex";
+        } else if(txt){
+          txt.textContent = done + "/" + total + " lessons complete — certificate " +
+            daysLeft + " din mein unlock hoga";
+        }
       }
     }
   });

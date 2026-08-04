@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T08:29:11.711139";
+  var FKC_BUILD = "2026-08-04T08:42:28.254774";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,7 @@ transition:width .4s ease;}
     <p class="muted">👕 Print on Demand · Day 01</p>
     <h1>Day 1 — Print on Demand Kya Hai? Basics Se Shuru</h1>
     <div class="card">
+      
       <h3>Concept</h3><p>Print on Demand (POD) ek aisa business model hai jahan aap kisi product (T-shirt, mug, poster, etc.) ka design upload karte hain, aur jab koi customer order deta hai, tab hi wo product print hota hai aur deliver kiya jata hai. Aapko koi inventory rakhne ki zaroorat nahi hoti—sab kuch supplier handle karta hai. Yeh ek low-risk business hai kyunki aapko pehle se paise lagane ki zarurat nahi hoti.</p><h3>Example</h3><p>Imagine aap ek T-shirt design banate hain &quot;Dil Se Pakistan&quot; aur usko Printful par upload karte hain. Koi customer wo T-shirt order karta hai, to Printful usko print karta hai, pack karta hai, aur customer tak pohancha deta hai. Aapko sirf design aur marketing ka kaam hai—baaki sab supplier ka.</p><h3>Practice</h3><p>Apne mobile ya laptop se yeh check karo: [Printful](https://www.printful.com/) ya [Redbubble](https://www.redbubble.com/) ki website par jao aur dekhho ki kaunse products par designs upload kiye ja sakte hain.</p><h3>Mini Project</h3><p>Ek simple design banao (Canva ya phone ke drawing app se) jo aapko pasand ho—jaise &quot;Pakistan Zindabad&quot; ya &quot;Love Pakistan&quot;—aur usko ek POD platform par upload karne ka screenshot le lo (agar possible ho).</p>
       
       <div>
@@ -225,9 +226,31 @@ transition:width .4s ease;}
       var txt = document.getElementById("fkc-progress-text");
       if(fill) fill.style.width = pct + "%";
       if(txt) txt.textContent = done + "/" + total + " lessons complete";
+
+      // Certificate ab lesson-count par nahi, TIME par unlock hota hai:
+      // jis din student pehli baar is course ka page kholta hai, uski
+      // date "fkc_start" mein save ho jati hai; usse 60 din (~2 months)
+      // baad certificate button apne aap dikh jata hai — chahe naye
+      // lessons roz aate rehte hain, course kabhi "khatam" nahi hota.
+      var CERT_UNLOCK_DAYS = 60;
+      var starts = {};
+      try{ starts = JSON.parse(localStorage.getItem("fkc_start")||"{}"); }catch(e){}
+      if(!starts[slug]){
+        starts[slug] = new Date().toISOString();
+        localStorage.setItem("fkc_start", JSON.stringify(starts));
+      }
+      var startDate = new Date(starts[slug]);
+      var daysSinceStart = (Date.now() - startDate.getTime()) / 86400000;
+      var daysLeft = Math.max(0, Math.ceil(CERT_UNLOCK_DAYS - daysSinceStart));
+
       var certBtn = document.getElementById("fkc-cert-btn");
-      if(certBtn && total > 0 && done >= total){
-        certBtn.style.display = "inline-flex";
+      if(certBtn){
+        if(daysSinceStart >= CERT_UNLOCK_DAYS){
+          certBtn.style.display = "inline-flex";
+        } else if(txt){
+          txt.textContent = done + "/" + total + " lessons complete — certificate " +
+            daysLeft + " din mein unlock hoga";
+        }
       }
     }
   });

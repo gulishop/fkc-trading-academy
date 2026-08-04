@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T08:29:11.711139";
+  var FKC_BUILD = "2026-08-04T08:42:28.254774";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,7 @@ transition:width .4s ease;}
     <p class="muted">📦 Amazon FBA · Day 02</p>
     <h1>Day 2</h1>
     <div class="card">
+      
       <p>**Day 2 — Product Research: Demand, Competition aur Margin Kaise Check Karein**</p><h3>Concept</h3><p>Product research Amazon FBA ka sabse important step hai. Ismein hum 3 cheezon par focus karte hain:<br>1.</p><h3>Demand</h3><p>Kya log yeh product khareed rahe hain? (Search volume, BSR, trends)<br>2.</p><h3>Competition</h3><p>Kitne sellers hain? Kitne reviews hain? (Low-competition niches dhundhein)<br>3.</p><h3>Margin</h3><p>Profit kitna bachega? (Cost vs. Selling Price vs. Amazon fees)</p><h3>Example</h3><p>Maana aap &quot;Wireless Charging Pad&quot; bechna chahte hain. Aapko pata karna hai:<br>-</p><h3>Demand</h3><p>Amazon par &quot;Wireless Charging Pad&quot; search karne par 50,000+ monthly searches hain (Helium 10 ya Jungle Scout se check karein).<br>-</p><h3>Competition</h3><p>Top 10 listings mein 1,000+ reviews hain → High competition. Lekin niche product &quot;Wireless Charging Pad for Car&quot; mein 500+ searches aur 200+ reviews hain → Better opportunity.<br>-</p><h3>Margin</h3><p>Agar supplier se Rs. 1,000 mein milta hai, aur aap Rs. 2,500 mein bechte hain, toh Amazon fees (15%) + shipping = Rs. 2,000 cost → Rs. 500 profit per unit.</p><h3>Practice</h3><p>Apne laptop ya phone se **Helium 10** (free trial) ya **Jungle Scout** (Chrome extension) install karein. Koi ek product category chunein (e.g., kitchen accessories) aur 3-5 products ka **demand, competition, aur estimated margin** check karein.</p><h3>Mini Project</h3><p>Ek **Google Sheet** banayein jismein aap 5 products ke liye:<br>- Product Name<br>- Monthly Searches (Demand)<br>- Top 3 Sellers’ Reviews (Competition)<br>- Estimated Profit (Margin)<br>- Final Verdict (Buy/Don’t Buy)<br>Fill karein.</p>
       
       <div>
@@ -225,9 +226,31 @@ transition:width .4s ease;}
       var txt = document.getElementById("fkc-progress-text");
       if(fill) fill.style.width = pct + "%";
       if(txt) txt.textContent = done + "/" + total + " lessons complete";
+
+      // Certificate ab lesson-count par nahi, TIME par unlock hota hai:
+      // jis din student pehli baar is course ka page kholta hai, uski
+      // date "fkc_start" mein save ho jati hai; usse 60 din (~2 months)
+      // baad certificate button apne aap dikh jata hai — chahe naye
+      // lessons roz aate rehte hain, course kabhi "khatam" nahi hota.
+      var CERT_UNLOCK_DAYS = 60;
+      var starts = {};
+      try{ starts = JSON.parse(localStorage.getItem("fkc_start")||"{}"); }catch(e){}
+      if(!starts[slug]){
+        starts[slug] = new Date().toISOString();
+        localStorage.setItem("fkc_start", JSON.stringify(starts));
+      }
+      var startDate = new Date(starts[slug]);
+      var daysSinceStart = (Date.now() - startDate.getTime()) / 86400000;
+      var daysLeft = Math.max(0, Math.ceil(CERT_UNLOCK_DAYS - daysSinceStart));
+
       var certBtn = document.getElementById("fkc-cert-btn");
-      if(certBtn && total > 0 && done >= total){
-        certBtn.style.display = "inline-flex";
+      if(certBtn){
+        if(daysSinceStart >= CERT_UNLOCK_DAYS){
+          certBtn.style.display = "inline-flex";
+        } else if(txt){
+          txt.textContent = done + "/" + total + " lessons complete — certificate " +
+            daysLeft + " din mein unlock hoga";
+        }
       }
     }
   });

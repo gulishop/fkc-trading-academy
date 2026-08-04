@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T08:29:11.711139";
+  var FKC_BUILD = "2026-08-04T08:42:28.254774";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,7 @@ transition:width .4s ease;}
     <p class="muted">🎬 YouTube Automation · Day 01</p>
     <h1>Day 1 — Niche Select Karna: Apna YouTube Channel Ka Foundation</h1>
     <div class="card">
+      
       <h3>Concept</h3><p>Niche select karna YouTube channel ka sabse pehla aur sabse important step hai. Niche matlab aapka channel ka topic ya subject jismein aap videos banayenge. Ek achha niche aapko consistent content ideas deta hai, audience attract karta hai, aur competition bhi manage karne mein help karta hai. Apna niche choose karte waqt apne interests, skills, aur market demand ko consider karna zaroori hai.</p><h3>Example</h3><p>Maana aapko fitness pasand hai. Ab aapko decide karna hai ki aap fitness ke kis specific area par focus karna chahte hain. Jaise:<br>- Gym beginners guide<br>- Home workout for women<br>- Weight loss diet plans<br>- Yoga for stress relief<br>Is tarah se niche select karne se aapko content ideas bhi easily mil jayenge aur audience bhi targeted rahegi.</p><h3>Practice</h3><p>Apne interests aur skills list karein. Fir 3-5 topics select karein jinpar aap videos bana sakte hain. Har topic ke liye 3-5 content ideas sochiye.</p><h3>Mini Project</h3><p>Ek simple Google search karein aur har topic ke liye competition check karein. Har topic ke liye YouTube search bar mein type karein aur dekhein ki kitne videos hain aur unke views kya hain. Isse aapko pata chalega ki aapka selected niche kitna competitive hai.</p>
       
       <div>
@@ -225,9 +226,31 @@ transition:width .4s ease;}
       var txt = document.getElementById("fkc-progress-text");
       if(fill) fill.style.width = pct + "%";
       if(txt) txt.textContent = done + "/" + total + " lessons complete";
+
+      // Certificate ab lesson-count par nahi, TIME par unlock hota hai:
+      // jis din student pehli baar is course ka page kholta hai, uski
+      // date "fkc_start" mein save ho jati hai; usse 60 din (~2 months)
+      // baad certificate button apne aap dikh jata hai — chahe naye
+      // lessons roz aate rehte hain, course kabhi "khatam" nahi hota.
+      var CERT_UNLOCK_DAYS = 60;
+      var starts = {};
+      try{ starts = JSON.parse(localStorage.getItem("fkc_start")||"{}"); }catch(e){}
+      if(!starts[slug]){
+        starts[slug] = new Date().toISOString();
+        localStorage.setItem("fkc_start", JSON.stringify(starts));
+      }
+      var startDate = new Date(starts[slug]);
+      var daysSinceStart = (Date.now() - startDate.getTime()) / 86400000;
+      var daysLeft = Math.max(0, Math.ceil(CERT_UNLOCK_DAYS - daysSinceStart));
+
       var certBtn = document.getElementById("fkc-cert-btn");
-      if(certBtn && total > 0 && done >= total){
-        certBtn.style.display = "inline-flex";
+      if(certBtn){
+        if(daysSinceStart >= CERT_UNLOCK_DAYS){
+          certBtn.style.display = "inline-flex";
+        } else if(txt){
+          txt.textContent = done + "/" + total + " lessons complete — certificate " +
+            daysLeft + " din mein unlock hoga";
+        }
       }
     }
   });

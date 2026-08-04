@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T08:29:11.711139";
+  var FKC_BUILD = "2026-08-04T08:42:28.254774";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,7 @@ transition:width .4s ease;}
     <p class="muted">📊 Excel &amp; Data Analysis · Day 01</p>
     <h1>Day 1 — Excel Interface aur Pehla Formula: `SUM`</h1>
     <div class="card">
+      
       <h3>Concept</h3><p>Aaj hum Excel ka basic interface samajhein ge aur pehla formula `SUM` use karna seekhein ge. Excel ka ribbon (top menu), formula bar, cells, aur sheets ka basic structure dekhein ge. `SUM` formula numbers ko add karne ka sabse easy tareeka hai—bas numbers select karo ya type karo aur result milega.</p><h3>Example</h3><p>1. Excel kholo, ek naya sheet banayein.<br>2. A1 mein `5`, B1 mein `10`, C1 mein `15` type karen.<br>3. D1 mein cursor rakhein, `=` type karen, phir `SUM(` likhein.<br>4. A1:C1 select karen (ya `A1,B1,C1` type karen), phir `)` close karen.<br>5. Enter press karen—D1 mein `30` aana chahiye.</p><h3>Practice</h3><p>Ek naya sheet banayein aur A1:A5 mein yeh numbers type karen: `20, 35, 10, 45, 50`. Phir B1 mein `SUM` formula use karke in sabka total nikalain.</p><h3>Mini Project</h3><p>Ek simple &quot;Monthly Expense Tracker&quot; banayein:<br>- A1:A7 mein yeh labels type karen: `Rent, Groceries, Transport, Bills, Entertainment, Savings, Total`<br>- B1:B6 mein yeh amounts type karen (apne hisaab se, e.g., `15000, 8000, 3000, 2000, 5000, 10000`)<br>- B7 mein `SUM(B1:B6)` formula use karke total expenses nikalain.</p>
       
       <div>
@@ -225,9 +226,31 @@ transition:width .4s ease;}
       var txt = document.getElementById("fkc-progress-text");
       if(fill) fill.style.width = pct + "%";
       if(txt) txt.textContent = done + "/" + total + " lessons complete";
+
+      // Certificate ab lesson-count par nahi, TIME par unlock hota hai:
+      // jis din student pehli baar is course ka page kholta hai, uski
+      // date "fkc_start" mein save ho jati hai; usse 60 din (~2 months)
+      // baad certificate button apne aap dikh jata hai — chahe naye
+      // lessons roz aate rehte hain, course kabhi "khatam" nahi hota.
+      var CERT_UNLOCK_DAYS = 60;
+      var starts = {};
+      try{ starts = JSON.parse(localStorage.getItem("fkc_start")||"{}"); }catch(e){}
+      if(!starts[slug]){
+        starts[slug] = new Date().toISOString();
+        localStorage.setItem("fkc_start", JSON.stringify(starts));
+      }
+      var startDate = new Date(starts[slug]);
+      var daysSinceStart = (Date.now() - startDate.getTime()) / 86400000;
+      var daysLeft = Math.max(0, Math.ceil(CERT_UNLOCK_DAYS - daysSinceStart));
+
       var certBtn = document.getElementById("fkc-cert-btn");
-      if(certBtn && total > 0 && done >= total){
-        certBtn.style.display = "inline-flex";
+      if(certBtn){
+        if(daysSinceStart >= CERT_UNLOCK_DAYS){
+          certBtn.style.display = "inline-flex";
+        } else if(txt){
+          txt.textContent = done + "/" + total + " lessons complete — certificate " +
+            daysLeft + " din mein unlock hoga";
+        }
       }
     }
   });

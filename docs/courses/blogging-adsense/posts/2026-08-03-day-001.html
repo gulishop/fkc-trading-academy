@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T08:29:11.711139";
+  var FKC_BUILD = "2026-08-04T08:42:28.254774";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,7 @@ transition:width .4s ease;}
     <p class="muted">✍️ Blogging &amp; Adsense · Day 01</p>
     <h1>Day 1 — Apna Blog Ka Niche Kaise Choose Karein? (Beginner-Friendly Guide)</h1>
     <div class="card">
+      
       <h3>Concept</h3><p>Blog ka niche select karna sabse pehla aur sabse important step hai. Niche matlab aapka blog kis topic par hoga—jaise technology, health, finance, ya travel. Ek achha niche choose karne se aapka content focused rahega, readers engage honge, aur Adsense approval bhi asaan ho jata hai. Aapka interest, market demand, aur competition ko balance karna hoga.</p><h3>Example</h3><p>1.</p><h3>Interest vs Demand</h3><p>Agar aapko cooking pasand hai, lekin &quot;10-minute recipes&quot; ka demand zyada hai, to yeh niche choose kar sakte hain.<br>2.</p><h3>Competition Check</h3><p>Google par &quot;best budget smartphones 2024&quot; search karke dekhiye kitne blogs hain. Agar 10,000+ results hain, to competition zyada hai—niche narrow karne ki zaroorat hai.</p><h3>Practice</h3><p>Apne 3 topics list karein jo aapko pasand hain (e.g., fitness, personal finance, parenting). Har topic ke liye 3 sub-niches banaein (e.g., &quot;home workouts for beginners,&quot; &quot;side hustles for students,&quot; &quot;toddler meal plans&quot;).</p><h3>Mini Project</h3><p>Ek Google Sheets banayein jismein:<br>- Column 1: Main niche<br>- Column 2: Sub-niche<br>- Column 3: Google Trends par search volume (trends.google.com)<br>- Column 4: Competition score (1-10, 10 = zyada competition)</p>
       
       <div>
@@ -225,9 +226,31 @@ transition:width .4s ease;}
       var txt = document.getElementById("fkc-progress-text");
       if(fill) fill.style.width = pct + "%";
       if(txt) txt.textContent = done + "/" + total + " lessons complete";
+
+      // Certificate ab lesson-count par nahi, TIME par unlock hota hai:
+      // jis din student pehli baar is course ka page kholta hai, uski
+      // date "fkc_start" mein save ho jati hai; usse 60 din (~2 months)
+      // baad certificate button apne aap dikh jata hai — chahe naye
+      // lessons roz aate rehte hain, course kabhi "khatam" nahi hota.
+      var CERT_UNLOCK_DAYS = 60;
+      var starts = {};
+      try{ starts = JSON.parse(localStorage.getItem("fkc_start")||"{}"); }catch(e){}
+      if(!starts[slug]){
+        starts[slug] = new Date().toISOString();
+        localStorage.setItem("fkc_start", JSON.stringify(starts));
+      }
+      var startDate = new Date(starts[slug]);
+      var daysSinceStart = (Date.now() - startDate.getTime()) / 86400000;
+      var daysLeft = Math.max(0, Math.ceil(CERT_UNLOCK_DAYS - daysSinceStart));
+
       var certBtn = document.getElementById("fkc-cert-btn");
-      if(certBtn && total > 0 && done >= total){
-        certBtn.style.display = "inline-flex";
+      if(certBtn){
+        if(daysSinceStart >= CERT_UNLOCK_DAYS){
+          certBtn.style.display = "inline-flex";
+        } else if(txt){
+          txt.textContent = done + "/" + total + " lessons complete — certificate " +
+            daysLeft + " din mein unlock hoga";
+        }
       }
     }
   });
