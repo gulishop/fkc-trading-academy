@@ -1032,7 +1032,6 @@ def generate_lesson_narration_video(slug, course, lesson, image_source_path):
     txt_path = os.path.join(work_dir, f"day-{padded}.narration.txt")
     mp3_path = os.path.join(work_dir, f"day-{padded}.mp3")
     mp4_path = os.path.join(work_dir, f"day-{padded}.mp4")
-    srt_path = os.path.join(work_dir, f"day-{padded}.srt")
 
     with open(txt_path, "w", encoding="utf-8") as f:
         f.write(script_text)
@@ -1044,20 +1043,21 @@ def generate_lesson_narration_video(slug, course, lesson, image_source_path):
         print(f"[{slug}] Day {day_num} video skip: Urdu TTS ({voice}) fail.", file=sys.stderr)
         return
 
-    # Pehle Ken Burns zoom + burned-in animated captions wala video banane
-    # ki koshish karo (zinda/animated explainer jaisa lagta hai). Agar
-    # (kisi wajah se) ye fail ho jaye, tab hi plain static slide + awaaz
-    # wale fallback par jao — taake video bilkul hi na banne se behtar,
-    # kam se kam voice-over wala static slide to mile.
-    made = False
+    # Pehle behtar "Ken Burns zoom + captions" wala free jugaad try karo
+    # (asal AI video generation paid hoti hai, yeh iski jagah). Fail ho
+    # jaye (ffmpeg build mein subtitles/zoompan support na ho waghera)
+    # to purane simple still-image version par fallback ho jata hai —
+    # video kabhi bhi banna band nahi hota.
+    srt_path = os.path.join(work_dir, f"day-{padded}.srt")
     duration = _get_audio_duration(mp3_path)
-    has_captions = bool(duration) and _build_caption_srt(script_text, duration, srt_path)
-    if _run_ffmpeg_kenburns_captions(image_source_path, mp3_path, srt_path if has_captions else None, mp4_path):
+    has_srt = duration and _build_caption_srt(script_text, duration, srt_path)
+    made = False
+    if _run_ffmpeg_kenburns_captions(image_source_path, mp3_path, srt_path if has_srt else None, mp4_path):
         made = True
         print(f"[{slug}] Day {day_num} AI video explanation ban gayi (Ken Burns zoom + captions).")
     elif _run_ffmpeg_image_audio(image_source_path, mp3_path, mp4_path):
         made = True
-        print(f"[{slug}] Day {day_num} AI video explanation ban gayi (fallback: voice-over + static slide, animation fail ho gayi thi).")
+        print(f"[{slug}] Day {day_num} AI video explanation ban gayi (free, voice+slide — fallback).")
 
     if not made:
         print(f"[{slug}] Day {day_num} video skip: ffmpeg dono attempts fail.", file=sys.stderr)
@@ -2114,7 +2114,7 @@ def get_or_generate_translations(slug, day_num, title, preamble, sections):
                 print(f"[{slug}] Day {day_num} {lang_label} attempt {attempt} fail: {e}", file=sys.stderr)
             time.sleep(3)
         if last_err is not None:
-            print(f"[{slug}] Day {day_num} {lang_label} translation 5 attempts ke baad bhi fail, skip: {last_err}", file=sys.stderr)
+            print(f"[{slug}] Day {day_num} {lang_label} translation 3 attempts ke baad bhi fail, skip: {last_err}", file=sys.stderr)
     return translations
 
 
@@ -2197,15 +2197,6 @@ padding:11px 18px;border:none;border-radius:6px;cursor:pointer;
 margin:6px 6px 0 0;}
 .btn.alt{background:#fff;color:var(--ink);border:1px solid var(--line);}
 .btn.green{background:var(--accent);}
-.course-search-wrap{position:relative;margin:14px 0 4px;}
-.course-search{width:100%;box-sizing:border-box;padding:12px 14px 12px 40px;
-font-size:14px;border:1px solid var(--line);border-radius:8px;
-background:var(--panel);color:var(--ink);outline:none;}
-.course-search:focus{border-color:var(--primary);}
-.course-search-wrap::before{content:"🔍";position:absolute;left:13px;top:50%;
-transform:translateY(-50%);font-size:14px;opacity:.6;pointer-events:none;}
-.course-search-empty{display:none;text-align:center;color:var(--muted);
-font-size:.9em;margin:18px 0;}
 .grid{display:flex;flex-direction:column;gap:12px;margin:18px 0 30px;}
 .ccard{display:flex;align-items:center;gap:14px;background:var(--panel);
 border:1px solid var(--line);border-radius:10px;padding:14px;
@@ -2274,21 +2265,6 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
-.lang-tabs-wrap{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:14px 0;}
-.gtranslate-wrap{display:inline-flex;align-items:center;gap:6px;background:#f4f6fb;
-border:1px solid #e1e6f0;border-radius:20px;padding:4px 6px 4px 12px;}
-.gtranslate-label{font-size:.82em;font-weight:700;color:var(--primary,#2a5bd7);white-space:nowrap;}
-/* Google apna banner/branding chip page ke top par lagata hai — usay chhupa dete
-   hain taake layout na tootay, sirf dropdown selector nazar aaye */
-.goog-te-banner-frame{display:none !important;}
-body{top:0 !important;position:static !important;}
-.goog-te-gadget{font-family:inherit !important;font-size:0 !important;color:transparent !important;}
-.goog-te-gadget .goog-te-combo{font-family:'Inter',sans-serif;font-size:.82em;font-weight:600;
-color:#222;padding:5px 10px;border-radius:16px;border:1px solid #ccd4e6;background:#fff;
-cursor:pointer;}
-.goog-tooltip,.goog-tooltip:hover{display:none !important;}
-.goog-text-highlight{background:none !important;box-shadow:none !important;}
-#google_translate_element{line-height:0;}
 """
 
 HEAD = """<!DOCTYPE html>
@@ -2368,9 +2344,8 @@ def render_home(posts):
         count = len(lessons)
         latest = lessons[-1]["title"] if lessons else "Pehla lesson jald aa raha hai"
         accent = ACCENTS[i % len(ACCENTS)]
-        search_key = html.escape(f"{course['name']} {course['tagline']}".lower())
         cards.append(f"""
-    <a class="ccard fade-in" href="courses/{slug}/index.html" data-search="{search_key}">
+    <a class="ccard fade-in" href="courses/{slug}/index.html">
       <div class="stamp" style="--accent-bg:{accent}1a;color:{accent}">{course['icon']}</div>
       <div class="body">
         <h2>{html.escape(course['name'])}</h2>
@@ -2391,28 +2366,7 @@ def render_home(posts):
     <p class="muted fade-in d2">📅 Har course ka naya lesson roz apne fixed time par (9:00 AM se 11:30 AM Pakistan time ke darmiyan) yahan post hota hai — har course card par uska waqt likha hai.
     Jis course mein interest ho us par tap karein — daily lesson step-by-step parhein aur practice karein.</p>
     <p class="fade-in d2">{direct_link_button_html("🚀 Start Learning")}</p>
-    <div class="course-search-wrap fade-in d2">
-      <input type="text" id="courseSearch" class="course-search"
-        placeholder="Course search karein... (jaise: youtube, amazon, dropshipping)"
-        oninput="fkcFilterCourses(this.value)" autocomplete="off">
-    </div>
-    <div class="grid" id="courseGrid">{''.join(cards)}</div>
-    <p class="course-search-empty" id="courseSearchEmpty">😕 Koi course is naam se nahi mila — koi doosra keyword try karein.</p>
-    <script>
-    function fkcFilterCourses(q){{
-      q = q.trim().toLowerCase();
-      var cards = document.querySelectorAll('#courseGrid .ccard');
-      var shown = 0;
-      cards.forEach(function(c){{
-        var hay = c.getAttribute('data-search') || '';
-        var match = hay.indexOf(q) !== -1;
-        c.style.display = match ? '' : 'none';
-        if (match) shown++;
-      }});
-      var empty = document.getElementById('courseSearchEmpty');
-      if (empty) empty.style.display = (shown === 0 && q.length > 0) ? 'block' : 'none';
-    }}
-    </script>
+    <div class="grid">{''.join(cards)}</div>
     {brand_footer_html(logo_href)}
     <p style="text-align:center;margin-top:8px;">
       <a href="admin-certificates.html" style="color:var(--muted);font-size:11px;text-decoration:none;">⚙️ Admin</a>
@@ -2527,35 +2481,15 @@ def render_lesson_page(slug, course, lesson, is_latest, image_href=None, video_h
         if code in translations:
             lang_blocks.append((code, render_translation_html(translations[code]), True))
 
-    # "🌐 Apni zaban chunein" — Google Translate widget, taake Roman Urdu/اردو ke
-    # ilawa koi bhi doosri zaban (English, Sindhi, Pashto, Punjabi, Arabic, waghera
-    # — 100+ options) mein bhi lesson translate ho sake. Yeh Urdu tabs ko bilkul
-    # nahi chhedta — sirf ek alag/extra option ke tor par sath mein lagta hai.
-    gtranslate_html = (
-        '<div class="gtranslate-wrap">'
-        '<span class="gtranslate-label">🌐 Apni zaban chunein</span>'
-        '<div id="google_translate_element"></div>'
-        '</div>'
-        '<script>'
-        'function fkcGoogleTranslateInit(){'
-        'new google.translate.TranslateElement('
-        '{pageLanguage:"ur",autoDisplay:false},'
-        '"google_translate_element");'
-        '}'
-        '</script>'
-        '<script src="https://translate.google.com/translate_a/element.js'
-        '?cb=fkcGoogleTranslateInit"></script>'
-    )
-
     if len(lang_blocks) > 1:
         tab_buttons = "".join(
             f'<button type="button" class="lang-tab{" active" if code=="rm" else ""}" '
             f'data-lang="{code}" onclick="fkcSwitchLang(this)">{LANG_TAB_LABELS[code]}</button>'
             for code, _, _ in lang_blocks
         )
-        tabs_html = f'<div class="lang-tabs-wrap"><div class="lang-tabs">{tab_buttons}</div>{gtranslate_html}</div>'
+        tabs_html = f'<div class="lang-tabs">{tab_buttons}</div>'
     else:
-        tabs_html = f'<div class="lang-tabs-wrap">{gtranslate_html}</div>'
+        tabs_html = ""
 
     content_html = "".join(
         f'<div class="lang-content" data-lang="{code}"'
