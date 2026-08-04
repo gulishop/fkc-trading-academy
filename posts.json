@@ -2735,7 +2735,30 @@
         ]
       ],
       "answer_key": "b7 ka result, `43000`",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "Day 1 — Excel Interface aur Pehla Formula: `SUM`",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "آج ہم Excel کا بنیادی انٹرفیس سمجھیں گے اور پہلا فارمولا `SUM` استعمال کرنا سیکھیں گے۔ Excel کا رائبن (اوپر والا مینو)، فارمولا بار، سیلز، اور شیٹس کا بنیادی ڈھانچہ دیکھیں گے۔ `SUM` فارمولا اعداد کو جمع کرنے کا سب سے آسان طریقہ ہے—بس اعداد سلیکٹ کرو یا ٹائپ کرو اور نتیجہ مل جائے گا۔"
+            },
+            {
+              "label": "Example",
+              "content": "1. Excel کھولو، ایک نئی شیٹ بنائیں۔\n2. A1 میں `5`، B1 میں `10`، C1 میں `15` ٹائپ کریں۔\n3. D1 میں کورسر رکھیں، `=` ٹائپ کریں، پھر `SUM(` لکھیں۔\n4. A1:C1 سلیکٹ کریں (یا `A1,B1,C1` ٹائپ کریں)، پھر `)` بند کریں۔\n5. Enter دبائیں—D1 میں `30` آنا چاہیے۔"
+            },
+            {
+              "label": "Practice",
+              "content": "ایک نئی شیٹ بنائیں اور A1:A5 میں یہ اعداد ٹائپ کریں: `20, 35, 10, 45, 50`۔ پھر B1 میں `SUM` فارمولا استعمال کرکے ان سب کا کل نکالیں۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک سادہ \"ماہانہ اخراجات ٹریکر\" بنائیں:\n- A1:A7 میں یہ لیبل ٹائپ کریں: `Rent, Groceries, Transport, Bills, Entertainment, Savings, Total`\n- B1:B6 میں یہ رقم ٹائپ کریں (اپنے حساب سے، e.g., `15000, 8000, 3000, 2000, 5000, 10000`)\n- B7 میں `SUM(B1:B6)` فارمولا استعمال کرکے کل اخراجات نکالیں۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 2,
@@ -3398,6 +3421,33 @@
           ]
         }
       }
+    },
+    {
+      "day": 3,
+      "id": "day-003",
+      "date": "2026-08-04",
+      "title": "Day 3 — **Blog Posts Ko Engaging aur SEO-Friendly Banane Ke 5 Asaan Tarike**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke ek blog post ko aise likha jaye jo na sirf readers ko pasand aaye, balki Google bhi usko top par rakhe. Engaging content likhne ke liye heading structure, introduction, body paragraphs, aur conclusion ka balance zaroori hai. SEO-friendly banane ke liye keywords, meta description, aur internal linking ka use karna hota hai."
+        ],
+        [
+          "Example",
+          "Ek fitness blog ke liye \"Morning Walk Ke Fayde\" topic par post likh rahe hain. Pehle heading (H1) main title: \"Morning Walk Ke Fayde: Health Se Lekar Mood Tak\" (keyword \"morning walk benefits\" include kiya). Introduction mein 2-3 lines mein topic ka importance bataya. Body paragraphs mein har benefit ko alag alag likha (e.g., \"Weight Loss Ke Liye Morning Walk Kaise Help Karegi\"). Conclusion mein readers ko motivate kiya ke wo morning walk shuru karen."
+        ],
+        [
+          "Practice",
+          "Apne blog niche se ek topic choose karein aur uske liye ek outline banayein (3-4 headings ke saath). Har heading ka purpose clear karein (e.g., introduction, benefits, tips, conclusion)."
+        ],
+        [
+          "Mini Project",
+          "Apne selected topic ka pehla draft likhein (500-700 words) aur usmein:\n1. Ek main heading (H1) aur 3 subheadings (H2) use karein.\n2. 1-2 keywords naturally include karein (e.g., \"morning walk benefits\" ya \"early morning exercise\").\n3. Ek conclusion paragraph add karein jo readers ko action lene ke liye guide kare."
+        ]
+      ],
+      "answer_key": "engaging structure, h1/h2 headings, keyword placement, meta description, internal links",
+      "translations": {}
     }
   ],
   "photography-editing": [
