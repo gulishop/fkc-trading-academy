@@ -2265,21 +2265,6 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
-.lang-tabs-wrap{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:14px 0;}
-.gtranslate-wrap{display:inline-flex;align-items:center;gap:6px;background:#f4f6fb;
-border:1px solid #e1e6f0;border-radius:20px;padding:4px 6px 4px 12px;}
-.gtranslate-label{font-size:.82em;font-weight:700;color:var(--primary,#2a5bd7);white-space:nowrap;}
-/* Google apna banner/branding chip page ke top par lagata hai — usay chhupa dete
-   hain taake layout na tootay, sirf dropdown selector nazar aaye */
-.goog-te-banner-frame{display:none !important;}
-body{top:0 !important;position:static !important;}
-.goog-te-gadget{font-family:inherit !important;font-size:0 !important;color:transparent !important;}
-.goog-te-gadget .goog-te-combo{font-family:'Inter',sans-serif;font-size:.82em;font-weight:600;
-color:#222;padding:5px 10px;border-radius:16px;border:1px solid #ccd4e6;background:#fff;
-cursor:pointer;}
-.goog-tooltip,.goog-tooltip:hover{display:none !important;}
-.goog-text-highlight{background:none !important;box-shadow:none !important;}
-#google_translate_element{line-height:0;}
 """
 
 HEAD = """<!DOCTYPE html>
@@ -2496,35 +2481,15 @@ def render_lesson_page(slug, course, lesson, is_latest, image_href=None, video_h
         if code in translations:
             lang_blocks.append((code, render_translation_html(translations[code]), True))
 
-    # "🌐 Apni zaban chunein" — Google Translate widget, taake Roman Urdu/اردو ke
-    # ilawa koi bhi doosri zaban (English, Sindhi, Pashto, Punjabi, Arabic, waghera
-    # — 100+ options) mein bhi lesson translate ho sake. Yeh Urdu tabs ko bilkul
-    # nahi chhedta — sirf ek alag/extra option ke tor par sath mein lagta hai.
-    gtranslate_html = (
-        '<div class="gtranslate-wrap">'
-        '<span class="gtranslate-label">🌐 Apni zaban chunein</span>'
-        '<div id="google_translate_element"></div>'
-        '</div>'
-        '<script>'
-        'function fkcGoogleTranslateInit(){'
-        'new google.translate.TranslateElement('
-        '{pageLanguage:"ur",autoDisplay:false},'
-        '"google_translate_element");'
-        '}'
-        '</script>'
-        '<script src="https://translate.google.com/translate_a/element.js'
-        '?cb=fkcGoogleTranslateInit"></script>'
-    )
-
     if len(lang_blocks) > 1:
         tab_buttons = "".join(
             f'<button type="button" class="lang-tab{" active" if code=="rm" else ""}" '
             f'data-lang="{code}" onclick="fkcSwitchLang(this)">{LANG_TAB_LABELS[code]}</button>'
             for code, _, _ in lang_blocks
         )
-        tabs_html = f'<div class="lang-tabs-wrap"><div class="lang-tabs">{tab_buttons}</div>{gtranslate_html}</div>'
+        tabs_html = f'<div class="lang-tabs">{tab_buttons}</div>'
     else:
-        tabs_html = f'<div class="lang-tabs-wrap">{gtranslate_html}</div>'
+        tabs_html = ""
 
     content_html = "".join(
         f'<div class="lang-content" data-lang="{code}"'
