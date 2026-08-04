@@ -1263,6 +1263,32 @@
         ]
       ],
       "answer_key": "hook, main content, gap, cta"
+    },
+    {
+      "day": 3,
+      "id": "day-003",
+      "date": "2026-08-04",
+      "title": "Day 3 — **Subtitles Ki Power: Accessibility aur Engagement Badhaein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Subtitles sirf unke liye nahi hain jo sun nahi sakte—instead, yeh engagement badhane ka *secret weapon* hain. Studies ke mutabiq, 85% social media users videos mute kar ke dekhte hain, lekin subtitles add karne se *retention* 40% tak badh jati hai. Aaj hum seekhenge ke kaise accurate, stylish aur engaging subtitles banayein jo content ko professional bana dein."
+        ],
+        [
+          "Example",
+          "CapCut mein subtitles add karne ka *fastest* tarika:\n1. **Auto-Caption** (15 sec ka clip select kar ke \"Text\" > \"Auto Caption\" par click karen).\n2. **Edit** kar ke timing adjust karen (drag kar ke words ko split/merge karen).\n3. **Style** change karen: Font (Montserrat), Size (48-60), Color (white with black outline), Position (bottom-center).\n4. **Background** add karen (optional: 50% opacity black rectangle)."
+        ],
+        [
+          "Practice",
+          "Apne *Day 2* ke edited clip mein subtitles add karen. 3-5 seconds ke har shot ke liye 1 line ka caption likhein (e.g., \"Yeh hai mera favorite editing trick!\")."
+        ],
+        [
+          "Mini Project",
+          "Ek 15-second ka *Reel/Short* banayein jisme:\n- 3 different caption styles hon (bold, italic, colored).\n- 1 transition ke saath caption appear ho.\n- Background music sync ho."
+        ]
+      ],
+      "answer_key": "auto-caption, timing adjust, font style, background opacity"
     }
   ],
   "print-on-demand": [
