@@ -44,6 +44,15 @@ padding:11px 18px;border:none;border-radius:6px;cursor:pointer;
 margin:6px 6px 0 0;}
 .btn.alt{background:#fff;color:var(--ink);border:1px solid var(--line);}
 .btn.green{background:var(--accent);}
+.course-search-wrap{position:relative;margin:14px 0 4px;}
+.course-search{width:100%;box-sizing:border-box;padding:12px 14px 12px 40px;
+font-size:14px;border:1px solid var(--line);border-radius:8px;
+background:var(--panel);color:var(--ink);outline:none;}
+.course-search:focus{border-color:var(--primary);}
+.course-search-wrap::before{content:"🔍";position:absolute;left:13px;top:50%;
+transform:translateY(-50%);font-size:14px;opacity:.6;pointer-events:none;}
+.course-search-empty{display:none;text-align:center;color:var(--muted);
+font-size:.9em;margin:18px 0;}
 .grid{display:flex;flex-direction:column;gap:12px;margin:18px 0 30px;}
 .ccard{display:flex;align-items:center;gap:14px;background:var(--panel);
 border:1px solid var(--line);border-radius:10px;padding:14px;

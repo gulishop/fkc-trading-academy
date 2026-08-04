@@ -735,6 +735,49 @@
           ]
         }
       }
+    },
+    {
+      "day": 4,
+      "id": "day-004",
+      "date": "2026-08-04",
+      "title": "Day 4 — **Trading Strategy Banana: Simple Price Action Setup**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum ek beginner-friendly trading strategy banayenge jo sirf **price action** (chart ke movements) par based hai. Isme koi indicators nahi honge—bas support/resistance, trend lines aur candlestick patterns ka use hoga. Yeh strategy **trend-following** hai, matlab hum trend ke saath trade karenge, na ke uske against."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Trend Line Draw Karna",
+          "Agar market **upward trend** mein hai, toh **higher lows** ko connect karke ek rising trend line banayein.\n2."
+        ],
+        [
+          "Entry Point",
+          "Jab price trend line ko **touche karke wapas bounce** kare, toh **buy** enter karen.\n3."
+        ],
+        [
+          "Stop Loss",
+          "Trend line ke **nichay** (agar buy kar rahe hain) ya **upar** (agar sell kar rahe hain) lagayein.\n4."
+        ],
+        [
+          "Take Profit",
+          "Next **support/resistance level** par lagayein."
+        ],
+        [
+          "Practice",
+          "Apne **MetaTrader** par **EUR/USD** ya **GBP/USD** chart khol kar:\n- 15-minute ya 1-hour timeframe select karen.\n- Ek **upward/downward trend** identify karen.\n- Trend line draw karke **entry, stop-loss aur take profit** points mark karen."
+        ],
+        [
+          "Mini Project",
+          "Ek **trading journal** banayein jisme:\n- 5 trades (real ya demo) record karen.\n- Har trade ke liye **entry/exit points, stop-loss, take profit aur reason** likhein.\n- **Profit/Loss** calculate karen aur **win rate** nikalen."
+        ]
+      ],
+      "answer_key": "trend line draw, bounce confirmation, stop-loss below/above line, take profit at next level",
+      "translations": {}
     }
   ],
   "amazon-fba": [
@@ -1516,7 +1559,30 @@
         ]
       ],
       "answer_key": "problem solve, unique solution, clear cta, pricing transparency",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "Day 2 — **Winning Gig/Proposal Likhne Ki 5 Step-by-Step Guide**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "کسی بھی اچھے gig ya proposal کا پہلا اور اہم پہلو یہ ہے کہ وہ کلائنٹ کو متاثر کرنے کا ذریعہ بنے۔ اس میں **واضح قیمت کا پیشکش** (value proposition)، **مخصوص فوائد** (specific benefits)، اور **عمل کی دعوت** (call-to-action) شامل ہونا لازمی ہے۔ Copywriting کی بنیادی تکنیکوں جیسے AIDA (Attention, Interest, Desire, Action) کو استعمال کرو تاکہ کلائنٹ کی توجہ تم پر مرکوز رہے۔"
+            },
+            {
+              "label": "Example",
+              "content": "تصور کرو کہ کوئی کلائنٹ 'لوگو ڈیزائن' کی تلاش میں ہے۔ ایک **برے** proposal کچھ یوں ہو سکتا ہے:\n\n*\"میں تمھارا لوگو ڈیزائن کر سکتا ہوں۔ مجھ سے رابطہ کرو۔*\"\n\nجبکہ ایک **اچھا** proposal کچھ یوں ہونا چاہئے:\n\n*\"میں تمھارے لیے ایک **جدید اور سکیل ایبل لوگو** ڈیزائن کروں گا جو 48 گھنٹوں میں مکمل ہو جائے گا اور تمھاری برانڈ کی شخصیت کے مطابق ہوگا۔ میرے پچھلے کلائنٹس نے ری برانڈنگ کے بعد **30% زیادہ انگیجمنٹ** دیکھی ہے۔ آؤ، تمھاری ویژن پر بات کریں—اپنی پسندیدہ رنگوں کی ترجیحات کا جواب دو!\"*"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے **Day 1** کے سکل کے مطابق ایک **3-lines کا proposal** لکھو جو مندرجہ ذیل پر مشتمل ہو:\n1. کلائنٹ کی **مخصوص پریشانی** کا ذکر ہو\n2. تمھاری **مخصوص حل** بتایا جائے\n3. **اگلے قدم** کی دعوت ہو (مثلاً، \"اپنی ڈیڈ لائن کا جواب DM میں دو\")"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک **فیک gig** بناؤ (Upwork/Fiverr پر) اپنے پیش کیے جانے والے سروس کے لیے۔ اس میں شامل کرو:\n- **عنوان** (مثلاً، \"میں تمھارے لیے ایک پیشہ ورانہ LinkedIn بینر 24 گھنٹوں میں ڈیزائن کروں گا\")\n- **فوائد کے 3 نقطے**\n- **قیمت** (مخصوص یا $X سے شروع ہونے والی)"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 3,
