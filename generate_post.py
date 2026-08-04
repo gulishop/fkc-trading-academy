@@ -1850,6 +1850,7 @@ def parse_lesson_text(text, day_num):
 # ---------------------------------------------------------------------
 TRANSLATION_LANGS = {
     "ur": "Urdu (Nastaliq/Urdu script mein)",
+    "sd": "Sindhi (Sindhi/Arabic script mein)",
 }
 
 
@@ -1883,9 +1884,6 @@ def build_translation_prompt(lang_label, title, preamble, sections, other_lang_l
         "waisa ka waisa (as-is) rehne do — code, variable names, keywords (for, "
         "int, print, etc.) translate mat karo, sirf agar code ke andar koi "
         "English comment ho to wo translate kar sakte ho. "
-        "6) Agar neeche 'Original Preamble' KHAALI (empty) hai, to translation "
-        "ke JSON mein 'preamble' field bhi khaali string \"\" hi rehne do — "
-        "khud se koi naya intro paragraph mat likho ya banao. "
         "SIRF valid JSON return karo, koi extra text, koi markdown code-fence nahi, "
         "bilkul is shape mein: "
         '{"title": "...", "preamble": "...", "sections": [{"label": "...", "content": "..."}]}. '
