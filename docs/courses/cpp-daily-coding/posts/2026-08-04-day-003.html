@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T10:31:01.146849";
+  var FKC_BUILD = "2026-08-04T10:49:24.605153";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -142,6 +142,10 @@ border-radius:20px;font-size:.82em;font-weight:700;padding:6px 16px;cursor:point
 .lang-tab.active{background:var(--primary);color:#fff;border-color:var(--primary);}
 .lang-content[dir="rtl"]{font-family:'Noto Nastaliq Urdu',serif;line-height:2.1;
 font-size:1.05em;text-align:right;}
+pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
+overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
+line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
+pre code{font-family:inherit;background:none;padding:0;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -155,7 +159,19 @@ font-size:1.05em;text-align:right;}
       <img src="images/day-003.png" alt="Day 3 — Operators aur Type Conversion: Apne Programs Ko Aur Powerful Banana" style="width:100%;border-radius:12px;margin-bottom:14px;">
       <p class="muted" style="margin:0 0 6px;">🎬 AI Video Explanation</p><video src="videos/day-003.mp4" controls preload="metadata" poster="images/day-003.png" style="width:100%;border-radius:12px;margin-bottom:14px;background:#000;"></video>
       
-      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Operators C++ mein calculations aur decisions karne ke liye hote hain (jaise +, -, *, /, %, ==, !=, &amp;&amp;, ||). Type conversion matlab ek data type ko doosre mein convert karna (jaise `int` ko `float` mein). Ye sab programming ko flexible aur efficient banata hai.</p><h3>Example</h3><p>```cpp<br>#include &lt;iostream&gt;<br>using namespace std;<br>int main() {<br>    int a = 5, b = 2;<br>    float result = a / b; // Implicit conversion (int/float → float)<br>    cout &lt;&lt; &quot;Division: &quot; &lt;&lt; result &lt;&lt; endl; // Output: 2.5</p><p>    // Explicit conversion (C-style)<br>    int x = 10;<br>    float y = (float)x / 3; // Output: 3.333...<br>    cout &lt;&lt; &quot;Explicit: &quot; &lt;&lt; y &lt;&lt; endl;<br>    return 0;<br>}<br>```</p><h3>Practice</h3><p>Ek program likho jo user se 2 numbers input le aur unka:<br>1. Sum (int)<br>2. Average (float, 2 decimal places tak)<br>3. Remainder (modulus operator use karke)</p><h3>Mini Project</h3><p>**&quot;Simple Calculator&quot;** — User se 2 numbers aur ek operator (+, -, *, /) input lo, phir result calculate karke dikhao. Type conversion ka use karke decimal results bhi handle karo.</p></div>
+      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Operators C++ mein calculations aur decisions karne ke liye hote hain (jaise +, -, *, /, %, ==, !=, &amp;&amp;, ||). Type conversion matlab ek data type ko doosre mein convert karna (jaise `int` ko `float` mein). Ye sab programming ko flexible aur efficient banata hai.</p><h3>Example</h3><pre dir="ltr"><code>#include &lt;iostream&gt;
+using namespace std;
+int main() {
+    int a = 5, b = 2;
+    float result = a / b; // Implicit conversion (int/float → float)
+    cout &lt;&lt; &quot;Division: &quot; &lt;&lt; result &lt;&lt; endl; // Output: 2.5
+
+    // Explicit conversion (C-style)
+    int x = 10;
+    float y = (float)x / 3; // Output: 3.333...
+    cout &lt;&lt; &quot;Explicit: &quot; &lt;&lt; y &lt;&lt; endl;
+    return 0;
+}</code></pre><h3>Practice</h3><p>Ek program likho jo user se 2 numbers input le aur unka:<br>1. Sum (int)<br>2. Average (float, 2 decimal places tak)<br>3. Remainder (modulus operator use karke)</p><h3>Mini Project</h3><p>**&quot;Simple Calculator&quot;** — User se 2 numbers aur ek operator (+, -, *, /) input lo, phir result calculate karke dikhao. Type conversion ka use karke decimal results bhi handle karo.</p></div>
       
       <div>
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20C%2B%2B%20Daily%20Coding%20%28Day%2003%29%0A%0ADay%203%20%E2%80%94%20Operators%20aur%20Type%20Conversion%3A%20Apne%20Programs%20Ko%20Aur%20Powerful%20Banana%0A%0AConcept%3A%0AOperators%20C%2B%2B%20mein%20calculations%20aur%20decisions%20karne%20ke%20liye%20hote%20hain%20%28jaise%20%2B%2C%20-%2C%20%2A%2C%20/%2C%20%25%2C%20%3D%3D%2C%20%21%3D%2C%20%26%26%2C%20%7C%7C%29.%20Type%20conversion%20matlab%20ek%20data%20type%20ko%20doosre%20mein%20convert%20karna%20%28jaise%20%60int%60%20ko%20%60float%60%20mein%29.%20Ye%20sab%20programming%20ko%20flexible%20aur%20efficient%20banata%20hai.%0A%0AExample%3A%0A%60%60%60cpp%0A%23include%20%3Ciostream%3E%0Ausing%20namespace%20std%3B%0Aint%20main%28%29%20%7B%0A%20%20%20%20int%20a%20%3D%205%2C%20b%20%3D%202%3B%0A%20%20%20%20float%20result%20%3D%20a%20/%20b%3B%20//%20Implicit%20conversion%20%28int/float%20%E2%86%92%20float%29%0A%20%20%20%20cout%20%3C%3C%20%22Division%3A%20%22%20%3C%3C%20result%20%3C%3C%20endl%3B%20//%20Output%3A%202.5%0A%0A%20%20%20%20//%20Explicit%20conversion%20%28C-style%29%0A%20%20%20%20int%20x%20%3D%2010%3B%0A%20%20%20%20float%20y%20%3D%20%28float%29x%20/%203%3B%20//%20Output%3A%203.333...%0A%20%20%20%20cout%20%3C%3C%20%22Explicit%3A%20%22%20%3C%3C%20y%20%3C%3C%20endl%3B%0A%20%20%20%20return%200%3B%0A%7D%0A%60%60%60%0A%0APractice%3A%0AEk%20program%20likho%20jo%20user%20se%202%20numbers%20input%20le%20aur%20unka%3A%0A1.%20Sum%20%28int%29%0A2.%20Average%20%28float%2C%202%20decimal%20places%20tak%29%0A3.%20Remainder%20%28modulus%20operator%20use%20karke%29%0A%0AMini%20Project%3A%0A%2A%2A%22Simple%20Calculator%22%2A%2A%20%E2%80%94%20User%20se%202%20numbers%20aur%20ek%20operator%20%28%2B%2C%20-%2C%20%2A%2C%20/%29%20input%20lo%2C%20phir%20result%20calculate%20karke%20dikhao.%20Type%20conversion%20ka%20use%20karke%20decimal%20results%20bhi%20handle%20karo.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>

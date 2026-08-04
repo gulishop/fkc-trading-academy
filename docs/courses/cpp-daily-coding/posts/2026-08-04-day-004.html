@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T10:31:01.146849";
+  var FKC_BUILD = "2026-08-04T10:49:24.605153";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -142,6 +142,10 @@ border-radius:20px;font-size:.82em;font-weight:700;padding:6px 16px;cursor:point
 .lang-tab.active{background:var(--primary);color:#fff;border-color:var(--primary);}
 .lang-content[dir="rtl"]{font-family:'Noto Nastaliq Urdu',serif;line-height:2.1;
 font-size:1.05em;text-align:right;}
+pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
+overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
+line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
+pre code{font-family:inherit;background:none;padding:0;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -155,7 +159,16 @@ font-size:1.05em;text-align:right;}
       <img src="images/day-004.png" alt="Day 4 — Loops: Bar-Bar Karo Code Ko Repeat" style="width:100%;border-radius:12px;margin-bottom:14px;">
       <p class="muted" style="margin:0 0 6px;">🎬 AI Video Explanation</p><video src="videos/day-004.mp4" controls preload="metadata" poster="images/day-004.png" style="width:100%;border-radius:12px;margin-bottom:14px;background:#000;"></video>
       
-      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Loops ka istemal tab hota hai jab aapko ek hi code block ko baar-baar chalana ho. `for`, `while`, aur `do-while` loops ke zariye aap repetitive tasks automate kar sakte hain. `for` loop tab best hai jab aapko pehle se pata ho kitni baar repeat karna hai, jabki `while` loop tab use hota hai jab condition pehle se maloom na ho.</p><h3>Example</h3><p>Ek program banao jo 1 se 5 tak numbers print kare:<br>```cpp<br>#include &lt;iostream&gt;<br>using namespace std;</p><p>int main() {<br>    // For loop example<br>    for (int i = 1; i &lt;= 5; i++) {<br>        cout &lt;&lt; i &lt;&lt; &quot; &quot;;<br>    }<br>    return 0;<br>}<br>```<br>Output: `1 2 3 4 5`</p><h3>Practice</h3><p>Ek program likho jo user se ek number input le aur uske table (1 se 10 tak) ko print kare. (Hint: `while` loop use karo)</p><h3>Mini Project</h3><p>Ek simple calculator banao jo user se do numbers aur ek operator (`+`, `-`, `*`, `/`) input le, phir loop ke zariye result calculate kare aur bar-baar chalne de jab tak user &quot;exit&quot; na type kare.</p></div>
+      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Loops ka istemal tab hota hai jab aapko ek hi code block ko baar-baar chalana ho. `for`, `while`, aur `do-while` loops ke zariye aap repetitive tasks automate kar sakte hain. `for` loop tab best hai jab aapko pehle se pata ho kitni baar repeat karna hai, jabki `while` loop tab use hota hai jab condition pehle se maloom na ho.</p><h3>Example</h3><p>Ek program banao jo 1 se 5 tak numbers print kare:</p><pre dir="ltr"><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    // For loop example
+    for (int i = 1; i &lt;= 5; i++) {
+        cout &lt;&lt; i &lt;&lt; &quot; &quot;;
+    }
+    return 0;
+}</code></pre><p>Output: `1 2 3 4 5`</p><h3>Practice</h3><p>Ek program likho jo user se ek number input le aur uske table (1 se 10 tak) ko print kare. (Hint: `while` loop use karo)</p><h3>Mini Project</h3><p>Ek simple calculator banao jo user se do numbers aur ek operator (`+`, `-`, `*`, `/`) input le, phir loop ke zariye result calculate kare aur bar-baar chalne de jab tak user &quot;exit&quot; na type kare.</p></div>
       
       <div>
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20C%2B%2B%20Daily%20Coding%20%28Day%2004%29%0A%0ADay%204%20%E2%80%94%20Loops%3A%20Bar-Bar%20Karo%20Code%20Ko%20Repeat%0A%0AConcept%3A%0ALoops%20ka%20istemal%20tab%20hota%20hai%20jab%20aapko%20ek%20hi%20code%20block%20ko%20baar-baar%20chalana%20ho.%20%60for%60%2C%20%60while%60%2C%20aur%20%60do-while%60%20loops%20ke%20zariye%20aap%20repetitive%20tasks%20automate%20kar%20sakte%20hain.%20%60for%60%20loop%20tab%20best%20hai%20jab%20aapko%20pehle%20se%20pata%20ho%20kitni%20baar%20repeat%20karna%20hai%2C%20jabki%20%60while%60%20loop%20tab%20use%20hota%20hai%20jab%20condition%20pehle%20se%20maloom%20na%20ho.%0A%0AExample%3A%0AEk%20program%20banao%20jo%201%20se%205%20tak%20numbers%20print%20kare%3A%0A%60%60%60cpp%0A%23include%20%3Ciostream%3E%0Ausing%20namespace%20std%3B%0A%0Aint%20main%28%29%20%7B%0A%20%20%20%20//%20For%20loop%20example%0A%20%20%20%20for%20%28int%20i%20%3D%201%3B%20i%20%3C%3D%205%3B%20i%2B%2B%29%20%7B%0A%20%20%20%20%20%20%20%20cout%20%3C%3C%20i%20%3C%3C%20%22%20%22%3B%0A%20%20%20%20%7D%0A%20%20%20%20return%200%3B%0A%7D%0A%60%60%60%0AOutput%3A%20%601%202%203%204%205%60%0A%0APractice%3A%0AEk%20program%20likho%20jo%20user%20se%20ek%20number%20input%20le%20aur%20uske%20table%20%281%20se%2010%20tak%29%20ko%20print%20kare.%20%28Hint%3A%20%60while%60%20loop%20use%20karo%29%0A%0AMini%20Project%3A%0AEk%20simple%20calculator%20banao%20jo%20user%20se%20do%20numbers%20aur%20ek%20operator%20%28%60%2B%60%2C%20%60-%60%2C%20%60%2A%60%2C%20%60/%60%29%20input%20le%2C%20phir%20loop%20ke%20zariye%20result%20calculate%20kare%20aur%20bar-baar%20chalne%20de%20jab%20tak%20user%20%22exit%22%20na%20type%20kare.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>

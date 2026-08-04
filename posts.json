@@ -1718,6 +1718,33 @@
         ]
       ],
       "answer_key": "index.html, h2, p, a, about.html, contact.html"
+    },
+    {
+      "day": 2,
+      "id": "day-002",
+      "date": "2026-08-04",
+      "title": "Day 2 — CSS Basics: Apni Pehli Styling Karna",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "CSS (Cascading Style Sheets) se hum HTML elements ko rang, size, aur position dete hain. Aaj hum selectors, colors, fonts, aur basic layout (margins, padding) seekhenge. Yeh HTML structure ko visually attractive banata hai."
+        ],
+        [
+          "Example",
+          "1. `index.html` mein `<h1>Hello World</h1>` likho.\n2. `style.css` file banayo aur link karo:\n   ```html\n   <link rel=\"stylesheet\" href=\"style.css\">\n   ```\n3. CSS mein:\n   ```css\n   h1 {\n     color: blue;\n     font-family: Arial;\n     margin: 20px;\n     padding: 10px;\n   }\n   ```"
+        ],
+        [
+          "Practice",
+          "Apne `h1` ko red color, 32px font size, aur center align karo."
+        ],
+        [
+          "Mini Project",
+          "Ek simple webpage banayo jisme:\n- 1 `<h1>` heading (text: \"Mera Pehla CSS Page\")\n- 1 `<p>` paragraph (text: \"Yeh mera CSS practice hai!\")\n- 1 `<button>` (\"Click Me\")\nStyling karo: heading green, paragraph italic, button blue background."
+        ]
+      ],
+      "answer_key": "red, 32px, text-align: center",
+      "translations": {}
     }
   ],
   "excel-data-analysis": [

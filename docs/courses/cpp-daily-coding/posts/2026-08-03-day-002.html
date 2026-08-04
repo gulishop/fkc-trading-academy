@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T10:31:01.146849";
+  var FKC_BUILD = "2026-08-04T10:49:24.605153";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -142,6 +142,10 @@ border-radius:20px;font-size:.82em;font-weight:700;padding:6px 16px;cursor:point
 .lang-tab.active{background:var(--primary);color:#fff;border-color:var(--primary);}
 .lang-content[dir="rtl"]{font-family:'Noto Nastaliq Urdu',serif;line-height:2.1;
 font-size:1.05em;text-align:right;}
+pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
+overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
+line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
+pre code{font-family:inherit;background:none;padding:0;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -155,7 +159,20 @@ font-size:1.05em;text-align:right;}
       
       
       
-      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Variables memory mein storage ke liye containers hote hain. Har variable ka ek data type hota hai (jaise int, float, char) jo batata hai ke usme kya type ka data store hoga. Input/output (cin/cout) se user se data le sakte hain aur results show kar sakte hain.</p><h3>Example</h3><p>```cpp<br>#include &lt;iostream&gt;<br>using namespace std;</p><p>int main() {<br>    int age = 25;          // Integer variable<br>    float price = 19.99;   // Floating-point variable<br>    char grade = &#x27;A&#x27;;      // Character variable</p><p>    cout &lt;&lt; &quot;Age: &quot; &lt;&lt; age &lt;&lt; endl;<br>    cout &lt;&lt; &quot;Price: $&quot; &lt;&lt; price &lt;&lt; endl;<br>    cout &lt;&lt; &quot;Grade: &quot; &lt;&lt; grade &lt;&lt; endl;</p><p>    return 0;<br>}<br>```</p><h3>Practice</h3><p>Ek program banayein jo user se **name** (string), **age** (int), aur **height** (float) input le aur phir sabko ek line mein print kare.</p><h3>Mini Project</h3><p>Ek **Simple Calculator** banayein jo do numbers input le aur un par +, -, *, / operations perform karke results show kare.</p></div>
+      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Variables memory mein storage ke liye containers hote hain. Har variable ka ek data type hota hai (jaise int, float, char) jo batata hai ke usme kya type ka data store hoga. Input/output (cin/cout) se user se data le sakte hain aur results show kar sakte hain.</p><h3>Example</h3><pre dir="ltr"><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int age = 25;          // Integer variable
+    float price = 19.99;   // Floating-point variable
+    char grade = &#x27;A&#x27;;      // Character variable
+
+    cout &lt;&lt; &quot;Age: &quot; &lt;&lt; age &lt;&lt; endl;
+    cout &lt;&lt; &quot;Price: $&quot; &lt;&lt; price &lt;&lt; endl;
+    cout &lt;&lt; &quot;Grade: &quot; &lt;&lt; grade &lt;&lt; endl;
+
+    return 0;
+}</code></pre><h3>Practice</h3><p>Ek program banayein jo user se **name** (string), **age** (int), aur **height** (float) input le aur phir sabko ek line mein print kare.</p><h3>Mini Project</h3><p>Ek **Simple Calculator** banayein jo do numbers input le aur un par +, -, *, / operations perform karke results show kare.</p></div>
       
       <div>
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20C%2B%2B%20Daily%20Coding%20%28Day%2002%29%0A%0ADay%202%20%E2%80%94%20Variables%20aur%20Data%20Types%3A%20Apne%20Programs%20Ko%20Smarter%20Banana%0A%0AConcept%3A%0AVariables%20memory%20mein%20storage%20ke%20liye%20containers%20hote%20hain.%20Har%20variable%20ka%20ek%20data%20type%20hota%20hai%20%28jaise%20int%2C%20float%2C%20char%29%20jo%20batata%20hai%20ke%20usme%20kya%20type%20ka%20data%20store%20hoga.%20Input/output%20%28cin/cout%29%20se%20user%20se%20data%20le%20sakte%20hain%20aur%20results%20show%20kar%20sakte%20hain.%0A%0AExample%3A%0A%60%60%60cpp%0A%23include%20%3Ciostream%3E%0Ausing%20namespace%20std%3B%0A%0Aint%20main%28%29%20%7B%0A%20%20%20%20int%20age%20%3D%2025%3B%20%20%20%20%20%20%20%20%20%20//%20Integer%20variable%0A%20%20%20%20float%20price%20%3D%2019.99%3B%20%20%20//%20Floating-point%20variable%0A%20%20%20%20char%20grade%20%3D%20%27A%27%3B%20%20%20%20%20%20//%20Character%20variable%0A%0A%20%20%20%20cout%20%3C%3C%20%22Age%3A%20%22%20%3C%3C%20age%20%3C%3C%20endl%3B%0A%20%20%20%20cout%20%3C%3C%20%22Price%3A%20%24%22%20%3C%3C%20price%20%3C%3C%20endl%3B%0A%20%20%20%20cout%20%3C%3C%20%22Grade%3A%20%22%20%3C%3C%20grade%20%3C%3C%20endl%3B%0A%0A%20%20%20%20return%200%3B%0A%7D%0A%60%60%60%0A%0APractice%3A%0AEk%20program%20banayein%20jo%20user%20se%20%2A%2Aname%2A%2A%20%28string%29%2C%20%2A%2Aage%2A%2A%20%28int%29%2C%20aur%20%2A%2Aheight%2A%2A%20%28float%29%20input%20le%20aur%20phir%20sabko%20ek%20line%20mein%20print%20kare.%0A%0AMini%20Project%3A%0AEk%20%2A%2ASimple%20Calculator%2A%2A%20banayein%20jo%20do%20numbers%20input%20le%20aur%20un%20par%20%2B%2C%20-%2C%20%2A%2C%20/%20operations%20perform%20karke%20results%20show%20kare.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
