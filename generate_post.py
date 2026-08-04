@@ -62,7 +62,7 @@ COURSES = {
     "youtube-automation": {
         "name": "YouTube Automation",
         "icon": "🎬",
-        "post_time": "9:00 AM",
+        "post_time": "12:00 AM",
         "tagline": "Bina face show kiye YouTube channel banayein aur grow karein",
         "topics": [
             "Niche select karna aur channel setup",
@@ -80,7 +80,7 @@ COURSES = {
     "social-media-marketing": {
         "name": "Social Media Marketing",
         "icon": "📱",
-        "post_time": "9:10 AM",
+        "post_time": "12:10 AM",
         "tagline": "Brands aur businesses ke liye social media grow karna seekhein",
         "topics": [
             "Social media strategy banana",
@@ -98,7 +98,7 @@ COURSES = {
     "ai-tools": {
         "name": "AI Tools & Automation",
         "icon": "🤖",
-        "post_time": "9:20 AM",
+        "post_time": "12:20 AM",
         "tagline": "Roz kaam aasan banane wale AI tools aur automation seekhein",
         "topics": [
             "ChatGPT/Gemini se prompt likhna (prompt engineering basics)",
@@ -116,7 +116,7 @@ COURSES = {
     "facebook-page-growth": {
         "name": "Facebook Page Growth",
         "icon": "👍",
-        "post_time": "9:30 AM",
+        "post_time": "12:30 AM",
         "tagline": "Facebook Page se organic reach aur sales badhana seekhein",
         "topics": [
             "Facebook Page professional setup karna",
@@ -134,7 +134,7 @@ COURSES = {
     "amazon-fba": {
         "name": "Amazon FBA",
         "icon": "📦",
-        "post_time": "9:40 AM",
+        "post_time": "12:40 AM",
         "tagline": "Amazon par apna private-label product bech kar business banayein",
         "topics": [
             "Amazon FBA model samajhna",
@@ -152,7 +152,7 @@ COURSES = {
     "daraz-seller": {
         "name": "Daraz Seller",
         "icon": "🛒",
-        "post_time": "9:50 AM",
+        "post_time": "12:50 AM",
         "tagline": "Pakistan ke sabse bade marketplace par apni dukaan banayein",
         "topics": [
             "Daraz Seller Center account banana",
@@ -170,7 +170,7 @@ COURSES = {
     "dropshipping": {
         "name": "Dropshipping",
         "icon": "🚚",
-        "post_time": "10:00 AM",
+        "post_time": "1:00 AM",
         "tagline": "Bina stock rakhe online store se products bechna seekhein",
         "topics": [
             "Dropshipping model samajhna",
@@ -188,7 +188,7 @@ COURSES = {
     "freelancing": {
         "name": "Freelancing",
         "icon": "💼",
-        "post_time": "10:10 AM",
+        "post_time": "1:10 AM",
         "tagline": "Fiverr, Upwork jaisi platforms se ghar baithe kamana seekhein",
         "topics": [
             "Sahi skill choose karna",
@@ -206,7 +206,7 @@ COURSES = {
     "digital-marketing-seo": {
         "name": "Digital Marketing & SEO",
         "icon": "📈",
-        "post_time": "10:20 AM",
+        "post_time": "1:20 AM",
         "tagline": "Websites aur brands ko Google par rank karwana seekhein",
         "topics": [
             "Digital marketing ka poora landscape",
@@ -224,7 +224,7 @@ COURSES = {
     "graphic-design-canva": {
         "name": "Graphic Design (Canva)",
         "icon": "🎨",
-        "post_time": "10:30 AM",
+        "post_time": "1:30 AM",
         "tagline": "Bina design background ke professional graphics banayein",
         "topics": [
             "Canva interface aur basics",
@@ -242,7 +242,7 @@ COURSES = {
     "ai-content-writing": {
         "name": "AI Content Writing & Copywriting",
         "icon": "✍️",
-        "post_time": "10:40 AM",
+        "post_time": "1:40 AM",
         "tagline": "AI ki madad se paisa kamane wala content aur copy likhein",
         "topics": [
             "Copywriting ke basics (hook, benefit, CTA)",
@@ -260,7 +260,7 @@ COURSES = {
     "video-editing": {
         "name": "Video Editing (CapCut/Premiere)",
         "icon": "🎞️",
-        "post_time": "10:50 AM",
+        "post_time": "1:50 AM",
         "tagline": "Reels se le kar YouTube tak — video editing ek in-demand skill",
         "topics": [
             "CapCut/Premiere interface basics",
@@ -278,7 +278,7 @@ COURSES = {
     "affiliate-marketing": {
         "name": "Affiliate Marketing",
         "icon": "🔗",
-        "post_time": "11:00 AM",
+        "post_time": "2:00 AM",
         "tagline": "Doosron ke products promote kar ke commission kamayein",
         "topics": [
             "Affiliate marketing model samajhna",
@@ -296,7 +296,7 @@ COURSES = {
     "print-on-demand": {
         "name": "Print on Demand",
         "icon": "👕",
-        "post_time": "11:10 AM",
+        "post_time": "2:10 AM",
         "tagline": "Apni design se t-shirts/mugs bech kar bina inventory ke kamayein",
         "topics": [
             "Print on demand model samajhna",
@@ -314,7 +314,7 @@ COURSES = {
     "no-code-app-dev": {
         "name": "No-Code App & Website Building",
         "icon": "🧩",
-        "post_time": "11:20 AM",
+        "post_time": "2:20 AM",
         "tagline": "Bina coding seekhe apps aur websites banana seekhein",
         "topics": [
             "No-code kya hai aur kyun demand mein hai",
@@ -332,7 +332,7 @@ COURSES = {
     "forex-trading": {
         "name": "Forex Trading",
         "icon": "💹",
-        "post_time": "11:30 AM",
+        "post_time": "2:30 AM",
         "tagline": "Currency market mein trading karna sikhein — basics se lekar strategy tak",
         "topics": [
             "Forex market kya hai aur kaise kaam karta hai",
@@ -354,7 +354,7 @@ COURSES = {
     "kids-safety-education": {
         "name": "Bachon Ki Hifazat (Good Touch, Bad Touch)",
         "icon": "🛡️",
-        "post_time": "11:40 AM",
+        "post_time": "2:40 AM",
         "for_kids": True,
         "certificate_fee": "Free",
         "tagline": "Bachon ko apni hifazat, apne jism ke huq, aur 'na' kehna sikhayein — asaan, pyaar bhare andaz mein. Ammi/Abbu ke sath milkar padhayein.",
@@ -374,7 +374,7 @@ COURSES = {
     "cpp-daily-coding": {
         "name": "C++ Daily Coding",
         "icon": "💻",
-        "post_time": "12:00 PM",
+        "post_time": "2:50 AM",
         "tagline": "C++ zero se seekhein — roz ek naya coding lesson, practice ke sath",
         "topics": [
             "C++ setup karna (compiler, IDE) aur pehla program",
@@ -398,7 +398,7 @@ COURSES = {
     "python-programming": {
         "name": "Python Programming",
         "icon": "🐍",
-        "post_time": "1:00 PM",
+        "post_time": "3:00 AM",
         "tagline": "Python zero se seekhein — beginner-friendly, roz ek naya coding lesson",
         "topics": [
             "Python install karna aur pehla program",
@@ -416,7 +416,7 @@ COURSES = {
     "web-development": {
         "name": "Web Development",
         "icon": "🌐",
-        "post_time": "1:10 PM",
+        "post_time": "3:10 AM",
         "tagline": "HTML, CSS, aur JavaScript se apni pehli website banayein",
         "topics": [
             "HTML basics aur page structure",
@@ -434,7 +434,7 @@ COURSES = {
     "excel-data-analysis": {
         "name": "Excel & Data Analysis",
         "icon": "📊",
-        "post_time": "1:20 PM",
+        "post_time": "3:20 AM",
         "tagline": "Excel se data manage, analyze, aur professional reports banana seekhein",
         "topics": [
             "Excel interface aur basic formulas",
@@ -452,7 +452,7 @@ COURSES = {
     "crypto-blockchain": {
         "name": "Crypto & Blockchain Basics",
         "icon": "₿",
-        "post_time": "1:30 PM",
+        "post_time": "3:30 AM",
         "tagline": "Cryptocurrency aur blockchain ki basics samajhein, safely invest karna seekhein",
         "topics": [
             "Blockchain kya hai aur kaise kaam karta hai",
@@ -470,7 +470,7 @@ COURSES = {
     "psx-stock-trading": {
         "name": "Stock Market Trading (PSX)",
         "icon": "📈",
-        "post_time": "1:40 PM",
+        "post_time": "3:40 AM",
         "tagline": "Pakistan Stock Exchange mein invest aur trade karna seekhein",
         "topics": [
             "PSX kya hai aur kaise kaam karta hai",
@@ -488,7 +488,7 @@ COURSES = {
     "tiktok-growth": {
         "name": "TikTok Growth & Monetization",
         "icon": "🎵",
-        "post_time": "1:50 PM",
+        "post_time": "3:50 AM",
         "tagline": "TikTok par followers badhayein aur content se paise kamayein",
         "topics": [
             "TikTok algorithm samajhna",
@@ -506,7 +506,7 @@ COURSES = {
     "blogging-adsense": {
         "name": "Blogging & Adsense",
         "icon": "✍️",
-        "post_time": "2:00 PM",
+        "post_time": "4:00 AM",
         "tagline": "Blog shuru karein aur Google Adsense se passive income banayein",
         "topics": [
             "Niche select karna blog ke liye",
@@ -524,7 +524,7 @@ COURSES = {
     "photography-editing": {
         "name": "Photography & Editing",
         "icon": "📷",
-        "post_time": "2:10 PM",
+        "post_time": "4:10 AM",
         "tagline": "Mobile ya camera se professional photos lena aur Lightroom mein edit karna",
         "topics": [
             "Camera/phone settings samajhna",
@@ -542,7 +542,7 @@ COURSES = {
     "voiceover-podcasting": {
         "name": "Voice Over & Podcasting",
         "icon": "🎙️",
-        "post_time": "2:20 PM",
+        "post_time": "4:20 AM",
         "tagline": "Voice over skills seekhein aur apna podcast shuru karein",
         "topics": [
             "Voice over basics aur mic setup",
@@ -560,7 +560,7 @@ COURSES = {
     "real-estate-business": {
         "name": "Real Estate Business",
         "icon": "🏠",
-        "post_time": "2:30 PM",
+        "post_time": "4:30 AM",
         "tagline": "Pakistan mein real estate business shuru karna seekhein",
         "topics": [
             "Real estate market samajhna Pakistan mein",
@@ -578,7 +578,7 @@ COURSES = {
     "mobile-repairing": {
         "name": "Mobile Repairing Business",
         "icon": "📱",
-        "post_time": "2:40 PM",
+        "post_time": "4:40 AM",
         "tagline": "Mobile repairing seekh kar apna business shuru karein",
         "topics": [
             "Basic tools aur equipment",
