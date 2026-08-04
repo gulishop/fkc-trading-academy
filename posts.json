@@ -911,46 +911,46 @@
       "answer_key": "corgi chef, cartoon, kitchen, dog",
       "translations": {
         "ur": {
-          "title": "Day 3 — AI Se Images Banana: Midjourney aur Ideogram Basics",
-          "preamble": "AI image generation tools jaise Midjourney aur Ideogram aapko text se realistic, artistic ya unique images banane mein madad karte hain. Bas ek prompt likhna hai, aur AI usko visualize karta hai. Yeh design, marketing, social media aur freelancing ke liye bohat useful hai.",
+          "title": "Day 3 — AI Se Images Banana: Midjourney aur Ideogram Ki Buniyaad",
+          "preamble": "AI ki dunya mein aaj hum ek bohat hi interesting topic par baat karenge: AI ki madad se images kaise banayein. Aaj hum Midjourney aur Ideogram jaise tools ka istemal karke text se images generate karna seekhenge. Yeh skill design, marketing, social media aur freelancing ke liye bohat zaroori hai. Bas ek achha sa prompt likhna hai, aur AI usko apne hisab se visualize kar deta hai. Aaj hum iske basics se lekar practical examples tak sab kuch cover karenge.",
           "sections": [
             {
               "label": "Concept",
-              "content": "AI image generation tools jaise Midjourney aur Ideogram aapko text se realistic, artistic ya unique images banane mein madad karte hain. Bas ek prompt likhna hai, aur AI usko visualize karta hai. Yeh design, marketing, social media aur freelancing ke liye bohat useful hai."
+              "content": "AI image generation tools jaise Midjourney aur Ideogram aapko text se realistic, artistic ya unique images banane mein madad karte hain. Bas ek prompt likhna hai, aur AI usko visualize karta hai. Yeh design, marketing, social media aur freelancing ke liye bohat useful hai. AI ki madad se aap apne khayalat ko behtareen tarike se dikha sakte hain, chahe wo realistic ho ya abstract."
             },
             {
               "label": "Example",
-              "content": "Midjourney mein image banane ke liye:\n1. Discord server join karo (midjourney.com)\n2. `/imagine prompt: a cyberpunk city at night, neon lights, futuristic, highly detailed` likho\n3. AI 4 images generate karega, phir aap \"Upscale\" ya \"Variation\" kar sakte hain."
+              "content": "Midjourney mein image banane ke liye yeh steps follow karen:\n1. Discord server join karo (midjourney.com par ja kar).\n2. `/imagine prompt:` likh kar ek detailed prompt enter karo, jaise:\n   `a cyberpunk city at night, neon lights, futuristic, highly detailed`\n3. AI 4 images generate karega, phir aap un images ko \"Upscale\" ya \"Variation\" kar sakte hain. \"Upscale\" se image quality improve hoti hai, jabki \"Variation\" se naye styles mein images milti hain."
             },
             {
               "label": "Practice",
-              "content": "Apne Discord mein Midjourney join karo, aur yeh prompt try karo:\n`/imagine prompt: a cute corgi dog wearing a chef hat, cooking in a kitchen, cartoon style`"
+              "content": "Apne Discord mein Midjourney join karo, aur yeh prompt try karo:\n`/imagine prompt: a cute corgi dog wearing a chef hat, cooking in a kitchen, cartoon style`\nIske zariye aap AI ki power ko samajh sakte hain ke wo aapke text ko kaise interpret karta hai. Try karne ke baad, dekhein ke AI ne kya generate kiya hai aur apne experience ko reflect karo."
             },
             {
               "label": "Mini Project",
-              "content": "Ek 3-image series banayein:\n1. \"A futuristic office in 2050\"\n2. \"A cozy library with floating books\"\n3. \"A dragon flying over a medieval castle\"\nSabko ek-saath save karke ek folder mein rakhein."
+              "content": "Ek 3-image series banayein jo ek kahani ya concept ko represent kare. Yeh images ek folder mein save karke rakhein. Examples:\n1. \"A futuristic office in 2050\" — AI se poochhein ke 2050 ka office kaise hoga, robots, holograms, aur advanced technology ka istemal.\n2. \"A cozy library with floating books\" — Yeh prompt AI ko magical aur surreal images banane par majboor karega.\n3. \"A dragon flying over a medieval castle\" — Ek classic fantasy scene jo AI ke artistic skills ko test karegi.\nIn images ko ek saath dekh kar, aap samajh sakte hain ke AI ke saath kaam karne ka maza kya hai."
             }
           ]
         },
         "sd": {
-          "title": "Day 3 — AI Se Images Banana: Midjourney & Ideogram Basics",
-          "preamble": "AI image generation tools جيسا تائين Midjourney ۽ Ideogram توهان کي text کان realistiq, artistic يا unique images بنائڻ ۾ مدد کري ٿا. بس ايک prompt لکڻ آهي، ۽ AI اهو visualize کري ٿو. ايھ designing, marketing, social media ۽ freelancing لاءِ ڀت محفوظ آهي.",
+          "title": "Day 3 — AI Se Images Banانا: Midjourney & Ideogram Basics",
+          "preamble": "AI image generation tools جيسا تہي Midjourney اور Ideogram آپ کي textual description سان realistiq, artistic يا unique images بنانے کي مدد کري ثا. بس ايک proper prompt likھنا آهي، اور AI اهو visualize کري ثو. اهي tools design, marketing, social media اور freelancing لاءِ بht usefulness رهي ثا.",
           "sections": [
             {
               "label": "Concept",
-              "content": "AI image generation tools جيسا تائين Midjourney ۽ Ideogram توهان کي text کان realistiq, artistic يا unique images بنائڻ ۾ مدد کري ٿا. بس ايک prompt لکڻ آهي، ۽ AI اهو visualize کري ٿو. ايھ designing, marketing, social media ۽ freelancing لاءِ ڀت محفوظ آهي."
+              "content": "AI image generation tools جيسا تہي Midjourney اور Ideogram textual prompts سان realistiq, artistic يا unique images بنانے کي مدد کري ثا. بس ايک proper prompt likھنا آهي، اور AI اهو visualize کري ثو. اهي tools design, marketing, social media اور freelancing لاءِ بht usefulness رهي ثا."
             },
             {
               "label": "Example",
-              "content": "Midjourney ۾ image بنائڻ لاءِ:\n1. Discord server join ڪريو (midjourney.com)\n2. `/imagine prompt: a cyberpunk city at night, neon lights, futuristic, highly detailed` لکڻ آهي\n3. AI 4 images generate کري ٿي، پهر توهان \"Upscale\" يا \"Variation\" کري سگهڻ آهيون."
+              "content": "Midjourney استعمال کري image بنانے لاءِ اهزّي طريقه اپناني چاہجي:\n1. Midjourney Discord server join کريو (midjourney.com)\n2. Command `/imagine prompt: a cyberpunk city at night, neon lights, futuristic, highly detailed` likھو\n3. AI 4 images generate کري ثو، پهر آپ \"Upscale\" يا \"Variation\" جو آپشن استعمال کري سگھو."
             },
             {
               "label": "Practice",
-              "content": "اپڻ Discord ۾ Midjourney join ڪريو، ۽ ايھ prompt try ڪريو:\n`/imagine prompt: a cute corgi dog wearing a chef hat, cooking in a kitchen, cartoon style`"
+              "content": "اپنے Discord server پر Midjourney join کريو، اور اهي prompt try کريو:\n`/imagine prompt: a cute corgi dog wearing a chef hat, cooking in a kitchen, cartoon style`"
             },
             {
               "label": "Mini Project",
-              "content": "ايک 3-image series بنائيو:\n1. \"A futuristic office in 2050\"\n2. \"A cozy library with floating books\"\n3. \"A dragon flying over a medieval castle\"\nسڀ کي ايک-ساتھ save ڪري ايک folder ۾ رکيو."
+              "content": "AI سان 3 images جو series بنائيو:\n1. \"A futuristic office in 2050\"\n2. \"A cozy library with floating books\"\n3. \"A dragon flying over a medieval castle\"\nسب کي save کريو اور ايک folder پر رکيو."
             }
           ]
         }
@@ -1765,6 +1765,78 @@
             {
               "label": "Mini Project",
               "content": "\"سادہ کیلکولیٹر\" — یوزر سے 2 نمبرز اور ایک آپریٹر (+، -، *، /) ان پٹ لو، پھر رزلٹ کیلکولیٹ کرکے دکھاؤ۔ ٹائپ کنورشن کا استعمال کرکے دسیمیل رزلٹس بھی ہینڈل کرو۔"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "day": 4,
+      "id": "day-004",
+      "date": "2026-08-04",
+      "title": "Day 4 — Loops: Bar-Bar Karo Code Ko Repeat",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Loops ka istemal tab hota hai jab aapko ek hi code block ko baar-baar chalana ho. `for`, `while`, aur `do-while` loops ke zariye aap repetitive tasks automate kar sakte hain. `for` loop tab best hai jab aapko pehle se pata ho kitni baar repeat karna hai, jabki `while` loop tab use hota hai jab condition pehle se maloom na ho."
+        ],
+        [
+          "Example",
+          "Ek program banao jo 1 se 5 tak numbers print kare:\n```cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n    // For loop example\n    for (int i = 1; i <= 5; i++) {\n        cout << i << \" \";\n    }\n    return 0;\n}\n```\nOutput: `1 2 3 4 5`"
+        ],
+        [
+          "Practice",
+          "Ek program likho jo user se ek number input le aur uske table (1 se 10 tak) ko print kare. (Hint: `while` loop use karo)"
+        ],
+        [
+          "Mini Project",
+          "Ek simple calculator banao jo user se do numbers aur ek operator (`+`, `-`, `*`, `/`) input le, phir loop ke zariye result calculate kare aur bar-baar chalne de jab tak user \"exit\" na type kare."
+        ]
+      ],
+      "answer_key": "user_input, while_loop, condition_check, exit_command",
+      "translations": {
+        "ur": {
+          "title": "Day 4 — Loops: Bar-Bar Karo Code Ko Repeat",
+          "preamble": "Aaj hum loops ke baare mein seekhenge. Loops ka istemal tab hota hai jab aapko ek hi code block ko baar-baar chalana ho. Inke zariye aap repetitive tasks ko automate kar sakte hain, jisse aapka time aur mehnat bachti hai. Hum `for`, `while`, aur `do-while` loops ke baare mein detail se jaanenge aur samjhenge ke har loop ka istemal kab aur kaisa hota hai.",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "Loops ka concept programming mein bahut zaroori hai. Jab aapko ek hi tareeqe ka code baar-baar chalana ho, tab loops ka istemal hota hai. Teen main types ke loops hote hain: `for`, `while`, aur `do-while`. `for` loop tab best hota hai jab aapko pehle se pata ho ke kitni baar repeat karna hai, jaise ke ek array ke har element ko print karna. `while` loop tab use hota hai jab aapko condition check karni ho aur jab tak wo condition true ho, tab tak loop chalana ho. `do-while` loop mein pehle loop chalaya jata hai phir condition check ki jati hai, isliye yeh guarantee deta hai ke loop kam se kam ek baar to chalega hi."
+            },
+            {
+              "label": "Example",
+              "content": "Chalo ek simple program dekhte hain jo 1 se 5 tak numbers print kare. Yeh `for` loop ka istemal karke kiya gaya hai:\n\n```cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n    // For loop example\n    for (int i = 1; i <= 5; i++) {\n        cout << i << \" \";\n    }\n    return 0;\n}\n```\n\nIs program ka output yeh hoga:\n`1 2 3 4 5`\n\nYeh dekhne mein chhota lagta hai, lekin isse pata chalta hai ke kaise ek loop ka istemal karke repetitive task ko automate kiya ja sakta hai."
+            },
+            {
+              "label": "Practice",
+              "content": "Ab aap ek program likhiye jo user se ek number input le aur uske table (1 se 10 tak) ko print kare. Yeh `while` loop ka istemal karke kiya ja sakta hai. Yeh exercise aapko loops ke practical istemal samjhne mein madad karegi."
+            },
+            {
+              "label": "Mini Project",
+              "content": "Ek simple calculator banaiye jo user se do numbers aur ek operator (`+`, `-`, `*`, `/`) input le. Phir loop ke zariye result calculate kare aur bar-baar chalne de jab tak user \"exit\" na type kare. Is project se aapko loops ke istemal ka poora practical experience milega aur aap seekh sakte hain ke kaise user input ko handle karna hai aur loop ko control karna hai."
+            }
+          ]
+        },
+        "sd": {
+          "title": "Day 4 — Loops: Bar-Bar Code Repeat Karyo",
+          "preamble": "Aaj hum loops ke baare mein janenge. Loops ka istemal tab hota hai jab aapko ek hi code block ko baar-baar chalana ho. `for`, `while`, aur `do-while` loops ke zariye aap repetitive tasks automate kar sakte hain. `for` loop tab best hai jab aapko pehle se pata ho kitni baar repeat karna hai, jabki `while` loop tab use hota hai jab condition pehle se maloom na ho ya jab tak condition true rahe tab tak chalana ho.",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "Loops programming mein ek aisa tareeqa hai jisse aap ek hi code block ko multiple times execute kar sakte hain. Teeno types ke loops (`for`, `while`, `do-while`) alag-alag scenarios ke liye use kiye jaate hain. `for` loop tab best hota hai jab aapko pehle se pata ho ke kitni baar repeat karna hai, jaise kisi array ke har element ko process karna. `while` loop tab use hota hai jab aapko condition check karni ho aur jab tak wo condition true rahe tab tak loop chalana ho. `do-while` loop bhi `while` loop ki tarah hota hai, lekin isme pehle code block execute hota hai phir condition check hoti hai, isliye yeh kam az kam ek bar toh zaroor chalta hai."
+            },
+            {
+              "label": "Example",
+              "content": "Aik program banayo jo 1 thi 5 tak numbers print karyo. Iske liye `for` loop use karyo:\n\n```cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n    // For loop example\n    for (int i = 1; i <= 5; i++) {\n        cout << i << \" \";\n    }\n    return 0;\n}\n```\n\nOutput: `1 2 3 4 5`"
+            },
+            {
+              "label": "Practice",
+              "content": "Aik program likho jo user thi aik number input ley aur uske table (1 thi 10 tak) ko print karyo. Iske liye `while` loop use karyo. Example:\n\nInput: 5\nOutput:\n5 x 1 = 5\n5 x 2 = 10\n...\n5 x 10 = 50"
+            },
+            {
+              "label": "Mini Project",
+              "content": "Aik simple calculator banayo jo user thi do numbers aur aik operator (`+`, `-`, `*`, `/`) input ley, phir loop ke zariye result calculate karyo aur bar-baar chalne dey jab tak user \"exit\" type na karyo. Program ko is tarah design karyo:\n\n1. User thi do numbers aur operator input ley.\n2. Result calculate karyo aur display karyo.\n3. User thi dobaar calculation karne ka poochho.\n4. Agar user \"exit\" type karyo toh program khatam karyo.\n\nExample:\nInput: 5 + 3\nOutput: 8\n\nDo you want to continue? (yes/no): yes\n\nInput: 10 / 2\nOutput: 5\n\nDo you want to continue? (yes/no): no\n\nProgram khatam ho gaya."
             }
           ]
         }

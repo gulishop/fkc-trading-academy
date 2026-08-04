@@ -1,22 +1,22 @@
 {
-  "title": "Day 3 — AI Se Images Banana: Midjourney aur Ideogram Basics",
-  "preamble": "AI image generation tools jaise Midjourney aur Ideogram aapko text se realistic, artistic ya unique images banane mein madad karte hain. Bas ek prompt likhna hai, aur AI usko visualize karta hai. Yeh design, marketing, social media aur freelancing ke liye bohat useful hai.",
+  "title": "Day 3 — AI Se Images Banana: Midjourney aur Ideogram Ki Buniyaad",
+  "preamble": "AI ki dunya mein aaj hum ek bohat hi interesting topic par baat karenge: AI ki madad se images kaise banayein. Aaj hum Midjourney aur Ideogram jaise tools ka istemal karke text se images generate karna seekhenge. Yeh skill design, marketing, social media aur freelancing ke liye bohat zaroori hai. Bas ek achha sa prompt likhna hai, aur AI usko apne hisab se visualize kar deta hai. Aaj hum iske basics se lekar practical examples tak sab kuch cover karenge.",
   "sections": [
     {
       "label": "Concept",
-      "content": "AI image generation tools jaise Midjourney aur Ideogram aapko text se realistic, artistic ya unique images banane mein madad karte hain. Bas ek prompt likhna hai, aur AI usko visualize karta hai. Yeh design, marketing, social media aur freelancing ke liye bohat useful hai."
+      "content": "AI image generation tools jaise Midjourney aur Ideogram aapko text se realistic, artistic ya unique images banane mein madad karte hain. Bas ek prompt likhna hai, aur AI usko visualize karta hai. Yeh design, marketing, social media aur freelancing ke liye bohat useful hai. AI ki madad se aap apne khayalat ko behtareen tarike se dikha sakte hain, chahe wo realistic ho ya abstract."
     },
     {
       "label": "Example",
-      "content": "Midjourney mein image banane ke liye:\n1. Discord server join karo (midjourney.com)\n2. `/imagine prompt: a cyberpunk city at night, neon lights, futuristic, highly detailed` likho\n3. AI 4 images generate karega, phir aap \"Upscale\" ya \"Variation\" kar sakte hain."
+      "content": "Midjourney mein image banane ke liye yeh steps follow karen:\n1. Discord server join karo (midjourney.com par ja kar).\n2. `/imagine prompt:` likh kar ek detailed prompt enter karo, jaise:\n   `a cyberpunk city at night, neon lights, futuristic, highly detailed`\n3. AI 4 images generate karega, phir aap un images ko \"Upscale\" ya \"Variation\" kar sakte hain. \"Upscale\" se image quality improve hoti hai, jabki \"Variation\" se naye styles mein images milti hain."
     },
     {
       "label": "Practice",
-      "content": "Apne Discord mein Midjourney join karo, aur yeh prompt try karo:\n`/imagine prompt: a cute corgi dog wearing a chef hat, cooking in a kitchen, cartoon style`"
+      "content": "Apne Discord mein Midjourney join karo, aur yeh prompt try karo:\n`/imagine prompt: a cute corgi dog wearing a chef hat, cooking in a kitchen, cartoon style`\nIske zariye aap AI ki power ko samajh sakte hain ke wo aapke text ko kaise interpret karta hai. Try karne ke baad, dekhein ke AI ne kya generate kiya hai aur apne experience ko reflect karo."
     },
     {
       "label": "Mini Project",
-      "content": "Ek 3-image series banayein:\n1. \"A futuristic office in 2050\"\n2. \"A cozy library with floating books\"\n3. \"A dragon flying over a medieval castle\"\nSabko ek-saath save karke ek folder mein rakhein."
+      "content": "Ek 3-image series banayein jo ek kahani ya concept ko represent kare. Yeh images ek folder mein save karke rakhein. Examples:\n1. \"A futuristic office in 2050\" — AI se poochhein ke 2050 ka office kaise hoga, robots, holograms, aur advanced technology ka istemal.\n2. \"A cozy library with floating books\" — Yeh prompt AI ko magical aur surreal images banane par majboor karega.\n3. \"A dragon flying over a medieval castle\" — Ek classic fantasy scene jo AI ke artistic skills ko test karegi.\nIn images ko ek saath dekh kar, aap samajh sakte hain ke AI ke saath kaam karne ka maza kya hai."
     }
   ]
 }
