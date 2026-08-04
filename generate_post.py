@@ -817,7 +817,14 @@ def generate_lesson_image(slug, course, day_num, title, topic_hint=None, concept
         f"specifically about {focus}, minimal, vibrant colors, no text, no watermark"
     )
 
-    for attempt, prompt in enumerate((primary_prompt, fallback_prompt), start=1):
+    # 3 attempts ab: primary prompt 2 baar (chhota backoff ke sath, kyunke
+    # zyadatar fail sirf Pollinations ka aani-jaani rate-limit/timeout hota
+    # hai — dobara try karne se hi mil jata hai) aur aakhir mein simpler
+    # fallback prompt. Har attempt ke darmiyan thoda sleep taake ek hi run
+    # mein bohot saare courses ke peeche-peeche calls se rate-limit na lage.
+    attempts_plan = [primary_prompt, primary_prompt, fallback_prompt]
+    last_err = None
+    for attempt, prompt in enumerate(attempts_plan, start=1):
         seed = str(abs(hash(slug + padded + str(attempt))) % 100000)
         url = POLLINATIONS_BASE + urllib.parse.quote(prompt) + (
             f"?width=1024&height=576&nologo=true&seed={seed}"
@@ -836,8 +843,13 @@ def generate_lesson_image(slug, course, day_num, title, topic_hint=None, concept
             print(f"[{slug}] Day {day_num} image generate ho gayi (Pollinations, attempt {attempt}).")
             return
         except Exception as e:
+            last_err = e
             print(f"[{slug}] Day {day_num} image attempt {attempt} fail ho gayi: {e}", file=sys.stderr)
-    print(f"[{slug}] Day {day_num} image generate nahi ho saki (dono attempts fail), skip kar rahe hain.", file=sys.stderr)
+            if attempt < len(attempts_plan):
+                time.sleep(4)
+    msg = f"[{slug}] Day {day_num} image generate nahi ho saki ({len(attempts_plan)} attempts fail), skip kar rahe hain: {last_err}"
+    print(msg, file=sys.stderr)
+    log_error(msg)
 
 
 # ---------------------------------------------------------------------
@@ -890,19 +902,29 @@ def _build_narration_text(title, preamble, sections):
     return text[:NARRATION_MAX_CHARS]
 
 
-def _run_edge_tts(text_file_path, voice, out_mp3):
-    try:
-        result = subprocess.run(
-            ["edge-tts", "--voice", voice, "--file", text_file_path, "--write-media", out_mp3],
-            capture_output=True, timeout=120,
-        )
-        if result.returncode != 0:
-            print(f"edge-tts error: {result.stderr.decode(errors='ignore')[:300]}", file=sys.stderr)
-            return False
-        return os.path.exists(out_mp3) and os.path.getsize(out_mp3) > 1000
-    except Exception as e:
-        print(f"edge-tts call fail: {e}", file=sys.stderr)
-        return False
+def _run_edge_tts(text_file_path, voice, out_mp3, attempts=2):
+    # edge-tts kabhi-kabhi network hiccup se fail hota hai — ek dobara
+    # koshish (chhote wait ke sath) zyadatar cases mein kaafi hoti hai.
+    last_err = None
+    for attempt in range(1, attempts + 1):
+        try:
+            result = subprocess.run(
+                ["edge-tts", "--voice", voice, "--file", text_file_path, "--write-media", out_mp3],
+                capture_output=True, timeout=120,
+            )
+            if result.returncode != 0:
+                last_err = result.stderr.decode(errors="ignore")[:300]
+                print(f"edge-tts error (attempt {attempt}): {last_err}", file=sys.stderr)
+            elif os.path.exists(out_mp3) and os.path.getsize(out_mp3) > 1000:
+                return True
+            else:
+                last_err = "output mp3 khaali/chhota nikla"
+        except Exception as e:
+            last_err = str(e)
+            print(f"edge-tts call fail (attempt {attempt}): {e}", file=sys.stderr)
+        if attempt < attempts:
+            time.sleep(5)
+    return False
 
 
 def _get_audio_duration(mp3_path):
@@ -1040,7 +1062,9 @@ def generate_lesson_narration_video(slug, course, lesson, image_source_path):
         # Koi English/male fallback nahi — TTS fail ho to video is baar
         # sirf skip hoti hai (agli build par phir try hogi), Urdu female
         # awaaz ke ilawa kabhi kisi aur voice par switch nahi hota.
-        print(f"[{slug}] Day {day_num} video skip: Urdu TTS ({voice}) fail.", file=sys.stderr)
+        msg = f"[{slug}] Day {day_num} video skip: Urdu TTS ({voice}) fail."
+        print(msg, file=sys.stderr)
+        log_error(msg)
         return
 
     # Pehle behtar "Ken Burns zoom + captions" wala free jugaad try karo
@@ -1060,7 +1084,9 @@ def generate_lesson_narration_video(slug, course, lesson, image_source_path):
         print(f"[{slug}] Day {day_num} AI video explanation ban gayi (free, voice+slide — fallback).")
 
     if not made:
-        print(f"[{slug}] Day {day_num} video skip: ffmpeg dono attempts fail.", file=sys.stderr)
+        msg = f"[{slug}] Day {day_num} video skip: ffmpeg dono attempts fail."
+        print(msg, file=sys.stderr)
+        log_error(msg)
 
 
 def publish_lesson_video(slug, day_num):
@@ -2092,7 +2118,8 @@ def get_or_generate_translations(slug, day_num, title, preamble, sections):
                 pass  # cache file kharab, neeche dobara generate karte hain
 
         last_err = None
-        for attempt in range(1, 6):  # degenerate output aaye to 5 dafa retry
+        max_attempts = 5
+        for attempt in range(1, max_attempts + 1):  # degenerate output aaye to 5 dafa retry
             try:
                 prompt = build_translation_prompt(lang_label, title, preamble, sections, other_lang_label)
                 raw = ai_generate(prompt)
@@ -2109,9 +2136,14 @@ def get_or_generate_translations(slug, day_num, title, preamble, sections):
             except Exception as e:
                 last_err = e
                 print(f"[{slug}] Day {day_num} {lang_label} attempt {attempt} fail: {e}", file=sys.stderr)
-            time.sleep(3)
+            # exponential-ish backoff (3s, 6s, 9s...) — rate-limit se turant
+            # dobara maarne ke bajaye thoda ruk kar retry karta hai.
+            time.sleep(3 * attempt)
         if last_err is not None:
-            print(f"[{slug}] Day {day_num} {lang_label} translation 3 attempts ke baad bhi fail, skip: {last_err}", file=sys.stderr)
+            msg = (f"[{slug}] Day {day_num} {lang_label} translation {max_attempts} attempts "
+                   f"ke baad bhi fail, skip: {last_err}")
+            print(msg, file=sys.stderr)
+            log_error(msg)
     return translations
 
 
@@ -3152,6 +3184,33 @@ def _purge_lesson_video_cache(slug, day_num):
                 pass
 
 
+def heal_missing_images(posts):
+    """generate_lesson_image() sirf lesson ke PEHLE build par call hoti hai
+    (main() ki pehli loop mein) — agar us waqt Pollinations fail ho jaye
+    (network/rate-limit/timeout), to us lesson ki image kabhi dobara try
+    nahi hoti thi, permanently missing reh jati thi — aur usi wajah se
+    video bhi kabhi nahi ban pata (video ko image chahiye hoti hai).
+    Ye function har build ke shuru mein saare EXISTING lessons check karta
+    hai aur jin ki image abhi tak nahi bani, un par generate_lesson_image
+    dobara try karta hai — taake ek transient fail hamesha ke liye missing
+    na reh jaye."""
+    for slug, lessons in posts.items():
+        course = COURSES.get(slug)
+        if not course:
+            continue
+        for lesson in lessons:
+            if find_lesson_image(slug, lesson["day"]):
+                continue  # already maujood, kuch karne ki zaroorat nahi
+            print(f"[{slug}] Day {lesson['day']} ki image missing hai, dobara try ho raha hai...")
+            topic_hint = course["topics"][(lesson["day"] - 1) % len(course["topics"])]
+            concept_text = lesson["sections"][0][1] if lesson["sections"] else lesson.get("preamble", "")
+            generate_lesson_image(
+                slug, course, lesson["day"], lesson["title"],
+                topic_hint=topic_hint, concept_text=concept_text,
+            )
+            time.sleep(2)  # thoda space, taake peeche-peeche courses ke beech rate-limit na lage
+
+
 def heal_degenerate_translations(posts):
     changed = False
     for slug, lessons in posts.items():
@@ -3205,6 +3264,8 @@ def heal_degenerate_translations(posts):
 # ---------------------------------------------------------------------
 def main():
     posts = load_posts()
+    heal_missing_images(posts)  # is se posts.json khud nahi badalta (image sirf disk par),
+                                 # is liye save_posts() ki zaroorat nahi
     if heal_degenerate_translations(posts):
         save_posts(posts)
 
