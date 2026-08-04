@@ -1,0 +1,22 @@
+{
+  "title": "Day 3 — AI Se Images Banana: Midjourney & Ideogram Basics",
+  "preamble": "AI image generation tools جيسا تائين Midjourney ۽ Ideogram توهان کي text کان realistiq, artistic يا unique images بنائڻ ۾ مدد کري ٿا. بس ايک prompt لکڻ آهي، ۽ AI اهو visualize کري ٿو. ايھ designing, marketing, social media ۽ freelancing لاءِ ڀت محفوظ آهي.",
+  "sections": [
+    {
+      "label": "Concept",
+      "content": "AI image generation tools جيسا تائين Midjourney ۽ Ideogram توهان کي text کان realistiq, artistic يا unique images بنائڻ ۾ مدد کري ٿا. بس ايک prompt لکڻ آهي، ۽ AI اهو visualize کري ٿو. ايھ designing, marketing, social media ۽ freelancing لاءِ ڀت محفوظ آهي."
+    },
+    {
+      "label": "Example",
+      "content": "Midjourney ۾ image بنائڻ لاءِ:\n1. Discord server join ڪريو (midjourney.com)\n2. `/imagine prompt: a cyberpunk city at night, neon lights, futuristic, highly detailed` لکڻ آهي\n3. AI 4 images generate کري ٿي، پهر توهان \"Upscale\" يا \"Variation\" کري سگهڻ آهيون."
+    },
+    {
+      "label": "Practice",
+      "content": "اپڻ Discord ۾ Midjourney join ڪريو، ۽ ايھ prompt try ڪريو:\n`/imagine prompt: a cute corgi dog wearing a chef hat, cooking in a kitchen, cartoon style`"
+    },
+    {
+      "label": "Mini Project",
+      "content": "ايک 3-image series بنائيو:\n1. \"A futuristic office in 2050\"\n2. \"A cozy library with floating books\"\n3. \"A dragon flying over a medieval castle\"\nسڀ کي ايک-ساتھ save ڪري ايک folder ۾ رکيو."
+    }
+  ]
+}

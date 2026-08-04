@@ -1,0 +1,22 @@
+{
+  "title": "Day 3 — AI Se Images Banana: Midjourney aur Ideogram Basics",
+  "preamble": "AI image generation tools jaise Midjourney aur Ideogram aapko text se realistic, artistic ya unique images banane mein madad karte hain. Bas ek prompt likhna hai, aur AI usko visualize karta hai. Yeh design, marketing, social media aur freelancing ke liye bohat useful hai.",
+  "sections": [
+    {
+      "label": "Concept",
+      "content": "AI image generation tools jaise Midjourney aur Ideogram aapko text se realistic, artistic ya unique images banane mein madad karte hain. Bas ek prompt likhna hai, aur AI usko visualize karta hai. Yeh design, marketing, social media aur freelancing ke liye bohat useful hai."
+    },
+    {
+      "label": "Example",
+      "content": "Midjourney mein image banane ke liye:\n1. Discord server join karo (midjourney.com)\n2. `/imagine prompt: a cyberpunk city at night, neon lights, futuristic, highly detailed` likho\n3. AI 4 images generate karega, phir aap \"Upscale\" ya \"Variation\" kar sakte hain."
+    },
+    {
+      "label": "Practice",
+      "content": "Apne Discord mein Midjourney join karo, aur yeh prompt try karo:\n`/imagine prompt: a cute corgi dog wearing a chef hat, cooking in a kitchen, cartoon style`"
+    },
+    {
+      "label": "Mini Project",
+      "content": "Ek 3-image series banayein:\n1. \"A futuristic office in 2050\"\n2. \"A cozy library with floating books\"\n3. \"A dragon flying over a medieval castle\"\nSabko ek-saath save karke ek folder mein rakhein."
+    }
+  ]
+}
