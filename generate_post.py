@@ -2315,6 +2315,21 @@ HEAD = """<!DOCTYPE html>
 """
 
 
+ADSENSE_CLIENT = "ca-pub-5639688573760714"
+# "Fkc Trading Academy" ad unit (AdSense dashboard se liya gaya).
+ADSENSE_SLOT = "2517808504"
+
+
+def adsense_unit_html():
+    """Page ke content ke neeche ek display ad unit dikhata hai."""
+    return f"""
+    <div class="no-print" style="margin:18px 0;text-align:center;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="{ADSENSE_CLIENT}"
+        data-ad-slot="{ADSENSE_SLOT}" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({{}});</script>
+    </div>"""
+
+
 def brand_footer_html(logo_href):
     privacy_href = logo_href.replace(BRAND_LOGO, "privacy.html")
     wa_link = f"https://wa.me/{BRAND_WHATSAPP_DIGITS}"
@@ -2470,6 +2485,21 @@ def build_robots_txt():
     return "\n".join(lines) + "\n"
 
 
+# AdSense ka anti-fraud verification string — publisher ID ke aakhir mein
+# jo "pub-..." number hota hai wahi ADSENSE_CLIENT mein bhi hai
+# ("ca-pub-..." mein se "ca-" hata kar). Yeh sirf ek dafa set karni hoti
+# hai, badalti nahi rehti.
+ADS_TXT_LINE = "google.com, pub-5639688573760714, DIRECT, f08c47fec0942fa0"
+
+
+def build_ads_txt():
+    """ads.txt — Google AdSense ke liye zaroori hai (isay verify karta hai
+    ke ads sirf authorized sellers se aa rahi hain). Agar yeh file
+    missing ho to AdSense earnings kam ya bilkul band bhi ho sakti hain,
+    is liye docs/ads.txt mein root par hona zaroori hai."""
+    return ADS_TXT_LINE + "\n"
+
+
 def build_rss_feed(posts):
     """feed.xml — RSS reader se site follow karne ke liye. SITE_URL zaroori
     hai (links absolute hone chahiye), warna None return karta hai."""
@@ -2551,6 +2581,7 @@ def render_home(posts):
     <input type="text" id="fkc-course-search" class="fkc-search" placeholder="🔍 Course dhoondein...">
     <p class="fade-in d2">{direct_link_button_html("🚀 Start Learning")}</p>
     <div class="grid">{''.join(cards)}</div>
+    {adsense_unit_html()}
     {brand_footer_html(logo_href)}
     <p style="text-align:center;margin-top:8px;">
       <a href="admin-certificates.html" style="color:var(--muted);font-size:11px;text-decoration:none;">⚙️ Admin</a>
@@ -2605,6 +2636,7 @@ def render_course_page(slug, course, lessons):
     {affiliate_block}
     {progress_block}
     <div class="plist">{listing}</div>
+    {adsense_unit_html()}
     {brand_footer_html(logo_href)}
     """
     og_image = f"{SITE_URL}/{BRAND_LOGO}" if SITE_URL else logo_href
@@ -2752,6 +2784,7 @@ def render_lesson_page(slug, course, lesson, is_latest, image_href=None, video_h
     </div>
     {nav_block}
     <p class="no-print">{direct_link_button_html("🚀 Watch Next Lesson")}</p>
+    {adsense_unit_html()}
     {brand_footer_html(logo_href)}
     """
     og_image = f"{SITE_URL}/{BRAND_LOGO}" if SITE_URL else logo_href
@@ -3300,6 +3333,8 @@ def main():
             f.write(sitemap_xml)
     with open(os.path.join(DOCS_DIR, "robots.txt"), "w", encoding="utf-8") as f:
         f.write(build_robots_txt())
+    with open(os.path.join(DOCS_DIR, "ads.txt"), "w", encoding="utf-8") as f:
+        f.write(build_ads_txt())
 
     # RSS feed — SITE_URL set hona zaroori hai.
     rss_xml = build_rss_feed(posts)
