@@ -2,7 +2,7 @@ name: create-lessons-forex-trading
 
 on:
   schedule:
-    - cron: '30 6 * * *'
+    - cron: '30 21 * * *'
   workflow_dispatch: {}
 
 concurrency:

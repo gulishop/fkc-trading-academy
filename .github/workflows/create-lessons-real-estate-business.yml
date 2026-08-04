@@ -2,7 +2,7 @@ name: create-lessons-real-estate-business
 
 on:
   schedule:
-    - cron: '30 9 * * *'
+    - cron: '30 23 * * *'
   workflow_dispatch: {}
 
 concurrency:

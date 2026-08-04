@@ -2,7 +2,7 @@ name: create-lessons-voiceover-podcasting
 
 on:
   schedule:
-    - cron: '20 9 * * *'
+    - cron: '20 23 * * *'
   workflow_dispatch: {}
 
 concurrency:

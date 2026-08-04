@@ -2,7 +2,7 @@ name: create-lessons-daraz-seller
 
 on:
   schedule:
-    - cron: '50 4 * * *'
+    - cron: '50 19 * * *'
   workflow_dispatch: {}
 
 concurrency:

@@ -1,12 +1,12 @@
-name: create-lessons-web-development
+name: create-lessons-psx-stock-trading
 
 on:
   schedule:
-    - cron: '10 22 * * *'
+    - cron: '40 22 * * *'
   workflow_dispatch: {}
 
 concurrency:
-  group: create-lessons-web-development
+  group: create-lessons-psx-stock-trading
   cancel-in-progress: false
 
 permissions:
@@ -31,9 +31,9 @@ jobs:
       - name: ffmpeg install karo (AI video ke liye)
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
 
-      - name: Web Development ka lesson generate karo
+      - name: Stock Market Trading (PSX) ka lesson generate karo
         env:
-          COURSE_SLUG: web-development
+          COURSE_SLUG: psx-stock-trading
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           SITE_URL: ${{ secrets.SITE_URL }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -47,6 +47,6 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
-          git diff --staged --quiet || git commit -m "Auto: Web Development — naya lesson [skip ci]"
+          git diff --staged --quiet || git commit -m "Auto: Stock Market Trading (PSX) — naya lesson [skip ci]"
           git pull --rebase origin main
           git push
