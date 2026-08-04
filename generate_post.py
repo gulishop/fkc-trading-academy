@@ -1850,7 +1850,6 @@ def parse_lesson_text(text, day_num):
 # ---------------------------------------------------------------------
 TRANSLATION_LANGS = {
     "ur": "Urdu (Nastaliq/Urdu script mein)",
-    "sd": "Sindhi (Sindhi/Arabic script mein)",
 }
 
 
@@ -1969,13 +1968,13 @@ def _strip_code_blocks(text):
 
 
 def _script_matches_lang(data, code):
-    """ur/sd translations mein zyada tar matn Arabic/Urdu script mein hona
+    """ur translation mein zyada tar matn Arabic/Urdu script mein hona
     chahiye. Agar AI ne sirf Roman Urdu jaisa Latin text de diya (screenshot
     wala bug — 'اردو' tab pe bhi Latin text dikh raha tha), to isay bhi
     garbled/bad translation samjho aur dobara generate karwao. Code blocks
     (jaise C++/Python examples) is calculation mein shaamil nahi hote —
     warna code-heavy lessons (jaise Python course) har baar fail ho jate."""
-    if code not in ("ur", "sd"):
+    if code != "ur":
         return True
     parts = [data.get("title", ""), data.get("preamble", "")]
     for sec in data.get("sections", []) or []:
@@ -2263,6 +2262,26 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.fkc-search{width:100%;padding:12px 14px;border:1px solid var(--line);
+border-radius:8px;font-size:15px;margin:10px 0 4px;box-sizing:border-box;
+font-family:inherit;}
+.streak-badge{display:none;background:#EA580C;color:#fff;font-size:.72em;
+font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+vertical-align:middle;}
+.lesson-nav{display:flex;justify-content:space-between;gap:8px;
+flex-wrap:wrap;margin-top:14px;}
+.lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
+border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
+box-sizing:border-box;margin:6px 0;}
+.quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+@media print{
+  .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
+  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:none;}
+}
 """
 
 HEAD = """<!DOCTYPE html>
@@ -2310,6 +2329,172 @@ def brand_footer_html(logo_href):
 
 
 FOOT_TAIL = f"</div><footer>{BRAND_NAME} — daily lessons, automatically updated</footer></body></html>"
+
+
+# ---------------------------------------------------------------------
+# 🔥 Daily streak — localStorage mein track hota hai (koi login/database
+# nahi chahiye). Jab bhi student koi lesson page kholta hai, aaj ki date
+# record hoti hai; agar kal bhi khola tha to streak +1, warna 1 se restart.
+# Home page isi value ko parh kar badge mein dikhata hai.
+# ---------------------------------------------------------------------
+def streak_tracker_script_html():
+    """Lesson page par lagta hai — har visit par streak update karta hai."""
+    return """<script>
+(function(){
+  try{
+    var today = new Date().toISOString().slice(0,10);
+    var s = JSON.parse(localStorage.getItem("fkc_streak")||"null") || {last:null,count:0};
+    if(s.last !== today){
+      var y = new Date(Date.now()-86400000).toISOString().slice(0,10);
+      s.count = (s.last === y) ? s.count + 1 : 1;
+      s.last = today;
+      localStorage.setItem("fkc_streak", JSON.stringify(s));
+    }
+  }catch(e){}
+})();
+</script>"""
+
+
+def streak_badge_script_html():
+    """Home page par lagta hai — agar streak > 1 din ho to badge dikhata hai."""
+    return """<script>
+(function(){
+  try{
+    var s = JSON.parse(localStorage.getItem("fkc_streak")||"null");
+    var el = document.getElementById("fkc-streak-badge");
+    if(s && s.count > 1 && el){
+      el.textContent = "🔥 " + s.count + " din streak";
+      el.style.display = "inline-block";
+    }
+  }catch(e){}
+})();
+</script>"""
+
+
+def home_search_script_html():
+    """Home page ke course cards ko search box se filter karta hai
+    (sirf client-side JS, koi backend/tool nahi chahiye)."""
+    return """<script>
+(function(){
+  var box = document.getElementById("fkc-course-search");
+  if(!box) return;
+  box.addEventListener("input", function(){
+    var q = this.value.trim().toLowerCase();
+    document.querySelectorAll(".ccard").forEach(function(card){
+      card.style.display = card.textContent.toLowerCase().indexOf(q) !== -1 ? "" : "none";
+    });
+  });
+})();
+</script>"""
+
+
+def pdf_download_button_html():
+    """Browser ka apna free 'Print to PDF' use karta hai — koi extra
+    library/service nahi chahiye. Print CSS (BASE_CSS mein @media print)
+    buttons/nav chhupa deta hai taake sirf lesson content PDF mein aaye."""
+    return (
+        '<button type="button" class="btn alt no-print" onclick="window.print()">'
+        '🖨️ PDF Download / Print</button>'
+    )
+
+
+def quiz_check_html(answer_key):
+    """Existing 'Answer Key' keywords (already Mistral se milte hain, koi
+    nayi AI call nahi) se ek self-check quiz box banata hai — student
+    apna jawab likhta hai aur JS check karta hai kitne keywords match hue.
+    Sab kuch client-side hai, kisi cost/limit ka khatra nahi."""
+    if not answer_key:
+        return ""
+    keys_js = json.dumps(answer_key, ensure_ascii=False)
+    return f"""
+      <div class="quiz-box no-print">
+        <p><b>📝 Apna Practice Check Karein</b></p>
+        <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
+        <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='{keys_js}'>✅ Check Karein</button>
+        <div class="quiz-result" id="fkc-quiz-result"></div>
+      </div>
+      <script>
+      function fkcCheckQuiz(btn){{
+        var keys = JSON.parse(btn.getAttribute("data-keys"));
+        var ans = (document.getElementById("fkc-quiz-answer").value || "").toLowerCase();
+        var hit = 0;
+        keys.forEach(function(k){{ if(k && ans.indexOf(k) !== -1) hit++; }});
+        var el = document.getElementById("fkc-quiz-result");
+        if(hit === 0){{
+          el.textContent = "Koi keyword match nahi hua — dobara try karein ya lesson dobara parhein.";
+          el.style.color = "#D97706";
+        }} else {{
+          el.textContent = "✅ " + hit + "/" + keys.length + " keywords match hue — shabaash!";
+          el.style.color = "var(--accent)";
+        }}
+      }}
+      </script>"""
+
+
+def log_error(message):
+    """Errors ko error_log.txt mein bhi append karta hai (console print ke
+    ilawa) — taake GitHub Actions run history khatam hone ke baad bhi
+    dekh sakein kaunse courses/lessons fail hue."""
+    try:
+        with open("error_log.txt", "a", encoding="utf-8") as f:
+            f.write(f"[{datetime.datetime.utcnow().isoformat()}] {message}\n")
+    except Exception:
+        pass
+
+
+def build_sitemap_xml(posts):
+    """Google Search Console ke liye sitemap.xml — SITE_URL env var set
+    hona zaroori hai (warna absolute URLs nahi ban sakte), agar khaali ho
+    to None return karta hai aur sitemap simply nahi likhi jati."""
+    if not SITE_URL:
+        return None
+    urls = [f"{SITE_URL}/"]
+    for slug, course in COURSES.items():
+        urls.append(f"{SITE_URL}/courses/{slug}/index.html")
+        for lesson in posts.get(slug, []):
+            urls.append(f"{SITE_URL}/courses/{slug}/posts/{lesson['date']}-{lesson['id']}.html")
+    body = "".join(f"<url><loc>{html.escape(u)}</loc></url>" for u in urls)
+    return (
+        '<?xml version="1.0" encoding="UTF-8"?>'
+        f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{body}</urlset>'
+    )
+
+
+def build_robots_txt():
+    """robots.txt — sab search engines ko crawl karne dete hain, aur agar
+    SITE_URL set ho to sitemap.xml ka link bhi shaamil karte hain."""
+    lines = ["User-agent: *", "Allow: /"]
+    if SITE_URL:
+        lines.append(f"Sitemap: {SITE_URL}/sitemap.xml")
+    return "\n".join(lines) + "\n"
+
+
+def build_rss_feed(posts):
+    """feed.xml — RSS reader se site follow karne ke liye. SITE_URL zaroori
+    hai (links absolute hone chahiye), warna None return karta hai."""
+    if not SITE_URL:
+        return None
+    all_lessons = []
+    for slug, course in COURSES.items():
+        for lesson in posts.get(slug, []):
+            all_lessons.append((slug, course, lesson))
+    all_lessons.sort(key=lambda t: t[2].get("date", ""), reverse=True)
+    items = []
+    for slug, course, lesson in all_lessons[:60]:
+        link = f"{SITE_URL}/courses/{slug}/posts/{lesson['date']}-{lesson['id']}.html"
+        desc = html.escape((lesson.get("preamble", "") or "")[:300])
+        items.append(
+            f"<item><title>{html.escape(lesson['title'])}</title>"
+            f"<link>{html.escape(link)}</link><guid>{html.escape(link)}</guid>"
+            f"<description>{desc}</description></item>"
+        )
+    return (
+        '<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel>'
+        f"<title>{html.escape(BRAND_NAME)}</title><link>{html.escape(SITE_URL)}</link>"
+        "<description>Daily lessons — Learn, Earn, Grow.</description>"
+        + "".join(items) + "</channel></rss>"
+    )
 
 
 def md_lite(text):
@@ -2360,9 +2545,10 @@ def render_home(posts):
     <div class="top"><span>{html.escape(BRAND_NAME)}</span>
     <span class="lbl">Digital Hub — apni pasand ka course chunein</span></div>
     <span class="eyebrow fade-in">Course Library</span>
-    <h1 class="fade-in">🎓 Roz ek naya practical lesson</h1>
+    <h1 class="fade-in">🎓 Roz ek naya practical lesson<span class="streak-badge" id="fkc-streak-badge"></span></h1>
     <p class="muted fade-in d2">📅 Har course ka naya lesson roz apne fixed time par (9:00 AM se 11:30 AM Pakistan time ke darmiyan) yahan post hota hai — har course card par uska waqt likha hai.
     Jis course mein interest ho us par tap karein — daily lesson step-by-step parhein aur practice karein.</p>
+    <input type="text" id="fkc-course-search" class="fkc-search" placeholder="🔍 Course dhoondein...">
     <p class="fade-in d2">{direct_link_button_html("🚀 Start Learning")}</p>
     <div class="grid">{''.join(cards)}</div>
     {brand_footer_html(logo_href)}
@@ -2380,7 +2566,7 @@ def render_home(posts):
         css=BASE_CSS,
         pwa_extra=pwa_extra_for(logo_href),
     )
-    return head + body + FOOT_TAIL + notify_script_html() + pwa_install_prompt_html()
+    return head + body + FOOT_TAIL + notify_script_html() + pwa_install_prompt_html() + home_search_script_html() + streak_badge_script_html()
 
 
 def render_course_page(slug, course, lessons):
@@ -2468,7 +2654,8 @@ def lang_tabs_script_html():
 </script>"""
 
 
-def render_lesson_page(slug, course, lesson, is_latest, image_href=None, video_href=None):
+def render_lesson_page(slug, course, lesson, is_latest, image_href=None, video_href=None,
+                        prev_href=None, prev_title=None, next_href=None, next_title=None):
     lesson_html = md_lite(lesson["preamble"])
     for label, content in lesson["sections"]:
         lesson_html += f"<h3>{html.escape(label)}</h3>{md_lite(content)}"
@@ -2530,6 +2717,13 @@ def render_lesson_page(slug, course, lesson, is_latest, image_href=None, video_h
     logo_href = f"../../../{BRAND_LOGO}"
     affiliate_btn = course_affiliate_button_html(course)
     affiliate_block = f'<p>{affiliate_btn}</p>' if affiliate_btn else ""
+    quiz_block = quiz_check_html(lesson.get("answer_key", ""))
+
+    nav_block = ""
+    if prev_href or next_href:
+        prev_link = f'<a class="btn alt" href="{prev_href}">← {html.escape(prev_title)}</a>' if prev_href else "<span></span>"
+        next_link = f'<a class="btn alt" href="{next_href}">{html.escape(next_title)} →</a>' if next_href else "<span></span>"
+        nav_block = f'<div class="lesson-nav">{prev_link}{next_link}</div>'
 
     body = f"""
     <div class="top"><a href="../../../index.html">← {html.escape(BRAND_NAME)}</a>
@@ -2543,18 +2737,21 @@ def render_lesson_page(slug, course, lesson, is_latest, image_href=None, video_h
       {tabs_html}
       {content_html}
       {affiliate_block}
-      <div>
+      {quiz_block}
+      <div class="no-print">
         <a class="btn" href="{wa_link}" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="{tg_link}" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="{fb_link}" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
+        {pdf_download_button_html()}
       </div>
-      <div>
+      <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
           data-slug="{slug}" data-lesson="{lesson['id']}"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <p>{direct_link_button_html("🚀 Watch Next Lesson")}</p>
+    {nav_block}
+    <p class="no-print">{direct_link_button_html("🚀 Watch Next Lesson")}</p>
     {brand_footer_html(logo_href)}
     """
     og_image = f"{SITE_URL}/{BRAND_LOGO}" if SITE_URL else logo_href
@@ -2570,6 +2767,7 @@ def render_lesson_page(slug, course, lesson, is_latest, image_href=None, video_h
     return (
         head + body + FOOT_TAIL + certificate_progress_script_html()
         + lang_tabs_script_html() + firebase_init_html() + pwa_install_prompt_html()
+        + streak_tracker_script_html()
     )
 
 
@@ -2988,36 +3186,48 @@ def main():
         courses_to_run = COURSES
 
     for slug, course in courses_to_run.items():
-        existing = posts.get(slug, [])
-        next_day = len(existing) + 1
-        previous_titles = [l["title"] for l in existing]
+        try:
+            existing = posts.get(slug, [])
+            next_day = len(existing) + 1
+            previous_titles = [l["title"] for l in existing]
 
-        lesson = get_or_generate_lesson(slug, course, next_day, previous_titles)
-        if lesson is None:
+            lesson = get_or_generate_lesson(slug, course, next_day, previous_titles)
+            if lesson is None:
+                continue
+
+            existing.append(lesson)
+            posts[slug] = existing
+
+            topic_hint = course["topics"][(lesson["day"] - 1) % len(course["topics"])]
+            concept_text = lesson["sections"][0][1] if lesson["sections"] else lesson.get("preamble", "")
+            generate_lesson_image(
+                slug, course, lesson["day"], lesson["title"],
+                topic_hint=topic_hint, concept_text=concept_text,
+            )
+            generate_lesson_narration_video(
+                slug, course, lesson, image_source_path=find_lesson_image(slug, lesson["day"])
+            )
+
+            os.makedirs(os.path.join(DOCS_DIR, "courses", slug, "posts"), exist_ok=True)
+            image_href = publish_lesson_image(slug, lesson["day"])
+            video_href = publish_lesson_video(slug, lesson["day"])
+            prev_lesson = existing[-2] if len(existing) > 1 else None
+            prev_href = f"{prev_lesson['date']}-{prev_lesson['id']}.html" if prev_lesson else None
+            prev_title = prev_lesson["title"] if prev_lesson else None
+            page = render_lesson_page(
+                slug, course, lesson, is_latest=True, image_href=image_href, video_href=video_href,
+                prev_href=prev_href, prev_title=prev_title,
+            )
+            with open(
+                os.path.join(DOCS_DIR, "courses", slug, "posts", f"{lesson['date']}-{lesson['id']}.html"),
+                "w", encoding="utf-8",
+            ) as f:
+                f.write(page)
+        except Exception as e:
+            msg = f"[{slug}] lesson generation is baar fail hui, agla course try ho raha hai: {e}"
+            print(msg, file=sys.stderr)
+            log_error(msg)
             continue
-
-        existing.append(lesson)
-        posts[slug] = existing
-
-        topic_hint = course["topics"][(lesson["day"] - 1) % len(course["topics"])]
-        concept_text = lesson["sections"][0][1] if lesson["sections"] else lesson.get("preamble", "")
-        generate_lesson_image(
-            slug, course, lesson["day"], lesson["title"],
-            topic_hint=topic_hint, concept_text=concept_text,
-        )
-        generate_lesson_narration_video(
-            slug, course, lesson, image_source_path=find_lesson_image(slug, lesson["day"])
-        )
-
-        os.makedirs(os.path.join(DOCS_DIR, "courses", slug, "posts"), exist_ok=True)
-        image_href = publish_lesson_image(slug, lesson["day"])
-        video_href = publish_lesson_video(slug, lesson["day"])
-        page = render_lesson_page(slug, course, lesson, is_latest=True, image_href=image_href, video_href=video_href)
-        with open(
-            os.path.join(DOCS_DIR, "courses", slug, "posts", f"{lesson['date']}-{lesson['id']}.html"),
-            "w", encoding="utf-8",
-        ) as f:
-            f.write(page)
 
     save_posts(posts)
 
@@ -3026,26 +3236,38 @@ def main():
     # maujood rahe (warna jin courses ka pehla run abhi nahi hua unke
     # courses/<slug>/index.html missing reh jate hain aur 404 aata hai)
     for slug, course in COURSES.items():
-        lessons = posts.get(slug, [])
-        os.makedirs(os.path.join(DOCS_DIR, "courses", slug, "posts"), exist_ok=True)
-        with open(os.path.join(DOCS_DIR, "courses", slug, "index.html"), "w", encoding="utf-8") as f:
-            f.write(render_course_page(slug, course, lessons))
-        # re-render every lesson page so only the newest carries "Latest"
-        for i, lesson in enumerate(lessons):
-            image_href = publish_lesson_image(slug, lesson["day"])
-            generate_lesson_narration_video(
-                slug, course, lesson, image_source_path=find_lesson_image(slug, lesson["day"])
-            )
-            video_href = publish_lesson_video(slug, lesson["day"])
-            page = render_lesson_page(
-                slug, course, lesson, is_latest=(i == len(lessons) - 1),
-                image_href=image_href, video_href=video_href,
-            )
-            with open(
-                os.path.join(DOCS_DIR, "courses", slug, "posts", f"{lesson['date']}-{lesson['id']}.html"),
-                "w", encoding="utf-8",
-            ) as f:
-                f.write(page)
+        try:
+            lessons = posts.get(slug, [])
+            os.makedirs(os.path.join(DOCS_DIR, "courses", slug, "posts"), exist_ok=True)
+            with open(os.path.join(DOCS_DIR, "courses", slug, "index.html"), "w", encoding="utf-8") as f:
+                f.write(render_course_page(slug, course, lessons))
+            # re-render every lesson page so only the newest carries "Latest"
+            for i, lesson in enumerate(lessons):
+                image_href = publish_lesson_image(slug, lesson["day"])
+                generate_lesson_narration_video(
+                    slug, course, lesson, image_source_path=find_lesson_image(slug, lesson["day"])
+                )
+                video_href = publish_lesson_video(slug, lesson["day"])
+                prev_href = f"{lessons[i-1]['date']}-{lessons[i-1]['id']}.html" if i > 0 else None
+                prev_title = lessons[i-1]["title"] if i > 0 else None
+                next_href = f"{lessons[i+1]['date']}-{lessons[i+1]['id']}.html" if i < len(lessons) - 1 else None
+                next_title = lessons[i+1]["title"] if i < len(lessons) - 1 else None
+                page = render_lesson_page(
+                    slug, course, lesson, is_latest=(i == len(lessons) - 1),
+                    image_href=image_href, video_href=video_href,
+                    prev_href=prev_href, prev_title=prev_title,
+                    next_href=next_href, next_title=next_title,
+                )
+                with open(
+                    os.path.join(DOCS_DIR, "courses", slug, "posts", f"{lesson['date']}-{lesson['id']}.html"),
+                    "w", encoding="utf-8",
+                ) as f:
+                    f.write(page)
+        except Exception as e:
+            msg = f"[{slug}] rebuild is baar fail hui, agla course try ho raha hai: {e}"
+            print(msg, file=sys.stderr)
+            log_error(msg)
+            continue
 
     os.makedirs(DOCS_DIR, exist_ok=True)
     with open(os.path.join(DOCS_DIR, "index.html"), "w", encoding="utf-8") as f:
@@ -3069,6 +3291,21 @@ def main():
     # mein ye file check karte hain; build_stamp badalte hi khud reload).
     with open(os.path.join(DOCS_DIR, VERSION_FILENAME), "w", encoding="utf-8") as f:
         json.dump({"build": BUILD_STAMP}, f)
+
+    # SEO — sitemap.xml + robots.txt (SITE_URL set hona zaroori hai warna
+    # sitemap skip ho jati hai, robots.txt phir bhi likhi jati hai).
+    sitemap_xml = build_sitemap_xml(posts)
+    if sitemap_xml:
+        with open(os.path.join(DOCS_DIR, "sitemap.xml"), "w", encoding="utf-8") as f:
+            f.write(sitemap_xml)
+    with open(os.path.join(DOCS_DIR, "robots.txt"), "w", encoding="utf-8") as f:
+        f.write(build_robots_txt())
+
+    # RSS feed — SITE_URL set hona zaroori hai.
+    rss_xml = build_rss_feed(posts)
+    if rss_xml:
+        with open(os.path.join(DOCS_DIR, "feed.xml"), "w", encoding="utf-8") as f:
+            f.write(rss_xml)
 
     print("Done — site docs/ mein update ho gayi.")
 
