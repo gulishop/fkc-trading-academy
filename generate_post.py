@@ -2090,6 +2090,10 @@ border-radius:20px;font-size:.82em;font-weight:700;padding:6px 16px;cursor:point
 .lang-tab.active{background:var(--primary);color:#fff;border-color:var(--primary);}
 .lang-content[dir="rtl"]{font-family:'Noto Nastaliq Urdu',serif;line-height:2.1;
 font-size:1.05em;text-align:right;}
+pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
+overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
+line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
+pre code{font-family:inherit;background:none;padding:0;}
 """
 
 HEAD = """<!DOCTYPE html>
@@ -2142,7 +2146,24 @@ FOOT_TAIL = f"</div><footer>{BRAND_NAME} — daily lessons, automatically update
 def md_lite(text):
     if not text:
         return ""
-    return "".join(f"<p>{html.escape(p).replace(chr(10), '<br>')}</p>" for p in text.strip().split("\n\n") if p.strip())
+    out = []
+    # pehle fenced code blocks (```lang ... ```) alag nikalte hain, taake
+    # unhein <pre dir="ltr"> mein rakha ja sake — warna RTL (Urdu/Sindhi)
+    # container ke andar English/code punctuation ulta (reversed) dikhta
+    # hai (jaise "#include <iostream>" ban jata hai "<include <iostream#")
+    parts = re.split(r"```(\w*)\n?(.*?)```", text, flags=re.DOTALL)
+    for i, part in enumerate(parts):
+        if i % 3 == 0:
+            if part.strip():
+                out.append("".join(
+                    f"<p>{html.escape(p).replace(chr(10), '<br>')}</p>"
+                    for p in part.strip().split("\n\n") if p.strip()
+                ))
+        elif i % 3 == 2:
+            code = part.strip("\n")
+            out.append(f'<pre dir="ltr"><code>{html.escape(code)}</code></pre>')
+        # i % 3 == 1 -> yeh sirf language name hai (jaise "cpp"), skip
+    return "".join(out)
 
 
 def render_home(posts):
