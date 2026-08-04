@@ -1758,6 +1758,10 @@ def build_translation_prompt(lang_label, title, preamble, sections):
         "3) 'preamble' aur har section ka 'content' ek dusre se ALAG aur UNIQUE hona "
         "chahiye — koi bhi paragraph ya jumla do jagah repeat/copy-paste mat karo. "
         "4) Kisi bhi field ke andar ek hi jumla ya phrase baar baar loop mein mat likho. "
+        "5) Agar matn mein koi code block ho (```...``` ke andar), usay BILKUL "
+        "waisa ka waisa (as-is) rehne do — code, variable names, keywords (for, "
+        "int, print, etc.) translate mat karo, sirf agar code ke andar koi "
+        "English comment ho to wo translate kar sakte ho. "
         "SIRF valid JSON return karo, koi extra text, koi markdown code-fence nahi, "
         "bilkul is shape mein: "
         '{"title": "...", "preamble": "...", "sections": [{"label": "...", "content": "..."}]}. '
@@ -1835,18 +1839,27 @@ def _script_ratio(text):
     return arabic / total
 
 
+def _strip_code_blocks(text):
+    """Script-ratio check se pehle fenced code (```...```) hata do — code
+    hamesha English/Latin mein rehta hai (jaisa hona bhi chahiye), isay
+    'Urdu script kam hai' samajh kar translation reject nahi honi chahiye."""
+    return re.sub(r"```.*?```", " ", text or "", flags=re.DOTALL)
+
+
 def _script_matches_lang(data, code):
     """ur/sd translations mein zyada tar matn Arabic/Urdu script mein hona
     chahiye. Agar AI ne sirf Roman Urdu jaisa Latin text de diya (screenshot
     wala bug — 'اردو' tab pe bhi Latin text dikh raha tha), to isay bhi
-    garbled/bad translation samjho aur dobara generate karwao."""
+    garbled/bad translation samjho aur dobara generate karwao. Code blocks
+    (jaise C++/Python examples) is calculation mein shaamil nahi hote —
+    warna code-heavy lessons (jaise Python course) har baar fail ho jate."""
     if code not in ("ur", "sd"):
         return True
     parts = [data.get("title", ""), data.get("preamble", "")]
     for sec in data.get("sections", []) or []:
         if isinstance(sec, dict):
             parts.append(sec.get("label", ""))
-            parts.append(sec.get("content", ""))
+            parts.append(_strip_code_blocks(sec.get("content", "")))
     combined = " ".join(p for p in parts if p)
     ratio = _script_ratio(combined)
     if ratio is None:
