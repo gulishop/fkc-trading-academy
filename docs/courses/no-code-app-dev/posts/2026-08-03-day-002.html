@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T16:51:55.506076";
+  var FKC_BUILD = "2026-08-04T18:32:09.069739";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,26 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.fkc-search{width:100%;padding:12px 14px;border:1px solid var(--line);
+border-radius:8px;font-size:15px;margin:10px 0 4px;box-sizing:border-box;
+font-family:inherit;}
+.streak-badge{display:none;background:#EA580C;color:#fff;font-size:.72em;
+font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+vertical-align:middle;}
+.lesson-nav{display:flex;justify-content:space-between;gap:8px;
+flex-wrap:wrap;margin-top:14px;}
+.lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
+border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
+box-sizing:border-box;margin:6px 0;}
+.quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+@media print{
+  .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
+  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:none;}
+}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -161,18 +181,50 @@ pre code{font-family:inherit;background:none;padding:0;}
       <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Website builders jaise Framer, Webflow aur Wix no-code tools hain jo drag-and-drop interface ke zariye professional websites banane mein madad karte hain. Inme templates, animations aur hosting built-in hote hain, isliye coding ki zarurat nahi hoti. Ye platforms beginners se lekar intermediate users ke liye perfect hain.</p><h3>Example</h3><p>1.</p><h3>Wix</h3><p>Simple drag-and-drop se ek portfolio website banane ke liye:<br>   - Wix.com par jao aur &quot;Create a Site&quot; select karo.<br>   - Template choose karo (e.g., &quot;Portfolio &amp; CV&quot;).<br>   - Left panel se elements drag karke add karo (text, images, buttons).<br>   - &quot;Publish&quot; par click karo aur apni website ka link share karo.</p><p>2.</p><h3>Webflow</h3><p>Advanced designs ke liye:<br>   - Webflow.com par signup karo.<br>   - &quot;New Project&quot; &gt; &quot;Blank&quot; select karo.<br>   - Left panel se elements drag karke ek responsive navbar banayo.<br>   - Right panel se styles adjust karo (fonts, colors).<br>   - &quot;Publish&quot; par click karo.</p><h3>Practice</h3><p>Apne liye ek simple 3-page website banane ka try karo (Home, About, Contact). Kisi bhi platform (Wix/Webflow/Framer) ka use kar sakte ho. Minimum 5 elements (text, image, button) add karo.</p><h3>Mini Project</h3><p>Ek &quot;Restaurant Menu&quot; website banayo:<br>- Homepage par menu items ki list ho.<br>- About page par restaurant ki story ho.<br>- Contact page par location aur contact form ho.<br>- Sab pages ko navbar se link karo.<br>- Website ko mobile-friendly banao.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>تصور</h3><p>ویب سائٹ بلڈرز جیسے Framer, Webflow اور Wix نو-کوڈ ٹولز ہیں جو ڈریگ اینڈ ڈراپ انٹرفیس کے ذریعے پرافیشنل ویب سائٹس بنانے میں مدد کرتے ہیں۔ ان میں ٹیمپلیٹس، اینیمیشنز اور ہوسٹنگ بلٹ-ان ہوتے ہیں، اس لیے کوڈنگ کی ضرورت نہیں ہوتی۔ یہ پلیٹ فارمز بیگنرز سے لے کر انٹرمیڈیٹ یوزرز کے لیے پرфекٹ ہیں۔</p><h3>مثالیں</h3><p>1.<br>Wix: Simple drag-and-drop سے ایک پورٹ فولیو ویب سائٹ بنانے کے لیے:<br>   - Wix.com پر جاؤ اور &quot;Create a Site&quot; سلیکٹ کرو۔<br>   - ٹیمپلیٹ چوز کرو (e.g., &quot;Portfolio &amp; CV&quot;).<br>   - لیفٹ پینل سے ایلیمنٹس ڈریگ کرکے ایڈ کرو (ٹیکسٹ، امیجز، بٹنز).<br>   - &quot;Publish&quot; پر کلک کرو اور اپنی ویب سائٹ کا لنک شیئر کرو.</p><p>2.<br>Webflow: Advanced designs کے لیے:<br>   - Webflow.com پر سائن اپ کرو۔<br>   - &quot;New Project&quot; &gt; &quot;Blank&quot; سلیکٹ کرو۔<br>   - لیفٹ پینل سے ایلیمنٹس ڈریگ کرکے ایک ریسپانسیو navbar بناؤ۔<br>   - رائٹ پینل سے اسٹائلز ایڈجسٹ کرو (فونٹس، کلرز).<br>   - &quot;Publish&quot; پر کلک کرو.</p><h3>مشق</h3><p>اپنے لیے ایک simple 3-page ویب سائٹ بنانے کا try کرو (Home, About, Contact). کسی بھی پلیٹ فارم (Wix/Webflow/Framer) کا استعمال کر سکتے ہو۔ Minimum 5 elements (ٹیکسٹ، امیج، بٹن) ایڈ کرو۔</p><h3>مینی پراجیکٹ</h3><p>ایک &quot;Restaurant Menu&quot; ویب سائٹ بناؤ:<br>- Homepage پر menu items کی list ہو۔<br>- About page پر restaurant کی story ہو۔<br>- Contact page پر location اور contact form ہو۔<br>- سب pages کو navbar سے لنک کرو۔<br>- ویب سائٹ کو mobile-friendly بناؤ۔</p></div>
       
-      <div>
+      
+      <div class="quiz-box no-print">
+        <p><b>📝 Apna Practice Check Karein</b></p>
+        <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
+        <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"homepage, about page, contact page, navbar, mobile-responsive"'>✅ Check Karein</button>
+        <div class="quiz-result" id="fkc-quiz-result"></div>
+      </div>
+      <script>
+      function fkcCheckQuiz(btn){
+        var keys = JSON.parse(btn.getAttribute("data-keys"));
+        var ans = (document.getElementById("fkc-quiz-answer").value || "").toLowerCase();
+        var hit = 0;
+        keys.forEach(function(k){ if(k && ans.indexOf(k) !== -1) hit++; });
+        var el = document.getElementById("fkc-quiz-result");
+        if(hit === 0){
+          el.textContent = "Koi keyword match nahi hua — dobara try karein ya lesson dobara parhein.";
+          el.style.color = "#D97706";
+        } else {
+          el.textContent = "✅ " + hit + "/" + keys.length + " keywords match hue — shabaash!";
+          el.style.color = "var(--accent)";
+        }
+      }
+      </script>
+      <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20No-Code%20App%20%26%20Website%20Building%20%28Day%2002%29%0A%0ADay%202%20%E2%80%94%20Website%20Builders%3A%20Framer%2C%20Webflow%20aur%20Wix%20se%20Professional%20Website%20Banana%0A%0AConcept%3A%0AWebsite%20builders%20jaise%20Framer%2C%20Webflow%20aur%20Wix%20no-code%20tools%20hain%20jo%20drag-and-drop%20interface%20ke%20zariye%20professional%20websites%20banane%20mein%20madad%20karte%20hain.%20Inme%20templates%2C%20animations%20aur%20hosting%20built-in%20hote%20hain%2C%20isliye%20coding%20ki%20zarurat%20nahi%20hoti.%20Ye%20platforms%20beginners%20se%20lekar%20intermediate%20users%20ke%20liye%20perfect%20hain.%0A%0AExample%3A%0A1.%0A%0AWix%3A%0ASimple%20drag-and-drop%20se%20ek%20portfolio%20website%20banane%20ke%20liye%3A%0A%20%20%20-%20Wix.com%20par%20jao%20aur%20%22Create%20a%20Site%22%20select%20karo.%0A%20%20%20-%20Template%20choose%20karo%20%28e.g.%2C%20%22Portfolio%20%26%20CV%22%29.%0A%20%20%20-%20Left%20panel%20se%20elements%20drag%20karke%20add%20karo%20%28text%2C%20images%2C%20buttons%29.%0A%20%20%20-%20%22Publish%22%20par%20click%20karo%20aur%20apni%20website%20ka%20link%20share%20karo.%0A%0A2.%0A%0AWebflow%3A%0AAdvanced%20designs%20ke%20liye%3A%0A%20%20%20-%20Webflow.com%20par%20signup%20karo.%0A%20%20%20-%20%22New%20Project%22%20%3E%20%22Blank%22%20select%20karo.%0A%20%20%20-%20Left%20panel%20se%20elements%20drag%20karke%20ek%20responsive%20navbar%20banayo.%0A%20%20%20-%20Right%20panel%20se%20styles%20adjust%20karo%20%28fonts%2C%20colors%29.%0A%20%20%20-%20%22Publish%22%20par%20click%20karo.%0A%0APractice%3A%0AApne%20liye%20ek%20simple%203-page%20website%20banane%20ka%20try%20karo%20%28Home%2C%20About%2C%20Contact%29.%20Kisi%20bhi%20platform%20%28Wix/Webflow/Framer%29%20ka%20use%20kar%20sakte%20ho.%20Minimum%205%20elements%20%28text%2C%20image%2C%20button%29%20add%20karo.%0A%0AMini%20Project%3A%0AEk%20%22Restaurant%20Menu%22%20website%20banayo%3A%0A-%20Homepage%20par%20menu%20items%20ki%20list%20ho.%0A-%20About%20page%20par%20restaurant%20ki%20story%20ho.%0A-%20Contact%20page%20par%20location%20aur%20contact%20form%20ho.%0A-%20Sab%20pages%20ko%20navbar%20se%20link%20karo.%0A-%20Website%20ko%20mobile-friendly%20banao.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://t.me/share/url?url=&text=Day%202%20%E2%80%94%20Website%20Builders%3A%20Framer%2C%20Webflow%20aur%20Wix%20se%20Professional%20Website%20Banana%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
+        <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
-      <div>
+      <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
           data-slug="no-code-app-dev" data-lesson="day-002"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <p><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    <div class="lesson-nav"><a class="btn alt" href="2026-08-03-day-001.html">← Day 1 — No-Code Kya Hai? Aur Kyun Demand Mein Hai</a><a class="btn alt" href="2026-08-04-day-003.html">Day 3 — FlutterFlow aur Glide se App Banana: No-Code App Development Ka Aasan Rasta →</a></div>
+    <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
+    <div class="no-print" style="margin:18px 0;text-align:center;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
+        data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
@@ -368,5 +420,18 @@ padding:4px 6px;font-size:1.1em;}
     });
   });
   window.addEventListener("appinstalled", function(){ banner.classList.remove("show"); });
+})();
+</script><script>
+(function(){
+  try{
+    var today = new Date().toISOString().slice(0,10);
+    var s = JSON.parse(localStorage.getItem("fkc_streak")||"null") || {last:null,count:0};
+    if(s.last !== today){
+      var y = new Date(Date.now()-86400000).toISOString().slice(0,10);
+      s.count = (s.last === y) ? s.count + 1 : 1;
+      s.last = today;
+      localStorage.setItem("fkc_streak", JSON.stringify(s));
+    }
+  }catch(e){}
 })();
 </script>

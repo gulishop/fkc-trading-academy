@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T16:51:55.506076";
+  var FKC_BUILD = "2026-08-04T18:32:09.069739";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,26 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.fkc-search{width:100%;padding:12px 14px;border:1px solid var(--line);
+border-radius:8px;font-size:15px;margin:10px 0 4px;box-sizing:border-box;
+font-family:inherit;}
+.streak-badge{display:none;background:#EA580C;color:#fff;font-size:.72em;
+font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+vertical-align:middle;}
+.lesson-nav{display:flex;justify-content:space-between;gap:8px;
+flex-wrap:wrap;margin-top:14px;}
+.lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
+border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
+box-sizing:border-box;margin:6px 0;}
+.quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+@media print{
+  .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
+  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:none;}
+}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -161,18 +181,50 @@ pre code{font-family:inherit;background:none;padding:0;}
       
       <div class="lang-content" data-lang="rm"><p>**Day 2 — Currency Pairs, Pips aur Lot Size: Trading Ki Duniya Ki &quot;Mili-Metri&quot;**</p><h3>Concept</h3><p>Forex trading mein har trade ek *currency pair* (do currencies ka combination) par hoti hai, jaise EUR/USD ya USD/JPY. *Pip* (Percentage in Point) ek currency pair ki smallest price movement hoti hai—jaise EUR/USD mein 0.0001 ka change. *Lot size* batata hai kitni units trade ho rahi hain (Standard Lot = 100,000 units, Mini Lot = 10,000, Micro Lot = 1,000). In teen cheezon ko samajhna zaroori hai taake aapka profit/loss calculate ho sake.</p><h3>Example</h3><p>Agar aap **EUR/USD** par trade kar rahe hain aur price 1.1000 se 1.1005 tak jaati hai, to aapka *pip gain* hai (1.1005 – 1.1000 = 0.0005 = **5 pips**). Agar aap **1 Mini Lot (10,000 units)** trade kar rahe hain, to har pip ka value **$1** hota hai (10,000 × 0.0001). Isliye 5 pips × $1 = **$5 profit**.</p><h3>Practice</h3><p>Apne MetaTrader par **GBP/JPY** pair select karein. Chart par dekhein ki current price kya hai, aur agar aap **1 Micro Lot (1,000 units)** buy karte hain, to har pip ka value kitna hoga? (Hint: GBP/JPY mein pip = 0.01, lekin value calculate karne ke liye currency ke hisaab se sochna hoga.)</p><h3>Mini Project</h3><p>Ek Excel sheet banayein jismein aap **3 different currency pairs** (jaise EUR/USD, USD/JPY, GBP/USD) ke liye **1 Standard Lot, 1 Mini Lot, aur 1 Micro Lot** ka har pip ka value calculate karein. (Example: EUR/USD ka 1 pip = $10 (Standard Lot), $1 (Mini Lot), $0.10 (Micro Lot)).</p></div>
       <p><a class="btn alt" href="https://one.exnessonelink.com/a/buhyli14un" target="_blank" rel="noopener sponsored">💹 Exness Par Free Account Banayein</a></p>
-      <div>
+      
+      <div class="quiz-box no-print">
+        <p><b>📝 Apna Practice Check Karein</b></p>
+        <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
+        <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"gbp/jpy, 1 micro lot = $10 (standard), $1 (mini), $0.10 (micro), pip value = 0.01"'>✅ Check Karein</button>
+        <div class="quiz-result" id="fkc-quiz-result"></div>
+      </div>
+      <script>
+      function fkcCheckQuiz(btn){
+        var keys = JSON.parse(btn.getAttribute("data-keys"));
+        var ans = (document.getElementById("fkc-quiz-answer").value || "").toLowerCase();
+        var hit = 0;
+        keys.forEach(function(k){ if(k && ans.indexOf(k) !== -1) hit++; });
+        var el = document.getElementById("fkc-quiz-result");
+        if(hit === 0){
+          el.textContent = "Koi keyword match nahi hua — dobara try karein ya lesson dobara parhein.";
+          el.style.color = "#D97706";
+        } else {
+          el.textContent = "✅ " + hit + "/" + keys.length + " keywords match hue — shabaash!";
+          el.style.color = "var(--accent)";
+        }
+      }
+      </script>
+      <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Forex%20Trading%20%28Day%2002%29%0A%0ADay%202%0A%0A%2A%2ADay%202%20%E2%80%94%20Currency%20Pairs%2C%20Pips%20aur%20Lot%20Size%3A%20Trading%20Ki%20Duniya%20Ki%20%22Mili-Metri%22%2A%2A%0A%0AConcept%3A%0AForex%20trading%20mein%20har%20trade%20ek%20%2Acurrency%20pair%2A%20%28do%20currencies%20ka%20combination%29%20par%20hoti%20hai%2C%20jaise%20EUR/USD%20ya%20USD/JPY.%20%2APip%2A%20%28Percentage%20in%20Point%29%20ek%20currency%20pair%20ki%20smallest%20price%20movement%20hoti%20hai%E2%80%94jaise%20EUR/USD%20mein%200.0001%20ka%20change.%20%2ALot%20size%2A%20batata%20hai%20kitni%20units%20trade%20ho%20rahi%20hain%20%28Standard%20Lot%20%3D%20100%2C000%20units%2C%20Mini%20Lot%20%3D%2010%2C000%2C%20Micro%20Lot%20%3D%201%2C000%29.%20In%20teen%20cheezon%20ko%20samajhna%20zaroori%20hai%20taake%20aapka%20profit/loss%20calculate%20ho%20sake.%0A%0AExample%3A%0AAgar%20aap%20%2A%2AEUR/USD%2A%2A%20par%20trade%20kar%20rahe%20hain%20aur%20price%201.1000%20se%201.1005%20tak%20jaati%20hai%2C%20to%20aapka%20%2Apip%20gain%2A%20hai%20%281.1005%20%E2%80%93%201.1000%20%3D%200.0005%20%3D%20%2A%2A5%20pips%2A%2A%29.%20Agar%20aap%20%2A%2A1%20Mini%20Lot%20%2810%2C000%20units%29%2A%2A%20trade%20kar%20rahe%20hain%2C%20to%20har%20pip%20ka%20value%20%2A%2A%241%2A%2A%20hota%20hai%20%2810%2C000%20%C3%97%200.0001%29.%20Isliye%205%20pips%20%C3%97%20%241%20%3D%20%2A%2A%245%20profit%2A%2A.%0A%0APractice%3A%0AApne%20MetaTrader%20par%20%2A%2AGBP/JPY%2A%2A%20pair%20select%20karein.%20Chart%20par%20dekhein%20ki%20current%20price%20kya%20hai%2C%20aur%20agar%20aap%20%2A%2A1%20Micro%20Lot%20%281%2C000%20units%29%2A%2A%20buy%20karte%20hain%2C%20to%20har%20pip%20ka%20value%20kitna%20hoga%3F%20%28Hint%3A%20GBP/JPY%20mein%20pip%20%3D%200.01%2C%20lekin%20value%20calculate%20karne%20ke%20liye%20currency%20ke%20hisaab%20se%20sochna%20hoga.%29%0A%0AMini%20Project%3A%0AEk%20Excel%20sheet%20banayein%20jismein%20aap%20%2A%2A3%20different%20currency%20pairs%2A%2A%20%28jaise%20EUR/USD%2C%20USD/JPY%2C%20GBP/USD%29%20ke%20liye%20%2A%2A1%20Standard%20Lot%2C%201%20Mini%20Lot%2C%20aur%201%20Micro%20Lot%2A%2A%20ka%20har%20pip%20ka%20value%20calculate%20karein.%20%28Example%3A%20EUR/USD%20ka%201%20pip%20%3D%20%2410%20%28Standard%20Lot%29%2C%20%241%20%28Mini%20Lot%29%2C%20%240.10%20%28Micro%20Lot%29%29.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://t.me/share/url?url=&text=Day%202%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
+        <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
-      <div>
+      <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
           data-slug="forex-trading" data-lesson="day-002"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <p><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    <div class="lesson-nav"><a class="btn alt" href="2026-08-03-day-001.html">← Day 1 — Forex Market Kya Hai? Aur Kaise Kaam Karta Hai?</a><a class="btn alt" href="2026-08-04-day-003.html">Day 3 — Leverage aur Margin: Apne Trading Ko Powerful Banane ka Secret →</a></div>
+    <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
+    <div class="no-print" style="margin:18px 0;text-align:center;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
+        data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
@@ -368,5 +420,18 @@ padding:4px 6px;font-size:1.1em;}
     });
   });
   window.addEventListener("appinstalled", function(){ banner.classList.remove("show"); });
+})();
+</script><script>
+(function(){
+  try{
+    var today = new Date().toISOString().slice(0,10);
+    var s = JSON.parse(localStorage.getItem("fkc_streak")||"null") || {last:null,count:0};
+    if(s.last !== today){
+      var y = new Date(Date.now()-86400000).toISOString().slice(0,10);
+      s.count = (s.last === y) ? s.count + 1 : 1;
+      s.last = today;
+      localStorage.setItem("fkc_streak", JSON.stringify(s));
+    }
+  }catch(e){}
 })();
 </script>

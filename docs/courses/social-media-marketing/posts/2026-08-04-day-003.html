@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T16:51:55.506076";
+  var FKC_BUILD = "2026-08-04T18:32:09.069739";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,26 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.fkc-search{width:100%;padding:12px 14px;border:1px solid var(--line);
+border-radius:8px;font-size:15px;margin:10px 0 4px;box-sizing:border-box;
+font-family:inherit;}
+.streak-badge{display:none;background:#EA580C;color:#fff;font-size:.72em;
+font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+vertical-align:middle;}
+.lesson-nav{display:flex;justify-content:space-between;gap:8px;
+flex-wrap:wrap;margin-top:14px;}
+.lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
+border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
+box-sizing:border-box;margin:6px 0;}
+.quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+@media print{
+  .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
+  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:none;}
+}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -161,18 +181,50 @@ pre code{font-family:inherit;background:none;padding:0;}
       
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Instagram par organic growth ka formula hai &quot;Engagement + Consistency + Niche Authority&quot;. Aaj hum 3 tactics seekhenge jo 30K+ followers tak le ja sakte hain: 1) **First 60 Minutes Rule** (algorithm ko signal do ke video viral ho rahi hai), 2) **Comment Pods** (engagement boost karne ka chhupa hua tareeqa), 3) **Collab Posts** (niche ke influencers ke saath cross-promotion).</p><h3>Example</h3><p>Step-by-step **First 60 Minutes Rule**:<br>1. Reel upload karne ke **pehle 10 minute** mein 5 close friends ko DM karke video dekhne ko kahen.<br>2. Upload ke **pehle 30 minute** mein 3-4 comments likhein (apne niche ke keywords ke saath).<br>3. Pehle **60 minute** mein 100+ views hone ke baad, algorithm &quot;trending&quot; maanta hai aur reach badha deta hai.</p><h3>Practice</h3><p>Apne niche ke **3 influencers** ko DM karke poochhein ke woh aapke Reel par comment karenge ya nahin. (Template: *&quot;Hi [Name], main [Your Name] hun. Aapke content se inspire ho kar maine ek Reel banaya hai. Agar aapko pasand aaye to pehle 60 minute mein ek comment kar dena — isse hum sabki reach badhegi! 🙏&quot;*)</p><h3>Mini Project</h3><p>Ek **collab Reel** plan karen:<br>- Niche: Fitness<br>- Collab partner: @GymMotivationIndia (100K+ followers)<br>- Idea: &quot;5 Minute Warm-up Routine&quot; (aap 3 exercises show karen, woh 2 exercises)<br>- Hashtags: #FitnessIndia #WorkoutAtHome #GymMotivation</p></div>
       
-      <div>
+      
+      <div class="quiz-box no-print">
+        <p><b>📝 Apna Practice Check Karein</b></p>
+        <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
+        <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"dm template, 3 influencers, collab reel idea"'>✅ Check Karein</button>
+        <div class="quiz-result" id="fkc-quiz-result"></div>
+      </div>
+      <script>
+      function fkcCheckQuiz(btn){
+        var keys = JSON.parse(btn.getAttribute("data-keys"));
+        var ans = (document.getElementById("fkc-quiz-answer").value || "").toLowerCase();
+        var hit = 0;
+        keys.forEach(function(k){ if(k && ans.indexOf(k) !== -1) hit++; });
+        var el = document.getElementById("fkc-quiz-result");
+        if(hit === 0){
+          el.textContent = "Koi keyword match nahi hua — dobara try karein ya lesson dobara parhein.";
+          el.style.color = "#D97706";
+        } else {
+          el.textContent = "✅ " + hit + "/" + keys.length + " keywords match hue — shabaash!";
+          el.style.color = "var(--accent)";
+        }
+      }
+      </script>
+      <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Social%20Media%20Marketing%20%28Day%2003%29%0A%0ADay%203%20%E2%80%94%20Instagram%20Growth%20Tactics%3A%2030K%2B%20Followers%20ka%20Secret%0A%0AConcept%3A%0AInstagram%20par%20organic%20growth%20ka%20formula%20hai%20%22Engagement%20%2B%20Consistency%20%2B%20Niche%20Authority%22.%20Aaj%20hum%203%20tactics%20seekhenge%20jo%2030K%2B%20followers%20tak%20le%20ja%20sakte%20hain%3A%201%29%20%2A%2AFirst%2060%20Minutes%20Rule%2A%2A%20%28algorithm%20ko%20signal%20do%20ke%20video%20viral%20ho%20rahi%20hai%29%2C%202%29%20%2A%2AComment%20Pods%2A%2A%20%28engagement%20boost%20karne%20ka%20chhupa%20hua%20tareeqa%29%2C%203%29%20%2A%2ACollab%20Posts%2A%2A%20%28niche%20ke%20influencers%20ke%20saath%20cross-promotion%29.%0A%0AExample%3A%0AStep-by-step%20%2A%2AFirst%2060%20Minutes%20Rule%2A%2A%3A%0A1.%20Reel%20upload%20karne%20ke%20%2A%2Apehle%2010%20minute%2A%2A%20mein%205%20close%20friends%20ko%20DM%20karke%20video%20dekhne%20ko%20kahen.%0A2.%20Upload%20ke%20%2A%2Apehle%2030%20minute%2A%2A%20mein%203-4%20comments%20likhein%20%28apne%20niche%20ke%20keywords%20ke%20saath%29.%0A3.%20Pehle%20%2A%2A60%20minute%2A%2A%20mein%20100%2B%20views%20hone%20ke%20baad%2C%20algorithm%20%22trending%22%20maanta%20hai%20aur%20reach%20badha%20deta%20hai.%0A%0APractice%3A%0AApne%20niche%20ke%20%2A%2A3%20influencers%2A%2A%20ko%20DM%20karke%20poochhein%20ke%20woh%20aapke%20Reel%20par%20comment%20karenge%20ya%20nahin.%20%28Template%3A%20%2A%22Hi%20%5BName%5D%2C%20main%20%5BYour%20Name%5D%20hun.%20Aapke%20content%20se%20inspire%20ho%20kar%20maine%20ek%20Reel%20banaya%20hai.%20Agar%20aapko%20pasand%20aaye%20to%20pehle%2060%20minute%20mein%20ek%20comment%20kar%20dena%20%E2%80%94%20isse%20hum%20sabki%20reach%20badhegi%21%20%F0%9F%99%8F%22%2A%29%0A%0AMini%20Project%3A%0AEk%20%2A%2Acollab%20Reel%2A%2A%20plan%20karen%3A%0A-%20Niche%3A%20Fitness%0A-%20Collab%20partner%3A%20%40GymMotivationIndia%20%28100K%2B%20followers%29%0A-%20Idea%3A%20%225%20Minute%20Warm-up%20Routine%22%20%28aap%203%20exercises%20show%20karen%2C%20woh%202%20exercises%29%0A-%20Hashtags%3A%20%23FitnessIndia%20%23WorkoutAtHome%20%23GymMotivation%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://t.me/share/url?url=&text=Day%203%20%E2%80%94%20Instagram%20Growth%20Tactics%3A%2030K%2B%20Followers%20ka%20Secret%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
+        <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
-      <div>
+      <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
           data-slug="social-media-marketing" data-lesson="day-003"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <p><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    <div class="lesson-nav"><a class="btn alt" href="2026-08-03-day-002.html">← Day 2 — **Viral Reels/Shorts Banane ke 5 Golden Rules**</a><span></span></div>
+    <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
+    <div class="no-print" style="margin:18px 0;text-align:center;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
+        data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
@@ -368,5 +420,18 @@ padding:4px 6px;font-size:1.1em;}
     });
   });
   window.addEventListener("appinstalled", function(){ banner.classList.remove("show"); });
+})();
+</script><script>
+(function(){
+  try{
+    var today = new Date().toISOString().slice(0,10);
+    var s = JSON.parse(localStorage.getItem("fkc_streak")||"null") || {last:null,count:0};
+    if(s.last !== today){
+      var y = new Date(Date.now()-86400000).toISOString().slice(0,10);
+      s.count = (s.last === y) ? s.count + 1 : 1;
+      s.last = today;
+      localStorage.setItem("fkc_streak", JSON.stringify(s));
+    }
+  }catch(e){}
 })();
 </script>

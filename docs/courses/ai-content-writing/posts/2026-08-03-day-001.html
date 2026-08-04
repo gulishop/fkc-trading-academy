@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T16:51:55.506076";
+  var FKC_BUILD = "2026-08-04T18:32:09.069739";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,26 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.fkc-search{width:100%;padding:12px 14px;border:1px solid var(--line);
+border-radius:8px;font-size:15px;margin:10px 0 4px;box-sizing:border-box;
+font-family:inherit;}
+.streak-badge{display:none;background:#EA580C;color:#fff;font-size:.72em;
+font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+vertical-align:middle;}
+.lesson-nav{display:flex;justify-content:space-between;gap:8px;
+flex-wrap:wrap;margin-top:14px;}
+.lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
+border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
+box-sizing:border-box;margin:6px 0;}
+.quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+@media print{
+  .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
+  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:none;}
+}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -161,18 +181,50 @@ pre code{font-family:inherit;background:none;padding:0;}
       
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Copywriting ka matlab hai words ko istemal karke readers ko action lene par majboor karna. Aaj hum 3 core elements seekhenge:<br>1. **Hook** – Pehla sentence jo padhne wale ko roke rakhe.<br>2. **Benefit** – Reader ko yeh batao ke tum usko kya dene jaa rahe ho.<br>3. **CTA (Call-to-Action)** – Reader ko kya karna hai, clear instruction do.</p><h3>Example</h3><p>Imagine you’re selling a *&quot;10-Minute Morning Routine&quot;* ebook.<br>❌</p><h3>Bad Hook</h3><p>&quot;This book is about morning routines.&quot;<br>✅</p><h3>Good Hook</h3><p>&quot;Wake up tired? This 10-minute routine will give you energy for the whole day—without coffee!&quot;</p><h3>Benefit</h3><p>&quot;Learn 5 science-backed habits to boost focus and lose weight effortlessly.&quot;</p><h3>CTA</h3><p>&quot;Download now and start tomorrow!&quot;</p><h3>Practice</h3><p>Apne favorite product/service ka ad copy likho. Pehle 1 sentence ka **hook**, phir 1 line ka **benefit**, aur last mein **CTA** likhna hai.</p><h3>Mini Project</h3><p>Ek WhatsApp status ya Instagram caption likho jo:<br>- Hook: &quot;Tired of wasting hours on social media?&quot;<br>- Benefit: &quot;This free tool blocks distractions and saves 2 hours daily.&quot;<br>- CTA: &quot;DM me ‘FOCUS’ to get it now!&quot;</p></div>
       
-      <div>
+      
+      <div class="quiz-box no-print">
+        <p><b>📝 Apna Practice Check Karein</b></p>
+        <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
+        <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"hook, benefit, cta"'>✅ Check Karein</button>
+        <div class="quiz-result" id="fkc-quiz-result"></div>
+      </div>
+      <script>
+      function fkcCheckQuiz(btn){
+        var keys = JSON.parse(btn.getAttribute("data-keys"));
+        var ans = (document.getElementById("fkc-quiz-answer").value || "").toLowerCase();
+        var hit = 0;
+        keys.forEach(function(k){ if(k && ans.indexOf(k) !== -1) hit++; });
+        var el = document.getElementById("fkc-quiz-result");
+        if(hit === 0){
+          el.textContent = "Koi keyword match nahi hua — dobara try karein ya lesson dobara parhein.";
+          el.style.color = "#D97706";
+        } else {
+          el.textContent = "✅ " + hit + "/" + keys.length + " keywords match hue — shabaash!";
+          el.style.color = "var(--accent)";
+        }
+      }
+      </script>
+      <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20AI%20Content%20Writing%20%26%20Copywriting%20%28Day%2001%29%0A%0ADay%201%20%E2%80%94%20Copywriting%20Basics%3A%20Hook%2C%20Benefit%20%26%20CTA%0A%0AConcept%3A%0ACopywriting%20ka%20matlab%20hai%20words%20ko%20istemal%20karke%20readers%20ko%20action%20lene%20par%20majboor%20karna.%20Aaj%20hum%203%20core%20elements%20seekhenge%3A%0A1.%20%2A%2AHook%2A%2A%20%E2%80%93%20Pehla%20sentence%20jo%20padhne%20wale%20ko%20roke%20rakhe.%0A2.%20%2A%2ABenefit%2A%2A%20%E2%80%93%20Reader%20ko%20yeh%20batao%20ke%20tum%20usko%20kya%20dene%20jaa%20rahe%20ho.%0A3.%20%2A%2ACTA%20%28Call-to-Action%29%2A%2A%20%E2%80%93%20Reader%20ko%20kya%20karna%20hai%2C%20clear%20instruction%20do.%0A%0AExample%3A%0AImagine%20you%E2%80%99re%20selling%20a%20%2A%2210-Minute%20Morning%20Routine%22%2A%20ebook.%0A%E2%9D%8C%0A%0ABad%20Hook%3A%0A%22This%20book%20is%20about%20morning%20routines.%22%0A%E2%9C%85%0A%0AGood%20Hook%3A%0A%22Wake%20up%20tired%3F%20This%2010-minute%20routine%20will%20give%20you%20energy%20for%20the%20whole%20day%E2%80%94without%20coffee%21%22%0A%0ABenefit%3A%0A%22Learn%205%20science-backed%20habits%20to%20boost%20focus%20and%20lose%20weight%20effortlessly.%22%0A%0ACTA%3A%0A%22Download%20now%20and%20start%20tomorrow%21%22%0A%0APractice%3A%0AApne%20favorite%20product/service%20ka%20ad%20copy%20likho.%20Pehle%201%20sentence%20ka%20%2A%2Ahook%2A%2A%2C%20phir%201%20line%20ka%20%2A%2Abenefit%2A%2A%2C%20aur%20last%20mein%20%2A%2ACTA%2A%2A%20likhna%20hai.%0A%0AMini%20Project%3A%0AEk%20WhatsApp%20status%20ya%20Instagram%20caption%20likho%20jo%3A%0A-%20Hook%3A%20%22Tired%20of%20wasting%20hours%20on%20social%20media%3F%22%0A-%20Benefit%3A%20%22This%20free%20tool%20blocks%20distractions%20and%20saves%202%20hours%20daily.%22%0A-%20CTA%3A%20%22DM%20me%20%E2%80%98FOCUS%E2%80%99%20to%20get%20it%20now%21%22%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://t.me/share/url?url=&text=Day%201%20%E2%80%94%20Copywriting%20Basics%3A%20Hook%2C%20Benefit%20%26%20CTA%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
+        <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
-      <div>
+      <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
           data-slug="ai-content-writing" data-lesson="day-001"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <p><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    <div class="lesson-nav"><span></span><a class="btn alt" href="2026-08-03-day-002.html">Day 2 — AI Se Blog Articles: Draft Se Publish Tak →</a></div>
+    <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
+    <div class="no-print" style="margin:18px 0;text-align:center;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
+        data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
@@ -368,5 +420,18 @@ padding:4px 6px;font-size:1.1em;}
     });
   });
   window.addEventListener("appinstalled", function(){ banner.classList.remove("show"); });
+})();
+</script><script>
+(function(){
+  try{
+    var today = new Date().toISOString().slice(0,10);
+    var s = JSON.parse(localStorage.getItem("fkc_streak")||"null") || {last:null,count:0};
+    if(s.last !== today){
+      var y = new Date(Date.now()-86400000).toISOString().slice(0,10);
+      s.count = (s.last === y) ? s.count + 1 : 1;
+      s.last = today;
+      localStorage.setItem("fkc_streak", JSON.stringify(s));
+    }
+  }catch(e){}
 })();
 </script>

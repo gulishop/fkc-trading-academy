@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T16:51:55.506076";
+  var FKC_BUILD = "2026-08-04T18:32:09.069739";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,26 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.fkc-search{width:100%;padding:12px 14px;border:1px solid var(--line);
+border-radius:8px;font-size:15px;margin:10px 0 4px;box-sizing:border-box;
+font-family:inherit;}
+.streak-badge{display:none;background:#EA580C;color:#fff;font-size:.72em;
+font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+vertical-align:middle;}
+.lesson-nav{display:flex;justify-content:space-between;gap:8px;
+flex-wrap:wrap;margin-top:14px;}
+.lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
+border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
+box-sizing:border-box;margin:6px 0;}
+.quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+@media print{
+  .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
+  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:none;}
+}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -161,18 +181,50 @@ pre code{font-family:inherit;background:none;padding:0;}
       <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>TikTok ka algorithm sirf un videos ko promote karta hai jo pehle 3 seconds mein hi viewer ko &quot;hook&quot; kar le. Agar aapka intro boring hai, to user scroll kar jayega—chahe video kitni bhi achi ho. Ek strong hook banane ke liye **emotion (shock, curiosity, FOMO), problem/solution ya unexpected twist** use karo. Example: &quot;Maine 10,000 rupees ka loss isliye kiya kyun...&quot; ya &quot;Yeh 1 cheez aapke TikTok growth ko 10x kar degi!&quot;</p><h3>Example</h3><p>Ek fitness creator ka hook: *&quot;Agar aap yeh 1 exercise roz karoge, to 1 mahine mein 5 kg fat burn ho jayega—lekin yeh video last 30 seconds tak dekhna!&quot;* (Phir video mein exercise batata hai). Hook ne curiosity pakad li.</p><h3>Practice</h3><p>Apne phone se **3 different hooks** likho (emotion, problem ya twist based). Har hook ko **3-5 words** mein summarize karo. Ab apne niche se kisi 1 topic par **10-second ka draft video** banaye aur sirf hook par focus karo.</p><h3>Mini Project</h3><p>Ek **fake &quot;breaking news&quot; style hook** banaye aur uske liye ek 15-second ka script likhe (e.g., *&quot;Breaking: TikTok ne apna algorithm change kar diya—ab yeh 3 cheezen karne se aapka account ban jayega BAN!&quot;*). Video record karne ki zaroorat nahi, bas script taiyar karo.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>ٹِک ٹاک کا الگورتھم صرف ان ویڈیوز کو پروموٹ کرتا ہے جو پہلے 3 سیکنڈ میں ہی ویوئر کو &#x27;ہُک&#x27; کر لیں۔ اگر آپ کا انٹرو بورنگ ہے، تو یوزر اسکرول کر جائے گا—چاہے ویڈیو کتنی ہی اچھی ہو۔ ایک مضبوط ہُک بنانے کے لیے **ایموشن (شاک، کوریوسٹی، FOMO)، پرابلم/سoluion یا ان ایکسپیکٹڈ ٹِوسٹ** استعمال کرو۔ مثال: &#x27;میں نے 10,000 روپے کا loss اس لیے کیا کیونکہ...&#x27; یا &#x27;یہ 1 چیز آپ کے ٹِک ٹاک گروتھ کو 10x کر دے گی!&#x27;</p><h3>Example</h3><p>ایک فٹنس کریٹر کا ہُک: *&#x27;اگر آپ یہ 1 ایکسرسائز روز کریں گے، تو 1 مہینے میں 5 کلو گرام fat burn ہو جائے گا—لیکن یہ ویڈیو last 30 سیکنڈ تک دیکھنا!&#x27;* (پھر ویڈیو میں ایکسرسائز بتاتا ہے۔) ہُک نے کوریوسٹی پکڑ لی۔</p><h3>Practice</h3><p>اپنے فون سے **3 different ہُکس** لکھو (ایموشن، پرابلم یا ٹِوسٹ بیسڈ۔) ہر ہُک کو **3-5 words** میں سمیریائز کرو۔ اب اپنے نیچے سے کسی 1 ٹاپِک پر **10-سیکنڈ کا ڈرافٹ ویڈیو** بنائے اور صرف ہُک پر فوکس کرو۔</p><h3>Mini Project</h3><p>ایک **فیک &#x27;بریکنگ نیوز&#x27; سٹائل ہُک** بنائے اور اس کے لیے ایک 15-سیکنڈ کا سکرپٹ لکھے (مثلاً: *&#x27;Breaking: ٹِک ٹاک نے اپنا الگورتھم چینج کر دیا—اب یہ 3 چیزیں کرنے سے آپ کا اکاؤنٹ بن جائے گا BAN!&#x27;*) ویڈیو ریکارڈ کرنے کی ضرورت نہیں، بس سکرپٹ تیار کرو۔</p></div>
       
-      <div>
+      
+      <div class="quiz-box no-print">
+        <p><b>📝 Apna Practice Check Karein</b></p>
+        <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
+        <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"emotion + curiosity + fomo"'>✅ Check Karein</button>
+        <div class="quiz-result" id="fkc-quiz-result"></div>
+      </div>
+      <script>
+      function fkcCheckQuiz(btn){
+        var keys = JSON.parse(btn.getAttribute("data-keys"));
+        var ans = (document.getElementById("fkc-quiz-answer").value || "").toLowerCase();
+        var hit = 0;
+        keys.forEach(function(k){ if(k && ans.indexOf(k) !== -1) hit++; });
+        var el = document.getElementById("fkc-quiz-result");
+        if(hit === 0){
+          el.textContent = "Koi keyword match nahi hua — dobara try karein ya lesson dobara parhein.";
+          el.style.color = "#D97706";
+        } else {
+          el.textContent = "✅ " + hit + "/" + keys.length + " keywords match hue — shabaash!";
+          el.style.color = "var(--accent)";
+        }
+      }
+      </script>
+      <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20TikTok%20Growth%20%26%20Monetization%20%28Day%2003%29%0A%0ADay%203%20%E2%80%94%20%2A%2ATikTok%20Par%20%22Hook%22%20Kaise%20Banayein%20%28Jo%203%20Seconds%20Mein%20Hi%20Viewer%20Ko%20Roke%29%2A%2A%0A%0AConcept%3A%0ATikTok%20ka%20algorithm%20sirf%20un%20videos%20ko%20promote%20karta%20hai%20jo%20pehle%203%20seconds%20mein%20hi%20viewer%20ko%20%22hook%22%20kar%20le.%20Agar%20aapka%20intro%20boring%20hai%2C%20to%20user%20scroll%20kar%20jayega%E2%80%94chahe%20video%20kitni%20bhi%20achi%20ho.%20Ek%20strong%20hook%20banane%20ke%20liye%20%2A%2Aemotion%20%28shock%2C%20curiosity%2C%20FOMO%29%2C%20problem/solution%20ya%20unexpected%20twist%2A%2A%20use%20karo.%20Example%3A%20%22Maine%2010%2C000%20rupees%20ka%20loss%20isliye%20kiya%20kyun...%22%20ya%20%22Yeh%201%20cheez%20aapke%20TikTok%20growth%20ko%2010x%20kar%20degi%21%22%0A%0AExample%3A%0AEk%20fitness%20creator%20ka%20hook%3A%20%2A%22Agar%20aap%20yeh%201%20exercise%20roz%20karoge%2C%20to%201%20mahine%20mein%205%20kg%20fat%20burn%20ho%20jayega%E2%80%94lekin%20yeh%20video%20last%2030%20seconds%20tak%20dekhna%21%22%2A%20%28Phir%20video%20mein%20exercise%20batata%20hai%29.%20Hook%20ne%20curiosity%20pakad%20li.%0A%0APractice%3A%0AApne%20phone%20se%20%2A%2A3%20different%20hooks%2A%2A%20likho%20%28emotion%2C%20problem%20ya%20twist%20based%29.%20Har%20hook%20ko%20%2A%2A3-5%20words%2A%2A%20mein%20summarize%20karo.%20Ab%20apne%20niche%20se%20kisi%201%20topic%20par%20%2A%2A10-second%20ka%20draft%20video%2A%2A%20banaye%20aur%20sirf%20hook%20par%20focus%20karo.%0A%0AMini%20Project%3A%0AEk%20%2A%2Afake%20%22breaking%20news%22%20style%20hook%2A%2A%20banaye%20aur%20uske%20liye%20ek%2015-second%20ka%20script%20likhe%20%28e.g.%2C%20%2A%22Breaking%3A%20TikTok%20ne%20apna%20algorithm%20change%20kar%20diya%E2%80%94ab%20yeh%203%20cheezen%20karne%20se%20aapka%20account%20ban%20jayega%20BAN%21%22%2A%29.%20Video%20record%20karne%20ki%20zaroorat%20nahi%2C%20bas%20script%20taiyar%20karo.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://t.me/share/url?url=&text=Day%203%20%E2%80%94%20%2A%2ATikTok%20Par%20%22Hook%22%20Kaise%20Banayein%20%28Jo%203%20Seconds%20Mein%20Hi%20Viewer%20Ko%20Roke%29%2A%2A%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
+        <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
-      <div>
+      <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
           data-slug="tiktok-growth" data-lesson="day-003"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <p><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    <div class="lesson-nav"><a class="btn alt" href="2026-08-04-day-002.html">← Day 2 — **TikTok Par Trending Sounds Kaise Dhunde (Aur Unka Sahi Istemal Karein)**</a><span></span></div>
+    <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
+    <div class="no-print" style="margin:18px 0;text-align:center;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
+        data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
@@ -368,5 +420,18 @@ padding:4px 6px;font-size:1.1em;}
     });
   });
   window.addEventListener("appinstalled", function(){ banner.classList.remove("show"); });
+})();
+</script><script>
+(function(){
+  try{
+    var today = new Date().toISOString().slice(0,10);
+    var s = JSON.parse(localStorage.getItem("fkc_streak")||"null") || {last:null,count:0};
+    if(s.last !== today){
+      var y = new Date(Date.now()-86400000).toISOString().slice(0,10);
+      s.count = (s.last === y) ? s.count + 1 : 1;
+      s.last = today;
+      localStorage.setItem("fkc_streak", JSON.stringify(s));
+    }
+  }catch(e){}
 })();
 </script>

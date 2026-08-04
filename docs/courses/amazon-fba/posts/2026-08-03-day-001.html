@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T16:51:55.506076";
+  var FKC_BUILD = "2026-08-04T18:32:09.069739";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,26 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.fkc-search{width:100%;padding:12px 14px;border:1px solid var(--line);
+border-radius:8px;font-size:15px;margin:10px 0 4px;box-sizing:border-box;
+font-family:inherit;}
+.streak-badge{display:none;background:#EA580C;color:#fff;font-size:.72em;
+font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+vertical-align:middle;}
+.lesson-nav{display:flex;justify-content:space-between;gap:8px;
+flex-wrap:wrap;margin-top:14px;}
+.lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
+border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
+box-sizing:border-box;margin:6px 0;}
+.quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+@media print{
+  .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
+  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:none;}
+}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -161,18 +181,50 @@ pre code{font-family:inherit;background:none;padding:0;}
       
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Amazon FBA (Fulfillment by Amazon) ek business model hai jahan aap apna product Amazon ke warehouses mein store karte hain, aur Amazon usko pack, ship, aur customer service bhi handle karta hai. Aapko sirf product research, sourcing, aur marketing par focus karna hota hai. Iske liye aapko Amazon ko fees dete hain, lekin aapko global reach, trusted brand, aur Prime customers milte hain.</p><h3>Example</h3><p>Maana aap &quot;Wireless Charging Pad&quot; bechna chahte hain. Aap isko Alibaba se khareedte hain, Amazon ke warehouse mein bhejte hain, aur listing banate hain. Jab koi customer order karta hai, Amazon usko pack karke deliver karta hai, aur aapko payment Amazon se milta hai (minus fees).</p><h3>Practice</h3><p>Apne mobile ya laptop se Amazon App ya Website par jayein, aur &quot;Amazon FBA&quot; search karen. Dekhein ki FBA sellers ke products ka kya structure hota hai (title, images, price, etc.).</p><h3>Mini Project</h3><p>Apne mind mein ek product choose karen jo aap FBA par bech sakte hain. Uske liye 3 reasons likhein kyun yeh product Amazon par bechne layak hai (demand, competition, ya margin ke hisaab se).</p></div>
       
-      <div>
+      
+      <div class="quiz-box no-print">
+        <p><b>📝 Apna Practice Check Karein</b></p>
+        <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
+        <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"product research, warehouse, prime, fees"'>✅ Check Karein</button>
+        <div class="quiz-result" id="fkc-quiz-result"></div>
+      </div>
+      <script>
+      function fkcCheckQuiz(btn){
+        var keys = JSON.parse(btn.getAttribute("data-keys"));
+        var ans = (document.getElementById("fkc-quiz-answer").value || "").toLowerCase();
+        var hit = 0;
+        keys.forEach(function(k){ if(k && ans.indexOf(k) !== -1) hit++; });
+        var el = document.getElementById("fkc-quiz-result");
+        if(hit === 0){
+          el.textContent = "Koi keyword match nahi hua — dobara try karein ya lesson dobara parhein.";
+          el.style.color = "#D97706";
+        } else {
+          el.textContent = "✅ " + hit + "/" + keys.length + " keywords match hue — shabaash!";
+          el.style.color = "var(--accent)";
+        }
+      }
+      </script>
+      <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Amazon%20FBA%20%28Day%2001%29%0A%0ADay%201%20%E2%80%94%20Amazon%20FBA%20Kya%20Hai%3F%20Basics%20Se%20Shuru%0A%0AConcept%3A%0AAmazon%20FBA%20%28Fulfillment%20by%20Amazon%29%20ek%20business%20model%20hai%20jahan%20aap%20apna%20product%20Amazon%20ke%20warehouses%20mein%20store%20karte%20hain%2C%20aur%20Amazon%20usko%20pack%2C%20ship%2C%20aur%20customer%20service%20bhi%20handle%20karta%20hai.%20Aapko%20sirf%20product%20research%2C%20sourcing%2C%20aur%20marketing%20par%20focus%20karna%20hota%20hai.%20Iske%20liye%20aapko%20Amazon%20ko%20fees%20dete%20hain%2C%20lekin%20aapko%20global%20reach%2C%20trusted%20brand%2C%20aur%20Prime%20customers%20milte%20hain.%0A%0AExample%3A%0AMaana%20aap%20%22Wireless%20Charging%20Pad%22%20bechna%20chahte%20hain.%20Aap%20isko%20Alibaba%20se%20khareedte%20hain%2C%20Amazon%20ke%20warehouse%20mein%20bhejte%20hain%2C%20aur%20listing%20banate%20hain.%20Jab%20koi%20customer%20order%20karta%20hai%2C%20Amazon%20usko%20pack%20karke%20deliver%20karta%20hai%2C%20aur%20aapko%20payment%20Amazon%20se%20milta%20hai%20%28minus%20fees%29.%0A%0APractice%3A%0AApne%20mobile%20ya%20laptop%20se%20Amazon%20App%20ya%20Website%20par%20jayein%2C%20aur%20%22Amazon%20FBA%22%20search%20karen.%20Dekhein%20ki%20FBA%20sellers%20ke%20products%20ka%20kya%20structure%20hota%20hai%20%28title%2C%20images%2C%20price%2C%20etc.%29.%0A%0AMini%20Project%3A%0AApne%20mind%20mein%20ek%20product%20choose%20karen%20jo%20aap%20FBA%20par%20bech%20sakte%20hain.%20Uske%20liye%203%20reasons%20likhein%20kyun%20yeh%20product%20Amazon%20par%20bechne%20layak%20hai%20%28demand%2C%20competition%2C%20ya%20margin%20ke%20hisaab%20se%29.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://t.me/share/url?url=&text=Day%201%20%E2%80%94%20Amazon%20FBA%20Kya%20Hai%3F%20Basics%20Se%20Shuru%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
+        <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
-      <div>
+      <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
           data-slug="amazon-fba" data-lesson="day-001"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <p><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    <div class="lesson-nav"><span></span><a class="btn alt" href="2026-08-03-day-002.html">Day 2 →</a></div>
+    <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
+    <div class="no-print" style="margin:18px 0;text-align:center;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
+        data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
@@ -368,5 +420,18 @@ padding:4px 6px;font-size:1.1em;}
     });
   });
   window.addEventListener("appinstalled", function(){ banner.classList.remove("show"); });
+})();
+</script><script>
+(function(){
+  try{
+    var today = new Date().toISOString().slice(0,10);
+    var s = JSON.parse(localStorage.getItem("fkc_streak")||"null") || {last:null,count:0};
+    if(s.last !== today){
+      var y = new Date(Date.now()-86400000).toISOString().slice(0,10);
+      s.count = (s.last === y) ? s.count + 1 : 1;
+      s.last = today;
+      localStorage.setItem("fkc_streak", JSON.stringify(s));
+    }
+  }catch(e){}
 })();
 </script>

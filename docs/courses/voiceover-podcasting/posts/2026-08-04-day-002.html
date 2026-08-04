@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T16:51:55.506076";
+  var FKC_BUILD = "2026-08-04T18:32:09.069739";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,26 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.fkc-search{width:100%;padding:12px 14px;border:1px solid var(--line);
+border-radius:8px;font-size:15px;margin:10px 0 4px;box-sizing:border-box;
+font-family:inherit;}
+.streak-badge{display:none;background:#EA580C;color:#fff;font-size:.72em;
+font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+vertical-align:middle;}
+.lesson-nav{display:flex;justify-content:space-between;gap:8px;
+flex-wrap:wrap;margin-top:14px;}
+.lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
+border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
+box-sizing:border-box;margin:6px 0;}
+.quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+@media print{
+  .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
+  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:none;}
+}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -161,18 +181,50 @@ pre code{font-family:inherit;background:none;padding:0;}
       <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Script padhna sirf words bolna nahi, balki unke peeche ki *emotion* aur *intention* ko samajh kar unhe aise deliver karna hai jo listener ke dil tak pahunch sake. Tone control ka matlab hai apne voice ki pitch, speed, aur energy ko script ke mood ke hisaab se adjust karna. Yeh skill beginner se intermediate level tak sabhi ke liye zaroori hai, chahe aap podcast host ho ya voice-over artist.</p><h3>Example</h3><p>Ek simple line hai: *&quot;Main aaj bahut khush hoon!&quot;*<br>-</p><h3>Happy tone</h3><p>Fast speed, high pitch, cheerful energy → *&quot;Main aaj bahut khush hoon!&quot;* (😊)<br>-</p><h3>Sad tone</h3><p>Slow speed, low pitch, heavy energy → *&quot;Main aaj bahut khush hoon...&quot;* (😢)<br>-</p><h3>Angry tone</h3><p>Sharp pitch, fast speed, stressed words → *&quot;Main aaj bahut khush hoon!&quot;* (😡)</p><h3>Practice</h3><p>Apne mobile ya laptop ke recorder se 3 baar yeh line bolen:<br>1. Ek baar *excited* tone mein (jaise koi sports commentator ho).<br>2. Ek baar *whisper* karke (jaise secret share kar rahe ho).<br>3. Ek baar *dramatic pause* ke saath (jaise koi horror story sunayein).</p><h3>Mini Project</h3><p>Ek 10-second ka *emotional* script likhein (jaise: *&quot;Meri ma ki aawaaz sun kar mere aansu nikal aaye...&quot;*). Uske liye 3 alag tones (happy, sad, angry) record karen aur compare karen ki kaun sa zyada effective hai.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>اسکرپٹ پڑھنا صرف الفاظ کو بولنے کا نام نہیں ہے، بلکہ ان کے پیچھے چھپی *احساسات* اور *ارادوں* کو سمجھ کر انھیں ایسے پیش کرنا ہے جو سننے والے کے دل تک پہنچ سکے۔ ٹون کنٹرول کا مطلب ہے اپنی آواز کی پچ، رفتار، اور توانائی کو اسکرپٹ کے موڈ کے مطابق ایڈجسٹ کرنا۔ یہ مہارت ہر سطح کے افراد کے لیے ضروری ہے، چاہے آپ ایک پڈکاسٹ ہوسٹ ہوں یا وائس اوور آرٹسٹ۔</p><h3>Example</h3><p>ایک سادہ لائن ہے: *&quot;میں آج بہت خوش ہوں!&quot;*</p><h3></h3><p>خوش مزاج: تیز رفتار، بلند پچ، خوشگوار توانائی → *&quot;میں آج بہت خوش ہوں!&quot;* (😊)</p><h3></h3><p>اداس مزاج: سست رفتار، نیچی پچ، بھاری توانائی → *&quot;میں آج بہت خوش ہوں...&quot;* (😢)</p><h3></h3><p>غصے کا مزاج: تیز پچ، تیز رفتار، زور دار الفاظ → *&quot;میں آج بہت خوش ہوں!&quot;* (😡)</p><h3>Practice</h3><p>اپنے موبائل یا لیپ ٹاپ کے ریکارڈر سے اس لائن کو تین بار بولیں:</p><h3></h3><p>1. ایک بار *بہت پرجوش* مزاج میں (جیسے کوئی سپورٹس کمنٹیٹر ہو)۔</p><h3></h3><p>2. ایک بار *چپکے سے* (جیسے کوئی راز شیئر کر رہے ہوں)۔</p><h3></h3><p>3. ایک بار *ڈرامائی وقفے* کے ساتھ (جیسے کوئی ہارر کہانی سنائیں)۔</p><h3>Mini Project</h3><p>ایک 10 سیکنڈ کا *جذباتی* اسکرپٹ لکھیں (جیسے: *&quot;میری ماں کی آواز سن کر میرے آنسو نکل آئے...&quot;*)۔ اس کے لیے تین الگ الگ ٹونز (خوش، اداس، غصے) ریکارڈ کریں اور موازنہ کریں کہ کون سی ٹون زیادہ موثر ہے۔</p></div>
       
-      <div>
+      
+      <div class="quiz-box no-print">
+        <p><b>📝 Apna Practice Check Karein</b></p>
+        <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
+        <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"excited, whisper, dramatic pause"'>✅ Check Karein</button>
+        <div class="quiz-result" id="fkc-quiz-result"></div>
+      </div>
+      <script>
+      function fkcCheckQuiz(btn){
+        var keys = JSON.parse(btn.getAttribute("data-keys"));
+        var ans = (document.getElementById("fkc-quiz-answer").value || "").toLowerCase();
+        var hit = 0;
+        keys.forEach(function(k){ if(k && ans.indexOf(k) !== -1) hit++; });
+        var el = document.getElementById("fkc-quiz-result");
+        if(hit === 0){
+          el.textContent = "Koi keyword match nahi hua — dobara try karein ya lesson dobara parhein.";
+          el.style.color = "#D97706";
+        } else {
+          el.textContent = "✅ " + hit + "/" + keys.length + " keywords match hue — shabaash!";
+          el.style.color = "var(--accent)";
+        }
+      }
+      </script>
+      <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Voice%20Over%20%26%20Podcasting%20%28Day%2002%29%0A%0ADay%202%20%E2%80%94%20Script%20Padhne%20Ka%20Art%3A%20Emotion%20aur%20Tone%20Control%0A%0AConcept%3A%0AScript%20padhna%20sirf%20words%20bolna%20nahi%2C%20balki%20unke%20peeche%20ki%20%2Aemotion%2A%20aur%20%2Aintention%2A%20ko%20samajh%20kar%20unhe%20aise%20deliver%20karna%20hai%20jo%20listener%20ke%20dil%20tak%20pahunch%20sake.%20Tone%20control%20ka%20matlab%20hai%20apne%20voice%20ki%20pitch%2C%20speed%2C%20aur%20energy%20ko%20script%20ke%20mood%20ke%20hisaab%20se%20adjust%20karna.%20Yeh%20skill%20beginner%20se%20intermediate%20level%20tak%20sabhi%20ke%20liye%20zaroori%20hai%2C%20chahe%20aap%20podcast%20host%20ho%20ya%20voice-over%20artist.%0A%0AExample%3A%0AEk%20simple%20line%20hai%3A%20%2A%22Main%20aaj%20bahut%20khush%20hoon%21%22%2A%0A-%0A%0AHappy%20tone%3A%0AFast%20speed%2C%20high%20pitch%2C%20cheerful%20energy%20%E2%86%92%20%2A%22Main%20aaj%20bahut%20khush%20hoon%21%22%2A%20%28%F0%9F%98%8A%29%0A-%0A%0ASad%20tone%3A%0ASlow%20speed%2C%20low%20pitch%2C%20heavy%20energy%20%E2%86%92%20%2A%22Main%20aaj%20bahut%20khush%20hoon...%22%2A%20%28%F0%9F%98%A2%29%0A-%0A%0AAngry%20tone%3A%0ASharp%20pitch%2C%20fast%20speed%2C%20stressed%20words%20%E2%86%92%20%2A%22Main%20aaj%20bahut%20khush%20hoon%21%22%2A%20%28%F0%9F%98%A1%29%0A%0APractice%3A%0AApne%20mobile%20ya%20laptop%20ke%20recorder%20se%203%20baar%20yeh%20line%20bolen%3A%0A1.%20Ek%20baar%20%2Aexcited%2A%20tone%20mein%20%28jaise%20koi%20sports%20commentator%20ho%29.%0A2.%20Ek%20baar%20%2Awhisper%2A%20karke%20%28jaise%20secret%20share%20kar%20rahe%20ho%29.%0A3.%20Ek%20baar%20%2Adramatic%20pause%2A%20ke%20saath%20%28jaise%20koi%20horror%20story%20sunayein%29.%0A%0AMini%20Project%3A%0AEk%2010-second%20ka%20%2Aemotional%2A%20script%20likhein%20%28jaise%3A%20%2A%22Meri%20ma%20ki%20aawaaz%20sun%20kar%20mere%20aansu%20nikal%20aaye...%22%2A%29.%20Uske%20liye%203%20alag%20tones%20%28happy%2C%20sad%2C%20angry%29%20record%20karen%20aur%20compare%20karen%20ki%20kaun%20sa%20zyada%20effective%20hai.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://t.me/share/url?url=&text=Day%202%20%E2%80%94%20Script%20Padhne%20Ka%20Art%3A%20Emotion%20aur%20Tone%20Control%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
+        <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
-      <div>
+      <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
           data-slug="voiceover-podcasting" data-lesson="day-002"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <p><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    <div class="lesson-nav"><a class="btn alt" href="2026-08-03-day-001.html">← Day 1 — Voice Over Ki Basics: Apna Mic Set Karein</a><span></span></div>
+    <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
+    <div class="no-print" style="margin:18px 0;text-align:center;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
+        data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
@@ -368,5 +420,18 @@ padding:4px 6px;font-size:1.1em;}
     });
   });
   window.addEventListener("appinstalled", function(){ banner.classList.remove("show"); });
+})();
+</script><script>
+(function(){
+  try{
+    var today = new Date().toISOString().slice(0,10);
+    var s = JSON.parse(localStorage.getItem("fkc_streak")||"null") || {last:null,count:0};
+    if(s.last !== today){
+      var y = new Date(Date.now()-86400000).toISOString().slice(0,10);
+      s.count = (s.last === y) ? s.count + 1 : 1;
+      s.last = today;
+      localStorage.setItem("fkc_streak", JSON.stringify(s));
+    }
+  }catch(e){}
 })();
 </script>

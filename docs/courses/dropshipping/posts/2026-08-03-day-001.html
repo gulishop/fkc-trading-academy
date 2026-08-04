@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T16:51:55.506076";
+  var FKC_BUILD = "2026-08-04T18:32:09.069739";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,26 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.fkc-search{width:100%;padding:12px 14px;border:1px solid var(--line);
+border-radius:8px;font-size:15px;margin:10px 0 4px;box-sizing:border-box;
+font-family:inherit;}
+.streak-badge{display:none;background:#EA580C;color:#fff;font-size:.72em;
+font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+vertical-align:middle;}
+.lesson-nav{display:flex;justify-content:space-between;gap:8px;
+flex-wrap:wrap;margin-top:14px;}
+.lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
+border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
+box-sizing:border-box;margin:6px 0;}
+.quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+@media print{
+  .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
+  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:none;}
+}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -161,18 +181,50 @@ pre code{font-family:inherit;background:none;padding:0;}
       <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Dropshipping ek business model hai jahan aap ek online store chalate hain lekin actual product stock nahi rakhte. Jab koi customer order deta hai, to aap uska order supplier (jaise AliExpress) ko forward kar dete hain, jo directly customer tak product bhej deta hai. Aapka profit margin product ki cost aur aapki selling price ka difference hota hai. Is model mein aapko inventory, packaging, ya shipping ka tension nahi hota.</p><h3>Example</h3><p>Imagine aap ek Facebook page par &quot;Wireless Earbuds&quot; bech rahe hain. Koi customer Rs. 5,000 mein order deta hai. Aap uska order AliExpress supplier ko Rs. 2,500 mein forward karte hain, jo Rs. 3,000 mein product customer tak bhej deta hai. Aapka profit Rs. 2,000 rehta hai (Rs. 5,000 - Rs. 3,000).</p><h3>Practice</h3><p>Apne mind mein ek product choose karo jo aap bechna chahte ho (e.g., fitness band, LED lights). Socho ki us product ki cost supplier se kitni hogi aur aap usko kitne mein bech sakte ho.</p><h3>Mini Project</h3><p>Ek simple Excel sheet banao jisme 3 columns hon: Product Name, Supplier Price, Your Selling Price. Koi 5 products fill karo jo aap bech sakte ho.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>ڈراپ شیپنگ ایک بزنس ماڈل ہے جہاں آپ ایک آن لائن اسٹور چلاتے ہیں لیکن اصل پراڈکٹ کا اسٹاک نہیں رکھتے۔ جب کوئی کسٹمر آرڈر دیتا ہے، تو آپ اس کا آرڈر سپلائر (جیسے علی ایکسپریس) کو فورورڈ کر دیتے ہیں، جو ڈائریکٹ کسٹمر تک پراڈکٹ پہنچا دیتا ہے۔ آپ کا پروفٹ مارجن پراڈکٹ کی کوسٹ اور آپ کی سیلنگ پرائس کا ڈفرنس ہوتا ہے۔ اس ماڈل میں آپ کو انوینٹری، پیکجنگ، یا شپنگ کا ٹینشن نہیں ہوتا۔</p><h3>Example</h3><p>imagine آپ ایک فیس بک پیج پر &#x27;وائرلیس ایربڈز&#x27; بیچ رہے ہیں۔ کوئی کسٹمر Rs. 5,000 میں آرڈر دیتا ہے۔ آپ اس کا آرڈر علی ایکسپریس سپلائر کو Rs. 2,500 میں فورورڈ کرتے ہیں، جو Rs. 3,000 میں پراڈکٹ کسٹمر تک پہنچا دیتا ہے۔ آپ کا پروفٹ Rs. 2,000 رہتا ہے (Rs. 5,000 - Rs. 3,000)۔</p><h3>Practice</h3><p>اپنے دماغ میں ایک پراڈکٹ چن لو جو آپ بیچنا چاہتے ہو (e.g., فٹنس بینڈ، LED لائٹس)۔ سوچو کہ اس پراڈکٹ کی کوسٹ سپلائر سے کتنی ہوگی اور آپ اسے کتنے میں بیچ سکتے ہو۔</p><h3>Mini Project</h3><p>ایک سادہ ایکسل شیٹ بناؤ جس میں 3 کالم ہوں: پراڈکٹ نیم، سپلائر پرائس، یور سیلنگ پرائس۔ کوئی 5 پراڈکٹس بھر لو جو آپ بیچ سکتے ہو۔</p></div>
       
-      <div>
+      
+      <div class="quiz-box no-print">
+        <p><b>📝 Apna Practice Check Karein</b></p>
+        <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
+        <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"product name, supplier price, your selling price"'>✅ Check Karein</button>
+        <div class="quiz-result" id="fkc-quiz-result"></div>
+      </div>
+      <script>
+      function fkcCheckQuiz(btn){
+        var keys = JSON.parse(btn.getAttribute("data-keys"));
+        var ans = (document.getElementById("fkc-quiz-answer").value || "").toLowerCase();
+        var hit = 0;
+        keys.forEach(function(k){ if(k && ans.indexOf(k) !== -1) hit++; });
+        var el = document.getElementById("fkc-quiz-result");
+        if(hit === 0){
+          el.textContent = "Koi keyword match nahi hua — dobara try karein ya lesson dobara parhein.";
+          el.style.color = "#D97706";
+        } else {
+          el.textContent = "✅ " + hit + "/" + keys.length + " keywords match hue — shabaash!";
+          el.style.color = "var(--accent)";
+        }
+      }
+      </script>
+      <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Dropshipping%20%28Day%2001%29%0A%0ADay%201%20%E2%80%94%20Dropshipping%20Model%20Samajhna%0A%0AConcept%3A%0ADropshipping%20ek%20business%20model%20hai%20jahan%20aap%20ek%20online%20store%20chalate%20hain%20lekin%20actual%20product%20stock%20nahi%20rakhte.%20Jab%20koi%20customer%20order%20deta%20hai%2C%20to%20aap%20uska%20order%20supplier%20%28jaise%20AliExpress%29%20ko%20forward%20kar%20dete%20hain%2C%20jo%20directly%20customer%20tak%20product%20bhej%20deta%20hai.%20Aapka%20profit%20margin%20product%20ki%20cost%20aur%20aapki%20selling%20price%20ka%20difference%20hota%20hai.%20Is%20model%20mein%20aapko%20inventory%2C%20packaging%2C%20ya%20shipping%20ka%20tension%20nahi%20hota.%0A%0AExample%3A%0AImagine%20aap%20ek%20Facebook%20page%20par%20%22Wireless%20Earbuds%22%20bech%20rahe%20hain.%20Koi%20customer%20Rs.%205%2C000%20mein%20order%20deta%20hai.%20Aap%20uska%20order%20AliExpress%20supplier%20ko%20Rs.%202%2C500%20mein%20forward%20karte%20hain%2C%20jo%20Rs.%203%2C000%20mein%20product%20customer%20tak%20bhej%20deta%20hai.%20Aapka%20profit%20Rs.%202%2C000%20rehta%20hai%20%28Rs.%205%2C000%20-%20Rs.%203%2C000%29.%0A%0APractice%3A%0AApne%20mind%20mein%20ek%20product%20choose%20karo%20jo%20aap%20bechna%20chahte%20ho%20%28e.g.%2C%20fitness%20band%2C%20LED%20lights%29.%20Socho%20ki%20us%20product%20ki%20cost%20supplier%20se%20kitni%20hogi%20aur%20aap%20usko%20kitne%20mein%20bech%20sakte%20ho.%0A%0AMini%20Project%3A%0AEk%20simple%20Excel%20sheet%20banao%20jisme%203%20columns%20hon%3A%20Product%20Name%2C%20Supplier%20Price%2C%20Your%20Selling%20Price.%20Koi%205%20products%20fill%20karo%20jo%20aap%20bech%20sakte%20ho.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://t.me/share/url?url=&text=Day%201%20%E2%80%94%20Dropshipping%20Model%20Samajhna%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
+        <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
-      <div>
+      <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
           data-slug="dropshipping" data-lesson="day-001"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <p><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    <div class="lesson-nav"><span></span><a class="btn alt" href="2026-08-03-day-002.html">Day 2 — Winning Product Ki Pehchaan: 5 Key Metrics Se Filter Karna →</a></div>
+    <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
+    <div class="no-print" style="margin:18px 0;text-align:center;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
+        data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
@@ -368,5 +420,18 @@ padding:4px 6px;font-size:1.1em;}
     });
   });
   window.addEventListener("appinstalled", function(){ banner.classList.remove("show"); });
+})();
+</script><script>
+(function(){
+  try{
+    var today = new Date().toISOString().slice(0,10);
+    var s = JSON.parse(localStorage.getItem("fkc_streak")||"null") || {last:null,count:0};
+    if(s.last !== today){
+      var y = new Date(Date.now()-86400000).toISOString().slice(0,10);
+      s.count = (s.last === y) ? s.count + 1 : 1;
+      s.last = today;
+      localStorage.setItem("fkc_streak", JSON.stringify(s));
+    }
+  }catch(e){}
 })();
 </script>

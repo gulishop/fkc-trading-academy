@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T16:51:55.506076";
+  var FKC_BUILD = "2026-08-04T18:32:09.069739";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,26 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.fkc-search{width:100%;padding:12px 14px;border:1px solid var(--line);
+border-radius:8px;font-size:15px;margin:10px 0 4px;box-sizing:border-box;
+font-family:inherit;}
+.streak-badge{display:none;background:#EA580C;color:#fff;font-size:.72em;
+font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+vertical-align:middle;}
+.lesson-nav{display:flex;justify-content:space-between;gap:8px;
+flex-wrap:wrap;margin-top:14px;}
+.lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
+border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
+box-sizing:border-box;margin:6px 0;}
+.quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+@media print{
+  .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
+  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:none;}
+}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -161,18 +181,50 @@ pre code{font-family:inherit;background:none;padding:0;}
       <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Viral Reels ya Shorts banane ke liye 3 cheez zaroori hain: **Attention Grab Karna** (pehle 3 seconds), **Engagement Trigger Karna** (like/comment/share ke liye reason dena), aur **Trend ka Sahi Use Karna**. Bina plan ke upload karne se chance kam hote hain. Aaj hum in 5 rules par focus karenge jo har viral content ki backbone hoti hain.</p><h3>Example</h3><p>Ek **food recipe Reel** ka example lete hain:<br>1.</p><h3>Hook (0-3 sec)</h3><p>&quot;Yeh 1 minute ka recipe aapki dinner ko banaye *chef’s kiss*!&quot; (bold text + fast zoom on dish)<br>2.</p><h3>Trend Use</h3><p>&quot;POV: Aapke fridge mein sirf *2 eggs* hain&quot; (trending audio + text overlay)<br>3.</p><h3>Engagement Prompt</h3><p>&quot;Comment mein batao aapka favorite breakfast kya hai? ⬇️&quot; (screen pe text + arrow)<br>4.</p><h3>CTA (Call-to-Action)</h3><p>&quot;Agar pasand aaya to share zaroor karna!&quot; (caption mein link add karke)<br>5.</p><h3>Hashtags</h3><p>3-5 relevant (#Foodie, #QuickRecipe, #ViralFood) + 1 trending (#FoodTok).</p><h3>Practice</h3><p>Apne phone se ek **15-30 sec ka Reel shoot karo** jisme:<br>- Pehle 3 seconds mein koi shocking/interesting shot ho (e.g., ek cheez ka explosion, fast transition, ya bold text).<br>- Trendy audio use karo (Instagram/Reels explore page se check karo).<br>- Caption mein ek question ya CTA add karo.</p><h3>Mini Project</h3><p>Ek **7-day content calendar** banaye jisme har din ke liye alag type ka Reel idea ho (e.g., Monday: &quot;POV&quot; trend, Tuesday: &quot;Before &amp; After&quot;, Wednesday: &quot;Myth Buster&quot;). Har idea ke saath ek trendy audio ka naam bhi likhna.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>وائرل ریلز یا شورٹس بنانے کے لیے 3 چیزیں ضروری ہیں: **اٹینشن گرب کرنا** (پہلے 3 سیکنڈز)، **اینگیجمنٹ ٹرگر کرنا** (لائک/کمنٹ/شئیر کے لیے ریزن دینا)، اور **ٹرینڈ کا صحیح استعمال کرنا**۔ بنا پلان کے اپلوڈ کرنے سے چانس کم ہوتے ہیں۔ آج ہم ان 5 رولز پر فوکس کریں گے جو ہر وائرل کنیٹ کی بیکبون ہوتی ہیں۔</p><h3>Example</h3><p>ایک **فوڈ ریسپی recipe Reel** کا مثال لیتے ہیں:</p><p>1. **ہک (0-3 سیکنڈ)**:<br>&quot;یہ 1 منٹ کا ریسپی آپکی ڈنر کو بنائے *شیف کِس*!&quot; (بولڈ ٹیکسٹ + فاسٹ زوم آن ڈش)</p><p>2. **ٹرینڈ یووز**:<br>&quot;POV: آپکے فرج میں صرف *2 eggs* ہیں&quot; (ٹرینڈنگ آڈیو + ٹیکسٹ اوورلے)</p><p>3. **اینگیجمنٹ پرامپٹ**:<br>&quot;کمنٹ میں بتاؤ آپکا فیورٹ بریک فاسٹ کیا ہے؟ ⬇️&quot; (اسکرین پر ٹیکسٹ + ارو)</p><p>4. **سی ٹی اے (Call-to-Action)**:<br>&quot;اگر پسند آیا تو شئیر زورور کرنا!&quot; (کیپشن میں لنک ایڈ کرکے)</p><p>5. **ہیشٹگس**:<br>3-5 ریلیونٹ (#Foodie, #QuickRecipe, #ViralFood) + 1 ٹرینڈنگ (#FoodTok).</p><h3>Practice</h3><p>اپنے فون سے ایک **15-30 سیکنڈ کا Reel shoot کرو** جس میں:</p><p>- پہلے 3 سیکنڈز میں کوئی شاکنگ/انٹرسٹنگ شاٹ ہو (e.g., ایک چیز کا ایکسپلوشن، فاسٹ ٹرانزیشن، یا بولڈ ٹیکسٹ).<br>- ٹرینڈی آڈیو یووز کرو (انسٹاگرام/ریلز ایکسپلور پيج سے چیک کرو).<br>- کیپشن میں ایک سوال یا سی ٹی اے ایڈ کرو.</p><p>**Mini Project:**<br>ایک **7-day content calendar** بنائے جس میں ہر دن کے لیے الگ ٹائپ کا Reel آئیڈیا ہو (e.g., Monday: &quot;POV&quot; ٹرینڈ، Tuesday: &quot;Before &amp; After&quot;، Wednesday: &quot;Myth Buster&quot;)۔ ہر آئیڈیا کے ساتھ ایک ٹرینڈنگ آڈیو کا نام بھی لکھنا۔</p></div>
       
-      <div>
+      
+      <div class="quiz-box no-print">
+        <p><b>📝 Apna Practice Check Karein</b></p>
+        <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
+        <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"fast transition, trendy audio, engagement prompt, cta"'>✅ Check Karein</button>
+        <div class="quiz-result" id="fkc-quiz-result"></div>
+      </div>
+      <script>
+      function fkcCheckQuiz(btn){
+        var keys = JSON.parse(btn.getAttribute("data-keys"));
+        var ans = (document.getElementById("fkc-quiz-answer").value || "").toLowerCase();
+        var hit = 0;
+        keys.forEach(function(k){ if(k && ans.indexOf(k) !== -1) hit++; });
+        var el = document.getElementById("fkc-quiz-result");
+        if(hit === 0){
+          el.textContent = "Koi keyword match nahi hua — dobara try karein ya lesson dobara parhein.";
+          el.style.color = "#D97706";
+        } else {
+          el.textContent = "✅ " + hit + "/" + keys.length + " keywords match hue — shabaash!";
+          el.style.color = "var(--accent)";
+        }
+      }
+      </script>
+      <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Social%20Media%20Marketing%20%28Day%2002%29%0A%0ADay%202%20%E2%80%94%20%2A%2AViral%20Reels/Shorts%20Banane%20ke%205%20Golden%20Rules%2A%2A%0A%0AConcept%3A%0AViral%20Reels%20ya%20Shorts%20banane%20ke%20liye%203%20cheez%20zaroori%20hain%3A%20%2A%2AAttention%20Grab%20Karna%2A%2A%20%28pehle%203%20seconds%29%2C%20%2A%2AEngagement%20Trigger%20Karna%2A%2A%20%28like/comment/share%20ke%20liye%20reason%20dena%29%2C%20aur%20%2A%2ATrend%20ka%20Sahi%20Use%20Karna%2A%2A.%20Bina%20plan%20ke%20upload%20karne%20se%20chance%20kam%20hote%20hain.%20Aaj%20hum%20in%205%20rules%20par%20focus%20karenge%20jo%20har%20viral%20content%20ki%20backbone%20hoti%20hain.%0A%0AExample%3A%0AEk%20%2A%2Afood%20recipe%20Reel%2A%2A%20ka%20example%20lete%20hain%3A%0A1.%0A%0AHook%20%280-3%20sec%29%3A%0A%22Yeh%201%20minute%20ka%20recipe%20aapki%20dinner%20ko%20banaye%20%2Achef%E2%80%99s%20kiss%2A%21%22%20%28bold%20text%20%2B%20fast%20zoom%20on%20dish%29%0A2.%0A%0ATrend%20Use%3A%0A%22POV%3A%20Aapke%20fridge%20mein%20sirf%20%2A2%20eggs%2A%20hain%22%20%28trending%20audio%20%2B%20text%20overlay%29%0A3.%0A%0AEngagement%20Prompt%3A%0A%22Comment%20mein%20batao%20aapka%20favorite%20breakfast%20kya%20hai%3F%20%E2%AC%87%EF%B8%8F%22%20%28screen%20pe%20text%20%2B%20arrow%29%0A4.%0A%0ACTA%20%28Call-to-Action%29%3A%0A%22Agar%20pasand%20aaya%20to%20share%20zaroor%20karna%21%22%20%28caption%20mein%20link%20add%20karke%29%0A5.%0A%0AHashtags%3A%0A3-5%20relevant%20%28%23Foodie%2C%20%23QuickRecipe%2C%20%23ViralFood%29%20%2B%201%20trending%20%28%23FoodTok%29.%0A%0APractice%3A%0AApne%20phone%20se%20ek%20%2A%2A15-30%20sec%20ka%20Reel%20shoot%20karo%2A%2A%20jisme%3A%0A-%20Pehle%203%20seconds%20mein%20koi%20shocking/interesting%20shot%20ho%20%28e.g.%2C%20ek%20cheez%20ka%20explosion%2C%20fast%20transition%2C%20ya%20bold%20text%29.%0A-%20Trendy%20audio%20use%20karo%20%28Instagram/Reels%20explore%20page%20se%20check%20karo%29.%0A-%20Caption%20mein%20ek%20question%20ya%20CTA%20add%20karo.%0A%0AMini%20Project%3A%0AEk%20%2A%2A7-day%20content%20calendar%2A%2A%20banaye%20jisme%20har%20din%20ke%20liye%20alag%20type%20ka%20Reel%20idea%20ho%20%28e.g.%2C%20Monday%3A%20%22POV%22%20trend%2C%20Tuesday%3A%20%22Before%20%26%20After%22%2C%20Wednesday%3A%20%22Myth%20Buster%22%29.%20Har%20idea%20ke%20saath%20ek%20trendy%20audio%20ka%20naam%20bhi%20likhna.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://t.me/share/url?url=&text=Day%202%20%E2%80%94%20%2A%2AViral%20Reels/Shorts%20Banane%20ke%205%20Golden%20Rules%2A%2A%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
+        <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
-      <div>
+      <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
           data-slug="social-media-marketing" data-lesson="day-002"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <p><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    <div class="lesson-nav"><a class="btn alt" href="2026-08-03-day-001.html">← Day 1 — Social Media Strategy: Kya hai aur Kaise Banaye?</a><a class="btn alt" href="2026-08-04-day-003.html">Day 3 — Instagram Growth Tactics: 30K+ Followers ka Secret →</a></div>
+    <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
+    <div class="no-print" style="margin:18px 0;text-align:center;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
+        data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
@@ -368,5 +420,18 @@ padding:4px 6px;font-size:1.1em;}
     });
   });
   window.addEventListener("appinstalled", function(){ banner.classList.remove("show"); });
+})();
+</script><script>
+(function(){
+  try{
+    var today = new Date().toISOString().slice(0,10);
+    var s = JSON.parse(localStorage.getItem("fkc_streak")||"null") || {last:null,count:0};
+    if(s.last !== today){
+      var y = new Date(Date.now()-86400000).toISOString().slice(0,10);
+      s.count = (s.last === y) ? s.count + 1 : 1;
+      s.last = today;
+      localStorage.setItem("fkc_streak", JSON.stringify(s));
+    }
+  }catch(e){}
 })();
 </script>

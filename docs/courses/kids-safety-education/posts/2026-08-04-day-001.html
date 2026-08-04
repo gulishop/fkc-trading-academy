@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T16:51:55.506076";
+  var FKC_BUILD = "2026-08-04T18:32:09.069739";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,26 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.fkc-search{width:100%;padding:12px 14px;border:1px solid var(--line);
+border-radius:8px;font-size:15px;margin:10px 0 4px;box-sizing:border-box;
+font-family:inherit;}
+.streak-badge{display:none;background:#EA580C;color:#fff;font-size:.72em;
+font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+vertical-align:middle;}
+.lesson-nav{display:flex;justify-content:space-between;gap:8px;
+flex-wrap:wrap;margin-top:14px;}
+.lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
+border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
+box-sizing:border-box;margin:6px 0;}
+.quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+@media print{
+  .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
+  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:none;}
+}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -161,18 +181,27 @@ pre code{font-family:inherit;background:none;padding:0;}
       <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Bachay, tumhara jism tumhara hai—sirf tumhara! Koi bhi insaan tumse poochhe bina tumhare sharir ko chho sakta hai, tumhe gale laga sakta hai, ya tumhe kiss kar sakta hai. Agar tumhe koi cheez achchi nahi lagti, toh tumhe &quot;na&quot; kehne ka poora haq hai. Koi bhi tumhe &quot;secret&quot; rakhne ke liye majboor nahi kar sakta.</p><h3>Chhoti Kahani</h3><p>Aman ko school se aate waqt ek aadmi ne kaha, &quot;Beta, mere gale lag jao!&quot; Aman ne socha, &quot;Mujhe yeh pasand nahi,&quot; aur usne &quot;na&quot; keh diya. Us aadmi ne kaha, &quot;Arre, yeh toh chhota sa baap hai!&quot; Aman ne apne teacher ko bataya, aur teacher ne us aadmi ko samjhaya.</p><h3>Ammi Abbu Ke Sath Baat Karein</h3><p>&quot;Beta, agar koi tumse koi cheez pooche bina tumhare sharir ko chho le, toh tum kya karoge?&quot;</p><h3>Yaad Rakhein</h3><p>Tumhara jism tumhara hai—kisi ko bhi tumse poochhe bina chho na! Agar koi cheez ajeeb lage, toh foran ammi-abbu ko batana.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>تصور</h3><p>بچے، تمھارا جسم تمھارا ہے—صرف تمھارا! کوئی بھی انسان تم سے پوچھے بغیر تمھارے جسم کو چھو سکتا ہے، تمھیں گلے لگا سکتا ہے، یا تمھیں چوم سکتا ہے۔ اگر تمھیں کوئی چیز اچھی نہیں لگتی، تو تمھیں &quot;نہیں&quot; کہنے کا پورا حق ہے۔ کوئی بھی تمھیں &quot;سیcret&quot; رکھنے کے لیے مجبور نہیں کر سکتا۔</p><h3>چوٹھی کہانی</h3><p>آمن کو سکول سے آتے وقت ایک آدمی نے کہا، &quot;بٹّے، میرے گلے لگا جاؤ!&quot; آمن نے سوچا، &quot;مجھے یہ پسند نہیں،&quot; اور اس نے &quot;نہیں&quot; کہہ دیا۔ اس آدمی نے کہا، &quot;ارے، یہ تو چھوٹا سا بپ ہے!&quot; آمن نے اپنے ٹیچر کو بتایا، اور ٹیچر نے اس آدمی کو سمجھایا۔</p><h3>امّی ابّو کے ساتھ بات کریں</h3><p>بٹّے، اگر کوئی تم سے کوئی چیز پوچھے بغیر تمھارے جسم کو چھو لے، تو تم کیا کرو گے؟</p><h3>یاد رکھیں</h3><p>تمھارا جسم تمھارا ہے—کسی کو بھی تم سے پوچھے بغیر چھونے کا حق نہیں! اگر کوئی چیز عجیب لگے، تو فوراً امّی ابّو کو بتانا۔</p></div>
       
-      <div>
+      
+      <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Bachon%20Ki%20Hifazat%20%28Good%20Touch%2C%20Bad%20Touch%29%20%28Day%2001%29%0A%0ADay%201%20%E2%80%94%20Mera%20jism%20sirf%20mera%20hai%0A%0AConcept%3A%0ABachay%2C%20tumhara%20jism%20tumhara%20hai%E2%80%94sirf%20tumhara%21%20Koi%20bhi%20insaan%20tumse%20poochhe%20bina%20tumhare%20sharir%20ko%20chho%20sakta%20hai%2C%20tumhe%20gale%20laga%20sakta%20hai%2C%20ya%20tumhe%20kiss%20kar%20sakta%20hai.%20Agar%20tumhe%20koi%20cheez%20achchi%20nahi%20lagti%2C%20toh%20tumhe%20%22na%22%20kehne%20ka%20poora%20haq%20hai.%20Koi%20bhi%20tumhe%20%22secret%22%20rakhne%20ke%20liye%20majboor%20nahi%20kar%20sakta.%0A%0AChhoti%20Kahani%3A%0AAman%20ko%20school%20se%20aate%20waqt%20ek%20aadmi%20ne%20kaha%2C%20%22Beta%2C%20mere%20gale%20lag%20jao%21%22%20Aman%20ne%20socha%2C%20%22Mujhe%20yeh%20pasand%20nahi%2C%22%20aur%20usne%20%22na%22%20keh%20diya.%20Us%20aadmi%20ne%20kaha%2C%20%22Arre%2C%20yeh%20toh%20chhota%20sa%20baap%20hai%21%22%20Aman%20ne%20apne%20teacher%20ko%20bataya%2C%20aur%20teacher%20ne%20us%20aadmi%20ko%20samjhaya.%0A%0AAmmi%20Abbu%20Ke%20Sath%20Baat%20Karein%3A%0A%22Beta%2C%20agar%20koi%20tumse%20koi%20cheez%20pooche%20bina%20tumhare%20sharir%20ko%20chho%20le%2C%20toh%20tum%20kya%20karoge%3F%22%0A%0AYaad%20Rakhein%3A%0ATumhara%20jism%20tumhara%20hai%E2%80%94kisi%20ko%20bhi%20tumse%20poochhe%20bina%20chho%20na%21%20Agar%20koi%20cheez%20ajeeb%20lage%2C%20toh%20foran%20ammi-abbu%20ko%20batana.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://t.me/share/url?url=&text=Day%201%20%E2%80%94%20Mera%20jism%20sirf%20mera%20hai%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
+        <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
-      <div>
+      <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
           data-slug="kids-safety-education" data-lesson="day-001"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <p><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
+    <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
+    <div class="no-print" style="margin:18px 0;text-align:center;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
+        data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
@@ -368,5 +397,18 @@ padding:4px 6px;font-size:1.1em;}
     });
   });
   window.addEventListener("appinstalled", function(){ banner.classList.remove("show"); });
+})();
+</script><script>
+(function(){
+  try{
+    var today = new Date().toISOString().slice(0,10);
+    var s = JSON.parse(localStorage.getItem("fkc_streak")||"null") || {last:null,count:0};
+    if(s.last !== today){
+      var y = new Date(Date.now()-86400000).toISOString().slice(0,10);
+      s.count = (s.last === y) ? s.count + 1 : 1;
+      s.last = today;
+      localStorage.setItem("fkc_streak", JSON.stringify(s));
+    }
+  }catch(e){}
 })();
 </script>

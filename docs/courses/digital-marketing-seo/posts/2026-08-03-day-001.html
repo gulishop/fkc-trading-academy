@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T16:51:55.506076";
+  var FKC_BUILD = "2026-08-04T18:32:09.069739";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,26 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.fkc-search{width:100%;padding:12px 14px;border:1px solid var(--line);
+border-radius:8px;font-size:15px;margin:10px 0 4px;box-sizing:border-box;
+font-family:inherit;}
+.streak-badge{display:none;background:#EA580C;color:#fff;font-size:.72em;
+font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+vertical-align:middle;}
+.lesson-nav{display:flex;justify-content:space-between;gap:8px;
+flex-wrap:wrap;margin-top:14px;}
+.lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
+border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
+box-sizing:border-box;margin:6px 0;}
+.quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+@media print{
+  .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
+  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:none;}
+}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -161,18 +181,50 @@ pre code{font-family:inherit;background:none;padding:0;}
       <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Digital marketing sabhi online tareeqon se apne product ya service ko promote karne ka naam hai. Ismein SEO, social media, email, ads, aur content marketing sab aate hain. Pehle samajhna zaroori hai ke yeh ek puzzle hai—har piece alag hai lekin mil kar ek picture banati hai.</p><h3>Example</h3><p>Imagine a local bakery. Unke liye digital marketing ka matlab hai:<br>1. Google par &quot;best cake in [city]&quot; search karne walon ko unki website show karna (SEO)<br>2. Instagram par daily cake photos share karna (Social Media)<br>3. Customers ko birthday discounts ke liye email bhejna (Email Marketing)<br>4. Facebook par Rs. 500 ka ad chalana (Paid Ads)</p><h3>Practice</h3><p>Apne business ya interest ke hisaab se 3 digital marketing channels choose karen jinse aap apne audience tak pohanch sakte hain. (E.g., agar aap freelance writer hain to LinkedIn + Blog + Cold Email.)</p><h3>Mini Project</h3><p>Ek simple mind map banaen jismein aap apne ideal customer (e.g., &quot;25-35 age ki working women jo healthy snacks khareedti hain&quot;) ke liye 3 best digital marketing channels select karen.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>ڈِجِٹل مارکیٹنگ وہ طریقہ کار ہے جس میں آپ اپنے مصنوعات یا خدمات کو آن لائن طریقوں سے فروغ دیتے ہیں۔ اس میں SEO، سوشل میڈیا، ای میل، ایڈز، اور کَونٹینٹ مارکیٹنگ شامل ہیں۔ پہلے یہ سمجھنا ضروری ہے کہ یہ ایک پہیلی ہے—ہر ٹکڑا الگ ہے لیکن مل کر ایک تصویر بناتے ہیں۔</p><h3>Example</h3><p>تصور کریں ایک مقامی بیکری کا۔ ان کے لیے ڈِجِٹل مارکیٹنگ کا مطلب ہے:<br>1. گوگل پر &quot;[شہر] میں بہترین کیک&quot; تلاش کرنے والوں کو ان کی ویب سائٹ دکھانا (SEO)<br>2. انسٹا گرام پر روزانہ کیک کی تصاویر شیئر کرنا (سوشل میڈیا)<br>3. گاہکوں کو جنم دن کی چھوٹ کے لیے ای میل بھیجنا (ای میل مارکیٹنگ)<br>4. فیس بک پر 500 روپے کا ایڈ چلانا (پِیڈ ایڈز)</p><h3>Practice</h3><p>اپنے کاروبار یا دلچسپی کے مطابق 3 ڈِجِٹل مارکیٹنگ چینلز کا انتخاب کریں جن کے ذریعے آپ اپنے ہدف تک پہنچ سکیں۔ (مثال کے طور پر، اگر آپ فری لانس رائٹر ہیں تو لنکڈ اِن + بلاگ + کولڈ ای میل۔)</p><h3>Mini Project</h3><p>ایک سادہ مائنڈ میپ بنائیں جس میں آپ اپنے مثالی گاہک (مثلاً، &quot;25-35 سال کی کام کرنے والی خواتین جو ہیلتھی سنیکس خریدتے ہیں&quot;) کے لیے بہترین 3 ڈِجِٹل مارکیٹنگ چینلز کا انتخاب کریں۔</p></div>
       
-      <div>
+      
+      <div class="quiz-box no-print">
+        <p><b>📝 Apna Practice Check Karein</b></p>
+        <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
+        <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"seo, social media, email marketing"'>✅ Check Karein</button>
+        <div class="quiz-result" id="fkc-quiz-result"></div>
+      </div>
+      <script>
+      function fkcCheckQuiz(btn){
+        var keys = JSON.parse(btn.getAttribute("data-keys"));
+        var ans = (document.getElementById("fkc-quiz-answer").value || "").toLowerCase();
+        var hit = 0;
+        keys.forEach(function(k){ if(k && ans.indexOf(k) !== -1) hit++; });
+        var el = document.getElementById("fkc-quiz-result");
+        if(hit === 0){
+          el.textContent = "Koi keyword match nahi hua — dobara try karein ya lesson dobara parhein.";
+          el.style.color = "#D97706";
+        } else {
+          el.textContent = "✅ " + hit + "/" + keys.length + " keywords match hue — shabaash!";
+          el.style.color = "var(--accent)";
+        }
+      }
+      </script>
+      <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Digital%20Marketing%20%26%20SEO%20%28Day%2001%29%0A%0ADay%201%20%E2%80%94%20Digital%20Marketing%20Ka%20Poora%20Landscape%3A%20Kya%20Hai%20Aur%20Kaise%20Shuru%20Karen%3F%0A%0AConcept%3A%0ADigital%20marketing%20sabhi%20online%20tareeqon%20se%20apne%20product%20ya%20service%20ko%20promote%20karne%20ka%20naam%20hai.%20Ismein%20SEO%2C%20social%20media%2C%20email%2C%20ads%2C%20aur%20content%20marketing%20sab%20aate%20hain.%20Pehle%20samajhna%20zaroori%20hai%20ke%20yeh%20ek%20puzzle%20hai%E2%80%94har%20piece%20alag%20hai%20lekin%20mil%20kar%20ek%20picture%20banati%20hai.%0A%0AExample%3A%0AImagine%20a%20local%20bakery.%20Unke%20liye%20digital%20marketing%20ka%20matlab%20hai%3A%0A1.%20Google%20par%20%22best%20cake%20in%20%5Bcity%5D%22%20search%20karne%20walon%20ko%20unki%20website%20show%20karna%20%28SEO%29%0A2.%20Instagram%20par%20daily%20cake%20photos%20share%20karna%20%28Social%20Media%29%0A3.%20Customers%20ko%20birthday%20discounts%20ke%20liye%20email%20bhejna%20%28Email%20Marketing%29%0A4.%20Facebook%20par%20Rs.%20500%20ka%20ad%20chalana%20%28Paid%20Ads%29%0A%0APractice%3A%0AApne%20business%20ya%20interest%20ke%20hisaab%20se%203%20digital%20marketing%20channels%20choose%20karen%20jinse%20aap%20apne%20audience%20tak%20pohanch%20sakte%20hain.%20%28E.g.%2C%20agar%20aap%20freelance%20writer%20hain%20to%20LinkedIn%20%2B%20Blog%20%2B%20Cold%20Email.%29%0A%0AMini%20Project%3A%0AEk%20simple%20mind%20map%20banaen%20jismein%20aap%20apne%20ideal%20customer%20%28e.g.%2C%20%2225-35%20age%20ki%20working%20women%20jo%20healthy%20snacks%20khareedti%20hain%22%29%20ke%20liye%203%20best%20digital%20marketing%20channels%20select%20karen.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://t.me/share/url?url=&text=Day%201%20%E2%80%94%20Digital%20Marketing%20Ka%20Poora%20Landscape%3A%20Kya%20Hai%20Aur%20Kaise%20Shuru%20Karen%3F%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
+        <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
-      <div>
+      <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
           data-slug="digital-marketing-seo" data-lesson="day-001"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <p><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    <div class="lesson-nav"><span></span><a class="btn alt" href="2026-08-03-day-002.html">Day 2 →</a></div>
+    <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
+    <div class="no-print" style="margin:18px 0;text-align:center;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
+        data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
@@ -368,5 +420,18 @@ padding:4px 6px;font-size:1.1em;}
     });
   });
   window.addEventListener("appinstalled", function(){ banner.classList.remove("show"); });
+})();
+</script><script>
+(function(){
+  try{
+    var today = new Date().toISOString().slice(0,10);
+    var s = JSON.parse(localStorage.getItem("fkc_streak")||"null") || {last:null,count:0};
+    if(s.last !== today){
+      var y = new Date(Date.now()-86400000).toISOString().slice(0,10);
+      s.count = (s.last === y) ? s.count + 1 : 1;
+      s.last = today;
+      localStorage.setItem("fkc_streak", JSON.stringify(s));
+    }
+  }catch(e){}
 })();
 </script>

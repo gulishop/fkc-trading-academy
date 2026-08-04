@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T16:51:55.506076";
+  var FKC_BUILD = "2026-08-04T18:32:09.069739";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,26 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.fkc-search{width:100%;padding:12px 14px;border:1px solid var(--line);
+border-radius:8px;font-size:15px;margin:10px 0 4px;box-sizing:border-box;
+font-family:inherit;}
+.streak-badge{display:none;background:#EA580C;color:#fff;font-size:.72em;
+font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+vertical-align:middle;}
+.lesson-nav{display:flex;justify-content:space-between;gap:8px;
+flex-wrap:wrap;margin-top:14px;}
+.lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
+border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
+box-sizing:border-box;margin:6px 0;}
+.quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+@media print{
+  .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
+  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:none;}
+}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -161,18 +181,50 @@ pre code{font-family:inherit;background:none;padding:0;}
       <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Aaj hum Canva ke dashboard aur uski basic settings se familiar honge. Canva ek drag-and-drop design tool hai jo beginners ke liye bhi bohat aasan hai. Yahan templates, elements (shapes, icons, etc.), text options, aur upload features milte hain. Pehle hum iske interface ko samajhein gaye takay agle lessons mein confidently kaam kar saken.</p><h3>Example</h3><p>1.</p><h3>Sign Up/Login</h3><p>Canva.com par jayein, Google ya email se account banayein.<br>2.</p><h3>Homepage</h3><p>Left side mein &quot;Create a design&quot; button par click karen. Yahan se custom size (jaise 1080x1080px for Instagram) ya pre-set templates (jaise &quot;Instagram Post&quot;) select karen.<br>3.</p><h3>Interface Breakdown</h3><p>-</p><h3>Top Bar</h3><p>Undo/Redo, save, share, aur export options.<br>   -</p><h3>Left Panel</h3><p>Templates, elements (icons, shapes), text, uploads, aur background options.<br>   -</p><h3>Canvas</h3><p>Apna design yahan banayein—drag karke elements add karen.<br>   -</p><h3>Right Panel</h3><p>Har selected element ki properties (color, size, effects) edit karen.</p><h3>Practice</h3><p>Ek naya design create karen (jaise &quot;Facebook Post&quot; template). Left panel se ek &quot;Text&quot; box add karen, usme apna naam type karen, aur right panel se font style aur color change karen.</p><h3>Mini Project</h3><p>Ek simple Instagram Post (1080x1080px) banayein jisme:<br>- Ek background color ho (left panel &gt; &quot;Background&quot; &gt; color pick karen).<br>- Ek text box ho &quot;Hello World!&quot; (font: &quot;Poppins&quot;, color: white).<br>- Ek simple shape (jaise circle) add karen (left panel &gt; &quot;Elements&quot; &gt; &quot;Shapes&quot;).</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>تصور</h3><p>آج ہم کینوا کے ڈیش بورڈ اور اس کی بنیادی سیٹنگز سے واقف ہوں گے۔ کینوا ایک ڈریگ اینڈ ڈراپ ڈیزائن ٹول ہے جو بیگنرز کے لیے بھی بہت آسان ہے۔ یہاں ٹیمپلیٹس، ایلیمنٹس (شکل، آئیکنز وغیرہ)، ٹیکسٹ آپشنز، اور اپلوڈ فیچرز ملتے ہیں۔ پہلے ہم اس کے انٹرفیس کو سمجھیں گے تاکہ اگلے لیسنز میں confidently کام کر سکیں۔</p><h3>مثال</h3><p>1. Canva.com پر جائیں، گوگل یا ای میل سے اکاؤنٹ بنائیں۔</p><h3>ہوم پیج</h3><p>Left side میں &quot;Create a design&quot; بٹن پر کلک کریں۔ یہاں سے custom size (جیسے 1080x1080px for Instagram) یا pre-set ٹیمپلیٹس (جیسے &quot;Instagram Post&quot;) select کریں۔</p><h3>انٹرفیس کی تفصیل</h3><p>- Top Bar: Undo/Redo، save، share، اور export آپشنز۔<br>- Left Panel: ٹیمپلیٹس، ایلیمنٹس (آئیکنز، شکل)، ٹیکسٹ، اپلوڈز، اور background آپشنز۔<br>- Canvas: اپنا ڈیزائن یہاں بنائیں—ڈریگ کرکے ایلیمنٹس add کریں۔<br>- Right Panel: ہر selected element کی properties (color، size، effects) edit کریں۔</p><h3>پریکٹس</h3><p>ایک نیا ڈیزائن create کریں (جیسے &quot;Facebook Post&quot; ٹیمپلیٹ)۔ Left panel سے ایک &quot;Text&quot; باکس add کریں، اس میں اپنا نام ٹائپ کریں، اور right panel سے font style اور color change کریں۔</p><h3>منی پراجیکٹ</h3><p>ایک simple Instagram Post (1080x1080px) بنائیں جس میں:<br>- ایک background color ہو (left panel &gt; &quot;Background&quot; &gt; color pick کریں)۔<br>- ایک ٹیکسٹ باکس ہو &quot;Hello World!&quot; (font: &quot;Poppins&quot;، color: white)۔<br>- ایک simple شکل (جیسے circle) add کریں (left panel &gt; &quot;Elements&quot; &gt; &quot;Shapes&quot;)۔</p></div>
       
-      <div>
+      
+      <div class="quiz-box no-print">
+        <p><b>📝 Apna Practice Check Karein</b></p>
+        <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
+        <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"template select, text add, color change, shape add"'>✅ Check Karein</button>
+        <div class="quiz-result" id="fkc-quiz-result"></div>
+      </div>
+      <script>
+      function fkcCheckQuiz(btn){
+        var keys = JSON.parse(btn.getAttribute("data-keys"));
+        var ans = (document.getElementById("fkc-quiz-answer").value || "").toLowerCase();
+        var hit = 0;
+        keys.forEach(function(k){ if(k && ans.indexOf(k) !== -1) hit++; });
+        var el = document.getElementById("fkc-quiz-result");
+        if(hit === 0){
+          el.textContent = "Koi keyword match nahi hua — dobara try karein ya lesson dobara parhein.";
+          el.style.color = "#D97706";
+        } else {
+          el.textContent = "✅ " + hit + "/" + keys.length + " keywords match hue — shabaash!";
+          el.style.color = "var(--accent)";
+        }
+      }
+      </script>
+      <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Graphic%20Design%20%28Canva%29%20%28Day%2001%29%0A%0ADay%201%20%E2%80%94%20Canva%20Ka%20Pehla%20Parichay%3A%20Interface%20aur%20Basic%20Controls%0A%0AConcept%3A%0AAaj%20hum%20Canva%20ke%20dashboard%20aur%20uski%20basic%20settings%20se%20familiar%20honge.%20Canva%20ek%20drag-and-drop%20design%20tool%20hai%20jo%20beginners%20ke%20liye%20bhi%20bohat%20aasan%20hai.%20Yahan%20templates%2C%20elements%20%28shapes%2C%20icons%2C%20etc.%29%2C%20text%20options%2C%20aur%20upload%20features%20milte%20hain.%20Pehle%20hum%20iske%20interface%20ko%20samajhein%20gaye%20takay%20agle%20lessons%20mein%20confidently%20kaam%20kar%20saken.%0A%0AExample%3A%0A1.%0A%0ASign%20Up/Login%3A%0ACanva.com%20par%20jayein%2C%20Google%20ya%20email%20se%20account%20banayein.%0A2.%0A%0AHomepage%3A%0ALeft%20side%20mein%20%22Create%20a%20design%22%20button%20par%20click%20karen.%20Yahan%20se%20custom%20size%20%28jaise%201080x1080px%20for%20Instagram%29%20ya%20pre-set%20templates%20%28jaise%20%22Instagram%20Post%22%29%20select%20karen.%0A3.%0A%0AInterface%20Breakdown%3A%0A-%0A%0ATop%20Bar%3A%0AUndo/Redo%2C%20save%2C%20share%2C%20aur%20export%20options.%0A%20%20%20-%0A%0ALeft%20Panel%3A%0ATemplates%2C%20elements%20%28icons%2C%20shapes%29%2C%20text%2C%20uploads%2C%20aur%20background%20options.%0A%20%20%20-%0A%0ACanvas%3A%0AApna%20design%20yahan%20banayein%E2%80%94drag%20karke%20elements%20add%20karen.%0A%20%20%20-%0A%0ARight%20Panel%3A%0AHar%20selected%20element%20ki%20properties%20%28color%2C%20size%2C%20effects%29%20edit%20karen.%0A%0APractice%3A%0AEk%20naya%20design%20create%20karen%20%28jaise%20%22Facebook%20Post%22%20template%29.%20Left%20panel%20se%20ek%20%22Text%22%20box%20add%20karen%2C%20usme%20apna%20naam%20type%20karen%2C%20aur%20right%20panel%20se%20font%20style%20aur%20color%20change%20karen.%0A%0AMini%20Project%3A%0AEk%20simple%20Instagram%20Post%20%281080x1080px%29%20banayein%20jisme%3A%0A-%20Ek%20background%20color%20ho%20%28left%20panel%20%3E%20%22Background%22%20%3E%20color%20pick%20karen%29.%0A-%20Ek%20text%20box%20ho%20%22Hello%20World%21%22%20%28font%3A%20%22Poppins%22%2C%20color%3A%20white%29.%0A-%20Ek%20simple%20shape%20%28jaise%20circle%29%20add%20karen%20%28left%20panel%20%3E%20%22Elements%22%20%3E%20%22Shapes%22%29.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://t.me/share/url?url=&text=Day%201%20%E2%80%94%20Canva%20Ka%20Pehla%20Parichay%3A%20Interface%20aur%20Basic%20Controls%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
+        <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
-      <div>
+      <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
           data-slug="graphic-design-canva" data-lesson="day-001"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <p><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    <div class="lesson-nav"><span></span><a class="btn alt" href="2026-08-04-day-002.html">Day 2 — Smart Typography: Fonts aur Unka Magic →</a></div>
+    <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
+    <div class="no-print" style="margin:18px 0;text-align:center;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
+        data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
@@ -368,5 +420,18 @@ padding:4px 6px;font-size:1.1em;}
     });
   });
   window.addEventListener("appinstalled", function(){ banner.classList.remove("show"); });
+})();
+</script><script>
+(function(){
+  try{
+    var today = new Date().toISOString().slice(0,10);
+    var s = JSON.parse(localStorage.getItem("fkc_streak")||"null") || {last:null,count:0};
+    if(s.last !== today){
+      var y = new Date(Date.now()-86400000).toISOString().slice(0,10);
+      s.count = (s.last === y) ? s.count + 1 : 1;
+      s.last = today;
+      localStorage.setItem("fkc_streak", JSON.stringify(s));
+    }
+  }catch(e){}
 })();
 </script>

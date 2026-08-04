@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T16:51:55.506076";
+  var FKC_BUILD = "2026-08-04T18:32:09.069739";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,26 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.fkc-search{width:100%;padding:12px 14px;border:1px solid var(--line);
+border-radius:8px;font-size:15px;margin:10px 0 4px;box-sizing:border-box;
+font-family:inherit;}
+.streak-badge{display:none;background:#EA580C;color:#fff;font-size:.72em;
+font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+vertical-align:middle;}
+.lesson-nav{display:flex;justify-content:space-between;gap:8px;
+flex-wrap:wrap;margin-top:14px;}
+.lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
+border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
+box-sizing:border-box;margin:6px 0;}
+.quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+@media print{
+  .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
+  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:none;}
+}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -161,18 +181,50 @@ pre code{font-family:inherit;background:none;padding:0;}
       <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Niche select karna YouTube channel ka sabse pehla aur sabse important step hai. Niche matlab aapka channel ka topic ya subject jismein aap videos banayenge. Ek achha niche aapko consistent content ideas deta hai, audience attract karta hai, aur competition bhi manage karne mein help karta hai. Apna niche choose karte waqt apne interests, skills, aur market demand ko consider karna zaroori hai.</p><h3>Example</h3><p>Maana aapko fitness pasand hai. Ab aapko decide karna hai ki aap fitness ke kis specific area par focus karna chahte hain. Jaise:<br>- Gym beginners guide<br>- Home workout for women<br>- Weight loss diet plans<br>- Yoga for stress relief<br>Is tarah se niche select karne se aapko content ideas bhi easily mil jayenge aur audience bhi targeted rahegi.</p><h3>Practice</h3><p>Apne interests aur skills list karein. Fir 3-5 topics select karein jinpar aap videos bana sakte hain. Har topic ke liye 3-5 content ideas sochiye.</p><h3>Mini Project</h3><p>Ek simple Google search karein aur har topic ke liye competition check karein. Har topic ke liye YouTube search bar mein type karein aur dekhein ki kitne videos hain aur unke views kya hain. Isse aapko pata chalega ki aapka selected niche kitna competitive hai.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>نیچے سلیکشن کرنا YouTube چینل کا سب سے پہلا اور سب سے اہم سٹپ ہے۔ نیچے کا مطلب آپ کا چینل کا ٹاپک یا سBJECT ہے جس میں آپ ویڈیوز بنائیں گے۔ ایک اچھا نیچے آپ کو کنسسٹنٹ کنٹینٹ آئیڈیا دیتا ہے، آڈیئنس کو اٹریکٹ کرتا ہے، اور کمپٹیشن کو بھی مینیج کرنے میں مدد کرتا ہے۔ اپنا نیچے چننے کے وقت اپنے انٹرسٹس، اسکلز، اور مارکیٹ ڈیمانڈ کو کانسیڈر کرنا ضروری ہے۔</p><h3>Example</h3><p>مانا آپ کو فٹنس پسند ہے۔ اب آپ کو ڈسیڈ کرنا ہے کہ آپ فٹنس کے کس سپیسفک ایریا پر فوکس کرنا چاہتے ہیں۔ جیسے:<br>- Gym beginners guide<br>- Home workout for women<br>- Weight loss diet plans<br>- Yoga for stress relief<br>اس طرح سے نیچے سلیکشن کرنے سے آپ کو کنٹینٹ آئیڈیا بھی ایزیلی مل جائیں گے اور آڈیئنس بھی ٹارگٹڈ رہے گی۔</p><h3>Practice</h3><p>اپنے انٹرسٹس اور اسکلز لسٹ کریں۔ پھر 3-5 ٹاپکس سلیکٹ کریں جن پر آپ ویڈیوز بنا سکتے ہیں۔ ہر ٹاپک کے لیے 3-5 کنٹینٹ آئیڈیا سوچیں۔</p><h3>Mini Project</h3><p>ایک سادہ Google search کریں اور ہر ٹاپک کے لیے کمپٹیشن چیک کریں۔ ہر ٹاپک کے لیے YouTube search bar میں ٹائپ کریں اور دیکھیں کہ کتنے ویڈیوز ہیں اور ان کے ویوز کیا ہیں۔ اس سے آپ کو پتہ چلے گا کہ آپ کا سلیکٹڈ نیچے کتنا کمپٹٹو ہے۔</p></div>
       
-      <div>
+      
+      <div class="quiz-box no-print">
+        <p><b>📝 Apna Practice Check Karein</b></p>
+        <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
+        <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"fitness, home workout, weight loss, yoga"'>✅ Check Karein</button>
+        <div class="quiz-result" id="fkc-quiz-result"></div>
+      </div>
+      <script>
+      function fkcCheckQuiz(btn){
+        var keys = JSON.parse(btn.getAttribute("data-keys"));
+        var ans = (document.getElementById("fkc-quiz-answer").value || "").toLowerCase();
+        var hit = 0;
+        keys.forEach(function(k){ if(k && ans.indexOf(k) !== -1) hit++; });
+        var el = document.getElementById("fkc-quiz-result");
+        if(hit === 0){
+          el.textContent = "Koi keyword match nahi hua — dobara try karein ya lesson dobara parhein.";
+          el.style.color = "#D97706";
+        } else {
+          el.textContent = "✅ " + hit + "/" + keys.length + " keywords match hue — shabaash!";
+          el.style.color = "var(--accent)";
+        }
+      }
+      </script>
+      <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20YouTube%20Automation%20%28Day%2001%29%0A%0ADay%201%20%E2%80%94%20Niche%20Select%20Karna%3A%20Apna%20YouTube%20Channel%20Ka%20Foundation%0A%0AConcept%3A%0ANiche%20select%20karna%20YouTube%20channel%20ka%20sabse%20pehla%20aur%20sabse%20important%20step%20hai.%20Niche%20matlab%20aapka%20channel%20ka%20topic%20ya%20subject%20jismein%20aap%20videos%20banayenge.%20Ek%20achha%20niche%20aapko%20consistent%20content%20ideas%20deta%20hai%2C%20audience%20attract%20karta%20hai%2C%20aur%20competition%20bhi%20manage%20karne%20mein%20help%20karta%20hai.%20Apna%20niche%20choose%20karte%20waqt%20apne%20interests%2C%20skills%2C%20aur%20market%20demand%20ko%20consider%20karna%20zaroori%20hai.%0A%0AExample%3A%0AMaana%20aapko%20fitness%20pasand%20hai.%20Ab%20aapko%20decide%20karna%20hai%20ki%20aap%20fitness%20ke%20kis%20specific%20area%20par%20focus%20karna%20chahte%20hain.%20Jaise%3A%0A-%20Gym%20beginners%20guide%0A-%20Home%20workout%20for%20women%0A-%20Weight%20loss%20diet%20plans%0A-%20Yoga%20for%20stress%20relief%0AIs%20tarah%20se%20niche%20select%20karne%20se%20aapko%20content%20ideas%20bhi%20easily%20mil%20jayenge%20aur%20audience%20bhi%20targeted%20rahegi.%0A%0APractice%3A%0AApne%20interests%20aur%20skills%20list%20karein.%20Fir%203-5%20topics%20select%20karein%20jinpar%20aap%20videos%20bana%20sakte%20hain.%20Har%20topic%20ke%20liye%203-5%20content%20ideas%20sochiye.%0A%0AMini%20Project%3A%0AEk%20simple%20Google%20search%20karein%20aur%20har%20topic%20ke%20liye%20competition%20check%20karein.%20Har%20topic%20ke%20liye%20YouTube%20search%20bar%20mein%20type%20karein%20aur%20dekhein%20ki%20kitne%20videos%20hain%20aur%20unke%20views%20kya%20hain.%20Isse%20aapko%20pata%20chalega%20ki%20aapka%20selected%20niche%20kitna%20competitive%20hai.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://t.me/share/url?url=&text=Day%201%20%E2%80%94%20Niche%20Select%20Karna%3A%20Apna%20YouTube%20Channel%20Ka%20Foundation%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
+        <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
-      <div>
+      <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
           data-slug="youtube-automation" data-lesson="day-001"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <p><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    <div class="lesson-nav"><span></span><a class="btn alt" href="2026-08-03-day-002.html">Day 2 — AI Se YouTube Script Likhne Ka Step-by-Step Guide →</a></div>
+    <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
+    <div class="no-print" style="margin:18px 0;text-align:center;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
+        data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
@@ -368,5 +420,18 @@ padding:4px 6px;font-size:1.1em;}
     });
   });
   window.addEventListener("appinstalled", function(){ banner.classList.remove("show"); });
+})();
+</script><script>
+(function(){
+  try{
+    var today = new Date().toISOString().slice(0,10);
+    var s = JSON.parse(localStorage.getItem("fkc_streak")||"null") || {last:null,count:0};
+    if(s.last !== today){
+      var y = new Date(Date.now()-86400000).toISOString().slice(0,10);
+      s.count = (s.last === y) ? s.count + 1 : 1;
+      s.last = today;
+      localStorage.setItem("fkc_streak", JSON.stringify(s));
+    }
+  }catch(e){}
 })();
 </script>

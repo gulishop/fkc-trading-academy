@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T16:51:55.506076";
+  var FKC_BUILD = "2026-08-04T18:32:09.069739";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,26 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.fkc-search{width:100%;padding:12px 14px;border:1px solid var(--line);
+border-radius:8px;font-size:15px;margin:10px 0 4px;box-sizing:border-box;
+font-family:inherit;}
+.streak-badge{display:none;background:#EA580C;color:#fff;font-size:.72em;
+font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+vertical-align:middle;}
+.lesson-nav{display:flex;justify-content:space-between;gap:8px;
+flex-wrap:wrap;margin-top:14px;}
+.lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
+border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
+box-sizing:border-box;margin:6px 0;}
+.quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+@media print{
+  .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
+  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:none;}
+}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -161,18 +181,50 @@ pre code{font-family:inherit;background:none;padding:0;}
       <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Bitcoin (BTC) aur Ethereum (ETH) crypto ki do sabse famous currencies hain. Bitcoin ko &quot;digital gold&quot; kaha jata hai—yeh ek decentralized currency hai jo transactions record karta hai. Ethereum, on the other hand, ek &quot;programmable blockchain&quot; hai jo smart contracts (self-executing agreements) aur decentralized apps (DApps) ko support karta hai. Bitcoin limited supply (21M coins) ke saath inflation-resistant hai, jabki Ethereum flexible hai aur developers ko innovative projects build karne deta hai.</p><h3>Example</h3><p>Imagine Bitcoin ek **gold coin** hai—limited supply, stable value, aur sirf transactions record karta hai. Ethereum ek **digital computer** hai—jisme developers &quot;if-this-then-that&quot; rules (smart contracts) likh sakte hain, jaise ek vending machine jo automatically payment lekar product deta hai.</p><h3>Practice</h3><p>1. **CoinGecko ya CoinMarketCap** par Bitcoin (BTC) aur Ethereum (ETH) ki current prices check karen.<br>2. **Difference** note karen: Bitcoin ka focus &quot;store of value&quot; hai, jabki Ethereum ka focus &quot;platform for apps&quot; hai.</p><h3>Mini Project</h3><h3>Smart Contract Simulation</h3><p>- Ethereum ke [Remix IDE](https://remix.ethereum.org/) par jaen.<br>- Ek simple smart contract likhen jo &quot;Hello, [Apna Naam]&quot; print kare.<br>- (Step-by-step guide ke liye YouTube par &quot;Remix IDE tutorial&quot; search karen.)</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>مفہوم</h3><p>بٹ‌کوئن (BTC) اور ایتھریم (ETH) کرپٹو کرنسیوں کی دو سب سے مشہور اقسام ہیں۔ بٹ‌کوئن کو &quot;ڈیجیٹل سونا&quot; کہا جاتا ہے—یہ ایک غیرمرکزی کرنسی ہے جو لین دین ریکارڈ کرتی ہے۔ دوسری طرف، ایتھریم ایک &quot;پروگرام ایبل بلاکچین&quot; ہے جو سمارٹ کانٹریکٹس (خودکار معاہدے) اور غیرمرکزی ایپس (DApps) کو سپورٹ کرتا ہے۔ بٹ‌کوئن محدود سپلائی (21 ملین سکے) کے ساتھ مہنگائی کے خلاف مزاحم ہے، جبکہ ایتھریم لچکدار ہے اور ڈویلپرز کو نئے نئے پراجیکٹس بنانے کی سہولت فراہم کرتا ہے۔</p><h3>مثال</h3><p>تصور کریں کہ بٹ‌کوئن ایک **سونے کا سکّہ** ہے—محدود سپلائی، مستحکم قیمت، اور یہ صرف لین دین ریکارڈ کرتا ہے۔ ایتھریم ایک **ڈیجیٹل کمپیوٹر** ہے—جس میں ڈویلپرز &quot;اگر یہ تو وہ&quot; کے قواعد (سمارٹ کانٹریکٹس) لکھ سکتے ہیں، جیسے ایک خودکار مشین جو ادائیگی لینے کے بعد خودکار طور پر سامان فراہم کرتی ہے۔</p><h3>مشق</h3><p>1. **CoinGecko** یا **CoinMarketCap** پر بٹ‌کوئن (BTC) اور ایتھریم (ETH) کی موجودہ قیمتیں چیک کریں۔<br>2. **فرق** نوٹ کریں: بٹ‌کوئن کا زور &quot;قیمت کا ذخیرہ&quot; ہے، جبکہ ایتھریم کا زور &quot;ایپس کی پلیٹ فارم&quot; ہے۔</p><h3>مینی پراجیکٹ</h3><p>- سمارٹ کانٹریکٹ سیمیولیشن: ایتھریم کے **[Remix IDE](https://remix.ethereum.org/)** پر جائیں۔<br>- ایک آسان سمارٹ کانٹریکٹ لکھیں جو &quot;Hello, [اپنا نام]&quot; پرنٹ کرے۔<br>- (مرحلہ وار ہدایت کے لیے YouTube پر &quot;Remix IDE tutorial&quot; تلاش کریں۔)</p></div>
       
-      <div>
+      
+      <div class="quiz-box no-print">
+        <p><b>📝 Apna Practice Check Karein</b></p>
+        <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
+        <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"btc: digital gold, limited supply, transactions; eth: programmable, smart contracts, dapps"'>✅ Check Karein</button>
+        <div class="quiz-result" id="fkc-quiz-result"></div>
+      </div>
+      <script>
+      function fkcCheckQuiz(btn){
+        var keys = JSON.parse(btn.getAttribute("data-keys"));
+        var ans = (document.getElementById("fkc-quiz-answer").value || "").toLowerCase();
+        var hit = 0;
+        keys.forEach(function(k){ if(k && ans.indexOf(k) !== -1) hit++; });
+        var el = document.getElementById("fkc-quiz-result");
+        if(hit === 0){
+          el.textContent = "Koi keyword match nahi hua — dobara try karein ya lesson dobara parhein.";
+          el.style.color = "#D97706";
+        } else {
+          el.textContent = "✅ " + hit + "/" + keys.length + " keywords match hue — shabaash!";
+          el.style.color = "var(--accent)";
+        }
+      }
+      </script>
+      <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Crypto%20%26%20Blockchain%20Basics%20%28Day%2002%29%0A%0ADay%202%20%E2%80%94%20%2A%2ABitcoin%20vs%20Ethereum%3A%20Digital%20Gold%20vs%20Programmable%20Money%2A%2A%0A%0AConcept%3A%0ABitcoin%20%28BTC%29%20aur%20Ethereum%20%28ETH%29%20crypto%20ki%20do%20sabse%20famous%20currencies%20hain.%20Bitcoin%20ko%20%22digital%20gold%22%20kaha%20jata%20hai%E2%80%94yeh%20ek%20decentralized%20currency%20hai%20jo%20transactions%20record%20karta%20hai.%20Ethereum%2C%20on%20the%20other%20hand%2C%20ek%20%22programmable%20blockchain%22%20hai%20jo%20smart%20contracts%20%28self-executing%20agreements%29%20aur%20decentralized%20apps%20%28DApps%29%20ko%20support%20karta%20hai.%20Bitcoin%20limited%20supply%20%2821M%20coins%29%20ke%20saath%20inflation-resistant%20hai%2C%20jabki%20Ethereum%20flexible%20hai%20aur%20developers%20ko%20innovative%20projects%20build%20karne%20deta%20hai.%0A%0AExample%3A%0AImagine%20Bitcoin%20ek%20%2A%2Agold%20coin%2A%2A%20hai%E2%80%94limited%20supply%2C%20stable%20value%2C%20aur%20sirf%20transactions%20record%20karta%20hai.%20Ethereum%20ek%20%2A%2Adigital%20computer%2A%2A%20hai%E2%80%94jisme%20developers%20%22if-this-then-that%22%20rules%20%28smart%20contracts%29%20likh%20sakte%20hain%2C%20jaise%20ek%20vending%20machine%20jo%20automatically%20payment%20lekar%20product%20deta%20hai.%0A%0APractice%3A%0A1.%20%2A%2ACoinGecko%20ya%20CoinMarketCap%2A%2A%20par%20Bitcoin%20%28BTC%29%20aur%20Ethereum%20%28ETH%29%20ki%20current%20prices%20check%20karen.%0A2.%20%2A%2ADifference%2A%2A%20note%20karen%3A%20Bitcoin%20ka%20focus%20%22store%20of%20value%22%20hai%2C%20jabki%20Ethereum%20ka%20focus%20%22platform%20for%20apps%22%20hai.%0A%0AMini%20Project%3A%0A%0A%0ASmart%20Contract%20Simulation%3A%0A-%20Ethereum%20ke%20%5BRemix%20IDE%5D%28https%3A//remix.ethereum.org/%29%20par%20jaen.%0A-%20Ek%20simple%20smart%20contract%20likhen%20jo%20%22Hello%2C%20%5BApna%20Naam%5D%22%20print%20kare.%0A-%20%28Step-by-step%20guide%20ke%20liye%20YouTube%20par%20%22Remix%20IDE%20tutorial%22%20search%20karen.%29%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://t.me/share/url?url=&text=Day%202%20%E2%80%94%20%2A%2ABitcoin%20vs%20Ethereum%3A%20Digital%20Gold%20vs%20Programmable%20Money%2A%2A%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
+        <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
-      <div>
+      <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
           data-slug="crypto-blockchain" data-lesson="day-002"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <p><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    <div class="lesson-nav"><a class="btn alt" href="2026-08-03-day-001.html">← Day 1 — Blockchain: Digital Ledger Jo Sabko Trust Karta Hai</a><span></span></div>
+    <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
+    <div class="no-print" style="margin:18px 0;text-align:center;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
+        data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
@@ -368,5 +420,18 @@ padding:4px 6px;font-size:1.1em;}
     });
   });
   window.addEventListener("appinstalled", function(){ banner.classList.remove("show"); });
+})();
+</script><script>
+(function(){
+  try{
+    var today = new Date().toISOString().slice(0,10);
+    var s = JSON.parse(localStorage.getItem("fkc_streak")||"null") || {last:null,count:0};
+    if(s.last !== today){
+      var y = new Date(Date.now()-86400000).toISOString().slice(0,10);
+      s.count = (s.last === y) ? s.count + 1 : 1;
+      s.last = today;
+      localStorage.setItem("fkc_streak", JSON.stringify(s));
+    }
+  }catch(e){}
 })();
 </script>

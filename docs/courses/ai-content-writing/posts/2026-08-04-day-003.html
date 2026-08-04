@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T16:51:55.506076";
+  var FKC_BUILD = "2026-08-04T18:32:09.069739";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,26 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.fkc-search{width:100%;padding:12px 14px;border:1px solid var(--line);
+border-radius:8px;font-size:15px;margin:10px 0 4px;box-sizing:border-box;
+font-family:inherit;}
+.streak-badge{display:none;background:#EA580C;color:#fff;font-size:.72em;
+font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+vertical-align:middle;}
+.lesson-nav{display:flex;justify-content:space-between;gap:8px;
+flex-wrap:wrap;margin-top:14px;}
+.lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
+border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
+box-sizing:border-box;margin:6px 0;}
+.quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+@media print{
+  .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
+  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:none;}
+}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -161,18 +181,50 @@ pre code{font-family:inherit;background:none;padding:0;}
       <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Social captions aur ad copy do alag cheez hain lekin inka maqsad ek hi hai: audience ko attract karke unse action lena. Caption wo text hai jo post ke saath jata hai (engagement ke liye), jabke ad copy wo text hai jo direct conversion ke liye design kiya gaya hai (clicks, sales, sign-ups). In dono mein hook, benefit, aur CTA ka combination hota hai—lekin ad copy mein urgency aur social proof zyada hota hai.</p><h3>Example</h3><p>Ek Instagram post ke liye caption:<br>*&quot;Ghar baithe paise kamane ka sabse aasan tareeka? 💰<br>Humara FREE ‘Content Writing Masterclass’ aaj hi join karein aur 10,000+ students ke saath seekhein! 👇<br>🔗 Link in bio&quot;*</p><p>Ad copy (Facebook/Google Ads ke liye):<br>*&quot;🚀 30 Dino Mein Freelance Content Writer Ban Jaeyein!<br>✅ 10+ Real Clients Se Kaam<br>✅ Har Mahine ₹50,000+ Kamayein<br>✅ 24/7 Support<br>👉 Abhi Apply Karen—Seats Limited Hain!&quot;*</p><h3>Practice</h3><p>Apne favourite brand ka ek Instagram post ya ad copy likhein. Use 3-4 lines mein likhein, jismein hook (attention grabber), benefit (kyun follow/click karein), aur CTA (action) ho.</p><h3>Mini Project</h3><p>Ek 3-post series banayein (ek caption + ad copy) ek hypothetical product ke liye (jaise ek online course, fitness supplement, ya local service). Har post ka alag angle ho—ek educational, ek emotional, aur ek discount-focused.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>سوشل میڈیا کیپشنز اور ایڈ کاپی دو الگ چیزیں ہیں لیکن ان کا مقصد ایک ہی ہے: سامعین کو متوجہ کرکے ان سے ایکشن لینا۔ کیپشن وہ ٹیکسٹ ہوتا ہے جو پوسٹ کے ساتھ جاتا ہے (اینگجمنٹ کے لیے)، جبکہ ایڈ کاپی وہ ٹیکسٹ ہوتا ہے جو ڈائریکٹ کنورژن کے لیے ڈیزائن کیا گیا ہوتا ہے (کلکس، سیلز، سائن اپس)۔ ان دونوں میں ہُک، بینیفٹ، اور سی ٹی اے کا کمبائنیشن ہوتا ہے—لیکن ایڈ کاپی میں ارجنسی اور سوشل پروف زیادہ ہوتا ہے۔</p><h3>Example</h3><p>ایک انسٹاگرام پوسٹ کے لیے کیپشن:<br>*&quot;گھر بیٹھے پیسے کمانے کا سب سے آسان طریقہ؟ 💰<br>ہمارا FREE ‘Content Writing Masterclass’ آج ہی جوائن کریں اور 10,000+ students کے ساتھ سیکھیں! 👇<br>🔗 Link in bio*&quot;</p><p>ایڈ کاپی (فیس بک/گوگل ایڈز کے لیے):<br>*&quot;🚀 30 دنوں میں freelance content writer بن جائیں!<br>✅ 10+ ریئل کلائنٹس سے کام<br>✅ ہر مہینے ₹50,000+ کماۓ<br>✅ 24/7 سپورٹ<br>👉 ابھی اپلائی کریں—سیٹس لیمیٹڈ ہیں!&quot;*</p><h3>Practice</h3><p>اپنے پسندیدہ برینڈ کا ایک انسٹاگرام پوسٹ یا ایڈ کاپی لکھیں۔ اسے 3-4 لائنوں میں لکھیں، جس میں ہُک (اٹینشن گریپر)، بینیفٹ (کیوں فالو/کلک کریں)، اور سی ٹی اے (ایکشن) ہو۔</p><h3>Mini Project</h3><p>ایک 3-پوسٹ سیریز بنائیں (ایک کیپشن + ایڈ کاپی) ایک ہائپوتھیٹیکل پروڈکٹ کے لیے (جیسے ایک آن لائن کورس، فٹنس سپلیمنٹ، یا لوکل سروس)۔ ہر پوسٹ کا الگ اینگل ہو—ایک ایجوکیشنل، ایک ایموشنل، اور ایک ڈسکاؤنٹ فوکسڈ۔</p></div>
       
-      <div>
+      
+      <div class="quiz-box no-print">
+        <p><b>📝 Apna Practice Check Karein</b></p>
+        <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
+        <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"caption: hook, benefit, cta\nad copy: urgency, social proof, cta"'>✅ Check Karein</button>
+        <div class="quiz-result" id="fkc-quiz-result"></div>
+      </div>
+      <script>
+      function fkcCheckQuiz(btn){
+        var keys = JSON.parse(btn.getAttribute("data-keys"));
+        var ans = (document.getElementById("fkc-quiz-answer").value || "").toLowerCase();
+        var hit = 0;
+        keys.forEach(function(k){ if(k && ans.indexOf(k) !== -1) hit++; });
+        var el = document.getElementById("fkc-quiz-result");
+        if(hit === 0){
+          el.textContent = "Koi keyword match nahi hua — dobara try karein ya lesson dobara parhein.";
+          el.style.color = "#D97706";
+        } else {
+          el.textContent = "✅ " + hit + "/" + keys.length + " keywords match hue — shabaash!";
+          el.style.color = "var(--accent)";
+        }
+      }
+      </script>
+      <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20AI%20Content%20Writing%20%26%20Copywriting%20%28Day%2003%29%0A%0ADay%203%20%E2%80%94%20Social%20Media%20Captions%20%26%20Ad%20Copy%3A%20Engagement%20Se%20Conversion%20Tak%0A%0AConcept%3A%0ASocial%20captions%20aur%20ad%20copy%20do%20alag%20cheez%20hain%20lekin%20inka%20maqsad%20ek%20hi%20hai%3A%20audience%20ko%20attract%20karke%20unse%20action%20lena.%20Caption%20wo%20text%20hai%20jo%20post%20ke%20saath%20jata%20hai%20%28engagement%20ke%20liye%29%2C%20jabke%20ad%20copy%20wo%20text%20hai%20jo%20direct%20conversion%20ke%20liye%20design%20kiya%20gaya%20hai%20%28clicks%2C%20sales%2C%20sign-ups%29.%20In%20dono%20mein%20hook%2C%20benefit%2C%20aur%20CTA%20ka%20combination%20hota%20hai%E2%80%94lekin%20ad%20copy%20mein%20urgency%20aur%20social%20proof%20zyada%20hota%20hai.%0A%0AExample%3A%0AEk%20Instagram%20post%20ke%20liye%20caption%3A%0A%2A%22Ghar%20baithe%20paise%20kamane%20ka%20sabse%20aasan%20tareeka%3F%20%F0%9F%92%B0%0AHumara%20FREE%20%E2%80%98Content%20Writing%20Masterclass%E2%80%99%20aaj%20hi%20join%20karein%20aur%2010%2C000%2B%20students%20ke%20saath%20seekhein%21%20%F0%9F%91%87%0A%F0%9F%94%97%20Link%20in%20bio%22%2A%0A%0AAd%20copy%20%28Facebook/Google%20Ads%20ke%20liye%29%3A%0A%2A%22%F0%9F%9A%80%2030%20Dino%20Mein%20Freelance%20Content%20Writer%20Ban%20Jaeyein%21%0A%E2%9C%85%2010%2B%20Real%20Clients%20Se%20Kaam%0A%E2%9C%85%20Har%20Mahine%20%E2%82%B950%2C000%2B%20Kamayein%0A%E2%9C%85%2024/7%20Support%0A%F0%9F%91%89%20Abhi%20Apply%20Karen%E2%80%94Seats%20Limited%20Hain%21%22%2A%0A%0APractice%3A%0AApne%20favourite%20brand%20ka%20ek%20Instagram%20post%20ya%20ad%20copy%20likhein.%20Use%203-4%20lines%20mein%20likhein%2C%20jismein%20hook%20%28attention%20grabber%29%2C%20benefit%20%28kyun%20follow/click%20karein%29%2C%20aur%20CTA%20%28action%29%20ho.%0A%0AMini%20Project%3A%0AEk%203-post%20series%20banayein%20%28ek%20caption%20%2B%20ad%20copy%29%20ek%20hypothetical%20product%20ke%20liye%20%28jaise%20ek%20online%20course%2C%20fitness%20supplement%2C%20ya%20local%20service%29.%20Har%20post%20ka%20alag%20angle%20ho%E2%80%94ek%20educational%2C%20ek%20emotional%2C%20aur%20ek%20discount-focused.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://t.me/share/url?url=&text=Day%203%20%E2%80%94%20Social%20Media%20Captions%20%26%20Ad%20Copy%3A%20Engagement%20Se%20Conversion%20Tak%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
+        <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
-      <div>
+      <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
           data-slug="ai-content-writing" data-lesson="day-003"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <p><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    <div class="lesson-nav"><a class="btn alt" href="2026-08-03-day-002.html">← Day 2 — AI Se Blog Articles: Draft Se Publish Tak</a><span></span></div>
+    <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
+    <div class="no-print" style="margin:18px 0;text-align:center;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
+        data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
@@ -368,5 +420,18 @@ padding:4px 6px;font-size:1.1em;}
     });
   });
   window.addEventListener("appinstalled", function(){ banner.classList.remove("show"); });
+})();
+</script><script>
+(function(){
+  try{
+    var today = new Date().toISOString().slice(0,10);
+    var s = JSON.parse(localStorage.getItem("fkc_streak")||"null") || {last:null,count:0};
+    if(s.last !== today){
+      var y = new Date(Date.now()-86400000).toISOString().slice(0,10);
+      s.count = (s.last === y) ? s.count + 1 : 1;
+      s.last = today;
+      localStorage.setItem("fkc_streak", JSON.stringify(s));
+    }
+  }catch(e){}
 })();
 </script>

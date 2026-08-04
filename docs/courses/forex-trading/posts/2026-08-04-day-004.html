@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T16:51:55.506076";
+  var FKC_BUILD = "2026-08-04T18:32:09.069739";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,26 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.fkc-search{width:100%;padding:12px 14px;border:1px solid var(--line);
+border-radius:8px;font-size:15px;margin:10px 0 4px;box-sizing:border-box;
+font-family:inherit;}
+.streak-badge{display:none;background:#EA580C;color:#fff;font-size:.72em;
+font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+vertical-align:middle;}
+.lesson-nav{display:flex;justify-content:space-between;gap:8px;
+flex-wrap:wrap;margin-top:14px;}
+.lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
+border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
+box-sizing:border-box;margin:6px 0;}
+.quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+@media print{
+  .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
+  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:none;}
+}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -161,18 +181,50 @@ pre code{font-family:inherit;background:none;padding:0;}
       
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Aaj hum ek beginner-friendly trading strategy banayenge jo sirf **price action** (chart ke movements) par based hai. Isme koi indicators nahi honge—bas support/resistance, trend lines aur candlestick patterns ka use hoga. Yeh strategy **trend-following** hai, matlab hum trend ke saath trade karenge, na ke uske against.</p><h3>Example</h3><p>1.</p><h3>Trend Line Draw Karna</h3><p>Agar market **upward trend** mein hai, toh **higher lows** ko connect karke ek rising trend line banayein.<br>2.</p><h3>Entry Point</h3><p>Jab price trend line ko **touche karke wapas bounce** kare, toh **buy** enter karen.<br>3.</p><h3>Stop Loss</h3><p>Trend line ke **nichay** (agar buy kar rahe hain) ya **upar** (agar sell kar rahe hain) lagayein.<br>4.</p><h3>Take Profit</h3><p>Next **support/resistance level** par lagayein.</p><h3>Practice</h3><p>Apne **MetaTrader** par **EUR/USD** ya **GBP/USD** chart khol kar:<br>- 15-minute ya 1-hour timeframe select karen.<br>- Ek **upward/downward trend** identify karen.<br>- Trend line draw karke **entry, stop-loss aur take profit** points mark karen.</p><h3>Mini Project</h3><p>Ek **trading journal** banayein jisme:<br>- 5 trades (real ya demo) record karen.<br>- Har trade ke liye **entry/exit points, stop-loss, take profit aur reason** likhein.<br>- **Profit/Loss** calculate karen aur **win rate** nikalen.</p></div>
       <p><a class="btn alt" href="https://one.exnessonelink.com/a/buhyli14un" target="_blank" rel="noopener sponsored">💹 Exness Par Free Account Banayein</a></p>
-      <div>
+      
+      <div class="quiz-box no-print">
+        <p><b>📝 Apna Practice Check Karein</b></p>
+        <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
+        <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"trend line draw, bounce confirmation, stop-loss below/above line, take profit at next level"'>✅ Check Karein</button>
+        <div class="quiz-result" id="fkc-quiz-result"></div>
+      </div>
+      <script>
+      function fkcCheckQuiz(btn){
+        var keys = JSON.parse(btn.getAttribute("data-keys"));
+        var ans = (document.getElementById("fkc-quiz-answer").value || "").toLowerCase();
+        var hit = 0;
+        keys.forEach(function(k){ if(k && ans.indexOf(k) !== -1) hit++; });
+        var el = document.getElementById("fkc-quiz-result");
+        if(hit === 0){
+          el.textContent = "Koi keyword match nahi hua — dobara try karein ya lesson dobara parhein.";
+          el.style.color = "#D97706";
+        } else {
+          el.textContent = "✅ " + hit + "/" + keys.length + " keywords match hue — shabaash!";
+          el.style.color = "var(--accent)";
+        }
+      }
+      </script>
+      <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Forex%20Trading%20%28Day%2004%29%0A%0ADay%204%20%E2%80%94%20%2A%2ATrading%20Strategy%20Banana%3A%20Simple%20Price%20Action%20Setup%2A%2A%0A%0AConcept%3A%0AAaj%20hum%20ek%20beginner-friendly%20trading%20strategy%20banayenge%20jo%20sirf%20%2A%2Aprice%20action%2A%2A%20%28chart%20ke%20movements%29%20par%20based%20hai.%20Isme%20koi%20indicators%20nahi%20honge%E2%80%94bas%20support/resistance%2C%20trend%20lines%20aur%20candlestick%20patterns%20ka%20use%20hoga.%20Yeh%20strategy%20%2A%2Atrend-following%2A%2A%20hai%2C%20matlab%20hum%20trend%20ke%20saath%20trade%20karenge%2C%20na%20ke%20uske%20against.%0A%0AExample%3A%0A1.%0A%0ATrend%20Line%20Draw%20Karna%3A%0AAgar%20market%20%2A%2Aupward%20trend%2A%2A%20mein%20hai%2C%20toh%20%2A%2Ahigher%20lows%2A%2A%20ko%20connect%20karke%20ek%20rising%20trend%20line%20banayein.%0A2.%0A%0AEntry%20Point%3A%0AJab%20price%20trend%20line%20ko%20%2A%2Atouche%20karke%20wapas%20bounce%2A%2A%20kare%2C%20toh%20%2A%2Abuy%2A%2A%20enter%20karen.%0A3.%0A%0AStop%20Loss%3A%0ATrend%20line%20ke%20%2A%2Anichay%2A%2A%20%28agar%20buy%20kar%20rahe%20hain%29%20ya%20%2A%2Aupar%2A%2A%20%28agar%20sell%20kar%20rahe%20hain%29%20lagayein.%0A4.%0A%0ATake%20Profit%3A%0ANext%20%2A%2Asupport/resistance%20level%2A%2A%20par%20lagayein.%0A%0APractice%3A%0AApne%20%2A%2AMetaTrader%2A%2A%20par%20%2A%2AEUR/USD%2A%2A%20ya%20%2A%2AGBP/USD%2A%2A%20chart%20khol%20kar%3A%0A-%2015-minute%20ya%201-hour%20timeframe%20select%20karen.%0A-%20Ek%20%2A%2Aupward/downward%20trend%2A%2A%20identify%20karen.%0A-%20Trend%20line%20draw%20karke%20%2A%2Aentry%2C%20stop-loss%20aur%20take%20profit%2A%2A%20points%20mark%20karen.%0A%0AMini%20Project%3A%0AEk%20%2A%2Atrading%20journal%2A%2A%20banayein%20jisme%3A%0A-%205%20trades%20%28real%20ya%20demo%29%20record%20karen.%0A-%20Har%20trade%20ke%20liye%20%2A%2Aentry/exit%20points%2C%20stop-loss%2C%20take%20profit%20aur%20reason%2A%2A%20likhein.%0A-%20%2A%2AProfit/Loss%2A%2A%20calculate%20karen%20aur%20%2A%2Awin%20rate%2A%2A%20nikalen.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://t.me/share/url?url=&text=Day%204%20%E2%80%94%20%2A%2ATrading%20Strategy%20Banana%3A%20Simple%20Price%20Action%20Setup%2A%2A%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
+        <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
-      <div>
+      <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
           data-slug="forex-trading" data-lesson="day-004"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <p><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    <div class="lesson-nav"><a class="btn alt" href="2026-08-04-day-003.html">← Day 3 — Leverage aur Margin: Apne Trading Ko Powerful Banane ka Secret</a><span></span></div>
+    <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
+    <div class="no-print" style="margin:18px 0;text-align:center;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
+        data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
@@ -368,5 +420,18 @@ padding:4px 6px;font-size:1.1em;}
     });
   });
   window.addEventListener("appinstalled", function(){ banner.classList.remove("show"); });
+})();
+</script><script>
+(function(){
+  try{
+    var today = new Date().toISOString().slice(0,10);
+    var s = JSON.parse(localStorage.getItem("fkc_streak")||"null") || {last:null,count:0};
+    if(s.last !== today){
+      var y = new Date(Date.now()-86400000).toISOString().slice(0,10);
+      s.count = (s.last === y) ? s.count + 1 : 1;
+      s.last = today;
+      localStorage.setItem("fkc_streak", JSON.stringify(s));
+    }
+  }catch(e){}
 })();
 </script>

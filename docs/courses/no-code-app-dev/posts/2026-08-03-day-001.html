@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T16:51:55.506076";
+  var FKC_BUILD = "2026-08-04T18:32:09.069739";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,26 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.fkc-search{width:100%;padding:12px 14px;border:1px solid var(--line);
+border-radius:8px;font-size:15px;margin:10px 0 4px;box-sizing:border-box;
+font-family:inherit;}
+.streak-badge{display:none;background:#EA580C;color:#fff;font-size:.72em;
+font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+vertical-align:middle;}
+.lesson-nav{display:flex;justify-content:space-between;gap:8px;
+flex-wrap:wrap;margin-top:14px;}
+.lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
+border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
+box-sizing:border-box;margin:6px 0;}
+.quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+@media print{
+  .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
+  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:none;}
+}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -161,18 +181,50 @@ pre code{font-family:inherit;background:none;padding:0;}
       <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>No-code ka matlab hai programming ke bina software, websites, ya apps banana. Aajkal companies aur freelancers isko isliye use kar rahe hain kyunki yeh time aur cost bachaata hai. Coding seekhne ki zaroorat nahi, drag-and-drop se kaam ho jata hai. Startups bhi isko apne MVP (Minimum Viable Product) banane ke liye use kar rahe hain.</p><h3>Example</h3><p>Imagine aapko ek simple website banana hai. Normally coding seekhne mein mahine lag jate, lekin no-code tools jaise Wix ya Framer se sirf kuch ghante mein ready ho jati hai. Bas drag karke elements place karo, content add karo, aur publish kar do!</p><h3>Practice</h3><p>Apne phone ya laptop par Wix ya Framer ki website kholo aur ek basic &quot;Hello World&quot; page banane ki koshish karo. Sirf 3-4 elements (jaise heading, paragraph, button) use karo.</p><h3>Mini Project</h3><p>Ek 1-pager portfolio website banayein jisme aapka naam, ek photo, aur ek &quot;Contact Me&quot; button ho. (Use Framer ya Wix ka free plan.)</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>No-code کا مطلب ہے پروگرامنگ کے بغیر سافٹ ویئر، ویب سائٹس، یا ایپس بنانا۔ آجکل کمپنیاں اور فری لانسرز اس کو اس لیے استعمال کر رہے ہیں کیونکہ یہ ٹائم اور کوسٹ بچاتا ہے۔ کوڈنگ سیکھنے کی ضرورت نہیں، ڈریگ اینڈ ڈراپ سے کام ہو جاتا ہے۔ اسٹارٹ اپس بھی اپنے MVP (Minimum Viable Product) بنانے کے لیے اس کا استعمال کر رہے ہیں۔</p><h3>Example</h3><p>Imagine آپکو ایک simple ویب سائٹ بنانی ہے۔ Normally کوڈنگ سیکھنے میں مہینے لگ جاتے، لیکن no-code ٹولز جیسے Wix یا Framer سے صرف کچھ گھنٹے میں ready ہو جاتی ہے۔ بس ڈریگ کرکے elements place کرو، content add کرو، اور publish کر دو!</p><h3>Practice</h3><p>اپنے فون یا لیپ ٹاپ پر Wix یا Framer کی ویب سائٹ کھولو اور ایک basic &quot;Hello World&quot; page بنانے کی کوشش کرو۔ صرف 3-4 elements (جیسے heading, paragraph, button) استعمال کرو۔</p><h3>Mini Project</h3><p>ایک 1-pager portfolio ویب سائٹ بنائیں جس میں آپکا نام، ایک photo، اور ایک &quot;Contact Me&quot; button ہو۔ (Use Framer ya Wix کا free plan.)</p></div>
       
-      <div>
+      
+      <div class="quiz-box no-print">
+        <p><b>📝 Apna Practice Check Karein</b></p>
+        <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
+        <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"homepage, heading, button, publish"'>✅ Check Karein</button>
+        <div class="quiz-result" id="fkc-quiz-result"></div>
+      </div>
+      <script>
+      function fkcCheckQuiz(btn){
+        var keys = JSON.parse(btn.getAttribute("data-keys"));
+        var ans = (document.getElementById("fkc-quiz-answer").value || "").toLowerCase();
+        var hit = 0;
+        keys.forEach(function(k){ if(k && ans.indexOf(k) !== -1) hit++; });
+        var el = document.getElementById("fkc-quiz-result");
+        if(hit === 0){
+          el.textContent = "Koi keyword match nahi hua — dobara try karein ya lesson dobara parhein.";
+          el.style.color = "#D97706";
+        } else {
+          el.textContent = "✅ " + hit + "/" + keys.length + " keywords match hue — shabaash!";
+          el.style.color = "var(--accent)";
+        }
+      }
+      </script>
+      <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20No-Code%20App%20%26%20Website%20Building%20%28Day%2001%29%0A%0ADay%201%20%E2%80%94%20No-Code%20Kya%20Hai%3F%20Aur%20Kyun%20Demand%20Mein%20Hai%0A%0AConcept%3A%0ANo-code%20ka%20matlab%20hai%20programming%20ke%20bina%20software%2C%20websites%2C%20ya%20apps%20banana.%20Aajkal%20companies%20aur%20freelancers%20isko%20isliye%20use%20kar%20rahe%20hain%20kyunki%20yeh%20time%20aur%20cost%20bachaata%20hai.%20Coding%20seekhne%20ki%20zaroorat%20nahi%2C%20drag-and-drop%20se%20kaam%20ho%20jata%20hai.%20Startups%20bhi%20isko%20apne%20MVP%20%28Minimum%20Viable%20Product%29%20banane%20ke%20liye%20use%20kar%20rahe%20hain.%0A%0AExample%3A%0AImagine%20aapko%20ek%20simple%20website%20banana%20hai.%20Normally%20coding%20seekhne%20mein%20mahine%20lag%20jate%2C%20lekin%20no-code%20tools%20jaise%20Wix%20ya%20Framer%20se%20sirf%20kuch%20ghante%20mein%20ready%20ho%20jati%20hai.%20Bas%20drag%20karke%20elements%20place%20karo%2C%20content%20add%20karo%2C%20aur%20publish%20kar%20do%21%0A%0APractice%3A%0AApne%20phone%20ya%20laptop%20par%20Wix%20ya%20Framer%20ki%20website%20kholo%20aur%20ek%20basic%20%22Hello%20World%22%20page%20banane%20ki%20koshish%20karo.%20Sirf%203-4%20elements%20%28jaise%20heading%2C%20paragraph%2C%20button%29%20use%20karo.%0A%0AMini%20Project%3A%0AEk%201-pager%20portfolio%20website%20banayein%20jisme%20aapka%20naam%2C%20ek%20photo%2C%20aur%20ek%20%22Contact%20Me%22%20button%20ho.%20%28Use%20Framer%20ya%20Wix%20ka%20free%20plan.%29%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://t.me/share/url?url=&text=Day%201%20%E2%80%94%20No-Code%20Kya%20Hai%3F%20Aur%20Kyun%20Demand%20Mein%20Hai%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
+        <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
-      <div>
+      <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
           data-slug="no-code-app-dev" data-lesson="day-001"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <p><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    <div class="lesson-nav"><span></span><a class="btn alt" href="2026-08-03-day-002.html">Day 2 — Website Builders: Framer, Webflow aur Wix se Professional Website Banana →</a></div>
+    <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
+    <div class="no-print" style="margin:18px 0;text-align:center;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
+        data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
@@ -368,5 +420,18 @@ padding:4px 6px;font-size:1.1em;}
     });
   });
   window.addEventListener("appinstalled", function(){ banner.classList.remove("show"); });
+})();
+</script><script>
+(function(){
+  try{
+    var today = new Date().toISOString().slice(0,10);
+    var s = JSON.parse(localStorage.getItem("fkc_streak")||"null") || {last:null,count:0};
+    if(s.last !== today){
+      var y = new Date(Date.now()-86400000).toISOString().slice(0,10);
+      s.count = (s.last === y) ? s.count + 1 : 1;
+      s.last = today;
+      localStorage.setItem("fkc_streak", JSON.stringify(s));
+    }
+  }catch(e){}
 })();
 </script>

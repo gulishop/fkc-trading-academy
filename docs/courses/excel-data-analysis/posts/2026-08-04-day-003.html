@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T16:51:55.506076";
+  var FKC_BUILD = "2026-08-04T18:32:09.069739";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,26 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.fkc-search{width:100%;padding:12px 14px;border:1px solid var(--line);
+border-radius:8px;font-size:15px;margin:10px 0 4px;box-sizing:border-box;
+font-family:inherit;}
+.streak-badge{display:none;background:#EA580C;color:#fff;font-size:.72em;
+font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+vertical-align:middle;}
+.lesson-nav{display:flex;justify-content:space-between;gap:8px;
+flex-wrap:wrap;margin-top:14px;}
+.lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
+border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
+box-sizing:border-box;margin:6px 0;}
+.quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+@media print{
+  .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
+  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:none;}
+}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -161,18 +181,50 @@ pre code{font-family:inherit;background:none;padding:0;}
       <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Aaj hum seekhenge ke do powerful functions ka istemal karke Excel mein kisi bhi table se specific data ko kaise dhundh sakte hain. VLOOKUP (Vertical Lookup) ek purana lekin zaroori function hai jo pehle column mein search karta hai aur uske corresponding row se data uthaata hai. XLOOKUP (Excel ka latest addition) isko aur behtar banata hai — yeh left se right search kar sakta hai, exact matches ko default banata hai, aur errors ko handle karne mein behtar hai.</p><h3>Example</h3><p>Maan lo ek *Sales* table hai jismein Product ID aur uske corresponding Price hai. Aapko Product ID `P101` ka price nikalna hai.</p><p>1.</p><h3>VLOOKUP ka tareeqa</h3><p>`=VLOOKUP(&quot;P101&quot;, A2:B10, 2, FALSE)`<br>   - `&quot;P101&quot;`: Jo value dhundhni hai.<br>   - `A2:B10`: Data ka range (Product ID column A mein, Price column B mein).<br>   - `2`: Price column ka index (A=1, B=2).<br>   - `FALSE`: Exact match.</p><p>2.</p><h3>XLOOKUP ka tareeqa</h3><p>`=XLOOKUP(&quot;P101&quot;, A2:A10, B2:B10, &quot;Not Found&quot;)`<br>   - `&quot;P101&quot;`: Search value.<br>   - `A2:A10`: Search range (Product ID column).<br>   - `B2:B10`: Return range (Price column).<br>   - `&quot;Not Found&quot;`: Agar value na mile toh yeh message.</p><h3>Practice</h3><p>Ek *Employees* table banao jismein Column A mein Employee IDs (E001, E002...) aur Column B mein unke Names hon. Phir VLOOKUP aur XLOOKUP ka istemal karke Employee ID `E003` ka name nikalne ka formula likho.</p><h3>Mini Project</h3><p>Ek *Products* table banao (Product ID, Product Name, Price). Phir ek naya sheet banao jismein Product IDs ka list ho. Har Product ID ke liye XLOOKUP ka istemal karke uska Name aur Price nikal kar ek table banaye.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>آج ہم سیکھیں گے کہ دو پاورفل فنکشنز کا استعمال کر کے ایکسل میں کسی بھی ٹیبل سے مخصوص ڈیٹا کو کیسے ڈھونڈھ سکتے ہیں۔ VLOOKUP (ورٹیکل لوک اپ) ایک پرانا لیکن ضروری فنکشن ہے جو پہلے کالم میں سرچ کرتا ہے اور اس کے مطابق والی راؤ سے ڈیٹا اٹھاتا ہے۔ XLOOKUP (ایکسسل کا لاسٹ ایڈیشن) اسے اور بہتر بناتا ہے — یہ لیفٹ سے رائٹ سرچ کر سکتا ہے، ایکسٹیکٹ میچز کو ڈیفالٹ بناتا ہے، اور ایررز کو ہینڈل کرنے میں بہتر ہے۔</p><h3>Example</h3><p>مان لو ایک *Sales* ٹیبل ہے جس میں Product ID اور اس کے corresponding Price ہے۔ آپکو Product ID `P101` کا price نکلنا ہے۔</p><h3>1</h3><p>VLOOKUP کا طریقہ: `=VLOOKUP(&quot;P101&quot;, A2:B10, 2, FALSE)`<br>   - `&quot;P101&quot;`: جو ویلیو ڈھونڈنی ہے۔<br>   - `A2:B10`: ڈیٹا کا رینج (Product ID کالم A میں، Price کالم B میں)۔<br>   - `2`: Price کالم کا انڈیکس (A=1, B=2)۔<br>   - `FALSE`: ایکسٹیکٹ میچ۔</p><h3>2</h3><p>XLOOKUP کا طریقہ: `=XLOOKUP(&quot;P101&quot;, A2:A10, B2:B10, &quot;Not Found&quot;)`<br>   - `&quot;P101&quot;`: سرچ ویلیو۔<br>   - `A2:A10`: سرچ رینج (Product ID کالم)۔<br>   - `B2:B10`: رٹرن رینج (Price کالم)۔<br>   - `&quot;Not Found&quot;`: اگر ویلیو نہ ملے تو یہ میسج۔</p><h3>Practice</h3><p>ایک *Employees* ٹیبل بناؤ جس میں کالم A میں Employee IDs (E001, E002...) اور کالم B میں انکے Names ہوں۔ پھر VLOOKUP اور XLOOKUP کا استعمال کر کے Employee ID `E003` کا نام نکلنے کا فارمولہ لکھو۔</p><h3>Mini Project</h3><p>ایک *Products* ٹیبل بناؤ (Product ID, Product Name, Price)۔ پھر ایک نیا شیٹ بناؤ جس میں Product IDs کا لسٹ ہو۔ ہر Product ID کے لیے XLOOKUP کا استعمال کر کے اسکا Name اور Price نکل کر ایک ٹیبل بنائے۔</p></div>
       
-      <div>
+      
+      <div class="quiz-box no-print">
+        <p><b>📝 Apna Practice Check Karein</b></p>
+        <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
+        <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"product name, price"'>✅ Check Karein</button>
+        <div class="quiz-result" id="fkc-quiz-result"></div>
+      </div>
+      <script>
+      function fkcCheckQuiz(btn){
+        var keys = JSON.parse(btn.getAttribute("data-keys"));
+        var ans = (document.getElementById("fkc-quiz-answer").value || "").toLowerCase();
+        var hit = 0;
+        keys.forEach(function(k){ if(k && ans.indexOf(k) !== -1) hit++; });
+        var el = document.getElementById("fkc-quiz-result");
+        if(hit === 0){
+          el.textContent = "Koi keyword match nahi hua — dobara try karein ya lesson dobara parhein.";
+          el.style.color = "#D97706";
+        } else {
+          el.textContent = "✅ " + hit + "/" + keys.length + " keywords match hue — shabaash!";
+          el.style.color = "var(--accent)";
+        }
+      }
+      </script>
+      <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Excel%20%26%20Data%20Analysis%20%28Day%2003%29%0A%0ADay%203%20%E2%80%94%20VLOOKUP%20aur%20XLOOKUP%3A%20Data%20ko%20tabdeel%20karne%20ka%20asaan%20tareeqa%0A%0AConcept%3A%0AAaj%20hum%20seekhenge%20ke%20do%20powerful%20functions%20ka%20istemal%20karke%20Excel%20mein%20kisi%20bhi%20table%20se%20specific%20data%20ko%20kaise%20dhundh%20sakte%20hain.%20VLOOKUP%20%28Vertical%20Lookup%29%20ek%20purana%20lekin%20zaroori%20function%20hai%20jo%20pehle%20column%20mein%20search%20karta%20hai%20aur%20uske%20corresponding%20row%20se%20data%20uthaata%20hai.%20XLOOKUP%20%28Excel%20ka%20latest%20addition%29%20isko%20aur%20behtar%20banata%20hai%20%E2%80%94%20yeh%20left%20se%20right%20search%20kar%20sakta%20hai%2C%20exact%20matches%20ko%20default%20banata%20hai%2C%20aur%20errors%20ko%20handle%20karne%20mein%20behtar%20hai.%0A%0AExample%3A%0AMaan%20lo%20ek%20%2ASales%2A%20table%20hai%20jismein%20Product%20ID%20aur%20uske%20corresponding%20Price%20hai.%20Aapko%20Product%20ID%20%60P101%60%20ka%20price%20nikalna%20hai.%0A%0A1.%0A%0AVLOOKUP%20ka%20tareeqa%3A%0A%60%3DVLOOKUP%28%22P101%22%2C%20A2%3AB10%2C%202%2C%20FALSE%29%60%0A%20%20%20-%20%60%22P101%22%60%3A%20Jo%20value%20dhundhni%20hai.%0A%20%20%20-%20%60A2%3AB10%60%3A%20Data%20ka%20range%20%28Product%20ID%20column%20A%20mein%2C%20Price%20column%20B%20mein%29.%0A%20%20%20-%20%602%60%3A%20Price%20column%20ka%20index%20%28A%3D1%2C%20B%3D2%29.%0A%20%20%20-%20%60FALSE%60%3A%20Exact%20match.%0A%0A2.%0A%0AXLOOKUP%20ka%20tareeqa%3A%0A%60%3DXLOOKUP%28%22P101%22%2C%20A2%3AA10%2C%20B2%3AB10%2C%20%22Not%20Found%22%29%60%0A%20%20%20-%20%60%22P101%22%60%3A%20Search%20value.%0A%20%20%20-%20%60A2%3AA10%60%3A%20Search%20range%20%28Product%20ID%20column%29.%0A%20%20%20-%20%60B2%3AB10%60%3A%20Return%20range%20%28Price%20column%29.%0A%20%20%20-%20%60%22Not%20Found%22%60%3A%20Agar%20value%20na%20mile%20toh%20yeh%20message.%0A%0APractice%3A%0AEk%20%2AEmployees%2A%20table%20banao%20jismein%20Column%20A%20mein%20Employee%20IDs%20%28E001%2C%20E002...%29%20aur%20Column%20B%20mein%20unke%20Names%20hon.%20Phir%20VLOOKUP%20aur%20XLOOKUP%20ka%20istemal%20karke%20Employee%20ID%20%60E003%60%20ka%20name%20nikalne%20ka%20formula%20likho.%0A%0AMini%20Project%3A%0AEk%20%2AProducts%2A%20table%20banao%20%28Product%20ID%2C%20Product%20Name%2C%20Price%29.%20Phir%20ek%20naya%20sheet%20banao%20jismein%20Product%20IDs%20ka%20list%20ho.%20Har%20Product%20ID%20ke%20liye%20XLOOKUP%20ka%20istemal%20karke%20uska%20Name%20aur%20Price%20nikal%20kar%20ek%20table%20banaye.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://t.me/share/url?url=&text=Day%203%20%E2%80%94%20VLOOKUP%20aur%20XLOOKUP%3A%20Data%20ko%20tabdeel%20karne%20ka%20asaan%20tareeqa%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
+        <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
-      <div>
+      <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
           data-slug="excel-data-analysis" data-lesson="day-003"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <p><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    <div class="lesson-nav"><a class="btn alt" href="2026-08-04-day-002.html">← Day 2 — AVERAGE aur COUNTIF: Data ko samajhne ke liye zaroori functions</a><span></span></div>
+    <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
+    <div class="no-print" style="margin:18px 0;text-align:center;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
+        data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
@@ -368,5 +420,18 @@ padding:4px 6px;font-size:1.1em;}
     });
   });
   window.addEventListener("appinstalled", function(){ banner.classList.remove("show"); });
+})();
+</script><script>
+(function(){
+  try{
+    var today = new Date().toISOString().slice(0,10);
+    var s = JSON.parse(localStorage.getItem("fkc_streak")||"null") || {last:null,count:0};
+    if(s.last !== today){
+      var y = new Date(Date.now()-86400000).toISOString().slice(0,10);
+      s.count = (s.last === y) ? s.count + 1 : 1;
+      s.last = today;
+      localStorage.setItem("fkc_streak", JSON.stringify(s));
+    }
+  }catch(e){}
 })();
 </script>

@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T16:51:55.506076";
+  var FKC_BUILD = "2026-08-04T18:32:09.069739";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,26 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.fkc-search{width:100%;padding:12px 14px;border:1px solid var(--line);
+border-radius:8px;font-size:15px;margin:10px 0 4px;box-sizing:border-box;
+font-family:inherit;}
+.streak-badge{display:none;background:#EA580C;color:#fff;font-size:.72em;
+font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+vertical-align:middle;}
+.lesson-nav{display:flex;justify-content:space-between;gap:8px;
+flex-wrap:wrap;margin-top:14px;}
+.lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
+border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
+box-sizing:border-box;margin:6px 0;}
+.quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+@media print{
+  .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
+  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:none;}
+}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -161,18 +181,50 @@ pre code{font-family:inherit;background:none;padding:0;}
       <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Aaj hum video editing software (CapCut ya Premiere Pro) ka interface samajhenge. Har tool ki location, menus, timeline, preview panel — sabko pehchaan karna seekhenge. Yeh foundation hai editing ka, iske bina aage kuch nahi ho sakta.</p><h3>Example</h3><p>1.</p><h3>CapCut</h3><p>Open karo → Top par &quot;Media&quot; (import files), &quot;Timeline&quot; (cutting ka area), &quot;Preview&quot; (right side).<br>2.</p><h3>Premiere Pro</h3><p>&quot;Project Panel&quot; (left, files), &quot;Timeline&quot; (bottom), &quot;Program Monitor&quot; (right, preview).</p><h3>Practice</h3><p>Apne software mein ek naya project banayein. 3-4 photos/videos import karo. Timeline par drag karo. Preview mein dekhein.</p><h3>Mini Project</h3><p>Ek 10-second clip banayein — 2 photos ko timeline par lagayein, unke beech ek transition add karo. Export karo.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>آج ہم ویڈیو ایڈیٹنگ سافٹ ویئر (CapCut یا Premiere Pro) کا انٹرفیس سمجھیں گے۔ ہر ٹول کی لوکیشن، مینوز، ٹائم لائن، پریویو پینل — سب کو پہچاننا سیکھیں گے۔ یہ ایڈیٹنگ کی بنیاد ہے، اس کے بنا آگے کچھ نہیں ہو سکتا۔</p><h3>Example</h3><p>1.<br>CapCut: اوپن کرو → ٹاپ پر &quot;Media&quot; (فائلز امپورٹ)، &quot;Timeline&quot; (کٹنگ کا ایریا)، &quot;Preview&quot; (رائٹ سائیڈ)۔<br>2.<br>Premiere Pro: &quot;Project Panel&quot; (بائیں، فائلز)، &quot;Timeline&quot; (بوتھم)، &quot;Program Monitor&quot; (رائٹ، پریویو)۔</p><h3>Practice</h3><p>اپنے سافٹ ویئر میں ایک نیا پراجیکٹ بنائیں۔ 3-4 فوٹوز/ویڈیوز امپورٹ کریں۔ ٹائم لائن پر ڈریگ کریں۔ پریویو میں دیکھیں۔</p><h3>Mini Project</h3><p>ایک 10 سیکنڈ کا کلپ بنائیں — 2 فوٹوز کو ٹائم لائن پر لگائیں، ان کے بیچ ایک ٹرانزیشن ایڈ کریں۔ ایکسپورٹ کریں۔</p></div>
       
-      <div>
+      
+      <div class="quiz-box no-print">
+        <p><b>📝 Apna Practice Check Karein</b></p>
+        <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
+        <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"media import, timeline, preview, transition"'>✅ Check Karein</button>
+        <div class="quiz-result" id="fkc-quiz-result"></div>
+      </div>
+      <script>
+      function fkcCheckQuiz(btn){
+        var keys = JSON.parse(btn.getAttribute("data-keys"));
+        var ans = (document.getElementById("fkc-quiz-answer").value || "").toLowerCase();
+        var hit = 0;
+        keys.forEach(function(k){ if(k && ans.indexOf(k) !== -1) hit++; });
+        var el = document.getElementById("fkc-quiz-result");
+        if(hit === 0){
+          el.textContent = "Koi keyword match nahi hua — dobara try karein ya lesson dobara parhein.";
+          el.style.color = "#D97706";
+        } else {
+          el.textContent = "✅ " + hit + "/" + keys.length + " keywords match hue — shabaash!";
+          el.style.color = "var(--accent)";
+        }
+      }
+      </script>
+      <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Video%20Editing%20%28CapCut/Premiere%29%20%28Day%2001%29%0A%0ADay%201%20%E2%80%94%20%22CapCut/Premiere%20Ka%20Interface%20Samajhiye%22%0A%0AConcept%3A%0AAaj%20hum%20video%20editing%20software%20%28CapCut%20ya%20Premiere%20Pro%29%20ka%20interface%20samajhenge.%20Har%20tool%20ki%20location%2C%20menus%2C%20timeline%2C%20preview%20panel%20%E2%80%94%20sabko%20pehchaan%20karna%20seekhenge.%20Yeh%20foundation%20hai%20editing%20ka%2C%20iske%20bina%20aage%20kuch%20nahi%20ho%20sakta.%0A%0AExample%3A%0A1.%0A%0ACapCut%3A%0AOpen%20karo%20%E2%86%92%20Top%20par%20%22Media%22%20%28import%20files%29%2C%20%22Timeline%22%20%28cutting%20ka%20area%29%2C%20%22Preview%22%20%28right%20side%29.%0A2.%0A%0APremiere%20Pro%3A%0A%22Project%20Panel%22%20%28left%2C%20files%29%2C%20%22Timeline%22%20%28bottom%29%2C%20%22Program%20Monitor%22%20%28right%2C%20preview%29.%0A%0APractice%3A%0AApne%20software%20mein%20ek%20naya%20project%20banayein.%203-4%20photos/videos%20import%20karo.%20Timeline%20par%20drag%20karo.%20Preview%20mein%20dekhein.%0A%0AMini%20Project%3A%0AEk%2010-second%20clip%20banayein%20%E2%80%94%202%20photos%20ko%20timeline%20par%20lagayein%2C%20unke%20beech%20ek%20transition%20add%20karo.%20Export%20karo.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://t.me/share/url?url=&text=Day%201%20%E2%80%94%20%22CapCut/Premiere%20Ka%20Interface%20Samajhiye%22%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
+        <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
-      <div>
+      <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
           data-slug="video-editing" data-lesson="day-001"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <p><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    <div class="lesson-nav"><span></span><a class="btn alt" href="2026-08-03-day-002.html">Day 2 — &quot;Pacing Ka Rahasya: Rozmarra Ke Content Ko Kaise Banayein Engaging&quot; →</a></div>
+    <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
+    <div class="no-print" style="margin:18px 0;text-align:center;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
+        data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
@@ -368,5 +420,18 @@ padding:4px 6px;font-size:1.1em;}
     });
   });
   window.addEventListener("appinstalled", function(){ banner.classList.remove("show"); });
+})();
+</script><script>
+(function(){
+  try{
+    var today = new Date().toISOString().slice(0,10);
+    var s = JSON.parse(localStorage.getItem("fkc_streak")||"null") || {last:null,count:0};
+    if(s.last !== today){
+      var y = new Date(Date.now()-86400000).toISOString().slice(0,10);
+      s.count = (s.last === y) ? s.count + 1 : 1;
+      s.last = today;
+      localStorage.setItem("fkc_streak", JSON.stringify(s));
+    }
+  }catch(e){}
 })();
 </script>

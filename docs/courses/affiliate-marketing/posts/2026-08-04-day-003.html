@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T16:51:55.506076";
+  var FKC_BUILD = "2026-08-04T18:32:09.069739";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,26 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.fkc-search{width:100%;padding:12px 14px;border:1px solid var(--line);
+border-radius:8px;font-size:15px;margin:10px 0 4px;box-sizing:border-box;
+font-family:inherit;}
+.streak-badge{display:none;background:#EA580C;color:#fff;font-size:.72em;
+font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+vertical-align:middle;}
+.lesson-nav{display:flex;justify-content:space-between;gap:8px;
+flex-wrap:wrap;margin-top:14px;}
+.lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
+border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
+box-sizing:border-box;margin:6px 0;}
+.quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+@media print{
+  .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
+  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:none;}
+}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -161,18 +181,50 @@ pre code{font-family:inherit;background:none;padding:0;}
       <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Amazon Associates aur Daraz Affiliate dono hi popular affiliate programs hain, lekin inke beech key differences hain. Amazon Associates global hai aur zyada products offer karta hai, jabki Daraz local hai aur Pakistan/SAARC regions par focus karta hai. Commission rates, payment methods aur approval criteria bhi alag hain.</p><h3>Example</h3><p>1.</p><h3>Amazon Associates</h3><p>Agar aap electronics par content bana rahe hain, toh Amazon par har product ka unique affiliate link milta hai. Commission 1-10% tak ho sakti hai.<br>2.</p><h3>Daraz Affiliate</h3><p>Agar aap local fashion ya groceries par content bana rahe hain, toh Daraz par higher commission rates (10-20%) mil sakti hain, lekin approval process strict hai.</p><h3>Practice</h3><p>Apne niche ke hisab se decide karein ke aapko Amazon Associates ya Daraz Affiliate program join karna chahiye. 2 reasons likhein kyun aapka choice sahi hai.</p><h3>Mini Project</h3><p>Ek simple comparison table banaein (2 columns: Amazon Associates vs Daraz Affiliate) aur 3 key points (commission, approval process, best niche) fill karein.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>مفہوم</h3><p>Amazon Associates اور Daraz Affiliate دونوں ہی مقبول افیلی ایٹ پروگرام ہیں، لیکن ان کے درمیان اہم فرق ہیں۔ Amazon Associates عالمی سطح پر ہے اور اس پر زیادہ مصنوعات دستیاب ہیں، جبکہ Daraz مقامی ہے اور پاکستان/SAARC علاقوں پر توجہ مرکوز کرتا ہے۔ کمیشن کی شرحیں، ادائیگی کے طریقے اور منظوری کے معیارات بھی الگ ہیں۔</p><h3>مثالیں</h3><p>1.<br>Amazon Associates: اگر آپ الیکٹرانکس پر مواد بنا رہے ہیں، تو Amazon پر ہر مصنوعہ کا منفرد افیلی ایٹ لنک ملتا ہے۔ کمیشن 1-10% تک ہو سکتا ہے۔</p><p>2.<br>Daraz Affiliate: اگر آپ مقامی فیشن یا گروسری پر مواد بنا رہے ہیں، تو Daraz پر زیادہ کمیشن کی شرحیں (10-20%) مل سکتی ہیں، لیکن منظوری کا عمل سخت ہے۔</p><h3>مشق</h3><p>اپنے نچے کے حساب سے فیصلہ کریں کہ آپ کو Amazon Associates یا Daraz Affiliate پروگرام جوائن کرنا چاہیے۔ 2 وجوہات لکھیں کہ آپ کا انتخاب کیوں درست ہے۔</p><h3>چھوٹا پروجیکٹ</h3><p>ایک سادہ موازنہ ٹیبل بنائیں (2 کالم: Amazon Associates vs Daraz Affiliate) اور 3 اہم نکات (کمیشن، منظوری کا عمل، بہترین نچے) بھریں۔</p></div>
       
-      <div>
+      
+      <div class="quiz-box no-print">
+        <p><b>📝 Apna Practice Check Karein</b></p>
+        <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
+        <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"amazon: global reach, low approval, 1-10%, daraz: local focus, high commission, strict approval"'>✅ Check Karein</button>
+        <div class="quiz-result" id="fkc-quiz-result"></div>
+      </div>
+      <script>
+      function fkcCheckQuiz(btn){
+        var keys = JSON.parse(btn.getAttribute("data-keys"));
+        var ans = (document.getElementById("fkc-quiz-answer").value || "").toLowerCase();
+        var hit = 0;
+        keys.forEach(function(k){ if(k && ans.indexOf(k) !== -1) hit++; });
+        var el = document.getElementById("fkc-quiz-result");
+        if(hit === 0){
+          el.textContent = "Koi keyword match nahi hua — dobara try karein ya lesson dobara parhein.";
+          el.style.color = "#D97706";
+        } else {
+          el.textContent = "✅ " + hit + "/" + keys.length + " keywords match hue — shabaash!";
+          el.style.color = "var(--accent)";
+        }
+      }
+      </script>
+      <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Affiliate%20Marketing%20%28Day%2003%29%0A%0ADay%203%20%E2%80%94%20Amazon%20Associates%20vs%20Daraz%20Affiliate%3A%20Kaunsa%20Choose%20Karein%3F%0A%0AConcept%3A%0AAmazon%20Associates%20aur%20Daraz%20Affiliate%20dono%20hi%20popular%20affiliate%20programs%20hain%2C%20lekin%20inke%20beech%20key%20differences%20hain.%20Amazon%20Associates%20global%20hai%20aur%20zyada%20products%20offer%20karta%20hai%2C%20jabki%20Daraz%20local%20hai%20aur%20Pakistan/SAARC%20regions%20par%20focus%20karta%20hai.%20Commission%20rates%2C%20payment%20methods%20aur%20approval%20criteria%20bhi%20alag%20hain.%0A%0AExample%3A%0A1.%0A%0AAmazon%20Associates%3A%0AAgar%20aap%20electronics%20par%20content%20bana%20rahe%20hain%2C%20toh%20Amazon%20par%20har%20product%20ka%20unique%20affiliate%20link%20milta%20hai.%20Commission%201-10%25%20tak%20ho%20sakti%20hai.%0A2.%0A%0ADaraz%20Affiliate%3A%0AAgar%20aap%20local%20fashion%20ya%20groceries%20par%20content%20bana%20rahe%20hain%2C%20toh%20Daraz%20par%20higher%20commission%20rates%20%2810-20%25%29%20mil%20sakti%20hain%2C%20lekin%20approval%20process%20strict%20hai.%0A%0APractice%3A%0AApne%20niche%20ke%20hisab%20se%20decide%20karein%20ke%20aapko%20Amazon%20Associates%20ya%20Daraz%20Affiliate%20program%20join%20karna%20chahiye.%202%20reasons%20likhein%20kyun%20aapka%20choice%20sahi%20hai.%0A%0AMini%20Project%3A%0AEk%20simple%20comparison%20table%20banaein%20%282%20columns%3A%20Amazon%20Associates%20vs%20Daraz%20Affiliate%29%20aur%203%20key%20points%20%28commission%2C%20approval%20process%2C%20best%20niche%29%20fill%20karein.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://t.me/share/url?url=&text=Day%203%20%E2%80%94%20Amazon%20Associates%20vs%20Daraz%20Affiliate%3A%20Kaunsa%20Choose%20Karein%3F%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
+        <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
-      <div>
+      <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
           data-slug="affiliate-marketing" data-lesson="day-003"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <p><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    <div class="lesson-nav"><a class="btn alt" href="2026-08-03-day-002.html">← Day 2</a><span></span></div>
+    <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
+    <div class="no-print" style="margin:18px 0;text-align:center;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
+        data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
@@ -368,5 +420,18 @@ padding:4px 6px;font-size:1.1em;}
     });
   });
   window.addEventListener("appinstalled", function(){ banner.classList.remove("show"); });
+})();
+</script><script>
+(function(){
+  try{
+    var today = new Date().toISOString().slice(0,10);
+    var s = JSON.parse(localStorage.getItem("fkc_streak")||"null") || {last:null,count:0};
+    if(s.last !== today){
+      var y = new Date(Date.now()-86400000).toISOString().slice(0,10);
+      s.count = (s.last === y) ? s.count + 1 : 1;
+      s.last = today;
+      localStorage.setItem("fkc_streak", JSON.stringify(s));
+    }
+  }catch(e){}
 })();
 </script>

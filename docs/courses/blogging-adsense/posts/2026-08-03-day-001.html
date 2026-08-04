@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T16:51:55.506076";
+  var FKC_BUILD = "2026-08-04T18:32:09.069739";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,26 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.fkc-search{width:100%;padding:12px 14px;border:1px solid var(--line);
+border-radius:8px;font-size:15px;margin:10px 0 4px;box-sizing:border-box;
+font-family:inherit;}
+.streak-badge{display:none;background:#EA580C;color:#fff;font-size:.72em;
+font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+vertical-align:middle;}
+.lesson-nav{display:flex;justify-content:space-between;gap:8px;
+flex-wrap:wrap;margin-top:14px;}
+.lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
+border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
+box-sizing:border-box;margin:6px 0;}
+.quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+@media print{
+  .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
+  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:none;}
+}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -161,18 +181,50 @@ pre code{font-family:inherit;background:none;padding:0;}
       <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Blog ka niche select karna sabse pehla aur sabse important step hai. Niche matlab aapka blog kis topic par hoga—jaise technology, health, finance, ya travel. Ek achha niche choose karne se aapka content focused rahega, readers engage honge, aur Adsense approval bhi asaan ho jata hai. Aapka interest, market demand, aur competition ko balance karna hoga.</p><h3>Example</h3><p>1.</p><h3>Interest vs Demand</h3><p>Agar aapko cooking pasand hai, lekin &quot;10-minute recipes&quot; ka demand zyada hai, to yeh niche choose kar sakte hain.<br>2.</p><h3>Competition Check</h3><p>Google par &quot;best budget smartphones 2024&quot; search karke dekhiye kitne blogs hain. Agar 10,000+ results hain, to competition zyada hai—niche narrow karne ki zaroorat hai.</p><h3>Practice</h3><p>Apne 3 topics list karein jo aapko pasand hain (e.g., fitness, personal finance, parenting). Har topic ke liye 3 sub-niches banaein (e.g., &quot;home workouts for beginners,&quot; &quot;side hustles for students,&quot; &quot;toddler meal plans&quot;).</p><h3>Mini Project</h3><p>Ek Google Sheets banayein jismein:<br>- Column 1: Main niche<br>- Column 2: Sub-niche<br>- Column 3: Google Trends par search volume (trends.google.com)<br>- Column 4: Competition score (1-10, 10 = zyada competition)</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>بلاگ کا نیچے سلیکٹ کرنا سب سے پہلا اور سب سے اہم سٹپ ہے۔ نیچے کا مطلب ہے کہ آپ کا بلاگ کس ٹاپک پر ہوگا—جیسے ٹیکنالوجی، ہیلتھ، فائنانس، یا ٹریول۔ ایک اچھا نیچے چننے سے آپ کا کنٹینٹ فوکسڈ رہے گا، ریڈرز انگیج ہوں گے، اور ایڈسنس اپروول بھی آسان ہو جاتا ہے۔ آپ کو اپنا انٹرسٹ، مارکیٹ ڈیمانڈ، اور کمپٹیشن کو بیلنس کرنا ہوگا۔</p><h3>Example</h3><p>1. اگر آپ کو کوڈنگ پسند ہے، لیکن &#x27;Python for beginners&#x27; کا ڈیمانڈ زیادہ ہے، تو یہ نیچے چن سکتے ہیں۔</p><h3>Interest vs Demand</h3><p>اگر آپ کو کوکنگ پسند ہے، لیکن &#x27;10-minute recipes&#x27; کا ڈیمانڈ زیادہ ہے، تو یہ نیچے چن سکتے ہیں۔</p><h3>Competition Check</h3><p>گوگل پر &#x27;best budget smartphones 2024&#x27; سرچ کرکے دیکھیے کتنے بلاگز ہیں۔ اگر 10,000+ رزلٹس ہیں، تو کمپٹیشن زیادہ ہے—نیچے نارو کرنے کی ضرورت ہے۔</p><h3>Practice</h3><p>اپنے 3 ٹاپکس لسٹ کریں جو آپ کو پسند ہیں (مثلاً، فٹنس، پرسنل فائنانس، پیرنٹنگ)۔ ہر ٹاپک کے لیے 3 سب-نیچیز بنائیں (مثلاً، &#x27;home workouts for beginners,&#x27; &#x27;side hustles for students,&#x27; &#x27;toddler meal plans&#x27;)۔</p><h3>Mini Project</h3><p>ایک گوگل شیٹس بنائیں جس میں شامل ہوں:<br>- کالم 1: مین نیچے<br>- کالم 2: سب-نیچے<br>- کالم 3: گوگل ٹرینڈس پر سرچ وولیم (trends.google.com)<br>- کالم 4: کمپٹیشن سکور (1-10، 10 = زیادہ کمپٹیشن)</p></div>
       
-      <div>
+      
+      <div class="quiz-box no-print">
+        <p><b>📝 Apna Practice Check Karein</b></p>
+        <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
+        <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"interest, demand, competition, sub-niches"'>✅ Check Karein</button>
+        <div class="quiz-result" id="fkc-quiz-result"></div>
+      </div>
+      <script>
+      function fkcCheckQuiz(btn){
+        var keys = JSON.parse(btn.getAttribute("data-keys"));
+        var ans = (document.getElementById("fkc-quiz-answer").value || "").toLowerCase();
+        var hit = 0;
+        keys.forEach(function(k){ if(k && ans.indexOf(k) !== -1) hit++; });
+        var el = document.getElementById("fkc-quiz-result");
+        if(hit === 0){
+          el.textContent = "Koi keyword match nahi hua — dobara try karein ya lesson dobara parhein.";
+          el.style.color = "#D97706";
+        } else {
+          el.textContent = "✅ " + hit + "/" + keys.length + " keywords match hue — shabaash!";
+          el.style.color = "var(--accent)";
+        }
+      }
+      </script>
+      <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Blogging%20%26%20Adsense%20%28Day%2001%29%0A%0ADay%201%20%E2%80%94%20Apna%20Blog%20Ka%20Niche%20Kaise%20Choose%20Karein%3F%20%28Beginner-Friendly%20Guide%29%0A%0AConcept%3A%0ABlog%20ka%20niche%20select%20karna%20sabse%20pehla%20aur%20sabse%20important%20step%20hai.%20Niche%20matlab%20aapka%20blog%20kis%20topic%20par%20hoga%E2%80%94jaise%20technology%2C%20health%2C%20finance%2C%20ya%20travel.%20Ek%20achha%20niche%20choose%20karne%20se%20aapka%20content%20focused%20rahega%2C%20readers%20engage%20honge%2C%20aur%20Adsense%20approval%20bhi%20asaan%20ho%20jata%20hai.%20Aapka%20interest%2C%20market%20demand%2C%20aur%20competition%20ko%20balance%20karna%20hoga.%0A%0AExample%3A%0A1.%0A%0AInterest%20vs%20Demand%3A%0AAgar%20aapko%20cooking%20pasand%20hai%2C%20lekin%20%2210-minute%20recipes%22%20ka%20demand%20zyada%20hai%2C%20to%20yeh%20niche%20choose%20kar%20sakte%20hain.%0A2.%0A%0ACompetition%20Check%3A%0AGoogle%20par%20%22best%20budget%20smartphones%202024%22%20search%20karke%20dekhiye%20kitne%20blogs%20hain.%20Agar%2010%2C000%2B%20results%20hain%2C%20to%20competition%20zyada%20hai%E2%80%94niche%20narrow%20karne%20ki%20zaroorat%20hai.%0A%0APractice%3A%0AApne%203%20topics%20list%20karein%20jo%20aapko%20pasand%20hain%20%28e.g.%2C%20fitness%2C%20personal%20finance%2C%20parenting%29.%20Har%20topic%20ke%20liye%203%20sub-niches%20banaein%20%28e.g.%2C%20%22home%20workouts%20for%20beginners%2C%22%20%22side%20hustles%20for%20students%2C%22%20%22toddler%20meal%20plans%22%29.%0A%0AMini%20Project%3A%0AEk%20Google%20Sheets%20banayein%20jismein%3A%0A-%20Column%201%3A%20Main%20niche%0A-%20Column%202%3A%20Sub-niche%0A-%20Column%203%3A%20Google%20Trends%20par%20search%20volume%20%28trends.google.com%29%0A-%20Column%204%3A%20Competition%20score%20%281-10%2C%2010%20%3D%20zyada%20competition%29%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://t.me/share/url?url=&text=Day%201%20%E2%80%94%20Apna%20Blog%20Ka%20Niche%20Kaise%20Choose%20Karein%3F%20%28Beginner-Friendly%20Guide%29%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
+        <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
-      <div>
+      <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
           data-slug="blogging-adsense" data-lesson="day-001"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <p><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    <div class="lesson-nav"><span></span><a class="btn alt" href="2026-08-04-day-002.html">Day 2 — **Blogger vs WordPress: Apna Blog Kaise Setup Karen? (Step-by-Step Guide)** →</a></div>
+    <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
+    <div class="no-print" style="margin:18px 0;text-align:center;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
+        data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
@@ -368,5 +420,18 @@ padding:4px 6px;font-size:1.1em;}
     });
   });
   window.addEventListener("appinstalled", function(){ banner.classList.remove("show"); });
+})();
+</script><script>
+(function(){
+  try{
+    var today = new Date().toISOString().slice(0,10);
+    var s = JSON.parse(localStorage.getItem("fkc_streak")||"null") || {last:null,count:0};
+    if(s.last !== today){
+      var y = new Date(Date.now()-86400000).toISOString().slice(0,10);
+      s.count = (s.last === y) ? s.count + 1 : 1;
+      s.last = today;
+      localStorage.setItem("fkc_streak", JSON.stringify(s));
+    }
+  }catch(e){}
 })();
 </script>

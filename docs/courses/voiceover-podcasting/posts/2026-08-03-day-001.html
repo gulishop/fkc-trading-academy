@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T16:51:55.506076";
+  var FKC_BUILD = "2026-08-04T18:32:09.069739";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,26 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.fkc-search{width:100%;padding:12px 14px;border:1px solid var(--line);
+border-radius:8px;font-size:15px;margin:10px 0 4px;box-sizing:border-box;
+font-family:inherit;}
+.streak-badge{display:none;background:#EA580C;color:#fff;font-size:.72em;
+font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+vertical-align:middle;}
+.lesson-nav{display:flex;justify-content:space-between;gap:8px;
+flex-wrap:wrap;margin-top:14px;}
+.lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
+border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
+box-sizing:border-box;margin:6px 0;}
+.quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+@media print{
+  .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
+  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:none;}
+}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -161,18 +181,50 @@ pre code{font-family:inherit;background:none;padding:0;}
       <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Aaj hum seekhenge ke voice over ke liye sabse pehle kya zaroori hai—ek accha mic setup. Ek behtar mic aur proper positioning se aapki awaaz professional aur clear aati hai. Basics mein microphone types (USB vs XLR), room acoustics, aur positioning jaise cheezon par focus karenge.</p><h3>Example</h3><p>1.</p><h3>Mic Type</h3><p>Agar aap beginner hain, toh USB mic (jaise Blue Yeti ya FIFINE K669B) istemal karen. XLR mic zyada advanced hain aur extra interface ki zaroorat hoti hai.<br>2.</p><h3>Room Setup</h3><p>Ek quiet room mein recording karen. Agar aapke paas soundproof room nahi hai, toh ek blanket ya foam panels laga kar echo kam karen.<br>3.</p><h3>Positioning</h3><p>Mic ko apne munh se 6-12 inches door rakhein. &quot;Pop filter&quot; use karen taake &quot;P&quot; aur &quot;B&quot; jaise words se aane wale harsh sounds kam hon.</p><h3>Practice</h3><p>Apne mic ko connect karen aur ek 30-second ka recording karen—apni awaaz ko describe karen (jaise &quot;Mera naam hai [X], aur main voice over artist banna chahta hoon&quot;). Check karen ke awaaz clear hai ya nahi.</p><h3>Mini Project</h3><p>Ek 1-minute ka intro script likhein (jaise podcast ya voice over ke liye) aur usko record karen. Try karen ke tone natural ho aur mic se 6-12 inches door rahein.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>تصور</h3><p>آج ہم سیکھیں گے کہ آواز اوور کے لیے سب سے پہلے کیا ضروری ہے—ایک اچھا مائک سیٹ اپ۔ ایک بہتر مائک اور proper positioning سے آپکی آواز پروفیشنل اور clear آتی ہے۔ بنیادی باتوں میں microphone types (USB vs XLR)، room acoustics، اور positioning جیسے چیزوں پر فوکس کریں گے۔</p><h3>مثال</h3><p>1.</p><p>مائک ٹائپ: اگر آپ beginner ہیں، تو USB mic (جیسے Blue Yeti یا FIFINE K669B) استعمال کریں۔ XLR mic زیادہ advanced ہیں اور extra interface کی ضرورت ہوتی ہے۔</p><p>2.</p><p>کمروں کا سیٹ اپ: ایک quiet room میں recording کریں۔ اگر آپکے پاس soundproof room نہیں ہے، تو ایک blanket یا foam panels لگا کر echo کم کریں۔</p><p>3.</p><p>پوزیشننگ: مائک کو اپنے منہ سے 6-12 inches دور رکھیں۔ &quot;Pop filter&quot; استعمال کریں تاکہ &quot;P&quot; اور &quot;B&quot; جیسے words سے آنے والے harsh sounds کم ہوں۔</p><h3>مشق</h3><p>اپنے مائک کو connect کریں اور ایک 30-second کا recording کریں—اپنی آواز کو describe کریں (جیسے &quot;میرا نام ہے [X]، اور میں آواز اوور آرٹسٹ بننا چاہتا ہوں&quot;)۔ Check کریں کہ آواز clear ہے یا نہیں۔</p><h3>چھوٹا پروجیکٹ</h3><p>ایک 1-minute کا intro script لکھیں (جیسے podcast یا آواز اوور کے لیے) اور اسے record کریں۔ Try کریں کہ tone natural ہو اور مائک سے 6-12 inches دور رہیں۔</p></div>
       
-      <div>
+      
+      <div class="quiz-box no-print">
+        <p><b>📝 Apna Practice Check Karein</b></p>
+        <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
+        <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"usb mic, room quiet, 6-12 inches, pop filter"'>✅ Check Karein</button>
+        <div class="quiz-result" id="fkc-quiz-result"></div>
+      </div>
+      <script>
+      function fkcCheckQuiz(btn){
+        var keys = JSON.parse(btn.getAttribute("data-keys"));
+        var ans = (document.getElementById("fkc-quiz-answer").value || "").toLowerCase();
+        var hit = 0;
+        keys.forEach(function(k){ if(k && ans.indexOf(k) !== -1) hit++; });
+        var el = document.getElementById("fkc-quiz-result");
+        if(hit === 0){
+          el.textContent = "Koi keyword match nahi hua — dobara try karein ya lesson dobara parhein.";
+          el.style.color = "#D97706";
+        } else {
+          el.textContent = "✅ " + hit + "/" + keys.length + " keywords match hue — shabaash!";
+          el.style.color = "var(--accent)";
+        }
+      }
+      </script>
+      <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Voice%20Over%20%26%20Podcasting%20%28Day%2001%29%0A%0ADay%201%20%E2%80%94%20Voice%20Over%20Ki%20Basics%3A%20Apna%20Mic%20Set%20Karein%0A%0AConcept%3A%0AAaj%20hum%20seekhenge%20ke%20voice%20over%20ke%20liye%20sabse%20pehle%20kya%20zaroori%20hai%E2%80%94ek%20accha%20mic%20setup.%20Ek%20behtar%20mic%20aur%20proper%20positioning%20se%20aapki%20awaaz%20professional%20aur%20clear%20aati%20hai.%20Basics%20mein%20microphone%20types%20%28USB%20vs%20XLR%29%2C%20room%20acoustics%2C%20aur%20positioning%20jaise%20cheezon%20par%20focus%20karenge.%0A%0AExample%3A%0A1.%0A%0AMic%20Type%3A%0AAgar%20aap%20beginner%20hain%2C%20toh%20USB%20mic%20%28jaise%20Blue%20Yeti%20ya%20FIFINE%20K669B%29%20istemal%20karen.%20XLR%20mic%20zyada%20advanced%20hain%20aur%20extra%20interface%20ki%20zaroorat%20hoti%20hai.%0A2.%0A%0ARoom%20Setup%3A%0AEk%20quiet%20room%20mein%20recording%20karen.%20Agar%20aapke%20paas%20soundproof%20room%20nahi%20hai%2C%20toh%20ek%20blanket%20ya%20foam%20panels%20laga%20kar%20echo%20kam%20karen.%0A3.%0A%0APositioning%3A%0AMic%20ko%20apne%20munh%20se%206-12%20inches%20door%20rakhein.%20%22Pop%20filter%22%20use%20karen%20taake%20%22P%22%20aur%20%22B%22%20jaise%20words%20se%20aane%20wale%20harsh%20sounds%20kam%20hon.%0A%0APractice%3A%0AApne%20mic%20ko%20connect%20karen%20aur%20ek%2030-second%20ka%20recording%20karen%E2%80%94apni%20awaaz%20ko%20describe%20karen%20%28jaise%20%22Mera%20naam%20hai%20%5BX%5D%2C%20aur%20main%20voice%20over%20artist%20banna%20chahta%20hoon%22%29.%20Check%20karen%20ke%20awaaz%20clear%20hai%20ya%20nahi.%0A%0AMini%20Project%3A%0AEk%201-minute%20ka%20intro%20script%20likhein%20%28jaise%20podcast%20ya%20voice%20over%20ke%20liye%29%20aur%20usko%20record%20karen.%20Try%20karen%20ke%20tone%20natural%20ho%20aur%20mic%20se%206-12%20inches%20door%20rahein.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://t.me/share/url?url=&text=Day%201%20%E2%80%94%20Voice%20Over%20Ki%20Basics%3A%20Apna%20Mic%20Set%20Karein%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
+        <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
-      <div>
+      <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
           data-slug="voiceover-podcasting" data-lesson="day-001"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <p><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    <div class="lesson-nav"><span></span><a class="btn alt" href="2026-08-04-day-002.html">Day 2 — Script Padhne Ka Art: Emotion aur Tone Control →</a></div>
+    <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
+    <div class="no-print" style="margin:18px 0;text-align:center;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
+        data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
@@ -368,5 +420,18 @@ padding:4px 6px;font-size:1.1em;}
     });
   });
   window.addEventListener("appinstalled", function(){ banner.classList.remove("show"); });
+})();
+</script><script>
+(function(){
+  try{
+    var today = new Date().toISOString().slice(0,10);
+    var s = JSON.parse(localStorage.getItem("fkc_streak")||"null") || {last:null,count:0};
+    if(s.last !== today){
+      var y = new Date(Date.now()-86400000).toISOString().slice(0,10);
+      s.count = (s.last === y) ? s.count + 1 : 1;
+      s.last = today;
+      localStorage.setItem("fkc_streak", JSON.stringify(s));
+    }
+  }catch(e){}
 })();
 </script>

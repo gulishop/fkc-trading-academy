@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T16:51:55.506076";
+  var FKC_BUILD = "2026-08-04T18:32:09.069739";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,26 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.fkc-search{width:100%;padding:12px 14px;border:1px solid var(--line);
+border-radius:8px;font-size:15px;margin:10px 0 4px;box-sizing:border-box;
+font-family:inherit;}
+.streak-badge{display:none;background:#EA580C;color:#fff;font-size:.72em;
+font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+vertical-align:middle;}
+.lesson-nav{display:flex;justify-content:space-between;gap:8px;
+flex-wrap:wrap;margin-top:14px;}
+.lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
+border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
+box-sizing:border-box;margin:6px 0;}
+.quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+@media print{
+  .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
+  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:none;}
+}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -161,18 +181,50 @@ pre code{font-family:inherit;background:none;padding:0;}
       
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>AI se behtareen jawab hasil karne ke liye &quot;prompt engineering&quot; aaj ka sabse zaroori skill hai. Ek achha prompt clear, specific aur structured hona chahiye. Basics mein hum seekhenge ki kaise simple prompts ko improve karke AI se accurate aur useful jawab len.</p><h3>Example</h3><p>1.</p><h3>Ghalat Prompt</h3><p>&quot;Mujhe ek email likhna hai.&quot;<br>2.</p><h3>Behtareen Prompt</h3><p>&quot;Ek professional email draft karo jo ek freelancer ne apne client ko payment reminder ke liye likha hai. Email short, polite aur 3 lines se zyada na ho.&quot;</p><h3>Practice</h3><p>Apne mobile phone ya laptop ke liye ek **3-line ka prompt** likhiye jo AI se ek &quot;birthday wish message&quot; generate karne ke liye ho. (Hint: Recipient ka naam, occasion, aur tone specify karna hai.)</p><h3>Mini Project</h3><p>Ek **ChatGPT prompt library** banao (Google Sheets ya Notion mein) jismein 5 common tasks ke liye prompts hon, jaise:<br>- Blog post introduction<br>- Social media caption<br>- Excel formula generator<br>- Product description<br>- Meeting agenda</p></div>
       
-      <div>
+      
+      <div class="quiz-box no-print">
+        <p><b>📝 Apna Practice Check Karein</b></p>
+        <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
+        <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"recipient ka naam, occasion, tone, length"'>✅ Check Karein</button>
+        <div class="quiz-result" id="fkc-quiz-result"></div>
+      </div>
+      <script>
+      function fkcCheckQuiz(btn){
+        var keys = JSON.parse(btn.getAttribute("data-keys"));
+        var ans = (document.getElementById("fkc-quiz-answer").value || "").toLowerCase();
+        var hit = 0;
+        keys.forEach(function(k){ if(k && ans.indexOf(k) !== -1) hit++; });
+        var el = document.getElementById("fkc-quiz-result");
+        if(hit === 0){
+          el.textContent = "Koi keyword match nahi hua — dobara try karein ya lesson dobara parhein.";
+          el.style.color = "#D97706";
+        } else {
+          el.textContent = "✅ " + hit + "/" + keys.length + " keywords match hue — shabaash!";
+          el.style.color = "var(--accent)";
+        }
+      }
+      </script>
+      <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20AI%20Tools%20%26%20Automation%20%28Day%2001%29%0A%0ADay%201%20%E2%80%94%20AI%20Prompts%20Likhna%3A%20Basics%20Seekhiye%0A%0AConcept%3A%0AAI%20se%20behtareen%20jawab%20hasil%20karne%20ke%20liye%20%22prompt%20engineering%22%20aaj%20ka%20sabse%20zaroori%20skill%20hai.%20Ek%20achha%20prompt%20clear%2C%20specific%20aur%20structured%20hona%20chahiye.%20Basics%20mein%20hum%20seekhenge%20ki%20kaise%20simple%20prompts%20ko%20improve%20karke%20AI%20se%20accurate%20aur%20useful%20jawab%20len.%0A%0AExample%3A%0A1.%0A%0AGhalat%20Prompt%3A%0A%22Mujhe%20ek%20email%20likhna%20hai.%22%0A2.%0A%0ABehtareen%20Prompt%3A%0A%22Ek%20professional%20email%20draft%20karo%20jo%20ek%20freelancer%20ne%20apne%20client%20ko%20payment%20reminder%20ke%20liye%20likha%20hai.%20Email%20short%2C%20polite%20aur%203%20lines%20se%20zyada%20na%20ho.%22%0A%0APractice%3A%0AApne%20mobile%20phone%20ya%20laptop%20ke%20liye%20ek%20%2A%2A3-line%20ka%20prompt%2A%2A%20likhiye%20jo%20AI%20se%20ek%20%22birthday%20wish%20message%22%20generate%20karne%20ke%20liye%20ho.%20%28Hint%3A%20Recipient%20ka%20naam%2C%20occasion%2C%20aur%20tone%20specify%20karna%20hai.%29%0A%0AMini%20Project%3A%0AEk%20%2A%2AChatGPT%20prompt%20library%2A%2A%20banao%20%28Google%20Sheets%20ya%20Notion%20mein%29%20jismein%205%20common%20tasks%20ke%20liye%20prompts%20hon%2C%20jaise%3A%0A-%20Blog%20post%20introduction%0A-%20Social%20media%20caption%0A-%20Excel%20formula%20generator%0A-%20Product%20description%0A-%20Meeting%20agenda%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://t.me/share/url?url=&text=Day%201%20%E2%80%94%20AI%20Prompts%20Likhna%3A%20Basics%20Seekhiye%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
+        <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
-      <div>
+      <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
           data-slug="ai-tools" data-lesson="day-001"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <p><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    <div class="lesson-nav"><span></span><a class="btn alt" href="2026-08-04-day-002.html">Day 2 — AI Se Content, Captions, Aur Emails Likhwana →</a></div>
+    <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
+    <div class="no-print" style="margin:18px 0;text-align:center;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
+        data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
@@ -368,5 +420,18 @@ padding:4px 6px;font-size:1.1em;}
     });
   });
   window.addEventListener("appinstalled", function(){ banner.classList.remove("show"); });
+})();
+</script><script>
+(function(){
+  try{
+    var today = new Date().toISOString().slice(0,10);
+    var s = JSON.parse(localStorage.getItem("fkc_streak")||"null") || {last:null,count:0};
+    if(s.last !== today){
+      var y = new Date(Date.now()-86400000).toISOString().slice(0,10);
+      s.count = (s.last === y) ? s.count + 1 : 1;
+      s.last = today;
+      localStorage.setItem("fkc_streak", JSON.stringify(s));
+    }
+  }catch(e){}
 })();
 </script>

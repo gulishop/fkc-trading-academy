@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T16:51:55.506076";
+  var FKC_BUILD = "2026-08-04T18:32:09.069739";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,26 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.fkc-search{width:100%;padding:12px 14px;border:1px solid var(--line);
+border-radius:8px;font-size:15px;margin:10px 0 4px;box-sizing:border-box;
+font-family:inherit;}
+.streak-badge{display:none;background:#EA580C;color:#fff;font-size:.72em;
+font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+vertical-align:middle;}
+.lesson-nav{display:flex;justify-content:space-between;gap:8px;
+flex-wrap:wrap;margin-top:14px;}
+.lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
+border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
+box-sizing:border-box;margin:6px 0;}
+.quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+@media print{
+  .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
+  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:none;}
+}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -161,18 +181,50 @@ pre code{font-family:inherit;background:none;padding:0;}
       <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Pakistan ka real estate market dynamic hai—shahar se lekar gaon tak har jagah alag trends hain. Yahan property ki demand, prices, aur legal rules city aur region ke hisaab se badalti rehti hain. Shuruat mein market ko samajhna zaroori hai taake aap informed decisions le saken.</p><h3>Example</h3><p>Karachi mein Defence Housing Authority (DHA) aur Bahria Town ki properties zyada demand mein hain, jabke Lahore mein Gulberg aur Johar Town popular hain. Property prices bhi in areas mein zyada hoti hain.</p><h3>Practice</h3><p>Apne local area mein 3 popular residential projects ya societies ka naam likhein jo abhi demand mein hain.</p><h3>Mini Project</h3><p>Ek simple market research karke ek table banaein:<br>| Area Name | Popular Society/Project | Avg. Price (per kanal/sq.ft) | Demand Reason |</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>تصور</h3><p>پاکستان کا ریئل اسٹیٹ مارکیٹ متحرک ہے—شہر سے لے کر گاؤں تک ہر جگہ الگ الگ رجحانات پائے جاتے ہیں۔ یہاں پراپرٹی کی ڈیمینڈ، قیمتیں، اور قانونی قواعد شہر اور علاقے کے حساب سے بدلتی رہتی ہیں۔ شروعات میں مارکیٹ کو سمجھنا ضروری ہے تاکہ آپ informed decisions لے سکیں۔</p><h3>مثال</h3><p>کراچی میں ڈی ایچ اے اور بہریا ٹاؤن کی پراپرٹیز زیادہ ڈیمینڈ میں ہیں، جبکہ لاہور میں گلبرگ اور جوہر ٹاؤن مقبول ہیں۔ پراپرٹی کی قیمتیں بھی ان علاقوں میں زیادہ ہوتی ہیں۔</p><h3>پریکٹس</h3><p>اپنے مقامی علاقے میں تین مقبول رہائشی پراجیکٹس یا سوسائٹیز کے نام لکھیں جو ابھی ڈیمینڈ میں ہیں۔</p><h3>منصوبہ</h3><p>ایک سادہ مارکیٹ ریسرچ کرکے ایک ٹیبل بنائیں:<br>| علاقہ کا نام | مقبول سوسائٹی/پرواجیکٹ | اوسط قیمت (فی کنال/اسکوائر فٹ) | ڈیمینڈ کی وجہ |</p></div>
       
-      <div>
+      
+      <div class="quiz-box no-print">
+        <p><b>📝 Apna Practice Check Karein</b></p>
+        <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
+        <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"defence, bahria, gulberg, johar"'>✅ Check Karein</button>
+        <div class="quiz-result" id="fkc-quiz-result"></div>
+      </div>
+      <script>
+      function fkcCheckQuiz(btn){
+        var keys = JSON.parse(btn.getAttribute("data-keys"));
+        var ans = (document.getElementById("fkc-quiz-answer").value || "").toLowerCase();
+        var hit = 0;
+        keys.forEach(function(k){ if(k && ans.indexOf(k) !== -1) hit++; });
+        var el = document.getElementById("fkc-quiz-result");
+        if(hit === 0){
+          el.textContent = "Koi keyword match nahi hua — dobara try karein ya lesson dobara parhein.";
+          el.style.color = "#D97706";
+        } else {
+          el.textContent = "✅ " + hit + "/" + keys.length + " keywords match hue — shabaash!";
+          el.style.color = "var(--accent)";
+        }
+      }
+      </script>
+      <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Real%20Estate%20Business%20%28Day%2001%29%0A%0ADay%201%20%E2%80%94%20Pakistan%20ke%20Real%20Estate%20Market%20ki%20Basics%0A%0AConcept%3A%0APakistan%20ka%20real%20estate%20market%20dynamic%20hai%E2%80%94shahar%20se%20lekar%20gaon%20tak%20har%20jagah%20alag%20trends%20hain.%20Yahan%20property%20ki%20demand%2C%20prices%2C%20aur%20legal%20rules%20city%20aur%20region%20ke%20hisaab%20se%20badalti%20rehti%20hain.%20Shuruat%20mein%20market%20ko%20samajhna%20zaroori%20hai%20taake%20aap%20informed%20decisions%20le%20saken.%0A%0AExample%3A%0AKarachi%20mein%20Defence%20Housing%20Authority%20%28DHA%29%20aur%20Bahria%20Town%20ki%20properties%20zyada%20demand%20mein%20hain%2C%20jabke%20Lahore%20mein%20Gulberg%20aur%20Johar%20Town%20popular%20hain.%20Property%20prices%20bhi%20in%20areas%20mein%20zyada%20hoti%20hain.%0A%0APractice%3A%0AApne%20local%20area%20mein%203%20popular%20residential%20projects%20ya%20societies%20ka%20naam%20likhein%20jo%20abhi%20demand%20mein%20hain.%0A%0AMini%20Project%3A%0AEk%20simple%20market%20research%20karke%20ek%20table%20banaein%3A%0A%7C%20Area%20Name%20%7C%20Popular%20Society/Project%20%7C%20Avg.%20Price%20%28per%20kanal/sq.ft%29%20%7C%20Demand%20Reason%20%7C%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://t.me/share/url?url=&text=Day%201%20%E2%80%94%20Pakistan%20ke%20Real%20Estate%20Market%20ki%20Basics%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
+        <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
-      <div>
+      <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
           data-slug="real-estate-business" data-lesson="day-001"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <p><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    <div class="lesson-nav"><span></span><a class="btn alt" href="2026-08-04-day-002.html">Day 2 — Property Dealer/Agent Banne ke 5 Asaan Steps →</a></div>
+    <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
+    <div class="no-print" style="margin:18px 0;text-align:center;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
+        data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
@@ -368,5 +420,18 @@ padding:4px 6px;font-size:1.1em;}
     });
   });
   window.addEventListener("appinstalled", function(){ banner.classList.remove("show"); });
+})();
+</script><script>
+(function(){
+  try{
+    var today = new Date().toISOString().slice(0,10);
+    var s = JSON.parse(localStorage.getItem("fkc_streak")||"null") || {last:null,count:0};
+    if(s.last !== today){
+      var y = new Date(Date.now()-86400000).toISOString().slice(0,10);
+      s.count = (s.last === y) ? s.count + 1 : 1;
+      s.last = today;
+      localStorage.setItem("fkc_streak", JSON.stringify(s));
+    }
+  }catch(e){}
 })();
 </script>

@@ -22,7 +22,7 @@
 <link rel="icon" href="logo.png">
 <link rel="manifest" href="manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T16:51:55.506076";
+  var FKC_BUILD = "2026-08-04T18:32:09.069739";
   function fkcCheckVersion(){
     fetch("version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,26 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.fkc-search{width:100%;padding:12px 14px;border:1px solid var(--line);
+border-radius:8px;font-size:15px;margin:10px 0 4px;box-sizing:border-box;
+font-family:inherit;}
+.streak-badge{display:none;background:#EA580C;color:#fff;font-size:.72em;
+font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+vertical-align:middle;}
+.lesson-nav{display:flex;justify-content:space-between;gap:8px;
+flex-wrap:wrap;margin-top:14px;}
+.lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
+border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
+box-sizing:border-box;margin:6px 0;}
+.quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+@media print{
+  .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
+  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:none;}
+}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -153,9 +173,10 @@ pre code{font-family:inherit;background:none;padding:0;}
     <div class="top"><span>FKC Trading Academy</span>
     <span class="lbl">Digital Hub — apni pasand ka course chunein</span></div>
     <span class="eyebrow fade-in">Course Library</span>
-    <h1 class="fade-in">🎓 Roz ek naya practical lesson</h1>
+    <h1 class="fade-in">🎓 Roz ek naya practical lesson<span class="streak-badge" id="fkc-streak-badge"></span></h1>
     <p class="muted fade-in d2">📅 Har course ka naya lesson roz apne fixed time par (9:00 AM se 11:30 AM Pakistan time ke darmiyan) yahan post hota hai — har course card par uska waqt likha hai.
     Jis course mein interest ho us par tap karein — daily lesson step-by-step parhein aur practice karein.</p>
+    <input type="text" id="fkc-course-search" class="fkc-search" placeholder="🔍 Course dhoondein...">
     <p class="fade-in d2"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Start Learning</a></p>
     <div class="grid">
     <a class="ccard fade-in" href="courses/youtube-automation/index.html">
@@ -438,11 +459,11 @@ pre code{font-family:inherit;background:none;padding:0;}
       <div class="body">
         <h2>Photography &amp; Editing</h2>
         <p class="tag">Mobile ya camera se professional photos lena aur Lightroom mein edit karna</p>
-        <p class="latest">📖 Day 2 — Framing &amp; Perspective: Beyond the Rule of Thirds</p>
+        <p class="latest">📖 Day 3 — **Understanding Natural Light: The Foundation of Great Photos**</p>
         <p class="tag" style="margin-top:4px">🕒 Roz 2:10 PM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="photography-editing" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('photography-editing', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#2BAF66"><span class="stub-n" style="color:#2BAF66">02</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#2BAF66"><span class="stub-n" style="color:#2BAF66">03</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/voiceover-podcasting/index.html">
       <div class="stamp" style="--accent-bg:#6D28D91a;color:#6D28D9">🎙️</div>
@@ -477,6 +498,12 @@ pre code{font-family:inherit;background:none;padding:0;}
       </div>
       <div class="stub" style="color:#0EA5A5"><span class="stub-n" style="color:#0EA5A5">02</span><span class="stub-l">lessons</span></div>
     </a></div>
+    
+    <div class="no-print" style="margin:18px 0;text-align:center;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
+        data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
     <div class="brand-footer"><img src="logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="privacy.html">Privacy Policy</a></div></div>
     <p style="text-align:center;margin-top:8px;">
       <a href="admin-certificates.html" style="color:var(--muted);font-size:11px;text-decoration:none;">⚙️ Admin</a>
@@ -653,5 +680,27 @@ padding:4px 6px;font-size:1.1em;}
     });
   });
   window.addEventListener("appinstalled", function(){ banner.classList.remove("show"); });
+})();
+</script><script>
+(function(){
+  var box = document.getElementById("fkc-course-search");
+  if(!box) return;
+  box.addEventListener("input", function(){
+    var q = this.value.trim().toLowerCase();
+    document.querySelectorAll(".ccard").forEach(function(card){
+      card.style.display = card.textContent.toLowerCase().indexOf(q) !== -1 ? "" : "none";
+    });
+  });
+})();
+</script><script>
+(function(){
+  try{
+    var s = JSON.parse(localStorage.getItem("fkc_streak")||"null");
+    var el = document.getElementById("fkc-streak-badge");
+    if(s && s.count > 1 && el){
+      el.textContent = "🔥 " + s.count + " din streak";
+      el.style.display = "inline-block";
+    }
+  }catch(e){}
 })();
 </script>

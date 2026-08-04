@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T16:51:55.506076";
+  var FKC_BUILD = "2026-08-04T18:32:09.069739";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,26 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.fkc-search{width:100%;padding:12px 14px;border:1px solid var(--line);
+border-radius:8px;font-size:15px;margin:10px 0 4px;box-sizing:border-box;
+font-family:inherit;}
+.streak-badge{display:none;background:#EA580C;color:#fff;font-size:.72em;
+font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+vertical-align:middle;}
+.lesson-nav{display:flex;justify-content:space-between;gap:8px;
+flex-wrap:wrap;margin-top:14px;}
+.lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
+border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
+box-sizing:border-box;margin:6px 0;}
+.quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+@media print{
+  .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
+  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:none;}
+}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -161,18 +181,50 @@ pre code{font-family:inherit;background:none;padding:0;}
       <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Forex (Foreign Exchange) market duniya ka sabse bara financial market hai jahan currencies ka exchange hota hai. Yeh 24/5 chalta hai (Monday se Friday, 24 ghante), kyunki har country ke markets alag-alag time zones mein khulte hain. Is market ka main purpose international trade aur investments ko facilitate karna hai. Yahan traders profit kamane ke liye currencies ki price movements par bet lagate hain.</p><h3>Example</h3><p>Imagine aap India se USA travel karne ja rahe hain. Aapko $1000 chahiye. Forex market mein aap INR se USD exchange karenge. Agar 1 USD = 83 INR hai, toh aapko 83,000 INR dena hoga. Agar aapne 10,000 INR se USD liya aur next day 1 USD = 84 INR ho gaya, toh aapka profit 10,000 INR ka ho gaya (1000 USD * 1 INR ka change).</p><h3>Practice</h3><p>Apne mobile ya laptop se &quot;USD to INR exchange rate&quot; search karein. Dekhein aaj ka rate kya hai. Ab imagine kijiye aap 1000 USD khareed rahe hain. 1 week baad agar rate badh kar 85 INR ho jata hai, toh aapko kitna profit hoga?</p><h3>Mini Project</h3><p>Ek simple chart banaen jismein aap 3 currencies (e.g., USD, EUR, GBP) ke rates ko 5 dinon ke liye track karen. Har din ka rate note karen aur dekhein ki kya koi trend nazar aata hai.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>Forex (Foreign Exchange) مارکیٹ دنیا کا سب سے بڑا مالیاتی مارکیٹ ہے جہاں کرنسیوں کا تبادلہ ہوتا ہے۔ یہ 24/5 چلتا ہے (Monday سے Friday، 24 گھنٹے)، کیونکہ ہر ملک کے مارکیٹس الگ الگ ٹائم زونز میں کھلتے ہیں۔ اس مارکیٹ کا مقصد بین الاقوامی تجارت اور انویسٹمنٹس کو سہولت فراہم کرنا ہے۔ یہاں ٹریڈرز منافع کمانے کے لیے کرنسیوں کی قیمتوں کی حرکات پر بٹ لگاتے ہیں۔</p><h3>Example</h3><p>imagine آپ India سے USA سفر کرنے جا رہے ہیں۔ آپ کو $1000 چاہئے۔ Forex مارکیٹ میں آپ INR سے USD کا تبادلہ کریں گے۔ اگر 1 USD = 83 INR ہے، تو آپ کو 83,000 INR دینا ہو گا۔ اگر آپ نے 10,000 INR سے USD لیا اور اگلے دن 1 USD = 84 INR ہو گیا، تو آپ کا منافع 10,000 INR کا ہو گیا (1000 USD * 1 INR کا چینج)۔</p><h3>Practice</h3><p>اپنے mobile یا laptop سے &quot;USD to INR exchange rate&quot; search کریں۔ دیکھیں آج کا rate کیا ہے۔ اب imagine کیجیے آپ 1000 USD خرید رہے ہیں۔ 1 week بعد اگر rate بڑھ کر 85 INR ہو جاتا ہے، تو آپ کو کتنا منافع ہو گا؟</p><h3>Mini Project</h3><p>ایک simple چارٹ بنائیں جس میں آپ 3 کرنسیوں (e.g., USD, EUR, GBP) کے rates کو 5 دنوں کے لیے ٹریک کریں۔ ہر دن کا rate نوٹ کریں اور دیکھیں کہ کیا کوئی ٹرینڈ نظر آتا ہے۔</p></div>
       <p><a class="btn alt" href="https://one.exnessonelink.com/a/buhyli14un" target="_blank" rel="noopener sponsored">💹 Exness Par Free Account Banayein</a></p>
-      <div>
+      
+      <div class="quiz-box no-print">
+        <p><b>📝 Apna Practice Check Karein</b></p>
+        <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
+        <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"usd/inr rate, 1000 usd, 2000 inr profit"'>✅ Check Karein</button>
+        <div class="quiz-result" id="fkc-quiz-result"></div>
+      </div>
+      <script>
+      function fkcCheckQuiz(btn){
+        var keys = JSON.parse(btn.getAttribute("data-keys"));
+        var ans = (document.getElementById("fkc-quiz-answer").value || "").toLowerCase();
+        var hit = 0;
+        keys.forEach(function(k){ if(k && ans.indexOf(k) !== -1) hit++; });
+        var el = document.getElementById("fkc-quiz-result");
+        if(hit === 0){
+          el.textContent = "Koi keyword match nahi hua — dobara try karein ya lesson dobara parhein.";
+          el.style.color = "#D97706";
+        } else {
+          el.textContent = "✅ " + hit + "/" + keys.length + " keywords match hue — shabaash!";
+          el.style.color = "var(--accent)";
+        }
+      }
+      </script>
+      <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Forex%20Trading%20%28Day%2001%29%0A%0ADay%201%20%E2%80%94%20Forex%20Market%20Kya%20Hai%3F%20Aur%20Kaise%20Kaam%20Karta%20Hai%3F%0A%0AConcept%3A%0AForex%20%28Foreign%20Exchange%29%20market%20duniya%20ka%20sabse%20bara%20financial%20market%20hai%20jahan%20currencies%20ka%20exchange%20hota%20hai.%20Yeh%2024/5%20chalta%20hai%20%28Monday%20se%20Friday%2C%2024%20ghante%29%2C%20kyunki%20har%20country%20ke%20markets%20alag-alag%20time%20zones%20mein%20khulte%20hain.%20Is%20market%20ka%20main%20purpose%20international%20trade%20aur%20investments%20ko%20facilitate%20karna%20hai.%20Yahan%20traders%20profit%20kamane%20ke%20liye%20currencies%20ki%20price%20movements%20par%20bet%20lagate%20hain.%0A%0AExample%3A%0AImagine%20aap%20India%20se%20USA%20travel%20karne%20ja%20rahe%20hain.%20Aapko%20%241000%20chahiye.%20Forex%20market%20mein%20aap%20INR%20se%20USD%20exchange%20karenge.%20Agar%201%20USD%20%3D%2083%20INR%20hai%2C%20toh%20aapko%2083%2C000%20INR%20dena%20hoga.%20Agar%20aapne%2010%2C000%20INR%20se%20USD%20liya%20aur%20next%20day%201%20USD%20%3D%2084%20INR%20ho%20gaya%2C%20toh%20aapka%20profit%2010%2C000%20INR%20ka%20ho%20gaya%20%281000%20USD%20%2A%201%20INR%20ka%20change%29.%0A%0APractice%3A%0AApne%20mobile%20ya%20laptop%20se%20%22USD%20to%20INR%20exchange%20rate%22%20search%20karein.%20Dekhein%20aaj%20ka%20rate%20kya%20hai.%20Ab%20imagine%20kijiye%20aap%201000%20USD%20khareed%20rahe%20hain.%201%20week%20baad%20agar%20rate%20badh%20kar%2085%20INR%20ho%20jata%20hai%2C%20toh%20aapko%20kitna%20profit%20hoga%3F%0A%0AMini%20Project%3A%0AEk%20simple%20chart%20banaen%20jismein%20aap%203%20currencies%20%28e.g.%2C%20USD%2C%20EUR%2C%20GBP%29%20ke%20rates%20ko%205%20dinon%20ke%20liye%20track%20karen.%20Har%20din%20ka%20rate%20note%20karen%20aur%20dekhein%20ki%20kya%20koi%20trend%20nazar%20aata%20hai.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://t.me/share/url?url=&text=Day%201%20%E2%80%94%20Forex%20Market%20Kya%20Hai%3F%20Aur%20Kaise%20Kaam%20Karta%20Hai%3F%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
+        <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
-      <div>
+      <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
           data-slug="forex-trading" data-lesson="day-001"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <p><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    <div class="lesson-nav"><span></span><a class="btn alt" href="2026-08-03-day-002.html">Day 2 →</a></div>
+    <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
+    <div class="no-print" style="margin:18px 0;text-align:center;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
+        data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
@@ -368,5 +420,18 @@ padding:4px 6px;font-size:1.1em;}
     });
   });
   window.addEventListener("appinstalled", function(){ banner.classList.remove("show"); });
+})();
+</script><script>
+(function(){
+  try{
+    var today = new Date().toISOString().slice(0,10);
+    var s = JSON.parse(localStorage.getItem("fkc_streak")||"null") || {last:null,count:0};
+    if(s.last !== today){
+      var y = new Date(Date.now()-86400000).toISOString().slice(0,10);
+      s.count = (s.last === y) ? s.count + 1 : 1;
+      s.last = today;
+      localStorage.setItem("fkc_streak", JSON.stringify(s));
+    }
+  }catch(e){}
 })();
 </script>

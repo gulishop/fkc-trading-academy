@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T16:51:55.506076";
+  var FKC_BUILD = "2026-08-04T18:32:09.069739";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,26 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.fkc-search{width:100%;padding:12px 14px;border:1px solid var(--line);
+border-radius:8px;font-size:15px;margin:10px 0 4px;box-sizing:border-box;
+font-family:inherit;}
+.streak-badge{display:none;background:#EA580C;color:#fff;font-size:.72em;
+font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+vertical-align:middle;}
+.lesson-nav{display:flex;justify-content:space-between;gap:8px;
+flex-wrap:wrap;margin-top:14px;}
+.lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
+border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
+box-sizing:border-box;margin:6px 0;}
+.quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+@media print{
+  .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
+  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:none;}
+}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -161,18 +181,50 @@ pre code{font-family:inherit;background:none;padding:0;}
       <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Google Search Console (GSC) aur Google Analytics (GA4) aapki website ke health aur performance ko track karne ke liye essential tools hain. GSC aapko indexing, crawl errors, aur search rankings dikhata hai, jabki GA4 visitors, traffic sources, aur user behavior analyze karta hai. In dono ko samajh kar aap apni SEO strategy ko improve kar sakte hain.</p><h3>Example</h3><p>1.</p><h3>GSC mein URL Inspection</h3><p>Kisi bhi page ka URL enter karke check karen ki Google usko crawl kar raha hai ya nahi.<br>2.</p><h3>GA4 mein Traffic Sources</h3><p>&quot;Acquisition&quot; &gt; &quot;All Traffic&quot; &gt; &quot;Source/Medium&quot; dekh kar pata karen ke visitors aapki site par kahan se aa rahe hain (Google Search, Social Media, etc.).</p><h3>Practice</h3><p>1. Apni website (ya kisi dummy site) ka GSC account mein add karen.<br>2. &quot;Coverage&quot; report check karen aur koi crawl errors fix karne ki koshish karen.<br>3. GA4 mein ek basic report banaen (e.g., &quot;Users by Country&quot;).</p><h3>Mini Project</h3><p>Ek 1-page report taiyar karen jismein aap GSC se top 3 search queries aur GA4 se top 3 traffic sources mention karen. (Format: &quot;Query/Source - Clicks/Users&quot;)</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>گوگل سرچ کنسول (GSC) اور گوگل اینالٹکس (GA4) آپکی ویب سائٹ کے ہیلتھ اور پرفارمنس کو ٹریک کرنے کے لیے ضروری ٹولز ہیں۔ GSC آپکو انڈیکسنگ، کراول ایررز، اور سرچ رینکنگ دکھاتا ہے، جبکہ GA4 وزٹرس، ٹریفک سورسز، اور یوزر بیہیویر اینالائز کرتا ہے۔ ان دونوں کو سمجھ کر آپ اپنی SEO strategy کو بہتر بنا سکتے ہیں۔</p><h3>Example</h3><p>1. GSC میں URL Inspection: کسی بھی پیج کا URL انٹر کرکے چیک کریں کہ گوگل اسے کراول کر رہا ہے یا نہیں۔<br>2. GA4 میں ٹریفک سورسز: &quot;Acquisition&quot; &gt; &quot;All Traffic&quot; &gt; &quot;Source/Medium&quot; دیکھ کر پتہ کریں کہ وزٹرس آپکی سائٹ پر کہاں سے آ رہے ہیں (گوگل سرچ، سوشل میڈیا، وغیرہ)۔</p><h3>Practice</h3><p>1. اپنی ویب سائٹ (یا کسی dummy site) کا GSC اکاؤنٹ میں ایڈ کریں۔<br>2. &quot;Coverage&quot; رپورٹ چیک کریں اور کوئی کراول ایرر فکس کرنے کی کوشش کریں۔<br>3. GA4 میں ایک بنیادی رپورٹ بنائیں (مثلاً، &quot;Users by Country&quot;)۔</p><h3>Mini Project</h3><p>ایک 1-پیج رپورٹ تیار کریں جس میں آپ GSC سے ٹاپ 3 سرچ کوئریز اور GA4 سے ٹاپ 3 ٹریفک سورسز ذکر کریں۔ (فارمیٹ: &quot;Query/Source - Clicks/Users&quot;)</p></div>
       
-      <div>
+      
+      <div class="quiz-box no-print">
+        <p><b>📝 Apna Practice Check Karein</b></p>
+        <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
+        <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"crawl errors, search queries, traffic sources, user behavior"'>✅ Check Karein</button>
+        <div class="quiz-result" id="fkc-quiz-result"></div>
+      </div>
+      <script>
+      function fkcCheckQuiz(btn){
+        var keys = JSON.parse(btn.getAttribute("data-keys"));
+        var ans = (document.getElementById("fkc-quiz-answer").value || "").toLowerCase();
+        var hit = 0;
+        keys.forEach(function(k){ if(k && ans.indexOf(k) !== -1) hit++; });
+        var el = document.getElementById("fkc-quiz-result");
+        if(hit === 0){
+          el.textContent = "Koi keyword match nahi hua — dobara try karein ya lesson dobara parhein.";
+          el.style.color = "#D97706";
+        } else {
+          el.textContent = "✅ " + hit + "/" + keys.length + " keywords match hue — shabaash!";
+          el.style.color = "var(--accent)";
+        }
+      }
+      </script>
+      <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Digital%20Marketing%20%26%20SEO%20%28Day%2003%29%0A%0ADay%203%20%E2%80%94%20Google%20Search%20Console%20aur%20Analytics%3A%20Apne%20Website%20ke%20Performance%20ko%20Samajhein%0A%0AConcept%3A%0AGoogle%20Search%20Console%20%28GSC%29%20aur%20Google%20Analytics%20%28GA4%29%20aapki%20website%20ke%20health%20aur%20performance%20ko%20track%20karne%20ke%20liye%20essential%20tools%20hain.%20GSC%20aapko%20indexing%2C%20crawl%20errors%2C%20aur%20search%20rankings%20dikhata%20hai%2C%20jabki%20GA4%20visitors%2C%20traffic%20sources%2C%20aur%20user%20behavior%20analyze%20karta%20hai.%20In%20dono%20ko%20samajh%20kar%20aap%20apni%20SEO%20strategy%20ko%20improve%20kar%20sakte%20hain.%0A%0AExample%3A%0A1.%0A%0AGSC%20mein%20URL%20Inspection%3A%0AKisi%20bhi%20page%20ka%20URL%20enter%20karke%20check%20karen%20ki%20Google%20usko%20crawl%20kar%20raha%20hai%20ya%20nahi.%0A2.%0A%0AGA4%20mein%20Traffic%20Sources%3A%0A%22Acquisition%22%20%3E%20%22All%20Traffic%22%20%3E%20%22Source/Medium%22%20dekh%20kar%20pata%20karen%20ke%20visitors%20aapki%20site%20par%20kahan%20se%20aa%20rahe%20hain%20%28Google%20Search%2C%20Social%20Media%2C%20etc.%29.%0A%0APractice%3A%0A1.%20Apni%20website%20%28ya%20kisi%20dummy%20site%29%20ka%20GSC%20account%20mein%20add%20karen.%0A2.%20%22Coverage%22%20report%20check%20karen%20aur%20koi%20crawl%20errors%20fix%20karne%20ki%20koshish%20karen.%0A3.%20GA4%20mein%20ek%20basic%20report%20banaen%20%28e.g.%2C%20%22Users%20by%20Country%22%29.%0A%0AMini%20Project%3A%0AEk%201-page%20report%20taiyar%20karen%20jismein%20aap%20GSC%20se%20top%203%20search%20queries%20aur%20GA4%20se%20top%203%20traffic%20sources%20mention%20karen.%20%28Format%3A%20%22Query/Source%20-%20Clicks/Users%22%29%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://t.me/share/url?url=&text=Day%203%20%E2%80%94%20Google%20Search%20Console%20aur%20Analytics%3A%20Apne%20Website%20ke%20Performance%20ko%20Samajhein%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
+        <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
-      <div>
+      <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
           data-slug="digital-marketing-seo" data-lesson="day-003"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <p><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    <div class="lesson-nav"><a class="btn alt" href="2026-08-03-day-002.html">← Day 2</a><span></span></div>
+    <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
+    <div class="no-print" style="margin:18px 0;text-align:center;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
+        data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
@@ -368,5 +420,18 @@ padding:4px 6px;font-size:1.1em;}
     });
   });
   window.addEventListener("appinstalled", function(){ banner.classList.remove("show"); });
+})();
+</script><script>
+(function(){
+  try{
+    var today = new Date().toISOString().slice(0,10);
+    var s = JSON.parse(localStorage.getItem("fkc_streak")||"null") || {last:null,count:0};
+    if(s.last !== today){
+      var y = new Date(Date.now()-86400000).toISOString().slice(0,10);
+      s.count = (s.last === y) ? s.count + 1 : 1;
+      s.last = today;
+      localStorage.setItem("fkc_streak", JSON.stringify(s));
+    }
+  }catch(e){}
 })();
 </script>

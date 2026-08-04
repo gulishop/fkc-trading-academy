@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T16:51:55.506076";
+  var FKC_BUILD = "2026-08-04T18:32:09.069739";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,13 +146,33 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.fkc-search{width:100%;padding:12px 14px;border:1px solid var(--line);
+border-radius:8px;font-size:15px;margin:10px 0 4px;box-sizing:border-box;
+font-family:inherit;}
+.streak-badge{display:none;background:#EA580C;color:#fff;font-size:.72em;
+font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+vertical-align:middle;}
+.lesson-nav{display:flex;justify-content:space-between;gap:8px;
+flex-wrap:wrap;margin-top:14px;}
+.lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
+border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
+box-sizing:border-box;margin:6px 0;}
+.quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+@media print{
+  .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
+  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:none;}
+}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
 
     <div class="top"><a href="../../../index.html">← FKC Trading Academy</a>
     <a href="../index.html" class="course-back-link">/ Photography &amp; Editing</a></div>
-    <span class="badge">Latest</span>
+    
     <p class="muted">📷 Photography &amp; Editing · Day 02</p>
     <h1>Day 2 — Framing &amp; Perspective: Beyond the Rule of Thirds</h1>
     <div class="card">
@@ -161,18 +181,50 @@ pre code{font-family:inherit;background:none;padding:0;}
       <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Composition ka matlab hai photo ko is tarah arrange karna ke wo dekhne wale ko behtareen visual experience mile. Rule of thirds ke alawa bhi kayi techniques hain jo photos ko dynamic banati hain—jaise leading lines, symmetry, negative space, aur depth of field ka istemal.</p><h3>Example</h3><p>Ek sadak ki photo lo. Agar tum usko bilkul center mein rakhoge, photo dull lagti hai. Lekin agar tum road ko leading line ki tarah use karke photo ke ek corner se start karke doosre corner tak le jao, to photo zyada engaging ho jati hai. Camera ki height bhi matter karti hai—ground level se photo lene se drama badh jata hai.</p><h3>Practice</h3><p>Apne phone ya camera se ek photo lo jisme ek leading line ho (sarak, rail track, fence, ya building ki side). Photo ko aise frame karo ke line photo ke ek corner se start ho aur doosre corner tak chale.</p><h3>Mini Project</h3><p>Ek mini photo series banayein (3-5 photos) jisme har photo mein ek alag composition technique use ki gayi ho:<br>1. Rule of thirds<br>2. Leading lines<br>3. Symmetry (mirror image)<br>4. Negative space<br>Har photo ka caption likhein ke kaunsa technique use kiya hai.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>کمپوزیشن کا مطلب ہے تصویر کو اس طرح ترتیب دینا کہ وہ دیکھنے والے کو بہترین بصری تجربہ ملے۔ rule of thirds کے علاوہ بھی کئی تکنیکیں ہیں جو تصاویر کو ڈائنامک بناتی ہیں—جیسے leading lines، symmetry، negative space، اور depth of field کا استعمال۔</p><h3>Example</h3><p>ایک سڑک کی تصویر لو۔ اگر تم اسے بالکل سینٹر میں رکھو گے تو تصویر dull لگتی ہے۔ لیکن اگر تم road کو leading line کی طرح استعمال کرکے تصویر کے ایک کونے سے شروع کرکے دوسرے کونے تک لے جاؤ تو تصویر زیادہ engaging ہو جاتی ہے۔ camera کی height بھی matter کرتی ہے—ground level سے تصویر لینے سے ڈراما بڑھ جاتا ہے۔</p><h3>Practice</h3><p>اپنے phone یا camera سے ایک تصویر لو جس میں ایک leading line ہو (سڑک، rail track، fence، یا building کی side)۔ تصویر کو ایسے frame کرو کہ line تصویر کے ایک کونے سے شروع ہو اور دوسرے کونے تک چلے۔</p><h3>Mini Project</h3><p>ایک mini photo series بنائیں (3-5 photos) جس میں ہر تصویر میں ایک الگ کمپوزیشن ٹیکنیک استعمال کی گئی ہو:<br>1. rule of thirds<br>2. leading lines<br>3. symmetry (mirror image)<br>4. negative space<br>ہر تصویر کا caption لکھیں کے کونسی ٹیکنیک استعمال کی گئی ہے۔</p></div>
       
-      <div>
+      
+      <div class="quiz-box no-print">
+        <p><b>📝 Apna Practice Check Karein</b></p>
+        <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
+        <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"leading lines, dynamic framing, depth, negative space"'>✅ Check Karein</button>
+        <div class="quiz-result" id="fkc-quiz-result"></div>
+      </div>
+      <script>
+      function fkcCheckQuiz(btn){
+        var keys = JSON.parse(btn.getAttribute("data-keys"));
+        var ans = (document.getElementById("fkc-quiz-answer").value || "").toLowerCase();
+        var hit = 0;
+        keys.forEach(function(k){ if(k && ans.indexOf(k) !== -1) hit++; });
+        var el = document.getElementById("fkc-quiz-result");
+        if(hit === 0){
+          el.textContent = "Koi keyword match nahi hua — dobara try karein ya lesson dobara parhein.";
+          el.style.color = "#D97706";
+        } else {
+          el.textContent = "✅ " + hit + "/" + keys.length + " keywords match hue — shabaash!";
+          el.style.color = "var(--accent)";
+        }
+      }
+      </script>
+      <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Photography%20%26%20Editing%20%28Day%2002%29%0A%0ADay%202%20%E2%80%94%20Framing%20%26%20Perspective%3A%20Beyond%20the%20Rule%20of%20Thirds%0A%0AConcept%3A%0AComposition%20ka%20matlab%20hai%20photo%20ko%20is%20tarah%20arrange%20karna%20ke%20wo%20dekhne%20wale%20ko%20behtareen%20visual%20experience%20mile.%20Rule%20of%20thirds%20ke%20alawa%20bhi%20kayi%20techniques%20hain%20jo%20photos%20ko%20dynamic%20banati%20hain%E2%80%94jaise%20leading%20lines%2C%20symmetry%2C%20negative%20space%2C%20aur%20depth%20of%20field%20ka%20istemal.%0A%0AExample%3A%0AEk%20sadak%20ki%20photo%20lo.%20Agar%20tum%20usko%20bilkul%20center%20mein%20rakhoge%2C%20photo%20dull%20lagti%20hai.%20Lekin%20agar%20tum%20road%20ko%20leading%20line%20ki%20tarah%20use%20karke%20photo%20ke%20ek%20corner%20se%20start%20karke%20doosre%20corner%20tak%20le%20jao%2C%20to%20photo%20zyada%20engaging%20ho%20jati%20hai.%20Camera%20ki%20height%20bhi%20matter%20karti%20hai%E2%80%94ground%20level%20se%20photo%20lene%20se%20drama%20badh%20jata%20hai.%0A%0APractice%3A%0AApne%20phone%20ya%20camera%20se%20ek%20photo%20lo%20jisme%20ek%20leading%20line%20ho%20%28sarak%2C%20rail%20track%2C%20fence%2C%20ya%20building%20ki%20side%29.%20Photo%20ko%20aise%20frame%20karo%20ke%20line%20photo%20ke%20ek%20corner%20se%20start%20ho%20aur%20doosre%20corner%20tak%20chale.%0A%0AMini%20Project%3A%0AEk%20mini%20photo%20series%20banayein%20%283-5%20photos%29%20jisme%20har%20photo%20mein%20ek%20alag%20composition%20technique%20use%20ki%20gayi%20ho%3A%0A1.%20Rule%20of%20thirds%0A2.%20Leading%20lines%0A3.%20Symmetry%20%28mirror%20image%29%0A4.%20Negative%20space%0AHar%20photo%20ka%20caption%20likhein%20ke%20kaunsa%20technique%20use%20kiya%20hai.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://t.me/share/url?url=&text=Day%202%20%E2%80%94%20Framing%20%26%20Perspective%3A%20Beyond%20the%20Rule%20of%20Thirds%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
+        <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
-      <div>
+      <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
           data-slug="photography-editing" data-lesson="day-002"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <p><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    <div class="lesson-nav"><a class="btn alt" href="2026-08-03-day-001.html">← Day 1</a><a class="btn alt" href="2026-08-04-day-003.html">Day 3 — **Understanding Natural Light: The Foundation of Great Photos** →</a></div>
+    <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
+    <div class="no-print" style="margin:18px 0;text-align:center;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
+        data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
@@ -368,5 +420,18 @@ padding:4px 6px;font-size:1.1em;}
     });
   });
   window.addEventListener("appinstalled", function(){ banner.classList.remove("show"); });
+})();
+</script><script>
+(function(){
+  try{
+    var today = new Date().toISOString().slice(0,10);
+    var s = JSON.parse(localStorage.getItem("fkc_streak")||"null") || {last:null,count:0};
+    if(s.last !== today){
+      var y = new Date(Date.now()-86400000).toISOString().slice(0,10);
+      s.count = (s.last === y) ? s.count + 1 : 1;
+      s.last = today;
+      localStorage.setItem("fkc_streak", JSON.stringify(s));
+    }
+  }catch(e){}
 })();
 </script>

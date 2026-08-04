@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T16:51:55.506076";
+  var FKC_BUILD = "2026-08-04T18:32:09.069739";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,26 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.fkc-search{width:100%;padding:12px 14px;border:1px solid var(--line);
+border-radius:8px;font-size:15px;margin:10px 0 4px;box-sizing:border-box;
+font-family:inherit;}
+.streak-badge{display:none;background:#EA580C;color:#fff;font-size:.72em;
+font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+vertical-align:middle;}
+.lesson-nav{display:flex;justify-content:space-between;gap:8px;
+flex-wrap:wrap;margin-top:14px;}
+.lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
+border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
+box-sizing:border-box;margin:6px 0;}
+.quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+@media print{
+  .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
+  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:none;}
+}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -161,18 +181,50 @@ pre code{font-family:inherit;background:none;padding:0;}
       <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Aaj seekhoge ke AI se blog article kaise draft karein, usko human-like banayein, aur publish ke liye edit karein. AI se content generate karna aasan hai, lekin usko authentic, engaging aur SEO-friendly banana zaroori hai. Aaj hum AI-generated draft ko refine karne ke practical steps dekhenge.</p><h3>Example</h3><p>1.</p><h3>Prompt Design</h3><p>&quot;Write a 500-word blog post in simple Urdu/Hindi about &#x27;How to Start a Blog in 2024&#x27; for beginners. Include 3 subheadings, a hook, and a CTA.&quot;<br>2.</p><h3>AI Output</h3><p>AI dega ek basic draft. Ab usko edit karna hai:<br>   -</p><h3>Language</h3><p>Urdu/Hindi ka mix remove karke ek consistent style choose karo (e.g., pure Urdu).<br>   -</p><h3>Tone</h3><p>Friendly aur motivational rakho (e.g., &quot;Aap bhi blogging shuru kar sakte hain!&quot;).<br>   -</p><h3>SEO</h3><p>Keywords add karo (e.g., &quot;blogging kaise shuru karein,&quot; &quot;free blogging platforms&quot;).<br>   -</p><h3>Structure</h3><p>Paragraphs ko short karo, bullet points add karo.</p><h3>Practice</h3><p>AI se ek 300-word draft generate karo &quot;5 Gharelu Nuskay Hair Loss Rokein&quot; topic par. Us draft ko edit karke pure Urdu mein convert karo, 2 keywords add karo, aur ek engaging CTA likho.</p><h3>Mini Project</h3><p>Ek 500-word blog post draft karo (AI se generate karke ya khud likh kar), phir usko AI tools (jaise Grammarly, Hemingway) se check karo. Improve karke ek final version taiyar karo jo publish ke liye ready ho.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>آج آپ سیکھیں گے کہ AI کی مدد سے بلاگ آرٹیکل کیسے ڈرافٹ بنایا جائے، اسے انسانی جیسا بنایا جائے اور اسے پبلش کرنے کے لیے کیسے ایڈٹ کیا جائے۔ AI سے کنسٹنٹ جنریٹ کرنا تو آسان ہے، لیکن اسے اصلی، دلچسپ اور SEO فرینڈلی بنانا ضروری ہے۔ آج ہم AI سے بنائے گئے ڈرافٹ کو بہتر بنانے کے عملی مرحلے دیکھیں گے۔</p><h3>Example</h3><p>1.</p><p>Prompt Design: &quot;2024 میں بلاگنگ کیسے شروع کریں&quot; کے موضوع پر ایک 500 الفاظ پر مشتمل سادہ اردو میں بلاگ پوسٹ لکھیں۔ تین ذیلی عنوانات، ایک ہک، اور ایک کال ٹو ایکشن شامل کریں۔</p><p>2.</p><p>AI Output: AI ایک بنیادی ڈرافٹ فراہم کرے گا۔ اب اسے ایڈٹ کرنا ہے:<br>   -<br>- زبان: اردو/ہندی کے امتزاج کو ہٹا کر ایک مستقل انداز چن لیں (مثلاً خالص اردو)۔<br>   -<br>- لہجہ: دوستانہ اور حوصلہ افزا رکھیں (مثلاً، &quot;آپ بھی بلاگنگ شروع کر سکتے ہیں!&quot;۔<br>   -<br>- SEO: کیورڈز شامل کریں (مثلاً، &quot;بلاگنگ کیسے شروع کریں&quot;، &quot;فری بلاگنگ پلیٹ فارمز&quot;۔<br>   -<br>- ساخت: پیراگراف کو چھوٹا کریں، بلٹ پوائنٹس شامل کریں۔</p><h3>Practice</h3><p>AI سے &quot;5 گھریلو نکھارے بالوں کے جھڑنے کو روکیں&quot; کے موضوع پر ایک 300 الفاظ پر مشتمل ڈرافٹ جنریٹ کریں۔ اس ڈرافٹ کو ایڈٹ کرکے خالص اردو میں تبدیل کریں، دو کیورڈز شامل کریں، اور ایک دلچسپ کال ٹو ایکشن لکھیں۔</p><h3>Mini Project</h3><p>ایک 500 الفاظ پر مشتمل بلاگ پوسٹ ڈرافٹ بنائیں (یا AI سے جنریٹ کریں یا خود لکھیں)، پھر اسے AI ٹولز (مثلاً Grammarly، Hemingway) سے چیک کریں۔ بہتری لا کر ایک آخری ورژن تیار کریں جو پبلش کے لیے تیار ہو۔</p></div>
       
-      <div>
+      
+      <div class="quiz-box no-print">
+        <p><b>📝 Apna Practice Check Karein</b></p>
+        <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
+        <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"urdu/hindi consistency, keywords, engaging cta, short paragraphs"'>✅ Check Karein</button>
+        <div class="quiz-result" id="fkc-quiz-result"></div>
+      </div>
+      <script>
+      function fkcCheckQuiz(btn){
+        var keys = JSON.parse(btn.getAttribute("data-keys"));
+        var ans = (document.getElementById("fkc-quiz-answer").value || "").toLowerCase();
+        var hit = 0;
+        keys.forEach(function(k){ if(k && ans.indexOf(k) !== -1) hit++; });
+        var el = document.getElementById("fkc-quiz-result");
+        if(hit === 0){
+          el.textContent = "Koi keyword match nahi hua — dobara try karein ya lesson dobara parhein.";
+          el.style.color = "#D97706";
+        } else {
+          el.textContent = "✅ " + hit + "/" + keys.length + " keywords match hue — shabaash!";
+          el.style.color = "var(--accent)";
+        }
+      }
+      </script>
+      <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20AI%20Content%20Writing%20%26%20Copywriting%20%28Day%2002%29%0A%0ADay%202%20%E2%80%94%20AI%20Se%20Blog%20Articles%3A%20Draft%20Se%20Publish%20Tak%0A%0AConcept%3A%0AAaj%20seekhoge%20ke%20AI%20se%20blog%20article%20kaise%20draft%20karein%2C%20usko%20human-like%20banayein%2C%20aur%20publish%20ke%20liye%20edit%20karein.%20AI%20se%20content%20generate%20karna%20aasan%20hai%2C%20lekin%20usko%20authentic%2C%20engaging%20aur%20SEO-friendly%20banana%20zaroori%20hai.%20Aaj%20hum%20AI-generated%20draft%20ko%20refine%20karne%20ke%20practical%20steps%20dekhenge.%0A%0AExample%3A%0A1.%0A%0APrompt%20Design%3A%0A%22Write%20a%20500-word%20blog%20post%20in%20simple%20Urdu/Hindi%20about%20%27How%20to%20Start%20a%20Blog%20in%202024%27%20for%20beginners.%20Include%203%20subheadings%2C%20a%20hook%2C%20and%20a%20CTA.%22%0A2.%0A%0AAI%20Output%3A%0AAI%20dega%20ek%20basic%20draft.%20Ab%20usko%20edit%20karna%20hai%3A%0A%20%20%20-%0A%0ALanguage%3A%0AUrdu/Hindi%20ka%20mix%20remove%20karke%20ek%20consistent%20style%20choose%20karo%20%28e.g.%2C%20pure%20Urdu%29.%0A%20%20%20-%0A%0ATone%3A%0AFriendly%20aur%20motivational%20rakho%20%28e.g.%2C%20%22Aap%20bhi%20blogging%20shuru%20kar%20sakte%20hain%21%22%29.%0A%20%20%20-%0A%0ASEO%3A%0AKeywords%20add%20karo%20%28e.g.%2C%20%22blogging%20kaise%20shuru%20karein%2C%22%20%22free%20blogging%20platforms%22%29.%0A%20%20%20-%0A%0AStructure%3A%0AParagraphs%20ko%20short%20karo%2C%20bullet%20points%20add%20karo.%0A%0APractice%3A%0AAI%20se%20ek%20300-word%20draft%20generate%20karo%20%225%20Gharelu%20Nuskay%20Hair%20Loss%20Rokein%22%20topic%20par.%20Us%20draft%20ko%20edit%20karke%20pure%20Urdu%20mein%20convert%20karo%2C%202%20keywords%20add%20karo%2C%20aur%20ek%20engaging%20CTA%20likho.%0A%0AMini%20Project%3A%0AEk%20500-word%20blog%20post%20draft%20karo%20%28AI%20se%20generate%20karke%20ya%20khud%20likh%20kar%29%2C%20phir%20usko%20AI%20tools%20%28jaise%20Grammarly%2C%20Hemingway%29%20se%20check%20karo.%20Improve%20karke%20ek%20final%20version%20taiyar%20karo%20jo%20publish%20ke%20liye%20ready%20ho.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://t.me/share/url?url=&text=Day%202%20%E2%80%94%20AI%20Se%20Blog%20Articles%3A%20Draft%20Se%20Publish%20Tak%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
+        <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
-      <div>
+      <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
           data-slug="ai-content-writing" data-lesson="day-002"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <p><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    <div class="lesson-nav"><a class="btn alt" href="2026-08-03-day-001.html">← Day 1 — Copywriting Basics: Hook, Benefit &amp; CTA</a><a class="btn alt" href="2026-08-04-day-003.html">Day 3 — Social Media Captions &amp; Ad Copy: Engagement Se Conversion Tak →</a></div>
+    <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
+    <div class="no-print" style="margin:18px 0;text-align:center;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
+        data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
@@ -368,5 +420,18 @@ padding:4px 6px;font-size:1.1em;}
     });
   });
   window.addEventListener("appinstalled", function(){ banner.classList.remove("show"); });
+})();
+</script><script>
+(function(){
+  try{
+    var today = new Date().toISOString().slice(0,10);
+    var s = JSON.parse(localStorage.getItem("fkc_streak")||"null") || {last:null,count:0};
+    if(s.last !== today){
+      var y = new Date(Date.now()-86400000).toISOString().slice(0,10);
+      s.count = (s.last === y) ? s.count + 1 : 1;
+      s.last = today;
+      localStorage.setItem("fkc_streak", JSON.stringify(s));
+    }
+  }catch(e){}
 })();
 </script>

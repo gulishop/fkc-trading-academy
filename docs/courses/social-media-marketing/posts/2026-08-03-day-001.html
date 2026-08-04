@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T16:51:55.506076";
+  var FKC_BUILD = "2026-08-04T18:32:09.069739";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,26 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.fkc-search{width:100%;padding:12px 14px;border:1px solid var(--line);
+border-radius:8px;font-size:15px;margin:10px 0 4px;box-sizing:border-box;
+font-family:inherit;}
+.streak-badge{display:none;background:#EA580C;color:#fff;font-size:.72em;
+font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+vertical-align:middle;}
+.lesson-nav{display:flex;justify-content:space-between;gap:8px;
+flex-wrap:wrap;margin-top:14px;}
+.lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
+border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
+box-sizing:border-box;margin:6px 0;}
+.quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+@media print{
+  .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
+  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:none;}
+}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -161,18 +181,50 @@ pre code{font-family:inherit;background:none;padding:0;}
       <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Social media strategy ek roadmap hai jo batati hai ke aap apne business ya personal brand ke liye social media par kya achieve karna chahte hain, kaise karna hai, aur kaise measure karna hai. Ismein aapke target audience, goals, content type, posting schedule, aur engagement plan shamil hote hain. Bina strategy ke, aap blindly post karte rahenge aur results bhi blind rahenge.</p><h3>Example</h3><p>Maana ke aap ek fitness coach hain. Aapki strategy yeh ho sakti hai:<br>1.</p><h3>Goal</h3><p>3 months mein 10,000 followers aur 50 leads (free consultation sign-ups).<br>2.</p><h3>Audience</h3><p>20-35 saal ke gym jaane wale young professionals.<br>3.</p><h3>Content</h3><p>Monday - Workout Tips, Wednesday - Diet Plans, Friday - Client Success Stories, Sunday - Q&amp;A Reels.<br>4.</p><h3>Platforms</h3><p>Instagram (main), YouTube Shorts (secondary), LinkedIn (for B2B clients).<br>5.</p><h3>Engagement</h3><p>Har post par 10-15 comments ka reply, weekly polls, aur DMs ka 24-hour response.</p><h3>Practice</h3><p>Apne business ya ek fictional brand ke liye 3 main goals likhein (e.g., brand awareness, leads, sales). Phir un goals ko achieve karne ke liye 3 content ideas sujhao jo aapke target audience ko engage karein.</p><h3>Mini Project</h3><p>Ek 1-week ka rough content calendar banayein (platform, post type, aur topic ke saath). Example:<br>- Instagram Reel: &quot;5 Minute Warm-up Routine&quot; (Monday)<br>- LinkedIn Post: &quot;How Fitness Boosts Productivity&quot; (Wednesday)<br>- YouTube Short: &quot;Gym Mistakes Beginners Make&quot; (Friday)</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>سوشل میڈیا سٹریٹیجی ایک روڈ میپ ہے جو بتاتی ہے کہ آپ اپنے بزنس یا پرسنل برانڈ کے لیے سوشل میڈیا پر کیا حاصل کرنا چاہتے ہیں، کیسے کرنا ہے، اور کیسے میژر کرنا ہے۔ اس میں آپ کے ٹارگٹ آڈیئنس، گولز، کنٹینٹ ٹائپ، پوسٹنگ شیڈول، اور اینگیجمنٹ پلان شامل ہوتے ہیں۔ بنا سٹریٹیجی کے، آپ بلائنڈلی پوسٹ کرتے رہیں گے اور رزلٹس بھی بلائنڈ رہیں گے۔</p><h3>Example</h3><p>مانا کہ آپ ایک فٹنس کوچ ہیں۔ آپ کی سٹریٹیجی یہ ہو سکتی ہے:</p><p>1. گول: 3 ماہ میں 10,000 فالورز اور 50 لیڈز (فری کنسلٹیشن سائن اپس)۔<br>2. آڈیئنس: 20-35 سال کے جم جانے والے یانگ پروفیشنلز۔<br>3. کنٹینٹ: پیر - ورک آوٹ ٹپس، بدھ - ڈائٹ پلانز، جمعہ - کلائنٹ سکسس سٹوریز، اتوار - Q&amp;A ریلز۔<br>4. پلیٹ فارمز: انسٹاگرام (میں)، یوٹیوب شارٹس (سیکنڈری)، لنکڈ ان (B2B کلائنٹس کے لیے)۔<br>5. اینگیجمنٹ: ہر پوسٹ پر 10-15 کمنٹس کا رپلی، ویکلی پولز، اور DMs کا 24-گھنٹے رسپانس۔</p><h3>Practice</h3><p>اپنے بزنس یا ایک فکشنل برانڈ کے لیے 3 main گولز لکھیں (مثلاً، برانڈ آگاہی، لیڈز، سیلز)۔ پھر ان گولز کو حاصل کرنے کے لیے 3 کنٹینٹ آئیڈیا سوچو جو آپ کے ٹارگٹ آڈیئنس کو اینگیج کریں۔</p><h3>Mini Project</h3><p>ایک 1-ہفتے کا روہ کنٹینٹ کیلنڈر بنائیں (پلیٹ فارم، پوسٹ ٹائپ، اور ٹاپک کے ساتھ)۔ Example:</p><p>- انسٹاگرام ریل: &quot;5 Minute Warm-up Routine&quot; (پیر)<br>- لنکڈ ان پوسٹ: &quot;How Fitness Boosts Productivity&quot; (بدھ)<br>- یوٹیوب شارٹ: &quot;Gym Mistakes Beginners Make&quot; (جمعہ)</p></div>
       
-      <div>
+      
+      <div class="quiz-box no-print">
+        <p><b>📝 Apna Practice Check Karein</b></p>
+        <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
+        <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"goals define karna, audience research, content types"'>✅ Check Karein</button>
+        <div class="quiz-result" id="fkc-quiz-result"></div>
+      </div>
+      <script>
+      function fkcCheckQuiz(btn){
+        var keys = JSON.parse(btn.getAttribute("data-keys"));
+        var ans = (document.getElementById("fkc-quiz-answer").value || "").toLowerCase();
+        var hit = 0;
+        keys.forEach(function(k){ if(k && ans.indexOf(k) !== -1) hit++; });
+        var el = document.getElementById("fkc-quiz-result");
+        if(hit === 0){
+          el.textContent = "Koi keyword match nahi hua — dobara try karein ya lesson dobara parhein.";
+          el.style.color = "#D97706";
+        } else {
+          el.textContent = "✅ " + hit + "/" + keys.length + " keywords match hue — shabaash!";
+          el.style.color = "var(--accent)";
+        }
+      }
+      </script>
+      <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Social%20Media%20Marketing%20%28Day%2001%29%0A%0ADay%201%20%E2%80%94%20Social%20Media%20Strategy%3A%20Kya%20hai%20aur%20Kaise%20Banaye%3F%0A%0AConcept%3A%0ASocial%20media%20strategy%20ek%20roadmap%20hai%20jo%20batati%20hai%20ke%20aap%20apne%20business%20ya%20personal%20brand%20ke%20liye%20social%20media%20par%20kya%20achieve%20karna%20chahte%20hain%2C%20kaise%20karna%20hai%2C%20aur%20kaise%20measure%20karna%20hai.%20Ismein%20aapke%20target%20audience%2C%20goals%2C%20content%20type%2C%20posting%20schedule%2C%20aur%20engagement%20plan%20shamil%20hote%20hain.%20Bina%20strategy%20ke%2C%20aap%20blindly%20post%20karte%20rahenge%20aur%20results%20bhi%20blind%20rahenge.%0A%0AExample%3A%0AMaana%20ke%20aap%20ek%20fitness%20coach%20hain.%20Aapki%20strategy%20yeh%20ho%20sakti%20hai%3A%0A1.%0A%0AGoal%3A%0A3%20months%20mein%2010%2C000%20followers%20aur%2050%20leads%20%28free%20consultation%20sign-ups%29.%0A2.%0A%0AAudience%3A%0A20-35%20saal%20ke%20gym%20jaane%20wale%20young%20professionals.%0A3.%0A%0AContent%3A%0AMonday%20-%20Workout%20Tips%2C%20Wednesday%20-%20Diet%20Plans%2C%20Friday%20-%20Client%20Success%20Stories%2C%20Sunday%20-%20Q%26A%20Reels.%0A4.%0A%0APlatforms%3A%0AInstagram%20%28main%29%2C%20YouTube%20Shorts%20%28secondary%29%2C%20LinkedIn%20%28for%20B2B%20clients%29.%0A5.%0A%0AEngagement%3A%0AHar%20post%20par%2010-15%20comments%20ka%20reply%2C%20weekly%20polls%2C%20aur%20DMs%20ka%2024-hour%20response.%0A%0APractice%3A%0AApne%20business%20ya%20ek%20fictional%20brand%20ke%20liye%203%20main%20goals%20likhein%20%28e.g.%2C%20brand%20awareness%2C%20leads%2C%20sales%29.%20Phir%20un%20goals%20ko%20achieve%20karne%20ke%20liye%203%20content%20ideas%20sujhao%20jo%20aapke%20target%20audience%20ko%20engage%20karein.%0A%0AMini%20Project%3A%0AEk%201-week%20ka%20rough%20content%20calendar%20banayein%20%28platform%2C%20post%20type%2C%20aur%20topic%20ke%20saath%29.%20Example%3A%0A-%20Instagram%20Reel%3A%20%225%20Minute%20Warm-up%20Routine%22%20%28Monday%29%0A-%20LinkedIn%20Post%3A%20%22How%20Fitness%20Boosts%20Productivity%22%20%28Wednesday%29%0A-%20YouTube%20Short%3A%20%22Gym%20Mistakes%20Beginners%20Make%22%20%28Friday%29%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://t.me/share/url?url=&text=Day%201%20%E2%80%94%20Social%20Media%20Strategy%3A%20Kya%20hai%20aur%20Kaise%20Banaye%3F%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
+        <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
-      <div>
+      <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
           data-slug="social-media-marketing" data-lesson="day-001"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <p><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    <div class="lesson-nav"><span></span><a class="btn alt" href="2026-08-03-day-002.html">Day 2 — **Viral Reels/Shorts Banane ke 5 Golden Rules** →</a></div>
+    <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
+    <div class="no-print" style="margin:18px 0;text-align:center;">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
+        data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
@@ -368,5 +420,18 @@ padding:4px 6px;font-size:1.1em;}
     });
   });
   window.addEventListener("appinstalled", function(){ banner.classList.remove("show"); });
+})();
+</script><script>
+(function(){
+  try{
+    var today = new Date().toISOString().slice(0,10);
+    var s = JSON.parse(localStorage.getItem("fkc_streak")||"null") || {last:null,count:0};
+    if(s.last !== today){
+      var y = new Date(Date.now()-86400000).toISOString().slice(0,10);
+      s.count = (s.last === y) ? s.count + 1 : 1;
+      s.last = today;
+      localStorage.setItem("fkc_streak", JSON.stringify(s));
+    }
+  }catch(e){}
 })();
 </script>
