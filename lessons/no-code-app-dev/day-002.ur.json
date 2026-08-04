@@ -1,0 +1,22 @@
+{
+  "title": "Day 2 — ویب سائٹ بلڈرز: Framer, Webflow اور Wix سے پرافیشنل ویب سائٹ بنانا",
+  "preamble": "",
+  "sections": [
+    {
+      "label": "تصور",
+      "content": "ویب سائٹ بلڈرز جیسے Framer, Webflow اور Wix نو-کوڈ ٹولز ہیں جو ڈریگ اینڈ ڈراپ انٹرفیس کے ذریعے پرافیشنل ویب سائٹس بنانے میں مدد کرتے ہیں۔ ان میں ٹیمپلیٹس، اینیمیشنز اور ہوسٹنگ بلٹ-ان ہوتے ہیں، اس لیے کوڈنگ کی ضرورت نہیں ہوتی۔ یہ پلیٹ فارمز بیگنرز سے لے کر انٹرمیڈیٹ یوزرز کے لیے پرфекٹ ہیں۔"
+    },
+    {
+      "label": "مثالیں",
+      "content": "1.\nWix: Simple drag-and-drop سے ایک پورٹ فولیو ویب سائٹ بنانے کے لیے:\n   - Wix.com پر جاؤ اور \"Create a Site\" سلیکٹ کرو۔\n   - ٹیمپلیٹ چوز کرو (e.g., \"Portfolio & CV\").\n   - لیفٹ پینل سے ایلیمنٹس ڈریگ کرکے ایڈ کرو (ٹیکسٹ، امیجز، بٹنز).\n   - \"Publish\" پر کلک کرو اور اپنی ویب سائٹ کا لنک شیئر کرو.\n\n2.\nWebflow: Advanced designs کے لیے:\n   - Webflow.com پر سائن اپ کرو۔\n   - \"New Project\" > \"Blank\" سلیکٹ کرو۔\n   - لیفٹ پینل سے ایلیمنٹس ڈریگ کرکے ایک ریسپانسیو navbar بناؤ۔\n   - رائٹ پینل سے اسٹائلز ایڈجسٹ کرو (فونٹس، کلرز).\n   - \"Publish\" پر کلک کرو."
+    },
+    {
+      "label": "مشق",
+      "content": "اپنے لیے ایک simple 3-page ویب سائٹ بنانے کا try کرو (Home, About, Contact). کسی بھی پلیٹ فارم (Wix/Webflow/Framer) کا استعمال کر سکتے ہو۔ Minimum 5 elements (ٹیکسٹ، امیج، بٹن) ایڈ کرو۔"
+    },
+    {
+      "label": "مینی پراجیکٹ",
+      "content": "ایک \"Restaurant Menu\" ویب سائٹ بناؤ:\n- Homepage پر menu items کی list ہو۔\n- About page پر restaurant کی story ہو۔\n- Contact page پر location اور contact form ہو۔\n- سب pages کو navbar سے لنک کرو۔\n- ویب سائٹ کو mobile-friendly بناؤ۔"
+    }
+  ]
+}

@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T12:41:37.340597";
+  var FKC_BUILD = "2026-08-04T13:25:03.036166";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,21 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.lang-tabs-wrap{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:14px 0;}
+.gtranslate-wrap{display:inline-flex;align-items:center;gap:6px;background:#f4f6fb;
+border:1px solid #e1e6f0;border-radius:20px;padding:4px 6px 4px 12px;}
+.gtranslate-label{font-size:.82em;font-weight:700;color:var(--primary,#2a5bd7);white-space:nowrap;}
+/* Google apna banner/branding chip page ke top par lagata hai — usay chhupa dete
+   hain taake layout na tootay, sirf dropdown selector nazar aaye */
+.goog-te-banner-frame{display:none !important;}
+body{top:0 !important;position:static !important;}
+.goog-te-gadget{font-family:inherit !important;font-size:0 !important;color:transparent !important;}
+.goog-te-gadget .goog-te-combo{font-family:'Inter',sans-serif;font-size:.82em;font-weight:600;
+color:#222;padding:5px 10px;border-radius:16px;border:1px solid #ccd4e6;background:#fff;
+cursor:pointer;}
+.goog-tooltip,.goog-tooltip:hover{display:none !important;}
+.goog-text-highlight{background:none !important;box-shadow:none !important;}
+#google_translate_element{line-height:0;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -158,7 +173,7 @@ pre code{font-family:inherit;background:none;padding:0;}
     <div class="card">
       
       
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs-wrap"><div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div><div class="gtranslate-wrap"><span class="gtranslate-label">🌐 Apni zaban chunein</span><div id="google_translate_element"></div></div><script>function fkcGoogleTranslateInit(){new google.translate.TranslateElement({pageLanguage:"ur",autoDisplay:false},"google_translate_element");}</script><script src="https://translate.google.com/translate_a/element.js?cb=fkcGoogleTranslateInit"></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Aaj hum `AVERAGE` aur `COUNTIF` functions seekhenge jo data ko analyze karne mein madad karte hain. `AVERAGE` kisi range ke numbers ka mean nikalta hai, jabki `COUNTIF` kisi condition ke hisaab se cells count karta hai (jaise &quot;kitne students ne 80+ marks liye&quot;). Ye functions data ko summarize karne ke liye bohat useful hain.</p><h3>Example</h3><p>1.</p><h3>AVERAGE</h3><p>`=AVERAGE(B2:B10)` — Excel sheet mein cells B2 se B10 tak ke numbers ka average calculate karega.<br>2.</p><h3>COUNTIF</h3><p>`=COUNTIF(C2:C10, &quot;&gt;50&quot;)` — Column C mein 50 se zyada values wali cells count karega.</p><h3>Practice</h3><p>Ek Excel file mein ek column mein 10 students ke marks hain (50, 65, 72, 80, 45, 90, 78, 60, 85, 55). Inke liye:<br>1. `AVERAGE` function use karke sabka average marks nikalho.<br>2. `COUNTIF` use karke kitne students ke 70+ marks hain, count karho.</p><h3>Mini Project</h3><p>Ek small Excel sheet banayo jismein ek column mein 15 employees ke salaries hain (50000, 60000, 75000, 80000, 45000, 90000, 65000, 70000, 55000, 85000, 72000, 68000, 95000, 52000, 78000). Inke liye:<br>1. Average salary calculate karo.<br>2. Kitne employees ki salary 70000 se zyada hai, count karo.<br>3. Kitne employees ki salary 50000 se kam hai, count karo.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>مفہوم</h3><p>آج ہم `AVERAGE` اور `COUNTIF` افعال سیکھیں گے جو ڈیٹا کو تجزیہ کرنے میں مدد کرتے ہیں۔ `AVERAGE` کسی رینج کے نمبرز کا مین نکالتا ہے، جبکہ `COUNTIF` کسی شرط کے حساب سے سیلز کو گناتا ہے (جیسے &quot;کتنے اسٹوڈنٹس نے 80+ مارکس لیے&quot;)۔ یہ افعال ڈیٹا کو سمجھنے اور خلاصہ کرنے کے لیے بہت مفید ہیں۔</p><h3>مثال</h3><p>1.</p><p>- AVERAGE: `=AVERAGE(B2:B10)` — ایکسل شیٹ میں سیلز B2 سے B10 تک کے نمبرز کا اوسط حساب کرے گا۔</p><p>2.</p><p>- COUNTIF: `=COUNTIF(C2:C10, &quot;&gt;50&quot;)` — کالم C میں 50 سے زیادہ ویلیوز والی سیلز کو گنائے گا۔</p><h3>مشق</h3><p>ایک ایکسل فائل میں ایک کالم میں 10 اسٹوڈنٹس کے مارکس ہیں (50، 65، 72، 80، 45، 90، 78، 60، 85، 55)۔ ان کے لیے:</p><p>1. `AVERAGE` افعال استعمال کرکے سب کا اوسط مارکس نکالو۔</p><p>2. `COUNTIF` استعمال کرکے کتنے اسٹوڈنٹس کے 70+ مارکس ہیں، گن لو۔</p><h3>چھوٹا پروجیکٹ</h3><p>ایک چھوٹی ایکسل شیٹ بناؤ جس میں ایک کالم میں 15 ایمپلائز کی سیلریز ہیں (50000، 60000، 75000، 80000، 45000، 90000، 65000، 70000، 55000، 85000، 72000، 68000، 95000، 52000، 78000)۔ ان کے لیے:</p><p>1. اوسط سیلری حساب کرو۔</p><p>2. کتنے ایمپلائز کی سیلری 70000 سے زیادہ ہے، گن لو۔</p><p>3. کتنے ایمپلائز کی سیلری 50000 سے کم ہے، گن لو۔</p></div>
       
       <div>

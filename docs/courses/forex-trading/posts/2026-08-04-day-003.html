@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T12:41:37.340597";
+  var FKC_BUILD = "2026-08-04T13:25:03.036166";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,21 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.lang-tabs-wrap{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:14px 0;}
+.gtranslate-wrap{display:inline-flex;align-items:center;gap:6px;background:#f4f6fb;
+border:1px solid #e1e6f0;border-radius:20px;padding:4px 6px 4px 12px;}
+.gtranslate-label{font-size:.82em;font-weight:700;color:var(--primary,#2a5bd7);white-space:nowrap;}
+/* Google apna banner/branding chip page ke top par lagata hai — usay chhupa dete
+   hain taake layout na tootay, sirf dropdown selector nazar aaye */
+.goog-te-banner-frame{display:none !important;}
+body{top:0 !important;position:static !important;}
+.goog-te-gadget{font-family:inherit !important;font-size:0 !important;color:transparent !important;}
+.goog-te-gadget .goog-te-combo{font-family:'Inter',sans-serif;font-size:.82em;font-weight:600;
+color:#222;padding:5px 10px;border-radius:16px;border:1px solid #ccd4e6;background:#fff;
+cursor:pointer;}
+.goog-tooltip,.goog-tooltip:hover{display:none !important;}
+.goog-text-highlight{background:none !important;box-shadow:none !important;}
+#google_translate_element{line-height:0;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -158,7 +173,7 @@ pre code{font-family:inherit;background:none;padding:0;}
     <div class="card">
       
       
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs-wrap"><div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div><div class="gtranslate-wrap"><span class="gtranslate-label">🌐 Apni zaban chunein</span><div id="google_translate_element"></div></div><script>function fkcGoogleTranslateInit(){new google.translate.TranslateElement({pageLanguage:"ur",autoDisplay:false},"google_translate_element");}</script><script src="https://translate.google.com/translate_a/element.js?cb=fkcGoogleTranslateInit"></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Leverage ek aisa tool hai jo aapko chhote amount se bade positions kholne deta hai. Jaise agar aapka account $100 ka hai aur leverage 1:100 hai, to aap $10,000 ki position bana sakte hain. Margin wo amount hai jo aapka broker aapke account se &quot;lock&quot; kar leta hai taake yeh position maintain ho sake. Zyada leverage se profit bhi zyada ho sakta hai, lekin loss bhi utna hi zyada hota hai!</p><h3>Example</h3><p>Maana aap EUR/USD pair par 0.1 lot (10,000 units) ka buy order lagana chahte hain. Broker ka leverage 1:100 hai.<br>- Lot size = 10,000 units<br>- Leverage = 1:100 → Required margin = (10,000 / 100) = $100<br>- Agar EUR/USD 1.1000 se 1.1010 ho jata hai (10 pips gain), to aapka profit = 10 pips × $1 = $10 (har pip ka value 0.1 lot ke liye $1 hota hai).</p><h3>Practice</h3><p>Apne MetaTrader 4/5 mein:<br>1. Kisi bhi currency pair par 0.01 lot ka order lagao.<br>2. Leverage 1:100 set karke margin calculate karo.<br>3. Order ko cancel kar do.</p><h3>Mini Project</h3><p>Ek spreadsheet banao jismein:<br>- 3 alag-alag leverage levels (1:10, 1:50, 1:100) ke liye margin calculation karo.<br>- Har leverage ke liye 0.1 lot ka order lagane par kitna margin chahiye, yeh likho.<br>- Agar price 50 pips badhta hai, to har leverage ke hisaab se profit/loss kitna hoga.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>لیوریج ایک ایسا ٹول ہے جو آپ کو چھوٹے اماؤنٹ سے بڑے پوزیشن کھولنے دیتا ہے۔ جیسے اگر آپ کا اکاؤنٹ $100 کا ہے اور لیوریج 1:100 ہے، تو آپ $10,000 کی پوزیشن بنا سکتے ہیں۔ مارجن وہ اماؤنٹ ہے جو آپ کا بروکر آپ کے اکاؤنٹ سے &quot;lock&quot; کر لیتا ہے تاکہ یہ پوزیشن میںنٹین ہو سکے۔ زیادہ لیوریج سے پروفٹ بھی زیادہ ہو سکتا ہے، لیکن لاس بھی اتنا ہی زیادہ ہوتا ہے!</p><h3>Example</h3><p>مانا آپ EUR/USD پئیر پر 0.1 لوت (10,000 یونٹس) کا بائ آرڈر لگانا چاہتے ہیں۔ بروکر کا لیوریج 1:100 ہے۔</p><p>- لوت سائز = 10,000 یونٹس<br>- لیوریج = 1:100 → ریکوئرڈ مارجن = (10,000 / 100) = $100</p><p>اگر EUR/USD 1.1000 سے 1.1010 ہو جاتا ہے (10 پپس گین)، تو آپ کا پروفٹ = 10 پپس × $1 = $10 (ہر پپ کا ویلیو 0.1 لوت کے لیے $1 ہوتا ہے)۔</p><h3>Practice</h3><p>اپنے MetaTrader 4/5 میں:<br>1. کسی بھی کرنسی پئیر پر 0.01 لوت کا آرڈر لگائو۔<br>2. لیوریج 1:100 سیٹ کرکے مارجن کیلکولیٹ کرو۔<br>3. آرڈر کو کنسل کر دو۔</p><h3>Mini Project</h3><p>ایک spreadsheet بنائو جس میں:<br>- 3 الگ الگ لیوریج لیولز (1:10, 1:50, 1:100) کے لیے مارجن کیلکولیشن کرو۔<br>- ہر لیوریج کے لیے 0.1 لوت کا آرڈر لگانے پر کتنا مارجن چاہیے، یہ لکھو۔<br>- اگر price 50 پپس بڑھتا ہے، تو ہر لیوریج کے حساب سے پروفٹ/لاس کتنا ہوگا۔</p></div>
       <p><a class="btn alt" href="https://one.exnessonelink.com/a/buhyli14un" target="_blank" rel="noopener sponsored">💹 Exness Par Free Account Banayein</a></p>
       <div>

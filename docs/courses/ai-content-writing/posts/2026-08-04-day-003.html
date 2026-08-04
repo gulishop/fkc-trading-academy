@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T12:41:37.340597";
+  var FKC_BUILD = "2026-08-04T13:25:03.036166";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,21 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.lang-tabs-wrap{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:14px 0;}
+.gtranslate-wrap{display:inline-flex;align-items:center;gap:6px;background:#f4f6fb;
+border:1px solid #e1e6f0;border-radius:20px;padding:4px 6px 4px 12px;}
+.gtranslate-label{font-size:.82em;font-weight:700;color:var(--primary,#2a5bd7);white-space:nowrap;}
+/* Google apna banner/branding chip page ke top par lagata hai — usay chhupa dete
+   hain taake layout na tootay, sirf dropdown selector nazar aaye */
+.goog-te-banner-frame{display:none !important;}
+body{top:0 !important;position:static !important;}
+.goog-te-gadget{font-family:inherit !important;font-size:0 !important;color:transparent !important;}
+.goog-te-gadget .goog-te-combo{font-family:'Inter',sans-serif;font-size:.82em;font-weight:600;
+color:#222;padding:5px 10px;border-radius:16px;border:1px solid #ccd4e6;background:#fff;
+cursor:pointer;}
+.goog-tooltip,.goog-tooltip:hover{display:none !important;}
+.goog-text-highlight{background:none !important;box-shadow:none !important;}
+#google_translate_element{line-height:0;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -158,7 +173,7 @@ pre code{font-family:inherit;background:none;padding:0;}
     <div class="card">
       
       
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs-wrap"><div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div><div class="gtranslate-wrap"><span class="gtranslate-label">🌐 Apni zaban chunein</span><div id="google_translate_element"></div></div><script>function fkcGoogleTranslateInit(){new google.translate.TranslateElement({pageLanguage:"ur",autoDisplay:false},"google_translate_element");}</script><script src="https://translate.google.com/translate_a/element.js?cb=fkcGoogleTranslateInit"></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Social captions aur ad copy do alag cheez hain lekin inka maqsad ek hi hai: audience ko attract karke unse action lena. Caption wo text hai jo post ke saath jata hai (engagement ke liye), jabke ad copy wo text hai jo direct conversion ke liye design kiya gaya hai (clicks, sales, sign-ups). In dono mein hook, benefit, aur CTA ka combination hota hai—lekin ad copy mein urgency aur social proof zyada hota hai.</p><h3>Example</h3><p>Ek Instagram post ke liye caption:<br>*&quot;Ghar baithe paise kamane ka sabse aasan tareeka? 💰<br>Humara FREE ‘Content Writing Masterclass’ aaj hi join karein aur 10,000+ students ke saath seekhein! 👇<br>🔗 Link in bio&quot;*</p><p>Ad copy (Facebook/Google Ads ke liye):<br>*&quot;🚀 30 Dino Mein Freelance Content Writer Ban Jaeyein!<br>✅ 10+ Real Clients Se Kaam<br>✅ Har Mahine ₹50,000+ Kamayein<br>✅ 24/7 Support<br>👉 Abhi Apply Karen—Seats Limited Hain!&quot;*</p><h3>Practice</h3><p>Apne favourite brand ka ek Instagram post ya ad copy likhein. Use 3-4 lines mein likhein, jismein hook (attention grabber), benefit (kyun follow/click karein), aur CTA (action) ho.</p><h3>Mini Project</h3><p>Ek 3-post series banayein (ek caption + ad copy) ek hypothetical product ke liye (jaise ek online course, fitness supplement, ya local service). Har post ka alag angle ho—ek educational, ek emotional, aur ek discount-focused.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>سوشل میڈیا کیپشنز اور ایڈ کاپی دو الگ چیزیں ہیں لیکن ان کا مقصد ایک ہی ہے: سامعین کو متوجہ کرکے ان سے ایکشن لینا۔ کیپشن وہ ٹیکسٹ ہوتا ہے جو پوسٹ کے ساتھ جاتا ہے (اینگجمنٹ کے لیے)، جبکہ ایڈ کاپی وہ ٹیکسٹ ہوتا ہے جو ڈائریکٹ کنورژن کے لیے ڈیزائن کیا گیا ہوتا ہے (کلکس، سیلز، سائن اپس)۔ ان دونوں میں ہُک، بینیفٹ، اور سی ٹی اے کا کمبائنیشن ہوتا ہے—لیکن ایڈ کاپی میں ارجنسی اور سوشل پروف زیادہ ہوتا ہے۔</p><h3>Example</h3><p>ایک انسٹاگرام پوسٹ کے لیے کیپشن:<br>*&quot;گھر بیٹھے پیسے کمانے کا سب سے آسان طریقہ؟ 💰<br>ہمارا FREE ‘Content Writing Masterclass’ آج ہی جوائن کریں اور 10,000+ students کے ساتھ سیکھیں! 👇<br>🔗 Link in bio*&quot;</p><p>ایڈ کاپی (فیس بک/گوگل ایڈز کے لیے):<br>*&quot;🚀 30 دنوں میں freelance content writer بن جائیں!<br>✅ 10+ ریئل کلائنٹس سے کام<br>✅ ہر مہینے ₹50,000+ کماۓ<br>✅ 24/7 سپورٹ<br>👉 ابھی اپلائی کریں—سیٹس لیمیٹڈ ہیں!&quot;*</p><h3>Practice</h3><p>اپنے پسندیدہ برینڈ کا ایک انسٹاگرام پوسٹ یا ایڈ کاپی لکھیں۔ اسے 3-4 لائنوں میں لکھیں، جس میں ہُک (اٹینشن گریپر)، بینیفٹ (کیوں فالو/کلک کریں)، اور سی ٹی اے (ایکشن) ہو۔</p><h3>Mini Project</h3><p>ایک 3-پوسٹ سیریز بنائیں (ایک کیپشن + ایڈ کاپی) ایک ہائپوتھیٹیکل پروڈکٹ کے لیے (جیسے ایک آن لائن کورس، فٹنس سپلیمنٹ، یا لوکل سروس)۔ ہر پوسٹ کا الگ اینگل ہو—ایک ایجوکیشنل، ایک ایموشنل، اور ایک ڈسکاؤنٹ فوکسڈ۔</p></div>
       
       <div>

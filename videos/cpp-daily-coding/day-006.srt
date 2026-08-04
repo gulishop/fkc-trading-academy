@@ -1,0 +1,67 @@
+1
+00:00:00,000 --> 00:00:02,291
+Day 6 — Functions: Code Ko
+
+2
+00:00:02,291 --> 00:00:04,583
+Reusable aur Zyada Efficient Banana Concept.
+
+3
+00:00:04,583 --> 00:00:06,874
+Functions ek block of code hote
+
+4
+00:00:06,874 --> 00:00:09,165
+hain jo ek specific task perform
+
+5
+00:00:09,165 --> 00:00:11,456
+karte hain. Inhe reuse karke apna
+
+6
+00:00:11,456 --> 00:00:13,748
+code clean, organized aur easy-to-maintain rakh
+
+7
+00:00:13,748 --> 00:00:16,039
+sakte hain. Functions parameters accept karte
+
+8
+00:00:16,039 --> 00:00:18,330
+hain aur values return kar sakte
+
+9
+00:00:18,330 --> 00:00:20,622
+hain. Example. Practice. Ek function isEven()
+
+10
+00:00:20,622 --> 00:00:22,913
+banaye jo ek integer parameter le
+
+11
+00:00:22,913 --> 00:00:25,204
+aur return kare true agar number
+
+12
+00:00:25,204 --> 00:00:27,496
+even ho, warna false. Mini Project.
+
+13
+00:00:27,496 --> 00:00:29,787
+Ek simple calculator program banaye jo
+
+14
+00:00:29,787 --> 00:00:32,078
+user se do numbers aur ek
+
+15
+00:00:32,078 --> 00:00:34,369
+operator (+, -, , /) input
+
+16
+00:00:34,369 --> 00:00:36,661
+le aur function ka use karke
+
+17
+00:00:36,661 --> 00:00:38,952
+result calculate kare.

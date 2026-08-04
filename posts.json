@@ -496,7 +496,66 @@
         ]
       ],
       "answer_key": "logo, cover photo, about section, username, page roles",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "Day 1 — فیس بک پیج کو پرافیشنل سیٹ اپ کرنا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "آج ہم سیکھیں گے کہ اپنی فیس بک پیج کو پرافیشنل بنانے کے لیے کون سے اہم اسٹeps ہیں۔ ایک پرافیشنل پیج سے ہی پہچان بنتی ہے، کریڈِبلٹی بڑھتی ہے اور آڈیئنس ٹرسٹ کرتی ہے۔ اس کے لیے پروفائل پکچر، کَور فوٹو، اباؤٹ سیکشن، یوزر نیم اور پرائیویسی سیٹنگز کو صحیح طریقے سے سیٹ کرنا ضروری ہے۔"
+            },
+            {
+              "label": "Example",
+              "content": "1."
+            },
+            {
+              "label": "Profile Picture",
+              "content": "180x180 pixels کا لوگو یا برینڈ امیج اپ لوڈ کرو۔"
+            },
+            {
+              "label": "Example",
+              "content": "2."
+            },
+            {
+              "label": "Cover Photo",
+              "content": "820x312 pixels کی اٹریکٹو امیج جو آپ کے بزنس کو represent کرے۔"
+            },
+            {
+              "label": "Example",
+              "content": "3."
+            },
+            {
+              "label": "About Section",
+              "content": "2-3 lines میں اپنے پیج کا purpose clear لکھو (e.g., \"ہم quality products provide کرتے ہیں\")۔"
+            },
+            {
+              "label": "Example",
+              "content": "4."
+            },
+            {
+              "label": "Username",
+              "content": "@YourPageName (e.g., @TechGuruPK) سیٹ کرو جو easy یاد رہے۔"
+            },
+            {
+              "label": "Example",
+              "content": "5."
+            },
+            {
+              "label": "Page Roles",
+              "content": "Admin, Editor یا Moderator کو add کرو اگر ٹیم ہے۔"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنی ایک existing فیس بک پیج یا نیا پیج بنا کر اوپر دیے گئے 5 steps کو follow کرو۔ ہر step کو screenshot لو۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک 100-word کا \"About\" سیکشن لکھو جو پرافیشنل ہو اور اپنے نچے کے audience کو attract کرے۔ اس کے بعد اسکو اپنی فیس بک پیج کے \"About\" سیکشن میں save کرو۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 2,
@@ -1634,7 +1693,30 @@
         ]
       ],
       "answer_key": "bold+light+simple, readability, hierarchy, contrast",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "Day 2 — Smart Typography: Fonts aur Unka Magic",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "آج ہم سیکھیں گے کہ کس طرح صحیح فونٹس کا انتخاب کر کے ڈیزائن کو پرافیشنل اور دلچسپ بنایا جا سکتا ہے۔ ہر فونٹ کی اپنی ایک شخصیت ہوتی ہے—کچھ رسمی، کچھ کھلونے والے، کچھ جارحانہ۔ انہیں سمجھ کر اور صحیح طریقے سے استعمال کر کے اپنے ڈیزائن کو اگلے لیول پر لے جا سکتے ہیں۔"
+            },
+            {
+              "label": "Example",
+              "content": "ایک انسٹاگرام پوسٹ کے لیے فونٹس کا انتخاب کرتے وقت:\n1. **ہیڈنگ کے لیے** — بولڈ اور جدید فونٹ جیسے *Poppins Bold* (رسمی اور صاف نظر کے لیے)۔\n2. **سب ہیڈنگ کے لیے** — لائٹ اور دوستانہ فونٹ جیسے *Quicksand* (آسان پڑھنے اور دوستانہ ماحول کے لیے)۔\n3. **بڈی ٹیکسٹ کے لیے** — سادہ اور پڑھنے میں آسان فونٹ جیسے *Open Sans* (سب سے زیادہ یوزر فرینڈلی)۔"
+            },
+            {
+              "label": "Practice",
+              "content": "Canva میں ایک نیا ڈیزائن کھولیں (جیسے انسٹاگرام پوسٹ یا پوسٹر)۔ تین مختلف فونٹس کا انتخاب کر کے دیکھیں کہ کون سا جوڑا بہترین لگتا ہے۔ ہر فونٹ کا استعمال ایک الگ مقصد کے لیے کریں (ہیڈنگ، سب ہیڈنگ، باڈی ٹیکسٹ)۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک 3-سلیڈ پرزینٹیشن بنائیں:\n1. **سلیڈ 1**: ایک ہیڈنگ (بولڈ فونٹ) + ایک سب ہیڈنگ (لائٹ فونٹ) + ایک باڈی ٹیکسٹ (سادہ فونٹ)۔\n2. **سلیڈ 2**: وہی مواد لیکن الگ فونٹس استعمال کر کے (جیسے ہیڈنگ کے لیے *Montserrat*، سب ہیڈنگ کے لیے *Pacifico*)۔\n3. **سلیڈ 3**: اپنے پسندیدہ جوڑے کو بیان کرتے ہوئے ایک شارٹ نوٹ شامل کریں (کیوں یہ جوڑا بہترین ہے)۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "no-code-app-dev": [
@@ -1721,7 +1803,30 @@
         ]
       ],
       "answer_key": "homepage, about page, contact page, navbar, mobile-responsive",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "Day 2 — ویب سائٹ بلڈرز: Framer, Webflow اور Wix سے پرافیشنل ویب سائٹ بنانا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "ویب سائٹ بلڈرز جیسے Framer, Webflow اور Wix نو-کوڈ ٹولز ہیں جو ڈریگ اینڈ ڈراپ انٹرفیس کے ذریعے پرافیشنل ویب سائٹس بنانے میں مدد کرتے ہیں۔ ان میں ٹیمپلیٹس، اینیمیشنز اور ہوسٹنگ بلٹ-ان ہوتے ہیں، اس لیے کوڈنگ کی ضرورت نہیں ہوتی۔ یہ پلیٹ فارمز بیگنرز سے لے کر انٹرمیڈیٹ یوزرز کے لیے پرфекٹ ہیں۔"
+            },
+            {
+              "label": "مثالیں",
+              "content": "1.\nWix: Simple drag-and-drop سے ایک پورٹ فولیو ویب سائٹ بنانے کے لیے:\n   - Wix.com پر جاؤ اور \"Create a Site\" سلیکٹ کرو۔\n   - ٹیمپلیٹ چوز کرو (e.g., \"Portfolio & CV\").\n   - لیفٹ پینل سے ایلیمنٹس ڈریگ کرکے ایڈ کرو (ٹیکسٹ، امیجز، بٹنز).\n   - \"Publish\" پر کلک کرو اور اپنی ویب سائٹ کا لنک شیئر کرو.\n\n2.\nWebflow: Advanced designs کے لیے:\n   - Webflow.com پر سائن اپ کرو۔\n   - \"New Project\" > \"Blank\" سلیکٹ کرو۔\n   - لیفٹ پینل سے ایلیمنٹس ڈریگ کرکے ایک ریسپانسیو navbar بناؤ۔\n   - رائٹ پینل سے اسٹائلز ایڈجسٹ کرو (فونٹس، کلرز).\n   - \"Publish\" پر کلک کرو."
+            },
+            {
+              "label": "مشق",
+              "content": "اپنے لیے ایک simple 3-page ویب سائٹ بنانے کا try کرو (Home, About, Contact). کسی بھی پلیٹ فارم (Wix/Webflow/Framer) کا استعمال کر سکتے ہو۔ Minimum 5 elements (ٹیکسٹ، امیج، بٹن) ایڈ کرو۔"
+            },
+            {
+              "label": "مینی پراجیکٹ",
+              "content": "ایک \"Restaurant Menu\" ویب سائٹ بناؤ:\n- Homepage پر menu items کی list ہو۔\n- About page پر restaurant کی story ہو۔\n- Contact page پر location اور contact form ہو۔\n- سب pages کو navbar سے لنک کرو۔\n- ویب سائٹ کو mobile-friendly بناؤ۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 3,
@@ -1854,7 +1959,30 @@
         ]
       ],
       "answer_key": "keyword placement, title tag, meta description, natural density",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "Day 2",
+          "preamble": "**Day 2 — SEO کی بنیادی باتیں: Keywords اور On-Page SEO کو سمجھیں**",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "SEO کا سب سے پہلا قدم ہے **keywords** کو سمجھنا اور انہیں اپنی ویب سائٹ پر **on-page SEO** کے ذریعے استعمال کرنا۔ Keywords وہ الفاظ ہوتے ہیں جو لوگ Google پر سرچ کرتے ہیں۔ On-page SEO کا مطلب ہے اپنی ویب سائٹ کے اندر ہی SEO کرنا جیسے کہ titles، meta descriptions، headings، اور content کو اس طرح سے بہتر بنانا کہ سرچ انجن سمجھ سکیں کہ آپ کا مواد متعلقہ ہے۔"
+            },
+            {
+              "label": "Example",
+              "content": "مان لیجیے کہ آپ ایک **بیکری** چلاتے ہیں۔ لوگ \"best chocolate cake in Lahore\" سرچ کرتے ہیں۔ آپ کو اپنی ویب سائٹ کے مندرجہ ذیل حصوں کو اس طرح سے ترتیب دینا ہوگا:"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے یا کسی دوسرے business کا **1 keyword** منتخب کریں (جیسے \"organic face cream in Karachi\")۔ اس keyword کو اپنی ویب سائٹ کے **title، meta description، اور پہلے 100 الفاظ** میں استعمال کریں۔ (اگر ویب سائٹ نہیں ہے تو ایک سادہ بلاگ پوسٹ لکھ کر مشق کریں۔)"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک **dummy webpage** بنائیں (Google Docs یا Notion میں) جس میں درج ذیل شامل ہوں:"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 3,
@@ -2378,6 +2506,33 @@
       ],
       "answer_key": "numbers array, sum variable, loop, even/odd check, max/min find",
       "translations": {}
+    },
+    {
+      "day": 6,
+      "id": "day-006",
+      "date": "2026-08-04",
+      "title": "Day 6 — Functions: Code Ko Reusable aur Zyada Efficient Banana",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Functions ek block of code hote hain jo ek specific task perform karte hain. Inhe reuse karke apna code clean, organized aur easy-to-maintain rakh sakte hain. Functions parameters accept karte hain aur values return kar sakte hain."
+        ],
+        [
+          "Example",
+          "```cpp\n#include <iostream>\nusing namespace std;\n\n// Function declaration\nint addNumbers(int a, int b) {\n    return a + b;\n}\n\nint main() {\n    int num1 = 5, num2 = 7;\n    int result = addNumbers(num1, num2); // Function call\n    cout << \"Sum: \" << result << endl;\n    return 0;\n}\n```"
+        ],
+        [
+          "Practice",
+          "Ek function `isEven()` banaye jo ek integer parameter le aur return kare `true` agar number even ho, warna `false`."
+        ],
+        [
+          "Mini Project",
+          "Ek simple calculator program banaye jo user se do numbers aur ek operator (+, -, *, /) input le aur function ka use karke result calculate kare."
+        ]
+      ],
+      "answer_key": "parameter, return type, function call, boolean",
+      "translations": {}
     }
   ],
   "python-programming": [
@@ -2597,7 +2752,26 @@
         ]
       ],
       "answer_key": "txid, sender/receiver addresses, amount",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "Day 1 — بلاکچین: ایک ڈیجیٹل لیجر جو سب کو ٹرسٹ کرتا ہے",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "بلاکچین ایک ڈیجیٹل لیجر (رکارڈ بک) ہے جو ٹرانزیکشنز کو سیکیور، ٹرانسپیرنٹ اور ڈیسنٹرلائزڈ طریقے سے ریکارڈ کرتا ہے۔ ہر 'بلاک' میں ٹرانزیکشنز کا گروپ ہوتا ہے، اور ہر بلاک کو کرپٹوگرافک ہیش سے لنک کیا جاتا ہے—جیسے ایک ڈیجیٹل فنگر پرنٹ۔ اس سے کوئی بھی چیت نہیں کر سکتا، کیونکہ اگر کوئی بلاک چینج کرے گا تو سارے سبسیquent بلاکس انویلیڈ ہو جائیں گے۔"
+            },
+            {
+              "label": "Example",
+              "content": "تصور کریں ایک Google Sheet جو سب کے فون پر اوپن ہے، لیکن کوئی بھی ایک لائن ایڈٹ نہیں کر سکتا بنا سب کے اگریمنٹ کے۔ اگر کوئی لائن چینج کرے گا، تو سارے لوگ کو پتہ چل جائے گا۔ یہی بلاکچین کا بیسک آئیڈیا ہے—ایک shared، unchangeable record۔"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے فون یا لیپ ٹاپ پر ایک simple blockchain explorer اوپن کریں (جیسے [blockchain.com/explorer](https://www.blockchain.com/explorer))۔ Bitcoin network پر کوئی recent transaction search کریں اور دیکھ لیں:\n- Transaction ID (TXID)\n- Sender اور Receiver کے addresses\n- Amount (کتنے Bitcoin transfer ہوئے)"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 2,

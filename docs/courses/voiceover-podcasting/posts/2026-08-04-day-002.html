@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T12:41:37.340597";
+  var FKC_BUILD = "2026-08-04T13:25:03.036166";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,21 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.lang-tabs-wrap{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:14px 0;}
+.gtranslate-wrap{display:inline-flex;align-items:center;gap:6px;background:#f4f6fb;
+border:1px solid #e1e6f0;border-radius:20px;padding:4px 6px 4px 12px;}
+.gtranslate-label{font-size:.82em;font-weight:700;color:var(--primary,#2a5bd7);white-space:nowrap;}
+/* Google apna banner/branding chip page ke top par lagata hai — usay chhupa dete
+   hain taake layout na tootay, sirf dropdown selector nazar aaye */
+.goog-te-banner-frame{display:none !important;}
+body{top:0 !important;position:static !important;}
+.goog-te-gadget{font-family:inherit !important;font-size:0 !important;color:transparent !important;}
+.goog-te-gadget .goog-te-combo{font-family:'Inter',sans-serif;font-size:.82em;font-weight:600;
+color:#222;padding:5px 10px;border-radius:16px;border:1px solid #ccd4e6;background:#fff;
+cursor:pointer;}
+.goog-tooltip,.goog-tooltip:hover{display:none !important;}
+.goog-text-highlight{background:none !important;box-shadow:none !important;}
+#google_translate_element{line-height:0;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -158,7 +173,7 @@ pre code{font-family:inherit;background:none;padding:0;}
     <div class="card">
       <img src="images/day-002.png" alt="Day 2 — Script Padhne Ka Art: Emotion aur Tone Control" style="width:100%;border-radius:12px;margin-bottom:14px;">
       <p class="muted" style="margin:0 0 6px;">🎬 AI Video Explanation</p><video src="videos/day-002.mp4" controls preload="metadata" poster="images/day-002.png" style="width:100%;border-radius:12px;margin-bottom:14px;background:#000;"></video>
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs-wrap"><div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div><div class="gtranslate-wrap"><span class="gtranslate-label">🌐 Apni zaban chunein</span><div id="google_translate_element"></div></div><script>function fkcGoogleTranslateInit(){new google.translate.TranslateElement({pageLanguage:"ur",autoDisplay:false},"google_translate_element");}</script><script src="https://translate.google.com/translate_a/element.js?cb=fkcGoogleTranslateInit"></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Script padhna sirf words bolna nahi, balki unke peeche ki *emotion* aur *intention* ko samajh kar unhe aise deliver karna hai jo listener ke dil tak pahunch sake. Tone control ka matlab hai apne voice ki pitch, speed, aur energy ko script ke mood ke hisaab se adjust karna. Yeh skill beginner se intermediate level tak sabhi ke liye zaroori hai, chahe aap podcast host ho ya voice-over artist.</p><h3>Example</h3><p>Ek simple line hai: *&quot;Main aaj bahut khush hoon!&quot;*<br>-</p><h3>Happy tone</h3><p>Fast speed, high pitch, cheerful energy → *&quot;Main aaj bahut khush hoon!&quot;* (😊)<br>-</p><h3>Sad tone</h3><p>Slow speed, low pitch, heavy energy → *&quot;Main aaj bahut khush hoon...&quot;* (😢)<br>-</p><h3>Angry tone</h3><p>Sharp pitch, fast speed, stressed words → *&quot;Main aaj bahut khush hoon!&quot;* (😡)</p><h3>Practice</h3><p>Apne mobile ya laptop ke recorder se 3 baar yeh line bolen:<br>1. Ek baar *excited* tone mein (jaise koi sports commentator ho).<br>2. Ek baar *whisper* karke (jaise secret share kar rahe ho).<br>3. Ek baar *dramatic pause* ke saath (jaise koi horror story sunayein).</p><h3>Mini Project</h3><p>Ek 10-second ka *emotional* script likhein (jaise: *&quot;Meri ma ki aawaaz sun kar mere aansu nikal aaye...&quot;*). Uske liye 3 alag tones (happy, sad, angry) record karen aur compare karen ki kaun sa zyada effective hai.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>اسکرپٹ پڑھنا صرف الفاظ کو بولنے کا نام نہیں ہے، بلکہ ان کے پیچھے چھپی *احساسات* اور *ارادوں* کو سمجھ کر انھیں ایسے پیش کرنا ہے جو سننے والے کے دل تک پہنچ سکے۔ ٹون کنٹرول کا مطلب ہے اپنی آواز کی پچ، رفتار، اور توانائی کو اسکرپٹ کے موڈ کے مطابق ایڈجسٹ کرنا۔ یہ مہارت ہر سطح کے افراد کے لیے ضروری ہے، چاہے آپ ایک پڈکاسٹ ہوسٹ ہوں یا وائس اوور آرٹسٹ۔</p><h3>Example</h3><p>ایک سادہ لائن ہے: *&quot;میں آج بہت خوش ہوں!&quot;*</p><h3></h3><p>خوش مزاج: تیز رفتار، بلند پچ، خوشگوار توانائی → *&quot;میں آج بہت خوش ہوں!&quot;* (😊)</p><h3></h3><p>اداس مزاج: سست رفتار، نیچی پچ، بھاری توانائی → *&quot;میں آج بہت خوش ہوں...&quot;* (😢)</p><h3></h3><p>غصے کا مزاج: تیز پچ، تیز رفتار، زور دار الفاظ → *&quot;میں آج بہت خوش ہوں!&quot;* (😡)</p><h3>Practice</h3><p>اپنے موبائل یا لیپ ٹاپ کے ریکارڈر سے اس لائن کو تین بار بولیں:</p><h3></h3><p>1. ایک بار *بہت پرجوش* مزاج میں (جیسے کوئی سپورٹس کمنٹیٹر ہو)۔</p><h3></h3><p>2. ایک بار *چپکے سے* (جیسے کوئی راز شیئر کر رہے ہوں)۔</p><h3></h3><p>3. ایک بار *ڈرامائی وقفے* کے ساتھ (جیسے کوئی ہارر کہانی سنائیں)۔</p><h3>Mini Project</h3><p>ایک 10 سیکنڈ کا *جذباتی* اسکرپٹ لکھیں (جیسے: *&quot;میری ماں کی آواز سن کر میرے آنسو نکل آئے...&quot;*)۔ اس کے لیے تین الگ الگ ٹونز (خوش، اداس، غصے) ریکارڈ کریں اور موازنہ کریں کہ کون سی ٹون زیادہ موثر ہے۔</p></div>
       
       <div>

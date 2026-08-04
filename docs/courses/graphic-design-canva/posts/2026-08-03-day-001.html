@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T12:41:37.340597";
+  var FKC_BUILD = "2026-08-04T13:25:03.036166";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,21 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.lang-tabs-wrap{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:14px 0;}
+.gtranslate-wrap{display:inline-flex;align-items:center;gap:6px;background:#f4f6fb;
+border:1px solid #e1e6f0;border-radius:20px;padding:4px 6px 4px 12px;}
+.gtranslate-label{font-size:.82em;font-weight:700;color:var(--primary,#2a5bd7);white-space:nowrap;}
+/* Google apna banner/branding chip page ke top par lagata hai — usay chhupa dete
+   hain taake layout na tootay, sirf dropdown selector nazar aaye */
+.goog-te-banner-frame{display:none !important;}
+body{top:0 !important;position:static !important;}
+.goog-te-gadget{font-family:inherit !important;font-size:0 !important;color:transparent !important;}
+.goog-te-gadget .goog-te-combo{font-family:'Inter',sans-serif;font-size:.82em;font-weight:600;
+color:#222;padding:5px 10px;border-radius:16px;border:1px solid #ccd4e6;background:#fff;
+cursor:pointer;}
+.goog-tooltip,.goog-tooltip:hover{display:none !important;}
+.goog-text-highlight{background:none !important;box-shadow:none !important;}
+#google_translate_element{line-height:0;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -158,7 +173,7 @@ pre code{font-family:inherit;background:none;padding:0;}
     <div class="card">
       
       
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs-wrap"><div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div><div class="gtranslate-wrap"><span class="gtranslate-label">🌐 Apni zaban chunein</span><div id="google_translate_element"></div></div><script>function fkcGoogleTranslateInit(){new google.translate.TranslateElement({pageLanguage:"ur",autoDisplay:false},"google_translate_element");}</script><script src="https://translate.google.com/translate_a/element.js?cb=fkcGoogleTranslateInit"></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Aaj hum Canva ke dashboard aur uski basic settings se familiar honge. Canva ek drag-and-drop design tool hai jo beginners ke liye bhi bohat aasan hai. Yahan templates, elements (shapes, icons, etc.), text options, aur upload features milte hain. Pehle hum iske interface ko samajhein gaye takay agle lessons mein confidently kaam kar saken.</p><h3>Example</h3><p>1.</p><h3>Sign Up/Login</h3><p>Canva.com par jayein, Google ya email se account banayein.<br>2.</p><h3>Homepage</h3><p>Left side mein &quot;Create a design&quot; button par click karen. Yahan se custom size (jaise 1080x1080px for Instagram) ya pre-set templates (jaise &quot;Instagram Post&quot;) select karen.<br>3.</p><h3>Interface Breakdown</h3><p>-</p><h3>Top Bar</h3><p>Undo/Redo, save, share, aur export options.<br>   -</p><h3>Left Panel</h3><p>Templates, elements (icons, shapes), text, uploads, aur background options.<br>   -</p><h3>Canvas</h3><p>Apna design yahan banayein—drag karke elements add karen.<br>   -</p><h3>Right Panel</h3><p>Har selected element ki properties (color, size, effects) edit karen.</p><h3>Practice</h3><p>Ek naya design create karen (jaise &quot;Facebook Post&quot; template). Left panel se ek &quot;Text&quot; box add karen, usme apna naam type karen, aur right panel se font style aur color change karen.</p><h3>Mini Project</h3><p>Ek simple Instagram Post (1080x1080px) banayein jisme:<br>- Ek background color ho (left panel &gt; &quot;Background&quot; &gt; color pick karen).<br>- Ek text box ho &quot;Hello World!&quot; (font: &quot;Poppins&quot;, color: white).<br>- Ek simple shape (jaise circle) add karen (left panel &gt; &quot;Elements&quot; &gt; &quot;Shapes&quot;).</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>تصور</h3><p>آج ہم کینوا کے ڈیش بورڈ اور اس کی بنیادی سیٹنگز سے واقف ہوں گے۔ کینوا ایک ڈریگ اینڈ ڈراپ ڈیزائن ٹول ہے جو بیگنرز کے لیے بھی بہت آسان ہے۔ یہاں ٹیمپلیٹس، ایلیمنٹس (شکل، آئیکنز وغیرہ)، ٹیکسٹ آپشنز، اور اپلوڈ فیچرز ملتے ہیں۔ پہلے ہم اس کے انٹرفیس کو سمجھیں گے تاکہ اگلے لیسنز میں confidently کام کر سکیں۔</p><h3>مثال</h3><p>1. Canva.com پر جائیں، گوگل یا ای میل سے اکاؤنٹ بنائیں۔</p><h3>ہوم پیج</h3><p>Left side میں &quot;Create a design&quot; بٹن پر کلک کریں۔ یہاں سے custom size (جیسے 1080x1080px for Instagram) یا pre-set ٹیمپلیٹس (جیسے &quot;Instagram Post&quot;) select کریں۔</p><h3>انٹرفیس کی تفصیل</h3><p>- Top Bar: Undo/Redo، save، share، اور export آپشنز۔<br>- Left Panel: ٹیمپلیٹس، ایلیمنٹس (آئیکنز، شکل)، ٹیکسٹ، اپلوڈز، اور background آپشنز۔<br>- Canvas: اپنا ڈیزائن یہاں بنائیں—ڈریگ کرکے ایلیمنٹس add کریں۔<br>- Right Panel: ہر selected element کی properties (color، size، effects) edit کریں۔</p><h3>پریکٹس</h3><p>ایک نیا ڈیزائن create کریں (جیسے &quot;Facebook Post&quot; ٹیمپلیٹ)۔ Left panel سے ایک &quot;Text&quot; باکس add کریں، اس میں اپنا نام ٹائپ کریں، اور right panel سے font style اور color change کریں۔</p><h3>منی پراجیکٹ</h3><p>ایک simple Instagram Post (1080x1080px) بنائیں جس میں:<br>- ایک background color ہو (left panel &gt; &quot;Background&quot; &gt; color pick کریں)۔<br>- ایک ٹیکسٹ باکس ہو &quot;Hello World!&quot; (font: &quot;Poppins&quot;، color: white)۔<br>- ایک simple شکل (جیسے circle) add کریں (left panel &gt; &quot;Elements&quot; &gt; &quot;Shapes&quot;)۔</p></div>
       
       <div>

@@ -1,0 +1,18 @@
+{
+  "title": "Day 1 — بلاکچین: ایک ڈیجیٹل لیجر جو سب کو ٹرسٹ کرتا ہے",
+  "preamble": "",
+  "sections": [
+    {
+      "label": "Concept",
+      "content": "بلاکچین ایک ڈیجیٹل لیجر (رکارڈ بک) ہے جو ٹرانزیکشنز کو سیکیور، ٹرانسپیرنٹ اور ڈیسنٹرلائزڈ طریقے سے ریکارڈ کرتا ہے۔ ہر 'بلاک' میں ٹرانزیکشنز کا گروپ ہوتا ہے، اور ہر بلاک کو کرپٹوگرافک ہیش سے لنک کیا جاتا ہے—جیسے ایک ڈیجیٹل فنگر پرنٹ۔ اس سے کوئی بھی چیت نہیں کر سکتا، کیونکہ اگر کوئی بلاک چینج کرے گا تو سارے سبسیquent بلاکس انویلیڈ ہو جائیں گے۔"
+    },
+    {
+      "label": "Example",
+      "content": "تصور کریں ایک Google Sheet جو سب کے فون پر اوپن ہے، لیکن کوئی بھی ایک لائن ایڈٹ نہیں کر سکتا بنا سب کے اگریمنٹ کے۔ اگر کوئی لائن چینج کرے گا، تو سارے لوگ کو پتہ چل جائے گا۔ یہی بلاکچین کا بیسک آئیڈیا ہے—ایک shared، unchangeable record۔"
+    },
+    {
+      "label": "Practice",
+      "content": "اپنے فون یا لیپ ٹاپ پر ایک simple blockchain explorer اوپن کریں (جیسے [blockchain.com/explorer](https://www.blockchain.com/explorer))۔ Bitcoin network پر کوئی recent transaction search کریں اور دیکھ لیں:\n- Transaction ID (TXID)\n- Sender اور Receiver کے addresses\n- Amount (کتنے Bitcoin transfer ہوئے)"
+    }
+  ]
+}

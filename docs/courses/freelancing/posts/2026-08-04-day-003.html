@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T12:41:37.340597";
+  var FKC_BUILD = "2026-08-04T13:25:03.036166";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -146,6 +146,21 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
+.lang-tabs-wrap{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:14px 0;}
+.gtranslate-wrap{display:inline-flex;align-items:center;gap:6px;background:#f4f6fb;
+border:1px solid #e1e6f0;border-radius:20px;padding:4px 6px 4px 12px;}
+.gtranslate-label{font-size:.82em;font-weight:700;color:var(--primary,#2a5bd7);white-space:nowrap;}
+/* Google apna banner/branding chip page ke top par lagata hai — usay chhupa dete
+   hain taake layout na tootay, sirf dropdown selector nazar aaye */
+.goog-te-banner-frame{display:none !important;}
+body{top:0 !important;position:static !important;}
+.goog-te-gadget{font-family:inherit !important;font-size:0 !important;color:transparent !important;}
+.goog-te-gadget .goog-te-combo{font-family:'Inter',sans-serif;font-size:.82em;font-weight:600;
+color:#222;padding:5px 10px;border-radius:16px;border:1px solid #ccd4e6;background:#fff;
+cursor:pointer;}
+.goog-tooltip,.goog-tooltip:hover{display:none !important;}
+.goog-text-highlight{background:none !important;box-shadow:none !important;}
+#google_translate_element{line-height:0;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -158,7 +173,7 @@ pre code{font-family:inherit;background:none;padding:0;}
     <div class="card">
       
       
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs-wrap"><div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div><div class="gtranslate-wrap"><span class="gtranslate-label">🌐 Apni zaban chunein</span><div id="google_translate_element"></div></div><script>function fkcGoogleTranslateInit(){new google.translate.TranslateElement({pageLanguage:"ur",autoDisplay:false},"google_translate_element");}</script><script src="https://translate.google.com/translate_a/element.js?cb=fkcGoogleTranslateInit"></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Freelancing mein pehla impression aapki communication se hi banta hai. Client ko yeh feel hona chahiye ke aap professional, responsive aur solution-oriented hain. Pehla message sirf &quot;Hi&quot; ya &quot;I can do this&quot; se kaam nahi chalta—usmein specificity, confidence aur call-to-action hona zaroori hai.</p><h3>Example</h3><p>Ek client ne Fiverr par &quot;Logo design&quot; ka project post kiya hai. Aapki response yeh na ho:<br>❌ *&quot;Hi, I can make logo for you. Pls msg me.&quot;*</p><p>Balke yeh ho:<br>✅ *&quot;Hi [Client Name],<br>I noticed your project for a modern logo for your [business type]. I’ve designed 50+ logos in this niche, including for [similar client/project]. Here’s my approach:<br>1. We’ll discuss your brand colors &amp; style in a quick call<br>2. I’ll send 3 concepts within 24 hours<br>3. Unlimited revisions till you’re 100% satisfied<br>Can we schedule a 10-min call today at 3 PM? Looking forward to your reply.<br>Best,<br>[Your Name]&quot;*</p><h3>Practice</h3><p>Apne Fiverr/Upwork inbox se kisi bhi 1 pending proposal ya message ka draft likhein jo aapne abhi tak send kiya hai. Use edit karke pehle paragraph ko 3x zyada effective banayein (specificity + call-to-action add karke).</p><h3>Mini Project</h3><p>Ek dummy client ka message banaayein (jaise &quot;I need a WordPress website for my restaurant&quot;) aur uske liye 3 different first-message drafts likhein—ek for Fiverr, ek for Upwork, aur ek for cold email.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>فری لانسنگ میں پہلا تاثر آپ کی کمیونیکیشن سے ہی بنتا ہے۔ کلائنٹ کو یہ محسوس ہونا چاہیے کہ آپ پیشہ ور، جواب دہ اور حل پر مرکوز ہیں۔ پہلا پیغام بس &#x27;ہیلو&#x27; یا &#x27;میں یہ کر سکتا ہوں&#x27; سے کام نہیں چلتا—اس میں مخصوصیت، اعتماد اور کارروائی کا بل ہونا ضروری ہے۔</p><h3>Example</h3><p>ایک کلائنٹ نے Fiverr پر &#x27;لوگو ڈیزائن&#x27; کا پروجیکٹ پوسٹ کیا ہے۔ آپ کی جوابی پیغام یوں نہ ہو:</p><p>❌ *&quot;ہیلو، میں آپ کے لیے لوگو بنا سکتا ہوں۔ براہ کرم مجھے پیغام دیں۔&quot;*</p><p>بلکہ یوں ہو:</p><p>✅ *&quot;ہیلو [کلائنٹ کا نام]،<br>میں نے آپ کے [بِزنس ٹائپ] کے لیے جدید لوگو کے پروجیکٹ پر نظر ڈالی۔ میں نے اس نِچ میں 50+ لوگو ڈیزائن کیے ہیں، جن میں [مشابه کلائنٹ/پروجیکٹ] کے لیے بھی شامل ہیں۔ میرا طریقہ کار یہ ہے:<br>1. ہم ایک تیز کال میں آپ کے برانڈ کے رنگوں اور اسٹائل پر بات کریں گے<br>2. میں 24 گھنٹوں کے اندر 3 تصورات بھیجوں گا<br>3. آپ کی 100% رضامندی تک لامحدود ریویژنز<br>کیا آج 3 بجے شام کو 10 منٹ کی کال شیڈول کر سکتے ہیں؟ آپ کی جوابی توقع میں ہوں گا۔<br>شکریہ،<br>[آپ کا نام]&quot;*</p><h3>Practice</h3><p>اپنے Fiverr/Upwork ان باکس سے کسی بھی ایک pending proposal یا پیغام کا ڈرافٹ لکھیں جو آپ نے ابھی تک بھیجا ہے۔ اسے ایڈٹ کرکے پہلے پیراگراف کو 3x زیادہ موثر بنائیں (مخصوصیت + کارروائی کا بل شامل کرکے)۔</p><h3>Mini Project</h3><p>ایک dummy کلائنٹ کا پیغام بنائیں (جیسے &#x27;میں اپنے ریسٹورنٹ کے لیے WordPress ویب سائٹ چاہتا ہوں&#x27;) اور اس کے لیے 3 مختلف پہلا پیغام ڈرافٹ لکھیں—ایک Fiverr کے لیے، ایک Upwork کے لیے، اور ایک سرد ای میل کے لیے۔</p></div>
       
       <div>
