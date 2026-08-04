@@ -2127,6 +2127,33 @@
         ]
       ],
       "answer_key": "iso 100, iso 1600, 1/30s blur, 1/500s sharp"
+    },
+    {
+      "day": 2,
+      "id": "day-002",
+      "date": "2026-08-04",
+      "title": "Day 2 — Framing & Perspective: Beyond the Rule of Thirds",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Composition ka matlab hai photo ko is tarah arrange karna ke wo dekhne wale ko behtareen visual experience mile. Rule of thirds ke alawa bhi kayi techniques hain jo photos ko dynamic banati hain—jaise leading lines, symmetry, negative space, aur depth of field ka istemal."
+        ],
+        [
+          "Example",
+          "Ek sadak ki photo lo. Agar tum usko bilkul center mein rakhoge, photo dull lagti hai. Lekin agar tum road ko leading line ki tarah use karke photo ke ek corner se start karke doosre corner tak le jao, to photo zyada engaging ho jati hai. Camera ki height bhi matter karti hai—ground level se photo lene se drama badh jata hai."
+        ],
+        [
+          "Practice",
+          "Apne phone ya camera se ek photo lo jisme ek leading line ho (sarak, rail track, fence, ya building ki side). Photo ko aise frame karo ke line photo ke ek corner se start ho aur doosre corner tak chale."
+        ],
+        [
+          "Mini Project",
+          "Ek mini photo series banayein (3-5 photos) jisme har photo mein ek alag composition technique use ki gayi ho:\n1. Rule of thirds\n2. Leading lines\n3. Symmetry (mirror image)\n4. Negative space\nHar photo ka caption likhein ke kaunsa technique use kiya hai."
+        ]
+      ],
+      "answer_key": "leading lines, dynamic framing, depth, negative space",
+      "translations": {}
     }
   ],
   "voiceover-podcasting": [
