@@ -1749,13 +1749,15 @@ def build_translation_prompt(lang_label, title, preamble, sections):
         f"{lang_label} translate karo — matlab, tone, aur structure bilkul wahi rakho, "
         "sirf zaban/script badlo, kuch add ya remove mat karo. "
         "Zaroori rules: "
-        "1) HAR sentence ko poora script mein likho — koi bhi English sentence ya phrase "
-        "jaise-taise (untranslated) mat chhodo; sirf khaas naam (jaise Midjourney, "
-        "ChatGPT, YouTube) Latin script mein rehne do, baaki sab (grammar, jodne wale "
-        "alfaz, explanation) poori tarah target script mein ho. "
-        "2) 'preamble' aur har section ka 'content' ek dusre se ALAG aur UNIQUE hona "
+        "1) Poora jawab Arabic/Nastaliq huroof (جیسے: ا، ب، پ، ت، ٹ، ث، ج، چ، ح، خ، د، "
+        "ڈ، ر، ڑ، ز، ژ، س، ش، ص، ض، ط، ظ، ع، غ، ف، ق، ک، گ، ل، م، ن، و، ہ، ی، ے) mein "
+        "likho — Roman/Latin alphabet (a, b, c...) mein HARGIZ kuch mat likho, khaas "
+        "naam (jaise Midjourney, ChatGPT, YouTube) chhod kar. "
+        "2) HAR sentence ko poora script mein likho — koi bhi English ya Roman Urdu "
+        "sentence jaise-taise (untranslated) mat chhodo. "
+        "3) 'preamble' aur har section ka 'content' ek dusre se ALAG aur UNIQUE hona "
         "chahiye — koi bhi paragraph ya jumla do jagah repeat/copy-paste mat karo. "
-        "3) Kisi bhi field ke andar ek hi jumla ya phrase baar baar loop mein mat likho. "
+        "4) Kisi bhi field ke andar ek hi jumla ya phrase baar baar loop mein mat likho. "
         "SIRF valid JSON return karo, koi extra text, koi markdown code-fence nahi, "
         "bilkul is shape mein: "
         '{"title": "...", "preamble": "...", "sections": [{"label": "...", "content": "..."}]}. '
@@ -1820,9 +1822,62 @@ def _texts_are_near_duplicate(a, b, min_len=40):
     return shorter in longer and len(shorter) / len(longer) > 0.6
 
 
-def _translation_is_sane(data):
+def _script_ratio(text):
+    """Text mein Arabic-script (Urdu/Sindhi) letters ka ratio nikalta hai,
+    Latin letters ke muqable mein — taake pata chale ke translation asal
+    mein Urdu/Sindhi script mein hai ya sirf Roman/Latin text hai jo copy
+    karke thoda idhar-udhar kar diya gaya."""
+    arabic = len(re.findall(r"[\u0600-\u06FF\u0750-\u077F]", text or ""))
+    latin = len(re.findall(r"[A-Za-z]", text or ""))
+    total = arabic + latin
+    if total == 0:
+        return None  # sirf numbers/symbols — kuch nahi bata sakte
+    return arabic / total
+
+
+def _script_matches_lang(data, code):
+    """ur/sd translations mein zyada tar matn Arabic/Urdu script mein hona
+    chahiye. Agar AI ne sirf Roman Urdu jaisa Latin text de diya (screenshot
+    wala bug — 'اردو' tab pe bhi Latin text dikh raha tha), to isay bhi
+    garbled/bad translation samjho aur dobara generate karwao."""
+    if code not in ("ur", "sd"):
+        return True
+    parts = [data.get("title", ""), data.get("preamble", "")]
+    for sec in data.get("sections", []) or []:
+        if isinstance(sec, dict):
+            parts.append(sec.get("label", ""))
+            parts.append(sec.get("content", ""))
+    combined = " ".join(p for p in parts if p)
+    ratio = _script_ratio(combined)
+    if ratio is None:
+        return True
+    return ratio >= 0.6
+
+
+def _word_overlap_ratio(a, b, min_len=40):
+    """Jaccard-style overlap — jab do paragraphs alfaz thoda idhar-udhar
+    karke bhi wahi baat dobara keh rahe hon (jaise preamble ne 'Concept'
+    section wali baat apne alfaz mein dobara likh di), to substring wala
+    check miss kar sakta hai, isliye ye zyada lenient duplicate-detector
+    hai."""
+    na, nb = _normalize_for_compare(a), _normalize_for_compare(b)
+    if len(na) < min_len or len(nb) < min_len:
+        return 0.0
+    wa, wb = set(na.split()), set(nb.split())
+    if not wa or not wb:
+        return 0.0
+    return len(wa & wb) / len(wa | wb)
+
+
+def _translation_is_sane(data, code=None, orig_preamble=None):
     preamble = data.get("preamble", "") or ""
     if _is_degenerate_text(preamble):
+        return False
+    # agar original lesson mein preamble tha hi nahi (khaali), to translation
+    # mein bhi ek naya intro paragraph khud se bana kar nahi daalna chahiye —
+    # yeh fabricated/duplicate content hai (screenshot wala bug: preamble
+    # mein wahi baat likh di jo "Concept" section mein bhi thi)
+    if orig_preamble is not None and not orig_preamble.strip() and len(preamble.strip()) > 30:
         return False
     sections = data.get("sections", []) or []
     contents = []
@@ -1831,15 +1886,23 @@ def _translation_is_sane(data):
         if _is_degenerate_text(content):
             return False
         contents.append(content)
-    # preamble kisi bhi section ke content se duplicate to nahi
+    # preamble kisi bhi section ke content se duplicate to nahi (exact ya
+    # lagbhag exact copy-paste)
     for content in contents:
         if _texts_are_near_duplicate(preamble, content):
+            return False
+        if _word_overlap_ratio(preamble, content) > 0.55:
             return False
     # do sections aapas mein bhi duplicate to nahi
     for i in range(len(contents)):
         for j in range(i + 1, len(contents)):
             if _texts_are_near_duplicate(contents[i], contents[j]):
                 return False
+            if _word_overlap_ratio(contents[i], contents[j]) > 0.55:
+                return False
+    # ur/sd ke liye asal script (Nastaliq/Arabic) mein hona zaroori hai
+    if not _script_matches_lang(data, code):
+        return False
     return True
 
 
@@ -1854,7 +1917,7 @@ def get_or_generate_translations(slug, day_num, title, preamble, sections):
             try:
                 with open(cache_path, encoding="utf-8") as f:
                     cached = json.load(f)
-                if _translation_is_sane(cached):
+                if _translation_is_sane(cached, code, preamble):
                     translations[code] = cached
                     continue
                 print(f"[{slug}] Day {day_num} {lang_label} cache garbled (repetitive) mila, dobara generate ho raha hai.")
@@ -1867,8 +1930,8 @@ def get_or_generate_translations(slug, day_num, title, preamble, sections):
                 prompt = build_translation_prompt(lang_label, title, preamble, sections)
                 raw = ai_generate(prompt)
                 data = _parse_translation_json(raw)
-                if not _translation_is_sane(data):
-                    raise ValueError("AI ne repetitive/garbled output diya (loop detect hua)")
+                if not _translation_is_sane(data, code, preamble):
+                    raise ValueError("AI ne repetitive/galat-script/duplicate-paragraph output diya")
                 translations[code] = data
                 with open(cache_path, "w", encoding="utf-8") as f:
                     json.dump(data, f, ensure_ascii=False, indent=2)
@@ -2660,7 +2723,10 @@ def heal_degenerate_translations(posts):
             translations = lesson.get("translations")
             if not translations:
                 continue
-            bad_codes = [c for c, d in translations.items() if not _translation_is_sane(d)]
+            bad_codes = [
+                c for c, d in translations.items()
+                if not _translation_is_sane(d, c, lesson.get("preamble", ""))
+            ]
             if not bad_codes:
                 continue
             print(f"[{slug}] Day {lesson['day']} mein degenerate translation mili ({', '.join(bad_codes)}), heal ho raha hai...")
