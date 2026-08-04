@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T15:55:00.424940";
+  var FKC_BUILD = "2026-08-04T16:51:55.506076";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -78,15 +78,6 @@ padding:11px 18px;border:none;border-radius:6px;cursor:pointer;
 margin:6px 6px 0 0;}
 .btn.alt{background:#fff;color:var(--ink);border:1px solid var(--line);}
 .btn.green{background:var(--accent);}
-.course-search-wrap{position:relative;margin:14px 0 4px;}
-.course-search{width:100%;box-sizing:border-box;padding:12px 14px 12px 40px;
-font-size:14px;border:1px solid var(--line);border-radius:8px;
-background:var(--panel);color:var(--ink);outline:none;}
-.course-search:focus{border-color:var(--primary);}
-.course-search-wrap::before{content:"🔍";position:absolute;left:13px;top:50%;
-transform:translateY(-50%);font-size:14px;opacity:.6;pointer-events:none;}
-.course-search-empty{display:none;text-align:center;color:var(--muted);
-font-size:.9em;margin:18px 0;}
 .grid{display:flex;flex-direction:column;gap:12px;margin:18px 0 30px;}
 .ccard{display:flex;align-items:center;gap:14px;background:var(--panel);
 border:1px solid var(--line);border-radius:10px;padding:14px;
@@ -155,21 +146,6 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
-.lang-tabs-wrap{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:14px 0;}
-.gtranslate-wrap{display:inline-flex;align-items:center;gap:6px;background:#f4f6fb;
-border:1px solid #e1e6f0;border-radius:20px;padding:4px 6px 4px 12px;}
-.gtranslate-label{font-size:.82em;font-weight:700;color:var(--primary,#2a5bd7);white-space:nowrap;}
-/* Google apna banner/branding chip page ke top par lagata hai — usay chhupa dete
-   hain taake layout na tootay, sirf dropdown selector nazar aaye */
-.goog-te-banner-frame{display:none !important;}
-body{top:0 !important;position:static !important;}
-.goog-te-gadget{font-family:inherit !important;font-size:0 !important;color:transparent !important;}
-.goog-te-gadget .goog-te-combo{font-family:'Inter',sans-serif;font-size:.82em;font-weight:600;
-color:#222;padding:5px 10px;border-radius:16px;border:1px solid #ccd4e6;background:#fff;
-cursor:pointer;}
-.goog-tooltip,.goog-tooltip:hover{display:none !important;}
-.goog-text-highlight{background:none !important;box-shadow:none !important;}
-#google_translate_element{line-height:0;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -182,7 +158,7 @@ cursor:pointer;}
     <div class="card">
       
       
-      <div class="lang-tabs-wrap"><div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div><div class="gtranslate-wrap"><span class="gtranslate-label">🌐 Apni zaban chunein</span><div id="google_translate_element"></div></div><script>function fkcGoogleTranslateInit(){new google.translate.TranslateElement({pageLanguage:"ur",autoDisplay:false},"google_translate_element");}</script><script src="https://translate.google.com/translate_a/element.js?cb=fkcGoogleTranslateInit"></script></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Aaj hum apna blog **Blogger** ya **WordPress** par setup karna seekhenge. Blogger free hai (Google ka platform), lekin WordPress zyada flexible hai (hosting khud ki lena hoti hai). Har ek ke pros-cons samajh kar decide karna zaroori hai.</p><h3>Example</h3><h3>Blogger Setup (5 min mein)</h3><p>1. Google account se [blogger.com](https://blogger.com) par jao.<br>2. &quot;New Blog&quot; par click karo, title (e.g., &quot;Urdu Tech Tips&quot;), address (e.g., `urdutechtips.blogspot.com`) enter karo.<br>3. Template choose karo (simple &quot;Contempo&quot; ya &quot;Soho&quot;).<br>4. &quot;Create blog!&quot; par click karo. Done!</p><h3>WordPress Setup (15 min mein)</h3><p>1. Hosting khareedo (e.g., Bluehost, Hostinger) — ₹2000/month se shuru.<br>2. Domain register karo (e.g., `urdutechtips.com`).<br>3. WordPress install karo (hosting ke cPanel se &quot;1-click install&quot; option use karo).<br>4. Login karo, theme install karo (e.g., &quot;Astra&quot; ya &quot;GeneratePress&quot;).<br>5. Pages (Home, About) aur first post likh kar publish karo.</p><h3>Practice</h3><p>Apna ek blog **Blogger ya WordPress** par setup karo (agar WordPress choose karte hain to hosting khareedne ki zaroorat hai).</p><h3>Mini Project</h3><p>Apne blog ka **Homepage design** karo — 1-2 sections add karo (e.g., &quot;Latest Posts&quot; widget ya &quot;About Me&quot; section).</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>تصور</h3><p>آج ہم اپنا بلاگ **بلاگر** یا **ورڈپریس** پر سیٹ اپ کرنا سیکھیں گے۔ بلاگر مفت ہے (گوگل کا پلیٹ فارم)، لیکن ورڈپریس زیادہ لچک دار ہے (ہوسٹنگ خود لینی ہوتی ہے)۔ ہر ایک کے فائدے اور نقصانات سمجھ کر فیصلہ کرنا ضروری ہے۔</p><h3>مثال</h3><h3>بلاگر سیٹ اپ (5 منٹ میں)</h3><p>1. گوگل اکاؤنٹ سے [blogger.com](https://blogger.com) پر جائیں۔<br>2. &quot;نیا بلاگ&quot; پر کلک کریں، ٹائٹل (مثلاً &quot;اردو ٹیک ٹپس&quot;)، ایڈریس (مثلاً `urdutechtips.blogspot.com`) انٹر کریں۔<br>3. ٹیمپلیٹ چن لیں (سادہ &quot;Contempo&quot; یا &quot;Soho&quot;)۔<br>4. &quot;بلاگ بنائیں!&quot; پر کلک کریں۔ ہو گیا!</p><h3>ورڈپریس سیٹ اپ (15 منٹ میں)</h3><p>1. ہوسٹنگ خریدو (مثلاً Bluehost، Hostinger) — ₹2000/ماہ سے شروع۔<br>2. ڈومین رجسٹر کرو (مثلاً `urdutechtips.com`)۔<br>3. ورڈپریس انسٹال کرو (ہوسٹنگ کے cPanel سے &quot;1-click install&quot; آپشن استعمال کرو)۔<br>4. لاگ ان کرو، تھیم انسٹال کرو (مثلاً &quot;Astra&quot; یا &quot;GeneratePress&quot;)۔<br>5. پیجز (ہوم، اباؤٹ) اور پہلا پوسٹ لکھ کر پبلش کرو۔</p><h3>مشق</h3><p>اپنا ایک بلاگ **بلاگر یا ورڈپریس** پر سیٹ اپ کرو (اگر ورڈپریس چننے کا ارادہ ہے تو ہوسٹنگ خریدنے کی ضرورت ہے)۔</p><h3>مینی پراجیکٹ</h3><p>اپنے بلاگ کا **ہوم پیج ڈیزائن** کرو — 1-2 سیکشنز ایڈ کرو (مثلاً &quot;تازہ ترین پوسٹس&quot; وِجٹ یا &quot;مجھے بارے میں&quot; سیکشن)۔</p></div>
       
       <div>

@@ -1633,6 +1633,33 @@
           ]
         }
       }
+    },
+    {
+      "day": 4,
+      "id": "day-004",
+      "date": "2026-08-04",
+      "title": "Day 4 — **Pricing Strategy: Apne Services Ka Rate Kaise Set Karein (Bina Ghate Ke)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Freelancing mein pricing ka matlab hai apne time, skill aur effort ka correct value set karna. Agar rate zyada rakha to clients door ho jayenge, kam rakha to ghata ho jayega. Har skill ka market rate hota hai—usko research karke apna rate decide karna hai. Beginners ko initially low rate par bhi accept karna chahiye, lekin time ke saath increase karna hai."
+        ],
+        [
+          "Example",
+          "Ek logo design freelancer ka case: Fiverr par beginner logo design gigs ₹500-₹1500 ke beech hoti hain. Agar aap 3 designs offer kar rahe hain, to ₹1000-₹1200 per gig set kar sakte hain. Lekin agar aap 10+ designs offer kar rahe hain, to ₹2000-₹3000 bhi ho sakta hai. Market research ke liye Fiverr/Upwork par similar gigs check karein."
+        ],
+        [
+          "Practice",
+          "Apne skill ke liye 3 different pricing levels set karein:\n1. Basic package (₹X)\n2. Standard package (₹Y)\n3. Premium package (₹Z)\nHar package mein kya included hai, likhein."
+        ],
+        [
+          "Mini Project",
+          "Ek Excel sheet ya Google Sheet banayein jisme:\n- Apne skill ke 5-10 competitors ke rates note karein\n- Apne 3 pricing levels define karein\n- Har level ke features list karein"
+        ]
+      ],
+      "answer_key": "market research, competitor analysis, value-based pricing, tiered packages",
+      "translations": {}
     }
   ],
   "graphic-design-canva": [
@@ -3447,7 +3474,30 @@
         ]
       ],
       "answer_key": "engaging structure, h1/h2 headings, keyword placement, meta description, internal links",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "Day 3 — **بلاگ پوسٹ کو اینگجنگ اور SEO-Friendly بنانے کے 5 آسان طریقے**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "آج ہم سیکھیں گے کہ ایک بلاگ پوسٹ کو ایسے لکھا جائے جو نہ صرف ریڈرز کو پسند آئے، بلکہ گوگل بھی اسے ٹاپ پر رکھے۔ اینگجنگ کامیاب کرنے کے لیے ہیڈنگ سٹرکچر، انٹروڈکشن، باڈی پیراگراف، اور کانکلیژن کا توازن ضروری ہے۔ SEO-friendly بنانے کے لیے کیورڈز، میٹا ڈسکریپشن، اور انٹرنل لنکنگ کا استعمال کرنا ہوتا ہے۔"
+            },
+            {
+              "label": "Example",
+              "content": "ایک فٹنس بلاگ کے لیے ''Morning Walk Ke Fayde'' ٹاپک پر پوسٹ لکھ رہے ہیں۔ پہلے ہیڈنگ (H1) main title: ''Morning Walk Ke Fayde: Health Se Lekar Mood Tak'' (کیورڈ ''morning walk benefits'' include کیا)۔ انٹروڈکشن میں 2-3 لائنوں میں ٹاپک کا امپورٹینس بتایا۔ باڈی پیراگراف میں ہر بینیفٹ کو الگ الگ لکھا (e.g., ''Weight Loss Ke Liye Morning Walk Kaise Help Karegi'')۔ کانکلیژن میں ریڈرز کو موٹیویٹ کیا کہ وہ morning walk شروع کریں۔"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے بلاگ نیچے سے ایک ٹاپک چووز کریں اور اس کے لیے ایک آؤٹ لائن بنائیں (3-4 ہیڈنگ کے ساتھ)۔ ہر ہیڈنگ کا پرپوز کلئیر کریں (e.g., انٹروڈکشن، بینیفٹس، ٹپس، کانکلیژن)۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "اپنے سلیکٹڈ ٹاپک کا پہلا ڈرافٹ لکھیں (500-700 ورڈز) اور اس میں: 1) ایک main heading (H1) اور 3 subheadings (H2) استعمال کریں۔ 2) 1-2 کیورڈز نیچرللی include کریں (e.g., ''morning walk benefits'' یا ''early morning exercise'')۔ 3) ایک کانکلیژن پیراگراف ایڈ کریں جو ریڈرز کو ایکشن لینے کے لیے گائیڈ کرے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "photography-editing": [

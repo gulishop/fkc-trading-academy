@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T15:55:00.424940";
+  var FKC_BUILD = "2026-08-04T16:51:55.506076";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -78,15 +78,6 @@ padding:11px 18px;border:none;border-radius:6px;cursor:pointer;
 margin:6px 6px 0 0;}
 .btn.alt{background:#fff;color:var(--ink);border:1px solid var(--line);}
 .btn.green{background:var(--accent);}
-.course-search-wrap{position:relative;margin:14px 0 4px;}
-.course-search{width:100%;box-sizing:border-box;padding:12px 14px 12px 40px;
-font-size:14px;border:1px solid var(--line);border-radius:8px;
-background:var(--panel);color:var(--ink);outline:none;}
-.course-search:focus{border-color:var(--primary);}
-.course-search-wrap::before{content:"🔍";position:absolute;left:13px;top:50%;
-transform:translateY(-50%);font-size:14px;opacity:.6;pointer-events:none;}
-.course-search-empty{display:none;text-align:center;color:var(--muted);
-font-size:.9em;margin:18px 0;}
 .grid{display:flex;flex-direction:column;gap:12px;margin:18px 0 30px;}
 .ccard{display:flex;align-items:center;gap:14px;background:var(--panel);
 border:1px solid var(--line);border-radius:10px;padding:14px;
@@ -155,21 +146,6 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
-.lang-tabs-wrap{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:14px 0;}
-.gtranslate-wrap{display:inline-flex;align-items:center;gap:6px;background:#f4f6fb;
-border:1px solid #e1e6f0;border-radius:20px;padding:4px 6px 4px 12px;}
-.gtranslate-label{font-size:.82em;font-weight:700;color:var(--primary,#2a5bd7);white-space:nowrap;}
-/* Google apna banner/branding chip page ke top par lagata hai — usay chhupa dete
-   hain taake layout na tootay, sirf dropdown selector nazar aaye */
-.goog-te-banner-frame{display:none !important;}
-body{top:0 !important;position:static !important;}
-.goog-te-gadget{font-family:inherit !important;font-size:0 !important;color:transparent !important;}
-.goog-te-gadget .goog-te-combo{font-family:'Inter',sans-serif;font-size:.82em;font-weight:600;
-color:#222;padding:5px 10px;border-radius:16px;border:1px solid #ccd4e6;background:#fff;
-cursor:pointer;}
-.goog-tooltip,.goog-tooltip:hover{display:none !important;}
-.goog-text-highlight{background:none !important;box-shadow:none !important;}
-#google_translate_element{line-height:0;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -182,7 +158,7 @@ cursor:pointer;}
     <div class="card">
       
       
-      <div class="lang-tabs-wrap"><div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div><div class="gtranslate-wrap"><span class="gtranslate-label">🌐 Apni zaban chunein</span><div id="google_translate_element"></div></div><script>function fkcGoogleTranslateInit(){new google.translate.TranslateElement({pageLanguage:"ur",autoDisplay:false},"google_translate_element");}</script><script src="https://translate.google.com/translate_a/element.js?cb=fkcGoogleTranslateInit"></script></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Viral Reels ya Shorts banane ke liye 3 cheez zaroori hain: **Attention Grab Karna** (pehle 3 seconds), **Engagement Trigger Karna** (like/comment/share ke liye reason dena), aur **Trend ka Sahi Use Karna**. Bina plan ke upload karne se chance kam hote hain. Aaj hum in 5 rules par focus karenge jo har viral content ki backbone hoti hain.</p><h3>Example</h3><p>Ek **food recipe Reel** ka example lete hain:<br>1.</p><h3>Hook (0-3 sec)</h3><p>&quot;Yeh 1 minute ka recipe aapki dinner ko banaye *chef’s kiss*!&quot; (bold text + fast zoom on dish)<br>2.</p><h3>Trend Use</h3><p>&quot;POV: Aapke fridge mein sirf *2 eggs* hain&quot; (trending audio + text overlay)<br>3.</p><h3>Engagement Prompt</h3><p>&quot;Comment mein batao aapka favorite breakfast kya hai? ⬇️&quot; (screen pe text + arrow)<br>4.</p><h3>CTA (Call-to-Action)</h3><p>&quot;Agar pasand aaya to share zaroor karna!&quot; (caption mein link add karke)<br>5.</p><h3>Hashtags</h3><p>3-5 relevant (#Foodie, #QuickRecipe, #ViralFood) + 1 trending (#FoodTok).</p><h3>Practice</h3><p>Apne phone se ek **15-30 sec ka Reel shoot karo** jisme:<br>- Pehle 3 seconds mein koi shocking/interesting shot ho (e.g., ek cheez ka explosion, fast transition, ya bold text).<br>- Trendy audio use karo (Instagram/Reels explore page se check karo).<br>- Caption mein ek question ya CTA add karo.</p><h3>Mini Project</h3><p>Ek **7-day content calendar** banaye jisme har din ke liye alag type ka Reel idea ho (e.g., Monday: &quot;POV&quot; trend, Tuesday: &quot;Before &amp; After&quot;, Wednesday: &quot;Myth Buster&quot;). Har idea ke saath ek trendy audio ka naam bhi likhna.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>وائرل ریلز یا شورٹس بنانے کے لیے 3 چیزیں ضروری ہیں: **اٹینشن گرب کرنا** (پہلے 3 سیکنڈز)، **اینگیجمنٹ ٹرگر کرنا** (لائک/کمنٹ/شئیر کے لیے ریزن دینا)، اور **ٹرینڈ کا صحیح استعمال کرنا**۔ بنا پلان کے اپلوڈ کرنے سے چانس کم ہوتے ہیں۔ آج ہم ان 5 رولز پر فوکس کریں گے جو ہر وائرل کنیٹ کی بیکبون ہوتی ہیں۔</p><h3>Example</h3><p>ایک **فوڈ ریسپی recipe Reel** کا مثال لیتے ہیں:</p><p>1. **ہک (0-3 سیکنڈ)**:<br>&quot;یہ 1 منٹ کا ریسپی آپکی ڈنر کو بنائے *شیف کِس*!&quot; (بولڈ ٹیکسٹ + فاسٹ زوم آن ڈش)</p><p>2. **ٹرینڈ یووز**:<br>&quot;POV: آپکے فرج میں صرف *2 eggs* ہیں&quot; (ٹرینڈنگ آڈیو + ٹیکسٹ اوورلے)</p><p>3. **اینگیجمنٹ پرامپٹ**:<br>&quot;کمنٹ میں بتاؤ آپکا فیورٹ بریک فاسٹ کیا ہے؟ ⬇️&quot; (اسکرین پر ٹیکسٹ + ارو)</p><p>4. **سی ٹی اے (Call-to-Action)**:<br>&quot;اگر پسند آیا تو شئیر زورور کرنا!&quot; (کیپشن میں لنک ایڈ کرکے)</p><p>5. **ہیشٹگس**:<br>3-5 ریلیونٹ (#Foodie, #QuickRecipe, #ViralFood) + 1 ٹرینڈنگ (#FoodTok).</p><h3>Practice</h3><p>اپنے فون سے ایک **15-30 سیکنڈ کا Reel shoot کرو** جس میں:</p><p>- پہلے 3 سیکنڈز میں کوئی شاکنگ/انٹرسٹنگ شاٹ ہو (e.g., ایک چیز کا ایکسپلوشن، فاسٹ ٹرانزیشن، یا بولڈ ٹیکسٹ).<br>- ٹرینڈی آڈیو یووز کرو (انسٹاگرام/ریلز ایکسپلور پيج سے چیک کرو).<br>- کیپشن میں ایک سوال یا سی ٹی اے ایڈ کرو.</p><p>**Mini Project:**<br>ایک **7-day content calendar** بنائے جس میں ہر دن کے لیے الگ ٹائپ کا Reel آئیڈیا ہو (e.g., Monday: &quot;POV&quot; ٹرینڈ، Tuesday: &quot;Before &amp; After&quot;، Wednesday: &quot;Myth Buster&quot;)۔ ہر آئیڈیا کے ساتھ ایک ٹرینڈنگ آڈیو کا نام بھی لکھنا۔</p></div>
       
       <div>

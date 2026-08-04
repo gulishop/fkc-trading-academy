@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T15:55:00.424940";
+  var FKC_BUILD = "2026-08-04T16:51:55.506076";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -78,15 +78,6 @@ padding:11px 18px;border:none;border-radius:6px;cursor:pointer;
 margin:6px 6px 0 0;}
 .btn.alt{background:#fff;color:var(--ink);border:1px solid var(--line);}
 .btn.green{background:var(--accent);}
-.course-search-wrap{position:relative;margin:14px 0 4px;}
-.course-search{width:100%;box-sizing:border-box;padding:12px 14px 12px 40px;
-font-size:14px;border:1px solid var(--line);border-radius:8px;
-background:var(--panel);color:var(--ink);outline:none;}
-.course-search:focus{border-color:var(--primary);}
-.course-search-wrap::before{content:"🔍";position:absolute;left:13px;top:50%;
-transform:translateY(-50%);font-size:14px;opacity:.6;pointer-events:none;}
-.course-search-empty{display:none;text-align:center;color:var(--muted);
-font-size:.9em;margin:18px 0;}
 .grid{display:flex;flex-direction:column;gap:12px;margin:18px 0 30px;}
 .ccard{display:flex;align-items:center;gap:14px;background:var(--panel);
 border:1px solid var(--line);border-radius:10px;padding:14px;
@@ -155,21 +146,6 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
-.lang-tabs-wrap{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:14px 0;}
-.gtranslate-wrap{display:inline-flex;align-items:center;gap:6px;background:#f4f6fb;
-border:1px solid #e1e6f0;border-radius:20px;padding:4px 6px 4px 12px;}
-.gtranslate-label{font-size:.82em;font-weight:700;color:var(--primary,#2a5bd7);white-space:nowrap;}
-/* Google apna banner/branding chip page ke top par lagata hai — usay chhupa dete
-   hain taake layout na tootay, sirf dropdown selector nazar aaye */
-.goog-te-banner-frame{display:none !important;}
-body{top:0 !important;position:static !important;}
-.goog-te-gadget{font-family:inherit !important;font-size:0 !important;color:transparent !important;}
-.goog-te-gadget .goog-te-combo{font-family:'Inter',sans-serif;font-size:.82em;font-weight:600;
-color:#222;padding:5px 10px;border-radius:16px;border:1px solid #ccd4e6;background:#fff;
-cursor:pointer;}
-.goog-tooltip,.goog-tooltip:hover{display:none !important;}
-.goog-text-highlight{background:none !important;box-shadow:none !important;}
-#google_translate_element{line-height:0;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -182,7 +158,7 @@ cursor:pointer;}
     <div class="card">
       
       
-      <div class="lang-tabs-wrap"><div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div><div class="gtranslate-wrap"><span class="gtranslate-label">🌐 Apni zaban chunein</span><div id="google_translate_element"></div></div><script>function fkcGoogleTranslateInit(){new google.translate.TranslateElement({pageLanguage:"ur",autoDisplay:false},"google_translate_element");}</script><script src="https://translate.google.com/translate_a/element.js?cb=fkcGoogleTranslateInit"></script></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Ek achha gig ya proposal client ko impress karne ka pehla kadam hai. Ismein **clear value proposition**, **specific benefits**, aur **call-to-action** hona zaroori hai. Copywriting ki basic techniques (like AIDA: Attention, Interest, Desire, Action) use karo taake client ka focus tum par rahe.</p><h3>Example</h3><p>Imagine a client searching for &quot;logo design&quot;. Ek **bad** proposal:<br>*&quot;I can design your logo. Contact me.&quot;*</p><p>Ek **achha** proposal:<br>*&quot;I’ll design a **modern, scalable logo** in 48 hours that matches your brand’s personality. My past clients saw **30% more engagement** after rebranding. Let’s discuss your vision—reply with your color preferences!&quot;*</p><h3>Practice</h3><p>Apne **Day 1** ke skill ke liye ek **3-line proposal** likho jo:<br>1. Client ki **specific problem** mention kare<br>2. Tumhari **unique solution** bataye<br>3. **Next step** (e.g., &quot;DM me your deadline&quot;)</p><h3>Mini Project</h3><p>Ek **fake gig** create karo (Upwork/Fiverr par) for a service you can offer. Include:<br>- **Title** (e.g., &quot;I’ll Design a Professional LinkedIn Banner in 24 Hours&quot;)<br>- **3 bullet points** of benefits<br>- **Pricing** (fixed or starting at $X)</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>کسی بھی اچھے gig ya proposal کا پہلا اور اہم پہلو یہ ہے کہ وہ کلائنٹ کو متاثر کرنے کا ذریعہ بنے۔ اس میں **واضح قیمت کا پیشکش** (value proposition)، **مخصوص فوائد** (specific benefits)، اور **عمل کی دعوت** (call-to-action) شامل ہونا لازمی ہے۔ Copywriting کی بنیادی تکنیکوں جیسے AIDA (Attention, Interest, Desire, Action) کو استعمال کرو تاکہ کلائنٹ کی توجہ تم پر مرکوز رہے۔</p><h3>Example</h3><p>تصور کرو کہ کوئی کلائنٹ &#x27;لوگو ڈیزائن&#x27; کی تلاش میں ہے۔ ایک **برے** proposal کچھ یوں ہو سکتا ہے:</p><p>*&quot;میں تمھارا لوگو ڈیزائن کر سکتا ہوں۔ مجھ سے رابطہ کرو۔*&quot;</p><p>جبکہ ایک **اچھا** proposal کچھ یوں ہونا چاہئے:</p><p>*&quot;میں تمھارے لیے ایک **جدید اور سکیل ایبل لوگو** ڈیزائن کروں گا جو 48 گھنٹوں میں مکمل ہو جائے گا اور تمھاری برانڈ کی شخصیت کے مطابق ہوگا۔ میرے پچھلے کلائنٹس نے ری برانڈنگ کے بعد **30% زیادہ انگیجمنٹ** دیکھی ہے۔ آؤ، تمھاری ویژن پر بات کریں—اپنی پسندیدہ رنگوں کی ترجیحات کا جواب دو!&quot;*</p><h3>Practice</h3><p>اپنے **Day 1** کے سکل کے مطابق ایک **3-lines کا proposal** لکھو جو مندرجہ ذیل پر مشتمل ہو:<br>1. کلائنٹ کی **مخصوص پریشانی** کا ذکر ہو<br>2. تمھاری **مخصوص حل** بتایا جائے<br>3. **اگلے قدم** کی دعوت ہو (مثلاً، &quot;اپنی ڈیڈ لائن کا جواب DM میں دو&quot;)</p><h3>Mini Project</h3><p>ایک **فیک gig** بناؤ (Upwork/Fiverr پر) اپنے پیش کیے جانے والے سروس کے لیے۔ اس میں شامل کرو:<br>- **عنوان** (مثلاً، &quot;میں تمھارے لیے ایک پیشہ ورانہ LinkedIn بینر 24 گھنٹوں میں ڈیزائن کروں گا&quot;)<br>- **فوائد کے 3 نقطے**<br>- **قیمت** (مخصوص یا $X سے شروع ہونے والی)</p></div>
       
       <div>

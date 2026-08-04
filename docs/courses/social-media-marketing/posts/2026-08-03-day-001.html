@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T15:55:00.424940";
+  var FKC_BUILD = "2026-08-04T16:51:55.506076";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -78,15 +78,6 @@ padding:11px 18px;border:none;border-radius:6px;cursor:pointer;
 margin:6px 6px 0 0;}
 .btn.alt{background:#fff;color:var(--ink);border:1px solid var(--line);}
 .btn.green{background:var(--accent);}
-.course-search-wrap{position:relative;margin:14px 0 4px;}
-.course-search{width:100%;box-sizing:border-box;padding:12px 14px 12px 40px;
-font-size:14px;border:1px solid var(--line);border-radius:8px;
-background:var(--panel);color:var(--ink);outline:none;}
-.course-search:focus{border-color:var(--primary);}
-.course-search-wrap::before{content:"🔍";position:absolute;left:13px;top:50%;
-transform:translateY(-50%);font-size:14px;opacity:.6;pointer-events:none;}
-.course-search-empty{display:none;text-align:center;color:var(--muted);
-font-size:.9em;margin:18px 0;}
 .grid{display:flex;flex-direction:column;gap:12px;margin:18px 0 30px;}
 .ccard{display:flex;align-items:center;gap:14px;background:var(--panel);
 border:1px solid var(--line);border-radius:10px;padding:14px;
@@ -155,21 +146,6 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
-.lang-tabs-wrap{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:14px 0;}
-.gtranslate-wrap{display:inline-flex;align-items:center;gap:6px;background:#f4f6fb;
-border:1px solid #e1e6f0;border-radius:20px;padding:4px 6px 4px 12px;}
-.gtranslate-label{font-size:.82em;font-weight:700;color:var(--primary,#2a5bd7);white-space:nowrap;}
-/* Google apna banner/branding chip page ke top par lagata hai — usay chhupa dete
-   hain taake layout na tootay, sirf dropdown selector nazar aaye */
-.goog-te-banner-frame{display:none !important;}
-body{top:0 !important;position:static !important;}
-.goog-te-gadget{font-family:inherit !important;font-size:0 !important;color:transparent !important;}
-.goog-te-gadget .goog-te-combo{font-family:'Inter',sans-serif;font-size:.82em;font-weight:600;
-color:#222;padding:5px 10px;border-radius:16px;border:1px solid #ccd4e6;background:#fff;
-cursor:pointer;}
-.goog-tooltip,.goog-tooltip:hover{display:none !important;}
-.goog-text-highlight{background:none !important;box-shadow:none !important;}
-#google_translate_element{line-height:0;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -182,7 +158,7 @@ cursor:pointer;}
     <div class="card">
       
       
-      <div class="lang-tabs-wrap"><div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div><div class="gtranslate-wrap"><span class="gtranslate-label">🌐 Apni zaban chunein</span><div id="google_translate_element"></div></div><script>function fkcGoogleTranslateInit(){new google.translate.TranslateElement({pageLanguage:"ur",autoDisplay:false},"google_translate_element");}</script><script src="https://translate.google.com/translate_a/element.js?cb=fkcGoogleTranslateInit"></script></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Social media strategy ek roadmap hai jo batati hai ke aap apne business ya personal brand ke liye social media par kya achieve karna chahte hain, kaise karna hai, aur kaise measure karna hai. Ismein aapke target audience, goals, content type, posting schedule, aur engagement plan shamil hote hain. Bina strategy ke, aap blindly post karte rahenge aur results bhi blind rahenge.</p><h3>Example</h3><p>Maana ke aap ek fitness coach hain. Aapki strategy yeh ho sakti hai:<br>1.</p><h3>Goal</h3><p>3 months mein 10,000 followers aur 50 leads (free consultation sign-ups).<br>2.</p><h3>Audience</h3><p>20-35 saal ke gym jaane wale young professionals.<br>3.</p><h3>Content</h3><p>Monday - Workout Tips, Wednesday - Diet Plans, Friday - Client Success Stories, Sunday - Q&amp;A Reels.<br>4.</p><h3>Platforms</h3><p>Instagram (main), YouTube Shorts (secondary), LinkedIn (for B2B clients).<br>5.</p><h3>Engagement</h3><p>Har post par 10-15 comments ka reply, weekly polls, aur DMs ka 24-hour response.</p><h3>Practice</h3><p>Apne business ya ek fictional brand ke liye 3 main goals likhein (e.g., brand awareness, leads, sales). Phir un goals ko achieve karne ke liye 3 content ideas sujhao jo aapke target audience ko engage karein.</p><h3>Mini Project</h3><p>Ek 1-week ka rough content calendar banayein (platform, post type, aur topic ke saath). Example:<br>- Instagram Reel: &quot;5 Minute Warm-up Routine&quot; (Monday)<br>- LinkedIn Post: &quot;How Fitness Boosts Productivity&quot; (Wednesday)<br>- YouTube Short: &quot;Gym Mistakes Beginners Make&quot; (Friday)</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>سوشل میڈیا سٹریٹیجی ایک روڈ میپ ہے جو بتاتی ہے کہ آپ اپنے بزنس یا پرسنل برانڈ کے لیے سوشل میڈیا پر کیا حاصل کرنا چاہتے ہیں، کیسے کرنا ہے، اور کیسے میژر کرنا ہے۔ اس میں آپ کے ٹارگٹ آڈیئنس، گولز، کنٹینٹ ٹائپ، پوسٹنگ شیڈول، اور اینگیجمنٹ پلان شامل ہوتے ہیں۔ بنا سٹریٹیجی کے، آپ بلائنڈلی پوسٹ کرتے رہیں گے اور رزلٹس بھی بلائنڈ رہیں گے۔</p><h3>Example</h3><p>مانا کہ آپ ایک فٹنس کوچ ہیں۔ آپ کی سٹریٹیجی یہ ہو سکتی ہے:</p><p>1. گول: 3 ماہ میں 10,000 فالورز اور 50 لیڈز (فری کنسلٹیشن سائن اپس)۔<br>2. آڈیئنس: 20-35 سال کے جم جانے والے یانگ پروفیشنلز۔<br>3. کنٹینٹ: پیر - ورک آوٹ ٹپس، بدھ - ڈائٹ پلانز، جمعہ - کلائنٹ سکسس سٹوریز، اتوار - Q&amp;A ریلز۔<br>4. پلیٹ فارمز: انسٹاگرام (میں)، یوٹیوب شارٹس (سیکنڈری)، لنکڈ ان (B2B کلائنٹس کے لیے)۔<br>5. اینگیجمنٹ: ہر پوسٹ پر 10-15 کمنٹس کا رپلی، ویکلی پولز، اور DMs کا 24-گھنٹے رسپانس۔</p><h3>Practice</h3><p>اپنے بزنس یا ایک فکشنل برانڈ کے لیے 3 main گولز لکھیں (مثلاً، برانڈ آگاہی، لیڈز، سیلز)۔ پھر ان گولز کو حاصل کرنے کے لیے 3 کنٹینٹ آئیڈیا سوچو جو آپ کے ٹارگٹ آڈیئنس کو اینگیج کریں۔</p><h3>Mini Project</h3><p>ایک 1-ہفتے کا روہ کنٹینٹ کیلنڈر بنائیں (پلیٹ فارم، پوسٹ ٹائپ، اور ٹاپک کے ساتھ)۔ Example:</p><p>- انسٹاگرام ریل: &quot;5 Minute Warm-up Routine&quot; (پیر)<br>- لنکڈ ان پوسٹ: &quot;How Fitness Boosts Productivity&quot; (بدھ)<br>- یوٹیوب شارٹ: &quot;Gym Mistakes Beginners Make&quot; (جمعہ)</p></div>
       
       <div>

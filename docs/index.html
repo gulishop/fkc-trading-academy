@@ -22,7 +22,7 @@
 <link rel="icon" href="logo.png">
 <link rel="manifest" href="manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T15:55:00.424940";
+  var FKC_BUILD = "2026-08-04T16:51:55.506076";
   function fkcCheckVersion(){
     fetch("version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -78,15 +78,6 @@ padding:11px 18px;border:none;border-radius:6px;cursor:pointer;
 margin:6px 6px 0 0;}
 .btn.alt{background:#fff;color:var(--ink);border:1px solid var(--line);}
 .btn.green{background:var(--accent);}
-.course-search-wrap{position:relative;margin:14px 0 4px;}
-.course-search{width:100%;box-sizing:border-box;padding:12px 14px 12px 40px;
-font-size:14px;border:1px solid var(--line);border-radius:8px;
-background:var(--panel);color:var(--ink);outline:none;}
-.course-search:focus{border-color:var(--primary);}
-.course-search-wrap::before{content:"🔍";position:absolute;left:13px;top:50%;
-transform:translateY(-50%);font-size:14px;opacity:.6;pointer-events:none;}
-.course-search-empty{display:none;text-align:center;color:var(--muted);
-font-size:.9em;margin:18px 0;}
 .grid{display:flex;flex-direction:column;gap:12px;margin:18px 0 30px;}
 .ccard{display:flex;align-items:center;gap:14px;background:var(--panel);
 border:1px solid var(--line);border-radius:10px;padding:14px;
@@ -155,21 +146,6 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
-.lang-tabs-wrap{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:14px 0;}
-.gtranslate-wrap{display:inline-flex;align-items:center;gap:6px;background:#f4f6fb;
-border:1px solid #e1e6f0;border-radius:20px;padding:4px 6px 4px 12px;}
-.gtranslate-label{font-size:.82em;font-weight:700;color:var(--primary,#2a5bd7);white-space:nowrap;}
-/* Google apna banner/branding chip page ke top par lagata hai — usay chhupa dete
-   hain taake layout na tootay, sirf dropdown selector nazar aaye */
-.goog-te-banner-frame{display:none !important;}
-body{top:0 !important;position:static !important;}
-.goog-te-gadget{font-family:inherit !important;font-size:0 !important;color:transparent !important;}
-.goog-te-gadget .goog-te-combo{font-family:'Inter',sans-serif;font-size:.82em;font-weight:600;
-color:#222;padding:5px 10px;border-radius:16px;border:1px solid #ccd4e6;background:#fff;
-cursor:pointer;}
-.goog-tooltip,.goog-tooltip:hover{display:none !important;}
-.goog-text-highlight{background:none !important;box-shadow:none !important;}
-#google_translate_element{line-height:0;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -181,13 +157,8 @@ cursor:pointer;}
     <p class="muted fade-in d2">📅 Har course ka naya lesson roz apne fixed time par (9:00 AM se 11:30 AM Pakistan time ke darmiyan) yahan post hota hai — har course card par uska waqt likha hai.
     Jis course mein interest ho us par tap karein — daily lesson step-by-step parhein aur practice karein.</p>
     <p class="fade-in d2"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Start Learning</a></p>
-    <div class="course-search-wrap fade-in d2">
-      <input type="text" id="courseSearch" class="course-search"
-        placeholder="Course search karein... (jaise: youtube, amazon, dropshipping)"
-        oninput="fkcFilterCourses(this.value)" autocomplete="off">
-    </div>
-    <div class="grid" id="courseGrid">
-    <a class="ccard fade-in" href="courses/youtube-automation/index.html" data-search="youtube automation bina face show kiye youtube channel banayein aur grow karein">
+    <div class="grid">
+    <a class="ccard fade-in" href="courses/youtube-automation/index.html">
       <div class="stamp" style="--accent-bg:#0056D21a;color:#0056D2">🎬</div>
       <div class="body">
         <h2>YouTube Automation</h2>
@@ -198,7 +169,7 @@ cursor:pointer;}
       </div>
       <div class="stub" style="color:#0056D2"><span class="stub-n" style="color:#0056D2">03</span><span class="stub-l">lessons</span></div>
     </a>
-    <a class="ccard fade-in" href="courses/social-media-marketing/index.html" data-search="social media marketing brands aur businesses ke liye social media grow karna seekhein">
+    <a class="ccard fade-in" href="courses/social-media-marketing/index.html">
       <div class="stamp" style="--accent-bg:#2BAF661a;color:#2BAF66">📱</div>
       <div class="body">
         <h2>Social Media Marketing</h2>
@@ -209,7 +180,7 @@ cursor:pointer;}
       </div>
       <div class="stub" style="color:#2BAF66"><span class="stub-n" style="color:#2BAF66">03</span><span class="stub-l">lessons</span></div>
     </a>
-    <a class="ccard fade-in" href="courses/ai-tools/index.html" data-search="ai tools &amp; automation roz kaam aasan banane wale ai tools aur automation seekhein">
+    <a class="ccard fade-in" href="courses/ai-tools/index.html">
       <div class="stamp" style="--accent-bg:#6D28D91a;color:#6D28D9">🤖</div>
       <div class="body">
         <h2>AI Tools &amp; Automation</h2>
@@ -220,7 +191,7 @@ cursor:pointer;}
       </div>
       <div class="stub" style="color:#6D28D9"><span class="stub-n" style="color:#6D28D9">03</span><span class="stub-l">lessons</span></div>
     </a>
-    <a class="ccard fade-in" href="courses/facebook-page-growth/index.html" data-search="facebook page growth facebook page se organic reach aur sales badhana seekhein">
+    <a class="ccard fade-in" href="courses/facebook-page-growth/index.html">
       <div class="stamp" style="--accent-bg:#D9730D1a;color:#D9730D">👍</div>
       <div class="body">
         <h2>Facebook Page Growth</h2>
@@ -231,7 +202,7 @@ cursor:pointer;}
       </div>
       <div class="stub" style="color:#D9730D"><span class="stub-n" style="color:#D9730D">02</span><span class="stub-l">lessons</span></div>
     </a>
-    <a class="ccard fade-in" href="courses/amazon-fba/index.html" data-search="amazon fba amazon par apna private-label product bech kar business banayein">
+    <a class="ccard fade-in" href="courses/amazon-fba/index.html">
       <div class="stamp" style="--accent-bg:#0EA5A51a;color:#0EA5A5">📦</div>
       <div class="body">
         <h2>Amazon FBA</h2>
@@ -242,7 +213,7 @@ cursor:pointer;}
       </div>
       <div class="stub" style="color:#0EA5A5"><span class="stub-n" style="color:#0EA5A5">03</span><span class="stub-l">lessons</span></div>
     </a>
-    <a class="ccard fade-in" href="courses/daraz-seller/index.html" data-search="daraz seller pakistan ke sabse bade marketplace par apni dukaan banayein">
+    <a class="ccard fade-in" href="courses/daraz-seller/index.html">
       <div class="stamp" style="--accent-bg:#DB4C771a;color:#DB4C77">🛒</div>
       <div class="body">
         <h2>Daraz Seller</h2>
@@ -253,7 +224,7 @@ cursor:pointer;}
       </div>
       <div class="stub" style="color:#DB4C77"><span class="stub-n" style="color:#DB4C77">03</span><span class="stub-l">lessons</span></div>
     </a>
-    <a class="ccard fade-in" href="courses/dropshipping/index.html" data-search="dropshipping bina stock rakhe online store se products bechna seekhein">
+    <a class="ccard fade-in" href="courses/dropshipping/index.html">
       <div class="stamp" style="--accent-bg:#0056D21a;color:#0056D2">🚚</div>
       <div class="body">
         <h2>Dropshipping</h2>
@@ -264,18 +235,18 @@ cursor:pointer;}
       </div>
       <div class="stub" style="color:#0056D2"><span class="stub-n" style="color:#0056D2">03</span><span class="stub-l">lessons</span></div>
     </a>
-    <a class="ccard fade-in" href="courses/freelancing/index.html" data-search="freelancing fiverr, upwork jaisi platforms se ghar baithe kamana seekhein">
+    <a class="ccard fade-in" href="courses/freelancing/index.html">
       <div class="stamp" style="--accent-bg:#2BAF661a;color:#2BAF66">💼</div>
       <div class="body">
         <h2>Freelancing</h2>
         <p class="tag">Fiverr, Upwork jaisi platforms se ghar baithe kamana seekhein</p>
-        <p class="latest">📖 Day 3 — **Client Communication: First Message Se Hi Impress Kaise Karein**</p>
+        <p class="latest">📖 Day 4 — **Pricing Strategy: Apne Services Ka Rate Kaise Set Karein (Bina Ghate Ke)**</p>
         <p class="tag" style="margin-top:4px">🕒 Roz 10:10 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="freelancing" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('freelancing', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#2BAF66"><span class="stub-n" style="color:#2BAF66">03</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#2BAF66"><span class="stub-n" style="color:#2BAF66">04</span><span class="stub-l">lessons</span></div>
     </a>
-    <a class="ccard fade-in" href="courses/digital-marketing-seo/index.html" data-search="digital marketing &amp; seo websites aur brands ko google par rank karwana seekhein">
+    <a class="ccard fade-in" href="courses/digital-marketing-seo/index.html">
       <div class="stamp" style="--accent-bg:#6D28D91a;color:#6D28D9">📈</div>
       <div class="body">
         <h2>Digital Marketing &amp; SEO</h2>
@@ -286,7 +257,7 @@ cursor:pointer;}
       </div>
       <div class="stub" style="color:#6D28D9"><span class="stub-n" style="color:#6D28D9">03</span><span class="stub-l">lessons</span></div>
     </a>
-    <a class="ccard fade-in" href="courses/graphic-design-canva/index.html" data-search="graphic design (canva) bina design background ke professional graphics banayein">
+    <a class="ccard fade-in" href="courses/graphic-design-canva/index.html">
       <div class="stamp" style="--accent-bg:#D9730D1a;color:#D9730D">🎨</div>
       <div class="body">
         <h2>Graphic Design (Canva)</h2>
@@ -297,7 +268,7 @@ cursor:pointer;}
       </div>
       <div class="stub" style="color:#D9730D"><span class="stub-n" style="color:#D9730D">02</span><span class="stub-l">lessons</span></div>
     </a>
-    <a class="ccard fade-in" href="courses/ai-content-writing/index.html" data-search="ai content writing &amp; copywriting ai ki madad se paisa kamane wala content aur copy likhein">
+    <a class="ccard fade-in" href="courses/ai-content-writing/index.html">
       <div class="stamp" style="--accent-bg:#0EA5A51a;color:#0EA5A5">✍️</div>
       <div class="body">
         <h2>AI Content Writing &amp; Copywriting</h2>
@@ -308,7 +279,7 @@ cursor:pointer;}
       </div>
       <div class="stub" style="color:#0EA5A5"><span class="stub-n" style="color:#0EA5A5">03</span><span class="stub-l">lessons</span></div>
     </a>
-    <a class="ccard fade-in" href="courses/video-editing/index.html" data-search="video editing (capcut/premiere) reels se le kar youtube tak — video editing ek in-demand skill">
+    <a class="ccard fade-in" href="courses/video-editing/index.html">
       <div class="stamp" style="--accent-bg:#DB4C771a;color:#DB4C77">🎞️</div>
       <div class="body">
         <h2>Video Editing (CapCut/Premiere)</h2>
@@ -319,7 +290,7 @@ cursor:pointer;}
       </div>
       <div class="stub" style="color:#DB4C77"><span class="stub-n" style="color:#DB4C77">03</span><span class="stub-l">lessons</span></div>
     </a>
-    <a class="ccard fade-in" href="courses/affiliate-marketing/index.html" data-search="affiliate marketing doosron ke products promote kar ke commission kamayein">
+    <a class="ccard fade-in" href="courses/affiliate-marketing/index.html">
       <div class="stamp" style="--accent-bg:#0056D21a;color:#0056D2">🔗</div>
       <div class="body">
         <h2>Affiliate Marketing</h2>
@@ -330,7 +301,7 @@ cursor:pointer;}
       </div>
       <div class="stub" style="color:#0056D2"><span class="stub-n" style="color:#0056D2">03</span><span class="stub-l">lessons</span></div>
     </a>
-    <a class="ccard fade-in" href="courses/print-on-demand/index.html" data-search="print on demand apni design se t-shirts/mugs bech kar bina inventory ke kamayein">
+    <a class="ccard fade-in" href="courses/print-on-demand/index.html">
       <div class="stamp" style="--accent-bg:#2BAF661a;color:#2BAF66">👕</div>
       <div class="body">
         <h2>Print on Demand</h2>
@@ -341,7 +312,7 @@ cursor:pointer;}
       </div>
       <div class="stub" style="color:#2BAF66"><span class="stub-n" style="color:#2BAF66">03</span><span class="stub-l">lessons</span></div>
     </a>
-    <a class="ccard fade-in" href="courses/no-code-app-dev/index.html" data-search="no-code app &amp; website building bina coding seekhe apps aur websites banana seekhein">
+    <a class="ccard fade-in" href="courses/no-code-app-dev/index.html">
       <div class="stamp" style="--accent-bg:#6D28D91a;color:#6D28D9">🧩</div>
       <div class="body">
         <h2>No-Code App &amp; Website Building</h2>
@@ -352,7 +323,7 @@ cursor:pointer;}
       </div>
       <div class="stub" style="color:#6D28D9"><span class="stub-n" style="color:#6D28D9">03</span><span class="stub-l">lessons</span></div>
     </a>
-    <a class="ccard fade-in" href="courses/forex-trading/index.html" data-search="forex trading currency market mein trading karna sikhein — basics se lekar strategy tak">
+    <a class="ccard fade-in" href="courses/forex-trading/index.html">
       <div class="stamp" style="--accent-bg:#D9730D1a;color:#D9730D">💹</div>
       <div class="body">
         <h2>Forex Trading</h2>
@@ -363,7 +334,7 @@ cursor:pointer;}
       </div>
       <div class="stub" style="color:#D9730D"><span class="stub-n" style="color:#D9730D">04</span><span class="stub-l">lessons</span></div>
     </a>
-    <a class="ccard fade-in" href="courses/kids-safety-education/index.html" data-search="bachon ki hifazat (good touch, bad touch) bachon ko apni hifazat, apne jism ke huq, aur &#x27;na&#x27; kehna sikhayein — asaan, pyaar bhare andaz mein. ammi/abbu ke sath milkar padhayein.">
+    <a class="ccard fade-in" href="courses/kids-safety-education/index.html">
       <div class="stamp" style="--accent-bg:#0EA5A51a;color:#0EA5A5">🛡️</div>
       <div class="body">
         <h2>Bachon Ki Hifazat (Good Touch, Bad Touch)</h2>
@@ -374,7 +345,7 @@ cursor:pointer;}
       </div>
       <div class="stub" style="color:#0EA5A5"><span class="stub-n" style="color:#0EA5A5">01</span><span class="stub-l">lesson</span></div>
     </a>
-    <a class="ccard fade-in" href="courses/cpp-daily-coding/index.html" data-search="c++ daily coding c++ zero se seekhein — roz ek naya coding lesson, practice ke sath">
+    <a class="ccard fade-in" href="courses/cpp-daily-coding/index.html">
       <div class="stamp" style="--accent-bg:#DB4C771a;color:#DB4C77">💻</div>
       <div class="body">
         <h2>C++ Daily Coding</h2>
@@ -385,7 +356,7 @@ cursor:pointer;}
       </div>
       <div class="stub" style="color:#DB4C77"><span class="stub-n" style="color:#DB4C77">06</span><span class="stub-l">lessons</span></div>
     </a>
-    <a class="ccard fade-in" href="courses/python-programming/index.html" data-search="python programming python zero se seekhein — beginner-friendly, roz ek naya coding lesson">
+    <a class="ccard fade-in" href="courses/python-programming/index.html">
       <div class="stamp" style="--accent-bg:#0056D21a;color:#0056D2">🐍</div>
       <div class="body">
         <h2>Python Programming</h2>
@@ -396,7 +367,7 @@ cursor:pointer;}
       </div>
       <div class="stub" style="color:#0056D2"><span class="stub-n" style="color:#0056D2">02</span><span class="stub-l">lessons</span></div>
     </a>
-    <a class="ccard fade-in" href="courses/web-development/index.html" data-search="web development html, css, aur javascript se apni pehli website banayein">
+    <a class="ccard fade-in" href="courses/web-development/index.html">
       <div class="stamp" style="--accent-bg:#2BAF661a;color:#2BAF66">🌐</div>
       <div class="body">
         <h2>Web Development</h2>
@@ -407,7 +378,7 @@ cursor:pointer;}
       </div>
       <div class="stub" style="color:#2BAF66"><span class="stub-n" style="color:#2BAF66">02</span><span class="stub-l">lessons</span></div>
     </a>
-    <a class="ccard fade-in" href="courses/excel-data-analysis/index.html" data-search="excel &amp; data analysis excel se data manage, analyze, aur professional reports banana seekhein">
+    <a class="ccard fade-in" href="courses/excel-data-analysis/index.html">
       <div class="stamp" style="--accent-bg:#6D28D91a;color:#6D28D9">📊</div>
       <div class="body">
         <h2>Excel &amp; Data Analysis</h2>
@@ -418,7 +389,7 @@ cursor:pointer;}
       </div>
       <div class="stub" style="color:#6D28D9"><span class="stub-n" style="color:#6D28D9">03</span><span class="stub-l">lessons</span></div>
     </a>
-    <a class="ccard fade-in" href="courses/crypto-blockchain/index.html" data-search="crypto &amp; blockchain basics cryptocurrency aur blockchain ki basics samajhein, safely invest karna seekhein">
+    <a class="ccard fade-in" href="courses/crypto-blockchain/index.html">
       <div class="stamp" style="--accent-bg:#D9730D1a;color:#D9730D">₿</div>
       <div class="body">
         <h2>Crypto &amp; Blockchain Basics</h2>
@@ -429,7 +400,7 @@ cursor:pointer;}
       </div>
       <div class="stub" style="color:#D9730D"><span class="stub-n" style="color:#D9730D">02</span><span class="stub-l">lessons</span></div>
     </a>
-    <a class="ccard fade-in" href="courses/psx-stock-trading/index.html" data-search="stock market trading (psx) pakistan stock exchange mein invest aur trade karna seekhein">
+    <a class="ccard fade-in" href="courses/psx-stock-trading/index.html">
       <div class="stamp" style="--accent-bg:#0EA5A51a;color:#0EA5A5">📈</div>
       <div class="body">
         <h2>Stock Market Trading (PSX)</h2>
@@ -440,7 +411,7 @@ cursor:pointer;}
       </div>
       <div class="stub" style="color:#0EA5A5"><span class="stub-n" style="color:#0EA5A5">02</span><span class="stub-l">lessons</span></div>
     </a>
-    <a class="ccard fade-in" href="courses/tiktok-growth/index.html" data-search="tiktok growth &amp; monetization tiktok par followers badhayein aur content se paise kamayein">
+    <a class="ccard fade-in" href="courses/tiktok-growth/index.html">
       <div class="stamp" style="--accent-bg:#DB4C771a;color:#DB4C77">🎵</div>
       <div class="body">
         <h2>TikTok Growth &amp; Monetization</h2>
@@ -451,7 +422,7 @@ cursor:pointer;}
       </div>
       <div class="stub" style="color:#DB4C77"><span class="stub-n" style="color:#DB4C77">03</span><span class="stub-l">lessons</span></div>
     </a>
-    <a class="ccard fade-in" href="courses/blogging-adsense/index.html" data-search="blogging &amp; adsense blog shuru karein aur google adsense se passive income banayein">
+    <a class="ccard fade-in" href="courses/blogging-adsense/index.html">
       <div class="stamp" style="--accent-bg:#0056D21a;color:#0056D2">✍️</div>
       <div class="body">
         <h2>Blogging &amp; Adsense</h2>
@@ -462,7 +433,7 @@ cursor:pointer;}
       </div>
       <div class="stub" style="color:#0056D2"><span class="stub-n" style="color:#0056D2">03</span><span class="stub-l">lessons</span></div>
     </a>
-    <a class="ccard fade-in" href="courses/photography-editing/index.html" data-search="photography &amp; editing mobile ya camera se professional photos lena aur lightroom mein edit karna">
+    <a class="ccard fade-in" href="courses/photography-editing/index.html">
       <div class="stamp" style="--accent-bg:#2BAF661a;color:#2BAF66">📷</div>
       <div class="body">
         <h2>Photography &amp; Editing</h2>
@@ -473,7 +444,7 @@ cursor:pointer;}
       </div>
       <div class="stub" style="color:#2BAF66"><span class="stub-n" style="color:#2BAF66">02</span><span class="stub-l">lessons</span></div>
     </a>
-    <a class="ccard fade-in" href="courses/voiceover-podcasting/index.html" data-search="voice over &amp; podcasting voice over skills seekhein aur apna podcast shuru karein">
+    <a class="ccard fade-in" href="courses/voiceover-podcasting/index.html">
       <div class="stamp" style="--accent-bg:#6D28D91a;color:#6D28D9">🎙️</div>
       <div class="body">
         <h2>Voice Over &amp; Podcasting</h2>
@@ -484,7 +455,7 @@ cursor:pointer;}
       </div>
       <div class="stub" style="color:#6D28D9"><span class="stub-n" style="color:#6D28D9">02</span><span class="stub-l">lessons</span></div>
     </a>
-    <a class="ccard fade-in" href="courses/real-estate-business/index.html" data-search="real estate business pakistan mein real estate business shuru karna seekhein">
+    <a class="ccard fade-in" href="courses/real-estate-business/index.html">
       <div class="stamp" style="--accent-bg:#D9730D1a;color:#D9730D">🏠</div>
       <div class="body">
         <h2>Real Estate Business</h2>
@@ -495,7 +466,7 @@ cursor:pointer;}
       </div>
       <div class="stub" style="color:#D9730D"><span class="stub-n" style="color:#D9730D">02</span><span class="stub-l">lessons</span></div>
     </a>
-    <a class="ccard fade-in" href="courses/mobile-repairing/index.html" data-search="mobile repairing business mobile repairing seekh kar apna business shuru karein">
+    <a class="ccard fade-in" href="courses/mobile-repairing/index.html">
       <div class="stamp" style="--accent-bg:#0EA5A51a;color:#0EA5A5">📱</div>
       <div class="body">
         <h2>Mobile Repairing Business</h2>
@@ -506,22 +477,6 @@ cursor:pointer;}
       </div>
       <div class="stub" style="color:#0EA5A5"><span class="stub-n" style="color:#0EA5A5">02</span><span class="stub-l">lessons</span></div>
     </a></div>
-    <p class="course-search-empty" id="courseSearchEmpty">😕 Koi course is naam se nahi mila — koi doosra keyword try karein.</p>
-    <script>
-    function fkcFilterCourses(q){
-      q = q.trim().toLowerCase();
-      var cards = document.querySelectorAll('#courseGrid .ccard');
-      var shown = 0;
-      cards.forEach(function(c){
-        var hay = c.getAttribute('data-search') || '';
-        var match = hay.indexOf(q) !== -1;
-        c.style.display = match ? '' : 'none';
-        if (match) shown++;
-      });
-      var empty = document.getElementById('courseSearchEmpty');
-      if (empty) empty.style.display = (shown === 0 && q.length > 0) ? 'block' : 'none';
-    }
-    </script>
     <div class="brand-footer"><img src="logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="privacy.html">Privacy Policy</a></div></div>
     <p style="text-align:center;margin-top:8px;">
       <a href="admin-certificates.html" style="color:var(--muted);font-size:11px;text-decoration:none;">⚙️ Admin</a>

@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T15:55:00.424940";
+  var FKC_BUILD = "2026-08-04T16:51:55.506076";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -78,15 +78,6 @@ padding:11px 18px;border:none;border-radius:6px;cursor:pointer;
 margin:6px 6px 0 0;}
 .btn.alt{background:#fff;color:var(--ink);border:1px solid var(--line);}
 .btn.green{background:var(--accent);}
-.course-search-wrap{position:relative;margin:14px 0 4px;}
-.course-search{width:100%;box-sizing:border-box;padding:12px 14px 12px 40px;
-font-size:14px;border:1px solid var(--line);border-radius:8px;
-background:var(--panel);color:var(--ink);outline:none;}
-.course-search:focus{border-color:var(--primary);}
-.course-search-wrap::before{content:"🔍";position:absolute;left:13px;top:50%;
-transform:translateY(-50%);font-size:14px;opacity:.6;pointer-events:none;}
-.course-search-empty{display:none;text-align:center;color:var(--muted);
-font-size:.9em;margin:18px 0;}
 .grid{display:flex;flex-direction:column;gap:12px;margin:18px 0 30px;}
 .ccard{display:flex;align-items:center;gap:14px;background:var(--panel);
 border:1px solid var(--line);border-radius:10px;padding:14px;
@@ -155,21 +146,6 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
-.lang-tabs-wrap{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:14px 0;}
-.gtranslate-wrap{display:inline-flex;align-items:center;gap:6px;background:#f4f6fb;
-border:1px solid #e1e6f0;border-radius:20px;padding:4px 6px 4px 12px;}
-.gtranslate-label{font-size:.82em;font-weight:700;color:var(--primary,#2a5bd7);white-space:nowrap;}
-/* Google apna banner/branding chip page ke top par lagata hai — usay chhupa dete
-   hain taake layout na tootay, sirf dropdown selector nazar aaye */
-.goog-te-banner-frame{display:none !important;}
-body{top:0 !important;position:static !important;}
-.goog-te-gadget{font-family:inherit !important;font-size:0 !important;color:transparent !important;}
-.goog-te-gadget .goog-te-combo{font-family:'Inter',sans-serif;font-size:.82em;font-weight:600;
-color:#222;padding:5px 10px;border-radius:16px;border:1px solid #ccd4e6;background:#fff;
-cursor:pointer;}
-.goog-tooltip,.goog-tooltip:hover{display:none !important;}
-.goog-text-highlight{background:none !important;box-shadow:none !important;}
-#google_translate_element{line-height:0;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -182,7 +158,7 @@ cursor:pointer;}
     <div class="card">
       
       
-      <div class="lang-tabs-wrap"><div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div><div class="gtranslate-wrap"><span class="gtranslate-label">🌐 Apni zaban chunein</span><div id="google_translate_element"></div></div><script>function fkcGoogleTranslateInit(){new google.translate.TranslateElement({pageLanguage:"ur",autoDisplay:false},"google_translate_element");}</script><script src="https://translate.google.com/translate_a/element.js?cb=fkcGoogleTranslateInit"></script></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Aaj hum seekhenge ke do powerful functions ka istemal karke Excel mein kisi bhi table se specific data ko kaise dhundh sakte hain. VLOOKUP (Vertical Lookup) ek purana lekin zaroori function hai jo pehle column mein search karta hai aur uske corresponding row se data uthaata hai. XLOOKUP (Excel ka latest addition) isko aur behtar banata hai — yeh left se right search kar sakta hai, exact matches ko default banata hai, aur errors ko handle karne mein behtar hai.</p><h3>Example</h3><p>Maan lo ek *Sales* table hai jismein Product ID aur uske corresponding Price hai. Aapko Product ID `P101` ka price nikalna hai.</p><p>1.</p><h3>VLOOKUP ka tareeqa</h3><p>`=VLOOKUP(&quot;P101&quot;, A2:B10, 2, FALSE)`<br>   - `&quot;P101&quot;`: Jo value dhundhni hai.<br>   - `A2:B10`: Data ka range (Product ID column A mein, Price column B mein).<br>   - `2`: Price column ka index (A=1, B=2).<br>   - `FALSE`: Exact match.</p><p>2.</p><h3>XLOOKUP ka tareeqa</h3><p>`=XLOOKUP(&quot;P101&quot;, A2:A10, B2:B10, &quot;Not Found&quot;)`<br>   - `&quot;P101&quot;`: Search value.<br>   - `A2:A10`: Search range (Product ID column).<br>   - `B2:B10`: Return range (Price column).<br>   - `&quot;Not Found&quot;`: Agar value na mile toh yeh message.</p><h3>Practice</h3><p>Ek *Employees* table banao jismein Column A mein Employee IDs (E001, E002...) aur Column B mein unke Names hon. Phir VLOOKUP aur XLOOKUP ka istemal karke Employee ID `E003` ka name nikalne ka formula likho.</p><h3>Mini Project</h3><p>Ek *Products* table banao (Product ID, Product Name, Price). Phir ek naya sheet banao jismein Product IDs ka list ho. Har Product ID ke liye XLOOKUP ka istemal karke uska Name aur Price nikal kar ek table banaye.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>آج ہم سیکھیں گے کہ دو پاورفل فنکشنز کا استعمال کر کے ایکسل میں کسی بھی ٹیبل سے مخصوص ڈیٹا کو کیسے ڈھونڈھ سکتے ہیں۔ VLOOKUP (ورٹیکل لوک اپ) ایک پرانا لیکن ضروری فنکشن ہے جو پہلے کالم میں سرچ کرتا ہے اور اس کے مطابق والی راؤ سے ڈیٹا اٹھاتا ہے۔ XLOOKUP (ایکسسل کا لاسٹ ایڈیشن) اسے اور بہتر بناتا ہے — یہ لیفٹ سے رائٹ سرچ کر سکتا ہے، ایکسٹیکٹ میچز کو ڈیفالٹ بناتا ہے، اور ایررز کو ہینڈل کرنے میں بہتر ہے۔</p><h3>Example</h3><p>مان لو ایک *Sales* ٹیبل ہے جس میں Product ID اور اس کے corresponding Price ہے۔ آپکو Product ID `P101` کا price نکلنا ہے۔</p><h3>1</h3><p>VLOOKUP کا طریقہ: `=VLOOKUP(&quot;P101&quot;, A2:B10, 2, FALSE)`<br>   - `&quot;P101&quot;`: جو ویلیو ڈھونڈنی ہے۔<br>   - `A2:B10`: ڈیٹا کا رینج (Product ID کالم A میں، Price کالم B میں)۔<br>   - `2`: Price کالم کا انڈیکس (A=1, B=2)۔<br>   - `FALSE`: ایکسٹیکٹ میچ۔</p><h3>2</h3><p>XLOOKUP کا طریقہ: `=XLOOKUP(&quot;P101&quot;, A2:A10, B2:B10, &quot;Not Found&quot;)`<br>   - `&quot;P101&quot;`: سرچ ویلیو۔<br>   - `A2:A10`: سرچ رینج (Product ID کالم)۔<br>   - `B2:B10`: رٹرن رینج (Price کالم)۔<br>   - `&quot;Not Found&quot;`: اگر ویلیو نہ ملے تو یہ میسج۔</p><h3>Practice</h3><p>ایک *Employees* ٹیبل بناؤ جس میں کالم A میں Employee IDs (E001, E002...) اور کالم B میں انکے Names ہوں۔ پھر VLOOKUP اور XLOOKUP کا استعمال کر کے Employee ID `E003` کا نام نکلنے کا فارمولہ لکھو۔</p><h3>Mini Project</h3><p>ایک *Products* ٹیبل بناؤ (Product ID, Product Name, Price)۔ پھر ایک نیا شیٹ بناؤ جس میں Product IDs کا لسٹ ہو۔ ہر Product ID کے لیے XLOOKUP کا استعمال کر کے اسکا Name اور Price نکل کر ایک ٹیبل بنائے۔</p></div>
       
       <div>

@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T15:55:00.424940";
+  var FKC_BUILD = "2026-08-04T16:51:55.506076";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -78,15 +78,6 @@ padding:11px 18px;border:none;border-radius:6px;cursor:pointer;
 margin:6px 6px 0 0;}
 .btn.alt{background:#fff;color:var(--ink);border:1px solid var(--line);}
 .btn.green{background:var(--accent);}
-.course-search-wrap{position:relative;margin:14px 0 4px;}
-.course-search{width:100%;box-sizing:border-box;padding:12px 14px 12px 40px;
-font-size:14px;border:1px solid var(--line);border-radius:8px;
-background:var(--panel);color:var(--ink);outline:none;}
-.course-search:focus{border-color:var(--primary);}
-.course-search-wrap::before{content:"🔍";position:absolute;left:13px;top:50%;
-transform:translateY(-50%);font-size:14px;opacity:.6;pointer-events:none;}
-.course-search-empty{display:none;text-align:center;color:var(--muted);
-font-size:.9em;margin:18px 0;}
 .grid{display:flex;flex-direction:column;gap:12px;margin:18px 0 30px;}
 .ccard{display:flex;align-items:center;gap:14px;background:var(--panel);
 border:1px solid var(--line);border-radius:10px;padding:14px;
@@ -155,21 +146,6 @@ pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
 overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
 line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
-.lang-tabs-wrap{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:14px 0;}
-.gtranslate-wrap{display:inline-flex;align-items:center;gap:6px;background:#f4f6fb;
-border:1px solid #e1e6f0;border-radius:20px;padding:4px 6px 4px 12px;}
-.gtranslate-label{font-size:.82em;font-weight:700;color:var(--primary,#2a5bd7);white-space:nowrap;}
-/* Google apna banner/branding chip page ke top par lagata hai — usay chhupa dete
-   hain taake layout na tootay, sirf dropdown selector nazar aaye */
-.goog-te-banner-frame{display:none !important;}
-body{top:0 !important;position:static !important;}
-.goog-te-gadget{font-family:inherit !important;font-size:0 !important;color:transparent !important;}
-.goog-te-gadget .goog-te-combo{font-family:'Inter',sans-serif;font-size:.82em;font-weight:600;
-color:#222;padding:5px 10px;border-radius:16px;border:1px solid #ccd4e6;background:#fff;
-cursor:pointer;}
-.goog-tooltip,.goog-tooltip:hover{display:none !important;}
-.goog-text-highlight{background:none !important;box-shadow:none !important;}
-#google_translate_element{line-height:0;}
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
@@ -182,7 +158,7 @@ cursor:pointer;}
     <div class="card">
       
       
-      <div class="lang-tabs-wrap"><div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div><div class="gtranslate-wrap"><span class="gtranslate-label">🌐 Apni zaban chunein</span><div id="google_translate_element"></div></div><script>function fkcGoogleTranslateInit(){new google.translate.TranslateElement({pageLanguage:"ur",autoDisplay:false},"google_translate_element");}</script><script src="https://translate.google.com/translate_a/element.js?cb=fkcGoogleTranslateInit"></script></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Google Search Console (GSC) aur Google Analytics (GA4) aapki website ke health aur performance ko track karne ke liye essential tools hain. GSC aapko indexing, crawl errors, aur search rankings dikhata hai, jabki GA4 visitors, traffic sources, aur user behavior analyze karta hai. In dono ko samajh kar aap apni SEO strategy ko improve kar sakte hain.</p><h3>Example</h3><p>1.</p><h3>GSC mein URL Inspection</h3><p>Kisi bhi page ka URL enter karke check karen ki Google usko crawl kar raha hai ya nahi.<br>2.</p><h3>GA4 mein Traffic Sources</h3><p>&quot;Acquisition&quot; &gt; &quot;All Traffic&quot; &gt; &quot;Source/Medium&quot; dekh kar pata karen ke visitors aapki site par kahan se aa rahe hain (Google Search, Social Media, etc.).</p><h3>Practice</h3><p>1. Apni website (ya kisi dummy site) ka GSC account mein add karen.<br>2. &quot;Coverage&quot; report check karen aur koi crawl errors fix karne ki koshish karen.<br>3. GA4 mein ek basic report banaen (e.g., &quot;Users by Country&quot;).</p><h3>Mini Project</h3><p>Ek 1-page report taiyar karen jismein aap GSC se top 3 search queries aur GA4 se top 3 traffic sources mention karen. (Format: &quot;Query/Source - Clicks/Users&quot;)</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>گوگل سرچ کنسول (GSC) اور گوگل اینالٹکس (GA4) آپکی ویب سائٹ کے ہیلتھ اور پرفارمنس کو ٹریک کرنے کے لیے ضروری ٹولز ہیں۔ GSC آپکو انڈیکسنگ، کراول ایررز، اور سرچ رینکنگ دکھاتا ہے، جبکہ GA4 وزٹرس، ٹریفک سورسز، اور یوزر بیہیویر اینالائز کرتا ہے۔ ان دونوں کو سمجھ کر آپ اپنی SEO strategy کو بہتر بنا سکتے ہیں۔</p><h3>Example</h3><p>1. GSC میں URL Inspection: کسی بھی پیج کا URL انٹر کرکے چیک کریں کہ گوگل اسے کراول کر رہا ہے یا نہیں۔<br>2. GA4 میں ٹریفک سورسز: &quot;Acquisition&quot; &gt; &quot;All Traffic&quot; &gt; &quot;Source/Medium&quot; دیکھ کر پتہ کریں کہ وزٹرس آپکی سائٹ پر کہاں سے آ رہے ہیں (گوگل سرچ، سوشل میڈیا، وغیرہ)۔</p><h3>Practice</h3><p>1. اپنی ویب سائٹ (یا کسی dummy site) کا GSC اکاؤنٹ میں ایڈ کریں۔<br>2. &quot;Coverage&quot; رپورٹ چیک کریں اور کوئی کراول ایرر فکس کرنے کی کوشش کریں۔<br>3. GA4 میں ایک بنیادی رپورٹ بنائیں (مثلاً، &quot;Users by Country&quot;)۔</p><h3>Mini Project</h3><p>ایک 1-پیج رپورٹ تیار کریں جس میں آپ GSC سے ٹاپ 3 سرچ کوئریز اور GA4 سے ٹاپ 3 ٹریفک سورسز ذکر کریں۔ (فارمیٹ: &quot;Query/Source - Clicks/Users&quot;)</p></div>
       
       <div>
