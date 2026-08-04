@@ -904,6 +904,80 @@ def _run_edge_tts(text_file_path, voice, out_mp3):
         return False
 
 
+def _get_audio_duration(mp3_path):
+    try:
+        result = subprocess.run(
+            ["ffprobe", "-v", "error", "-show_entries", "format=duration",
+             "-of", "default=noprint_wrappers=1:nokey=1", mp3_path],
+            capture_output=True, timeout=30, text=True,
+        )
+        return float(result.stdout.strip())
+    except Exception:
+        return None
+
+
+def _srt_timestamp(seconds):
+    ms = max(0, int(round(seconds * 1000)))
+    h, ms = divmod(ms, 3600000)
+    m, ms = divmod(ms, 60000)
+    s, ms = divmod(ms, 1000)
+    return f"{h:02d}:{m:02d}:{s:02d},{ms:03d}"
+
+
+def _build_caption_srt(script_text, duration, srt_path, words_per_caption=6):
+    """Narration text ko chhote-chhote caption chunks mein baant kar ek
+    .srt file banata hai, duration ke hisaab se barabar time diya jata
+    hai (real speech-alignment nahi — sirf estimate — lekin free jugaad
+    ke liye kaafi accha lagta hai)."""
+    words = (script_text or "").split()
+    if not words or not duration or duration <= 0:
+        return False
+    chunks = [words[i:i + words_per_caption] for i in range(0, len(words), words_per_caption)]
+    per_chunk = duration / len(chunks)
+    lines = []
+    for i, chunk in enumerate(chunks):
+        start, end = i * per_chunk, min((i + 1) * per_chunk, duration)
+        lines += [str(i + 1), f"{_srt_timestamp(start)} --> {_srt_timestamp(end)}", " ".join(chunk), ""]
+    try:
+        with open(srt_path, "w", encoding="utf-8") as f:
+            f.write("\n".join(lines))
+        return True
+    except Exception:
+        return False
+
+
+def _run_ffmpeg_kenburns_captions(image_path, audio_path, srt_path, out_mp4):
+    """Free 'jugaad' — asal video-generation AI (Veo/Sora waghera) paid
+    hoti hai, is liye iski jagah slow zoom (Ken Burns effect) + neeche
+    animated captions burn karte hain, taake ek static slide bhi ek
+    'zinda' explainer video jaisi lage — bilkul free, sirf ffmpeg se."""
+    vf = (
+        "scale=1280:720:force_original_aspect_ratio=increase,crop=1280:720,"
+        "zoompan=z='min(zoom+0.0006,1.18)':d=9999:s=1280x720:fps=25"
+    )
+    if srt_path and os.path.exists(srt_path):
+        escaped = srt_path.replace("\\", "/").replace(":", "\\:")
+        vf += (
+            f",subtitles='{escaped}':force_style="
+            "'FontSize=20,PrimaryColour=&HFFFFFF&,OutlineColour=&H000000&,"
+            "BorderStyle=3,Outline=2,Shadow=0,Alignment=2,MarginV=40'"
+        )
+    cmd = [
+        "ffmpeg", "-y", "-loop", "1", "-i", image_path, "-i", audio_path,
+        "-c:v", "libx264", "-preset", "veryfast", "-c:a", "aac", "-b:a", "128k",
+        "-pix_fmt", "yuv420p", "-shortest", "-vf", vf, out_mp4,
+    ]
+    try:
+        result = subprocess.run(cmd, capture_output=True, timeout=240)
+        if result.returncode != 0:
+            print(f"ffmpeg (Ken Burns+captions) error: {result.stderr.decode(errors='ignore')[:300]}", file=sys.stderr)
+            return False
+        return os.path.exists(out_mp4) and os.path.getsize(out_mp4) > 5000
+    except Exception as e:
+        print(f"ffmpeg (Ken Burns+captions) call fail: {e}", file=sys.stderr)
+        return False
+
+
 def _run_ffmpeg_image_audio(image_path, audio_path, out_mp4):
     cmd = [
         "ffmpeg", "-y", "-loop", "1", "-i", image_path, "-i", audio_path,
@@ -968,11 +1042,24 @@ def generate_lesson_narration_video(slug, course, lesson, image_source_path):
             print(f"[{slug}] Day {day_num} video skip: TTS fail.", file=sys.stderr)
             return
 
-    if not _run_ffmpeg_image_audio(image_source_path, mp3_path, mp4_path):
-        print(f"[{slug}] Day {day_num} video skip: ffmpeg fail.", file=sys.stderr)
-        return
+    # Pehle behtar "Ken Burns zoom + captions" wala free jugaad try karo
+    # (asal AI video generation paid hoti hai, yeh iski jagah). Fail ho
+    # jaye (ffmpeg build mein subtitles/zoompan support na ho waghera)
+    # to purane simple still-image version par fallback ho jata hai —
+    # video kabhi bhi banna band nahi hota.
+    srt_path = os.path.join(work_dir, f"day-{padded}.srt")
+    duration = _get_audio_duration(mp3_path)
+    has_srt = duration and _build_caption_srt(script_text, duration, srt_path)
+    made = False
+    if _run_ffmpeg_kenburns_captions(image_source_path, mp3_path, srt_path if has_srt else None, mp4_path):
+        made = True
+        print(f"[{slug}] Day {day_num} AI video explanation ban gayi (Ken Burns zoom + captions).")
+    elif _run_ffmpeg_image_audio(image_source_path, mp3_path, mp4_path):
+        made = True
+        print(f"[{slug}] Day {day_num} AI video explanation ban gayi (free, voice+slide — fallback).")
 
-    print(f"[{slug}] Day {day_num} AI video explanation ban gayi (free, voice+slide).")
+    if not made:
+        print(f"[{slug}] Day {day_num} video skip: ffmpeg dono attempts fail.", file=sys.stderr)
 
 
 def publish_lesson_video(slug, day_num):
