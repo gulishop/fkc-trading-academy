@@ -1,0 +1,127 @@
+1
+00:00:00,000 --> 00:00:03,089
+Day 2 — Blogger vs WordPress:
+
+2
+00:00:03,089 --> 00:00:06,178
+Apna Blog Kaise Setup Karen? (Step-by-Step
+
+3
+00:00:06,178 --> 00:00:09,268
+Guide) Concept. Aaj hum apna blog
+
+4
+00:00:09,268 --> 00:00:12,357
+Blogger ya WordPress par setup karna
+
+5
+00:00:12,357 --> 00:00:15,446
+seekhenge. Blogger free hai (Google ka
+
+6
+00:00:15,446 --> 00:00:18,536
+platform), lekin WordPress zyada flexible hai
+
+7
+00:00:18,536 --> 00:00:21,625
+(hosting khud ki lena hoti hai).
+
+8
+00:00:21,625 --> 00:00:24,714
+Har ek ke pros-cons samajh kar
+
+9
+00:00:24,714 --> 00:00:27,803
+decide karna zaroori hai. Blogger Setup
+
+10
+00:00:27,803 --> 00:00:30,892
+(5 min mein). 1. Google account
+
+11
+00:00:30,892 --> 00:00:33,982
+se blogger.com par jao. 2. "New
+
+12
+00:00:33,982 --> 00:00:37,071
+Blog" par click karo, title (e.g.,
+
+13
+00:00:37,071 --> 00:00:40,160
+"Urdu Tech Tips"), address (e.g., urdutechtips.blogspot.com)
+
+14
+00:00:40,160 --> 00:00:43,250
+enter karo. 3. Template choose karo
+
+15
+00:00:43,250 --> 00:00:46,339
+(simple "Contempo" ya "Soho"). 4. "Create
+
+16
+00:00:46,339 --> 00:00:49,428
+blog!" par click karo. Done! WordPress
+
+17
+00:00:49,428 --> 00:00:52,517
+Setup (15 min mein). 1. Hosting
+
+18
+00:00:52,517 --> 00:00:55,606
+khareedo (e.g., Bluehost, Hostinger) — ₹2000/month
+
+19
+00:00:55,606 --> 00:00:58,696
+se shuru. 2. Domain register karo
+
+20
+00:00:58,696 --> 00:01:01,785
+(e.g., urdutechtips.com). 3. WordPress install karo
+
+21
+00:01:01,785 --> 00:01:04,874
+(hosting ke cPanel se "1-click install"
+
+22
+00:01:04,874 --> 00:01:07,964
+option use karo). 4. Login karo,
+
+23
+00:01:07,964 --> 00:01:11,053
+theme install karo (e.g., "Astra" ya
+
+24
+00:01:11,053 --> 00:01:14,142
+"GeneratePress"). 5. Pages (Home, About) aur
+
+25
+00:01:14,142 --> 00:01:17,231
+first post likh kar publish karo.
+
+26
+00:01:17,231 --> 00:01:20,320
+Practice. Apna ek blog Blogger ya
+
+27
+00:01:20,320 --> 00:01:23,410
+WordPress par setup karo (agar WordPress
+
+28
+00:01:23,410 --> 00:01:26,499
+choose karte hain to hosting khareedne
+
+29
+00:01:26,499 --> 00:01:29,588
+ki zaroorat hai). Mini Project. Apne
+
+30
+00:01:29,588 --> 00:01:32,678
+blog ka Homepage design karo —
+
+31
+00:01:32,678 --> 00:01:35,767
+1-2 sections add karo (e.g., "Latest
+
+32
+00:01:35,767 --> 00:01:38,856
+Posts" widget ya "About Me" section).
