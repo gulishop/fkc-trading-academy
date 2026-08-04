@@ -2728,6 +2728,72 @@
           ]
         }
       }
+    },
+    {
+      "day": 3,
+      "id": "day-003",
+      "date": "2026-08-04",
+      "title": "Day 3 — VLOOKUP aur XLOOKUP: Data ko tabdeel karne ka asaan tareeqa",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke do powerful functions ka istemal karke Excel mein kisi bhi table se specific data ko kaise dhundh sakte hain. VLOOKUP (Vertical Lookup) ek purana lekin zaroori function hai jo pehle column mein search karta hai aur uske corresponding row se data uthaata hai. XLOOKUP (Excel ka latest addition) isko aur behtar banata hai — yeh left se right search kar sakta hai, exact matches ko default banata hai, aur errors ko handle karne mein behtar hai."
+        ],
+        [
+          "Example",
+          "Maan lo ek *Sales* table hai jismein Product ID aur uske corresponding Price hai. Aapko Product ID `P101` ka price nikalna hai.\n\n1."
+        ],
+        [
+          "VLOOKUP ka tareeqa",
+          "`=VLOOKUP(\"P101\", A2:B10, 2, FALSE)`\n   - `\"P101\"`: Jo value dhundhni hai.\n   - `A2:B10`: Data ka range (Product ID column A mein, Price column B mein).\n   - `2`: Price column ka index (A=1, B=2).\n   - `FALSE`: Exact match.\n\n2."
+        ],
+        [
+          "XLOOKUP ka tareeqa",
+          "`=XLOOKUP(\"P101\", A2:A10, B2:B10, \"Not Found\")`\n   - `\"P101\"`: Search value.\n   - `A2:A10`: Search range (Product ID column).\n   - `B2:B10`: Return range (Price column).\n   - `\"Not Found\"`: Agar value na mile toh yeh message."
+        ],
+        [
+          "Practice",
+          "Ek *Employees* table banao jismein Column A mein Employee IDs (E001, E002...) aur Column B mein unke Names hon. Phir VLOOKUP aur XLOOKUP ka istemal karke Employee ID `E003` ka name nikalne ka formula likho."
+        ],
+        [
+          "Mini Project",
+          "Ek *Products* table banao (Product ID, Product Name, Price). Phir ek naya sheet banao jismein Product IDs ka list ho. Har Product ID ke liye XLOOKUP ka istemal karke uska Name aur Price nikal kar ek table banaye."
+        ]
+      ],
+      "answer_key": "product name, price",
+      "translations": {
+        "ur": {
+          "title": "Day 3 — VLOOKUP اور XLOOKUP: ڈیٹا کو تبدیل کرنے کا آسان طریقہ",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "آج ہم سیکھیں گے کہ دو پاورفل فنکشنز کا استعمال کر کے ایکسل میں کسی بھی ٹیبل سے مخصوص ڈیٹا کو کیسے ڈھونڈھ سکتے ہیں۔ VLOOKUP (ورٹیکل لوک اپ) ایک پرانا لیکن ضروری فنکشن ہے جو پہلے کالم میں سرچ کرتا ہے اور اس کے مطابق والی راؤ سے ڈیٹا اٹھاتا ہے۔ XLOOKUP (ایکسسل کا لاسٹ ایڈیشن) اسے اور بہتر بناتا ہے — یہ لیفٹ سے رائٹ سرچ کر سکتا ہے، ایکسٹیکٹ میچز کو ڈیفالٹ بناتا ہے، اور ایررز کو ہینڈل کرنے میں بہتر ہے۔"
+            },
+            {
+              "label": "Example",
+              "content": "مان لو ایک *Sales* ٹیبل ہے جس میں Product ID اور اس کے corresponding Price ہے۔ آپکو Product ID `P101` کا price نکلنا ہے۔"
+            },
+            {
+              "label": "1",
+              "content": "VLOOKUP کا طریقہ: `=VLOOKUP(\"P101\", A2:B10, 2, FALSE)`\n   - `\"P101\"`: جو ویلیو ڈھونڈنی ہے۔\n   - `A2:B10`: ڈیٹا کا رینج (Product ID کالم A میں، Price کالم B میں)۔\n   - `2`: Price کالم کا انڈیکس (A=1, B=2)۔\n   - `FALSE`: ایکسٹیکٹ میچ۔"
+            },
+            {
+              "label": "2",
+              "content": "XLOOKUP کا طریقہ: `=XLOOKUP(\"P101\", A2:A10, B2:B10, \"Not Found\")`\n   - `\"P101\"`: سرچ ویلیو۔\n   - `A2:A10`: سرچ رینج (Product ID کالم)۔\n   - `B2:B10`: رٹرن رینج (Price کالم)۔\n   - `\"Not Found\"`: اگر ویلیو نہ ملے تو یہ میسج۔"
+            },
+            {
+              "label": "Practice",
+              "content": "ایک *Employees* ٹیبل بناؤ جس میں کالم A میں Employee IDs (E001, E002...) اور کالم B میں انکے Names ہوں۔ پھر VLOOKUP اور XLOOKUP کا استعمال کر کے Employee ID `E003` کا نام نکلنے کا فارمولہ لکھو۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک *Products* ٹیبل بناؤ (Product ID, Product Name, Price)۔ پھر ایک نیا شیٹ بناؤ جس میں Product IDs کا لسٹ ہو۔ ہر Product ID کے لیے XLOOKUP کا استعمال کر کے اسکا Name اور Price نکل کر ایک ٹیبل بنائے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "crypto-blockchain": [

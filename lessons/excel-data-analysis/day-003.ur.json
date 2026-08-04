@@ -1,0 +1,30 @@
+{
+  "title": "Day 3 — VLOOKUP اور XLOOKUP: ڈیٹا کو تبدیل کرنے کا آسان طریقہ",
+  "preamble": "",
+  "sections": [
+    {
+      "label": "Concept",
+      "content": "آج ہم سیکھیں گے کہ دو پاورفل فنکشنز کا استعمال کر کے ایکسل میں کسی بھی ٹیبل سے مخصوص ڈیٹا کو کیسے ڈھونڈھ سکتے ہیں۔ VLOOKUP (ورٹیکل لوک اپ) ایک پرانا لیکن ضروری فنکشن ہے جو پہلے کالم میں سرچ کرتا ہے اور اس کے مطابق والی راؤ سے ڈیٹا اٹھاتا ہے۔ XLOOKUP (ایکسسل کا لاسٹ ایڈیشن) اسے اور بہتر بناتا ہے — یہ لیفٹ سے رائٹ سرچ کر سکتا ہے، ایکسٹیکٹ میچز کو ڈیفالٹ بناتا ہے، اور ایررز کو ہینڈل کرنے میں بہتر ہے۔"
+    },
+    {
+      "label": "Example",
+      "content": "مان لو ایک *Sales* ٹیبل ہے جس میں Product ID اور اس کے corresponding Price ہے۔ آپکو Product ID `P101` کا price نکلنا ہے۔"
+    },
+    {
+      "label": "1",
+      "content": "VLOOKUP کا طریقہ: `=VLOOKUP(\"P101\", A2:B10, 2, FALSE)`\n   - `\"P101\"`: جو ویلیو ڈھونڈنی ہے۔\n   - `A2:B10`: ڈیٹا کا رینج (Product ID کالم A میں، Price کالم B میں)۔\n   - `2`: Price کالم کا انڈیکس (A=1, B=2)۔\n   - `FALSE`: ایکسٹیکٹ میچ۔"
+    },
+    {
+      "label": "2",
+      "content": "XLOOKUP کا طریقہ: `=XLOOKUP(\"P101\", A2:A10, B2:B10, \"Not Found\")`\n   - `\"P101\"`: سرچ ویلیو۔\n   - `A2:A10`: سرچ رینج (Product ID کالم)۔\n   - `B2:B10`: رٹرن رینج (Price کالم)۔\n   - `\"Not Found\"`: اگر ویلیو نہ ملے تو یہ میسج۔"
+    },
+    {
+      "label": "Practice",
+      "content": "ایک *Employees* ٹیبل بناؤ جس میں کالم A میں Employee IDs (E001, E002...) اور کالم B میں انکے Names ہوں۔ پھر VLOOKUP اور XLOOKUP کا استعمال کر کے Employee ID `E003` کا نام نکلنے کا فارمولہ لکھو۔"
+    },
+    {
+      "label": "Mini Project",
+      "content": "ایک *Products* ٹیبل بناؤ (Product ID, Product Name, Price)۔ پھر ایک نیا شیٹ بناؤ جس میں Product IDs کا لسٹ ہو۔ ہر Product ID کے لیے XLOOKUP کا استعمال کر کے اسکا Name اور Price نکل کر ایک ٹیبل بنائے۔"
+    }
+  ]
+}
