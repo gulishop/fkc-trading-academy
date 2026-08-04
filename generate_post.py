@@ -1748,6 +1748,14 @@ def build_translation_prompt(lang_label, title, preamble, sections):
         f"Neeche diya gaya ek lesson hai, Roman Urdu mein likha hua. Isay poora "
         f"{lang_label} translate karo — matlab, tone, aur structure bilkul wahi rakho, "
         "sirf zaban/script badlo, kuch add ya remove mat karo. "
+        "Zaroori rules: "
+        "1) HAR sentence ko poora script mein likho — koi bhi English sentence ya phrase "
+        "jaise-taise (untranslated) mat chhodo; sirf khaas naam (jaise Midjourney, "
+        "ChatGPT, YouTube) Latin script mein rehne do, baaki sab (grammar, jodne wale "
+        "alfaz, explanation) poori tarah target script mein ho. "
+        "2) 'preamble' aur har section ka 'content' ek dusre se ALAG aur UNIQUE hona "
+        "chahiye — koi bhi paragraph ya jumla do jagah repeat/copy-paste mat karo. "
+        "3) Kisi bhi field ke andar ek hi jumla ya phrase baar baar loop mein mat likho. "
         "SIRF valid JSON return karo, koi extra text, koi markdown code-fence nahi, "
         "bilkul is shape mein: "
         '{"title": "...", "preamble": "...", "sections": [{"label": "...", "content": "..."}]}. '
@@ -1792,14 +1800,46 @@ def _is_degenerate_text(text, min_len=40):
     return False
 
 
+def _normalize_for_compare(text):
+    return re.sub(r"\s+", " ", (text or "")).strip().lower()
+
+
+def _texts_are_near_duplicate(a, b, min_len=40):
+    """Detect jab do fields (jaise preamble aur pehla section) mein bilkul
+    ya lagbhag wahi paragraph repeat ho jaye — jaise 'Concept' wala matn
+    preamble mein bhi aa gaya aur uske section content mein bhi dobara aa
+    gaya (screenshot wala Sindhi bug)."""
+    na, nb = _normalize_for_compare(a), _normalize_for_compare(b)
+    if len(na) < min_len or len(nb) < min_len:
+        return False
+    if na == nb:
+        return True
+    shorter, longer = (na, nb) if len(na) <= len(nb) else (nb, na)
+    # agar chhota text lagbhag pura bade text ke andar hi mil jaye, to yeh
+    # copy-paste duplication hai, alag translation nahi
+    return shorter in longer and len(shorter) / len(longer) > 0.6
+
+
 def _translation_is_sane(data):
     preamble = data.get("preamble", "") or ""
     if _is_degenerate_text(preamble):
         return False
-    for sec in data.get("sections", []):
+    sections = data.get("sections", []) or []
+    contents = []
+    for sec in sections:
         content = sec.get("content", "") if isinstance(sec, dict) else ""
         if _is_degenerate_text(content):
             return False
+        contents.append(content)
+    # preamble kisi bhi section ke content se duplicate to nahi
+    for content in contents:
+        if _texts_are_near_duplicate(preamble, content):
+            return False
+    # do sections aapas mein bhi duplicate to nahi
+    for i in range(len(contents)):
+        for j in range(i + 1, len(contents)):
+            if _texts_are_near_duplicate(contents[i], contents[j]):
+                return False
     return True
 
 
