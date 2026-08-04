@@ -1,0 +1,22 @@
+{
+  "title": "Day 1 — آواز اوور کی بنیادی باتیں: اپنا مائک سیٹ کریں",
+  "preamble": "",
+  "sections": [
+    {
+      "label": "تصور",
+      "content": "آج ہم سیکھیں گے کہ آواز اوور کے لیے سب سے پہلے کیا ضروری ہے—ایک اچھا مائک سیٹ اپ۔ ایک بہتر مائک اور proper positioning سے آپکی آواز پروفیشنل اور clear آتی ہے۔ بنیادی باتوں میں microphone types (USB vs XLR)، room acoustics، اور positioning جیسے چیزوں پر فوکس کریں گے۔"
+    },
+    {
+      "label": "مثال",
+      "content": "1.\n\nمائک ٹائپ: اگر آپ beginner ہیں، تو USB mic (جیسے Blue Yeti یا FIFINE K669B) استعمال کریں۔ XLR mic زیادہ advanced ہیں اور extra interface کی ضرورت ہوتی ہے۔\n\n2.\n\nکمروں کا سیٹ اپ: ایک quiet room میں recording کریں۔ اگر آپکے پاس soundproof room نہیں ہے، تو ایک blanket یا foam panels لگا کر echo کم کریں۔\n\n3.\n\nپوزیشننگ: مائک کو اپنے منہ سے 6-12 inches دور رکھیں۔ \"Pop filter\" استعمال کریں تاکہ \"P\" اور \"B\" جیسے words سے آنے والے harsh sounds کم ہوں۔"
+    },
+    {
+      "label": "مشق",
+      "content": "اپنے مائک کو connect کریں اور ایک 30-second کا recording کریں—اپنی آواز کو describe کریں (جیسے \"میرا نام ہے [X]، اور میں آواز اوور آرٹسٹ بننا چاہتا ہوں\")۔ Check کریں کہ آواز clear ہے یا نہیں۔"
+    },
+    {
+      "label": "چھوٹا پروجیکٹ",
+      "content": "ایک 1-minute کا intro script لکھیں (جیسے podcast یا آواز اوور کے لیے) اور اسے record کریں۔ Try کریں کہ tone natural ہو اور مائک سے 6-12 inches دور رہیں۔"
+    }
+  ]
+}

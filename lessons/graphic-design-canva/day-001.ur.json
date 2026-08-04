@@ -1,0 +1,30 @@
+{
+  "title": "Day 1 — کینوا کا پہلا تعارف: انٹرفیس اور بنیادی کنٹرولز",
+  "preamble": "",
+  "sections": [
+    {
+      "label": "تصور",
+      "content": "آج ہم کینوا کے ڈیش بورڈ اور اس کی بنیادی سیٹنگز سے واقف ہوں گے۔ کینوا ایک ڈریگ اینڈ ڈراپ ڈیزائن ٹول ہے جو بیگنرز کے لیے بھی بہت آسان ہے۔ یہاں ٹیمپلیٹس، ایلیمنٹس (شکل، آئیکنز وغیرہ)، ٹیکسٹ آپشنز، اور اپلوڈ فیچرز ملتے ہیں۔ پہلے ہم اس کے انٹرفیس کو سمجھیں گے تاکہ اگلے لیسنز میں confidently کام کر سکیں۔"
+    },
+    {
+      "label": "مثال",
+      "content": "1. Canva.com پر جائیں، گوگل یا ای میل سے اکاؤنٹ بنائیں۔"
+    },
+    {
+      "label": "ہوم پیج",
+      "content": "Left side میں \"Create a design\" بٹن پر کلک کریں۔ یہاں سے custom size (جیسے 1080x1080px for Instagram) یا pre-set ٹیمپلیٹس (جیسے \"Instagram Post\") select کریں۔"
+    },
+    {
+      "label": "انٹرفیس کی تفصیل",
+      "content": "- Top Bar: Undo/Redo، save، share، اور export آپشنز۔\n- Left Panel: ٹیمپلیٹس، ایلیمنٹس (آئیکنز، شکل)، ٹیکسٹ، اپلوڈز، اور background آپشنز۔\n- Canvas: اپنا ڈیزائن یہاں بنائیں—ڈریگ کرکے ایلیمنٹس add کریں۔\n- Right Panel: ہر selected element کی properties (color، size، effects) edit کریں۔"
+    },
+    {
+      "label": "پریکٹس",
+      "content": "ایک نیا ڈیزائن create کریں (جیسے \"Facebook Post\" ٹیمپلیٹ)۔ Left panel سے ایک \"Text\" باکس add کریں، اس میں اپنا نام ٹائپ کریں، اور right panel سے font style اور color change کریں۔"
+    },
+    {
+      "label": "منی پراجیکٹ",
+      "content": "ایک simple Instagram Post (1080x1080px) بنائیں جس میں:\n- ایک background color ہو (left panel > \"Background\" > color pick کریں)۔\n- ایک ٹیکسٹ باکس ہو \"Hello World!\" (font: \"Poppins\"، color: white)۔\n- ایک simple شکل (جیسے circle) add کریں (left panel > \"Elements\" > \"Shapes\")۔"
+    }
+  ]
+}

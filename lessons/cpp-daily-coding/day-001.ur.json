@@ -1,0 +1,18 @@
+{
+  "title": "Day 1 — C++ سیٹ اپ اور 'Hello World' پروگرام",
+  "preamble": "",
+  "sections": [
+    {
+      "label": "تصورات",
+      "content": "آج ہم C++ پروگرامنگ شروع کرنے سے پہلے اپنے سسٹم پر C++ کمپائلر اور IDE (انٹیگریٹڈ ڈویلپمنٹ ماحول) سیٹ اپ کریں گے۔ کمپائلر کوڈ کو مشین لینگویج میں ترجمہ کرتا ہے، جبکہ IDE کوڈنگ، ڈیبگنگ اور رننگ کو آسان بناتا ہے۔ پہلا پروگرام 'Hello World' کہلاتا ہے—یہ پروگرامنگ کی ابتدائی نشانی ہوتی ہے۔"
+    },
+    {
+      "label": "مثال",
+      "content": "1.\nکمپائلر انسٹال کریں:\n- Windows: [MinGW-w64](https://www.mingw-w64.org/) ڈاؤن لوڈ کریں (یا [MSYS2](https://www.msys2.org/))۔\n- Mac: ٹرمینل میں `xcode-select --install` رن کریں۔\n- Linux: `sudo apt install g++` (اوبنٹو/ڈیبین) یا `sudo dnf install gcc-c++` (فیڈورا)۔\n\n2.\nIDE انسٹال کریں:\n- [VS Code](https://code.visualstudio.com/) (ہلکا پھلکا، ایکسٹینشنز: 'C/C++' اور 'Code Runner')۔\n- یا [Code::Blocks](https://www.codeblocks.org/) (سادہ IDE)۔\n\n3.\nپہلا پروگرام لکھیں:\n```cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello World!\" << endl;\n    return 0;\n}\n```\n- `g++ hello.cpp -o hello` سے کمپائل کریں۔\n- `./hello` (لِنکس/میک) یا `hello.exe` (ونڈوز) سے رن کریں۔"
+    },
+    {
+      "label": "مشق",
+      "content": "اپنے سسٹم پر C++ کمپائلر اور VS Code سیٹ اپ کریں، اور اوپر والا 'Hello World' پروگرام رن کریں۔ اسکرین شاٹ یا ٹرمینل آؤٹ پٹ شیئر کریں۔"
+    }
+  ]
+}

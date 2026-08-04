@@ -24,7 +24,31 @@
           "Ek WhatsApp group ya Facebook post banaye jisme tum ek affiliate product promote karo. Post mein product ka naam, price, aur affiliate link share karo. (Note: Disclosure add karna mat bhulna—\"Affiliate link\" likh dena.)"
         ]
       ],
-      "answer_key": "affiliate link generate, commission structure, product promotion, approval process"
+      "answer_key": "affiliate link generate, commission structure, product promotion, approval process",
+      "translations": {
+        "ur": {
+          "title": "Day 1 — ایفیلی ایٹ مارکیٹنگ کیسے کام کرتا ہے؟ (بنیادی معلومات سے شروع کریں)",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "ایفیلی ایٹ مارکیٹنگ ایک ایسا بزنس ماڈل ہے جس میں آپ کسی کمپنی یا پراڈکٹ کا پروموشن کرتے ہیں اور ہر کامیاب سیل یا لیڈ کے بعد آپ کو کمیشن ملتا ہے۔ یہ ایک 'Win-Win' سسٹم ہے: کمپنی کو اضافی سیلز ملتی ہیں اور آپ کو پیسے ملتے ہیں بغیر کوئی پراڈکٹ بنائے۔ اس میں چار اہم کردار ہوتے ہیں: **مرچنٹ** (پراڈکٹ کا مالک)، **ایفیلی ایٹ** (آپ)، **کنزیومر** (گاہک) اور **نیٹ ورک** (ایمیزون ایسوسی ایٹس، کلک بینک وغیرہ)۔"
+            },
+            {
+              "label": "Example",
+              "content": "تصور کریں کہ آپ ایک فٹنس بلاگر ہیں۔ آپ اپنے بلاگ پر ایک پروٹین پاوڈر کا ایفیلی ایٹ لنک شیئر کرتے ہیں۔ کوئی قاری اس لنک سے پروٹین پاوڈر خرید لیتا ہے تو آپ کو ہر سیل پر 10% کمیشن ملتا ہے۔ یہ عمل خودکار ہوتا ہے—آپ کو ڈائریکٹ کسٹمر سے ڈیل کرنے کی ضرورت نہیں۔"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے فون یا لیپ ٹاپ سے کوئی پراڈکٹ سرچ کریں جو آپ بیچ سکتے ہوں (مثلاً، وائرلیس ایربڈز، سکن کیئر پراڈکٹ)۔ اس کے ایفیلی ایٹ پروگرام کے لیے اپلائی کریں (ایمیزون ایسوسی ایٹس، داراز وغیرہ)۔ اگر اپروول مل جائے تو اس پراڈکٹ کا ایفیلی ایٹ لنک جنریٹ کریں۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک واٹس ایپ گروپ یا فیس بک پوسٹ بنائیں جس میں آپ ایک ایفیلی ایٹ پراڈکٹ پروموٹ کریں۔ پوسٹ میں پراڈکٹ کا نام، پرائس اور ایفیلی ایٹ لنک شیئر کریں۔ (نوٹ: ڈسکلوزر شامل کرنا نہ بھولیں—'ایفیلی ایٹ لنک' لکھ دینا۔)"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 2,
@@ -62,7 +86,8 @@
           "Ek **100-150 words ka micro-blog post** likho jisme ek product recommend karna hai. Post mein:\n- Product ka naam aur ek short review.\n- \"Check Price\" button (affiliate link).\n- Disclosure line add karo (e.g., \"Yeh post mein affiliate links hain\")."
         ]
       ],
-      "answer_key": "product review, natural placement, disclosure, cta"
+      "answer_key": "product review, natural placement, disclosure, cta",
+      "translations": {}
     },
     {
       "day": 3,
@@ -96,7 +121,31 @@
           "Ek simple comparison table banaein (2 columns: Amazon Associates vs Daraz Affiliate) aur 3 key points (commission, approval process, best niche) fill karein."
         ]
       ],
-      "answer_key": "amazon: global reach, low approval, 1-10%, daraz: local focus, high commission, strict approval"
+      "answer_key": "amazon: global reach, low approval, 1-10%, daraz: local focus, high commission, strict approval",
+      "translations": {
+        "ur": {
+          "title": "Day 3 — Amazon Associates vs Daraz Affiliate: کون سا چنیں؟",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "مفہوم",
+              "content": "Amazon Associates اور Daraz Affiliate دونوں ہی مقبول افیلی ایٹ پروگرام ہیں، لیکن ان کے درمیان اہم فرق ہیں۔ Amazon Associates عالمی سطح پر ہے اور اس پر زیادہ مصنوعات دستیاب ہیں، جبکہ Daraz مقامی ہے اور پاکستان/SAARC علاقوں پر توجہ مرکوز کرتا ہے۔ کمیشن کی شرحیں، ادائیگی کے طریقے اور منظوری کے معیارات بھی الگ ہیں۔"
+            },
+            {
+              "label": "مثالیں",
+              "content": "1.\nAmazon Associates: اگر آپ الیکٹرانکس پر مواد بنا رہے ہیں، تو Amazon پر ہر مصنوعہ کا منفرد افیلی ایٹ لنک ملتا ہے۔ کمیشن 1-10% تک ہو سکتا ہے۔\n\n2.\nDaraz Affiliate: اگر آپ مقامی فیشن یا گروسری پر مواد بنا رہے ہیں، تو Daraz پر زیادہ کمیشن کی شرحیں (10-20%) مل سکتی ہیں، لیکن منظوری کا عمل سخت ہے۔"
+            },
+            {
+              "label": "مشق",
+              "content": "اپنے نچے کے حساب سے فیصلہ کریں کہ آپ کو Amazon Associates یا Daraz Affiliate پروگرام جوائن کرنا چاہیے۔ 2 وجوہات لکھیں کہ آپ کا انتخاب کیوں درست ہے۔"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "ایک سادہ موازنہ ٹیبل بنائیں (2 کالم: Amazon Associates vs Daraz Affiliate) اور 3 اہم نکات (کمیشن، منظوری کا عمل، بہترین نچے) بھریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "youtube-automation": [
@@ -124,7 +173,31 @@
           "Ek simple Google search karein aur har topic ke liye competition check karein. Har topic ke liye YouTube search bar mein type karein aur dekhein ki kitne videos hain aur unke views kya hain. Isse aapko pata chalega ki aapka selected niche kitna competitive hai."
         ]
       ],
-      "answer_key": "fitness, home workout, weight loss, yoga"
+      "answer_key": "fitness, home workout, weight loss, yoga",
+      "translations": {
+        "ur": {
+          "title": "Day 1 — نیچے سلیکشن کرنا: اپنا YouTube چینل کا فاؤنڈیشن",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "نیچے سلیکشن کرنا YouTube چینل کا سب سے پہلا اور سب سے اہم سٹپ ہے۔ نیچے کا مطلب آپ کا چینل کا ٹاپک یا سBJECT ہے جس میں آپ ویڈیوز بنائیں گے۔ ایک اچھا نیچے آپ کو کنسسٹنٹ کنٹینٹ آئیڈیا دیتا ہے، آڈیئنس کو اٹریکٹ کرتا ہے، اور کمپٹیشن کو بھی مینیج کرنے میں مدد کرتا ہے۔ اپنا نیچے چننے کے وقت اپنے انٹرسٹس، اسکلز، اور مارکیٹ ڈیمانڈ کو کانسیڈر کرنا ضروری ہے۔"
+            },
+            {
+              "label": "Example",
+              "content": "مانا آپ کو فٹنس پسند ہے۔ اب آپ کو ڈسیڈ کرنا ہے کہ آپ فٹنس کے کس سپیسفک ایریا پر فوکس کرنا چاہتے ہیں۔ جیسے:\n- Gym beginners guide\n- Home workout for women\n- Weight loss diet plans\n- Yoga for stress relief\nاس طرح سے نیچے سلیکشن کرنے سے آپ کو کنٹینٹ آئیڈیا بھی ایزیلی مل جائیں گے اور آڈیئنس بھی ٹارگٹڈ رہے گی۔"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے انٹرسٹس اور اسکلز لسٹ کریں۔ پھر 3-5 ٹاپکس سلیکٹ کریں جن پر آپ ویڈیوز بنا سکتے ہیں۔ ہر ٹاپک کے لیے 3-5 کنٹینٹ آئیڈیا سوچیں۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک سادہ Google search کریں اور ہر ٹاپک کے لیے کمپٹیشن چیک کریں۔ ہر ٹاپک کے لیے YouTube search bar میں ٹائپ کریں اور دیکھیں کہ کتنے ویڈیوز ہیں اور ان کے ویوز کیا ہیں۔ اس سے آپ کو پتہ چلے گا کہ آپ کا سلیکٹڈ نیچے کتنا کمپٹٹو ہے۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 2,
@@ -158,7 +231,8 @@
           "Ek 1-minute ka \"Hook\" script likhein jo AI se generate karke usko apne voice ya style mein customize karen. Isse aapko pata chalega ke AI se content kaise modify karna hai."
         ]
       ],
-      "answer_key": "script draft, human touch editing, niche-specific examples, engaging cta"
+      "answer_key": "script draft, human touch editing, niche-specific examples, engaging cta",
+      "translations": {}
     },
     {
       "day": 3,
@@ -184,7 +258,31 @@
           "Ek 1-minute ka faceless video clip banayo jisme:\n- 1 stock footage clip ho (Pexels/Pixabay se download karo).\n- Auto-captioning + 2 transitions hon.\n- Background music ho (CapCut ke AI music se)."
         ]
       ],
-      "answer_key": "stock footage, auto captions, transitions, background music"
+      "answer_key": "stock footage, auto captions, transitions, background music",
+      "translations": {
+        "ur": {
+          "title": "Day 3 — AI-Powered Video Editing: CapCut اور Pictory سے پروفیشنل ویڈیوز بنانا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "AI ٹولز جیسے CapCut اور Pictory سے فیس لیس ویڈیوز ایڈٹ کرنا سیکھنا ہے۔ ان ٹولز سے آٹو کیپشننگ، ٹرانزیشنز، اور بیک گراؤنڈ میوزک لگانا آسان ہو جاتا ہے۔ CapCut موبائل/PC پر فری ہے، جبکہ Pictory کلاؤڈ بیسڈ ہے اور اسٹاک فوٹیج فراہم کرتا ہے۔"
+            },
+            {
+              "label": "Example",
+              "content": "1. **CapCut میں ویڈیو امپورٹ کرو** (موبائل/PC پر)۔\n2. **AI سے آٹو کیپشننگ** (ٹیکسٹ > آٹو کیپشنز) لگاﺅ۔\n3. **ٹرانزیشنز** (ایفیکٹس > بیسک) ایڈ کرو (مثلاً fade in/out)۔\n4. **بیک گراؤنڈ میوزک** (آڈیو > AI میوزک) سلیکٹ کرو۔\n5. **ایکسپورٹ** (1080p، 30fps) کرو۔"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے فون/PC پر CapCut انسٹال کرو، کوئی 30 سیکنڈ کا کلپ امپورٹ کرو، اور اس پر آٹو کیپشننگ + ایک ٹرانزیشن ایڈ کرو۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک 1 منٹ کا فیس لیس ویڈیو کلپ بناؤ جس میں:\n- 1 اسٹاک فوٹیج کلپ ہو (Pexels/Pixabay سے ڈاؤن لوڈ کرو)۔\n- آٹو کیپشننگ + 2 ٹرانزیشنز ہوں۔\n- بیک گراؤنڈ میوزک ہو (CapCut کے AI میوزک سے)۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "social-media-marketing": [
@@ -232,7 +330,31 @@
           "Ek 1-week ka rough content calendar banayein (platform, post type, aur topic ke saath). Example:\n- Instagram Reel: \"5 Minute Warm-up Routine\" (Monday)\n- LinkedIn Post: \"How Fitness Boosts Productivity\" (Wednesday)\n- YouTube Short: \"Gym Mistakes Beginners Make\" (Friday)"
         ]
       ],
-      "answer_key": "goals define karna, audience research, content types"
+      "answer_key": "goals define karna, audience research, content types",
+      "translations": {
+        "ur": {
+          "title": "Day 1 — سوشل میڈیا سٹریٹیجی: کیا ہے اور کیسے بنائے؟",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "سوشل میڈیا سٹریٹیجی ایک روڈ میپ ہے جو بتاتی ہے کہ آپ اپنے بزنس یا پرسنل برانڈ کے لیے سوشل میڈیا پر کیا حاصل کرنا چاہتے ہیں، کیسے کرنا ہے، اور کیسے میژر کرنا ہے۔ اس میں آپ کے ٹارگٹ آڈیئنس، گولز، کنٹینٹ ٹائپ، پوسٹنگ شیڈول، اور اینگیجمنٹ پلان شامل ہوتے ہیں۔ بنا سٹریٹیجی کے، آپ بلائنڈلی پوسٹ کرتے رہیں گے اور رزلٹس بھی بلائنڈ رہیں گے۔"
+            },
+            {
+              "label": "Example",
+              "content": "مانا کہ آپ ایک فٹنس کوچ ہیں۔ آپ کی سٹریٹیجی یہ ہو سکتی ہے:\n\n1. گول: 3 ماہ میں 10,000 فالورز اور 50 لیڈز (فری کنسلٹیشن سائن اپس)۔\n2. آڈیئنس: 20-35 سال کے جم جانے والے یانگ پروفیشنلز۔\n3. کنٹینٹ: پیر - ورک آوٹ ٹپس، بدھ - ڈائٹ پلانز، جمعہ - کلائنٹ سکسس سٹوریز، اتوار - Q&A ریلز۔\n4. پلیٹ فارمز: انسٹاگرام (میں)، یوٹیوب شارٹس (سیکنڈری)، لنکڈ ان (B2B کلائنٹس کے لیے)۔\n5. اینگیجمنٹ: ہر پوسٹ پر 10-15 کمنٹس کا رپلی، ویکلی پولز، اور DMs کا 24-گھنٹے رسپانس۔"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے بزنس یا ایک فکشنل برانڈ کے لیے 3 main گولز لکھیں (مثلاً، برانڈ آگاہی، لیڈز، سیلز)۔ پھر ان گولز کو حاصل کرنے کے لیے 3 کنٹینٹ آئیڈیا سوچو جو آپ کے ٹارگٹ آڈیئنس کو اینگیج کریں۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک 1-ہفتے کا روہ کنٹینٹ کیلنڈر بنائیں (پلیٹ فارم، پوسٹ ٹائپ، اور ٹاپک کے ساتھ)۔ Example:\n\n- انسٹاگرام ریل: \"5 Minute Warm-up Routine\" (پیر)\n- لنکڈ ان پوسٹ: \"How Fitness Boosts Productivity\" (بدھ)\n- یوٹیوب شارٹ: \"Gym Mistakes Beginners Make\" (جمعہ)"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 2,
@@ -278,7 +400,27 @@
           "Ek **7-day content calendar** banaye jisme har din ke liye alag type ka Reel idea ho (e.g., Monday: \"POV\" trend, Tuesday: \"Before & After\", Wednesday: \"Myth Buster\"). Har idea ke saath ek trendy audio ka naam bhi likhna."
         ]
       ],
-      "answer_key": "fast transition, trendy audio, engagement prompt, cta"
+      "answer_key": "fast transition, trendy audio, engagement prompt, cta",
+      "translations": {
+        "ur": {
+          "title": "Day 2 — **وائرل ریلز/شورٹس بنانے کے 5 گولڈن رولز**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "وائرل ریلز یا شورٹس بنانے کے لیے 3 چیزیں ضروری ہیں: **اٹینشن گرب کرنا** (پہلے 3 سیکنڈز)، **اینگیجمنٹ ٹرگر کرنا** (لائک/کمنٹ/شئیر کے لیے ریزن دینا)، اور **ٹرینڈ کا صحیح استعمال کرنا**۔ بنا پلان کے اپلوڈ کرنے سے چانس کم ہوتے ہیں۔ آج ہم ان 5 رولز پر فوکس کریں گے جو ہر وائرل کنیٹ کی بیکبون ہوتی ہیں۔"
+            },
+            {
+              "label": "Example",
+              "content": "ایک **فوڈ ریسپی recipe Reel** کا مثال لیتے ہیں:\n\n1. **ہک (0-3 سیکنڈ)**:\n\"یہ 1 منٹ کا ریسپی آپکی ڈنر کو بنائے *شیف کِس*!\" (بولڈ ٹیکسٹ + فاسٹ زوم آن ڈش)\n\n2. **ٹرینڈ یووز**:\n\"POV: آپکے فرج میں صرف *2 eggs* ہیں\" (ٹرینڈنگ آڈیو + ٹیکسٹ اوورلے)\n\n3. **اینگیجمنٹ پرامپٹ**:\n\"کمنٹ میں بتاؤ آپکا فیورٹ بریک فاسٹ کیا ہے؟ ⬇️\" (اسکرین پر ٹیکسٹ + ارو)\n\n4. **سی ٹی اے (Call-to-Action)**:\n\"اگر پسند آیا تو شئیر زورور کرنا!\" (کیپشن میں لنک ایڈ کرکے)\n\n5. **ہیشٹگس**:\n3-5 ریلیونٹ (#Foodie, #QuickRecipe, #ViralFood) + 1 ٹرینڈنگ (#FoodTok)."
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے فون سے ایک **15-30 سیکنڈ کا Reel shoot کرو** جس میں:\n\n- پہلے 3 سیکنڈز میں کوئی شاکنگ/انٹرسٹنگ شاٹ ہو (e.g., ایک چیز کا ایکسپلوشن، فاسٹ ٹرانزیشن، یا بولڈ ٹیکسٹ).\n- ٹرینڈی آڈیو یووز کرو (انسٹاگرام/ریلز ایکسپلور پيج سے چیک کرو).\n- کیپشن میں ایک سوال یا سی ٹی اے ایڈ کرو.\n\n**Mini Project:**\nایک **7-day content calendar** بنائے جس میں ہر دن کے لیے الگ ٹائپ کا Reel آئیڈیا ہو (e.g., Monday: \"POV\" ٹرینڈ، Tuesday: \"Before & After\"، Wednesday: \"Myth Buster\")۔ ہر آئیڈیا کے ساتھ ایک ٹرینڈنگ آڈیو کا نام بھی لکھنا۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 3,
@@ -304,7 +446,8 @@
           "Ek **collab Reel** plan karen:\n- Niche: Fitness\n- Collab partner: @GymMotivationIndia (100K+ followers)\n- Idea: \"5 Minute Warm-up Routine\" (aap 3 exercises show karen, woh 2 exercises)\n- Hashtags: #FitnessIndia #WorkoutAtHome #GymMotivation"
         ]
       ],
-      "answer_key": "dm template, 3 influencers, collab reel idea"
+      "answer_key": "dm template, 3 influencers, collab reel idea",
+      "translations": {}
     }
   ],
   "facebook-page-growth": [
@@ -352,7 +495,8 @@
           "Ek 100-word ka \"About\" section likho jo professional ho aur apne niche ke audience ko attract kare. Iske baad usko apni Facebook Page ke \"About\" section mein save karo."
         ]
       ],
-      "answer_key": "logo, cover photo, about section, username, page roles"
+      "answer_key": "logo, cover photo, about section, username, page roles",
+      "translations": {}
     },
     {
       "day": 2,
@@ -378,7 +522,31 @@
           "Apne draft post ko 3-5 friends ko share karke unse feedback lo. Poochhein ke unko kya engaging laga aur kya improve kar sakte hain."
         ]
       ],
-      "answer_key": "emotional hook, educational value, practical benefit"
+      "answer_key": "emotional hook, educational value, practical benefit",
+      "translations": {
+        "ur": {
+          "title": "Day 2 — فیس بک پر چلنے والا مواد",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "فیس بک پر engagement اور reach بڑھانے کے لیے content strategy سب سے اہم ہے۔ آپ کو یہ سمجھنا ہوگا کہ کون سا مواد فیس بک پر viral ہوتا ہے—جیسے جذباتی پوسٹس، trending topics، یا تعلیمی مواد۔ ہر پوسٹ کا ایک مقصد ہونا چاہیے: یا تو audience کو entertain کرنا، یا inform کرنا، یا پھر ان سے interact کرنا۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک fitness page کے لیے \"Morning Walk Benefits\" نام کا پوسٹ کر سکتے ہیں۔ اس میں آپ 3 bullet points لکھیں:\n1. \"Tension کم ہوتا ہے\" (جذباتی ہک)\n2. \"Heart health improve ہوتی ہے\" (تعلیمی)\n3. \"Free ہے، کسی equipment کی ضرورت نہیں\" (عملی فائدہ)\nاس کے ساتھ ایک motivational image یا short video clip بھی add کر سکتے ہیں۔"
+            },
+            {
+              "label": "مشق",
+              "content": "اپنے page کے niche (جیسے cooking, tech, fitness) کا ایک draft post لکھیں۔ اسے 3-4 lines کا بنائیں، اور ایک جذباتی یا تعلیمی ہک ضرور add کرنا۔ (Hint: \"آپکو پتا ہے کے...\" یا \"یہ غلطی سب کرتے ہیں...\")"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "اپنے draft post کو 3-5 friends کو share کرکے ان سے feedback لو۔ پوچھیں کے انکو کیا engaging لگا اور کیا improve کر سکتے ہیں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "forex-trading": [
@@ -406,7 +574,31 @@
           "Ek simple chart banaen jismein aap 3 currencies (e.g., USD, EUR, GBP) ke rates ko 5 dinon ke liye track karen. Har din ka rate note karen aur dekhein ki kya koi trend nazar aata hai."
         ]
       ],
-      "answer_key": "usd/inr rate, 1000 usd, 2000 inr profit"
+      "answer_key": "usd/inr rate, 1000 usd, 2000 inr profit",
+      "translations": {
+        "ur": {
+          "title": "Day 1 — Forex Market کیا ہے؟ اور کیسے کام کرتا ہے؟",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "Forex (Foreign Exchange) مارکیٹ دنیا کا سب سے بڑا مالیاتی مارکیٹ ہے جہاں کرنسیوں کا تبادلہ ہوتا ہے۔ یہ 24/5 چلتا ہے (Monday سے Friday، 24 گھنٹے)، کیونکہ ہر ملک کے مارکیٹس الگ الگ ٹائم زونز میں کھلتے ہیں۔ اس مارکیٹ کا مقصد بین الاقوامی تجارت اور انویسٹمنٹس کو سہولت فراہم کرنا ہے۔ یہاں ٹریڈرز منافع کمانے کے لیے کرنسیوں کی قیمتوں کی حرکات پر بٹ لگاتے ہیں۔"
+            },
+            {
+              "label": "Example",
+              "content": " imagine آپ India سے USA سفر کرنے جا رہے ہیں۔ آپ کو $1000 چاہئے۔ Forex مارکیٹ میں آپ INR سے USD کا تبادلہ کریں گے۔ اگر 1 USD = 83 INR ہے، تو آپ کو 83,000 INR دینا ہو گا۔ اگر آپ نے 10,000 INR سے USD لیا اور اگلے دن 1 USD = 84 INR ہو گیا، تو آپ کا منافع 10,000 INR کا ہو گیا (1000 USD * 1 INR کا چینج)۔"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے mobile یا laptop سے \"USD to INR exchange rate\" search کریں۔ دیکھیں آج کا rate کیا ہے۔ اب imagine کیجیے آپ 1000 USD خرید رہے ہیں۔ 1 week بعد اگر rate بڑھ کر 85 INR ہو جاتا ہے، تو آپ کو کتنا منافع ہو گا؟"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک simple چارٹ بنائیں جس میں آپ 3 کرنسیوں (e.g., USD, EUR, GBP) کے rates کو 5 دنوں کے لیے ٹریک کریں۔ ہر دن کا rate نوٹ کریں اور دیکھیں کہ کیا کوئی ٹرینڈ نظر آتا ہے۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 2,
@@ -432,7 +624,8 @@
           "Ek Excel sheet banayein jismein aap **3 different currency pairs** (jaise EUR/USD, USD/JPY, GBP/USD) ke liye **1 Standard Lot, 1 Mini Lot, aur 1 Micro Lot** ka har pip ka value calculate karein. (Example: EUR/USD ka 1 pip = $10 (Standard Lot), $1 (Mini Lot), $0.10 (Micro Lot))."
         ]
       ],
-      "answer_key": "gbp/jpy, 1 micro lot = $10 (standard), $1 (mini), $0.10 (micro), pip value = 0.01"
+      "answer_key": "gbp/jpy, 1 micro lot = $10 (standard), $1 (mini), $0.10 (micro), pip value = 0.01",
+      "translations": {}
     },
     {
       "day": 3,
@@ -459,7 +652,30 @@
         ]
       ],
       "answer_key": "margin calculation, lot size, leverage ratio, pip value",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "Day 3 — لیوریج اور مارجن: اپنے ٹریڈنگ کو پاورفل بنانے کا سیکرٹ",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "لیوریج ایک ایسا ٹول ہے جو آپ کو چھوٹے اماؤنٹ سے بڑے پوزیشن کھولنے دیتا ہے۔ جیسے اگر آپ کا اکاؤنٹ $100 کا ہے اور لیوریج 1:100 ہے، تو آپ $10,000 کی پوزیشن بنا سکتے ہیں۔ مارجن وہ اماؤنٹ ہے جو آپ کا بروکر آپ کے اکاؤنٹ سے \"lock\" کر لیتا ہے تاکہ یہ پوزیشن میںنٹین ہو سکے۔ زیادہ لیوریج سے پروفٹ بھی زیادہ ہو سکتا ہے، لیکن لاس بھی اتنا ہی زیادہ ہوتا ہے!"
+            },
+            {
+              "label": "Example",
+              "content": "مانا آپ EUR/USD پئیر پر 0.1 لوت (10,000 یونٹس) کا بائ آرڈر لگانا چاہتے ہیں۔ بروکر کا لیوریج 1:100 ہے۔\n\n- لوت سائز = 10,000 یونٹس\n- لیوریج = 1:100 → ریکوئرڈ مارجن = (10,000 / 100) = $100\n\nاگر EUR/USD 1.1000 سے 1.1010 ہو جاتا ہے (10 پپس گین)، تو آپ کا پروفٹ = 10 پپس × $1 = $10 (ہر پپ کا ویلیو 0.1 لوت کے لیے $1 ہوتا ہے)۔"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے MetaTrader 4/5 میں:\n1. کسی بھی کرنسی پئیر پر 0.01 لوت کا آرڈر لگائو۔\n2. لیوریج 1:100 سیٹ کرکے مارجن کیلکولیٹ کرو۔\n3. آرڈر کو کنسل کر دو۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک spreadsheet بنائو جس میں:\n- 3 الگ الگ لیوریج لیولز (1:10, 1:50, 1:100) کے لیے مارجن کیلکولیشن کرو۔\n- ہر لیوریج کے لیے 0.1 لوت کا آرڈر لگانے پر کتنا مارجن چاہیے، یہ لکھو۔\n- اگر price 50 پپس بڑھتا ہے، تو ہر لیوریج کے حساب سے پروفٹ/لاس کتنا ہوگا۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "amazon-fba": [
@@ -487,7 +703,8 @@
           "Apne mind mein ek product choose karen jo aap FBA par bech sakte hain. Uske liye 3 reasons likhein kyun yeh product Amazon par bechne layak hai (demand, competition, ya margin ke hisaab se)."
         ]
       ],
-      "answer_key": "product research, warehouse, prime, fees"
+      "answer_key": "product research, warehouse, prime, fees",
+      "translations": {}
     },
     {
       "day": 2,
@@ -537,7 +754,8 @@
           "Ek **Google Sheet** banayein jismein aap 5 products ke liye:\n- Product Name\n- Monthly Searches (Demand)\n- Top 3 Sellers’ Reviews (Competition)\n- Estimated Profit (Margin)\n- Final Verdict (Buy/Don’t Buy)\nFill karein."
         ]
       ],
-      "answer_key": "demand, competition, margin, niche"
+      "answer_key": "demand, competition, margin, niche",
+      "translations": {}
     },
     {
       "day": 3,
@@ -563,7 +781,31 @@
           "Ek **Excel sheet** banaye jismein 3 suppliers ke naam, Gold Supplier status, aur Trade Assurance availability likhna hai."
         ]
       ],
-      "answer_key": "gold supplier, trade assurance, response time, factory audit"
+      "answer_key": "gold supplier, trade assurance, response time, factory audit",
+      "translations": {
+        "ur": {
+          "title": "Day 3 — **الِی بابا پر ٹرسٹڈ سپلائرز کیسے ڈھونڈیں (اسٹیپ بائی اسٹیپ گائیڈ)**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "الِی بابا ایمازون ایف بی اے کا بیک بون ہے—یہیں سے آپ کا پراڈکٹ سورس ہوتا ہے۔ لیکن **اسکم سپلائرز** سے بچنا ضروری ہے۔ آج ہم **ورفائیڈ سپلائرز** ڈھونڈنے کے 3 آسان سٹیپس سیکھیں گے: **گولڈ سپلائر** فلٹر، **ٹریڈ اسسورنس** چیک، اور **فیکٹری آڈیٹ** کیسے کریں۔"
+            },
+            {
+              "label": "Example",
+              "content": "1. Alibaba.com پر جائیں → سرچ بار میں پراڈکٹ لکھیں (e.g., \"Wireless Charger\")۔\n2. **فلٹرز** لگائیں: \"گولڈ سپلائر\" (ورفائیڈ بزنس)، \"ٹریڈ اسسورنس\" (پےمنٹ پروٹیکشن)۔\n3. سپلائر کی پروفائل چیک کریں: **یئرز ان بزنس**، **ریسپانس ٹائم**، اور **پراڈکٹ سرٹیفیکیشنز** (e.g., CE, FCC)۔"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے **Day 2 کے پراڈکٹ** (e.g., \"Portable Bluetooth Speaker\") کے لیے Alibaba پر **3 سپلائرز** ڈھونڈیں۔ ہر ایک کے بارے میں **گولڈ سپلائر سٹیٹس** اور **ٹریڈ اسسورنس** کنفرم کریں۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک **ایکس ایل شیٹ** بنائیں جس میں 3 سپلائرز کے نام، گولڈ سپلائر سٹیٹس، اور ٹریڈ اسسورنس ایویلیبلٹی لکھنا ہے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "daraz-seller": [
@@ -591,7 +833,31 @@
           "Ek simple document taiyar karein jismein aapke business ki details (business name, address, contact number) aur bank details likh dein. Isse next step mein help milegi."
         ]
       ],
-      "answer_key": "email/phone, verification, business type, cnic/ntn, bank details"
+      "answer_key": "email/phone, verification, business type, cnic/ntn, bank details",
+      "translations": {
+        "ur": {
+          "title": "Day 1 — ڈاراز سیلر سینٹر اکاؤنٹ بنانا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "ڈاراز سیلر سینٹر ڈاراز پر اپنا آن لائن اسٹور بنانے کا پہلا قدم ہے۔ یہاں پر آپ اپنے پراڈکٹس لسٹ کر سکتے ہیں، آرڈرز مینیج کر سکتے ہیں، اور اپنے بزنس کو گروم کر سکتے ہیں۔ پہلے آپکو ایک ویریفائیڈ سیلر اکاؤنٹ بنانا ہوتا ہے، جس میں آپکی بزنس ڈٹیلز، بینک اکاؤنٹ، اور ٹیکس انفارمیشن (اگر لگتی ہے) شیئر کرنی ہوتی ہے۔"
+            },
+            {
+              "label": "Example",
+              "content": "1. ڈاراز سیلر سینٹر کی ویب سائٹ یا موبائل ایپ کھولئے۔\n2. 'Register as Seller' پر کلک کیجئے۔\n3. اپنا ای میل یا فون نمبر انٹر کیجئے، اور ویریفیکیشن کوڈ انٹر کرکے ویریفائی کیجئے۔\n4. اپنا بزنس ٹائپ (انڈویجوئل یا کمپنی) سلیکٹ کیجئے، اور اپنا CNIC یا NTN نمبر (اگر کمپنی ہے) اپلوڈ کیجئے۔\n5. بینک ڈٹیلز (اکاؤنٹ نمبر، IBAN) اور ٹیکس انفارمیشن (اگر اپلائیبل ہے) فل کریں۔\n6. فائنل سبمشن کے بعد، ڈاراز کی ٹیم آپکی ڈٹیلز ویریفائی کرے گی (1-3 دن لگ سکتے ہیں)۔"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنا ڈاراز سیلر سینٹر اکاؤنٹ بنانے کا پراسس سٹارٹ کیجئے۔ اپنی ساری ریکوائڈڈ ڈاکومنٹس (CNIC، بینک ڈٹیلز، وغیرہ) ریڈی رکھئے۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک سادہ ڈاکومنٹ تیار کیجئے جس میں آپکے بزنس کی ڈٹیلز (بزنس نیم، ایڈریس، کانٹیکٹ نمبر) اور بینک ڈٹیلز لکھ دیں۔ اس سے نیسٹ سٹپ میں ہیلپ ملے گی۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 2,
@@ -617,7 +883,31 @@
           "Ek Excel sheet banao jismein:\n- Product name\n- Monthly searches (Daraz se le sakte ho)\n- Competition level (Low/Medium/High)\n- Estimated profit margin (Price - Cost)\n- Apka final decision (Yes/No)"
         ]
       ],
-      "answer_key": "trending products, low competition, high demand, profit margin"
+      "answer_key": "trending products, low competition, high demand, profit margin",
+      "translations": {
+        "ur": {
+          "title": "Day 2 — پاکستان مارکیٹ میں بہترین فروخت ہونے والے پراڈکٹس کیسے ڈھونڈیں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "آج آپ سیکھیں گے کہ ڈاراز پر پاکستان میں کون سے پراڈکٹس زیادہ بکتے ہیں۔ پراڈکٹ ریسرچ کا مطلب ہے مارکیٹ کی ڈیمینڈ، کمپٹیشن، اور پروفٹ مارجن چیک کرنا۔ ایسے پراڈکٹس چننے ہیں جو زیادہ سرچ کئے جا رہے ہوں، کم کمپٹیشن ہو، اور آپ کے بجٹ میں آئے۔"
+            },
+            {
+              "label": "Example",
+              "content": "1. ڈاراز سیلر سینٹر > \"پراڈکٹ ریسرچ\" سیکشن میں جائیں۔\n2. \"ٹرینڈنگ پراڈکٹس\" یا \"ہاٹ سرچز\" دیکھیں۔\n3. \"فیشن\" کیٹیگری میں \"Women's Kurtas\" سرچ کریں — اگر 10,000+ سرچز/ماہ ہیں اور کمپٹیشن کم ہے، تو یہ پراڈکٹ چن سکتے ہیں۔"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے ڈاراز سیلر سینٹر اکاؤنٹ میں جائیں اور \"پراڈکٹ ریسرچ\" ٹول استعمال کر کے **3 پراڈکٹس** سلیکٹ کریں جو آپ کو پاکستان مارکیٹ کے لیے مناسب لگتے ہیں۔ ہر پراڈکٹ کے لیے 2 ریزنز بھی لکھنا۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک ایکسل شیٹ بنائیں جس میں شامل ہوں:\n- پراڈکٹ کا نام\n- ماہانہ سرچز (ڈاراز سے لے سکتے ہیں)\n- کمپٹیشن لیول (Low/Medium/High)\n- تخمینہ پروفٹ مارجن (Price - Cost)\n- آپ کا فائنل فیصلہ (Yes/No)"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 3,
@@ -643,7 +933,31 @@
           "Ek \"Price Comparison Sheet\" banao (Excel/Google Sheets mein). 3 columns hon:\n- Product Name\n- Competitor Price (lowest/highest)\n- Apni Proposed Price\nIs sheet ko future reference ke liye save kar ke rakhna."
         ]
       ],
-      "answer_key": "cost price, competitor analysis, profit margin, discount strategy"
+      "answer_key": "cost price, competitor analysis, profit margin, discount strategy",
+      "translations": {
+        "ur": {
+          "title": "Day 3 — ڈاراز سیلرز کے لیے موثر پرائسنگ سٹریٹجیز",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "آج ہم سیکھیں گے کہ اپنے پراڈکٹس کی پرائسنگ کیسے کرنی ہے جو کسٹمرز کو اٹریکٹ کرے اور منافع بھی ہو۔ پرائس سیٹ کرنے سے پہلے مارکیٹ ریسرچ، کمپٹیشن اینالسس، اور کوسٹ کیلکیولیشن ضروری ہے۔ زیادہ کم یا زیادہ زیادہ پرائس لگانے سے بہتر نتائج نہیں آتے—بیلنس بنانا ہے۔"
+            },
+            {
+              "label": "Example",
+              "content": "ایک سیلر 1000 روپے کا ٹی شرٹ بیچتا ہے، لیکن مارکیٹ میں سمے کوالٹی کا ٹی شرٹ 800 روپے میں مل رہا ہے۔ اگر اس کا کوسٹ 600 ہے، تو وہ 750-850 کے بیچ پرائس سیٹ کر سکتا ہے۔ اگر کوالٹی بیٹر ہے، تو 900-950 بھی ہو سکتا ہے۔ ڈسکاؤنٹس (مثلاً 10% آف) لگانے سے بھی سیلز انکریز ہوتی ہیں۔"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے 3 بہترین سیلنگ پراڈکٹس کے لیے ایک پرائسنگ پلان بناؤ۔ ہر پراڈکٹ کے لیے:\n1. کوسٹ پرائس (CP) نوٹ کرو۔\n2. کمپٹٹرس کی پرائسز چیک کرو (ڈاراز پر سمے پراڈکٹ سرچ کر کے)۔\n3. اپنی آئیڈیل پرائس رینج ڈیسیڈ کرو (CP + 30-50% منافع)۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک \"پرائس کمپئیرسن شیٹ\" بناؤ (ایکس ایل/گوگل شیٹس میں)۔ 3 کالم ہوں:\n- پراڈکٹ نیم\n- کمپٹٹر پرائس (لو ویسٹ/ہائیسٹ)\n- اپنی پرPOSED پرائس\nاس شیٹ کو فیوچر ریفرنس کے لیے سیو کر کے رکھنا۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "ai-content-writing": [
@@ -687,7 +1001,8 @@
           "Ek WhatsApp status ya Instagram caption likho jo:\n- Hook: \"Tired of wasting hours on social media?\"\n- Benefit: \"This free tool blocks distractions and saves 2 hours daily.\"\n- CTA: \"DM me ‘FOCUS’ to get it now!\""
         ]
       ],
-      "answer_key": "hook, benefit, cta"
+      "answer_key": "hook, benefit, cta",
+      "translations": {}
     },
     {
       "day": 2,
@@ -737,7 +1052,31 @@
           "Ek 500-word blog post draft karo (AI se generate karke ya khud likh kar), phir usko AI tools (jaise Grammarly, Hemingway) se check karo. Improve karke ek final version taiyar karo jo publish ke liye ready ho."
         ]
       ],
-      "answer_key": "urdu/hindi consistency, keywords, engaging cta, short paragraphs"
+      "answer_key": "urdu/hindi consistency, keywords, engaging cta, short paragraphs",
+      "translations": {
+        "ur": {
+          "title": "Day 2 — AI Se Blog Articles: Draft Se Publish Tak",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "آج آپ سیکھیں گے کہ AI کی مدد سے بلاگ آرٹیکل کیسے ڈرافٹ بنایا جائے، اسے انسانی جیسا بنایا جائے اور اسے پبلش کرنے کے لیے کیسے ایڈٹ کیا جائے۔ AI سے کنسٹنٹ جنریٹ کرنا تو آسان ہے، لیکن اسے اصلی، دلچسپ اور SEO فرینڈلی بنانا ضروری ہے۔ آج ہم AI سے بنائے گئے ڈرافٹ کو بہتر بنانے کے عملی مرحلے دیکھیں گے۔"
+            },
+            {
+              "label": "Example",
+              "content": "1.\n\nPrompt Design: \"2024 میں بلاگنگ کیسے شروع کریں\" کے موضوع پر ایک 500 الفاظ پر مشتمل سادہ اردو میں بلاگ پوسٹ لکھیں۔ تین ذیلی عنوانات، ایک ہک، اور ایک کال ٹو ایکشن شامل کریں۔\n\n2.\n\nAI Output: AI ایک بنیادی ڈرافٹ فراہم کرے گا۔ اب اسے ایڈٹ کرنا ہے:\n   -\n- زبان: اردو/ہندی کے امتزاج کو ہٹا کر ایک مستقل انداز چن لیں (مثلاً خالص اردو)۔\n   -\n- لہجہ: دوستانہ اور حوصلہ افزا رکھیں (مثلاً، \"آپ بھی بلاگنگ شروع کر سکتے ہیں!\"۔\n   -\n- SEO: کیورڈز شامل کریں (مثلاً، \"بلاگنگ کیسے شروع کریں\"، \"فری بلاگنگ پلیٹ فارمز\"۔\n   -\n- ساخت: پیراگراف کو چھوٹا کریں، بلٹ پوائنٹس شامل کریں۔"
+            },
+            {
+              "label": "Practice",
+              "content": "AI سے \"5 گھریلو نکھارے بالوں کے جھڑنے کو روکیں\" کے موضوع پر ایک 300 الفاظ پر مشتمل ڈرافٹ جنریٹ کریں۔ اس ڈرافٹ کو ایڈٹ کرکے خالص اردو میں تبدیل کریں، دو کیورڈز شامل کریں، اور ایک دلچسپ کال ٹو ایکشن لکھیں۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک 500 الفاظ پر مشتمل بلاگ پوسٹ ڈرافٹ بنائیں (یا AI سے جنریٹ کریں یا خود لکھیں)، پھر اسے AI ٹولز (مثلاً Grammarly، Hemingway) سے چیک کریں۔ بہتری لا کر ایک آخری ورژن تیار کریں جو پبلش کے لیے تیار ہو۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 3,
@@ -763,7 +1102,31 @@
           "Ek 3-post series banayein (ek caption + ad copy) ek hypothetical product ke liye (jaise ek online course, fitness supplement, ya local service). Har post ka alag angle ho—ek educational, ek emotional, aur ek discount-focused."
         ]
       ],
-      "answer_key": "caption: hook, benefit, cta\nad copy: urgency, social proof, cta"
+      "answer_key": "caption: hook, benefit, cta\nad copy: urgency, social proof, cta",
+      "translations": {
+        "ur": {
+          "title": "Day 3 — سوشل میڈیا کیپشنز اور ایڈ کاپی: اینگجمنٹ سے کنورژن تک",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "سوشل میڈیا کیپشنز اور ایڈ کاپی دو الگ چیزیں ہیں لیکن ان کا مقصد ایک ہی ہے: سامعین کو متوجہ کرکے ان سے ایکشن لینا۔ کیپشن وہ ٹیکسٹ ہوتا ہے جو پوسٹ کے ساتھ جاتا ہے (اینگجمنٹ کے لیے)، جبکہ ایڈ کاپی وہ ٹیکسٹ ہوتا ہے جو ڈائریکٹ کنورژن کے لیے ڈیزائن کیا گیا ہوتا ہے (کلکس، سیلز، سائن اپس)۔ ان دونوں میں ہُک، بینیفٹ، اور سی ٹی اے کا کمبائنیشن ہوتا ہے—لیکن ایڈ کاپی میں ارجنسی اور سوشل پروف زیادہ ہوتا ہے۔"
+            },
+            {
+              "label": "Example",
+              "content": "ایک انسٹاگرام پوسٹ کے لیے کیپشن:\n*\"گھر بیٹھے پیسے کمانے کا سب سے آسان طریقہ؟ 💰\nہمارا FREE ‘Content Writing Masterclass’ آج ہی جوائن کریں اور 10,000+ students کے ساتھ سیکھیں! 👇\n🔗 Link in bio*\"\n\nایڈ کاپی (فیس بک/گوگل ایڈز کے لیے):\n*\"🚀 30 دنوں میں freelance content writer بن جائیں!\n✅ 10+ ریئل کلائنٹس سے کام\n✅ ہر مہینے ₹50,000+ کماۓ\n✅ 24/7 سپورٹ\n👉 ابھی اپلائی کریں—سیٹس لیمیٹڈ ہیں!\"*"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے پسندیدہ برینڈ کا ایک انسٹاگرام پوسٹ یا ایڈ کاپی لکھیں۔ اسے 3-4 لائنوں میں لکھیں، جس میں ہُک (اٹینشن گریپر)، بینیفٹ (کیوں فالو/کلک کریں)، اور سی ٹی اے (ایکشن) ہو۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک 3-پوسٹ سیریز بنائیں (ایک کیپشن + ایڈ کاپی) ایک ہائپوتھیٹیکل پروڈکٹ کے لیے (جیسے ایک آن لائن کورس، فٹنس سپلیمنٹ، یا لوکل سروس)۔ ہر پوسٹ کا الگ اینگل ہو—ایک ایجوکیشنل، ایک ایموشنل، اور ایک ڈسکاؤنٹ فوکسڈ۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "ai-tools": [
@@ -799,7 +1162,8 @@
           "Ek **ChatGPT prompt library** banao (Google Sheets ya Notion mein) jismein 5 common tasks ke liye prompts hon, jaise:\n- Blog post introduction\n- Social media caption\n- Excel formula generator\n- Product description\n- Meeting agenda"
         ]
       ],
-      "answer_key": "recipient ka naam, occasion, tone, length"
+      "answer_key": "recipient ka naam, occasion, tone, length",
+      "translations": {}
     },
     {
       "day": 2,
@@ -837,7 +1201,8 @@
           "Ek **3-email sequence** create karo for a hypothetical client (e.g., a small business owner) using AI:\n1. Introduction email (AI se draft karo)\n2. Follow-up email after 3 days (AI se draft karo)\n3. Final email with a CTA (Call-to-Action) like \"Book a free consultation\""
         ]
       ],
-      "answer_key": "caption, brand voice, edit, emojis"
+      "answer_key": "caption, brand voice, edit, emojis",
+      "translations": {}
     },
     {
       "day": 3,
@@ -892,7 +1257,31 @@
           "Ek simple Excel sheet banao jisme 3 columns hon: Product Name, Supplier Price, Your Selling Price. Koi 5 products fill karo jo aap bech sakte ho."
         ]
       ],
-      "answer_key": "product name, supplier price, your selling price"
+      "answer_key": "product name, supplier price, your selling price",
+      "translations": {
+        "ur": {
+          "title": "Day 1 — ڈراپ شیپنگ ماڈل سمجھنا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "ڈراپ شیپنگ ایک بزنس ماڈل ہے جہاں آپ ایک آن لائن اسٹور چلاتے ہیں لیکن اصل پراڈکٹ کا اسٹاک نہیں رکھتے۔ جب کوئی کسٹمر آرڈر دیتا ہے، تو آپ اس کا آرڈر سپلائر (جیسے علی ایکسپریس) کو فورورڈ کر دیتے ہیں، جو ڈائریکٹ کسٹمر تک پراڈکٹ پہنچا دیتا ہے۔ آپ کا پروفٹ مارجن پراڈکٹ کی کوسٹ اور آپ کی سیلنگ پرائس کا ڈفرنس ہوتا ہے۔ اس ماڈل میں آپ کو انوینٹری، پیکجنگ، یا شپنگ کا ٹینشن نہیں ہوتا۔"
+            },
+            {
+              "label": "Example",
+              "content": " imagine آپ ایک فیس بک پیج پر 'وائرلیس ایربڈز' بیچ رہے ہیں۔ کوئی کسٹمر Rs. 5,000 میں آرڈر دیتا ہے۔ آپ اس کا آرڈر علی ایکسپریس سپلائر کو Rs. 2,500 میں فورورڈ کرتے ہیں، جو Rs. 3,000 میں پراڈکٹ کسٹمر تک پہنچا دیتا ہے۔ آپ کا پروفٹ Rs. 2,000 رہتا ہے (Rs. 5,000 - Rs. 3,000)۔"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے دماغ میں ایک پراڈکٹ چن لو جو آپ بیچنا چاہتے ہو (e.g., فٹنس بینڈ، LED لائٹس)۔ سوچو کہ اس پراڈکٹ کی کوسٹ سپلائر سے کتنی ہوگی اور آپ اسے کتنے میں بیچ سکتے ہو۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک سادہ ایکسل شیٹ بناؤ جس میں 3 کالم ہوں: پراڈکٹ نیم، سپلائر پرائس، یور سیلنگ پرائس۔ کوئی 5 پراڈکٹس بھر لو جو آپ بیچ سکتے ہو۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 2,
@@ -930,7 +1319,8 @@
           "Ek simple spreadsheet banao:\n| Product Name | Niche | Price | Orders | Avg Rating | Shipping Time | Notes |\n|--------------|-------|-------|--------|------------|---------------|-------|\n| Automatic Pet Feeder | Pet Lovers | $29.99 | 5,000 | 4.8 | 15-20 days | Trending, high demand |"
         ]
       ],
-      "answer_key": "trending niche, emotional trigger, 1000+ orders, 4+ stars"
+      "answer_key": "trending niche, emotional trigger, 1000+ orders, 4+ stars",
+      "translations": {}
     },
     {
       "day": 3,
@@ -964,7 +1354,31 @@
           "Ek **supplier comparison table** banao jismein:\n- Product name\n- AliExpress vs Local price\n- Shipping time\n- Return policy\n- Customer reviews (rating)"
         ]
       ],
-      "answer_key": "aliexpress: cheap, slow, global; local: fast, expensive, local trust"
+      "answer_key": "aliexpress: cheap, slow, global; local: fast, expensive, local trust",
+      "translations": {
+        "ur": {
+          "title": "Day 3 — **مقامی بمقابلہ علی ایکسپریس سپلائرز: کون سا چننا چاہئے؟**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "ڈراپ شیپنگ میں سپلائر ہی آپ کا بزنس کا بنیادی ستون ہے۔ علی ایکسپریس گلوبل سپلائرز فراہم کرتا ہے لیکن شپنگ ٹائم زیادہ ہوتا ہے (15-45 دن)، جبکہ مقامی سپلائرز (پاکستان سے) 3-7 دن میں ڈیلیوری کر سکتے ہیں لیکن قیمتیں تھوڑی زیادہ ہوتی ہیں۔ ہر ایک کا اپنا فائدہ و نقصان ہے—سمجھ کر چننا ضروری ہے۔"
+            },
+            {
+              "label": "Example",
+              "content": "اگر آپ *وائرلیس ایربڈز* بیچ رہے ہیں:\n\nعلی ایکسپریس: سپلائر چین سے ₹800 میں لے کر ₹1500 میں بیچ سکتے ہیں، لیکن کسٹمر کو 20-30 دن انتظار کرنا ہوگا۔\n\nمقامی سپلائر: کراچی سے ₹1200 میں لے کر ₹2000 میں بیچ سکتے ہیں، ڈیلیوری 3-5 دن میں ہو جائے گی۔"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے 1-2 وننگ پروڈکٹس کے لئے **علی ایکسپریس** اور **مقامی سپلائرز** (فیس بک گروپس، واٹس ایپ، اولکس) پر سرچ کر کے قیمتیں، شپنگ ٹائم، اور ریویوز کمپئیر کرو۔ ایک ایکسل شیٹ بنا کر نوٹ کر لو۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک **سپلائر کمپئیرسن ٹیبل** بناؤ جس میں شامل ہوں:\n\n- پراڈکٹ کا نام\n- علی ایکسپریس بمقابلہ مقامی قیمت\n- شپنگ ٹائم\n- ریٹرن پالیسی\n- کسٹمر ریویوز (ریٹنگ)"
+            }
+          ]
+        }
+      }
     }
   ],
   "freelancing": [
@@ -992,7 +1406,31 @@
           "Ek simple Google Sheet banayein jismein aap 5 skills list karein jo aapko pasand hain, unke liye market demand (Upwork/Fiverr par job posts ka count), aur aapki proficiency level (Beginner/Intermediate/Expert)."
         ]
       ],
-      "answer_key": "skills list, market demand, proficiency, google sheet"
+      "answer_key": "skills list, market demand, proficiency, google sheet",
+      "translations": {
+        "ur": {
+          "title": "Day 1 — اپنی سِکلز کیسے چنیں جو فری لانسنگ میں کمائی بڑھائیں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "فری لانسنگ میں پہلا اور سب سے اہم قدم ہے اپنی سِکلز کا انتخاب کرنا۔ آپ کو وہ سِکلز چننی ہیں جو آپ کو پسند ہوں، مارکیٹ کی ڈِمنڈ میں ہوں، اور آپ ان پر کامیابی سے کام کر سکیں۔ اکثر نئے لوگ یہ غلطی کرتے ہیں کہ وہ کوئی بھی سِکل چن لیتے ہیں بغیر ریسرچ کئے۔ آپ کو اپنی سِکلز کا انتخاب اس طرح کرنا ہے جو آپ کو لمبے عرصے میں کامیابی دلائے۔"
+            },
+            {
+              "label": "Example",
+              "content": "1. اپنی ہobbies یا انٹرسٹس کی لسٹ بنائیں (مثلاً: رائٹنگ، گرافک ڈیزائن، پروگرامنگ)۔\n2. چیک کریں کہ کیا ان سِکلز کے لئے مارکیٹ میں ڈِمنڈ ہے یا نہیں (Upwork/Fiverr پر جاب پوسٹس دیکھیں)۔\n3. سِکلز کا ایک کومبینیشن بنائیں جو آپ کو یونیک بنائے (مثلاً: \"گرافک ڈیزائن + سوشل میڈیا مارکیٹنگ\")۔"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنی 3 سِکلز سلیکٹ کریں جو آپ فری لانسنگ کے لئے چن سکتے ہیں۔ ہر سِکل کے لئے ایک ریزن لکھیں کہ آپ اسے کیوں چن رہے ہیں۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک سادہ Google Sheet بنائیں جس میں آپ 5 سِکلز کی لسٹ کریں جو آپ کو پسند ہیں، ان کے لئے مارکیٹ ڈِمنڈ (Upwork/Fiverr پر جاب پوسٹس کی تعداد)، اور آپ کی مہارت کی لیول (بیگنر/انٹرمیڈیٹ/ایکسپیرٹ) شامل کریں۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 2,
@@ -1018,7 +1456,8 @@
           "Ek **fake gig** create karo (Upwork/Fiverr par) for a service you can offer. Include:\n- **Title** (e.g., \"I’ll Design a Professional LinkedIn Banner in 24 Hours\")\n- **3 bullet points** of benefits\n- **Pricing** (fixed or starting at $X)"
         ]
       ],
-      "answer_key": "problem solve, unique solution, clear cta, pricing transparency"
+      "answer_key": "problem solve, unique solution, clear cta, pricing transparency",
+      "translations": {}
     },
     {
       "day": 3,
@@ -1044,7 +1483,31 @@
           "Ek dummy client ka message banaayein (jaise \"I need a WordPress website for my restaurant\") aur uske liye 3 different first-message drafts likhein—ek for Fiverr, ek for Upwork, aur ek for cold email."
         ]
       ],
-      "answer_key": "specific details, confidence, call-to-action"
+      "answer_key": "specific details, confidence, call-to-action",
+      "translations": {
+        "ur": {
+          "title": "Day 3 — **کلائنٹ کمیونیکیشن: پہلا پیغام ہی کیسے اثر بنائیں**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "فری لانسنگ میں پہلا تاثر آپ کی کمیونیکیشن سے ہی بنتا ہے۔ کلائنٹ کو یہ محسوس ہونا چاہیے کہ آپ پیشہ ور، جواب دہ اور حل پر مرکوز ہیں۔ پہلا پیغام بس 'ہیلو' یا 'میں یہ کر سکتا ہوں' سے کام نہیں چلتا—اس میں مخصوصیت، اعتماد اور کارروائی کا بل ہونا ضروری ہے۔"
+            },
+            {
+              "label": "Example",
+              "content": "ایک کلائنٹ نے Fiverr پر 'لوگو ڈیزائن' کا پروجیکٹ پوسٹ کیا ہے۔ آپ کی جوابی پیغام یوں نہ ہو:\n\n❌ *\"ہیلو، میں آپ کے لیے لوگو بنا سکتا ہوں۔ براہ کرم مجھے پیغام دیں۔\"*\n\nبلکہ یوں ہو:\n\n✅ *\"ہیلو [کلائنٹ کا نام]،\nمیں نے آپ کے [بِزنس ٹائپ] کے لیے جدید لوگو کے پروجیکٹ پر نظر ڈالی۔ میں نے اس نِچ میں 50+ لوگو ڈیزائن کیے ہیں، جن میں [مشابه کلائنٹ/پروجیکٹ] کے لیے بھی شامل ہیں۔ میرا طریقہ کار یہ ہے:\n1. ہم ایک تیز کال میں آپ کے برانڈ کے رنگوں اور اسٹائل پر بات کریں گے\n2. میں 24 گھنٹوں کے اندر 3 تصورات بھیجوں گا\n3. آپ کی 100% رضامندی تک لامحدود ریویژنز\nکیا آج 3 بجے شام کو 10 منٹ کی کال شیڈول کر سکتے ہیں؟ آپ کی جوابی توقع میں ہوں گا۔\nشکریہ،\n[آپ کا نام]\"*"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے Fiverr/Upwork ان باکس سے کسی بھی ایک pending proposal یا پیغام کا ڈرافٹ لکھیں جو آپ نے ابھی تک بھیجا ہے۔ اسے ایڈٹ کرکے پہلے پیراگراف کو 3x زیادہ موثر بنائیں (مخصوصیت + کارروائی کا بل شامل کرکے)۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک dummy کلائنٹ کا پیغام بنائیں (جیسے 'میں اپنے ریسٹورنٹ کے لیے WordPress ویب سائٹ چاہتا ہوں') اور اس کے لیے 3 مختلف پہلا پیغام ڈرافٹ لکھیں—ایک Fiverr کے لیے، ایک Upwork کے لیے، اور ایک سرد ای میل کے لیے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "graphic-design-canva": [
@@ -1100,7 +1563,39 @@
           "Ek simple Instagram Post (1080x1080px) banayein jisme:\n- Ek background color ho (left panel > \"Background\" > color pick karen).\n- Ek text box ho \"Hello World!\" (font: \"Poppins\", color: white).\n- Ek simple shape (jaise circle) add karen (left panel > \"Elements\" > \"Shapes\")."
         ]
       ],
-      "answer_key": "template select, text add, color change, shape add"
+      "answer_key": "template select, text add, color change, shape add",
+      "translations": {
+        "ur": {
+          "title": "Day 1 — کینوا کا پہلا تعارف: انٹرفیس اور بنیادی کنٹرولز",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج ہم کینوا کے ڈیش بورڈ اور اس کی بنیادی سیٹنگز سے واقف ہوں گے۔ کینوا ایک ڈریگ اینڈ ڈراپ ڈیزائن ٹول ہے جو بیگنرز کے لیے بھی بہت آسان ہے۔ یہاں ٹیمپلیٹس، ایلیمنٹس (شکل، آئیکنز وغیرہ)، ٹیکسٹ آپشنز، اور اپلوڈ فیچرز ملتے ہیں۔ پہلے ہم اس کے انٹرفیس کو سمجھیں گے تاکہ اگلے لیسنز میں confidently کام کر سکیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1. Canva.com پر جائیں، گوگل یا ای میل سے اکاؤنٹ بنائیں۔"
+            },
+            {
+              "label": "ہوم پیج",
+              "content": "Left side میں \"Create a design\" بٹن پر کلک کریں۔ یہاں سے custom size (جیسے 1080x1080px for Instagram) یا pre-set ٹیمپلیٹس (جیسے \"Instagram Post\") select کریں۔"
+            },
+            {
+              "label": "انٹرفیس کی تفصیل",
+              "content": "- Top Bar: Undo/Redo، save، share، اور export آپشنز۔\n- Left Panel: ٹیمپلیٹس، ایلیمنٹس (آئیکنز، شکل)، ٹیکسٹ، اپلوڈز، اور background آپشنز۔\n- Canvas: اپنا ڈیزائن یہاں بنائیں—ڈریگ کرکے ایلیمنٹس add کریں۔\n- Right Panel: ہر selected element کی properties (color، size، effects) edit کریں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "ایک نیا ڈیزائن create کریں (جیسے \"Facebook Post\" ٹیمپلیٹ)۔ Left panel سے ایک \"Text\" باکس add کریں، اس میں اپنا نام ٹائپ کریں، اور right panel سے font style اور color change کریں۔"
+            },
+            {
+              "label": "منی پراجیکٹ",
+              "content": "ایک simple Instagram Post (1080x1080px) بنائیں جس میں:\n- ایک background color ہو (left panel > \"Background\" > color pick کریں)۔\n- ایک ٹیکسٹ باکس ہو \"Hello World!\" (font: \"Poppins\"، color: white)۔\n- ایک simple شکل (جیسے circle) add کریں (left panel > \"Elements\" > \"Shapes\")۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 2,
@@ -1138,7 +1633,8 @@
           "Apne favorite combination ko explain karte hue ek short note add karein (kyun yeh combination best hai)."
         ]
       ],
-      "answer_key": "bold+light+simple, readability, hierarchy, contrast"
+      "answer_key": "bold+light+simple, readability, hierarchy, contrast",
+      "translations": {}
     }
   ],
   "no-code-app-dev": [
@@ -1166,7 +1662,31 @@
           "Ek 1-pager portfolio website banayein jisme aapka naam, ek photo, aur ek \"Contact Me\" button ho. (Use Framer ya Wix ka free plan.)"
         ]
       ],
-      "answer_key": "homepage, heading, button, publish"
+      "answer_key": "homepage, heading, button, publish",
+      "translations": {
+        "ur": {
+          "title": "Day 1 — No-Code کیا ہے؟ اور کیوں ڈیمانڈ میں ہے",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "No-code کا مطلب ہے پروگرامنگ کے بغیر سافٹ ویئر، ویب سائٹس، یا ایپس بنانا۔ آجکل کمپنیاں اور فری لانسرز اس کو اس لیے استعمال کر رہے ہیں کیونکہ یہ ٹائم اور کوسٹ بچاتا ہے۔ کوڈنگ سیکھنے کی ضرورت نہیں، ڈریگ اینڈ ڈراپ سے کام ہو جاتا ہے۔ اسٹارٹ اپس بھی اپنے MVP (Minimum Viable Product) بنانے کے لیے اس کا استعمال کر رہے ہیں۔"
+            },
+            {
+              "label": "Example",
+              "content": "Imagine آپکو ایک simple ویب سائٹ بنانی ہے۔ Normally کوڈنگ سیکھنے میں مہینے لگ جاتے، لیکن no-code ٹولز جیسے Wix یا Framer سے صرف کچھ گھنٹے میں ready ہو جاتی ہے۔ بس ڈریگ کرکے elements place کرو، content add کرو، اور publish کر دو!"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے فون یا لیپ ٹاپ پر Wix یا Framer کی ویب سائٹ کھولو اور ایک basic \"Hello World\" page بنانے کی کوشش کرو۔ صرف 3-4 elements (جیسے heading, paragraph, button) استعمال کرو۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک 1-pager portfolio ویب سائٹ بنائیں جس میں آپکا نام، ایک photo، اور ایک \"Contact Me\" button ہو۔ (Use Framer ya Wix کا free plan.)"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 2,
@@ -1200,7 +1720,8 @@
           "Ek \"Restaurant Menu\" website banayo:\n- Homepage par menu items ki list ho.\n- About page par restaurant ki story ho.\n- Contact page par location aur contact form ho.\n- Sab pages ko navbar se link karo.\n- Website ko mobile-friendly banao."
         ]
       ],
-      "answer_key": "homepage, about page, contact page, navbar, mobile-responsive"
+      "answer_key": "homepage, about page, contact page, navbar, mobile-responsive",
+      "translations": {}
     },
     {
       "day": 3,
@@ -1282,7 +1803,31 @@
           "Ek simple mind map banaen jismein aap apne ideal customer (e.g., \"25-35 age ki working women jo healthy snacks khareedti hain\") ke liye 3 best digital marketing channels select karen."
         ]
       ],
-      "answer_key": "seo, social media, email marketing"
+      "answer_key": "seo, social media, email marketing",
+      "translations": {
+        "ur": {
+          "title": "Day 1 — ڈِجِٹل مارکیٹنگ کا پورا لینڈ اسکیپ: کیا ہے اور کیسے شروع کریں؟",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "ڈِجِٹل مارکیٹنگ وہ طریقہ کار ہے جس میں آپ اپنے مصنوعات یا خدمات کو آن لائن طریقوں سے فروغ دیتے ہیں۔ اس میں SEO، سوشل میڈیا، ای میل، ایڈز، اور کَونٹینٹ مارکیٹنگ شامل ہیں۔ پہلے یہ سمجھنا ضروری ہے کہ یہ ایک پہیلی ہے—ہر ٹکڑا الگ ہے لیکن مل کر ایک تصویر بناتے ہیں۔"
+            },
+            {
+              "label": "Example",
+              "content": "تصور کریں ایک مقامی بیکری کا۔ ان کے لیے ڈِجِٹل مارکیٹنگ کا مطلب ہے:\n1. گوگل پر \"[شہر] میں بہترین کیک\" تلاش کرنے والوں کو ان کی ویب سائٹ دکھانا (SEO)\n2. انسٹا گرام پر روزانہ کیک کی تصاویر شیئر کرنا (سوشل میڈیا)\n3. گاہکوں کو جنم دن کی چھوٹ کے لیے ای میل بھیجنا (ای میل مارکیٹنگ)\n4. فیس بک پر 500 روپے کا ایڈ چلانا (پِیڈ ایڈز)"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے کاروبار یا دلچسپی کے مطابق 3 ڈِجِٹل مارکیٹنگ چینلز کا انتخاب کریں جن کے ذریعے آپ اپنے ہدف تک پہنچ سکیں۔ (مثال کے طور پر، اگر آپ فری لانس رائٹر ہیں تو لنکڈ اِن + بلاگ + کولڈ ای میل۔)"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک سادہ مائنڈ میپ بنائیں جس میں آپ اپنے مثالی گاہک (مثلاً، \"25-35 سال کی کام کرنے والی خواتین جو ہیلتھی سنیکس خریدتے ہیں\") کے لیے بہترین 3 ڈِجِٹل مارکیٹنگ چینلز کا انتخاب کریں۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 2,
@@ -1308,7 +1853,8 @@
           "Ek **dummy webpage** banayein (Google Docs ya Notion mein) jisme:\n1. Title: Apna chosen keyword shamil ho.\n2. Meta description: 150-160 characters mein keyword use karke.\n3. First paragraph: Keyword naturally 2-3 baar use karen (overdo na karen)."
         ]
       ],
-      "answer_key": "keyword placement, title tag, meta description, natural density"
+      "answer_key": "keyword placement, title tag, meta description, natural density",
+      "translations": {}
     },
     {
       "day": 3,
@@ -1342,7 +1888,31 @@
           "Ek 1-page report taiyar karen jismein aap GSC se top 3 search queries aur GA4 se top 3 traffic sources mention karen. (Format: \"Query/Source - Clicks/Users\")"
         ]
       ],
-      "answer_key": "crawl errors, search queries, traffic sources, user behavior"
+      "answer_key": "crawl errors, search queries, traffic sources, user behavior",
+      "translations": {
+        "ur": {
+          "title": "Day 3 — گوگل سرچ کنسول اور اینالٹکس: اپنے ویب سائٹ کے پرفارمنس کو سمجھیں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "گوگل سرچ کنسول (GSC) اور گوگل اینالٹکس (GA4) آپکی ویب سائٹ کے ہیلتھ اور پرفارمنس کو ٹریک کرنے کے لیے ضروری ٹولز ہیں۔ GSC آپکو انڈیکسنگ، کراول ایررز، اور سرچ رینکنگ دکھاتا ہے، جبکہ GA4 وزٹرس، ٹریفک سورسز، اور یوزر بیہیویر اینالائز کرتا ہے۔ ان دونوں کو سمجھ کر آپ اپنی SEO strategy کو بہتر بنا سکتے ہیں۔"
+            },
+            {
+              "label": "Example",
+              "content": "1. GSC میں URL Inspection: کسی بھی پیج کا URL انٹر کرکے چیک کریں کہ گوگل اسے کراول کر رہا ہے یا نہیں۔\n2. GA4 میں ٹریفک سورسز: \"Acquisition\" > \"All Traffic\" > \"Source/Medium\" دیکھ کر پتہ کریں کہ وزٹرس آپکی سائٹ پر کہاں سے آ رہے ہیں (گوگل سرچ، سوشل میڈیا، وغیرہ)۔"
+            },
+            {
+              "label": "Practice",
+              "content": "1. اپنی ویب سائٹ (یا کسی dummy site) کا GSC اکاؤنٹ میں ایڈ کریں۔\n2. \"Coverage\" رپورٹ چیک کریں اور کوئی کراول ایرر فکس کرنے کی کوشش کریں۔\n3. GA4 میں ایک بنیادی رپورٹ بنائیں (مثلاً، \"Users by Country\")۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک 1-پیج رپورٹ تیار کریں جس میں آپ GSC سے ٹاپ 3 سرچ کوئریز اور GA4 سے ٹاپ 3 ٹریفک سورسز ذکر کریں۔ (فارمیٹ: \"Query/Source - Clicks/Users\")"
+            }
+          ]
+        }
+      }
     }
   ],
   "video-editing": [
@@ -1378,7 +1948,31 @@
           "Ek 10-second clip banayein — 2 photos ko timeline par lagayein, unke beech ek transition add karo. Export karo."
         ]
       ],
-      "answer_key": "media import, timeline, preview, transition"
+      "answer_key": "media import, timeline, preview, transition",
+      "translations": {
+        "ur": {
+          "title": "Day 1 — \"CapCut/Premiere کا انٹرفیس سمجھئے\"",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "آج ہم ویڈیو ایڈیٹنگ سافٹ ویئر (CapCut یا Premiere Pro) کا انٹرفیس سمجھیں گے۔ ہر ٹول کی لوکیشن، مینوز، ٹائم لائن، پریویو پینل — سب کو پہچاننا سیکھیں گے۔ یہ ایڈیٹنگ کی بنیاد ہے، اس کے بنا آگے کچھ نہیں ہو سکتا۔"
+            },
+            {
+              "label": "Example",
+              "content": "1.\nCapCut: اوپن کرو → ٹاپ پر \"Media\" (فائلز امپورٹ)، \"Timeline\" (کٹنگ کا ایریا)، \"Preview\" (رائٹ سائیڈ)۔\n2.\nPremiere Pro: \"Project Panel\" (بائیں، فائلز)، \"Timeline\" (بوتھم)، \"Program Monitor\" (رائٹ، پریویو)۔"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے سافٹ ویئر میں ایک نیا پراجیکٹ بنائیں۔ 3-4 فوٹوز/ویڈیوز امپورٹ کریں۔ ٹائم لائن پر ڈریگ کریں۔ پریویو میں دیکھیں۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک 10 سیکنڈ کا کلپ بنائیں — 2 فوٹوز کو ٹائم لائن پر لگائیں، ان کے بیچ ایک ٹرانزیشن ایڈ کریں۔ ایکسپورٹ کریں۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 2,
@@ -1404,7 +1998,31 @@
           "Ek 30-second ka \"Tips\" video banayein jisme:\n- 0-5 sec: Hook (e.g., \"Aap bhi yeh galti karte hain!\")\n- 5-20 sec: 3 tips (har tip ke beech 2-3 sec ka gap)\n- 20-30 sec: Conclusion + CTA"
         ]
       ],
-      "answer_key": "hook, main content, gap, cta"
+      "answer_key": "hook, main content, gap, cta",
+      "translations": {
+        "ur": {
+          "title": "Day 2 — \"پیسنگ کا راز: روزمرہ کے کنیٹ کو کیسے بنائیں انگیجنگ\"",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "پیسنگ کا مطلب ہے اپنے ویڈیو کی سپیڈ کو کنٹرول کرنا تاکہ سامعین کا دھیان برقرار رہے۔ زیادہ سست ہو تو بور ہو جائیں گے، زیادہ تیز ہو تو سمجھ نہ آئے۔ ہر پلیٹ فارم (ریلز، شارٹس، یوٹیوب) کے لیے پیسنگ الگ ہوتی ہے۔ آج سیکھیں گے کہ کیسے اپنے کٹس اور ٹرانزیشن کو ٹائمنگ دی جائے تاکہ ویڈیو انگیجنگ رہے۔"
+            },
+            {
+              "label": "Example",
+              "content": "ایک 15 سیکنڈ کے ریل کے لیے:\n1. 0-3 سیکنڈ: ایک شاکنگ کلپ یا ہک (مثلاً، \"یہ ٹرک نے میری لائف بدل دی!\" )\n2. 3-10 سیکنڈ: مین کنیٹ (اسٹپ بائی اسٹپ پراسس)\n3. 10-15 سیکنڈ: کال ٹو ایکشن (مثلاً، \"فل ٹوٹوریل لنک بایو میں ہے!\" )"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے فون سے 10 سیکنڈ کا ایک کلپ شوٹ کرو (یا ایکسٹنگ فوٹیج استعمال کرو)۔ اس میں 3-4 کٹس لگاﺅ تاکہ پیسنگ نیچرل لگے۔ ہر کٹ کے بیچ 1-2 سیکنڈ کا وقفہ رکھنا۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک 30 سیکنڈ کا \"ٹپس\" ویڈیو بنائیں جس میں:\n- 0-5 سیکنڈ: ہک (مثلاً، \"آپ بھی یہ غلطی کرتے ہیں!\" )\n- 5-20 سیکنڈ: 3 ٹپس (ہر ٹپ کے بیچ 2-3 سیکنڈ کا وقفہ)\n- 20-30 سیکنڈ: کانکلیوشن + سی ٹی اے"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 3,
@@ -1430,7 +2048,31 @@
           "Ek 15-second ka *Reel/Short* banayein jisme:\n- 3 different caption styles hon (bold, italic, colored).\n- 1 transition ke saath caption appear ho.\n- Background music sync ho."
         ]
       ],
-      "answer_key": "auto-caption, timing adjust, font style, background opacity"
+      "answer_key": "auto-caption, timing adjust, font style, background opacity",
+      "translations": {
+        "ur": {
+          "title": "Day 3 — **سبٹائٹلز کی پاور: ایکسیسبلٹی اور اینگجمنٹ بڑھائیں**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "سبٹائٹلز صرف ان لوگوں کے لیے نہیں ہیں جو سن نہیں سکتے—بلکہ یہ *سیکرٹ ویپن* ہیں جو اینگجمنٹ کو بڑھاتے ہیں۔ رپورٹس کے مطابق، 85% سوشل میڈیا صارفین ویڈیوز کو مٹ کر دیکھتے ہیں، لیکن جب سبٹائٹلز شامل کر دیے جائیں تو *ریٹینشن* 40% تک بڑھ جاتی ہے۔ آج ہم سیکھیں گے کہ کیسے ایکورسٹ، اسٹائلش اور اینگجنگ سبٹائٹلز بنائیں جو کنٹینٹ کو پروفیشنل بنا دیں۔"
+            },
+            {
+              "label": "Example",
+              "content": "CapCut میں سبٹائٹلز شامل کرنے کا *فاسٹسٹ* طریقہ:\n1. **آٹو-کیپشن** (15 سیکنڈ کا کلپ سلیکٹ کر کے \"ٹیکسٹ\" > \"آٹو کیپشن\" پر کلک کریں۔\n2. **ایڈٹ** کر کے ٹائمنگ ایڈجسٹ کریں (ڈریگ کر کے الفاظ کو سپلٹ/مرج کریں۔\n3. **اسٹائل** تبدیل کریں: فونٹ (مونٹسریٹ)، سائز (48-60)، کلر (وائٹ ود بلیک آؤٹ لائن)، پوزیشن (بوتم سینٹر۔\n4. **بیک گراؤنڈ** شامل کریں (آپشنل: 50% اوپیسٹی بلیک ریٹینگل۔"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے *Day 2* کے ایڈیٹڈ کلپ میں سبٹائٹلز شامل کریں۔ ہر شاٹ کے لیے 3-5 سیکنڈ کے لیے 1 لائن کا کیپشن لکھیں (مثال: \"یہ ہے میرا فیورٹ ایڈیٹنگ ٹرک!“۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک 15 سیکنڈ کا *ریل/شورٹ* بنائیں جس میں:\n- 3 مختلف کیپشن اسٹائلز ہوں (بولڈ، اٹالک، کلرڈ۔\n- 1 ٹرانزیشن کے ساتھ کیپشن ظاہر ہو۔\n- بیک گراؤنڈ میوزک سنک ہو۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "print-on-demand": [
@@ -1458,7 +2100,8 @@
           "Ek simple design banao (Canva ya phone ke drawing app se) jo aapko pasand ho—jaise \"Pakistan Zindabad\" ya \"Love Pakistan\"—aur usko ek POD platform par upload karne ka screenshot le lo (agar possible ho)."
         ]
       ],
-      "answer_key": "design upload, inventory zero, supplier prints"
+      "answer_key": "design upload, inventory zero, supplier prints",
+      "translations": {}
     },
     {
       "day": 2,
@@ -1484,7 +2127,8 @@
           "Ek simple comparison chart banaein (Excel ya Canva mein) jismein aapne shortlisted 2 platforms ke upar 3-4 key factors compare karein."
         ]
       ],
-      "answer_key": "printful: global warehouses, high quality, shopify integration; printify: cheaper, more product options, flexible"
+      "answer_key": "printful: global warehouses, high quality, shopify integration; printify: cheaper, more product options, flexible",
+      "translations": {}
     },
     {
       "day": 3,
@@ -1522,7 +2166,31 @@
           "Ek **Pinterest board** banayein aur usme 10 trending design ideas save karen. Har design ke niche ek line likhein ke yeh trend kyun popular ho raha hai (e.g., \"Minimalist cat quotes – 2024 mein pet niche mein demand hai\")."
         ]
       ],
-      "answer_key": "trending colors, seasonal themes, audience preferences, pinterest/google trends"
+      "answer_key": "trending colors, seasonal themes, audience preferences, pinterest/google trends",
+      "translations": {
+        "ur": {
+          "title": "Day 3 — **Trینڈنگ ڈیزائن کیسے ڈھونڈیں؟ (2024 کے لیے)**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "Print on Demand (POD) میں کامیاب ڈیزائن ٹرینڈنگ ٹاپکس، آڈیئنس کی دلچسپیاں، اور سیزنل ڈیمانڈ پر ڈپینڈ کرتے ہیں۔ آج ہم سیکھیں گے کہ کس طرح فری اور پیڈ ٹولز سے لیٹسٹ ڈیزائن ٹرینڈز ڈھونڈیں، اور اپنے نِچے کے حساب سے ریلیونٹ آئیڈیاز کیسے سلیکٹ کریں۔ ٹرینڈنگ ڈیزائن کا پتہ لگانا ایک آن گوئنگ پراسیس ہے – ہر مہینے نئے ٹرینڈز آتے ہیں۔"
+            },
+            {
+              "label": "Example",
+              "content": "1.\nPinterest Trends: Pinterest پر سرچ کریں \"2024 t-shirt trends\" یا \"trending quotes for [niche]\"۔ ٹاپ پِنز کے ڈیزائن دیکھیں اور ان کے کلر سکیمز، فونٹس، اور تھیمز نوٹ کریں۔\n\n2.\nEtsy/Redbubble: بیسٹ سیلنگ پروڈکٹس کے ڈیزائن چیک کریں۔ \"Trending\" یا \"Top Seller\" فلٹرز استعمال کریں اور دیکھیں کہ کون سے ڈیزائن ریپیٹ ہو رہے ہیں۔\n\n3.\nGoogle Trends: \"Print on demand trends 2024\" سرچ کریں اور ریلیٹڈ کوئیرز دیکھیں۔ اگر \"AI art for t-shirts\" ٹرینڈنگ ہے، تو اس پر فوکس کر سکتے ہیں۔"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے نِچے (e.g., motivational, pet lovers, gaming) کے لیے **3 ٹرینڈنگ ڈیزائن آئیڈیاز** ڈھونڈیں۔ ہر آئیڈیا کے ساتھ ایک شارٹ ریزن بھی لکھیں کہ یہ ٹرینڈ کیوں ریلیونٹ ہے۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک **Pinterest board** بنائیں اور اس میں 10 ٹرینڈنگ ڈیزائن آئیڈیاز سیو کریں۔ ہر ڈیزائن کے نیچے ایک لائن لکھیں کہ یہ ٹرینڈ کیوں پاپولر ہو رہا ہے (e.g., \"Minimalist cat quotes – 2024 میں pet niche میں ڈیمانڈ ہے\")۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "cpp-daily-coding": [
@@ -1558,7 +2226,27 @@
           "Apne system par C++ compiler aur VS Code setup karein, aur upar wala \"Hello World\" program run karein. Screenshot ya terminal output share karein."
         ]
       ],
-      "answer_key": "compiler, ide, g++, vs code, hello world"
+      "answer_key": "compiler, ide, g++, vs code, hello world",
+      "translations": {
+        "ur": {
+          "title": "Day 1 — C++ سیٹ اپ اور 'Hello World' پروگرام",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصورات",
+              "content": "آج ہم C++ پروگرامنگ شروع کرنے سے پہلے اپنے سسٹم پر C++ کمپائلر اور IDE (انٹیگریٹڈ ڈویلپمنٹ ماحول) سیٹ اپ کریں گے۔ کمپائلر کوڈ کو مشین لینگویج میں ترجمہ کرتا ہے، جبکہ IDE کوڈنگ، ڈیبگنگ اور رننگ کو آسان بناتا ہے۔ پہلا پروگرام 'Hello World' کہلاتا ہے—یہ پروگرامنگ کی ابتدائی نشانی ہوتی ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1.\nکمپائلر انسٹال کریں:\n- Windows: [MinGW-w64](https://www.mingw-w64.org/) ڈاؤن لوڈ کریں (یا [MSYS2](https://www.msys2.org/))۔\n- Mac: ٹرمینل میں `xcode-select --install` رن کریں۔\n- Linux: `sudo apt install g++` (اوبنٹو/ڈیبین) یا `sudo dnf install gcc-c++` (فیڈورا)۔\n\n2.\nIDE انسٹال کریں:\n- [VS Code](https://code.visualstudio.com/) (ہلکا پھلکا، ایکسٹینشنز: 'C/C++' اور 'Code Runner')۔\n- یا [Code::Blocks](https://www.codeblocks.org/) (سادہ IDE)۔\n\n3.\nپہلا پروگرام لکھیں:\n```cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello World!\" << endl;\n    return 0;\n}\n```\n- `g++ hello.cpp -o hello` سے کمپائل کریں۔\n- `./hello` (لِنکس/میک) یا `hello.exe` (ونڈوز) سے رن کریں۔"
+            },
+            {
+              "label": "مشق",
+              "content": "اپنے سسٹم پر C++ کمپائلر اور VS Code سیٹ اپ کریں، اور اوپر والا 'Hello World' پروگرام رن کریں۔ اسکرین شاٹ یا ٹرمینل آؤٹ پٹ شیئر کریں۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 2,
@@ -1584,7 +2272,8 @@
           "Ek **Simple Calculator** banayein jo do numbers input le aur un par +, -, *, / operations perform karke results show kare."
         ]
       ],
-      "answer_key": "age, name, height, calculator"
+      "answer_key": "age, name, height, calculator",
+      "translations": {}
     },
     {
       "day": 3,
@@ -1611,7 +2300,30 @@
         ]
       ],
       "answer_key": "int sum, remainder; float average",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "Day 3 — آپریٹرز اور ٹائپ کنورژن: اپنے پروگرامز کو اور پاورفل بنانا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "C++ میں آپریٹرز کیلکولیشنز اور ڈسیژنز کرنے کے لئے استعمال ہوتے ہیں جیسے +، -، *، /، %، ==، !=، &&، ||۔ ٹائپ کنورژن کا مطلب ہے ایک ڈیٹا ٹائپ کو دوسرے میں تبدیل کرنا جیسے int کو float میں۔ یہ سب پروگرامنگ کو فلیکسبل اور ایفیشنٹ بناتا ہے۔"
+            },
+            {
+              "label": "Example",
+              "content": "```cpp\n#include <iostream>\nusing namespace std;\nint main() {\n    int a = 5, b = 2;\n    float result = a / b; // Implicit conversion (int/float → float)\n    cout << \"Division: \" << result << endl; // Output: 2.5\n\n    // Explicit conversion (C-style)\n    int x = 10;\n    float y = (float)x / 3; // Output: 3.333...\n    cout << \"Explicit: \" << y << endl;\n    return 0;\n}\n```"
+            },
+            {
+              "label": "Practice",
+              "content": "ایک پروگرام لکھو جو یوزر سے 2 نمبرز ان پٹ لے اور ان کا: 1. سم (int) 2. اوسط (float، 2 ڈیسیمل پلیسز تک) 3. remainder (modulus آپریٹر استعمال کرکے) نکالے۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "\"سِیمپل کیلکیولیٹر\" — یوزر سے 2 نمبرز اور ایک آپریٹر (+، -، *، /) ان پٹ لو، پھر رزلٹ کیلکیولیٹ کرکے دکھاؤ۔ ٹائپ کنورژن کا استعمال کرکے ڈیسیمل رزلٹس بھی ہینڈل کرو۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 4,
@@ -1689,7 +2401,8 @@
           "Apne system par Python install karo aur ek file `first.py` banao. Usme apna naam print karne wala code likho (e.g., `print(\"Mera naam [Apna Naam] hai\")`). Terminal se run karo."
         ]
       ],
-      "answer_key": "python.org, path, print(), hello.py, python hello.py"
+      "answer_key": "python.org, path, print(), hello.py, python hello.py",
+      "translations": {}
     },
     {
       "day": 2,
@@ -1744,7 +2457,8 @@
           "Ek 3-page website banao:\n1. `index.html` (homepage)\n2. `about.html` (apne baare mein)\n3. `contact.html` (contact details)\nHar page par ek navigation bar banao jo doosre pages par ja sake."
         ]
       ],
-      "answer_key": "index.html, h2, p, a, about.html, contact.html"
+      "answer_key": "index.html, h2, p, a, about.html, contact.html",
+      "translations": {}
     },
     {
       "day": 2,
@@ -1799,7 +2513,8 @@
           "Ek simple \"Monthly Expense Tracker\" banayein:\n- A1:A7 mein yeh labels type karen: `Rent, Groceries, Transport, Bills, Entertainment, Savings, Total`\n- B1:B6 mein yeh amounts type karen (apne hisaab se, e.g., `15000, 8000, 3000, 2000, 5000, 10000`)\n- B7 mein `SUM(B1:B6)` formula use karke total expenses nikalain."
         ]
       ],
-      "answer_key": "b7 ka result, `43000`"
+      "answer_key": "b7 ka result, `43000`",
+      "translations": {}
     },
     {
       "day": 2,
@@ -1834,7 +2549,30 @@
         ]
       ],
       "answer_key": "average: 68000, countif(>70000): 6, countif(<50000): 2",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "روز دوم — AVERAGE اور COUNTIF: ڈیٹا کو سمجھنے کے لیے ضروری افعال",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "مفہوم",
+              "content": "آج ہم `AVERAGE` اور `COUNTIF` افعال سیکھیں گے جو ڈیٹا کو تجزیہ کرنے میں مدد کرتے ہیں۔ `AVERAGE` کسی رینج کے نمبرز کا مین نکالتا ہے، جبکہ `COUNTIF` کسی شرط کے حساب سے سیلز کو گناتا ہے (جیسے \"کتنے اسٹوڈنٹس نے 80+ مارکس لیے\")۔ یہ افعال ڈیٹا کو سمجھنے اور خلاصہ کرنے کے لیے بہت مفید ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1.\n\n- AVERAGE: `=AVERAGE(B2:B10)` — ایکسل شیٹ میں سیلز B2 سے B10 تک کے نمبرز کا اوسط حساب کرے گا۔\n\n2.\n\n- COUNTIF: `=COUNTIF(C2:C10, \">50\")` — کالم C میں 50 سے زیادہ ویلیوز والی سیلز کو گنائے گا۔"
+            },
+            {
+              "label": "مشق",
+              "content": "ایک ایکسل فائل میں ایک کالم میں 10 اسٹوڈنٹس کے مارکس ہیں (50، 65، 72، 80، 45، 90، 78، 60، 85، 55)۔ ان کے لیے:\n\n1. `AVERAGE` افعال استعمال کرکے سب کا اوسط مارکس نکالو۔\n\n2. `COUNTIF` استعمال کرکے کتنے اسٹوڈنٹس کے 70+ مارکس ہیں، گن لو۔"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "ایک چھوٹی ایکسل شیٹ بناؤ جس میں ایک کالم میں 15 ایمپلائز کی سیلریز ہیں (50000، 60000، 75000، 80000، 45000، 90000، 65000، 70000، 55000، 85000، 72000، 68000، 95000، 52000، 78000)۔ ان کے لیے:\n\n1. اوسط سیلری حساب کرو۔\n\n2. کتنے ایمپلائز کی سیلری 70000 سے زیادہ ہے، گن لو۔\n\n3. کتنے ایمپلائز کی سیلری 50000 سے کم ہے، گن لو۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "crypto-blockchain": [
@@ -1858,7 +2596,8 @@
           "Apne phone ya laptop par ek simple blockchain explorer open karo (jaise [blockchain.com/explorer](https://www.blockchain.com/explorer)). Bitcoin network par koi recent transaction search karo aur dekh lo:\n- Transaction ID (TXID)\n- Sender aur Receiver ke addresses\n- Amount (kitne Bitcoin transfer hue)"
         ]
       ],
-      "answer_key": "txid, sender/receiver addresses, amount"
+      "answer_key": "txid, sender/receiver addresses, amount",
+      "translations": {}
     },
     {
       "day": 2,
@@ -1889,7 +2628,30 @@
         ]
       ],
       "answer_key": "btc: digital gold, limited supply, transactions; eth: programmable, smart contracts, dapps",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "Day 2 — **بٹ‌کوئن بمقابلہ ایتھریم: ڈیجیٹل سونا بمقابلہ پروگرام ایبل منی**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "مفہوم",
+              "content": "بٹ‌کوئن (BTC) اور ایتھریم (ETH) کرپٹو کرنسیوں کی دو سب سے مشہور اقسام ہیں۔ بٹ‌کوئن کو \"ڈیجیٹل سونا\" کہا جاتا ہے—یہ ایک غیرمرکزی کرنسی ہے جو لین دین ریکارڈ کرتی ہے۔ دوسری طرف، ایتھریم ایک \"پروگرام ایبل بلاکچین\" ہے جو سمارٹ کانٹریکٹس (خودکار معاہدے) اور غیرمرکزی ایپس (DApps) کو سپورٹ کرتا ہے۔ بٹ‌کوئن محدود سپلائی (21 ملین سکے) کے ساتھ مہنگائی کے خلاف مزاحم ہے، جبکہ ایتھریم لچکدار ہے اور ڈویلپرز کو نئے نئے پراجیکٹس بنانے کی سہولت فراہم کرتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "تصور کریں کہ بٹ‌کوئن ایک **سونے کا سکّہ** ہے—محدود سپلائی، مستحکم قیمت، اور یہ صرف لین دین ریکارڈ کرتا ہے۔ ایتھریم ایک **ڈیجیٹل کمپیوٹر** ہے—جس میں ڈویلپرز \"اگر یہ تو وہ\" کے قواعد (سمارٹ کانٹریکٹس) لکھ سکتے ہیں، جیسے ایک خودکار مشین جو ادائیگی لینے کے بعد خودکار طور پر سامان فراہم کرتی ہے۔"
+            },
+            {
+              "label": "مشق",
+              "content": "1. **CoinGecko** یا **CoinMarketCap** پر بٹ‌کوئن (BTC) اور ایتھریم (ETH) کی موجودہ قیمتیں چیک کریں۔\n2. **فرق** نوٹ کریں: بٹ‌کوئن کا زور \"قیمت کا ذخیرہ\" ہے، جبکہ ایتھریم کا زور \"ایپس کی پلیٹ فارم\" ہے۔"
+            },
+            {
+              "label": "مینی پراجیکٹ",
+              "content": "- سمارٹ کانٹریکٹ سیمیولیشن: ایتھریم کے **[Remix IDE](https://remix.ethereum.org/)** پر جائیں۔\n- ایک آسان سمارٹ کانٹریکٹ لکھیں جو \"Hello, [اپنا نام]\" پرنٹ کرے۔\n- (مرحلہ وار ہدایت کے لیے YouTube پر \"Remix IDE tutorial\" تلاش کریں۔)"
+            }
+          ]
+        }
+      }
     }
   ],
   "psx-stock-trading": [
@@ -1917,7 +2679,31 @@
           "Ek chhota sa research karein: PSX par listed 3 companies ke names aur unke shares ke current prices (Google par \"PSX [company name] share price\" search kar ke) note karein. In companies ke business ke bare mein 1 line mein likhein (e.g., \"Engro Corp: Fertilizer aur food products banane wali company\")."
         ]
       ],
-      "answer_key": "psx-100, kse-30, indices, market summary"
+      "answer_key": "psx-100, kse-30, indices, market summary",
+      "translations": {
+        "ur": {
+          "title": "Day 1 — پی ایس ایکس کی پہچان: پاکستان اسٹاک ایکسچینج کیا ہے؟",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "پی ایس ایکس (پاکستان اسٹاک ایکسچینج) ایک ایسا مارکیٹ ہے جہاں کمپنیاں اپنے شیئرز بیچتی ہیں اور انویسٹرز ان شیئرز کو خریدتے ہوئے کمپنی کے حصے دار بن سکتے ہیں۔ یہاں پر شیئرز کی خرید و فروخت ہوتی ہے، جسے ٹریڈنگ کہتے ہیں۔ پی ایس ایکس ایک ریگولیٹڈ پلیٹ فارم ہے جہاں ہر دن لاکھوں لوگ ٹریڈنگ کرتے ہیں اور کمپنی کی کارکردگی کے حساب سے شیئرز کے پرائسز بدلتے رہتے ہیں۔"
+            },
+            {
+              "label": "Example",
+              "content": "تصور کریں ایک کمپنی \"XYZ Ltd\" جو اپنے بزنس کو گرومنے کے لیے انویسٹرز سے پیسے لینا چاہتی ہے۔ وہ پی ایس ایکس پر اپنے 1 ملین شیئرز 100 روپے کے پرائس پر آفر کرتی ہے۔ اگر آپ 100 شیئرز خریدتے ہیں، تو آپ XYZ Ltd کے 0.01% کے مالک بن جاتے ہیں۔ اگر کمپنی آگے بڑھتی ہے، تو شیئر کا پرائس 150 روپے ہو سکتا ہے، اور آپ کو پروفٹ ہوگا۔"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے موبائل یا کمپیوٹر پر \"PSX\" سرچ کریں اور پی ایس ایکس کی آفیشل ویب سائٹ یا ایپ اوپن کریں۔ دیکھیں کہ \"Market Summary\" یا \"Indices\" سیکشن میں پی ایس ایکس-100، کے ایس ای-30 جیسے ٹرمز ہیں۔ انہیں سمجھیں کہ یہ کیا represent کرتے ہیں۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک چھوٹا سا ریسرچ کریں: پی ایس ایکس پر لسٹڈ 3 کمپنیوں کے نام اور ان کے شیئرز کے کرینٹ پرائسز (گوگل پر \"PSX [company name] share price\" سرچ کر کے) نوٹ کریں۔ ان کمپنیوں کے بزنس کے بارے میں 1 لائن میں لکھیں (e.g., \"Engro Corp: Fertilizer اور food products بنانے والی کمپنی\")۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 2,
@@ -1956,7 +2742,42 @@
         ]
       ],
       "answer_key": "broker a: rs. 500, rs. 20, rs. 10, 000, ⭐⭐⭐⭐; broker b: rs. 0, rs. 50, rs. 5, 000, ⭐⭐⭐",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "Day 2 — ٹریڈنگ اکاؤنٹ کھولو: بروکر کیسے چنیں؟",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "ٹریڈنگ اکاؤنٹ کھولنے سے پہلے ایک مناسب بروکر کا انتخاب انتہائی اہم ہے۔ بروکر آپ کا پی ایس ایکس کا دروازہ ہوتا ہے—اس لیے اس کی فیسز، خدمات، اور اعتبار کو چیک کرنا ضروری ہے۔ آپ کو ڈسکاؤنٹ بروکر (کم فیسز) یا فل سروس بروکر (اضافی رہنمائی) میں سے کیا چاہئے؟ یہ فیصلہ کریں۔"
+            },
+            {
+              "label": "Example",
+              "content": "1."
+            },
+            {
+              "label": "Fess Compare کریں",
+              "content": "بروکر اے 20 روپے فی ٹریڈ لے رہا ہے، بروکر بی 50 روپے فی ٹریڈ لے رہا ہے۔ اگر آپ 10 ٹریڈز ماہانہ کرتے ہیں تو بروکر اے سے 200 روپے بچ جائیں گے۔"
+            },
+            {
+              "label": "2.",
+              "content": "پلیٹ فارم چیک کریں: کیا بروکر کا ایپ چلنے میں آسان ہے؟ ریئل ٹائم ڈیٹا اور چارٹس ملتے ہیں؟"
+            },
+            {
+              "label": "3.",
+              "content": "کسٹمر سپورٹ: اگر ٹریڈ لگاتے وقت کوئی مسئلہ آئے تو فون/ای میل سپورٹ کتنا جواب دہ ہے؟"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے 2-3 بروکرز کی ویب سائٹس پر جا کر ان تفصیلات کو نوٹ کریں:\n- اکاؤنٹ اوپننگ فیس\n- فی ٹریڈ چارجز\n- مِنی مَم فیس کی ضرورت\n- ٹریڈنگ پلیٹ فارم (ویب/موبائل ایپ)"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک سادہ کمپئیرِیسن ٹیبل بنائیں (ایکس ایل یا نوٹ بک میں) جس میں 3 بروکرز کی فیسز، فیچرز، اور ریٹنگز کا موازنہ ہو۔ مثال کے طور پر:\n\n| Broker  | اکاؤنٹ فیس | فی ٹریڈ | مِنی بیلنس | پلیٹ فارم ریٹنگ |\n|---------|------------|-----------|-------------|-----------------|\n| Broker A | روپے 500    | روپے 20    | روپے 10,000  | ⭐⭐⭐⭐ |\n| Broker B | روپے 0      | روپے 50    | روپے 5,000   | ⭐⭐⭐ |"
+            }
+          ]
+        }
+      }
     }
   ],
   "tiktok-growth": [
@@ -1984,7 +2805,31 @@
           "Apne phone ke gallery se 3-5 videos select karein jo aapke hisaab se engaging hon (chahay wo aapke na bhi ho). Har video ke liye note karein:\n- Video length\n- First 3 seconds mein kya hua\n- Kya sound use hua\n- Engagement rate (likes/shares/comments)"
         ]
       ],
-      "answer_key": "retention, engagement, trending topics"
+      "answer_key": "retention, engagement, trending topics",
+      "translations": {
+        "ur": {
+          "title": "Day 1 — TikTok Algorithm Ki Powerful Secrets",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "ٹک ٹاک کا الگورتھم ہر یوزر کی ہر ایکٹیوٹی ٹریک کرتا ہے—وATCH ٹائم، لائکس، شئیرز، کمنٹس، حتیٰ کہ ویڈیو کمپلیشن ریٹ۔ یہ دیکھ کر فیصلہ کرتا ہے کہ کیا کَونٹینٹ ری‌کومینڈ کرنا ہے۔ اہم فیکٹرز: **ریٹینشن** (کِتنا ٹائم یوزر نے ویڈیو دیکھا)، **اینگیجمنٹ** (کِتنے فاسٹ ری ایکشنز آئے)، اور **ٹرینڈنگ ٹاپکس** (جو وائرل ہو رہے ہیں)۔ الگورتھم فریش کریٹرز کو بھی چانس دیتا ہے اگر کَونٹینٹ اینگیجنگ ہو۔"
+            },
+            {
+              "label": "Example",
+              "content": "ایک نیو کریٹر نے 15 سیکنڈ کا ڈانس ویڈیو بنایا۔ اُس کے 10 فالوورز نے 100% ویڈیو دیکھی، 3 نے لائک کیا، 1 نے شئیر کیا۔ الگورتھم سمجھا کہ یہ اینگیجنگ ہے، اِس لیے اُس کو 'For You Page' پر ری‌کومینڈ کیا۔ اگلے ویڈیو پر اُس کے 500 فالوورز ہو گئے۔"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے TikTok app میں جائیں → 'For You' پیج پر سکرول کریں → 3 ویڈیوز سلیکٹ کریں جو آپ کو پسند آئیں۔ ہر ویڈیو کے نیچے 'Why this?' کا ریزن سوچیں (مثلاً، 'اِس میں ساؤنڈ وائرل ہے' یا 'یوزر نے 90% ویڈیو دیکھی')۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "اپنے فون کے گیلری سے 3-5 ویڈیوز سلیکٹ کریں جو آپ کے حساب سے اینگیجنگ ہوں (چاہے وہ آپ کے نہ بھی ہوں)۔ ہر ویڈیو کے لیے نوٹ کریں:\n- ویڈیو لمبائی\n- پہلے 3 سیکنڈ میں کیا ہوا\n- کیا ساؤنڈ استعمال ہوا\n- اینگیجمنٹ ریٹ (لائکس/شئیرز/کمنٹس)"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 2,
@@ -2027,7 +2872,42 @@
         ]
       ],
       "answer_key": "trending sounds list, creative center, competitor analysis, trend duration",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "Day 2 — ٹِک ٹاک پر ٹرینڈنگ ساؤنڈز کیسے ڈھونڈیں (اور انکا صحیح استعمال کریں)",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "ٹِک ٹاک کا الگورتھم ٹرینڈنگ ساؤنڈز پر بھٹکتا ہے—یہ ویڈیوز کو زیادہ رِچ دیتے ہیں۔ ہر ساؤنڈ کی اپنی \"ٹرینڈ سائیکل\" ہوتی ہے: کچھ 1-2 دن میں وائرل ہوتے ہیں، اور کچھ ہفتے تک چلتے ہیں۔ آپکو **ڈسکور پيج، ٹِک ٹاک کا کریٹیو سینٹر، اور کمپٹیٹر اینالسس** سے ساؤنڈز ڈھونڈنے ہیں جو آپکے نِچے کے حساب سے ریلیونٹ ہوں۔"
+            },
+            {
+              "label": "Example",
+              "content": "1."
+            },
+            {
+              "label": "Discover Page",
+              "content": "ٹِک ٹاک ایپ کھولو → \"ڈسکور\" ٹیب پر جاؤ → \"ٹرینڈنگ\" سیکشن چیک کرو۔"
+            },
+            {
+              "label": "Creative Center",
+              "content": "[https://www.tiktok.com/business/en/creativecenter](https://www.tiktok.com/business/en/creativecenter) → \"Trending Sounds\" فلٹر لگاؤ۔"
+            },
+            {
+              "label": "Competitor Check",
+              "content": "کسی ٹاپ کریٹر کے ویڈیو پر کلک کرو → \"Use this sound\" پر ٹپ کرو → دیکھ لو کہ کتنے کریٹرز اسکو استعمال کر رہے ہیں۔"
+            },
+            {
+              "label": "Practice",
+              "content": "آج کے 10 منٹ میں:\n- اپنے نِچے کے 3 ٹرینڈنگ ساؤنڈز نوٹ کرو (کریٹیو سینٹر سے)۔\n- اُن میں سے **1 ساؤنڈ** سلیکٹ کرو جو آپکے کَونٹینٹ سٹائل سے میچ کرے۔\n- اُس ساؤنڈ کا **آڈیو ویوویفرم** اسکرین شاٹ کرو (فیوچر ریفرنس کے لئے)۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "Sound Trend Tracker: ایک Google Sheet/Notion پيج بنائیں جس میں آپ:\n- **Sound name** | **Trend duration** | **Use cases** | **Competitor count** (کتنے کریٹرز استعمال کر رہے ہیں)\nہر ہفتے 2-3 نئے ساؤنڈز ایڈ کرو اور پرانے کو اپ ڈیٹ کرو۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 3,
@@ -2054,7 +2934,30 @@
         ]
       ],
       "answer_key": "emotion + curiosity + fomo",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "Day 3 — **ٹِک ٹاک پر 'ہُک' کیسے بنائیں (جو 3 سیکنڈ میں ہی ویوئر کو روک دے)**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "ٹِک ٹاک کا الگورتھم صرف ان ویڈیوز کو پروموٹ کرتا ہے جو پہلے 3 سیکنڈ میں ہی ویوئر کو 'ہُک' کر لیں۔ اگر آپ کا انٹرو بورنگ ہے، تو یوزر اسکرول کر جائے گا—چاہے ویڈیو کتنی ہی اچھی ہو۔ ایک مضبوط ہُک بنانے کے لیے **ایموشن (شاک، کوریوسٹی، FOMO)، پرابلم/سoluion یا ان ایکسپیکٹڈ ٹِوسٹ** استعمال کرو۔ مثال: 'میں نے 10,000 روپے کا loss اس لیے کیا کیونکہ...' یا 'یہ 1 چیز آپ کے ٹِک ٹاک گروتھ کو 10x کر دے گی!'"
+            },
+            {
+              "label": "Example",
+              "content": "ایک فٹنس کریٹر کا ہُک: *'اگر آپ یہ 1 ایکسرسائز روز کریں گے، تو 1 مہینے میں 5 کلو گرام fat burn ہو جائے گا—لیکن یہ ویڈیو last 30 سیکنڈ تک دیکھنا!'* (پھر ویڈیو میں ایکسرسائز بتاتا ہے۔) ہُک نے کوریوسٹی پکڑ لی۔"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے فون سے **3 different ہُکس** لکھو (ایموشن، پرابلم یا ٹِوسٹ بیسڈ۔) ہر ہُک کو **3-5 words** میں سمیریائز کرو۔ اب اپنے نیچے سے کسی 1 ٹاپِک پر **10-سیکنڈ کا ڈرافٹ ویڈیو** بنائے اور صرف ہُک پر فوکس کرو۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک **فیک 'بریکنگ نیوز' سٹائل ہُک** بنائے اور اس کے لیے ایک 15-سیکنڈ کا سکرپٹ لکھے (مثلاً: *'Breaking: ٹِک ٹاک نے اپنا الگورتھم چینج کر دیا—اب یہ 3 چیزیں کرنے سے آپ کا اکاؤنٹ بن جائے گا BAN!'*) ویڈیو ریکارڈ کرنے کی ضرورت نہیں، بس سکرپٹ تیار کرو۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "blogging-adsense": [
@@ -2090,7 +2993,39 @@
           "Ek Google Sheets banayein jismein:\n- Column 1: Main niche\n- Column 2: Sub-niche\n- Column 3: Google Trends par search volume (trends.google.com)\n- Column 4: Competition score (1-10, 10 = zyada competition)"
         ]
       ],
-      "answer_key": "interest, demand, competition, sub-niches"
+      "answer_key": "interest, demand, competition, sub-niches",
+      "translations": {
+        "ur": {
+          "title": "Day 1 — اپنا بلاگ کا نیچے کیسے چنئے؟ (بگینر فرینڈلی گائیڈ)",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "بلاگ کا نیچے سلیکٹ کرنا سب سے پہلا اور سب سے اہم سٹپ ہے۔ نیچے کا مطلب ہے کہ آپ کا بلاگ کس ٹاپک پر ہوگا—جیسے ٹیکنالوجی، ہیلتھ، فائنانس، یا ٹریول۔ ایک اچھا نیچے چننے سے آپ کا کنٹینٹ فوکسڈ رہے گا، ریڈرز انگیج ہوں گے، اور ایڈسنس اپروول بھی آسان ہو جاتا ہے۔ آپ کو اپنا انٹرسٹ، مارکیٹ ڈیمانڈ، اور کمپٹیشن کو بیلنس کرنا ہوگا۔"
+            },
+            {
+              "label": "Example",
+              "content": "1. اگر آپ کو کوڈنگ پسند ہے، لیکن 'Python for beginners' کا ڈیمانڈ زیادہ ہے، تو یہ نیچے چن سکتے ہیں۔"
+            },
+            {
+              "label": "Interest vs Demand",
+              "content": "اگر آپ کو کوکنگ پسند ہے، لیکن '10-minute recipes' کا ڈیمانڈ زیادہ ہے، تو یہ نیچے چن سکتے ہیں۔"
+            },
+            {
+              "label": "Competition Check",
+              "content": "گوگل پر 'best budget smartphones 2024' سرچ کرکے دیکھیے کتنے بلاگز ہیں۔ اگر 10,000+ رزلٹس ہیں، تو کمپٹیشن زیادہ ہے—نیچے نارو کرنے کی ضرورت ہے۔"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے 3 ٹاپکس لسٹ کریں جو آپ کو پسند ہیں (مثلاً، فٹنس، پرسنل فائنانس، پیرنٹنگ)۔ ہر ٹاپک کے لیے 3 سب-نیچیز بنائیں (مثلاً، 'home workouts for beginners,' 'side hustles for students,' 'toddler meal plans')۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک گوگل شیٹس بنائیں جس میں شامل ہوں:\n- کالم 1: مین نیچے\n- کالم 2: سب-نیچے\n- کالم 3: گوگل ٹرینڈس پر سرچ وولیم (trends.google.com)\n- کالم 4: کمپٹیشن سکور (1-10، 10 = زیادہ کمپٹیشن)"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 2,
@@ -2125,7 +3060,38 @@
         ]
       ],
       "answer_key": "blogger: title, address, template, publish; wordpress: hosting, domain, install, theme, pages",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "Day 2 — **بلاگر بمقابلہ ورڈپریس: اپنا بلاگ کیسے سیٹ اپ کریں؟ (مرحلہ وار گائیڈ)**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج ہم اپنا بلاگ **بلاگر** یا **ورڈپریس** پر سیٹ اپ کرنا سیکھیں گے۔ بلاگر مفت ہے (گوگل کا پلیٹ فارم)، لیکن ورڈپریس زیادہ لچک دار ہے (ہوسٹنگ خود لینی ہوتی ہے)۔ ہر ایک کے فائدے اور نقصانات سمجھ کر فیصلہ کرنا ضروری ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": ""
+            },
+            {
+              "label": "بلاگر سیٹ اپ (5 منٹ میں)",
+              "content": "1. گوگل اکاؤنٹ سے [blogger.com](https://blogger.com) پر جائیں۔\n2. \"نیا بلاگ\" پر کلک کریں، ٹائٹل (مثلاً \"اردو ٹیک ٹپس\")، ایڈریس (مثلاً `urdutechtips.blogspot.com`) انٹر کریں۔\n3. ٹیمپلیٹ چن لیں (سادہ \"Contempo\" یا \"Soho\")۔\n4. \"بلاگ بنائیں!\" پر کلک کریں۔ ہو گیا!"
+            },
+            {
+              "label": "ورڈپریس سیٹ اپ (15 منٹ میں)",
+              "content": "1. ہوسٹنگ خریدو (مثلاً Bluehost، Hostinger) — ₹2000/ماہ سے شروع۔\n2. ڈومین رجسٹر کرو (مثلاً `urdutechtips.com`)۔\n3. ورڈپریس انسٹال کرو (ہوسٹنگ کے cPanel سے \"1-click install\" آپشن استعمال کرو)۔\n4. لاگ ان کرو، تھیم انسٹال کرو (مثلاً \"Astra\" یا \"GeneratePress\")۔\n5. پیجز (ہوم، اباؤٹ) اور پہلا پوسٹ لکھ کر پبلش کرو۔"
+            },
+            {
+              "label": "مشق",
+              "content": "اپنا ایک بلاگ **بلاگر یا ورڈپریس** پر سیٹ اپ کرو (اگر ورڈپریس چننے کا ارادہ ہے تو ہوسٹنگ خریدنے کی ضرورت ہے)۔"
+            },
+            {
+              "label": "مینی پراجیکٹ",
+              "content": "اپنے بلاگ کا **ہوم پیج ڈیزائن** کرو — 1-2 سیکشنز ایڈ کرو (مثلاً \"تازہ ترین پوسٹس\" وِجٹ یا \"مجھے بارے میں\" سیکشن)۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "photography-editing": [
@@ -2153,7 +3119,31 @@
           "Ek hi scene ki 3 photos leain:\n- ISO 100 (bright light, no noise)\n- ISO 1600 (low light, check noise)\n- Shutter speed 1/30s (blur if hand moves) vs 1/500s (sharp)."
         ]
       ],
-      "answer_key": "iso 100, iso 1600, 1/30s blur, 1/500s sharp"
+      "answer_key": "iso 100, iso 1600, 1/30s blur, 1/500s sharp",
+      "translations": {
+        "ur": {
+          "title": "Day 1",
+          "preamble": "**Day 1 — کیمرہ/فون سیٹنگز: بنیادی باتوں سے شروع کریں**",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "آج ہم سیکھیں گے کہ کیمرہ یا فون کی بنیادی سیٹنگز (ISO، اپرچر، شٹر اسپید، وائٹ بیلنس) کیا ہیں اور یہ تصاویر پر کیسے اثر ڈالتے ہیں۔ ہر سیٹنگ کی اہمیت سمجھ کر، آپ اپنے ڈیوائس کو بہتر کنٹرول کر سکتے ہیں—چاہے وہ DSLR ہو یا سمارٹ فون۔"
+            },
+            {
+              "label": "Example",
+              "content": "*سمارٹ فون کا مثال:* اگر آپ کوئی تصویر کم روشنی میں لے رہے ہیں، تو ISO بڑھا کر (مثلاً 800-1600) تصویر روشن ہو سکتی ہے، لیکن شور (گرین) بھی آئے گا۔ اگر آپ تیز حرکت کرنے والے کسی شے (مثلاً دوڑتا کتا) کو کیپچر کر رہے ہیں، تو شٹر اسپید 1/500s یا زیادہ رکھیں، ورنہ دھندلا پن آئے گا۔"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے فون یا کیمرہ کی سیٹنگز میں جا کر:\n1. ISO کو 100 (دھوپ والی روشنی) سے 800 (کم روشنی) تک دستی طور پر بڑھا کر دیکھیں۔\n2. شٹر اسپید کو 1/60s (آہستہ) اور 1/500s (تیز) پر سیٹ کر کے ایک ہی شے کی 2 تصاویر لیں۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک ہی سیکن کی 3 تصاویر لیں:\n- ISO 100 (روشنی والی، شور نہیں)\n- ISO 1600 (کم روشنی، شور چیک کریں)\n- شٹر اسپید 1/30s (دھندلا پن اگر ہاتھ ہلائے) بمقابلہ 1/500s (صاف)"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 2,
@@ -2180,7 +3170,30 @@
         ]
       ],
       "answer_key": "leading lines, dynamic framing, depth, negative space",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "Day 2 — Framing & Perspective: Beyond the Rule of Thirds",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "کمپوزیشن کا مطلب ہے تصویر کو اس طرح ترتیب دینا کہ وہ دیکھنے والے کو بہترین بصری تجربہ ملے۔ rule of thirds کے علاوہ بھی کئی تکنیکیں ہیں جو تصاویر کو ڈائنامک بناتی ہیں—جیسے leading lines، symmetry، negative space، اور depth of field کا استعمال۔"
+            },
+            {
+              "label": "Example",
+              "content": "ایک سڑک کی تصویر لو۔ اگر تم اسے بالکل سینٹر میں رکھو گے تو تصویر dull لگتی ہے۔ لیکن اگر تم road کو leading line کی طرح استعمال کرکے تصویر کے ایک کونے سے شروع کرکے دوسرے کونے تک لے جاؤ تو تصویر زیادہ engaging ہو جاتی ہے۔ camera کی height بھی matter کرتی ہے—ground level سے تصویر لینے سے ڈراما بڑھ جاتا ہے۔"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے phone یا camera سے ایک تصویر لو جس میں ایک leading line ہو (سڑک، rail track، fence، یا building کی side)۔ تصویر کو ایسے frame کرو کہ line تصویر کے ایک کونے سے شروع ہو اور دوسرے کونے تک چلے۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک mini photo series بنائیں (3-5 photos) جس میں ہر تصویر میں ایک الگ کمپوزیشن ٹیکنیک استعمال کی گئی ہو:\n1. rule of thirds\n2. leading lines\n3. symmetry (mirror image)\n4. negative space\nہر تصویر کا caption لکھیں کے کونسی ٹیکنیک استعمال کی گئی ہے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "voiceover-podcasting": [
@@ -2220,7 +3233,117 @@
           "Ek 1-minute ka intro script likhein (jaise podcast ya voice over ke liye) aur usko record karen. Try karen ke tone natural ho aur mic se 6-12 inches door rahein."
         ]
       ],
-      "answer_key": "usb mic, room quiet, 6-12 inches, pop filter"
+      "answer_key": "usb mic, room quiet, 6-12 inches, pop filter",
+      "translations": {
+        "ur": {
+          "title": "Day 1 — آواز اوور کی بنیادی باتیں: اپنا مائک سیٹ کریں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج ہم سیکھیں گے کہ آواز اوور کے لیے سب سے پہلے کیا ضروری ہے—ایک اچھا مائک سیٹ اپ۔ ایک بہتر مائک اور proper positioning سے آپکی آواز پروفیشنل اور clear آتی ہے۔ بنیادی باتوں میں microphone types (USB vs XLR)، room acoustics، اور positioning جیسے چیزوں پر فوکس کریں گے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1.\n\nمائک ٹائپ: اگر آپ beginner ہیں، تو USB mic (جیسے Blue Yeti یا FIFINE K669B) استعمال کریں۔ XLR mic زیادہ advanced ہیں اور extra interface کی ضرورت ہوتی ہے۔\n\n2.\n\nکمروں کا سیٹ اپ: ایک quiet room میں recording کریں۔ اگر آپکے پاس soundproof room نہیں ہے، تو ایک blanket یا foam panels لگا کر echo کم کریں۔\n\n3.\n\nپوزیشننگ: مائک کو اپنے منہ سے 6-12 inches دور رکھیں۔ \"Pop filter\" استعمال کریں تاکہ \"P\" اور \"B\" جیسے words سے آنے والے harsh sounds کم ہوں۔"
+            },
+            {
+              "label": "مشق",
+              "content": "اپنے مائک کو connect کریں اور ایک 30-second کا recording کریں—اپنی آواز کو describe کریں (جیسے \"میرا نام ہے [X]، اور میں آواز اوور آرٹسٹ بننا چاہتا ہوں\")۔ Check کریں کہ آواز clear ہے یا نہیں۔"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "ایک 1-minute کا intro script لکھیں (جیسے podcast یا آواز اوور کے لیے) اور اسے record کریں۔ Try کریں کہ tone natural ہو اور مائک سے 6-12 inches دور رہیں۔"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "day": 2,
+      "id": "day-002",
+      "date": "2026-08-04",
+      "title": "Day 2 — Script Padhne Ka Art: Emotion aur Tone Control",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Script padhna sirf words bolna nahi, balki unke peeche ki *emotion* aur *intention* ko samajh kar unhe aise deliver karna hai jo listener ke dil tak pahunch sake. Tone control ka matlab hai apne voice ki pitch, speed, aur energy ko script ke mood ke hisaab se adjust karna. Yeh skill beginner se intermediate level tak sabhi ke liye zaroori hai, chahe aap podcast host ho ya voice-over artist."
+        ],
+        [
+          "Example",
+          "Ek simple line hai: *\"Main aaj bahut khush hoon!\"*\n-"
+        ],
+        [
+          "Happy tone",
+          "Fast speed, high pitch, cheerful energy → *\"Main aaj bahut khush hoon!\"* (😊)\n-"
+        ],
+        [
+          "Sad tone",
+          "Slow speed, low pitch, heavy energy → *\"Main aaj bahut khush hoon...\"* (😢)\n-"
+        ],
+        [
+          "Angry tone",
+          "Sharp pitch, fast speed, stressed words → *\"Main aaj bahut khush hoon!\"* (😡)"
+        ],
+        [
+          "Practice",
+          "Apne mobile ya laptop ke recorder se 3 baar yeh line bolen:\n1. Ek baar *excited* tone mein (jaise koi sports commentator ho).\n2. Ek baar *whisper* karke (jaise secret share kar rahe ho).\n3. Ek baar *dramatic pause* ke saath (jaise koi horror story sunayein)."
+        ],
+        [
+          "Mini Project",
+          "Ek 10-second ka *emotional* script likhein (jaise: *\"Meri ma ki aawaaz sun kar mere aansu nikal aaye...\"*). Uske liye 3 alag tones (happy, sad, angry) record karen aur compare karen ki kaun sa zyada effective hai."
+        ]
+      ],
+      "answer_key": "excited, whisper, dramatic pause",
+      "translations": {
+        "ur": {
+          "title": "Day 2 — اسکرپٹ پڑھنے کا فن: ایموشن اور ٹون کنٹرول",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "اسکرپٹ پڑھنا صرف الفاظ کو بولنے کا نام نہیں ہے، بلکہ ان کے پیچھے چھپی *احساسات* اور *ارادوں* کو سمجھ کر انھیں ایسے پیش کرنا ہے جو سننے والے کے دل تک پہنچ سکے۔ ٹون کنٹرول کا مطلب ہے اپنی آواز کی پچ، رفتار، اور توانائی کو اسکرپٹ کے موڈ کے مطابق ایڈجسٹ کرنا۔ یہ مہارت ہر سطح کے افراد کے لیے ضروری ہے، چاہے آپ ایک پڈکاسٹ ہوسٹ ہوں یا وائس اوور آرٹسٹ۔"
+            },
+            {
+              "label": "Example",
+              "content": "ایک سادہ لائن ہے: *\"میں آج بہت خوش ہوں!\"*"
+            },
+            {
+              "label": "",
+              "content": "خوش مزاج: تیز رفتار، بلند پچ، خوشگوار توانائی → *\"میں آج بہت خوش ہوں!\"* (😊)"
+            },
+            {
+              "label": "",
+              "content": "اداس مزاج: سست رفتار، نیچی پچ، بھاری توانائی → *\"میں آج بہت خوش ہوں...\"* (😢)"
+            },
+            {
+              "label": "",
+              "content": "غصے کا مزاج: تیز پچ، تیز رفتار، زور دار الفاظ → *\"میں آج بہت خوش ہوں!\"* (😡)"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے موبائل یا لیپ ٹاپ کے ریکارڈر سے اس لائن کو تین بار بولیں:"
+            },
+            {
+              "label": "",
+              "content": "1. ایک بار *بہت پرجوش* مزاج میں (جیسے کوئی سپورٹس کمنٹیٹر ہو)۔"
+            },
+            {
+              "label": "",
+              "content": "2. ایک بار *چپکے سے* (جیسے کوئی راز شیئر کر رہے ہوں)۔"
+            },
+            {
+              "label": "",
+              "content": "3. ایک بار *ڈرامائی وقفے* کے ساتھ (جیسے کوئی ہارر کہانی سنائیں)۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک 10 سیکنڈ کا *جذباتی* اسکرپٹ لکھیں (جیسے: *\"میری ماں کی آواز سن کر میرے آنسو نکل آئے...\"*)۔ اس کے لیے تین الگ الگ ٹونز (خوش، اداس، غصے) ریکارڈ کریں اور موازنہ کریں کہ کون سی ٹون زیادہ موثر ہے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "real-estate-business": [
@@ -2248,7 +3371,31 @@
           "Ek simple market research karke ek table banaein:\n| Area Name | Popular Society/Project | Avg. Price (per kanal/sq.ft) | Demand Reason |"
         ]
       ],
-      "answer_key": "defence, bahria, gulberg, johar"
+      "answer_key": "defence, bahria, gulberg, johar",
+      "translations": {
+        "ur": {
+          "title": "Day 1 — پاکستان کے ریئل اسٹیٹ مارکیٹ کی بنیادی باتیں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "پاکستان کا ریئل اسٹیٹ مارکیٹ متحرک ہے—شہر سے لے کر گاؤں تک ہر جگہ الگ الگ رجحانات پائے جاتے ہیں۔ یہاں پراپرٹی کی ڈیمینڈ، قیمتیں، اور قانونی قواعد شہر اور علاقے کے حساب سے بدلتی رہتی ہیں۔ شروعات میں مارکیٹ کو سمجھنا ضروری ہے تاکہ آپ informed decisions لے سکیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "کراچی میں ڈی ایچ اے اور بہریا ٹاؤن کی پراپرٹیز زیادہ ڈیمینڈ میں ہیں، جبکہ لاہور میں گلبرگ اور جوہر ٹاؤن مقبول ہیں۔ پراپرٹی کی قیمتیں بھی ان علاقوں میں زیادہ ہوتی ہیں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے مقامی علاقے میں تین مقبول رہائشی پراجیکٹس یا سوسائٹیز کے نام لکھیں جو ابھی ڈیمینڈ میں ہیں۔"
+            },
+            {
+              "label": "منصوبہ",
+              "content": "ایک سادہ مارکیٹ ریسرچ کرکے ایک ٹیبل بنائیں:\n| علاقہ کا نام | مقبول سوسائٹی/پرواجیکٹ | اوسط قیمت (فی کنال/اسکوائر فٹ) | ڈیمینڈ کی وجہ |"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 2,
@@ -2287,7 +3434,42 @@
         ]
       ],
       "answer_key": "prea website, documents list, training certificate",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "Day 2 — پراپرٹی ڈیلر/ایجنٹ بننے کے 5 آسان سٹeps",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "پراپرٹی ڈیلر یا ایجنٹ بننے کے لیے سب سے پہلے آپ کو رئیلسٹٹ مارکیٹ کی بيسکس آنی چاہئیں (Day 1 میں کوری ہوئی)۔ پھر آپ کو اپنا لائسنس/پروفيشنل رجسٹریشن کرانا ہوتا ہے، لوکل لاوز سمجھنی ہوتی ہیں، اور ایک مضبوط نیٹ ورک بنانا ہوتا ہے۔ یہ رول فليکسيبل ہے—پارٹ ٹائم بھی کر سکتے ہیں اور فل ٹائم بزنس بھی۔"
+            },
+            {
+              "label": "Example",
+              "content": "1."
+            },
+            {
+              "label": "Registration",
+              "content": "پنجاب میں، پنجاب رئیلسٹٹ ریگولیٹری اتھارٹی (PREA) سے رجسٹریشن کرنی ہوتی ہے (₨50,000-100,000 فیس)۔"
+            },
+            {
+              "label": "Training",
+              "content": "PREA یا BREA (بلوچستان) سے 3-5 دن کی ٹريننگ مینڈيٹری ہے۔"
+            },
+            {
+              "label": "Networking",
+              "content": "لوکل بلڈرز، وکيلز، اور موجودہ ایجنٹس سے ملنا شروع کریں۔"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے شہر کی رئیلسٹٹ ریگولیٹری اتھارٹی کی ویب سائٹ سے رجسٹریشن پروسس کے 3 مین سٹeps لکھیے (کيوارڈز: فیس، ڈاکيومينٹس، ٹريننگ)۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک فیک (پریکٹس) پراپرٹی لسٹنگ بنائیں—پراپرٹی ڈيٹيلز (لوکيشن، سائز، پرائس)، سيلر/بوئر کے لیے بينيفيٹس، اور آپ کا کميشن کا پرسينٹيج (مثلاً 2% of sale price)۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "mobile-repairing": [
@@ -2315,7 +3497,31 @@
           "Ek chhota sa toolkit banao jismein 3-4 basic tools hon (jaise screwdriver set, tweezer, plastic pry tool). Inhe ek box mein arrange karo taake repair ke waqt aasani ho."
         ]
       ],
-      "answer_key": "phillips, pentalobe, tweezer, suction cup"
+      "answer_key": "phillips, pentalobe, tweezer, suction cup",
+      "translations": {
+        "ur": {
+          "title": "Day 1 — موبائل ریپئیرنگ کے لیے ضروری بنیادی ٹولز",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "موبائل ریپئیرنگ کے لیے سب سے پہلے آپکو کچھ بنیادی ٹولز کی پہچان ہوجانی چاہیے۔ یہ ٹولز آپکی ریپئیر کو آسان اور پروفیشنل بناتے ہیں۔ ہر ریپئیر کے لیے الگ ٹول کی ضرورت ہوتی ہے، اس لیے انکی پہچان اور استعمال کا طریقہ آنا ضروری ہے۔"
+            },
+            {
+              "label": "Example",
+              "content": "اگر آپکو کسی موبائل کی اسکرین ریپلیس کرنی ہے، تو آپکو **Pentalobe screwdriver**، **plastic pry tools**، **suction cup**، اور **heat gun** کی ضرورت ہوگی۔ پہلے screws کو نکالنے کے لیے Pentalobe screwdriver استعمال کرو، پھر plastic pry tools سے اسکرین کو gently lift کرو۔"
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے پاس ایک پرانا موبائل لے آؤ، اور اس کے screws کو نکال کر دیکھو کے کون سا screwdriver کام کرے گا (Phillips, Flathead, یا Pentalobe)۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک چھوٹا سا ٹولکیٹ بناؤ جس میں 3-4 بنیادی ٹولز ہوں (جیسے screwdriver set, tweezer, plastic pry tool)۔ انہیں ایک box میں arrange کرو تاکہ ریپئیر کے وقت آسانی ہو۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 2,
@@ -2358,7 +3564,30 @@
         ]
       ],
       "answer_key": "port damage, dust, multimeter test, battery voltage",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "Day 2 — Mobile Issue Diagnosis: Step-by-Step Fault Finding",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "مفہوم",
+              "content": "ہر موبائل ریپئر کا پہلا قدم ہے *علامت سے اصل مسئلے* تک پہنچنا۔ اس سیشن میں ہم سیکھیں گے کہ ہر مسئلے کو منظم طریقے سے کیسے ڈائیگنوس کرنا ہے—جیسے چارجنگ نہ ہونا، ڈسپلے خراب ہونا، یا نیٹ ورک کا مسئلہ—تاکہ ریپئر کا وقت اور لاگت کم ہو۔ ڈائیگنوسس کے لیے *چیک بصری معائنہ*، *ہارڈویئر ٹیسٹ*، اور *سافٹ ویئر چیک* کا مجموعہ استعمال کرنا ضروری ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "*مسئلہ:* موبائل چارجر سے چارج نہیں ہو رہا۔\n*ڈائیگنوسس کے مراحل:*\n1. *چیک بصری معائنہ:* چارجر پورٹ میں دھول/گندگی ہے؟ کیبل میں کاٹ لگنے کا نشان ہے؟\n2. *ہارڈویئر ٹیسٹ:* چارجر پورٹ کو ٹارچ سے چیک کرو—کیا پنز موڑے ہوئے ہیں؟ ملٹی میٹر سے وولٹیج چیک کرو۔\n3. *سافٹ ویئر چیک:* فون کو ریسٹارٹ کرو—کیا بیٹری فیصد بڑھ رہی ہے؟\n4. *نتیجہ:* اگر پورٹ خراب ہے → ریپلیسمنٹ۔ اگر سافٹ ویئر میں مسئلہ ہے → فلش/فیکٹری ری سیٹ۔"
+            },
+            {
+              "label": "مشق",
+              "content": "اپنے ایک خراب موبائل (یا دوست کا) لے کر، **3 عام علامات** شناخت کرو (مثلاً، ٹچ کام نہیں کر رہا، وائی فائی کنیکٹ نہیں ہو رہا، وغیرہ)۔ ہر علامت کے لیے **3 ممکنہ وجوہات** لکھو (ہارڈویئر/سافٹ ویئر/مکسڈ)۔"
+            },
+            {
+              "label": "مینی پراجیکٹ",
+              "content": "ایک *خراب موبائل* لے کر، **ڈائیگنوسس رپورٹ** تیار کرو (فارمیٹ: علامت → ممکنہ وجوہات → ٹیسٹ طریقہ → حتمی ڈائیگنوسس)۔ مثال:\n- *علامت:* بیٹری 20% سے نیچے نہیں جاتی۔\n- *ممکنہ وجوہات:* خراب بیٹری، چارجنگ سرکٹ کا مسئلہ، سافٹ ویئر بگ۔\n- *ٹیسٹ طریقہ:* بیٹری وولٹیج چیک (ملٹی میٹر)، چارجر پورٹ صاف کرنا، سیف موڈ ٹیسٹ۔\n- *حتمی ڈائیگنوسس:* بیٹری 3.7V سے 3.2V تک گر رہی ہے → بیٹری ریپلیسمنٹ ضروری ہے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-safety-education": [
@@ -2386,7 +3615,31 @@
           "Tumhara jism tumhara hai—kisi ko bhi tumse poochhe bina chho na! Agar koi cheez ajeeb lage, toh foran ammi-abbu ko batana."
         ]
       ],
-      "answer_key": ""
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "Day 1 — میرا جسم صرف میرا ہے",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "بچے، تمھارا جسم تمھارا ہے—صرف تمھارا! کوئی بھی انسان تم سے پوچھے بغیر تمھارے جسم کو چھو سکتا ہے، تمھیں گلے لگا سکتا ہے، یا تمھیں چوم سکتا ہے۔ اگر تمھیں کوئی چیز اچھی نہیں لگتی، تو تمھیں \"نہیں\" کہنے کا پورا حق ہے۔ کوئی بھی تمھیں \"سیcret\" رکھنے کے لیے مجبور نہیں کر سکتا۔"
+            },
+            {
+              "label": "چوٹھی کہانی",
+              "content": "آمن کو سکول سے آتے وقت ایک آدمی نے کہا، \"بٹّے، میرے گلے لگا جاؤ!\" آمن نے سوچا، \"مجھے یہ پسند نہیں،\" اور اس نے \"نہیں\" کہہ دیا۔ اس آدمی نے کہا، \"ارے، یہ تو چھوٹا سا بپ ہے!\" آمن نے اپنے ٹیچر کو بتایا، اور ٹیچر نے اس آدمی کو سمجھایا۔"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "بٹّے، اگر کوئی تم سے کوئی چیز پوچھے بغیر تمھارے جسم کو چھو لے، تو تم کیا کرو گے؟"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمھارا جسم تمھارا ہے—کسی کو بھی تم سے پوچھے بغیر چھونے کا حق نہیں! اگر کوئی چیز عجیب لگے، تو فوراً امّی ابّو کو بتانا۔"
+            }
+          ]
+        }
+      }
     }
   ]
 }
