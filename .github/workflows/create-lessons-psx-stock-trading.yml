@@ -1,8 +1,8 @@
-name: create-lessons-real-estate-business
+name: create-lessons-psx-stock-trading
 
 on:
   schedule:
-    - cron: '30 23 * * *'
+    - cron: '40 22 * * *'
   workflow_dispatch: {}
 
 concurrency:
@@ -31,9 +31,9 @@ jobs:
       - name: ffmpeg install karo (AI video ke liye)
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
 
-      - name: Real Estate Business ka lesson generate karo
+      - name: Stock Market Trading (PSX) ka lesson generate karo
         env:
-          COURSE_SLUG: real-estate-business
+          COURSE_SLUG: psx-stock-trading
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           SITE_URL: ${{ secrets.SITE_URL }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -47,7 +47,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
-          git diff --staged --quiet || git commit -m "Auto: Real Estate Business — naya lesson [skip ci]"
+          git diff --staged --quiet || git commit -m "Auto: Stock Market Trading (PSX) — naya lesson [skip ci]"
           for i in 1 2 3 4 5; do
             git pull --rebase --autostash origin main && git push && break
             echo "Push attempt $i fail hui, thoda ruk kar dobara try..."
