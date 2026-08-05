@@ -1,0 +1,22 @@
+{
+  "title": "دن 11 — **آبجیکٹ اورینٹڈ پروگرامنگ: کلاسز اور آبجیکٹس**",
+  "preamble": "",
+  "sections": [
+    {
+      "label": "تصور",
+      "content": "C++ میں OOP (Object-Oriented Programming) کا تصور کلاسز اور آبجیکٹس پر مبنی ہے۔ کلاس ایک بلیو پرنٹ ہوتی ہے جس میں ڈیٹا (variables) اور فنکشنز (methods) ڈیفائن کیے ہوتے ہیں۔ آبجیکٹ اس کلاس کا ایک انسٹنس ہوتا ہے۔ اس سے حقیقی دنیا کی چیزوں (جیسے کار، اسٹوڈنٹ) کو پروگرامنگ میں ظاہر کرنا آسان ہو جاتا ہے۔"
+    },
+    {
+      "label": "مثال",
+      "content": "```cpp\n#include <iostream>\n#include <string>\nusing namespace std;\n\nclass Car {  // Class definition\npublic:\n    string brand;\n    int year;\n\n    void display() {  // Method\n        cout << \"Brand: \" << brand << \", Year: \" << year << endl;\n    }\n};\n\nint main() {\n    Car myCar;  // Object creation\n    myCar.brand = \"Toyota\";\n    myCar.year = 2020;\n    myCar.display();  // Method call\n    return 0;\n}\n```\nOutput:\n`Brand: Toyota, Year: 2020`"
+    },
+    {
+      "label": "مشق",
+      "content": "اپنی کلاس `Student` بنائیں جس میں `name` (string) اور `rollNo` (int) ویری ایبلز ہوں، اور `display()` میتھڈ ہو جو یہ تفصیلات پرنٹ کرے۔ پھر `main()` میں اس کا آبجیکٹ بنا کر ویلیوز اسائن کر کے `display()` کال کریں۔"
+    },
+    {
+      "label": "منی پروجیکٹ",
+      "content": "ایک `BankAccount` کلاس بنائیں جس میں `accountNumber` (string)، `balance` (double) اور میتھڈز `deposit(amount)`، `withdraw(amount)`، اور `displayBalance()` ہوں۔ `main()` میں ایک آبجیکٹ بنا کر 5000 ڈیپازٹ کریں، پھر 2000 ود ڈرا کریں، اور فائنل بیلنس ڈسپلے کریں۔"
+    }
+  ]
+}

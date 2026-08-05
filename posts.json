@@ -2544,7 +2544,30 @@
         ]
       ],
       "answer_key": "age, name, height, calculator",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن 2 — ویری ایبلز اور ڈیٹا ٹائپس: اپنے پروگرامز کو سمارٹ بنانا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "ویری ایبلز میموری میں سٹوریج کے لیے کنٹینرز ہوتے ہیں۔ ہر ویری ایبل کا ایک ڈیٹا ٹائپ ہوتا ہے (جیسے int، float، char) جو بتاتا ہے کہ اس میں کس قسم کا ڈیٹا سٹور ہوگا۔ ان پٹ/آؤٹ پٹ (cin/cout) سے صارف سے ڈیٹا لے سکتے ہیں اور نتائج دکھا سکتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "```cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n    int age = 25;          // Integer variable\n    float price = 19.99;   // Floating-point variable\n    char grade = 'A';      // Character variable\n\n    cout << \"Age: \" << age << endl;\n    cout << \"Price: $\" << price << endl;\n    cout << \"Grade: \" << grade << endl;\n\n    return 0;\n}\n```"
+            },
+            {
+              "label": "مشق",
+              "content": "ایک پروگرام بنائیں جو صارف سے **نام** (string)، **عمر** (int)، اور **قد** (float) ان پٹ لے اور پھر سب کو ایک لائن میں پرنٹ کرے۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **سادہ کیلکولیٹر** بنائیں جو دو نمبرز ان پٹ لے اور ان پر +، -، *، / آپریشنز انجام دے کر نتائج دکھائے۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 3,
@@ -2621,7 +2644,30 @@
         ]
       ],
       "answer_key": "user_input, while_loop, condition_check, exit_command",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن 4 — لوپس: کوڈ کو بار بار دہرائیں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "لوپس کا استعمال تب ہوتا ہے جب آپ کو ایک ہی کوڈ بلاک کو بار بار چلانا ہو۔ `for`، `while`، اور `do-while` لوپس کے ذریعے آپ تکراری کاموں کو خودکار کر سکتے ہیں۔ `for` لوپ تب بہترین ہے جب آپ کو پہلے سے پتہ ہو کہ کتنی بار دہرانا ہے، جبکہ `while` لوپ تب استعمال ہوتا ہے جب کنڈیشن پہلے سے معلوم نہ ہو۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک پروگرام بنائیں جو 1 سے 5 تک اعداد پرنٹ کرے:\n```cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n    // فور لوپ کی مثال\n    for (int i = 1; i <= 5; i++) {\n        cout << i << \" \";\n    }\n    return 0;\n}\n```\nآؤٹ پٹ: `1 2 3 4 5`"
+            },
+            {
+              "label": "مشق",
+              "content": "ایک پروگرام لکھیں جو صارف سے ایک نمبر ان پٹ لے اور اس کے پہاڑے (1 سے 10 تک) کو پرنٹ کرے۔ (اشارہ: `while` لوپ استعمال کریں)"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک سادہ کیلکولیٹر بنائیں جو صارف سے دو نمبرز اور ایک آپریٹر (`+`، `-`، `*`، `/`) ان پٹ لے، پھر لوپ کے ذریعے نتیجہ معلوم کرے اور بار بار چلنے دے جب تک صارف \"exit\" ٹائپ نہ کرے۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 5,
@@ -2648,7 +2694,30 @@
         ]
       ],
       "answer_key": "numbers array, sum variable, loop, even/odd check, max/min find",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن 5 — ایریز: ایک سے زیادہ ڈیٹا کو اسٹور کرنا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "ایریز (Arrays) ایک ہی ٹائپ کی متعدد ویلیوز کو اسٹور کرنے کا طریقہ ہے۔ جیسے 5 طلباء کے مارکس اسٹور کرنے ہیں، تو ایک ایری بنائیں گے `marks[5]` — ہر انڈیکس پر ایک مارک۔ ایریز سے کوڈ ساتھ میں مینج ہوتا ہے اور لوپس کے ساتھ بہت کام آتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "```cpp\nint marks[5] = {90, 85, 78, 92, 88}; // 5 elements ka array\nfor(int i = 0; i < 5; i++) {\n    cout << \"Student \" << i+1 << \" ka mark: \" << marks[i] << endl;\n}\n```\nیہ 5 طلباء کے مارکس پرنٹ کرے گا۔"
+            },
+            {
+              "label": "مشق",
+              "content": "ایک ایری `numbers[10]` بنائیں جو 1 سے 10 تک نمبرز اسٹور کرے۔ پھر ایک لوپ چلائیں جو سب نمبرز کو پرنٹ کرے *اور* ان کا سم بھی کیلکولیٹ کرے۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "**Even/Odd Counter**\nایک ایری `arr[10]` میں 10 رینڈم نمبرز اسٹور کروائیں (1-100 کے بیچ)۔ پھر ایک پروگرام لکھیں جو:\n1. ایری کے ہر ایلیمنٹ کو پرنٹ کرے۔\n2. کاؤنٹ کرے کہ کتنے ایون نمبرز ہیں اور کتنے آڈ۔\n3. سب سے بڑے اور سب سے چھوٹے نمبر کو بھی پرنٹ کرے۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 6,
@@ -2675,7 +2744,30 @@
         ]
       ],
       "answer_key": "parameter, return type, function call, boolean",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن 6 — فنکشنز: کوڈ کو قابلِ دوبارہ استعمال اور زیادہ موثر بنانا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "فنکشنز کوڈ کا ایک بلاک ہوتے ہیں جو ایک مخصوص کام انجام دیتے ہیں۔ انہیں دوبارہ استعمال کر کے اپنا کوڈ صاف، منظم اور سنبھالنے میں آسان رکھ سکتے ہیں۔ فنکشنز پیرامیٹرز قبول کرتے ہیں اور ویلیوز ریٹرن کر سکتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "```cpp\n#include <iostream>\nusing namespace std;\n\n// Function declaration\nint addNumbers(int a, int b) {\n    return a + b;\n}\n\nint main() {\n    int num1 = 5, num2 = 7;\n    int result = addNumbers(num1, num2); // Function call\n    cout << \"Sum: \" << result << endl;\n    return 0;\n}\n```"
+            },
+            {
+              "label": "مشق",
+              "content": "ایک فنکشن `isEven()` بنائیں جو ایک انٹیجر پیرامیٹر لے اور اگر نمبر ایون (جفت) ہو تو `true` ریٹرن کرے، ورنہ `false`۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک سادہ کیلکولیٹر پروگرام بنائیں جو یوزر سے دو نمبرز اور ایک آپریٹر (+, -, *, /) ان پٹ لے اور فنکشن کا استعمال کرتے ہوئے رزلٹ کیلکولیٹ کرے۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 7,
@@ -2702,7 +2794,30 @@
         ]
       ],
       "answer_key": "c++, position, not found",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن 7 — اسٹرنگز اور اسٹرنگ فنکشنز: ٹیکسٹ کو کنٹرول کرنا سیکھیں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "C++ میں اسٹرنگز ٹیکسٹ اسٹور کرنے کا طریقہ ہیں۔ `string` ڈیٹا ٹائپ کا استعمال کر کے ہم الفاظ، جملوں یا پیراگرافوں کو ہینڈل کر سکتے ہیں۔ بلٹ ان اسٹرنگ فنکشنز جیسے `length()`, `substr()`, `find()`, اور `replace()` سے ہم ٹیکسٹ کو مینیپلیٹ کر سکتے ہیں۔"
+            },
+            {
+              "label": "Example",
+              "content": "```cpp\n#include <iostream>\n#include <string>\nusing namespace std;\n\nint main() {\n    string greeting = \"Hello, Students!\";\n    cout << \"Original: \" << greeting << endl;\n\n    // لمبائی چیک کریں\n    cout << \"Length: \" << greeting.length() << endl;\n\n    // سب اسٹرنگ (انڈیکس 7 سے 15 تک کا حصہ)\n    cout << \"Substring: \" << greeting.substr(7, 8) << endl;\n\n    // ریپلیس (انڈیکس 0 سے 5 تک کو \"Hi\" سے بدل دیں)\n    greeting.replace(0, 5, \"Hi\");\n    cout << \"After replace: \" << greeting << endl;\n\n    return 0;\n}\n```"
+            },
+            {
+              "label": "Practice",
+              "content": "ایک پروگرام لکھیں جو صارف سے ایک جملہ ان پٹ لے اور اس میں:\n1. \"C++\" لفظ کو ڈھونڈ کر اس کی پوزیشن بتائے۔\n2. اگر \"C++\" نہیں ملا تو \"Word not found\" پرنٹ کرے۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک سادہ **Password Validator** بنائیں جو:\n- صارف سے پاس ورڈ ان پٹ لے۔\n- چیک کرے کہ پاس ورڈ میں کم از کم 8 کریکٹرز ہیں۔\n- چیک کرے کہ پاس ورڈ میں کم از کم 1 اپر کیس، 1 لوئر کیس، اور 1 نمبر ہو۔\n- اگر تمام شرائط پوری ہوتی ہیں تو \"Strong Password\" پرنٹ کرے، ورنہ \"Weak Password\" اور رہ جانے والی شرائط بتائے۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 8,
@@ -2729,7 +2844,30 @@
         ]
       ],
       "answer_key": "title, author, price, car, model, year, iselectric",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن 8 — اسٹرکچرز (struct): کسٹم ڈیٹا ٹائپس بنانا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسیپٹ",
+              "content": "آج ہم `struct` کے ذریعے اپنے خود کے کسٹم ڈیٹا ٹائپس بنائیں گے۔ `struct` سے ہم ملٹیپل ویری ایبلز کو ایک سنگل یونٹ میں گروپ کر سکتے ہیں۔ یہ arrays کی طرح ہوتا ہے لیکن الگ الگ ڈیٹا ٹائپس کے ویری ایبلز اسٹور کرنے کے لیے زیادہ فلیکسیبل ہے۔ `struct` سے کوڈ پڑھنے میں آسان اور منظم ہوتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "```cpp\n#include <iostream>\n#include <string>\nusing namespace std;\n\nstruct Student {\n    string name;\n    int age;\n    float gpa;\n};\n\nint main() {\n    Student s1; // struct کا آبجیکٹ بنایا\n    s1.name = \"Ali\";\n    s1.age = 20;\n    s1.gpa = 3.8;\n\n    cout << \"Name: \" << s1.name << endl;\n    cout << \"Age: \" << s1.age << endl;\n    cout << \"GPA: \" << s1.gpa << endl;\n    return 0;\n}\n```"
+            },
+            {
+              "label": "مشق",
+              "content": "ایک `Book` struct بنائیں جس میں `title`، `author`، اور `price` اسٹور ہو سکتے ہیں۔ پھر `main()` میں ایک book کا آبجیکٹ بنائیں اور اس کی تفصیلات پرنٹ کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک `Car` struct بنائیں جس میں `model`، `year`، اور `isElectric` (boolean) ہو۔ 3 cars کے آبجیکٹس بنائیں اور ان کی تفصیلات ایک ٹیبل کی شکل میں پرنٹ کریں۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 9,
@@ -2760,7 +2898,30 @@
         ]
       ],
       "answer_key": "ageptr, *ageptr=30, 25, 30",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن 9 — **پوائنٹرز: میموری ایڈریسز کو سمجھنا اور استعمال کرنا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "پوائنٹرز C++ کی سب سے طاقتور خصوصیات میں سے ایک ہیں۔ یہ ویری ایبلز کا میموری ایڈریس اسٹور کرتے ہیں۔ پوائنٹرز سے آپ ڈائریکٹ میموری کو ایکسیس کر سکتے ہیں، ڈائنامک میموری ایلوکیشن کر سکتے ہیں، اور فنکشنز سے ویلیوز ریٹرن کر سکتے ہیں (by reference)۔ بنیادی باتوں میں ہم سیکھیں گے کہ پوائنٹر کیسے ڈکلیئر کرتے ہیں، ایڈریس-آف آپریٹر (`&`) اور ڈی ریفرینس آپریٹر (`*`) کا استعمال کیسے ہوتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "```cpp\nint num = 10;       // ایک انٹیجر ویری ایبل\nint *ptr = &num;    // پوائنٹر جو num کا ایڈریس اسٹور کرتا ہے\n\ncout << \"num ka address: \" << ptr << endl;  // میموری ایڈریس پرنٹ ہوگا\ncout << \"num ki value: \" << *ptr << endl;   // ڈی ریفرینس سے ویلیو ملتی ہے (10)\n```"
+            },
+            {
+              "label": "مشق",
+              "content": "ایک پروگرام لکھو جو:\n1. ایک انٹیجر ویری ایبل `age` ڈکلیئر کرے (ویلیو: 25)۔\n2. اس کے ایڈریس کو ایک پوائنٹر `agePtr` میں اسٹور کرے۔\n3. پوائنٹر کا استعمال کر کے `age` کی ویلیو کو 30 میں اپ ڈیٹ کرے۔\n4. دونوں ویلیوز (اوریجنل اور اپ ڈیٹ شدہ) پرنٹ کرو۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "سمپل سوئیپ پروگرام: ایک فنکشن `swapValues` بنائیں جو دو انٹیجرز کی ویلیوز کو پوائنٹرز کی مدد سے سوئیپ کرے۔ مین فنکشن میں دو ویری ایبلز ڈکلیئر کر کے ان کی ویلیوز 5 اور 10 سیٹ کرو، پھر `swapValues` کال کرو اور رزلٹ پرنٹ کرو۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 10,
@@ -2807,6 +2968,56 @@
             {
               "label": "مینی پروجیکٹ",
               "content": "ایک سادہ \"بینک اکاؤنٹ\" سسٹم بنائے:\n- ایک `balance` ویری ایبل ہو (شروع کی قیمت = 1000)۔\n- اس کے لیے ایک حوالہ `account` بنائے۔\n- ایک فنکشن `deposit()` جو `account` کو پیرامیٹر لے اور بیلنس بڑھائے۔\n- ایک فنکشن `withdraw()` جو `account` سے پیسے کٹے اور منفی بیلنس نہ ہو۔\n- مین فنکشن میں 200 ڈپازٹ کرو اور 500 نکال کر پرنٹ کرو۔"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "day": 11,
+      "id": "day-011",
+      "date": "2026-08-05",
+      "title": "Day 11 — **Object-Oriented Programming: Classes aur Objects**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "C++ mein OOP (Object-Oriented Programming) ka concept classes aur objects par based hai. Class ek blueprint hoti hai jisme data (variables) aur functions (methods) define kiye hote hain. Object us class ka ek instance hota hai. Isse real-world entities (jaise car, student) ko programming mein represent karna easy ho jata hai."
+        ],
+        [
+          "Example",
+          "```cpp\n#include <iostream>\n#include <string>\nusing namespace std;\n\nclass Car {  // Class definition\npublic:\n    string brand;\n    int year;\n\n    void display() {  // Method\n        cout << \"Brand: \" << brand << \", Year: \" << year << endl;\n    }\n};\n\nint main() {\n    Car myCar;  // Object creation\n    myCar.brand = \"Toyota\";\n    myCar.year = 2020;\n    myCar.display();  // Method call\n    return 0;\n}\n```\nOutput:\n`Brand: Toyota, Year: 2020`"
+        ],
+        [
+          "Practice",
+          "Apni class `Student` banayein jisme `name` (string) aur `rollNo` (int) variables hon, aur `display()` method ho jo yeh details print kare. Phir `main()` mein iska object bana kar values assign kar ke `display()` call karein."
+        ],
+        [
+          "Mini Project",
+          "Ek `BankAccount` class banayein jisme `accountNumber` (string), `balance` (double) aur methods `deposit(amount)`, `withdraw(amount)`, aur `displayBalance()` hon. `main()` mein ek object bana kar 5000 deposit karein, phir 2000 withdraw karein, aur final balance display karein."
+        ]
+      ],
+      "answer_key": "student, name, rollno, display(), bankaccount, accountnumber, balance, deposit, withdraw",
+      "translations": {
+        "ur": {
+          "title": "دن 11 — **آبجیکٹ اورینٹڈ پروگرامنگ: کلاسز اور آبجیکٹس**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "C++ میں OOP (Object-Oriented Programming) کا تصور کلاسز اور آبجیکٹس پر مبنی ہے۔ کلاس ایک بلیو پرنٹ ہوتی ہے جس میں ڈیٹا (variables) اور فنکشنز (methods) ڈیفائن کیے ہوتے ہیں۔ آبجیکٹ اس کلاس کا ایک انسٹنس ہوتا ہے۔ اس سے حقیقی دنیا کی چیزوں (جیسے کار، اسٹوڈنٹ) کو پروگرامنگ میں ظاہر کرنا آسان ہو جاتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "```cpp\n#include <iostream>\n#include <string>\nusing namespace std;\n\nclass Car {  // Class definition\npublic:\n    string brand;\n    int year;\n\n    void display() {  // Method\n        cout << \"Brand: \" << brand << \", Year: \" << year << endl;\n    }\n};\n\nint main() {\n    Car myCar;  // Object creation\n    myCar.brand = \"Toyota\";\n    myCar.year = 2020;\n    myCar.display();  // Method call\n    return 0;\n}\n```\nOutput:\n`Brand: Toyota, Year: 2020`"
+            },
+            {
+              "label": "مشق",
+              "content": "اپنی کلاس `Student` بنائیں جس میں `name` (string) اور `rollNo` (int) ویری ایبلز ہوں، اور `display()` میتھڈ ہو جو یہ تفصیلات پرنٹ کرے۔ پھر `main()` میں اس کا آبجیکٹ بنا کر ویلیوز اسائن کر کے `display()` کال کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک `BankAccount` کلاس بنائیں جس میں `accountNumber` (string)، `balance` (double) اور میتھڈز `deposit(amount)`، `withdraw(amount)`، اور `displayBalance()` ہوں۔ `main()` میں ایک آبجیکٹ بنا کر 5000 ڈیپازٹ کریں، پھر 2000 ود ڈرا کریں، اور فائنل بیلنس ڈسپلے کریں۔"
             }
           ]
         }

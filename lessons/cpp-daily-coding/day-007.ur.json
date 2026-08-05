@@ -1,0 +1,22 @@
+{
+  "title": "دن 7 — اسٹرنگز اور اسٹرنگ فنکشنز: ٹیکسٹ کو کنٹرول کرنا سیکھیں",
+  "preamble": "",
+  "sections": [
+    {
+      "label": "Concept",
+      "content": "C++ میں اسٹرنگز ٹیکسٹ اسٹور کرنے کا طریقہ ہیں۔ `string` ڈیٹا ٹائپ کا استعمال کر کے ہم الفاظ، جملوں یا پیراگرافوں کو ہینڈل کر سکتے ہیں۔ بلٹ ان اسٹرنگ فنکشنز جیسے `length()`, `substr()`, `find()`, اور `replace()` سے ہم ٹیکسٹ کو مینیپلیٹ کر سکتے ہیں۔"
+    },
+    {
+      "label": "Example",
+      "content": "```cpp\n#include <iostream>\n#include <string>\nusing namespace std;\n\nint main() {\n    string greeting = \"Hello, Students!\";\n    cout << \"Original: \" << greeting << endl;\n\n    // لمبائی چیک کریں\n    cout << \"Length: \" << greeting.length() << endl;\n\n    // سب اسٹرنگ (انڈیکس 7 سے 15 تک کا حصہ)\n    cout << \"Substring: \" << greeting.substr(7, 8) << endl;\n\n    // ریپلیس (انڈیکس 0 سے 5 تک کو \"Hi\" سے بدل دیں)\n    greeting.replace(0, 5, \"Hi\");\n    cout << \"After replace: \" << greeting << endl;\n\n    return 0;\n}\n```"
+    },
+    {
+      "label": "Practice",
+      "content": "ایک پروگرام لکھیں جو صارف سے ایک جملہ ان پٹ لے اور اس میں:\n1. \"C++\" لفظ کو ڈھونڈ کر اس کی پوزیشن بتائے۔\n2. اگر \"C++\" نہیں ملا تو \"Word not found\" پرنٹ کرے۔"
+    },
+    {
+      "label": "Mini Project",
+      "content": "ایک سادہ **Password Validator** بنائیں جو:\n- صارف سے پاس ورڈ ان پٹ لے۔\n- چیک کرے کہ پاس ورڈ میں کم از کم 8 کریکٹرز ہیں۔\n- چیک کرے کہ پاس ورڈ میں کم از کم 1 اپر کیس، 1 لوئر کیس، اور 1 نمبر ہو۔\n- اگر تمام شرائط پوری ہوتی ہیں تو \"Strong Password\" پرنٹ کرے، ورنہ \"Weak Password\" اور رہ جانے والی شرائط بتائے۔"
+    }
+  ]
+}

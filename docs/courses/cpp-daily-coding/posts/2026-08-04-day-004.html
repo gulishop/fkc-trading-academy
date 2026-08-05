@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-05T08:10:00.391253";
+  var FKC_BUILD = "2026-08-05T08:31:23.370033";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -230,7 +230,7 @@ function fkcToggleTheme(){
       
       
       
-      
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Loops ka istemal tab hota hai jab aapko ek hi code block ko baar-baar chalana ho. `for`, `while`, aur `do-while` loops ke zariye aap repetitive tasks automate kar sakte hain. `for` loop tab best hai jab aapko pehle se pata ho kitni baar repeat karna hai, jabki `while` loop tab use hota hai jab condition pehle se maloom na ho.</p><h3>Example</h3><p>Ek program banao jo 1 se 5 tak numbers print kare:</p><pre dir="ltr"><code>#include &lt;iostream&gt;
 using namespace std;
 
@@ -240,7 +240,16 @@ int main() {
         cout &lt;&lt; i &lt;&lt; &quot; &quot;;
     }
     return 0;
-}</code></pre><p>Output: `1 2 3 4 5`</p><h3>Practice</h3><p>Ek program likho jo user se ek number input le aur uske table (1 se 10 tak) ko print kare. (Hint: `while` loop use karo)</p><h3>Mini Project</h3><p>Ek simple calculator banao jo user se do numbers aur ek operator (`+`, `-`, `*`, `/`) input le, phir loop ke zariye result calculate kare aur bar-baar chalne de jab tak user &quot;exit&quot; na type kare.</p></div>
+}</code></pre><p>Output: `1 2 3 4 5`</p><h3>Practice</h3><p>Ek program likho jo user se ek number input le aur uske table (1 se 10 tak) ko print kare. (Hint: `while` loop use karo)</p><h3>Mini Project</h3><p>Ek simple calculator banao jo user se do numbers aur ek operator (`+`, `-`, `*`, `/`) input le, phir loop ke zariye result calculate kare aur bar-baar chalne de jab tak user &quot;exit&quot; na type kare.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>تصور</h3><p>لوپس کا استعمال تب ہوتا ہے جب آپ کو ایک ہی کوڈ بلاک کو بار بار چلانا ہو۔ `for`، `while`، اور `do-while` لوپس کے ذریعے آپ تکراری کاموں کو خودکار کر سکتے ہیں۔ `for` لوپ تب بہترین ہے جب آپ کو پہلے سے پتہ ہو کہ کتنی بار دہرانا ہے، جبکہ `while` لوپ تب استعمال ہوتا ہے جب کنڈیشن پہلے سے معلوم نہ ہو۔</p><h3>مثال</h3><p>ایک پروگرام بنائیں جو 1 سے 5 تک اعداد پرنٹ کرے:</p><pre dir="ltr"><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    // فور لوپ کی مثال
+    for (int i = 1; i &lt;= 5; i++) {
+        cout &lt;&lt; i &lt;&lt; &quot; &quot;;
+    }
+    return 0;
+}</code></pre><p>آؤٹ پٹ: `1 2 3 4 5`</p><h3>مشق</h3><p>ایک پروگرام لکھیں جو صارف سے ایک نمبر ان پٹ لے اور اس کے پہاڑے (1 سے 10 تک) کو پرنٹ کرے۔ (اشارہ: `while` لوپ استعمال کریں)</p><h3>منی پروجیکٹ</h3><p>ایک سادہ کیلکولیٹر بنائیں جو صارف سے دو نمبرز اور ایک آپریٹر (`+`، `-`، `*`، `/`) ان پٹ لے، پھر لوپ کے ذریعے نتیجہ معلوم کرے اور بار بار چلنے دے جب تک صارف &quot;exit&quot; ٹائپ نہ کرے۔</p></div>
       
       
       <div class="quiz-box no-print">

@@ -1,0 +1,22 @@
+{
+  "title": "دن 8 — اسٹرکچرز (struct): کسٹم ڈیٹا ٹائپس بنانا",
+  "preamble": "",
+  "sections": [
+    {
+      "label": "کانسیپٹ",
+      "content": "آج ہم `struct` کے ذریعے اپنے خود کے کسٹم ڈیٹا ٹائپس بنائیں گے۔ `struct` سے ہم ملٹیپل ویری ایبلز کو ایک سنگل یونٹ میں گروپ کر سکتے ہیں۔ یہ arrays کی طرح ہوتا ہے لیکن الگ الگ ڈیٹا ٹائپس کے ویری ایبلز اسٹور کرنے کے لیے زیادہ فلیکسیبل ہے۔ `struct` سے کوڈ پڑھنے میں آسان اور منظم ہوتا ہے۔"
+    },
+    {
+      "label": "مثال",
+      "content": "```cpp\n#include <iostream>\n#include <string>\nusing namespace std;\n\nstruct Student {\n    string name;\n    int age;\n    float gpa;\n};\n\nint main() {\n    Student s1; // struct کا آبجیکٹ بنایا\n    s1.name = \"Ali\";\n    s1.age = 20;\n    s1.gpa = 3.8;\n\n    cout << \"Name: \" << s1.name << endl;\n    cout << \"Age: \" << s1.age << endl;\n    cout << \"GPA: \" << s1.gpa << endl;\n    return 0;\n}\n```"
+    },
+    {
+      "label": "مشق",
+      "content": "ایک `Book` struct بنائیں جس میں `title`، `author`، اور `price` اسٹور ہو سکتے ہیں۔ پھر `main()` میں ایک book کا آبجیکٹ بنائیں اور اس کی تفصیلات پرنٹ کریں۔"
+    },
+    {
+      "label": "منی پروجیکٹ",
+      "content": "ایک `Car` struct بنائیں جس میں `model`، `year`، اور `isElectric` (boolean) ہو۔ 3 cars کے آبجیکٹس بنائیں اور ان کی تفصیلات ایک ٹیبل کی شکل میں پرنٹ کریں۔"
+    }
+  ]
+}

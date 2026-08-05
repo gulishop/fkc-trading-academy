@@ -140,3 +140,5 @@
 [2026-08-05T08:19:51.633248] [cpp-daily-coding] Day 8 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 403: Forbidden
 [2026-08-05T08:19:51.633435] heal_degenerate_translations: 6 translations lagatar fail hui — Mistral API shayad down/quota-exhausted hai, is run ke liye translation healing rok rahe hain (agli baar phir try hoga).
 [2026-08-05T08:21:43.252769] [cpp-daily-coding] Day 10 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-05T08:43:42.489516] [cpp-daily-coding] Day 11 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-05T08:43:48.564601] [cpp-daily-coding] Day 6 video skip: Urdu TTS (ur-PK-UzmaNeural) fail.

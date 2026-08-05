@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-05T08:10:00.391253";
+  var FKC_BUILD = "2026-08-05T08:31:23.370033";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -230,12 +230,16 @@ function fkcToggleTheme(){
       
       
       
-      
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Pointers C++ ki sabse powerful features mein se ek hain. Ye variables ki memory address store karte hain. Pointers se aap direct memory ko access kar sakte hain, dynamic memory allocation kar sakte hain, aur functions se values return kar sakte hain (by reference). Basics mein hum seekhenge ki pointer kaise declare karte hain, address-of operator (`&amp;`) aur dereference operator (`*`) ka istemal kaise hota hai.</p><h3>Example</h3><pre dir="ltr"><code>int num = 10;       // Ek integer variable
 int *ptr = &amp;num;    // Pointer jo num ka address store karta hai
 
 cout &lt;&lt; &quot;num ka address: &quot; &lt;&lt; ptr &lt;&lt; endl;  // Memory address print hoga
-cout &lt;&lt; &quot;num ki value: &quot; &lt;&lt; *ptr &lt;&lt; endl;   // Dereference se value milti hai (10)</code></pre><h3>Practice</h3><p>Ek program likho jo:<br>1. Ek integer variable `age` declare kare (value: 25).<br>2. Uske address ko ek pointer `agePtr` mein store kare.<br>3. Pointer ka use karke `age` ki value ko 30 mein update kare.<br>4. Dono values (original aur updated) print karo.</p><h3>Mini Project</h3><h3>Simple Swap Program</h3><p>Ek function `swapValues` banayein jo do integers ki values ko pointers ki madad se swap kare. Main function mein do variables declare karke unki values 5 aur 10 set karo, phir `swapValues` call karo aur result print karo.</p></div>
+cout &lt;&lt; &quot;num ki value: &quot; &lt;&lt; *ptr &lt;&lt; endl;   // Dereference se value milti hai (10)</code></pre><h3>Practice</h3><p>Ek program likho jo:<br>1. Ek integer variable `age` declare kare (value: 25).<br>2. Uske address ko ek pointer `agePtr` mein store kare.<br>3. Pointer ka use karke `age` ki value ko 30 mein update kare.<br>4. Dono values (original aur updated) print karo.</p><h3>Mini Project</h3><h3>Simple Swap Program</h3><p>Ek function `swapValues` banayein jo do integers ki values ko pointers ki madad se swap kare. Main function mein do variables declare karke unki values 5 aur 10 set karo, phir `swapValues` call karo aur result print karo.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>تصور</h3><p>پوائنٹرز C++ کی سب سے طاقتور خصوصیات میں سے ایک ہیں۔ یہ ویری ایبلز کا میموری ایڈریس اسٹور کرتے ہیں۔ پوائنٹرز سے آپ ڈائریکٹ میموری کو ایکسیس کر سکتے ہیں، ڈائنامک میموری ایلوکیشن کر سکتے ہیں، اور فنکشنز سے ویلیوز ریٹرن کر سکتے ہیں (by reference)۔ بنیادی باتوں میں ہم سیکھیں گے کہ پوائنٹر کیسے ڈکلیئر کرتے ہیں، ایڈریس-آف آپریٹر (`&amp;`) اور ڈی ریفرینس آپریٹر (`*`) کا استعمال کیسے ہوتا ہے۔</p><h3>مثال</h3><pre dir="ltr"><code>int num = 10;       // ایک انٹیجر ویری ایبل
+int *ptr = &amp;num;    // پوائنٹر جو num کا ایڈریس اسٹور کرتا ہے
+
+cout &lt;&lt; &quot;num ka address: &quot; &lt;&lt; ptr &lt;&lt; endl;  // میموری ایڈریس پرنٹ ہوگا
+cout &lt;&lt; &quot;num ki value: &quot; &lt;&lt; *ptr &lt;&lt; endl;   // ڈی ریفرینس سے ویلیو ملتی ہے (10)</code></pre><h3>مشق</h3><p>ایک پروگرام لکھو جو:<br>1. ایک انٹیجر ویری ایبل `age` ڈکلیئر کرے (ویلیو: 25)۔<br>2. اس کے ایڈریس کو ایک پوائنٹر `agePtr` میں اسٹور کرے۔<br>3. پوائنٹر کا استعمال کر کے `age` کی ویلیو کو 30 میں اپ ڈیٹ کرے۔<br>4. دونوں ویلیوز (اوریجنل اور اپ ڈیٹ شدہ) پرنٹ کرو۔</p><h3>منی پروجیکٹ</h3><p>سمپل سوئیپ پروگرام: ایک فنکشن `swapValues` بنائیں جو دو انٹیجرز کی ویلیوز کو پوائنٹرز کی مدد سے سوئیپ کرے۔ مین فنکشن میں دو ویری ایبلز ڈکلیئر کر کے ان کی ویلیوز 5 اور 10 سیٹ کرو، پھر `swapValues` کال کرو اور رزلٹ پرنٹ کرو۔</p></div>
       
       
       <div class="quiz-box no-print">

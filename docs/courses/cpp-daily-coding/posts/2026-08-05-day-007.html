@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-05T08:10:00.391253";
+  var FKC_BUILD = "2026-08-05T08:31:23.370033";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -230,7 +230,7 @@ function fkcToggleTheme(){
       
       
       
-      
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Strings C++ mein text store karne ka tareeqa hain. `string` data type use karke hum words, sentences ya paragraphs ko handle kar sakte hain. Built-in string functions jaise `length()`, `substr()`, `find()`, aur `replace()` se hum text ko manipulate kar sakte hain.</p><h3>Example</h3><pre dir="ltr"><code>#include &lt;iostream&gt;
 #include &lt;string&gt;
 using namespace std;
@@ -250,7 +250,26 @@ int main() {
     cout &lt;&lt; &quot;After replace: &quot; &lt;&lt; greeting &lt;&lt; endl;
 
     return 0;
-}</code></pre><h3>Practice</h3><p>Ek program likho jo user se ek sentence input le aur usmein:<br>1. &quot;C++&quot; word ko dhund kar uski position bataye.<br>2. Agar &quot;C++&quot; nahi mila to &quot;Word not found&quot; print kare.</p><h3>Mini Project</h3><p>Ek simple **Password Validator** banaye jo:<br>- User se password input le.<br>- Check kare ke password mein kam az kam 8 characters hain.<br>- Check kare ke password mein kam az kam 1 uppercase, 1 lowercase, aur 1 number ho.<br>- Agar sab conditions puri hoti hain to &quot;Strong Password&quot; print kare, warna &quot;Weak Password&quot; aur missing conditions bataye.</p></div>
+}</code></pre><h3>Practice</h3><p>Ek program likho jo user se ek sentence input le aur usmein:<br>1. &quot;C++&quot; word ko dhund kar uski position bataye.<br>2. Agar &quot;C++&quot; nahi mila to &quot;Word not found&quot; print kare.</p><h3>Mini Project</h3><p>Ek simple **Password Validator** banaye jo:<br>- User se password input le.<br>- Check kare ke password mein kam az kam 8 characters hain.<br>- Check kare ke password mein kam az kam 1 uppercase, 1 lowercase, aur 1 number ho.<br>- Agar sab conditions puri hoti hain to &quot;Strong Password&quot; print kare, warna &quot;Weak Password&quot; aur missing conditions bataye.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>C++ میں اسٹرنگز ٹیکسٹ اسٹور کرنے کا طریقہ ہیں۔ `string` ڈیٹا ٹائپ کا استعمال کر کے ہم الفاظ، جملوں یا پیراگرافوں کو ہینڈل کر سکتے ہیں۔ بلٹ ان اسٹرنگ فنکشنز جیسے `length()`, `substr()`, `find()`, اور `replace()` سے ہم ٹیکسٹ کو مینیپلیٹ کر سکتے ہیں۔</p><h3>Example</h3><pre dir="ltr"><code>#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+int main() {
+    string greeting = &quot;Hello, Students!&quot;;
+    cout &lt;&lt; &quot;Original: &quot; &lt;&lt; greeting &lt;&lt; endl;
+
+    // لمبائی چیک کریں
+    cout &lt;&lt; &quot;Length: &quot; &lt;&lt; greeting.length() &lt;&lt; endl;
+
+    // سب اسٹرنگ (انڈیکس 7 سے 15 تک کا حصہ)
+    cout &lt;&lt; &quot;Substring: &quot; &lt;&lt; greeting.substr(7, 8) &lt;&lt; endl;
+
+    // ریپلیس (انڈیکس 0 سے 5 تک کو &quot;Hi&quot; سے بدل دیں)
+    greeting.replace(0, 5, &quot;Hi&quot;);
+    cout &lt;&lt; &quot;After replace: &quot; &lt;&lt; greeting &lt;&lt; endl;
+
+    return 0;
+}</code></pre><h3>Practice</h3><p>ایک پروگرام لکھیں جو صارف سے ایک جملہ ان پٹ لے اور اس میں:<br>1. &quot;C++&quot; لفظ کو ڈھونڈ کر اس کی پوزیشن بتائے۔<br>2. اگر &quot;C++&quot; نہیں ملا تو &quot;Word not found&quot; پرنٹ کرے۔</p><h3>Mini Project</h3><p>ایک سادہ **Password Validator** بنائیں جو:<br>- صارف سے پاس ورڈ ان پٹ لے۔<br>- چیک کرے کہ پاس ورڈ میں کم از کم 8 کریکٹرز ہیں۔<br>- چیک کرے کہ پاس ورڈ میں کم از کم 1 اپر کیس، 1 لوئر کیس، اور 1 نمبر ہو۔<br>- اگر تمام شرائط پوری ہوتی ہیں تو &quot;Strong Password&quot; پرنٹ کرے، ورنہ &quot;Weak Password&quot; اور رہ جانے والی شرائط بتائے۔</p></div>
       
       
       <div class="quiz-box no-print">

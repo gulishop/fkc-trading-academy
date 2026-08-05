@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-05T08:10:00.391253";
+  var FKC_BUILD = "2026-08-05T08:31:23.370033";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -230,7 +230,7 @@ function fkcToggleTheme(){
       
       <img src="images/day-006.png" alt="Day 6 — Functions: Code Ko Reusable aur Zyada Efficient Banana" style="width:100%;border-radius:12px;margin-bottom:14px;">
       
-      
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Functions ek block of code hote hain jo ek specific task perform karte hain. Inhe reuse karke apna code clean, organized aur easy-to-maintain rakh sakte hain. Functions parameters accept karte hain aur values return kar sakte hain.</p><h3>Example</h3><pre dir="ltr"><code>#include &lt;iostream&gt;
 using namespace std;
 
@@ -244,7 +244,20 @@ int main() {
     int result = addNumbers(num1, num2); // Function call
     cout &lt;&lt; &quot;Sum: &quot; &lt;&lt; result &lt;&lt; endl;
     return 0;
-}</code></pre><h3>Practice</h3><p>Ek function `isEven()` banaye jo ek integer parameter le aur return kare `true` agar number even ho, warna `false`.</p><h3>Mini Project</h3><p>Ek simple calculator program banaye jo user se do numbers aur ek operator (+, -, *, /) input le aur function ka use karke result calculate kare.</p></div>
+}</code></pre><h3>Practice</h3><p>Ek function `isEven()` banaye jo ek integer parameter le aur return kare `true` agar number even ho, warna `false`.</p><h3>Mini Project</h3><p>Ek simple calculator program banaye jo user se do numbers aur ek operator (+, -, *, /) input le aur function ka use karke result calculate kare.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>تصور</h3><p>فنکشنز کوڈ کا ایک بلاک ہوتے ہیں جو ایک مخصوص کام انجام دیتے ہیں۔ انہیں دوبارہ استعمال کر کے اپنا کوڈ صاف، منظم اور سنبھالنے میں آسان رکھ سکتے ہیں۔ فنکشنز پیرامیٹرز قبول کرتے ہیں اور ویلیوز ریٹرن کر سکتے ہیں۔</p><h3>مثال</h3><pre dir="ltr"><code>#include &lt;iostream&gt;
+using namespace std;
+
+// Function declaration
+int addNumbers(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int num1 = 5, num2 = 7;
+    int result = addNumbers(num1, num2); // Function call
+    cout &lt;&lt; &quot;Sum: &quot; &lt;&lt; result &lt;&lt; endl;
+    return 0;
+}</code></pre><h3>مشق</h3><p>ایک فنکشن `isEven()` بنائیں جو ایک انٹیجر پیرامیٹر لے اور اگر نمبر ایون (جفت) ہو تو `true` ریٹرن کرے، ورنہ `false`۔</p><h3>منی پروجیکٹ</h3><p>ایک سادہ کیلکولیٹر پروگرام بنائیں جو یوزر سے دو نمبرز اور ایک آپریٹر (+, -, *, /) ان پٹ لے اور فنکشن کا استعمال کرتے ہوئے رزلٹ کیلکولیٹ کرے۔</p></div>
       
       
       <div class="quiz-box no-print">

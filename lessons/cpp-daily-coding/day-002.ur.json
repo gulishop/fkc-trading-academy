@@ -1,0 +1,22 @@
+{
+  "title": "دن 2 — ویری ایبلز اور ڈیٹا ٹائپس: اپنے پروگرامز کو سمارٹ بنانا",
+  "preamble": "",
+  "sections": [
+    {
+      "label": "تصور",
+      "content": "ویری ایبلز میموری میں سٹوریج کے لیے کنٹینرز ہوتے ہیں۔ ہر ویری ایبل کا ایک ڈیٹا ٹائپ ہوتا ہے (جیسے int، float، char) جو بتاتا ہے کہ اس میں کس قسم کا ڈیٹا سٹور ہوگا۔ ان پٹ/آؤٹ پٹ (cin/cout) سے صارف سے ڈیٹا لے سکتے ہیں اور نتائج دکھا سکتے ہیں۔"
+    },
+    {
+      "label": "مثال",
+      "content": "```cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n    int age = 25;          // Integer variable\n    float price = 19.99;   // Floating-point variable\n    char grade = 'A';      // Character variable\n\n    cout << \"Age: \" << age << endl;\n    cout << \"Price: $\" << price << endl;\n    cout << \"Grade: \" << grade << endl;\n\n    return 0;\n}\n```"
+    },
+    {
+      "label": "مشق",
+      "content": "ایک پروگرام بنائیں جو صارف سے **نام** (string)، **عمر** (int)، اور **قد** (float) ان پٹ لے اور پھر سب کو ایک لائن میں پرنٹ کرے۔"
+    },
+    {
+      "label": "منی پروجیکٹ",
+      "content": "ایک **سادہ کیلکولیٹر** بنائیں جو دو نمبرز ان پٹ لے اور ان پر +، -، *، / آپریشنز انجام دے کر نتائج دکھائے۔"
+    }
+  ]
+}
