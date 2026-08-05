@@ -3792,7 +3792,11 @@ def main():
     # ghanton leta tha aur saare workflows ek dusre se git push par takra
     # kar merge-conflict storm bana dete the. Manual full run (COURSE_SLUG
     # khaali) mein purana "heal everything" behavior chalta hai.
-    heal_missing_images(posts, only_slug=target_slug)
+    # 👉 Image healing DISABLED — purane lessons ki missing image ab retry
+    # nahi hoti, time bachane ke liye. Aisi image/video hamesha missing
+    # rahegi jab tak manually add na ki jaye. Wapas chalu karna ho to
+    # neeche wali line se '#' hata dein.
+    # heal_missing_images(posts, only_slug=target_slug)
     if heal_degenerate_translations(posts, only_slug=target_slug):
         save_posts(posts)
 
