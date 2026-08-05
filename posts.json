@@ -707,7 +707,30 @@
         ]
       ],
       "answer_key": "gbp/jpy, 1 micro lot = $10 (standard), $1 (mini), $0.10 (micro), pip value = 0.01",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن ٢",
+          "preamble": "**دن ٢ — کرنسی پیئرز، پِپس اور لاٹ سائز: ٹریڈنگ کی دنیا کی \"ملی میٹری\"**",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "فاریکس ٹریڈنگ میں ہر ٹریڈ ایک *کرنسی پیئر* (دو کرنسیوں کا امتزاج) پر ہوتی ہے، جیسے EUR/USD یا USD/JPY۔ *پِپ* (پرسینٹیج اِن پوائنٹ) ایک کرنسی پیئر کی سب سے چھوٹی قیمت کی حرکت ہوتی ہے—جیسے EUR/USD میں ٠.٠٠٠١ کا تغیر۔ *لاٹ سائز* بتاتا ہے کہ کتنی یونٹس ٹریڈ ہو رہی ہیں (اسٹینڈرڈ لاٹ = ١٠٠,٠٠٠ یونٹس، مِنِی لاٹ = ١٠,٠٠٠، مائیکرو لاٹ = ١,٠٠٠)۔ ان تین چیزوں کو سمجھنا ضروری ہے تاکہ آپ کا منافع یا نقصان حساب کیا جا سکے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "اگر آپ **EUR/USD** پر ٹریڈ کر رہے ہیں اور قیمت ١.١٠٠٠ سے ١.١٠٠٥ تک جاتی ہے، تو آپ کا *پِپ گین* ہے (١.١٠٠٥ – ١.١٠٠٠ = ٠.٠٠٠٥ = **٥ پِپس**)۔ اگر آپ **١ مِنِی لاٹ (١٠,٠٠٠ یونٹس)** ٹریڈ کر رہے ہیں، تو ہر پِپ کی ویلیو **١ ڈالر** ہوتی ہے (١٠,٠٠٠ × ٠.٠٠٠١)۔ اس لیے ٥ پِپس × ١ ڈالر = **٥ ڈالر منافع**۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے میٹا ٹریڈر پر **GBP/JPY** پیئر سلیکٹ کریں۔ چارٹ پر دیکھیں کہ موجودہ قیمت کیا ہے، اور اگر آپ **١ مائیکرو لاٹ (١,٠٠٠ یونٹس)** خریدتے ہیں، تو ہر پِپ کی ویلیو کتنی ہوگی؟ (ہنٹ: GBP/JPY میں پِپ = ٠.٠١، لیکن ویلیو کا حساب کرنے کے لیے کرنسی کے حساب سے سوچنا ہوگا۔)"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک ایکسل شیٹ بنائیں جس میں آپ **٣ مختلف کرنسی پیئرز** (جیسے EUR/USD، USD/JPY، GBP/USD) کے لیے **١ اسٹینڈرڈ لاٹ، ١ مِنِی لاٹ، اور ١ مائیکرو لاٹ** کا ہر پِپ کی ویلیو حساب کریں۔ (مثال: EUR/USD کا ١ پِپ = ١٠ ڈالر (اسٹینڈرڈ لاٹ)، ١ ڈالر (مِنِی لاٹ)، ٠.١٠ ڈالر (مائیکرو لاٹ))۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 3,
@@ -800,7 +823,80 @@
         ]
       ],
       "answer_key": "trend line draw, bounce confirmation, stop-loss below/above line, take profit at next level",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن ۴ — ٹریڈنگ اسٹریٹی بنانا: سادہ پرائس ایکشن سیٹ اپ",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم ایک بیگنر فرینڈلی ٹریڈنگ اسٹریٹی بنائیں گے جو صرف پرائس ایکشن (چارٹ کے موومنٹس) پر مبنی ہوگی۔ اس میں کوئی انڈیکیٹرز نہیں ہوں گے—بس سپورٹ/ریزسٹنس، ٹرینڈ لائنز اور کینڈل اسٹک پیٹرنز کا استعمال ہوگا۔ یہ اسٹریٹی ٹرینڈ فالوئنگ ہے، مطلب ہم ٹرینڈ کے ساتھ ٹریڈ کریں گے، نہ کہ اس کے خلاف۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ ٹرینڈ لائن ڈرا کرنا: اگر مارکیٹ اپ وارڈ ٹرینڈ میں ہے، تو ہائر لووز کو کنیکٹ کرکے ایک رائزنگ ٹرینڈ لائن بنائیں۔\n۲۔ انٹری پوائنٹ: جب پرائس ٹرینڈ لائن کو چھو کر واپس باؤنس کرے، تو بائی انٹر کریں۔\n۳۔ سٹاپ لاس: ٹرینڈ لائن کے نیچے (اگر بائی کر رہے ہیں) یا اوپر (اگر سیل کر رہے ہیں) لگائیں۔\n۴۔ ٹیک پرافٹ: اگلے سپورٹ/ریزسٹنس لیول پر لگائیں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے میٹا ٹریڈر پر EUR/USD یا GBP/USD چارٹ کھول کر:\n۱۵ منٹ یا ۱ گھنٹے کا ٹائم فریم سلیکٹ کریں۔\nایک اپ وارڈ/ڈاؤن وارڈ ٹرینڈ آئیڈینٹیفائی کریں۔\nٹرینڈ لائن ڈرا کرکے انٹری، سٹاپ لاس اور ٹیک پرافٹ پوائنٹس مارک کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک ٹریڈنگ جرنل بنائیں جس میں:\n۵ ٹریڈز (ریئل یا ڈیمو) ریکارڈ کریں۔\nہر ٹریڈ کے لیے انٹری/ایگزٹ پوائنٹس، سٹاپ لاس، ٹیک پرافٹ اور وجہ لکھیں۔\nپروفٹ/لاس کیلکولیٹ کریں اور ون ریٹ نکالیں۔"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "day": 5,
+      "id": "day-005",
+      "date": "2026-08-05",
+      "title": "Day 5 — **Trading Psychology: Emotions Ko Control Karke Consistent Profit Banana**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Forex trading mein 90% traders emotional decisions ki wajah se fail hote hain. Fear, greed, aur overconfidence aapke trades ko bigad deti hai. Aaj hum seekhenge ke kaise apne emotions ko control karke disciplined trading ki jaaye. Trading plan follow karna, risk-reward ratio maintain karna, aur losses ko accept karna seekhein."
+        ],
+        [
+          "Example",
+          "Maana aapne ek trade liya aur market aapke khilaaf chala gaya. Aapka stop-loss trigger ho gaya, lekin aap \"ek baar aur try karte hain\" ka soch kar trade band nahi karte. Aap apna stop-loss hata dete hain aur market thoda recover hota hai to aap profit bhi le lete hain. Lekin agle din market phir se aapke khilaaf chala jata hai aur aapko zyada loss ho jata hai. Yeh greed ki wajah se hua."
+        ],
+        [
+          "Practice",
+          "Aaj se har trade lene se pehle 1 minute ka break lijiye. Poochiye: \"Kya yeh trade mera trading plan ke hisaab se sahi hai?\" Agar nahi, to trade na lijiye. Apne emotions ko control karne ka yeh pehla kadam hai."
+        ],
+        [
+          "Mini Project",
+          "Apne trading journal mein 5 trades ka record likhiye. Har trade ke baad likhiye:\n1. Aapka emotion (fear/greed/overconfidence)\n2. Aapne kya action li (stop-loss hata diya, trade badha diya, etc.)\n3. Aapko kya seekh mili"
+        ]
+      ],
+      "answer_key": "discipline, trading plan, risk-reward, emotions control",
+      "translations": {
+        "ur": {
+          "title": "دن 5 — ٹریڈنگ سائیکولوجی: جذبات کو کنٹرول کرکے مستقل منافع کمانا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "فاریکس ٹریڈنگ میں نوے فیصد ٹریڈرز جذباتی فیصلوں کی وجہ سے ناکام ہو جاتے ہیں۔ خوف، لالچ، اور زیادہ اعتماد آپ کے ٹریڈز کو برباد کر دیتے ہیں۔ آج ہم سیکھیں گے کہ کس طرح اپنے جذبات کو کنٹرول کرکے منظم ٹریڈنگ کی جائے۔ ٹریڈنگ پلان پر عمل کرنا، رسک-ریوارڈ ریشو برقرار رکھنا، اور نقصانات کو قبول کرنا سیکھیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "مانا آپ نے ایک ٹریڈ لیا اور مارکیٹ آپ کے خلاف چلی گئی۔ آپ کا سٹاپ-لاس ٹرگر ہو گیا، لیکن آپ \"ایک بار اور کوشش کرتے ہیں\" کا سوچ کر ٹریڈ بند نہیں کرتے۔ آپ اپنا سٹاپ-لاس ہٹا دیتے ہیں اور مارکیٹ تھوڑا ریکور ہوتا ہے تو آپ منافع بھی لے لیتے ہیں۔ لیکن اگلے دن مارکیٹ پھر سے آپ کے خلاف چلی جاتی ہے اور آپ کو زیادہ نقصان ہو جاتا ہے۔ یہ لالچ کی وجہ سے ہوا۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "آج سے ہر ٹریڈ لینے سے پہلے ایک منٹ کا وقفہ لیجیے۔ پوچھئے: \"کیا یہ ٹریڈ میرے ٹریڈنگ پلان کے حساب سے صحیح ہے؟\" اگر نہیں، تو ٹریڈ نہ لیجیے۔ اپنے جذبات کو کنٹرول کرنے کا یہ پہلا قدم ہے۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "اپنے ٹریڈنگ جرنل میں پانچ ٹریڈز کا ریکارڈ لکھیے۔ ہر ٹریڈ کے بعد لکھئے:\n1. آپ کا جذبہ (خوف/لالچ/زیادہ اعتماد)\n2. آپ نے کیا ایکشن لیا (سٹاپ-لاس ہٹا دیا، ٹریڈ بڑھا دیا، وغیرہ)\n3. آپ کو کیا سبق ملا"
+            }
+          ]
+        }
+      }
     }
   ],
   "amazon-fba": [
