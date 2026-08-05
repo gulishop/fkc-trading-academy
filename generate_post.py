@@ -49,6 +49,8 @@ import urllib.request
 import urllib.parse
 import urllib.error
 
+import requests  # Agnes AI video calls ke liye
+
 try:
     from PIL import Image, ImageDraw, ImageFont
     PIL_AVAILABLE = True
@@ -706,6 +708,7 @@ BRAND_NAME_TITLE_LINE = f"{BRAND_CONTACT_NAME} — {BRAND_CONTACT_TITLE}"
 
 SITE_URL = os.environ.get("SITE_URL", "").rstrip("/")
 MISTRAL_API_KEY = os.environ.get("MISTRAL_API_KEY", "")
+AGNES_API_KEY = os.environ.get("AGNES_API_KEY", "")  # Agnes AI video API key
 
 POSTS_JSON = "posts.json"
 LESSONS_DIR = "lessons"
@@ -1216,6 +1219,113 @@ def publish_lesson_video(slug, day_num):
     dest = os.path.join(dest_dir, f"day-{padded}.mp4")
     shutil.copyfile(src, dest)
     return f"videos/day-{padded}.mp4"
+
+
+# =====================================================================
+# 🎬 AGNES AI VIDEO GENERATION — Mentor-style AI explainer videos
+# =====================================================================
+AGNES_API_URL = "https://apihub.agnes-ai.com/v1/videos"
+AGNES_STATUS_URL = "https://apihub.agnes-ai.com/v1/videos/{job_id}/status"
+
+
+def generate_agnes_video(slug, lesson, course_name, max_attempts=10):
+    """
+    Agnes AI se mentor-style video generate karta hai.
+    Har lesson ke liye professional avatar-based explainer video.
+    """
+    if not AGNES_API_KEY:
+        print(f"[{slug}] Agnes API key missing, video skip.")
+        return None
+
+    # Lesson content ko script mein convert karein
+    script_parts = [lesson['title']]
+    if lesson.get('preamble'):
+        script_parts.append(lesson['preamble'])
+    for label, content in lesson.get('sections', []):
+        if content:
+            script_parts.append(f"{label}: {content}")
+    script = "\n\n".join(script_parts)
+
+    # Limit script length (Agnes has limits)
+    if len(script) > 2000:
+        script = script[:2000]
+
+    # Agnes API payload
+    payload = {
+        "script": script,
+        "language": "ur",          # Urdu explanation
+        "speaker_id": "mentor",    # Professional mentor avatar
+        "duration": 60,            # 1 minute video
+        "style": "educational"     # Mentor-style
+    }
+
+    headers = {
+        "Authorization": f"Bearer {AGNES_API_KEY}",
+        "Content-Type": "application/json"
+    }
+
+    try:
+        # 1. Submit video generation request
+        print(f"[{slug}] Day {lesson['day']}: Agnes video generation start...")
+        response = requests.post(AGNES_API_URL, json=payload, headers=headers, timeout=30)
+        response.raise_for_status()
+
+        job_data = response.json()
+        job_id = job_data.get("job_id") or job_data.get("id")
+
+        if not job_id:
+            print(f"[{slug}] No job_id in response: {job_data}")
+            return None
+
+        # 2. Poll for completion
+        for attempt in range(max_attempts):
+            status_response = requests.get(
+                AGNES_STATUS_URL.format(job_id=job_id),
+                headers=headers,
+                timeout=30
+            )
+            status_data = status_response.json()
+            status = status_data.get("status", "")
+
+            if status == "completed":
+                # Download video
+                video_url = status_data.get("video_url") or status_data.get("output_url")
+                if not video_url:
+                    print(f"[{slug}] No video_url in response")
+                    return None
+
+                video_data = requests.get(video_url, timeout=60).content
+
+                # Save locally
+                padded = f"{lesson['day']:03d}"
+                video_dir = os.path.join(VIDEOS_DIR, slug)
+                os.makedirs(video_dir, exist_ok=True)
+                video_path = os.path.join(video_dir, f"day-{padded}.mp4")
+
+                with open(video_path, "wb") as f:
+                    f.write(video_data)
+
+                print(f"[{slug}] Day {lesson['day']} ✅ Agnes video ban gayi!")
+                return video_path
+
+            elif status in ["failed", "error"]:
+                error_msg = status_data.get("error", "Unknown error")
+                print(f"[{slug}] Agnes video failed: {error_msg}")
+                return None
+
+            else:
+                print(f"[{slug}] Day {lesson['day']} Processing... ({attempt+1}/{max_attempts})")
+                time.sleep(10)  # Wait 10 seconds between checks
+
+        print(f"[{slug}] Day {lesson['day']} Timeout after {max_attempts} attempts")
+        return None
+
+    except requests.exceptions.Timeout:
+        print(f"[{slug}] Day {lesson['day']} Agnes API timeout")
+        return None
+    except Exception as e:
+        print(f"[{slug}] Day {lesson['day']} Agnes API error: {e}")
+        return None
 
 
 # Har build ka apna unique stamp — version.json mein likha jata hai taake
@@ -3707,9 +3817,16 @@ def main():
                 slug, course, lesson["day"], lesson["title"],
                 topic_hint=topic_hint, concept_text=concept_text,
             )
-            generate_lesson_narration_video(
-                slug, course, lesson, image_source_path=find_lesson_image(slug, lesson["day"])
-            )
+            # Pehle Agnes AI try karein (mentor-style video)
+            video_path = None
+            if AGNES_API_KEY:
+                video_path = generate_agnes_video(slug, lesson, course['name'])
+
+            # Agar Agnes fail ho to existing free method try karein (edge-tts + ffmpeg)
+            if not video_path:
+                generate_lesson_narration_video(
+                    slug, course, lesson, image_source_path=find_lesson_image(slug, lesson["day"])
+                )
 
             os.makedirs(os.path.join(DOCS_DIR, "courses", slug, "posts"), exist_ok=True)
             image_href = publish_lesson_image(slug, lesson["day"])
