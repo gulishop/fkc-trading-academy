@@ -2095,7 +2095,7 @@ def ai_generate(prompt_text, max_retries=5):
 # jaise scripts mein) baar-baar degenerate/khaali output de, to isko
 # dusra AI provider ke tor par try karte hain taake lesson skip na ho.
 # ---------------------------------------------------------------------
-GEMINI_MODEL_NAMES = ["gemini-2.5-flash", "gemini-2.0-flash"]
+GEMINI_MODEL_NAMES = ["gemini-flash-latest", "gemini-flash-lite-latest"]
 GEMINI_URL_TMPL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 
 
