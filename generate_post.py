@@ -3184,17 +3184,26 @@ def _purge_lesson_video_cache(slug, day_num):
                 pass
 
 
-def heal_missing_images(posts):
+def heal_missing_images(posts, only_slug=None):
     """generate_lesson_image() sirf lesson ke PEHLE build par call hoti hai
     (main() ki pehli loop mein) — agar us waqt Pollinations fail ho jaye
     (network/rate-limit/timeout), to us lesson ki image kabhi dobara try
     nahi hoti thi, permanently missing reh jati thi — aur usi wajah se
     video bhi kabhi nahi ban pata (video ko image chahiye hoti hai).
-    Ye function har build ke shuru mein saare EXISTING lessons check karta
-    hai aur jin ki image abhi tak nahi bani, un par generate_lesson_image
+    Ye function har build ke shuru mein EXISTING lessons check karta hai
+    aur jin ki image abhi tak nahi bani, un par generate_lesson_image
     dobara try karta hai — taake ek transient fail hamesha ke liye missing
-    na reh jaye."""
-    for slug, lessons in posts.items():
+    na reh jaye.
+
+    only_slug diya ho (COURSE_SLUG se scheduled run) to SIRF usi course ke
+    lessons heal hote hain — poore site (29 courses) ko har raat har
+    workflow mein heal karna 3+ ghante tak le jata tha, jis se saare
+    workflows overlap ho kar git push par takra jate the aur merge-conflict
+    storm ban jata tha. only_slug None ho (manual/heal-all run) to purana
+    (sab courses) behavior chalta hai."""
+    slugs = [only_slug] if only_slug else list(posts.keys())
+    for slug in slugs:
+        lessons = posts.get(slug, [])
         course = COURSES.get(slug)
         if not course:
             continue
@@ -3211,9 +3220,11 @@ def heal_missing_images(posts):
             time.sleep(2)  # thoda space, taake peeche-peeche courses ke beech rate-limit na lage
 
 
-def heal_degenerate_translations(posts):
+def heal_degenerate_translations(posts, only_slug=None):
     changed = False
-    for slug, lessons in posts.items():
+    slugs = [only_slug] if only_slug else list(posts.keys())
+    for slug in slugs:
+        lessons = posts.get(slug, [])
         course = COURSES.get(slug)
         if not course:
             continue
@@ -3264,20 +3275,23 @@ def heal_degenerate_translations(posts):
 # ---------------------------------------------------------------------
 def main():
     posts = load_posts()
-    heal_missing_images(posts)  # is se posts.json khud nahi badalta (image sirf disk par),
-                                 # is liye save_posts() ki zaroorat nahi
-    if heal_degenerate_translations(posts):
-        save_posts(posts)
 
     # Sirf ek course chalana ho to COURSE_SLUG env var ya CLI arg se slug lein.
     target_slug = os.environ.get("COURSE_SLUG") or (sys.argv[1] if len(sys.argv) > 1 else None)
-    if target_slug:
-        if target_slug not in COURSES:
-            print(f"Course slug '{target_slug}' COURSES dictionary mein nahi mila.", file=sys.stderr)
-            sys.exit(1)
-        courses_to_run = {target_slug: COURSES[target_slug]}
-    else:
-        courses_to_run = COURSES
+    if target_slug and target_slug not in COURSES:
+        print(f"Course slug '{target_slug}' COURSES dictionary mein nahi mila.", file=sys.stderr)
+        sys.exit(1)
+
+    # Heal sirf isi run ke target course tak scope hai (COURSE_SLUG set ho
+    # to) — poore 29-course site ko har raat har workflow mein heal karna
+    # ghanton leta tha aur saare workflows ek dusre se git push par takra
+    # kar merge-conflict storm bana dete the. Manual full run (COURSE_SLUG
+    # khaali) mein purana "heal everything" behavior chalta hai.
+    heal_missing_images(posts, only_slug=target_slug)
+    if heal_degenerate_translations(posts, only_slug=target_slug):
+        save_posts(posts)
+
+    courses_to_run = {target_slug: COURSES[target_slug]} if target_slug else COURSES
 
     for slug, course in courses_to_run.items():
         try:
@@ -3325,16 +3339,25 @@ def main():
 
     save_posts(posts)
 
-    # rebuild course pages — HAMESHA sab COURSES ke liye (chahe generation
-    # sirf ek course ke liye hui ho), taake har course ka page hamesha
-    # maujood rahe (warna jin courses ka pehla run abhi nahi hua unke
-    # courses/<slug>/index.html missing reh jate hain aur 404 aata hai)
+    # rebuild course pages — index.html HAMESHA sab COURSES ke liye likha
+    # jata hai (chahe generation sirf ek course ke liye hui ho), taake har
+    # course ka page hamesha maujood rahe. Lekin per-lesson kaam (image
+    # check, video generation, poori lesson-page re-render) SIRF is run ke
+    # target course ke liye — pehle ye har workflow mein sab 29 courses ke
+    # liye chalta tha, jo 3+ ghante le leta tha aur raat ke saare workflows
+    # overlap ho kar git push par takra jate the. Doosre courses ke lesson
+    # pages waise hi rehte hain jaise unke apne run mein bane the — unme
+    # kuch badla hi nahi to dobara likhne ki zaroorat nahi.
     for slug, course in COURSES.items():
         try:
             lessons = posts.get(slug, [])
             os.makedirs(os.path.join(DOCS_DIR, "courses", slug, "posts"), exist_ok=True)
             with open(os.path.join(DOCS_DIR, "courses", slug, "index.html"), "w", encoding="utf-8") as f:
                 f.write(render_course_page(slug, course, lessons))
+
+            if target_slug and slug != target_slug:
+                continue  # is run ka target nahi — per-lesson kaam skip
+
             # re-render every lesson page so only the newest carries "Latest"
             for i, lesson in enumerate(lessons):
                 image_href = publish_lesson_image(slug, lesson["day"])
