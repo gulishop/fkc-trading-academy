@@ -109,3 +109,5 @@
 [2026-08-05T03:16:00.696245] [tiktok-growth] Day 4 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
 [2026-08-05T04:39:20.008321] [kids-kg] Day 1 video skip: Urdu TTS (ur-PK-UzmaNeural) fail.
 [2026-08-05T04:39:25.586801] [kids-kg] Day 1 video skip: Urdu TTS (ur-PK-UzmaNeural) fail.
+[2026-08-05T04:45:54.101800] [kids-educational-games] Day 2 video skip: Urdu TTS (ur-PK-UzmaNeural) fail.
+[2026-08-05T04:45:59.681607] [kids-educational-games] Day 2 video skip: Urdu TTS (ur-PK-UzmaNeural) fail.

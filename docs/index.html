@@ -22,7 +22,7 @@
 <link rel="icon" href="logo.png">
 <link rel="manifest" href="manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-05T04:39:01.657173";
+  var FKC_BUILD = "2026-08-05T04:45:35.247627";
   function fkcCheckVersion(){
     fetch("version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -155,6 +155,11 @@ vertical-align:middle;}
 .lesson-nav{display:flex;justify-content:space-between;gap:8px;
 flex-wrap:wrap;margin-top:14px;}
 .lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.section-title{font-family:'Inter',sans-serif;font-weight:800;
+font-size:1.2em;margin:30px 0 2px;padding-top:18px;
+border-top:1px solid var(--line);display:flex;align-items:center;gap:8px;}
+.section-title.adults{color:var(--primary);}
+.section-title.kids{color:#DB4C77;}
 .quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
 .quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
 border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
@@ -190,12 +195,15 @@ background:#EAFBF0;border-radius:10px;padding:12px;font-weight:700;color:#15803d
     <span class="lbl">Digital Hub — apni pasand ka course chunein</span></div>
     <span class="eyebrow fade-in">Course Library</span>
     <h1 class="fade-in">🎓 Roz ek naya practical lesson<span class="streak-badge" id="fkc-streak-badge"></span></h1>
-    <p class="muted fade-in d2">📅 Har course ka naya lesson roz raat 12:00 AM se subah 4:50 AM Pakistan time ke darmiyan yahan post hota hai — har course card par uska waqt likha hai.
+    <p class="muted fade-in d2">📅 Har course ka naya lesson roz raat 12:00 AM se subah 5:30 AM Pakistan time ke darmiyan yahan post hota hai — har course card par uska waqt likha hai.
     Jis course mein interest ho us par tap karein — daily lesson step-by-step parhein aur practice karein.</p>
     <div id="fkc-continue-card" style="display:none;"></div>
     <input type="text" id="fkc-course-search" class="fkc-search" placeholder="🔍 Course dhoondein...">
     <p class="fade-in d2"><a class="btn alt" href="games.html">🎮 Games Zone — Khel Khel Mein Seekhein</a></p>
     <p class="fade-in d2"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Start Learning</a></p>
+
+    <h2 class="section-title adults fade-in">💼 Bado Ke Liye Courses</h2>
+    <p class="muted fade-in" style="margin-top:-6px;">Skills, business, aur earning ke daily courses.</p>
     <div class="grid">
     <a class="ccard fade-in" href="courses/youtube-automation/index.html">
       <div class="stamp" style="--accent-bg:#0056D21a;color:#0056D2">🎬</div>
@@ -373,17 +381,6 @@ background:#EAFBF0;border-radius:10px;padding:12px;font-weight:700;color:#15803d
       </div>
       <div class="stub" style="color:#D9730D"><span class="stub-n" style="color:#D9730D">04</span><span class="stub-l">lessons</span></div>
     </a>
-    <a class="ccard fade-in" href="courses/kids-safety-education/index.html">
-      <div class="stamp" style="--accent-bg:#0EA5A51a;color:#0EA5A5">🛡️</div>
-      <div class="body">
-        <h2>Bachon Ki Hifazat (Good Touch, Bad Touch)</h2>
-        <p class="tag">Bachon ko apni hifazat, apne jism ke huq, aur &#x27;na&#x27; kehna sikhayein — asaan, pyaar bhare andaz mein. Ammi/Abbu ke sath milkar padhayein.</p>
-        <p class="latest">📖 Day 1 — Mera jism sirf mera hai</p>
-        <p class="tag" style="margin-top:4px">🕒 Roz 2:40 AM PKT par naya lesson</p>
-        <button type="button" class="notify-btn" data-notify-slug="kids-safety-education" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('kids-safety-education', this);">🔔 Notify Me</button>
-      </div>
-      <div class="stub" style="color:#0EA5A5"><span class="stub-n" style="color:#0EA5A5">01</span><span class="stub-l">lesson</span></div>
-    </a>
     <a class="ccard fade-in" href="courses/cpp-daily-coding/index.html">
       <div class="stamp" style="--accent-bg:#DB4C771a;color:#DB4C77">💻</div>
       <div class="body">
@@ -515,6 +512,21 @@ background:#EAFBF0;border-radius:10px;padding:12px;font-weight:700;color:#15803d
         <button type="button" class="notify-btn" data-notify-slug="mobile-repairing" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('mobile-repairing', this);">🔔 Notify Me</button>
       </div>
       <div class="stub" style="color:#0EA5A5"><span class="stub-n" style="color:#0EA5A5">02</span><span class="stub-l">lessons</span></div>
+    </a></div>
+
+    <h2 class="section-title kids fade-in">🧸 Bachon Ke Liye Courses</h2>
+    <p class="muted fade-in" style="margin-top:-6px;">Nursery, KG, Play Group, achi adaatein, aur educational games — sab free.</p>
+    <div class="grid">
+    <a class="ccard fade-in" href="courses/kids-safety-education/index.html">
+      <div class="stamp" style="--accent-bg:#0EA5A51a;color:#0EA5A5">🛡️</div>
+      <div class="body">
+        <h2>Bachon Ki Hifazat (Good Touch, Bad Touch)</h2>
+        <p class="tag">Bachon ko apni hifazat, apne jism ke huq, aur &#x27;na&#x27; kehna sikhayein — asaan, pyaar bhare andaz mein. Ammi/Abbu ke sath milkar padhayein.</p>
+        <p class="latest">📖 Day 1 — Mera jism sirf mera hai</p>
+        <p class="tag" style="margin-top:4px">🕒 Roz 2:40 AM PKT par naya lesson</p>
+        <button type="button" class="notify-btn" data-notify-slug="kids-safety-education" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('kids-safety-education', this);">🔔 Notify Me</button>
+      </div>
+      <div class="stub" style="color:#0EA5A5"><span class="stub-n" style="color:#0EA5A5">01</span><span class="stub-l">lesson</span></div>
     </a>
     <a class="ccard fade-in" href="courses/kids-pg/index.html">
       <div class="stamp" style="--accent-bg:#DB4C771a;color:#DB4C77">🧸</div>
@@ -565,12 +577,13 @@ background:#EAFBF0;border-radius:10px;padding:12px;font-weight:700;color:#15803d
       <div class="body">
         <h2>Bachon Ke Educational Games</h2>
         <p class="tag">Khel khel mein seekhna — ammi/abbu ghar par bachon ke sath khel kar sikhane wale asaan games.</p>
-        <p class="latest">📖 Day 1 — Yaadasht Ka Khazana</p>
+        <p class="latest">📖 Day 2 — &quot;Harf ki Khoj: Ghar mein cheezein dhoondho!&quot;</p>
         <p class="tag" style="margin-top:4px">🕒 Roz 5:30 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="kids-educational-games" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('kids-educational-games', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#D9730D"><span class="stub-n" style="color:#D9730D">01</span><span class="stub-l">lesson</span></div>
+      <div class="stub" style="color:#D9730D"><span class="stub-n" style="color:#D9730D">02</span><span class="stub-l">lessons</span></div>
     </a></div>
+
     
     <div class="no-print" style="margin:18px 0;text-align:center;">
       <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"

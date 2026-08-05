@@ -4264,6 +4264,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 2,
+      "id": "day-002",
+      "date": "2026-08-05",
+      "title": "Day 2 — \"Harf ki Khoj: Ghar mein cheezein dhoondho!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke har harf se shuru hone wali cheezein dhoondhna. Jaise 'A' se 'Aloo', 'B' se 'Bottle'... Isse humare dimaag ko mazbooti milegi aur hum cheezon ko pehchanne mein bhi madad milegi!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Babli ne apne room mein dekha ke 'C' se shuru hone wali cheez 'Candle' hai. Usne apne ammi se poochha, \"Ammi, candle kahan hai?\" Ammi ne hassi ke sath kaha, \"Dekh, yahan par candle hai!\" Babli ne socha ke yeh toh mazaak hai, par phir usne candle dhoondi aur usko pehchaan liya."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, tumhari favourite cheez kaun si hai jo 'F' se shuru hoti hai?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Har cheez tumhari apni hai, aur tumhe pata hona chahiye ke tumhara jism bhi tumhara hi hai. Agar koi cheez ajeeb lage toh foran ammi/abbu ko batana!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "Day 2 — \"حرف کی کھوج: گھر میں چیزیں ڈھونڈھو!\"",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "آج ہم سیکھیں گے کے ہر حرف سے شروع ہونے والی چیزیں ڈھونڈھنا۔ جیسے 'الف' سے 'آلو'، 'ب' سے 'بottle'... اس سے ہمارے دماغ کو مضبوطی ملے گی اور ہم چیزوں کو پہچاننے میں بھی مدد ملے گی!"
+            },
+            {
+              "label": "Chhoti Kahani",
+              "content": "ببلی نے اپنے روم میں دیکھا کے 'چ' سے شروع ہونے والی چیز 'candle' ہے۔ اس نے اپنے امی سے پوچھا، \"امی، candle کہاں ہے؟\" امی نے ہنسی کے ساتھ کہا، \"دیکھ، یہاں پر candle ہے!\" ببلی نے سوچا کے یہ تو مذاق ہے، پر پھر اس نے candle ڈھونڈی اور اسے پہچان لیا۔"
+            },
+            {
+              "label": "Ammi Abbu Ke Sath Baat Karein",
+              "content": "بٹّا، تمھاری پسندیدہ چیز کون سی ہے جو 'ف' سے شروع ہوتی ہے؟"
+            },
+            {
+              "label": "Yaad Rakhein",
+              "content": "ہر چیز تمھاری اپنی ہے، اور تمھیں پتہ ہونا چاہئے کے تمھارا جسم بھی تمھارا ہی ہے۔ اگر کوئی چیز عجیب لگے تو فوراً امی/ابو کو بتانا!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-good-behavior": [

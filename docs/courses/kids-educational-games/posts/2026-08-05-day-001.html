@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-05T03:36:52.931233";
+  var FKC_BUILD = "2026-08-05T04:45:35.247627";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -155,14 +155,35 @@ vertical-align:middle;}
 .lesson-nav{display:flex;justify-content:space-between;gap:8px;
 flex-wrap:wrap;margin-top:14px;}
 .lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.section-title{font-family:'Inter',sans-serif;font-weight:800;
+font-size:1.2em;margin:30px 0 2px;padding-top:18px;
+border-top:1px solid var(--line);display:flex;align-items:center;gap:8px;}
+.section-title.adults{color:var(--primary);}
+.section-title.kids{color:#DB4C77;}
 .quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
 .quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
 border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
 box-sizing:border-box;margin:6px 0;}
 .quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+.puzzle-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.puzzle-box h3{margin-top:0;}
+.puzzle-status{font-size:.85em;color:var(--muted);margin:0 0 10px;}
+.puzzle-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;
+max-width:340px;margin:0 auto;}
+.puzzle-card{aspect-ratio:1/1;border-radius:10px;border:none;
+background:var(--primary);color:#fff;font-size:1.6em;cursor:pointer;
+display:flex;align-items:center;justify-content:center;
+transition:transform .25s ease,background .25s ease;padding:0;}
+.puzzle-card.flipped,.puzzle-card.matched{background:#fff;
+border:1px solid var(--line);color:var(--ink);}
+.puzzle-card.matched{background:#EAFBF0;border-color:var(--accent);
+opacity:.85;cursor:default;}
+.puzzle-card:disabled{cursor:default;}
+.puzzle-win{display:none;text-align:center;margin-top:12px;
+background:#EAFBF0;border-radius:10px;padding:12px;font-weight:700;color:#15803d;}
 @media print{
   .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
-  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  .quiz-box,.puzzle-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
   body{background:#fff;}
   .card{box-shadow:none;border:none;}
 }
@@ -172,7 +193,7 @@ box-sizing:border-box;margin:6px 0;}
 
     <div class="top"><a href="../../../index.html">← FKC Trading Academy</a>
     <a href="../index.html" class="course-back-link">/ Bachon Ke Educational Games</a></div>
-    <span class="badge">Latest</span>
+    
     <p class="muted">🎮 Bachon Ke Educational Games · Day 01</p>
     <h1>Day 1 — Yaadasht Ka Khazana</h1>
     
@@ -184,6 +205,62 @@ box-sizing:border-box;margin:6px 0;}
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Bachon, yaad rakhna hamari yaadasht hi hoti hai! Jaisa ke hum apne toys ya kapde yaad rakhte hain, waise hi hum apne dil ki yaad bhi rakhte hain. Agar koi cheez aapko ajeeb lage ya aapko maza na aaye, toh usko apne dil ki yaad mein rakhne ki zaroorat nahi. Aapko koi bhi cheez karne ka haq hai—agar aapko pasand nahi, toh &quot;na&quot; keh sakte hain.</p><h3>Chhoti Kahani</h3><p>Rahim ne apne dost ke saath ek khilona khareeda. Lekin jab usne dekha ke wo khilona uske dost ke paas zyada accha hai, toh usko yaad aaya ke wo apna khilona hi pasand karta hai. Usne apne dost se poochha, &quot;Kya hum apne khilonon ko share kar sakte hain?&quot; Uske dost ne haan kaha, aur dono ne mil kar khela. Aap bhi apne dil ki awaaz sun sakte hain!</p><h3>Ammi Abbu Ke Sath Baat Karein</h3><p>&quot;Beta, agar koi cheez tumhe ajeeb lage ya tumhe maza na aaye, toh tum kya karoge?&quot;</p><h3>Yaad Rakhein</h3><p>Tumhara jism tumhara hai—kisi ko tumse zyada pasand hai ya nahi, yeh sirf tum hi decide kar sakte ho! Agar koi cheez tumhe theek na lage, toh zaroor ammi-abbu ko batana.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>بچوں، یاد رکھنا ہماری یاداشت ہی ہوتی ہے! جیسا کہ ہم اپنے ٹوئز یا کپڑے یاد رکھتے ہیں، ویسے ہی ہم اپنے دل کی یاد بھی رکھتے ہیں۔ اگر کوئی چیز آپ کو عجیب لگے یا آپ کو مزہ نہ آئے، تو اس کو اپنے دل کی یاد میں رکھنے کی ضرورت نہیں۔ آپ کو کوئی بھی چیز کرنے کا حق ہے—اگر آپ کو پسند نہیں، تو &#x27;نہیں&#x27; کہہ سکتے ہیں۔</p><h3>Chhoti Kahani</h3><p>رحیم نے اپنے دوست کے ساتھ ایک کھلونا خریدا۔ لیکن جب اس نے دیکھا کہ وہ کھلونا اس کے دوست کے پاس زیادہ اچھا ہے، تو اس کو یاد آیا کہ وہ اپنا کھلونا ہی پسند کرتا ہے۔ اس نے اپنے دوست سے پوچھا، &#x27;کیا ہم اپنے کھلونوں کو شیئر کر سکتے ہیں؟&#x27; اس کے دوست نے ہاں کہا، اور دونوں نے مل کر کھیلا۔ آپ بھی اپنے دل کی آواز سن سکتے ہیں!</p><h3>Ammi Abbu Ke Sath Baat Karein</h3><p>بٹا، اگر کوئی چیز تمہیں عجیب لگے یا تمہیں مزہ نہ آئے، تو تم کیا کرو گے؟</p><h3>Yaad Rakhein</h3><p>تمہارا جسم تمہارا ہے—کسی کو تم سے زیادہ پسند ہے یا نہیں، یہ صرف تم ہی decide کر سکتے ہو! اگر کوئی چیز تمہیں ٹھیک نہ لگے، تو ضرور امی ابو کو بتانا۔</p></div>
       
       
+      
+      <div class="puzzle-box no-print" id="pz-kids-educational-games-1">
+        <h3>🧩 Dimaghi Kasrat — Jode Milayein</h3>
+        <p class="puzzle-status" id="pz-kids-educational-games-1-status">Cards par tap karke jode (pairs) milayein.</p>
+        <div class="puzzle-grid" id="pz-kids-educational-games-1-grid"></div>
+        <div class="puzzle-win" id="pz-kids-educational-games-1-win">🎉 Shabaash! Sab jode mil gaye — thodi der aur seekhne ke liye tayyar?</div>
+      </div>
+      <script>
+      (function(){
+        var emojis = ["🍎", "🐶", "🌙", "🎨", "🔑", "🌸"];
+        var deck = emojis.concat(emojis);
+        for (var i = deck.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var t = deck[i]; deck[i] = deck[j]; deck[j] = t;
+        }
+        var grid = document.getElementById("pz-kids-educational-games-1-grid");
+        var statusEl = document.getElementById("pz-kids-educational-games-1-status");
+        var winEl = document.getElementById("pz-kids-educational-games-1-win");
+        var flipped = [], matchedCount = 0, moves = 0, lock = false;
+        deck.forEach(function(val){
+          var b = document.createElement("button");
+          b.type = "button";
+          b.className = "puzzle-card";
+          b.setAttribute("data-val", val);
+          b.textContent = "❓";
+          b.onclick = function(){
+            if (lock || b.classList.contains("matched") || b.classList.contains("flipped")) return;
+            b.classList.add("flipped");
+            b.textContent = val;
+            flipped.push(b);
+            if (flipped.length === 2) {
+              moves++;
+              lock = true;
+              var a = flipped[0], c = flipped[1];
+              if (a.getAttribute("data-val") === c.getAttribute("data-val")) {
+                a.classList.add("matched"); c.classList.add("matched");
+                matchedCount += 2;
+                flipped = []; lock = false;
+                statusEl.textContent = "Moves: " + moves + " · " + matchedCount + "/" + deck.length + " match hue";
+                if (matchedCount === deck.length) {
+                  winEl.style.display = "block";
+                  statusEl.textContent = "Complete! Total moves: " + moves;
+                }
+              } else {
+                setTimeout(function(){
+                  a.classList.remove("flipped"); a.textContent = "❓";
+                  c.classList.remove("flipped"); c.textContent = "❓";
+                  flipped = []; lock = false;
+                }, 700);
+              }
+            }
+          };
+          grid.appendChild(b);
+        });
+      })();
+      </script>
       
       <div class="no-print" style="margin-top:14px;">
         <label for="fkc-notes" class="muted" style="display:block;margin-bottom:4px;">📝 Apni Note (sirf aapke is browser mein save hoti hai):</label>
@@ -204,7 +281,7 @@ box-sizing:border-box;margin:6px 0;}
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    
+    <div class="lesson-nav"><span></span><a class="btn alt" href="2026-08-05-day-002.html">Day 2 — &quot;Harf ki Khoj: Ghar mein cheezein dhoondho!&quot; →</a></div>
     <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
     
     <div class="no-print" style="margin:18px 0;text-align:center;">
