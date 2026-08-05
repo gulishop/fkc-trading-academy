@@ -2430,6 +2430,11 @@ vertical-align:middle;}
 .lesson-nav{display:flex;justify-content:space-between;gap:8px;
 flex-wrap:wrap;margin-top:14px;}
 .lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.section-title{font-family:'Inter',sans-serif;font-weight:800;
+font-size:1.2em;margin:30px 0 2px;padding-top:18px;
+border-top:1px solid var(--line);display:flex;align-items:center;gap:8px;}
+.section-title.adults{color:var(--primary);}
+.section-title.kids{color:#DB4C77;}
 .quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
 .quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
 border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
@@ -2809,13 +2814,14 @@ def md_lite(text):
 
 
 def render_home(posts):
-    cards = []
+    adult_cards = []
+    kids_cards = []
     for i, (slug, course) in enumerate(COURSES.items()):
         lessons = posts.get(slug, [])
         count = len(lessons)
         latest = lessons[-1]["title"] if lessons else "Pehla lesson jald aa raha hai"
         accent = ACCENTS[i % len(ACCENTS)]
-        cards.append(f"""
+        card = f"""
     <a class="ccard fade-in" href="courses/{slug}/index.html">
       <div class="stamp" style="--accent-bg:{accent}1a;color:{accent}">{course['icon']}</div>
       <div class="body">
@@ -2826,7 +2832,11 @@ def render_home(posts):
         {notify_bell_html(slug)}
       </div>
       <div class="stub" style="color:{accent}"><span class="stub-n" style="color:{accent}">{count:02d}</span><span class="stub-l">{'lesson' if count == 1 else 'lessons'}</span></div>
-    </a>""")
+    </a>"""
+        if course.get("for_kids"):
+            kids_cards.append(card)
+        else:
+            adult_cards.append(card)
 
     logo_href = BRAND_LOGO
     body = f"""
@@ -2834,13 +2844,21 @@ def render_home(posts):
     <span class="lbl">Digital Hub — apni pasand ka course chunein</span></div>
     <span class="eyebrow fade-in">Course Library</span>
     <h1 class="fade-in">🎓 Roz ek naya practical lesson<span class="streak-badge" id="fkc-streak-badge"></span></h1>
-    <p class="muted fade-in d2">📅 Har course ka naya lesson roz raat 12:00 AM se subah 4:50 AM Pakistan time ke darmiyan yahan post hota hai — har course card par uska waqt likha hai.
+    <p class="muted fade-in d2">📅 Har course ka naya lesson roz raat 12:00 AM se subah 5:30 AM Pakistan time ke darmiyan yahan post hota hai — har course card par uska waqt likha hai.
     Jis course mein interest ho us par tap karein — daily lesson step-by-step parhein aur practice karein.</p>
     <div id="fkc-continue-card" style="display:none;"></div>
     <input type="text" id="fkc-course-search" class="fkc-search" placeholder="🔍 Course dhoondein...">
     <p class="fade-in d2"><a class="btn alt" href="games.html">🎮 Games Zone — Khel Khel Mein Seekhein</a></p>
     <p class="fade-in d2">{direct_link_button_html("🚀 Start Learning")}</p>
-    <div class="grid">{''.join(cards)}</div>
+
+    <h2 class="section-title adults fade-in">💼 Bado Ke Liye Courses</h2>
+    <p class="muted fade-in" style="margin-top:-6px;">Skills, business, aur earning ke daily courses.</p>
+    <div class="grid">{''.join(adult_cards)}</div>
+
+    <h2 class="section-title kids fade-in">🧸 Bachon Ke Liye Courses</h2>
+    <p class="muted fade-in" style="margin-top:-6px;">Nursery, KG, Play Group, achi adaatein, aur educational games — sab free.</p>
+    <div class="grid">{''.join(kids_cards)}</div>
+
     {adsense_unit_html()}
     {brand_footer_html(logo_href)}
     <p style="text-align:center;margin-top:8px;">
