@@ -3391,6 +3391,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 4,
+      "id": "day-004",
+      "date": "2026-08-05",
+      "title": "Day 4 — **TikTok Par \"Engagement Hacks\" — Comments, Duets & Polls Se Views Badhaye**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "TikTok par engagement sirf likes se nahi, comments, duets aur polls se bhi badhta hai. Algorithm un videos ko promote karta hai jo zyada interaction generate karte hain. Comments ka response dena, duets karna aur polls lagana viewers ko \"involved\" rakhta hai, jisse video viral hone ke chances badh jaate hain."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Comments ka jawab",
+          "Agar koi comment \"Kya yeh real hai?\" likhe, to reply mein \"Haan bilkul! 👀\" ya \"Nahi, yeh fake hai 😂\" likh kar conversation shuru karo.\n2."
+        ],
+        [
+          "Duet ka istemal",
+          "Apne video par \"Try this trick!\" bol kar viewers ko duets karne ke liye challenge do. Example: \"Agar tum bhi yeh trick try karo to duets karke show karo!\"\n3."
+        ],
+        [
+          "Polls",
+          "Video description mein \"Aapko kya pasand hai?\" likh kar do options de do (e.g., \"Option 1: Fast editing, Option 2: Slow motion\")."
+        ],
+        [
+          "Practice",
+          "Apne last video par **1 comment ka jawab** de aur **1 duet request** accept karo. Agar possible ho, to **1 poll** bhi add karo."
+        ],
+        [
+          "Mini Project",
+          "Ek **30-second ka \"Engagement Challenge\" video** banaen jisme:\n- Ek question poocho (e.g., \"Tumhara favorite TikTok trend kya hai?\")\n- Duet karne ka challenge do\n- Poll ke liye 2 options suggest karo"
+        ]
+      ],
+      "answer_key": "comment response, duet interaction, poll engagement, conversation starter",
+      "translations": {
+        "ur": {
+          "title": "Day 4 — **ٹِک ٹاک پر \"این گجیمنٹ ہیکس\" — کمنٹس، ڈوئٹس اور پولز سے ویوز بڑھائیں**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "ٹِک ٹاک پر این گجیمنٹ صرف لائیکس سے نہیں بڑھتا، بلکہ کمنٹس، ڈوئٹس اور پولز سے بھی ہوتا ہے۔ الگورتھم ان ویڈیوز کو پروموٹ کرتا ہے جو زیادہ انٹریکشن جنریٹ کرتے ہیں۔ کمنٹس کا جواب دینا، ڈوئٹس کرنا اور پولز لگانا ویورز کو 'انولِوڈ' رکھتا ہے، جس سے ویڈیو وائرل ہونے کے چانسز بڑھ جاتے ہیں۔"
+            },
+            {
+              "label": "Example",
+              "content": "1.\nکمنٹس کا جواب: اگر کوئی کمنٹ \"کیا یہ ریال ہے؟\" لکھے تو ریپلائی میں \"ہاں بالکل! 👀\" یا \"نہیں، یہ فیک ہے 😂\" لکھ کر کانورسشن شروع کرو۔\n2.\nڈوئٹ کا استعمال: اپنے ویڈیو پر \"ٹری دیس ٹرِک!\" بول کر ویورز کو ڈوئٹس کرنے کے لیے چیلنج دو۔ ایکزیمپل: \"اگر تم بھی یہ ٹرِک ٹری کرلو تو ڈوئٹس کرکے شو کرو!\"\n3.\nپولز: ویڈیو ڈِسکریپشن میں \"آپکو کیا پسند ہے؟\" لکھ کر دو آپشنز دے دو (مثلاً: \"آپشن 1: فاست ایڈِٹنگ، آپشن 2: سلو موشن\")."
+            },
+            {
+              "label": "Practice",
+              "content": "اپنے لاسٹ ویڈیو پر **1 کمنٹ کا جواب** دو اور **1 ڈوئٹ ریکویسٹ** ایکسپٹ کرو۔ اگر ممکن ہو تو **1 پول** بھی ایڈ کرو۔"
+            },
+            {
+              "label": "Mini Project",
+              "content": "ایک **30 سیکنڈ کا \"این گجیمنٹ چیلنج\" ویڈیو** بنائیں جس میں:\n- ایک سوال پوچھو (مثلاً: \"تمہارا فوریٹ ٹِک ٹاک ٹرینڈ کیا ہے؟\")\n- ڈوئٹ کرنے کا چیلنج دو\n- پول کے لیے 2 آپشنز سجسٹ کرو"
+            }
+          ]
+        }
+      }
     }
   ],
   "blogging-adsense": [

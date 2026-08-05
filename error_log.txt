@@ -103,3 +103,7 @@
 [2026-08-05T00:47:50.211592] [photography-editing] Day 3 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: Expecting value: line 19 column 18 (char 1458)
 [2026-08-05T00:49:27.591389] [excel-data-analysis] Day 4 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: original preamble khaali tha lekin translation ne naya preamble bana diya; Arabic-script ratio kaafi kam hai (0.0)
 [2026-08-05T00:50:58.226417] [excel-data-analysis] Day 4 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-05T03:09:15.697936] [tiktok-growth] Day 1 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-05T03:11:30.694523] [tiktok-growth] Day 2 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-05T03:13:45.691752] [tiktok-growth] Day 3 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-05T03:16:00.696245] [tiktok-growth] Day 4 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
