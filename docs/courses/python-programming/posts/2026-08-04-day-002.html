@@ -9,6 +9,16 @@
 <meta property="og:description" content="FKC Trading Academy · Python Programming · Day 02">
 <meta property="og:image" content="../../../logo.png">
 <meta name="twitter:card" content="summary_large_image">
+<script>
+// Dark mode — theme paint se pehle set karte hain taake flash na ho.
+(function(){
+  try{
+    var t = localStorage.getItem("fkc_theme") ||
+      (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", t);
+  }catch(e){}
+})();
+</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z5FV45KG2C"></script>
 <script>
@@ -22,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T21:18:59.874247";
+  var FKC_BUILD = "2026-08-05T23:10:13.342611";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -46,6 +56,15 @@
 :root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
 --ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
 --accent:#2BAF66;--purple:#6D28D9;}
+html[data-theme="dark"]{--paper:#14161A;--panel:#1D2025;--line:#2C3038;
+--ink:#EDEFF2;--muted:#9AA1AB;--primary:#5B9DFF;--primary-dark:#3D7DE0;
+--accent:#3FCB7E;--purple:#A78BFA;}
+html[data-theme="dark"] img{opacity:.92;}
+.theme-toggle{position:fixed;bottom:16px;right:16px;z-index:999;
+width:44px;height:44px;border-radius:50%;border:1px solid var(--line);
+background:var(--panel);color:var(--ink);font-size:19px;cursor:pointer;
+box-shadow:0 2px 8px rgba(0,0,0,.15);display:flex;align-items:center;
+justify-content:center;}
 *{box-sizing:border-box;}
 @media (prefers-reduced-motion: no-preference){
   .fade-in{animation:fadeUp .45s ease both;}
@@ -53,7 +72,8 @@
   @keyframes fadeUp{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
 }
 body{margin:0;background:var(--paper);color:var(--ink);
-font-family:'Inter','IBM Plex Sans',sans-serif;line-height:1.55;}
+font-family:'Inter','IBM Plex Sans',sans-serif;line-height:1.55;
+transition:background .2s ease,color .2s ease;}
 .wrap{max-width:720px;margin:0 auto;padding:24px 16px 70px;}
 a{color:var(--primary);}
 .top{display:flex;align-items:baseline;gap:10px;color:var(--ink);
@@ -155,30 +175,62 @@ vertical-align:middle;}
 .lesson-nav{display:flex;justify-content:space-between;gap:8px;
 flex-wrap:wrap;margin-top:14px;}
 .lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.section-title{font-family:'Inter',sans-serif;font-weight:800;
+font-size:1.2em;margin:30px 0 2px;padding-top:18px;
+border-top:1px solid var(--line);display:flex;align-items:center;gap:8px;}
+.section-title.adults{color:var(--primary);}
+.section-title.kids{color:#DB4C77;}
 .quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
 .quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
 border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
 box-sizing:border-box;margin:6px 0;}
 .quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+.puzzle-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.puzzle-box h3{margin-top:0;}
+.puzzle-status{font-size:.85em;color:var(--muted);margin:0 0 10px;}
+.puzzle-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;
+max-width:340px;margin:0 auto;}
+.puzzle-card{aspect-ratio:1/1;border-radius:10px;border:none;
+background:var(--primary);color:#fff;font-size:1.6em;cursor:pointer;
+display:flex;align-items:center;justify-content:center;
+transition:transform .25s ease,background .25s ease;padding:0;}
+.puzzle-card.flipped,.puzzle-card.matched{background:#fff;
+border:1px solid var(--line);color:var(--ink);}
+.puzzle-card.matched{background:#EAFBF0;border-color:var(--accent);
+opacity:.85;cursor:default;}
+.puzzle-card:disabled{cursor:default;}
+.puzzle-win{display:none;text-align:center;margin-top:12px;
+background:#EAFBF0;border-radius:10px;padding:12px;font-weight:700;color:#15803d;}
 @media print{
   .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
-  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  .quiz-box,.puzzle-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
   body{background:#fff;}
   .card{box-shadow:none;border:none;}
 }
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
+<button type="button" class="theme-toggle" id="fkcThemeToggle" title="Dark/Light mode" onclick="fkcToggleTheme()">🌓</button>
+<script>
+function fkcToggleTheme(){
+  var cur = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", cur);
+  try{ localStorage.setItem("fkc_theme", cur); }catch(e){}
+}
+</script>
 
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "headline": "Day 2 — Variables, Data Types aur Input/Output", "name": "Day 2 — Variables, Data Types aur Input/Output", "description": "", "learningResourceType": "Lesson", "educationalLevel": "Beginner", "inLanguage": "ur", "isPartOf": {"@type": "Course", "name": "Python Programming"}, "datePublished": "2026-08-04", "publisher": {"@type": "Organization", "name": "FKC Trading Academy"}}</script>
     <div class="top"><a href="../../../index.html">← FKC Trading Academy</a>
     <a href="../index.html" class="course-back-link">/ Python Programming</a></div>
-    <span class="badge">Latest</span>
+    
     <p class="muted">🐍 Python Programming · Day 02</p>
     <h1>Day 2 — Variables, Data Types aur Input/Output</h1>
+    <p class="muted" style="margin:0 0 10px;">↩️ Pichla lesson: <strong>Day 1 — Python Install Karna aur Pehla Program</strong> — aaj is se aage badhte hain.</p>
     <div class="card">
       
       
       
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Variables Python mein boxes ki tarah hain jinme hum data store karte hain. Har variable ka ek data type hota hai (jaise number, text, ya boolean). Input/output ka matlab hai program aur user ke beech communication—user se data lena (input) aur results show karna (output).</p><h3>Example</h3><pre dir="ltr"><code># Variable declare karna
 name = &quot;Ali&quot;  # String (text)
 age = 25      # Integer (number)
@@ -190,7 +242,18 @@ user_name = input(&quot;Apna naam likhein: &quot;)
 print(&quot;Hello,&quot;, user_name)
 
 # Data type check karna
-print(type(age))  # Output: &lt;class &#x27;int&#x27;&gt;</code></pre><h3>Practice</h3><p>Ek program likhein jo user se 2 numbers input le, unko add karke result print kare.</p><h3>Mini Project</h3><p>Ek simple calculator banayein jo user se 2 numbers input le aur unke liye +, -, *, / operations perform kare.</p></div>
+print(type(age))  # Output: &lt;class &#x27;int&#x27;&gt;</code></pre><h3>Practice</h3><p>Ek program likhein jo user se 2 numbers input le, unko add karke result print kare.</p><h3>Mini Project</h3><p>Ek simple calculator banayein jo user se 2 numbers input le aur unke liye +, -, *, / operations perform kare.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>کنسیپٹ</h3><p>پائیتھن میں ویری ایبلز ڈبوں کی طرح ہوتے ہیں جن میں ہم ڈیٹا اسٹور کرتے ہیں۔ ہر ویری ایبل کا ایک ڈیٹا ٹائپ ہوتا ہے (جیسے نمبر، ٹیکسٹ، یا بولین)۔ ان پٹ/آؤٹ پٹ کا مطلب ہے پروگرام اور صارف کے درمیان کمیونیکیشن — صارف سے ڈیٹا لینا (ان پٹ) اور نتائج دکھانا (آؤٹ پٹ)।</p><h3>مثال</h3><pre dir="ltr"><code># ویری ایبل ڈیکلیئر کرنا
+name = &quot;علی&quot;  # سٹرنگ (ٹیکسٹ)
+age = 25      # انٹیجر (نمبر)
+height = 5.9  # فلوٹ (ڈیسیمل نمبر)
+is_student = True  # بولین (ٹرو/فالس)
+
+# ان پٹ لینا
+user_name = input(&quot;اپنا نام لکھیں: &quot;)
+print(&quot;ہیلو,&quot;, user_name)
+
+# ڈیٹا ٹائپ چیک کرنا
+print(type(age))  # آؤٹ پٹ: &lt;class &#x27;int&#x27;&gt;</code></pre><h3>پریکٹس</h3><p>ایک پروگرام لکھیں جو صارف سے دو نمبرز ان پٹ لے، ان کو جمع کرکے نتیجہ پرنٹ کرے۔</p><h3>منی پروجیکٹ</h3><p>ایک سادہ کیلکولیٹر بنائیں جو صارف سے دو نمبرز ان پٹ لے اور ان کے لیے +، −، ×، ÷ آپریشنز انجام دے۔</p></div>
       
       
       <div class="quiz-box no-print">
@@ -216,9 +279,73 @@ print(type(age))  # Output: &lt;class &#x27;int&#x27;&gt;</code></pre><h3>Practi
         }
       }
       </script>
+      
+      <div class="puzzle-box no-print" id="pz-python-programming-2">
+        <h3>🧩 Dimaghi Kasrat — Jode Milayein</h3>
+        <p class="puzzle-status" id="pz-python-programming-2-status">Cards par tap karke jode (pairs) milayein.</p>
+        <div class="puzzle-grid" id="pz-python-programming-2-grid"></div>
+        <div class="puzzle-win" id="pz-python-programming-2-win">🎉 Shabaash! Sab jode mil gaye — thodi der aur seekhne ke liye tayyar?</div>
+      </div>
+      <script>
+      (function(){
+        var emojis = ["🎈", "🧩", "🎵", "🐢", "🌈", "⚽"];
+        var deck = emojis.concat(emojis);
+        for (var i = deck.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var t = deck[i]; deck[i] = deck[j]; deck[j] = t;
+        }
+        var grid = document.getElementById("pz-python-programming-2-grid");
+        var statusEl = document.getElementById("pz-python-programming-2-status");
+        var winEl = document.getElementById("pz-python-programming-2-win");
+        var flipped = [], matchedCount = 0, moves = 0, lock = false;
+        deck.forEach(function(val){
+          var b = document.createElement("button");
+          b.type = "button";
+          b.className = "puzzle-card";
+          b.setAttribute("data-val", val);
+          b.textContent = "❓";
+          b.onclick = function(){
+            if (lock || b.classList.contains("matched") || b.classList.contains("flipped")) return;
+            b.classList.add("flipped");
+            b.textContent = val;
+            flipped.push(b);
+            if (flipped.length === 2) {
+              moves++;
+              lock = true;
+              var a = flipped[0], c = flipped[1];
+              if (a.getAttribute("data-val") === c.getAttribute("data-val")) {
+                a.classList.add("matched"); c.classList.add("matched");
+                matchedCount += 2;
+                flipped = []; lock = false;
+                statusEl.textContent = "Moves: " + moves + " · " + matchedCount + "/" + deck.length + " match hue";
+                if (matchedCount === deck.length) {
+                  winEl.style.display = "block";
+                  statusEl.textContent = "Complete! Total moves: " + moves;
+                }
+              } else {
+                setTimeout(function(){
+                  a.classList.remove("flipped"); a.textContent = "❓";
+                  c.classList.remove("flipped"); c.textContent = "❓";
+                  flipped = []; lock = false;
+                }, 700);
+              }
+            }
+          };
+          grid.appendChild(b);
+        });
+      })();
+      </script>
+      
+      <div class="no-print" style="margin-top:14px;">
+        <label for="fkc-notes" class="muted" style="display:block;margin-bottom:4px;">📝 Apni Note (sirf aapke is browser mein save hoti hai):</label>
+        <textarea id="fkc-notes" data-slug="python-programming" data-lesson="day-002"
+          placeholder="Yahan apni note likhein..." rows="3"
+          style="width:100%;border-radius:10px;border:1px solid #ddd;padding:8px;font-family:inherit;"
+          oninput="fkcSaveNote(this)"></textarea>
+      </div>
+    
       <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Python%20Programming%20%28Day%2002%29%0A%0ADay%202%20%E2%80%94%20Variables%2C%20Data%20Types%20aur%20Input/Output%0A%0AConcept%3A%0AVariables%20Python%20mein%20boxes%20ki%20tarah%20hain%20jinme%20hum%20data%20store%20karte%20hain.%20Har%20variable%20ka%20ek%20data%20type%20hota%20hai%20%28jaise%20number%2C%20text%2C%20ya%20boolean%29.%20Input/output%20ka%20matlab%20hai%20program%20aur%20user%20ke%20beech%20communication%E2%80%94user%20se%20data%20lena%20%28input%29%20aur%20results%20show%20karna%20%28output%29.%0A%0AExample%3A%0A%60%60%60python%0A%23%20Variable%20declare%20karna%0Aname%20%3D%20%22Ali%22%20%20%23%20String%20%28text%29%0Aage%20%3D%2025%20%20%20%20%20%20%23%20Integer%20%28number%29%0Aheight%20%3D%205.9%20%20%23%20Float%20%28decimal%20number%29%0Ais_student%20%3D%20True%20%20%23%20Boolean%20%28True/False%29%0A%0A%23%20Input%20lena%0Auser_name%20%3D%20input%28%22Apna%20naam%20likhein%3A%20%22%29%0Aprint%28%22Hello%2C%22%2C%20user_name%29%0A%0A%23%20Data%20type%20check%20karna%0Aprint%28type%28age%29%29%20%20%23%20Output%3A%20%3Cclass%20%27int%27%3E%0A%60%60%60%0A%0APractice%3A%0AEk%20program%20likhein%20jo%20user%20se%202%20numbers%20input%20le%2C%20unko%20add%20karke%20result%20print%20kare.%0A%0AMini%20Project%3A%0AEk%20simple%20calculator%20banayein%20jo%20user%20se%202%20numbers%20input%20le%20aur%20unke%20liye%20%2B%2C%20-%2C%20%2A%2C%20/%20operations%20perform%20kare.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
-        <a class="btn alt" href="https://t.me/share/url?url=&text=Day%202%20%E2%80%94%20Variables%2C%20Data%20Types%20aur%20Input/Output%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
         <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
@@ -228,8 +355,9 @@ print(type(age))  # Output: &lt;class &#x27;int&#x27;&gt;</code></pre><h3>Practi
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <div class="lesson-nav"><a class="btn alt" href="2026-08-03-day-001.html">← Day 1 — Python Install Karna aur Pehla Program</a><span></span></div>
+    <div class="lesson-nav"><a class="btn alt" href="2026-08-03-day-001.html">← Day 1 — Python Install Karna aur Pehla Program</a><a class="btn alt" href="2026-08-05-day-003.html">Day 3 — If-Else aur Loops: Program Flow Control →</a></div>
     <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
     
     <div class="no-print" style="margin:18px 0;text-align:center;">
       <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
@@ -237,6 +365,32 @@ print(type(age))  # Output: &lt;class &#x27;int&#x27;&gt;</code></pre><h3>Practi
       <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
+    <script>
+    (function(){
+      try {
+        localStorage.setItem('fkc_last_lesson', JSON.stringify({
+          slug: "python-programming",
+          courseName: "Python Programming",
+          courseIcon: "\ud83d\udc0d",
+          title: "Day 2 \u2014 Variables, Data Types aur Input/Output",
+          href: 'courses/python-programming/posts/2026-08-04-day-002.html',
+          day: 2
+        }));
+      } catch (e) {}
+      var ta = document.getElementById('fkc-notes');
+      if (ta) {
+        try {
+          var saved = localStorage.getItem('fkc_note_' + ta.dataset.slug + '_' + ta.dataset.lesson);
+          if (saved) ta.value = saved;
+        } catch (e) {}
+      }
+    })();
+    function fkcSaveNote(el) {
+      try {
+        localStorage.setItem('fkc_note_' + el.dataset.slug + '_' + el.dataset.lesson, el.value);
+      } catch (e) {}
+    }
+    </script>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
   function getProgress(){
@@ -277,6 +431,25 @@ print(type(age))  # Output: &lt;class &#x27;int&#x27;&gt;</code></pre><h3>Practi
     }
     var wa = "https://wa.me/923333909816?text=" + encodeURIComponent(text);
     window.open(wa, "_blank");
+  };
+
+  window.fkcShowSyncCode = function(){
+    if(!window.fkcSyncProgressUp){ alert("Sync abhi ready nahi (Firebase load ho raha hai), thodi dair mein try karein."); return; }
+    var code = Math.random().toString(36).substring(2,8).toUpperCase();
+    window.fkcSyncProgressUp(code, function(ok){
+      if(ok) alert("Yeh code doosri device par 'Code Se Wapas Layein' mein daalein:\n\n" + code);
+      else alert("Sync fail ho gaya, dobara try karein.");
+    });
+  };
+
+  window.fkcEnterSyncCode = function(){
+    if(!window.fkcSyncProgressDown){ alert("Sync abhi ready nahi (Firebase load ho raha hai), thodi dair mein try karein."); return; }
+    var code = prompt("Wo code daalein jo pehli device par bana tha:");
+    if(!code || !code.trim()) return;
+    window.fkcSyncProgressDown(code.trim().toUpperCase(), function(ok){
+      if(ok){ alert("Progress wapas aa gayi ✅"); location.reload(); }
+      else alert("Yeh code nahi mila, dobara check karein.");
+    });
   };
 
   document.addEventListener("DOMContentLoaded", function(){
@@ -360,6 +533,27 @@ print(type(age))  # Output: &lt;class &#x27;int&#x27;&gt;</code></pre><h3>Practi
           created: firebase.firestore.FieldValue.serverTimestamp()
         });
       }catch(e){}
+    };
+
+    window.fkcSyncProgressUp = function(code, onDone){
+      try{
+        var data = localStorage.getItem("fkc_progress") || "{}";
+        window.fkcDb.collection("progress_sync").doc(code).set({
+          progress: data, updated: firebase.firestore.FieldValue.serverTimestamp()
+        }).then(function(){ if(onDone) onDone(true); })
+          .catch(function(){ if(onDone) onDone(false); });
+      }catch(e){ if(onDone) onDone(false); }
+    };
+
+    window.fkcSyncProgressDown = function(code, onDone){
+      try{
+        window.fkcDb.collection("progress_sync").doc(code).get().then(function(doc){
+          if(doc.exists && doc.data().progress){
+            localStorage.setItem("fkc_progress", doc.data().progress);
+            if(onDone) onDone(true);
+          } else { if(onDone) onDone(false); }
+        }).catch(function(){ if(onDone) onDone(false); });
+      }catch(e){ if(onDone) onDone(false); }
     };
   }catch(e){}
 })();

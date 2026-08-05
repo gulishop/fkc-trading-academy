@@ -9,6 +9,16 @@
 <meta property="og:description" content="FKC Trading Academy · Python Programming · Day 01">
 <meta property="og:image" content="../../../logo.png">
 <meta name="twitter:card" content="summary_large_image">
+<script>
+// Dark mode — theme paint se pehle set karte hain taake flash na ho.
+(function(){
+  try{
+    var t = localStorage.getItem("fkc_theme") ||
+      (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", t);
+  }catch(e){}
+})();
+</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z5FV45KG2C"></script>
 <script>
@@ -22,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T21:18:59.874247";
+  var FKC_BUILD = "2026-08-05T23:10:13.342611";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -46,6 +56,15 @@
 :root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
 --ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
 --accent:#2BAF66;--purple:#6D28D9;}
+html[data-theme="dark"]{--paper:#14161A;--panel:#1D2025;--line:#2C3038;
+--ink:#EDEFF2;--muted:#9AA1AB;--primary:#5B9DFF;--primary-dark:#3D7DE0;
+--accent:#3FCB7E;--purple:#A78BFA;}
+html[data-theme="dark"] img{opacity:.92;}
+.theme-toggle{position:fixed;bottom:16px;right:16px;z-index:999;
+width:44px;height:44px;border-radius:50%;border:1px solid var(--line);
+background:var(--panel);color:var(--ink);font-size:19px;cursor:pointer;
+box-shadow:0 2px 8px rgba(0,0,0,.15);display:flex;align-items:center;
+justify-content:center;}
 *{box-sizing:border-box;}
 @media (prefers-reduced-motion: no-preference){
   .fade-in{animation:fadeUp .45s ease both;}
@@ -53,7 +72,8 @@
   @keyframes fadeUp{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
 }
 body{margin:0;background:var(--paper);color:var(--ink);
-font-family:'Inter','IBM Plex Sans',sans-serif;line-height:1.55;}
+font-family:'Inter','IBM Plex Sans',sans-serif;line-height:1.55;
+transition:background .2s ease,color .2s ease;}
 .wrap{max-width:720px;margin:0 auto;padding:24px 16px 70px;}
 a{color:var(--primary);}
 .top{display:flex;align-items:baseline;gap:10px;color:var(--ink);
@@ -155,32 +175,65 @@ vertical-align:middle;}
 .lesson-nav{display:flex;justify-content:space-between;gap:8px;
 flex-wrap:wrap;margin-top:14px;}
 .lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.section-title{font-family:'Inter',sans-serif;font-weight:800;
+font-size:1.2em;margin:30px 0 2px;padding-top:18px;
+border-top:1px solid var(--line);display:flex;align-items:center;gap:8px;}
+.section-title.adults{color:var(--primary);}
+.section-title.kids{color:#DB4C77;}
 .quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
 .quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
 border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
 box-sizing:border-box;margin:6px 0;}
 .quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+.puzzle-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.puzzle-box h3{margin-top:0;}
+.puzzle-status{font-size:.85em;color:var(--muted);margin:0 0 10px;}
+.puzzle-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;
+max-width:340px;margin:0 auto;}
+.puzzle-card{aspect-ratio:1/1;border-radius:10px;border:none;
+background:var(--primary);color:#fff;font-size:1.6em;cursor:pointer;
+display:flex;align-items:center;justify-content:center;
+transition:transform .25s ease,background .25s ease;padding:0;}
+.puzzle-card.flipped,.puzzle-card.matched{background:#fff;
+border:1px solid var(--line);color:var(--ink);}
+.puzzle-card.matched{background:#EAFBF0;border-color:var(--accent);
+opacity:.85;cursor:default;}
+.puzzle-card:disabled{cursor:default;}
+.puzzle-win{display:none;text-align:center;margin-top:12px;
+background:#EAFBF0;border-radius:10px;padding:12px;font-weight:700;color:#15803d;}
 @media print{
   .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
-  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  .quiz-box,.puzzle-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
   body{background:#fff;}
   .card{box-shadow:none;border:none;}
 }
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
+<button type="button" class="theme-toggle" id="fkcThemeToggle" title="Dark/Light mode" onclick="fkcToggleTheme()">🌓</button>
+<script>
+function fkcToggleTheme(){
+  var cur = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", cur);
+  try{ localStorage.setItem("fkc_theme", cur); }catch(e){}
+}
+</script>
 
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "headline": "Day 1 — Python Install Karna aur Pehla Program", "name": "Day 1 — Python Install Karna aur Pehla Program", "description": "", "learningResourceType": "Lesson", "educationalLevel": "Beginner", "inLanguage": "ur", "isPartOf": {"@type": "Course", "name": "Python Programming"}, "datePublished": "2026-08-03", "publisher": {"@type": "Organization", "name": "FKC Trading Academy"}}</script>
     <div class="top"><a href="../../../index.html">← FKC Trading Academy</a>
     <a href="../index.html" class="course-back-link">/ Python Programming</a></div>
     
     <p class="muted">🐍 Python Programming · Day 01</p>
     <h1>Day 1 — Python Install Karna aur Pehla Program</h1>
+    
     <div class="card">
       
       
       
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Python install karna ek beginner ke liye sabse pehla aur zaroori step hai. Hum Python ki official website se installer download karke install karenge. Phir ek simple &quot;Hello World&quot; program likhenge taake Python ka basic structure samajh aaye. Yehi program Python ki coding ka foundation hai.</p><h3>Example</h3><p>1. [Python ki official website](https://www.python.org/downloads/) par jao.<br>2. &quot;Download Python&quot; button par click karo (latest version select karna).<br>3. Installer run karo, **&quot;Add Python to PATH&quot;** checkbox check karna mat bhulna.<br>4. &quot;Install Now&quot; par click karo aur wait karo.<br>5. Command Prompt (Windows) ya Terminal (Mac/Linux) kholo aur `python --version` ya `python3 --version` type karo taake confirm ho jaaye ke Python install ho gaya hai.<br>6. Ab ek file `hello.py` banao aur usme yeh code likho:</p><pre dir="ltr"><code>   print(&quot;Hello World!&quot;)
-   </code></pre><p>7. Terminal mein `python hello.py` ya `python3 hello.py` likh kar Enter dabao. Output aana chahiye: `Hello World!`</p><h3>Practice</h3><p>Apne system par Python install karo aur ek file `first.py` banao. Usme apna naam print karne wala code likho (e.g., `print(&quot;Mera naam [Apna Naam] hai&quot;)`). Terminal se run karo.</p></div>
+   </code></pre><p>7. Terminal mein `python hello.py` ya `python3 hello.py` likh kar Enter dabao. Output aana chahiye: `Hello World!`</p><h3>Practice</h3><p>Apne system par Python install karo aur ek file `first.py` banao. Usme apna naam print karne wala code likho (e.g., `print(&quot;Mera naam [Apna Naam] hai&quot;)`). Terminal se run karo.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>کانسپٹ</h3><p>پائیتھن انسٹال کرنا ایک بیگنر کے لیے سب سے پہلا اور ضروری قدم ہے۔ ہم پائیتھن کی آفیشل ویب سائٹ سے انسٹالر ڈاؤن لوڈ کر کے انسٹال کریں گے۔ پھر ایک سادہ &quot;ہیلو ورلڈ&quot; پروگرام لکھیں گے تاکہ پائیتھن کا بنیادی ڈھانچہ سمجھ آئے۔ یہی پروگرام پائیتھن کی کوڈنگ کا فاؤنڈیشن ہے۔</p><h3>مثال</h3><p>١۔ پائیتھن کی آفیشل ویب سائٹ پر جاؤ۔<br>٢۔ &quot;ڈاؤن لوڈ پائیتھن&quot; کے بٹن پر کلک کرو (تازہ ترین ورژن سلیکٹ کرنا)۔<br>٣۔ انسٹالر چلاؤ، **&quot;ایڈ پائیتھن ٹو پاتھ&quot;** چیک باکس چیک کرنا مت بھولنا۔<br>٤۔ &quot;انسٹال ناؤ&quot; پر کلک کرو اور انتظار کرو۔<br>٥۔ کمانڈ پرامپٹ (ونڈوز) یا ٹرمینل (میک/لینکس) کھولو اور `python --version` یا `python3 --version` ٹائپ کرو تاکہ تصدیق ہو جائے کہ پائیتھن انسٹال ہو گیا ہے۔<br>٦۔ اب ایک فائل `hello.py` بناؤ اور اس میں یہ کوڈ لکھو:</p><pre dir="ltr"><code>   print(&quot;Hello World!&quot;)
+   </code></pre><p>٧۔ ٹرمینل میں `python hello.py` یا `python3 hello.py` لکھ کر انٹر دباؤ۔ آؤٹ پٹ آنا چاہیے: `Hello World!`</p><h3>پریکٹس</h3><p>اپنے سسٹم پر پائیتھن انسٹال کرو اور ایک فائل `first.py` بناؤ۔ اس میں اپنا نام پرنٹ کرنے والا کوڈ لکھو (مثال کے طور پر، `print(&quot;میرا نام [اپنا نام] ہے&quot;)`)۔ ٹرمینل سے چلا کر دیکھو۔</p></div>
       
       
       <div class="quiz-box no-print">
@@ -206,9 +259,73 @@ box-sizing:border-box;margin:6px 0;}
         }
       }
       </script>
+      
+      <div class="puzzle-box no-print" id="pz-python-programming-1">
+        <h3>🧩 Dimaghi Kasrat — Jode Milayein</h3>
+        <p class="puzzle-status" id="pz-python-programming-1-status">Cards par tap karke jode (pairs) milayein.</p>
+        <div class="puzzle-grid" id="pz-python-programming-1-grid"></div>
+        <div class="puzzle-win" id="pz-python-programming-1-win">🎉 Shabaash! Sab jode mil gaye — thodi der aur seekhne ke liye tayyar?</div>
+      </div>
+      <script>
+      (function(){
+        var emojis = ["🍎", "🐶", "🌙", "🎨", "🔑", "🌸"];
+        var deck = emojis.concat(emojis);
+        for (var i = deck.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var t = deck[i]; deck[i] = deck[j]; deck[j] = t;
+        }
+        var grid = document.getElementById("pz-python-programming-1-grid");
+        var statusEl = document.getElementById("pz-python-programming-1-status");
+        var winEl = document.getElementById("pz-python-programming-1-win");
+        var flipped = [], matchedCount = 0, moves = 0, lock = false;
+        deck.forEach(function(val){
+          var b = document.createElement("button");
+          b.type = "button";
+          b.className = "puzzle-card";
+          b.setAttribute("data-val", val);
+          b.textContent = "❓";
+          b.onclick = function(){
+            if (lock || b.classList.contains("matched") || b.classList.contains("flipped")) return;
+            b.classList.add("flipped");
+            b.textContent = val;
+            flipped.push(b);
+            if (flipped.length === 2) {
+              moves++;
+              lock = true;
+              var a = flipped[0], c = flipped[1];
+              if (a.getAttribute("data-val") === c.getAttribute("data-val")) {
+                a.classList.add("matched"); c.classList.add("matched");
+                matchedCount += 2;
+                flipped = []; lock = false;
+                statusEl.textContent = "Moves: " + moves + " · " + matchedCount + "/" + deck.length + " match hue";
+                if (matchedCount === deck.length) {
+                  winEl.style.display = "block";
+                  statusEl.textContent = "Complete! Total moves: " + moves;
+                }
+              } else {
+                setTimeout(function(){
+                  a.classList.remove("flipped"); a.textContent = "❓";
+                  c.classList.remove("flipped"); c.textContent = "❓";
+                  flipped = []; lock = false;
+                }, 700);
+              }
+            }
+          };
+          grid.appendChild(b);
+        });
+      })();
+      </script>
+      
+      <div class="no-print" style="margin-top:14px;">
+        <label for="fkc-notes" class="muted" style="display:block;margin-bottom:4px;">📝 Apni Note (sirf aapke is browser mein save hoti hai):</label>
+        <textarea id="fkc-notes" data-slug="python-programming" data-lesson="day-001"
+          placeholder="Yahan apni note likhein..." rows="3"
+          style="width:100%;border-radius:10px;border:1px solid #ddd;padding:8px;font-family:inherit;"
+          oninput="fkcSaveNote(this)"></textarea>
+      </div>
+    
       <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Python%20Programming%20%28Day%2001%29%0A%0ADay%201%20%E2%80%94%20Python%20Install%20Karna%20aur%20Pehla%20Program%0A%0AConcept%3A%0APython%20install%20karna%20ek%20beginner%20ke%20liye%20sabse%20pehla%20aur%20zaroori%20step%20hai.%20Hum%20Python%20ki%20official%20website%20se%20installer%20download%20karke%20install%20karenge.%20Phir%20ek%20simple%20%22Hello%20World%22%20program%20likhenge%20taake%20Python%20ka%20basic%20structure%20samajh%20aaye.%20Yehi%20program%20Python%20ki%20coding%20ka%20foundation%20hai.%0A%0AExample%3A%0A1.%20%5BPython%20ki%20official%20website%5D%28https%3A//www.python.org/downloads/%29%20par%20jao.%0A2.%20%22Download%20Python%22%20button%20par%20click%20karo%20%28latest%20version%20select%20karna%29.%0A3.%20Installer%20run%20karo%2C%20%2A%2A%22Add%20Python%20to%20PATH%22%2A%2A%20checkbox%20check%20karna%20mat%20bhulna.%0A4.%20%22Install%20Now%22%20par%20click%20karo%20aur%20wait%20karo.%0A5.%20Command%20Prompt%20%28Windows%29%20ya%20Terminal%20%28Mac/Linux%29%20kholo%20aur%20%60python%20--version%60%20ya%20%60python3%20--version%60%20type%20karo%20taake%20confirm%20ho%20jaaye%20ke%20Python%20install%20ho%20gaya%20hai.%0A6.%20Ab%20ek%20file%20%60hello.py%60%20banao%20aur%20usme%20yeh%20code%20likho%3A%0A%20%20%20%60%60%60python%0A%20%20%20print%28%22Hello%20World%21%22%29%0A%20%20%20%60%60%60%0A7.%20Terminal%20mein%20%60python%20hello.py%60%20ya%20%60python3%20hello.py%60%20likh%20kar%20Enter%20dabao.%20Output%20aana%20chahiye%3A%20%60Hello%20World%21%60%0A%0APractice%3A%0AApne%20system%20par%20Python%20install%20karo%20aur%20ek%20file%20%60first.py%60%20banao.%20Usme%20apna%20naam%20print%20karne%20wala%20code%20likho%20%28e.g.%2C%20%60print%28%22Mera%20naam%20%5BApna%20Naam%5D%20hai%22%29%60%29.%20Terminal%20se%20run%20karo.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
-        <a class="btn alt" href="https://t.me/share/url?url=&text=Day%201%20%E2%80%94%20Python%20Install%20Karna%20aur%20Pehla%20Program%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
         <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
@@ -221,12 +338,39 @@ box-sizing:border-box;margin:6px 0;}
     <div class="lesson-nav"><span></span><a class="btn alt" href="2026-08-04-day-002.html">Day 2 — Variables, Data Types aur Input/Output →</a></div>
     <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
     
+    
     <div class="no-print" style="margin:18px 0;text-align:center;">
       <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
         data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
       <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
+    <script>
+    (function(){
+      try {
+        localStorage.setItem('fkc_last_lesson', JSON.stringify({
+          slug: "python-programming",
+          courseName: "Python Programming",
+          courseIcon: "\ud83d\udc0d",
+          title: "Day 1 \u2014 Python Install Karna aur Pehla Program",
+          href: 'courses/python-programming/posts/2026-08-03-day-001.html',
+          day: 1
+        }));
+      } catch (e) {}
+      var ta = document.getElementById('fkc-notes');
+      if (ta) {
+        try {
+          var saved = localStorage.getItem('fkc_note_' + ta.dataset.slug + '_' + ta.dataset.lesson);
+          if (saved) ta.value = saved;
+        } catch (e) {}
+      }
+    })();
+    function fkcSaveNote(el) {
+      try {
+        localStorage.setItem('fkc_note_' + el.dataset.slug + '_' + el.dataset.lesson, el.value);
+      } catch (e) {}
+    }
+    </script>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
   function getProgress(){
@@ -267,6 +411,25 @@ box-sizing:border-box;margin:6px 0;}
     }
     var wa = "https://wa.me/923333909816?text=" + encodeURIComponent(text);
     window.open(wa, "_blank");
+  };
+
+  window.fkcShowSyncCode = function(){
+    if(!window.fkcSyncProgressUp){ alert("Sync abhi ready nahi (Firebase load ho raha hai), thodi dair mein try karein."); return; }
+    var code = Math.random().toString(36).substring(2,8).toUpperCase();
+    window.fkcSyncProgressUp(code, function(ok){
+      if(ok) alert("Yeh code doosri device par 'Code Se Wapas Layein' mein daalein:\n\n" + code);
+      else alert("Sync fail ho gaya, dobara try karein.");
+    });
+  };
+
+  window.fkcEnterSyncCode = function(){
+    if(!window.fkcSyncProgressDown){ alert("Sync abhi ready nahi (Firebase load ho raha hai), thodi dair mein try karein."); return; }
+    var code = prompt("Wo code daalein jo pehli device par bana tha:");
+    if(!code || !code.trim()) return;
+    window.fkcSyncProgressDown(code.trim().toUpperCase(), function(ok){
+      if(ok){ alert("Progress wapas aa gayi ✅"); location.reload(); }
+      else alert("Yeh code nahi mila, dobara check karein.");
+    });
   };
 
   document.addEventListener("DOMContentLoaded", function(){
@@ -350,6 +513,27 @@ box-sizing:border-box;margin:6px 0;}
           created: firebase.firestore.FieldValue.serverTimestamp()
         });
       }catch(e){}
+    };
+
+    window.fkcSyncProgressUp = function(code, onDone){
+      try{
+        var data = localStorage.getItem("fkc_progress") || "{}";
+        window.fkcDb.collection("progress_sync").doc(code).set({
+          progress: data, updated: firebase.firestore.FieldValue.serverTimestamp()
+        }).then(function(){ if(onDone) onDone(true); })
+          .catch(function(){ if(onDone) onDone(false); });
+      }catch(e){ if(onDone) onDone(false); }
+    };
+
+    window.fkcSyncProgressDown = function(code, onDone){
+      try{
+        window.fkcDb.collection("progress_sync").doc(code).get().then(function(doc){
+          if(doc.exists && doc.data().progress){
+            localStorage.setItem("fkc_progress", doc.data().progress);
+            if(onDone) onDone(true);
+          } else { if(onDone) onDone(false); }
+        }).catch(function(){ if(onDone) onDone(false); });
+      }catch(e){ if(onDone) onDone(false); }
     };
   }catch(e){}
 })();
