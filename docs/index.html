@@ -32,7 +32,7 @@
 <link rel="icon" href="logo.png">
 <link rel="manifest" href="manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-05T17:49:47.980991";
+  var FKC_BUILD = "2026-08-05T18:20:28.372766";
   function fkcCheckVersion(){
     fetch("version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -250,9 +250,9 @@ function fkcToggleTheme(){
     }
     #fkc-app-popup .popup-box {
         background: linear-gradient(145deg, #0B1220, #1a2438);
-        border-radius: 24px;
-        padding: 32px 28px;
-        max-width: 480px;
+        border-radius: 18px;
+        padding: 18px 16px;
+        max-width: 340px;
         width: 100%;
         box-shadow: 0 25px 60px rgba(0,0,0,0.6);
         border: 1px solid rgba(255,255,255,0.08);
@@ -278,15 +278,15 @@ function fkcToggleTheme(){
         color: #fff;
     }
     #fkc-app-popup .popup-icon {
-        font-size: 56px;
-        margin-bottom: 12px;
+        font-size: 36px;
+        margin-bottom: 6px;
         display: block;
     }
     #fkc-app-popup .popup-title {
-        font-size: 26px;
+        font-size: 19px;
         font-weight: 800;
         color: #fff;
-        margin: 0 0 4px;
+        margin: 0 0 2px;
         letter-spacing: -0.02em;
         background: linear-gradient(135deg, #5B9DFF, #A78BFA);
         -webkit-background-clip: text;
@@ -294,41 +294,41 @@ function fkcToggleTheme(){
     }
     #fkc-app-popup .popup-subtitle {
         color: #9AA1AB;
-        font-size: 16px;
-        margin: 0 0 16px;
+        font-size: 12px;
+        margin: 0 0 10px;
         font-weight: 400;
     }
     #fkc-app-popup .popup-features {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 8px;
-        margin: 16px 0;
+        gap: 5px;
+        margin: 10px 0;
         text-align: left;
     }
     #fkc-app-popup .popup-features span {
         color: #EDEFF2;
-        font-size: 14px;
-        padding: 6px 10px;
+        font-size: 11px;
+        padding: 4px 7px;
         background: rgba(255,255,255,0.04);
-        border-radius: 8px;
+        border-radius: 7px;
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: 6px;
     }
     #fkc-app-popup .popup-features span::before {
         content: "⚡";
-        font-size: 14px;
+        font-size: 11px;
     }
     #fkc-app-popup .popup-btn {
         display: inline-block;
         background: linear-gradient(135deg, #0056D2, #6D28D9);
         color: #fff;
         font-weight: 700;
-        font-size: 18px;
-        padding: 14px 32px;
-        border-radius: 14px;
+        font-size: 14px;
+        padding: 10px 18px;
+        border-radius: 12px;
         text-decoration: none;
-        margin: 8px 0 12px;
+        margin: 6px 0 8px;
         transition: transform 0.2s, box-shadow 0.2s;
         box-shadow: 0 4px 20px rgba(0,86,210,0.3);
         width: 100%;
@@ -339,20 +339,41 @@ function fkcToggleTheme(){
         box-shadow: 0 8px 30px rgba(0,86,210,0.4);
     }
     #fkc-app-popup .popup-btn .btn-sub {
-        font-size: 12px;
+        font-size: 11px;
         font-weight: 400;
         opacity: 0.8;
         display: block;
         margin-top: 2px;
     }
+    #fkc-app-popup .popup-share-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        width: 100%;
+        background: rgba(255,255,255,0.06);
+        border: 1px solid rgba(255,255,255,0.12);
+        color: #EDEFF2;
+        font-weight: 600;
+        font-size: 12px;
+        padding: 8px 14px;
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 0 0 8px;
+        box-sizing: border-box;
+        transition: background 0.2s;
+    }
+    #fkc-app-popup .popup-share-btn:hover {
+        background: rgba(255,255,255,0.1);
+    }
     #fkc-app-popup .popup-bonus {
         background: rgba(255,215,0,0.1);
         border: 1px solid rgba(255,215,0,0.2);
-        border-radius: 12px;
-        padding: 12px 16px;
-        margin: 12px 0 16px;
+        border-radius: 10px;
+        padding: 8px 12px;
+        margin: 8px 0 10px;
         color: #FCD34D;
-        font-size: 14px;
+        font-size: 11px;
         font-weight: 600;
         display: flex;
         align-items: center;
@@ -365,13 +386,13 @@ function fkcToggleTheme(){
     }
     #fkc-app-popup .popup-steps {
         background: rgba(255,255,255,0.03);
-        border-radius: 12px;
-        padding: 12px 16px;
-        margin: 12px 0 16px;
+        border-radius: 10px;
+        padding: 8px 12px;
+        margin: 8px 0 10px;
         text-align: left;
-        font-size: 13px;
+        font-size: 11px;
         color: #9AA1AB;
-        line-height: 1.6;
+        line-height: 1.5;
     }
     #fkc-app-popup .popup-steps strong {
         color: #EDEFF2;
@@ -385,8 +406,8 @@ function fkcToggleTheme(){
         to { opacity: 1; transform: translateY(0) scale(1); }
     }
     @media (max-width: 500px) {
-        #fkc-app-popup .popup-box { padding: 24px 18px; }
-        #fkc-app-popup .popup-title { font-size: 22px; }
+        #fkc-app-popup .popup-box { padding: 14px 12px; max-width: 300px; }
+        #fkc-app-popup .popup-title { font-size: 16px; }
         #fkc-app-popup .popup-features { grid-template-columns: 1fr; }
     }
     </style>
@@ -416,6 +437,10 @@ function fkcToggleTheme(){
                 📲 App Install Karein
                 <span class="btn-sub">Android APK — Free Download</span>
             </a>
+
+            <button type="button" class="popup-share-btn" onclick="fkcSharePopup()">
+                🔗 Share Karein
+            </button>
             
             <div class="popup-steps">
                 <strong>📥 Kaise install karein:</strong><br>
@@ -436,17 +461,56 @@ function fkcToggleTheme(){
         var popup = document.getElementById('fkc-app-popup');
         if (!popup) return;
         
-        // Check if user already saw popup in this session
-        if (sessionStorage.getItem('fkc_app_popup_shown') === 'true') return;
+        // Check if user already saw popup TODAY (shows once per day)
+        var today = new Date().toISOString().slice(0,10);
+        var lastShown = localStorage.getItem('fkc_app_popup_last_shown');
+        
+        if (lastShown === today) return;
         
         // Show after 2 seconds
         setTimeout(function() {
             popup.classList.add('show');
-            sessionStorage.setItem('fkc_app_popup_shown', 'true');
+            localStorage.setItem('fkc_app_popup_last_shown', today);
         }, 2000);
         
         window.fkcClosePopup = function() {
             popup.classList.remove('show');
+        };
+
+        // Share button — shares the popup's full details (title, features,
+        // bonus, install link) via the native share sheet; falls back to
+        // clipboard-copy on browsers/desktops without navigator.share.
+        window.fkcSharePopup = function() {
+            var shareText =
+                "🚀 FKC Virtual University\n" +
+                "Apni life change karo — Rozana FREE lessons!\n\n" +
+                "⚡ Forex Trading\n" +
+                "⚡ Crypto Trading\n" +
+                "⚡ Web Development\n" +
+                "⚡ Python & C++\n" +
+                "⚡ Freelancing\n" +
+                "⚡ YouTube Automation\n" +
+                "⚡ Shopify / Daraz\n" +
+                "⚡ Digital Skills\n\n" +
+                "🎓 Bonus: FREE Certificate — Limited slots hai!\n\n" +
+                "📲 App Install Karein (Android APK — Free Download):\n" +
+                "https://www.mediafire.com/file/7dm0zrj5zm6n1cl/FKC_VIRTUAL_UNIVERSITY.apk/file";
+
+            if (navigator.share) {
+                navigator.share({
+                    title: "FKC Virtual University",
+                    text: shareText,
+                    url: "https://www.mediafire.com/file/7dm0zrj5zm6n1cl/FKC_VIRTUAL_UNIVERSITY.apk/file"
+                }).catch(function() { /* user cancelled share — ignore */ });
+            } else if (navigator.clipboard) {
+                navigator.clipboard.writeText(shareText).then(function() {
+                    alert("Details copy ho gayi — ab kahin bhi paste kar ke share kar sakte hain!");
+                }).catch(function() {
+                    alert("Share/copy fail ho gaya, dobara try karein.");
+                });
+            } else {
+                alert("Aapka browser sharing support nahi karta.");
+            }
         };
         
         // Close on background click
@@ -635,11 +699,11 @@ function fkcToggleTheme(){
       <div class="body">
         <h2>Forex Trading</h2>
         <p class="tag">Currency market mein trading karna sikhein — basics se lekar strategy tak</p>
-        <p class="latest">📖 Day 5 — **Trading Psychology: Emotions Ko Control Karke Consistent Profit Banana**</p>
+        <p class="latest">📖 Day 6 — **Trading View Ka Use: Charts Ko Samajhna Aur Analyze Karna**</p>
         <p class="tag" style="margin-top:4px">🕒 Roz 2:30 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="forex-trading" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('forex-trading', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#D9730D"><span class="stub-n" style="color:#D9730D">05</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#D9730D"><span class="stub-n" style="color:#D9730D">06</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/cpp-daily-coding/index.html">
       <div class="stamp" style="--accent-bg:#DB4C771a;color:#DB4C77">💻</div>

@@ -897,6 +897,72 @@
           ]
         }
       }
+    },
+    {
+      "day": 6,
+      "id": "day-006",
+      "date": "2026-08-05",
+      "title": "Day 6 — **Trading View Ka Use: Charts Ko Samajhna Aur Analyze Karna**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "TradingView ek powerful free tool hai jo real-time forex charts, indicators aur trading ideas provide karta hai. Yahan par aap different timeframes (1m se lekar 1M tak) dekh sakte hain, indicators add kar sakte hain aur dusre traders ke analysis bhi dekh sakte hain. Charts ko samajhna trading ka foundation hai—har candle ka color, size aur position market ke mood ko batata hai."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Chart Open Karein",
+          "TradingView.com par jaein, EUR/USD pair search karein.\n2."
+        ],
+        [
+          "Candlestick Colors",
+          "Green candle = price up, Red candle = price down.\n3."
+        ],
+        [
+          "Timeframe Badlein",
+          "1H (1 hour) se 4H par switch karein aur dekhein ki price kaise move kar rahi hai.\n4."
+        ],
+        [
+          "Indicators Add Karein",
+          "Simple Moving Average (SMA 50) add karein aur dekhein ki price uske respect mein kaise behave kar rahi hai."
+        ],
+        [
+          "Practice",
+          "Apne TradingView account mein jaein, GBP/USD pair ka 1D (1 day) chart kholein. 3-4 indicators (jaise SMA 20, RSI, MACD) add karein aur dekhein ki price unke respect mein kaise move kar rahi hai. 10 minutes tak observe karein."
+        ],
+        [
+          "Mini Project",
+          "Ek 10-minute ka screencast record karein jisme aap TradingView par ek currency pair ka chart kholein, indicators add karein aur 2-3 observations share karein (jaise \"Price SMA 50 se upar hai, isliye bullish mood hai\")."
+        ]
+      ],
+      "answer_key": "eur/usd, 1h chart, green candle, sma 50, bullish trend",
+      "translations": {
+        "ur": {
+          "title": "دن 6 — ٹریڈنگ ویو کا استعمال: چارٹس کو سمجھنا اور تجزیہ کرنا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "ٹریڈنگ ویو ایک طاقتور مفت ٹول ہے جو ریئل ٹائم فاریکس چارٹس، انڈیکیٹرز اور ٹریڈنگ آئیڈیاز فراہم کرتا ہے۔ یہاں آپ مختلف ٹائم فریمز (1 منٹ سے لے کر 1 ماہ تک) دیکھ سکتے ہیں، انڈیکیٹرز شامل کر سکتے ہیں اور دوسرے ٹریڈرز کے تجزیے بھی ملاحظہ کر سکتے ہیں۔ چارٹس کو سمجھنا ٹریڈنگ کی بنیاد ہے—ہر موم بتی کا رنگ، سائز اور پوزیشن مارکیٹ کے رویے کو ظاہر کرتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1. چارٹ کھولیں: ٹریڈنگ ویو ڈاٹ کام پر جائیں، EUR/USD جوڑا تلاش کریں۔\n2. موم بتیوں کے رنگ: سبز موم بتی = قیمت میں اضافہ، سرخ موم بتی = قیمت میں کمی۔\n3. ٹائم فریم تبدیل کریں: 1 گھنٹہ (1H) سے 4 گھنٹے (4H) پر سوئچ کریں اور دیکھیں کہ قیمت کس طرح حرکت کر رہی ہے۔\n4. انڈیکیٹرز شامل کریں: سادہ موونگ ایوریج (SMA 50) شامل کریں اور دیکھیں کہ قیمت اس کے لحاظ سے کیسا رویہ دکھا رہی ہے۔"
+            },
+            {
+              "label": "مشق",
+              "content": "اپنے ٹریڈنگ ویو اکاؤنٹ میں جائیں، GBP/USD جوڑے کا 1 دن (1D) کا چارٹ کھولیں۔ 3-4 انڈیکیٹرز (جیسے SMA 20، RSI، MACD) شامل کریں اور دیکھیں کہ قیمت ان کے لحاظ سے کیسے حرکت کر رہی ہے۔ 10 منٹ تک مشاہدہ کریں۔"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "ایک 10 منٹ کا اسکرین کاسٹ ریکارڈ کریں جس میں آپ ٹریڈنگ ویو پر کسی کرنسی جوڑے کا چارٹ کھولیں، انڈیکیٹرز شامل کریں اور 2-3 مشاہدات شیئر کریں (جیسے \"قیمت SMA 50 سے اوپر ہے، اس لیے بلش موڈ ہے\")۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "amazon-fba": [

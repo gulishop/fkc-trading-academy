@@ -148,3 +148,11 @@
 [2026-08-05T10:20:15.095597] [daraz-seller] Day 4 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
 [2026-08-05T11:40:55.239224] [mobile-repairing] Day 3 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
 [2026-08-05T17:52:10.951436] [forex-trading] Day 5 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-05T18:22:21.831783] [forex-trading] Day 6 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-05T18:23:50.455847] [forex-trading] Day 6 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-05T18:25:29.917597] [forex-trading] Day 1 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-05T18:27:29.524135] [forex-trading] Day 2 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-05T18:29:07.943706] [forex-trading] Day 3 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-05T18:30:37.800098] [forex-trading] Day 4 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-05T18:32:27.450811] [forex-trading] Day 5 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-05T18:34:09.384087] [forex-trading] Day 6 video skip: Agnes aur ffmpeg dono attempts fail.
