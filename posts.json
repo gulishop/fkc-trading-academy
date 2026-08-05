@@ -2761,6 +2761,56 @@
       ],
       "answer_key": "ageptr, *ageptr=30, 25, 30",
       "translations": {}
+    },
+    {
+      "day": 10,
+      "id": "day-010",
+      "date": "2026-08-05",
+      "title": "Day 10 — References: Variables Ka Dusra Naam",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "References ek variable ka *alias* hota hai – ek naya naam jo kisi existing variable ko point karta hai. Pointers ki tarah memory address store karne ke bajaye, reference *directly* original variable se connect hota hai. References ko declare karne ke baad change nahi kiya ja sakta (unchangeable address), jabki pointers ko reassign kiya ja sakta hai."
+        ],
+        [
+          "Example",
+          "```cpp\nint main() {\n    int x = 10;\n    int &ref = x;  // 'ref' ab 'x' ka reference hai\n\n    ref = 20;      // 'x' bhi change ho jayega\n    cout << x;     // Output: 20\n    cout << &x;    // Memory address\n    cout << &ref;  // Same address as x\n}\n```"
+        ],
+        [
+          "Practice",
+          "Ek program likho jo:\n1. Ek integer variable `num` declare kare (value = 5).\n2. Uske liye ek reference `numRef` banaye.\n3. `numRef` ki value 15 kar de.\n4. Print kare `num` aur `numRef` ki values."
+        ],
+        [
+          "Mini Project",
+          "Ek simple \"Bank Account\" system banaye:\n- Ek `balance` variable ho (initial value = 1000).\n- Uske liye ek reference `account` banaye.\n- Ek function `deposit()` jo `account` ko parameter le aur balance badhaye.\n- Ek function `withdraw()` jo `account` se paise katre aur negative balance na ho.\n- Main function mein 200 deposit karo aur 500 nikal kar print karo."
+        ]
+      ],
+      "answer_key": "num=15, numref=15, balance=1500, account=500",
+      "translations": {
+        "ur": {
+          "title": "Day 10 — حوالے: ویری ایبل کا دوسرا نام",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "مفہوم",
+              "content": "حوالے ایک ویری ایبل کا *aliaz* ہوتا ہے – ایک نیا نام جو کسی موجودہ ویری ایبل کو پوائنٹ کرتا ہے۔ پوائنٹرز کی طرح میموری ایڈریس اسٹور کرنے کے بجائے، حوالہ *براہ راست* اصل ویری ایبل سے جڑا ہوتا ہے۔ حوالوں کو ڈکلئیر کرنے کے بعد تبدیل نہیں کیا جا سکتا (غیر متغیر ایڈریس)، جبکہ پوائنٹرز کو دوبارہ اسائن کیا جا سکتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "```cpp\nint main() {\n    int x = 10;\n    int &ref = x;  // 'ref' اب 'x' کا حوالہ ہے\n\n    ref = 20;      // 'x' بھی تبدیل ہو جائے گا\n    cout << x;     // Output: 20\n    cout << &x;    // Memory address\n    cout << &ref;  // Same address as x\n}\n```"
+            },
+            {
+              "label": "مشق",
+              "content": "ایک پروگرام لکھو جو:\n1. ایک انٹیجر ویری ایبل `num` ڈکلئیر کرے (قیمت = 5)۔\n2. اس کے لیے ایک حوالہ `numRef` بنائے۔\n3. `numRef` کی قیمت 15 کر دے۔\n4. پرنٹ کرے `num` اور `numRef` کی قیمتیں۔"
+            },
+            {
+              "label": "مینی پروجیکٹ",
+              "content": "ایک سادہ \"بینک اکاؤنٹ\" سسٹم بنائے:\n- ایک `balance` ویری ایبل ہو (شروع کی قیمت = 1000)۔\n- اس کے لیے ایک حوالہ `account` بنائے۔\n- ایک فنکشن `deposit()` جو `account` کو پیرامیٹر لے اور بیلنس بڑھائے۔\n- ایک فنکشن `withdraw()` جو `account` سے پیسے کٹے اور منفی بیلنس نہ ہو۔\n- مین فنکشن میں 200 ڈپازٹ کرو اور 500 نکال کر پرنٹ کرو۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "python-programming": [

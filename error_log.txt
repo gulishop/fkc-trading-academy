@@ -132,3 +132,11 @@
 [2026-08-05T07:28:31.254847] [cpp-daily-coding] Day 8 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: Arabic-script ratio kaafi kam hai (0.0)
 [2026-08-05T07:29:39.738027] [cpp-daily-coding] Day 9 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: Arabic-script ratio kaafi kam hai (0.0)
 [2026-08-05T07:31:10.099585] [cpp-daily-coding] Day 9 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-05T08:11:36.571626] [cpp-daily-coding] Day 2 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 403: Forbidden
+[2026-08-05T08:13:15.427449] [cpp-daily-coding] Day 4 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 403: Forbidden
+[2026-08-05T08:14:55.233748] [cpp-daily-coding] Day 5 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 403: Forbidden
+[2026-08-05T08:16:30.972064] [cpp-daily-coding] Day 6 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 403: Forbidden
+[2026-08-05T08:18:09.789975] [cpp-daily-coding] Day 7 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 403: Forbidden
+[2026-08-05T08:19:51.633248] [cpp-daily-coding] Day 8 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 403: Forbidden
+[2026-08-05T08:19:51.633435] heal_degenerate_translations: 6 translations lagatar fail hui — Mistral API shayad down/quota-exhausted hai, is run ke liye translation healing rok rahe hain (agli baar phir try hoga).
+[2026-08-05T08:21:43.252769] [cpp-daily-coding] Day 10 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
