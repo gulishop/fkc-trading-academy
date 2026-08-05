@@ -1892,6 +1892,11 @@ def build_translation_prompt(lang_label, title, preamble, sections, other_lang_l
             "zaban ke apne alfaz aur jumla-saazi (sentence structure) use karo, jo "
             f"{other_lang_label} se clearly mukhtalif lage. "
         )
+    preamble_rule = (
+        "6) Original Preamble khaali/empty hai to translation ka 'preamble' field bhi "
+        'BILKUL khaali string ("") rakho — khud se koi intro/summary line mat likho, '
+        "chahe kitna bhi chhota kyun na ho. "
+    ) if not (preamble or "").strip() else ""
     return (
         f"Neeche diya gaya ek lesson hai, Roman Urdu mein likha hua. Isay poora "
         f"{lang_label} translate karo — matlab, tone, aur structure bilkul wahi rakho, "
@@ -1910,6 +1915,7 @@ def build_translation_prompt(lang_label, title, preamble, sections, other_lang_l
         "waisa ka waisa (as-is) rehne do — code, variable names, keywords (for, "
         "int, print, etc.) translate mat karo, sirf agar code ke andar koi "
         "English comment ho to wo translate kar sakte ho. "
+        f"{preamble_rule}"
         "SIRF valid JSON return karo, koi extra text, koi markdown code-fence nahi, "
         "bilkul is shape mein: "
         '{"title": "...", "preamble": "...", "sections": [{"label": "...", "content": "..."}]}. '
@@ -2125,6 +2131,13 @@ def get_or_generate_translations(slug, day_num, title, preamble, sections):
                 prompt = build_translation_prompt(lang_label, title, preamble, sections, other_lang_label)
                 raw = ai_generate(prompt)
                 data = _parse_translation_json(raw)
+                # Original preamble khaali ho (jo 94% lessons mein hota hai,
+                # kyunke lesson format mein intro paragraph hota hi nahi) aur
+                # AI ne phir bhi ek chhoti si preamble likh di, to use turant
+                # reject/retry karne ki bajaye khud khaali kar dete hain —
+                # itni si baat par translation waste karna sahi nahi.
+                if not (preamble or "").strip() and (data.get("preamble") or "").strip():
+                    data["preamble"] = ""
                 issues = _translation_sanity_issues(data, code, preamble, translations.get(other_code))
                 if issues:
                     raise ValueError("AI output reject: " + "; ".join(issues))
