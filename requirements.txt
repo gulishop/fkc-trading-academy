@@ -1,2 +1,7 @@
-Pillow
-edge-tts
+# Core dependencies for generate_post.py
+
+# Image processing — REQUIRED for kids course symbols, PWA icons
+Pillow>=10.0.0
+
+# Text-to-speech — for Urdu voiceover in lesson videos
+edge-tts>=6.0.0
