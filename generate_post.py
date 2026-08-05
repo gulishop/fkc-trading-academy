@@ -1022,7 +1022,12 @@ def _run_edge_tts(text_file_path, voice, out_mp3, rate=None, attempts=2):
     last_err = None
     cmd = ["edge-tts", "--voice", voice, "--file", text_file_path, "--write-media", out_mp3]
     if rate:
-        cmd += ["--rate", rate]
+        # "=" wala format zaroori hai: agar rate manfi ho (jaise "-8%"),
+        # to "--rate -8%" (do alag arguments) mein edge-tts ka argparse
+        # "-8%" ko khud ek naya flag samajh leta hai aur "expected one
+        # argument" error de deta hai. "--rate=-8%" (ek hi argument,
+        # equals-sign ke sath) is confusion se bachata hai.
+        cmd += [f"--rate={rate}"]
     for attempt in range(1, attempts + 1):
         try:
             result = subprocess.run(
@@ -1323,6 +1328,17 @@ def generate_agnes_video(slug, lesson, course_name, max_attempts=10):
 
     except requests.exceptions.Timeout:
         print(f"[{slug}] Day {lesson['day']} Agnes API timeout")
+        return None
+    except requests.exceptions.HTTPError as e:
+        # 400/401/etc ka asli detail Agnes ke response body mein hota hai —
+        # sirf ".raise_for_status()" ka generic message kaafi nahi, isay
+        # print karte hain taake pata chale asal wajah kya hai (jaise
+        # galat payload field, missing required param, waghera).
+        try:
+            body = e.response.text[:500] if e.response is not None else "(no body)"
+        except Exception:
+            body = "(body read nahi ho saka)"
+        print(f"[{slug}] Day {lesson['day']} Agnes API error: {e}\nResponse body: {body}")
         return None
     except Exception as e:
         print(f"[{slug}] Day {lesson['day']} Agnes API error: {e}")
