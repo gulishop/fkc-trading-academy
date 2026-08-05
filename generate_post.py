@@ -1037,6 +1037,16 @@ def find_lesson_image(slug, day_num):
         src = os.path.join(IMAGES_DIR, slug, f"day-{padded}{ext}")
         if os.path.exists(src):
             return src
+    # Fallback: GitHub Actions ka fresh checkout har run par sirf docs/ aur
+    # posts.json le kar aata hai — images/ (working cache) commit nahi hoti,
+    # is liye purani lessons ki image is run mein images/ mein nahi milti.
+    # Aisi surat mein already-published copy (docs/.../posts/images/) check
+    # karein, jo hamesha git mein maujood hoti hai (site ka hissa hai) —
+    # isse purane din ki video/rebuild kaam bhi chal jata hai.
+    for ext in IMAGE_EXTS:
+        published = os.path.join(DOCS_DIR, "courses", slug, "posts", "images", f"day-{padded}{ext}")
+        if os.path.exists(published):
+            return published
     return None
 
 
@@ -1302,7 +1312,12 @@ NARRATION_MAX_CHARS = 1600  # video zyada lamba na ho, isliye script yahan tak c
 def find_lesson_video(slug, day_num):
     padded = f"{day_num:03d}"
     src = os.path.join(VIDEOS_DIR, slug, f"day-{padded}.mp4")
-    return src if os.path.exists(src) else None
+    if os.path.exists(src):
+        return src
+    # Fallback: same reason as find_lesson_image() — videos/ working cache
+    # doesn't persist between CI runs, but the published docs/ copy does.
+    published = os.path.join(DOCS_DIR, "courses", slug, "posts", "videos", f"day-{padded}.mp4")
+    return published if os.path.exists(published) else None
 
 
 def _build_narration_text(title, preamble, sections):
@@ -1737,9 +1752,17 @@ def generate_lesson_video_agnes_plus_urdu(slug, course, lesson, image_source_pat
         if agnes_clip and _run_ffmpeg_mux_loop_video_audio(agnes_clip, mp3_path, mp4_path):
             made = True
             print(f"[{slug}] Day {day_num} video ban gayi (Agnes clip + Microsoft Urdu awaaz).")
+        elif not agnes_clip:
+            print(f"[{slug}] Day {day_num} Agnes clip nahi bani (upar Agnes error/timeout log dekhein) — Ken Burns fallback try hoga.", file=sys.stderr)
+    else:
+        print(f"[{slug}] Day {day_num} AGNES_API_KEY set nahi hai (ya khaali hai) — Agnes skip, seedha Ken Burns fallback try hoga.", file=sys.stderr)
 
     # Agnes na mile / fail ho to purana free jugaad (still image + zoom +
     # captions), awaaz wahi Microsoft Urdu voice.
+    if not made and not (image_source_path and os.path.exists(image_source_path)):
+        print(f"[{slug}] Day {day_num} Ken Burns fallback bhi nahi ban saki: koi lesson image nahi mili "
+              f"(na images/{slug}/day-{padded}.*, na docs/courses/{slug}/posts/images/day-{padded}.* mein) — "
+              f"pehle image generate/publish honi zaroori hai.", file=sys.stderr)
     if not made and image_source_path and os.path.exists(image_source_path):
         srt_path = os.path.join(work_dir, f"day-{padded}.srt")
         duration = _get_audio_duration(mp3_path)
