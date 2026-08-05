@@ -1110,6 +1110,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 4,
+      "id": "day-004",
+      "date": "2026-08-05",
+      "title": "Day 4 — **High-Converting Product Images Banana (Jo Daraz Par Bikhein)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Daraz par behtareen product images wo hain jo customer ko instantly attract karain, trust banain aur \"add to cart\" click karne par majboor kar dein. Achhe photos mein clear background, multiple angles, zoom-in details, aur lifestyle shots hote hain jo product ki quality aur use-case ko highlight karain."
+        ],
+        [
+          "Example",
+          "Ek mobile cover bechne wale seller ne pehle sirf 1 photo lagayi thi (front view). Usne bad mein 5 photos add ki:\n1. Front view (main photo)\n2. Back view (pattern/design)\n3. Side view (thickness)\n4. Zoom-in (material quality)\n5. Lifestyle shot (cover phone ke saath bag mein)\nResult: CTR (Click-Through Rate) 30% badh gaya."
+        ],
+        [
+          "Practice",
+          "Apne Daraz account mein jayein, kisi bhi product ka listing edit mode mein kholain. Ab \"Photos\" section mein jayein aur check karain:\n- Kya sabhi important angles cover hain?\n- Kya main photo sabse attractive hai?\n- Kya koi zoom-in ya lifestyle shot add kar sakte hain?"
+        ],
+        [
+          "Mini Project",
+          "Ek naya product (ya existing product) select karain aur uske liye 5-6 high-quality photos banayein ya lein. In photos ko Daraz listing mein upload karain aur compare karain ki pehle aur baad mein CTR ya views mein kya difference aaya."
+        ]
+      ],
+      "answer_key": "clear background, multiple angles, zoom-in, lifestyle shot",
+      "translations": {
+        "ur": {
+          "title": "دن ۴ — **ہائی کنورٹنگ پروڈکٹ امیجز بنانا (جو دراز پر بیچیں)**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "دراز پر بہترین پروڈکٹ امیجز وہ ہوتے ہیں جو کسٹمر کو فوراً اپنی طرف متوجہ کریں، اعتماد پیدا کریں اور ’ایڈ ٹو کارٹ‘ پر کلک کرنے پر مجبور کر دیں۔ اچھے فوٹوز میں صاف بیک گراؤنڈ، مختلف اینگلز، زوم ان ڈیٹیلز، اور لائف اسٹائل شاٹس ہوتے ہیں جو پروڈکٹ کی کوالٹی اور استعمال کے طریقے کو نمایاں کرتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک موبائل کور بیچنے والے سیلر نے پہلے صرف ایک فوٹو لگائی تھی (فرنٹ ویو)۔ اس نے بعد میں پانچ فوٹوز شامل کیں:\n۱۔ فرنٹ ویو (مین فوٹو)\n۲۔ بیک ویو (پیٹرن/ڈیزائن)\n۳۔ سائیڈ ویو (موٹائی)\n۴۔ زوم ان (میٹریل کوالٹی)\n۵۔ لائف اسٹائل شاٹ (کور فون کے ساتھ بیگ میں)\nنتیجہ: سی ٹی آر (کلک تھرو ریٹ) ۳۰ فیصد بڑھ گیا۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے دراز اکاؤنٹ میں جائیں، کسی بھی پروڈکٹ کی لسٹنگ ایڈٹ موڈ میں کھولیں۔ اب ’فوٹوز‘ سیکشن میں جائیں اور چیک کریں:\n- کیا تمام اہم اینگلز کور ہو گئے ہیں؟\n- کیا مین فوٹو سب سے زیادہ پرکشش ہے؟\n- کیا کوئی زوم ان یا لائف اسٹائل شاٹ شامل کر سکتے ہیں؟"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک نیا پروڈکٹ (یا موجودہ پروڈکٹ) سلیکٹ کریں اور اس کے لیے ۵-۶ ہائی کوالٹی فوٹوز بنائیں یا حاصل کریں۔ ان فوٹوز کو دراز لسٹنگ میں اپ لوڈ کریں اور موازنہ کریں کہ پہلے اور بعد میں سی ٹی آر یا ویوز میں کیا فرق آیا۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "ai-content-writing": [

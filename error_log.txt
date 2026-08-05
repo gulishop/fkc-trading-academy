@@ -145,3 +145,4 @@
 [2026-08-05T08:53:12.907677] [cpp-daily-coding] Day 12 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
 [2026-08-05T08:53:19.880844] [cpp-daily-coding] Day 6 video skip: Urdu TTS (ur-PK-UzmaNeural) fail.
 [2026-08-05T09:03:58.932728] [cpp-daily-coding] Day 13 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-05T10:20:15.095597] [daraz-seller] Day 4 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
