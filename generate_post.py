@@ -961,10 +961,18 @@ def generate_lesson_image(slug, course, day_num, title, topic_hint=None, concept
 # already-generated image/slide ke sath ffmpeg se mila kar ek chhota
 # .mp4 ban jata hai. Awaaz HAMESHA pure Urdu, FEMALE voice
 # (ur-PK-UzmaNeural) hoti hai — koi English/male fallback voice kabhi
-# use nahi hoti. Agar lesson ka Urdu-script translation (["ur"])
-# maujood ho to us se bola jata hai (behtar quality, asli Urdu script),
-# warna Roman Urdu wala original text bhi isi Urdu female awaaz se
-# bola jata hai — bas voice hamesha Urdu rehti hai.
+# use nahi hoti.
+#
+# SIRF asal Urdu-script translation (["ur"]) se bola jata hai — Roman
+# Urdu (Latin letters) text is voice se ab kabhi nahi bola jata, kyunki
+# edge-tts Roman Urdu ko sahi tarah nahi padh pata (kabhi English jaisa,
+# kabhi ajeeb accent) aur awaaz saaf/samajh mein na aane wali ban jati
+# hai. Isliye agar us lesson ka Urdu-script translation abhi tak nahi
+# bana, to video is dafa skip ho jati hai aur translation ban te hi
+# (heal_degenerate_translations ke agle run mein) khud-b-khud ban jati
+# hai — is se awaaz hamesha saaf, khaalis, bolchaal wali Urdu rehti hai.
+# Thodi slow speech rate (-8%) bhi set hai taake alfaz zyada saaf/clear
+# sunayi dein.
 #
 # System mein "edge-tts" (pip) aur "ffmpeg" (apt) dono maujood hone
 # chahiye — GitHub Actions workflow mein add karne honge (neeche
@@ -976,6 +984,7 @@ def generate_lesson_image(slug, course, day_num, title, topic_hint=None, concept
 # ---------------------------------------------------------------------
 VIDEOS_DIR = "videos"
 NARRATION_VOICE_UR = "ur-PK-UzmaNeural"  # pure Urdu, FEMALE awaaz — hamesha yehi use hoti hai, kabhi English/male nahi
+NARRATION_RATE_UR = "-8%"  # thodi slow — behtar, saaf-suthri clarity ke liye
 NARRATION_MAX_CHARS = 1600  # video zyada lamba na ho, isliye script yahan tak cap hoti hai
 
 
@@ -1003,14 +1012,17 @@ def _build_narration_text(title, preamble, sections):
     return text[:NARRATION_MAX_CHARS]
 
 
-def _run_edge_tts(text_file_path, voice, out_mp3, attempts=2):
+def _run_edge_tts(text_file_path, voice, out_mp3, rate=None, attempts=2):
     # edge-tts kabhi-kabhi network hiccup se fail hota hai — ek dobara
     # koshish (chhote wait ke sath) zyadatar cases mein kaafi hoti hai.
     last_err = None
+    cmd = ["edge-tts", "--voice", voice, "--file", text_file_path, "--write-media", out_mp3]
+    if rate:
+        cmd += ["--rate", rate]
     for attempt in range(1, attempts + 1):
         try:
             result = subprocess.run(
-                ["edge-tts", "--voice", voice, "--file", text_file_path, "--write-media", out_mp3],
+                cmd,
                 capture_output=True, timeout=120,
             )
             if result.returncode != 0:
@@ -1131,17 +1143,18 @@ def generate_lesson_narration_video(slug, course, lesson, image_source_path):
 
     translations = lesson.get("translations") or {}
     ur = translations.get("ur")
-    if ur and ur.get("sections"):
-        title = ur.get("title", lesson["title"])
-        preamble = ur.get("preamble", "")
-        sections = [(s.get("label", ""), s.get("content", "")) for s in ur.get("sections", [])]
-    else:
-        # Urdu-script translation abhi maujood nahi — Roman Urdu text bolo,
-        # lekin awaaz phir bhi Urdu female hi rahegi (NARRATION_VOICE_UR),
-        # English/male voice par kabhi switch nahi hota.
-        title = lesson["title"]
-        preamble = lesson.get("preamble", "")
-        sections = lesson["sections"]
+    if not (ur and ur.get("sections")):
+        # Asal Urdu-script translation abhi tak nahi bani — is dafa video
+        # skip karte hain (Roman Urdu text ko Urdu voice se ab kabhi nahi
+        # bulwate, kyunki uski pronunciation saaf/samajh mein nahi aati).
+        # Jaise hi translation ban jayegi (heal ya agle din ke lesson ke
+        # sath), yeh video khud-b-khud agli build par ban jayegi.
+        msg = f"[{slug}] Day {day_num} video skip: Urdu-script translation abhi maujood nahi (saaf awaaz ke liye zaroori)."
+        print(msg, file=sys.stderr)
+        return
+    title = ur.get("title", lesson["title"])
+    preamble = ur.get("preamble", "")
+    sections = [(s.get("label", ""), s.get("content", "")) for s in ur.get("sections", [])]
 
     voice = NARRATION_VOICE_UR  # hamesha pure Urdu, female awaaz
 
@@ -1159,7 +1172,7 @@ def generate_lesson_narration_video(slug, course, lesson, image_source_path):
     with open(txt_path, "w", encoding="utf-8") as f:
         f.write(script_text)
 
-    if not _run_edge_tts(txt_path, voice, mp3_path):
+    if not _run_edge_tts(txt_path, voice, mp3_path, rate=NARRATION_RATE_UR):
         # Koi English/male fallback nahi — TTS fail ho to video is baar
         # sirf skip hoti hai (agli build par phir try hogi), Urdu female
         # awaaz ke ilawa kabhi kisi aur voice par switch nahi hota.
