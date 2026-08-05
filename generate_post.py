@@ -67,7 +67,7 @@ def app_install_popup_html():
     """Popup message for FKC Virtual University App download - shows once per session"""
     return """
     <style>
-    #fkc-app-popup {
+    #fkc-app-popup {{
         position: fixed;
         top: 0;
         left: 0;
@@ -80,11 +80,11 @@ def app_install_popup_html():
         justify-content: center;
         padding: 20px;
         animation: fadeIn 0.5s ease;
-    }
-    #fkc-app-popup.show {
+    }}
+    #fkc-app-popup.show {{
         display: flex;
-    }
-    #fkc-app-popup .popup-box {
+    }}
+    #fkc-app-popup .popup-box {{
         background: linear-gradient(145deg, #0B1220, #1a2438);
         border-radius: 24px;
         padding: 32px 28px;
@@ -95,8 +95,8 @@ def app_install_popup_html():
         position: relative;
         text-align: center;
         animation: slideUp 0.5s ease;
-    }
-    #fkc-app-popup .popup-close {
+    }}
+    #fkc-app-popup .popup-close {{
         position: absolute;
         top: 12px;
         right: 16px;
@@ -108,17 +108,17 @@ def app_install_popup_html():
         padding: 4px 8px;
         border-radius: 6px;
         transition: background 0.2s;
-    }
-    #fkc-app-popup .popup-close:hover {
+    }}
+    #fkc-app-popup .popup-close:hover {{
         background: rgba(255,255,255,0.05);
         color: #fff;
-    }
-    #fkc-app-popup .popup-icon {
+    }}
+    #fkc-app-popup .popup-icon {{
         font-size: 56px;
         margin-bottom: 12px;
         display: block;
-    }
-    #fkc-app-popup .popup-title {
+    }}
+    #fkc-app-popup .popup-title {{
         font-size: 26px;
         font-weight: 800;
         color: #fff;
@@ -127,21 +127,21 @@ def app_install_popup_html():
         background: linear-gradient(135deg, #5B9DFF, #A78BFA);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-    }
-    #fkc-app-popup .popup-subtitle {
+    }}
+    #fkc-app-popup .popup-subtitle {{
         color: #9AA1AB;
         font-size: 16px;
         margin: 0 0 16px;
         font-weight: 400;
-    }
-    #fkc-app-popup .popup-features {
+    }}
+    #fkc-app-popup .popup-features {{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 8px;
         margin: 16px 0;
         text-align: left;
-    }
-    #fkc-app-popup .popup-features span {
+    }}
+    #fkc-app-popup .popup-features span {{
         color: #EDEFF2;
         font-size: 14px;
         padding: 6px 10px;
@@ -150,12 +150,12 @@ def app_install_popup_html():
         display: flex;
         align-items: center;
         gap: 8px;
-    }
-    #fkc-app-popup .popup-features span::before {
+    }}
+    #fkc-app-popup .popup-features span::before {{
         content: "⚡";
         font-size: 14px;
-    }
-    #fkc-app-popup .popup-btn {
+    }}
+    #fkc-app-popup .popup-btn {{
         display: inline-block;
         background: linear-gradient(135deg, #0056D2, #6D28D9);
         color: #fff;
@@ -169,19 +169,19 @@ def app_install_popup_html():
         box-shadow: 0 4px 20px rgba(0,86,210,0.3);
         width: 100%;
         box-sizing: border-box;
-    }
-    #fkc-app-popup .popup-btn:hover {
+    }}
+    #fkc-app-popup .popup-btn:hover {{
         transform: translateY(-2px);
         box-shadow: 0 8px 30px rgba(0,86,210,0.4);
-    }
-    #fkc-app-popup .popup-btn .btn-sub {
+    }}
+    #fkc-app-popup .popup-btn .btn-sub {{
         font-size: 12px;
         font-weight: 400;
         opacity: 0.8;
         display: block;
         margin-top: 2px;
-    }
-    #fkc-app-popup .popup-bonus {
+    }}
+    #fkc-app-popup .popup-bonus {{
         background: rgba(255,215,0,0.1);
         border: 1px solid rgba(255,215,0,0.2);
         border-radius: 12px;
@@ -194,12 +194,12 @@ def app_install_popup_html():
         align-items: center;
         justify-content: center;
         gap: 8px;
-    }
-    #fkc-app-popup .popup-bonus::before {
+    }}
+    #fkc-app-popup .popup-bonus::before {{
         content: "🎁";
         font-size: 20px;
-    }
-    #fkc-app-popup .popup-steps {
+    }}
+    #fkc-app-popup .popup-steps {{
         background: rgba(255,255,255,0.03);
         border-radius: 12px;
         padding: 12px 16px;
@@ -208,23 +208,23 @@ def app_install_popup_html():
         font-size: 13px;
         color: #9AA1AB;
         line-height: 1.6;
-    }
-    #fkc-app-popup .popup-steps strong {
+    }}
+    #fkc-app-popup .popup-steps strong {{
         color: #EDEFF2;
-    }
-    @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-    }
-    @keyframes slideUp {
-        from { opacity: 0; transform: translateY(30px) scale(0.96); }
-        to { opacity: 1; transform: translateY(0) scale(1); }
-    }
-    @media (max-width: 500px) {
-        #fkc-app-popup .popup-box { padding: 24px 18px; }
-        #fkc-app-popup .popup-title { font-size: 22px; }
-        #fkc-app-popup .popup-features { grid-template-columns: 1fr; }
-    }
+    }}
+    @keyframes fadeIn {{
+        from {{ opacity: 0; }}
+        to {{ opacity: 1; }}
+    }}
+    @keyframes slideUp {{
+        from {{ opacity: 0; transform: translateY(30px) scale(0.96); }}
+        to {{ opacity: 1; transform: translateY(0) scale(1); }}
+    }}
+    @media (max-width: 500px) {{
+        #fkc-app-popup .popup-box {{ padding: 24px 18px; }}
+        #fkc-app-popup .popup-title {{ font-size: 22px; }}
+        #fkc-app-popup .popup-features {{ grid-template-columns: 1fr; }}
+    }}
     </style>
     <div id="fkc-app-popup">
         <div class="popup-box">
@@ -248,7 +248,7 @@ def app_install_popup_html():
                 🎓 Bonus: FREE Certificate — Limited slots hai!
             </div>
             
-            <a href="{}" class="popup-btn" target="_blank" rel="noopener">
+            <a href="{0}" class="popup-btn" target="_blank" rel="noopener">
                 📲 App Install Karein
                 <span class="btn-sub">Android APK — Free Download</span>
             </a>
@@ -268,7 +268,7 @@ def app_install_popup_html():
         </div>
     </div>
     <script>
-    (function() {
+    (function() {{
         var popup = document.getElementById('fkc-app-popup');
         if (!popup) return;
         
@@ -276,25 +276,25 @@ def app_install_popup_html():
         if (sessionStorage.getItem('fkc_app_popup_shown') === 'true') return;
         
         // Show after 2 seconds
-        setTimeout(function() {
+        setTimeout(function() {{
             popup.classList.add('show');
             sessionStorage.setItem('fkc_app_popup_shown', 'true');
-        }, 2000);
+        }}, 2000);
         
-        window.fkcClosePopup = function() {
+        window.fkcClosePopup = function() {{
             popup.classList.remove('show');
-        };
+        }};
         
         // Close on background click
-        popup.addEventListener('click', function(e) {
+        popup.addEventListener('click', function(e) {{
             if (e.target === this) fkcClosePopup();
-        });
+        }});
         
         // Close on Escape key
-        document.addEventListener('keydown', function(e) {
+        document.addEventListener('keydown', function(e) {{
             if (e.key === 'Escape') fkcClosePopup();
-        });
-    })();
+        }});
+    }})();
     </script>
     """.format(APP_DOWNLOAD_URL)
 
