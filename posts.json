@@ -2412,6 +2412,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 3,
+      "id": "day-003",
+      "date": "2026-08-05",
+      "title": "Day 3",
+      "preamble": "**Day 3 — Social Media Post Templates: Design Karna Seekhein (Instagram, Facebook, Twitter)**",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum social media post templates banayenge jo engaging, professional aur brand ke hisab se suitable hon. Har platform ke liye alag dimensions aur style hote hain (e.g., Instagram square/post, Facebook cover, Twitter header). Templates se time bachta hai aur consistency bani rehti hai."
+        ],
+        [
+          "Example",
+          "1. **Instagram Post (1080x1080px)**:\n   - Background: Gradient ya solid color (#FF6B6B se #4ECDC4).\n   - Text: Bold font (Montserrat Bold) + emoji (🔥).\n   - Image: Product photo ya stock image (Pexels se free download).\n   - Overlay: 20% opacity black ya white box for text readability.\n\n2. **Facebook Cover (820x312px)**:\n   - Left side: Brand logo + tagline.\n   - Right side: Call-to-action button (\"Shop Now\" ya \"Learn More\").\n   - Background: Blurred product image ya abstract pattern."
+        ],
+        [
+          "Practice",
+          "Apna ek Instagram post template banayein (1080x1080px) niche diye hue style se:\n- Background: Light blue (#E6F7FF).\n- Text: \"Summer Sale! 30% Off 🌞\" (font: Poppins SemiBold, white color).\n- Image: Free stock photo of sunglasses (Unsplash se)."
+        ],
+        [
+          "Mini Project",
+          "Ek **3-post series** banayein (Instagram/Facebook ke liye):\n1. Post 1: Product image + discount offer.\n2. Post 2: Customer testimonial (text + quote).\n3. Post 3: Behind-the-scenes (team photo ya workspace)."
+        ]
+      ],
+      "answer_key": "gradient background, bold font, emoji, cta text",
+      "translations": {
+        "ur": {
+          "title": "دن ٣",
+          "preamble": "**دن ٣ — سوشل میڈیا پوسٹ ٹیمپلیٹس: ڈیزائن کرنا سیکھیں (انسٹاگرام، فیس بک، ٹوئٹر)**",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج ہم سوشل میڈیا پوسٹ ٹیمپلیٹس بنائیں گے جو دلچسپ، پیشہ ورانہ اور برانڈ کے حساب سے موزوں ہوں۔ ہر پلیٹ فارم کے لیے الگ ڈائمینشنز اور اسٹائل ہوتے ہیں (مثلاً، انسٹاگرام مربع/پوسٹ، فیس بک کور، ٹوئٹر ہیڈر)۔ ٹیمپلیٹس سے وقت بچتا ہے اور مستقل مزاجی برقرار رہتی ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "١. **انسٹاگرام پوسٹ (١٠٨٠×١٠٨٠ پکسلز):**\n   - بیک گراؤنڈ: گریڈینٹ یا سولیڈ کلر (#FF6B6B سے #4ECDC4)۔\n   - متن: بولڈ فونٹ (مونٹسیراٹ بولڈ) + ایموجی (🔥)۔\n   - تصویر: پروڈکٹ فوٹو یا اسٹاک امیج (پکسلز سے مفت ڈاؤن لوڈ)۔\n   - اوورلے: ٢٠٪ اوپیسٹی کا سیاہ یا سفید باکس متن کی پڑھنے کی اہلیت کے لیے۔\n\n٢. **فیس بک کور (٨٢٠×٣١٢ پکسلز):**\n   - بائیں جانب: برانڈ لوگو + ٹیگ لائن۔\n   - دائیں جانب: کال ٹو ایکشن بٹن (\"شاپ ناؤ\" یا \"مزید جانیں\")۔\n   - بیک گراؤنڈ: دھندلی پروڈکٹ تصویر یا تجریدی پیٹرن۔"
+            },
+            {
+              "label": "مشق",
+              "content": "اپنا ایک انسٹاگرام پوسٹ ٹیمپلیٹ بنائیں (١٠٨٠×١٠٨٠ پکسلز) نیچے دیے گئے اسٹائل کے مطابق:\n- بیک گراؤنڈ: ہلکا نیلا (#E6F7FF)۔\n- متن: \"سمر سیل! ٣٠٪ آف 🌞\" (فونٹ: پوپنز سیمی بولڈ، سفید رنگ)۔\n- تصویر: سن گلاسز کی مفت اسٹاک فوٹو (ان سپلش سے)۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **٣ پوسٹ سیریز** بنائیں (انسٹاگرام/فیس بک کے لیے):\n١. پوسٹ ١: پروڈکٹ تصویر + ڈسکاؤنٹ آفر۔\n٢. پوسٹ ٢: کسٹمر ٹیسٹیمونیل (متن + کوٹ)۔\n٣. پوسٹ ٣: بہائنڈ دی سینز (ٹیم فوٹو یا ورک اسپیس)۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "no-code-app-dev": [
