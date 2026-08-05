@@ -64,7 +64,7 @@ APP_DOWNLOAD_URL = "https://www.mediafire.com/file/7dm0zrj5zm6n1cl/FKC_VIRTUAL_U
 APP_POPUP_ENABLED = True  # Set to False to disable popup
 
 def app_install_popup_html():
-    """Popup message for FKC Virtual University App download - shows once per session"""
+    """Popup message for FKC Virtual University App download - shows once per day"""
     return """
     <style>
     #fkc-app-popup {{
@@ -272,13 +272,16 @@ def app_install_popup_html():
         var popup = document.getElementById('fkc-app-popup');
         if (!popup) return;
         
-        // Check if user already saw popup in this session
-        if (sessionStorage.getItem('fkc_app_popup_shown') === 'true') return;
+        // Check if user already saw popup TODAY (shows once per day)
+        var today = new Date().toISOString().slice(0,10);
+        var lastShown = localStorage.getItem('fkc_app_popup_last_shown');
+        
+        if (lastShown === today) return;
         
         // Show after 2 seconds
         setTimeout(function() {{
             popup.classList.add('show');
-            sessionStorage.setItem('fkc_app_popup_shown', 'true');
+            localStorage.setItem('fkc_app_popup_last_shown', today);
         }}, 2000);
         
         window.fkcClosePopup = function() {{
@@ -297,6 +300,8 @@ def app_install_popup_html():
     }})();
     </script>
     """.format(APP_DOWNLOAD_URL)
+        
+        
 
 # ---------------------------------------------------------------------
 # 1. COURSES — yahan naya course add/hata/edit karein
