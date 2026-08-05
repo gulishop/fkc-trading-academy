@@ -22,7 +22,7 @@
 <link rel="icon" href="../../logo.png">
 <link rel="manifest" href="../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-05T03:41:41.224076";
+  var FKC_BUILD = "2026-08-05T04:22:38.462530";
   function fkcCheckVersion(){
     fetch("../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -160,9 +160,25 @@ flex-wrap:wrap;margin-top:14px;}
 border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
 box-sizing:border-box;margin:6px 0;}
 .quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+.puzzle-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.puzzle-box h3{margin-top:0;}
+.puzzle-status{font-size:.85em;color:var(--muted);margin:0 0 10px;}
+.puzzle-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;
+max-width:340px;margin:0 auto;}
+.puzzle-card{aspect-ratio:1/1;border-radius:10px;border:none;
+background:var(--primary);color:#fff;font-size:1.6em;cursor:pointer;
+display:flex;align-items:center;justify-content:center;
+transition:transform .25s ease,background .25s ease;padding:0;}
+.puzzle-card.flipped,.puzzle-card.matched{background:#fff;
+border:1px solid var(--line);color:var(--ink);}
+.puzzle-card.matched{background:#EAFBF0;border-color:var(--accent);
+opacity:.85;cursor:default;}
+.puzzle-card:disabled{cursor:default;}
+.puzzle-win{display:none;text-align:center;margin-top:12px;
+background:#EAFBF0;border-radius:10px;padding:12px;font-weight:700;color:#15803d;}
 @media print{
   .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
-  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  .quiz-box,.puzzle-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
   body{background:#fff;}
   .card{box-shadow:none;border:none;}
 }
@@ -177,7 +193,15 @@ box-sizing:border-box;margin:6px 0;}
     <p><button type="button" class="notify-btn" data-notify-slug="kids-nursery" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('kids-nursery', this);">🔔 Notify Me</button></p>
     
     
-    <div class="plist"><p class="muted">Abhi koi lesson nahi — pehla jald aayega.</p></div>
+    <div class="card progress-wrap" id="fkc-progress-wrap" data-slug="kids-nursery" data-total="1">
+      <div class="progress-track"><div class="progress-fill" id="fkc-progress-fill"></div></div>
+      <p class="muted" id="fkc-progress-text">0/1 lessons complete</p>
+      <button type="button" class="btn" id="fkc-cert-btn" style="display:none"
+        onclick="fkcApplyCertificate('kids-nursery', "Nursery Course", "Free")">
+        🎓 Certificate ke liye Apply Karein
+      </button>
+    </div>
+    <div class="plist"><a href="posts/2026-08-05-day-001.html"><span class="d">01</span>Day 1 — &quot;A se Z tak: Alphabets ki pehchaan&quot;</a></div>
     
     <div class="no-print" style="margin:18px 0;text-align:center;">
       <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"

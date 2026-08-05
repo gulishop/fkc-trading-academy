@@ -4317,5 +4317,57 @@
         }
       }
     }
+  ],
+  "kids-nursery": [
+    {
+      "day": 1,
+      "id": "day-001",
+      "date": "2026-08-05",
+      "title": "Day 1 — \"A se Z tak: Alphabets ki pehchaan\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke alphabets kya hote hain aur unko pehchanna kaise hai. Har cheez ka naam hota hai, jaise 'A' se 'Apple' shuru hota hai. Tumhara jism tumhara hai—koe bhi tumse koi cheez chupane ya karne ko na keh sakta hai."
+        ],
+        [
+          "Chhoti Kahani",
+          "Rani ne apne dost ko 'A' ka naam sikhaya. Uske dost ne kaha, \"Mera naam B se shuru hota hai!\" Rani ne muskura kar kaha, \"Bilkul sahi! Har cheez ka apna naam hota hai, jaise tumhara naam.\""
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar koi tumse koi ajeeb baat pooche ya tumhe koi cheez karne ko kaha jo tumhe achha na lage, to tum kya karogi?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Tumhara jism tumhara hai—koe bhi tumse koi cheez chupane ya karne ko na keh sakta!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "Day 1 — \"الف سے ز تک: حروف تہجی کی پہچان\"",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "مفہوم",
+              "content": "آج ہم سیکھیں گے کہ حروف تہجی کیا ہوتے ہیں اور انہیں پہچاننا کیسے ہے۔ ہر چیز کا نام ہوتا ہے، جیسے 'ا' سے 'ایپل' شروع ہوتا ہے۔ تمھارا جسم تمھارا ہے—کوئی بھی تم سے کوئی چیز چھپانے یا کرنے کو نہ کہہ سکتا ہے۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "رانی نے اپنے دوست کو 'ا' کا نام سکھایا۔ اس کے دوست نے کہا، \"میرا نام ب سے شروع ہوتا ہے!\" رانی نے مسکرا کر کہا، \"بالکل صحیح! ہر چیز کا اپنا نام ہوتا ہے، جیسے تمھارا نام۔\""
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "بٹّا، اگر کوئی تم سے کوئی عجیب بات پوچھے یا تمہیں کوئی چیز کرنے کو کہے جو تمہیں اچھا نہ لگے، تو تم کیا کروگی؟"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمھارا جسم تمھارا ہے—کوئی بھی تم سے کوئی چیز چھپانے یا کرنے کو نہ کہہ سکتا!"
+            }
+          ]
+        }
+      }
+    }
   ]
 }
