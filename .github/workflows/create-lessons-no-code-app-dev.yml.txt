@@ -1,0 +1,56 @@
+name: create-lessons-no-code-app-dev
+
+on:
+  schedule:
+    - cron: '20 21 * * *'
+  workflow_dispatch: {}
+
+concurrency:
+  group: fkc-lessons-git-push
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repo checkout karo
+        uses: actions/checkout@v4
+
+      - name: Python setup karo
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Dependencies install karo
+        run: |
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: ffmpeg install karo (AI video ke liye)
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - name: No Code App Dev ka lesson generate karo
+        env:
+          COURSE_SLUG: no-code-app-dev
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          SITE_URL: ${{ secrets.SITE_URL }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_PAGE_ACCESS_TOKEN: ${{ secrets.FB_PAGE_ACCESS_TOKEN }}
+        run: python generate_post.py
+
+      - name: Changes commit aur push karo
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "Auto: No Code App Dev — naya lesson [skip ci]"
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash origin main && git push && break
+            echo "Push attempt $i fail hui, thoda ruk kar dobara try..."
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 15))
+          done
