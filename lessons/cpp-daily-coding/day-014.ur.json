@@ -1,0 +1,22 @@
+{
+  "title": "دن ۱۴ — ٹیمپلیٹس ان سی++: جنرک پروگرامنگ",
+  "preamble": "",
+  "sections": [
+    {
+      "label": "کنسیپٹ",
+      "content": "ٹیمپلیٹس سی++ میں ایک طاقتور فیچر ہیں جو آپ کو جنرک فنکشنز اور کلاسز بنانے کی اجازت دیتے ہیں۔ یعنی ایک ہی کوڈ متعدد ڈیٹا ٹائپس کے لیے کام کرے گا—جیسے `int`، `float`، یا `string`۔ اس سے کوڈ کی ری یوز ایبلٹی بڑھتی ہے اور ٹائپ سیفٹی بھی برقرار رہتی ہے۔"
+    },
+    {
+      "label": "مثال",
+      "content": "```cpp\n#include <iostream>\nusing namespace std;\n\n// جنرک فنکشن جو کسی بھی ٹائپ کے دو نمبرز کو جمع کرے گا\ntemplate <typename T>\nT add(T a, T b) {\n    return a + b;\n}\n\nint main() {\n    cout << add(5, 3) << endl;       // int\n    cout << add(3.14, 2.71) << endl; // float\n    cout << add<string>(\"Hello, \", \"World!\") << endl; // string\n    return 0;\n}\n```"
+    },
+    {
+      "label": "پریکٹس",
+      "content": "ایک `template` فنکشن `max()` بنائیں جو دو ویلیوز میں سے بڑی ویلیو واپس کرے۔ `int`، `float`، اور `char` ٹائپس کے لیے ٹیسٹ کریں۔"
+    },
+    {
+      "label": "منی پروجیکٹ",
+      "content": "ایک `Calculator` کلاس ٹیمپلیٹ بنائیں جو `add`، `subtract`، `multiply`، اور `divide` آپریشنز انجام دے سکے۔ `int` اور `double` ٹائپس کے لیے ٹیسٹ کریں۔"
+    }
+  ]
+}
