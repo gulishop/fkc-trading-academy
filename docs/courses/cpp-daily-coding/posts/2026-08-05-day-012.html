@@ -4,9 +4,9 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>Day 8 — Structures (struct): Custom Data Types Banana — C++ Daily Coding</title>
-<meta property="og:title" content="Day 8 — Structures (struct): Custom Data Types Banana — C++ Daily Coding">
-<meta property="og:description" content="FKC Trading Academy · C++ Daily Coding · Day 08">
+<title>Day 12 — Constructors aur Destructors: Objects Ko Initialize aur Clean Karna — C++ Daily Coding</title>
+<meta property="og:title" content="Day 12 — Constructors aur Destructors: Objects Ko Initialize aur Clean Karna — C++ Daily Coding">
+<meta property="og:description" content="FKC Trading Academy · C++ Daily Coding · Day 12">
 <meta property="og:image" content="../../../logo.png">
 <meta name="twitter:card" content="summary_large_image">
 <script>
@@ -219,102 +219,81 @@ function fkcToggleTheme(){
 }
 </script>
 
-    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "headline": "Day 8 — Structures (struct): Custom Data Types Banana", "name": "Day 8 — Structures (struct): Custom Data Types Banana", "description": "", "learningResourceType": "Lesson", "educationalLevel": "Beginner", "inLanguage": "ur", "isPartOf": {"@type": "Course", "name": "C++ Daily Coding"}, "datePublished": "2026-08-05", "publisher": {"@type": "Organization", "name": "FKC Trading Academy"}}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "headline": "Day 12 — Constructors aur Destructors: Objects Ko Initialize aur Clean Karna", "name": "Day 12 — Constructors aur Destructors: Objects Ko Initialize aur Clean Karna", "description": "", "learningResourceType": "Lesson", "educationalLevel": "Beginner", "inLanguage": "ur", "isPartOf": {"@type": "Course", "name": "C++ Daily Coding"}, "datePublished": "2026-08-05", "publisher": {"@type": "Organization", "name": "FKC Trading Academy"}}</script>
     <div class="top"><a href="../../../index.html">← FKC Trading Academy</a>
     <a href="../index.html" class="course-back-link">/ C++ Daily Coding</a></div>
-    
-    <p class="muted">💻 C++ Daily Coding · Day 08</p>
-    <h1>Day 8 — Structures (struct): Custom Data Types Banana</h1>
-    <p class="muted" style="margin:0 0 10px;">↩️ Pichla lesson: <strong>Day 7 — Strings aur String Functions: Text Ko Control Karna Seekho</strong> — aaj is se aage badhte hain.</p>
+    <span class="badge">Latest</span>
+    <p class="muted">💻 C++ Daily Coding · Day 12</p>
+    <h1>Day 12 — Constructors aur Destructors: Objects Ko Initialize aur Clean Karna</h1>
+    <p class="muted" style="margin:0 0 10px;">↩️ Pichla lesson: <strong>Day 11 — **Object-Oriented Programming: Classes aur Objects**</strong> — aaj is se aage badhte hain.</p>
     <div class="card">
       
       
       
       <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
-      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Aaj hum `struct` ke zariye apne khud ke custom data types banayenge. `struct` se hum multiple variables ko ek single unit mein group kar sakte hain. Yeh arrays ki tarah hota hai lekin alag-alag data types ke variables store karne ke liye zyada flexible hai. `struct` se code readable aur organized hota hai.</p><h3>Example</h3><pre dir="ltr"><code>#include &lt;iostream&gt;
-#include &lt;string&gt;
-using namespace std;
-
-struct Student {
-    string name;
-    int age;
-    float gpa;
+      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Jab hum koi object banate hain, uske liye memory allocate hoti hai. **Constructor** ek special function hai jo object ke banne ke waqt automatically call hota hai—yahan hum object ko initial values de sakte hain. **Destructor** bhi ek special function hai jo object ke destroy hone par call hota hai—yahan hum resources (jaise memory) clean kar sakte hain. In dono se hum objects ko better control kar sakte hain.</p><h3>Example</h3><pre dir="ltr"><code>class Car {
+private:
+    string model;
+    int year;
+public:
+    // Constructor (same name as class)
+    Car(string m, int y) {
+        model = m;
+        year = y;
+        cout &lt;&lt; &quot;Car created: &quot; &lt;&lt; model &lt;&lt; endl;
+    }
+    // Destructor
+    ~Car() {
+        cout &lt;&lt; &quot;Car destroyed: &quot; &lt;&lt; model &lt;&lt; endl;
+    }
 };
 
 int main() {
-    Student s1; // struct ka object banaya
-    s1.name = &quot;Ali&quot;;
-    s1.age = 20;
-    s1.gpa = 3.8;
-
-    cout &lt;&lt; &quot;Name: &quot; &lt;&lt; s1.name &lt;&lt; endl;
-    cout &lt;&lt; &quot;Age: &quot; &lt;&lt; s1.age &lt;&lt; endl;
-    cout &lt;&lt; &quot;GPA: &quot; &lt;&lt; s1.gpa &lt;&lt; endl;
-    return 0;
-}</code></pre><h3>Practice</h3><p>Ek `Book` struct banayein jisme `title`, `author`, aur `price` store ho sakte hain. Phir `main()` mein ek book ka object banayein aur uske details print karein.</p><h3>Mini Project</h3><p>Ek `Car` struct banayein jisme `model`, `year`, aur `isElectric` (boolean) ho. 3 cars ke objects banayein aur unki details ek table ki shakal mein print karein.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>کانسیپٹ</h3><p>آج ہم `struct` کے ذریعے اپنے خود کے کسٹم ڈیٹا ٹائپس بنائیں گے۔ `struct` سے ہم ملٹیپل ویری ایبلز کو ایک سنگل یونٹ میں گروپ کر سکتے ہیں۔ یہ arrays کی طرح ہوتا ہے لیکن الگ الگ ڈیٹا ٹائپس کے ویری ایبلز اسٹور کرنے کے لیے زیادہ فلیکسیبل ہے۔ `struct` سے کوڈ پڑھنے میں آسان اور منظم ہوتا ہے۔</p><h3>مثال</h3><pre dir="ltr"><code>#include &lt;iostream&gt;
-#include &lt;string&gt;
-using namespace std;
-
-struct Student {
-    string name;
-    int age;
-    float gpa;
+    Car myCar(&quot;Tesla Model 3&quot;, 2023); // Constructor call
+    return 0; // Destructor call hoga jab program end hoga
+}</code></pre><p>Output:</p><pre dir="ltr"><code>Car created: Tesla Model 3
+Car destroyed: Tesla Model 3</code></pre><h3>Practice</h3><p>Ek `Book` class banaiye jisme `title` aur `author` ho. Constructor mein `cout` se &quot;Book created: [title]&quot; print karein. Destructor mein &quot;Book destroyed: [title]&quot; print karein. `main()` mein do objects banaiye aur unko destroy hone do.</p><h3>Mini Project</h3><p>Ek `Student` class banaiye jisme `name`, `rollNo`, aur `marks` ho. Constructor mein `marks` ko initialize karein, aur ek function `display()` banaiye jo student ki details print kare. `main()` mein 3 students ke objects banaiye aur unki details display karein.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>کنسیپٹ</h3><p>جب ہم کوئی آبجیکٹ بناتے ہیں تو اس کے لیے میموری الاٹ ہوتی ہے۔ **کنسٹرکٹر** ایک خصوصی فنکشن ہوتا ہے جو آبجیکٹ بننے کے وقت خود بخود کال ہوتا ہے—یہاں ہم آبجیکٹ کو ابتدائی ویلیوز دے سکتے ہیں۔ **ڈسٹرکٹر** بھی ایک خصوصی فنکشن ہوتا ہے جو آبجیکٹ کے تباہ ہونے پر کال ہوتا ہے—یہاں ہم ریسورسز (جیسے میموری) کلین کر سکتے ہیں۔ ان دونوں سے ہم آبجیکٹس کو بہتر کنٹرول کر سکتے ہیں۔</p><h3>مثال</h3><pre dir="ltr"><code>class Car {
+private:
+    string model;
+    int year;
+public:
+    // Constructor (same name as class)
+    Car(string m, int y) {
+        model = m;
+        year = y;
+        cout &lt;&lt; &quot;Car created: &quot; &lt;&lt; model &lt;&lt; endl;
+    }
+    // Destructor
+    ~Car() {
+        cout &lt;&lt; &quot;Car destroyed: &quot; &lt;&lt; model &lt;&lt; endl;
+    }
 };
 
 int main() {
-    Student s1; // struct کا آبجیکٹ بنایا
-    s1.name = &quot;Ali&quot;;
-    s1.age = 20;
-    s1.gpa = 3.8;
-
-    cout &lt;&lt; &quot;Name: &quot; &lt;&lt; s1.name &lt;&lt; endl;
-    cout &lt;&lt; &quot;Age: &quot; &lt;&lt; s1.age &lt;&lt; endl;
-    cout &lt;&lt; &quot;GPA: &quot; &lt;&lt; s1.gpa &lt;&lt; endl;
-    return 0;
-}</code></pre><h3>مشق</h3><p>ایک `Book` struct بنائیں جس میں `title`، `author`، اور `price` اسٹور ہو سکتے ہیں۔ پھر `main()` میں ایک book کا آبجیکٹ بنائیں اور اس کی تفصیلات پرنٹ کریں۔</p><h3>منی پروجیکٹ</h3><p>ایک `Car` struct بنائیں جس میں `model`، `year`، اور `isElectric` (boolean) ہو۔ 3 cars کے آبجیکٹس بنائیں اور ان کی تفصیلات ایک ٹیبل کی شکل میں پرنٹ کریں۔</p></div>
+    Car myCar(&quot;Tesla Model 3&quot;, 2023); // Constructor call
+    return 0; // Destructor call hoga jab program end hoga
+}</code></pre><p>آؤٹ پٹ:</p><pre dir="ltr"><code>Car created: Tesla Model 3
+Car destroyed: Tesla Model 3</code></pre><h3>پریکٹس</h3><p>ایک `Book` کلاس بنائیے جس میں `title` اور `author` ہوں۔ کنسٹرکٹر میں `cout` سے &quot;Book created: [title]&quot; پرنٹ کریں۔ ڈسٹرکٹر میں &quot;Book destroyed: [title]&quot; پرنٹ کریں۔ `main()` میں دو آبجیکٹس بنائیے اور انہیں تباہ ہونے دیں۔</p><h3>منی پروجیکٹ</h3><p>ایک `Student` کلاس بنائیے جس میں `name`، `rollNo`، اور `marks` ہوں۔ کنسٹرکٹر میں `marks` کو انیشیئلائز کریں، اور ایک فنکشن `display()` بنائیے جو طالب علم کی تفصیلات پرنٹ کرے۔ `main()` میں تین طالب علموں کے آبجیکٹس بنائیے اور ان کی تفصیلات ڈسپلے کریں۔</p></div>
       
       
-      <div class="quiz-box no-print">
-        <p><b>📝 Apna Practice Check Karein</b></p>
-        <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
-        <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
-        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"title, author, price, car, model, year, iselectric"'>✅ Check Karein</button>
-        <div class="quiz-result" id="fkc-quiz-result"></div>
-      </div>
-      <script>
-      function fkcCheckQuiz(btn){
-        var keys = JSON.parse(btn.getAttribute("data-keys"));
-        var ans = (document.getElementById("fkc-quiz-answer").value || "").toLowerCase();
-        var hit = 0;
-        keys.forEach(function(k){ if(k && ans.indexOf(k) !== -1) hit++; });
-        var el = document.getElementById("fkc-quiz-result");
-        if(hit === 0){
-          el.textContent = "Koi keyword match nahi hua — dobara try karein ya lesson dobara parhein.";
-          el.style.color = "#D97706";
-        } else {
-          el.textContent = "✅ " + hit + "/" + keys.length + " keywords match hue — shabaash!";
-          el.style.color = "var(--accent)";
-        }
-      }
-      </script>
       
-      <div class="puzzle-box no-print" id="pz-cpp-daily-coding-8">
+      <div class="puzzle-box no-print" id="pz-cpp-daily-coding-12">
         <h3>🧩 Dimaghi Kasrat — Jode Milayein</h3>
-        <p class="puzzle-status" id="pz-cpp-daily-coding-8-status">Cards par tap karke jode (pairs) milayein.</p>
-        <div class="puzzle-grid" id="pz-cpp-daily-coding-8-grid"></div>
-        <div class="puzzle-win" id="pz-cpp-daily-coding-8-win">🎉 Shabaash! Sab jode mil gaye — thodi der aur seekhne ke liye tayyar?</div>
+        <p class="puzzle-status" id="pz-cpp-daily-coding-12-status">Cards par tap karke jode (pairs) milayein.</p>
+        <div class="puzzle-grid" id="pz-cpp-daily-coding-12-grid"></div>
+        <div class="puzzle-win" id="pz-cpp-daily-coding-12-win">🎉 Shabaash! Sab jode mil gaye — thodi der aur seekhne ke liye tayyar?</div>
       </div>
       <script>
       (function(){
-        var emojis = ["🎈", "🧩", "🎵", "🐢", "🌈", "⚽"];
+        var emojis = ["🎯", "📚", "⭐", "🚀", "💡", "🏆"];
         var deck = emojis.concat(emojis);
         for (var i = deck.length - 1; i > 0; i--) {
           var j = Math.floor(Math.random() * (i + 1));
           var t = deck[i]; deck[i] = deck[j]; deck[j] = t;
         }
-        var grid = document.getElementById("pz-cpp-daily-coding-8-grid");
-        var statusEl = document.getElementById("pz-cpp-daily-coding-8-status");
-        var winEl = document.getElementById("pz-cpp-daily-coding-8-win");
+        var grid = document.getElementById("pz-cpp-daily-coding-12-grid");
+        var statusEl = document.getElementById("pz-cpp-daily-coding-12-status");
+        var winEl = document.getElementById("pz-cpp-daily-coding-12-win");
         var flipped = [], matchedCount = 0, moves = 0, lock = false;
         deck.forEach(function(val){
           var b = document.createElement("button");
@@ -356,24 +335,24 @@ int main() {
       
       <div class="no-print" style="margin-top:14px;">
         <label for="fkc-notes" class="muted" style="display:block;margin-bottom:4px;">📝 Apni Note (sirf aapke is browser mein save hoti hai):</label>
-        <textarea id="fkc-notes" data-slug="cpp-daily-coding" data-lesson="day-008"
+        <textarea id="fkc-notes" data-slug="cpp-daily-coding" data-lesson="day-012"
           placeholder="Yahan apni note likhein..." rows="3"
           style="width:100%;border-radius:10px;border:1px solid #ddd;padding:8px;font-family:inherit;"
           oninput="fkcSaveNote(this)"></textarea>
       </div>
     
       <div class="no-print">
-        <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20C%2B%2B%20Daily%20Coding%20%28Day%2008%29%0A%0ADay%208%20%E2%80%94%20Structures%20%28struct%29%3A%20Custom%20Data%20Types%20Banana%0A%0AConcept%3A%0AAaj%20hum%20%60struct%60%20ke%20zariye%20apne%20khud%20ke%20custom%20data%20types%20banayenge.%20%60struct%60%20se%20hum%20multiple%20variables%20ko%20ek%20single%20unit%20mein%20group%20kar%20sakte%20hain.%20Yeh%20arrays%20ki%20tarah%20hota%20hai%20lekin%20alag-alag%20data%20types%20ke%20variables%20store%20karne%20ke%20liye%20zyada%20flexible%20hai.%20%60struct%60%20se%20code%20readable%20aur%20organized%20hota%20hai.%0A%0AExample%3A%0A%60%60%60cpp%0A%23include%20%3Ciostream%3E%0A%23include%20%3Cstring%3E%0Ausing%20namespace%20std%3B%0A%0Astruct%20Student%20%7B%0A%20%20%20%20string%20name%3B%0A%20%20%20%20int%20age%3B%0A%20%20%20%20float%20gpa%3B%0A%7D%3B%0A%0Aint%20main%28%29%20%7B%0A%20%20%20%20Student%20s1%3B%20//%20struct%20ka%20object%20banaya%0A%20%20%20%20s1.name%20%3D%20%22Ali%22%3B%0A%20%20%20%20s1.age%20%3D%2020%3B%0A%20%20%20%20s1.gpa%20%3D%203.8%3B%0A%0A%20%20%20%20cout%20%3C%3C%20%22Name%3A%20%22%20%3C%3C%20s1.name%20%3C%3C%20endl%3B%0A%20%20%20%20cout%20%3C%3C%20%22Age%3A%20%22%20%3C%3C%20s1.age%20%3C%3C%20endl%3B%0A%20%20%20%20cout%20%3C%3C%20%22GPA%3A%20%22%20%3C%3C%20s1.gpa%20%3C%3C%20endl%3B%0A%20%20%20%20return%200%3B%0A%7D%0A%60%60%60%0A%0APractice%3A%0AEk%20%60Book%60%20struct%20banayein%20jisme%20%60title%60%2C%20%60author%60%2C%20aur%20%60price%60%20store%20ho%20sakte%20hain.%20Phir%20%60main%28%29%60%20mein%20ek%20book%20ka%20object%20banayein%20aur%20uske%20details%20print%20karein.%0A%0AMini%20Project%3A%0AEk%20%60Car%60%20struct%20banayein%20jisme%20%60model%60%2C%20%60year%60%2C%20aur%20%60isElectric%60%20%28boolean%29%20ho.%203%20cars%20ke%20objects%20banayein%20aur%20unki%20details%20ek%20table%20ki%20shakal%20mein%20print%20karein.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
+        <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20C%2B%2B%20Daily%20Coding%20%28Day%2012%29%0A%0ADay%2012%20%E2%80%94%20Constructors%20aur%20Destructors%3A%20Objects%20Ko%20Initialize%20aur%20Clean%20Karna%0A%0AConcept%3A%0AJab%20hum%20koi%20object%20banate%20hain%2C%20uske%20liye%20memory%20allocate%20hoti%20hai.%20%2A%2AConstructor%2A%2A%20ek%20special%20function%20hai%20jo%20object%20ke%20banne%20ke%20waqt%20automatically%20call%20hota%20hai%E2%80%94yahan%20hum%20object%20ko%20initial%20values%20de%20sakte%20hain.%20%2A%2ADestructor%2A%2A%20bhi%20ek%20special%20function%20hai%20jo%20object%20ke%20destroy%20hone%20par%20call%20hota%20hai%E2%80%94yahan%20hum%20resources%20%28jaise%20memory%29%20clean%20kar%20sakte%20hain.%20In%20dono%20se%20hum%20objects%20ko%20better%20control%20kar%20sakte%20hain.%0A%0AExample%3A%0A%60%60%60cpp%0Aclass%20Car%20%7B%0Aprivate%3A%0A%20%20%20%20string%20model%3B%0A%20%20%20%20int%20year%3B%0Apublic%3A%0A%20%20%20%20//%20Constructor%20%28same%20name%20as%20class%29%0A%20%20%20%20Car%28string%20m%2C%20int%20y%29%20%7B%0A%20%20%20%20%20%20%20%20model%20%3D%20m%3B%0A%20%20%20%20%20%20%20%20year%20%3D%20y%3B%0A%20%20%20%20%20%20%20%20cout%20%3C%3C%20%22Car%20created%3A%20%22%20%3C%3C%20model%20%3C%3C%20endl%3B%0A%20%20%20%20%7D%0A%20%20%20%20//%20Destructor%0A%20%20%20%20~Car%28%29%20%7B%0A%20%20%20%20%20%20%20%20cout%20%3C%3C%20%22Car%20destroyed%3A%20%22%20%3C%3C%20model%20%3C%3C%20endl%3B%0A%20%20%20%20%7D%0A%7D%3B%0A%0Aint%20main%28%29%20%7B%0A%20%20%20%20Car%20myCar%28%22Tesla%20Model%203%22%2C%202023%29%3B%20//%20Constructor%20call%0A%20%20%20%20return%200%3B%20//%20Destructor%20call%20hoga%20jab%20program%20end%20hoga%0A%7D%0A%60%60%60%0AOutput%3A%0A%60%60%60%0ACar%20created%3A%20Tesla%20Model%203%0ACar%20destroyed%3A%20Tesla%20Model%203%0A%60%60%60%0A%0APractice%3A%0AEk%20%60Book%60%20class%20banaiye%20jisme%20%60title%60%20aur%20%60author%60%20ho.%20Constructor%20mein%20%60cout%60%20se%20%22Book%20created%3A%20%5Btitle%5D%22%20print%20karein.%20Destructor%20mein%20%22Book%20destroyed%3A%20%5Btitle%5D%22%20print%20karein.%20%60main%28%29%60%20mein%20do%20objects%20banaiye%20aur%20unko%20destroy%20hone%20do.%0A%0AMini%20Project%3A%0AEk%20%60Student%60%20class%20banaiye%20jisme%20%60name%60%2C%20%60rollNo%60%2C%20aur%20%60marks%60%20ho.%20Constructor%20mein%20%60marks%60%20ko%20initialize%20karein%2C%20aur%20ek%20function%20%60display%28%29%60%20banaiye%20jo%20student%20ki%20details%20print%20kare.%20%60main%28%29%60%20mein%203%20students%20ke%20objects%20banaiye%20aur%20unki%20details%20display%20karein.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
         <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
       <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
-          data-slug="cpp-daily-coding" data-lesson="day-008"
+          data-slug="cpp-daily-coding" data-lesson="day-012"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <div class="lesson-nav"><a class="btn alt" href="2026-08-05-day-007.html">← Day 7 — Strings aur String Functions: Text Ko Control Karna Seekho</a><a class="btn alt" href="2026-08-05-day-009.html">Day 9 — **Pointers: Memory Addresses Ko Samajhna Aur Use Karna** →</a></div>
+    <div class="lesson-nav"><a class="btn alt" href="2026-08-05-day-011.html">← Day 11 — **Object-Oriented Programming: Classes aur Objects**</a><span></span></div>
     <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
     
     
@@ -390,9 +369,9 @@ int main() {
           slug: "cpp-daily-coding",
           courseName: "C++ Daily Coding",
           courseIcon: "\ud83d\udcbb",
-          title: "Day 8 \u2014 Structures (struct): Custom Data Types Banana",
-          href: 'courses/cpp-daily-coding/posts/2026-08-05-day-008.html',
-          day: 8
+          title: "Day 12 \u2014 Constructors aur Destructors: Objects Ko Initialize aur Clean Karna",
+          href: 'courses/cpp-daily-coding/posts/2026-08-05-day-012.html',
+          day: 12
         }));
       } catch (e) {}
       var ta = document.getElementById('fkc-notes');

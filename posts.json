@@ -3022,6 +3022,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 12,
+      "id": "day-012",
+      "date": "2026-08-05",
+      "title": "Day 12 — Constructors aur Destructors: Objects Ko Initialize aur Clean Karna",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Jab hum koi object banate hain, uske liye memory allocate hoti hai. **Constructor** ek special function hai jo object ke banne ke waqt automatically call hota hai—yahan hum object ko initial values de sakte hain. **Destructor** bhi ek special function hai jo object ke destroy hone par call hota hai—yahan hum resources (jaise memory) clean kar sakte hain. In dono se hum objects ko better control kar sakte hain."
+        ],
+        [
+          "Example",
+          "```cpp\nclass Car {\nprivate:\n    string model;\n    int year;\npublic:\n    // Constructor (same name as class)\n    Car(string m, int y) {\n        model = m;\n        year = y;\n        cout << \"Car created: \" << model << endl;\n    }\n    // Destructor\n    ~Car() {\n        cout << \"Car destroyed: \" << model << endl;\n    }\n};\n\nint main() {\n    Car myCar(\"Tesla Model 3\", 2023); // Constructor call\n    return 0; // Destructor call hoga jab program end hoga\n}\n```\nOutput:\n```\nCar created: Tesla Model 3\nCar destroyed: Tesla Model 3\n```"
+        ],
+        [
+          "Practice",
+          "Ek `Book` class banaiye jisme `title` aur `author` ho. Constructor mein `cout` se \"Book created: [title]\" print karein. Destructor mein \"Book destroyed: [title]\" print karein. `main()` mein do objects banaiye aur unko destroy hone do."
+        ],
+        [
+          "Mini Project",
+          "Ek `Student` class banaiye jisme `name`, `rollNo`, aur `marks` ho. Constructor mein `marks` ko initialize karein, aur ek function `display()` banaiye jo student ki details print kare. `main()` mein 3 students ke objects banaiye aur unki details display karein."
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۲ — کنسٹرکٹرس اور ڈسٹرکٹرس: آبجیکٹس کو انیشیئلائز اور کلین کرنا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "جب ہم کوئی آبجیکٹ بناتے ہیں تو اس کے لیے میموری الاٹ ہوتی ہے۔ **کنسٹرکٹر** ایک خصوصی فنکشن ہوتا ہے جو آبجیکٹ بننے کے وقت خود بخود کال ہوتا ہے—یہاں ہم آبجیکٹ کو ابتدائی ویلیوز دے سکتے ہیں۔ **ڈسٹرکٹر** بھی ایک خصوصی فنکشن ہوتا ہے جو آبجیکٹ کے تباہ ہونے پر کال ہوتا ہے—یہاں ہم ریسورسز (جیسے میموری) کلین کر سکتے ہیں۔ ان دونوں سے ہم آبجیکٹس کو بہتر کنٹرول کر سکتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "```cpp\nclass Car {\nprivate:\n    string model;\n    int year;\npublic:\n    // Constructor (same name as class)\n    Car(string m, int y) {\n        model = m;\n        year = y;\n        cout << \"Car created: \" << model << endl;\n    }\n    // Destructor\n    ~Car() {\n        cout << \"Car destroyed: \" << model << endl;\n    }\n};\n\nint main() {\n    Car myCar(\"Tesla Model 3\", 2023); // Constructor call\n    return 0; // Destructor call hoga jab program end hoga\n}\n```\nآؤٹ پٹ:\n```\nCar created: Tesla Model 3\nCar destroyed: Tesla Model 3\n```"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "ایک `Book` کلاس بنائیے جس میں `title` اور `author` ہوں۔ کنسٹرکٹر میں `cout` سے \"Book created: [title]\" پرنٹ کریں۔ ڈسٹرکٹر میں \"Book destroyed: [title]\" پرنٹ کریں۔ `main()` میں دو آبجیکٹس بنائیے اور انہیں تباہ ہونے دیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک `Student` کلاس بنائیے جس میں `name`، `rollNo`، اور `marks` ہوں۔ کنسٹرکٹر میں `marks` کو انیشیئلائز کریں، اور ایک فنکشن `display()` بنائیے جو طالب علم کی تفصیلات پرنٹ کرے۔ `main()` میں تین طالب علموں کے آبجیکٹس بنائیے اور ان کی تفصیلات ڈسپلے کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "python-programming": [
