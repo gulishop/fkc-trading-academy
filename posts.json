@@ -4265,5 +4265,57 @@
         }
       }
     }
+  ],
+  "kids-good-behavior": [
+    {
+      "day": 1,
+      "id": "day-001",
+      "date": "2026-08-05",
+      "title": "Day 1 — \"Adaab ki Jadoo: Please, Thank You, Sorry\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachon, humein rozana bohat se logon se milte hain. Unse baat karte waqt 'Please', 'Thank You', aur 'Sorry' kehtay hain. Yehi hamari 'Adaab ki Jadoo' hain. Agar hum yeh shabd achi tarah istemal karen, to sab humse khush rehte hain aur hum bhi khush rehte hain."
+        ],
+        [
+          "Chhoti Kahani",
+          "Rahim ne apne dost Ali ko apna pencil doya. Ali ne kaha, \"Thank You, Rahim bhai!\" Rahim ko bhi bahut khushi hui. Ek din Ali ne apne cycle se Rahim ko lift di. Rahim ne kaha, \"Please, Ali bhai, cycle par bitha do.\" Ali ne muskurate hue kaha, \"Bilkul!\" Is tarah, dono dost khush rehte hain."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, kal tumne kisi ko 'Thank You' kaha tha? Usne kaise jawab diya?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Hamesha 'Please', 'Thank You', aur 'Sorry' kehtay raho. Isse sab tumse khush rehte hain!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "Day 1 — \"ادب کی جادو: Please، Thank You، Sorry\"",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "بچو، ہمیں روزانہ بہت سے لوگوں سے ملتے ہیں۔ ان سے بات کرتے وقت 'Please'، 'Thank You'، اور 'Sorry' کہتے ہیں۔ یہی ہماری 'ادب کی جادو' ہیں۔ اگر ہم یہ الفاظ اچھی طرح استعمال کریں تو سب ہم سے خوش رہتے ہیں اور ہم بھی خوش رہتے ہیں۔"
+            },
+            {
+              "label": "Chhoti Kahani",
+              "content": "رحیم نے اپنے دوست علی کو اپنا پنسل دیا۔ علی نے کہا، \"Thank You، رحیم بھائی!\" رحیم کو بھی بہت خوشی ہوئی۔ ایک دن علی نے اپنے سائیکل سے رحیم کو لفت دی۔ رحیم نے کہا، \"Please، علی بھائی، سائیکل پر بٹھاؤ۔\" علی نے مسکراتے ہوئے کہا، \"بالکل!\" اس طرح، دونوں دوست خوش رہتے ہیں۔"
+            },
+            {
+              "label": "Ammi Abbu Ke Sath Baat Karein",
+              "content": "بٹا، کل تم نے کسی کو 'Thank You' کہا تھا؟ اس نے کیسے جواب دیا؟"
+            },
+            {
+              "label": "Yaad Rakhein",
+              "content": "ہمیشہ 'Please'، 'Thank You'، اور 'Sorry' کہتے رہو۔ اس سے سب تم سے خوش رہتے ہیں!"
+            }
+          ]
+        }
+      }
+    }
   ]
 }
