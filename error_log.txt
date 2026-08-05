@@ -189,3 +189,9 @@
 [2026-08-05T22:23:11.592220] [print-on-demand] Day 1 video skip: Agnes aur ffmpeg dono attempts fail.
 [2026-08-05T22:24:41.487028] [print-on-demand] Day 2 video skip: Agnes aur ffmpeg dono attempts fail.
 [2026-08-05T22:26:30.341173] [print-on-demand] Day 3 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-05T22:39:13.053577] [forex-trading] Day 1 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-05T22:40:33.951679] [forex-trading] Day 2 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-05T22:42:00.212840] [forex-trading] Day 3 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-05T22:43:19.940984] [forex-trading] Day 4 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-05T22:44:39.562581] [forex-trading] Day 5 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-05T22:46:01.683626] [forex-trading] Day 6 video skip: Agnes aur ffmpeg dono attempts fail.
