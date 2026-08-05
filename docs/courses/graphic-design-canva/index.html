@@ -9,6 +9,16 @@
 <meta property="og:description" content="Bina design background ke professional graphics banayein">
 <meta property="og:image" content="../../logo.png">
 <meta name="twitter:card" content="summary_large_image">
+<script>
+// Dark mode — theme paint se pehle set karte hain taake flash na ho.
+(function(){
+  try{
+    var t = localStorage.getItem("fkc_theme") ||
+      (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", t);
+  }catch(e){}
+})();
+</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z5FV45KG2C"></script>
 <script>
@@ -22,7 +32,7 @@
 <link rel="icon" href="../../logo.png">
 <link rel="manifest" href="../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-05T06:14:47.401533";
+  var FKC_BUILD = "2026-08-05T06:29:20.641722";
   function fkcCheckVersion(){
     fetch("../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -46,6 +56,15 @@
 :root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
 --ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
 --accent:#2BAF66;--purple:#6D28D9;}
+html[data-theme="dark"]{--paper:#14161A;--panel:#1D2025;--line:#2C3038;
+--ink:#EDEFF2;--muted:#9AA1AB;--primary:#5B9DFF;--primary-dark:#3D7DE0;
+--accent:#3FCB7E;--purple:#A78BFA;}
+html[data-theme="dark"] img{opacity:.92;}
+.theme-toggle{position:fixed;bottom:16px;right:16px;z-index:999;
+width:44px;height:44px;border-radius:50%;border:1px solid var(--line);
+background:var(--panel);color:var(--ink);font-size:19px;cursor:pointer;
+box-shadow:0 2px 8px rgba(0,0,0,.15);display:flex;align-items:center;
+justify-content:center;}
 *{box-sizing:border-box;}
 @media (prefers-reduced-motion: no-preference){
   .fade-in{animation:fadeUp .45s ease both;}
@@ -53,7 +72,8 @@
   @keyframes fadeUp{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
 }
 body{margin:0;background:var(--paper);color:var(--ink);
-font-family:'Inter','IBM Plex Sans',sans-serif;line-height:1.55;}
+font-family:'Inter','IBM Plex Sans',sans-serif;line-height:1.55;
+transition:background .2s ease,color .2s ease;}
 .wrap{max-width:720px;margin:0 auto;padding:24px 16px 70px;}
 a{color:var(--primary);}
 .top{display:flex;align-items:baseline;gap:10px;color:var(--ink);
@@ -190,7 +210,16 @@ background:#EAFBF0;border-radius:10px;padding:12px;font-weight:700;color:#15803d
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
+<button type="button" class="theme-toggle" id="fkcThemeToggle" title="Dark/Light mode" onclick="fkcToggleTheme()">🌓</button>
+<script>
+function fkcToggleTheme(){
+  var cur = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", cur);
+  try{ localStorage.setItem("fkc_theme", cur); }catch(e){}
+}
+</script>
 
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Course", "name": "Graphic Design (Canva)", "description": "Bina design background ke professional graphics banayein", "provider": {"@type": "Organization", "name": "FKC Trading Academy"}, "numberOfCredits": 2, "inLanguage": "ur"}</script>
     <div class="top"><a href="../../index.html">← FKC Trading Academy</a></div>
     <h1>🎨 Graphic Design (Canva)</h1>
     <p class="muted">Bina design background ke professional graphics banayein</p>
@@ -205,6 +234,12 @@ background:#EAFBF0;border-radius:10px;padding:12px;font-weight:700;color:#15803d
         onclick="fkcApplyCertificate('graphic-design-canva', "Graphic Design (Canva)", "Rs. 500")">
         🎓 Certificate ke liye Apply Karein
       </button>
+      
+      <div class="no-print" style="margin-top:10px;border-top:1px solid var(--line);padding-top:10px;">
+        <p class="muted" style="margin:0 0 6px;font-size:13px;">🔄 Progress doosri device par le jayein</p>
+        <button type="button" class="btn alt" onclick="fkcShowSyncCode()">📤 Code Banayein</button>
+        <button type="button" class="btn alt" onclick="fkcEnterSyncCode()">📥 Code Se Wapas Layein</button>
+      </div>
     </div>
     <div class="plist"><a href="posts/2026-08-04-day-002.html"><span class="d">02</span>Day 2 — Smart Typography: Fonts aur Unka Magic</a><a href="posts/2026-08-03-day-001.html"><span class="d">01</span>Day 1 — Canva Ka Pehla Parichay: Interface aur Basic Controls</a></div>
     
@@ -360,6 +395,25 @@ background:#EAFBF0;border-radius:10px;padding:12px;font-weight:700;color:#15803d
     window.open(wa, "_blank");
   };
 
+  window.fkcShowSyncCode = function(){
+    if(!window.fkcSyncProgressUp){ alert("Sync abhi ready nahi (Firebase load ho raha hai), thodi dair mein try karein."); return; }
+    var code = Math.random().toString(36).substring(2,8).toUpperCase();
+    window.fkcSyncProgressUp(code, function(ok){
+      if(ok) alert("Yeh code doosri device par 'Code Se Wapas Layein' mein daalein:\n\n" + code);
+      else alert("Sync fail ho gaya, dobara try karein.");
+    });
+  };
+
+  window.fkcEnterSyncCode = function(){
+    if(!window.fkcSyncProgressDown){ alert("Sync abhi ready nahi (Firebase load ho raha hai), thodi dair mein try karein."); return; }
+    var code = prompt("Wo code daalein jo pehli device par bana tha:");
+    if(!code || !code.trim()) return;
+    window.fkcSyncProgressDown(code.trim().toUpperCase(), function(ok){
+      if(ok){ alert("Progress wapas aa gayi ✅"); location.reload(); }
+      else alert("Yeh code nahi mila, dobara check karein.");
+    });
+  };
+
   document.addEventListener("DOMContentLoaded", function(){
     var btn = document.getElementById("fkc-complete-btn");
     if(btn){
@@ -427,6 +481,27 @@ background:#EAFBF0;border-radius:10px;padding:12px;font-weight:700;color:#15803d
           created: firebase.firestore.FieldValue.serverTimestamp()
         });
       }catch(e){}
+    };
+
+    window.fkcSyncProgressUp = function(code, onDone){
+      try{
+        var data = localStorage.getItem("fkc_progress") || "{}";
+        window.fkcDb.collection("progress_sync").doc(code).set({
+          progress: data, updated: firebase.firestore.FieldValue.serverTimestamp()
+        }).then(function(){ if(onDone) onDone(true); })
+          .catch(function(){ if(onDone) onDone(false); });
+      }catch(e){ if(onDone) onDone(false); }
+    };
+
+    window.fkcSyncProgressDown = function(code, onDone){
+      try{
+        window.fkcDb.collection("progress_sync").doc(code).get().then(function(doc){
+          if(doc.exists && doc.data().progress){
+            localStorage.setItem("fkc_progress", doc.data().progress);
+            if(onDone) onDone(true);
+          } else { if(onDone) onDone(false); }
+        }).catch(function(){ if(onDone) onDone(false); });
+      }catch(e){ if(onDone) onDone(false); }
     };
   }catch(e){}
 })();

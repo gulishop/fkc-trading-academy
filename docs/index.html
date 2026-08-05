@@ -9,6 +9,16 @@
 <meta property="og:description" content="Har course ka daily lesson, step-by-step. Learn · Earn · Grow.">
 <meta property="og:image" content="logo.png">
 <meta name="twitter:card" content="summary_large_image">
+<script>
+// Dark mode — theme paint se pehle set karte hain taake flash na ho.
+(function(){
+  try{
+    var t = localStorage.getItem("fkc_theme") ||
+      (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", t);
+  }catch(e){}
+})();
+</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z5FV45KG2C"></script>
 <script>
@@ -22,7 +32,7 @@
 <link rel="icon" href="logo.png">
 <link rel="manifest" href="manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-05T06:14:47.401533";
+  var FKC_BUILD = "2026-08-05T06:29:20.641722";
   function fkcCheckVersion(){
     fetch("version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -46,6 +56,15 @@
 :root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
 --ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
 --accent:#2BAF66;--purple:#6D28D9;}
+html[data-theme="dark"]{--paper:#14161A;--panel:#1D2025;--line:#2C3038;
+--ink:#EDEFF2;--muted:#9AA1AB;--primary:#5B9DFF;--primary-dark:#3D7DE0;
+--accent:#3FCB7E;--purple:#A78BFA;}
+html[data-theme="dark"] img{opacity:.92;}
+.theme-toggle{position:fixed;bottom:16px;right:16px;z-index:999;
+width:44px;height:44px;border-radius:50%;border:1px solid var(--line);
+background:var(--panel);color:var(--ink);font-size:19px;cursor:pointer;
+box-shadow:0 2px 8px rgba(0,0,0,.15);display:flex;align-items:center;
+justify-content:center;}
 *{box-sizing:border-box;}
 @media (prefers-reduced-motion: no-preference){
   .fade-in{animation:fadeUp .45s ease both;}
@@ -53,7 +72,8 @@
   @keyframes fadeUp{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
 }
 body{margin:0;background:var(--paper);color:var(--ink);
-font-family:'Inter','IBM Plex Sans',sans-serif;line-height:1.55;}
+font-family:'Inter','IBM Plex Sans',sans-serif;line-height:1.55;
+transition:background .2s ease,color .2s ease;}
 .wrap{max-width:720px;margin:0 auto;padding:24px 16px 70px;}
 a{color:var(--primary);}
 .top{display:flex;align-items:baseline;gap:10px;color:var(--ink);
@@ -190,6 +210,14 @@ background:#EAFBF0;border-radius:10px;padding:12px;font-weight:700;color:#15803d
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
+<button type="button" class="theme-toggle" id="fkcThemeToggle" title="Dark/Light mode" onclick="fkcToggleTheme()">🌓</button>
+<script>
+function fkcToggleTheme(){
+  var cur = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", cur);
+  try{ localStorage.setItem("fkc_theme", cur); }catch(e){}
+}
+</script>
 
     <div class="top"><span>FKC Trading Academy</span>
     <span class="lbl">Digital Hub — apni pasand ka course chunein</span></div>
@@ -386,11 +414,11 @@ background:#EAFBF0;border-radius:10px;padding:12px;font-weight:700;color:#15803d
       <div class="body">
         <h2>C++ Daily Coding</h2>
         <p class="tag">C++ zero se seekhein — roz ek naya coding lesson, practice ke sath</p>
-        <p class="latest">📖 Day 7 — Strings aur String Functions: Text Ko Control Karna Seekho</p>
+        <p class="latest">📖 Day 8 — Structures (struct): Custom Data Types Banana</p>
         <p class="tag" style="margin-top:4px">🕒 Roz 2:50 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="cpp-daily-coding" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('cpp-daily-coding', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#DB4C77"><span class="stub-n" style="color:#DB4C77">07</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#DB4C77"><span class="stub-n" style="color:#DB4C77">08</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/python-programming/index.html">
       <div class="stamp" style="--accent-bg:#0056D21a;color:#0056D2">🐍</div>

@@ -117,3 +117,10 @@
 [2026-08-05T06:18:41.234901] [cpp-daily-coding] Day 6 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: Arabic-script ratio kaafi kam hai (0.0)
 [2026-08-05T06:19:57.334609] [cpp-daily-coding] Day 7 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: Arabic-script ratio kaafi kam hai (0.0)
 [2026-08-05T06:21:27.939275] [cpp-daily-coding] Day 7 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-05T06:30:16.967960] [cpp-daily-coding] Day 2 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: Arabic-script ratio kaafi kam hai (0.0)
+[2026-08-05T06:31:14.731326] [cpp-daily-coding] Day 4 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: Arabic-script ratio kaafi kam hai (0.0)
+[2026-08-05T06:32:15.213585] [cpp-daily-coding] Day 5 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: Arabic-script ratio kaafi kam hai (0.0)
+[2026-08-05T06:33:11.684220] [cpp-daily-coding] Day 6 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: Arabic-script ratio kaafi kam hai (0.0)
+[2026-08-05T06:34:11.504591] [cpp-daily-coding] Day 7 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: Arabic-script ratio kaafi kam hai (0.0)
+[2026-08-05T06:35:22.305559] [cpp-daily-coding] Day 8 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: Arabic-script ratio kaafi kam hai (0.0)
+[2026-08-05T06:36:52.919524] [cpp-daily-coding] Day 8 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error

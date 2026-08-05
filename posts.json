@@ -2703,6 +2703,33 @@
       ],
       "answer_key": "c++, position, not found",
       "translations": {}
+    },
+    {
+      "day": 8,
+      "id": "day-008",
+      "date": "2026-08-05",
+      "title": "Day 8 — Structures (struct): Custom Data Types Banana",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum `struct` ke zariye apne khud ke custom data types banayenge. `struct` se hum multiple variables ko ek single unit mein group kar sakte hain. Yeh arrays ki tarah hota hai lekin alag-alag data types ke variables store karne ke liye zyada flexible hai. `struct` se code readable aur organized hota hai."
+        ],
+        [
+          "Example",
+          "```cpp\n#include <iostream>\n#include <string>\nusing namespace std;\n\nstruct Student {\n    string name;\n    int age;\n    float gpa;\n};\n\nint main() {\n    Student s1; // struct ka object banaya\n    s1.name = \"Ali\";\n    s1.age = 20;\n    s1.gpa = 3.8;\n\n    cout << \"Name: \" << s1.name << endl;\n    cout << \"Age: \" << s1.age << endl;\n    cout << \"GPA: \" << s1.gpa << endl;\n    return 0;\n}\n```"
+        ],
+        [
+          "Practice",
+          "Ek `Book` struct banayein jisme `title`, `author`, aur `price` store ho sakte hain. Phir `main()` mein ek book ka object banayein aur uske details print karein."
+        ],
+        [
+          "Mini Project",
+          "Ek `Car` struct banayein jisme `model`, `year`, aur `isElectric` (boolean) ho. 3 cars ke objects banayein aur unki details ek table ki shakal mein print karein."
+        ]
+      ],
+      "answer_key": "title, author, price, car, model, year, iselectric",
+      "translations": {}
     }
   ],
   "python-programming": [
