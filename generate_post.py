@@ -58,6 +58,247 @@ except ImportError:
     PIL_AVAILABLE = False
 
 # ---------------------------------------------------------------------
+# APP DOWNLOAD POPUP — FKC Virtual University App
+# ---------------------------------------------------------------------
+APP_DOWNLOAD_URL = "https://www.mediafire.com/file/7dm0zrj5zm6n1cl/FKC_VIRTUAL_UNIVERSITY.apk/file"
+APP_POPUP_ENABLED = True  # Set to False to disable popup
+
+def app_install_popup_html():
+    """Popup message for FKC Virtual University App download - shows once per session"""
+    return """
+    <style>
+    #fkc-app-popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.7);
+        z-index: 100000;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        animation: fadeIn 0.5s ease;
+    }
+    #fkc-app-popup.show {
+        display: flex;
+    }
+    #fkc-app-popup .popup-box {
+        background: linear-gradient(145deg, #0B1220, #1a2438);
+        border-radius: 24px;
+        padding: 32px 28px;
+        max-width: 480px;
+        width: 100%;
+        box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+        border: 1px solid rgba(255,255,255,0.08);
+        position: relative;
+        text-align: center;
+        animation: slideUp 0.5s ease;
+    }
+    #fkc-app-popup .popup-close {
+        position: absolute;
+        top: 12px;
+        right: 16px;
+        background: none;
+        border: none;
+        color: #6a6f73;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 4px 8px;
+        border-radius: 6px;
+        transition: background 0.2s;
+    }
+    #fkc-app-popup .popup-close:hover {
+        background: rgba(255,255,255,0.05);
+        color: #fff;
+    }
+    #fkc-app-popup .popup-icon {
+        font-size: 56px;
+        margin-bottom: 12px;
+        display: block;
+    }
+    #fkc-app-popup .popup-title {
+        font-size: 26px;
+        font-weight: 800;
+        color: #fff;
+        margin: 0 0 4px;
+        letter-spacing: -0.02em;
+        background: linear-gradient(135deg, #5B9DFF, #A78BFA);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    #fkc-app-popup .popup-subtitle {
+        color: #9AA1AB;
+        font-size: 16px;
+        margin: 0 0 16px;
+        font-weight: 400;
+    }
+    #fkc-app-popup .popup-features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        margin: 16px 0;
+        text-align: left;
+    }
+    #fkc-app-popup .popup-features span {
+        color: #EDEFF2;
+        font-size: 14px;
+        padding: 6px 10px;
+        background: rgba(255,255,255,0.04);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    #fkc-app-popup .popup-features span::before {
+        content: "⚡";
+        font-size: 14px;
+    }
+    #fkc-app-popup .popup-btn {
+        display: inline-block;
+        background: linear-gradient(135deg, #0056D2, #6D28D9);
+        color: #fff;
+        font-weight: 700;
+        font-size: 18px;
+        padding: 14px 32px;
+        border-radius: 14px;
+        text-decoration: none;
+        margin: 8px 0 12px;
+        transition: transform 0.2s, box-shadow 0.2s;
+        box-shadow: 0 4px 20px rgba(0,86,210,0.3);
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #fkc-app-popup .popup-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 30px rgba(0,86,210,0.4);
+    }
+    #fkc-app-popup .popup-btn .btn-sub {
+        font-size: 12px;
+        font-weight: 400;
+        opacity: 0.8;
+        display: block;
+        margin-top: 2px;
+    }
+    #fkc-app-popup .popup-bonus {
+        background: rgba(255,215,0,0.1);
+        border: 1px solid rgba(255,215,0,0.2);
+        border-radius: 12px;
+        padding: 12px 16px;
+        margin: 12px 0 16px;
+        color: #FCD34D;
+        font-size: 14px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+    #fkc-app-popup .popup-bonus::before {
+        content: "🎁";
+        font-size: 20px;
+    }
+    #fkc-app-popup .popup-steps {
+        background: rgba(255,255,255,0.03);
+        border-radius: 12px;
+        padding: 12px 16px;
+        margin: 12px 0 16px;
+        text-align: left;
+        font-size: 13px;
+        color: #9AA1AB;
+        line-height: 1.6;
+    }
+    #fkc-app-popup .popup-steps strong {
+        color: #EDEFF2;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+    @keyframes slideUp {
+        from { opacity: 0; transform: translateY(30px) scale(0.96); }
+        to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    @media (max-width: 500px) {
+        #fkc-app-popup .popup-box { padding: 24px 18px; }
+        #fkc-app-popup .popup-title { font-size: 22px; }
+        #fkc-app-popup .popup-features { grid-template-columns: 1fr; }
+    }
+    </style>
+    <div id="fkc-app-popup">
+        <div class="popup-box">
+            <button class="popup-close" onclick="fkcClosePopup()" aria-label="Close">✕</button>
+            <span class="popup-icon">🚀</span>
+            <div class="popup-title">FKC Virtual University</div>
+            <div class="popup-subtitle">Apni life change karo — Rozana FREE lessons!</div>
+            
+            <div class="popup-features">
+                <span>Forex Trading</span>
+                <span>Crypto Trading</span>
+                <span>Web Development</span>
+                <span>Python &amp; C++</span>
+                <span>Freelancing</span>
+                <span>YouTube Automation</span>
+                <span>Shopify / Daraz</span>
+                <span>Digital Skills</span>
+            </div>
+            
+            <div class="popup-bonus">
+                🎓 Bonus: FREE Certificate — Limited slots hai!
+            </div>
+            
+            <a href="{}" class="popup-btn" target="_blank" rel="noopener">
+                📲 App Install Karein
+                <span class="btn-sub">Android APK — Free Download</span>
+            </a>
+            
+            <div class="popup-steps">
+                <strong>📥 Kaise install karein:</strong><br>
+                1️⃣ Download karein (MediaFire)<br>
+                2️⃣ APK file open karein<br>
+                3️⃣ "Install" button dabayein<br>
+                4️⃣ Allow "Unknown Sources" agar poochhe<br>
+                ✅ App install ho jaye gi!
+            </div>
+            
+            <p style="margin:0;font-size:12px;color:#6A6F73;">
+                ⚡ Rozana FREE lessons + Certificate ka mauqa
+            </p>
+        </div>
+    </div>
+    <script>
+    (function() {
+        var popup = document.getElementById('fkc-app-popup');
+        if (!popup) return;
+        
+        // Check if user already saw popup in this session
+        if (sessionStorage.getItem('fkc_app_popup_shown') === 'true') return;
+        
+        // Show after 2 seconds
+        setTimeout(function() {
+            popup.classList.add('show');
+            sessionStorage.setItem('fkc_app_popup_shown', 'true');
+        }, 2000);
+        
+        window.fkcClosePopup = function() {
+            popup.classList.remove('show');
+        };
+        
+        // Close on background click
+        popup.addEventListener('click', function(e) {
+            if (e.target === this) fkcClosePopup();
+        });
+        
+        // Close on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') fkcClosePopup();
+        });
+    })();
+    </script>
+    """.format(APP_DOWNLOAD_URL)
+
+# ---------------------------------------------------------------------
 # 1. COURSES — yahan naya course add/hata/edit karein
 # ---------------------------------------------------------------------
 COURSES = {
@@ -2963,7 +3204,7 @@ def quiz_check_html(answer_key):
 # 🧩 Puzzle game — chhota "yaadasht" (memory match) game, bilkul free,
 # koi AI/network call nahi, sirf emojis ke jode milane hain. Har lesson
 # page par aur games hub par dikhta hai — students (bade ho ya bachay)
-# thodi der khelte hain, isi dauran page par pehle se laga hua AdSense
+# thori der khelte hain, isi dauran page par pehle se laga hua AdSense
 # unit dikhta rehta hai (impression), aur jeetne par "Aur Seekhein"
 # CTA reveal hota hai. Koi "click karo reward ke liye" wala button nahi
 # — AdSense policy ke against hota, isliye sirf natural CTA hai.
@@ -3218,6 +3459,8 @@ def render_home(posts):
             adult_cards.append(card)
 
     logo_href = BRAND_LOGO
+    popup_html = app_install_popup_html() if APP_POPUP_ENABLED else ""
+    
     body = f"""
     <div class="top"><span>{html.escape(BRAND_NAME)}</span>
     <span class="lbl">Digital Hub — apni pasand ka course chunein</span></div>
@@ -3229,6 +3472,7 @@ def render_home(posts):
     <input type="text" id="fkc-course-search" class="fkc-search" placeholder="🔍 Course dhoondein...">
     <p class="fade-in d2"><a class="btn alt" href="games.html">🎮 Games Zone — Khel Khel Mein Seekhein</a></p>
     <p class="fade-in d2">{direct_link_button_html("🚀 Start Learning")}</p>
+    {popup_html}
 
     <h2 class="section-title adults fade-in">💼 Bado Ke Liye Courses</h2>
     <p class="muted fade-in" style="margin-top:-6px;">Skills, business, aur earning ke daily courses.</p>
