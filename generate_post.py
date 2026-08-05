@@ -708,6 +708,7 @@ BRAND_NAME_TITLE_LINE = f"{BRAND_CONTACT_NAME} — {BRAND_CONTACT_TITLE}"
 
 SITE_URL = os.environ.get("SITE_URL", "").rstrip("/")
 MISTRAL_API_KEY = os.environ.get("MISTRAL_API_KEY", "")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")  # Mistral fail ho to fallback
 AGNES_API_KEY = os.environ.get("AGNES_API_KEY", "")  # Agnes AI video API key
 
 POSTS_JSON = "posts.json"
@@ -2089,6 +2090,81 @@ def ai_generate(prompt_text, max_retries=5):
         return ""
 
 
+# ---------------------------------------------------------------------
+# Gemini fallback — jab Mistral (translation ke liye khaaskar Urdu/Sindhi
+# jaise scripts mein) baar-baar degenerate/khaali output de, to isko
+# dusra AI provider ke tor par try karte hain taake lesson skip na ho.
+# ---------------------------------------------------------------------
+GEMINI_MODEL_NAMES = ["gemini-2.5-flash", "gemini-2.0-flash"]
+GEMINI_URL_TMPL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+
+
+def _gemini_call_once(model_name, prompt_text, max_retries=3):
+    body = json.dumps({
+        "contents": [{"parts": [{"text": prompt_text}]}],
+    }).encode()
+    url = GEMINI_URL_TMPL.format(model=model_name)
+
+    wait = 15
+    for attempt in range(1, max_retries + 1):
+        req = urllib.request.Request(
+            url,
+            data=body,
+            headers={
+                "Content-Type": "application/json",
+                "x-goog-api-key": GEMINI_API_KEY,
+            },
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                return json.load(resp)
+        except urllib.error.HTTPError as e:
+            try:
+                err_body = e.read().decode("utf-8", errors="replace")[:500]
+            except Exception:
+                err_body = "(body nahi mil saka)"
+            print(f"Gemini {e.code} detail ({model_name}, attempt {attempt}): {err_body}", file=sys.stderr)
+
+            if e.code == 403:
+                print("Gemini 403 — key/permission issue, retry se theek nahi hoga.", file=sys.stderr)
+                raise
+            if e.code == 404:
+                raise  # caller agla model try karega
+            if e.code in (429, 500, 502, 503) and attempt < max_retries:
+                print(f"Gemini {e.code} mila ({model_name}, attempt {attempt}) — {wait}s ruk kar dobara koshish...", file=sys.stderr)
+                time.sleep(wait)
+                wait = min(wait * 2, 90)
+                continue
+            raise
+
+
+def gemini_generate(prompt_text, max_retries=3):
+    if not GEMINI_API_KEY:
+        raise RuntimeError("GEMINI_API_KEY set nahi hai.")
+
+    data = None
+    last_error = None
+    for model_name in GEMINI_MODEL_NAMES:
+        try:
+            data = _gemini_call_once(model_name, prompt_text, max_retries=max_retries)
+            break
+        except urllib.error.HTTPError as e:
+            last_error = e
+            if e.code == 404:
+                print(f"Gemini model '{model_name}' 404 — agla model try kar rahe hain...", file=sys.stderr)
+                continue
+            raise
+    if data is None:
+        raise last_error
+
+    try:
+        parts = data["candidates"][0]["content"]["parts"]
+        return "".join(p.get("text", "") for p in parts).strip()
+    except (KeyError, IndexError):
+        print("Gemini response se text nahi mila:", data, file=sys.stderr)
+        return ""
+
+
 def build_kids_safety_prompt(course, day_num, topic_hint, prev):
     """Bachon ki hifazat wale course ke liye alag, nazuk andaz ka prompt —
     koi 'practice/mini-project' jo bacha akela kare nahi (is jagah
@@ -2434,10 +2510,18 @@ def get_or_generate_translations(slug, day_num, title, preamble, sections):
 
         last_err = None
         max_attempts = 5
-        for attempt in range(1, max_attempts + 1):  # degenerate output aaye to 5 dafa retry
+        gemini_attempts = 2 if GEMINI_API_KEY else 0
+        total_attempts = max_attempts + gemini_attempts
+        for attempt in range(1, total_attempts + 1):
+            use_gemini = attempt > max_attempts  # pehle Mistral, phir fallback Gemini
             try:
                 prompt = build_translation_prompt(lang_label, title, preamble, sections, other_lang_label)
-                raw = ai_generate(prompt)
+                if use_gemini:
+                    print(f"[{slug}] Day {day_num} {lang_label}: Mistral {max_attempts} attempts fail, "
+                          f"Gemini fallback try kar rahe hain (attempt {attempt - max_attempts})...")
+                    raw = gemini_generate(prompt)
+                else:
+                    raw = ai_generate(prompt)
                 data = _parse_translation_json(raw)
                 # Original preamble khaali ho (jo 94% lessons mein hota hai,
                 # kyunke lesson format mein intro paragraph hota hi nahi) aur
@@ -2462,8 +2546,8 @@ def get_or_generate_translations(slug, day_num, title, preamble, sections):
             # dobara maarne ke bajaye thoda ruk kar retry karta hai.
             time.sleep(3 * attempt)
         if last_err is not None:
-            msg = (f"[{slug}] Day {day_num} {lang_label} translation {max_attempts} attempts "
-                   f"ke baad bhi fail, skip: {last_err}")
+            msg = (f"[{slug}] Day {day_num} {lang_label} translation {total_attempts} attempts "
+                   f"(Mistral + Gemini fallback) ke baad bhi fail, skip: {last_err}")
             print(msg, file=sys.stderr)
             log_error(msg)
     return translations
