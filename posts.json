@@ -4214,7 +4214,30 @@
         ]
       ],
       "answer_key": "index.html, h2, p, a, about.html, contact.html",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن ١ — ایچ ٹی ایم ایل کی بنیادیات: اپنی پہلی ویب پیج بنانا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "ایچ ٹی ایم ایل (ہائپر ٹیکسٹ مارک اپ لینگویج) ویب پیجز کی ریڑھ کی ہڈی ہے۔ اس سے ہم اپنے مواد کو ساخت دیتے ہیں — جیسے ہیڈنگز، پیراگرافس، تصاویر اور لنکس۔ ہر ویب پیج ایک `<html>` ٹیگ سے شروع ہوتا ہے، جس میں `<head>` (میٹا ڈیٹا کے لیے) اور `<body>` (نظر آنے والے مواد کے لیے) ہوتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک بنیادی ایچ ٹی ایم ایل فائل بنانے کے لیے:\n```html\n<!DOCTYPE html>\n<html>\n<head>\n    <title>میری پہلی ویب پیج</title>\n</head>\n<body>\n    <h1>ہیلو ورلڈ!</h1>\n    <p>یہ میری پہلی ویب پیج ہے۔</p>\n    <a href=\"https://google.com\">گوگل پر جاؤ</a>\n</body>\n</html>\n```\n١۔ `!DOCTYPE html` براؤزر کو بتاتا ہے کہ یہ ایچ ٹی ایم ایل ٥ ہے۔\n٢۔ `<html>` روٹ ٹیگ ہے۔\n٣۔ `<head>` میں پیج کا ٹائٹل اور میٹا ڈیٹا ہوتا ہے۔\n٤۔ `<body>` میں جو مواد نظر آنا ہے، وہ ہوتا ہے۔"
+            },
+            {
+              "label": "مشق",
+              "content": "اپنی `index.html` فائل بنائیں اور اس میں:\n- ایک `<h2>` ہیڈنگ شامل کریں: \"میرا پہلا پروجیکٹ\"\n- ایک `<p>` پیراگراف شامل کریں: \"یہ میری مشق کا حصہ ہے۔\"\n- ایک `<a>` لنک شامل کریں جو \"گوگل\" پر لے جائے۔"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "ایک تین صفحات والی ویب سائٹ بنائیں:\n١۔ `index.html` (ہوم پیج)\n٢۔ `about.html` (اپنے بارے میں)\n٣۔ `contact.html` (رابطے کی تفصیلات)\nہر پیج پر ایک نیویگیشن بار بنائیں جو دوسرے صفحات پر جا سکے۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 2,
@@ -4241,7 +4264,100 @@
         ]
       ],
       "answer_key": "red, 32px, text-align: center",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن ٢ — سی ایس ایس بیسکس: اپنی پہلی اسٹائلنگ کرنا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "سی ایس ایس (کیسکیڈنگ اسٹائل شیٹس) سے ہم ایچ ٹی ایم ایل عناصر کو رنگ، سائز، اور پوزیشن دیتے ہیں۔ آج ہم سلیکٹرز، رنگ، فونٹس، اور بنیادی لے آؤٹ (مارجنز، پیڈنگ) سیکھیں گے۔ یہ ایچ ٹی ایم ایل سٹرکچر کو بصری طور پر دلکش بناتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "١۔ `index.html` میں `<h1>Hello World</h1>` لکھو۔\n٢۔ `style.css` فائل بناؤ اور لنک کرو:\n```html\n<link rel=\"stylesheet\" href=\"style.css\">\n```\n٣۔ سی ایس ایس میں:\n```css\nh1 {\n  color: blue;\n  font-family: Arial;\n  margin: 20px;\n  padding: 10px;\n}\n```"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے `h1` کو سرخ رنگ، ٣٢ پکسل فونٹ سائز، اور سینٹر الائن کرو۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک سادہ ویب پیج بناؤ جس میں:\n- ١ `<h1>` ہیڈنگ (ٹیکسٹ: \"میرا پہلا سی ایس ایس پیج\")\n- ١ `<p>` پیراگراف (ٹیکسٹ: \"یہ میرا سی ایس ایس پریکٹس ہے!\")\n- ١ `<button>` (\"Click Me\")\nاسٹائلنگ کرو: ہیڈنگ سبز، پیراگراف اٹالک، بٹن نیلی بیک گراؤنڈ۔"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "day": 3,
+      "id": "day-003",
+      "date": "2026-08-05",
+      "title": "Day 3 — Flexbox aur Grid: Modern Layouts Banana",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Flexbox aur Grid CSS ke do powerful tools hain jo aapki webpage ke elements ko arrange karne mein madad karte hain. Flexbox 1D layouts (jaise rows ya columns) ke liye hai, jabki Grid 2D layouts (jaise rows *and* columns) ke liye perfect hai. Aaj hum inke basic concepts samjhenge aur dekhenge kaise inke zariye responsive aur flexible layouts banaye ja sakte hain."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Flexbox Example",
+          "```html\n   <div class=\"flex-container\">\n     <div class=\"item\">1</div>\n     <div class=\"item\">2</div>\n     <div class=\"item\">3</div>\n   </div>\n   ```\n   ```css\n   .flex-container {\n     display: flex;\n     justify-content: space-between; /* Horizontal alignment */\n     align-items: center; /* Vertical alignment */\n     gap: 10px; /* Space between items */\n   }\n   .item { background: lightblue; padding: 20px; }\n   ```\n   Result: 3 boxes evenly spaced horizontally.\n\n2."
+        ],
+        [
+          "Grid Example",
+          "```html\n   <div class=\"grid-container\">\n     <div class=\"item\">1</div>\n     <div class=\"item\">2</div>\n     <div class=\"item\">3</div>\n     <div class=\"item\">4</div>\n   </div>\n   ```\n   ```css\n   .grid-container {\n     display: grid;\n     grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns */\n     gap: 10px;\n   }\n   .item { background: lightgreen; padding: 20px; }\n   ```\n   Result: 4 boxes in 3 equal columns with gaps."
+        ],
+        [
+          "Practice",
+          "Ek simple webpage banayein jisme 4 boxes hon (2 rows, 2 columns) using **Grid**. Har box ka background color alag ho, aur gap 15px ho."
+        ],
+        [
+          "Mini Project",
+          "Ek responsive navbar banayein jo mobile par vertical ho aur desktop par horizontal. Use **Flexbox** ya **Grid** mein se koi bhi method use kar sakte hain."
+        ]
+      ],
+      "answer_key": "4 boxes, 2x2 grid, alag colors, 15px gap",
+      "translations": {
+        "ur": {
+          "title": "دن ٣ — فلیکس باکس اور گرڈ: جدید لی آؤٹس بنانا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "فلیکس باکس اور گرڈ سی ایس ایس کے دو طاقتور ٹولز ہیں جو آپ کی ویب پیج کے عناصر کو ترتیب دینے میں مدد کرتے ہیں۔ فلیکس باکس ایک ڈی مینشنل لی آؤٹس (جیسے قطاریں یا کالم) کے لیے ہے، جبکہ گرڈ دو ڈی مینشنل لی آؤٹس (جیسے قطاریں اور کالم دونوں) کے لیے بہترین ہے۔ آج ہم ان کے بنیادی تصورات سمجھیں گے اور دیکھیں گے کہ ان کے ذریعے ریسپانسیو اور لچکدار لی آؤٹس کیسے بنائے جا سکتے ہیں۔"
+            },
+            {
+              "label": "مثال: ١",
+              "content": "فلیکس باکس مثال:"
+            },
+            {
+              "label": "فلیکس باکس مثال",
+              "content": "```html\n   <div class=\"flex-container\">\n     <div class=\"item\">1</div>\n     <div class=\"item\">2</div>\n     <div class=\"item\">3</div>\n   </div>\n```\n```css\n   .flex-container {\n     display: flex;\n     justify-content: space-between; /* افقی ترتیب */\n     align-items: center; /* عمودی ترتیب */\n     gap: 10px; /* عناصر کے درمیان فاصلہ */\n   }\n   .item { background: lightblue; padding: 20px; }\n```\nنتیجہ: تین خانے افقی طور پر یکساں فاصلے پر۔"
+            },
+            {
+              "label": "٢",
+              "content": "گرڈ مثال:"
+            },
+            {
+              "label": "گرڈ مثال",
+              "content": "```html\n   <div class=\"grid-container\">\n     <div class=\"item\">1</div>\n     <div class=\"item\">2</div>\n     <div class=\"item\">3</div>\n     <div class=\"item\">4</div>\n   </div>\n```\n```css\n   .grid-container {\n     display: grid;\n     grid-template-columns: 1fr 1fr 1fr; /* تین یکساں کالم */\n     gap: 10px;\n   }\n   .item { background: lightgreen; padding: 20px; }\n```\nنتیجہ: چار خانے تین یکساں کالموں میں فاصلوں کے ساتھ۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "ایک سادہ ویب پیج بنائیں جس میں چار خانے ہوں (دو قطاریں، دو کالم) گرڈ کا استعمال کرتے ہوئے۔ ہر خانے کا پس منظر کا رنگ الگ ہو، اور فاصلہ پندرہ پکسل ہو۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک ریسپانسیو نیویگیشن بار بنائیں جو موبائل پر عمودی ہو اور ڈیسک ٹاپ پر افقی۔ فلیکس باکس یا گرڈ میں سے کوئی بھی طریقہ استعمال کر سکتے ہیں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "excel-data-analysis": [

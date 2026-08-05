@@ -9,6 +9,16 @@
 <meta property="og:description" content="FKC Trading Academy · Web Development · Day 01">
 <meta property="og:image" content="../../../logo.png">
 <meta name="twitter:card" content="summary_large_image">
+<script>
+// Dark mode — theme paint se pehle set karte hain taake flash na ho.
+(function(){
+  try{
+    var t = localStorage.getItem("fkc_theme") ||
+      (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", t);
+  }catch(e){}
+})();
+</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z5FV45KG2C"></script>
 <script>
@@ -22,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T21:18:59.874247";
+  var FKC_BUILD = "2026-08-05T23:17:19.249324";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -46,6 +56,15 @@
 :root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
 --ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
 --accent:#2BAF66;--purple:#6D28D9;}
+html[data-theme="dark"]{--paper:#14161A;--panel:#1D2025;--line:#2C3038;
+--ink:#EDEFF2;--muted:#9AA1AB;--primary:#5B9DFF;--primary-dark:#3D7DE0;
+--accent:#3FCB7E;--purple:#A78BFA;}
+html[data-theme="dark"] img{opacity:.92;}
+.theme-toggle{position:fixed;bottom:16px;right:16px;z-index:999;
+width:44px;height:44px;border-radius:50%;border:1px solid var(--line);
+background:var(--panel);color:var(--ink);font-size:19px;cursor:pointer;
+box-shadow:0 2px 8px rgba(0,0,0,.15);display:flex;align-items:center;
+justify-content:center;}
 *{box-sizing:border-box;}
 @media (prefers-reduced-motion: no-preference){
   .fade-in{animation:fadeUp .45s ease both;}
@@ -53,7 +72,8 @@
   @keyframes fadeUp{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
 }
 body{margin:0;background:var(--paper);color:var(--ink);
-font-family:'Inter','IBM Plex Sans',sans-serif;line-height:1.55;}
+font-family:'Inter','IBM Plex Sans',sans-serif;line-height:1.55;
+transition:background .2s ease,color .2s ease;}
 .wrap{max-width:720px;margin:0 auto;padding:24px 16px 70px;}
 a{color:var(--primary);}
 .top{display:flex;align-items:baseline;gap:10px;color:var(--ink);
@@ -155,30 +175,62 @@ vertical-align:middle;}
 .lesson-nav{display:flex;justify-content:space-between;gap:8px;
 flex-wrap:wrap;margin-top:14px;}
 .lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.section-title{font-family:'Inter',sans-serif;font-weight:800;
+font-size:1.2em;margin:30px 0 2px;padding-top:18px;
+border-top:1px solid var(--line);display:flex;align-items:center;gap:8px;}
+.section-title.adults{color:var(--primary);}
+.section-title.kids{color:#DB4C77;}
 .quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
 .quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
 border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
 box-sizing:border-box;margin:6px 0;}
 .quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+.puzzle-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.puzzle-box h3{margin-top:0;}
+.puzzle-status{font-size:.85em;color:var(--muted);margin:0 0 10px;}
+.puzzle-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;
+max-width:340px;margin:0 auto;}
+.puzzle-card{aspect-ratio:1/1;border-radius:10px;border:none;
+background:var(--primary);color:#fff;font-size:1.6em;cursor:pointer;
+display:flex;align-items:center;justify-content:center;
+transition:transform .25s ease,background .25s ease;padding:0;}
+.puzzle-card.flipped,.puzzle-card.matched{background:#fff;
+border:1px solid var(--line);color:var(--ink);}
+.puzzle-card.matched{background:#EAFBF0;border-color:var(--accent);
+opacity:.85;cursor:default;}
+.puzzle-card:disabled{cursor:default;}
+.puzzle-win{display:none;text-align:center;margin-top:12px;
+background:#EAFBF0;border-radius:10px;padding:12px;font-weight:700;color:#15803d;}
 @media print{
   .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
-  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  .quiz-box,.puzzle-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
   body{background:#fff;}
   .card{box-shadow:none;border:none;}
 }
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
+<button type="button" class="theme-toggle" id="fkcThemeToggle" title="Dark/Light mode" onclick="fkcToggleTheme()">🌓</button>
+<script>
+function fkcToggleTheme(){
+  var cur = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", cur);
+  try{ localStorage.setItem("fkc_theme", cur); }catch(e){}
+}
+</script>
 
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "headline": "Day 1 — HTML Basics: Apni Pehli Webpage Banana", "name": "Day 1 — HTML Basics: Apni Pehli Webpage Banana", "description": "", "learningResourceType": "Lesson", "educationalLevel": "Beginner", "inLanguage": "ur", "isPartOf": {"@type": "Course", "name": "Web Development"}, "datePublished": "2026-08-03", "publisher": {"@type": "Organization", "name": "FKC Trading Academy"}}</script>
     <div class="top"><a href="../../../index.html">← FKC Trading Academy</a>
     <a href="../index.html" class="course-back-link">/ Web Development</a></div>
     
     <p class="muted">🌐 Web Development · Day 01</p>
     <h1>Day 1 — HTML Basics: Apni Pehli Webpage Banana</h1>
+    
     <div class="card">
       
       
       
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>HTML (HyperText Markup Language) webpages ki backbone hai. Isse hum apne content ko structure dete hain—jaise headings, paragraphs, images aur links. Har webpage ek `&lt;html&gt;` tag se shuru hoti hai, jisme `&lt;head&gt;` (metadata ke liye) aur `&lt;body&gt;` (visible content ke liye) hote hain.</p><h3>Example</h3><p>Ek basic HTML file banane ke liye:</p><pre dir="ltr"><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -189,7 +241,17 @@ box-sizing:border-box;margin:6px 0;}
     &lt;p&gt;Ye meri pehli webpage hai.&lt;/p&gt;
     &lt;a href=&quot;https://google.com&quot;&gt;Google par jao&lt;/a&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre><p>1. `!DOCTYPE html` browser ko batata hai ye HTML5 hai.<br>2. `&lt;html&gt;` root tag hai.<br>3. `&lt;head&gt;` mein page ka title aur metadata hota hai.<br>4. `&lt;body&gt;` mein jo content dikhna hai, wo hota hai.</p><h3>Practice</h3><p>Apni `index.html` file banao aur usme:<br>- Ek `&lt;h2&gt;` heading add karo: &quot;Mera Pehla Project&quot;<br>- Ek `&lt;p&gt;` paragraph add karo: &quot;Ye mera practice ka hissa hai.&quot;<br>- Ek `&lt;a&gt;` link add karo jo &quot;Google&quot; par le jaaye.</p><h3>Mini Project</h3><p>Ek 3-page website banao:<br>1. `index.html` (homepage)<br>2. `about.html` (apne baare mein)<br>3. `contact.html` (contact details)<br>Har page par ek navigation bar banao jo doosre pages par ja sake.</p></div>
+&lt;/html&gt;</code></pre><p>1. `!DOCTYPE html` browser ko batata hai ye HTML5 hai.<br>2. `&lt;html&gt;` root tag hai.<br>3. `&lt;head&gt;` mein page ka title aur metadata hota hai.<br>4. `&lt;body&gt;` mein jo content dikhna hai, wo hota hai.</p><h3>Practice</h3><p>Apni `index.html` file banao aur usme:<br>- Ek `&lt;h2&gt;` heading add karo: &quot;Mera Pehla Project&quot;<br>- Ek `&lt;p&gt;` paragraph add karo: &quot;Ye mera practice ka hissa hai.&quot;<br>- Ek `&lt;a&gt;` link add karo jo &quot;Google&quot; par le jaaye.</p><h3>Mini Project</h3><p>Ek 3-page website banao:<br>1. `index.html` (homepage)<br>2. `about.html` (apne baare mein)<br>3. `contact.html` (contact details)<br>Har page par ek navigation bar banao jo doosre pages par ja sake.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>تصور</h3><p>ایچ ٹی ایم ایل (ہائپر ٹیکسٹ مارک اپ لینگویج) ویب پیجز کی ریڑھ کی ہڈی ہے۔ اس سے ہم اپنے مواد کو ساخت دیتے ہیں — جیسے ہیڈنگز، پیراگرافس، تصاویر اور لنکس۔ ہر ویب پیج ایک `&lt;html&gt;` ٹیگ سے شروع ہوتا ہے، جس میں `&lt;head&gt;` (میٹا ڈیٹا کے لیے) اور `&lt;body&gt;` (نظر آنے والے مواد کے لیے) ہوتے ہیں۔</p><h3>مثال</h3><p>ایک بنیادی ایچ ٹی ایم ایل فائل بنانے کے لیے:</p><pre dir="ltr"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;میری پہلی ویب پیج&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;ہیلو ورلڈ!&lt;/h1&gt;
+    &lt;p&gt;یہ میری پہلی ویب پیج ہے۔&lt;/p&gt;
+    &lt;a href=&quot;https://google.com&quot;&gt;گوگل پر جاؤ&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre><p>١۔ `!DOCTYPE html` براؤزر کو بتاتا ہے کہ یہ ایچ ٹی ایم ایل ٥ ہے۔<br>٢۔ `&lt;html&gt;` روٹ ٹیگ ہے۔<br>٣۔ `&lt;head&gt;` میں پیج کا ٹائٹل اور میٹا ڈیٹا ہوتا ہے۔<br>٤۔ `&lt;body&gt;` میں جو مواد نظر آنا ہے، وہ ہوتا ہے۔</p><h3>مشق</h3><p>اپنی `index.html` فائل بنائیں اور اس میں:<br>- ایک `&lt;h2&gt;` ہیڈنگ شامل کریں: &quot;میرا پہلا پروجیکٹ&quot;<br>- ایک `&lt;p&gt;` پیراگراف شامل کریں: &quot;یہ میری مشق کا حصہ ہے۔&quot;<br>- ایک `&lt;a&gt;` لنک شامل کریں جو &quot;گوگل&quot; پر لے جائے۔</p><h3>چھوٹا پروجیکٹ</h3><p>ایک تین صفحات والی ویب سائٹ بنائیں:<br>١۔ `index.html` (ہوم پیج)<br>٢۔ `about.html` (اپنے بارے میں)<br>٣۔ `contact.html` (رابطے کی تفصیلات)<br>ہر پیج پر ایک نیویگیشن بار بنائیں جو دوسرے صفحات پر جا سکے۔</p></div>
       
       
       <div class="quiz-box no-print">
@@ -215,9 +277,73 @@ box-sizing:border-box;margin:6px 0;}
         }
       }
       </script>
+      
+      <div class="puzzle-box no-print" id="pz-web-development-1">
+        <h3>🧩 Dimaghi Kasrat — Jode Milayein</h3>
+        <p class="puzzle-status" id="pz-web-development-1-status">Cards par tap karke jode (pairs) milayein.</p>
+        <div class="puzzle-grid" id="pz-web-development-1-grid"></div>
+        <div class="puzzle-win" id="pz-web-development-1-win">🎉 Shabaash! Sab jode mil gaye — thodi der aur seekhne ke liye tayyar?</div>
+      </div>
+      <script>
+      (function(){
+        var emojis = ["🍎", "🐶", "🌙", "🎨", "🔑", "🌸"];
+        var deck = emojis.concat(emojis);
+        for (var i = deck.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var t = deck[i]; deck[i] = deck[j]; deck[j] = t;
+        }
+        var grid = document.getElementById("pz-web-development-1-grid");
+        var statusEl = document.getElementById("pz-web-development-1-status");
+        var winEl = document.getElementById("pz-web-development-1-win");
+        var flipped = [], matchedCount = 0, moves = 0, lock = false;
+        deck.forEach(function(val){
+          var b = document.createElement("button");
+          b.type = "button";
+          b.className = "puzzle-card";
+          b.setAttribute("data-val", val);
+          b.textContent = "❓";
+          b.onclick = function(){
+            if (lock || b.classList.contains("matched") || b.classList.contains("flipped")) return;
+            b.classList.add("flipped");
+            b.textContent = val;
+            flipped.push(b);
+            if (flipped.length === 2) {
+              moves++;
+              lock = true;
+              var a = flipped[0], c = flipped[1];
+              if (a.getAttribute("data-val") === c.getAttribute("data-val")) {
+                a.classList.add("matched"); c.classList.add("matched");
+                matchedCount += 2;
+                flipped = []; lock = false;
+                statusEl.textContent = "Moves: " + moves + " · " + matchedCount + "/" + deck.length + " match hue";
+                if (matchedCount === deck.length) {
+                  winEl.style.display = "block";
+                  statusEl.textContent = "Complete! Total moves: " + moves;
+                }
+              } else {
+                setTimeout(function(){
+                  a.classList.remove("flipped"); a.textContent = "❓";
+                  c.classList.remove("flipped"); c.textContent = "❓";
+                  flipped = []; lock = false;
+                }, 700);
+              }
+            }
+          };
+          grid.appendChild(b);
+        });
+      })();
+      </script>
+      
+      <div class="no-print" style="margin-top:14px;">
+        <label for="fkc-notes" class="muted" style="display:block;margin-bottom:4px;">📝 Apni Note (sirf aapke is browser mein save hoti hai):</label>
+        <textarea id="fkc-notes" data-slug="web-development" data-lesson="day-001"
+          placeholder="Yahan apni note likhein..." rows="3"
+          style="width:100%;border-radius:10px;border:1px solid #ddd;padding:8px;font-family:inherit;"
+          oninput="fkcSaveNote(this)"></textarea>
+      </div>
+    
       <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Web%20Development%20%28Day%2001%29%0A%0ADay%201%20%E2%80%94%20HTML%20Basics%3A%20Apni%20Pehli%20Webpage%20Banana%0A%0AConcept%3A%0AHTML%20%28HyperText%20Markup%20Language%29%20webpages%20ki%20backbone%20hai.%20Isse%20hum%20apne%20content%20ko%20structure%20dete%20hain%E2%80%94jaise%20headings%2C%20paragraphs%2C%20images%20aur%20links.%20Har%20webpage%20ek%20%60%3Chtml%3E%60%20tag%20se%20shuru%20hoti%20hai%2C%20jisme%20%60%3Chead%3E%60%20%28metadata%20ke%20liye%29%20aur%20%60%3Cbody%3E%60%20%28visible%20content%20ke%20liye%29%20hote%20hain.%0A%0AExample%3A%0AEk%20basic%20HTML%20file%20banane%20ke%20liye%3A%0A%60%60%60html%0A%3C%21DOCTYPE%20html%3E%0A%3Chtml%3E%0A%3Chead%3E%0A%20%20%20%20%3Ctitle%3EMeri%20Pehli%20Webpage%3C/title%3E%0A%3C/head%3E%0A%3Cbody%3E%0A%20%20%20%20%3Ch1%3EHello%20World%21%3C/h1%3E%0A%20%20%20%20%3Cp%3EYe%20meri%20pehli%20webpage%20hai.%3C/p%3E%0A%20%20%20%20%3Ca%20href%3D%22https%3A//google.com%22%3EGoogle%20par%20jao%3C/a%3E%0A%3C/body%3E%0A%3C/html%3E%0A%60%60%60%0A1.%20%60%21DOCTYPE%20html%60%20browser%20ko%20batata%20hai%20ye%20HTML5%20hai.%0A2.%20%60%3Chtml%3E%60%20root%20tag%20hai.%0A3.%20%60%3Chead%3E%60%20mein%20page%20ka%20title%20aur%20metadata%20hota%20hai.%0A4.%20%60%3Cbody%3E%60%20mein%20jo%20content%20dikhna%20hai%2C%20wo%20hota%20hai.%0A%0APractice%3A%0AApni%20%60index.html%60%20file%20banao%20aur%20usme%3A%0A-%20Ek%20%60%3Ch2%3E%60%20heading%20add%20karo%3A%20%22Mera%20Pehla%20Project%22%0A-%20Ek%20%60%3Cp%3E%60%20paragraph%20add%20karo%3A%20%22Ye%20mera%20practice%20ka%20hissa%20hai.%22%0A-%20Ek%20%60%3Ca%3E%60%20link%20add%20karo%20jo%20%22Google%22%20par%20le%20jaaye.%0A%0AMini%20Project%3A%0AEk%203-page%20website%20banao%3A%0A1.%20%60index.html%60%20%28homepage%29%0A2.%20%60about.html%60%20%28apne%20baare%20mein%29%0A3.%20%60contact.html%60%20%28contact%20details%29%0AHar%20page%20par%20ek%20navigation%20bar%20banao%20jo%20doosre%20pages%20par%20ja%20sake.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
-        <a class="btn alt" href="https://t.me/share/url?url=&text=Day%201%20%E2%80%94%20HTML%20Basics%3A%20Apni%20Pehli%20Webpage%20Banana%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
         <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
@@ -230,12 +356,39 @@ box-sizing:border-box;margin:6px 0;}
     <div class="lesson-nav"><span></span><a class="btn alt" href="2026-08-04-day-002.html">Day 2 — CSS Basics: Apni Pehli Styling Karna →</a></div>
     <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
     
+    
     <div class="no-print" style="margin:18px 0;text-align:center;">
       <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
         data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
       <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
+    <script>
+    (function(){
+      try {
+        localStorage.setItem('fkc_last_lesson', JSON.stringify({
+          slug: "web-development",
+          courseName: "Web Development",
+          courseIcon: "\ud83c\udf10",
+          title: "Day 1 \u2014 HTML Basics: Apni Pehli Webpage Banana",
+          href: 'courses/web-development/posts/2026-08-03-day-001.html',
+          day: 1
+        }));
+      } catch (e) {}
+      var ta = document.getElementById('fkc-notes');
+      if (ta) {
+        try {
+          var saved = localStorage.getItem('fkc_note_' + ta.dataset.slug + '_' + ta.dataset.lesson);
+          if (saved) ta.value = saved;
+        } catch (e) {}
+      }
+    })();
+    function fkcSaveNote(el) {
+      try {
+        localStorage.setItem('fkc_note_' + el.dataset.slug + '_' + el.dataset.lesson, el.value);
+      } catch (e) {}
+    }
+    </script>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
   function getProgress(){
@@ -276,6 +429,25 @@ box-sizing:border-box;margin:6px 0;}
     }
     var wa = "https://wa.me/923333909816?text=" + encodeURIComponent(text);
     window.open(wa, "_blank");
+  };
+
+  window.fkcShowSyncCode = function(){
+    if(!window.fkcSyncProgressUp){ alert("Sync abhi ready nahi (Firebase load ho raha hai), thodi dair mein try karein."); return; }
+    var code = Math.random().toString(36).substring(2,8).toUpperCase();
+    window.fkcSyncProgressUp(code, function(ok){
+      if(ok) alert("Yeh code doosri device par 'Code Se Wapas Layein' mein daalein:\n\n" + code);
+      else alert("Sync fail ho gaya, dobara try karein.");
+    });
+  };
+
+  window.fkcEnterSyncCode = function(){
+    if(!window.fkcSyncProgressDown){ alert("Sync abhi ready nahi (Firebase load ho raha hai), thodi dair mein try karein."); return; }
+    var code = prompt("Wo code daalein jo pehli device par bana tha:");
+    if(!code || !code.trim()) return;
+    window.fkcSyncProgressDown(code.trim().toUpperCase(), function(ok){
+      if(ok){ alert("Progress wapas aa gayi ✅"); location.reload(); }
+      else alert("Yeh code nahi mila, dobara check karein.");
+    });
   };
 
   document.addEventListener("DOMContentLoaded", function(){
@@ -359,6 +531,27 @@ box-sizing:border-box;margin:6px 0;}
           created: firebase.firestore.FieldValue.serverTimestamp()
         });
       }catch(e){}
+    };
+
+    window.fkcSyncProgressUp = function(code, onDone){
+      try{
+        var data = localStorage.getItem("fkc_progress") || "{}";
+        window.fkcDb.collection("progress_sync").doc(code).set({
+          progress: data, updated: firebase.firestore.FieldValue.serverTimestamp()
+        }).then(function(){ if(onDone) onDone(true); })
+          .catch(function(){ if(onDone) onDone(false); });
+      }catch(e){ if(onDone) onDone(false); }
+    };
+
+    window.fkcSyncProgressDown = function(code, onDone){
+      try{
+        window.fkcDb.collection("progress_sync").doc(code).get().then(function(doc){
+          if(doc.exists && doc.data().progress){
+            localStorage.setItem("fkc_progress", doc.data().progress);
+            if(onDone) onDone(true);
+          } else { if(onDone) onDone(false); }
+        }).catch(function(){ if(onDone) onDone(false); });
+      }catch(e){ if(onDone) onDone(false); }
     };
   }catch(e){}
 })();
