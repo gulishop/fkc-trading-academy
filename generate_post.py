@@ -789,12 +789,12 @@ def generate_lesson_image(slug, course, day_num, title, topic_hint=None, concept
     hai. Fail ho jaye to chup chaap skip — lesson generation kabhi
     iski wajah se nahi rukni chahiye."""
     if find_lesson_image(slug, day_num):
-        return  # already maujood (manual ya pehle se generate ki hui)
+        return True  # already maujood (manual ya pehle se generate ki hui)
 
     if course.get("for_kids"):
         topic_index = (day_num - 1) % len(course["topics"])
         generate_kids_safety_symbol_image(slug, day_num, topic_index)
-        return
+        return True
 
     padded = f"{day_num:03d}"
     dest_dir = os.path.join(IMAGES_DIR, slug)
@@ -841,7 +841,7 @@ def generate_lesson_image(slug, course, day_num, title, topic_hint=None, concept
             with open(dest, "wb") as f:
                 f.write(data)
             print(f"[{slug}] Day {day_num} image generate ho gayi (Pollinations, attempt {attempt}).")
-            return
+            return True
         except Exception as e:
             last_err = e
             print(f"[{slug}] Day {day_num} image attempt {attempt} fail ho gayi: {e}", file=sys.stderr)
@@ -850,6 +850,7 @@ def generate_lesson_image(slug, course, day_num, title, topic_hint=None, concept
     msg = f"[{slug}] Day {day_num} image generate nahi ho saki ({len(attempts_plan)} attempts fail), skip kar rahe hain: {last_err}"
     print(msg, file=sys.stderr)
     log_error(msg)
+    return False
 
 
 # ---------------------------------------------------------------------
@@ -3200,28 +3201,51 @@ def heal_missing_images(posts, only_slug=None):
     workflow mein heal karna 3+ ghante tak le jata tha, jis se saare
     workflows overlap ho kar git push par takra jate the aur merge-conflict
     storm ban jata tha. only_slug None ho (manual/heal-all run) to purana
-    (sab courses) behavior chalta hai."""
+    (sab courses) behavior chalta hai.
+
+    Circuit breaker: agar Pollinations hi down/blocked ho (jaisa 04-05 Aug
+    ki raat hua — har single request 500 de rahi thi), to lagatar retry
+    karte rehna sirf waqt zaya karta hai. 6 lagatar images fail hon to ye
+    maan lete hain ke API filhaal down hai aur is run ke liye heal rok dete
+    hain — agli baar phir try hoga."""
     slugs = [only_slug] if only_slug else list(posts.keys())
+    consecutive_fails = 0
+    CIRCUIT_LIMIT = 6
     for slug in slugs:
         lessons = posts.get(slug, [])
         course = COURSES.get(slug)
         if not course:
             continue
         for lesson in lessons:
+            if consecutive_fails >= CIRCUIT_LIMIT:
+                msg = (f"heal_missing_images: {CIRCUIT_LIMIT} images lagatar fail hui — "
+                       f"Pollinations shayad down/blocked hai, is run ke liye image healing "
+                       f"rok rahe hain (agli baar phir try hoga).")
+                print(msg, file=sys.stderr)
+                log_error(msg)
+                return
             if find_lesson_image(slug, lesson["day"]):
                 continue  # already maujood, kuch karne ki zaroorat nahi
             print(f"[{slug}] Day {lesson['day']} ki image missing hai, dobara try ho raha hai...")
             topic_hint = course["topics"][(lesson["day"] - 1) % len(course["topics"])]
             concept_text = lesson["sections"][0][1] if lesson["sections"] else lesson.get("preamble", "")
-            generate_lesson_image(
+            ok = generate_lesson_image(
                 slug, course, lesson["day"], lesson["title"],
                 topic_hint=topic_hint, concept_text=concept_text,
             )
+            consecutive_fails = 0 if ok else consecutive_fails + 1
             time.sleep(2)  # thoda space, taake peeche-peeche courses ke beech rate-limit na lage
 
 
 def heal_degenerate_translations(posts, only_slug=None):
+    """... (purana docstring). Circuit breaker: 04-05 Aug ki raat Mistral
+    lagatar English/corrupt output de raha tha (quota-exhaustion jaisa
+    lagta hai) — 6 lagatar translation-attempts fail hon to ye maan lete
+    hain ke API filhaal down/quota-khatam hai aur is run ke liye translation
+    healing rok dete hain (agli baar phir try hoga, waqt zaya nahi hota)."""
     changed = False
+    consecutive_fails = 0
+    CIRCUIT_LIMIT = 6
     slugs = [only_slug] if only_slug else list(posts.keys())
     for slug in slugs:
         lessons = posts.get(slug, [])
@@ -3229,6 +3253,13 @@ def heal_degenerate_translations(posts, only_slug=None):
         if not course:
             continue
         for lesson in lessons:
+            if consecutive_fails >= CIRCUIT_LIMIT:
+                msg = (f"heal_degenerate_translations: {CIRCUIT_LIMIT} translations lagatar "
+                       f"fail hui — Mistral API shayad down/quota-exhausted hai, is run ke "
+                       f"liye translation healing rok rahe hain (agli baar phir try hoga).")
+                print(msg, file=sys.stderr)
+                log_error(msg)
+                return changed
             translations = lesson.get("translations") or {}
             missing_codes = set(TRANSLATION_LANGS) - set(translations)
             bad_codes = set()
@@ -3255,9 +3286,11 @@ def heal_degenerate_translations(posts, only_slug=None):
                     except Exception:
                         pass
                 translations.pop(code, None)
+            needed_codes = bad_codes | missing_codes
             fresh = get_or_generate_translations(
                 slug, lesson["day"], lesson["title"], lesson["preamble"], lesson["sections"]
             )
+            consecutive_fails = 0 if set(fresh) & needed_codes else consecutive_fails + 1
             translations.update(fresh)
             lesson["translations"] = translations
             # "ur" (missing ya bad, dono cases) heal/generate hui ho to video
