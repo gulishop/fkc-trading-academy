@@ -4656,6 +4656,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 3,
+      "id": "day-003",
+      "date": "2026-08-05",
+      "title": "Day 3 — **Charging Port aur USB-C Port Repair**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Charging port ya USB-C port ka kharab hona ek common issue hai jo mobile repair business mein frequently aata hai. Yeh port dust, lint, ya accidental damage ki wajah se block ho jata hai, jisse charging aur data transfer mein problem hoti hai. Repair ke liye port ko clean karna, loose connection ko tight karna, ya port ko replace karna shamil hai."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Port Cleaning",
+          "Toothpick ya anti-static brush se port ke andar se dust nikal dein.\n2."
+        ],
+        [
+          "Loose Connection Fix",
+          "Port ko gently press karke check karen agar charging reconnect hoti hai.\n3."
+        ],
+        [
+          "Port Replacement",
+          "Agar port physically damaged hai, to new port install karne ke liye soldering ya adhesive use karen."
+        ],
+        [
+          "Practice",
+          "Apne kisi old phone ke charging port ko khol kar clean karen. Agar port loose hai to tight karen, warna port ko remove karne ka practice karen."
+        ],
+        [
+          "Mini Project",
+          "Ek damaged charging port wale phone ko repair karke usko charging aur data transfer ke liye test karen."
+        ]
+      ],
+      "answer_key": "port clean, loose tight, replace solder",
+      "translations": {
+        "ur": {
+          "title": "دن ٣ — چارجر پورٹ اور یو ایس بی-سی پورٹ کی مرمت",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "چارجر پورٹ یا یو ایس بی-سی پورٹ کا خراب ہونا ایک عام مسئلہ ہے جو موبائل ریپئیر بزنس میں بار بار آتا ہے۔ یہ پورٹ دھول، لنٹ، یا حادثاتی نقصان کی وجہ سے بلاک ہو جاتا ہے، جس سے چارچنگ اور ڈیٹا ٹرانسفر میں مشکلات پیش آتی ہیں۔ مرمت کے لیے پورٹ کو صاف کرنا، ڈھیلی کنکشن کو ٹائٹ کرنا، یا پورٹ کو تبدیل کرنا شامل ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "١۔ پورٹ کی صفائی: ٹوتھ پِک یا اینٹی اسٹیٹک برش سے پورٹ کے اندر سے دھول نکالیں۔\n٢۔ ڈھیلی کنکشن کی مرمت: پورٹ کو آہستہ سے دباکر چیک کریں کہ آیا چارچنگ دوبارہ کنیکٹ ہوتی ہے۔\n٣۔ پورٹ کی تبدیلی: اگر پورٹ جسمانی طور پر خراب ہے تو نئے پورٹ کو نصب کرنے کے لیے سولڈرنگ یا ایڈھیسیو استعمال کریں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے کسی پرانے فون کے چارجر پورٹ کو کھول کر صاف کریں۔ اگر پورٹ ڈھیلا ہے تو اسے ٹائٹ کریں، ورنہ پورٹ کو ہٹانے کی مشق کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک خراب چارجر پورٹ والے فون کی مرمت کرکے اسے چارچنگ اور ڈیٹا ٹرانسفر کے لیے ٹیسٹ کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-safety-education": [
