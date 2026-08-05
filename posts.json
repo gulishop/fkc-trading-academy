@@ -169,6 +169,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 4,
+      "id": "day-004",
+      "date": "2026-08-05",
+      "title": "Day 4 — **High-Converting Affiliate Content Kaise Banayein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Affiliate content wo hai jo sirf information nahi deta, balki readers ko action lene par majboor kar deta hai. Aise content mein trust, value, aur urgency hona chahiye. Har paragraph ek step ho—problem solve karne se lekar product recommend karne tak. SEO ke saath-saath \"human psychology\" (jaise scarcity, social proof) bhi use karna hai."
+        ],
+        [
+          "Example",
+          "Ek \"Best Laptop Under 50,000\" article likh rahe hain. Pehle 3 paragraphs mein:\n1. Problem: \"Slow performance se pareshan hain? Budget mein best laptop dhund rahe hain?\"\n2. Solution: \"Yeh 5 laptops 2024 mein top rated hain—har ek ka pros/cons.\"\n3. Recommendation: \"Meri #1 choice hai [Product X] kyun? (Link + discount code).\"\nHar paragraph ka end \"click here\" ya \"jaise hi\" se ho."
+        ],
+        [
+          "Practice",
+          "Apne niche ka ek 150-200 words ka draft likhein jisme ek product recommend kar rahe hain. Pehle 2 lines mein problem batayein, agle 2 mein solution, last line mein CTA (jaise \"Yeh product try karne ke liye [link] par click karein\")."
+        ],
+        [
+          "Mini Project",
+          "Ek \"5 Best [Niche Product] 2024\" article ka outline banayein (headings + 1-2 lines ka description har section ka). Example:\n- \"Budget-friendly options\" (3 products)\n- \"Premium picks\" (2 products)\n- \"Final verdict: Kaunsa choose karein?\""
+        ]
+      ],
+      "answer_key": "problem, solution, urgency, cta",
+      "translations": {
+        "ur": {
+          "title": "دن 4 — ہائی کنورٹنگ ایفیلی ایٹ کنٹینٹ کیسے بنائیں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ایفیلی ایٹ کنٹینٹ وہ ہوتا ہے جو صرف معلومات نہیں دیتا بلکہ قارئین کو ایکشن لینے پر مجبور کر دیتا ہے۔ ایسے کنٹینٹ میں اعتماد، ویلیو اور ہنگامی صورتحال کا ہونا ضروری ہے۔ ہر پیراگراف ایک قدم ہو— مسئلے کے حل سے لے کر پروڈکٹ کی سفارش تک۔ ایس ای او کے ساتھ ساتھ انسانی نفسیات (جیسے کمیابی، سوشل پروف) کا استعمال بھی کرنا چاہیے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "اگر آپ \"بہترین لیپ ٹاپ 50,000 کے اندر\" پر ایک مضمون لکھ رہے ہیں تو پہلے تین پیراگرافز میں درج ذیل شامل کریں:\n1. مسئلہ: \"سست رفتار پرفارمنس سے پریشان ہیں؟ بجٹ میں بہترین لیپ ٹاپ ڈھونڈ رہے ہیں؟\"\n2. حل: \"یہ 5 لیپ ٹاپس 2024 میں ٹاپ ریٹڈ ہیں—ہر ایک کے فوائد اور نقصانات۔\"\n3. سفارش: \"میری پہلی پسند ہے [پروڈکٹ ایکس] کیوں؟ (لنک + ڈسکاؤنٹ کوڈ)۔\"\nہر پیراگراف کا اختتام \"یہاں کلک کریں\" یا \"جیسے ہی\" پر ہونا چاہیے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے نیچے دیے گئے موضوع پر 150-200 الفاظ کا ایک ڈرافٹ لکھیں جس میں کسی پروڈکٹ کی سفارش کی جا رہی ہو۔ پہلے دو سطور میں مسئلہ بیان کریں، اگلی دو سطور میں حل پیش کریں، اور آخری سطر میں کال ٹو ایکشن دیں (جیسے \"اس پروڈکٹ کو آزمانے کے لیے [لنک] پر کلک کریں\")۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "\"2024 کے 5 بہترین [نیچ پروڈکٹ]\" پر ایک مضمون کا خاکہ تیار کریں (ہر سیکشن کے لیے ہیڈنگز اور 1-2 سطور کا تعارف)۔ مثال:\n- \"بجٹ فرینڈلی آپشنز\" (3 پروڈکٹس)\n- \"پریمیم چوائسز\" (2 پروڈکٹس)\n- \"فائنل ورڈکٹ: کون سا منتخب کریں؟\""
+            }
+          ]
+        }
+      }
     }
   ],
   "youtube-automation": [
