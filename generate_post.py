@@ -1328,6 +1328,47 @@ def generate_agnes_video(slug, lesson, course_name, max_attempts=10):
         return None
 
 
+# =====================================================================
+# 💬 GISCUS COMMENTS — GitHub Discussions par based, 100% free.
+# Setup (ek dafa): 1) repo Settings → General → Discussions ON karein.
+# 2) https://giscus.app par jaa kar apna repo enter karein, mapping/theme
+# choose karein — page us script tag mein aapko REPO_ID aur CATEGORY_ID
+# de gi. Neeche 4 constants fill kar dein — khaali hon to comments box
+# khud show nahi hota.
+# =====================================================================
+GISCUS_REPO = os.environ.get("GISCUS_REPO", "")            # e.g. "gulishop/fkc-trading"
+GISCUS_REPO_ID = os.environ.get("GISCUS_REPO_ID", "")
+GISCUS_CATEGORY = os.environ.get("GISCUS_CATEGORY", "General")
+GISCUS_CATEGORY_ID = os.environ.get("GISCUS_CATEGORY_ID", "")
+GISCUS_ENABLED = bool(GISCUS_REPO and GISCUS_REPO_ID and GISCUS_CATEGORY_ID)
+
+
+def giscus_comments_html():
+    """Lesson page ke neeche GitHub-Discussions-based comment box — sirf
+    tab render hota hai jab GISCUS_* config poori fill ho."""
+    if not GISCUS_ENABLED:
+        return ""
+    return f"""
+    <div class="card no-print" style="margin-top:16px;">
+      <p class="muted" style="margin:0 0 8px;">💬 Sawal ya comment likhein</p>
+      <script src="https://giscus.app/client.js"
+        data-repo="{html.escape(GISCUS_REPO)}"
+        data-repo-id="{html.escape(GISCUS_REPO_ID)}"
+        data-category="{html.escape(GISCUS_CATEGORY)}"
+        data-category-id="{html.escape(GISCUS_CATEGORY_ID)}"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="ur"
+        crossorigin="anonymous"
+        async>
+      </script>
+    </div>"""
+
+
 # Har build ka apna unique stamp — version.json mein likha jata hai taake
 # khuli hui tabs/PWA khud check kar sakein ke naya build aaya hai ya nahi
 # (live-update mechanism, neeche live_update_script_html dekhein).
@@ -1395,7 +1436,11 @@ def firebase_init_html():
     """Firebase compat SDK load + init — sirf tab jab FIREBASE_CONFIG fill
     ho. window.fkcSaveCertRequest() define karta hai jise certificate
     apply-flow call karta hai taake request Firestore mein bhi save ho
-    jaye (admin panel ke liye), WhatsApp message ke sath-sath."""
+    jaye (admin panel ke liye), WhatsApp message ke sath-sath.
+    Progress-sync ke liye do functions bhi: fkcSyncProgressUp(code) —
+    is device ka localStorage progress ek 6-digit code ke sath Firestore
+    mein save karta hai; fkcSyncProgressDown(code) — doosri device par
+    wahi code daal kar progress wapas le aata hai."""
     if not FIREBASE_ENABLED:
         return ""
     return f"""
@@ -1414,6 +1459,27 @@ def firebase_init_html():
           created: firebase.firestore.FieldValue.serverTimestamp()
         }});
       }}catch(e){{}}
+    }};
+
+    window.fkcSyncProgressUp = function(code, onDone){{
+      try{{
+        var data = localStorage.getItem("fkc_progress") || "{{}}";
+        window.fkcDb.collection("progress_sync").doc(code).set({{
+          progress: data, updated: firebase.firestore.FieldValue.serverTimestamp()
+        }}).then(function(){{ if(onDone) onDone(true); }})
+          .catch(function(){{ if(onDone) onDone(false); }});
+      }}catch(e){{ if(onDone) onDone(false); }}
+    }};
+
+    window.fkcSyncProgressDown = function(code, onDone){{
+      try{{
+        window.fkcDb.collection("progress_sync").doc(code).get().then(function(doc){{
+          if(doc.exists && doc.data().progress){{
+            localStorage.setItem("fkc_progress", doc.data().progress);
+            if(onDone) onDone(true);
+          }} else {{ if(onDone) onDone(false); }}
+        }}).catch(function(){{ if(onDone) onDone(false); }});
+      }}catch(e){{ if(onDone) onDone(false); }}
     }};
   }}catch(e){{}}
 }})();
@@ -1466,6 +1532,25 @@ def certificate_progress_script_html():
     }}
     var wa = "https://wa.me/{BRAND_WHATSAPP_DIGITS}?text=" + encodeURIComponent(text);
     window.open(wa, "_blank");
+  }};
+
+  window.fkcShowSyncCode = function(){{
+    if(!window.fkcSyncProgressUp){{ alert("Sync abhi ready nahi (Firebase load ho raha hai), thodi dair mein try karein."); return; }}
+    var code = Math.random().toString(36).substring(2,8).toUpperCase();
+    window.fkcSyncProgressUp(code, function(ok){{
+      if(ok) alert("Yeh code doosri device par 'Code Se Wapas Layein' mein daalein:\\n\\n" + code);
+      else alert("Sync fail ho gaya, dobara try karein.");
+    }});
+  }};
+
+  window.fkcEnterSyncCode = function(){{
+    if(!window.fkcSyncProgressDown){{ alert("Sync abhi ready nahi (Firebase load ho raha hai), thodi dair mein try karein."); return; }}
+    var code = prompt("Wo code daalein jo pehli device par bana tha:");
+    if(!code || !code.trim()) return;
+    window.fkcSyncProgressDown(code.trim().toUpperCase(), function(ok){{
+      if(ok){{ alert("Progress wapas aa gayi ✅"); location.reload(); }}
+      else alert("Yeh code nahi mila, dobara check karein.");
+    }});
   }};
 
   document.addEventListener("DOMContentLoaded", function(){{
@@ -2431,6 +2516,15 @@ BASE_CSS = """
 :root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
 --ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
 --accent:#2BAF66;--purple:#6D28D9;}
+html[data-theme="dark"]{--paper:#14161A;--panel:#1D2025;--line:#2C3038;
+--ink:#EDEFF2;--muted:#9AA1AB;--primary:#5B9DFF;--primary-dark:#3D7DE0;
+--accent:#3FCB7E;--purple:#A78BFA;}
+html[data-theme="dark"] img{opacity:.92;}
+.theme-toggle{position:fixed;bottom:16px;right:16px;z-index:999;
+width:44px;height:44px;border-radius:50%;border:1px solid var(--line);
+background:var(--panel);color:var(--ink);font-size:19px;cursor:pointer;
+box-shadow:0 2px 8px rgba(0,0,0,.15);display:flex;align-items:center;
+justify-content:center;}
 *{box-sizing:border-box;}
 @media (prefers-reduced-motion: no-preference){
   .fade-in{animation:fadeUp .45s ease both;}
@@ -2438,7 +2532,8 @@ BASE_CSS = """
   @keyframes fadeUp{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
 }
 body{margin:0;background:var(--paper);color:var(--ink);
-font-family:'Inter','IBM Plex Sans',sans-serif;line-height:1.55;}
+font-family:'Inter','IBM Plex Sans',sans-serif;line-height:1.55;
+transition:background .2s ease,color .2s ease;}
 .wrap{max-width:720px;margin:0 auto;padding:24px 16px 70px;}
 a{color:var(--primary);}
 .top{display:flex;align-items:baseline;gap:10px;color:var(--ink);
@@ -2585,6 +2680,16 @@ HEAD = """<!DOCTYPE html>
 <meta property="og:description" content="{ogdesc}">
 <meta property="og:image" content="{ogimage}">
 <meta name="twitter:card" content="summary_large_image">
+<script>
+// Dark mode — theme paint se pehle set karte hain taake flash na ho.
+(function(){{
+  try{{
+    var t = localStorage.getItem("fkc_theme") ||
+      (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", t);
+  }}catch(e){{}}
+}})();
+</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z5FV45KG2C"></script>
 <script>
@@ -2602,6 +2707,14 @@ HEAD = """<!DOCTYPE html>
 <style>{css}</style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="{logo_href}" alt="{brand}">
 <div><div class="bname">{brand}</div><div class="btag">Learn · Earn · Grow</div></div></div>
+<button type="button" class="theme-toggle" id="fkcThemeToggle" title="Dark/Light mode" onclick="fkcToggleTheme()">🌓</button>
+<script>
+function fkcToggleTheme(){{
+  var cur = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", cur);
+  try{{ localStorage.setItem("fkc_theme", cur); }}catch(e){{}}
+}}
+</script>
 """
 
 
@@ -2858,6 +2971,53 @@ def build_robots_txt():
     return "\n".join(lines) + "\n"
 
 
+# ---------------------------------------------------------------------
+# 🔔 IndexNow — naye/updated lessons ka fast indexing ping (free).
+# NOTE: Google Indexing API ise support nahi karta (sirf Bing/Yandex/
+# Seznam/Naver), aur Google ka purana sitemap-ping endpoint 2023 mein
+# hamesha ke liye band ho chuka hai (ab 404 deta hai). Google ke liye
+# already sitemap.xml maujood hai — Google usay khud periodically crawl
+# karta hai, yehi is waqt sabse reliable free tareeqa hai.
+# INDEXNOW_KEY env var mein ek random hex string set karein (khud bana
+# kar, e.g. `openssl rand -hex 16`) — key set na ho to yeh step khud
+# skip ho jata hai.
+# ---------------------------------------------------------------------
+INDEXNOW_KEY = os.environ.get("INDEXNOW_KEY", "")
+
+
+def write_indexnow_key_file():
+    """docs/<key>.txt banata hai jisme sirf key likhi hoti hai — IndexNow
+    isay ownership-verification ke liye fetch karta hai."""
+    if not INDEXNOW_KEY:
+        return
+    with open(os.path.join(DOCS_DIR, f"{INDEXNOW_KEY}.txt"), "w", encoding="utf-8") as f:
+        f.write(INDEXNOW_KEY)
+
+
+def ping_indexnow(urls):
+    """IndexNow API ko naye/updated URLs batata hai (Bing/Yandex fast-index
+    kar sakein). Fail ho jaye to chup chaap skip — site build kabhi iski
+    wajah se nahi rukni chahiye."""
+    if not (INDEXNOW_KEY and SITE_URL and urls):
+        return
+    host = SITE_URL.split("//", 1)[-1].split("/", 1)[0]
+    payload = {
+        "host": host,
+        "key": INDEXNOW_KEY,
+        "keyLocation": f"{SITE_URL}/{INDEXNOW_KEY}.txt",
+        "urlList": urls[:10000],
+    }
+    try:
+        resp = requests.post(
+            "https://api.indexnow.org/indexnow",
+            json=payload, timeout=20,
+            headers={"Content-Type": "application/json; charset=utf-8"},
+        )
+        print(f"IndexNow: {len(urls)} URL(s) submit hui, status {resp.status_code}.")
+    except Exception as e:
+        print(f"IndexNow ping fail: {e}", file=sys.stderr)
+
+
 # AdSense ka anti-fraud verification string — publisher ID ke aakhir mein
 # jo "pub-..." number hota hai wahi ADSENSE_CLIENT mein bhi hai
 # ("ca-pub-..." mein se "ca-" hata kar). Yeh sirf ek dafa set karni hoti
@@ -3022,6 +3182,14 @@ def render_course_page(slug, course, lessons):
     fee_js = json.dumps(course_certificate_fee(course), ensure_ascii=False)
     progress_block = ""
     if total_lessons > 0:
+        sync_block = ""
+        if FIREBASE_ENABLED:
+            sync_block = """
+      <div class="no-print" style="margin-top:10px;border-top:1px solid var(--line);padding-top:10px;">
+        <p class="muted" style="margin:0 0 6px;font-size:13px;">🔄 Progress doosri device par le jayein</p>
+        <button type="button" class="btn alt" onclick="fkcShowSyncCode()">📤 Code Banayein</button>
+        <button type="button" class="btn alt" onclick="fkcEnterSyncCode()">📥 Code Se Wapas Layein</button>
+      </div>"""
         progress_block = f"""
     <div class="card progress-wrap" id="fkc-progress-wrap" data-slug="{slug}" data-total="{total_lessons}">
       <div class="progress-track"><div class="progress-fill" id="fkc-progress-fill"></div></div>
@@ -3030,10 +3198,27 @@ def render_course_page(slug, course, lessons):
         onclick="fkcApplyCertificate('{slug}', {course_name_js}, {fee_js})">
         🎓 Certificate ke liye Apply Karein
       </button>
+      {sync_block}
     </div>"""
 
     logo_href = f"../../{BRAND_LOGO}"
+    _provider = {"@type": "Organization", "name": BRAND_NAME}
+    if SITE_URL:
+        _provider["sameAs"] = SITE_URL
+    course_schema = json.dumps({k: v for k, v in {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": course["name"],
+        "description": course["tagline"],
+        "provider": _provider,
+        "numberOfCredits": len(lessons),
+        "inLanguage": "ur",
+        "url": (f"{SITE_URL}/courses/{slug}/index.html" if SITE_URL else None),
+    }.items() if v is not None}, ensure_ascii=False)
+    course_schema_block = f'<script type="application/ld+json">{course_schema}</script>'
+
     body = f"""
+    {course_schema_block}
     <div class="top"><a href="../../index.html">← {html.escape(BRAND_NAME)}</a></div>
     <h1>{course['icon']} {html.escape(course['name'])}</h1>
     <p class="muted">{html.escape(course['tagline'])}</p>
@@ -3233,7 +3418,35 @@ def render_lesson_page(slug, course, lesson, is_latest, image_href=None, video_h
         next_link = f'<a class="btn alt" href="{next_href}">{html.escape(next_title)} →</a>' if next_href else "<span></span>"
         nav_block = f'<div class="lesson-nav">{prev_link}{next_link}</div>'
 
+    lesson_url = f"{SITE_URL}/courses/{slug}/posts/{lesson['date']}-{lesson['id']}.html" if SITE_URL else ""
+
+    def _no_nulls(d):
+        return {k: v for k, v in d.items() if v is not None}
+
+    schema_dict = _no_nulls({
+        "@context": "https://schema.org",
+        "@type": "LearningResource",
+        "headline": lesson["title"],
+        "name": lesson["title"],
+        "description": (lesson.get("preamble") or "")[:200],
+        "url": lesson_url or None,
+        "image": (f"{SITE_URL}/{image_href.replace('../../../','')}" if (SITE_URL and image_href) else None),
+        "learningResourceType": "Lesson",
+        "educationalLevel": "Beginner",
+        "inLanguage": "ur",
+        "isPartOf": _no_nulls({
+            "@type": "Course",
+            "name": course["name"],
+            "url": (f"{SITE_URL}/courses/{slug}/index.html" if SITE_URL else None),
+        }),
+        "datePublished": lesson.get("date"),
+        "publisher": {"@type": "Organization", "name": BRAND_NAME},
+    })
+    schema_ld = json.dumps(schema_dict, ensure_ascii=False)
+    schema_block = f'<script type="application/ld+json">{schema_ld}</script>'
+
     body = f"""
+    {schema_block}
     <div class="top"><a href="../../../index.html">← {html.escape(BRAND_NAME)}</a>
     <a href="../index.html" class="course-back-link">/ {html.escape(course['name'])}</a></div>
     {badge}
@@ -3263,6 +3476,7 @@ def render_lesson_page(slug, course, lesson, is_latest, image_href=None, video_h
     </div>
     {nav_block}
     <p class="no-print">{direct_link_button_html("🚀 Watch Next Lesson")}</p>
+    {giscus_comments_html()}
     {adsense_unit_html()}
     {brand_footer_html(logo_href)}
     <script>
@@ -3801,6 +4015,7 @@ def main():
         save_posts(posts)
 
     courses_to_run = {target_slug: COURSES[target_slug]} if target_slug else COURSES
+    new_lesson_urls = []  # is run mein bane naye lessons — IndexNow ping ke liye
 
     for slug, course in courses_to_run.items():
         try:
@@ -3814,6 +4029,10 @@ def main():
 
             existing.append(lesson)
             posts[slug] = existing
+            if SITE_URL:
+                new_lesson_urls.append(
+                    f"{SITE_URL}/courses/{slug}/posts/{lesson['date']}-{lesson['id']}.html"
+                )
 
             topic_hint = course["topics"][(lesson["day"] - 1) % len(course["topics"])]
             concept_text = lesson["sections"][0][1] if lesson["sections"] else lesson.get("preamble", "")
@@ -3947,6 +4166,11 @@ def main():
     if rss_xml:
         with open(os.path.join(DOCS_DIR, "feed.xml"), "w", encoding="utf-8") as f:
             f.write(rss_xml)
+
+    # IndexNow — is run mein bane naye lessons ka fast-index ping
+    # (Bing/Yandex). INDEXNOW_KEY set na ho to yeh khud skip ho jata hai.
+    write_indexnow_key_file()
+    ping_indexnow(new_lesson_urls)
 
     print("Done — site docs/ mein update ho gayi.")
 
