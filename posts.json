@@ -4213,5 +4213,57 @@
         }
       }
     }
+  ],
+  "kids-educational-games": [
+    {
+      "day": 1,
+      "id": "day-001",
+      "date": "2026-08-05",
+      "title": "Day 1 — Yaadasht Ka Khazana",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachon, yaad rakhna hamari yaadasht hi hoti hai! Jaisa ke hum apne toys ya kapde yaad rakhte hain, waise hi hum apne dil ki yaad bhi rakhte hain. Agar koi cheez aapko ajeeb lage ya aapko maza na aaye, toh usko apne dil ki yaad mein rakhne ki zaroorat nahi. Aapko koi bhi cheez karne ka haq hai—agar aapko pasand nahi, toh \"na\" keh sakte hain."
+        ],
+        [
+          "Chhoti Kahani",
+          "Rahim ne apne dost ke saath ek khilona khareeda. Lekin jab usne dekha ke wo khilona uske dost ke paas zyada accha hai, toh usko yaad aaya ke wo apna khilona hi pasand karta hai. Usne apne dost se poochha, \"Kya hum apne khilonon ko share kar sakte hain?\" Uske dost ne haan kaha, aur dono ne mil kar khela. Aap bhi apne dil ki awaaz sun sakte hain!"
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar koi cheez tumhe ajeeb lage ya tumhe maza na aaye, toh tum kya karoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Tumhara jism tumhara hai—kisi ko tumse zyada pasand hai ya nahi, yeh sirf tum hi decide kar sakte ho! Agar koi cheez tumhe theek na lage, toh zaroor ammi-abbu ko batana."
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "Day 1 — Yaadasht Ka Khazana",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "Concept",
+              "content": "بچوں، یاد رکھنا ہماری یاداشت ہی ہوتی ہے! جیسا کہ ہم اپنے ٹوئز یا کپڑے یاد رکھتے ہیں، ویسے ہی ہم اپنے دل کی یاد بھی رکھتے ہیں۔ اگر کوئی چیز آپ کو عجیب لگے یا آپ کو مزہ نہ آئے، تو اس کو اپنے دل کی یاد میں رکھنے کی ضرورت نہیں۔ آپ کو کوئی بھی چیز کرنے کا حق ہے—اگر آپ کو پسند نہیں، تو 'نہیں' کہہ سکتے ہیں۔"
+            },
+            {
+              "label": "Chhoti Kahani",
+              "content": "رحیم نے اپنے دوست کے ساتھ ایک کھلونا خریدا۔ لیکن جب اس نے دیکھا کہ وہ کھلونا اس کے دوست کے پاس زیادہ اچھا ہے، تو اس کو یاد آیا کہ وہ اپنا کھلونا ہی پسند کرتا ہے۔ اس نے اپنے دوست سے پوچھا، 'کیا ہم اپنے کھلونوں کو شیئر کر سکتے ہیں؟' اس کے دوست نے ہاں کہا، اور دونوں نے مل کر کھیلا۔ آپ بھی اپنے دل کی آواز سن سکتے ہیں!"
+            },
+            {
+              "label": "Ammi Abbu Ke Sath Baat Karein",
+              "content": "بٹا، اگر کوئی چیز تمہیں عجیب لگے یا تمہیں مزہ نہ آئے، تو تم کیا کرو گے؟"
+            },
+            {
+              "label": "Yaad Rakhein",
+              "content": "تمہارا جسم تمہارا ہے—کسی کو تم سے زیادہ پسند ہے یا نہیں، یہ صرف تم ہی decide کر سکتے ہو! اگر کوئی چیز تمہیں ٹھیک نہ لگے، تو ضرور امی ابو کو بتانا۔"
+            }
+          ]
+        }
+      }
+    }
   ]
 }

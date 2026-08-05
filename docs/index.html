@@ -22,7 +22,7 @@
 <link rel="icon" href="logo.png">
 <link rel="manifest" href="manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-05T03:07:45.339742";
+  var FKC_BUILD = "2026-08-05T03:36:52.931233";
   function fkcCheckVersion(){
     fetch("version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -174,8 +174,9 @@ box-sizing:border-box;margin:6px 0;}
     <span class="lbl">Digital Hub — apni pasand ka course chunein</span></div>
     <span class="eyebrow fade-in">Course Library</span>
     <h1 class="fade-in">🎓 Roz ek naya practical lesson<span class="streak-badge" id="fkc-streak-badge"></span></h1>
-    <p class="muted fade-in d2">📅 Har course ka naya lesson roz apne fixed time par (9:00 AM se 11:30 AM Pakistan time ke darmiyan) yahan post hota hai — har course card par uska waqt likha hai.
+    <p class="muted fade-in d2">📅 Har course ka naya lesson roz raat 12:00 AM se subah 4:50 AM Pakistan time ke darmiyan yahan post hota hai — har course card par uska waqt likha hai.
     Jis course mein interest ho us par tap karein — daily lesson step-by-step parhein aur practice karein.</p>
+    <div id="fkc-continue-card" style="display:none;"></div>
     <input type="text" id="fkc-course-search" class="fkc-search" placeholder="🔍 Course dhoondein...">
     <p class="fade-in d2"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Start Learning</a></p>
     <div class="grid">
@@ -497,6 +498,61 @@ box-sizing:border-box;margin:6px 0;}
         <button type="button" class="notify-btn" data-notify-slug="mobile-repairing" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('mobile-repairing', this);">🔔 Notify Me</button>
       </div>
       <div class="stub" style="color:#0EA5A5"><span class="stub-n" style="color:#0EA5A5">02</span><span class="stub-l">lessons</span></div>
+    </a>
+    <a class="ccard fade-in" href="courses/kids-pg/index.html">
+      <div class="stamp" style="--accent-bg:#DB4C771a;color:#DB4C77">🧸</div>
+      <div class="body">
+        <h2>Play Group (PG) Course</h2>
+        <p class="tag">Chhote bachon (Play Group age) ke liye pehla seekhne ka safar — rang, shakalein, aawazein, aur pyaar bhare basics.</p>
+        <p class="latest">📖 Pehla lesson jald aa raha hai</p>
+        <p class="tag" style="margin-top:4px">🕒 Roz 4:50 AM PKT par naya lesson</p>
+        <button type="button" class="notify-btn" data-notify-slug="kids-pg" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('kids-pg', this);">🔔 Notify Me</button>
+      </div>
+      <div class="stub" style="color:#DB4C77"><span class="stub-n" style="color:#DB4C77">00</span><span class="stub-l">lessons</span></div>
+    </a>
+    <a class="ccard fade-in" href="courses/kids-nursery/index.html">
+      <div class="stamp" style="--accent-bg:#0056D21a;color:#0056D2">🔤</div>
+      <div class="body">
+        <h2>Nursery Course</h2>
+        <p class="tag">Nursery age ke bachon ke liye alphabets, ginti, aur bunyadi seekhne ki mazedaar lessons.</p>
+        <p class="latest">📖 Pehla lesson jald aa raha hai</p>
+        <p class="tag" style="margin-top:4px">🕒 Roz 5:00 AM PKT par naya lesson</p>
+        <button type="button" class="notify-btn" data-notify-slug="kids-nursery" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('kids-nursery', this);">🔔 Notify Me</button>
+      </div>
+      <div class="stub" style="color:#0056D2"><span class="stub-n" style="color:#0056D2">00</span><span class="stub-l">lessons</span></div>
+    </a>
+    <a class="ccard fade-in" href="courses/kids-kg/index.html">
+      <div class="stamp" style="--accent-bg:#2BAF661a;color:#2BAF66">📚</div>
+      <div class="body">
+        <h2>Kindergarten (KG) Course</h2>
+        <p class="tag">KG level bachon ke liye padhai — chhote jumlay, ginti mein jama-tafreeq, aur seekhne ka agla qadam.</p>
+        <p class="latest">📖 Pehla lesson jald aa raha hai</p>
+        <p class="tag" style="margin-top:4px">🕒 Roz 5:10 AM PKT par naya lesson</p>
+        <button type="button" class="notify-btn" data-notify-slug="kids-kg" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('kids-kg', this);">🔔 Notify Me</button>
+      </div>
+      <div class="stub" style="color:#2BAF66"><span class="stub-n" style="color:#2BAF66">00</span><span class="stub-l">lessons</span></div>
+    </a>
+    <a class="ccard fade-in" href="courses/kids-good-behavior/index.html">
+      <div class="stamp" style="--accent-bg:#6D28D91a;color:#6D28D9">🌟</div>
+      <div class="body">
+        <h2>Bachon Mein Achi Adaat (Good Behavior)</h2>
+        <p class="tag">Bachon ko roz ek achi adaat sikhayein — adab, sachai, sharing, aur bado ki izzat, pyaar bhare andaz mein.</p>
+        <p class="latest">📖 Pehla lesson jald aa raha hai</p>
+        <p class="tag" style="margin-top:4px">🕒 Roz 5:20 AM PKT par naya lesson</p>
+        <button type="button" class="notify-btn" data-notify-slug="kids-good-behavior" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('kids-good-behavior', this);">🔔 Notify Me</button>
+      </div>
+      <div class="stub" style="color:#6D28D9"><span class="stub-n" style="color:#6D28D9">00</span><span class="stub-l">lessons</span></div>
+    </a>
+    <a class="ccard fade-in" href="courses/kids-educational-games/index.html">
+      <div class="stamp" style="--accent-bg:#D9730D1a;color:#D9730D">🎮</div>
+      <div class="body">
+        <h2>Bachon Ke Educational Games</h2>
+        <p class="tag">Khel khel mein seekhna — ammi/abbu ghar par bachon ke sath khel kar sikhane wale asaan games.</p>
+        <p class="latest">📖 Day 1 — Yaadasht Ka Khazana</p>
+        <p class="tag" style="margin-top:4px">🕒 Roz 5:30 AM PKT par naya lesson</p>
+        <button type="button" class="notify-btn" data-notify-slug="kids-educational-games" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('kids-educational-games', this);">🔔 Notify Me</button>
+      </div>
+      <div class="stub" style="color:#D9730D"><span class="stub-n" style="color:#D9730D">01</span><span class="stub-l">lesson</span></div>
     </a></div>
     
     <div class="no-print" style="margin:18px 0;text-align:center;">
@@ -508,10 +564,28 @@ box-sizing:border-box;margin:6px 0;}
     <p style="text-align:center;margin-top:8px;">
       <a href="admin-certificates.html" style="color:var(--muted);font-size:11px;text-decoration:none;">⚙️ Admin</a>
     </p>
+    <script>
+    (function(){
+      try {
+        var raw = localStorage.getItem('fkc_last_lesson');
+        if (!raw) return;
+        var d = JSON.parse(raw);
+        var box = document.getElementById('fkc-continue-card');
+        if (!box || !d.href || !d.title) return;
+        box.style.display = 'block';
+        box.style.margin = '0 0 16px';
+        box.innerHTML = '<a href="' + d.href + '" style="display:block;background:linear-gradient(135deg,#eef4ff,#f7f0ff);' +
+          'border-radius:14px;padding:14px 16px;text-decoration:none;color:inherit;">' +
+          '<div style="font-size:12px;color:var(--muted);margin-bottom:4px;">▶️ Jahan chhoda tha wahan se jaari rakhein</div>' +
+          '<div style="font-weight:600;">' + (d.courseIcon || '') + ' ' + d.courseName + ' — Day ' + d.day + '</div>' +
+          '<div style="font-size:13px;color:var(--muted);margin-top:2px;">' + d.title + '</div></a>';
+      } catch (e) {}
+    })();
+    </script>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
-  var COURSE_TIMES = {"youtube-automation": "12:00 AM", "social-media-marketing": "12:10 AM", "ai-tools": "12:20 AM", "facebook-page-growth": "12:30 AM", "amazon-fba": "12:40 AM", "daraz-seller": "12:50 AM", "dropshipping": "1:00 AM", "freelancing": "1:10 AM", "digital-marketing-seo": "1:20 AM", "graphic-design-canva": "1:30 AM", "ai-content-writing": "1:40 AM", "video-editing": "1:50 AM", "affiliate-marketing": "2:00 AM", "print-on-demand": "2:10 AM", "no-code-app-dev": "2:20 AM", "forex-trading": "2:30 AM", "kids-safety-education": "2:40 AM", "cpp-daily-coding": "2:50 AM", "python-programming": "3:00 AM", "web-development": "3:10 AM", "excel-data-analysis": "3:20 AM", "crypto-blockchain": "3:30 AM", "psx-stock-trading": "3:40 AM", "tiktok-growth": "3:50 AM", "blogging-adsense": "4:00 AM", "photography-editing": "4:10 AM", "voiceover-podcasting": "4:20 AM", "real-estate-business": "4:30 AM", "mobile-repairing": "4:40 AM"};
-  var COURSE_NAMES = {"youtube-automation": "YouTube Automation", "social-media-marketing": "Social Media Marketing", "ai-tools": "AI Tools & Automation", "facebook-page-growth": "Facebook Page Growth", "amazon-fba": "Amazon FBA", "daraz-seller": "Daraz Seller", "dropshipping": "Dropshipping", "freelancing": "Freelancing", "digital-marketing-seo": "Digital Marketing & SEO", "graphic-design-canva": "Graphic Design (Canva)", "ai-content-writing": "AI Content Writing & Copywriting", "video-editing": "Video Editing (CapCut/Premiere)", "affiliate-marketing": "Affiliate Marketing", "print-on-demand": "Print on Demand", "no-code-app-dev": "No-Code App & Website Building", "forex-trading": "Forex Trading", "kids-safety-education": "Bachon Ki Hifazat (Good Touch, Bad Touch)", "cpp-daily-coding": "C++ Daily Coding", "python-programming": "Python Programming", "web-development": "Web Development", "excel-data-analysis": "Excel & Data Analysis", "crypto-blockchain": "Crypto & Blockchain Basics", "psx-stock-trading": "Stock Market Trading (PSX)", "tiktok-growth": "TikTok Growth & Monetization", "blogging-adsense": "Blogging & Adsense", "photography-editing": "Photography & Editing", "voiceover-podcasting": "Voice Over & Podcasting", "real-estate-business": "Real Estate Business", "mobile-repairing": "Mobile Repairing Business"};
+  var COURSE_TIMES = {"youtube-automation": "12:00 AM", "social-media-marketing": "12:10 AM", "ai-tools": "12:20 AM", "facebook-page-growth": "12:30 AM", "amazon-fba": "12:40 AM", "daraz-seller": "12:50 AM", "dropshipping": "1:00 AM", "freelancing": "1:10 AM", "digital-marketing-seo": "1:20 AM", "graphic-design-canva": "1:30 AM", "ai-content-writing": "1:40 AM", "video-editing": "1:50 AM", "affiliate-marketing": "2:00 AM", "print-on-demand": "2:10 AM", "no-code-app-dev": "2:20 AM", "forex-trading": "2:30 AM", "kids-safety-education": "2:40 AM", "cpp-daily-coding": "2:50 AM", "python-programming": "3:00 AM", "web-development": "3:10 AM", "excel-data-analysis": "3:20 AM", "crypto-blockchain": "3:30 AM", "psx-stock-trading": "3:40 AM", "tiktok-growth": "3:50 AM", "blogging-adsense": "4:00 AM", "photography-editing": "4:10 AM", "voiceover-podcasting": "4:20 AM", "real-estate-business": "4:30 AM", "mobile-repairing": "4:40 AM", "kids-pg": "4:50 AM", "kids-nursery": "5:00 AM", "kids-kg": "5:10 AM", "kids-good-behavior": "5:20 AM", "kids-educational-games": "5:30 AM"};
+  var COURSE_NAMES = {"youtube-automation": "YouTube Automation", "social-media-marketing": "Social Media Marketing", "ai-tools": "AI Tools & Automation", "facebook-page-growth": "Facebook Page Growth", "amazon-fba": "Amazon FBA", "daraz-seller": "Daraz Seller", "dropshipping": "Dropshipping", "freelancing": "Freelancing", "digital-marketing-seo": "Digital Marketing & SEO", "graphic-design-canva": "Graphic Design (Canva)", "ai-content-writing": "AI Content Writing & Copywriting", "video-editing": "Video Editing (CapCut/Premiere)", "affiliate-marketing": "Affiliate Marketing", "print-on-demand": "Print on Demand", "no-code-app-dev": "No-Code App & Website Building", "forex-trading": "Forex Trading", "kids-safety-education": "Bachon Ki Hifazat (Good Touch, Bad Touch)", "cpp-daily-coding": "C++ Daily Coding", "python-programming": "Python Programming", "web-development": "Web Development", "excel-data-analysis": "Excel & Data Analysis", "crypto-blockchain": "Crypto & Blockchain Basics", "psx-stock-trading": "Stock Market Trading (PSX)", "tiktok-growth": "TikTok Growth & Monetization", "blogging-adsense": "Blogging & Adsense", "photography-editing": "Photography & Editing", "voiceover-podcasting": "Voice Over & Podcasting", "real-estate-business": "Real Estate Business", "mobile-repairing": "Mobile Repairing Business", "kids-pg": "Play Group (PG) Course", "kids-nursery": "Nursery Course", "kids-kg": "Kindergarten (KG) Course", "kids-good-behavior": "Bachon Mein Achi Adaat (Good Behavior)", "kids-educational-games": "Bachon Ke Educational Games"};
 
   function parseTimeToday(t){
     var m = /(\d+):(\d+)\s*(AM|PM)/i.exec(t);
