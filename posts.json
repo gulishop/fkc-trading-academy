@@ -4560,7 +4560,88 @@
         ]
       ],
       "answer_key": "trim, substitute, remove duplicates, text to columns",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "یوم ۴ — ڈیٹا کلیننگ: ایکسل کا راز ہتھیار",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "ایکسل میں \"کلین ڈیٹا\" کا مطلب ہے: کوئی اضافی سپیس نہیں، صحیح فارمیٹس، کوئی ڈپلیکیٹس نہیں، اور مستقل اندراجات۔ آج ہم سیکھیں گے کہ کیسے فارمولاز (`TRIM`، `CLEAN`، `SUBSTITUTE`) اور ٹولز (`Find & Replace`، `Remove Duplicates`، `Text to Columns`) کی مدد سے گندا ڈیٹا کو پیشہ ورانہ بنایا جاتا ہے۔ کلین ڈیٹا = درست تجزیہ = کم پریشانیاں!"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک ایکسل شیٹ میں \"  John  \" (اضافی سپیسز)، \"john.doe@email.com\" اور \"john doe@email.com\" (غیر مستقل نقطے) موجود ہیں۔ اقدامات:\n١۔ `=TRIM(A1)` سے اضافی سپیسز ہٹائیں۔\n٢۔ `=SUBSTITUTE(A2, \".\", \"\")` سے نقطے ہٹائیں۔\n٣۔ `Data > Remove Duplicates` سے ڈپلیکیٹ ای میلز نکالیں۔"
+            },
+            {
+              "label": "مشق",
+              "content": "اپنے ایکسل میں ایک کالم میں \"  ali  \"، \"ali \"، اور \"ALI\" لکھیں۔ `TRIM` اور `UPPER`/`LOWER` فارمولاز استعمال کرکے سب کو لوئرکیس اور ایک ہی سپیس میں تبدیل کریں۔"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "ایک \"گندا\" ڈیٹاسیٹ ڈاؤن لوڈ کریں (گوگل پر \"sample messy data Excel\" تلاش کریں)۔ اس کے ساتھ یہ کریں:\n- اضافی سپیسز ہٹائیں۔\n- تاریخوں کو مستقل فارمیٹ میں تبدیل کریں (مثلاً، `dd-mm-yyyy`)۔\n- ڈپلیکیٹ قطاریں نکالیں۔\n- آخری کلین فائل محفوظ کریں۔"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "day": 5,
+      "id": "day-005",
+      "date": "2026-08-05",
+      "title": "Day 5 — **Charts aur Graphs: Data ko Visual Story Banaana**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Excel mein charts aur graphs se data ko visually represent karke insights nikalna seekhein. Bar charts, pie charts, line graphs, aur scatter plots ka istemal karke trends, comparisons, aur distributions ko samajhna aasan ho jata hai. Charts dynamic bhi hote hain—data update hone par yeh bhi automatically adjust hote hain."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Bar Chart",
+          "Monthly sales data ko compare karne ke liye:\n   - Select data (e.g., months in column A, sales in column B).\n   - Insert → Bar Chart → Clustered Bar.\n   - X-axis par months, Y-axis par sales values dikhein.\n2."
+        ],
+        [
+          "Pie Chart",
+          "Market share ka breakdown:\n   - Select categories (e.g., \"Product A\", \"Product B\") aur percentages.\n   - Insert → Pie Chart → 2D Pie.\n   - Har segment ka percentage aur label check karein."
+        ],
+        [
+          "Practice",
+          "Apne Excel mein ek **line graph** banayein jo 2023 ke 4 quarters ki company revenue ko show kare. Data yeh ho:\n| Quarter | Revenue |\n|---------|---------|\n| Q1      | 50,000  |\n| Q2      | 75,000  |\n| Q3      | 60,000  |\n| Q4      | 90,000  |"
+        ],
+        [
+          "Mini Project",
+          "Ek **dashboard-style chart set** banayein jo:\n- Bar chart: Product-wise sales (2023).\n- Pie chart: Expense categories (e.g., Marketing 30%, Salaries 50%, etc.).\n- Line graph: Monthly profit trend.\n*Tip:* Sab charts ko ek hi sheet par place karein aur unhe align karein."
+        ]
+      ],
+      "answer_key": "quarterly revenue line graph, q1-q4 trend, increasing, 50k-90k",
+      "translations": {
+        "ur": {
+          "title": "دن 5 — چارٹس اور گرافس: ڈیٹا کو بصری کہانی بنانا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ایکسل میں چارٹس اور گرافس کے ذریعے ڈیٹا کو بصری طور پر پیش کرکے بصیرت حاصل کرنا سیکھیں۔ بار چارٹس، پائی چارٹس، لائن گرافس، اور سکٹر پلاٹس کا استعمال کرتے ہوئے رجحانات، موازنوں، اور تقسیم کو سمجھنا آسان ہو جاتا ہے۔ چارٹس متحرک بھی ہوتے ہیں—ڈیٹا میں تبدیلی ہونے پر یہ خود بخود ایڈجسٹ ہو جاتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1.\nبار چارٹ: ماہانہ سیلز ڈیٹا کا موازنہ کرنے کے لیے:\n- ڈیٹا کو منتخب کریں (مثلاً کالم A میں مہینے، کالم B میں سیلز)۔\n- Insert → Bar Chart → Clustered Bar۔\n- X-axis پر مہینے، Y-axis پر سیلز ویلیوز دیکھیں۔\n\n2.\nپائی چارٹ: مارکیٹ شیئر کا بریک ڈاؤن:\n- زمرے منتخب کریں (مثلاً \"پروڈکٹ A\"، \"پروڈکٹ B\") اور فیصد۔\n- Insert → Pie Chart → 2D Pie۔\n- ہر سگمنٹ کا فیصد اور لیبل چیک کریں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے ایکسل میں ایک لائن گراف بنائیں جو 2023 کے 4 کوارٹرز کی کمپنی ریونیو کو ظاہر کرے۔ ڈیٹا یہ ہے:\n| کوارٹر | ریونیو |\n|---------|---------|\n| Q1      | 50,000  |\n| Q2      | 75,000  |\n| Q3      | 60,000  |\n| Q4      | 90,000  |"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک ڈیش بورڈ طرز کا چارٹ سیٹ بنائیں جس میں شامل ہو:\n- بار چارٹ: پروڈکٹ وائز سیلز (2023)۔\n- پائی چارٹ: اخراجات کے زمرے (مثلاً مارکیٹنگ 30%، تنخواہیں 50% وغیرہ)۔\n- لائن گراف: ماہانہ منافع کا رجحان۔\n*ٹپ:* تمام چارٹس کو ایک ہی شیٹ پر رکھیں اور انہیں ترتیب دیں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "crypto-blockchain": [
