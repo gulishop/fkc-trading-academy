@@ -2730,6 +2730,37 @@
       ],
       "answer_key": "title, author, price, car, model, year, iselectric",
       "translations": {}
+    },
+    {
+      "day": 9,
+      "id": "day-009",
+      "date": "2026-08-05",
+      "title": "Day 9 — **Pointers: Memory Addresses Ko Samajhna Aur Use Karna**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Pointers C++ ki sabse powerful features mein se ek hain. Ye variables ki memory address store karte hain. Pointers se aap direct memory ko access kar sakte hain, dynamic memory allocation kar sakte hain, aur functions se values return kar sakte hain (by reference). Basics mein hum seekhenge ki pointer kaise declare karte hain, address-of operator (`&`) aur dereference operator (`*`) ka istemal kaise hota hai."
+        ],
+        [
+          "Example",
+          "```cpp\nint num = 10;       // Ek integer variable\nint *ptr = &num;    // Pointer jo num ka address store karta hai\n\ncout << \"num ka address: \" << ptr << endl;  // Memory address print hoga\ncout << \"num ki value: \" << *ptr << endl;   // Dereference se value milti hai (10)\n```"
+        ],
+        [
+          "Practice",
+          "Ek program likho jo:\n1. Ek integer variable `age` declare kare (value: 25).\n2. Uske address ko ek pointer `agePtr` mein store kare.\n3. Pointer ka use karke `age` ki value ko 30 mein update kare.\n4. Dono values (original aur updated) print karo."
+        ],
+        [
+          "Mini Project",
+          ""
+        ],
+        [
+          "Simple Swap Program",
+          "Ek function `swapValues` banayein jo do integers ki values ko pointers ki madad se swap kare. Main function mein do variables declare karke unki values 5 aur 10 set karo, phir `swapValues` call karo aur result print karo."
+        ]
+      ],
+      "answer_key": "ageptr, *ageptr=30, 25, 30",
+      "translations": {}
     }
   ],
   "python-programming": [
