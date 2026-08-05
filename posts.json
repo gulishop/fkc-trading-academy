@@ -4369,5 +4369,57 @@
         }
       }
     }
+  ],
+  "kids-pg": [
+    {
+      "day": 1,
+      "id": "day-001",
+      "date": "2026-08-05",
+      "title": "Day 1 — \"Chhote Rangon Ki Pehchan\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke laal, neela, peela aur hara rang kaise hote hain! Har rang ka apna ek khas maza hai. Jaise laal rang se signal rookta hai, neela rang aasmaan ki tarah shaan rakhta hai, peela rang sundar phoolon jaise khushgawar hai, aur hara rang bahaar aur pedon ki yaad dilaata hai. Rangon ko pehchanna seekhna bahut mazedar hai!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Aman ne apne school mein ek chhota sa khel khel raha tha. Uske dost ne kaha, \"Aman, yeh laal rang ka ball hai!\" Aman ne muskura kar kaha, \"Haan, aur yeh neela rang ka pen hai!\" Uske dost ne kaha, \"Tumne toh sab rangon ko pehchanna seekh liya!\" Aman bahut khush hua."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, tumhein sabse zyada kaunsa rang pasand hai? Aur kyun?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Rangon ki pehchan karna seekhna bahut hi aasaan hai. Har rang ka apna ek khas maza hai, jaise laal, neela, peela aur hara!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "Day 1 — \"چھوٹے رنگوں کی پہچان\"",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج ہم سیکھیں گے کہ لال، نیلا، پیلا اور ہرا رنگ کیسے ہوتے ہیں! ہر رنگ کا اپنا ایک خاص مزہ ہے۔ جیسے لال رنگ سے سگنل رکتا ہے، نیلا رنگ آسمان کی طرح شان رکھتا ہے، پیلا رنگ سنہارے پھولوں جیسے خوشگوار ہے، اور ہرا رنگ بہار اور پودوں کی یاد دلاتا ہے۔ رنگوں کو پہچاننا سیکھنا بہت مزے دار ہے!"
+            },
+            {
+              "label": "چوٹی کہانی",
+              "content": "آمن نے اپنے سکول میں ایک چھوٹا سا کھیل کھیل رہا تھا۔ اس کے دوست نے کہا، \"آمن، یہ لال رنگ کا بال ہے!\" آمن نے مسکرا کر کہا، \"ہاں، اور یہ نیلا رنگ کا پین ہے!\" اس کے دوست نے کہا، \"تم نے تو سب رنگوں کو پہچاننا سیکھ لیا!\" آمن بہت خوش ہوا۔"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "بٹّا، تمہیں سب سے زیادہ کون سا رنگ پسند ہے؟ اور کیوں؟"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "رنگوں کی پہچان کرنا سیکھنا بہت ہی آسان ہے۔ ہر رنگ کا اپنا ایک خاص مزہ ہے، جیسے لال، نیلا، پیلا اور ہرا!"
+            }
+          ]
+        }
+      }
+    }
   ]
 }
