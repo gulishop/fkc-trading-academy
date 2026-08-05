@@ -606,6 +606,8 @@ BRAND_NAME_TITLE_LINE = f"{BRAND_CONTACT_NAME} — {BRAND_CONTACT_TITLE}"
 
 SITE_URL = os.environ.get("SITE_URL", "").rstrip("/")
 MISTRAL_API_KEY = os.environ.get("MISTRAL_API_KEY", "")
+TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 
 POSTS_JSON = "posts.json"
 LESSONS_DIR = "lessons"
@@ -615,6 +617,36 @@ IMAGES_DIR = "images"  # optional, manually-added lesson illustrations —
 # sakta hai; agar file maujood ho to woh lesson page par khud-b-khud
 # lag jati hai (koi AI image generation nahi — sirf jo aap khud daalein).
 IMAGE_EXTS = (".png", ".jpg", ".jpeg", ".webp")
+
+
+def notify_telegram(course, lesson, slug):
+    """Naya lesson bante hi Telegram channel par bhej deta hai — 100% free
+    (Telegram Bot API ka koi charge nahi), bas TELEGRAM_BOT_TOKEN aur
+    TELEGRAM_CHAT_ID secrets pehle se hi yml files mein wire the, sirf ye
+    call kabhi likha hi nahi gaya tha. Token/chat-id na ho to chup chaap
+    skip (lesson generation kabhi iski wajah se nahi rukni chahiye)."""
+    if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
+        return
+    link = ""
+    if SITE_URL:
+        link = f"\n\n👉 {SITE_URL}/courses/{slug}/posts/{lesson['date']}-{lesson['id']}.html"
+    text = (
+        f"📚 {course['icon']} {course['name']} — Day {lesson['day']:02d}\n"
+        f"{lesson['title']}{link}"
+    )
+    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+    payload = json.dumps({"chat_id": TELEGRAM_CHAT_ID, "text": text}).encode("utf-8")
+    try:
+        req = urllib.request.Request(
+            url, data=payload, headers={"Content-Type": "application/json"}, method="POST"
+        )
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            resp.read()
+        print(f"[{slug}] Day {lesson['day']} Telegram par bhej diya.")
+    except Exception as e:
+        msg = f"[{slug}] Day {lesson['day']} Telegram post fail hui: {e}"
+        print(msg, file=sys.stderr)
+        log_error(msg)
 
 
 def find_lesson_image(slug, day_num):
@@ -2622,8 +2654,9 @@ def render_home(posts):
     <span class="lbl">Digital Hub — apni pasand ka course chunein</span></div>
     <span class="eyebrow fade-in">Course Library</span>
     <h1 class="fade-in">🎓 Roz ek naya practical lesson<span class="streak-badge" id="fkc-streak-badge"></span></h1>
-    <p class="muted fade-in d2">📅 Har course ka naya lesson roz apne fixed time par (9:00 AM se 11:30 AM Pakistan time ke darmiyan) yahan post hota hai — har course card par uska waqt likha hai.
+    <p class="muted fade-in d2">📅 Har course ka naya lesson roz raat 12:00 AM se subah 4:50 AM Pakistan time ke darmiyan yahan post hota hai — har course card par uska waqt likha hai.
     Jis course mein interest ho us par tap karein — daily lesson step-by-step parhein aur practice karein.</p>
+    <div id="fkc-continue-card" style="display:none;"></div>
     <input type="text" id="fkc-course-search" class="fkc-search" placeholder="🔍 Course dhoondein...">
     <p class="fade-in d2">{direct_link_button_html("🚀 Start Learning")}</p>
     <div class="grid">{''.join(cards)}</div>
@@ -2632,6 +2665,24 @@ def render_home(posts):
     <p style="text-align:center;margin-top:8px;">
       <a href="admin-certificates.html" style="color:var(--muted);font-size:11px;text-decoration:none;">⚙️ Admin</a>
     </p>
+    <script>
+    (function(){{
+      try {{
+        var raw = localStorage.getItem('fkc_last_lesson');
+        if (!raw) return;
+        var d = JSON.parse(raw);
+        var box = document.getElementById('fkc-continue-card');
+        if (!box || !d.href || !d.title) return;
+        box.style.display = 'block';
+        box.style.margin = '0 0 16px';
+        box.innerHTML = '<a href="' + d.href + '" style="display:block;background:linear-gradient(135deg,#eef4ff,#f7f0ff);' +
+          'border-radius:14px;padding:14px 16px;text-decoration:none;color:inherit;">' +
+          '<div style="font-size:12px;color:var(--muted);margin-bottom:4px;">▶️ Jahan chhoda tha wahan se jaari rakhein</div>' +
+          '<div style="font-weight:600;">' + (d.courseIcon || '') + ' ' + d.courseName + ' — Day ' + d.day + '</div>' +
+          '<div style="font-size:13px;color:var(--muted);margin-top:2px;">' + d.title + '</div></a>';
+      }} catch (e) {{}}
+    }})();
+    </script>
     """
     og_image = f"{SITE_URL}/{BRAND_LOGO}" if SITE_URL else BRAND_LOGO
     head = HEAD.format(
@@ -2797,6 +2848,42 @@ def render_lesson_page(slug, course, lesson, is_latest, image_href=None, video_h
     affiliate_block = f'<p>{affiliate_btn}</p>' if affiliate_btn else ""
     quiz_block = quiz_check_html(lesson.get("answer_key", ""))
 
+    # "Kal ka recap" — chhoti si continuity line, taake student ko yaad
+    # rahe pichla lesson kya tha. Sirf 1 line, koi extra AI call nahi
+    # (bilkul free) — bas prev_title jo pehle se maujood hai use karte hain.
+    recap_block = ""
+    if prev_title:
+        recap_block = (
+            f'<p class="muted" style="margin:0 0 10px;">↩️ Pichla lesson: '
+            f'<strong>{html.escape(prev_title)}</strong> — aaj is se aage badhte hain.</p>'
+        )
+
+    # Bachon (kids-safety course) ke liye ek chhota parent-note — is course
+    # mein content jaan-boojh kar simple/audio-heavy hai, parents ko yaad
+    # dilate hain ke bache ke sath baith kar sunein.
+    kids_parent_note = ""
+    if course.get("for_kids"):
+        kids_parent_note = (
+            '<p class="muted" style="background:#fff7e6;padding:10px 12px;'
+            'border-radius:10px;margin:0 0 12px;">👨‍👩‍👧 Walidain ke liye: '
+            'bachay ke sath baith kar ye lesson sunein/dekhein, aur upar wala '
+            '🎬 audio zaroor lagayein — chhotay bachay padhne se zyada sun kar '
+            'behtar samajhte hain.</p>'
+        )
+
+    # Personal notes — student apni note likh sake, har device/browser mein
+    # localStorage se save hoti hai (bilkul free, koi server/database nahi
+    # chahiye). Print mein shaamil nahi (no-print) taake PDF saaf rahe.
+    notes_block = f"""
+      <div class="no-print" style="margin-top:14px;">
+        <label for="fkc-notes" class="muted" style="display:block;margin-bottom:4px;">📝 Apni Note (sirf aapke is browser mein save hoti hai):</label>
+        <textarea id="fkc-notes" data-slug="{slug}" data-lesson="{lesson['id']}"
+          placeholder="Yahan apni note likhein..." rows="3"
+          style="width:100%;border-radius:10px;border:1px solid #ddd;padding:8px;font-family:inherit;"
+          oninput="fkcSaveNote(this)"></textarea>
+      </div>
+    """
+
     nav_block = ""
     if prev_href or next_href:
         prev_link = f'<a class="btn alt" href="{prev_href}">← {html.escape(prev_title)}</a>' if prev_href else "<span></span>"
@@ -2809,13 +2896,16 @@ def render_lesson_page(slug, course, lesson, is_latest, image_href=None, video_h
     {badge}
     <p class="muted">{course['icon']} {html.escape(course['name'])} · Day {lesson['day']:02d}</p>
     <h1>{html.escape(lesson['title'])}</h1>
+    {recap_block}
     <div class="card">
+      {kids_parent_note}
       {image_block}
       {video_block}
       {tabs_html}
       {content_html}
       {affiliate_block}
       {quiz_block}
+      {notes_block}
       <div class="no-print">
         <a class="btn" href="{wa_link}" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="{tg_link}" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
@@ -2832,6 +2922,32 @@ def render_lesson_page(slug, course, lesson, is_latest, image_href=None, video_h
     <p class="no-print">{direct_link_button_html("🚀 Watch Next Lesson")}</p>
     {adsense_unit_html()}
     {brand_footer_html(logo_href)}
+    <script>
+    (function(){{
+      try {{
+        localStorage.setItem('fkc_last_lesson', JSON.stringify({{
+          slug: {json.dumps(slug)},
+          courseName: {json.dumps(course['name'])},
+          courseIcon: {json.dumps(course.get('icon',''))},
+          title: {json.dumps(lesson['title'])},
+          href: 'courses/{slug}/posts/{lesson['date']}-{lesson['id']}.html',
+          day: {lesson['day']}
+        }}));
+      }} catch (e) {{}}
+      var ta = document.getElementById('fkc-notes');
+      if (ta) {{
+        try {{
+          var saved = localStorage.getItem('fkc_note_' + ta.dataset.slug + '_' + ta.dataset.lesson);
+          if (saved) ta.value = saved;
+        }} catch (e) {{}}
+      }}
+    }})();
+    function fkcSaveNote(el) {{
+      try {{
+        localStorage.setItem('fkc_note_' + el.dataset.slug + '_' + el.dataset.lesson, el.value);
+      }} catch (e) {{}}
+    }}
+    </script>
     """
     og_image = f"{SITE_URL}/{BRAND_LOGO}" if SITE_URL else logo_href
     head = HEAD.format(
@@ -3377,6 +3493,8 @@ def main():
                 "w", encoding="utf-8",
             ) as f:
                 f.write(page)
+
+            notify_telegram(course, lesson, slug)  # sirf naye lesson par, rebuild par dobara nahi
         except Exception as e:
             msg = f"[{slug}] lesson generation is baar fail hui, agla course try ho raha hai: {e}"
             print(msg, file=sys.stderr)
