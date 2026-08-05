@@ -2422,9 +2422,25 @@ flex-wrap:wrap;margin-top:14px;}
 border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
 box-sizing:border-box;margin:6px 0;}
 .quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+.puzzle-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.puzzle-box h3{margin-top:0;}
+.puzzle-status{font-size:.85em;color:var(--muted);margin:0 0 10px;}
+.puzzle-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;
+max-width:340px;margin:0 auto;}
+.puzzle-card{aspect-ratio:1/1;border-radius:10px;border:none;
+background:var(--primary);color:#fff;font-size:1.6em;cursor:pointer;
+display:flex;align-items:center;justify-content:center;
+transition:transform .25s ease,background .25s ease;padding:0;}
+.puzzle-card.flipped,.puzzle-card.matched{background:#fff;
+border:1px solid var(--line);color:var(--ink);}
+.puzzle-card.matched{background:#EAFBF0;border-color:var(--accent);
+opacity:.85;cursor:default;}
+.puzzle-card:disabled{cursor:default;}
+.puzzle-win{display:none;text-align:center;margin-top:12px;
+background:#EAFBF0;border-radius:10px;padding:12px;font-weight:700;color:#15803d;}
 @media print{
   .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
-  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  .quiz-box,.puzzle-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
   body{background:#fff;}
   .card{box-shadow:none;border:none;}
 }
@@ -2593,6 +2609,89 @@ def quiz_check_html(answer_key):
       </script>"""
 
 
+# ---------------------------------------------------------------------
+# 🧩 Puzzle game — chhota "yaadasht" (memory match) game, bilkul free,
+# koi AI/network call nahi, sirf emojis ke jode milane hain. Har lesson
+# page par aur games hub par dikhta hai — students (bade ho ya bachay)
+# thodi der khelte hain, isi dauran page par pehle se laga hua AdSense
+# unit dikhta rehta hai (impression), aur jeetne par "Aur Seekhein"
+# CTA reveal hota hai. Koi "click karo reward ke liye" wala button nahi
+# — AdSense policy ke against hota, isliye sirf natural CTA hai.
+# ---------------------------------------------------------------------
+PUZZLE_EMOJI_SETS = [
+    ["🎯", "📚", "⭐", "🚀", "💡", "🏆"],
+    ["🍎", "🐶", "🌙", "🎨", "🔑", "🌸"],
+    ["🎈", "🧩", "🎵", "🐢", "🌈", "⚽"],
+    ["🍉", "🐱", "☀️", "🖊️", "🎁", "🐝"],
+    ["🚗", "🌟", "📖", "🐦", "🍩", "🔔"],
+    ["🐘", "🎪", "🍓", "🧠", "🌻", "🎲"],
+]
+
+
+def puzzle_game_html(uid, seed=0):
+    """Self-contained memory-match (jode milao) game — koi external
+    library nahi, sirf vanilla JS. `uid` unique honi chahiye taake ek
+    hi page par 2+ instances ho to takra na jayein (games hub page)."""
+    emojis = PUZZLE_EMOJI_SETS[seed % len(PUZZLE_EMOJI_SETS)]
+    emojis_js = json.dumps(emojis, ensure_ascii=False)
+    return f"""
+      <div class="puzzle-box no-print" id="{uid}">
+        <h3>🧩 Dimaghi Kasrat — Jode Milayein</h3>
+        <p class="puzzle-status" id="{uid}-status">Cards par tap karke jode (pairs) milayein.</p>
+        <div class="puzzle-grid" id="{uid}-grid"></div>
+        <div class="puzzle-win" id="{uid}-win">🎉 Shabaash! Sab jode mil gaye — thodi der aur seekhne ke liye tayyar?</div>
+      </div>
+      <script>
+      (function(){{
+        var emojis = {emojis_js};
+        var deck = emojis.concat(emojis);
+        for (var i = deck.length - 1; i > 0; i--) {{
+          var j = Math.floor(Math.random() * (i + 1));
+          var t = deck[i]; deck[i] = deck[j]; deck[j] = t;
+        }}
+        var grid = document.getElementById("{uid}-grid");
+        var statusEl = document.getElementById("{uid}-status");
+        var winEl = document.getElementById("{uid}-win");
+        var flipped = [], matchedCount = 0, moves = 0, lock = false;
+        deck.forEach(function(val){{
+          var b = document.createElement("button");
+          b.type = "button";
+          b.className = "puzzle-card";
+          b.setAttribute("data-val", val);
+          b.textContent = "❓";
+          b.onclick = function(){{
+            if (lock || b.classList.contains("matched") || b.classList.contains("flipped")) return;
+            b.classList.add("flipped");
+            b.textContent = val;
+            flipped.push(b);
+            if (flipped.length === 2) {{
+              moves++;
+              lock = true;
+              var a = flipped[0], c = flipped[1];
+              if (a.getAttribute("data-val") === c.getAttribute("data-val")) {{
+                a.classList.add("matched"); c.classList.add("matched");
+                matchedCount += 2;
+                flipped = []; lock = false;
+                statusEl.textContent = "Moves: " + moves + " · " + matchedCount + "/" + deck.length + " match hue";
+                if (matchedCount === deck.length) {{
+                  winEl.style.display = "block";
+                  statusEl.textContent = "Complete! Total moves: " + moves;
+                }}
+              }} else {{
+                setTimeout(function(){{
+                  a.classList.remove("flipped"); a.textContent = "❓";
+                  c.classList.remove("flipped"); c.textContent = "❓";
+                  flipped = []; lock = false;
+                }}, 700);
+              }}
+            }}
+          }};
+          grid.appendChild(b);
+        }});
+      }})();
+      </script>"""
+
+
 def log_error(message):
     """Errors ko error_log.txt mein bhi append karta hai (console print ke
     ilawa) — taake GitHub Actions run history khatam hone ke baad bhi
@@ -2610,7 +2709,7 @@ def build_sitemap_xml(posts):
     to None return karta hai aur sitemap simply nahi likhi jati."""
     if not SITE_URL:
         return None
-    urls = [f"{SITE_URL}/"]
+    urls = [f"{SITE_URL}/", f"{SITE_URL}/games.html"]
     for slug, course in COURSES.items():
         urls.append(f"{SITE_URL}/courses/{slug}/index.html")
         for lesson in posts.get(slug, []):
@@ -2726,6 +2825,7 @@ def render_home(posts):
     Jis course mein interest ho us par tap karein — daily lesson step-by-step parhein aur practice karein.</p>
     <div id="fkc-continue-card" style="display:none;"></div>
     <input type="text" id="fkc-course-search" class="fkc-search" placeholder="🔍 Course dhoondein...">
+    <p class="fade-in d2"><a class="btn alt" href="games.html">🎮 Games Zone — Khel Khel Mein Seekhein</a></p>
     <p class="fade-in d2">{direct_link_button_html("🚀 Start Learning")}</p>
     <div class="grid">{''.join(cards)}</div>
     {adsense_unit_html()}
@@ -2821,6 +2921,40 @@ def render_course_page(slug, course, lessons):
     )
 
 
+def render_games_page():
+    """Ek dedicated 'Games Zone' page (docs/games.html, root-level jaisa
+    index.html) — 3 puzzle levels ek sath, taake koi bhi (bacha ho ya
+    bada) sirf khelne ke liye bhi aaye. Har lesson page par bhi wahi
+    game hai, lekin yeh ek standalone hub hai jo home page se link hota
+    hai — repeat visits aur ad impressions dono badhta hai."""
+    levels = "".join(
+        f'<div class="card">{puzzle_game_html(f"pz-hub-{i}", seed=i)}</div>'
+        for i in range(3)
+    )
+    logo_href = BRAND_LOGO
+    body = f"""
+    <div class="top"><a href="index.html">← {html.escape(BRAND_NAME)}</a></div>
+    <span class="eyebrow fade-in">Games Zone</span>
+    <h1 class="fade-in">🎮 Khel Khel Mein Seekhein</h1>
+    <p class="muted fade-in d2">Yaadasht (memory) games — bacchay ho ya bade, sab ke liye. Har level mein naye emoji jode hain, dimagh tez karein!</p>
+    {levels}
+    {adsense_unit_html()}
+    <p class="fade-in">{direct_link_button_html("🚀 Ab Ek Course Shuru Karein")}</p>
+    {brand_footer_html(logo_href)}
+    """
+    og_image = f"{SITE_URL}/{BRAND_LOGO}" if SITE_URL else BRAND_LOGO
+    head = HEAD.format(
+        title=f"Games Zone — {BRAND_NAME}",
+        ogdesc="Khel khel mein seekhein — free memory/puzzle games, bacchon aur bado dono ke liye.",
+        ogimage=og_image,
+        logo_href=logo_href,
+        brand=html.escape(BRAND_NAME),
+        css=BASE_CSS,
+        pwa_extra=pwa_extra_for(logo_href),
+    )
+    return head + body + FOOT_TAIL + pwa_install_prompt_html()
+
+
 def render_translation_html(data):
     out = md_lite(data.get("preamble", ""))
     for sec in data.get("sections", []):
@@ -2914,6 +3048,7 @@ def render_lesson_page(slug, course, lesson, is_latest, image_href=None, video_h
     affiliate_btn = course_affiliate_button_html(course)
     affiliate_block = f'<p>{affiliate_btn}</p>' if affiliate_btn else ""
     quiz_block = quiz_check_html(lesson.get("answer_key", ""))
+    puzzle_block = puzzle_game_html(f"pz-{slug}-{lesson['day']}", seed=lesson["day"])
 
     # "Kal ka recap" — chhoti si continuity line, taake student ko yaad
     # rahe pichla lesson kya tha. Sirf 1 line, koi extra AI call nahi
@@ -2972,6 +3107,7 @@ def render_lesson_page(slug, course, lesson, is_latest, image_href=None, video_h
       {content_html}
       {affiliate_block}
       {quiz_block}
+      {puzzle_block}
       {notes_block}
       <div class="no-print">
         <a class="btn" href="{wa_link}" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
@@ -3618,6 +3754,11 @@ def main():
     os.makedirs(DOCS_DIR, exist_ok=True)
     with open(os.path.join(DOCS_DIR, "index.html"), "w", encoding="utf-8") as f:
         f.write(render_home(posts))
+
+    # Games Zone — standalone hub, 3 memory-match levels (har lesson page
+    # par bhi wahi game hai, yeh ek repeat-visit-friendly hub page hai).
+    with open(os.path.join(DOCS_DIR, "games.html"), "w", encoding="utf-8") as f:
+        f.write(render_games_page())
 
     # Certificate admin panel — sirf Fazul Khan ke liye (Firebase config
     # fill hone par hi actual kaam karega, warna setup-instructions dikhata hai).
