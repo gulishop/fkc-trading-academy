@@ -3024,7 +3024,30 @@
         ]
       ],
       "answer_key": "design upload, inventory zero, supplier prints",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن ١ — پرنٹ آن ڈیمینڈ کیا ہے؟ بنیادی باتوں سے شروع",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "پرنٹ آن ڈیمینڈ (POD) ایک ایسا بزنس ماڈل ہے جہاں آپ کسی پروڈکٹ (ٹی شرٹ، مگ، پوسٹر وغیرہ) کا ڈیزائن اپ لوڈ کرتے ہیں، اور جب کوئی گاہک آرڈر دیتا ہے تب ہی وہ پروڈکٹ پرنٹ ہوتی ہے اور ڈیلیور کی جاتی ہے۔ آپ کو کوئی انوینٹری رکھنے کی ضرورت نہیں ہوتی—سب کچھ سپلائر ہینڈل کرتا ہے۔ یہ ایک کم رسک بزنس ہے کیونکہ آپ کو پہلے سے پیسے لگانے کی ضرورت نہیں ہوتی۔"
+            },
+            {
+              "label": "مثال",
+              "content": "تصور کریں آپ ایک ٹی شرٹ کا ڈیزائن بناتے ہیں ’دل سے پاکستان‘ اور اسے پرنٹ فل پر اپ لوڈ کرتے ہیں۔ کوئی گاہک وہ ٹی شرٹ آرڈر کرتا ہے تو پرنٹ فل اسے پرنٹ کرتا ہے، پیک کرتا ہے، اور گاہک تک پہنچا دیتا ہے۔ آپ کو صرف ڈیزائن اور مارکیٹنگ کا کام ہے—باقی سب سپلائر کا۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے موبائل یا لیپ ٹاپ سے یہ چیک کریں: پرنٹ فل یا ریڈ بابل کی ویب سائٹ پر جائیں اور دیکھیں کہ کن پروڈکٹس پر ڈیزائن اپ لوڈ کیے جا سکتے ہیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک سادہ ڈیزائن بنائیں (کینوا یا فون کے ڈرائنگ ایپ سے) جو آپ کو پسند ہو—جیسے ’پاکستان زندہ باد‘ یا ’محبت پاکستان‘—اور اسے کسی POD پلیٹ فارم پر اپ لوڈ کرنے کا اسکرین شاٹ لے لیں (اگر ممکن ہو تو)"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 2,
@@ -3051,7 +3074,30 @@
         ]
       ],
       "answer_key": "printful: global warehouses, high quality, shopify integration; printify: cheaper, more product options, flexible",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن ٢ — پرنٹ آن ڈیمانڈ کے لیے بہترین پلیٹفارم کیسے چنیں؟",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "پرنٹ آن ڈیمانڈ (POD) میں پلیٹفارم کا انتخاب ایک اہم فیصلہ ہے جو آپ کے بزنس کی لاگت، کوالٹی، اور توسیع پذیری پر اثر انداز ہوتا ہے۔ آپ کو ان عوامل پر دھیان دینا ہوگا: شپنگ کا وقت، پروڈکٹ کی کوالٹی، قیمتوں کا تعین، اور انٹیگریشن کے آپشنز (جیسے شاپائفائی، ایٹسی، ایمیزون)۔ مقامی وینڈرز بمقابلہ بین الاقوامی POD پلیٹفارمز (جیسے پرنٹفل، پرنٹیفائی، ریڈ بابل) میں سے کیا منتخب کرنا ہے، یہ فیصلہ کرنا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "اگر آپ انڈیا سے ہیں اور مقامی گاہکوں کو ہدف بنا رہے ہیں، تو **پرنٹرو** (انڈین POD سروس) بہتر ہو سکتی ہے کیونکہ شپنگ تیز ہوگی اور لاگت بھی کم۔ لیکن اگر عالمی سامعین ہے، تو **پرنٹفل** یا **پرنٹیفائی** (جو متعدد گوداموں کے ساتھ کام کرتے ہیں) بہتر آپشنز ہیں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے بزنس ماڈل کے مطابق دو POD پلیٹفارمز کو شارٹ لسٹ کریں اور ان کے درج ذیل پہلوؤں کا موازنہ کریں:\n١۔ شپنگ کا وقت اور لاگت\n٢۔ پروڈکٹ کی رینج\n٣۔ انٹیگریشن کے آپشنز\n(اشارہ: پرنٹفل اور پرنٹیفائی کی ویب سائٹس پر جا کر چیک کریں۔)"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک سادہ موازنہ چارٹ بنائیں (ایکسل یا کینوا میں) جس میں آپ نے شارٹ لسٹ کیے گئے دو پلیٹفارمز کے تین سے چار کلیدی عوامل کا موازنہ کیا ہو۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 3,
@@ -3110,6 +3156,84 @@
             {
               "label": "Mini Project",
               "content": "ایک **Pinterest board** بنائیں اور اس میں 10 ٹرینڈنگ ڈیزائن آئیڈیاز سیو کریں۔ ہر ڈیزائن کے نیچے ایک لائن لکھیں کہ یہ ٹرینڈ کیوں پاپولر ہو رہا ہے (e.g., \"Minimalist cat quotes – 2024 میں pet niche میں ڈیمانڈ ہے\")۔"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "day": 4,
+      "id": "day-004",
+      "date": "2026-08-05",
+      "title": "Day 4 — **AI Tools Se Designs Banane Ka Advanced Guide**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "AI tools (jaise MidJourney, DALL·E, Leonardo.ai) se designs banane ka matlab hai ke aap ke concepts ko real-time images mein convert kar sakte hain. Yeh tools beginner-friendly hain aur trends 2024 ke hisaab se best designs generate karne mein madad karte hain. Canva ke AI features (jaise Magic Design) bhi yahan kaam aate hain."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Prompt Likhna",
+          "\"A minimalist t-shirt design with a mountain silhouette in dark blue and white, flat lay style, high resolution\"\n2."
+        ],
+        [
+          "AI Tool Use",
+          "MidJourney mein `/imagine prompt: [apna prompt]` likhein.\n3."
+        ],
+        [
+          "Variations Select Karein",
+          "4-6 options mein se best choose karein.\n4."
+        ],
+        [
+          "Edit Karein",
+          "Canva ya Photoshop se text add karein (e.g., \"Explore the Peaks\")."
+        ],
+        [
+          "Practice",
+          "Apne niche (e.g., fitness, travel) ka ek AI-generated design banayein. Prompt ko 3 baar modify karein aur best result save karein."
+        ],
+        [
+          "Mini Project",
+          "Ek **AI-generated t-shirt design** banayein aur usko Printful ke mockup generator mein upload karein. Design ka naam rakhein: \"AI_Trend_[Niche]_[Date]\"."
+        ]
+      ],
+      "answer_key": "ai prompt, canva/midjourney, mockup test, design name",
+      "translations": {
+        "ur": {
+          "title": "یوم ۴ — **اے آئی ٹولز سے ڈیزائن بنانے کا ایڈوانسڈ گائیڈ**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "اے آئی ٹولز (جیسے مِڈ جرنی، ڈال·ای، لیونارڈو ڈاٹ اے آئی) سے ڈیزائن بنانے کا مطلب ہے کہ آپ کے تصورات کو حقیقی وقت میں تصویروں میں تبدیل کیا جا سکتا ہے۔ یہ ٹولز بیگنر فرینڈلی ہیں اور ۲۰۲۴ کے رجحانات کے مطابق بہترین ڈیزائنز جنریٹ کرنے میں مدد فراہم کرتے ہیں۔ کینوا کے اے آئی فیچرز (جیسے میجک ڈیزائن) بھی یہاں کام آتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ پرامپٹ لکھنا: \"ایک منیملسٹ ٹی شرٹ ڈیزائن جس میں گہرا نیلا اور سفید رنگ میں پہاڑ کی سِلہویٹ ہو، فلیٹ لے سٹائل، ہائی ریزولوشن\"۔"
+            },
+            {
+              "label": "اے آئی ٹول کا استعمال",
+              "content": "مِڈ جرنی میں `/imagine prompt: [اپنا پرامپٹ]` لکھیں۔"
+            },
+            {
+              "label": "ورئییشنز کا انتخاب",
+              "content": "۴ سے ۶ آپشنز میں سے بہترین کو منتخب کریں۔"
+            },
+            {
+              "label": "ایڈیٹنگ",
+              "content": "کینوا یا فوٹوشاپ سے ٹیکسٹ شامل کریں (مثلاً، \"ایکسپلور دی پِیکس\")۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے نیچ (جیسے فٹنس، ٹریول) کا ایک اے آئی جنریٹڈ ڈیزائن بنائیں۔ پرامپٹ کو تین بار تبدیل کریں اور بہترین نتیجہ محفوظ کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **اے آئی جنریٹڈ ٹی شرٹ ڈیزائن** بنائیں اور اسے پرنٹفل کے ماک اپ جنریٹر میں اپ لوڈ کریں۔ ڈیزائن کا نام رکھیں: \"اے آئی_ٹرینڈ_[نیچ]_[تاریخ]\"۔"
             }
           ]
         }
