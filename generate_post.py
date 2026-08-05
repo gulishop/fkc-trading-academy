@@ -593,6 +593,106 @@ COURSES = {
             "Business ko online promote karna",
         ],
     },
+    "kids-pg": {
+        "name": "Play Group (PG) Course",
+        "icon": "🧸",
+        "post_time": "4:50 AM",
+        "for_kids": True,
+        "certificate_fee": "Free",
+        "tagline": "Chhote bachon (Play Group age) ke liye pehla seekhne ka safar — rang, shakalein, aawazein, aur pyaar bhare basics.",
+        "topics": [
+            "Rangon ki pehchan (laal, neela, peela, hara)",
+            "Shaklein pehchanna (circle, square, triangle)",
+            "Janwaron ki aawazein aur naam",
+            "Jism ke hisse pehchanna (haath, pair, aankh, naak)",
+            "Ginti 1 se 5 tak",
+            "Chhote-bade, upar-neeche jaisay concepts",
+            "Phalon aur sabziyon ki pehchan",
+            "Ammi, Abbu, aur ghar walon ke naam",
+            "Roz ki cheezein (cup, ball, kitab, khilona)",
+            "Simple ishare aur alfaz (haan, na, please, shukriya)",
+        ],
+    },
+    "kids-nursery": {
+        "name": "Nursery Course",
+        "icon": "🔤",
+        "post_time": "5:00 AM",
+        "for_kids": True,
+        "certificate_fee": "Free",
+        "tagline": "Nursery age ke bachon ke liye alphabets, ginti, aur bunyadi seekhne ki mazedaar lessons.",
+        "topics": [
+            "A se Z tak alphabets pehchanna",
+            "Ginti 1 se 10 tak likhna aur bolna",
+            "Rangon ke naam angrezi mein",
+            "Shaklein aur unke naam (square, circle, star)",
+            "Apna naam aur ghar ka pata bolna seekhna",
+            "Din (Monday-Sunday) aur mausam (dhoop, baarish)",
+            "Chhoti chhoti awazon se lafz banana (cat, dog, sun)",
+            "Phal, sabzi, aur janwaron ki angrezi mein pehchan",
+            "Adab: please, thank you, sorry kab bolein",
+            "Pencil pakadna aur seedhi/terhi lakeerein banana",
+        ],
+    },
+    "kids-kg": {
+        "name": "Kindergarten (KG) Course",
+        "icon": "📚",
+        "post_time": "5:10 AM",
+        "for_kids": True,
+        "certificate_fee": "Free",
+        "tagline": "KG level bachon ke liye padhai — chhote jumlay, ginti mein jama-tafreeq, aur seekhne ka agla qadam.",
+        "topics": [
+            "Chhote alfaz jorr kar padhna (cat, sun, bag)",
+            "Ginti 1 se 50 tak",
+            "Simple jama (addition) 1 se 10 tak",
+            "Simple tafreeq (subtraction) 1 se 10 tak",
+            "Chhoti jumlay banana (I am happy, This is a ball)",
+            "Din, hafte, aur mahine ke naam",
+            "Shaklein aur unki pehchan gehrai se (rectangle, oval)",
+            "Apne baaray mein bolna (naam, umar, school)",
+            "Kahani sunna aur us par sawal ka jawab dena",
+            "Likhne ki practice — chhote alfaz aur numbers",
+        ],
+    },
+    "kids-good-behavior": {
+        "name": "Bachon Mein Achi Adaat (Good Behavior)",
+        "icon": "🌟",
+        "post_time": "5:20 AM",
+        "for_kids": True,
+        "certificate_fee": "Free",
+        "tagline": "Bachon ko roz ek achi adaat sikhayein — adab, sachai, sharing, aur bado ki izzat, pyaar bhare andaz mein.",
+        "topics": [
+            "Please, Thank You, aur Sorry ka sahi waqt par istemal",
+            "Bado ki izzat karna aur unki baat sunna",
+            "Sach bolna kyun zaroori hai",
+            "Apni cheezein doosron ke sath share karna",
+            "Sabar rakhna aur baari ka intezar karna",
+            "Apna saman khud sametna aur safai rakhna",
+            "Dosti mein pyaar aur mil kar khelna",
+            "Janwaron aur paudon se pyaar aur nazuk sulook",
+            "Ghussa aane par khud ko sambhalna",
+            "Shukar guzar hona — jo mila us par khush rehna",
+        ],
+    },
+    "kids-educational-games": {
+        "name": "Bachon Ke Educational Games",
+        "icon": "🎮",
+        "post_time": "5:30 AM",
+        "for_kids": True,
+        "certificate_fee": "Free",
+        "tagline": "Khel khel mein seekhna — ammi/abbu ghar par bachon ke sath khel kar sikhane wale asaan games.",
+        "topics": [
+            "Yaadasht (memory) card matching game",
+            "Alphabet hunt — ghar mein cheezein dhoondna jo us harf se shuru hon",
+            "Ginti wala hopscotch (chalk se zameen par khel)",
+            "Rang milaan (color sorting) game",
+            "Shaklein chhupaao aur dhoondo",
+            "Kahani banane ka game (baari baari ek jumla)",
+            "Sound matching — aankhein band karke aawaz pehchanna",
+            "Puzzle aur jigsaw se sabar aur soch badhana",
+            "Role-play games (doctor-doctor, dukaan-dukaan)",
+            "Family game night — bina screen ke khelay jaane wale games",
+        ],
+    },
 }
 
 BRAND_NAME = "FKC Trading Academy"
@@ -606,8 +706,6 @@ BRAND_NAME_TITLE_LINE = f"{BRAND_CONTACT_NAME} — {BRAND_CONTACT_TITLE}"
 
 SITE_URL = os.environ.get("SITE_URL", "").rstrip("/")
 MISTRAL_API_KEY = os.environ.get("MISTRAL_API_KEY", "")
-TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
-TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 
 POSTS_JSON = "posts.json"
 LESSONS_DIR = "lessons"
@@ -617,36 +715,6 @@ IMAGES_DIR = "images"  # optional, manually-added lesson illustrations —
 # sakta hai; agar file maujood ho to woh lesson page par khud-b-khud
 # lag jati hai (koi AI image generation nahi — sirf jo aap khud daalein).
 IMAGE_EXTS = (".png", ".jpg", ".jpeg", ".webp")
-
-
-def notify_telegram(course, lesson, slug):
-    """Naya lesson bante hi Telegram channel par bhej deta hai — 100% free
-    (Telegram Bot API ka koi charge nahi), bas TELEGRAM_BOT_TOKEN aur
-    TELEGRAM_CHAT_ID secrets pehle se hi yml files mein wire the, sirf ye
-    call kabhi likha hi nahi gaya tha. Token/chat-id na ho to chup chaap
-    skip (lesson generation kabhi iski wajah se nahi rukni chahiye)."""
-    if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
-        return
-    link = ""
-    if SITE_URL:
-        link = f"\n\n👉 {SITE_URL}/courses/{slug}/posts/{lesson['date']}-{lesson['id']}.html"
-    text = (
-        f"📚 {course['icon']} {course['name']} — Day {lesson['day']:02d}\n"
-        f"{lesson['title']}{link}"
-    )
-    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-    payload = json.dumps({"chat_id": TELEGRAM_CHAT_ID, "text": text}).encode("utf-8")
-    try:
-        req = urllib.request.Request(
-            url, data=payload, headers={"Content-Type": "application/json"}, method="POST"
-        )
-        with urllib.request.urlopen(req, timeout=20) as resp:
-            resp.read()
-        print(f"[{slug}] Day {lesson['day']} Telegram par bhej diya.")
-    except Exception as e:
-        msg = f"[{slug}] Day {lesson['day']} Telegram post fail hui: {e}"
-        print(msg, file=sys.stderr)
-        log_error(msg)
 
 
 def find_lesson_image(slug, day_num):
@@ -2840,7 +2908,6 @@ def render_lesson_page(slug, course, lesson, is_latest, image_href=None, video_h
         share_text += f"\n\n{SITE_URL}/courses/{slug}/posts/{lesson['date']}-{lesson['id']}.html"
     wa_link = f"https://wa.me/?text={urllib.parse.quote(share_text)}"
     fb_link = f"https://www.facebook.com/sharer/sharer.php?u={urllib.parse.quote(SITE_URL or '')}"
-    tg_link = f"https://t.me/share/url?url={urllib.parse.quote(SITE_URL or '')}&text={urllib.parse.quote(lesson['title'] + ' — ' + BRAND_NAME)}"
 
     badge = '<span class="badge">Latest</span>' if is_latest else ""
     logo_href = f"../../../{BRAND_LOGO}"
@@ -2908,7 +2975,6 @@ def render_lesson_page(slug, course, lesson, is_latest, image_href=None, video_h
       {notes_block}
       <div class="no-print">
         <a class="btn" href="{wa_link}" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
-        <a class="btn alt" href="{tg_link}" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="{fb_link}" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
         {pdf_download_button_html()}
       </div>
@@ -3494,7 +3560,6 @@ def main():
             ) as f:
                 f.write(page)
 
-            notify_telegram(course, lesson, slug)  # sirf naye lesson par, rebuild par dobara nahi
         except Exception as e:
             msg = f"[{slug}] lesson generation is baar fail hui, agla course try ho raha hai: {e}"
             print(msg, file=sys.stderr)
