@@ -4812,6 +4812,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 2,
+      "id": "day-002",
+      "date": "2026-08-05",
+      "title": "Day 2 — \"Badey ki izzat, baat ka samman\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Badey log—jaise ammi, abbu, dadi, nana—humari dekhbhaal karte hain. Unki baat sunna, unse izzat se pesh aana, aur unki madad karna hamari zimmedari hai. Agar woh koi baat poochhein, toh humara farz hai ke hum dhyaan se sunain."
+        ],
+        [
+          "Chhoti Kahani",
+          "Rohan ke abbu ne poocha, \"Beta, tumhara homework ho gaya?\" Rohan ne haath utha kar kaha, \"Ji abbu, maine sab kar liya!\" Abbu ne muskurate hue kaha, \"Bahut achha! Ab toh tum badey ho gaye ho.\" Rohan ko apne abbu ki izzat karke bahut khushi hui."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar tumhari koi baat main sun rahi hoon, toh tum kya karoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Badey ki izzat karna, unki baat sunna, aur unki madad karna hamari shaan hai!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ٢ — \"بڑے کی عزت، بات کا सम्मان\"",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "بڑے لوگ — جیسے امی، ابّو، دادی، نانا — ہماری دیکھ بھال کرتے ہیں۔ ان کی بات سننا، ان سے عزت سے پیش آنا، اور ان کی مدد کرنا ہماری ذمہ داری ہے۔ اگر وہ کوئی بات پوچھیں، تو ہمارا فرض ہے کہ ہم دھیان سے سنیں۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "روہن کے ابّو نے پوچھا، \"بیٹا، تمہارا ہوم ورک ہو گیا؟\" روہن نے ہاتھ اٹھا کر کہا، \"جی ابّو، میں نے سب کر لیا!\" ابّو نے مسکراتے ہوئے کہا، \"بہت اچھا! اب تو تم بڑے ہو گئے ہو۔\" روہن کو اپنے ابّو کی عزت کر کے بہت خوشی ہوئی۔"
+            },
+            {
+              "label": "امی ابّو کے ساتھ بات کریں",
+              "content": "\"بیٹا، اگر تمہاری کوئی بات میں سن رہی ہوں، تو تم کیا کرو گے؟\""
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "بڑے کی عزت کرنا، ان کی بات سننا، اور ان کی مدد کرنا ہماری شان ہے!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-nursery": [
