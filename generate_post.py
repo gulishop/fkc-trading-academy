@@ -2018,6 +2018,15 @@ def save_posts(posts):
 # list mein upar add kar sakte hain jab Mistral koi naya release kare.
 MODEL_NAMES = ["mistral-small-latest", "open-mistral-nemo", "mistral-large-latest"]
 
+# Urdu/Sindhi (Arabic-script) translation ke liye alag model order — chhota
+# model (mistral-small-latest) is kaam mein baar baar Latin/Roman script hi
+# de deta hai (kabhi 404 nahi deta, is liye ai_generate() ka normal fallback
+# kabhi trigger hi nahi hota aur wahi kamzor model har attempt mein dobara
+# try hota reh jata hai). Isliye translation ke liye seedha bada/behtar
+# model try karte hain — instruction-following aur script-switching mein
+# kaafi zyada reliable hota hai.
+TRANSLATION_MODEL_NAMES = ["mistral-large-latest", "open-mistral-nemo", "mistral-small-latest"]
+
 MISTRAL_URL = "https://api.mistral.ai/v1/chat/completions"
 
 
@@ -2064,13 +2073,13 @@ def _mistral_call_once(model_name, prompt_text, max_retries=5):
             raise
 
 
-def ai_generate(prompt_text, max_retries=5):
+def ai_generate(prompt_text, max_retries=5, model_names=None):
     if not MISTRAL_API_KEY:
         raise RuntimeError("MISTRAL_API_KEY set nahi hai.")
 
     data = None
     last_error = None
-    for model_name in MODEL_NAMES:
+    for model_name in (model_names or MODEL_NAMES):
         try:
             data = _mistral_call_once(model_name, prompt_text, max_retries=max_retries)
             break
@@ -2521,7 +2530,7 @@ def get_or_generate_translations(slug, day_num, title, preamble, sections):
                           f"Gemini fallback try kar rahe hain (attempt {attempt - max_attempts})...")
                     raw = gemini_generate(prompt)
                 else:
-                    raw = ai_generate(prompt)
+                    raw = ai_generate(prompt, model_names=TRANSLATION_MODEL_NAMES)
                 data = _parse_translation_json(raw)
                 # Original preamble khaali ho (jo 94% lessons mein hota hai,
                 # kyunke lesson format mein intro paragraph hota hi nahi) aur
