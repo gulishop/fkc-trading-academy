@@ -111,3 +111,9 @@
 [2026-08-05T04:39:25.586801] [kids-kg] Day 1 video skip: Urdu TTS (ur-PK-UzmaNeural) fail.
 [2026-08-05T04:45:54.101800] [kids-educational-games] Day 2 video skip: Urdu TTS (ur-PK-UzmaNeural) fail.
 [2026-08-05T04:45:59.681607] [kids-educational-games] Day 2 video skip: Urdu TTS (ur-PK-UzmaNeural) fail.
+[2026-08-05T06:15:45.381033] [cpp-daily-coding] Day 2 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: Arabic-script ratio kaafi kam hai (0.0)
+[2026-08-05T06:16:44.094896] [cpp-daily-coding] Day 4 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: Arabic-script ratio kaafi kam hai (0.0)
+[2026-08-05T06:17:44.667224] [cpp-daily-coding] Day 5 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: Arabic-script ratio kaafi kam hai (0.0)
+[2026-08-05T06:18:41.234901] [cpp-daily-coding] Day 6 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: Arabic-script ratio kaafi kam hai (0.0)
+[2026-08-05T06:19:57.334609] [cpp-daily-coding] Day 7 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: Arabic-script ratio kaafi kam hai (0.0)
+[2026-08-05T06:21:27.939275] [cpp-daily-coding] Day 7 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error

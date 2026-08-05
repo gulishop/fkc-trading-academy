@@ -22,7 +22,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T21:18:59.874247";
+  var FKC_BUILD = "2026-08-05T06:14:47.401533";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -155,14 +155,35 @@ vertical-align:middle;}
 .lesson-nav{display:flex;justify-content:space-between;gap:8px;
 flex-wrap:wrap;margin-top:14px;}
 .lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.section-title{font-family:'Inter',sans-serif;font-weight:800;
+font-size:1.2em;margin:30px 0 2px;padding-top:18px;
+border-top:1px solid var(--line);display:flex;align-items:center;gap:8px;}
+.section-title.adults{color:var(--primary);}
+.section-title.kids{color:#DB4C77;}
 .quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
 .quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
 border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
 box-sizing:border-box;margin:6px 0;}
 .quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+.puzzle-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.puzzle-box h3{margin-top:0;}
+.puzzle-status{font-size:.85em;color:var(--muted);margin:0 0 10px;}
+.puzzle-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;
+max-width:340px;margin:0 auto;}
+.puzzle-card{aspect-ratio:1/1;border-radius:10px;border:none;
+background:var(--primary);color:#fff;font-size:1.6em;cursor:pointer;
+display:flex;align-items:center;justify-content:center;
+transition:transform .25s ease,background .25s ease;padding:0;}
+.puzzle-card.flipped,.puzzle-card.matched{background:#fff;
+border:1px solid var(--line);color:var(--ink);}
+.puzzle-card.matched{background:#EAFBF0;border-color:var(--accent);
+opacity:.85;cursor:default;}
+.puzzle-card:disabled{cursor:default;}
+.puzzle-win{display:none;text-align:center;margin-top:12px;
+background:#EAFBF0;border-radius:10px;padding:12px;font-weight:700;color:#15803d;}
 @media print{
   .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
-  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  .quiz-box,.puzzle-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
   body{background:#fff;}
   .card{box-shadow:none;border:none;}
 }
@@ -175,7 +196,9 @@ box-sizing:border-box;margin:6px 0;}
     
     <p class="muted">💻 C++ Daily Coding · Day 02</p>
     <h1>Day 2 — Variables aur Data Types: Apne Programs Ko Smarter Banana</h1>
+    <p class="muted" style="margin:0 0 10px;">↩️ Pichla lesson: <strong>Day 1 — C++ Setup aur &quot;Hello World&quot; Program</strong> — aaj is se aage badhte hain.</p>
     <div class="card">
+      
       
       
       
@@ -218,9 +241,73 @@ int main() {
         }
       }
       </script>
+      
+      <div class="puzzle-box no-print" id="pz-cpp-daily-coding-2">
+        <h3>🧩 Dimaghi Kasrat — Jode Milayein</h3>
+        <p class="puzzle-status" id="pz-cpp-daily-coding-2-status">Cards par tap karke jode (pairs) milayein.</p>
+        <div class="puzzle-grid" id="pz-cpp-daily-coding-2-grid"></div>
+        <div class="puzzle-win" id="pz-cpp-daily-coding-2-win">🎉 Shabaash! Sab jode mil gaye — thodi der aur seekhne ke liye tayyar?</div>
+      </div>
+      <script>
+      (function(){
+        var emojis = ["🎈", "🧩", "🎵", "🐢", "🌈", "⚽"];
+        var deck = emojis.concat(emojis);
+        for (var i = deck.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var t = deck[i]; deck[i] = deck[j]; deck[j] = t;
+        }
+        var grid = document.getElementById("pz-cpp-daily-coding-2-grid");
+        var statusEl = document.getElementById("pz-cpp-daily-coding-2-status");
+        var winEl = document.getElementById("pz-cpp-daily-coding-2-win");
+        var flipped = [], matchedCount = 0, moves = 0, lock = false;
+        deck.forEach(function(val){
+          var b = document.createElement("button");
+          b.type = "button";
+          b.className = "puzzle-card";
+          b.setAttribute("data-val", val);
+          b.textContent = "❓";
+          b.onclick = function(){
+            if (lock || b.classList.contains("matched") || b.classList.contains("flipped")) return;
+            b.classList.add("flipped");
+            b.textContent = val;
+            flipped.push(b);
+            if (flipped.length === 2) {
+              moves++;
+              lock = true;
+              var a = flipped[0], c = flipped[1];
+              if (a.getAttribute("data-val") === c.getAttribute("data-val")) {
+                a.classList.add("matched"); c.classList.add("matched");
+                matchedCount += 2;
+                flipped = []; lock = false;
+                statusEl.textContent = "Moves: " + moves + " · " + matchedCount + "/" + deck.length + " match hue";
+                if (matchedCount === deck.length) {
+                  winEl.style.display = "block";
+                  statusEl.textContent = "Complete! Total moves: " + moves;
+                }
+              } else {
+                setTimeout(function(){
+                  a.classList.remove("flipped"); a.textContent = "❓";
+                  c.classList.remove("flipped"); c.textContent = "❓";
+                  flipped = []; lock = false;
+                }, 700);
+              }
+            }
+          };
+          grid.appendChild(b);
+        });
+      })();
+      </script>
+      
+      <div class="no-print" style="margin-top:14px;">
+        <label for="fkc-notes" class="muted" style="display:block;margin-bottom:4px;">📝 Apni Note (sirf aapke is browser mein save hoti hai):</label>
+        <textarea id="fkc-notes" data-slug="cpp-daily-coding" data-lesson="day-002"
+          placeholder="Yahan apni note likhein..." rows="3"
+          style="width:100%;border-radius:10px;border:1px solid #ddd;padding:8px;font-family:inherit;"
+          oninput="fkcSaveNote(this)"></textarea>
+      </div>
+    
       <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20C%2B%2B%20Daily%20Coding%20%28Day%2002%29%0A%0ADay%202%20%E2%80%94%20Variables%20aur%20Data%20Types%3A%20Apne%20Programs%20Ko%20Smarter%20Banana%0A%0AConcept%3A%0AVariables%20memory%20mein%20storage%20ke%20liye%20containers%20hote%20hain.%20Har%20variable%20ka%20ek%20data%20type%20hota%20hai%20%28jaise%20int%2C%20float%2C%20char%29%20jo%20batata%20hai%20ke%20usme%20kya%20type%20ka%20data%20store%20hoga.%20Input/output%20%28cin/cout%29%20se%20user%20se%20data%20le%20sakte%20hain%20aur%20results%20show%20kar%20sakte%20hain.%0A%0AExample%3A%0A%60%60%60cpp%0A%23include%20%3Ciostream%3E%0Ausing%20namespace%20std%3B%0A%0Aint%20main%28%29%20%7B%0A%20%20%20%20int%20age%20%3D%2025%3B%20%20%20%20%20%20%20%20%20%20//%20Integer%20variable%0A%20%20%20%20float%20price%20%3D%2019.99%3B%20%20%20//%20Floating-point%20variable%0A%20%20%20%20char%20grade%20%3D%20%27A%27%3B%20%20%20%20%20%20//%20Character%20variable%0A%0A%20%20%20%20cout%20%3C%3C%20%22Age%3A%20%22%20%3C%3C%20age%20%3C%3C%20endl%3B%0A%20%20%20%20cout%20%3C%3C%20%22Price%3A%20%24%22%20%3C%3C%20price%20%3C%3C%20endl%3B%0A%20%20%20%20cout%20%3C%3C%20%22Grade%3A%20%22%20%3C%3C%20grade%20%3C%3C%20endl%3B%0A%0A%20%20%20%20return%200%3B%0A%7D%0A%60%60%60%0A%0APractice%3A%0AEk%20program%20banayein%20jo%20user%20se%20%2A%2Aname%2A%2A%20%28string%29%2C%20%2A%2Aage%2A%2A%20%28int%29%2C%20aur%20%2A%2Aheight%2A%2A%20%28float%29%20input%20le%20aur%20phir%20sabko%20ek%20line%20mein%20print%20kare.%0A%0AMini%20Project%3A%0AEk%20%2A%2ASimple%20Calculator%2A%2A%20banayein%20jo%20do%20numbers%20input%20le%20aur%20un%20par%20%2B%2C%20-%2C%20%2A%2C%20/%20operations%20perform%20karke%20results%20show%20kare.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
-        <a class="btn alt" href="https://t.me/share/url?url=&text=Day%202%20%E2%80%94%20Variables%20aur%20Data%20Types%3A%20Apne%20Programs%20Ko%20Smarter%20Banana%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
         <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
@@ -239,6 +326,32 @@ int main() {
       <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
+    <script>
+    (function(){
+      try {
+        localStorage.setItem('fkc_last_lesson', JSON.stringify({
+          slug: "cpp-daily-coding",
+          courseName: "C++ Daily Coding",
+          courseIcon: "\ud83d\udcbb",
+          title: "Day 2 \u2014 Variables aur Data Types: Apne Programs Ko Smarter Banana",
+          href: 'courses/cpp-daily-coding/posts/2026-08-03-day-002.html',
+          day: 2
+        }));
+      } catch (e) {}
+      var ta = document.getElementById('fkc-notes');
+      if (ta) {
+        try {
+          var saved = localStorage.getItem('fkc_note_' + ta.dataset.slug + '_' + ta.dataset.lesson);
+          if (saved) ta.value = saved;
+        } catch (e) {}
+      }
+    })();
+    function fkcSaveNote(el) {
+      try {
+        localStorage.setItem('fkc_note_' + el.dataset.slug + '_' + el.dataset.lesson, el.value);
+      } catch (e) {}
+    }
+    </script>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
   function getProgress(){
