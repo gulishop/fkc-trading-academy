@@ -86,9 +86,9 @@ def app_install_popup_html():
     }}
     #fkc-app-popup .popup-box {{
         background: linear-gradient(145deg, #0B1220, #1a2438);
-        border-radius: 24px;
-        padding: 32px 28px;
-        max-width: 480px;
+        border-radius: 18px;
+        padding: 18px 16px;
+        max-width: 340px;
         width: 100%;
         box-shadow: 0 25px 60px rgba(0,0,0,0.6);
         border: 1px solid rgba(255,255,255,0.08);
@@ -114,15 +114,15 @@ def app_install_popup_html():
         color: #fff;
     }}
     #fkc-app-popup .popup-icon {{
-        font-size: 56px;
-        margin-bottom: 12px;
+        font-size: 36px;
+        margin-bottom: 6px;
         display: block;
     }}
     #fkc-app-popup .popup-title {{
-        font-size: 26px;
+        font-size: 19px;
         font-weight: 800;
         color: #fff;
-        margin: 0 0 4px;
+        margin: 0 0 2px;
         letter-spacing: -0.02em;
         background: linear-gradient(135deg, #5B9DFF, #A78BFA);
         -webkit-background-clip: text;
@@ -130,41 +130,41 @@ def app_install_popup_html():
     }}
     #fkc-app-popup .popup-subtitle {{
         color: #9AA1AB;
-        font-size: 16px;
-        margin: 0 0 16px;
+        font-size: 12px;
+        margin: 0 0 10px;
         font-weight: 400;
     }}
     #fkc-app-popup .popup-features {{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 8px;
-        margin: 16px 0;
+        gap: 5px;
+        margin: 10px 0;
         text-align: left;
     }}
     #fkc-app-popup .popup-features span {{
         color: #EDEFF2;
-        font-size: 14px;
-        padding: 6px 10px;
+        font-size: 11px;
+        padding: 4px 7px;
         background: rgba(255,255,255,0.04);
-        border-radius: 8px;
+        border-radius: 7px;
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: 6px;
     }}
     #fkc-app-popup .popup-features span::before {{
         content: "⚡";
-        font-size: 14px;
+        font-size: 11px;
     }}
     #fkc-app-popup .popup-btn {{
         display: inline-block;
         background: linear-gradient(135deg, #0056D2, #6D28D9);
         color: #fff;
         font-weight: 700;
-        font-size: 18px;
-        padding: 14px 32px;
-        border-radius: 14px;
+        font-size: 14px;
+        padding: 10px 18px;
+        border-radius: 12px;
         text-decoration: none;
-        margin: 8px 0 12px;
+        margin: 6px 0 8px;
         transition: transform 0.2s, box-shadow 0.2s;
         box-shadow: 0 4px 20px rgba(0,86,210,0.3);
         width: 100%;
@@ -175,20 +175,41 @@ def app_install_popup_html():
         box-shadow: 0 8px 30px rgba(0,86,210,0.4);
     }}
     #fkc-app-popup .popup-btn .btn-sub {{
-        font-size: 12px;
+        font-size: 11px;
         font-weight: 400;
         opacity: 0.8;
         display: block;
         margin-top: 2px;
     }}
+    #fkc-app-popup .popup-share-btn {{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        width: 100%;
+        background: rgba(255,255,255,0.06);
+        border: 1px solid rgba(255,255,255,0.12);
+        color: #EDEFF2;
+        font-weight: 600;
+        font-size: 12px;
+        padding: 8px 14px;
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 0 0 8px;
+        box-sizing: border-box;
+        transition: background 0.2s;
+    }}
+    #fkc-app-popup .popup-share-btn:hover {{
+        background: rgba(255,255,255,0.1);
+    }}
     #fkc-app-popup .popup-bonus {{
         background: rgba(255,215,0,0.1);
         border: 1px solid rgba(255,215,0,0.2);
-        border-radius: 12px;
-        padding: 12px 16px;
-        margin: 12px 0 16px;
+        border-radius: 10px;
+        padding: 8px 12px;
+        margin: 8px 0 10px;
         color: #FCD34D;
-        font-size: 14px;
+        font-size: 11px;
         font-weight: 600;
         display: flex;
         align-items: center;
@@ -201,13 +222,13 @@ def app_install_popup_html():
     }}
     #fkc-app-popup .popup-steps {{
         background: rgba(255,255,255,0.03);
-        border-radius: 12px;
-        padding: 12px 16px;
-        margin: 12px 0 16px;
+        border-radius: 10px;
+        padding: 8px 12px;
+        margin: 8px 0 10px;
         text-align: left;
-        font-size: 13px;
+        font-size: 11px;
         color: #9AA1AB;
-        line-height: 1.6;
+        line-height: 1.5;
     }}
     #fkc-app-popup .popup-steps strong {{
         color: #EDEFF2;
@@ -221,8 +242,8 @@ def app_install_popup_html():
         to {{ opacity: 1; transform: translateY(0) scale(1); }}
     }}
     @media (max-width: 500px) {{
-        #fkc-app-popup .popup-box {{ padding: 24px 18px; }}
-        #fkc-app-popup .popup-title {{ font-size: 22px; }}
+        #fkc-app-popup .popup-box {{ padding: 14px 12px; max-width: 300px; }}
+        #fkc-app-popup .popup-title {{ font-size: 16px; }}
         #fkc-app-popup .popup-features {{ grid-template-columns: 1fr; }}
     }}
     </style>
@@ -252,6 +273,10 @@ def app_install_popup_html():
                 📲 App Install Karein
                 <span class="btn-sub">Android APK — Free Download</span>
             </a>
+
+            <button type="button" class="popup-share-btn" onclick="fkcSharePopup()">
+                🔗 Share Karein
+            </button>
             
             <div class="popup-steps">
                 <strong>📥 Kaise install karein:</strong><br>
@@ -286,6 +311,42 @@ def app_install_popup_html():
         
         window.fkcClosePopup = function() {{
             popup.classList.remove('show');
+        }};
+
+        // Share button — shares the popup's full details (title, features,
+        // bonus, install link) via the native share sheet; falls back to
+        // clipboard-copy on browsers/desktops without navigator.share.
+        window.fkcSharePopup = function() {{
+            var shareText =
+                "🚀 FKC Virtual University\\n" +
+                "Apni life change karo — Rozana FREE lessons!\\n\\n" +
+                "⚡ Forex Trading\\n" +
+                "⚡ Crypto Trading\\n" +
+                "⚡ Web Development\\n" +
+                "⚡ Python & C++\\n" +
+                "⚡ Freelancing\\n" +
+                "⚡ YouTube Automation\\n" +
+                "⚡ Shopify / Daraz\\n" +
+                "⚡ Digital Skills\\n\\n" +
+                "🎓 Bonus: FREE Certificate — Limited slots hai!\\n\\n" +
+                "📲 App Install Karein (Android APK — Free Download):\\n" +
+                "{0}";
+
+            if (navigator.share) {{
+                navigator.share({{
+                    title: "FKC Virtual University",
+                    text: shareText,
+                    url: "{0}"
+                }}).catch(function() {{ /* user cancelled share — ignore */ }});
+            }} else if (navigator.clipboard) {{
+                navigator.clipboard.writeText(shareText).then(function() {{
+                    alert("Details copy ho gayi — ab kahin bhi paste kar ke share kar sakte hain!");
+                }}).catch(function() {{
+                    alert("Share/copy fail ho gaya, dobara try karein.");
+                }});
+            }} else {{
+                alert("Aapka browser sharing support nahi karta.");
+            }}
         }};
         
         // Close on background click
@@ -1474,41 +1535,45 @@ def publish_lesson_video(slug, day_num):
 
 
 # =====================================================================
-# 🎬 AGNES AI VIDEO GENERATION — Mentor-style AI explainer videos
+# 🎬 AGNES AI VIDEO GENERATION — short text-to-video visual for the lesson
+# NOTE: Agnes Video V2.0 is a generic text/image-to-video generator (like
+# a short cinematic-clip model). It does NOT accept a "script", spoken
+# "language", "speaker_id", or a "duration" in seconds — those fields
+# don't exist in its real API and were silently rejected before, which is
+# why edge-tts (NARRATION_VOICE_UR, pure Urdu) was doing all the actual
+# real narration work. Agnes can only add a short (<=~18s) animated
+# visual built from a text "prompt" — it cannot narrate in Urdu.
 # =====================================================================
 AGNES_API_URL = "https://apihub.agnes-ai.com/v1/videos"
-AGNES_STATUS_URL = "https://apihub.agnes-ai.com/v1/videos/{job_id}/status"
+AGNES_RESULT_URL = "https://apihub.agnes-ai.com/agnesapi?video_id={video_id}"
+AGNES_MODEL = "agnes-video-v2.0"
+AGNES_MAX_NUM_FRAMES = 121   # ~5s at 24fps — keep short, this is a visual only
+AGNES_FRAME_RATE = 24
 
 
 def generate_agnes_video(slug, lesson, course_name, max_attempts=10):
     """
-    Agnes AI se mentor-style video generate karta hai.
-    Har lesson ke liye professional avatar-based explainer video.
+    Agnes AI se lesson topic ka chhota (~5s) animated visual clip banata hai.
+    Yeh koi Urdu narration/voiceover nahi karta (Agnes API is silent,
+    text-to-video only) — asli Urdu awaaz edge-tts (NARRATION_VOICE_UR)
+    se aati hai, generate_lesson_narration_video() mein.
     """
     if not AGNES_API_KEY:
         print(f"[{slug}] Agnes API key missing, video skip.")
         return None
 
-    # Lesson content ko script mein convert karein
-    script_parts = [lesson['title']]
-    if lesson.get('preamble'):
-        script_parts.append(lesson['preamble'])
-    for label, content in lesson.get('sections', []):
-        if content:
-            script_parts.append(f"{label}: {content}")
-    script = "\n\n".join(script_parts)
+    topic = lesson.get("title", course_name)
+    prompt = (
+        f"A clean, modern educational explainer animation about '{topic}' "
+        f"for an online course called '{course_name}', minimal motion graphics "
+        f"style, soft studio lighting, smooth camera movement"
+    )
 
-    # Limit script length (Agnes has limits)
-    if len(script) > 2000:
-        script = script[:2000]
-
-    # Agnes API payload
     payload = {
-        "script": script,
-        "language": "ur",          # Urdu explanation
-        "speaker_id": "mentor",    # Professional mentor avatar
-        "duration": 60,            # 1 minute video
-        "style": "educational"     # Mentor-style
+        "model": AGNES_MODEL,
+        "prompt": prompt,
+        "num_frames": AGNES_MAX_NUM_FRAMES,
+        "frame_rate": AGNES_FRAME_RATE,
     }
 
     headers = {
@@ -1523,16 +1588,18 @@ def generate_agnes_video(slug, lesson, course_name, max_attempts=10):
         response.raise_for_status()
 
         job_data = response.json()
-        job_id = job_data.get("job_id") or job_data.get("id")
+        # video_id is the recommended id for fetching the result; fall back
+        # to task_id/id for older-style responses.
+        video_id = job_data.get("video_id") or job_data.get("task_id") or job_data.get("id")
 
-        if not job_id:
-            print(f"[{slug}] No job_id in response: {job_data}")
+        if not video_id:
+            print(f"[{slug}] No video_id in response: {job_data}")
             return None
 
         # 2. Poll for completion
         for attempt in range(max_attempts):
             status_response = requests.get(
-                AGNES_STATUS_URL.format(job_id=job_id),
+                AGNES_RESULT_URL.format(video_id=video_id),
                 headers=headers,
                 timeout=30
             )
@@ -1540,10 +1607,10 @@ def generate_agnes_video(slug, lesson, course_name, max_attempts=10):
             status = status_data.get("status", "")
 
             if status == "completed":
-                # Download video
-                video_url = status_data.get("video_url") or status_data.get("output_url")
+                metadata = status_data.get("metadata") or {}
+                video_url = metadata.get("url")
                 if not video_url:
-                    print(f"[{slug}] No video_url in response")
+                    print(f"[{slug}] No metadata.url in completed response")
                     return None
 
                 video_data = requests.get(video_url, timeout=60).content
@@ -1560,13 +1627,15 @@ def generate_agnes_video(slug, lesson, course_name, max_attempts=10):
                 print(f"[{slug}] Day {lesson['day']} ✅ Agnes video ban gayi!")
                 return video_path
 
-            elif status in ["failed", "error"]:
-                error_msg = status_data.get("error", "Unknown error")
+            elif status == "failed":
+                error_msg = (status_data.get("error") or {}).get("message", "Unknown error") \
+                    if isinstance(status_data.get("error"), dict) else status_data.get("error", "Unknown error")
                 print(f"[{slug}] Agnes video failed: {error_msg}")
                 return None
 
             else:
-                print(f"[{slug}] Day {lesson['day']} Processing... ({attempt+1}/{max_attempts})")
+                # queued / in_progress
+                print(f"[{slug}] Day {lesson['day']} {status or 'processing'}... ({attempt+1}/{max_attempts})")
                 time.sleep(10)  # Wait 10 seconds between checks
 
         print(f"[{slug}] Day {lesson['day']} Timeout after {max_attempts} attempts")
@@ -1591,9 +1660,104 @@ def generate_agnes_video(slug, lesson, course_name, max_attempts=10):
         return None
 
 
-# =====================================================================
-# 💬 GISCUS COMMENTS — GitHub Discussions par based, 100% free.
-# Setup (ek dafa): 1) repo Settings → General → Discussions ON karein.
+def _run_ffmpeg_mux_loop_video_audio(video_path, audio_path, out_mp4):
+    """Agnes ki khamosh (silent) clip ko loop kar ke Urdu narration audio
+    ki poori length tak stretch karta hai aur audio track jod deta hai —
+    is tarah final video ki length hamesha awaaz jitni hoti hai, chahe
+    Agnes clip usse chhoti kyun na ho."""
+    cmd = [
+        "ffmpeg", "-y", "-stream_loop", "-1", "-i", video_path, "-i", audio_path,
+        "-map", "0:v:0", "-map", "1:a:0",
+        "-c:v", "libx264", "-preset", "veryfast", "-c:a", "aac", "-b:a", "128k",
+        "-pix_fmt", "yuv420p", "-shortest", out_mp4,
+    ]
+    try:
+        result = subprocess.run(cmd, capture_output=True, timeout=240)
+        if result.returncode != 0:
+            print(f"ffmpeg (Agnes clip + Urdu audio mux) error: {result.stderr.decode(errors='ignore')[:300]}", file=sys.stderr)
+            return False
+        return os.path.exists(out_mp4) and os.path.getsize(out_mp4) > 5000
+    except Exception as e:
+        print(f"ffmpeg (Agnes clip + Urdu audio mux) call fail: {e}", file=sys.stderr)
+        return False
+
+
+def generate_lesson_video_agnes_plus_urdu(slug, course, lesson, image_source_path):
+    """Har lesson ke liye final video banata hai: visual Agnes AI se (chhoti
+    animated clip) aur awaaz hamesha wahi Microsoft Urdu neural voice se
+    (edge-tts, NARRATION_VOICE_UR) — dono ko ffmpeg se mux kar diya jata
+    hai. Agar Agnes clip na bane (API key missing, fail, waghera) to
+    purana free "Ken Burns zoom + captions" (still image + Urdu awaaz)
+    tareeqa hi use hota hai — awaaz dono cases mein hamesha Microsoft
+    Urdu voice hi hoti hai, kabhi badalti nahi."""
+    day_num = lesson["day"]
+    if find_lesson_video(slug, day_num):
+        return  # already ban chuka hai, dobara nahi banana
+
+    translations = lesson.get("translations") or {}
+    ur = translations.get("ur")
+    if not (ur and ur.get("sections")):
+        # Asal Urdu-script translation abhi tak nahi bani — Roman Urdu
+        # text ko Urdu voice se kabhi nahi bulwate (pronunciation saaf
+        # nahi hoti), is liye video is dafa skip.
+        msg = f"[{slug}] Day {day_num} video skip: Urdu-script translation abhi maujood nahi (saaf awaaz ke liye zaroori)."
+        print(msg, file=sys.stderr)
+        return
+
+    title = ur.get("title", lesson["title"])
+    preamble = ur.get("preamble", "")
+    sections = [(s.get("label", ""), s.get("content", "")) for s in ur.get("sections", [])]
+    script_text = _build_narration_text(title, preamble, sections)
+    if not script_text:
+        return
+
+    padded = f"{day_num:03d}"
+    work_dir = os.path.join(VIDEOS_DIR, slug)
+    os.makedirs(work_dir, exist_ok=True)
+    txt_path = os.path.join(work_dir, f"day-{padded}.narration.txt")
+    mp3_path = os.path.join(work_dir, f"day-{padded}.mp3")
+    mp4_path = os.path.join(work_dir, f"day-{padded}.mp4")
+
+    with open(txt_path, "w", encoding="utf-8") as f:
+        f.write(script_text)
+
+    # Awaaz hamesha yehi (Microsoft Urdu neural voice, edge-tts ke zariye)
+    # — Agnes clip mile ya na mile, yeh kabhi nahi badalti.
+    if not _run_edge_tts(txt_path, NARRATION_VOICE_UR, mp3_path, rate=NARRATION_RATE_UR):
+        msg = f"[{slug}] Day {day_num} video skip: Urdu TTS ({NARRATION_VOICE_UR}) fail."
+        print(msg, file=sys.stderr)
+        log_error(msg)
+        return
+
+    # Pehle Agnes se visual clip try karein aur usay Microsoft Urdu awaaz
+    # ke sath mux karein.
+    made = False
+    if AGNES_API_KEY:
+        agnes_clip = generate_agnes_video(slug, lesson, course["name"])
+        if agnes_clip and _run_ffmpeg_mux_loop_video_audio(agnes_clip, mp3_path, mp4_path):
+            made = True
+            print(f"[{slug}] Day {day_num} video ban gayi (Agnes clip + Microsoft Urdu awaaz).")
+
+    # Agnes na mile / fail ho to purana free jugaad (still image + zoom +
+    # captions), awaaz wahi Microsoft Urdu voice.
+    if not made and image_source_path and os.path.exists(image_source_path):
+        srt_path = os.path.join(work_dir, f"day-{padded}.srt")
+        duration = _get_audio_duration(mp3_path)
+        has_srt = duration and _build_caption_srt(script_text, duration, srt_path)
+        if _run_ffmpeg_kenburns_captions(image_source_path, mp3_path, srt_path if has_srt else None, mp4_path):
+            made = True
+            print(f"[{slug}] Day {day_num} video ban gayi (Ken Burns zoom + captions — Agnes fallback).")
+        elif _run_ffmpeg_image_audio(image_source_path, mp3_path, mp4_path):
+            made = True
+            print(f"[{slug}] Day {day_num} video ban gayi (slide + awaaz — fallback).")
+
+    if not made:
+        msg = f"[{slug}] Day {day_num} video skip: Agnes aur ffmpeg dono attempts fail."
+        print(msg, file=sys.stderr)
+        log_error(msg)
+
+
+
 # 2) https://giscus.app par jaa kar apna repo enter karein, mapping/theme
 # choose karein — page us script tag mein aapko REPO_ID aur CATEGORY_ID
 # de gi. Neeche 4 constants fill kar dein — khaali hon to comments box
@@ -4398,16 +4562,11 @@ def main():
                 slug, course, lesson["day"], lesson["title"],
                 topic_hint=topic_hint, concept_text=concept_text,
             )
-            # Pehle Agnes AI try karein (mentor-style video)
-            video_path = None
-            if AGNES_API_KEY:
-                video_path = generate_agnes_video(slug, lesson, course['name'])
-
-            # Agar Agnes fail ho to existing free method try karein (edge-tts + ffmpeg)
-            if not video_path:
-                generate_lesson_narration_video(
-                    slug, course, lesson, image_source_path=find_lesson_image(slug, lesson["day"])
-                )
+            # Video: visual Agnes AI se, awaaz hamesha Microsoft Urdu voice se
+            # (edge-tts) — dono muxed; Agnes na mile to Ken Burns fallback.
+            generate_lesson_video_agnes_plus_urdu(
+                slug, course, lesson, image_source_path=find_lesson_image(slug, lesson["day"])
+            )
 
             os.makedirs(os.path.join(DOCS_DIR, "courses", slug, "posts"), exist_ok=True)
             image_href = publish_lesson_image(slug, lesson["day"])
@@ -4455,7 +4614,7 @@ def main():
             # re-render every lesson page so only the newest carries "Latest"
             for i, lesson in enumerate(lessons):
                 image_href = publish_lesson_image(slug, lesson["day"])
-                generate_lesson_narration_video(
+                generate_lesson_video_agnes_plus_urdu(
                     slug, course, lesson, image_source_path=find_lesson_image(slug, lesson["day"])
                 )
                 video_href = publish_lesson_video(slug, lesson["day"])
