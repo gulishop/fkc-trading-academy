@@ -1,0 +1,105 @@
+[2026-08-04T21:20:30.701462] [affiliate-marketing] Day 1 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T21:22:45.660193] [affiliate-marketing] Day 2 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T21:25:00.890429] [affiliate-marketing] Day 3 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T21:27:15.664548] [youtube-automation] Day 1 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T21:29:30.841789] [youtube-automation] Day 2 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T21:31:45.647931] [youtube-automation] Day 3 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T21:34:00.717464] [social-media-marketing] Day 1 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T21:36:16.791281] [social-media-marketing] Day 2 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T21:38:30.668534] [social-media-marketing] Day 3 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T21:40:45.660387] [facebook-page-growth] Day 1 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T21:43:00.677494] [facebook-page-growth] Day 2 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T21:45:15.678311] [forex-trading] Day 1 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T21:47:30.795039] [forex-trading] Day 2 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T21:49:45.852312] [forex-trading] Day 3 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T21:52:00.739455] [forex-trading] Day 4 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T21:54:15.727210] [amazon-fba] Day 1 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T21:56:30.719357] [amazon-fba] Day 2 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T21:58:46.174904] [amazon-fba] Day 3 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T22:01:00.673205] [amazon-fba] Day 4 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T22:03:15.680834] [daraz-seller] Day 1 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T22:05:38.793145] [daraz-seller] Day 2 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T22:07:45.719020] [daraz-seller] Day 3 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T22:10:00.703802] [ai-content-writing] Day 1 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T22:12:15.687075] [ai-content-writing] Day 2 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T22:14:30.797416] [ai-content-writing] Day 3 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T22:16:45.743367] [ai-tools] Day 1 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T22:19:00.774168] [ai-tools] Day 2 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T22:21:15.718470] [ai-tools] Day 3 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T22:23:30.884061] [dropshipping] Day 1 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T22:25:45.981212] [dropshipping] Day 2 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T22:28:01.024464] [dropshipping] Day 3 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T22:30:15.610864] [freelancing] Day 1 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T22:32:30.872271] [freelancing] Day 2 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T22:34:46.013339] [freelancing] Day 3 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T22:37:00.729913] [freelancing] Day 4 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T22:39:15.789189] [graphic-design-canva] Day 1 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T22:41:30.853345] [graphic-design-canva] Day 2 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T22:43:45.705143] [no-code-app-dev] Day 1 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T22:46:00.742045] [no-code-app-dev] Day 2 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T22:48:15.702177] [no-code-app-dev] Day 3 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T22:50:30.697538] [digital-marketing-seo] Day 1 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T22:52:45.707856] [digital-marketing-seo] Day 2 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T22:55:00.697890] [digital-marketing-seo] Day 3 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T22:57:15.819036] [video-editing] Day 1 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T22:59:30.738369] [video-editing] Day 2 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T23:01:45.741009] [video-editing] Day 3 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T23:04:00.715573] [print-on-demand] Day 1 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T23:06:15.805893] [print-on-demand] Day 2 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T23:08:30.715507] [print-on-demand] Day 3 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T23:10:45.713188] [cpp-daily-coding] Day 1 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T23:13:00.735843] [cpp-daily-coding] Day 2 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T23:15:28.866332] [cpp-daily-coding] Day 3 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T23:17:30.733569] [cpp-daily-coding] Day 4 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T23:19:45.706305] [cpp-daily-coding] Day 5 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T23:22:00.729959] [python-programming] Day 1 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T23:24:15.733425] [python-programming] Day 2 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T23:26:30.743487] [web-development] Day 1 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T23:28:45.733363] [web-development] Day 2 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T23:31:00.788010] [excel-data-analysis] Day 1 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T23:33:15.849759] [excel-data-analysis] Day 2 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T23:35:30.753641] [excel-data-analysis] Day 3 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T23:37:45.782324] [crypto-blockchain] Day 1 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T23:40:00.751571] [crypto-blockchain] Day 2 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T23:42:15.761469] [psx-stock-trading] Day 1 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T23:44:30.786225] [psx-stock-trading] Day 2 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T23:46:45.772761] [tiktok-growth] Day 1 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T23:49:00.766022] [tiktok-growth] Day 2 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T23:51:15.801021] [tiktok-growth] Day 3 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T23:53:30.811192] [blogging-adsense] Day 1 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T23:55:45.777879] [blogging-adsense] Day 2 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-04T23:58:00.776779] [blogging-adsense] Day 3 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-05T00:00:15.773486] [photography-editing] Day 1 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-05T00:02:30.771843] [photography-editing] Day 2 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-05T00:04:50.747159] [photography-editing] Day 3 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-05T00:07:00.799159] [voiceover-podcasting] Day 1 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-05T00:09:15.792415] [real-estate-business] Day 1 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-05T00:11:30.781326] [real-estate-business] Day 2 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-05T00:13:45.791024] [mobile-repairing] Day 1 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-05T00:16:00.787872] [mobile-repairing] Day 2 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error
+[2026-08-05T00:17:59.861433] [youtube-automation] Day 2 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: original preamble khaali tha lekin translation ne naya preamble bana diya; Arabic-script ratio kaafi kam hai (0.0)
+[2026-08-05T00:19:12.972455] [social-media-marketing] Day 3 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: original preamble khaali tha lekin translation ne naya preamble bana diya; preamble/section 1 word-overlap 0.72 (>0.70); Arabic-script ratio kaafi kam hai (0.0)
+[2026-08-05T00:20:16.408221] [forex-trading] Day 2 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: Arabic-script ratio kaafi kam hai (0.0)
+[2026-08-05T00:21:48.714269] [forex-trading] Day 4 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: original preamble khaali tha lekin translation ne naya preamble bana diya; preamble section 1 ke content se near-duplicate hai; preamble/section 1 word-overlap 1.00 (>0.70)
+[2026-08-05T00:23:16.015528] [amazon-fba] Day 1 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: original preamble khaali tha lekin translation ne naya preamble bana diya
+[2026-08-05T00:24:45.074981] [amazon-fba] Day 2 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: Arabic-script ratio kaafi kam hai (0.0)
+[2026-08-05T00:26:16.784391] [amazon-fba] Day 4 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: original preamble khaali tha lekin translation ne naya preamble bana diya; preamble/section 1 word-overlap 0.91 (>0.70)
+[2026-08-05T00:27:44.627567] [ai-content-writing] Day 1 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: original preamble khaali tha lekin translation ne naya preamble bana diya; Arabic-script ratio kaafi kam hai (0.0)
+[2026-08-05T00:28:50.320641] [ai-tools] Day 1 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: original preamble khaali tha lekin translation ne naya preamble bana diya; preamble/section 1 word-overlap 0.88 (>0.70); Arabic-script ratio kaafi kam hai (0.0)
+[2026-08-05T00:30:00.250254] [ai-tools] Day 2 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: original preamble khaali tha lekin translation ne naya preamble bana diya; preamble/section 1 word-overlap 0.80 (>0.70); Arabic-script ratio kaafi kam hai (0.0)
+[2026-08-05T00:31:13.618256] [ai-tools] Day 3 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: original preamble khaali tha lekin translation ne naya preamble bana diya; Arabic-script ratio kaafi kam hai (0.0)
+[2026-08-05T00:32:31.225642] [dropshipping] Day 2 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: Invalid control character at: line 7 column 114 (char 817)
+[2026-08-05T00:33:49.764780] [freelancing] Day 4 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: original preamble khaali tha lekin translation ne naya preamble bana diya; Arabic-script ratio kaafi kam hai (0.0)
+[2026-08-05T00:35:15.280871] [print-on-demand] Day 1 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: original preamble khaali tha lekin translation ne naya preamble bana diya; Arabic-script ratio kaafi kam hai (0.0)
+[2026-08-05T00:36:39.362993] [print-on-demand] Day 2 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: original preamble khaali tha lekin translation ne naya preamble bana diya; Arabic-script ratio kaafi kam hai (0.0)
+[2026-08-05T00:37:51.767500] [cpp-daily-coding] Day 2 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: original preamble khaali tha lekin translation ne naya preamble bana diya; Arabic-script ratio kaafi kam hai (0.0)
+[2026-08-05T00:39:06.656056] [cpp-daily-coding] Day 4 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: original preamble khaali tha lekin translation ne naya preamble bana diya; Arabic-script ratio kaafi kam hai (0.0)
+[2026-08-05T00:40:23.207595] [cpp-daily-coding] Day 5 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: original preamble khaali tha lekin translation ne naya preamble bana diya; Arabic-script ratio kaafi kam hai (0.0)
+[2026-08-05T00:41:34.472977] [cpp-daily-coding] Day 6 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: original preamble khaali tha lekin translation ne naya preamble bana diya; Arabic-script ratio kaafi kam hai (0.0)
+[2026-08-05T00:42:50.013312] [python-programming] Day 1 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: original preamble khaali tha lekin translation ne naya preamble bana diya; Arabic-script ratio kaafi kam hai (0.0)
+[2026-08-05T00:44:00.213052] [python-programming] Day 2 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: Invalid control character at: line 7 column 178 (char 662)
+[2026-08-05T00:45:08.959414] [web-development] Day 1 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: original preamble khaali tha lekin translation ne naya preamble bana diya; Arabic-script ratio kaafi kam hai (0.0)
+[2026-08-05T00:46:22.937470] [web-development] Day 2 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: original preamble khaali tha lekin translation ne naya preamble bana diya; Arabic-script ratio kaafi kam hai (0.0)
+[2026-08-05T00:47:50.211592] [photography-editing] Day 3 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: Expecting value: line 19 column 18 (char 1458)
+[2026-08-05T00:49:27.591389] [excel-data-analysis] Day 4 Urdu (Nastaliq/Urdu script mein) translation 5 attempts ke baad bhi fail, skip: AI output reject: original preamble khaali tha lekin translation ne naya preamble bana diya; Arabic-script ratio kaafi kam hai (0.0)
+[2026-08-05T00:50:58.226417] [excel-data-analysis] Day 4 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 500: Internal Server Error

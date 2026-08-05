@@ -87,7 +87,30 @@
         ]
       ],
       "answer_key": "product review, natural placement, disclosure, cta",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "روز دوم",
+          "preamble": "**روز دوم — ایفلی ایٹ لنکس کی پوزیشن: کہاں اور کیسے لگائیں؟**",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "ایفلی ایٹ لنکس کو صحیح جگہ پر پلايس کرنا ضروری ہے—ورنہ ٹریفک بھی ہے مگر کلکس نہیں۔ لنکس کو نیچرل طریقے سے کنیٹ میں انٹیگریٹ کرنا چاہیے، تاکہ ریڈرز کو لگے نہ کہ تم ان کو 'بیچ رہے ہو'۔ سب سے موثر جگہیں ہیں: پراڈکٹ ریویوز، کمپئیرسن پوسٹس، 'بہترین' لسٹس، اور 'ہاؤ ٹو' گائیڈز۔ ہر پلیٹ فارم (بلاگ، یوٹیوب، سوشل میڈیا) کے لیے پلايسمنٹ سٹریٹیجی الگ ہوتی ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1.\nبلاگ/آرٹیکل: ایک 'ٹاپ 5 بجٹ سمارٹ فونز 2024' پوسٹ میں ہر پراڈکٹ کے نام کے نیچے ایفلی ایٹ لنک لگاؤ، لیکن 'چیک پرائس' یا 'بائے ناؤ' بٹن کے ساتھ۔\n2.\nیوٹیوب: ویڈیو ڈسکریپشن میں سب سے پہلے ایفلی ایٹ لنکس ڈالو (ایمیزون ایسوسی ایٹس کے لیے)، پھر مزید ڈٹیلز۔ ویڈیو کے دو منٹ کے بعد بھی لنک مینشن کر سکتے ہو۔\n3.\nانسٹاگرام/فیس بک: کیپشن میں 'لنک ان بایو' یوöse کرو، یا پھر ریل کی ڈسکریپشن میں لنک ایڈ کرو (اگر الاؤڈ ہو)۔"
+            },
+            {
+              "label": "مشق",
+              "content": "اپنے ایک ایکسٹنگ بلاگ پوسٹ یا سوشل میڈیا پوسٹ کو ایڈٹ کرو اور **2-3 نیچرل ایفلی ایٹ لنکس** ایڈ کرو۔ لنکس کو ایسے پلايس کرو جیسے تم کسی دوست کو ریکومینڈ کر رہے ہو—نا کہ 'ہارڈ سیل' کر رہے ہو۔"
+            },
+            {
+              "label": "مینی پراجیکٹ",
+              "content": "ایک **100-150 الفاظ کا مائیکرو بلاگ پوسٹ** لکھو جس میں ایک پراڈکٹ ریکومینڈ کرنا ہے۔ پوسٹ میں:\n- پراڈکٹ کا نام اور ایک شارٹ ریویو۔\n- 'چیک پرائس' بٹن (ایفلی ایٹ لنک)۔\n- ڈسکلوژر لائن ایڈ کرو (e.g., 'یہ پوسٹ میں ایفلی ایٹ لنکس ہیں')۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 3,
@@ -2937,6 +2960,33 @@
           ]
         }
       }
+    },
+    {
+      "day": 4,
+      "id": "day-004",
+      "date": "2026-08-05",
+      "title": "Day 4 — **Data Cleaning: Excel ka Secret Weapon**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Excel mein \"clean data\" ka matlab hai: no extra spaces, correct formats, no duplicates, and consistent entries. Aaj hum seekhenge kaise formulas (`TRIM`, `CLEAN`, `SUBSTITUTE`) aur tools (`Find & Replace`, `Remove Duplicates`, `Text to Columns`) se messy data ko professional banaya jata hai. Clean data = accurate analysis = less headaches!"
+        ],
+        [
+          "Example",
+          "Ek Excel sheet mein \"  John  \" (extra spaces), \"john.doe@email.com\" aur \"john doe@email.com\" (inconsistent dots) hain. Steps:\n1. `=TRIM(A1)` se extra spaces remove karo.\n2. `=SUBSTITUTE(A2, \".\", \"\")` se dots hatao.\n3. `Data > Remove Duplicates` se duplicate emails nikaalo."
+        ],
+        [
+          "Practice",
+          "Apne Excel mein ek column mein \"  ali  \", \"ali \", aur \"ALI\" likho. `TRIM` aur `UPPER`/`LOWER` formulas use karke sabko lowercase aur single space mein convert karo."
+        ],
+        [
+          "Mini Project",
+          "Ek \"dirty\" dataset download karo (Google par \"sample messy data Excel\" search karo). Uske saath yeh karo:\n- Extra spaces remove karo.\n- Dates ko consistent format mein badlo (e.g., `dd-mm-yyyy`).\n- Duplicate rows nikaalo.\n- Final clean file save karo."
+        ]
+      ],
+      "answer_key": "trim, substitute, remove duplicates, text to columns",
+      "translations": {}
     }
   ],
   "crypto-blockchain": [
