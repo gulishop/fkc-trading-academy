@@ -1842,7 +1842,30 @@
         ]
       ],
       "answer_key": "trending niche, emotional trigger, 1000+ orders, 4+ stars",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن 2 — جیتنے والے پروڈکٹ کی پہچان: 5 کلیدی میٹرکس سے فلٹر کرنا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "جیتنے والے پروڈکٹ کی تلاش ڈراپ شپنگ کا سب سے اہم قدم ہے۔ ایسے پروڈکٹس کا انتخاب کریں جو:\n1) **ہائی ڈیمانڈ** ہوں (ٹرینڈنگ یا مسئلہ حل کرنے والے)،\n2) **لو کمپیٹیشن** ہوں (نیچ میں منفرد ویلیو ہو)،\n3) **ہائی پرسیوڈ ویلیو** ہوں (لوگوں کو لگے کہ یہ ضروری ہے)،\n4) **آسان ٹو شپ** ہوں (ہلکے وزن، کوئی نازک آئٹمز نہیں)،\n5) **ایموشنل ٹرگر** ہوں (خوشی، غصہ، تجسس یا \"مست ہاؤ\" فیلیںگ۔)"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک پروڈکٹ کی تلاش کرتے وقت:\n\n- ٹرینڈنگ نیچ: \"پیٹ لوورز\" → \"آٹومیٹک پیٹ فیڈر\" (ڈیمانڈ ہائی، کمپیٹیشن میڈیم)۔\n\n- مسئلہ حل کرنے والا: \"بیک پین\" → \"لمبر سپورٹ تکیہ\" (ایموشنل ٹرگر + ویلیو)۔\n\n- اجتناب کریں: \"کسٹم جویلری\" (ہائی کمپیٹیشن، لمبا شپنگ ٹائم)۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے نیچ کے 3-5 ٹرینڈنگ پروڈکٹس کو علی ایکسپریس پر تلاش کریں۔ ہر پروڈکٹ کے لیے یہ چیک کریں:\n✅ قیمت کی رینج (₨500–₨3000 مثالی ہے)\n✅ آرڈرز کی تعداد (1000+ آرڈرز = ڈیمانڈ کا ثبوت)\n✅ ریویوز (4+ اسٹارز، 50+ ریویوز = ٹرسٹ)\n✅ شپنگ ٹائم (علی ایکسپریس اسٹینڈرڈ یا ای پیکٹ)"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک سادہ سپریڈشیٹ بنائیں:\n| پروڈکٹ کا نام | نیچ | قیمت | آرڈرز | اوسط ریٹنگ | شپنگ ٹائم | نوٹس |\n|----------------|-------|-------|--------|-------------|---------------|-------|\n| Automatic Pet Feeder | Pet Lovers | $29.99 | 5,000 | 4.8 | 15-20 دن | ٹرینڈنگ، ہائی ڈیمانڈ |"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 3,
@@ -1897,6 +1920,76 @@
             {
               "label": "Mini Project",
               "content": "ایک **سپلائر کمپئیرسن ٹیبل** بناؤ جس میں شامل ہوں:\n\n- پراڈکٹ کا نام\n- علی ایکسپریس بمقابلہ مقامی قیمت\n- شپنگ ٹائم\n- ریٹرن پالیسی\n- کسٹمر ریویوز (ریٹنگ)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "day": 4,
+      "id": "day-004",
+      "date": "2026-08-05",
+      "title": "Day 4 — **Store Setup: Shopify vs WhatsApp Store (Pros & Cons)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum store setup ke do popular tareeqon par focus karenge: **Shopify** (full-fledged eCommerce) aur **WhatsApp Store** (low-cost, local-focused). Shopify offers scalability, branding, aur ads ke liye flexibility, jabki WhatsApp store chhote budget walon ke liye behtareen hai—khud ka social proof bana sakta hai aur COD orders manage karne mein aasan hai."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Shopify Store Setup (3 Steps)",
+          "- Go to [Shopify.com](https://www.shopify.com), 3-day free trial start karein.\n   - \"Online Store\" > \"Themes\" > Free theme (e.g., Dawn) install karein.\n   - Product add karein > \"Add product\" > Title, description, images upload karein > Price set karein > Save.\n\n2."
+        ],
+        [
+          "WhatsApp Store Setup (2 Steps)",
+          "- Ek WhatsApp Business account banayein (name: \"BrandName Store\").\n   - Catalog feature enable karein: *Settings > Business Tools > Catalog > Add Products*."
+        ],
+        [
+          "Practice",
+          "Apne selected product ka **Shopify aur WhatsApp store** donon ke liye setup karein. Product title, description, aur 3 images (1 main + 2 extra) add karein."
+        ],
+        [
+          "Mini Project",
+          "Ek **WhatsApp Business Catalog** banayein jismein 5 products hon—har product ka naam, price, aur 1 image ho. Catalog link ko apne social media par share karein."
+        ]
+      ],
+      "answer_key": "shopify: theme install, product add, save; whatsapp: catalog enable, 5 products add",
+      "translations": {
+        "ur": {
+          "title": "دن 4 — **سٹور سیٹ اپ: شاپفائی بمقابلہ واٹس ایپ سٹور (فوائد و نقصانات)**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم سٹور سیٹ اپ کے دو مقبول طریقوں پر توجہ دیں گے: **شاپفائی** (مکمل ای کامرس پلیٹ فارم) اور **واٹس ایپ سٹور** (کم لاگت، مقامی توجہ والا حل)۔ شاپفائی اسکیل ایبلٹی، برانڈنگ، اور اشتہارات کے لیے لچک فراہم کرتا ہے، جبکہ واٹس ایپ سٹور چھوٹے بجٹ والے افراد کے لیے بہترین ہے—خود کا سوشل پروف بنا سکتا ہے اور کیش آن ڈیلیوری آرڈرز کو سنبھالنے میں آسان ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1."
+            },
+            {
+              "label": "شاپفائی سٹور سیٹ اپ (3 مراحل)",
+              "content": "- [Shopify.com](https://www.shopify.com) پر جائیں اور 3 دن کا مفت ٹرائل شروع کریں۔\n- \"آن لائن سٹور\" > \"تھیمز\" > مفت تھیم (مثلاً، ڈان) انسٹال کریں۔\n- پروڈکٹ شامل کریں > \"پروڈکٹ شامل کریں\" > عنوان، تفصیل، تصاویر اپ لوڈ کریں > قیمت طے کریں > محفوظ کریں۔"
+            },
+            {
+              "label": "2.",
+              "content": ""
+            },
+            {
+              "label": "واٹس ایپ سٹور سیٹ اپ (2 مراحل)",
+              "content": "- ایک واٹس ایپ بزنس اکاؤنٹ بنائیں (نام: \"برانڈ نام سٹور\")۔\n- کیٹلاگ فیچر فعال کریں: *سیٹنگز > بزنس ٹولز > کیٹلاگ > پروڈکٹس شامل کریں*۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے منتخب کردہ پروڈکٹ کا **شاپفائی اور واٹس ایپ سٹور** دونوں کے لیے سیٹ اپ کریں۔ پروڈکٹ کا عنوان، تفصیل، اور 3 تصاویر (1 مرکزی + 2 اضافی) شامل کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **واٹس ایپ بزنس کیٹلاگ** بنائیں جس میں 5 پروڈکٹس ہوں—ہر پروڈکٹ کا نام، قیمت، اور 1 تصویر ہو۔ کیٹلاگ کا لنک اپنے سوشل میڈیا پر شیئر کریں۔"
             }
           ]
         }
