@@ -5506,7 +5506,80 @@
         ]
       ],
       "answer_key": "golden hour, backlighting, reflector bounce, soft shadows",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن ٣ — قدرتی روشنی کو سمجھنا: بہترین تصاویر کی بنیاد",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "قدرتی روشنی میں فوٹوگرافی سب سے آسان مگر طاقتور طریقہ ہے جو آپ کی تصاویر کو بہتر بنا سکتا ہے۔ سیکھیں کہ دن بھر میں روشنی کس طرح بدلتی ہے (گولڈن آور، بلیو آور، دوپہر کی تیز دھوپ) اور اسے موڈ بنانے کے لیے کیسے استعمال کریں — نرم، ڈرامائی، یا حتیٰ کہ اداس۔ قدرتی روشنی پر عبور حاصل کرنے کا مطلب ہے کہ مہنگے آلات پر کم انحصار اور اپنے شاٹس پر زیادہ کنٹرول۔"
+            },
+            {
+              "label": "مثال",
+              "content": "*گولڈن آور پورٹریٹ:* غروب آفتاب کے وقت اپنے موضوع کو سورج کے پیچھے رکھیں (بیک لائٹنگ)۔ ان کے چہرے پر روشنی منعکس کرنے کے لیے ریفلیکٹر یا سفید دیوار کا استعمال کریں۔ f/2.8 پر شوٹ کریں، آئی ایس او ١٠٠ رکھیں، اور اوور ایکسپوژر سے بچنے کے لیے شٹر سپیڈ کو ایڈجسٹ کریں۔ نتیجہ: گرم، چمکدار جلد جس پر نرم سائے ہوں گے۔"
+            },
+            {
+              "label": "مشق",
+              "content": "ابھی باہر نکلیں۔ اپنے اردگرد قدرتی روشنی کی تین قسمیں پہچانیں (مثلاً براہ راست دھوپ، سایہ، بادلوں کے درمیان منتشر روشنی)۔ ایک ہی موضوع کی ہر روشنی کی حالت میں ایک تصویر لیں۔ موڈ کا موازنہ کریں — دیکھیں کہ سائے اور رنگ کس طرح بدلتے ہیں۔"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "*روشنی کی تلاش* — ایک گھنٹہ گزار کر ایک ہی چیز (پودا، پیالہ، یا عمارت) کو پانچ مختلف قدرتی روشنی کے حالات میں فوٹوگراف کریں۔ ہر تصویر پر روشنی کی قسم کا لیبل لگائیں (مثلاً ’صبح کی سائیڈ لائٹ‘، ’ابر آلود منتشر روشنی‘)۔ اپنے دو پسندیدہ شاٹس کو روشنی کے اثر کی وضاحت کرتے ہوئے کیپشن کے ساتھ شیئر کریں۔"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "day": 4,
+      "id": "day-004",
+      "date": "2026-08-06",
+      "title": "Day 4 — **Portrait Photography: Posing & Expressions**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Portrait photography ka heart hai posing aur expressions—bas yahi hai jo photo ko zindagi deta hai. Agar subject natural feel kare aur photographer unki energy capture kar paye, to photo zaroor impactful banti hai. Aaj hum seekhenge ki kaise subject ko comfortable banaya jaye, natural poses find ki jaen, aur expressions ko guide kiya jaye bina forced lage."
+        ],
+        [
+          "Example",
+          "Ek subject ko \"thinking pose\" ke liye guide karne ka tareeka:\n1. Unhe koi interesting object (jaise phone, cup, ya book) dikhao.\n2. Kaha: \"Is object ko dekh kar socho ki aaj tumhara sabse productive din raha hai.\"\n3. Camera se unki aankhein capture karo—yeh natural curiosity aur emotion laata hai."
+        ],
+        [
+          "Practice",
+          "Apne friend ya family member se ek natural portrait lo. Unhe koi simple action perform karne ko kaha (jaise hair adjust karna, ya phone check karna). Focus rakhna ki unki body language relaxed ho."
+        ],
+        [
+          "Mini Project",
+          "**\"Emotion Hunt\"**\nEk series banayein: 5 different expressions (happy, thoughtful, surprised, relaxed, confident). Har expression ke liye ek pose aur lighting setup choose karen. Har photo ke saath 1-2 word note likhein jo emotion ko describe kare (jaise \"soft smile,\" \"intense gaze\")."
+        ]
+      ],
+      "answer_key": "natural pose, relaxed shoulders, eye contact, soft lighting",
+      "translations": {
+        "ur": {
+          "title": "دن ۴ — پورٹریٹ فوٹوگرافی: پوزنگ اور ایکسپریشنز",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "پورٹریٹ فوٹوگرافی کا دل پوزنگ اور ایکسپریشنز ہیں—بس یہی وہ چیز ہے جو تصویر کو زندگی بخشتی ہے۔ اگر سبجیکٹ قدرتی محسوس کرے اور فوٹوگرافر ان کی توانائی کو کیپچر کر پائے، تو تصویر یقیناً اثر انگیز بنتی ہے۔ آج ہم سیکھیں گے کہ کیسے سبجیکٹ کو آرام دہ بنایا جائے، قدرتی پوزز تلاش کی جائیں، اور ایکسپریشنز کو گائیڈ کیا جائے بغیر کہ وہ جبراً محسوس ہوں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک سبجیکٹ کو \"سوچتی ہوئی پوز\" کے لیے گائیڈ کرنے کا طریقہ:\n١۔ انہیں کوئی دلچسپ چیز (جیسے فون، کپ، یا کتاب) دکھائیں۔\n٢۔ کہیں: \"اس چیز کو دیکھ کر سوچو کہ آج تمہارا سب سے پیداواری دن رہا ہے۔\"\n٣۔ کیمرے سے ان کی آنکھوں کو کیپچر کریں—یہ قدرتی تجسس اور جذبات لاتا ہے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے کسی دوست یا خاندان کے فرد سے ایک قدرتی پورٹریٹ لیں۔ انہیں کوئی سادہ عمل کرنے کو کہیں (جیسے بال درست کرنا، یا فون چیک کرنا)۔ توجہ رکھیں کہ ان کی باڈی لینگویج آرام دہ ہو۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "\"ایموشن ہنٹ\"\nایک سیریز بنائیں: ۵ مختلف ایکسپریشنز (خوشی، غور و فکر، حیرت، آرام، اعتماد)۔ ہر ایکسپریشن کے لیے ایک پوز اور لائٹنگ سیٹ اپ منتخب کریں۔ ہر تصویر کے ساتھ ۱-۲ الفاظ کا نوٹ لکھیں جو جذبات کو بیان کرے (جیسے \"نرم مسکراہٹ\"، \"تیز نظارہ\")۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "voiceover-podcasting": [

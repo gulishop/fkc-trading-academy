@@ -9,6 +9,16 @@
 <meta property="og:description" content="FKC Trading Academy · Photography & Editing · Day 03">
 <meta property="og:image" content="../../../logo.png">
 <meta name="twitter:card" content="summary_large_image">
+<script>
+// Dark mode — theme paint se pehle set karte hain taake flash na ho.
+(function(){
+  try{
+    var t = localStorage.getItem("fkc_theme") ||
+      (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", t);
+  }catch(e){}
+})();
+</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z5FV45KG2C"></script>
 <script>
@@ -22,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T21:18:59.874247";
+  var FKC_BUILD = "2026-08-06T00:07:45.296582";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -46,6 +56,15 @@
 :root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
 --ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
 --accent:#2BAF66;--purple:#6D28D9;}
+html[data-theme="dark"]{--paper:#14161A;--panel:#1D2025;--line:#2C3038;
+--ink:#EDEFF2;--muted:#9AA1AB;--primary:#5B9DFF;--primary-dark:#3D7DE0;
+--accent:#3FCB7E;--purple:#A78BFA;}
+html[data-theme="dark"] img{opacity:.92;}
+.theme-toggle{position:fixed;bottom:16px;right:16px;z-index:999;
+width:44px;height:44px;border-radius:50%;border:1px solid var(--line);
+background:var(--panel);color:var(--ink);font-size:19px;cursor:pointer;
+box-shadow:0 2px 8px rgba(0,0,0,.15);display:flex;align-items:center;
+justify-content:center;}
 *{box-sizing:border-box;}
 @media (prefers-reduced-motion: no-preference){
   .fade-in{animation:fadeUp .45s ease both;}
@@ -53,7 +72,8 @@
   @keyframes fadeUp{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
 }
 body{margin:0;background:var(--paper);color:var(--ink);
-font-family:'Inter','IBM Plex Sans',sans-serif;line-height:1.55;}
+font-family:'Inter','IBM Plex Sans',sans-serif;line-height:1.55;
+transition:background .2s ease,color .2s ease;}
 .wrap{max-width:720px;margin:0 auto;padding:24px 16px 70px;}
 a{color:var(--primary);}
 .top{display:flex;align-items:baseline;gap:10px;color:var(--ink);
@@ -155,31 +175,63 @@ vertical-align:middle;}
 .lesson-nav{display:flex;justify-content:space-between;gap:8px;
 flex-wrap:wrap;margin-top:14px;}
 .lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.section-title{font-family:'Inter',sans-serif;font-weight:800;
+font-size:1.2em;margin:30px 0 2px;padding-top:18px;
+border-top:1px solid var(--line);display:flex;align-items:center;gap:8px;}
+.section-title.adults{color:var(--primary);}
+.section-title.kids{color:#DB4C77;}
 .quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
 .quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
 border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
 box-sizing:border-box;margin:6px 0;}
 .quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+.puzzle-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.puzzle-box h3{margin-top:0;}
+.puzzle-status{font-size:.85em;color:var(--muted);margin:0 0 10px;}
+.puzzle-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;
+max-width:340px;margin:0 auto;}
+.puzzle-card{aspect-ratio:1/1;border-radius:10px;border:none;
+background:var(--primary);color:#fff;font-size:1.6em;cursor:pointer;
+display:flex;align-items:center;justify-content:center;
+transition:transform .25s ease,background .25s ease;padding:0;}
+.puzzle-card.flipped,.puzzle-card.matched{background:#fff;
+border:1px solid var(--line);color:var(--ink);}
+.puzzle-card.matched{background:#EAFBF0;border-color:var(--accent);
+opacity:.85;cursor:default;}
+.puzzle-card:disabled{cursor:default;}
+.puzzle-win{display:none;text-align:center;margin-top:12px;
+background:#EAFBF0;border-radius:10px;padding:12px;font-weight:700;color:#15803d;}
 @media print{
   .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
-  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  .quiz-box,.puzzle-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
   body{background:#fff;}
   .card{box-shadow:none;border:none;}
 }
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
+<button type="button" class="theme-toggle" id="fkcThemeToggle" title="Dark/Light mode" onclick="fkcToggleTheme()">🌓</button>
+<script>
+function fkcToggleTheme(){
+  var cur = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", cur);
+  try{ localStorage.setItem("fkc_theme", cur); }catch(e){}
+}
+</script>
 
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "headline": "Day 3 — **Understanding Natural Light: The Foundation of Great Photos**", "name": "Day 3 — **Understanding Natural Light: The Foundation of Great Photos**", "description": "", "learningResourceType": "Lesson", "educationalLevel": "Beginner", "inLanguage": "ur", "isPartOf": {"@type": "Course", "name": "Photography & Editing"}, "datePublished": "2026-08-04", "publisher": {"@type": "Organization", "name": "FKC Trading Academy"}}</script>
     <div class="top"><a href="../../../index.html">← FKC Trading Academy</a>
     <a href="../index.html" class="course-back-link">/ Photography &amp; Editing</a></div>
-    <span class="badge">Latest</span>
+    
     <p class="muted">📷 Photography &amp; Editing · Day 03</p>
     <h1>Day 3 — **Understanding Natural Light: The Foundation of Great Photos**</h1>
+    <p class="muted" style="margin:0 0 10px;">↩️ Pichla lesson: <strong>Day 2 — Framing &amp; Perspective: Beyond the Rule of Thirds</strong> — aaj is se aage badhte hain.</p>
     <div class="card">
       
       
       
-      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Natural light photography is the simplest yet most powerful way to improve your images. Learn to observe how light changes throughout the day (golden hour, blue hour, harsh midday sun) and how to use it to create mood—soft, dramatic, or even moody. Mastering natural light means less reliance on expensive gear and more control over your shots.</p><h3>Example</h3><p>*Golden Hour Portrait:* At sunset, position your subject with the sun behind them (backlighting). Use a reflector or white wall to bounce light onto their face. Shoot at f/2.8, ISO 100, and adjust shutter speed to avoid overexposure. Result: warm, glowing skin with soft shadows.</p><h3>Practice</h3><p>Step outside right now. Identify 3 types of natural light around you (e.g., direct sun, shade, diffused light through clouds). Take 1 photo of the same subject in each light condition. Compare the mood—notice how shadows and colors change.</p><h3>Mini Project</h3><p>*&quot;Light Hunt&quot;* – Spend 1 hour photographing the same object (a plant, cup, or building) in 5 different natural lighting scenarios. Label each photo with the light type (e.g., &quot;morning side light,&quot; &quot;overcast diffused&quot;). Share 2 favorites with a caption describing the light’s effect.</p></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Natural light photography is the simplest yet most powerful way to improve your images. Learn to observe how light changes throughout the day (golden hour, blue hour, harsh midday sun) and how to use it to create mood—soft, dramatic, or even moody. Mastering natural light means less reliance on expensive gear and more control over your shots.</p><h3>Example</h3><p>*Golden Hour Portrait:* At sunset, position your subject with the sun behind them (backlighting). Use a reflector or white wall to bounce light onto their face. Shoot at f/2.8, ISO 100, and adjust shutter speed to avoid overexposure. Result: warm, glowing skin with soft shadows.</p><h3>Practice</h3><p>Step outside right now. Identify 3 types of natural light around you (e.g., direct sun, shade, diffused light through clouds). Take 1 photo of the same subject in each light condition. Compare the mood—notice how shadows and colors change.</p><h3>Mini Project</h3><p>*&quot;Light Hunt&quot;* – Spend 1 hour photographing the same object (a plant, cup, or building) in 5 different natural lighting scenarios. Label each photo with the light type (e.g., &quot;morning side light,&quot; &quot;overcast diffused&quot;). Share 2 favorites with a caption describing the light’s effect.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>تصور</h3><p>قدرتی روشنی میں فوٹوگرافی سب سے آسان مگر طاقتور طریقہ ہے جو آپ کی تصاویر کو بہتر بنا سکتا ہے۔ سیکھیں کہ دن بھر میں روشنی کس طرح بدلتی ہے (گولڈن آور، بلیو آور، دوپہر کی تیز دھوپ) اور اسے موڈ بنانے کے لیے کیسے استعمال کریں — نرم، ڈرامائی، یا حتیٰ کہ اداس۔ قدرتی روشنی پر عبور حاصل کرنے کا مطلب ہے کہ مہنگے آلات پر کم انحصار اور اپنے شاٹس پر زیادہ کنٹرول۔</p><h3>مثال</h3><p>*گولڈن آور پورٹریٹ:* غروب آفتاب کے وقت اپنے موضوع کو سورج کے پیچھے رکھیں (بیک لائٹنگ)۔ ان کے چہرے پر روشنی منعکس کرنے کے لیے ریفلیکٹر یا سفید دیوار کا استعمال کریں۔ f/2.8 پر شوٹ کریں، آئی ایس او ١٠٠ رکھیں، اور اوور ایکسپوژر سے بچنے کے لیے شٹر سپیڈ کو ایڈجسٹ کریں۔ نتیجہ: گرم، چمکدار جلد جس پر نرم سائے ہوں گے۔</p><h3>مشق</h3><p>ابھی باہر نکلیں۔ اپنے اردگرد قدرتی روشنی کی تین قسمیں پہچانیں (مثلاً براہ راست دھوپ، سایہ، بادلوں کے درمیان منتشر روشنی)۔ ایک ہی موضوع کی ہر روشنی کی حالت میں ایک تصویر لیں۔ موڈ کا موازنہ کریں — دیکھیں کہ سائے اور رنگ کس طرح بدلتے ہیں۔</p><h3>چھوٹا پروجیکٹ</h3><p>*روشنی کی تلاش* — ایک گھنٹہ گزار کر ایک ہی چیز (پودا، پیالہ، یا عمارت) کو پانچ مختلف قدرتی روشنی کے حالات میں فوٹوگراف کریں۔ ہر تصویر پر روشنی کی قسم کا لیبل لگائیں (مثلاً ’صبح کی سائیڈ لائٹ‘، ’ابر آلود منتشر روشنی‘)۔ اپنے دو پسندیدہ شاٹس کو روشنی کے اثر کی وضاحت کرتے ہوئے کیپشن کے ساتھ شیئر کریں۔</p></div>
       
       
       <div class="quiz-box no-print">
@@ -205,9 +257,73 @@ box-sizing:border-box;margin:6px 0;}
         }
       }
       </script>
+      
+      <div class="puzzle-box no-print" id="pz-photography-editing-3">
+        <h3>🧩 Dimaghi Kasrat — Jode Milayein</h3>
+        <p class="puzzle-status" id="pz-photography-editing-3-status">Cards par tap karke jode (pairs) milayein.</p>
+        <div class="puzzle-grid" id="pz-photography-editing-3-grid"></div>
+        <div class="puzzle-win" id="pz-photography-editing-3-win">🎉 Shabaash! Sab jode mil gaye — thodi der aur seekhne ke liye tayyar?</div>
+      </div>
+      <script>
+      (function(){
+        var emojis = ["🍉", "🐱", "☀️", "🖊️", "🎁", "🐝"];
+        var deck = emojis.concat(emojis);
+        for (var i = deck.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var t = deck[i]; deck[i] = deck[j]; deck[j] = t;
+        }
+        var grid = document.getElementById("pz-photography-editing-3-grid");
+        var statusEl = document.getElementById("pz-photography-editing-3-status");
+        var winEl = document.getElementById("pz-photography-editing-3-win");
+        var flipped = [], matchedCount = 0, moves = 0, lock = false;
+        deck.forEach(function(val){
+          var b = document.createElement("button");
+          b.type = "button";
+          b.className = "puzzle-card";
+          b.setAttribute("data-val", val);
+          b.textContent = "❓";
+          b.onclick = function(){
+            if (lock || b.classList.contains("matched") || b.classList.contains("flipped")) return;
+            b.classList.add("flipped");
+            b.textContent = val;
+            flipped.push(b);
+            if (flipped.length === 2) {
+              moves++;
+              lock = true;
+              var a = flipped[0], c = flipped[1];
+              if (a.getAttribute("data-val") === c.getAttribute("data-val")) {
+                a.classList.add("matched"); c.classList.add("matched");
+                matchedCount += 2;
+                flipped = []; lock = false;
+                statusEl.textContent = "Moves: " + moves + " · " + matchedCount + "/" + deck.length + " match hue";
+                if (matchedCount === deck.length) {
+                  winEl.style.display = "block";
+                  statusEl.textContent = "Complete! Total moves: " + moves;
+                }
+              } else {
+                setTimeout(function(){
+                  a.classList.remove("flipped"); a.textContent = "❓";
+                  c.classList.remove("flipped"); c.textContent = "❓";
+                  flipped = []; lock = false;
+                }, 700);
+              }
+            }
+          };
+          grid.appendChild(b);
+        });
+      })();
+      </script>
+      
+      <div class="no-print" style="margin-top:14px;">
+        <label for="fkc-notes" class="muted" style="display:block;margin-bottom:4px;">📝 Apni Note (sirf aapke is browser mein save hoti hai):</label>
+        <textarea id="fkc-notes" data-slug="photography-editing" data-lesson="day-003"
+          placeholder="Yahan apni note likhein..." rows="3"
+          style="width:100%;border-radius:10px;border:1px solid #ddd;padding:8px;font-family:inherit;"
+          oninput="fkcSaveNote(this)"></textarea>
+      </div>
+    
       <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Photography%20%26%20Editing%20%28Day%2003%29%0A%0ADay%203%20%E2%80%94%20%2A%2AUnderstanding%20Natural%20Light%3A%20The%20Foundation%20of%20Great%20Photos%2A%2A%0A%0AConcept%3A%0ANatural%20light%20photography%20is%20the%20simplest%20yet%20most%20powerful%20way%20to%20improve%20your%20images.%20Learn%20to%20observe%20how%20light%20changes%20throughout%20the%20day%20%28golden%20hour%2C%20blue%20hour%2C%20harsh%20midday%20sun%29%20and%20how%20to%20use%20it%20to%20create%20mood%E2%80%94soft%2C%20dramatic%2C%20or%20even%20moody.%20Mastering%20natural%20light%20means%20less%20reliance%20on%20expensive%20gear%20and%20more%20control%20over%20your%20shots.%0A%0AExample%3A%0A%2AGolden%20Hour%20Portrait%3A%2A%20At%20sunset%2C%20position%20your%20subject%20with%20the%20sun%20behind%20them%20%28backlighting%29.%20Use%20a%20reflector%20or%20white%20wall%20to%20bounce%20light%20onto%20their%20face.%20Shoot%20at%20f/2.8%2C%20ISO%20100%2C%20and%20adjust%20shutter%20speed%20to%20avoid%20overexposure.%20Result%3A%20warm%2C%20glowing%20skin%20with%20soft%20shadows.%0A%0APractice%3A%0AStep%20outside%20right%20now.%20Identify%203%20types%20of%20natural%20light%20around%20you%20%28e.g.%2C%20direct%20sun%2C%20shade%2C%20diffused%20light%20through%20clouds%29.%20Take%201%20photo%20of%20the%20same%20subject%20in%20each%20light%20condition.%20Compare%20the%20mood%E2%80%94notice%20how%20shadows%20and%20colors%20change.%0A%0AMini%20Project%3A%0A%2A%22Light%20Hunt%22%2A%20%E2%80%93%20Spend%201%20hour%20photographing%20the%20same%20object%20%28a%20plant%2C%20cup%2C%20or%20building%29%20in%205%20different%20natural%20lighting%20scenarios.%20Label%20each%20photo%20with%20the%20light%20type%20%28e.g.%2C%20%22morning%20side%20light%2C%22%20%22overcast%20diffused%22%29.%20Share%202%20favorites%20with%20a%20caption%20describing%20the%20light%E2%80%99s%20effect.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
-        <a class="btn alt" href="https://t.me/share/url?url=&text=Day%203%20%E2%80%94%20%2A%2AUnderstanding%20Natural%20Light%3A%20The%20Foundation%20of%20Great%20Photos%2A%2A%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
         <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
@@ -217,8 +333,9 @@ box-sizing:border-box;margin:6px 0;}
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <div class="lesson-nav"><a class="btn alt" href="2026-08-04-day-002.html">← Day 2 — Framing &amp; Perspective: Beyond the Rule of Thirds</a><span></span></div>
+    <div class="lesson-nav"><a class="btn alt" href="2026-08-04-day-002.html">← Day 2 — Framing &amp; Perspective: Beyond the Rule of Thirds</a><a class="btn alt" href="2026-08-06-day-004.html">Day 4 — **Portrait Photography: Posing &amp; Expressions** →</a></div>
     <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
     
     <div class="no-print" style="margin:18px 0;text-align:center;">
       <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
@@ -226,6 +343,32 @@ box-sizing:border-box;margin:6px 0;}
       <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
     <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
+    <script>
+    (function(){
+      try {
+        localStorage.setItem('fkc_last_lesson', JSON.stringify({
+          slug: "photography-editing",
+          courseName: "Photography & Editing",
+          courseIcon: "\ud83d\udcf7",
+          title: "Day 3 \u2014 **Understanding Natural Light: The Foundation of Great Photos**",
+          href: 'courses/photography-editing/posts/2026-08-04-day-003.html',
+          day: 3
+        }));
+      } catch (e) {}
+      var ta = document.getElementById('fkc-notes');
+      if (ta) {
+        try {
+          var saved = localStorage.getItem('fkc_note_' + ta.dataset.slug + '_' + ta.dataset.lesson);
+          if (saved) ta.value = saved;
+        } catch (e) {}
+      }
+    })();
+    function fkcSaveNote(el) {
+      try {
+        localStorage.setItem('fkc_note_' + el.dataset.slug + '_' + el.dataset.lesson, el.value);
+      } catch (e) {}
+    }
+    </script>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
   function getProgress(){
@@ -266,6 +409,25 @@ box-sizing:border-box;margin:6px 0;}
     }
     var wa = "https://wa.me/923333909816?text=" + encodeURIComponent(text);
     window.open(wa, "_blank");
+  };
+
+  window.fkcShowSyncCode = function(){
+    if(!window.fkcSyncProgressUp){ alert("Sync abhi ready nahi (Firebase load ho raha hai), thodi dair mein try karein."); return; }
+    var code = Math.random().toString(36).substring(2,8).toUpperCase();
+    window.fkcSyncProgressUp(code, function(ok){
+      if(ok) alert("Yeh code doosri device par 'Code Se Wapas Layein' mein daalein:\n\n" + code);
+      else alert("Sync fail ho gaya, dobara try karein.");
+    });
+  };
+
+  window.fkcEnterSyncCode = function(){
+    if(!window.fkcSyncProgressDown){ alert("Sync abhi ready nahi (Firebase load ho raha hai), thodi dair mein try karein."); return; }
+    var code = prompt("Wo code daalein jo pehli device par bana tha:");
+    if(!code || !code.trim()) return;
+    window.fkcSyncProgressDown(code.trim().toUpperCase(), function(ok){
+      if(ok){ alert("Progress wapas aa gayi ✅"); location.reload(); }
+      else alert("Yeh code nahi mila, dobara check karein.");
+    });
   };
 
   document.addEventListener("DOMContentLoaded", function(){
@@ -349,6 +511,27 @@ box-sizing:border-box;margin:6px 0;}
           created: firebase.firestore.FieldValue.serverTimestamp()
         });
       }catch(e){}
+    };
+
+    window.fkcSyncProgressUp = function(code, onDone){
+      try{
+        var data = localStorage.getItem("fkc_progress") || "{}";
+        window.fkcDb.collection("progress_sync").doc(code).set({
+          progress: data, updated: firebase.firestore.FieldValue.serverTimestamp()
+        }).then(function(){ if(onDone) onDone(true); })
+          .catch(function(){ if(onDone) onDone(false); });
+      }catch(e){ if(onDone) onDone(false); }
+    };
+
+    window.fkcSyncProgressDown = function(code, onDone){
+      try{
+        window.fkcDb.collection("progress_sync").doc(code).get().then(function(doc){
+          if(doc.exists && doc.data().progress){
+            localStorage.setItem("fkc_progress", doc.data().progress);
+            if(onDone) onDone(true);
+          } else { if(onDone) onDone(false); }
+        }).catch(function(){ if(onDone) onDone(false); });
+      }catch(e){ if(onDone) onDone(false); }
     };
   }catch(e){}
 })();
