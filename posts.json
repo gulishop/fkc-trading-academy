@@ -6394,6 +6394,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 2,
+      "id": "day-002",
+      "date": "2026-08-06",
+      "title": "Day 2 — \"1, 2, 3... Ginti ka khushiyon ka silsila!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke 1 se 10 tak ki ginti kaise likhte hain aur bolte hain. Yeh zaroori hai taake tum apne toys, fruits, ya khaana gina kar khush ho sakein!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Rahul ne apne 5 teddy bears ko ek ke peeche ek rakha. Usne gina: \"1, 2, 3, 4, 5!\" Uske baap ne kaha, \"Bohot achha! Ab tum in teddy bears ko apne dost ko de sakte ho.\""
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar koi tumhe kaha ke 'yeh ginti ka secret rakhna hai', toh tum kya karogi?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Tumhari jism tumhara hai—koi bhi tumhe 'na' kehne ka haq nahi rakhta! Agar koi cheez ajeeb lage, toh turant ammi/abbu ko batana."
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ٢ — ۱، ٢، ٣... گنتی کا خوشیوں کا سلسلہ!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج ہم سیکھیں گے کہ ایک سے دس تک کی گنتی کیسے لکھتے اور بولتے ہیں۔ یہ ضروری ہے تاکہ تم اپنے کھلونے، پھل، یا کھانا گن کر خوش ہو سکو!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "راہُل نے اپنے پانچ ٹیڈی بیئرز کو ایک کے پیچھے ایک رکھا۔ اس نے گنا: \"۱، ٢، ٣، ٤، ٥!\" اس کے بابا نے کہا، \"بہت اچھا! اب تم ان ٹیڈی بیئرز کو اپنے دوست کو دے سکتے ہو۔\""
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "بیٹا، اگر کوئی تمہیں کہے کہ ’یہ گنتی کا راز رکھنا ہے‘، تو تم کیا کرو گے؟"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمہارا جسم تمہارا ہے—کوئی بھی تمہیں ’نہ‘ کہنے کا حق نہیں رکھتا! اگر کوئی چیز عجیب لگے، تو فوراً امّی/ابّو کو بتانا۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-pg": [
