@@ -3978,6 +3978,30 @@ def render_translation_html(data):
 LANG_TAB_LABELS = {"rm": "Roman Urdu", "ur": "اردو", "sd": "سنڌي"}
 
 
+def google_translate_widget_html():
+    """Har lesson page par ek '🌐 Aur Languages' button add karta hai jo
+    Google Translate ka free widget kholta hai — is se visitor DUNIYA
+    ki kisi bhi zaban mein page parh sakta hai (sirf humari 3 fixed
+    translations tak mehdood nahi). Widget purani click par khulta hai,
+    JS Google ke servers se load hoti hai (visitor ke browser mein),
+    build machine ko iske liye internet ki zaroorat nahi."""
+    return """
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>"""
+
+
 def lang_tabs_script_html():
     return """<script>
 (function(){
@@ -4014,9 +4038,9 @@ def render_lesson_page(slug, course, lesson, is_latest, image_href=None, video_h
             f'data-lang="{code}" onclick="fkcSwitchLang(this)">{LANG_TAB_LABELS[code]}</button>'
             for code, _, _ in lang_blocks
         )
-        tabs_html = f'<div class="lang-tabs">{tab_buttons}</div>'
+        tabs_html = f'<div class="lang-tabs">{tab_buttons}{google_translate_widget_html()}</div>'
     else:
-        tabs_html = ""
+        tabs_html = f'<div class="lang-tabs">{google_translate_widget_html()}</div>'
 
     content_html = "".join(
         f'<div class="lang-content" data-lang="{code}"'
