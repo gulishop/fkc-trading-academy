@@ -6302,6 +6302,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 3,
+      "id": "day-003",
+      "date": "2026-08-06",
+      "title": "Day 3 — \"Ginti wala Hopscotch: Apni sehat ka khayal rakhna!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke apni sehat ka khayal rakhna kitna zaroori hai! Jaise hum apne hath dhote hain, waise hi apne aap ko safe rakhna bhi seekhna hai. Koi bhi cheez aapke sharir ko chhoo sakti hai, lekin aapka jism sirf aapka hai—use kisi aur ko chhoone na dein!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Areeba ne dekha ke ek bhaiya usko ginti ka hopscotch khelne ke liye bula rahe hain. Areeba ne socha, \"Mummy ne kaha hai ke main apne aap ka khayal rakhun!\" Isliye usne muskurate hue kaha, \"Nahi, shukriya! Main apne aap khelna pasand karti hoon.\" Usne apne dost ke saath mil kar ek safe hopscotch bana liya."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar koi tumhe koi ajeeb cheez karne ke liye kaha, to tum kya karogi?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Tumhara jism tumhara hai—use kisi aur ko chhoone na dein! Agar kuch bhi ajeeb lage, to turant humein batana."
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ٣ — گنتی والا ہاپسکوچ: اپنی صحت کا خیال رکھنا!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم سیکھیں گے کہ اپنی صحت کا خیال رکھنا کتنا ضروری ہے! جیسے ہم اپنے ہاتھ دھوتے ہیں، ویسے ہی اپنے آپ کو محفوظ رکھنا بھی سیکھنا ہے۔ کوئی بھی چیز آپ کے शरीर کو چھو سکتی ہے، لیکن آپ کا جسم صرف آپ کا ہے—اسے کسی اور کو چھونے نہ دیں!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "عریبہ نے دیکھا کہ ایک بھائیہ اسے گنتی کا ہاپسکوچ کھیلنے کے لیے بلا رہے ہیں۔ عریبہ نے سوچا، ’ممی نے کہا ہے کہ میں اپنے آپ کا خیال رکھوں!‘ اس لیے اس نے مسکراتے ہوئے کہا، ’نہیں، شکریہ! میں اپنے آپ کھیلنا پسند کرتی ہوں۔‘ اس نے اپنے دوست کے ساتھ مل کر ایک محفوظ ہاپسکوچ بنا لیا۔"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "’بیٹا، اگر کوئی تمہیں کوئی عجیب چیز کرنے کے لیے کہے، تو تم کیا کرو گے؟‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمہارا جسم تمہارا ہے—اسے کسی اور کو چھونے نہ دیں! اگر کچھ بھی عجیب لگے، تو فوراً ہمیں بتانا۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-good-behavior": [
