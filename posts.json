@@ -2788,6 +2788,84 @@
           ]
         }
       }
+    },
+    {
+      "day": 4,
+      "id": "day-004",
+      "date": "2026-08-06",
+      "title": "Day 4 — **Airtable aur Notion: Apne Data ko Smart Banana**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Airtable aur Notion no-code tools hain jo databases ko visual, user-friendly banate hain. Airtable spreadsheets aur databases ka combination hai (jaise Excel + Access), jabke Notion ek all-in-one workspace hai jisme notes, tasks, aur databases ek hi jagah manage hote hain. In tools se aap data organize kar sakte hain, formulas apply kar sakte hain, aur workflows automate kar sakte hain—bina coding ke!"
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Airtable",
+          "Apne online store ke products ka database banayein. Columns add karen: *Product Name, Price, Stock, Category*. Phir \"Views\" feature se alag-alag tarike se data dekh sakte hain (e.g., \"Low Stock\" view jisme stock < 10 ho).\n2."
+        ],
+        [
+          "Notion",
+          "Apne freelancing projects ko track karen. Ek database banayein jisme columns hon: *Project Name, Client, Deadline, Status (To-Do/In Progress/Done)*. Phir \"Kanban Board\" view se drag-and-drop se status update karen."
+        ],
+        [
+          "Practice",
+          "1."
+        ],
+        [
+          "Airtable",
+          "Ek simple \"Book Library\" database banayein jisme 3 columns hon: *Book Title, Author, Genre*. 3-5 entries add karen.\n2."
+        ],
+        [
+          "Notion",
+          "Ek \"Daily Tasks\" database banayein jisme columns hon: *Task, Priority (High/Medium/Low), Due Date*. 3 tasks add karen aur unhe priority ke hisaab se sort karen."
+        ],
+        [
+          "Mini Project",
+          "**\"Personal Finance Tracker\"** (Airtable + Notion):\n-"
+        ],
+        [
+          "Airtable",
+          "Ek \"Expenses\" database banayein jisme columns hon: *Date, Amount, Category (Food/Transport/Entertainment), Description*. Har roz ki expenses add karen.\n-"
+        ],
+        [
+          "Notion",
+          "Ek \"Monthly Budget\" page banayein jisme har category ke liye allocated amount set karen aur expenses ko compare karen. Notion ke formulas use karen (e.g., `prop(\"Amount\")`).\n-"
+        ],
+        [
+          "Bonus",
+          "Airtable ke \"Automation\" feature se ek email alert set karen jab koi expense $50 se zyada ho."
+        ]
+      ],
+      "answer_key": "airtable: book title, author, genre; expenses, amount, category; automation, email alert; monthly budget, allocated amount",
+      "translations": {
+        "ur": {
+          "title": "دن 4 — ایئر ٹیبل اور نوشن: اپنے ڈیٹا کو سمارٹ بنانا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ایئر ٹیبل اور نوشن نو-کوڈ ٹولز ہیں جو ڈیٹا بیسز کو ویژول اور یوزر فرینڈلی بناتے ہیں۔ ایئر ٹیبل اسپریڈ شیٹس اور ڈیٹا بیسز کا امتزاج ہے (جیسے ایکسل + ایکسیس)، جبکہ نوشن ایک آل ان ون ورک اسپیس ہے جس میں نوٹس، ٹاسکس اور ڈیٹا بیسز ایک ہی جگہ مینج ہوتے ہیں۔ ان ٹولز کی مدد سے آپ ڈیٹا کو آرگنائز کر سکتے ہیں، فارمولاز اپلائی کر سکتے ہیں، اور ورک فلو کو آٹومیٹ کر سکتے ہیں—بلکل کوڈنگ کے بغیر!"
+            },
+            {
+              "label": "مثال",
+              "content": "1. ایئر ٹیبل: اپنے آن لائن سٹور کے پروڈکٹس کا ڈیٹا بیس بنائیں۔ کالمز شامل کریں: *پروڈکٹ کا نام، قیمت، اسٹاک، کیٹیگری*۔ پھر \"ویوز\" فیچر کے ذریعے مختلف طریقوں سے ڈیٹا دیکھ سکتے ہیں (مثلاً، \"لو اسٹاک\" ویو جس میں اسٹاک دس سے کم ہو)۔\n2. نوشن: اپنے فری لانسنگ پروجیکٹس کو ٹریک کریں۔ ایک ڈیٹا بیس بنائیں جس میں کالمز ہوں: *پروجیکٹ کا نام، کلائنٹ، ڈیڈ لائن، سٹیٹس (ٹو ڈو/ان پروگریس/ڈن)*۔ پھر \"کنبن بورڈ\" ویو کے ذریعے ڈریگ اینڈ ڈراپ سے سٹیٹس اپ ڈیٹ کریں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "1. ایئر ٹیبل: ایک سادہ \"بک لائبریری\" ڈیٹا بیس بنائیں جس میں تین کالمز ہوں: *کتاب کا عنوان، مصنف، صنف*۔ تین سے پانچ انٹریز شامل کریں۔\n2. نوشن: ایک \"ڈیلی ٹاسکس\" ڈیٹا بیس بنائیں جس میں کالمز ہوں: *ٹاسک، پریورٹی (ہائی/میڈیم/لو)، ڈیو ڈیٹ*۔ تین ٹاسکس شامل کریں اور انہیں پریورٹی کے حساب سے سٹورت کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "\"پرسنل فنانس ٹریکر\" (ایئر ٹیبل + نوشن):\n- ایئر ٹیبل: ایک \"ایکسپینسز\" ڈیٹا بیس بنائیں جس میں کالمز ہوں: *تاریخ، رقم، کیٹیگری (فوڈ/ٹرانسپورٹ/انٹرٹینمنٹ)، تفصیل*۔ ہر روز کے اخراجات شامل کریں۔\n- نوشن: ایک \"مَنثلی بجٹ\" پیج بنائیں جس میں ہر کیٹیگری کے لیے مختص رقم سیٹ کریں اور اخراجات کا موازنہ کریں۔ نوشن کے فارمولاز استعمال کریں (مثلاً، `prop(\"Amount\")`)۔\n- بونس: ایئر ٹیبل کے \"آٹومیشن\" فیچر کے ذریعے ایک ای میل الرٹ سیٹ کریں جب کوئی خرچ پچاس ڈالر سے زیادہ ہو۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "digital-marketing-seo": [
