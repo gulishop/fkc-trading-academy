@@ -1233,6 +1233,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 8,
+      "id": "day-008",
+      "date": "2026-08-06",
+      "title": "Day 8 — **Trading Journal: Apne Trades Ka Hisaab Rakho Aur Improvement Ka Rasta Banaye**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Har successful trader apne trades ka detailed record rakhta hai. Trading journal ek diary hoti hai jismein aap har trade ke entry/exit points, profit/loss, emotions, aur market conditions note karte hain. Isse aap repeat mistakes identify kar sakte hain aur apni strategy ko improve kar sakte hain. Yeh discipline banane aur long-term success ke liye zaroori hai."
+        ],
+        [
+          "Example",
+          "Maana aapne EUR/USD pair par long position li hai. Aap apne journal mein likh sakte hain:\n- Entry: 1.0800 (1 lot)\n- Exit: 1.0850 (50 pips profit)\n- Time: 2 hours\n- Reason: Support level breakout\n- Emotions: Confident (lekin overconfident nahi)\n- Mistake: Koi nahi (agar hota to note karna hai)"
+        ],
+        [
+          "Practice",
+          "Aaj ke 3 trades (demo ya live) ka record apne trading journal mein likhein. Har trade ke liye:\n1. Pair, time, entry/exit price\n2. Trade ka reason (technical/fundamental)\n3. Apne emotions (fear/greed/confidence)\n4. Kya aapne stop-loss correctly lagaya?"
+        ],
+        [
+          "Mini Project",
+          "Ek week tak har trade ka journal maintain karne ka challenge. Har din ke end par 5 minutes nikal kar:\n- Best trade ka analysis\n- Worst trade ka analysis\n- 1 improvement point (e.g., \"Zyada greed se avoid karna hai\")"
+        ]
+      ],
+      "answer_key": "trade details, emotions, sl/tp, weekly summary",
+      "translations": {
+        "ur": {
+          "title": "دن ۸ — ٹریڈنگ جرنل: اپنے ٹریڈز کا حساب رکھو اور بہتری کا راستہ بناؤ",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ہر کامیاب ٹریڈر اپنے ٹریڈز کا تفصیلی ریکارڈ رکھتا ہے۔ ٹریڈنگ جرنل ایک ڈائری ہوتی ہے جس میں آپ ہر ٹریڈ کے انٹری/ایگزٹ پوائنٹس، منافع/نقصان، جذبات، اور مارکیٹ کے حالات نوٹ کرتے ہیں۔ اس سے آپ بار بار ہونے والی غلطیاں شناخت کر سکتے ہیں اور اپنی حکمت عملی کو بہتر بنا سکتے ہیں۔ یہ ڈسپلن بنانے اور طویل مدتی کامیابی کے لیے ضروری ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "مانا آپ نے EUR/USD جوڑے پر لمبی پوزیشن لی ہے۔ آپ اپنے جرنل میں لکھ سکتے ہیں:\n- انٹری: ۱.۰۸۰۰ (۱ لاٹ)\n- ایگزٹ: ۱.۰۸۵۰ (۵۰ پِپس منافع)\n- وقت: ۲ گھنٹے\n- وجہ: سپورٹ لیول بریک آؤٹ\n- جذبات: اعتماد (لیکن زیادہ اعتماد نہیں)\n- غلطی: کوئی نہیں (اگر ہوتی تو نوٹ کرنا ہے)"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "آج کے تین ٹریڈز (ڈیمو یا لائیو) کا ریکارڈ اپنے ٹریڈنگ جرنل میں لکھیں۔ ہر ٹریڈ کے لیے:\n۱۔ جوڑا، وقت، انٹری/ایگزٹ قیمت\n۲۔ ٹریڈ کی وجہ (ٹیکنیکل/فنڈامینٹل)\n۳۔ اپنے جذبات (خوف/لالچ/اعتماد)\n۴۔ کیا آپ نے سٹاپ لاس صحیح لگایا؟"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک ہفتے تک ہر ٹریڈ کا جرنل مینٹین کرنے کا چیلنج۔ ہر دن کے آخر میں پانچ منٹ نکال کر:\n- بہترین ٹریڈ کا تجزیہ\n- بدترین ٹریڈ کا تجزیہ\n- ایک بہتری کا نقطہ (مثلاً، ’زیادہ لالچ سے اجتناب کرنا ہے‘)"
+            }
+          ]
+        }
+      }
     }
   ],
   "amazon-fba": [

@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-05T22:35:13.321069";
+  var FKC_BUILD = "2026-08-06T04:15:38.696480";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -233,6 +233,56 @@ function fkcToggleTheme(){
       <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
       <div class="lang-content" data-lang="rm"><p>**Day 2 — Currency Pairs, Pips aur Lot Size: Trading Ki Duniya Ki &quot;Mili-Metri&quot;**</p><h3>Concept</h3><p>Forex trading mein har trade ek *currency pair* (do currencies ka combination) par hoti hai, jaise EUR/USD ya USD/JPY. *Pip* (Percentage in Point) ek currency pair ki smallest price movement hoti hai—jaise EUR/USD mein 0.0001 ka change. *Lot size* batata hai kitni units trade ho rahi hain (Standard Lot = 100,000 units, Mini Lot = 10,000, Micro Lot = 1,000). In teen cheezon ko samajhna zaroori hai taake aapka profit/loss calculate ho sake.</p><h3>Example</h3><p>Agar aap **EUR/USD** par trade kar rahe hain aur price 1.1000 se 1.1005 tak jaati hai, to aapka *pip gain* hai (1.1005 – 1.1000 = 0.0005 = **5 pips**). Agar aap **1 Mini Lot (10,000 units)** trade kar rahe hain, to har pip ka value **$1** hota hai (10,000 × 0.0001). Isliye 5 pips × $1 = **$5 profit**.</p><h3>Practice</h3><p>Apne MetaTrader par **GBP/JPY** pair select karein. Chart par dekhein ki current price kya hai, aur agar aap **1 Micro Lot (1,000 units)** buy karte hain, to har pip ka value kitna hoga? (Hint: GBP/JPY mein pip = 0.01, lekin value calculate karne ke liye currency ke hisaab se sochna hoga.)</p><h3>Mini Project</h3><p>Ek Excel sheet banayein jismein aap **3 different currency pairs** (jaise EUR/USD, USD/JPY, GBP/USD) ke liye **1 Standard Lot, 1 Mini Lot, aur 1 Micro Lot** ka har pip ka value calculate karein. (Example: EUR/USD ka 1 pip = $10 (Standard Lot), $1 (Mini Lot), $0.10 (Micro Lot)).</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><p>**دن ٢ — کرنسی پیئرز، پِپس اور لاٹ سائز: ٹریڈنگ کی دنیا کی &quot;ملی میٹری&quot;**</p><h3>کانسپٹ</h3><p>فاریکس ٹریڈنگ میں ہر ٹریڈ ایک *کرنسی پیئر* (دو کرنسیوں کا امتزاج) پر ہوتی ہے، جیسے EUR/USD یا USD/JPY۔ *پِپ* (پرسینٹیج اِن پوائنٹ) ایک کرنسی پیئر کی سب سے چھوٹی قیمت کی حرکت ہوتی ہے—جیسے EUR/USD میں ٠.٠٠٠١ کا تغیر۔ *لاٹ سائز* بتاتا ہے کہ کتنی یونٹس ٹریڈ ہو رہی ہیں (اسٹینڈرڈ لاٹ = ١٠٠,٠٠٠ یونٹس، مِنِی لاٹ = ١٠,٠٠٠، مائیکرو لاٹ = ١,٠٠٠)۔ ان تین چیزوں کو سمجھنا ضروری ہے تاکہ آپ کا منافع یا نقصان حساب کیا جا سکے۔</p><h3>مثال</h3><p>اگر آپ **EUR/USD** پر ٹریڈ کر رہے ہیں اور قیمت ١.١٠٠٠ سے ١.١٠٠٥ تک جاتی ہے، تو آپ کا *پِپ گین* ہے (١.١٠٠٥ – ١.١٠٠٠ = ٠.٠٠٠٥ = **٥ پِپس**)۔ اگر آپ **١ مِنِی لاٹ (١٠,٠٠٠ یونٹس)** ٹریڈ کر رہے ہیں، تو ہر پِپ کی ویلیو **١ ڈالر** ہوتی ہے (١٠,٠٠٠ × ٠.٠٠٠١)۔ اس لیے ٥ پِپس × ١ ڈالر = **٥ ڈالر منافع**۔</p><h3>پریکٹس</h3><p>اپنے میٹا ٹریڈر پر **GBP/JPY** پیئر سلیکٹ کریں۔ چارٹ پر دیکھیں کہ موجودہ قیمت کیا ہے، اور اگر آپ **١ مائیکرو لاٹ (١,٠٠٠ یونٹس)** خریدتے ہیں، تو ہر پِپ کی ویلیو کتنی ہوگی؟ (ہنٹ: GBP/JPY میں پِپ = ٠.٠١، لیکن ویلیو کا حساب کرنے کے لیے کرنسی کے حساب سے سوچنا ہوگا۔)</p><h3>منی پروجیکٹ</h3><p>ایک ایکسل شیٹ بنائیں جس میں آپ **٣ مختلف کرنسی پیئرز** (جیسے EUR/USD، USD/JPY، GBP/USD) کے لیے **١ اسٹینڈرڈ لاٹ، ١ مِنِی لاٹ، اور ١ مائیکرو لاٹ** کا ہر پِپ کی ویلیو حساب کریں۔ (مثال: EUR/USD کا ١ پِپ = ١٠ ڈالر (اسٹینڈرڈ لاٹ)، ١ ڈالر (مِنِی لاٹ)، ٠.١٠ ڈالر (مائیکرو لاٹ))۔</p></div>
       <p><a class="btn alt" href="https://one.exnessonelink.com/a/buhyli14un" target="_blank" rel="noopener sponsored">💹 Exness Par Free Account Banayein</a></p>
+    <div id="fkc-affiliate-popup" class="no-print" style="position:fixed;inset:0;
+      background:rgba(0,0,0,.55);z-index:9998;display:none;align-items:center;
+      justify-content:center;padding:16px;">
+      <div style="position:relative;max-width:360px;width:100%;background:#fff;
+        border-radius:16px;padding:20px 16px 16px;text-align:center;
+        box-shadow:0 20px 60px rgba(0,0,0,.3);">
+        <button type="button" onclick="fkcCloseAffiliatePopup()" aria-label="Band karein"
+          style="position:absolute;top:8px;right:8px;width:28px;height:28px;border-radius:50%;
+          border:none;background:#f1f2f4;color:#555;font-size:16px;cursor:pointer;
+          line-height:28px;">✕</button>
+        <a href="https://track.deriv.com/_WlJFXVMX3vf1hit6RV3zsGNd7ZgqdRLk/1/?custom2=f5766361-1360-46b4-90ff-7ef2b065a37c"
+           target="_blank" rel="noopener sponsored">
+          <img src="https://zcdhhxgmbzqhpfjgwhkg.supabase.co/storage/v1/object/public/generated-images/1f8a563a-f1bf-486a-b9b8-17be5543cd54/0.jpg"
+               alt="Commodities - XAUUSD" style="max-width:100%;height:auto;border-radius:10px;" loading="lazy">
+        </a>
+        <a href="https://one.exnessonelink.com/intl/en/a/buhyli14un" target="_blank" rel="noopener sponsored"
+           style="display:inline-block;margin-top:12px;">
+          <img src="https://d3dpet1g0ty5ed.cloudfront.net/EN_Take_Control_728x90px.gif"
+               width="728" height="90" alt="Exness — Take Control" style="max-width:100%;height:auto;" loading="lazy">
+        </a>
+      </div>
+    </div>
+    <script>
+    (function() {
+        var popup = document.getElementById('fkc-affiliate-popup');
+        if (!popup) return;
+
+        // Sirf EK dafa dikhana hai (is browser mein dobara kabhi nahi).
+        if (localStorage.getItem('fkc_affiliate_popup_seen')) return;
+
+        var autoHideTimer = null;
+
+        window.fkcCloseAffiliatePopup = function() {
+            popup.style.display = 'none';
+            if (autoHideTimer) clearTimeout(autoHideTimer);
+        };
+
+        setTimeout(function() {
+            popup.style.display = 'flex';
+            localStorage.setItem('fkc_affiliate_popup_seen', '1');
+            // 3 minute (180000ms) baad khud band ho jaye.
+            autoHideTimer = setTimeout(fkcCloseAffiliatePopup, 180000);
+        }, 2000);
+
+        // Background par tap karne se bhi band ho jaye.
+        popup.addEventListener('click', function(e) {
+            if (e.target === popup) fkcCloseAffiliatePopup();
+        });
+    })();
+    </script>
       
       <div class="quiz-box no-print">
         <p><b>📝 Apna Practice Check Karein</b></p>
@@ -342,7 +392,30 @@ function fkcToggleTheme(){
         data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
       <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
-    <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
+    
+    <div class="daily-motivation" style="max-width:640px;margin:20px auto;padding:16px 20px;
+      background:linear-gradient(135deg,#fff7e6,#fef0f0);border-radius:14px;border:1px solid #f5e2c8;
+      text-align:center;">
+      <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
+        margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
+      <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
+        “Waqt zaya mat karo, kyunke jo waqt guzar jata hai woh wapas nahi aata — aaj hi shuru karo.”
+      </p>
+    </div>
+    <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;
+      background:linear-gradient(145deg,#f7f9fc,#eef2f9);border-radius:16px;border:1px solid #e6e9f0;
+      text-align:center;">
+      <p style="font-size:13px;letter-spacing:.03em;text-transform:uppercase;color:var(--muted);
+        margin:0 0 10px;font-weight:700;">✉️ Founder ki taraf se</p>
+      <p style="font-size:15px;line-height:1.7;color:#2a2f3a;margin:0 0 14px;">
+        Hamara maqsad sirf lessons post karna nahi — har us Pakistani tak muft, practical
+        taleem pohchana hai jo seekhna chahta hai lekin resources ya waqt nahi rakhta.
+        FKC Trading Academy ka vision hai: <b>roz thora seekho, mustaqil mehnat karo,
+        aur apni zindagi khud badlo.</b> Mission simple hai — koi bhi course, koi bhi fee
+        nahi, sirf aap ka irada.
+      </p>
+      <p style="font-size:13px;color:var(--muted);margin:0;">— Fazul Khan Chandio, Founder &amp; CEO</p>
+    </div><div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     <script>
     (function(){
       try {
