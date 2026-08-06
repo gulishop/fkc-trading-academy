@@ -1851,6 +1851,71 @@ def course_affiliate_button_html(course):
     )
 
 
+def course_affiliate_banners_html(course):
+    """Broker affiliate banners (Deriv XAUUSD + Exness leaderboard) — ek
+    popup ki tarah dikhte hain, sirf un courses par jinke paas
+    affiliate_url set hai (abhi sirf Forex Trading), taake irrelevant
+    courses (jaise kids ya graphic design) par yeh na aayein.
+
+    Popup sirf EK dafa dikhta hai (is browser mein dobara kabhi nahi —
+    localStorage flag), 3 minute (180 seconds) ke baad khud-ba-khud band
+    ho jata hai, ya "✕" button se kabhi bhi manually band kiya ja sakta
+    hai."""
+    if not course.get("affiliate_url"):
+        return ""
+    return """
+    <div id="fkc-affiliate-popup" class="no-print" style="position:fixed;inset:0;
+      background:rgba(0,0,0,.55);z-index:9998;display:none;align-items:center;
+      justify-content:center;padding:16px;">
+      <div style="position:relative;max-width:360px;width:100%;background:#fff;
+        border-radius:16px;padding:20px 16px 16px;text-align:center;
+        box-shadow:0 20px 60px rgba(0,0,0,.3);">
+        <button type="button" onclick="fkcCloseAffiliatePopup()" aria-label="Band karein"
+          style="position:absolute;top:8px;right:8px;width:28px;height:28px;border-radius:50%;
+          border:none;background:#f1f2f4;color:#555;font-size:16px;cursor:pointer;
+          line-height:28px;">✕</button>
+        <a href="https://track.deriv.com/_WlJFXVMX3vf1hit6RV3zsGNd7ZgqdRLk/1/?custom2=f5766361-1360-46b4-90ff-7ef2b065a37c"
+           target="_blank" rel="noopener sponsored">
+          <img src="https://zcdhhxgmbzqhpfjgwhkg.supabase.co/storage/v1/object/public/generated-images/1f8a563a-f1bf-486a-b9b8-17be5543cd54/0.jpg"
+               alt="Commodities - XAUUSD" style="max-width:100%;height:auto;border-radius:10px;" loading="lazy">
+        </a>
+        <a href="https://one.exnessonelink.com/intl/en/a/buhyli14un" target="_blank" rel="noopener sponsored"
+           style="display:inline-block;margin-top:12px;">
+          <img src="https://d3dpet1g0ty5ed.cloudfront.net/EN_Take_Control_728x90px.gif"
+               width="728" height="90" alt="Exness — Take Control" style="max-width:100%;height:auto;" loading="lazy">
+        </a>
+      </div>
+    </div>
+    <script>
+    (function() {
+        var popup = document.getElementById('fkc-affiliate-popup');
+        if (!popup) return;
+
+        // Sirf EK dafa dikhana hai (is browser mein dobara kabhi nahi).
+        if (localStorage.getItem('fkc_affiliate_popup_seen')) return;
+
+        var autoHideTimer = null;
+
+        window.fkcCloseAffiliatePopup = function() {
+            popup.style.display = 'none';
+            if (autoHideTimer) clearTimeout(autoHideTimer);
+        };
+
+        setTimeout(function() {
+            popup.style.display = 'flex';
+            localStorage.setItem('fkc_affiliate_popup_seen', '1');
+            // 3 minute (180000ms) baad khud band ho jaye.
+            autoHideTimer = setTimeout(fkcCloseAffiliatePopup, 180000);
+        }, 2000);
+
+        // Background par tap karne se bhi band ho jaye.
+        popup.addEventListener('click', function(e) {
+            if (e.target === popup) fkcCloseAffiliatePopup();
+        });
+    })();
+    </script>"""
+
+
 # ---------------------------------------------------------------------
 # 🎓 Certificates — progress tracking (localStorage, static site — koi
 # login/database zaroori nahi), WhatsApp par apply, aur (optional)
@@ -3795,7 +3860,7 @@ def render_course_page(slug, course, lessons):
         )
     listing = "".join(items) if items else '<p class="muted">Abhi koi lesson nahi — pehla jald aayega.</p>'
     affiliate_btn = course_affiliate_button_html(course)
-    affiliate_block = f'<p>{affiliate_btn}</p>' if affiliate_btn else ""
+    affiliate_block = (f'<p>{affiliate_btn}</p>' if affiliate_btn else "") + course_affiliate_banners_html(course)
 
     total_lessons = len(lessons)
     course_name_js = json.dumps(course["name"], ensure_ascii=False)
@@ -3992,7 +4057,7 @@ def render_lesson_page(slug, course, lesson, is_latest, image_href=None, video_h
     badge = '<span class="badge">Latest</span>' if is_latest else ""
     logo_href = f"../../../{BRAND_LOGO}"
     affiliate_btn = course_affiliate_button_html(course)
-    affiliate_block = f'<p>{affiliate_btn}</p>' if affiliate_btn else ""
+    affiliate_block = (f'<p>{affiliate_btn}</p>' if affiliate_btn else "") + course_affiliate_banners_html(course)
     quiz_block = quiz_check_html(lesson.get("answer_key", ""))
     puzzle_block = puzzle_game_html(f"pz-{slug}-{lesson['day']}", seed=lesson["day"])
 
