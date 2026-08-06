@@ -1432,7 +1432,7 @@ def _run_ffmpeg_kenburns_captions(image_path, audio_path, srt_path, out_mp4):
     cmd = [
         "ffmpeg", "-y", "-loop", "1", "-i", image_path, "-i", audio_path,
         "-c:v", "libx264", "-preset", "veryfast", "-c:a", "aac", "-b:a", "128k",
-        "-pix_fmt", "yuv420p", "-shortest", "-vf", vf, out_mp4,
+        "-pix_fmt", "yuv420p", "-shortest", "-movflags", "+faststart", "-vf", vf, out_mp4,
     ]
     try:
         result = subprocess.run(cmd, capture_output=True, timeout=240)
@@ -1449,7 +1449,7 @@ def _run_ffmpeg_image_audio(image_path, audio_path, out_mp4):
     cmd = [
         "ffmpeg", "-y", "-loop", "1", "-i", image_path, "-i", audio_path,
         "-c:v", "libx264", "-tune", "stillimage", "-c:a", "aac", "-b:a", "128k",
-        "-pix_fmt", "yuv420p", "-shortest",
+        "-pix_fmt", "yuv420p", "-shortest", "-movflags", "+faststart",
         "-vf", "scale=1024:576:force_original_aspect_ratio=decrease,pad=1024:576:(ow-iw)/2:(oh-ih)/2",
         out_mp4,
     ]
@@ -1684,7 +1684,7 @@ def _run_ffmpeg_mux_loop_video_audio(video_path, audio_path, out_mp4):
         "ffmpeg", "-y", "-stream_loop", "-1", "-i", video_path, "-i", audio_path,
         "-map", "0:v:0", "-map", "1:a:0",
         "-c:v", "libx264", "-preset", "veryfast", "-c:a", "aac", "-b:a", "128k",
-        "-pix_fmt", "yuv420p", "-shortest", out_mp4,
+        "-pix_fmt", "yuv420p", "-shortest", "-movflags", "+faststart", out_mp4,
     ]
     try:
         result = subprocess.run(cmd, capture_output=True, timeout=240)
@@ -3264,6 +3264,64 @@ ADSENSE_CLIENT = "ca-pub-5639688573760714"
 # "Fkc Trading Academy" ad unit (AdSense dashboard se liya gaya).
 ADSENSE_SLOT = "2517808504"
 
+# ---------------------------------------------------------------------
+# 🌅 Daily Motivation — har din ek naya quote, khud-ba-khud badal jata
+# hai. Koi JS ya database nahi chahiye: site roz rebuild hoti hai, is
+# liye aaj ki date se hi list mein se ek quote chun liya jata hai — kal
+# jab site dobara build hogi, date badal chuki hogi, is liye quote bhi
+# khud badal jayega. Yeh generic Roman Urdu motivation hai (kisi shakhs
+# se attribute nahi ki gayi, taake ghalat quote kisi ko attribute na ho).
+# ---------------------------------------------------------------------
+DAILY_MOTIVATION_QUOTES = [
+    "Roz thora seekho, roz thora aagay badho — mustaqil mehnat hi kamiyabi ki asal kunji hai.",
+    "Aaj ka ek chhota qadam, kal ki bari kamiyabi ki buniyad banta hai.",
+    "Mushkil raste hi un logon ko milte hain jo asal mein kuch ban'na chahte hain.",
+    "Seekhna kabhi bekar nahi jata — har naya lesson aap ko aap ki manzil ke ek qadam qareeb le jata hai.",
+    "Waqt zaya mat karo, kyunke jo waqt guzar jata hai woh wapas nahi aata — aaj hi shuru karo.",
+    "Har mahir kabhi beginner tha — bas usne seekhna chhoda nahi.",
+    "Khud par yaqeen rakho, mehnat jari rakho — nateeja khud ba khud sath dega.",
+    "Zindagi mein tabdeeli chahte ho to sabse pehle apni aadat mein tabdeeli lao.",
+    "Aaj jo mushkil lag raha hai, mustaqil mazeed practice se woh aasan ho jayega.",
+    "Chhoti shuruwat se dar mat, badi kamiyabiyan wahin se shuru hoti hain.",
+    "Seekhne ki koi umar nahi hoti, sirf iraade ki zaroorat hoti hai.",
+    "Aaj ka din phir wapas nahi aayega — is se best faida uthao.",
+    "Consistency talent se zyada zaroori hoti hai — roz thora sahi, lekin roz zaroor.",
+    "Apne khwabon ko itna bara rakho ke woh aap ko roz subah jaga sakein.",
+    "Naakami sirf ek sabaq hai, ant nahi — dobara koshish karo.",
+    "Jo log seekhte rehte hain, woh kabhi purane nahi hote.",
+    "Aaj mehnat karo, taake kal aaram se jee sako.",
+    "Har raat ke baad ek nayi subah aati hai — har naakami ke baad ek nayi koshish bhi honi chahiye.",
+    "Apna waqt in logon ke sath guzaro jo aap ko aagay badhne mein madad karein.",
+    "Sabse bara risk woh hai jo aap kabhi lete hi nahi.",
+    "Aaj ka lesson chhoro mat — chhoti cheezein hi bari tabdeeli laati hain.",
+    "Jab tak haar nahi maanoge, tab tak haare nahi ho.",
+    "Seekho, practice karo, aur phir duniya ko dikhao ke tum kya kar sakte ho.",
+    "Har din ek nayi shuruwat hai — kal ki galtiyon ko aaj behtar banane ka mauqa banao.",
+    "Kaamyabi ek din mein nahi milti, roz ki thori mehnat se milti hai.",
+    "Apne aap se muqabla karo, kisi aur se nahi — bas kal se behtar bano.",
+    "Mushkil waqt mein hi asal himmat pata chalti hai.",
+    "Jitna zyada seekhoge, utni zyada azadi milegi.",
+    "Discipline woh pul hai jo khwabon ko haqeeqat se jorta hai.",
+    "Aaj chhota qadam utha lo, kal khud shukar guzar hoge.",
+]
+
+
+def daily_motivation_html():
+    """Aaj ki date se ek quote chun kar chhota motivational banner
+    banata hai — har roz site rebuild hote hi khud badal jata hai."""
+    day_index = datetime.date.today().toordinal() % len(DAILY_MOTIVATION_QUOTES)
+    quote = DAILY_MOTIVATION_QUOTES[day_index]
+    return f"""
+    <div class="daily-motivation" style="max-width:640px;margin:20px auto;padding:16px 20px;
+      background:linear-gradient(135deg,#fff7e6,#fef0f0);border-radius:14px;border:1px solid #f5e2c8;
+      text-align:center;">
+      <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
+        margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
+      <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
+        “{html.escape(quote)}”
+      </p>
+    </div>"""
+
 
 def adsense_unit_html():
     """Page ke content ke neeche ek display ad unit dikhata hai."""
@@ -3278,7 +3336,24 @@ def adsense_unit_html():
 def brand_footer_html(logo_href):
     privacy_href = logo_href.replace(BRAND_LOGO, "privacy.html")
     wa_link = f"https://wa.me/{BRAND_WHATSAPP_DIGITS}"
+    founder_msg = f"""
+    <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;
+      background:linear-gradient(145deg,#f7f9fc,#eef2f9);border-radius:16px;border:1px solid #e6e9f0;
+      text-align:center;">
+      <p style="font-size:13px;letter-spacing:.03em;text-transform:uppercase;color:var(--muted);
+        margin:0 0 10px;font-weight:700;">✉️ Founder ki taraf se</p>
+      <p style="font-size:15px;line-height:1.7;color:#2a2f3a;margin:0 0 14px;">
+        Hamara maqsad sirf lessons post karna nahi — har us Pakistani tak muft, practical
+        taleem pohchana hai jo seekhna chahta hai lekin resources ya waqt nahi rakhta.
+        {html.escape(BRAND_NAME)} ka vision hai: <b>roz thora seekho, mustaqil mehnat karo,
+        aur apni zindagi khud badlo.</b> Mission simple hai — koi bhi course, koi bhi fee
+        nahi, sirf aap ka irada.
+      </p>
+      <p style="font-size:13px;color:var(--muted);margin:0;">— {html.escape(BRAND_CONTACT_NAME)}, {html.escape(BRAND_CONTACT_TITLE)}</p>
+    </div>"""
     return (
+        daily_motivation_html() +
+        founder_msg +
         f'<div class="brand-footer"><img src="{logo_href}" alt="{BRAND_NAME}">'
         f'<div class="txt"><b>{html.escape(BRAND_NAME)}</b><br>'
         f'{html.escape(BRAND_NAME_TITLE_LINE)}<br>'
