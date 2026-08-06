@@ -6404,6 +6404,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 3,
+      "id": "day-003",
+      "date": "2026-08-06",
+      "title": "Day 3 — **Sach bolna kyun zaroori hai?**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachay, sach bolna ek bohat acha aadab hai. Jab tum sach bolte ho, log tum par bharosa karte hain aur tumhara dil bhi saaf rehta hai. Agar tum jhoot bologe to tumhara dil bhar jayega aur log tumse door ho jayenge. Sach bolna tumhe bhi acha feel karwayega aur sab tumse pyar karenge."
+        ],
+        [
+          "Chhoti Kahani",
+          "Rohan ne ek din apne dost ke saath khelte waqt accidentally uska cycle thoda sa scratch kar diya. Usne socha, \"Agar maine sach kaha to uske abbu gusse ho jayenge.\" Lekin uske teacher ne kaha tha, \"Sach bolna hamesha theek hai.\" Rohan ne apne dost ke abbu ko sab bata diya. Uske abbu ne kaha, \"Tumne sach bola, isliye tumhara dost tumse aur pyar karega.\""
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar tumhari galti se koi chiz tut jaye, to tum kya karoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Sach bolna tumhara sabse bura dost hai—yeh tumhe hamesha theek raasta dikhayega!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ٣ — سچ بولنا کیوں ضروری ہے؟",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "بچو، سچ بولنا ایک بہت اچھا ادب ہے۔ جب تم سچ بولتے ہو، لوگ تم پر بھروسہ کرتے ہیں اور تمہارا دل بھی صاف رہتا ہے۔ اگر تم جھوٹ بولو گے تو تمہارا دل بھر جائے گا اور لوگ تم سے دور ہو جائیں گے۔ سچ بولنا تمہیں بھی اچھا محسوس کروائے گا اور سب تم سے پیار کریں گے۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "روہن نے ایک دن اپنے دوست کے ساتھ کھیلتے ہوئے اتفاقاً اس کی سائیکل تھوڑی سی خراش دار کر دی۔ اس نے سوچا، ’’اگر میں نے سچ کہا تو اس کے ابّو غصے ہو جائیں گے۔‘‘ لیکن اس کے ٹیچر نے کہا تھا، ’’سچ بولنا ہمیشہ ٹھیک ہے۔‘‘ روہن نے اپنے دوست کے ابّو کو سب بتا دیا۔ اس کے ابّو نے کہا، ’’تم نے سچ बोला، اس لیے تمہارا دوست تم سے اور پیار کرے گا۔‘‘"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "’’بیٹا، اگر تمہاری غلطی سے کوئی چیز ٹوٹ جائے، تو تم کیا کرو گے؟‘‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "سچ بولنا تمہارا سب سے بُرا دوست ہے—یہ تمہیں ہمیشہ ٹھیک راستہ دکھائے گا!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-nursery": [
