@@ -6598,6 +6598,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 2,
+      "id": "day-002",
+      "date": "2026-08-06",
+      "title": "Day 2 — \"1 se 50 tak Gintein\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachay, gintein humari zindagi mein har jagah hain! Jaise jab hum school jate hain, jab hum khelte hain, ya jab hum khelon mein hisaab karte hain. Gintein humein samajhne mein madad karti hain ke kitna hai, kitna zyada hai, ya kitna kam hai. Lekin yaad rakhna, tumhari ginti sirf tumhari hai—kisi ko tumse yeh poochne ka haq nahi ke tum kitni gintein jaante ho."
+        ],
+        [
+          "Chhoti Kahani",
+          "Rohan ne ek naya school bag liya. Usne apni ammi se poochha, \"Ammi, kitne bacche school mein hain?\" Ammi ne kaha, \"Chalo, hum mil kar gintein!\" Rohan ne 1 se 50 tak gintein, aur pata chala ke school mein 30 bacche hain. Usne socha, \"Mera bag bhi toh 30 bacchon ke liye hai!\" Gintein ne uski madad ki."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar koi tumse pooche ke tum kitni gintein jaante ho, toh tum kya kahoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Gintein tumhari dost hain—har jagah tumhari madad karti hain!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ٢ — ١ سے ٥٠ تک گنتیں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "بچو، گنتیں ہماری زندگی میں ہر جگہ ہیں! جیسے جب ہم سکول جاتے ہیں، جب ہم کھیلتے ہیں، یا جب ہم کھیلوں میں حساب کرتے ہیں۔ گنتیں ہمیں سمجھنے میں مدد کرتی ہیں کہ کتنا ہے، کتنا زیادہ ہے، یا کتنا کم ہے۔ لیکن یاد رکھنا، تمہاری گنتی صرف تمہاری ہے—کسی کو تم سے یہ پوچھنے کا حق نہیں کہ تم کتنی گنتیں جانتے ہو۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "روہن نے ایک نیا سکول بیگ لیا۔ اس نے اپنی امی سے پوچھا، ’امی، کتنے بچے سکول میں ہیں؟‘ امی نے کہا، ’چلو، ہم مل کر گنتیں!‘ روہن نے ١ سے ٥٠ تک گنتیں، اور پتا چلا کہ سکول میں ٣٠ بچے ہیں۔ اس نے سوچا، ’میرا بیگ بھی تو ٣٠ بچوں کے لیے ہے!‘ گنتوں نے اس کی مدد کی۔"
+            },
+            {
+              "label": "امی ابّو کے ساتھ بات کریں",
+              "content": "’بیٹا، اگر کوئی تم سے پوچھے کہ تم کتنی گنتیں جانتے ہو، تو تم کیا کہو گے؟‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "گنتیں تمہاری دوست ہیں—ہر جگہ تمہاری مدد کرتی ہیں!"
+            }
+          ]
+        }
+      }
     }
   ]
 }
