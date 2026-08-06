@@ -6276,6 +6276,72 @@
           ]
         }
       }
+    },
+    {
+      "day": 4,
+      "id": "day-004",
+      "date": "2026-08-06",
+      "title": "Day 4 — **Android Phone Ko Factory Reset Karna: Hard Reset vs Soft Reset**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Factory reset se phone ki sari data wipe ho jati hai aur phone jaise new ho jata hai. Soft reset (settings se reset) aur hard reset (recovery mode se reset) ke beech farq samajhna zaroori hai. Yehi tarika hai jab phone hang ho, password bhul gaye ho ya software corruption ho."
+        ],
+        [
+          "Example",
+          "Agar phone bar-bar restart ho raha hai aur koi app crash kar raha hai, toh:\n1."
+        ],
+        [
+          "Soft Reset",
+          "*Settings > System > Reset > Factory Data Reset* (backup le lena!)\n2."
+        ],
+        [
+          "Hard Reset",
+          "Phone off kar ke *Power + Volume Up* dabaye, recovery mode mein *Wipe Data/Factory Reset* select kar ke confirm kar dein."
+        ],
+        [
+          "Practice",
+          "Apne ek old phone ya friend ke phone ko soft reset kar ke dekhiye. Backup lena na bhulna!"
+        ],
+        [
+          "Mini Project",
+          "Ek video banao jismein aap ek locked phone ko hard reset kar ke unlock kar rahe hain (agar aapke paas locked phone ho)."
+        ]
+      ],
+      "answer_key": "backup le, settings se reset, recovery mode, confirm wipe",
+      "translations": {
+        "ur": {
+          "title": "دن 4 — اینڈرائیڈ فون کو فیکٹری ری سیٹ کرنا: ہارڈ ری سیٹ بمقابلہ سافٹ ری سیٹ",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "فیکٹری ری سیٹ سے فون کی ساری ڈیٹا مٹ جاتی ہے اور فون جیسے نیا ہو جاتا ہے۔ سافٹ ری سیٹ (سیٹنگز سے ری سیٹ) اور ہارڈ ری سیٹ (ری کاوری موڈ سے ری سیٹ) کے درمیان فرق سمجھنا ضروری ہے۔ یہی طریقہ ہے جب فون ہینگ ہو رہا ہو، پاسورڈ بھول گئے ہوں یا سافٹ ویئر خراب ہو گیا ہو۔"
+            },
+            {
+              "label": "مثال",
+              "content": "اگر فون بار بار ری اسٹارٹ ہو رہا ہے اور کوئی ایپ کریش کر رہی ہے تو:"
+            },
+            {
+              "label": "سافٹ ری سیٹ",
+              "content": "سیٹنگز > سسٹم > ری سیٹ > فیکٹری ڈیٹا ری سیٹ (بیک اپ لے لینا!)"
+            },
+            {
+              "label": "ہارڈ ری سیٹ",
+              "content": "فون آف کر کے پاور + والیوم اپ دبائیں، ری کاوری موڈ میں وائپ ڈیٹا/فیکٹری ری سیٹ سلیکٹ کر کے کنفرم کر دیں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے کسی پرانے فون یا دوست کے فون کو سافٹ ری سیٹ کر کے دیکھیں۔ بیک اپ لینا نہ بھولیں!"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک ویڈیو بنائیں جس میں آپ ایک لاکڈ فون کو ہارڈ ری سیٹ کر کے ان لاک کر رہے ہیں (اگر آپ کے پاس لاکڈ فون ہو تو)"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-safety-education": [
