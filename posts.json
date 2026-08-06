@@ -6446,6 +6446,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 2,
+      "id": "day-002",
+      "date": "2026-08-06",
+      "title": "Day 2 — \"Gol, Chauraha, Teeno Kon\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke har cheez ka apna ek khas shape hota hai! Gol (circle), chauraha (square), aur teeno kon (triangle) jaise shapes ko pehchaan karna seekhna bahut mazedar hai. In shapes ko pehchaan karke tum apne aas-paas ki cheezon ko bhi classify kar sakte ho."
+        ],
+        [
+          "Chhoti Kahani",
+          "Rani ne apne school ke bag mein ek gol pen, ek chauraha wala notebook, aur ek teeno kon wala traffic sign dekha. Usne socha, \"Yeh sab shapes kitne alag hain!\" Usne apni teacher se poocha, aur teacher ne usko aur bhi shapes bataye. Rani ko bahut maza aaya!"
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar tum kisi bhi shape ko dekh kar uska naam bata sakte ho, toh mujhe batao, tumne aaj kya kya shapes dekhe hain?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Har cheez ka apna ek shape hota hai, aur yeh seekhna bahut hi aasaan hai!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ٢ — گول، چوراہا، تینوں کون",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم سیکھیں گے کہ ہر چیز کا اپنا ایک خاص شکل ہوتا ہے! گول (سرکل)، چوراہا (اسکوئر)، اور تینوں کون (ٹرائی اینگل) جیسے شکلوں کو پہچاننا سیکھنا بہت مزے دار ہے۔ ان شکلوں کو پہچان کر تم اپنے آس پاس کی چیزوں کو بھی کلاسفائی کر سکتے ہو۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "رانی نے اپنے سکول کے باغ میں ایک گول پین، ایک چوراہے والا نوٹ بک، اور ایک تینوں کون والا ٹریفک سائن دیکھا۔ اس نے سوچا، ’’یہ سب شکلیں کتنی الگ ہیں!‘‘ اس نے اپنی ٹیچر سے پوچھا، اور ٹیچر نے اسے اور بھی شکلیں بتائیں۔ رانی کو بہت مزہ آیا!"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "’’بیٹا، اگر تم کسی بھی شکل کو دیکھ کر اس کا نام بتا سکتے ہو، تو مجھے بتاؤ، تم نے آج کیا کیا شکلیں دیکھی ہیں؟‘‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "ہر چیز کا اپنا ایک شکل ہوتا ہے، اور یہ سیکھنا بہت ہی آسان ہے!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-kg": [
