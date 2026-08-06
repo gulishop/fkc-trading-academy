@@ -4868,6 +4868,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 3,
+      "id": "day-003",
+      "date": "2026-08-06",
+      "title": "Day 3 — **Crypto Wallet Secure Karna: Apne Digital Assets Ki Hifazat**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Crypto wallet ek digital \"bank account\" hai jo aapki coins/tokens ko store karta hai. Lekin yeh traditional bank se alag hai—iske private keys (secret passwords) sirf aapke paas hote hain. Agar yeh keys chori ho gayin ya bhool gaye, toh aapki crypto permanently kho jati hai. Isliye security sabse zaroori hai!"
+        ],
+        [
+          "Example",
+          "Imagine a wallet with 2 keys:\n- **Public Key** (Address): Jaise ATM card number (share kar sakte hain).\n- **Private Key** (Secret Password): Jaise ATM PIN (kisi ko bhi mat batana!).\nAgar koi private key hack ho jata hai, toh sab khatam."
+        ],
+        [
+          "Practice",
+          "Apne phone ya laptop par **Trust Wallet** ya **MetaMask** install karein. Ek naya wallet create karein aur **12-word seed phrase** ko safely likh kar rakhein (kisi ko bhi share mat karein!)."
+        ],
+        [
+          "Mini Project",
+          "Apne wallet ka **test transaction** karein:\n1. Wallet create karein.\n2. Kisi dost se 0.001 BTC ya ETH bhejne ko kahen.\n3. Transaction confirm hone ka wait karein aur apne wallet mein check karein."
+        ]
+      ],
+      "answer_key": "trust wallet, metamask, 12-word seed phrase, private key",
+      "translations": {
+        "ur": {
+          "title": "دن ٣ — کرپٹو والیٹ سیکیور کرنا: اپنے ڈیجیٹل اثاثوں کی حفاظت",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "کرپٹو والیٹ ایک ڈیجیٹل \"بینک اکاؤنٹ\" ہے جو آپ کی کوائنز/ٹوکنز کو اسٹور کرتا ہے۔ لیکن یہ روایتی بینک سے الگ ہے—اس کے پرائیویٹ کیز (خفیہ پاسورڈز) صرف آپ کے پاس ہوتے ہیں۔ اگر یہ کیز چوری ہو جائیں یا بھول جائیں تو آپ کی کرپٹو مستقل طور پر کھو جاتی ہے۔ اسی لیے سیکیورٹی سب سے ضروری ہے!"
+            },
+            {
+              "label": "مثال",
+              "content": "تصور کریں کہ ایک والیٹ دو چابیاں رکھتا ہے:\n- **پبلک کی** (ایڈریس): جیسے اے ٹی ایم کارڈ نمبر (شیئر کر سکتے ہیں)۔\n- **پرائیویٹ کی** (خفیہ پاسورڈ): جیسے اے ٹی ایم پن (کسی کو بھی مت بتائیں!)۔\nاگر کوئی پرائیویٹ کی ہیک ہو جاتی ہے تو سب ختم۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے فون یا لیپ ٹاپ پر **ٹرسٹ والیٹ** یا **میٹا ماسک** انسٹال کریں۔ ایک نیا والیٹ بنائیں اور **۱۲ لفظی سیڈ فریز** کو محفوظ طریقے سے لکھ کر رکھیں (کسی کو بھی شیئر مت کریں!)"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "اپنے والیٹ کا **ٹیسٹ ٹرانزیکشن** کریں:\n١۔ والیٹ بنائیں۔\n٢۔ کسی دوست سے ٠.٠٠١ بی ٹی سی یا ای ٹی ایچ بھیجنے کو کہیں۔\n٣۔ ٹرانزیکشن کنفرم ہونے کا انتظار کریں اور اپنے والیٹ میں چیک کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "psx-stock-trading": [

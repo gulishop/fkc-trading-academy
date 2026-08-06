@@ -9,6 +9,16 @@
 <meta property="og:description" content="FKC Trading Academy · Crypto & Blockchain Basics · Day 02">
 <meta property="og:image" content="../../../logo.png">
 <meta name="twitter:card" content="summary_large_image">
+<script>
+// Dark mode — theme paint se pehle set karte hain taake flash na ho.
+(function(){
+  try{
+    var t = localStorage.getItem("fkc_theme") ||
+      (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", t);
+  }catch(e){}
+})();
+</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z5FV45KG2C"></script>
 <script>
@@ -22,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T21:18:59.874247";
+  var FKC_BUILD = "2026-08-06T22:06:29.690622";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -46,6 +56,15 @@
 :root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
 --ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
 --accent:#2BAF66;--purple:#6D28D9;}
+html[data-theme="dark"]{--paper:#14161A;--panel:#1D2025;--line:#2C3038;
+--ink:#EDEFF2;--muted:#9AA1AB;--primary:#5B9DFF;--primary-dark:#3D7DE0;
+--accent:#3FCB7E;--purple:#A78BFA;}
+html[data-theme="dark"] img{opacity:.92;}
+.theme-toggle{position:fixed;bottom:16px;right:16px;z-index:999;
+width:44px;height:44px;border-radius:50%;border:1px solid var(--line);
+background:var(--panel);color:var(--ink);font-size:19px;cursor:pointer;
+box-shadow:0 2px 8px rgba(0,0,0,.15);display:flex;align-items:center;
+justify-content:center;}
 *{box-sizing:border-box;}
 @media (prefers-reduced-motion: no-preference){
   .fade-in{animation:fadeUp .45s ease both;}
@@ -53,7 +72,8 @@
   @keyframes fadeUp{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
 }
 body{margin:0;background:var(--paper);color:var(--ink);
-font-family:'Inter','IBM Plex Sans',sans-serif;line-height:1.55;}
+font-family:'Inter','IBM Plex Sans',sans-serif;line-height:1.55;
+transition:background .2s ease,color .2s ease;}
 .wrap{max-width:720px;margin:0 auto;padding:24px 16px 70px;}
 a{color:var(--primary);}
 .top{display:flex;align-items:baseline;gap:10px;color:var(--ink);
@@ -155,30 +175,76 @@ vertical-align:middle;}
 .lesson-nav{display:flex;justify-content:space-between;gap:8px;
 flex-wrap:wrap;margin-top:14px;}
 .lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.section-title{font-family:'Inter',sans-serif;font-weight:800;
+font-size:1.2em;margin:30px 0 2px;padding-top:18px;
+border-top:1px solid var(--line);display:flex;align-items:center;gap:8px;}
+.section-title.adults{color:var(--primary);}
+.section-title.kids{color:#DB4C77;}
 .quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
 .quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
 border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
 box-sizing:border-box;margin:6px 0;}
 .quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+.puzzle-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.puzzle-box h3{margin-top:0;}
+.puzzle-status{font-size:.85em;color:var(--muted);margin:0 0 10px;}
+.puzzle-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;
+max-width:340px;margin:0 auto;}
+.puzzle-card{aspect-ratio:1/1;border-radius:10px;border:none;
+background:var(--primary);color:#fff;font-size:1.6em;cursor:pointer;
+display:flex;align-items:center;justify-content:center;
+transition:transform .25s ease,background .25s ease;padding:0;}
+.puzzle-card.flipped,.puzzle-card.matched{background:#fff;
+border:1px solid var(--line);color:var(--ink);}
+.puzzle-card.matched{background:#EAFBF0;border-color:var(--accent);
+opacity:.85;cursor:default;}
+.puzzle-card:disabled{cursor:default;}
+.puzzle-win{display:none;text-align:center;margin-top:12px;
+background:#EAFBF0;border-radius:10px;padding:12px;font-weight:700;color:#15803d;}
 @media print{
   .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
-  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  .quiz-box,.puzzle-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
   body{background:#fff;}
   .card{box-shadow:none;border:none;}
 }
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
+<button type="button" class="theme-toggle" id="fkcThemeToggle" title="Dark/Light mode" onclick="fkcToggleTheme()">🌓</button>
+<script>
+function fkcToggleTheme(){
+  var cur = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", cur);
+  try{ localStorage.setItem("fkc_theme", cur); }catch(e){}
+}
+</script>
 
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "headline": "Day 2 — **Bitcoin vs Ethereum: Digital Gold vs Programmable Money**", "name": "Day 2 — **Bitcoin vs Ethereum: Digital Gold vs Programmable Money**", "description": "", "learningResourceType": "Lesson", "educationalLevel": "Beginner", "inLanguage": "ur", "isPartOf": {"@type": "Course", "name": "Crypto & Blockchain Basics"}, "datePublished": "2026-08-04", "publisher": {"@type": "Organization", "name": "FKC Trading Academy"}}</script>
     <div class="top"><a href="../../../index.html">← FKC Trading Academy</a>
     <a href="../index.html" class="course-back-link">/ Crypto &amp; Blockchain Basics</a></div>
-    <span class="badge">Latest</span>
+    
     <p class="muted">₿ Crypto &amp; Blockchain Basics · Day 02</p>
     <h1>Day 2 — **Bitcoin vs Ethereum: Digital Gold vs Programmable Money**</h1>
+    <p class="muted" style="margin:0 0 10px;">↩️ Pichla lesson: <strong>Day 1 — Blockchain: Digital Ledger Jo Sabko Trust Karta Hai</strong> — aaj is se aage badhte hain.</p>
     <div class="card">
       
       
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Bitcoin (BTC) aur Ethereum (ETH) crypto ki do sabse famous currencies hain. Bitcoin ko &quot;digital gold&quot; kaha jata hai—yeh ek decentralized currency hai jo transactions record karta hai. Ethereum, on the other hand, ek &quot;programmable blockchain&quot; hai jo smart contracts (self-executing agreements) aur decentralized apps (DApps) ko support karta hai. Bitcoin limited supply (21M coins) ke saath inflation-resistant hai, jabki Ethereum flexible hai aur developers ko innovative projects build karne deta hai.</p><h3>Example</h3><p>Imagine Bitcoin ek **gold coin** hai—limited supply, stable value, aur sirf transactions record karta hai. Ethereum ek **digital computer** hai—jisme developers &quot;if-this-then-that&quot; rules (smart contracts) likh sakte hain, jaise ek vending machine jo automatically payment lekar product deta hai.</p><h3>Practice</h3><p>1. **CoinGecko ya CoinMarketCap** par Bitcoin (BTC) aur Ethereum (ETH) ki current prices check karen.<br>2. **Difference** note karen: Bitcoin ka focus &quot;store of value&quot; hai, jabki Ethereum ka focus &quot;platform for apps&quot; hai.</p><h3>Mini Project</h3><h3>Smart Contract Simulation</h3><p>- Ethereum ke [Remix IDE](https://remix.ethereum.org/) par jaen.<br>- Ek simple smart contract likhen jo &quot;Hello, [Apna Naam]&quot; print kare.<br>- (Step-by-step guide ke liye YouTube par &quot;Remix IDE tutorial&quot; search karen.)</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>مفہوم</h3><p>بٹ‌کوئن (BTC) اور ایتھریم (ETH) کرپٹو کرنسیوں کی دو سب سے مشہور اقسام ہیں۔ بٹ‌کوئن کو &quot;ڈیجیٹل سونا&quot; کہا جاتا ہے—یہ ایک غیرمرکزی کرنسی ہے جو لین دین ریکارڈ کرتی ہے۔ دوسری طرف، ایتھریم ایک &quot;پروگرام ایبل بلاکچین&quot; ہے جو سمارٹ کانٹریکٹس (خودکار معاہدے) اور غیرمرکزی ایپس (DApps) کو سپورٹ کرتا ہے۔ بٹ‌کوئن محدود سپلائی (21 ملین سکے) کے ساتھ مہنگائی کے خلاف مزاحم ہے، جبکہ ایتھریم لچکدار ہے اور ڈویلپرز کو نئے نئے پراجیکٹس بنانے کی سہولت فراہم کرتا ہے۔</p><h3>مثال</h3><p>تصور کریں کہ بٹ‌کوئن ایک **سونے کا سکّہ** ہے—محدود سپلائی، مستحکم قیمت، اور یہ صرف لین دین ریکارڈ کرتا ہے۔ ایتھریم ایک **ڈیجیٹل کمپیوٹر** ہے—جس میں ڈویلپرز &quot;اگر یہ تو وہ&quot; کے قواعد (سمارٹ کانٹریکٹس) لکھ سکتے ہیں، جیسے ایک خودکار مشین جو ادائیگی لینے کے بعد خودکار طور پر سامان فراہم کرتی ہے۔</p><h3>مشق</h3><p>1. **CoinGecko** یا **CoinMarketCap** پر بٹ‌کوئن (BTC) اور ایتھریم (ETH) کی موجودہ قیمتیں چیک کریں۔<br>2. **فرق** نوٹ کریں: بٹ‌کوئن کا زور &quot;قیمت کا ذخیرہ&quot; ہے، جبکہ ایتھریم کا زور &quot;ایپس کی پلیٹ فارم&quot; ہے۔</p><h3>مینی پراجیکٹ</h3><p>- سمارٹ کانٹریکٹ سیمیولیشن: ایتھریم کے **[Remix IDE](https://remix.ethereum.org/)** پر جائیں۔<br>- ایک آسان سمارٹ کانٹریکٹ لکھیں جو &quot;Hello, [اپنا نام]&quot; پرنٹ کرے۔<br>- (مرحلہ وار ہدایت کے لیے YouTube پر &quot;Remix IDE tutorial&quot; تلاش کریں۔)</p></div>
       
       
@@ -205,9 +271,73 @@ box-sizing:border-box;margin:6px 0;}
         }
       }
       </script>
+      
+      <div class="puzzle-box no-print" id="pz-crypto-blockchain-2">
+        <h3>🧩 Dimaghi Kasrat — Jode Milayein</h3>
+        <p class="puzzle-status" id="pz-crypto-blockchain-2-status">Cards par tap karke jode (pairs) milayein.</p>
+        <div class="puzzle-grid" id="pz-crypto-blockchain-2-grid"></div>
+        <div class="puzzle-win" id="pz-crypto-blockchain-2-win">🎉 Shabaash! Sab jode mil gaye — thodi der aur seekhne ke liye tayyar?</div>
+      </div>
+      <script>
+      (function(){
+        var emojis = ["🎈", "🧩", "🎵", "🐢", "🌈", "⚽"];
+        var deck = emojis.concat(emojis);
+        for (var i = deck.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var t = deck[i]; deck[i] = deck[j]; deck[j] = t;
+        }
+        var grid = document.getElementById("pz-crypto-blockchain-2-grid");
+        var statusEl = document.getElementById("pz-crypto-blockchain-2-status");
+        var winEl = document.getElementById("pz-crypto-blockchain-2-win");
+        var flipped = [], matchedCount = 0, moves = 0, lock = false;
+        deck.forEach(function(val){
+          var b = document.createElement("button");
+          b.type = "button";
+          b.className = "puzzle-card";
+          b.setAttribute("data-val", val);
+          b.textContent = "❓";
+          b.onclick = function(){
+            if (lock || b.classList.contains("matched") || b.classList.contains("flipped")) return;
+            b.classList.add("flipped");
+            b.textContent = val;
+            flipped.push(b);
+            if (flipped.length === 2) {
+              moves++;
+              lock = true;
+              var a = flipped[0], c = flipped[1];
+              if (a.getAttribute("data-val") === c.getAttribute("data-val")) {
+                a.classList.add("matched"); c.classList.add("matched");
+                matchedCount += 2;
+                flipped = []; lock = false;
+                statusEl.textContent = "Moves: " + moves + " · " + matchedCount + "/" + deck.length + " match hue";
+                if (matchedCount === deck.length) {
+                  winEl.style.display = "block";
+                  statusEl.textContent = "Complete! Total moves: " + moves;
+                }
+              } else {
+                setTimeout(function(){
+                  a.classList.remove("flipped"); a.textContent = "❓";
+                  c.classList.remove("flipped"); c.textContent = "❓";
+                  flipped = []; lock = false;
+                }, 700);
+              }
+            }
+          };
+          grid.appendChild(b);
+        });
+      })();
+      </script>
+      
+      <div class="no-print" style="margin-top:14px;">
+        <label for="fkc-notes" class="muted" style="display:block;margin-bottom:4px;">📝 Apni Note (sirf aapke is browser mein save hoti hai):</label>
+        <textarea id="fkc-notes" data-slug="crypto-blockchain" data-lesson="day-002"
+          placeholder="Yahan apni note likhein..." rows="3"
+          style="width:100%;border-radius:10px;border:1px solid #ddd;padding:8px;font-family:inherit;"
+          oninput="fkcSaveNote(this)"></textarea>
+      </div>
+    
       <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Crypto%20%26%20Blockchain%20Basics%20%28Day%2002%29%0A%0ADay%202%20%E2%80%94%20%2A%2ABitcoin%20vs%20Ethereum%3A%20Digital%20Gold%20vs%20Programmable%20Money%2A%2A%0A%0AConcept%3A%0ABitcoin%20%28BTC%29%20aur%20Ethereum%20%28ETH%29%20crypto%20ki%20do%20sabse%20famous%20currencies%20hain.%20Bitcoin%20ko%20%22digital%20gold%22%20kaha%20jata%20hai%E2%80%94yeh%20ek%20decentralized%20currency%20hai%20jo%20transactions%20record%20karta%20hai.%20Ethereum%2C%20on%20the%20other%20hand%2C%20ek%20%22programmable%20blockchain%22%20hai%20jo%20smart%20contracts%20%28self-executing%20agreements%29%20aur%20decentralized%20apps%20%28DApps%29%20ko%20support%20karta%20hai.%20Bitcoin%20limited%20supply%20%2821M%20coins%29%20ke%20saath%20inflation-resistant%20hai%2C%20jabki%20Ethereum%20flexible%20hai%20aur%20developers%20ko%20innovative%20projects%20build%20karne%20deta%20hai.%0A%0AExample%3A%0AImagine%20Bitcoin%20ek%20%2A%2Agold%20coin%2A%2A%20hai%E2%80%94limited%20supply%2C%20stable%20value%2C%20aur%20sirf%20transactions%20record%20karta%20hai.%20Ethereum%20ek%20%2A%2Adigital%20computer%2A%2A%20hai%E2%80%94jisme%20developers%20%22if-this-then-that%22%20rules%20%28smart%20contracts%29%20likh%20sakte%20hain%2C%20jaise%20ek%20vending%20machine%20jo%20automatically%20payment%20lekar%20product%20deta%20hai.%0A%0APractice%3A%0A1.%20%2A%2ACoinGecko%20ya%20CoinMarketCap%2A%2A%20par%20Bitcoin%20%28BTC%29%20aur%20Ethereum%20%28ETH%29%20ki%20current%20prices%20check%20karen.%0A2.%20%2A%2ADifference%2A%2A%20note%20karen%3A%20Bitcoin%20ka%20focus%20%22store%20of%20value%22%20hai%2C%20jabki%20Ethereum%20ka%20focus%20%22platform%20for%20apps%22%20hai.%0A%0AMini%20Project%3A%0A%0A%0ASmart%20Contract%20Simulation%3A%0A-%20Ethereum%20ke%20%5BRemix%20IDE%5D%28https%3A//remix.ethereum.org/%29%20par%20jaen.%0A-%20Ek%20simple%20smart%20contract%20likhen%20jo%20%22Hello%2C%20%5BApna%20Naam%5D%22%20print%20kare.%0A-%20%28Step-by-step%20guide%20ke%20liye%20YouTube%20par%20%22Remix%20IDE%20tutorial%22%20search%20karen.%29%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
-        <a class="btn alt" href="https://t.me/share/url?url=&text=Day%202%20%E2%80%94%20%2A%2ABitcoin%20vs%20Ethereum%3A%20Digital%20Gold%20vs%20Programmable%20Money%2A%2A%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
         <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
@@ -217,15 +347,65 @@ box-sizing:border-box;margin:6px 0;}
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <div class="lesson-nav"><a class="btn alt" href="2026-08-03-day-001.html">← Day 1 — Blockchain: Digital Ledger Jo Sabko Trust Karta Hai</a><span></span></div>
+    <div class="lesson-nav"><a class="btn alt" href="2026-08-03-day-001.html">← Day 1 — Blockchain: Digital Ledger Jo Sabko Trust Karta Hai</a><a class="btn alt" href="2026-08-06-day-003.html">Day 3 — **Crypto Wallet Secure Karna: Apne Digital Assets Ki Hifazat** →</a></div>
     <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
     
     <div class="no-print" style="margin:18px 0;text-align:center;">
       <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
         data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
       <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
-    <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
+    
+    <div class="daily-motivation" style="max-width:640px;margin:20px auto;padding:16px 20px;
+      background:linear-gradient(135deg,#fff7e6,#fef0f0);border-radius:14px;border:1px solid #f5e2c8;
+      text-align:center;">
+      <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
+        margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
+      <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
+        “Waqt zaya mat karo, kyunke jo waqt guzar jata hai woh wapas nahi aata — aaj hi shuru karo.”
+      </p>
+    </div>
+    <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;
+      background:linear-gradient(145deg,#f7f9fc,#eef2f9);border-radius:16px;border:1px solid #e6e9f0;
+      text-align:center;">
+      <p style="font-size:13px;letter-spacing:.03em;text-transform:uppercase;color:var(--muted);
+        margin:0 0 10px;font-weight:700;">✉️ Founder ki taraf se</p>
+      <p style="font-size:15px;line-height:1.7;color:#2a2f3a;margin:0 0 14px;">
+        Hamara maqsad sirf lessons post karna nahi — har us Pakistani tak muft, practical
+        taleem pohchana hai jo seekhna chahta hai lekin resources ya waqt nahi rakhta.
+        FKC Trading Academy ka vision hai: <b>roz thora seekho, mustaqil mehnat karo,
+        aur apni zindagi khud badlo.</b> Mission simple hai — koi bhi course, koi bhi fee
+        nahi, sirf aap ka irada.
+      </p>
+      <p style="font-size:13px;color:var(--muted);margin:0;">— Fazul Khan Chandio, Founder &amp; CEO</p>
+    </div><div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
+    <script>
+    (function(){
+      try {
+        localStorage.setItem('fkc_last_lesson', JSON.stringify({
+          slug: "crypto-blockchain",
+          courseName: "Crypto & Blockchain Basics",
+          courseIcon: "\u20bf",
+          title: "Day 2 \u2014 **Bitcoin vs Ethereum: Digital Gold vs Programmable Money**",
+          href: 'courses/crypto-blockchain/posts/2026-08-04-day-002.html',
+          day: 2
+        }));
+      } catch (e) {}
+      var ta = document.getElementById('fkc-notes');
+      if (ta) {
+        try {
+          var saved = localStorage.getItem('fkc_note_' + ta.dataset.slug + '_' + ta.dataset.lesson);
+          if (saved) ta.value = saved;
+        } catch (e) {}
+      }
+    })();
+    function fkcSaveNote(el) {
+      try {
+        localStorage.setItem('fkc_note_' + el.dataset.slug + '_' + el.dataset.lesson, el.value);
+      } catch (e) {}
+    }
+    </script>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
   function getProgress(){
@@ -266,6 +446,25 @@ box-sizing:border-box;margin:6px 0;}
     }
     var wa = "https://wa.me/923333909816?text=" + encodeURIComponent(text);
     window.open(wa, "_blank");
+  };
+
+  window.fkcShowSyncCode = function(){
+    if(!window.fkcSyncProgressUp){ alert("Sync abhi ready nahi (Firebase load ho raha hai), thodi dair mein try karein."); return; }
+    var code = Math.random().toString(36).substring(2,8).toUpperCase();
+    window.fkcSyncProgressUp(code, function(ok){
+      if(ok) alert("Yeh code doosri device par 'Code Se Wapas Layein' mein daalein:\n\n" + code);
+      else alert("Sync fail ho gaya, dobara try karein.");
+    });
+  };
+
+  window.fkcEnterSyncCode = function(){
+    if(!window.fkcSyncProgressDown){ alert("Sync abhi ready nahi (Firebase load ho raha hai), thodi dair mein try karein."); return; }
+    var code = prompt("Wo code daalein jo pehli device par bana tha:");
+    if(!code || !code.trim()) return;
+    window.fkcSyncProgressDown(code.trim().toUpperCase(), function(ok){
+      if(ok){ alert("Progress wapas aa gayi ✅"); location.reload(); }
+      else alert("Yeh code nahi mila, dobara check karein.");
+    });
   };
 
   document.addEventListener("DOMContentLoaded", function(){
@@ -349,6 +548,27 @@ box-sizing:border-box;margin:6px 0;}
           created: firebase.firestore.FieldValue.serverTimestamp()
         });
       }catch(e){}
+    };
+
+    window.fkcSyncProgressUp = function(code, onDone){
+      try{
+        var data = localStorage.getItem("fkc_progress") || "{}";
+        window.fkcDb.collection("progress_sync").doc(code).set({
+          progress: data, updated: firebase.firestore.FieldValue.serverTimestamp()
+        }).then(function(){ if(onDone) onDone(true); })
+          .catch(function(){ if(onDone) onDone(false); });
+      }catch(e){ if(onDone) onDone(false); }
+    };
+
+    window.fkcSyncProgressDown = function(code, onDone){
+      try{
+        window.fkcDb.collection("progress_sync").doc(code).get().then(function(doc){
+          if(doc.exists && doc.data().progress){
+            localStorage.setItem("fkc_progress", doc.data().progress);
+            if(onDone) onDone(true);
+          } else { if(onDone) onDone(false); }
+        }).catch(function(){ if(onDone) onDone(false); });
+      }catch(e){ if(onDone) onDone(false); }
     };
   }catch(e){}
 })();
