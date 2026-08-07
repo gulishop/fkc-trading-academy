@@ -7208,6 +7208,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 3,
+      "id": "day-003",
+      "date": "2026-08-07",
+      "title": "Day 3 — \"Janwaron ki Aawazein aur Naam\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachon, aaj hum seekhenge ke har janwar ki alag awaaz hoti hai. Jaise kutta \"bhoo bhoo\" karta hai, billi \"meow\" karti hai. Lekin yaad rakhna, insaan ki awaaz sabse alag hai—hum apni awaaz se hi baat karte hain. Agar koi janwar ya insaan tumhe takleef de raha ho, toh tumhe \"na\" kehne ka poora haq hai!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Rohan ne park mein ek kutta dekha jo \"bhoo bhoo\" kar raha tha. Rohan ne usko hath lagaya, lekin kutta dar gaya aur hath se kaat liya. Rohan ne roti hui maan ko bataya. Maan ne kutta ko dawa di aur Rohan ko samjhaya ke janwaron ko bhi apna haq hai—agar woh takleef de rahe hain, toh \"na\" kehna zaroori hai."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar tumhe koi janwar ya insaan takleef de raha ho, toh tum kya karoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Tumhara jism tumhara hai—agar koi tumhe chhoo raha ho toh \"na\" kehne mein sharam nahin!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ٣ — جانوروں کی آوازیں اور نام",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "بچو، آج ہم سیکھیں گے کہ ہر جانور کی الگ آواز ہوتی ہے۔ جیسے کتا ’بھو بھو‘ کرتا ہے، بلی ’میاؤ‘ کرتی ہے۔ لیکن یاد رکھنا، انسان کی آواز سب سے الگ ہے—ہم اپنی آواز سے ہی بات کرتے ہیں۔ اگر کوئی جانور یا انسان تمہیں تکلیف دے رہا ہو، تو تمہیں ’نہیں‘ کہنے کا پورا حق ہے!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "روہن نے پارک میں ایک کتا دیکھا جو ’بھو بھو‘ کر رہا تھا۔ روہن نے اسے ہاتھ لگایا، لیکن کتا ڈر گیا اور ہاتھ سے کاٹ لیا۔ روہن نے روتی ہوئی ماں کو بتایا۔ ماں نے کتے کو دوا دی اور روہن کو سمجھایا کہ جانوروں کو بھی اپنا حق ہے—اگر وہ تکلیف دے رہے ہوں، تو ’نہیں‘ کہنا ضروری ہے۔"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "بیٹا، اگر تمہیں کوئی جانور یا انسان تکلیف دے رہا ہو، تو تم کیا کرو گے؟"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمہارا جسم تمہارا ہے—اگر کوئی تمہیں چھو رہا ہو تو ’نہیں‘ کہنے میں شرم نہیں!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-kg": [
