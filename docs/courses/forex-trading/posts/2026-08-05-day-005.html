@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-06T04:15:38.696480";
+  var FKC_BUILD = "2026-08-07T05:06:35.862704";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -230,7 +230,21 @@ function fkcToggleTheme(){
       
       
       
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Forex trading mein 90% traders emotional decisions ki wajah se fail hote hain. Fear, greed, aur overconfidence aapke trades ko bigad deti hai. Aaj hum seekhenge ke kaise apne emotions ko control karke disciplined trading ki jaaye. Trading plan follow karna, risk-reward ratio maintain karna, aur losses ko accept karna seekhein.</p><h3>Example</h3><p>Maana aapne ek trade liya aur market aapke khilaaf chala gaya. Aapka stop-loss trigger ho gaya, lekin aap &quot;ek baar aur try karte hain&quot; ka soch kar trade band nahi karte. Aap apna stop-loss hata dete hain aur market thoda recover hota hai to aap profit bhi le lete hain. Lekin agle din market phir se aapke khilaaf chala jata hai aur aapko zyada loss ho jata hai. Yeh greed ki wajah se hua.</p><h3>Practice</h3><p>Aaj se har trade lene se pehle 1 minute ka break lijiye. Poochiye: &quot;Kya yeh trade mera trading plan ke hisaab se sahi hai?&quot; Agar nahi, to trade na lijiye. Apne emotions ko control karne ka yeh pehla kadam hai.</p><h3>Mini Project</h3><p>Apne trading journal mein 5 trades ka record likhiye. Har trade ke baad likhiye:<br>1. Aapka emotion (fear/greed/overconfidence)<br>2. Aapne kya action li (stop-loss hata diya, trade badha diya, etc.)<br>3. Aapko kya seekh mili</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>کنسیپٹ</h3><p>فاریکس ٹریڈنگ میں نوے فیصد ٹریڈرز جذباتی فیصلوں کی وجہ سے ناکام ہو جاتے ہیں۔ خوف، لالچ، اور زیادہ اعتماد آپ کے ٹریڈز کو برباد کر دیتے ہیں۔ آج ہم سیکھیں گے کہ کس طرح اپنے جذبات کو کنٹرول کرکے منظم ٹریڈنگ کی جائے۔ ٹریڈنگ پلان پر عمل کرنا، رسک-ریوارڈ ریشو برقرار رکھنا، اور نقصانات کو قبول کرنا سیکھیں۔</p><h3>مثال</h3><p>مانا آپ نے ایک ٹریڈ لیا اور مارکیٹ آپ کے خلاف چلی گئی۔ آپ کا سٹاپ-لاس ٹرگر ہو گیا، لیکن آپ &quot;ایک بار اور کوشش کرتے ہیں&quot; کا سوچ کر ٹریڈ بند نہیں کرتے۔ آپ اپنا سٹاپ-لاس ہٹا دیتے ہیں اور مارکیٹ تھوڑا ریکور ہوتا ہے تو آپ منافع بھی لے لیتے ہیں۔ لیکن اگلے دن مارکیٹ پھر سے آپ کے خلاف چلی جاتی ہے اور آپ کو زیادہ نقصان ہو جاتا ہے۔ یہ لالچ کی وجہ سے ہوا۔</p><h3>پریکٹس</h3><p>آج سے ہر ٹریڈ لینے سے پہلے ایک منٹ کا وقفہ لیجیے۔ پوچھئے: &quot;کیا یہ ٹریڈ میرے ٹریڈنگ پلان کے حساب سے صحیح ہے؟&quot; اگر نہیں، تو ٹریڈ نہ لیجیے۔ اپنے جذبات کو کنٹرول کرنے کا یہ پہلا قدم ہے۔</p><h3>منی پروجیکٹ</h3><p>اپنے ٹریڈنگ جرنل میں پانچ ٹریڈز کا ریکارڈ لکھیے۔ ہر ٹریڈ کے بعد لکھئے:<br>1. آپ کا جذبہ (خوف/لالچ/زیادہ اعتماد)<br>2. آپ نے کیا ایکشن لیا (سٹاپ-لاس ہٹا دیا، ٹریڈ بڑھا دیا، وغیرہ)<br>3. آپ کو کیا سبق ملا</p></div>
       <p><a class="btn alt" href="https://one.exnessonelink.com/a/buhyli14un" target="_blank" rel="noopener sponsored">💹 Exness Par Free Account Banayein</a></p>
     <div id="fkc-affiliate-popup" class="no-print" style="position:fixed;inset:0;
@@ -399,7 +413,7 @@ function fkcToggleTheme(){
       <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
         margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
       <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
-        “Waqt zaya mat karo, kyunke jo waqt guzar jata hai woh wapas nahi aata — aaj hi shuru karo.”
+        “Har mahir kabhi beginner tha — bas usne seekhna chhoda nahi.”
       </p>
     </div>
     <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;

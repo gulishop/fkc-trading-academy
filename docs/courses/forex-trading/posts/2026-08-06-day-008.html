@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-06T04:15:38.696480";
+  var FKC_BUILD = "2026-08-07T05:06:35.862704";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -222,7 +222,7 @@ function fkcToggleTheme(){
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "headline": "Day 8 — **Trading Journal: Apne Trades Ka Hisaab Rakho Aur Improvement Ka Rasta Banaye**", "name": "Day 8 — **Trading Journal: Apne Trades Ka Hisaab Rakho Aur Improvement Ka Rasta Banaye**", "description": "", "learningResourceType": "Lesson", "educationalLevel": "Beginner", "inLanguage": "ur", "isPartOf": {"@type": "Course", "name": "Forex Trading"}, "datePublished": "2026-08-06", "publisher": {"@type": "Organization", "name": "FKC Trading Academy"}}</script>
     <div class="top"><a href="../../../index.html">← FKC Trading Academy</a>
     <a href="../index.html" class="course-back-link">/ Forex Trading</a></div>
-    <span class="badge">Latest</span>
+    
     <p class="muted">💹 Forex Trading · Day 08</p>
     <h1>Day 8 — **Trading Journal: Apne Trades Ka Hisaab Rakho Aur Improvement Ka Rasta Banaye**</h1>
     <p class="muted" style="margin:0 0 10px;">↩️ Pichla lesson: <strong>Day 7 — **Economic Calendar Aur News Trading Ka Asar**</strong> — aaj is se aage badhte hain.</p>
@@ -230,7 +230,21 @@ function fkcToggleTheme(){
       
       <img src="images/day-008.png" alt="Day 8 — **Trading Journal: Apne Trades Ka Hisaab Rakho Aur Improvement Ka Rasta Banaye**" style="width:100%;border-radius:12px;margin-bottom:14px;">
       <p class="muted" style="margin:0 0 6px;">🎬 AI Video Explanation</p><video src="videos/day-008.mp4" controls preload="metadata" poster="images/day-008.png" style="width:100%;border-radius:12px;margin-bottom:14px;background:#000;"></video>
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Har successful trader apne trades ka detailed record rakhta hai. Trading journal ek diary hoti hai jismein aap har trade ke entry/exit points, profit/loss, emotions, aur market conditions note karte hain. Isse aap repeat mistakes identify kar sakte hain aur apni strategy ko improve kar sakte hain. Yeh discipline banane aur long-term success ke liye zaroori hai.</p><h3>Example</h3><p>Maana aapne EUR/USD pair par long position li hai. Aap apne journal mein likh sakte hain:<br>- Entry: 1.0800 (1 lot)<br>- Exit: 1.0850 (50 pips profit)<br>- Time: 2 hours<br>- Reason: Support level breakout<br>- Emotions: Confident (lekin overconfident nahi)<br>- Mistake: Koi nahi (agar hota to note karna hai)</p><h3>Practice</h3><p>Aaj ke 3 trades (demo ya live) ka record apne trading journal mein likhein. Har trade ke liye:<br>1. Pair, time, entry/exit price<br>2. Trade ka reason (technical/fundamental)<br>3. Apne emotions (fear/greed/confidence)<br>4. Kya aapne stop-loss correctly lagaya?</p><h3>Mini Project</h3><p>Ek week tak har trade ka journal maintain karne ka challenge. Har din ke end par 5 minutes nikal kar:<br>- Best trade ka analysis<br>- Worst trade ka analysis<br>- 1 improvement point (e.g., &quot;Zyada greed se avoid karna hai&quot;)</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>کنسیپٹ</h3><p>ہر کامیاب ٹریڈر اپنے ٹریڈز کا تفصیلی ریکارڈ رکھتا ہے۔ ٹریڈنگ جرنل ایک ڈائری ہوتی ہے جس میں آپ ہر ٹریڈ کے انٹری/ایگزٹ پوائنٹس، منافع/نقصان، جذبات، اور مارکیٹ کے حالات نوٹ کرتے ہیں۔ اس سے آپ بار بار ہونے والی غلطیاں شناخت کر سکتے ہیں اور اپنی حکمت عملی کو بہتر بنا سکتے ہیں۔ یہ ڈسپلن بنانے اور طویل مدتی کامیابی کے لیے ضروری ہے۔</p><h3>مثال</h3><p>مانا آپ نے EUR/USD جوڑے پر لمبی پوزیشن لی ہے۔ آپ اپنے جرنل میں لکھ سکتے ہیں:<br>- انٹری: ۱.۰۸۰۰ (۱ لاٹ)<br>- ایگزٹ: ۱.۰۸۵۰ (۵۰ پِپس منافع)<br>- وقت: ۲ گھنٹے<br>- وجہ: سپورٹ لیول بریک آؤٹ<br>- جذبات: اعتماد (لیکن زیادہ اعتماد نہیں)<br>- غلطی: کوئی نہیں (اگر ہوتی تو نوٹ کرنا ہے)</p><h3>پریکٹس</h3><p>آج کے تین ٹریڈز (ڈیمو یا لائیو) کا ریکارڈ اپنے ٹریڈنگ جرنل میں لکھیں۔ ہر ٹریڈ کے لیے:<br>۱۔ جوڑا، وقت، انٹری/ایگزٹ قیمت<br>۲۔ ٹریڈ کی وجہ (ٹیکنیکل/فنڈامینٹل)<br>۳۔ اپنے جذبات (خوف/لالچ/اعتماد)<br>۴۔ کیا آپ نے سٹاپ لاس صحیح لگایا؟</p><h3>منی پروجیکٹ</h3><p>ایک ہفتے تک ہر ٹریڈ کا جرنل مینٹین کرنے کا چیلنج۔ ہر دن کے آخر میں پانچ منٹ نکال کر:<br>- بہترین ٹریڈ کا تجزیہ<br>- بدترین ٹریڈ کا تجزیہ<br>- ایک بہتری کا نقطہ (مثلاً، ’زیادہ لالچ سے اجتناب کرنا ہے‘)</p></div>
       <p><a class="btn alt" href="https://one.exnessonelink.com/a/buhyli14un" target="_blank" rel="noopener sponsored">💹 Exness Par Free Account Banayein</a></p>
     <div id="fkc-affiliate-popup" class="no-print" style="position:fixed;inset:0;
@@ -383,7 +397,7 @@ function fkcToggleTheme(){
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <div class="lesson-nav"><a class="btn alt" href="2026-08-05-day-007.html">← Day 7 — **Economic Calendar Aur News Trading Ka Asar**</a><span></span></div>
+    <div class="lesson-nav"><a class="btn alt" href="2026-08-05-day-007.html">← Day 7 — **Economic Calendar Aur News Trading Ka Asar**</a><a class="btn alt" href="2026-08-07-day-009.html">Day 9 — **Trading Strategy Ko Backtest Karna: Apni Strategy Ki Asliyat Check Karo** →</a></div>
     <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
     
     
@@ -399,7 +413,7 @@ function fkcToggleTheme(){
       <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
         margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
       <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
-        “Waqt zaya mat karo, kyunke jo waqt guzar jata hai woh wapas nahi aata — aaj hi shuru karo.”
+        “Har mahir kabhi beginner tha — bas usne seekhna chhoda nahi.”
       </p>
     </div>
     <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;

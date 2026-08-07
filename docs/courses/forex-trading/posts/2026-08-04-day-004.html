@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-06T04:15:38.696480";
+  var FKC_BUILD = "2026-08-07T05:06:35.862704";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -230,7 +230,21 @@ function fkcToggleTheme(){
       
       
       
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Aaj hum ek beginner-friendly trading strategy banayenge jo sirf **price action** (chart ke movements) par based hai. Isme koi indicators nahi honge—bas support/resistance, trend lines aur candlestick patterns ka use hoga. Yeh strategy **trend-following** hai, matlab hum trend ke saath trade karenge, na ke uske against.</p><h3>Example</h3><p>1.</p><h3>Trend Line Draw Karna</h3><p>Agar market **upward trend** mein hai, toh **higher lows** ko connect karke ek rising trend line banayein.<br>2.</p><h3>Entry Point</h3><p>Jab price trend line ko **touche karke wapas bounce** kare, toh **buy** enter karen.<br>3.</p><h3>Stop Loss</h3><p>Trend line ke **nichay** (agar buy kar rahe hain) ya **upar** (agar sell kar rahe hain) lagayein.<br>4.</p><h3>Take Profit</h3><p>Next **support/resistance level** par lagayein.</p><h3>Practice</h3><p>Apne **MetaTrader** par **EUR/USD** ya **GBP/USD** chart khol kar:<br>- 15-minute ya 1-hour timeframe select karen.<br>- Ek **upward/downward trend** identify karen.<br>- Trend line draw karke **entry, stop-loss aur take profit** points mark karen.</p><h3>Mini Project</h3><p>Ek **trading journal** banayein jisme:<br>- 5 trades (real ya demo) record karen.<br>- Har trade ke liye **entry/exit points, stop-loss, take profit aur reason** likhein.<br>- **Profit/Loss** calculate karen aur **win rate** nikalen.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>کنسیپٹ</h3><p>آج ہم ایک بیگنر فرینڈلی ٹریڈنگ اسٹریٹی بنائیں گے جو صرف پرائس ایکشن (چارٹ کے موومنٹس) پر مبنی ہوگی۔ اس میں کوئی انڈیکیٹرز نہیں ہوں گے—بس سپورٹ/ریزسٹنس، ٹرینڈ لائنز اور کینڈل اسٹک پیٹرنز کا استعمال ہوگا۔ یہ اسٹریٹی ٹرینڈ فالوئنگ ہے، مطلب ہم ٹرینڈ کے ساتھ ٹریڈ کریں گے، نہ کہ اس کے خلاف۔</p><h3>مثال</h3><p>۱۔ ٹرینڈ لائن ڈرا کرنا: اگر مارکیٹ اپ وارڈ ٹرینڈ میں ہے، تو ہائر لووز کو کنیکٹ کرکے ایک رائزنگ ٹرینڈ لائن بنائیں۔<br>۲۔ انٹری پوائنٹ: جب پرائس ٹرینڈ لائن کو چھو کر واپس باؤنس کرے، تو بائی انٹر کریں۔<br>۳۔ سٹاپ لاس: ٹرینڈ لائن کے نیچے (اگر بائی کر رہے ہیں) یا اوپر (اگر سیل کر رہے ہیں) لگائیں۔<br>۴۔ ٹیک پرافٹ: اگلے سپورٹ/ریزسٹنس لیول پر لگائیں۔</p><h3>پریکٹس</h3><p>اپنے میٹا ٹریڈر پر EUR/USD یا GBP/USD چارٹ کھول کر:<br>۱۵ منٹ یا ۱ گھنٹے کا ٹائم فریم سلیکٹ کریں۔<br>ایک اپ وارڈ/ڈاؤن وارڈ ٹرینڈ آئیڈینٹیفائی کریں۔<br>ٹرینڈ لائن ڈرا کرکے انٹری، سٹاپ لاس اور ٹیک پرافٹ پوائنٹس مارک کریں۔</p><h3>منی پروجیکٹ</h3><p>ایک ٹریڈنگ جرنل بنائیں جس میں:<br>۵ ٹریڈز (ریئل یا ڈیمو) ریکارڈ کریں۔<br>ہر ٹریڈ کے لیے انٹری/ایگزٹ پوائنٹس، سٹاپ لاس، ٹیک پرافٹ اور وجہ لکھیں۔<br>پروفٹ/لاس کیلکولیٹ کریں اور ون ریٹ نکالیں۔</p></div>
       <p><a class="btn alt" href="https://one.exnessonelink.com/a/buhyli14un" target="_blank" rel="noopener sponsored">💹 Exness Par Free Account Banayein</a></p>
     <div id="fkc-affiliate-popup" class="no-print" style="position:fixed;inset:0;
@@ -399,7 +413,7 @@ function fkcToggleTheme(){
       <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
         margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
       <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
-        “Waqt zaya mat karo, kyunke jo waqt guzar jata hai woh wapas nahi aata — aaj hi shuru karo.”
+        “Har mahir kabhi beginner tha — bas usne seekhna chhoda nahi.”
       </p>
     </div>
     <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;

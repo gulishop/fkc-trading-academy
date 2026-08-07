@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-06T04:15:38.696480";
+  var FKC_BUILD = "2026-08-07T05:06:35.862704";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -230,7 +230,21 @@ function fkcToggleTheme(){
       
       
       
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
       <div class="lang-content" data-lang="rm"><p>**Day 2 — Currency Pairs, Pips aur Lot Size: Trading Ki Duniya Ki &quot;Mili-Metri&quot;**</p><h3>Concept</h3><p>Forex trading mein har trade ek *currency pair* (do currencies ka combination) par hoti hai, jaise EUR/USD ya USD/JPY. *Pip* (Percentage in Point) ek currency pair ki smallest price movement hoti hai—jaise EUR/USD mein 0.0001 ka change. *Lot size* batata hai kitni units trade ho rahi hain (Standard Lot = 100,000 units, Mini Lot = 10,000, Micro Lot = 1,000). In teen cheezon ko samajhna zaroori hai taake aapka profit/loss calculate ho sake.</p><h3>Example</h3><p>Agar aap **EUR/USD** par trade kar rahe hain aur price 1.1000 se 1.1005 tak jaati hai, to aapka *pip gain* hai (1.1005 – 1.1000 = 0.0005 = **5 pips**). Agar aap **1 Mini Lot (10,000 units)** trade kar rahe hain, to har pip ka value **$1** hota hai (10,000 × 0.0001). Isliye 5 pips × $1 = **$5 profit**.</p><h3>Practice</h3><p>Apne MetaTrader par **GBP/JPY** pair select karein. Chart par dekhein ki current price kya hai, aur agar aap **1 Micro Lot (1,000 units)** buy karte hain, to har pip ka value kitna hoga? (Hint: GBP/JPY mein pip = 0.01, lekin value calculate karne ke liye currency ke hisaab se sochna hoga.)</p><h3>Mini Project</h3><p>Ek Excel sheet banayein jismein aap **3 different currency pairs** (jaise EUR/USD, USD/JPY, GBP/USD) ke liye **1 Standard Lot, 1 Mini Lot, aur 1 Micro Lot** ka har pip ka value calculate karein. (Example: EUR/USD ka 1 pip = $10 (Standard Lot), $1 (Mini Lot), $0.10 (Micro Lot)).</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><p>**دن ٢ — کرنسی پیئرز، پِپس اور لاٹ سائز: ٹریڈنگ کی دنیا کی &quot;ملی میٹری&quot;**</p><h3>کانسپٹ</h3><p>فاریکس ٹریڈنگ میں ہر ٹریڈ ایک *کرنسی پیئر* (دو کرنسیوں کا امتزاج) پر ہوتی ہے، جیسے EUR/USD یا USD/JPY۔ *پِپ* (پرسینٹیج اِن پوائنٹ) ایک کرنسی پیئر کی سب سے چھوٹی قیمت کی حرکت ہوتی ہے—جیسے EUR/USD میں ٠.٠٠٠١ کا تغیر۔ *لاٹ سائز* بتاتا ہے کہ کتنی یونٹس ٹریڈ ہو رہی ہیں (اسٹینڈرڈ لاٹ = ١٠٠,٠٠٠ یونٹس، مِنِی لاٹ = ١٠,٠٠٠، مائیکرو لاٹ = ١,٠٠٠)۔ ان تین چیزوں کو سمجھنا ضروری ہے تاکہ آپ کا منافع یا نقصان حساب کیا جا سکے۔</p><h3>مثال</h3><p>اگر آپ **EUR/USD** پر ٹریڈ کر رہے ہیں اور قیمت ١.١٠٠٠ سے ١.١٠٠٥ تک جاتی ہے، تو آپ کا *پِپ گین* ہے (١.١٠٠٥ – ١.١٠٠٠ = ٠.٠٠٠٥ = **٥ پِپس**)۔ اگر آپ **١ مِنِی لاٹ (١٠,٠٠٠ یونٹس)** ٹریڈ کر رہے ہیں، تو ہر پِپ کی ویلیو **١ ڈالر** ہوتی ہے (١٠,٠٠٠ × ٠.٠٠٠١)۔ اس لیے ٥ پِپس × ١ ڈالر = **٥ ڈالر منافع**۔</p><h3>پریکٹس</h3><p>اپنے میٹا ٹریڈر پر **GBP/JPY** پیئر سلیکٹ کریں۔ چارٹ پر دیکھیں کہ موجودہ قیمت کیا ہے، اور اگر آپ **١ مائیکرو لاٹ (١,٠٠٠ یونٹس)** خریدتے ہیں، تو ہر پِپ کی ویلیو کتنی ہوگی؟ (ہنٹ: GBP/JPY میں پِپ = ٠.٠١، لیکن ویلیو کا حساب کرنے کے لیے کرنسی کے حساب سے سوچنا ہوگا۔)</p><h3>منی پروجیکٹ</h3><p>ایک ایکسل شیٹ بنائیں جس میں آپ **٣ مختلف کرنسی پیئرز** (جیسے EUR/USD، USD/JPY، GBP/USD) کے لیے **١ اسٹینڈرڈ لاٹ، ١ مِنِی لاٹ، اور ١ مائیکرو لاٹ** کا ہر پِپ کی ویلیو حساب کریں۔ (مثال: EUR/USD کا ١ پِپ = ١٠ ڈالر (اسٹینڈرڈ لاٹ)، ١ ڈالر (مِنِی لاٹ)، ٠.١٠ ڈالر (مائیکرو لاٹ))۔</p></div>
       <p><a class="btn alt" href="https://one.exnessonelink.com/a/buhyli14un" target="_blank" rel="noopener sponsored">💹 Exness Par Free Account Banayein</a></p>
     <div id="fkc-affiliate-popup" class="no-print" style="position:fixed;inset:0;
@@ -399,7 +413,7 @@ function fkcToggleTheme(){
       <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
         margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
       <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
-        “Waqt zaya mat karo, kyunke jo waqt guzar jata hai woh wapas nahi aata — aaj hi shuru karo.”
+        “Har mahir kabhi beginner tha — bas usne seekhna chhoda nahi.”
       </p>
     </div>
     <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;
