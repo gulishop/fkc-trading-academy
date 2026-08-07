@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-06T03:50:50.417779";
+  var FKC_BUILD = "2026-08-07T03:30:51.273418";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -230,7 +230,21 @@ function fkcToggleTheme(){
       <p class="muted" style="background:#fff7e6;padding:10px 12px;border-radius:10px;margin:0 0 12px;">👨‍👩‍👧 Walidain ke liye: bachay ke sath baith kar ye lesson sunein/dekhein, aur upar wala 🎬 audio zaroor lagayein — chhotay bachay padhne se zyada sun kar behtar samajhte hain.</p>
       <img src="images/day-001.png" alt="Day 1 — Yaadasht Ka Khazana" style="width:100%;border-radius:12px;margin-bottom:14px;">
       <p class="muted" style="margin:0 0 6px;">🎬 AI Video Explanation</p><video src="videos/day-001.mp4" controls preload="metadata" poster="images/day-001.png" style="width:100%;border-radius:12px;margin-bottom:14px;background:#000;"></video>
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Bachon, yaad rakhna hamari yaadasht hi hoti hai! Jaisa ke hum apne toys ya kapde yaad rakhte hain, waise hi hum apne dil ki yaad bhi rakhte hain. Agar koi cheez aapko ajeeb lage ya aapko maza na aaye, toh usko apne dil ki yaad mein rakhne ki zaroorat nahi. Aapko koi bhi cheez karne ka haq hai—agar aapko pasand nahi, toh &quot;na&quot; keh sakte hain.</p><h3>Chhoti Kahani</h3><p>Rahim ne apne dost ke saath ek khilona khareeda. Lekin jab usne dekha ke wo khilona uske dost ke paas zyada accha hai, toh usko yaad aaya ke wo apna khilona hi pasand karta hai. Usne apne dost se poochha, &quot;Kya hum apne khilonon ko share kar sakte hain?&quot; Uske dost ne haan kaha, aur dono ne mil kar khela. Aap bhi apne dil ki awaaz sun sakte hain!</p><h3>Ammi Abbu Ke Sath Baat Karein</h3><p>&quot;Beta, agar koi cheez tumhe ajeeb lage ya tumhe maza na aaye, toh tum kya karoge?&quot;</p><h3>Yaad Rakhein</h3><p>Tumhara jism tumhara hai—kisi ko tumse zyada pasand hai ya nahi, yeh sirf tum hi decide kar sakte ho! Agar koi cheez tumhe theek na lage, toh zaroor ammi-abbu ko batana.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>بچوں، یاد رکھنا ہماری یاداشت ہی ہوتی ہے! جیسا کہ ہم اپنے ٹوئز یا کپڑے یاد رکھتے ہیں، ویسے ہی ہم اپنے دل کی یاد بھی رکھتے ہیں۔ اگر کوئی چیز آپ کو عجیب لگے یا آپ کو مزہ نہ آئے، تو اس کو اپنے دل کی یاد میں رکھنے کی ضرورت نہیں۔ آپ کو کوئی بھی چیز کرنے کا حق ہے—اگر آپ کو پسند نہیں، تو &#x27;نہیں&#x27; کہہ سکتے ہیں۔</p><h3>Chhoti Kahani</h3><p>رحیم نے اپنے دوست کے ساتھ ایک کھلونا خریدا۔ لیکن جب اس نے دیکھا کہ وہ کھلونا اس کے دوست کے پاس زیادہ اچھا ہے، تو اس کو یاد آیا کہ وہ اپنا کھلونا ہی پسند کرتا ہے۔ اس نے اپنے دوست سے پوچھا، &#x27;کیا ہم اپنے کھلونوں کو شیئر کر سکتے ہیں؟&#x27; اس کے دوست نے ہاں کہا، اور دونوں نے مل کر کھیلا۔ آپ بھی اپنے دل کی آواز سن سکتے ہیں!</p><h3>Ammi Abbu Ke Sath Baat Karein</h3><p>بٹا، اگر کوئی چیز تمہیں عجیب لگے یا تمہیں مزہ نہ آئے، تو تم کیا کرو گے؟</p><h3>Yaad Rakhein</h3><p>تمہارا جسم تمہارا ہے—کسی کو تم سے زیادہ پسند ہے یا نہیں، یہ صرف تم ہی decide کر سکتے ہو! اگر کوئی چیز تمہیں ٹھیک نہ لگے، تو ضرور امی ابو کو بتانا۔</p></div>
       
       
@@ -326,7 +340,7 @@ function fkcToggleTheme(){
       <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
         margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
       <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
-        “Waqt zaya mat karo, kyunke jo waqt guzar jata hai woh wapas nahi aata — aaj hi shuru karo.”
+        “Har mahir kabhi beginner tha — bas usne seekhna chhoda nahi.”
       </p>
     </div>
     <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;

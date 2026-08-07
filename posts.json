@@ -6852,6 +6852,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 4,
+      "id": "day-004",
+      "date": "2026-08-07",
+      "title": "Day 4 — \"Rangon ka Khazana: Saath mein khelen!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachon, aaj hum seekhenge ke har cheez ka ek khas rang hota hai! Lekin yaad rakhna, kisi cheez ka rang ya uski shakal badal sakti hai, lekin tumhare jism ka rang ya shakal kabhi badalna nahi chahiye. Agar koi tumse pooche ke \"Tumhara rang kyun badal raha hai?\" ya \"Tumhara jism kyun alag lag raha hai?\" toh yeh tumhare liye normal nahi hai. Hamesha apne ammi-abbu ko batana."
+        ],
+        [
+          "Chhoti Kahani",
+          "Rani ne ek naya rang ka balloon udaya. Uske dost ne kaha, \"Rani, tumhara balloon toh pehle lal tha, ab peela kyun ho gaya?\" Rani ne muskurate hue kaha, \"Mera balloon toh pehle lal tha, lekin ab uska rang peela ho gaya hai. Lekin mera jism toh hamesha hi Rani ka jism hai!\" Uske dost ne bhi muskurate hue kaha, \"Haan, tumhare jism ka rang kabhi badal nahi sakta!\""
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar koi tumse pooche ke tumhara rang kyun badal raha hai, toh tum kya karogi?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Tumhara jism tumhara hai, uska rang ya shakal badal sakti hai, lekin tumhare liye yeh hamesha safe aur normal hai. Agar koi cheez ajeeb lage toh zaroor batana!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۴ — \"رنگوں کا خزانہ: ساتھ میں کھیلیں!\"",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "بچو، آج ہم سیکھیں گے کہ ہر چیز کا ایک خاص رنگ ہوتا ہے! لیکن یاد رکھنا، کسی چیز کا رنگ یا اس کی شکل بدل سکتی ہے، لیکن تمہارے جسم کا رنگ یا شکل کبھی بدلنا نہیں چاہیے۔ اگر کوئی تم سے پوچھے کہ \"تمہارا رنگ کیوں بدل رہا ہے؟\" یا \"تمہارا جسم کیوں الگ لگ رہا ہے؟\" تو یہ تمہارے لیے نارمل نہیں ہے۔ ہمیشہ اپنے امی ابو کو بتانا۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "رانی نے ایک نیا رنگ کا غبارہ اڑایا۔ اس کے دوست نے کہا، \"رانی، تمہارا غبارہ تو پہلے لال تھا، اب پیلا کیوں ہو گیا؟\" رانی نے مسکراتے ہوئے کہا، \"میرا غبارہ تو پہلے لال تھا، لیکن اب اس کا رنگ پیلا ہو گیا ہے۔ لیکن میرا جسم تو ہمیشہ ہی رانی کا جسم ہے!\" اس کے دوست نے بھی مسکراتے ہوئے کہا، \"ہاں، تمہارے جسم کا رنگ کبھی بدل نہیں سکتا!\""
+            },
+            {
+              "label": "امی ابو کے ساتھ بات کریں",
+              "content": "\"بیٹا، اگر کوئی تم سے پوچھے کہ تمہارا رنگ کیوں بدل رہا ہے، تو تم کیا کرو گی؟\""
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمہارا جسم تمہارا ہے، اس کا رنگ یا شکل بدل سکتی ہے، لیکن تمہارے لیے یہ ہمیشہ سیف اور نارمل ہے۔ اگر کوئی چیز عجیب لگے تو ضرور بتانا!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-good-behavior": [
