@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-05T20:40:09.491666";
+  var FKC_BUILD = "2026-08-07T19:57:58.031639";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -230,7 +230,21 @@ function fkcToggleTheme(){
       
       
       
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Viral Reels ya Shorts banane ke liye 3 cheez zaroori hain: **Attention Grab Karna** (pehle 3 seconds), **Engagement Trigger Karna** (like/comment/share ke liye reason dena), aur **Trend ka Sahi Use Karna**. Bina plan ke upload karne se chance kam hote hain. Aaj hum in 5 rules par focus karenge jo har viral content ki backbone hoti hain.</p><h3>Example</h3><p>Ek **food recipe Reel** ka example lete hain:<br>1.</p><h3>Hook (0-3 sec)</h3><p>&quot;Yeh 1 minute ka recipe aapki dinner ko banaye *chef’s kiss*!&quot; (bold text + fast zoom on dish)<br>2.</p><h3>Trend Use</h3><p>&quot;POV: Aapke fridge mein sirf *2 eggs* hain&quot; (trending audio + text overlay)<br>3.</p><h3>Engagement Prompt</h3><p>&quot;Comment mein batao aapka favorite breakfast kya hai? ⬇️&quot; (screen pe text + arrow)<br>4.</p><h3>CTA (Call-to-Action)</h3><p>&quot;Agar pasand aaya to share zaroor karna!&quot; (caption mein link add karke)<br>5.</p><h3>Hashtags</h3><p>3-5 relevant (#Foodie, #QuickRecipe, #ViralFood) + 1 trending (#FoodTok).</p><h3>Practice</h3><p>Apne phone se ek **15-30 sec ka Reel shoot karo** jisme:<br>- Pehle 3 seconds mein koi shocking/interesting shot ho (e.g., ek cheez ka explosion, fast transition, ya bold text).<br>- Trendy audio use karo (Instagram/Reels explore page se check karo).<br>- Caption mein ek question ya CTA add karo.</p><h3>Mini Project</h3><p>Ek **7-day content calendar** banaye jisme har din ke liye alag type ka Reel idea ho (e.g., Monday: &quot;POV&quot; trend, Tuesday: &quot;Before &amp; After&quot;, Wednesday: &quot;Myth Buster&quot;). Har idea ke saath ek trendy audio ka naam bhi likhna.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>وائرل ریلز یا شورٹس بنانے کے لیے 3 چیزیں ضروری ہیں: **اٹینشن گرب کرنا** (پہلے 3 سیکنڈز)، **اینگیجمنٹ ٹرگر کرنا** (لائک/کمنٹ/شئیر کے لیے ریزن دینا)، اور **ٹرینڈ کا صحیح استعمال کرنا**۔ بنا پلان کے اپلوڈ کرنے سے چانس کم ہوتے ہیں۔ آج ہم ان 5 رولز پر فوکس کریں گے جو ہر وائرل کنیٹ کی بیکبون ہوتی ہیں۔</p><h3>Example</h3><p>ایک **فوڈ ریسپی recipe Reel** کا مثال لیتے ہیں:</p><p>1. **ہک (0-3 سیکنڈ)**:<br>&quot;یہ 1 منٹ کا ریسپی آپکی ڈنر کو بنائے *شیف کِس*!&quot; (بولڈ ٹیکسٹ + فاسٹ زوم آن ڈش)</p><p>2. **ٹرینڈ یووز**:<br>&quot;POV: آپکے فرج میں صرف *2 eggs* ہیں&quot; (ٹرینڈنگ آڈیو + ٹیکسٹ اوورلے)</p><p>3. **اینگیجمنٹ پرامپٹ**:<br>&quot;کمنٹ میں بتاؤ آپکا فیورٹ بریک فاسٹ کیا ہے؟ ⬇️&quot; (اسکرین پر ٹیکسٹ + ارو)</p><p>4. **سی ٹی اے (Call-to-Action)**:<br>&quot;اگر پسند آیا تو شئیر زورور کرنا!&quot; (کیپشن میں لنک ایڈ کرکے)</p><p>5. **ہیشٹگس**:<br>3-5 ریلیونٹ (#Foodie, #QuickRecipe, #ViralFood) + 1 ٹرینڈنگ (#FoodTok).</p><h3>Practice</h3><p>اپنے فون سے ایک **15-30 سیکنڈ کا Reel shoot کرو** جس میں:</p><p>- پہلے 3 سیکنڈز میں کوئی شاکنگ/انٹرسٹنگ شاٹ ہو (e.g., ایک چیز کا ایکسپلوشن، فاسٹ ٹرانزیشن، یا بولڈ ٹیکسٹ).<br>- ٹرینڈی آڈیو یووز کرو (انسٹاگرام/ریلز ایکسپلور پيج سے چیک کرو).<br>- کیپشن میں ایک سوال یا سی ٹی اے ایڈ کرو.</p><p>**Mini Project:**<br>ایک **7-day content calendar** بنائے جس میں ہر دن کے لیے الگ ٹائپ کا Reel آئیڈیا ہو (e.g., Monday: &quot;POV&quot; ٹرینڈ، Tuesday: &quot;Before &amp; After&quot;، Wednesday: &quot;Myth Buster&quot;)۔ ہر آئیڈیا کے ساتھ ایک ٹرینڈنگ آڈیو کا نام بھی لکھنا۔</p></div>
       
       
@@ -342,7 +356,30 @@ function fkcToggleTheme(){
         data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
       <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
-    <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
+    
+    <div class="daily-motivation" style="max-width:640px;margin:20px auto;padding:16px 20px;
+      background:linear-gradient(135deg,#fff7e6,#fef0f0);border-radius:14px;border:1px solid #f5e2c8;
+      text-align:center;">
+      <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
+        margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
+      <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
+        “Har mahir kabhi beginner tha — bas usne seekhna chhoda nahi.”
+      </p>
+    </div>
+    <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;
+      background:linear-gradient(145deg,#f7f9fc,#eef2f9);border-radius:16px;border:1px solid #e6e9f0;
+      text-align:center;">
+      <p style="font-size:13px;letter-spacing:.03em;text-transform:uppercase;color:var(--muted);
+        margin:0 0 10px;font-weight:700;">✉️ Founder ki taraf se</p>
+      <p style="font-size:15px;line-height:1.7;color:#2a2f3a;margin:0 0 14px;">
+        Hamara maqsad sirf lessons post karna nahi — har us Pakistani tak muft, practical
+        taleem pohchana hai jo seekhna chahta hai lekin resources ya waqt nahi rakhta.
+        FKC Trading Academy ka vision hai: <b>roz thora seekho, mustaqil mehnat karo,
+        aur apni zindagi khud badlo.</b> Mission simple hai — koi bhi course, koi bhi fee
+        nahi, sirf aap ka irada.
+      </p>
+      <p style="font-size:13px;color:var(--muted);margin:0;">— Fazul Khan Chandio, Founder &amp; CEO</p>
+    </div><div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     <script>
     (function(){
       try {

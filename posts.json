@@ -831,6 +831,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 5,
+      "id": "day-005",
+      "date": "2026-08-07",
+      "title": "Day 5 — **Email Marketing: Apne Audience ko Loyal Banane ka Power Tool**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Email marketing ek powerful tool hai jo direct audience tak pahunchta hai—bina algorithm ke interference ke. Isse aap apne followers ko valuable content, offers, aur updates bhej sakte hain, jisse unki trust aur engagement badhe. Har $1 spent par $42 ka ROI milta hai (DMA 2023), isliye yeh beginner se advanced tak sabke liye zaroori hai."
+        ],
+        [
+          "Example",
+          "Ek fashion brand ka example lete hain:\n1."
+        ],
+        [
+          "Signup Incentive",
+          "Website par \"10% Discount\" ke liye email ID enter karne par offer milta hai.\n2."
+        ],
+        [
+          "Welcome Series",
+          "Pehle email mein discount code, doosre mein styling tips, teesre mein exclusive sale ka link.\n3."
+        ],
+        [
+          "Engagement",
+          "Weekly newsletters mein latest trends, user-generated content (UGC), aur limited-time offers share karein."
+        ],
+        [
+          "Practice",
+          "Apne ya kisi fake brand ke liye ek **simple email draft** likhein:\n- Subject line: \"Aapka 20% Discount 🎁 (Sirf 24 ghante)\"\n- Body: 3-4 lines ka promotional message + CTA (\"Shop Now\" button)\n- Signature: Brand name + social media links"
+        ],
+        [
+          "Mini Project",
+          "Ek **email sequence** banayein (3 emails):\n1. **Welcome Email** (brand introduction + first offer)\n2. **Value Email** (blog post/guide link)\n3. **Promotional Email** (sale announcement)"
+        ]
+      ],
+      "answer_key": "discount code, welcome series, engagement, cta",
+      "translations": {
+        "ur": {
+          "title": "دن 5 — ای میل مارکیٹنگ: اپنے آڈیئنس کو وفادار بنانے کا طاقتور ٹول",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ای میل مارکیٹنگ ایک طاقتور ٹول ہے جو براہ راست آپ کے سامعین تک پہنچتا ہے— بغیر کسی الگورتھم کی مداخلت کے۔ اس کے ذریعے آپ اپنے فالورز کو قیمتی مواد، آفرز اور اپ ڈیٹس بھیج سکتے ہیں، جس سے ان کا اعتماد اور انگیجمنٹ بڑھتا ہے۔ ہر ایک ڈالر خرچ کرنے پر 42 ڈالر کا ریٹرن آن انویسٹمنٹ ملتا ہے (ڈی ایم اے 2023)، اس لیے یہ بیگنرز سے لے کر ایڈوانسڈ تک سب کے لیے ضروری ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک فیشن برانڈ کی مثال لیتے ہیں:\n1.\n- سائن اپ انسنٹیو: ویب سائٹ پر \"10% ڈسکاؤنٹ\" کے لیے ای میل آئی ڈی داخل کرنے پر آفر ملتی ہے۔\n2.\n- ویلکم سیریز: پہلے ای میل میں ڈسکاؤنٹ کوڈ، دوسرے میں اسٹائلنگ ٹپس، تیسرے میں ایکسکلوزو سیل کا لنک۔\n3.\n- انگیجمنٹ: ہفتہ وار نیوز لیٹرز میں تازہ ترین ٹرینڈز، صارفین کی تخلیق کردہ مواد (یو جی سی)، اور محدود وقت کی آفرز شیئر کریں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے یا کسی فرضی برانڈ کے لیے ایک سادہ ای میل ڈرافٹ لکھیں:\n- سبجیکٹ لائن: \"آپ کا 20% ڈسکاؤنٹ 🎁 (صرف 24 گھنٹے)\"\n- باڈی: 3-4 لائنز کا پروموشنل میسج + کال ٹو ایکشن (\"ابھی شاپ کریں\" بٹن)\n- دستخط: برانڈ کا نام + سوشل میڈیا لنکس"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک ای میل سیquence بنائیں (3 ای میلز):\n1. ویلکم ای میل (برانڈ کی تعارف + پہلی آفر)\n2. ویلیو ای میل (بلاگ پوسٹ/گائیڈ کا لنک)\n3. پروموشنل ای میل (سیل کا اعلان)"
+            }
+          ]
+        }
+      }
     }
   ],
   "facebook-page-growth": [

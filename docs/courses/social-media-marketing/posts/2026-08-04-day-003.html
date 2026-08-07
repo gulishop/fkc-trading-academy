@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-05T20:40:09.491666";
+  var FKC_BUILD = "2026-08-07T19:57:58.031639";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -230,7 +230,21 @@ function fkcToggleTheme(){
       
       
       
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Instagram par organic growth ka formula hai &quot;Engagement + Consistency + Niche Authority&quot;. Aaj hum 3 tactics seekhenge jo 30K+ followers tak le ja sakte hain: 1) **First 60 Minutes Rule** (algorithm ko signal do ke video viral ho rahi hai), 2) **Comment Pods** (engagement boost karne ka chhupa hua tareeqa), 3) **Collab Posts** (niche ke influencers ke saath cross-promotion).</p><h3>Example</h3><p>Step-by-step **First 60 Minutes Rule**:<br>1. Reel upload karne ke **pehle 10 minute** mein 5 close friends ko DM karke video dekhne ko kahen.<br>2. Upload ke **pehle 30 minute** mein 3-4 comments likhein (apne niche ke keywords ke saath).<br>3. Pehle **60 minute** mein 100+ views hone ke baad, algorithm &quot;trending&quot; maanta hai aur reach badha deta hai.</p><h3>Practice</h3><p>Apne niche ke **3 influencers** ko DM karke poochhein ke woh aapke Reel par comment karenge ya nahin. (Template: *&quot;Hi [Name], main [Your Name] hun. Aapke content se inspire ho kar maine ek Reel banaya hai. Agar aapko pasand aaye to pehle 60 minute mein ek comment kar dena — isse hum sabki reach badhegi! 🙏&quot;*)</p><h3>Mini Project</h3><p>Ek **collab Reel** plan karen:<br>- Niche: Fitness<br>- Collab partner: @GymMotivationIndia (100K+ followers)<br>- Idea: &quot;5 Minute Warm-up Routine&quot; (aap 3 exercises show karen, woh 2 exercises)<br>- Hashtags: #FitnessIndia #WorkoutAtHome #GymMotivation</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>کنسیپٹ</h3><p>انسٹاگرام پر آرگینک گروتھ کا فارمولا ہے &quot;اینگیجمنٹ + کنسسٹنسی + نیچ اتھارٹی&quot;۔ آج ہم تین ٹیکٹکس سیکھیں گے جو تیس ہزار سے زائد فالوورز تک لے جا سکتی ہیں: ١) **پہلے ساٹھ منٹ کا اصول** (الگورتھم کو سگنل دو کہ ویڈیو وائرل ہو رہی ہے)، ٢) **کمنٹ پوڈز** (اینگیجمنٹ بڑھانے کا چھپا ہوا طریقہ)، ٣) **کولیب پوسٹس** (نیچ کے انفلوئنسرز کے ساتھ کراس پروموشن)</p><h3>مثال</h3><p>**پہلے ساٹھ منٹ کے اصول** کو قدم بہ قدم سمجھیں:<br>١۔ رییل اپ لوڈ کرنے کے **پہلے دس منٹ** میں پانچ قریبی دوستوں کو ڈائریکٹ میسج کر کے ویڈیو دیکھنے کو کہیں۔<br>٢۔ اپ لوڈ کے **پہلے تیس منٹ** میں تین سے چار کمنٹس لکھیں (اپنے نیچ کے کی ورڈز کے ساتھ)۔<br>٣۔ پہلے **ساٹھ منٹ** میں سو سے زائد ویوز ہونے کے بعد الگورتھم اسے &quot;ٹرینڈنگ&quot; مان کر ریچ بڑھا دیتا ہے۔</p><h3>پریکٹس</h3><p>اپنے نیچ کے **تین انفلوئنسرز** کو ڈائریکٹ میسج کر کے پوچھیں کہ کیا وہ آپ کی رییل پر کمنٹ کریں گے یا نہیں۔ (ٹیمپلیٹ: *&quot;ہائے [نام]، میں [آپ کا نام] ہوں۔ آپ کے مواد سے متاثر ہو کر میں نے ایک رییل بنائی ہے۔ اگر آپ کو پسند آئے تو پہلے ساٹھ منٹ میں ایک کمنٹ کر دینا — اس سے ہم سب کی ریچ بڑھے گی! 🙏&quot;*)</p><h3>منی پروجیکٹ</h3><p>ایک **کولیب رییل** پلان کریں:<br>- نیچ: فٹنس<br>- کولیب پارٹنر: @GymMotivationIndia (ایک لاکھ سے زائد فالوورز)<br>- آئیڈیا: &quot;پانچ منٹ وارم اپ روٹین&quot; (آپ تین ورزشیں دکھائیں، وہ دو ورزشیں)<br>- ہیش ٹیگز: #FitnessIndia #WorkoutAtHome #GymMotivation</p></div>
       
       
@@ -342,7 +356,30 @@ function fkcToggleTheme(){
         data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
       <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
-    <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
+    
+    <div class="daily-motivation" style="max-width:640px;margin:20px auto;padding:16px 20px;
+      background:linear-gradient(135deg,#fff7e6,#fef0f0);border-radius:14px;border:1px solid #f5e2c8;
+      text-align:center;">
+      <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
+        margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
+      <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
+        “Har mahir kabhi beginner tha — bas usne seekhna chhoda nahi.”
+      </p>
+    </div>
+    <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;
+      background:linear-gradient(145deg,#f7f9fc,#eef2f9);border-radius:16px;border:1px solid #e6e9f0;
+      text-align:center;">
+      <p style="font-size:13px;letter-spacing:.03em;text-transform:uppercase;color:var(--muted);
+        margin:0 0 10px;font-weight:700;">✉️ Founder ki taraf se</p>
+      <p style="font-size:15px;line-height:1.7;color:#2a2f3a;margin:0 0 14px;">
+        Hamara maqsad sirf lessons post karna nahi — har us Pakistani tak muft, practical
+        taleem pohchana hai jo seekhna chahta hai lekin resources ya waqt nahi rakhta.
+        FKC Trading Academy ka vision hai: <b>roz thora seekho, mustaqil mehnat karo,
+        aur apni zindagi khud badlo.</b> Mission simple hai — koi bhi course, koi bhi fee
+        nahi, sirf aap ka irada.
+      </p>
+      <p style="font-size:13px;color:var(--muted);margin:0;">— Fazul Khan Chandio, Founder &amp; CEO</p>
+    </div><div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     <script>
     (function(){
       try {
