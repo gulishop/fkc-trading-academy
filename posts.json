@@ -523,6 +523,76 @@
           ]
         }
       }
+    },
+    {
+      "day": 6,
+      "id": "day-006",
+      "date": "2026-08-07",
+      "title": "Day 6 — **YouTube Thumbnails: Click-Through Rate (CTR) Badhane Ke 5 Pro Secrets**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Thumbnail aur title mil kar 90% CTR decide karte hain. Aaj seekhoge ki kaise \"click magnet\" thumbnails banaye jo YouTube algorithm ko impress kare. AI tools (Canva, Photoshop, MidJourney) se professional designs banane ke tarike bhi cover kareinge."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Contrast",
+          "Peela background + Black bold text (e.g., \"5 LAKH RUPEES KAMAAO!\")\n2."
+        ],
+        [
+          "Face/Emotion",
+          "Close-up photo + surprised expression (AI se generate kar sakte hain)\n3."
+        ],
+        [
+          "Minimal Text",
+          "3-5 words max, bold font (e.g., \"AI SE PAISA\")\n4."
+        ],
+        [
+          "Border/Shadow",
+          "White border + drop shadow for visibility\n5."
+        ],
+        [
+          "Test",
+          "2-3 variants banakar YouTube Studio mein A/B test karein"
+        ],
+        [
+          "Practice",
+          "Apne channel ke 1 trending video ka thumbnail lein. Usmein **1 hi change** karein (e.g., text color ya background) aur upload karein. Next 24 hours mein CTR check karein."
+        ],
+        [
+          "Mini Project",
+          "AI se 3 thumbnail variants generate karein (MidJourney prompt: *\"YouTube thumbnail, minimal text, high contrast, trending topic, professional design, 16:9 aspect ratio\"*). Sabse best 1 select karke upload karein."
+        ]
+      ],
+      "answer_key": "yellow+black, 3-5 words, a/b test, ctr 2-5%",
+      "translations": {
+        "ur": {
+          "title": "دن 6 — **یوٹیوب تھمب نیلز: کلک تھرو ریٹ (سی ٹی آر) بڑھانے کے 5 پرو راز**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "تھمب نیل اور ٹائٹل مل کر 90 فیصد سی ٹی آر کا فیصلہ کرتے ہیں۔ آج سیکھو گے کہ کیسے \"کلک میگنیٹ\" تھمب نیلز بنائی جائیں جو یوٹیوب الگورتھم کو امپریس کریں۔ اے آئی ٹولز (کینوا، فوٹوشاپ، مِڈ جرنی) سے پیشہ ورانہ ڈیزائن بنانے کے طریقے بھی کور کریں گے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1. کانٹراسٹ: پیلا بیک گراؤنڈ + سیاہ موٹا ٹیکسٹ (مثال کے طور پر، \"5 لاکھ روپے کماؤ!\")\n2. چہرہ/جذبات: کلوز اپ فوٹو + حیران کن اظہار (اے آئی سے جنریٹ کر سکتے ہیں)\n3. کم سے کم ٹیکسٹ: زیادہ سے زیادہ 3-5 الفاظ، موٹے فونٹ میں (مثال کے طور پر، \"اے آئی سے پیسہ\")\n4. بارڈر/شیڈو: سفید بارڈر + ڈراپ شیڈو برائے وضاحت\n5. ٹیسٹ: 2-3 ویریئنٹس بنا کر یوٹیوب اسٹوڈیو میں اے/بی ٹیسٹ کریں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے چینل کے ایک ٹرینڈنگ ویڈیو کا تھمب نیل لیں۔ اس میں صرف ایک ہی تبدیلی کریں (مثلاً ٹیکسٹ کا رنگ یا بیک گراؤنڈ) اور اپ لوڈ کریں۔ اگلے 24 گھنٹوں میں سی ٹی آر چیک کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "اے آئی سے 3 تھمب نیل ویریئنٹس جنریٹ کریں (مِڈ جرنی پرامپٹ: *\"YouTube thumbnail, minimal text, high contrast, trending topic, professional design, 16:9 aspect ratio\"*)۔ سب سے بہترین ایک کو سلیکٹ کر کے اپ لوڈ کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "social-media-marketing": [
