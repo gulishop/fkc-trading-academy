@@ -5899,6 +5899,76 @@
           ]
         }
       }
+    },
+    {
+      "day": 3,
+      "id": "day-003",
+      "date": "2026-08-07",
+      "title": "Day 3 — **Shares, Stocks aur Dividends: Apna Investment Kaise Badhaye?**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Shares (ya stocks) kisi company ka hissa hote hain – jab tum ek share khareedte ho, toh tum us company ke malik ban jaate ho. Dividends company ke profit ka woh hissa hota hai jo shareholders ko share ki quantity ke hisab se diya jata hai. Yeh regular income ka zariya bhi ho sakta hai aur long-term wealth banane ka."
+        ],
+        [
+          "Example",
+          "Imagine XYZ Ltd. ke 100 shares hain aur tum 10 shares khareedte ho. Agar company ko profit hota hai aur har share par Rs. 5 dividend declare karta hai, toh tumhe Rs. 50 milenge (10 shares × Rs. 5). Agar company badhti hai, toh share price bhi badhega – tumhara investment badhega."
+        ],
+        [
+          "Practice",
+          "Apne broker ke app ya website par jao aur kisi 1-2 companies ke **dividend history** check karo (e.g., PSO, NBP, or ENGRO). Note karo ki:\n- Last 2-3 years mein kitna dividend mila?\n- Share price mein kitna change aaya?"
+        ],
+        [
+          "Mini Project",
+          "Ek **fictional portfolio** banaye:\n1. 3 companies select karo (e.g., Habib Bank, Lucky Cement, Fauji Fertilizer).\n2. Har company ke 10 shares khareedne ka \"khayal\" karo (real mein nahi).\n3. 1 month ke dividend aur price change ka estimate lagao."
+        ]
+      ],
+      "answer_key": "dividend history check, share price growth, fictional portfolio",
+      "translations": {
+        "ur": {
+          "title": "دن ٣ — شیئرز، اسٹاکس اور ڈویڈنڈز: اپنا انویسٹمنٹ کیسے بڑھائیں؟",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "شیئرز (یا اسٹاکس) کسی کمپنی کا حصہ ہوتے ہیں — جب تم ایک شیئر خریدتے ہو، تو تم اس کمپنی کے مالک بن جاتے ہو۔ ڈویڈنڈز کمپنی کے منافع کا وہ حصہ ہوتا ہے جو شیئر ہولڈرز کو شیئرز کی مقدار کے حساب سے دیا جاتا ہے۔ یہ ریگولر انکم کا ذریعہ بھی بن سکتا ہے اور طویل مدتی دولت بنانے کا۔"
+            },
+            {
+              "label": "مثال",
+              "content": "تصور کرو کہ ایکس وائی زی لمیٹڈ کے کل ١٠٠ شیئرز ہیں اور تم ١٠ شیئرز خریدتے ہو۔ اگر کمپنی کو منافع ہوتا ہے اور ہر شیئر پر ٥ روپے ڈویڈنڈ کا اعلان کرتی ہے، تو تمہیں ٥٠ روپے ملیں گے (١٠ شیئرز × ٥ روپے)۔ اگر کمپنی ترقی کرتی ہے، تو شیئر کی قیمت بھی بڑھے گی — تمہارا انویسٹمنٹ بڑھے گا۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے بروکر کے ایپ یا ویب سائٹ پر جاؤ اور کسی ایک یا دو کمپنیوں کے ڈویڈنڈ ہسٹری چیک کرو (مثلاً، پی ایس او، این بی پی، یا اینگرو)۔ نوٹ کرو کہ:"
+            },
+            {
+              "label": "",
+              "content": "— پچھلے دو سے تین سالوں میں کتنا ڈویڈنڈ ملا؟"
+            },
+            {
+              "label": "",
+              "content": "— شیئر کی قیمت میں کتنا تبدیلی آئی؟"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک فرضی پورٹ فولیو بناؤ:"
+            },
+            {
+              "label": "",
+              "content": "١۔ تین کمپنیاں منتخب کرو (مثلاً، حبیب بینک، لکی سیمنٹ، فوجی فرٹیلائزر)۔"
+            },
+            {
+              "label": "",
+              "content": "٢۔ ہر کمپنی کے دس شیئرز خریدنے کا خیال کرو (حقیقت میں نہیں)۔"
+            },
+            {
+              "label": "",
+              "content": "٣۔ ایک ماہ کے ڈویڈنڈ اور قیمت میں تبدیلی کا اندازہ لگاؤ۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "tiktok-growth": [

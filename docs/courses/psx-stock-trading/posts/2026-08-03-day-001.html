@@ -9,6 +9,16 @@
 <meta property="og:description" content="FKC Trading Academy · Stock Market Trading (PSX) · Day 01">
 <meta property="og:image" content="../../../logo.png">
 <meta name="twitter:card" content="summary_large_image">
+<script>
+// Dark mode — theme paint se pehle set karte hain taake flash na ho.
+(function(){
+  try{
+    var t = localStorage.getItem("fkc_theme") ||
+      (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", t);
+  }catch(e){}
+})();
+</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z5FV45KG2C"></script>
 <script>
@@ -22,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T21:18:59.874247";
+  var FKC_BUILD = "2026-08-07T23:12:22.261547";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -46,6 +56,15 @@
 :root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
 --ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
 --accent:#2BAF66;--purple:#6D28D9;}
+html[data-theme="dark"]{--paper:#14161A;--panel:#1D2025;--line:#2C3038;
+--ink:#EDEFF2;--muted:#9AA1AB;--primary:#5B9DFF;--primary-dark:#3D7DE0;
+--accent:#3FCB7E;--purple:#A78BFA;}
+html[data-theme="dark"] img{opacity:.92;}
+.theme-toggle{position:fixed;bottom:16px;right:16px;z-index:999;
+width:44px;height:44px;border-radius:50%;border:1px solid var(--line);
+background:var(--panel);color:var(--ink);font-size:19px;cursor:pointer;
+box-shadow:0 2px 8px rgba(0,0,0,.15);display:flex;align-items:center;
+justify-content:center;}
 *{box-sizing:border-box;}
 @media (prefers-reduced-motion: no-preference){
   .fade-in{animation:fadeUp .45s ease both;}
@@ -53,7 +72,8 @@
   @keyframes fadeUp{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
 }
 body{margin:0;background:var(--paper);color:var(--ink);
-font-family:'Inter','IBM Plex Sans',sans-serif;line-height:1.55;}
+font-family:'Inter','IBM Plex Sans',sans-serif;line-height:1.55;
+transition:background .2s ease,color .2s ease;}
 .wrap{max-width:720px;margin:0 auto;padding:24px 16px 70px;}
 a{color:var(--primary);}
 .top{display:flex;align-items:baseline;gap:10px;color:var(--ink);
@@ -155,30 +175,76 @@ vertical-align:middle;}
 .lesson-nav{display:flex;justify-content:space-between;gap:8px;
 flex-wrap:wrap;margin-top:14px;}
 .lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.section-title{font-family:'Inter',sans-serif;font-weight:800;
+font-size:1.2em;margin:30px 0 2px;padding-top:18px;
+border-top:1px solid var(--line);display:flex;align-items:center;gap:8px;}
+.section-title.adults{color:var(--primary);}
+.section-title.kids{color:#DB4C77;}
 .quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
 .quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
 border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
 box-sizing:border-box;margin:6px 0;}
 .quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+.puzzle-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.puzzle-box h3{margin-top:0;}
+.puzzle-status{font-size:.85em;color:var(--muted);margin:0 0 10px;}
+.puzzle-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;
+max-width:340px;margin:0 auto;}
+.puzzle-card{aspect-ratio:1/1;border-radius:10px;border:none;
+background:var(--primary);color:#fff;font-size:1.6em;cursor:pointer;
+display:flex;align-items:center;justify-content:center;
+transition:transform .25s ease,background .25s ease;padding:0;}
+.puzzle-card.flipped,.puzzle-card.matched{background:#fff;
+border:1px solid var(--line);color:var(--ink);}
+.puzzle-card.matched{background:#EAFBF0;border-color:var(--accent);
+opacity:.85;cursor:default;}
+.puzzle-card:disabled{cursor:default;}
+.puzzle-win{display:none;text-align:center;margin-top:12px;
+background:#EAFBF0;border-radius:10px;padding:12px;font-weight:700;color:#15803d;}
 @media print{
   .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
-  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  .quiz-box,.puzzle-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
   body{background:#fff;}
   .card{box-shadow:none;border:none;}
 }
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
+<button type="button" class="theme-toggle" id="fkcThemeToggle" title="Dark/Light mode" onclick="fkcToggleTheme()">🌓</button>
+<script>
+function fkcToggleTheme(){
+  var cur = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", cur);
+  try{ localStorage.setItem("fkc_theme", cur); }catch(e){}
+}
+</script>
 
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "headline": "Day 1 — PSX Ki Pehchaan: Pakistan Stock Exchange Kya Hai?", "name": "Day 1 — PSX Ki Pehchaan: Pakistan Stock Exchange Kya Hai?", "description": "", "learningResourceType": "Lesson", "educationalLevel": "Beginner", "inLanguage": "ur", "isPartOf": {"@type": "Course", "name": "Stock Market Trading (PSX)"}, "datePublished": "2026-08-03", "publisher": {"@type": "Organization", "name": "FKC Trading Academy"}}</script>
     <div class="top"><a href="../../../index.html">← FKC Trading Academy</a>
     <a href="../index.html" class="course-back-link">/ Stock Market Trading (PSX)</a></div>
     
     <p class="muted">📈 Stock Market Trading (PSX) · Day 01</p>
     <h1>Day 1 — PSX Ki Pehchaan: Pakistan Stock Exchange Kya Hai?</h1>
+    
     <div class="card">
       
       
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>PSX (Pakistan Stock Exchange) ek aisa market hai jahan companies apne shares bechti hain aur investors un shares ko khareed kar company ke hissaidar ban sakte hain. Yahan par shares ki khareedi-bikri hoti hai, jise trading kehte hain. PSX ek regulated platform hai jahan har din lakhon log trading karte hain aur company ke performance ke hisab se shares ke prices badalte rehte hain.</p><h3>Example</h3><p>Imagine a company &quot;XYZ Ltd&quot; jo apne business ko grow karne ke liye investors se paise lena chahti hai. Wo PSX par apne 1 million shares 100 rupees ke price par offer karti hai. Agar aap 100 shares khareedte hain, to aap XYZ Ltd ke 0.01% ke malik ban jate hain. Agar company aage badti hai, to share ka price 150 rupees ho sakta hai, aur aapko profit hoga.</p><h3>Practice</h3><p>Apne mobile ya computer par &quot;PSX&quot; search karein aur PSX ki official website ya app open karein. Dekhein ki &quot;Market Summary&quot; ya &quot;Indices&quot; section mein PSX-100, KSE-30 jaise terms hain. Inhe samajhein ki yeh kya represent karte hain.</p><h3>Mini Project</h3><p>Ek chhota sa research karein: PSX par listed 3 companies ke names aur unke shares ke current prices (Google par &quot;PSX [company name] share price&quot; search kar ke) note karein. In companies ke business ke bare mein 1 line mein likhein (e.g., &quot;Engro Corp: Fertilizer aur food products banane wali company&quot;).</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>پی ایس ایکس (پاکستان اسٹاک ایکسچینج) ایک ایسا مارکیٹ ہے جہاں کمپنیاں اپنے شیئرز بیچتی ہیں اور انویسٹرز ان شیئرز کو خریدتے ہوئے کمپنی کے حصے دار بن سکتے ہیں۔ یہاں پر شیئرز کی خرید و فروخت ہوتی ہے، جسے ٹریڈنگ کہتے ہیں۔ پی ایس ایکس ایک ریگولیٹڈ پلیٹ فارم ہے جہاں ہر دن لاکھوں لوگ ٹریڈنگ کرتے ہیں اور کمپنی کی کارکردگی کے حساب سے شیئرز کے پرائسز بدلتے رہتے ہیں۔</p><h3>Example</h3><p>تصور کریں ایک کمپنی &quot;XYZ Ltd&quot; جو اپنے بزنس کو گرومنے کے لیے انویسٹرز سے پیسے لینا چاہتی ہے۔ وہ پی ایس ایکس پر اپنے 1 ملین شیئرز 100 روپے کے پرائس پر آفر کرتی ہے۔ اگر آپ 100 شیئرز خریدتے ہیں، تو آپ XYZ Ltd کے 0.01% کے مالک بن جاتے ہیں۔ اگر کمپنی آگے بڑھتی ہے، تو شیئر کا پرائس 150 روپے ہو سکتا ہے، اور آپ کو پروفٹ ہوگا۔</p><h3>Practice</h3><p>اپنے موبائل یا کمپیوٹر پر &quot;PSX&quot; سرچ کریں اور پی ایس ایکس کی آفیشل ویب سائٹ یا ایپ اوپن کریں۔ دیکھیں کہ &quot;Market Summary&quot; یا &quot;Indices&quot; سیکشن میں پی ایس ایکس-100، کے ایس ای-30 جیسے ٹرمز ہیں۔ انہیں سمجھیں کہ یہ کیا represent کرتے ہیں۔</p><h3>Mini Project</h3><p>ایک چھوٹا سا ریسرچ کریں: پی ایس ایکس پر لسٹڈ 3 کمپنیوں کے نام اور ان کے شیئرز کے کرینٹ پرائسز (گوگل پر &quot;PSX [company name] share price&quot; سرچ کر کے) نوٹ کریں۔ ان کمپنیوں کے بزنس کے بارے میں 1 لائن میں لکھیں (e.g., &quot;Engro Corp: Fertilizer اور food products بنانے والی کمپنی&quot;)۔</p></div>
       
       
@@ -205,9 +271,73 @@ box-sizing:border-box;margin:6px 0;}
         }
       }
       </script>
+      
+      <div class="puzzle-box no-print" id="pz-psx-stock-trading-1">
+        <h3>🧩 Dimaghi Kasrat — Jode Milayein</h3>
+        <p class="puzzle-status" id="pz-psx-stock-trading-1-status">Cards par tap karke jode (pairs) milayein.</p>
+        <div class="puzzle-grid" id="pz-psx-stock-trading-1-grid"></div>
+        <div class="puzzle-win" id="pz-psx-stock-trading-1-win">🎉 Shabaash! Sab jode mil gaye — thodi der aur seekhne ke liye tayyar?</div>
+      </div>
+      <script>
+      (function(){
+        var emojis = ["🍎", "🐶", "🌙", "🎨", "🔑", "🌸"];
+        var deck = emojis.concat(emojis);
+        for (var i = deck.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var t = deck[i]; deck[i] = deck[j]; deck[j] = t;
+        }
+        var grid = document.getElementById("pz-psx-stock-trading-1-grid");
+        var statusEl = document.getElementById("pz-psx-stock-trading-1-status");
+        var winEl = document.getElementById("pz-psx-stock-trading-1-win");
+        var flipped = [], matchedCount = 0, moves = 0, lock = false;
+        deck.forEach(function(val){
+          var b = document.createElement("button");
+          b.type = "button";
+          b.className = "puzzle-card";
+          b.setAttribute("data-val", val);
+          b.textContent = "❓";
+          b.onclick = function(){
+            if (lock || b.classList.contains("matched") || b.classList.contains("flipped")) return;
+            b.classList.add("flipped");
+            b.textContent = val;
+            flipped.push(b);
+            if (flipped.length === 2) {
+              moves++;
+              lock = true;
+              var a = flipped[0], c = flipped[1];
+              if (a.getAttribute("data-val") === c.getAttribute("data-val")) {
+                a.classList.add("matched"); c.classList.add("matched");
+                matchedCount += 2;
+                flipped = []; lock = false;
+                statusEl.textContent = "Moves: " + moves + " · " + matchedCount + "/" + deck.length + " match hue";
+                if (matchedCount === deck.length) {
+                  winEl.style.display = "block";
+                  statusEl.textContent = "Complete! Total moves: " + moves;
+                }
+              } else {
+                setTimeout(function(){
+                  a.classList.remove("flipped"); a.textContent = "❓";
+                  c.classList.remove("flipped"); c.textContent = "❓";
+                  flipped = []; lock = false;
+                }, 700);
+              }
+            }
+          };
+          grid.appendChild(b);
+        });
+      })();
+      </script>
+      
+      <div class="no-print" style="margin-top:14px;">
+        <label for="fkc-notes" class="muted" style="display:block;margin-bottom:4px;">📝 Apni Note (sirf aapke is browser mein save hoti hai):</label>
+        <textarea id="fkc-notes" data-slug="psx-stock-trading" data-lesson="day-001"
+          placeholder="Yahan apni note likhein..." rows="3"
+          style="width:100%;border-radius:10px;border:1px solid #ddd;padding:8px;font-family:inherit;"
+          oninput="fkcSaveNote(this)"></textarea>
+      </div>
+    
       <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Stock%20Market%20Trading%20%28PSX%29%20%28Day%2001%29%0A%0ADay%201%20%E2%80%94%20PSX%20Ki%20Pehchaan%3A%20Pakistan%20Stock%20Exchange%20Kya%20Hai%3F%0A%0AConcept%3A%0APSX%20%28Pakistan%20Stock%20Exchange%29%20ek%20aisa%20market%20hai%20jahan%20companies%20apne%20shares%20bechti%20hain%20aur%20investors%20un%20shares%20ko%20khareed%20kar%20company%20ke%20hissaidar%20ban%20sakte%20hain.%20Yahan%20par%20shares%20ki%20khareedi-bikri%20hoti%20hai%2C%20jise%20trading%20kehte%20hain.%20PSX%20ek%20regulated%20platform%20hai%20jahan%20har%20din%20lakhon%20log%20trading%20karte%20hain%20aur%20company%20ke%20performance%20ke%20hisab%20se%20shares%20ke%20prices%20badalte%20rehte%20hain.%0A%0AExample%3A%0AImagine%20a%20company%20%22XYZ%20Ltd%22%20jo%20apne%20business%20ko%20grow%20karne%20ke%20liye%20investors%20se%20paise%20lena%20chahti%20hai.%20Wo%20PSX%20par%20apne%201%20million%20shares%20100%20rupees%20ke%20price%20par%20offer%20karti%20hai.%20Agar%20aap%20100%20shares%20khareedte%20hain%2C%20to%20aap%20XYZ%20Ltd%20ke%200.01%25%20ke%20malik%20ban%20jate%20hain.%20Agar%20company%20aage%20badti%20hai%2C%20to%20share%20ka%20price%20150%20rupees%20ho%20sakta%20hai%2C%20aur%20aapko%20profit%20hoga.%0A%0APractice%3A%0AApne%20mobile%20ya%20computer%20par%20%22PSX%22%20search%20karein%20aur%20PSX%20ki%20official%20website%20ya%20app%20open%20karein.%20Dekhein%20ki%20%22Market%20Summary%22%20ya%20%22Indices%22%20section%20mein%20PSX-100%2C%20KSE-30%20jaise%20terms%20hain.%20Inhe%20samajhein%20ki%20yeh%20kya%20represent%20karte%20hain.%0A%0AMini%20Project%3A%0AEk%20chhota%20sa%20research%20karein%3A%20PSX%20par%20listed%203%20companies%20ke%20names%20aur%20unke%20shares%20ke%20current%20prices%20%28Google%20par%20%22PSX%20%5Bcompany%20name%5D%20share%20price%22%20search%20kar%20ke%29%20note%20karein.%20In%20companies%20ke%20business%20ke%20bare%20mein%201%20line%20mein%20likhein%20%28e.g.%2C%20%22Engro%20Corp%3A%20Fertilizer%20aur%20food%20products%20banane%20wali%20company%22%29.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
-        <a class="btn alt" href="https://t.me/share/url?url=&text=Day%201%20%E2%80%94%20PSX%20Ki%20Pehchaan%3A%20Pakistan%20Stock%20Exchange%20Kya%20Hai%3F%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
         <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
@@ -220,12 +350,62 @@ box-sizing:border-box;margin:6px 0;}
     <div class="lesson-nav"><span></span><a class="btn alt" href="2026-08-04-day-002.html">Day 2 — Trading Account Kholo: Broker Kaise Choose Karein? →</a></div>
     <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
     
+    
     <div class="no-print" style="margin:18px 0;text-align:center;">
       <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
         data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
       <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
-    <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
+    
+    <div class="daily-motivation" style="max-width:640px;margin:20px auto;padding:16px 20px;
+      background:linear-gradient(135deg,#fff7e6,#fef0f0);border-radius:14px;border:1px solid #f5e2c8;
+      text-align:center;">
+      <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
+        margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
+      <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
+        “Har mahir kabhi beginner tha — bas usne seekhna chhoda nahi.”
+      </p>
+    </div>
+    <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;
+      background:linear-gradient(145deg,#f7f9fc,#eef2f9);border-radius:16px;border:1px solid #e6e9f0;
+      text-align:center;">
+      <p style="font-size:13px;letter-spacing:.03em;text-transform:uppercase;color:var(--muted);
+        margin:0 0 10px;font-weight:700;">✉️ Founder ki taraf se</p>
+      <p style="font-size:15px;line-height:1.7;color:#2a2f3a;margin:0 0 14px;">
+        Hamara maqsad sirf lessons post karna nahi — har us Pakistani tak muft, practical
+        taleem pohchana hai jo seekhna chahta hai lekin resources ya waqt nahi rakhta.
+        FKC Trading Academy ka vision hai: <b>roz thora seekho, mustaqil mehnat karo,
+        aur apni zindagi khud badlo.</b> Mission simple hai — koi bhi course, koi bhi fee
+        nahi, sirf aap ka irada.
+      </p>
+      <p style="font-size:13px;color:var(--muted);margin:0;">— Fazul Khan Chandio, Founder &amp; CEO</p>
+    </div><div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
+    <script>
+    (function(){
+      try {
+        localStorage.setItem('fkc_last_lesson', JSON.stringify({
+          slug: "psx-stock-trading",
+          courseName: "Stock Market Trading (PSX)",
+          courseIcon: "\ud83d\udcc8",
+          title: "Day 1 \u2014 PSX Ki Pehchaan: Pakistan Stock Exchange Kya Hai?",
+          href: 'courses/psx-stock-trading/posts/2026-08-03-day-001.html',
+          day: 1
+        }));
+      } catch (e) {}
+      var ta = document.getElementById('fkc-notes');
+      if (ta) {
+        try {
+          var saved = localStorage.getItem('fkc_note_' + ta.dataset.slug + '_' + ta.dataset.lesson);
+          if (saved) ta.value = saved;
+        } catch (e) {}
+      }
+    })();
+    function fkcSaveNote(el) {
+      try {
+        localStorage.setItem('fkc_note_' + el.dataset.slug + '_' + el.dataset.lesson, el.value);
+      } catch (e) {}
+    }
+    </script>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
   function getProgress(){
@@ -266,6 +446,25 @@ box-sizing:border-box;margin:6px 0;}
     }
     var wa = "https://wa.me/923333909816?text=" + encodeURIComponent(text);
     window.open(wa, "_blank");
+  };
+
+  window.fkcShowSyncCode = function(){
+    if(!window.fkcSyncProgressUp){ alert("Sync abhi ready nahi (Firebase load ho raha hai), thodi dair mein try karein."); return; }
+    var code = Math.random().toString(36).substring(2,8).toUpperCase();
+    window.fkcSyncProgressUp(code, function(ok){
+      if(ok) alert("Yeh code doosri device par 'Code Se Wapas Layein' mein daalein:\n\n" + code);
+      else alert("Sync fail ho gaya, dobara try karein.");
+    });
+  };
+
+  window.fkcEnterSyncCode = function(){
+    if(!window.fkcSyncProgressDown){ alert("Sync abhi ready nahi (Firebase load ho raha hai), thodi dair mein try karein."); return; }
+    var code = prompt("Wo code daalein jo pehli device par bana tha:");
+    if(!code || !code.trim()) return;
+    window.fkcSyncProgressDown(code.trim().toUpperCase(), function(ok){
+      if(ok){ alert("Progress wapas aa gayi ✅"); location.reload(); }
+      else alert("Yeh code nahi mila, dobara check karein.");
+    });
   };
 
   document.addEventListener("DOMContentLoaded", function(){
@@ -349,6 +548,27 @@ box-sizing:border-box;margin:6px 0;}
           created: firebase.firestore.FieldValue.serverTimestamp()
         });
       }catch(e){}
+    };
+
+    window.fkcSyncProgressUp = function(code, onDone){
+      try{
+        var data = localStorage.getItem("fkc_progress") || "{}";
+        window.fkcDb.collection("progress_sync").doc(code).set({
+          progress: data, updated: firebase.firestore.FieldValue.serverTimestamp()
+        }).then(function(){ if(onDone) onDone(true); })
+          .catch(function(){ if(onDone) onDone(false); });
+      }catch(e){ if(onDone) onDone(false); }
+    };
+
+    window.fkcSyncProgressDown = function(code, onDone){
+      try{
+        window.fkcDb.collection("progress_sync").doc(code).get().then(function(doc){
+          if(doc.exists && doc.data().progress){
+            localStorage.setItem("fkc_progress", doc.data().progress);
+            if(onDone) onDone(true);
+          } else { if(onDone) onDone(false); }
+        }).catch(function(){ if(onDone) onDone(false); });
+      }catch(e){ if(onDone) onDone(false); }
     };
   }catch(e){}
 })();
