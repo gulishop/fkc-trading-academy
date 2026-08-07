@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-06T11:49:35.795488";
+  var FKC_BUILD = "2026-08-07T10:29:40.207299";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -230,7 +230,21 @@ function fkcToggleTheme(){
       
       
       
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Charging port ya USB-C port ka kharab hona ek common issue hai jo mobile repair business mein frequently aata hai. Yeh port dust, lint, ya accidental damage ki wajah se block ho jata hai, jisse charging aur data transfer mein problem hoti hai. Repair ke liye port ko clean karna, loose connection ko tight karna, ya port ko replace karna shamil hai.</p><h3>Example</h3><p>1.</p><h3>Port Cleaning</h3><p>Toothpick ya anti-static brush se port ke andar se dust nikal dein.<br>2.</p><h3>Loose Connection Fix</h3><p>Port ko gently press karke check karen agar charging reconnect hoti hai.<br>3.</p><h3>Port Replacement</h3><p>Agar port physically damaged hai, to new port install karne ke liye soldering ya adhesive use karen.</p><h3>Practice</h3><p>Apne kisi old phone ke charging port ko khol kar clean karen. Agar port loose hai to tight karen, warna port ko remove karne ka practice karen.</p><h3>Mini Project</h3><p>Ek damaged charging port wale phone ko repair karke usko charging aur data transfer ke liye test karen.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>تصور</h3><p>چارجر پورٹ یا یو ایس بی-سی پورٹ کا خراب ہونا ایک عام مسئلہ ہے جو موبائل ریپئیر بزنس میں بار بار آتا ہے۔ یہ پورٹ دھول، لنٹ، یا حادثاتی نقصان کی وجہ سے بلاک ہو جاتا ہے، جس سے چارچنگ اور ڈیٹا ٹرانسفر میں مشکلات پیش آتی ہیں۔ مرمت کے لیے پورٹ کو صاف کرنا، ڈھیلی کنکشن کو ٹائٹ کرنا، یا پورٹ کو تبدیل کرنا شامل ہے۔</p><h3>مثال</h3><p>١۔ پورٹ کی صفائی: ٹوتھ پِک یا اینٹی اسٹیٹک برش سے پورٹ کے اندر سے دھول نکالیں۔<br>٢۔ ڈھیلی کنکشن کی مرمت: پورٹ کو آہستہ سے دباکر چیک کریں کہ آیا چارچنگ دوبارہ کنیکٹ ہوتی ہے۔<br>٣۔ پورٹ کی تبدیلی: اگر پورٹ جسمانی طور پر خراب ہے تو نئے پورٹ کو نصب کرنے کے لیے سولڈرنگ یا ایڈھیسیو استعمال کریں۔</p><h3>پریکٹس</h3><p>اپنے کسی پرانے فون کے چارجر پورٹ کو کھول کر صاف کریں۔ اگر پورٹ ڈھیلا ہے تو اسے ٹائٹ کریں، ورنہ پورٹ کو ہٹانے کی مشق کریں۔</p><h3>منی پروجیکٹ</h3><p>ایک خراب چارجر پورٹ والے فون کی مرمت کرکے اسے چارچنگ اور ڈیٹا ٹرانسفر کے لیے ٹیسٹ کریں۔</p></div>
       
       
@@ -349,7 +363,7 @@ function fkcToggleTheme(){
       <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
         margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
       <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
-        “Waqt zaya mat karo, kyunke jo waqt guzar jata hai woh wapas nahi aata — aaj hi shuru karo.”
+        “Har mahir kabhi beginner tha — bas usne seekhna chhoda nahi.”
       </p>
     </div>
     <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;

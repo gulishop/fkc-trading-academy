@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-06T11:49:35.795488";
+  var FKC_BUILD = "2026-08-07T10:29:40.207299";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -230,7 +230,21 @@ function fkcToggleTheme(){
       
       
       
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Har mobile repair ka pehla step hai *symptom se root cause* tak pohanchna. Is session mein hum seekhenge ki kaise har issue ko systematically diagnose karna hai—jaise charging na hona, display kharab hona, ya network issue—taaki repair ka time aur cost kam ho. Diagnosis ke liye *visual inspection*, *hardware test*, aur *software check* ka combination use karna zaroori hai.</p><h3>Example</h3><p>*Problem:* Mobile charger se charge nahi ho raha.<br>*Diagnosis Steps:*<br>1.</p><h3>Visual Check</h3><p>Charger port mein dust/dirt hai? Cable mein cut hai?<br>2.</p><h3>Hardware Test</h3><p>Charger port ko torch se check karo—kya pins bent hain? Multimeter se voltage check karo.<br>3.</p><h3>Software Check</h3><p>Phone ko restart karo—kya battery percentage badh raha hai?<br>4.</p><h3>Conclusion</h3><p>Agar port damaged hai → replacement. Agar software glitch hai → flash/factory reset.</p><h3>Practice</h3><p>Apne ek kharab mobile (ya friend ka) ko lekar, **3 common symptoms** identify karo (e.g., touch kaam nahi kar raha, WiFi connect nahi ho raha, etc.). Har symptom ke liye **3 possible causes** likho (hardware/software/mixed).</p><h3>Mini Project</h3><p>Ek *faulty mobile* lekar, **diagnosis report** taiyar karo (format: Symptom → Possible Causes → Test Method → Final Diagnosis). Example:<br>- *Symptom:* Battery 20% se neeche nahi jaati.<br>- *Possible Causes:* Faulty battery, charging circuit issue, software bug.<br>- *Test Method:* Battery voltage check (multimeter), charging port clean karna, safe mode test.<br>- *Final Diagnosis:* Battery 3.7V se 3.2V tak gir rahi hai → battery replacement zaroori hai.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>مفہوم</h3><p>ہر موبائل ریپئر کا پہلا قدم ہے *علامت سے اصل مسئلے* تک پہنچنا۔ اس سیشن میں ہم سیکھیں گے کہ ہر مسئلے کو منظم طریقے سے کیسے ڈائیگنوس کرنا ہے—جیسے چارجنگ نہ ہونا، ڈسپلے خراب ہونا، یا نیٹ ورک کا مسئلہ—تاکہ ریپئر کا وقت اور لاگت کم ہو۔ ڈائیگنوسس کے لیے *چیک بصری معائنہ*، *ہارڈویئر ٹیسٹ*، اور *سافٹ ویئر چیک* کا مجموعہ استعمال کرنا ضروری ہے۔</p><h3>مثال</h3><p>*مسئلہ:* موبائل چارجر سے چارج نہیں ہو رہا۔<br>*ڈائیگنوسس کے مراحل:*<br>1. *چیک بصری معائنہ:* چارجر پورٹ میں دھول/گندگی ہے؟ کیبل میں کاٹ لگنے کا نشان ہے؟<br>2. *ہارڈویئر ٹیسٹ:* چارجر پورٹ کو ٹارچ سے چیک کرو—کیا پنز موڑے ہوئے ہیں؟ ملٹی میٹر سے وولٹیج چیک کرو۔<br>3. *سافٹ ویئر چیک:* فون کو ریسٹارٹ کرو—کیا بیٹری فیصد بڑھ رہی ہے؟<br>4. *نتیجہ:* اگر پورٹ خراب ہے → ریپلیسمنٹ۔ اگر سافٹ ویئر میں مسئلہ ہے → فلش/فیکٹری ری سیٹ۔</p><h3>مشق</h3><p>اپنے ایک خراب موبائل (یا دوست کا) لے کر، **3 عام علامات** شناخت کرو (مثلاً، ٹچ کام نہیں کر رہا، وائی فائی کنیکٹ نہیں ہو رہا، وغیرہ)۔ ہر علامت کے لیے **3 ممکنہ وجوہات** لکھو (ہارڈویئر/سافٹ ویئر/مکسڈ)۔</p><h3>مینی پراجیکٹ</h3><p>ایک *خراب موبائل* لے کر، **ڈائیگنوسس رپورٹ** تیار کرو (فارمیٹ: علامت → ممکنہ وجوہات → ٹیسٹ طریقہ → حتمی ڈائیگنوسس)۔ مثال:<br>- *علامت:* بیٹری 20% سے نیچے نہیں جاتی۔<br>- *ممکنہ وجوہات:* خراب بیٹری، چارجنگ سرکٹ کا مسئلہ، سافٹ ویئر بگ۔<br>- *ٹیسٹ طریقہ:* بیٹری وولٹیج چیک (ملٹی میٹر)، چارجر پورٹ صاف کرنا، سیف موڈ ٹیسٹ۔<br>- *حتمی ڈائیگنوسس:* بیٹری 3.7V سے 3.2V تک گر رہی ہے → بیٹری ریپلیسمنٹ ضروری ہے۔</p></div>
       
       
@@ -349,7 +363,7 @@ function fkcToggleTheme(){
       <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
         margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
       <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
-        “Waqt zaya mat karo, kyunke jo waqt guzar jata hai woh wapas nahi aata — aaj hi shuru karo.”
+        “Har mahir kabhi beginner tha — bas usne seekhna chhoda nahi.”
       </p>
     </div>
     <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;

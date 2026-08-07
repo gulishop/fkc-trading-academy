@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-06T11:49:35.795488";
+  var FKC_BUILD = "2026-08-07T10:29:40.207299";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -230,7 +230,21 @@ function fkcToggleTheme(){
       
       
       
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Mobile repairing ke liye sabse pehle aapko kuch basic tools ki pehchaan ho jani chahiye. Yeh tools aapki repair ko aasan aur professional banate hain. Har repair ke liye alag tool ki zarurat hoti hai, isliye inki pehchaan aur istemal ka tareeka aana zaroori hai.</p><h3>Example</h3><p>Agar aapko kisi mobile ki screen replace karni hai, toh aapko **Pentalobe screwdriver**, **plastic pry tools**, **suction cup**, aur **heat gun** ki zarurat hogi. Pehle screws ko nikalne ke liye Pentalobe screwdriver use karo, phir plastic pry tools se screen ko gently lift karo.</p><h3>Practice</h3><p>Apne paas ek purana mobile le kar aao, aur uske screws ko nikal kar dekhho ke kaunsa screwdriver kaam karega (Phillips, Flathead, ya Pentalobe).</p><h3>Mini Project</h3><p>Ek chhota sa toolkit banao jismein 3-4 basic tools hon (jaise screwdriver set, tweezer, plastic pry tool). Inhe ek box mein arrange karo taake repair ke waqt aasani ho.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>موبائل ریپئیرنگ کے لیے سب سے پہلے آپکو کچھ بنیادی ٹولز کی پہچان ہوجانی چاہیے۔ یہ ٹولز آپکی ریپئیر کو آسان اور پروفیشنل بناتے ہیں۔ ہر ریپئیر کے لیے الگ ٹول کی ضرورت ہوتی ہے، اس لیے انکی پہچان اور استعمال کا طریقہ آنا ضروری ہے۔</p><h3>Example</h3><p>اگر آپکو کسی موبائل کی اسکرین ریپلیس کرنی ہے، تو آپکو **Pentalobe screwdriver**، **plastic pry tools**، **suction cup**، اور **heat gun** کی ضرورت ہوگی۔ پہلے screws کو نکالنے کے لیے Pentalobe screwdriver استعمال کرو، پھر plastic pry tools سے اسکرین کو gently lift کرو۔</p><h3>Practice</h3><p>اپنے پاس ایک پرانا موبائل لے آؤ، اور اس کے screws کو نکال کر دیکھو کے کون سا screwdriver کام کرے گا (Phillips, Flathead, یا Pentalobe)۔</p><h3>Mini Project</h3><p>ایک چھوٹا سا ٹولکیٹ بناؤ جس میں 3-4 بنیادی ٹولز ہوں (جیسے screwdriver set, tweezer, plastic pry tool)۔ انہیں ایک box میں arrange کرو تاکہ ریپئیر کے وقت آسانی ہو۔</p></div>
       
       
@@ -349,7 +363,7 @@ function fkcToggleTheme(){
       <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
         margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
       <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
-        “Waqt zaya mat karo, kyunke jo waqt guzar jata hai woh wapas nahi aata — aaj hi shuru karo.”
+        “Har mahir kabhi beginner tha — bas usne seekhna chhoda nahi.”
       </p>
     </div>
     <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;
