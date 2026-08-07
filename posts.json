@@ -7045,6 +7045,104 @@
           ]
         }
       }
+    },
+    {
+      "day": 3,
+      "id": "day-003",
+      "date": "2026-08-07",
+      "title": "Day 3 — **Audacity Se Audio Record Karna: Step-by-Step Guide**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke Audacity mein kaise professional-quality audio record kiya jata hai. Yeh software free hai aur beginner-friendly bhi. Sabse pehle apne mic ko setup karo, Audacity mein input source select karo, aur recording start karne se pehle levels check karo taake clipping na ho."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Mic Setup",
+          "Apne mic ko computer se connect karo (USB/XLR).\n2."
+        ],
+        [
+          "Audacity Open Karo",
+          "File > New par click karo.\n3."
+        ],
+        [
+          "Input Source Select Karo",
+          "Transport > Transport Options > Audio Device par jao aur apna mic choose karo (e.g., \"Microphone (Realtek Audio)\").\n4."
+        ],
+        [
+          "Recording Levels Check Karo",
+          "Apne mic ke samne normal volume mein bol kar dekho ke red line na chali jaye (yeh clipping hai).\n5."
+        ],
+        [
+          "Record Start Karo",
+          "Red \"Record\" button dabao aur script padhna shuru karo."
+        ],
+        [
+          "Practice",
+          "Apne script (Day 2 se) ko Audacity mein record karo. 30 seconds ka audio nikalo aur check karo ke:\n- Volume zyada na ho (clipping na ho)\n- Background noise kam ho\n- Apka tone clear ho"
+        ],
+        [
+          "Mini Project",
+          "Ek 1-minute ka \"Introduction\" audio record karo jisme aap apna naam, skills, aur voice-over services ke baare mein short introduction do. Audio ko .mp3 format mein save karo."
+        ]
+      ],
+      "answer_key": "mic setup, audacity open, input select, record levels check, record start",
+      "translations": {
+        "ur": {
+          "title": "دن ٣ — **آڈیسیٹی سے آڈیو ریکارڈ کرنا: سٹیپ بائی سٹیپ گائیڈ**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم سیکھیں گے کہ آڈیسیٹی میں کس طرح پیشہ ورانہ معیار کا آڈیو ریکارڈ کیا جاتا ہے۔ یہ سوفٹ ویئر مفت ہے اور بیگنر فرینڈلی بھی ہے۔ سب سے پہلے اپنے مائیک کو سیٹ اپ کرو، آڈیسیٹی میں ان پٹ سورس سلیکٹ کرو، اور ریکارڈنگ شروع کرنے سے پہلے لیولز چیک کرو تاکہ کلپنگ نہ ہو۔"
+            },
+            {
+              "label": "مثال",
+              "content": "١۔ مائیک سیٹ اپ: اپنے مائیک کو کمپیوٹر سے کنیکٹ کرو (USB/XLR)।"
+            },
+            {
+              "label": "",
+              "content": "٢۔ آڈیسیٹی کھولو: فائل > نیو پر کلک کرو۔"
+            },
+            {
+              "label": "",
+              "content": "٣۔ ان پٹ سورس سلیکٹ کرو: ٹرانسپورٹ > ٹرانسپورٹ آپشنز > آڈیو ڈیوائس پر جاؤ اور اپنا مائیک چُنیں (مثلاً: \"مائیکروفون (ریئل ٹیک آڈیو)\")۔"
+            },
+            {
+              "label": "",
+              "content": "٤۔ ریکارڈنگ لیولز چیک کرو: اپنے مائیک کے سامنے نارمل والیوم میں بول کر دیکھو کہ ریڈ لائن نہ چلے جائے (یہ کلپنگ ہے)।"
+            },
+            {
+              "label": "",
+              "content": "٥۔ ریکارڈ شروع کرو: ریڈ \"ریکارڈ\" بٹن دباؤ اور سکرپٹ پڑھنا شروع کرو۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے سکرپٹ (دن ٢ سے) کو آڈیسیٹی میں ریکارڈ کرو۔ ٣٠ سیکنڈ کا آڈیو نکالو اور چیک کرو کہ:"
+            },
+            {
+              "label": "",
+              "content": "• والیوم زیادہ نہ ہو (کلپنگ نہ ہو)"
+            },
+            {
+              "label": "",
+              "content": "• بیک گراؤنڈ شور کم ہو"
+            },
+            {
+              "label": "",
+              "content": "• آپ کا ٹون صاف ہو"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک ١ منٹ کا \"تعارف\" آڈیو ریکارڈ کرو جس میں آپ اپنا نام، صلاحیتیں، اور وائس اوور سروسز کے بارے میں مختصر تعارف دو۔ آڈیو کو .mp3 فارمیٹ میں سیو کرو۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "real-estate-business": [
