@@ -7004,6 +7004,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 4,
+      "id": "day-004",
+      "date": "2026-08-07",
+      "title": "Day 4 — **Apni cheezein doosron ke sath share karna**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachay, jab hum apni cheezein doosron ke sath share karte hain, toh sabko khushiya milti hain. Jaise agar tum apni pencil doosre bachay ko do sakte ho, toh woh bhi khush ho jayega. Share karna seekhna zaroori hai, lekin yaad rakhna — tumhari cheezein sirf tumhari hai, aur agar koi tumse zor se maang raha ho, toh tum \"na\" keh sakte ho."
+        ],
+        [
+          "Chhoti Kahani",
+          "Rohan ke paas ek nayi football thi. Usne dekha ke uske dost Ali ko football pasand hai. Rohan ne socha, \"Main apni football Ali ko doonga.\" Usne Ali ko bola, \"Chalo, hum saath khelen!\" Ali bohat khush ho gaya. Us din dono ne mil kar khela, aur sabko maza aaya."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, tumhari sabse pasandida cheez kya hai jo tum doosron ke sath share kar sakte ho?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Share karna achha hai, lekin tumhari cheezein sirf tumhari hai — tumhe \"na\" kehne ka haq hai!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۴ — **اپنی چیزیں دوسروں کے ساتھ شیئر کرنا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "بچو، جب ہم اپنی چیزیں دوسروں کے ساتھ شیئر کرتے ہیں تو سب کو خوشیاں ملتی ہیں۔ جیسے اگر تم اپنی پینسل دوسرے بچے کو دے سکتے ہو تو وہ بھی خوش ہو جائے گا۔ شیئر کرنا سیکھنا ضروری ہے، لیکن یاد رکھنا — تمہاری چیزیں صرف تمہاری ہیں، اور اگر کوئی تم سے زور سے مانگ رہا ہو تو تم ’’نہیں‘‘ کہہ سکتے ہو۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "روہن کے پاس ایک نئی فٹ بال تھی۔ اس نے دیکھا کہ اس کے دوست علی کو فٹ بال پسند ہے۔ روہن نے سوچا، ’’میں اپنی فٹ بال علی کو دوں گا۔‘‘ اس نے علی سے کہا، ’’چلو، ہم ساتھ کھیلیں!‘‘ علی بہت خوش ہو گیا۔ اس دن دونوں نے مل کر کھیلا، اور سب کو مزہ آیا۔"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "’’بیٹا، تمہاری سب سے پسندیدہ چیز کیا ہے جو تم دوسروں کے ساتھ شیئر کر سکتے ہو؟‘‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "شیئر کرنا اچھا ہے، لیکن تمہاری چیزیں صرف تمہاری ہیں — تمہیں ’’نہیں‘‘ کہنے کا حق ہے!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-nursery": [

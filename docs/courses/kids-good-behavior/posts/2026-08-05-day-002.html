@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-06T03:44:43.383917";
+  var FKC_BUILD = "2026-08-07T03:20:07.870010";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -230,7 +230,21 @@ function fkcToggleTheme(){
       <p class="muted" style="background:#fff7e6;padding:10px 12px;border-radius:10px;margin:0 0 12px;">👨‍👩‍👧 Walidain ke liye: bachay ke sath baith kar ye lesson sunein/dekhein, aur upar wala 🎬 audio zaroor lagayein — chhotay bachay padhne se zyada sun kar behtar samajhte hain.</p>
       <img src="images/day-002.png" alt="Day 2 — &quot;Badey ki izzat, baat ka samman&quot;" style="width:100%;border-radius:12px;margin-bottom:14px;">
       <p class="muted" style="margin:0 0 6px;">🎬 AI Video Explanation</p><video src="videos/day-002.mp4" controls preload="metadata" poster="images/day-002.png" style="width:100%;border-radius:12px;margin-bottom:14px;background:#000;"></video>
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Badey log—jaise ammi, abbu, dadi, nana—humari dekhbhaal karte hain. Unki baat sunna, unse izzat se pesh aana, aur unki madad karna hamari zimmedari hai. Agar woh koi baat poochhein, toh humara farz hai ke hum dhyaan se sunain.</p><h3>Chhoti Kahani</h3><p>Rohan ke abbu ne poocha, &quot;Beta, tumhara homework ho gaya?&quot; Rohan ne haath utha kar kaha, &quot;Ji abbu, maine sab kar liya!&quot; Abbu ne muskurate hue kaha, &quot;Bahut achha! Ab toh tum badey ho gaye ho.&quot; Rohan ko apne abbu ki izzat karke bahut khushi hui.</p><h3>Ammi Abbu Ke Sath Baat Karein</h3><p>&quot;Beta, agar tumhari koi baat main sun rahi hoon, toh tum kya karoge?&quot;</p><h3>Yaad Rakhein</h3><p>Badey ki izzat karna, unki baat sunna, aur unki madad karna hamari shaan hai!</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>کنسیپٹ</h3><p>بڑے لوگ — جیسے امی، ابّو، دادی، نانا — ہماری دیکھ بھال کرتے ہیں۔ ان کی بات سننا، ان سے عزت سے پیش آنا، اور ان کی مدد کرنا ہماری ذمہ داری ہے۔ اگر وہ کوئی بات پوچھیں، تو ہمارا فرض ہے کہ ہم دھیان سے سنیں۔</p><h3>چھوٹی کہانی</h3><p>روہن کے ابّو نے پوچھا، &quot;بیٹا، تمہارا ہوم ورک ہو گیا؟&quot; روہن نے ہاتھ اٹھا کر کہا، &quot;جی ابّو، میں نے سب کر لیا!&quot; ابّو نے مسکراتے ہوئے کہا، &quot;بہت اچھا! اب تو تم بڑے ہو گئے ہو۔&quot; روہن کو اپنے ابّو کی عزت کر کے بہت خوشی ہوئی۔</p><h3>امی ابّو کے ساتھ بات کریں</h3><p>&quot;بیٹا، اگر تمہاری کوئی بات میں سن رہی ہوں، تو تم کیا کرو گے؟&quot;</p><h3>یاد رکھیں</h3><p>بڑے کی عزت کرنا، ان کی بات سننا، اور ان کی مدد کرنا ہماری شان ہے!</p></div>
       
       
@@ -326,7 +340,7 @@ function fkcToggleTheme(){
       <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
         margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
       <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
-        “Waqt zaya mat karo, kyunke jo waqt guzar jata hai woh wapas nahi aata — aaj hi shuru karo.”
+        “Har mahir kabhi beginner tha — bas usne seekhna chhoda nahi.”
       </p>
     </div>
     <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;
