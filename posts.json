@@ -2539,6 +2539,84 @@
           ]
         }
       }
+    },
+    {
+      "day": 5,
+      "id": "day-005",
+      "date": "2026-08-07",
+      "title": "Day 5 — **High-Converting Product Page Ka Secret: Psychology + Design Hacks**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Ek product page sirf \"achha\" design nahi hota—yeh customer ki *emotions* aur *decision-making* ko trigger karta hai. Aaj seekhoge ki kaise **scarcity, social proof, aur frictionless checkout** use karke conversion rates 2-3x badha sakte hain. Har element (headline, images, CTA, trust badges) customer ke *hesitation* ko dur karne ke liye design kiya jana chahiye."
+        ],
+        [
+          "Example",
+          "Ek *weight loss supplement* ka product page:\n1."
+        ],
+        [
+          "Headline",
+          "\"30 Days Mein 10 KG Kam Karne Ka *Secret* (Limited Stock: 47 Left!)\"\n2."
+        ],
+        [
+          "Images",
+          "Before/After + *real customer* ki video review (social proof).\n3."
+        ],
+        [
+          "CTA",
+          "\"Abhi Order Karein – 50% Off + Free Shipping (24 Hours Mein)\"\n4."
+        ],
+        [
+          "Trust Badges",
+          "\"100% Natural Ingredients\", \"Money-Back Guarantee\", \"4.9/5 Star Reviews (12,345 Customers)\""
+        ],
+        [
+          "Practice",
+          "Apne current store (ya demo product) ka product page kholo. **3 elements** hatado jo customer ko *doubt* mein dalte hain (e.g., vague headline, missing trust badges, unclear shipping time)."
+        ],
+        [
+          "Mini Project",
+          "Ek **A/B test plan** banao:\n-"
+        ],
+        [
+          "Version A",
+          "Simple product page (basics).\n-"
+        ],
+        [
+          "Version B",
+          "\"Scarcity + Social Proof\" version (jaise example mein).\n-"
+        ],
+        [
+          "Goal",
+          "7 days mein traffic split karke dekhna ki kaunsa version zyada conversion deta hai."
+        ]
+      ],
+      "answer_key": "scarcity, social proof, trust badges, frictionless checkout",
+      "translations": {
+        "ur": {
+          "title": "دن 5 — **ہائی کنورٹنگ پروڈکٹ پیج کا راز: سائیکولوجی + ڈیزائن ہیکس**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ایک پروڈکٹ پیج صرف \"اچھا\" ڈیزائن نہیں ہوتا—یہ گاہک کی *جذبات* اور *فیصلہ سازی* کو ٹرگر کرتا ہے۔ آج سیکھو گے کہ کیسے **قِلّت، سوشل پروف، اور فرکشن لیس چیک آؤٹ** استعمال کرکے کنورژن ریٹس کو 2-3 گنا بڑھا سکتے ہو۔ ہر عنصر (ہیڈلائن، امیجز، سی ٹی اے، ٹرسٹ بیجز) گاہک کے *ہچکچاہٹ* کو دور کرنے کے لیے ڈیزائن کیا جانا چاہیے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "وزن کم کرنے کے سپلیمنٹ کا پروڈکٹ پیج:\n1.\nہیڈلائن: \"30 دن میں 10 کلو گرام کم کرنے کا *راز* (محدود اسٹاک: صرف 47 باقی!)\"\n2.\nامیجز: پہلے/بعد کی تصاویر + *حقیقی گاہک* کی ویڈیو ریویو (سوشل پروف)\n3.\nسی ٹی اے: \"ابھی آرڈر کریں – 50% چھوٹ + فری شپنگ (24 گھنٹے میں)\"\n4.\nٹرسٹ بیجز: \"100% قدرتی اجزاء\"، \"منی بیک گارنٹی\"، \"4.9/5 اسٹار ریویوز (12,345 گاہک)\""
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے موجودہ اسٹور (یا ڈیمو پروڈکٹ) کا پروڈکٹ پیج کھولو۔ **3 عناصر** ہٹاؤ جو گاہک کو *شک* میں ڈالتے ہیں (مثال کے طور پر: مبہم ہیڈلائن، مفقود ٹرسٹ بیجز، غیر واضح شپنگ ٹائم)"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **اے/بی ٹیسٹ پلان** بناؤ:\n\nورژن اے: سادہ پروڈکٹ پیج (بنیادی باتیں)\n\nورژن بی: \"قِلّت + سوشل پروف\" ورژن (جیسے مثال میں)\n\nہدف: 7 دن میں ٹریفک کو تقسیم کرکے دیکھنا کہ کون سا ورژن زیادہ کنورژن دیتا ہے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "freelancing": [

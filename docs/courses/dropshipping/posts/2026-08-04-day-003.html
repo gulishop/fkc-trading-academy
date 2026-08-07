@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-05T21:02:19.789379";
+  var FKC_BUILD = "2026-08-07T20:39:41.208803";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -230,7 +230,21 @@ function fkcToggleTheme(){
       
       
       
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Dropshipping mein supplier hi aapka business ka backbone hai. AliExpress global suppliers deta hai lekin shipping time zyada hai (15-45 days), jabki local suppliers (Pakistan se) 3-7 days mein delivery kar sakte hain lekin prices thode zyada hoti hain. Har ek ka apna faida-nuksan hai—samajh kar choose karna zaroori hai.</p><h3>Example</h3><p>Agar aap *wireless earbuds* bech rahe hain:<br>-</p><h3>AliExpress</h3><p>Supplier China se ₹800 mein lekar ₹1500 mein bech sakte hain, lekin customer ko 20-30 days wait karna hoga.<br>-</p><h3>Local Supplier</h3><p>Karachi se ₹1200 mein lekar ₹2000 mein bech sakte hain, delivery 3-5 days mein ho jayegi.</p><h3>Practice</h3><p>Apne 1-2 winning products ke liye **AliExpress** aur **local suppliers** (Facebook Groups, WhatsApp, OLX) par search karke prices, shipping time, aur reviews compare karo. Ek Excel sheet bana kar note kar lo.</p><h3>Mini Project</h3><p>Ek **supplier comparison table** banao jismein:<br>- Product name<br>- AliExpress vs Local price<br>- Shipping time<br>- Return policy<br>- Customer reviews (rating)</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>ڈراپ شیپنگ میں سپلائر ہی آپ کا بزنس کا بنیادی ستون ہے۔ علی ایکسپریس گلوبل سپلائرز فراہم کرتا ہے لیکن شپنگ ٹائم زیادہ ہوتا ہے (15-45 دن)، جبکہ مقامی سپلائرز (پاکستان سے) 3-7 دن میں ڈیلیوری کر سکتے ہیں لیکن قیمتیں تھوڑی زیادہ ہوتی ہیں۔ ہر ایک کا اپنا فائدہ و نقصان ہے—سمجھ کر چننا ضروری ہے۔</p><h3>Example</h3><p>اگر آپ *وائرلیس ایربڈز* بیچ رہے ہیں:</p><p>علی ایکسپریس: سپلائر چین سے ₹800 میں لے کر ₹1500 میں بیچ سکتے ہیں، لیکن کسٹمر کو 20-30 دن انتظار کرنا ہوگا۔</p><p>مقامی سپلائر: کراچی سے ₹1200 میں لے کر ₹2000 میں بیچ سکتے ہیں، ڈیلیوری 3-5 دن میں ہو جائے گی۔</p><h3>Practice</h3><p>اپنے 1-2 وننگ پروڈکٹس کے لئے **علی ایکسپریس** اور **مقامی سپلائرز** (فیس بک گروپس، واٹس ایپ، اولکس) پر سرچ کر کے قیمتیں، شپنگ ٹائم، اور ریویوز کمپئیر کرو۔ ایک ایکسل شیٹ بنا کر نوٹ کر لو۔</p><h3>Mini Project</h3><p>ایک **سپلائر کمپئیرسن ٹیبل** بناؤ جس میں شامل ہوں:</p><p>- پراڈکٹ کا نام<br>- علی ایکسپریس بمقابلہ مقامی قیمت<br>- شپنگ ٹائم<br>- ریٹرن پالیسی<br>- کسٹمر ریویوز (ریٹنگ)</p></div>
       
       
@@ -342,7 +356,30 @@ function fkcToggleTheme(){
         data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
       <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
-    <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
+    
+    <div class="daily-motivation" style="max-width:640px;margin:20px auto;padding:16px 20px;
+      background:linear-gradient(135deg,#fff7e6,#fef0f0);border-radius:14px;border:1px solid #f5e2c8;
+      text-align:center;">
+      <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
+        margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
+      <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
+        “Har mahir kabhi beginner tha — bas usne seekhna chhoda nahi.”
+      </p>
+    </div>
+    <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;
+      background:linear-gradient(145deg,#f7f9fc,#eef2f9);border-radius:16px;border:1px solid #e6e9f0;
+      text-align:center;">
+      <p style="font-size:13px;letter-spacing:.03em;text-transform:uppercase;color:var(--muted);
+        margin:0 0 10px;font-weight:700;">✉️ Founder ki taraf se</p>
+      <p style="font-size:15px;line-height:1.7;color:#2a2f3a;margin:0 0 14px;">
+        Hamara maqsad sirf lessons post karna nahi — har us Pakistani tak muft, practical
+        taleem pohchana hai jo seekhna chahta hai lekin resources ya waqt nahi rakhta.
+        FKC Trading Academy ka vision hai: <b>roz thora seekho, mustaqil mehnat karo,
+        aur apni zindagi khud badlo.</b> Mission simple hai — koi bhi course, koi bhi fee
+        nahi, sirf aap ka irada.
+      </p>
+      <p style="font-size:13px;color:var(--muted);margin:0;">— Fazul Khan Chandio, Founder &amp; CEO</p>
+    </div><div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     <script>
     (function(){
       try {
