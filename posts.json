@@ -4742,6 +4742,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 4,
+      "id": "day-004",
+      "date": "2026-08-07",
+      "title": "Day 4 — JavaScript Basics: DOM Manipulation Se Shuru Karna",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "JavaScript ek programming language hai jo web pages ko dynamic banati hai. DOM (Document Object Model) web page ki structure ko represent karta hai. JavaScript se hum elements ko select karke unki properties change kar sakte hain, events handle kar sakte hain, aur user interactions add kar sakte hain."
+        ],
+        [
+          "Example",
+          "Ek simple example: HTML mein ek `<p>` tag hai aur JavaScript se uska text change karna.\n```html\n<p id=\"demo\">Hello World!</p>\n<button onclick=\"changeText()\">Click Me</button>\n```\n```javascript\nfunction changeText() {\n  document.getElementById(\"demo\").innerHTML = \"Text Changed!\";\n}\n```\nJab button click hoga, text update ho jayega."
+        ],
+        [
+          "Practice",
+          "Ek HTML file banayein jisme ek `<h1>` tag ho aur ek button. Button click karne par `<h1>` ka color change ho jaye (e.g., red se blue)."
+        ],
+        [
+          "Mini Project",
+          "Ek simple \"Like\" button banayein jo click karne par counter badha de (e.g., \"Likes: 0\" se \"Likes: 1\")."
+        ]
+      ],
+      "answer_key": "getelementbyid, innerhtml, onclick, style.color",
+      "translations": {
+        "ur": {
+          "title": "یوم ۴ — جاوااسکرپٹ بنیادیات: ڈوم مینیپولیشن سے شروع کرنا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "جاوااسکرپٹ ایک پروگرامنگ زبان ہے جو ویب صفحات کو متحرک بناتی ہے۔ ڈوم (ڈاکیومنٹ آبجیکٹ ماڈل) ویب پیج کی ساخت کی نمائندگی کرتا ہے۔ جاوااسکرپٹ کے ذریعے ہم عناصر کو منتخب کرکے ان کی خصوصیات تبدیل کر سکتے ہیں، ایونٹس ہینڈل کر سکتے ہیں، اور صارف کے تعاملات شامل کر سکتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک سادہ مثال: ایچ ٹی ایم ایل میں ایک `<p>` ٹیگ ہے اور جاوااسکرپٹ کے ذریعے اس کا متن تبدیل کرنا۔\n\n```html\n<p id=\"demo\">Hello World!</p>\n<button onclick=\"changeText()\">Click Me</button>\n```\n\n```javascript\nfunction changeText() {\n  document.getElementById(\"demo\").innerHTML = \"Text Changed!\";\n}\n```\n\nجب بٹن کلک ہوگا تو متن اپ ڈیٹ ہو جائے گا۔"
+            },
+            {
+              "label": "مشق",
+              "content": "ایک ایچ ٹی ایم ایل فائل بنائیں جس میں ایک `<h1>` ٹیگ اور ایک بٹن ہو۔ بٹن کلک کرنے پر `<h1>` کا رنگ تبدیل ہو جائے (مثلاً سرخ سے نیلا)"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "ایک سادہ \"لائک\" بٹن بنائیں جو کلک کرنے پر کاؤنٹر بڑھا دے (مثلاً \"لائکس: ۰\" سے \"لائکس: ۱\")۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "excel-data-analysis": [
