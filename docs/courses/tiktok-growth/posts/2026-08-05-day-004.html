@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-06T03:37:20.169432";
+  var FKC_BUILD = "2026-08-07T05:39:51.813344";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -230,7 +230,21 @@ function fkcToggleTheme(){
       
       
       
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>TikTok par engagement sirf likes se nahi, comments, duets aur polls se bhi badhta hai. Algorithm un videos ko promote karta hai jo zyada interaction generate karte hain. Comments ka response dena, duets karna aur polls lagana viewers ko &quot;involved&quot; rakhta hai, jisse video viral hone ke chances badh jaate hain.</p><h3>Example</h3><p>1.</p><h3>Comments ka jawab</h3><p>Agar koi comment &quot;Kya yeh real hai?&quot; likhe, to reply mein &quot;Haan bilkul! 👀&quot; ya &quot;Nahi, yeh fake hai 😂&quot; likh kar conversation shuru karo.<br>2.</p><h3>Duet ka istemal</h3><p>Apne video par &quot;Try this trick!&quot; bol kar viewers ko duets karne ke liye challenge do. Example: &quot;Agar tum bhi yeh trick try karo to duets karke show karo!&quot;<br>3.</p><h3>Polls</h3><p>Video description mein &quot;Aapko kya pasand hai?&quot; likh kar do options de do (e.g., &quot;Option 1: Fast editing, Option 2: Slow motion&quot;).</p><h3>Practice</h3><p>Apne last video par **1 comment ka jawab** de aur **1 duet request** accept karo. Agar possible ho, to **1 poll** bhi add karo.</p><h3>Mini Project</h3><p>Ek **30-second ka &quot;Engagement Challenge&quot; video** banaen jisme:<br>- Ek question poocho (e.g., &quot;Tumhara favorite TikTok trend kya hai?&quot;)<br>- Duet karne ka challenge do<br>- Poll ke liye 2 options suggest karo</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>ٹِک ٹاک پر این گجیمنٹ صرف لائیکس سے نہیں بڑھتا، بلکہ کمنٹس، ڈوئٹس اور پولز سے بھی ہوتا ہے۔ الگورتھم ان ویڈیوز کو پروموٹ کرتا ہے جو زیادہ انٹریکشن جنریٹ کرتے ہیں۔ کمنٹس کا جواب دینا، ڈوئٹس کرنا اور پولز لگانا ویورز کو &#x27;انولِوڈ&#x27; رکھتا ہے، جس سے ویڈیو وائرل ہونے کے چانسز بڑھ جاتے ہیں۔</p><h3>Example</h3><p>1.<br>کمنٹس کا جواب: اگر کوئی کمنٹ &quot;کیا یہ ریال ہے؟&quot; لکھے تو ریپلائی میں &quot;ہاں بالکل! 👀&quot; یا &quot;نہیں، یہ فیک ہے 😂&quot; لکھ کر کانورسشن شروع کرو۔<br>2.<br>ڈوئٹ کا استعمال: اپنے ویڈیو پر &quot;ٹری دیس ٹرِک!&quot; بول کر ویورز کو ڈوئٹس کرنے کے لیے چیلنج دو۔ ایکزیمپل: &quot;اگر تم بھی یہ ٹرِک ٹری کرلو تو ڈوئٹس کرکے شو کرو!&quot;<br>3.<br>پولز: ویڈیو ڈِسکریپشن میں &quot;آپکو کیا پسند ہے؟&quot; لکھ کر دو آپشنز دے دو (مثلاً: &quot;آپشن 1: فاست ایڈِٹنگ، آپشن 2: سلو موشن&quot;).</p><h3>Practice</h3><p>اپنے لاسٹ ویڈیو پر **1 کمنٹ کا جواب** دو اور **1 ڈوئٹ ریکویسٹ** ایکسپٹ کرو۔ اگر ممکن ہو تو **1 پول** بھی ایڈ کرو۔</p><h3>Mini Project</h3><p>ایک **30 سیکنڈ کا &quot;این گجیمنٹ چیلنج&quot; ویڈیو** بنائیں جس میں:<br>- ایک سوال پوچھو (مثلاً: &quot;تمہارا فوریٹ ٹِک ٹاک ٹرینڈ کیا ہے؟&quot;)<br>- ڈوئٹ کرنے کا چیلنج دو<br>- پول کے لیے 2 آپشنز سجسٹ کرو</p></div>
       
       
@@ -349,7 +363,7 @@ function fkcToggleTheme(){
       <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
         margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
       <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
-        “Waqt zaya mat karo, kyunke jo waqt guzar jata hai woh wapas nahi aata — aaj hi shuru karo.”
+        “Har mahir kabhi beginner tha — bas usne seekhna chhoda nahi.”
       </p>
     </div>
     <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;

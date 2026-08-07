@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-06T03:37:20.169432";
+  var FKC_BUILD = "2026-08-07T05:39:51.813344";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -230,7 +230,21 @@ function fkcToggleTheme(){
       
       <img src="images/day-005.png" alt="Day 5 — **TikTok Par &quot;Hashtag Strategy&quot; — Trending Se Le Kar Niche Target Karne Tak**" style="width:100%;border-radius:12px;margin-bottom:14px;">
       <p class="muted" style="margin:0 0 6px;">🎬 AI Video Explanation</p><video src="videos/day-005.mp4" controls preload="metadata" poster="images/day-005.png" style="width:100%;border-radius:12px;margin-bottom:14px;background:#000;"></video>
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Hashtags TikTok par discoverability ka backbone hain. Sirf trending hashtags use karne se kaam nahi chalta—unhe niche, competition aur apne content type ke hisaab se chunna hota hai. Aaj seekhenge ki kaise hashtags ko research karke, mix karke aur timing ke saath use karke views 2x badhaein.</p><h3>Example</h3><p>1.</p><h3>Research</h3><p>TikTok ke search bar mein &quot;fitness&quot; type karo, phir &quot;Hashtags&quot; tab select karo. Dekho ki &quot;fitnesschallenge&quot; (1.2M posts) aur &quot;gymmotivation&quot; (800K posts) ka mix hai.<br>2.</p><h3>Mix</h3><p>1-2 broad (#Fitness), 1-2 niche (#HomeWorkout), 1 branded (#YourChannelName) aur 1 trending (#GymTokChallenge).<br>3.</p><h3>Placement</h3><p>Description ke end mein, pehle 3-4 hashtags sabse relevant likhein (algorithm inhe zyada weightage deta hai).</p><h3>Practice</h3><p>Apne niche ke 5 trending hashtags dhundo (TikTok search se ya [TikTok Creative Center](https://www.tiktok.com/business/en/creativecenter) se). Unhe apne next video ke description mein use karo.</p><h3>Mini Project</h3><p>Ek &quot;Hashtag Bank&quot; banao: Excel/Notion mein 3 categories ke hashtags save karo:<br>- **Trending** (high volume, low competition)<br>- **Niche** (medium volume, high relevance)<br>- **Branded** (apne channel ke liye unique)<br>Har video ke saath inmein se 3-5 hashtags randomly select karke use karo.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>کنسیپٹ</h3><p>ہیش ٹیگز ٹک ٹاک پر ڈسکور ایبلٹی کی ریڑھ کی ہڈی ہیں۔ صرف ٹرینڈنگ ہیش ٹیگز استعمال کرنے سے کام نہیں چلتا — انہیں نیچے، مقابلے اور اپنے مواد کی قسم کے حساب سے چننا ہوتا ہے۔ آج سیکھیں گے کہ کیسے ہیش ٹیگز کو ریسرچ کرکے، ملا کر اور ٹائمنگ کے ساتھ استعمال کرکے ویوز دوگنا کریں۔</p><h3>مثال</h3><p>1۔ ٹک ٹاک کے سرچ بار میں &quot;فٹنس&quot; ٹائپ کریں، پھر &quot;ہیش ٹیگز&quot; ٹیب سلیکٹ کریں۔ دیکھیں کہ &quot;فٹنس چیلنج&quot; (1.2 ملین پوسٹس) اور &quot;جم موٹیویشن&quot; (8 لاکھ پوسٹس) کا ملاپ ہے۔</p><h3></h3><p>2۔ 1-2 براڈ (#Fitness)، 1-2 نیچ (#HomeWorkout)، 1 برانڈڈ (#YourChannelName) اور 1 ٹرینڈنگ (#GymTokChallenge) کا امتزاج بنائیں۔</p><h3></h3><p>3۔ ڈسکرپشن کے آخر میں، پہلے 3-4 ہیش ٹیگز سب سے زیادہ متعلقہ لکھیں (الگورتھم انہیں زیادہ وزن دیتا ہے)।</p><h3>پریکٹس</h3><p>اپنے نیچے کے 5 ٹرینڈنگ ہیش ٹیگز تلاش کریں (ٹک ٹاک سرچ سے یا ٹک ٹاک کریئٹیو سینٹر سے)۔ انہیں اپنے اگلے ویڈیو کے ڈسکرپشن میں استعمال کریں۔</p><h3>منی پروجیکٹ</h3><p>ایک &quot;ہیش ٹیگ بینک&quot; بنائیں: ایکسل/نوٹین میں 3 کیٹیگریز کے ہیش ٹیگز محفوظ کریں:</p><h3></h3><p>- **ٹرینڈنگ** (زیادہ حجم، کم مقابلہ)</p><h3></h3><p>- **نیچ** (درمیانی حجم، زیادہ مطابقت)</p><h3></h3><p>- **برانڈڈ** (اپنے چینل کے لیے منفرد)</p><h3></h3><p>ہر ویڈیو کے ساتھ ان میں سے 3-5 ہیش ٹیگز بے ترتیب طور پر منتخب کرکے استعمال کریں۔</p></div>
       
       
@@ -349,7 +363,7 @@ function fkcToggleTheme(){
       <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
         margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
       <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
-        “Waqt zaya mat karo, kyunke jo waqt guzar jata hai woh wapas nahi aata — aaj hi shuru karo.”
+        “Har mahir kabhi beginner tha — bas usne seekhna chhoda nahi.”
       </p>
     </div>
     <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;

@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-06T03:37:20.169432";
+  var FKC_BUILD = "2026-08-07T05:39:51.813344";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -230,7 +230,21 @@ function fkcToggleTheme(){
       
       
       
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>TikTok ka algorithm har user ki har activity track karta hai—watch time, likes, shares, comments, even video completion rate. Ye dekh kar decide karta hai ke kya content recommend karna hai. Key factors: **Retention** (kitna time user ne video dekha), **Engagement** (kitne fast reactions aaye), aur **Trending Topics** (jo viral ho rahe hain). Algorithm fresh creators ko bhi chance deta hai agar content engaging ho.</p><h3>Example</h3><p>Ek new creator ne 15-second dance video banaya. Uske 10 followers ne 100% video dekhi, 3 ne like kiya, 1 ne share kiya. Algorithm samjha ke ye engaging hai, isliye usko &quot;For You Page&quot; par recommend kiya. Next video par uske 500 followers ho gaye.</p><h3>Practice</h3><p>Apne TikTok app mein jayein → &quot;For You&quot; page par scroll karein → 3 videos select karein jo aapko pasand aaye. Har video ke niche &quot;Why this?&quot; ka reason sochain (e.g., &quot;Isme sound viral hai&quot; ya &quot;User ne 90% video dekhi&quot;).</p><h3>Mini Project</h3><p>Apne phone ke gallery se 3-5 videos select karein jo aapke hisaab se engaging hon (chahay wo aapke na bhi ho). Har video ke liye note karein:<br>- Video length<br>- First 3 seconds mein kya hua<br>- Kya sound use hua<br>- Engagement rate (likes/shares/comments)</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>ٹک ٹاک کا الگورتھم ہر یوزر کی ہر ایکٹیوٹی ٹریک کرتا ہے—وATCH ٹائم، لائکس، شئیرز، کمنٹس، حتیٰ کہ ویڈیو کمپلیشن ریٹ۔ یہ دیکھ کر فیصلہ کرتا ہے کہ کیا کَونٹینٹ ری‌کومینڈ کرنا ہے۔ اہم فیکٹرز: **ریٹینشن** (کِتنا ٹائم یوزر نے ویڈیو دیکھا)، **اینگیجمنٹ** (کِتنے فاسٹ ری ایکشنز آئے)، اور **ٹرینڈنگ ٹاپکس** (جو وائرل ہو رہے ہیں)۔ الگورتھم فریش کریٹرز کو بھی چانس دیتا ہے اگر کَونٹینٹ اینگیجنگ ہو۔</p><h3>Example</h3><p>ایک نیو کریٹر نے 15 سیکنڈ کا ڈانس ویڈیو بنایا۔ اُس کے 10 فالوورز نے 100% ویڈیو دیکھی، 3 نے لائک کیا، 1 نے شئیر کیا۔ الگورتھم سمجھا کہ یہ اینگیجنگ ہے، اِس لیے اُس کو &#x27;For You Page&#x27; پر ری‌کومینڈ کیا۔ اگلے ویڈیو پر اُس کے 500 فالوورز ہو گئے۔</p><h3>Practice</h3><p>اپنے TikTok app میں جائیں → &#x27;For You&#x27; پیج پر سکرول کریں → 3 ویڈیوز سلیکٹ کریں جو آپ کو پسند آئیں۔ ہر ویڈیو کے نیچے &#x27;Why this?&#x27; کا ریزن سوچیں (مثلاً، &#x27;اِس میں ساؤنڈ وائرل ہے&#x27; یا &#x27;یوزر نے 90% ویڈیو دیکھی&#x27;)۔</p><h3>Mini Project</h3><p>اپنے فون کے گیلری سے 3-5 ویڈیوز سلیکٹ کریں جو آپ کے حساب سے اینگیجنگ ہوں (چاہے وہ آپ کے نہ بھی ہوں)۔ ہر ویڈیو کے لیے نوٹ کریں:<br>- ویڈیو لمبائی<br>- پہلے 3 سیکنڈ میں کیا ہوا<br>- کیا ساؤنڈ استعمال ہوا<br>- اینگیجمنٹ ریٹ (لائکس/شئیرز/کمنٹس)</p></div>
       
       
@@ -349,7 +363,7 @@ function fkcToggleTheme(){
       <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
         margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
       <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
-        “Waqt zaya mat karo, kyunke jo waqt guzar jata hai woh wapas nahi aata — aaj hi shuru karo.”
+        “Har mahir kabhi beginner tha — bas usne seekhna chhoda nahi.”
       </p>
     </div>
     <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;
