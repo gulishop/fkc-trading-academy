@@ -7410,6 +7410,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 3,
+      "id": "day-003",
+      "date": "2026-08-07",
+      "title": "Day 3 — \"1, 2, 3... Jor Kar Dekhein!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachon, jab hum do cheezon ko jodte hain, toh woh ek naya number ban jata hai. Jaise 2 aur 3 jodne se 5 banta hai. Yeh bilkul safe hai, jaise doodh aur roti ka combination. Koi cheez chori nahi hoti, na hi chhupana hota hai."
+        ],
+        [
+          "Chhoti Kahani",
+          "Rani ne apne dost se 2 chhoti chidiya leni thi. Uske dost ne 3 aur chidiya de di. Ab Rani ke paas kitni chidiya hain? (Thoda ruko, socho!) 2 + 3 = 5. Dekh, kitna mazedaar combination hai!"
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar koi tumse pooche ke tumne kitne rang ke kapde pehen rakhe hain, toh tum kya karogi?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Tumhara jism sirf tumhara hai. Agar koi cheez ajeeb lage, toh foran ammi/abbu ko bata do—chahe woh koi bhi ho!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ٣ — ایک، دو، تین... جوڑ کر دیکھیں!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "بچو، جب ہم دو چیزوں کو جوڑتے ہیں تو وہ ایک نیا نمبر بن جاتا ہے۔ جیسے دو اور تین جوڑنے سے پانچ بنتا ہے۔ یہ بالکل محفوظ ہے، جیسے دودھ اور روٹی کا امتزاج۔ کوئی چیز چوری نہیں ہوتی، نہ ہی چھپانا ہوتا ہے۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "رانی نے اپنے دوست سے دو چھوٹی چڑیاں لینی تھیں۔ اس کے دوست نے تین اور چڑیاں دے دیں۔ اب رانی کے پاس کتنی چڑیاں ہیں؟ (ذرا رُکو، سوچو!) دو جمع تین برابر پانچ۔ دیکھو، کتنا مزے دار امتزاج ہے!"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "بیٹا، اگر کوئی تم سے پوچھے کہ تم نے کتنے رنگ کے کپڑے پہن رکھے ہیں، تو تم کیا کرو گے؟"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمہارا جسم صرف تمہارا ہے۔ اگر کوئی چیز عجیب لگے تو فوراً امّی/ابّو کو بتا دو—چاہے وہ کوئی بھی ہو!"
+            }
+          ]
+        }
+      }
     }
   ]
 }
