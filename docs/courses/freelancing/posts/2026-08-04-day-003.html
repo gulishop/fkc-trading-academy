@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-05T21:31:33.960888";
+  var FKC_BUILD = "2026-08-07T00:56:14.717490";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -230,7 +230,21 @@ function fkcToggleTheme(){
       
       
       
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Freelancing mein pehla impression aapki communication se hi banta hai. Client ko yeh feel hona chahiye ke aap professional, responsive aur solution-oriented hain. Pehla message sirf &quot;Hi&quot; ya &quot;I can do this&quot; se kaam nahi chalta—usmein specificity, confidence aur call-to-action hona zaroori hai.</p><h3>Example</h3><p>Ek client ne Fiverr par &quot;Logo design&quot; ka project post kiya hai. Aapki response yeh na ho:<br>❌ *&quot;Hi, I can make logo for you. Pls msg me.&quot;*</p><p>Balke yeh ho:<br>✅ *&quot;Hi [Client Name],<br>I noticed your project for a modern logo for your [business type]. I’ve designed 50+ logos in this niche, including for [similar client/project]. Here’s my approach:<br>1. We’ll discuss your brand colors &amp; style in a quick call<br>2. I’ll send 3 concepts within 24 hours<br>3. Unlimited revisions till you’re 100% satisfied<br>Can we schedule a 10-min call today at 3 PM? Looking forward to your reply.<br>Best,<br>[Your Name]&quot;*</p><h3>Practice</h3><p>Apne Fiverr/Upwork inbox se kisi bhi 1 pending proposal ya message ka draft likhein jo aapne abhi tak send kiya hai. Use edit karke pehle paragraph ko 3x zyada effective banayein (specificity + call-to-action add karke).</p><h3>Mini Project</h3><p>Ek dummy client ka message banaayein (jaise &quot;I need a WordPress website for my restaurant&quot;) aur uske liye 3 different first-message drafts likhein—ek for Fiverr, ek for Upwork, aur ek for cold email.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>فری لانسنگ میں پہلا تاثر آپ کی کمیونیکیشن سے ہی بنتا ہے۔ کلائنٹ کو یہ محسوس ہونا چاہیے کہ آپ پیشہ ور، جواب دہ اور حل پر مرکوز ہیں۔ پہلا پیغام بس &#x27;ہیلو&#x27; یا &#x27;میں یہ کر سکتا ہوں&#x27; سے کام نہیں چلتا—اس میں مخصوصیت، اعتماد اور کارروائی کا بل ہونا ضروری ہے۔</p><h3>Example</h3><p>ایک کلائنٹ نے Fiverr پر &#x27;لوگو ڈیزائن&#x27; کا پروجیکٹ پوسٹ کیا ہے۔ آپ کی جوابی پیغام یوں نہ ہو:</p><p>❌ *&quot;ہیلو، میں آپ کے لیے لوگو بنا سکتا ہوں۔ براہ کرم مجھے پیغام دیں۔&quot;*</p><p>بلکہ یوں ہو:</p><p>✅ *&quot;ہیلو [کلائنٹ کا نام]،<br>میں نے آپ کے [بِزنس ٹائپ] کے لیے جدید لوگو کے پروجیکٹ پر نظر ڈالی۔ میں نے اس نِچ میں 50+ لوگو ڈیزائن کیے ہیں، جن میں [مشابه کلائنٹ/پروجیکٹ] کے لیے بھی شامل ہیں۔ میرا طریقہ کار یہ ہے:<br>1. ہم ایک تیز کال میں آپ کے برانڈ کے رنگوں اور اسٹائل پر بات کریں گے<br>2. میں 24 گھنٹوں کے اندر 3 تصورات بھیجوں گا<br>3. آپ کی 100% رضامندی تک لامحدود ریویژنز<br>کیا آج 3 بجے شام کو 10 منٹ کی کال شیڈول کر سکتے ہیں؟ آپ کی جوابی توقع میں ہوں گا۔<br>شکریہ،<br>[آپ کا نام]&quot;*</p><h3>Practice</h3><p>اپنے Fiverr/Upwork ان باکس سے کسی بھی ایک pending proposal یا پیغام کا ڈرافٹ لکھیں جو آپ نے ابھی تک بھیجا ہے۔ اسے ایڈٹ کرکے پہلے پیراگراف کو 3x زیادہ موثر بنائیں (مخصوصیت + کارروائی کا بل شامل کرکے)۔</p><h3>Mini Project</h3><p>ایک dummy کلائنٹ کا پیغام بنائیں (جیسے &#x27;میں اپنے ریسٹورنٹ کے لیے WordPress ویب سائٹ چاہتا ہوں&#x27;) اور اس کے لیے 3 مختلف پہلا پیغام ڈرافٹ لکھیں—ایک Fiverr کے لیے، ایک Upwork کے لیے، اور ایک سرد ای میل کے لیے۔</p></div>
       
       
@@ -342,7 +356,30 @@ function fkcToggleTheme(){
         data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
       <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
-    <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
+    
+    <div class="daily-motivation" style="max-width:640px;margin:20px auto;padding:16px 20px;
+      background:linear-gradient(135deg,#fff7e6,#fef0f0);border-radius:14px;border:1px solid #f5e2c8;
+      text-align:center;">
+      <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
+        margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
+      <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
+        “Har mahir kabhi beginner tha — bas usne seekhna chhoda nahi.”
+      </p>
+    </div>
+    <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;
+      background:linear-gradient(145deg,#f7f9fc,#eef2f9);border-radius:16px;border:1px solid #e6e9f0;
+      text-align:center;">
+      <p style="font-size:13px;letter-spacing:.03em;text-transform:uppercase;color:var(--muted);
+        margin:0 0 10px;font-weight:700;">✉️ Founder ki taraf se</p>
+      <p style="font-size:15px;line-height:1.7;color:#2a2f3a;margin:0 0 14px;">
+        Hamara maqsad sirf lessons post karna nahi — har us Pakistani tak muft, practical
+        taleem pohchana hai jo seekhna chahta hai lekin resources ya waqt nahi rakhta.
+        FKC Trading Academy ka vision hai: <b>roz thora seekho, mustaqil mehnat karo,
+        aur apni zindagi khud badlo.</b> Mission simple hai — koi bhi course, koi bhi fee
+        nahi, sirf aap ka irada.
+      </p>
+      <p style="font-size:13px;color:var(--muted);margin:0;">— Fazul Khan Chandio, Founder &amp; CEO</p>
+    </div><div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     <script>
     (function(){
       try {

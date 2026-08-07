@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-05T21:31:33.960888";
+  var FKC_BUILD = "2026-08-07T00:56:14.717490";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -230,7 +230,21 @@ function fkcToggleTheme(){
       
       
       
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Ek achha gig ya proposal client ko impress karne ka pehla kadam hai. Ismein **clear value proposition**, **specific benefits**, aur **call-to-action** hona zaroori hai. Copywriting ki basic techniques (like AIDA: Attention, Interest, Desire, Action) use karo taake client ka focus tum par rahe.</p><h3>Example</h3><p>Imagine a client searching for &quot;logo design&quot;. Ek **bad** proposal:<br>*&quot;I can design your logo. Contact me.&quot;*</p><p>Ek **achha** proposal:<br>*&quot;I’ll design a **modern, scalable logo** in 48 hours that matches your brand’s personality. My past clients saw **30% more engagement** after rebranding. Let’s discuss your vision—reply with your color preferences!&quot;*</p><h3>Practice</h3><p>Apne **Day 1** ke skill ke liye ek **3-line proposal** likho jo:<br>1. Client ki **specific problem** mention kare<br>2. Tumhari **unique solution** bataye<br>3. **Next step** (e.g., &quot;DM me your deadline&quot;)</p><h3>Mini Project</h3><p>Ek **fake gig** create karo (Upwork/Fiverr par) for a service you can offer. Include:<br>- **Title** (e.g., &quot;I’ll Design a Professional LinkedIn Banner in 24 Hours&quot;)<br>- **3 bullet points** of benefits<br>- **Pricing** (fixed or starting at $X)</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>کسی بھی اچھے gig ya proposal کا پہلا اور اہم پہلو یہ ہے کہ وہ کلائنٹ کو متاثر کرنے کا ذریعہ بنے۔ اس میں **واضح قیمت کا پیشکش** (value proposition)، **مخصوص فوائد** (specific benefits)، اور **عمل کی دعوت** (call-to-action) شامل ہونا لازمی ہے۔ Copywriting کی بنیادی تکنیکوں جیسے AIDA (Attention, Interest, Desire, Action) کو استعمال کرو تاکہ کلائنٹ کی توجہ تم پر مرکوز رہے۔</p><h3>Example</h3><p>تصور کرو کہ کوئی کلائنٹ &#x27;لوگو ڈیزائن&#x27; کی تلاش میں ہے۔ ایک **برے** proposal کچھ یوں ہو سکتا ہے:</p><p>*&quot;میں تمھارا لوگو ڈیزائن کر سکتا ہوں۔ مجھ سے رابطہ کرو۔*&quot;</p><p>جبکہ ایک **اچھا** proposal کچھ یوں ہونا چاہئے:</p><p>*&quot;میں تمھارے لیے ایک **جدید اور سکیل ایبل لوگو** ڈیزائن کروں گا جو 48 گھنٹوں میں مکمل ہو جائے گا اور تمھاری برانڈ کی شخصیت کے مطابق ہوگا۔ میرے پچھلے کلائنٹس نے ری برانڈنگ کے بعد **30% زیادہ انگیجمنٹ** دیکھی ہے۔ آؤ، تمھاری ویژن پر بات کریں—اپنی پسندیدہ رنگوں کی ترجیحات کا جواب دو!&quot;*</p><h3>Practice</h3><p>اپنے **Day 1** کے سکل کے مطابق ایک **3-lines کا proposal** لکھو جو مندرجہ ذیل پر مشتمل ہو:<br>1. کلائنٹ کی **مخصوص پریشانی** کا ذکر ہو<br>2. تمھاری **مخصوص حل** بتایا جائے<br>3. **اگلے قدم** کی دعوت ہو (مثلاً، &quot;اپنی ڈیڈ لائن کا جواب DM میں دو&quot;)</p><h3>Mini Project</h3><p>ایک **فیک gig** بناؤ (Upwork/Fiverr پر) اپنے پیش کیے جانے والے سروس کے لیے۔ اس میں شامل کرو:<br>- **عنوان** (مثلاً، &quot;میں تمھارے لیے ایک پیشہ ورانہ LinkedIn بینر 24 گھنٹوں میں ڈیزائن کروں گا&quot;)<br>- **فوائد کے 3 نقطے**<br>- **قیمت** (مخصوص یا $X سے شروع ہونے والی)</p></div>
       
       
@@ -342,7 +356,30 @@ function fkcToggleTheme(){
         data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
       <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
-    <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
+    
+    <div class="daily-motivation" style="max-width:640px;margin:20px auto;padding:16px 20px;
+      background:linear-gradient(135deg,#fff7e6,#fef0f0);border-radius:14px;border:1px solid #f5e2c8;
+      text-align:center;">
+      <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
+        margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
+      <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
+        “Har mahir kabhi beginner tha — bas usne seekhna chhoda nahi.”
+      </p>
+    </div>
+    <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;
+      background:linear-gradient(145deg,#f7f9fc,#eef2f9);border-radius:16px;border:1px solid #e6e9f0;
+      text-align:center;">
+      <p style="font-size:13px;letter-spacing:.03em;text-transform:uppercase;color:var(--muted);
+        margin:0 0 10px;font-weight:700;">✉️ Founder ki taraf se</p>
+      <p style="font-size:15px;line-height:1.7;color:#2a2f3a;margin:0 0 14px;">
+        Hamara maqsad sirf lessons post karna nahi — har us Pakistani tak muft, practical
+        taleem pohchana hai jo seekhna chahta hai lekin resources ya waqt nahi rakhta.
+        FKC Trading Academy ka vision hai: <b>roz thora seekho, mustaqil mehnat karo,
+        aur apni zindagi khud badlo.</b> Mission simple hai — koi bhi course, koi bhi fee
+        nahi, sirf aap ka irada.
+      </p>
+      <p style="font-size:13px;color:var(--muted);margin:0;">— Fazul Khan Chandio, Founder &amp; CEO</p>
+    </div><div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     <script>
     (function(){
       try {

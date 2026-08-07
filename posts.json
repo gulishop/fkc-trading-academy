@@ -2506,6 +2506,80 @@
           ]
         }
       }
+    },
+    {
+      "day": 6,
+      "id": "day-006",
+      "date": "2026-08-07",
+      "title": "Day 6 — **Negotiation Ka Art: Client Se \"Yes\" Kaise Karwayein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Negotiation freelancing ka hearth hai—agar aap apne rate par akar nahi rakh sakte, toh pricing strategy ka koi matlab nahi. Yahan seekhna hai ki kaise professional tareeke se \"counter offer\" karein, client ki objections handle karein, aur win-win deal nikalein. Remember: Client bhi apna budget fixed rakhta hai, lekin aap usko value samjha kar rate badha sakte hain."
+        ],
+        [
+          "Example",
+          "Ek client ne aapko $500 ka project offer kiya hai, lekin aapka minimum $700 hai."
+        ],
+        [
+          "Step 1",
+          "Shukriya ke saath \"I appreciate the offer!\" bol kar shuru karein."
+        ],
+        [
+          "Step 2",
+          "Value batayein: \"For $700, I’ll include [X feature] which will save you 20 hours of work.\""
+        ],
+        [
+          "Step 3",
+          "Flexibility dikhaye: \"If budget is tight, we can start with Phase 1 ($500) and add Phase 2 later.\""
+        ],
+        [
+          "Practice",
+          "Apne ek imaginary client se negotiation karne ka email draft karein. Use the 3-step formula above (appreciation + value + flexibility)."
+        ],
+        [
+          "Mini Project",
+          "Ek real-life negotiation scenario likhein jismein:\n- Client ka initial offer ($300)\n- Aapka minimum rate ($450)\n- 2-3 value points (e.g., \"I’ll deliver in 3 days instead of 5\")\n- Final deal ($380 with 1 extra feature)"
+        ]
+      ],
+      "answer_key": "gratitude, value-add, phased approach, flexibility",
+      "translations": {
+        "ur": {
+          "title": "دن ٦ — مذاکرات کا فن: کلائنٹ سے کیسے 'ہاں' کرائیں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "مذاکرات فری لانسنگ کا دل ہیں — اگر آپ اپنی ریٹ پر قائم نہیں رہ سکتے، تو پرائسنگ سٹریٹیجی کا کوئی مطلب نہیں۔ یہاں سیکھنا ہے کہ کیسے پیشہ ورانہ طریقے سے 'کاؤنٹر آفر' کریں، کلائنٹ کی اعتراضات کو سنبھالیں، اور جیت-جیت کا سودا نکالیں۔ یاد رکھیں: کلائنٹ بھی اپنا بجٹ فکس رکھتا ہے، لیکن آپ اسے ویلیو سمجھا کر ریٹ بڑھا سکتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک کلائنٹ نے آپ کو پانچ سو ڈالر کا پروجیکٹ آفر کیا ہے، لیکن آپ کا کم از کم سات سو ڈالر ہے۔"
+            },
+            {
+              "label": "مرحلہ ١",
+              "content": "شکریے کے ساتھ 'میں آپ کی آفر کی تعریف کرتا ہوں!' کہہ کر شروع کریں۔"
+            },
+            {
+              "label": "مرحلہ ٢",
+              "content": "ویلیو بتائیں: 'سات سو ڈالر کے عوض، میں [ایکس فیچر] شامل کروں گا جو آپ کا بیس گھنٹے کا کام بچا دے گا۔'"
+            },
+            {
+              "label": "مرحلہ ٣",
+              "content": "لچک دکھائیں: 'اگر بجٹ تنگ ہے، تو ہم پہلے مرحلے سے شروع کر سکتے ہیں (پانچ سو ڈالر) اور بعد میں دوسرا مرحلہ شامل کر سکتے ہیں۔'"
+            },
+            {
+              "label": "مشق",
+              "content": "اپنے ایک خیالی کلائنٹ کے ساتھ مذاکرات کا ای میل ڈرافٹ کریں۔ اوپر دیے گئے تین مراحل کے فارمولے کا استعمال کریں (تعریف + ویلیو + لچک)।"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "ایک حقیقی زندگی کا مذاکراتی منظرنامہ لکھیں جس میں شامل ہو:\n- کلائنٹ کی ابتدائی آفر (تین سو ڈالر)\n- آپ کا کم از کم ریٹ (چار سو پچاس ڈالر)\n- دو سے تین ویلیو پوائنٹس (مثلاً، 'میں پانچ کی بجائے تین دن میں ڈیلیور کروں گا')\n- حتمی سودا (تین سو اسی ڈالر کے ساتھ ایک اضافی فیچر)"
+            }
+          ]
+        }
+      }
     }
   ],
   "graphic-design-canva": [
