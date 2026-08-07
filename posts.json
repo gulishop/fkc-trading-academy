@@ -5291,6 +5291,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 5,
+      "id": "day-005",
+      "date": "2026-08-07",
+      "title": "Day 5 — JavaScript Functions aur Events: Interactive Web Banaana",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "JavaScript functions reusable code blocks hain jo tasks perform karte hain. Events (jaise click, submit) use functions ko trigger karte hain. Aaj hum seekhenge kaise functions banaye jaate hain aur unhe HTML elements ke saath connect karke interactive web pages banaye jaate hain."
+        ],
+        [
+          "Example",
+          "```javascript\nfunction greet(name) {\n  console.log(\"Hello, \" + name + \"!\");\n}\ngreet(\"Ali\"); // Output: \"Hello, Ali!\"\n\n// Event listener add karna\ndocument.getElementById(\"myButton\").addEventListener(\"click\", function() {\n  alert(\"Button clicked!\");\n});\n```"
+        ],
+        [
+          "Practice",
+          "Ek button banaye `<button id=\"colorBtn\">Change Color</button>` aur uske click event par ek function run karaye jo `<p>` tag ki text color change kar de (e.g., red)."
+        ],
+        [
+          "Mini Project",
+          "**\"Click Counter\"** – Ek button aur ek `<p>` tag banaye jo har click par counter badha de (e.g., \"Clicks: 1\", \"Clicks: 2\", etc.)."
+        ]
+      ],
+      "answer_key": "button click handler, counter variable, textcontent update",
+      "translations": {
+        "ur": {
+          "title": "دن ۵ — جاوا اسکرپٹ فنکشنز اور ایونٹس: انٹرایکٹو ویب بنانا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "جاوا اسکرپٹ فنکشنز ری یوज़ ایبل کوڈ بلاکس ہوتے ہیں جو ٹاسکس انجام دیتے ہیں۔ ایونٹس (جیسے کلک، سبمٹ) ان فنکشنز کو ٹرگر کرتے ہیں۔ آج ہم سیکھیں گے کہ فنکشنز کیسے بنائے جاتے ہیں اور انہیں ایچ ٹی ایم ایل ایلیمنٹس کے ساتھ کنیکٹ کرکے انٹرایکٹو ویب پیجز کیسے بنائے جاتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "```javascript\nfunction greet(name) {\n  console.log(\"Hello, \" + name + \"!\");\n}\ngreet(\"Ali\"); // Output: \"Hello, Ali!\"\n\n// ایونٹ لسنر شامل کرنا\ndocument.getElementById(\"myButton\").addEventListener(\"click\", function() {\n  alert(\"Button clicked!\");\n});\n```"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "ایک بٹن بنائیں `<button id=\"colorBtn\">رنگ تبدیل کریں</button>` اور اس کے کلک ایونٹ پر ایک فنکشن چلائیں جو `<p>` ٹیگ کے ٹیکسٹ کا رنگ تبدیل کر دے (مثلاً سرخ کر دے)।"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "**\"کلک کاؤنٹر\"** – ایک بٹن اور ایک `<p>` ٹیگ بنائیں جو ہر کلک پر کاؤنٹر بڑھا دے (جیسے \"کلکس: ۱\"، \"کلکس: ۲\" وغیرہ)"
+            }
+          ]
+        }
+      }
     }
   ],
   "excel-data-analysis": [
