@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-05T20:21:59.573410";
+  var FKC_BUILD = "2026-08-07T00:38:33.256844";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -230,7 +230,21 @@ function fkcToggleTheme(){
       
       
       
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Niche select karna YouTube channel ka sabse pehla aur sabse important step hai. Niche matlab aapka channel ka topic ya subject jismein aap videos banayenge. Ek achha niche aapko consistent content ideas deta hai, audience attract karta hai, aur competition bhi manage karne mein help karta hai. Apna niche choose karte waqt apne interests, skills, aur market demand ko consider karna zaroori hai.</p><h3>Example</h3><p>Maana aapko fitness pasand hai. Ab aapko decide karna hai ki aap fitness ke kis specific area par focus karna chahte hain. Jaise:<br>- Gym beginners guide<br>- Home workout for women<br>- Weight loss diet plans<br>- Yoga for stress relief<br>Is tarah se niche select karne se aapko content ideas bhi easily mil jayenge aur audience bhi targeted rahegi.</p><h3>Practice</h3><p>Apne interests aur skills list karein. Fir 3-5 topics select karein jinpar aap videos bana sakte hain. Har topic ke liye 3-5 content ideas sochiye.</p><h3>Mini Project</h3><p>Ek simple Google search karein aur har topic ke liye competition check karein. Har topic ke liye YouTube search bar mein type karein aur dekhein ki kitne videos hain aur unke views kya hain. Isse aapko pata chalega ki aapka selected niche kitna competitive hai.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>نیچے سلیکشن کرنا YouTube چینل کا سب سے پہلا اور سب سے اہم سٹپ ہے۔ نیچے کا مطلب آپ کا چینل کا ٹاپک یا سBJECT ہے جس میں آپ ویڈیوز بنائیں گے۔ ایک اچھا نیچے آپ کو کنسسٹنٹ کنٹینٹ آئیڈیا دیتا ہے، آڈیئنس کو اٹریکٹ کرتا ہے، اور کمپٹیشن کو بھی مینیج کرنے میں مدد کرتا ہے۔ اپنا نیچے چننے کے وقت اپنے انٹرسٹس، اسکلز، اور مارکیٹ ڈیمانڈ کو کانسیڈر کرنا ضروری ہے۔</p><h3>Example</h3><p>مانا آپ کو فٹنس پسند ہے۔ اب آپ کو ڈسیڈ کرنا ہے کہ آپ فٹنس کے کس سپیسفک ایریا پر فوکس کرنا چاہتے ہیں۔ جیسے:<br>- Gym beginners guide<br>- Home workout for women<br>- Weight loss diet plans<br>- Yoga for stress relief<br>اس طرح سے نیچے سلیکشن کرنے سے آپ کو کنٹینٹ آئیڈیا بھی ایزیلی مل جائیں گے اور آڈیئنس بھی ٹارگٹڈ رہے گی۔</p><h3>Practice</h3><p>اپنے انٹرسٹس اور اسکلز لسٹ کریں۔ پھر 3-5 ٹاپکس سلیکٹ کریں جن پر آپ ویڈیوز بنا سکتے ہیں۔ ہر ٹاپک کے لیے 3-5 کنٹینٹ آئیڈیا سوچیں۔</p><h3>Mini Project</h3><p>ایک سادہ Google search کریں اور ہر ٹاپک کے لیے کمپٹیشن چیک کریں۔ ہر ٹاپک کے لیے YouTube search bar میں ٹائپ کریں اور دیکھیں کہ کتنے ویڈیوز ہیں اور ان کے ویوز کیا ہیں۔ اس سے آپ کو پتہ چلے گا کہ آپ کا سلیکٹڈ نیچے کتنا کمپٹٹو ہے۔</p></div>
       
       
@@ -342,7 +356,30 @@ function fkcToggleTheme(){
         data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
       <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
-    <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
+    
+    <div class="daily-motivation" style="max-width:640px;margin:20px auto;padding:16px 20px;
+      background:linear-gradient(135deg,#fff7e6,#fef0f0);border-radius:14px;border:1px solid #f5e2c8;
+      text-align:center;">
+      <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
+        margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
+      <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
+        “Har mahir kabhi beginner tha — bas usne seekhna chhoda nahi.”
+      </p>
+    </div>
+    <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;
+      background:linear-gradient(145deg,#f7f9fc,#eef2f9);border-radius:16px;border:1px solid #e6e9f0;
+      text-align:center;">
+      <p style="font-size:13px;letter-spacing:.03em;text-transform:uppercase;color:var(--muted);
+        margin:0 0 10px;font-weight:700;">✉️ Founder ki taraf se</p>
+      <p style="font-size:15px;line-height:1.7;color:#2a2f3a;margin:0 0 14px;">
+        Hamara maqsad sirf lessons post karna nahi — har us Pakistani tak muft, practical
+        taleem pohchana hai jo seekhna chahta hai lekin resources ya waqt nahi rakhta.
+        FKC Trading Academy ka vision hai: <b>roz thora seekho, mustaqil mehnat karo,
+        aur apni zindagi khud badlo.</b> Mission simple hai — koi bhi course, koi bhi fee
+        nahi, sirf aap ka irada.
+      </p>
+      <p style="font-size:13px;color:var(--muted);margin:0;">— Fazul Khan Chandio, Founder &amp; CEO</p>
+    </div><div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     <script>
     (function(){
       try {

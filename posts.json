@@ -441,6 +441,88 @@
           ]
         }
       }
+    },
+    {
+      "day": 5,
+      "id": "day-005",
+      "date": "2026-08-07",
+      "title": "Day 5 — YouTube SEO: Search Mein Top Par Aana (Basics Se Start)",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "YouTube SEO ka matlab hai apne videos ko YouTube ke search aur suggested videos mein top par lana. Iske liye keywords, tags, description, aur engagement (CTR) ka istemal hota hai. Aaj hum YouTube search results mein rank karne ke liye **keywords research** aur **video metadata** (title, description, tags) ko optimize karna seekhenge."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Keyword Research",
+          "Google Keyword Planner ya TubeBuddy/VIDIQ se \"how to make money online in Pakistan\" search karo. Volume (searches/month) aur competition check karo.\n2."
+        ],
+        [
+          "Title Optimization",
+          "Agar keyword \"make money online\" hai, to title ho sakta hai: *\"Make Money Online in Pakistan (2024) | Best 5 Ways | Urdu/Hindi\"*\n3."
+        ],
+        [
+          "Description",
+          "Pehle 2-3 lines mein keyword repeat karo, phir video summary likho, aur last mein relevant links (social media, playlist) add karo.\n4."
+        ],
+        [
+          "Tags",
+          "Main keyword + related keywords (e.g., \"online earning, freelancing, YouTube se paise kamana\")."
+        ],
+        [
+          "Practice",
+          "Apne niche ka **1 main keyword** aur **2-3 related keywords** dhundho (Google Keyword Planner ya YouTube search bar ka istemal karo). Result ko not karo."
+        ],
+        [
+          "Mini Project",
+          "Ek **YouTube video ka draft title aur description** likho jo SEO-friendly ho. Apne niche ka keyword zaroor include karo."
+        ]
+      ],
+      "answer_key": "keyword research, title optimization, description structure, tags usage",
+      "translations": {
+        "ur": {
+          "title": "دن ۵ — یوٹیوب ایس ای او: سرچ میں ٹاپ پر آنا (بیسک سے شروع)",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "یوٹیوب ایس ای او کا مطلب ہے اپنے ویڈیوز کو یوٹیوب کی سرچ اور سجسٹڈ ویڈیوز میں ٹاپ پر لانا۔ اس کے لیے کی ورڈز، ٹیگز، ڈسکرپشن، اور انگیجمنٹ (سی ٹی آر) کا استعمال ہوتا ہے۔ آج ہم یوٹیوب سرچ رزلٹس میں رینک کرنے کے لیے **کی ورڈز ریسرچ** اور **ویڈیو میٹا ڈیٹا** (ٹائٹل، ڈسکرپشن، ٹیگز) کو آپٹیمائز کرنا سیکھیں گے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔"
+            },
+            {
+              "label": "کی ورڈ ریسرچ",
+              "content": "گوگل کی ورڈ پلانر یا ٹیوب بڈی/وی ڈی آئی کیو سے \"how to make money online in Pakistan\" سرچ کرو۔ والیوم (سرچز/مہینہ) اور مقابلہ چیک کرو۔"
+            },
+            {
+              "label": "ٹائٹل آپٹیمائزیشن",
+              "content": "اگر کی ورڈ \"make money online\" ہے تو ٹائٹل ہو سکتا ہے: \"*Make Money Online in Pakistan (2024) | Best 5 Ways | Urdu/Hindi*\""
+            },
+            {
+              "label": "ڈسکرپشن",
+              "content": "پہلے ۲-۳ لائنز میں کی ورڈ ریپیٹ کرو، پھر ویڈیو سمری لکھو، اور آخر میں متعلقہ لنکس (سوشل میڈیا، پلے لسٹ) شامل کرو۔"
+            },
+            {
+              "label": "ٹیگز",
+              "content": "مین کی ورڈ + متعلقہ کی ورڈز (مثلاً \"online earning, freelancing, YouTube se paise kamana\")۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے نیچ کا **۱ مین کی ورڈ** اور **۲-۳ متعلقہ کی ورڈز** ڈھونڈو (گوگل کی ورڈ پلانر یا یوٹیوب سرچ بار کا استعمال کرو)۔ نتیجہ نوٹ کرو۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **یوٹیوب ویڈیو کا ڈرافٹ ٹائٹل اور ڈسکرپشن** لکھو جو ایس ای او فرینڈلی ہو۔ اپنے نیچ کا کی ورڈ ضرور شامل کرو۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "social-media-marketing": [
