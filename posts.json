@@ -6845,6 +6845,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 5,
+      "id": "day-005",
+      "date": "2026-08-07",
+      "title": "Day 5 — **Editing Workflow: From Raw to Polished**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum editing ke *process* par focus karenge—kaise ek photo ko \"raw\" se \"ready-to-share\" banaya jata hai. Lightroom mein basic edits (exposure, contrast, white balance) ke *order* aur *priority* samjhenge taake editing natural aur professional lage. Har step ka logic samajhna zyada important hai than just buttons dabana."
+        ],
+        [
+          "Example",
+          "Ek *underexposed* portrait ko edit karne ka step-by-step:\n1. **White Balance** fix karo (agar photo blue/cold hai, \"Temp\" slider ko right move karo).\n2. **Exposure** badhao taake subject clear ho (agar zyada ho gaya, \"Highlights\" ko kam karo).\n3. **Contrast** add karo (basics mein +10–20 hi kaafi hai).\n4. **Shadows** ko lift karo taake dark areas detail retain karein.\n5. **Sharpening** (Detail panel) se edges crisp hon."
+        ],
+        [
+          "Practice",
+          "Apne phone ya camera se liye gayi *kisi bhi* photo ko Lightroom mein import karo. Pehle 3 edits (WB, Exposure, Contrast) manually adjust karo—*over-edit mat karna*, bas natural look chahiye."
+        ],
+        [
+          "Mini Project",
+          "Ek *before/after* pair banayein: 1 raw photo + uska edited version (Lightroom preset ya manual edits se). Side-by-side compare karo aur doosre students ke saath share karo."
+        ]
+      ],
+      "answer_key": "white balance adjust, exposure +1, contrast +15, shadows +10",
+      "translations": {
+        "ur": {
+          "title": "دن 5 — ایڈیٹنگ ورک فلو: خام سے صیقل شدہ تک",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم ایڈیٹنگ کے پروسیس پر فوکس کریں گے—کہ کیسے ایک فوٹو کو \"خام\" سے \"شئیر کرنے کے قابل\" بنایا جاتا ہے۔ لائٹ روم میں بنیادی ایڈٹس (ایکسپوژر، کنٹراسٹ، وائٹ بیلنس) کے آرڈر اور پریورٹی کو سمجھیں گے تاکہ ایڈیٹنگ قدرتی اور پیشہ ورانہ لگے۔ ہر قدم کا منطق سمجھنا صرف بٹنز دبانے سے کہیں زیادہ اہم ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک انڈر ایکسپوزڈ پورٹریٹ کو ایڈٹ کرنے کا سٹیپ بائی سٹیپ طریقہ:\n1. **وائٹ بیلنس** ٹھیک کریں (اگر فوٹو نیلی/ٹھنڈی ہے تو \"ٹیمپ\" سلائیڈر کو دائیں طرف موو کریں)۔\n2. **ایکسپوژر** بڑھائیں تاکہ سبجیکٹ واضح ہو جائے (اگر زیادہ ہو گیا تو \"ہائی لائٹس\" کو کم کریں)۔\n3. **کنٹراسٹ** شامل کریں (بنیادی طور پر +10–20 ہی کافی ہے)۔\n4. **شیڈوز** کو اٹھائیں تاکہ تاریک حصوں میں تفصیل برقرار رہے۔\n5. **شارپننگ** (ڈِٹیل پینل) سے ایجز کرسپ ہو جائیں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے فون یا کیمرے سے لی گئی کسی بھی فوٹو کو لائٹ روم میں امپورٹ کریں۔ پہلے تین ایڈٹس (ڈبلیو بی، ایکسپوژر، کنٹراسٹ) کو دستی طور پر ایڈجسٹ کریں—زیادہ ایڈٹ نہ کریں، بس قدرتی نظر آنا چاہیے۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک \"قبل/بعد\" جوڑا بنائیں: ایک خام فوٹو اور اس کا ایڈیٹ شدہ ورژن (لائٹ روم پریسیٹ یا دستی ایڈٹس سے)۔ سائیڈ بائی سائیڈ موازنہ کریں اور دوسرے طلبہ کے ساتھ شیئر کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "voiceover-podcasting": [

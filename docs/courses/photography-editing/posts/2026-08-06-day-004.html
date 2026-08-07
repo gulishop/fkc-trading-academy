@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-06T00:07:45.296582";
+  var FKC_BUILD = "2026-08-07T23:42:11.245835";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -222,7 +222,7 @@ function fkcToggleTheme(){
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "headline": "Day 4 — **Portrait Photography: Posing & Expressions**", "name": "Day 4 — **Portrait Photography: Posing & Expressions**", "description": "", "learningResourceType": "Lesson", "educationalLevel": "Beginner", "inLanguage": "ur", "isPartOf": {"@type": "Course", "name": "Photography & Editing"}, "datePublished": "2026-08-06", "publisher": {"@type": "Organization", "name": "FKC Trading Academy"}}</script>
     <div class="top"><a href="../../../index.html">← FKC Trading Academy</a>
     <a href="../index.html" class="course-back-link">/ Photography &amp; Editing</a></div>
-    <span class="badge">Latest</span>
+    
     <p class="muted">📷 Photography &amp; Editing · Day 04</p>
     <h1>Day 4 — **Portrait Photography: Posing &amp; Expressions**</h1>
     <p class="muted" style="margin:0 0 10px;">↩️ Pichla lesson: <strong>Day 3 — **Understanding Natural Light: The Foundation of Great Photos**</strong> — aaj is se aage badhte hain.</p>
@@ -230,7 +230,21 @@ function fkcToggleTheme(){
       
       <img src="images/day-004.png" alt="Day 4 — **Portrait Photography: Posing &amp; Expressions**" style="width:100%;border-radius:12px;margin-bottom:14px;">
       <p class="muted" style="margin:0 0 6px;">🎬 AI Video Explanation</p><video src="videos/day-004.mp4" controls preload="metadata" poster="images/day-004.png" style="width:100%;border-radius:12px;margin-bottom:14px;background:#000;"></video>
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Portrait photography ka heart hai posing aur expressions—bas yahi hai jo photo ko zindagi deta hai. Agar subject natural feel kare aur photographer unki energy capture kar paye, to photo zaroor impactful banti hai. Aaj hum seekhenge ki kaise subject ko comfortable banaya jaye, natural poses find ki jaen, aur expressions ko guide kiya jaye bina forced lage.</p><h3>Example</h3><p>Ek subject ko &quot;thinking pose&quot; ke liye guide karne ka tareeka:<br>1. Unhe koi interesting object (jaise phone, cup, ya book) dikhao.<br>2. Kaha: &quot;Is object ko dekh kar socho ki aaj tumhara sabse productive din raha hai.&quot;<br>3. Camera se unki aankhein capture karo—yeh natural curiosity aur emotion laata hai.</p><h3>Practice</h3><p>Apne friend ya family member se ek natural portrait lo. Unhe koi simple action perform karne ko kaha (jaise hair adjust karna, ya phone check karna). Focus rakhna ki unki body language relaxed ho.</p><h3>Mini Project</h3><p>**&quot;Emotion Hunt&quot;**<br>Ek series banayein: 5 different expressions (happy, thoughtful, surprised, relaxed, confident). Har expression ke liye ek pose aur lighting setup choose karen. Har photo ke saath 1-2 word note likhein jo emotion ko describe kare (jaise &quot;soft smile,&quot; &quot;intense gaze&quot;).</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>کنسیپٹ</h3><p>پورٹریٹ فوٹوگرافی کا دل پوزنگ اور ایکسپریشنز ہیں—بس یہی وہ چیز ہے جو تصویر کو زندگی بخشتی ہے۔ اگر سبجیکٹ قدرتی محسوس کرے اور فوٹوگرافر ان کی توانائی کو کیپچر کر پائے، تو تصویر یقیناً اثر انگیز بنتی ہے۔ آج ہم سیکھیں گے کہ کیسے سبجیکٹ کو آرام دہ بنایا جائے، قدرتی پوزز تلاش کی جائیں، اور ایکسپریشنز کو گائیڈ کیا جائے بغیر کہ وہ جبراً محسوس ہوں۔</p><h3>مثال</h3><p>ایک سبجیکٹ کو &quot;سوچتی ہوئی پوز&quot; کے لیے گائیڈ کرنے کا طریقہ:<br>١۔ انہیں کوئی دلچسپ چیز (جیسے فون، کپ، یا کتاب) دکھائیں۔<br>٢۔ کہیں: &quot;اس چیز کو دیکھ کر سوچو کہ آج تمہارا سب سے پیداواری دن رہا ہے۔&quot;<br>٣۔ کیمرے سے ان کی آنکھوں کو کیپچر کریں—یہ قدرتی تجسس اور جذبات لاتا ہے۔</p><h3>پریکٹس</h3><p>اپنے کسی دوست یا خاندان کے فرد سے ایک قدرتی پورٹریٹ لیں۔ انہیں کوئی سادہ عمل کرنے کو کہیں (جیسے بال درست کرنا، یا فون چیک کرنا)۔ توجہ رکھیں کہ ان کی باڈی لینگویج آرام دہ ہو۔</p><h3>منی پروجیکٹ</h3><p>&quot;ایموشن ہنٹ&quot;<br>ایک سیریز بنائیں: ۵ مختلف ایکسپریشنز (خوشی، غور و فکر، حیرت، آرام، اعتماد)۔ ہر ایکسپریشن کے لیے ایک پوز اور لائٹنگ سیٹ اپ منتخب کریں۔ ہر تصویر کے ساتھ ۱-۲ الفاظ کا نوٹ لکھیں جو جذبات کو بیان کرے (جیسے &quot;نرم مسکراہٹ&quot;، &quot;تیز نظارہ&quot;)۔</p></div>
       
       
@@ -333,7 +347,7 @@ function fkcToggleTheme(){
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <div class="lesson-nav"><a class="btn alt" href="2026-08-04-day-003.html">← Day 3 — **Understanding Natural Light: The Foundation of Great Photos**</a><span></span></div>
+    <div class="lesson-nav"><a class="btn alt" href="2026-08-04-day-003.html">← Day 3 — **Understanding Natural Light: The Foundation of Great Photos**</a><a class="btn alt" href="2026-08-07-day-005.html">Day 5 — **Editing Workflow: From Raw to Polished** →</a></div>
     <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
     
     
@@ -342,7 +356,30 @@ function fkcToggleTheme(){
         data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
       <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
-    <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
+    
+    <div class="daily-motivation" style="max-width:640px;margin:20px auto;padding:16px 20px;
+      background:linear-gradient(135deg,#fff7e6,#fef0f0);border-radius:14px;border:1px solid #f5e2c8;
+      text-align:center;">
+      <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
+        margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
+      <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
+        “Har mahir kabhi beginner tha — bas usne seekhna chhoda nahi.”
+      </p>
+    </div>
+    <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;
+      background:linear-gradient(145deg,#f7f9fc,#eef2f9);border-radius:16px;border:1px solid #e6e9f0;
+      text-align:center;">
+      <p style="font-size:13px;letter-spacing:.03em;text-transform:uppercase;color:var(--muted);
+        margin:0 0 10px;font-weight:700;">✉️ Founder ki taraf se</p>
+      <p style="font-size:15px;line-height:1.7;color:#2a2f3a;margin:0 0 14px;">
+        Hamara maqsad sirf lessons post karna nahi — har us Pakistani tak muft, practical
+        taleem pohchana hai jo seekhna chahta hai lekin resources ya waqt nahi rakhta.
+        FKC Trading Academy ka vision hai: <b>roz thora seekho, mustaqil mehnat karo,
+        aur apni zindagi khud badlo.</b> Mission simple hai — koi bhi course, koi bhi fee
+        nahi, sirf aap ka irada.
+      </p>
+      <p style="font-size:13px;color:var(--muted);margin:0;">— Fazul Khan Chandio, Founder &amp; CEO</p>
+    </div><div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     <script>
     (function(){
       try {
