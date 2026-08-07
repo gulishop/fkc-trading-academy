@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-06T02:05:11.684043";
+  var FKC_BUILD = "2026-08-07T02:25:00.206784";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -222,7 +222,7 @@ function fkcToggleTheme(){
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "headline": "Day 2 — \"1, 2, 3... Ginti ka khushiyon ka silsila!\"", "name": "Day 2 — \"1, 2, 3... Ginti ka khushiyon ka silsila!\"", "description": "", "learningResourceType": "Lesson", "educationalLevel": "Beginner", "inLanguage": "ur", "isPartOf": {"@type": "Course", "name": "Nursery Course"}, "datePublished": "2026-08-06", "publisher": {"@type": "Organization", "name": "FKC Trading Academy"}}</script>
     <div class="top"><a href="../../../index.html">← FKC Trading Academy</a>
     <a href="../index.html" class="course-back-link">/ Nursery Course</a></div>
-    <span class="badge">Latest</span>
+    
     <p class="muted">🔤 Nursery Course · Day 02</p>
     <h1>Day 2 — &quot;1, 2, 3... Ginti ka khushiyon ka silsila!&quot;</h1>
     <p class="muted" style="margin:0 0 10px;">↩️ Pichla lesson: <strong>Day 1 — &quot;A se Z tak: Alphabets ki pehchaan&quot;</strong> — aaj is se aage badhte hain.</p>
@@ -230,7 +230,21 @@ function fkcToggleTheme(){
       <p class="muted" style="background:#fff7e6;padding:10px 12px;border-radius:10px;margin:0 0 12px;">👨‍👩‍👧 Walidain ke liye: bachay ke sath baith kar ye lesson sunein/dekhein, aur upar wala 🎬 audio zaroor lagayein — chhotay bachay padhne se zyada sun kar behtar samajhte hain.</p>
       <img src="images/day-002.png" alt="Day 2 — &quot;1, 2, 3... Ginti ka khushiyon ka silsila!&quot;" style="width:100%;border-radius:12px;margin-bottom:14px;">
       <p class="muted" style="margin:0 0 6px;">🎬 AI Video Explanation</p><video src="videos/day-002.mp4" controls preload="metadata" poster="images/day-002.png" style="width:100%;border-radius:12px;margin-bottom:14px;background:#000;"></video>
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Aaj hum seekhenge ke 1 se 10 tak ki ginti kaise likhte hain aur bolte hain. Yeh zaroori hai taake tum apne toys, fruits, ya khaana gina kar khush ho sakein!</p><h3>Chhoti Kahani</h3><p>Rahul ne apne 5 teddy bears ko ek ke peeche ek rakha. Usne gina: &quot;1, 2, 3, 4, 5!&quot; Uske baap ne kaha, &quot;Bohot achha! Ab tum in teddy bears ko apne dost ko de sakte ho.&quot;</p><h3>Ammi Abbu Ke Sath Baat Karein</h3><p>&quot;Beta, agar koi tumhe kaha ke &#x27;yeh ginti ka secret rakhna hai&#x27;, toh tum kya karogi?&quot;</p><h3>Yaad Rakhein</h3><p>Tumhari jism tumhara hai—koi bhi tumhe &#x27;na&#x27; kehne ka haq nahi rakhta! Agar koi cheez ajeeb lage, toh turant ammi/abbu ko batana.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>تصور</h3><p>آج ہم سیکھیں گے کہ ایک سے دس تک کی گنتی کیسے لکھتے اور بولتے ہیں۔ یہ ضروری ہے تاکہ تم اپنے کھلونے، پھل، یا کھانا گن کر خوش ہو سکو!</p><h3>چھوٹی کہانی</h3><p>راہُل نے اپنے پانچ ٹیڈی بیئرز کو ایک کے پیچھے ایک رکھا۔ اس نے گنا: &quot;۱، ٢، ٣، ٤، ٥!&quot; اس کے بابا نے کہا، &quot;بہت اچھا! اب تم ان ٹیڈی بیئرز کو اپنے دوست کو دے سکتے ہو۔&quot;</p><h3>امّی ابّو کے ساتھ بات کریں</h3><p>بیٹا، اگر کوئی تمہیں کہے کہ ’یہ گنتی کا راز رکھنا ہے‘، تو تم کیا کرو گے؟</p><h3>یاد رکھیں</h3><p>تمہارا جسم تمہارا ہے—کوئی بھی تمہیں ’نہ‘ کہنے کا حق نہیں رکھتا! اگر کوئی چیز عجیب لگے، تو فوراً امّی/ابّو کو بتانا۔</p></div>
       
       
@@ -310,7 +324,7 @@ function fkcToggleTheme(){
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <div class="lesson-nav"><a class="btn alt" href="2026-08-05-day-001.html">← Day 1 — &quot;A se Z tak: Alphabets ki pehchaan&quot;</a><span></span></div>
+    <div class="lesson-nav"><a class="btn alt" href="2026-08-05-day-001.html">← Day 1 — &quot;A se Z tak: Alphabets ki pehchaan&quot;</a><a class="btn alt" href="2026-08-07-day-003.html">Day 3 — &quot;Har Rang ka ek Naam: English mein rangon ki pehchaan&quot; →</a></div>
     <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
     
     
@@ -319,7 +333,30 @@ function fkcToggleTheme(){
         data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
       <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
-    <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
+    
+    <div class="daily-motivation" style="max-width:640px;margin:20px auto;padding:16px 20px;
+      background:linear-gradient(135deg,#fff7e6,#fef0f0);border-radius:14px;border:1px solid #f5e2c8;
+      text-align:center;">
+      <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
+        margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
+      <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
+        “Har mahir kabhi beginner tha — bas usne seekhna chhoda nahi.”
+      </p>
+    </div>
+    <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;
+      background:linear-gradient(145deg,#f7f9fc,#eef2f9);border-radius:16px;border:1px solid #e6e9f0;
+      text-align:center;">
+      <p style="font-size:13px;letter-spacing:.03em;text-transform:uppercase;color:var(--muted);
+        margin:0 0 10px;font-weight:700;">✉️ Founder ki taraf se</p>
+      <p style="font-size:15px;line-height:1.7;color:#2a2f3a;margin:0 0 14px;">
+        Hamara maqsad sirf lessons post karna nahi — har us Pakistani tak muft, practical
+        taleem pohchana hai jo seekhna chahta hai lekin resources ya waqt nahi rakhta.
+        FKC Trading Academy ka vision hai: <b>roz thora seekho, mustaqil mehnat karo,
+        aur apni zindagi khud badlo.</b> Mission simple hai — koi bhi course, koi bhi fee
+        nahi, sirf aap ka irada.
+      </p>
+      <p style="font-size:13px;color:var(--muted);margin:0;">— Fazul Khan Chandio, Founder &amp; CEO</p>
+    </div><div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     <script>
     (function(){
       try {
