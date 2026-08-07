@@ -6409,6 +6409,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 8,
+      "id": "day-008",
+      "date": "2026-08-07",
+      "title": "Day 8 — **TikTok Par \"Monetization Ke Alag Raste\" — Creator Fund Ke Baad Kya?**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Creator Fund ke baad bhi TikTok par paise kamane ke aur bhi tareeke hain! Affiliate marketing, sponsorships, digital products, aur even freelancing bhi TikTok se jod sakte hain. Har method ke apne rules hain—jaise affiliate links ke liye disclosures zaruri hain, aur sponsorships ke liye FTC guidelines follow karni hain."
+        ],
+        [
+          "Example",
+          "*Step-by-step affiliate marketing:*\n1. Amazon Associates ya Daraz Affiliate join karo.\n2. TikTok video mein product recommend karo (e.g., \"Mera favorite phone charger—link in bio!\").\n3. Video description mein affiliate link add karo.\n4. Agar koi us link se khareedta hai, to tumhe commission milegi."
+        ],
+        [
+          "Practice",
+          "Apne niche ke 1 trending product ya service ko choose karo aur uske affiliate link ke saath ek 15-20 second ka video banao (hook: \"Yeh product mere life ko badal diya—dekho kaise!\")."
+        ],
+        [
+          "Mini Project",
+          "Ek \"Monetization Plan\" banao—3 tareeke likho jinse tum apne niche mein paise bana sakte ho (e.g., sponsorships, digital guides, merch). Har tareeke ke liye 1-2 line ka explanation bhi do."
+        ]
+      ],
+      "answer_key": "affiliate links, disclosures, ftc guidelines, commission",
+      "translations": {
+        "ur": {
+          "title": "دن ۸ — **ٹک ٹاک پر \"مونٹائزیشن کے الگ راستے\" — کریئٹر فنڈ کے بعد کیا؟**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "کریئٹر فنڈ کے بعد بھی ٹک ٹاک پر پیسے کمانے کے اور بھی طریقے ہیں! ایفلی ایٹ مارکیٹنگ، سپانسرشپس، ڈیجیٹل پروڈکٹس، اور یہاں تک کہ فری لانسنگ بھی ٹک ٹاک سے جوڑ سکتے ہیں۔ ہر طریقے کے اپنے اصول ہیں—جیسے ایفلی ایٹ لنکس کے لیے ڈسکلوژرز ضروری ہیں، اور سپانسرشپس کے لیے ایف ٹی سی گائیڈ لائنز کی پیروی کرنی ہوتی ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "*ایفلی ایٹ مارکیٹنگ کا مرحلہ وار طریقہ:*\n١۔ ایمیزون ایسوسی ایٹس یا داراز ایفلی ایٹ جوائن کریں۔\n٢۔ ٹک ٹاک ویڈیو میں پروڈکٹ کی سفارش کریں (مثال کے طور پر، \"میرا پسندیدہ فون چارجر—لنک بائیو میں!\"۔)\n٣۔ ویڈیو کی تفصیل میں ایفلی ایٹ لنک شامل کریں۔\n٤۔ اگر کوئی اس لنک سے خریداری کرتا ہے تو آپ کو کمیشن ملے گا۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے نیچ کے ایک ٹرینڈنگ پروڈکٹ یا سروس کا انتخاب کریں اور اس کے ایفلی ایٹ لنک کے ساتھ ایک ١٥-٢٠ سیکنڈ کی ویڈیو بنائیں (ہک: \"یہ پروڈکٹ میری زندگی بدل دی—دیکھو کیسے!\"۔)"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک \"مونٹائزیشن پلان\" بنائیں—تین طریقے لکھیں جن سے آپ اپنے نیچ میں پیسے بنا سکتے ہیں (مثال کے طور پر، سپانسرشپس، ڈیجیٹل گائیڈز، میرچ)۔ ہر طریقے کے لیے ایک دو سطور کا وضاحت بھی دیں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "blogging-adsense": [
