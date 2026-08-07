@@ -4843,6 +4843,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 16,
+      "id": "day-016",
+      "date": "2026-08-07",
+      "title": "Day 16 — **File Handling in C++: Data Ko Save aur Read Karna**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "C++ mein files ke zariye data ko disk par save aur read kar sakte hain. `fstream` library se hum `ofstream` (write), `ifstream` (read), aur `fstream` (both) use karte hain. Files ka istemal logs, configurations, ya user data store karne ke liye hota hai."
+        ],
+        [
+          "Example",
+          "```cpp\n#include <iostream>\n#include <fstream>\nusing namespace std;\n\nint main() {\n    // File create karke write karna\n    ofstream outFile(\"data.txt\");\n    outFile << \"Hello, C++ File Handling!\";\n    outFile.close();\n\n    // File read karna\n    ifstream inFile(\"data.txt\");\n    string line;\n    getline(inFile, line);\n    cout << \"File content: \" << line << endl;\n    inFile.close();\n    return 0;\n}\n```"
+        ],
+        [
+          "Practice",
+          "Ek program likho jo user se 3 numbers input le aur unko `numbers.txt` file mein save kar de. Phir us file ko read karke numbers ko sum karke print karo."
+        ],
+        [
+          "Mini Project",
+          "**Student Record System**\n- Ek program banayein jo:\n  1. User se student ka naam, roll number, aur marks input le.\n  2. Har student ka data `students.txt` file mein append kare.\n  3. File ko read karke sab students ka average marks calculate aur print kare.\n  4. (Bonus) Kisi specific roll number se student ka data search karke show kare."
+        ]
+      ],
+      "answer_key": "file open, close, read, write, append",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۶ — **فائل ہینڈلنگ ان سی پلس پلس: ڈیٹا کو سیو اور ریڈ کرنا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "سی پلس پلس میں فائلز کے ذریعے ڈیٹا کو ڈسک پر سیو اور ریڈ کیا جا سکتا ہے۔ `fstream` لائبریری سے ہم `ofstream` (رائٹ کرنے کے لیے)، `ifstream` (ریڈ کرنے کے لیے)، اور `fstream` (دونوں کے لیے) استعمال کرتے ہیں۔ فائلز کا استعمال لاگز، کنفیگریشنز، یا یوزر ڈیٹا اسٹور کرنے کے لیے ہوتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "```cpp\n#include <iostream>\n#include <fstream>\nusing namespace std;\n\nint main() {\n    // فائل کریئٹ کرکے رائٹ کرنا\n    ofstream outFile(\"data.txt\");\n    outFile << \"Hello, C++ File Handling!\";\n    outFile.close();\n\n    // فائل ریڈ کرنا\n    ifstream inFile(\"data.txt\");\n    string line;\n    getline(inFile, line);\n    cout << \"File content: \" << line << endl;\n    inFile.close();\n    return 0;\n}\n```"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "ایک پروگرام لکھو جو یوزر سے تین نمبرزز ان پٹ لے اور انہیں `numbers.txt` فائل میں سیو کر دے۔ پھر اس فائل کو ریڈ کرکے نمبرز کا مجموعہ نکال کر پرنٹ کرو۔"
+            },
+            {
+              "label": "منی پروجیکٹ: **طالب علم ریکارڈ سسٹم**",
+              "content": "ایک پروگرام بنائیں جو:\n۱۔ یوزر سے طالب علم کا نام، رول نمبر، اور مارکس ان پٹ لے۔\n۲۔ ہر طالب علم کا ڈیٹا `students.txt` فائل میں ایپنڈ کرے۔\n۳۔ فائل کو ریڈ کرکے تمام طالب علموں کے اوسط مارکس کا حساب لگائے اور پرنٹ کرے۔\n۴۔ (بونس) کسی مخصوص رول نمبر سے طالب علم کا ڈیٹا سرچ کرکے دکھائے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "python-programming": [

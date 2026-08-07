@@ -4,9 +4,9 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>Day 15 — **Exception Handling: Errors Ko Gracefully Handle Karna** — C++ Daily Coding</title>
-<meta property="og:title" content="Day 15 — **Exception Handling: Errors Ko Gracefully Handle Karna** — C++ Daily Coding">
-<meta property="og:description" content="FKC Trading Academy · C++ Daily Coding · Day 15">
+<title>Day 16 — **File Handling in C++: Data Ko Save aur Read Karna** — C++ Daily Coding</title>
+<meta property="og:title" content="Day 16 — **File Handling in C++: Data Ko Save aur Read Karna** — C++ Daily Coding">
+<meta property="og:description" content="FKC Trading Academy · C++ Daily Coding · Day 16">
 <meta property="og:image" content="../../../logo.png">
 <meta name="twitter:card" content="summary_large_image">
 <script>
@@ -219,17 +219,17 @@ function fkcToggleTheme(){
 }
 </script>
 
-    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "headline": "Day 15 — **Exception Handling: Errors Ko Gracefully Handle Karna**", "name": "Day 15 — **Exception Handling: Errors Ko Gracefully Handle Karna**", "description": "", "learningResourceType": "Lesson", "educationalLevel": "Beginner", "inLanguage": "ur", "isPartOf": {"@type": "Course", "name": "C++ Daily Coding"}, "datePublished": "2026-08-07", "publisher": {"@type": "Organization", "name": "FKC Trading Academy"}}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "headline": "Day 16 — **File Handling in C++: Data Ko Save aur Read Karna**", "name": "Day 16 — **File Handling in C++: Data Ko Save aur Read Karna**", "description": "", "learningResourceType": "Lesson", "educationalLevel": "Beginner", "inLanguage": "ur", "isPartOf": {"@type": "Course", "name": "C++ Daily Coding"}, "datePublished": "2026-08-07", "publisher": {"@type": "Organization", "name": "FKC Trading Academy"}}</script>
     <div class="top"><a href="../../../index.html">← FKC Trading Academy</a>
     <a href="../index.html" class="course-back-link">/ C++ Daily Coding</a></div>
-    
-    <p class="muted">💻 C++ Daily Coding · Day 15</p>
-    <h1>Day 15 — **Exception Handling: Errors Ko Gracefully Handle Karna**</h1>
-    <p class="muted" style="margin:0 0 10px;">↩️ Pichla lesson: <strong>Day 14 — **Templates in C++: Generic Programming**</strong> — aaj is se aage badhte hain.</p>
+    <span class="badge">Latest</span>
+    <p class="muted">💻 C++ Daily Coding · Day 16</p>
+    <h1>Day 16 — **File Handling in C++: Data Ko Save aur Read Karna**</h1>
+    <p class="muted" style="margin:0 0 10px;">↩️ Pichla lesson: <strong>Day 15 — **Exception Handling: Errors Ko Gracefully Handle Karna**</strong> — aaj is se aage badhte hain.</p>
     <div class="card">
       
-      <img src="images/day-015.png" alt="Day 15 — **Exception Handling: Errors Ko Gracefully Handle Karna**" style="width:100%;border-radius:12px;margin-bottom:14px;">
-      <p class="muted" style="margin:0 0 6px;">🎬 AI Video Explanation</p><video src="videos/day-015.mp4" controls preload="metadata" poster="images/day-015.png" style="width:100%;border-radius:12px;margin-bottom:14px;background:#000;"></video>
+      <img src="images/day-016.png" alt="Day 16 — **File Handling in C++: Data Ko Save aur Read Karna**" style="width:100%;border-radius:12px;margin-bottom:14px;">
+      <p class="muted" style="margin:0 0 6px;">🎬 AI Video Explanation</p><video src="videos/day-016.mp4" controls preload="metadata" poster="images/day-016.png" style="width:100%;border-radius:12px;margin-bottom:14px;background:#000;"></video>
       <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
     <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
       <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
@@ -245,48 +245,48 @@ function fkcToggleTheme(){
     }
     </script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
-      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>C++ mein exceptions (errors) ko handle karne ke liye `try`, `catch`, aur `throw` keywords use hote hain. Runtime errors (jaise file na milna, invalid input) ko program crash hone se pehle handle karna seekhiye. `try` block mein risky code likha jata hai, `catch` block error ko catch karta hai, aur `throw` se manually error bheja jata hai.</p><h3>Example</h3><pre dir="ltr"><code>#include &lt;iostream&gt;
+      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>C++ mein files ke zariye data ko disk par save aur read kar sakte hain. `fstream` library se hum `ofstream` (write), `ifstream` (read), aur `fstream` (both) use karte hain. Files ka istemal logs, configurations, ya user data store karne ke liye hota hai.</p><h3>Example</h3><pre dir="ltr"><code>#include &lt;iostream&gt;
+#include &lt;fstream&gt;
 using namespace std;
 
-int divide(int a, int b) {
-    if (b == 0) throw &quot;Division by zero error!&quot;;
-    return a / b;
-}
-
 int main() {
-    try {
-        int result = divide(10, 0);
-        cout &lt;&lt; &quot;Result: &quot; &lt;&lt; result;
-    }
-    catch (const char* error) {
-        cout &lt;&lt; &quot;Error caught: &quot; &lt;&lt; error;
-    }
+    // File create karke write karna
+    ofstream outFile(&quot;data.txt&quot;);
+    outFile &lt;&lt; &quot;Hello, C++ File Handling!&quot;;
+    outFile.close();
+
+    // File read karna
+    ifstream inFile(&quot;data.txt&quot;);
+    string line;
+    getline(inFile, line);
+    cout &lt;&lt; &quot;File content: &quot; &lt;&lt; line &lt;&lt; endl;
+    inFile.close();
     return 0;
-}</code></pre><p>*Output:* `Error caught: Division by zero error!`</p><h3>Practice</h3><p>Ek `squareRoot()` function banaye jo negative number ka square root calculate kare. Agar negative number input ho, to `throw &quot;Negative number ka square root nahi hota!&quot;` karke error handle kare.</p><h3>Mini Project</h3><p>Ek simple calculator program banaye jo user se 2 numbers aur operator (+, -, *, /) le. Division by zero ya invalid operator ke liye exceptions handle kare.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>کنسیپٹ</h3><p>سی پلس پلس میں ایکسپشنز (ایررز) کو ہینڈل کرنے کے لیے `try`، `catch`، اور `throw` کی ورڈز استعمال ہوتے ہیں۔ رن ٹائم ایررز (جیسے فائل نہ ملنا، انولڈ ان پٹ) کو پروگرام کریش ہونے سے پہلے ہینڈل کرنا سیکھیں۔ `try` بلاک میں رسکی کوڈ لکھا جاتا ہے، `catch` بلاک ایرر کو پکڑتا ہے، اور `throw` کے ذریعے دستی طور پر ایرر بھیجا جاتا ہے۔</p><h3>مثال</h3><pre dir="ltr"><code>#include &lt;iostream&gt;
+}</code></pre><h3>Practice</h3><p>Ek program likho jo user se 3 numbers input le aur unko `numbers.txt` file mein save kar de. Phir us file ko read karke numbers ko sum karke print karo.</p><h3>Mini Project</h3><p>**Student Record System**<br>- Ek program banayein jo:<br>  1. User se student ka naam, roll number, aur marks input le.<br>  2. Har student ka data `students.txt` file mein append kare.<br>  3. File ko read karke sab students ka average marks calculate aur print kare.<br>  4. (Bonus) Kisi specific roll number se student ka data search karke show kare.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>کانسپٹ</h3><p>سی پلس پلس میں فائلز کے ذریعے ڈیٹا کو ڈسک پر سیو اور ریڈ کیا جا سکتا ہے۔ `fstream` لائبریری سے ہم `ofstream` (رائٹ کرنے کے لیے)، `ifstream` (ریڈ کرنے کے لیے)، اور `fstream` (دونوں کے لیے) استعمال کرتے ہیں۔ فائلز کا استعمال لاگز، کنفیگریشنز، یا یوزر ڈیٹا اسٹور کرنے کے لیے ہوتا ہے۔</p><h3>مثال</h3><pre dir="ltr"><code>#include &lt;iostream&gt;
+#include &lt;fstream&gt;
 using namespace std;
 
-int divide(int a, int b) {
-    if (b == 0) throw &quot;Division by zero error!&quot;;
-    return a / b;
-}
-
 int main() {
-    try {
-        int result = divide(10, 0);
-        cout &lt;&lt; &quot;Result: &quot; &lt;&lt; result;
-    }
-    catch (const char* error) {
-        cout &lt;&lt; &quot;Error caught: &quot; &lt;&lt; error;
-    }
+    // فائل کریئٹ کرکے رائٹ کرنا
+    ofstream outFile(&quot;data.txt&quot;);
+    outFile &lt;&lt; &quot;Hello, C++ File Handling!&quot;;
+    outFile.close();
+
+    // فائل ریڈ کرنا
+    ifstream inFile(&quot;data.txt&quot;);
+    string line;
+    getline(inFile, line);
+    cout &lt;&lt; &quot;File content: &quot; &lt;&lt; line &lt;&lt; endl;
+    inFile.close();
     return 0;
-}</code></pre><p>*آؤٹ پٹ:* `Error caught: Division by zero error!`</p><h3>پریکٹس</h3><p>ایک `squareRoot()` فنکشن بنائیں جو منفی نمبر کا اسکوائر روٹ کیلکولیٹ کرے۔ اگر منفی نمبر ان پٹ ہو تو `throw &quot;Negative number ka square root nahi hota!&quot;` کرکے ایرر ہینڈل کریں۔</p><h3>منی پروجیکٹ</h3><p>ایک سادہ کیلکولیٹر پروگرام بنائیں جو صارف سے دو نمبرز اور آپریٹر (+، -، *، /) لے۔ ڈویژن بائی زیرو یا انولڈ آپریٹر کے لیے ایکسپشنز ہینڈل کریں۔</p></div>
+}</code></pre><h3>پریکٹس</h3><p>ایک پروگرام لکھو جو یوزر سے تین نمبرزز ان پٹ لے اور انہیں `numbers.txt` فائل میں سیو کر دے۔ پھر اس فائل کو ریڈ کرکے نمبرز کا مجموعہ نکال کر پرنٹ کرو۔</p><h3>منی پروجیکٹ: **طالب علم ریکارڈ سسٹم**</h3><p>ایک پروگرام بنائیں جو:<br>۱۔ یوزر سے طالب علم کا نام، رول نمبر، اور مارکس ان پٹ لے۔<br>۲۔ ہر طالب علم کا ڈیٹا `students.txt` فائل میں ایپنڈ کرے۔<br>۳۔ فائل کو ریڈ کرکے تمام طالب علموں کے اوسط مارکس کا حساب لگائے اور پرنٹ کرے۔<br>۴۔ (بونس) کسی مخصوص رول نمبر سے طالب علم کا ڈیٹا سرچ کرکے دکھائے۔</p></div>
       
       
       <div class="quiz-box no-print">
         <p><b>📝 Apna Practice Check Karein</b></p>
         <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
         <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
-        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"try, catch, throw, runtime error"'>✅ Check Karein</button>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"file open, close, read, write, append"'>✅ Check Karein</button>
         <div class="quiz-result" id="fkc-quiz-result"></div>
       </div>
       <script>
@@ -306,23 +306,23 @@ int main() {
       }
       </script>
       
-      <div class="puzzle-box no-print" id="pz-cpp-daily-coding-15">
+      <div class="puzzle-box no-print" id="pz-cpp-daily-coding-16">
         <h3>🧩 Dimaghi Kasrat — Jode Milayein</h3>
-        <p class="puzzle-status" id="pz-cpp-daily-coding-15-status">Cards par tap karke jode (pairs) milayein.</p>
-        <div class="puzzle-grid" id="pz-cpp-daily-coding-15-grid"></div>
-        <div class="puzzle-win" id="pz-cpp-daily-coding-15-win">🎉 Shabaash! Sab jode mil gaye — thodi der aur seekhne ke liye tayyar?</div>
+        <p class="puzzle-status" id="pz-cpp-daily-coding-16-status">Cards par tap karke jode (pairs) milayein.</p>
+        <div class="puzzle-grid" id="pz-cpp-daily-coding-16-grid"></div>
+        <div class="puzzle-win" id="pz-cpp-daily-coding-16-win">🎉 Shabaash! Sab jode mil gaye — thodi der aur seekhne ke liye tayyar?</div>
       </div>
       <script>
       (function(){
-        var emojis = ["🍉", "🐱", "☀️", "🖊️", "🎁", "🐝"];
+        var emojis = ["🚗", "🌟", "📖", "🐦", "🍩", "🔔"];
         var deck = emojis.concat(emojis);
         for (var i = deck.length - 1; i > 0; i--) {
           var j = Math.floor(Math.random() * (i + 1));
           var t = deck[i]; deck[i] = deck[j]; deck[j] = t;
         }
-        var grid = document.getElementById("pz-cpp-daily-coding-15-grid");
-        var statusEl = document.getElementById("pz-cpp-daily-coding-15-status");
-        var winEl = document.getElementById("pz-cpp-daily-coding-15-win");
+        var grid = document.getElementById("pz-cpp-daily-coding-16-grid");
+        var statusEl = document.getElementById("pz-cpp-daily-coding-16-status");
+        var winEl = document.getElementById("pz-cpp-daily-coding-16-win");
         var flipped = [], matchedCount = 0, moves = 0, lock = false;
         deck.forEach(function(val){
           var b = document.createElement("button");
@@ -364,24 +364,24 @@ int main() {
       
       <div class="no-print" style="margin-top:14px;">
         <label for="fkc-notes" class="muted" style="display:block;margin-bottom:4px;">📝 Apni Note (sirf aapke is browser mein save hoti hai):</label>
-        <textarea id="fkc-notes" data-slug="cpp-daily-coding" data-lesson="day-015"
+        <textarea id="fkc-notes" data-slug="cpp-daily-coding" data-lesson="day-016"
           placeholder="Yahan apni note likhein..." rows="3"
           style="width:100%;border-radius:10px;border:1px solid #ddd;padding:8px;font-family:inherit;"
           oninput="fkcSaveNote(this)"></textarea>
       </div>
     
       <div class="no-print">
-        <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20C%2B%2B%20Daily%20Coding%20%28Day%2015%29%0A%0ADay%2015%20%E2%80%94%20%2A%2AException%20Handling%3A%20Errors%20Ko%20Gracefully%20Handle%20Karna%2A%2A%0A%0AConcept%3A%0AC%2B%2B%20mein%20exceptions%20%28errors%29%20ko%20handle%20karne%20ke%20liye%20%60try%60%2C%20%60catch%60%2C%20aur%20%60throw%60%20keywords%20use%20hote%20hain.%20Runtime%20errors%20%28jaise%20file%20na%20milna%2C%20invalid%20input%29%20ko%20program%20crash%20hone%20se%20pehle%20handle%20karna%20seekhiye.%20%60try%60%20block%20mein%20risky%20code%20likha%20jata%20hai%2C%20%60catch%60%20block%20error%20ko%20catch%20karta%20hai%2C%20aur%20%60throw%60%20se%20manually%20error%20bheja%20jata%20hai.%0A%0AExample%3A%0A%60%60%60cpp%0A%23include%20%3Ciostream%3E%0Ausing%20namespace%20std%3B%0A%0Aint%20divide%28int%20a%2C%20int%20b%29%20%7B%0A%20%20%20%20if%20%28b%20%3D%3D%200%29%20throw%20%22Division%20by%20zero%20error%21%22%3B%0A%20%20%20%20return%20a%20/%20b%3B%0A%7D%0A%0Aint%20main%28%29%20%7B%0A%20%20%20%20try%20%7B%0A%20%20%20%20%20%20%20%20int%20result%20%3D%20divide%2810%2C%200%29%3B%0A%20%20%20%20%20%20%20%20cout%20%3C%3C%20%22Result%3A%20%22%20%3C%3C%20result%3B%0A%20%20%20%20%7D%0A%20%20%20%20catch%20%28const%20char%2A%20error%29%20%7B%0A%20%20%20%20%20%20%20%20cout%20%3C%3C%20%22Error%20caught%3A%20%22%20%3C%3C%20error%3B%0A%20%20%20%20%7D%0A%20%20%20%20return%200%3B%0A%7D%0A%60%60%60%0A%2AOutput%3A%2A%20%60Error%20caught%3A%20Division%20by%20zero%20error%21%60%0A%0APractice%3A%0AEk%20%60squareRoot%28%29%60%20function%20banaye%20jo%20negative%20number%20ka%20square%20root%20calculate%20kare.%20Agar%20negative%20number%20input%20ho%2C%20to%20%60throw%20%22Negative%20number%20ka%20square%20root%20nahi%20hota%21%22%60%20karke%20error%20handle%20kare.%0A%0AMini%20Project%3A%0AEk%20simple%20calculator%20program%20banaye%20jo%20user%20se%202%20numbers%20aur%20operator%20%28%2B%2C%20-%2C%20%2A%2C%20/%29%20le.%20Division%20by%20zero%20ya%20invalid%20operator%20ke%20liye%20exceptions%20handle%20kare.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
+        <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20C%2B%2B%20Daily%20Coding%20%28Day%2016%29%0A%0ADay%2016%20%E2%80%94%20%2A%2AFile%20Handling%20in%20C%2B%2B%3A%20Data%20Ko%20Save%20aur%20Read%20Karna%2A%2A%0A%0AConcept%3A%0AC%2B%2B%20mein%20files%20ke%20zariye%20data%20ko%20disk%20par%20save%20aur%20read%20kar%20sakte%20hain.%20%60fstream%60%20library%20se%20hum%20%60ofstream%60%20%28write%29%2C%20%60ifstream%60%20%28read%29%2C%20aur%20%60fstream%60%20%28both%29%20use%20karte%20hain.%20Files%20ka%20istemal%20logs%2C%20configurations%2C%20ya%20user%20data%20store%20karne%20ke%20liye%20hota%20hai.%0A%0AExample%3A%0A%60%60%60cpp%0A%23include%20%3Ciostream%3E%0A%23include%20%3Cfstream%3E%0Ausing%20namespace%20std%3B%0A%0Aint%20main%28%29%20%7B%0A%20%20%20%20//%20File%20create%20karke%20write%20karna%0A%20%20%20%20ofstream%20outFile%28%22data.txt%22%29%3B%0A%20%20%20%20outFile%20%3C%3C%20%22Hello%2C%20C%2B%2B%20File%20Handling%21%22%3B%0A%20%20%20%20outFile.close%28%29%3B%0A%0A%20%20%20%20//%20File%20read%20karna%0A%20%20%20%20ifstream%20inFile%28%22data.txt%22%29%3B%0A%20%20%20%20string%20line%3B%0A%20%20%20%20getline%28inFile%2C%20line%29%3B%0A%20%20%20%20cout%20%3C%3C%20%22File%20content%3A%20%22%20%3C%3C%20line%20%3C%3C%20endl%3B%0A%20%20%20%20inFile.close%28%29%3B%0A%20%20%20%20return%200%3B%0A%7D%0A%60%60%60%0A%0APractice%3A%0AEk%20program%20likho%20jo%20user%20se%203%20numbers%20input%20le%20aur%20unko%20%60numbers.txt%60%20file%20mein%20save%20kar%20de.%20Phir%20us%20file%20ko%20read%20karke%20numbers%20ko%20sum%20karke%20print%20karo.%0A%0AMini%20Project%3A%0A%2A%2AStudent%20Record%20System%2A%2A%0A-%20Ek%20program%20banayein%20jo%3A%0A%20%201.%20User%20se%20student%20ka%20naam%2C%20roll%20number%2C%20aur%20marks%20input%20le.%0A%20%202.%20Har%20student%20ka%20data%20%60students.txt%60%20file%20mein%20append%20kare.%0A%20%203.%20File%20ko%20read%20karke%20sab%20students%20ka%20average%20marks%20calculate%20aur%20print%20kare.%0A%20%204.%20%28Bonus%29%20Kisi%20specific%20roll%20number%20se%20student%20ka%20data%20search%20karke%20show%20kare.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
         <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
       <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
-          data-slug="cpp-daily-coding" data-lesson="day-015"
+          data-slug="cpp-daily-coding" data-lesson="day-016"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <div class="lesson-nav"><a class="btn alt" href="2026-08-05-day-014.html">← Day 14 — **Templates in C++: Generic Programming**</a><a class="btn alt" href="2026-08-07-day-016.html">Day 16 — **File Handling in C++: Data Ko Save aur Read Karna** →</a></div>
+    <div class="lesson-nav"><a class="btn alt" href="2026-08-07-day-015.html">← Day 15 — **Exception Handling: Errors Ko Gracefully Handle Karna**</a><span></span></div>
     <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
     
     
@@ -421,9 +421,9 @@ int main() {
           slug: "cpp-daily-coding",
           courseName: "C++ Daily Coding",
           courseIcon: "\ud83d\udcbb",
-          title: "Day 15 \u2014 **Exception Handling: Errors Ko Gracefully Handle Karna**",
-          href: 'courses/cpp-daily-coding/posts/2026-08-07-day-015.html',
-          day: 15
+          title: "Day 16 \u2014 **File Handling in C++: Data Ko Save aur Read Karna**",
+          href: 'courses/cpp-daily-coding/posts/2026-08-07-day-016.html',
+          day: 16
         }));
       } catch (e) {}
       var ta = document.getElementById('fkc-notes');
