@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-05T22:19:12.082875";
+  var FKC_BUILD = "2026-08-07T22:00:13.279129";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -222,7 +222,7 @@ function fkcToggleTheme(){
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "headline": "Day 4 — **AI Tools Se Designs Banane Ka Advanced Guide**", "name": "Day 4 — **AI Tools Se Designs Banane Ka Advanced Guide**", "description": "", "learningResourceType": "Lesson", "educationalLevel": "Beginner", "inLanguage": "ur", "isPartOf": {"@type": "Course", "name": "Print on Demand"}, "datePublished": "2026-08-05", "publisher": {"@type": "Organization", "name": "FKC Trading Academy"}}</script>
     <div class="top"><a href="../../../index.html">← FKC Trading Academy</a>
     <a href="../index.html" class="course-back-link">/ Print on Demand</a></div>
-    <span class="badge">Latest</span>
+    
     <p class="muted">👕 Print on Demand · Day 04</p>
     <h1>Day 4 — **AI Tools Se Designs Banane Ka Advanced Guide**</h1>
     <p class="muted" style="margin:0 0 10px;">↩️ Pichla lesson: <strong>Day 3 — **Trending Designs Kaise Dhundein? (2024 Ke Liye)**</strong> — aaj is se aage badhte hain.</p>
@@ -230,7 +230,21 @@ function fkcToggleTheme(){
       
       <img src="images/day-004.png" alt="Day 4 — **AI Tools Se Designs Banane Ka Advanced Guide**" style="width:100%;border-radius:12px;margin-bottom:14px;">
       <p class="muted" style="margin:0 0 6px;">🎬 AI Video Explanation</p><video src="videos/day-004.mp4" controls preload="metadata" poster="images/day-004.png" style="width:100%;border-radius:12px;margin-bottom:14px;background:#000;"></video>
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>AI tools (jaise MidJourney, DALL·E, Leonardo.ai) se designs banane ka matlab hai ke aap ke concepts ko real-time images mein convert kar sakte hain. Yeh tools beginner-friendly hain aur trends 2024 ke hisaab se best designs generate karne mein madad karte hain. Canva ke AI features (jaise Magic Design) bhi yahan kaam aate hain.</p><h3>Example</h3><p>1.</p><h3>Prompt Likhna</h3><p>&quot;A minimalist t-shirt design with a mountain silhouette in dark blue and white, flat lay style, high resolution&quot;<br>2.</p><h3>AI Tool Use</h3><p>MidJourney mein `/imagine prompt: [apna prompt]` likhein.<br>3.</p><h3>Variations Select Karein</h3><p>4-6 options mein se best choose karein.<br>4.</p><h3>Edit Karein</h3><p>Canva ya Photoshop se text add karein (e.g., &quot;Explore the Peaks&quot;).</p><h3>Practice</h3><p>Apne niche (e.g., fitness, travel) ka ek AI-generated design banayein. Prompt ko 3 baar modify karein aur best result save karein.</p><h3>Mini Project</h3><p>Ek **AI-generated t-shirt design** banayein aur usko Printful ke mockup generator mein upload karein. Design ka naam rakhein: &quot;AI_Trend_[Niche]_[Date]&quot;.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>کانسپٹ</h3><p>اے آئی ٹولز (جیسے مِڈ جرنی، ڈال·ای، لیونارڈو ڈاٹ اے آئی) سے ڈیزائن بنانے کا مطلب ہے کہ آپ کے تصورات کو حقیقی وقت میں تصویروں میں تبدیل کیا جا سکتا ہے۔ یہ ٹولز بیگنر فرینڈلی ہیں اور ۲۰۲۴ کے رجحانات کے مطابق بہترین ڈیزائنز جنریٹ کرنے میں مدد فراہم کرتے ہیں۔ کینوا کے اے آئی فیچرز (جیسے میجک ڈیزائن) بھی یہاں کام آتے ہیں۔</p><h3>مثال</h3><p>۱۔ پرامپٹ لکھنا: &quot;ایک منیملسٹ ٹی شرٹ ڈیزائن جس میں گہرا نیلا اور سفید رنگ میں پہاڑ کی سِلہویٹ ہو، فلیٹ لے سٹائل، ہائی ریزولوشن&quot;۔</p><h3>اے آئی ٹول کا استعمال</h3><p>مِڈ جرنی میں `/imagine prompt: [اپنا پرامپٹ]` لکھیں۔</p><h3>ورئییشنز کا انتخاب</h3><p>۴ سے ۶ آپشنز میں سے بہترین کو منتخب کریں۔</p><h3>ایڈیٹنگ</h3><p>کینوا یا فوٹوشاپ سے ٹیکسٹ شامل کریں (مثلاً، &quot;ایکسپلور دی پِیکس&quot;)۔</p><h3>پریکٹس</h3><p>اپنے نیچ (جیسے فٹنس، ٹریول) کا ایک اے آئی جنریٹڈ ڈیزائن بنائیں۔ پرامپٹ کو تین بار تبدیل کریں اور بہترین نتیجہ محفوظ کریں۔</p><h3>منی پروجیکٹ</h3><p>ایک **اے آئی جنریٹڈ ٹی شرٹ ڈیزائن** بنائیں اور اسے پرنٹفل کے ماک اپ جنریٹر میں اپ لوڈ کریں۔ ڈیزائن کا نام رکھیں: &quot;اے آئی_ٹرینڈ_[نیچ]_[تاریخ]&quot;۔</p></div>
       
       
@@ -333,7 +347,7 @@ function fkcToggleTheme(){
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <div class="lesson-nav"><a class="btn alt" href="2026-08-04-day-003.html">← Day 3 — **Trending Designs Kaise Dhundein? (2024 Ke Liye)**</a><span></span></div>
+    <div class="lesson-nav"><a class="btn alt" href="2026-08-04-day-003.html">← Day 3 — **Trending Designs Kaise Dhundein? (2024 Ke Liye)**</a><a class="btn alt" href="2026-08-07-day-005.html">Day 5 — **Store Setup Kaise Karein? (Shopify vs Etsy vs Amazon Merch)** →</a></div>
     <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
     
     
@@ -342,7 +356,30 @@ function fkcToggleTheme(){
         data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
       <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
-    <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
+    
+    <div class="daily-motivation" style="max-width:640px;margin:20px auto;padding:16px 20px;
+      background:linear-gradient(135deg,#fff7e6,#fef0f0);border-radius:14px;border:1px solid #f5e2c8;
+      text-align:center;">
+      <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
+        margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
+      <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
+        “Har mahir kabhi beginner tha — bas usne seekhna chhoda nahi.”
+      </p>
+    </div>
+    <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;
+      background:linear-gradient(145deg,#f7f9fc,#eef2f9);border-radius:16px;border:1px solid #e6e9f0;
+      text-align:center;">
+      <p style="font-size:13px;letter-spacing:.03em;text-transform:uppercase;color:var(--muted);
+        margin:0 0 10px;font-weight:700;">✉️ Founder ki taraf se</p>
+      <p style="font-size:15px;line-height:1.7;color:#2a2f3a;margin:0 0 14px;">
+        Hamara maqsad sirf lessons post karna nahi — har us Pakistani tak muft, practical
+        taleem pohchana hai jo seekhna chahta hai lekin resources ya waqt nahi rakhta.
+        FKC Trading Academy ka vision hai: <b>roz thora seekho, mustaqil mehnat karo,
+        aur apni zindagi khud badlo.</b> Mission simple hai — koi bhi course, koi bhi fee
+        nahi, sirf aap ka irada.
+      </p>
+      <p style="font-size:13px;color:var(--muted);margin:0;">— Fazul Khan Chandio, Founder &amp; CEO</p>
+    </div><div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     <script>
     (function(){
       try {

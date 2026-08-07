@@ -4025,6 +4025,64 @@
           ]
         }
       }
+    },
+    {
+      "day": 5,
+      "id": "day-005",
+      "date": "2026-08-07",
+      "title": "Day 5 — **Store Setup Kaise Karein? (Shopify vs Etsy vs Amazon Merch)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum apna print-on-demand store physically setup karenge. Sabse pehle platform choose karna hai (Shopify, Etsy, Amazon Merch), phir store ka naam, branding, aur product listings add karni hain. Har platform ke rules alag hote hain, isliye step-by-step guide follow karna zaroori hai."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Shopify par store banana",
+          "- Shopify.com par signup karein (14-day free trial).\n   - \"Online Store\" > \"Themes\" se ek free theme select karein.\n   - \"Products\" > \"Add product\" par click karein, apne POD design upload karein, aur description likhein.\n   - \"Payments\" mein Stripe ya PayPal add karein.\n\n2."
+        ],
+        [
+          "Etsy par store banana",
+          "- Etsy.com par jayein, \"Sell on Etsy\" par click karein.\n   - Store ka naam, billing details, aur shop policies (return, shipping) set karein.\n   - \"Listings\" mein apne product ka photo, title, aur tags add karein (SEO ke liye zaroori hai)."
+        ],
+        [
+          "Practice",
+          "Apne chune huye platform par ek dummy product add karein (design upload karne ki zaroorat nahi, bas basic details fill karein)."
+        ],
+        [
+          "Mini Project",
+          "Apne store ka naam, logo (Canva se bana sakte hain), aur 1 product listing complete karein. Screenshot ya link apne notes mein save karein."
+        ]
+      ],
+      "answer_key": "store name, product title, theme selection, payment setup",
+      "translations": {
+        "ur": {
+          "title": "دن 5 — **سٹور سیٹ اپ کیسے کریں؟ (شاپفائی بمقابلہ ایٹسی بمقابلہ ایمیزون مرچ)**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم اپنا پرنٹ آن ڈیمانڈ سٹور فزیکلی سیٹ اپ کریں گے۔ سب سے پہلے پلیٹ فارم کا انتخاب کرنا ہے (شاپفائی، ایٹسی، ایمیزون مرچ)، پھر سٹور کا نام، برانڈنگ، اور پروڈکٹ لسٹنگز شامل کرنی ہیں۔ ہر پلیٹ فارم کے قواعد الگ ہوتے ہیں، اس لیے قدم بہ قدم گائیڈ فالو کرنا ضروری ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1.\nشاپفائی پر سٹور بنانا:\n- Shopify.com پر سائن اپ کریں (14 دن کا فری ٹرائل)۔\n- \"Online Store\" > \"Themes\" سے ایک فری تھیم سلیکٹ کریں۔\n- \"Products\" > \"Add product\" پر کلک کریں، اپنے POD ڈیزائن اپ لوڈ کریں، اور ڈسکرپشن لکھیں۔\n- \"Payments\" میں سٹرائپ یا پے پال شامل کریں۔\n\n2.\nایٹسی پر سٹور بنانا:\n- Etsy.com پر جائیں، \"Sell on Etsy\" پر کلک کریں۔\n- سٹور کا نام، بلنگ ڈیٹیلز، اور شاپ پالیسیز (ریٹرن، شپنگ) سیٹ کریں۔\n- \"Listings\" میں اپنے پروڈکٹ کا فوٹو، ٹائٹل، اور ٹیگز شامل کریں (SEO کے لیے ضروری ہے)।"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے چنے ہوئے پلیٹ فارم پر ایک ڈمی پروڈکٹ شامل کریں (ڈیزائن اپ لوڈ کرنے کی ضرورت نہیں، بس بنیادی تفصیلات بھریں)।"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "اپنے سٹور کا نام، لوگو (کینوا سے بنا سکتے ہیں)، اور ایک پروڈکٹ لسٹنگ مکمل کریں۔ اسکرین شاٹ یا لنک اپنے نوٹس میں محفوظ کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "cpp-daily-coding": [

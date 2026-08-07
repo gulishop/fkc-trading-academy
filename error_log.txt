@@ -281,3 +281,6 @@
 [2026-08-07T21:02:47.252631] [freelancing] Day 2 video skip: Agnes aur ffmpeg dono attempts fail.
 [2026-08-07T21:04:07.431455] [freelancing] Day 3 video skip: Agnes aur ffmpeg dono attempts fail.
 [2026-08-07T21:05:26.797043] [freelancing] Day 4 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-07T22:03:48.895086] [print-on-demand] Day 1 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-07T22:05:30.555923] [print-on-demand] Day 2 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-07T22:06:52.170242] [print-on-demand] Day 3 video skip: Agnes aur ffmpeg dono attempts fail.
