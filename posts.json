@@ -8499,6 +8499,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 4,
+      "id": "day-004",
+      "date": "2026-08-08",
+      "title": "Day 4 — \"Apne Hathon, Paon, Aankhon aur Naak ko Pehchano!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachon, aaj hum apne jism ke khubsurat hisson ke baare mein seekhenge! Haath, pair, aankh aur naak sabhi alag-alag kaam karte hain. Inhe pehchanna seekhna zaroori hai taake hum inhe achhe se istemaal kar saken aur apne aap ki dekhbhaal bhi kar saken."
+        ],
+        [
+          "Chhoti Kahani",
+          "Rani ne apne haath se doodh ka glass uthaaya, pair se race lagaayi, aankhon se chand dekha aur naak se phool ki khushboo li. Har hissa apna alag kaam kar raha tha, lekin sab mil kar Rani ki madad karte the!"
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar tumhe koi hissa dard kar raha ho ya ajeeb lag raha ho, toh tum kya karoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Tumhara jism tumhara hai—kisi ko bhi tumse yeh kehne ka haq nahi ke tum apne haath, pair ya kisi aur hisse ko na chhuno! Agar koi tumhe daraaye ya koi cheez ajeeb lage, toh turant Ammi Abbu ko batana."
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۴ — اپنے ہاتھ، پاؤں، آنکھوں اور ناک کو پہچانو!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "بچو، آج ہم اپنے جسم کے خوبصورت حصوں کے بارے میں سیکھیں گے! ہاتھ، پاؤں، آنکھ اور ناک سبھی الگ الگ کام کرتے ہیں۔ انہیں پہچاننا سیکھنا ضروری ہے تاکہ ہم انہیں اچھے سے استعمال کر سکیں اور اپنے آپ کی دیکھ بھال بھی کر سکیں۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "رانی نے اپنے ہاتھ سے دودھ کا گلاس اٹھایا، پاؤں سے ریس لگائی، آنکھوں سے چاند دیکھا اور ناک سے پھول کی خوشبو لی۔ ہر حصہ اپنا الگ کام کر رہا تھا، لیکن سب مل کر رانی کی مدد کرتے تھے!"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "بیٹا، اگر تمہیں کوئی حصہ درد کر رہا ہو یا عجیب لگ رہا ہو، تو تم کیا کرو گے؟"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمہارا جسم تمہارا ہے—کسی کو بھی تم سے یہ کہنے کا حق نہیں کہ تم اپنے ہاتھ، پاؤں یا کسی اور حصے کو نہ چھوؤ! اگر کوئی تمہیں ڈرائے یا کوئی چیز عجیب لگے، تو فوراً امّی ابّو کو بتانا۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-kg": [
