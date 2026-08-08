@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-05T23:10:13.342611";
+  var FKC_BUILD = "2026-08-08T22:24:30.231781";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -230,7 +230,21 @@ function fkcToggleTheme(){
       
       
       
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Python install karna ek beginner ke liye sabse pehla aur zaroori step hai. Hum Python ki official website se installer download karke install karenge. Phir ek simple &quot;Hello World&quot; program likhenge taake Python ka basic structure samajh aaye. Yehi program Python ki coding ka foundation hai.</p><h3>Example</h3><p>1. [Python ki official website](https://www.python.org/downloads/) par jao.<br>2. &quot;Download Python&quot; button par click karo (latest version select karna).<br>3. Installer run karo, **&quot;Add Python to PATH&quot;** checkbox check karna mat bhulna.<br>4. &quot;Install Now&quot; par click karo aur wait karo.<br>5. Command Prompt (Windows) ya Terminal (Mac/Linux) kholo aur `python --version` ya `python3 --version` type karo taake confirm ho jaaye ke Python install ho gaya hai.<br>6. Ab ek file `hello.py` banao aur usme yeh code likho:</p><pre dir="ltr"><code>   print(&quot;Hello World!&quot;)
    </code></pre><p>7. Terminal mein `python hello.py` ya `python3 hello.py` likh kar Enter dabao. Output aana chahiye: `Hello World!`</p><h3>Practice</h3><p>Apne system par Python install karo aur ek file `first.py` banao. Usme apna naam print karne wala code likho (e.g., `print(&quot;Mera naam [Apna Naam] hai&quot;)`). Terminal se run karo.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>کانسپٹ</h3><p>پائیتھن انسٹال کرنا ایک بیگنر کے لیے سب سے پہلا اور ضروری قدم ہے۔ ہم پائیتھن کی آفیشل ویب سائٹ سے انسٹالر ڈاؤن لوڈ کر کے انسٹال کریں گے۔ پھر ایک سادہ &quot;ہیلو ورلڈ&quot; پروگرام لکھیں گے تاکہ پائیتھن کا بنیادی ڈھانچہ سمجھ آئے۔ یہی پروگرام پائیتھن کی کوڈنگ کا فاؤنڈیشن ہے۔</p><h3>مثال</h3><p>١۔ پائیتھن کی آفیشل ویب سائٹ پر جاؤ۔<br>٢۔ &quot;ڈاؤن لوڈ پائیتھن&quot; کے بٹن پر کلک کرو (تازہ ترین ورژن سلیکٹ کرنا)۔<br>٣۔ انسٹالر چلاؤ، **&quot;ایڈ پائیتھن ٹو پاتھ&quot;** چیک باکس چیک کرنا مت بھولنا۔<br>٤۔ &quot;انسٹال ناؤ&quot; پر کلک کرو اور انتظار کرو۔<br>٥۔ کمانڈ پرامپٹ (ونڈوز) یا ٹرمینل (میک/لینکس) کھولو اور `python --version` یا `python3 --version` ٹائپ کرو تاکہ تصدیق ہو جائے کہ پائیتھن انسٹال ہو گیا ہے۔<br>٦۔ اب ایک فائل `hello.py` بناؤ اور اس میں یہ کوڈ لکھو:</p><pre dir="ltr"><code>   print(&quot;Hello World!&quot;)
    </code></pre><p>٧۔ ٹرمینل میں `python hello.py` یا `python3 hello.py` لکھ کر انٹر دباؤ۔ آؤٹ پٹ آنا چاہیے: `Hello World!`</p><h3>پریکٹس</h3><p>اپنے سسٹم پر پائیتھن انسٹال کرو اور ایک فائل `first.py` بناؤ۔ اس میں اپنا نام پرنٹ کرنے والا کوڈ لکھو (مثال کے طور پر، `print(&quot;میرا نام [اپنا نام] ہے&quot;)`)۔ ٹرمینل سے چلا کر دیکھو۔</p></div>
@@ -344,7 +358,30 @@ function fkcToggleTheme(){
         data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
       <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
-    <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
+    
+    <div class="daily-motivation" style="max-width:640px;margin:20px auto;padding:16px 20px;
+      background:linear-gradient(135deg,#fff7e6,#fef0f0);border-radius:14px;border:1px solid #f5e2c8;
+      text-align:center;">
+      <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
+        margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
+      <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
+        “Khud par yaqeen rakho, mehnat jari rakho — nateeja khud ba khud sath dega.”
+      </p>
+    </div>
+    <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;
+      background:linear-gradient(145deg,#f7f9fc,#eef2f9);border-radius:16px;border:1px solid #e6e9f0;
+      text-align:center;">
+      <p style="font-size:13px;letter-spacing:.03em;text-transform:uppercase;color:var(--muted);
+        margin:0 0 10px;font-weight:700;">✉️ Founder ki taraf se</p>
+      <p style="font-size:15px;line-height:1.7;color:#2a2f3a;margin:0 0 14px;">
+        Hamara maqsad sirf lessons post karna nahi — har us Pakistani tak muft, practical
+        taleem pohchana hai jo seekhna chahta hai lekin resources ya waqt nahi rakhta.
+        FKC Trading Academy ka vision hai: <b>roz thora seekho, mustaqil mehnat karo,
+        aur apni zindagi khud badlo.</b> Mission simple hai — koi bhi course, koi bhi fee
+        nahi, sirf aap ka irada.
+      </p>
+      <p style="font-size:13px;color:var(--muted);margin:0;">— Fazul Khan Chandio, Founder &amp; CEO</p>
+    </div><div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     <script>
     (function(){
       try {

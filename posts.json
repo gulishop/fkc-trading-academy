@@ -5696,6 +5696,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 4,
+      "id": "day-004",
+      "date": "2026-08-08",
+      "title": "Day 4 — Lists, Tuples aur Dictionaries: Data Structures ka Power",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Lists, tuples aur dictionaries Python ke fundamental data structures hain jo multiple items ko store karte hain. Lists ordered aur mutable hoti hain (changeable), tuples ordered aur immutable (unchangeable), jabki dictionaries key-value pairs store karte hain. Inke zariye aap complex data ko organize aur manipulate kar sakte hain."
+        ],
+        [
+          "Example",
+          "```python\n# List example\nfruits = [\"apple\", \"banana\", \"cherry\"]\nfruits.append(\"orange\")  # List mein add\nprint(fruits[1])  # Output: banana\n\n# Tuple example\ncolors = (\"red\", \"green\", \"blue\")\nprint(colors[0])  # Output: red\n\n# Dictionary example\nstudent = {\"name\": \"Ali\", \"age\": 20, \"grade\": \"A\"}\nprint(student[\"name\"])  # Output: Ali\n```"
+        ],
+        [
+          "Practice",
+          "Ek list `numbers` banayein jismein 5 integers hon. Phir uske har element ko 2 se multiply karke ek nayi list `doubled` mein store karein."
+        ],
+        [
+          "Mini Project",
+          "Ek simple phone directory banayein jo dictionary use kare. User se name aur phone number input le aur dictionary mein store kare. Phir user ko search karne ka option dein."
+        ]
+      ],
+      "answer_key": "numbers = [1, 2, 3, 4, 5], doubled = [2, 4, 6, 8, 10]",
+      "translations": {
+        "ur": {
+          "title": "یوم ۴ — لسٹس، ٹیوپلز اور ڈکشنریز: ڈیٹا سٹرکچرز کا پاور",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "لسٹس، ٹیوپلز اور ڈکشنریز پائیتھن کے بنیادی ڈیٹا سٹرکچرز ہیں جو متعدد آئٹمز کو محفوظ کرتے ہیں۔ لسٹس ترتیب وار اور تغیر پذیر (تبدیل ہونے کے قابل) ہوتی ہیں، ٹیوپلز ترتیب وار اور غیر تغیر پذیر (تبدیل نہ ہونے کے قابل) ہوتے ہیں، جبکہ ڈکشنریز کلید-قیمت جوڑوں کو محفوظ کرتی ہیں۔ ان کے ذریعے آپ پیچیدہ ڈیٹا کو منظم اور تبدیل کر سکتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "```python\n# List example\nfruits = [\"apple\", \"banana\", \"cherry\"]\nfruits.append(\"orange\")  # List میں شامل کریں\nprint(fruits[1])  # آؤٹ پٹ: banana\n\n# Tuple example\ncolors = (\"red\", \"green\", \"blue\")\nprint(colors[0])  # آؤٹ پٹ: red\n\n# Dictionary example\nstudent = {\"name\": \"Ali\", \"age\": 20, \"grade\": \"A\"}\nprint(student[\"name\"])  # آؤٹ پٹ: Ali\n```"
+            },
+            {
+              "label": "مشق",
+              "content": "ایک لسٹ `numbers` بنائیں جس میں ۵ انٹیجرز ہوں۔ پھر اس کے ہر عنصر کو ۲ سے ضرب دے کر ایک نئی لسٹ `doubled` میں محفوظ کریں۔"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "ایک سادہ فون ڈائریکٹری بنائیں جو ڈکشنری استعمال کرے۔ صارف سے نام اور فون نمبر ان پٹ لے کر ڈکشنری میں محفوظ کریں۔ پھر صارف کو تلاش کرنے کا آپشن دیں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "web-development": [
