@@ -593,6 +593,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 7,
+      "id": "day-007",
+      "date": "2026-08-08",
+      "title": "Day 7 — YouTube Monetization Ke 101 Rules: AdSense Se Paise Kamane Se Pehle Yeh 5 Cheezein Zaroori Hain",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "YouTube Monetization (AdSense) shuru karne se pehle 1000 subscribers aur 4000 watch hours ya 10M Shorts views poori karni hoti hain. Lekin sirf yeh numbers kaam nahi aate—YouTube ke policies (copyright, community guidelines), channel ke content type, aur audience engagement bhi check kiye jaate hain. AdSense approval ke baad bhi policies follow karni hoti hain, warna demonetization ka samna karna pad sakta hai."
+        ],
+        [
+          "Example",
+          "Ek student ne 1000 subscribers poore kar liye, lekin uske videos par copyrighted music use kiya hua hai. YouTube ka Content ID system uske videos ko flag kar dega, aur AdSense approval reject ho jayega. Solution: AI-generated music (Epidemic Sound, Uppbeat) ya free copyright-free tracks use karo."
+        ],
+        [
+          "Practice",
+          "Apne channel ke sabse 3 latest videos ko YouTube Studio > Monetization > Policy Checker se verify karo. Kya koi copyright claim ya community guideline violation dikhta hai? Agar haan, usko fix karo."
+        ],
+        [
+          "Mini Project",
+          "Ek 100-word ka blog post ya Twitter thread likho: *\"Mera channel AdSense ke liye taiyar hai—main isko kaise approve karunga?\"* Usmein niche diye gaye points cover karo:\n1. Copyright-free content kaise ensure karna hai\n2. Community guidelines violations se bachne ke tips\n3. 1000 subscribers aur 4000 watch hours poore karne ka realistic plan"
+        ]
+      ],
+      "answer_key": "copyright-free content, community guidelines, policy checker, demonetization risk",
+      "translations": {
+        "ur": {
+          "title": "دن ۷ — یوٹیوب مانیٹائزیشن کے ۱۰۱ قواعد: ایڈسینس سے پیسے کمانے سے پہلے یہ ۵ چیزیں ضروری ہیں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "یوٹیوب مانیٹائزیشن (ایڈسینس) شروع کرنے سے پہلے ۱۰۰۰ سبسکرائبرز اور ۴۰۰۰ واچ آورز یا ۱۰ ملین شارٹس ویوز مکمل کرنی ہوتی ہیں۔ لیکن صرف یہ نمبرز کام نہیں آتے—یوٹیوب کی پالیسیاں (کاپی رائٹ، کمیونٹی گائیڈلائنز)، چینل کے مواد کی قسم، اور آڈیئنس انگیجمنٹ بھی چیک کیے جاتے ہیں۔ ایڈسینس اپروول کے بعد بھی پالیسیاں فالو کرنی ہوتی ہیں، ورنہ ڈیمونیٹائزیشن کا سامنا کرنا پڑ سکتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک طالب علم نے ۱۰۰۰ سبسکرائبرز پورے کر لیے، لیکن اس کے ویڈیوز پر کاپی رائٹڈ میوزک استعمال کیا ہوا ہے۔ یوٹیوب کا کونٹینٹ آئی ڈی سسٹم اس کے ویڈیوز کو فلیگ کر دے گا، اور ایڈسینس اپروول ریجیکٹ ہو جائے گا۔ حل: اے آئی جنریٹڈ میوزک (ایپیڈیمک ساؤنڈ، اپ بیٹ) یا فری کاپی رائٹ فری ٹریکس استعمال کرو۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے چینل کے تازہ ترین ۳ ویڈیوز کو یوٹیوب اسٹوڈیو > مانیٹائزیشن > پالیسی چیکر سے تصدیق کرو۔ کیا کوئی کاپی رائٹ کلیم یا کمیونٹی گائیڈلائن کی خلاف ورزی نظر آتی ہے؟ اگر ہاں، تو اسے درست کرو۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک ۱۰۰ الفاظ کا بلاگ پوسٹ یا ٹویٹر تھریڈ لکھو: *\"میرا چینل ایڈسینس کے لیے تیار ہے—میں اسے کیسے اپروو کرواوں گا؟\"* اس میں نیچے دیے گئے پوائنٹس کور کرو:\n۱۔ کاپی رائٹ فری مواد کیسے یقینی بنانا ہے\n۲۔ کمیونٹی گائیڈلائنز کی خلاف ورزیوں سے بچنے کے ٹپس\n۳۔ ۱۰۰۰ سبسکرائبرز اور ۴۰۰۰ واچ آورز پورے کرنے کا حقیقت پسندانہ پلان"
+            }
+          ]
+        }
+      }
     }
   ],
   "social-media-marketing": [
