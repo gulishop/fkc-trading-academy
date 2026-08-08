@@ -8195,6 +8195,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 5,
+      "id": "day-005",
+      "date": "2026-08-08",
+      "title": "Day 5 — \"Haanjii, thoda wait karo!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachay, kabhi-kabhi humein koi cheez turant nahi milti—jaise ice cream ya koi khilona. Lekin agar hum thoda *sabar* rakhein aur *baari ka intezar* karein, toh woh cheez aur bhi meethi lagti hai! Sabar rakhna ek badiya aadat hai, jisse hum zyada khush rehte hain aur doosron ki bhi madad karte hain."
+        ],
+        [
+          "Chhoti Kahani",
+          "Areeba ne school se aate hi apne abbu se kaha, \"Abbu, main kal school ke sports day par race jeetna chahti hoon!\" Abbu ne muskurate hue kaha, \"Beta, race jeetne ke liye pehle training karni hogi. Aaj se hi abhi shuru karo!\" Areeba ne roz practice ki aur thoda sabar rakhna seekha. Race ke din, jab usne jeeta, toh uske chehre par itni khushi thi—jaise uske sabar ka saboot ho!"
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, kya kabhi tumhein koi cheez turant nahi mili jab tumne sabar kiya ho? Uske baad kaisa laga?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Jab tum sabar karte ho, toh tum zyada khush rehte ho aur doosron ko bhi khush rakhte ho!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ٥ — ہاں جی، تھوڑا انتظار کرو!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "بچو، کبھی کبھی ہمیں کوئی چیز فوراً نہیں ملتی—جیسے آئس کریم یا کوئی کھلونا۔ لیکن اگر ہم تھوڑا *صبر* رکھیں اور *باری کا انتظار* کریں، تو وہ چیز اور بھی میٹھی لگتی ہے! صبر رکھنا ایک بہترین عادت ہے، جس سے ہم زیادہ خوش رہتے ہیں اور دوسروں کی بھی مدد کرتے ہیں۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "آریبا نے سکول سے آتے ہی اپنے ابو سے کہا، ’ابو، میں کل سکول کے سپورٹس ڈے پر ریس جیتنا چاہتی ہوں!‘ ابو نے مسکراتے ہوئے کہا، ’بیٹا، ریس جیتنے کے لیے پہلے ٹریننگ کرنی ہوگی۔ آج سے ہی ابھی شروع کرو!‘ آریبا نے روز پریکٹس کی اور تھوڑا صبر رکھنا سیکھا۔ ریس کے دن، جب اس نے جیتا، تو اس کے چہرے پر اتنی خوشی تھی—جیسے اس کے صبر کا ثبوت ہو!"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "’بیٹا، کیا کبھی تمہیں کوئی چیز فوراً نہیں ملی جب تم نے صبر کیا ہو؟ اس کے بعد کیسا لگا؟‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "جب تم صبر کرتے ہو، تو تم زیادہ خوش رہتے ہو اور دوسروں کو بھی خوش رکھتے ہو!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-nursery": [
