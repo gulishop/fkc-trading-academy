@@ -7319,6 +7319,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 4,
+      "id": "day-004",
+      "date": "2026-08-08",
+      "title": "Day 4 — **Property Valuation: 3 Asaan Tarike Gharelu Jaankari Se Professional Tak**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Property ki sahi valuation samajhna real estate ka backbone hai. Gharelu level par aap apne ghar ya doston ki property ke rates check kar sakte hain, lekin professional valuation ke liye 3 key methods hain: **Market Comparison (CMA), Cost Approach, aur Income Approach**. Har method ki apni importance hai—jaise CMA market ke current rates se milti hai, cost approach se construction cost nikalte hain, aur income approach se rental income ka analysis hota hai."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "CMA (Comparative Market Analysis)",
+          "Apne area ki 3-4 similar properties ke rates check karo (size, location, condition same honi chahiye). Jaise Lahore ke Johar Town mein 10 marla house ka 2023 ka rate Rs. 1.2 crore tha, 2024 mein Rs. 1.35 crore ho sakta hai.\n2."
+        ],
+        [
+          "Cost Approach",
+          "Land ki value + construction cost (Rs. 3000/sq ft) = Total value. Agar 10 marla (250 sq yd = 2250 sq ft) ka plot Rs. 50 lac ka hai aur construction Rs. 67.5 lac ka, to total Rs. 1.175 crore.\n3."
+        ],
+        [
+          "Income Approach",
+          "Agar property rent par hai, to \"Capitalization Rate\" (6-8% typically) se value nikalte hain. Jaise Rs. 50,000/month rent par 7% rate se value = (50,000 x 12) / 0.07 = Rs. 85.7 lac."
+        ],
+        [
+          "Practice",
+          "Apne ghar ya kisi dost ke plot ki valuation 3 methods se nikalo. Har method ka result note karo aur compare karo—kya difference hai?"
+        ],
+        [
+          "Mini Project",
+          "Ek **Property Valuation Report** taiyar karo (1 page) jisme:\n- Property details (size, location, age)\n- 3 methods se calculated value\n- Final valuation (average ya weighted)\n- Recommendation (buy/sell/hold)"
+        ]
+      ],
+      "answer_key": "cma, cost approach, income approach, market rates, construction cost",
+      "translations": {
+        "ur": {
+          "title": "دن ۴ — پراپرٹی ویلیویشن: ۳ آسان طریقے گھریلو معلومات سے پیشہ ورانہ تک",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "پراپرٹی کی صحیح ویلیویشن سمجھنا رئیل اسٹیٹ کا بنیادی ستون ہے۔ گھریلو سطح پر آپ اپنے گھر یا دوستوں کی پراپرٹی کے ریٹس چیک کر سکتے ہیں، لیکن پیشہ ورانہ ویلیویشن کے لیے ۳ کلیدی طریقے ہیں: مارکیٹ کمپیریزن (سی ایم اے)، کوسٹ اپروچ، اور انکم اپروچ۔ ہر طریقے کی اپنی اہمیت ہے—جیسے سی ایم اے مارکیٹ کے موجودہ ریٹس سے ملتی ہے، کوسٹ اپروچ سے تعمیراتی لاگت نکالی جاتی ہے، اور انکم اپروچ سے رینٹل انکم کا تجزیہ ہوتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ سی ایم اے (کمپیریٹیو مارکیٹ اینالیسس): اپنے علاقے کی ۳-۴ مماثل پراپرٹیز کے ریٹس چیک کریں (سائز، لوکیشن، کنڈیشن یکساں ہونی چاہیے)۔ جیسے لاہور کے جوہر ٹاؤن میں ۱۰ مرلہ گھر کا ۲۰۲۳ کا ریٹ ۱.۲ کروڑ روپے تھا، ۲۰۲۴ میں ۱.۳۵ کروڑ روپے ہو سکتا ہے۔\n\n۲۔ کوسٹ اپروچ: زمین کی ویلیو + تعمیراتی لاگت (۳۰۰۰ روپے فی مربع فٹ) = کل ویلیو۔ اگر ۱۰ مرلہ (۲۵۰ مربع گز = ۲۲۵۰ مربع فٹ) کا پلاٹ ۵۰ لاکھ روپے کا ہے اور تعمیر ۶۷.۵ لاکھ روپے کی، تو کل ۱.۱۷۵ کروڑ روپے۔\n\n۳۔ انکم اپروچ: اگر پراپرٹی کرائے پر ہے، تو \"کیپیٹلائزیشن ریٹ\" (عموماً ۶-۸ فیصد) سے ویلیو نکالی جاتی ہے۔ جیسے ۵۰،۰۰۰ روپے ماہانہ کرائے پر ۷ فیصد ریٹ سے ویلیو = (۵۰،۰۰۰ × ۱۲) / ۰.۰۷ = ۸۵.۷ لاکھ روپے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے گھر یا کسی دوست کے پلاٹ کی ویلیویشن تینوں طریقوں سے نکالیں۔ ہر طریقے کا نتیجہ نوٹ کریں اور موازنہ کریں—کیا فرق ہے؟"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک پراپرٹی ویلیویشن رپورٹ تیار کریں (۱ صفحہ) جس میں:\n- پراپرٹی کی تفصیلات (سائز، لوکیشن، عمر)\n- تینوں طریقوں سے حساب شدہ ویلیو\n- حتمی ویلیویشن (اوسط یا وزن دار)\n- سفارش (خریدیں/بیچیں/رکھیے)"
+            }
+          ]
+        }
+      }
     }
   ],
   "mobile-repairing": [
