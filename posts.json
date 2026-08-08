@@ -1959,6 +1959,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 6,
+      "id": "day-006",
+      "date": "2026-08-08",
+      "title": "Day 6 — **Amazon FBA Mein Shipment Bhejna: Step-by-Step Guide (FBA vs FBM, Packaging, Labels, Shipping Plan)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Amazon FBA shipment bhejna ek critical step hai jo supplier se product receive karne se leke Amazon warehouse tak pohanchane tak ka process cover karta hai. FBA (Fulfillment by Amazon) mein hum apne product Amazon ke warehouse mein bhejte hain jo baad mein customer orders fulfill karte hain. FBM (Fulfillment by Merchant) mein hum khud shipping handle karte hain. Aaj hum FBA shipment ka complete process seekhenge: packaging, labels, shipping plan, aur Amazon ke warehouse tak pohanchane ka tarika."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Packaging",
+          "Apne product ko Amazon ke guidelines ke hisab se pack karein (e.g., 6-sided box, 2-inch space on all sides, no hanging polybags).\n2."
+        ],
+        [
+          "Labels",
+          "Har box aur pallet par Amazon FBA shipment labels lagayein (FNSKU barcode, shipment ID).\n3."
+        ],
+        [
+          "Shipping Plan",
+          "Amazon Seller Central mein shipment create karein, warehouse address select karein, aur carrier (UPS, FedEx) ya Amazon Partnered Carrier choose karein."
+        ],
+        [
+          "Practice",
+          "Apne supplier se poochhein ke woh Amazon FBA ke hisab se packaging kar sakte hain ya nahi. Agar nahi, toh aap khud packaging ka arrangement karein aur Amazon ke guidelines follow karein."
+        ],
+        [
+          "Mini Project",
+          "Ek dummy shipment plan banayein Amazon Seller Central mein (agar account hai toh real, warna hypothetical). Shipment ID, warehouse address, carrier, aur product details fill karein."
+        ]
+      ],
+      "answer_key": "fnsku labels, 6-sided box, amazon partnered carrier, seller central shipment plan",
+      "translations": {
+        "ur": {
+          "title": "دن 6 — ایمیزون ایف بی اے میں شپمنٹ بھیجنا: سٹیپ بائی سٹیپ گائیڈ (ایف بی اے بمقابلہ ایف بی ایم، پیکجنگ، لیبلز، شپنگ پلان)",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ایمیزون ایف بی اے شپمنٹ بھیجنا ایک اہم قدم ہے جو سپلائر سے پروڈکٹ وصول کرنے سے لے کر ایمیزون کے گودام تک پہنچانے کا پورا عمل کور کرتا ہے۔ ایف بی اے (فلفلمنٹ بائی ایمیزون) میں ہم اپنے پروڈکٹ ایمیزون کے گودام میں بھیجتے ہیں جو بعد میں کسٹمر آرڈرز کو پورا کرتے ہیں۔ ایف بی ایم (فلفلمنٹ بائی مرچنٹ) میں ہم خود شپنگ ہینڈل کرتے ہیں۔ آج ہم ایف بی اے شپمنٹ کا مکمل عمل سیکھیں گے: پیکجنگ، لیبلز، شپنگ پلان، اور ایمیزون کے گودام تک پہنچانے کا طریقہ۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ پیکجنگ: اپنے پروڈکٹ کو ایمیزون کی گائیڈلائنز کے مطابق پیک کریں (مثلاً چھ طرفہ باکس، ہر طرف دو انچ کا خالی جگہ، لٹکتے ہوئے پولی بیگز نہیں)۔\n۲۔ لیبلز: ہر باکس اور پیلیٹ پر ایمیزون ایف بی اے شپمنٹ لیبلز لگائیں (ایف این ایس کے یو بارکوڈ، شپمنٹ آئی ڈی)۔\n۳۔ شپنگ پلان: ایمیزون سیلر سینٹرل میں شپمنٹ بنائیں، گودام کا پتہ منتخب کریں، اور کیریئر (یو پی ایس، فیڈیکس) یا ایمیزون پارٹنرڈ کیریئر کا انتخاب کریں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے سپلائر سے پوچھیں کہ کیا وہ ایمیزون ایف بی اے کے مطابق پیکجنگ کر سکتے ہیں یا نہیں۔ اگر نہیں تو آپ خود پیکجنگ کا انتظام کریں اور ایمیزون کی گائیڈلائنز پر عمل کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایمیزون سیلر سینٹرل میں ایک ڈمی شپمنٹ پلان بنائیں (اگر اکاؤنٹ ہے تو حقیقی، ورنہ فرضی)۔ شپمنٹ آئی ڈی، گودام کا پتہ، کیریئر، اور پروڈکٹ کی تفصیلات بھریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "daraz-seller": [
