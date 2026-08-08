@@ -2815,6 +2815,84 @@
           ]
         }
       }
+    },
+    {
+      "day": 6,
+      "id": "day-006",
+      "date": "2026-08-08",
+      "title": "Day 6 — **Facebook Ads Se Zero-to-Hero Traffic: Budget Se Le Kar Creatives Tak**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Facebook Ads dropshipping ka backbone hai—lekin *wrong* approach se paise barbad karne ka zariya bhi. Aaj seekhenge ki kaise **low budget se start karke**, **high ROAS** wale ads banayein. Key focus hai: **Audience targeting (lookalike + interest-based), ad creatives (hook + CTA), aur budget optimization** (kaise $5/day se $50/day tak scale karna hai)."
+        ],
+        [
+          "Example",
+          "Ek *fitness supplement* product ka ad banate hain:\n1."
+        ],
+        [
+          "Hook",
+          "\"30 Days Mein 10KG Kam Karne Ka Secret? 👀\" (emoji + curiosity)\n2."
+        ],
+        [
+          "Video Creative",
+          "5-second clip jisme customer apne aap ko mirror mein dekh raha hai (before/after nahi, *feeling* show karo).\n3."
+        ],
+        [
+          "CTA",
+          "\"Abhi Order Karen—Stock Khali Hai!\" (urgency + scarcity).\n4."
+        ],
+        [
+          "Targeting",
+          "\"Weight Loss\" interest + \"Fitness Influencers\" lookalike audience (1-2% overlap)."
+        ],
+        [
+          "Practice",
+          "Apne *current* product ka **3 ad creatives** banayein (1 image, 1 video, 1 carousel). Har creative mein **hook + CTA** zaroor add karein. Facebook Ads Manager mein ja kar **\"Audience\"** section mein apne product ke **3 interest-based audiences** likhein (e.g., \"Yoga Enthusiasts,\" \"Gym Beginners,\" \"Home Workout\")."
+        ],
+        [
+          "Mini Project",
+          "Ek **$5/day budget** wala ad set create karein. Steps:\n1. Ad set mein **1 interest** select karein (e.g., \"Home Gym Equipment\").\n2."
+        ],
+        [
+          "Placement",
+          "\"Facebook & Instagram Feeds\" (aur koi nahi).\n3."
+        ],
+        [
+          "Optimization",
+          "\"Conversions\" (not traffic).\n4."
+        ],
+        [
+          "Creative",
+          "Apna best ad upload karein.\n5. **5 days** tak run karne ke baad, **ROAS** check karein. Agar ROAS > 2x hai, toh budget double kar dein."
+        ]
+      ],
+      "answer_key": "hook+cta, interest-based, $5/day, roas>2",
+      "translations": {
+        "ur": {
+          "title": "دن ٦ — **فیس بُک ایڈز سے زیرو ٹو ہیرو ٹریفک: بجٹ سے لے کر کریئیٹیوز تک**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "فیس بُک ایڈز ڈراپ شپنگ کا ریڑھ کی ہڈی ہے—لیکن *غلط* اپروچ سے پیسے برباد کرنے کا ذریعہ بھی۔ آج سیکھیں گے کہ کیسے **کم بجٹ سے شروع کر کے**، **ہائی آر او اے ایس** والے ایڈز بنائیں۔ کلیدی فوکس ہے: **آڈیئنس ٹارگٹنگ (لوک لائک + انٹرسٹ بیسڈ)، ایڈ کریئیٹیوز (ہُک + سی ٹی اے)، اور بجٹ آپٹیمائزیشن** (کیسے ٥ ڈالر فی دن سے ٥٠ ڈالر فی دن تک سکیل کرنا ہے)"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک *فِٹنس سپلیمنٹ* پروڈکٹ کا ایڈ بناتے ہیں:\n١۔ ہُک: \"٣٠ دن میں ١٠ کلو گرام کم کرنے کا راز؟ 👀\" (ایموجی + تجسس)\n٢۔ ویڈیو کریئیٹیو: ٥ سیکنڈ کا کلپ جس میں کسٹمر اپنے آپ کو آئینے میں دیکھ رہا ہے (بیفور/آفٹر نہیں، *فیِلنگ* دکھائیں)\n٣۔ سی ٹی اے: \"ابھی آرڈر کریں—اسٹاک خالی ہے!\" (ہنگامی صورتحال + کمیابی)\n٤۔ ٹارگٹنگ: \"وزن کم کرنا\" انٹرسٹ + \"فِٹنس اِنفلوئنسرز\" لوک لائک آڈیئنس (١-٢٪ اوورلیپ)"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے *موجودہ* پروڈکٹ کے **٣ ایڈ کریئیٹیوز** بنائیں (١ امیج، ١ ویڈیو، ١ کیراسل)۔ ہر کریئیٹیو میں **ہُک + سی ٹی اے** ضرور شامل کریں۔ فیس بُک ایڈز مینیجر میں جا کر \"آڈیئنس\" سیکشن میں اپنے پروڈکٹ کے **٣ انٹرسٹ بیسڈ آڈیئنسز** لکھیں (مثال کے طور پر، \"یوگا شوقین\"، \"جم بیگنرز\"، \"ہوم ورک آؤٹ\")"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **٥ ڈالر فی دن بجٹ** والا ایڈ سیٹ بنائیں۔ اقدامات:\n١۔ ایڈ سیٹ میں **١ انٹرسٹ** سلیکٹ کریں (مثال کے طور پر، \"ہوم جم ایکویپمنٹ\")\n٢۔ پلیسمنٹ: \"فیس بُک اینڈ انسٹاگرام فیڈز\" (اور کوئی نہیں)\n٣۔ آپٹیمائزیشن: \"کنورژنز\" (ٹریفک نہیں)\n٤۔ کریئیٹیو: اپنا بہترین ایڈ اپ لوڈ کریں\n٥۔ **٥ دن** تک چلانے کے بعد، **آر او اے ایس** چیک کریں۔ اگر آر او اے ایس > ٢x ہے، تو بجٹ ڈبل کر دیں"
+            }
+          ]
+        }
+      }
     }
   ],
   "freelancing": [
