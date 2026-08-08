@@ -8194,6 +8194,72 @@
           ]
         }
       }
+    },
+    {
+      "day": 4,
+      "id": "day-004",
+      "date": "2026-08-08",
+      "title": "Day 4 — **Podcast Structure: Kya, Kyun aur Kaise Banaye?**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Ek achha podcast sirf achhe audio ya topic se nahi banta—uski **structure** (banawat) se hota hai. Aaj seekhenge ki podcast ka opening, body aur conclusion kaise design karein taake listeners engaged rahein. Har segment ka purpose clear ho (intro, main content, CTA, outro) aur flow natural ho."
+        ],
+        [
+          "Example",
+          "Ek fitness podcast ka structure:\n1."
+        ],
+        [
+          "Intro (0:00-1:30)",
+          "Host ka introduction + episode ka topic (\"Aaj hum baat karenge 'Home Workouts' ke bare mein\").\n2."
+        ],
+        [
+          "Main Content (1:30-25:00)",
+          "3-4 points (e.g., \"1. Gym ke bina exercise, 2. 10-minute routine...\").\n3."
+        ],
+        [
+          "CTA (25:00-26:00)",
+          "\"Aaj ke episode ka summary, aur agle week ka teaser.\"\n4."
+        ],
+        [
+          "Outro (26:00-27:30)",
+          "\"Doston, yeh the aaj ke tips. Like-share zaroor karein!\""
+        ],
+        [
+          "Practice",
+          "Apne podcast ka **outline** banayein—3-5 bullet points mein likhein ki aapka next episode ka structure kya hoga (intro, 2-3 main points, CTA, outro)."
+        ],
+        [
+          "Mini Project",
+          "Ek **1-minute ka script** likhein jo aapka podcast ka intro ho. Use 3 lines mein divide karein:\n- Line 1: Host ka introduction + podcast ka naam.\n- Line 2: Episode ka topic/teaser.\n- Line 3: \"Chalo shuru karte hain!\""
+        ]
+      ],
+      "answer_key": "host introduction, episode topic, teaser, cta",
+      "translations": {
+        "ur": {
+          "title": "دن 4 — پوڈکاسٹ کا ڈھانچہ: کیا، کیوں اور کیسے بنائیں؟",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "ایک اچھا پوڈکاسٹ محض اچھے آڈیو یا موضوع سے نہیں بنتا—اس کی **ڈھانچہ بندی** (بناوٹ) سے ہوتا ہے۔ آج سیکھیں گے کہ پوڈکاسٹ کا آغاز، مرکزی حصہ اور اختتام کیسے ڈیزائن کریں تاکہ سامعین مصروف رہیں۔ ہر حصے کا مقصد واضح ہو (تعارف، مرکزی مواد، کال ٹو ایکشن، اختتام) اور بہاؤ قدرتی ہو۔"
+            },
+            {
+              "label": "مثال",
+              "content": "فٹنس پوڈکاسٹ کا ڈھانچہ:\n١۔ تعارف (0:00-1:30): میزبان کا تعارف + قسط کا موضوع (\"آج ہم بات کریں گے 'گھر پر ورزش' کے بارے میں\")۔\n٢۔ مرکزی مواد (1:30-25:00): 3-4 نکات (مثلاً، \"1. جم کے بغیر ورزش، 2. دس منٹ کی روٹین...\")۔\n٣۔ کال ٹو ایکشن (25:00-26:00): \"آج کی قسط کا خلاصہ، اور اگلے ہفتے کا اشارہ۔\"\n٤۔ اختتام (26:00-27:30): \"دوستو، یہ تھے آج کے ٹپس۔ لائک اور شیئر ضرور کریں!\""
+            },
+            {
+              "label": "مشق",
+              "content": "اپنے پوڈکاسٹ کا **خاکہ** بنائیں—3 سے 5 نکات میں لکھیں کہ آپ کی اگلی قسط کا ڈھانچہ کیا ہوگا (تعارف، 2-3 مرکزی نکات، کال ٹو ایکشن، اختتام)।"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "ایک **ایک منٹ کا اسکرپٹ** لکھیں جو آپ کے پوڈکاسٹ کا تعارف ہو۔ اسے 3 سطروں میں تقسیم کریں:\n- سطر 1: میزبان کا تعارف + پوڈکاسٹ کا نام۔\n- سطر 2: قسط کا موضوع/اشارہ۔\n- سطر 3: \"چلو شروع کرتے ہیں!\""
+            }
+          ]
+        }
+      }
     }
   ],
   "real-estate-business": [
