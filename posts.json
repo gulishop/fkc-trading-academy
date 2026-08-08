@@ -7896,6 +7896,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 6,
+      "id": "day-006",
+      "date": "2026-08-08",
+      "title": "Day 6 — **Color Grading: Mood & Style Banana**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Color grading photography ka heera hai—yeh photo ko sirf \"achha\" nahi, *unka personality* deta hai. Isse aap photo ka mood (warm, cool, moody, vibrant) aur style (cinematic, retro, minimal) decide karte hain. Lightroom ya mobile apps mein yeh presets ke zariye hota hai, lekin samajhne ke liye pehle color theory ka basics hona zaroori hai."
+        ],
+        [
+          "Example",
+          "Ek portrait liya hai—skin tone natural hai, lekin photo \"flat\" lag rahi hai. Lightroom mein:\n1. **HSL Panel** → Saturation ko adjust karo (reds/oranges ko thoda kam karo, blues ko badhao).\n2. **Color Grading Panel** → Shadows ko cool blue (teal) mein, highlights ko warm orange mein shift karo.\n3. **Curves** → S-curve lagao (shadows dark, highlights bright).\nAb photo \"dramatic\" ho gayi hai—jaise koi film ka scene ho!"
+        ],
+        [
+          "Practice",
+          "Apne phone ya Lightroom mein koi 1 photo kholo. **HSL Panel** mein jake:\n- Reds ki saturation -20 karo\n- Blues ki hue ko 200 (teal) par adjust karo\n- Shadows ko -10 brightness se dark karo\nChange ko observe karo—photo ka mood kaise badla?"
+        ],
+        [
+          "Mini Project",
+          "Ek hi scene ki 3 photos lo (e.g., sunset, indoor, shade). Har photo par **alag color grading** apply karo:\n1. Warm & vibrant (sunset jaise)\n2. Cool & moody (rainy day jaise)\n3. High contrast (cinematic jaise)\nCompare karo—har style ka effect kaise alag hai?"
+        ]
+      ],
+      "answer_key": "warm orange shadows, teal highlights, increased contrast, hsl adjustments",
+      "translations": {
+        "ur": {
+          "title": "دن 6 — **کالر گریڈنگ: موڈ اور اسٹائل بنانا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "کالر گریڈنگ فوٹوگرافی کا ہیरा ہے—یہ فوٹو کو صرف ’اچھا‘ نہیں، *ان کی شخصیت* دیتا ہے۔ اس سے آپ فوٹو کا موڈ (وارم، کول، موڈی، وائبرینٹ) اور اسٹائل (سینیمیٹک، ریٹرو، منیمل) طے کرتے ہیں۔ لائٹ روم یا موبائل ایپس میں یہ پری سیٹس کے ذریعے ہوتا ہے، لیکن سمجھنے کے لیے پہلے کالر تھیوری کا بیسکس ہونا ضروری ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک پورٹریٹ لیا ہے—سکِن ٹون نیچرل ہے، لیکن فوٹو ’فلیٹ‘ لگ رہی ہے۔ لائٹ روم میں:\n١۔ **ایچ ایس ایل پینل** → سیچوریشن کو ایڈجسٹ کرو (ریڈز/اورنجز کو تھوڑا کم کرو، بلیوز کو بڑھاؤ)۔\n٢۔ **کالر گریڈنگ پینل** → شیڈوز کو کول بلیو (ٹیل) میں، ہائی لائٹس کو وارم اورنج میں شفٹ کرو۔\n٣۔ **کروز** → ایس-کرِو لگاؤ (شیڈوز ڈارک، ہائی لائٹس برائٹ)۔\nاب فوٹو ’ڈرامٹک‘ ہو گئی ہے—جیسے کوئی فلم کا سین ہو!"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے فون یا لائٹ روم میں کوئی ایک فوٹو کھولو۔ **ایچ ایس ایل پینل** میں جا کر:\n- ریڈز کی سیچوریشن -٢٠ کرو\n- بلیوز کی ہیو کو ٢٠٠ (ٹیل) پر ایڈجسٹ کرو\n- شیڈوز کو -١٠ برائٹنیس سے ڈارک کرو\nتبدیلی کو آبزرو کرو—فوٹو کا موڈ کیسے بدلا؟"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک ہی سین کی تین فوٹوز لو (مثال کے طور پر: سن سیٹ، انڈور، شیڈ)۔ ہر فوٹو پر **الگ کالر گریڈنگ** اپلائی کرو:\n١۔ وارم اینڈ وائبرینٹ (سن سیٹ جیسا)\n٢۔ کول اینڈ موڈی (برسات کے دن جیسا)\n٣۔ ہائی کنٹراسٹ (سینیمیٹک جیسا)\nمقابلہ کرو—ہر اسٹائل کا ایفیکٹ کیسے الگ ہے؟"
+            }
+          ]
+        }
+      }
     }
   ],
   "voiceover-podcasting": [
