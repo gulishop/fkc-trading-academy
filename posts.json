@@ -3463,6 +3463,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 5,
+      "id": "day-005",
+      "date": "2026-08-08",
+      "title": "Day 5 — AI Tools Se No-Code Projects Ko 10x Fast Banana",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "AI no-code tools ki power se apne projects ko automatic aur smart banaya ja sakta hai. AI se content generate karna, designs optimize karna, aur even code-less workflows automate karna possible hai. Aaj hum dekhenge ki AI ko no-code platforms ke saath kaise integrate karna hai—bina coding ke."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "AI se Content Generate",
+          "Framer/Webflow mein AI se blog posts ya product descriptions likhwa sakte hain (e.g., \"Write a 100-word product description for a wireless earbuds\").\n2."
+        ],
+        [
+          "AI Design Assistant",
+          "Canva ya Framer mein AI se logos, banners, ya UI elements generate kar sakte hain (e.g., \"Generate a minimalist logo for a coffee shop\").\n3."
+        ],
+        [
+          "AI Automation",
+          "Zapier ya Make (Integromat) mein AI prompts add karke workflows automate kar sakte hain (e.g., \"When a new Airtable entry is added, use AI to summarize it and send to Slack\")."
+        ],
+        [
+          "Practice",
+          "Apne selected no-code platform (Framer/Webflow/Glide) mein jake **AI se ek 50-word product description** generate karo. Prompt use karo: *\"Write a catchy 50-word description for [apna product/service ka naam].\"*"
+        ],
+        [
+          "Mini Project",
+          "**\"AI-Powered Portfolio Website\"** banana:\n1. Framer/Webflow mein ek portfolio website create karo.\n2. AI se 3 blog posts ya project descriptions generate karo aur unhe website par add karo.\n3. AI se ek logo bana kar use website ke header mein laga do.\n4. Website ko publish karo aur link share karo."
+        ]
+      ],
+      "answer_key": "ai prompt, generated content, logo, published link",
+      "translations": {
+        "ur": {
+          "title": "دن 5 — اے آئی ٹولز سے نو کوڈ پروجیکٹس کو 10x تیز بنانا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "اے آئی نو کوڈ ٹولز کی طاقت سے اپنے پروجیکٹس کو خودکار اور سمارٹ بنایا جا سکتا ہے۔ اے آئی سے مواد جنریٹ کرنا، ڈیزائنز کو بہتر بنانا، اور یہاں تک کہ کوڈ لیس ورک فلو کو خودکار کرنا ممکن ہے۔ آج ہم دیکھیں گے کہ اے آئی کو نو کوڈ پلیٹ فارمز کے ساتھ کیسے انٹیگریٹ کرنا ہے—بغیر کوڈنگ کے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1۔\nاے آئی سے مواد جنریٹ کرنا: فرامر/ویب فلو میں اے آئی سے بلاگ پوسٹس یا پروڈکٹ ڈسکرپشنز لکھوا سکتے ہیں (مثال کے طور پر، \"وائرلیس ایئر بادز کے لیے 100 الفاظ کی پروڈکٹ ڈسکرپشن لکھیں\")۔\n2۔\nاے آئی ڈیزائن اسسٹنٹ: کینوا یا فرامر میں اے آئی سے لوگو، بینرز، یا یو آئی عناصر جنریٹ کر سکتے ہیں (مثال کے طور پر، \"کافی شاپ کے لیے ایک مینیملسٹ لوگو بنائیں\")۔\n3۔\nاے آئی آٹومیشن: زپیئر یا میک (انٹیگرومیٹ) میں اے آئی پرامپٹس شامل کر کے ورک فلو خودکار کر سکتے ہیں (مثال کے طور پر، \"جب ایئر ٹیبل میں نیا انٹری شامل ہو تو اے آئی سے اسے سمیٹ کر سلیک پر بھیجیں\")۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے منتخب کردہ نو کوڈ پلیٹ فارم (فرامر/ویب فلو/گلائیڈ) میں جا کر **اے آئی سے 50 الفاظ کی پروڈکٹ ڈسکرپشن** جنریٹ کریں۔ پرامپٹ استعمال کریں: *\"[اپنے پروڈکٹ/سروس کا نام] کے لیے ایک دلکش 50 الفاظ کی ڈسکرپشن لکھیں۔\"*"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "**\"اے آئی سے چلنے والی پورٹ فولیو ویب سائٹ\"** بنانا:\n1۔ فرامر/ویب فلو میں ایک پورٹ فولیو ویب سائٹ بنائیں۔\n2۔ اے آئی سے 3 بلاگ پوسٹس یا پروجیکٹ ڈسکرپشنز جنریٹ کر کے انہیں ویب سائٹ پر شامل کریں۔\n3۔ اے آئی سے ایک لوگو بنا کر اسے ویب سائٹ کے ہیڈر میں لگائیں۔\n4۔ ویب سائٹ کو پبلش کر کے لنک شیئر کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "digital-marketing-seo": [

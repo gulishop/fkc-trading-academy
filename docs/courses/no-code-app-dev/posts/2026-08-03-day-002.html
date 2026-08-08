@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-06T09:14:29.416411";
+  var FKC_BUILD = "2026-08-08T07:25:56.919225";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -230,7 +230,21 @@ function fkcToggleTheme(){
       
       
       
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Website builders jaise Framer, Webflow aur Wix no-code tools hain jo drag-and-drop interface ke zariye professional websites banane mein madad karte hain. Inme templates, animations aur hosting built-in hote hain, isliye coding ki zarurat nahi hoti. Ye platforms beginners se lekar intermediate users ke liye perfect hain.</p><h3>Example</h3><p>1.</p><h3>Wix</h3><p>Simple drag-and-drop se ek portfolio website banane ke liye:<br>   - Wix.com par jao aur &quot;Create a Site&quot; select karo.<br>   - Template choose karo (e.g., &quot;Portfolio &amp; CV&quot;).<br>   - Left panel se elements drag karke add karo (text, images, buttons).<br>   - &quot;Publish&quot; par click karo aur apni website ka link share karo.</p><p>2.</p><h3>Webflow</h3><p>Advanced designs ke liye:<br>   - Webflow.com par signup karo.<br>   - &quot;New Project&quot; &gt; &quot;Blank&quot; select karo.<br>   - Left panel se elements drag karke ek responsive navbar banayo.<br>   - Right panel se styles adjust karo (fonts, colors).<br>   - &quot;Publish&quot; par click karo.</p><h3>Practice</h3><p>Apne liye ek simple 3-page website banane ka try karo (Home, About, Contact). Kisi bhi platform (Wix/Webflow/Framer) ka use kar sakte ho. Minimum 5 elements (text, image, button) add karo.</p><h3>Mini Project</h3><p>Ek &quot;Restaurant Menu&quot; website banayo:<br>- Homepage par menu items ki list ho.<br>- About page par restaurant ki story ho.<br>- Contact page par location aur contact form ho.<br>- Sab pages ko navbar se link karo.<br>- Website ko mobile-friendly banao.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>تصور</h3><p>ویب سائٹ بلڈرز جیسے Framer, Webflow اور Wix نو-کوڈ ٹولز ہیں جو ڈریگ اینڈ ڈراپ انٹرفیس کے ذریعے پرافیشنل ویب سائٹس بنانے میں مدد کرتے ہیں۔ ان میں ٹیمپلیٹس، اینیمیشنز اور ہوسٹنگ بلٹ-ان ہوتے ہیں، اس لیے کوڈنگ کی ضرورت نہیں ہوتی۔ یہ پلیٹ فارمز بیگنرز سے لے کر انٹرمیڈیٹ یوزرز کے لیے پرфекٹ ہیں۔</p><h3>مثالیں</h3><p>1.<br>Wix: Simple drag-and-drop سے ایک پورٹ فولیو ویب سائٹ بنانے کے لیے:<br>   - Wix.com پر جاؤ اور &quot;Create a Site&quot; سلیکٹ کرو۔<br>   - ٹیمپلیٹ چوز کرو (e.g., &quot;Portfolio &amp; CV&quot;).<br>   - لیفٹ پینل سے ایلیمنٹس ڈریگ کرکے ایڈ کرو (ٹیکسٹ، امیجز، بٹنز).<br>   - &quot;Publish&quot; پر کلک کرو اور اپنی ویب سائٹ کا لنک شیئر کرو.</p><p>2.<br>Webflow: Advanced designs کے لیے:<br>   - Webflow.com پر سائن اپ کرو۔<br>   - &quot;New Project&quot; &gt; &quot;Blank&quot; سلیکٹ کرو۔<br>   - لیفٹ پینل سے ایلیمنٹس ڈریگ کرکے ایک ریسپانسیو navbar بناؤ۔<br>   - رائٹ پینل سے اسٹائلز ایڈجسٹ کرو (فونٹس، کلرز).<br>   - &quot;Publish&quot; پر کلک کرو.</p><h3>مشق</h3><p>اپنے لیے ایک simple 3-page ویب سائٹ بنانے کا try کرو (Home, About, Contact). کسی بھی پلیٹ فارم (Wix/Webflow/Framer) کا استعمال کر سکتے ہو۔ Minimum 5 elements (ٹیکسٹ، امیج، بٹن) ایڈ کرو۔</p><h3>مینی پراجیکٹ</h3><p>ایک &quot;Restaurant Menu&quot; ویب سائٹ بناؤ:<br>- Homepage پر menu items کی list ہو۔<br>- About page پر restaurant کی story ہو۔<br>- Contact page پر location اور contact form ہو۔<br>- سب pages کو navbar سے لنک کرو۔<br>- ویب سائٹ کو mobile-friendly بناؤ۔</p></div>
       
       
@@ -349,7 +363,7 @@ function fkcToggleTheme(){
       <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
         margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
       <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
-        “Waqt zaya mat karo, kyunke jo waqt guzar jata hai woh wapas nahi aata — aaj hi shuru karo.”
+        “Khud par yaqeen rakho, mehnat jari rakho — nateeja khud ba khud sath dega.”
       </p>
     </div>
     <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;

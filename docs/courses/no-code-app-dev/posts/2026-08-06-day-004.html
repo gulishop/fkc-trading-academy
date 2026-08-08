@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-06T09:14:29.416411";
+  var FKC_BUILD = "2026-08-08T07:25:56.919225";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -222,7 +222,7 @@ function fkcToggleTheme(){
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "headline": "Day 4 — **Airtable aur Notion: Apne Data ko Smart Banana**", "name": "Day 4 — **Airtable aur Notion: Apne Data ko Smart Banana**", "description": "", "learningResourceType": "Lesson", "educationalLevel": "Beginner", "inLanguage": "ur", "isPartOf": {"@type": "Course", "name": "No-Code App & Website Building"}, "datePublished": "2026-08-06", "publisher": {"@type": "Organization", "name": "FKC Trading Academy"}}</script>
     <div class="top"><a href="../../../index.html">← FKC Trading Academy</a>
     <a href="../index.html" class="course-back-link">/ No-Code App &amp; Website Building</a></div>
-    <span class="badge">Latest</span>
+    
     <p class="muted">🧩 No-Code App &amp; Website Building · Day 04</p>
     <h1>Day 4 — **Airtable aur Notion: Apne Data ko Smart Banana**</h1>
     <p class="muted" style="margin:0 0 10px;">↩️ Pichla lesson: <strong>Day 3 — FlutterFlow aur Glide se App Banana: No-Code App Development Ka Aasan Rasta</strong> — aaj is se aage badhte hain.</p>
@@ -230,7 +230,21 @@ function fkcToggleTheme(){
       
       <img src="images/day-004.png" alt="Day 4 — **Airtable aur Notion: Apne Data ko Smart Banana**" style="width:100%;border-radius:12px;margin-bottom:14px;">
       <p class="muted" style="margin:0 0 6px;">🎬 AI Video Explanation</p><video src="videos/day-004.mp4" controls preload="metadata" poster="images/day-004.png" style="width:100%;border-radius:12px;margin-bottom:14px;background:#000;"></video>
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Airtable aur Notion no-code tools hain jo databases ko visual, user-friendly banate hain. Airtable spreadsheets aur databases ka combination hai (jaise Excel + Access), jabke Notion ek all-in-one workspace hai jisme notes, tasks, aur databases ek hi jagah manage hote hain. In tools se aap data organize kar sakte hain, formulas apply kar sakte hain, aur workflows automate kar sakte hain—bina coding ke!</p><h3>Example</h3><p>1.</p><h3>Airtable</h3><p>Apne online store ke products ka database banayein. Columns add karen: *Product Name, Price, Stock, Category*. Phir &quot;Views&quot; feature se alag-alag tarike se data dekh sakte hain (e.g., &quot;Low Stock&quot; view jisme stock &lt; 10 ho).<br>2.</p><h3>Notion</h3><p>Apne freelancing projects ko track karen. Ek database banayein jisme columns hon: *Project Name, Client, Deadline, Status (To-Do/In Progress/Done)*. Phir &quot;Kanban Board&quot; view se drag-and-drop se status update karen.</p><h3>Practice</h3><p>1.</p><h3>Airtable</h3><p>Ek simple &quot;Book Library&quot; database banayein jisme 3 columns hon: *Book Title, Author, Genre*. 3-5 entries add karen.<br>2.</p><h3>Notion</h3><p>Ek &quot;Daily Tasks&quot; database banayein jisme columns hon: *Task, Priority (High/Medium/Low), Due Date*. 3 tasks add karen aur unhe priority ke hisaab se sort karen.</p><h3>Mini Project</h3><p>**&quot;Personal Finance Tracker&quot;** (Airtable + Notion):<br>-</p><h3>Airtable</h3><p>Ek &quot;Expenses&quot; database banayein jisme columns hon: *Date, Amount, Category (Food/Transport/Entertainment), Description*. Har roz ki expenses add karen.<br>-</p><h3>Notion</h3><p>Ek &quot;Monthly Budget&quot; page banayein jisme har category ke liye allocated amount set karen aur expenses ko compare karen. Notion ke formulas use karen (e.g., `prop(&quot;Amount&quot;)`).<br>-</p><h3>Bonus</h3><p>Airtable ke &quot;Automation&quot; feature se ek email alert set karen jab koi expense $50 se zyada ho.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>کنسیپٹ</h3><p>ایئر ٹیبل اور نوشن نو-کوڈ ٹولز ہیں جو ڈیٹا بیسز کو ویژول اور یوزر فرینڈلی بناتے ہیں۔ ایئر ٹیبل اسپریڈ شیٹس اور ڈیٹا بیسز کا امتزاج ہے (جیسے ایکسل + ایکسیس)، جبکہ نوشن ایک آل ان ون ورک اسپیس ہے جس میں نوٹس، ٹاسکس اور ڈیٹا بیسز ایک ہی جگہ مینج ہوتے ہیں۔ ان ٹولز کی مدد سے آپ ڈیٹا کو آرگنائز کر سکتے ہیں، فارمولاز اپلائی کر سکتے ہیں، اور ورک فلو کو آٹومیٹ کر سکتے ہیں—بلکل کوڈنگ کے بغیر!</p><h3>مثال</h3><p>1. ایئر ٹیبل: اپنے آن لائن سٹور کے پروڈکٹس کا ڈیٹا بیس بنائیں۔ کالمز شامل کریں: *پروڈکٹ کا نام، قیمت، اسٹاک، کیٹیگری*۔ پھر &quot;ویوز&quot; فیچر کے ذریعے مختلف طریقوں سے ڈیٹا دیکھ سکتے ہیں (مثلاً، &quot;لو اسٹاک&quot; ویو جس میں اسٹاک دس سے کم ہو)۔<br>2. نوشن: اپنے فری لانسنگ پروجیکٹس کو ٹریک کریں۔ ایک ڈیٹا بیس بنائیں جس میں کالمز ہوں: *پروجیکٹ کا نام، کلائنٹ، ڈیڈ لائن، سٹیٹس (ٹو ڈو/ان پروگریس/ڈن)*۔ پھر &quot;کنبن بورڈ&quot; ویو کے ذریعے ڈریگ اینڈ ڈراپ سے سٹیٹس اپ ڈیٹ کریں۔</p><h3>پریکٹس</h3><p>1. ایئر ٹیبل: ایک سادہ &quot;بک لائبریری&quot; ڈیٹا بیس بنائیں جس میں تین کالمز ہوں: *کتاب کا عنوان، مصنف، صنف*۔ تین سے پانچ انٹریز شامل کریں۔<br>2. نوشن: ایک &quot;ڈیلی ٹاسکس&quot; ڈیٹا بیس بنائیں جس میں کالمز ہوں: *ٹاسک، پریورٹی (ہائی/میڈیم/لو)، ڈیو ڈیٹ*۔ تین ٹاسکس شامل کریں اور انہیں پریورٹی کے حساب سے سٹورت کریں۔</p><h3>منی پروجیکٹ</h3><p>&quot;پرسنل فنانس ٹریکر&quot; (ایئر ٹیبل + نوشن):<br>- ایئر ٹیبل: ایک &quot;ایکسپینسز&quot; ڈیٹا بیس بنائیں جس میں کالمز ہوں: *تاریخ، رقم، کیٹیگری (فوڈ/ٹرانسپورٹ/انٹرٹینمنٹ)، تفصیل*۔ ہر روز کے اخراجات شامل کریں۔<br>- نوشن: ایک &quot;مَنثلی بجٹ&quot; پیج بنائیں جس میں ہر کیٹیگری کے لیے مختص رقم سیٹ کریں اور اخراجات کا موازنہ کریں۔ نوشن کے فارمولاز استعمال کریں (مثلاً، `prop(&quot;Amount&quot;)`)۔<br>- بونس: ایئر ٹیبل کے &quot;آٹومیشن&quot; فیچر کے ذریعے ایک ای میل الرٹ سیٹ کریں جب کوئی خرچ پچاس ڈالر سے زیادہ ہو۔</p></div>
       
       
@@ -333,7 +347,7 @@ function fkcToggleTheme(){
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <div class="lesson-nav"><a class="btn alt" href="2026-08-04-day-003.html">← Day 3 — FlutterFlow aur Glide se App Banana: No-Code App Development Ka Aasan Rasta</a><span></span></div>
+    <div class="lesson-nav"><a class="btn alt" href="2026-08-04-day-003.html">← Day 3 — FlutterFlow aur Glide se App Banana: No-Code App Development Ka Aasan Rasta</a><a class="btn alt" href="2026-08-08-day-005.html">Day 5 — AI Tools Se No-Code Projects Ko 10x Fast Banana →</a></div>
     <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
     
     
@@ -349,7 +363,7 @@ function fkcToggleTheme(){
       <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
         margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
       <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
-        “Waqt zaya mat karo, kyunke jo waqt guzar jata hai woh wapas nahi aata — aaj hi shuru karo.”
+        “Khud par yaqeen rakho, mehnat jari rakho — nateeja khud ba khud sath dega.”
       </p>
     </div>
     <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;

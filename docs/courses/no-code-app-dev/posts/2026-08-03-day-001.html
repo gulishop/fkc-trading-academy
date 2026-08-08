@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-06T09:14:29.416411";
+  var FKC_BUILD = "2026-08-08T07:25:56.919225";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -230,7 +230,21 @@ function fkcToggleTheme(){
       
       
       
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>No-code ka matlab hai programming ke bina software, websites, ya apps banana. Aajkal companies aur freelancers isko isliye use kar rahe hain kyunki yeh time aur cost bachaata hai. Coding seekhne ki zaroorat nahi, drag-and-drop se kaam ho jata hai. Startups bhi isko apne MVP (Minimum Viable Product) banane ke liye use kar rahe hain.</p><h3>Example</h3><p>Imagine aapko ek simple website banana hai. Normally coding seekhne mein mahine lag jate, lekin no-code tools jaise Wix ya Framer se sirf kuch ghante mein ready ho jati hai. Bas drag karke elements place karo, content add karo, aur publish kar do!</p><h3>Practice</h3><p>Apne phone ya laptop par Wix ya Framer ki website kholo aur ek basic &quot;Hello World&quot; page banane ki koshish karo. Sirf 3-4 elements (jaise heading, paragraph, button) use karo.</p><h3>Mini Project</h3><p>Ek 1-pager portfolio website banayein jisme aapka naam, ek photo, aur ek &quot;Contact Me&quot; button ho. (Use Framer ya Wix ka free plan.)</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>No-code کا مطلب ہے پروگرامنگ کے بغیر سافٹ ویئر، ویب سائٹس، یا ایپس بنانا۔ آجکل کمپنیاں اور فری لانسرز اس کو اس لیے استعمال کر رہے ہیں کیونکہ یہ ٹائم اور کوسٹ بچاتا ہے۔ کوڈنگ سیکھنے کی ضرورت نہیں، ڈریگ اینڈ ڈراپ سے کام ہو جاتا ہے۔ اسٹارٹ اپس بھی اپنے MVP (Minimum Viable Product) بنانے کے لیے اس کا استعمال کر رہے ہیں۔</p><h3>Example</h3><p>Imagine آپکو ایک simple ویب سائٹ بنانی ہے۔ Normally کوڈنگ سیکھنے میں مہینے لگ جاتے، لیکن no-code ٹولز جیسے Wix یا Framer سے صرف کچھ گھنٹے میں ready ہو جاتی ہے۔ بس ڈریگ کرکے elements place کرو، content add کرو، اور publish کر دو!</p><h3>Practice</h3><p>اپنے فون یا لیپ ٹاپ پر Wix یا Framer کی ویب سائٹ کھولو اور ایک basic &quot;Hello World&quot; page بنانے کی کوشش کرو۔ صرف 3-4 elements (جیسے heading, paragraph, button) استعمال کرو۔</p><h3>Mini Project</h3><p>ایک 1-pager portfolio ویب سائٹ بنائیں جس میں آپکا نام، ایک photo، اور ایک &quot;Contact Me&quot; button ہو۔ (Use Framer ya Wix کا free plan.)</p></div>
       
       
@@ -349,7 +363,7 @@ function fkcToggleTheme(){
       <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
         margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
       <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
-        “Waqt zaya mat karo, kyunke jo waqt guzar jata hai woh wapas nahi aata — aaj hi shuru karo.”
+        “Khud par yaqeen rakho, mehnat jari rakho — nateeja khud ba khud sath dega.”
       </p>
     </div>
     <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;

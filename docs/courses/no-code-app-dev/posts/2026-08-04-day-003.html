@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-06T09:14:29.416411";
+  var FKC_BUILD = "2026-08-08T07:25:56.919225";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -230,7 +230,21 @@ function fkcToggleTheme(){
       
       
       
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>FlutterFlow aur Glide no-code app builders hain jo drag-and-drop interface se mobile apps banane mein madad karte hain. FlutterFlow Flutter-based apps banata hai (jabki isko no-code samajhna galat hai—yeh low-code hai), jabki Glide spreadsheets (Google Sheets) se directly mobile apps generate karta hai. Dono beginner-friendly hain aur app development ki complexity ko kam karte hain.</p><h3>Example</h3><h3>Glide se ek simple task manager app banane ke steps</h3><p>1. Google Sheets mein 3 columns banayein: `Task`, `Status`, `Due Date`.<br>2. [Glide Apps](https://www.glideapps.com/) par jaayein, &quot;New App&quot; &gt; &quot;From Google Sheets&quot; select karen.<br>3. &quot;Layout&quot; mein &quot;List&quot; ya &quot;Grid&quot; view choose karen.<br>4. App ko customize karen (colors, icons, buttons add karen).<br>5. &quot;Publish&quot; par click karen aur app ka link ya QR code share karen.</p><h3>Practice</h3><p>Apne Google Sheets mein ek simple &quot;Grocery List&quot; banayein (3 columns: `Item`, `Quantity`, `Purchased`). Phir Glide se usko ek mobile app mein convert karen. App ka preview dekhein aur ek screenshot lein.</p><h3>Mini Project</h3><p>Ek **Weather App** banayein jo Google Sheets se weather data (City, Temperature, Condition) display kare. Steps:<br>1. Google Sheets mein 3 columns banayein: `City`, `Temperature (°C)`, `Condition`.<br>2. Glide par ek &quot;Card&quot; layout select karen.<br>3. App ko publish karen aur apne phone par test karen.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>فلٹر فلو اور گلائیڈ ناکوڈ ایپ بلڈرز ہیں جو ڈریگ اینڈ ڈراپ انٹرفیس سے موبائل ایپس بنانے میں مدد کرتے ہیں۔ فلٹر فلو فلٹر-بیسڈ ایپس بناتا ہے (حالانکہ اسے ناکوڈ سمجھنا غلط ہے—یہ لو-کوڈ ہے)، جبکہ گلائیڈ سپریڈشیٹس (گوگل شیٹس) سے ڈائریکٹلی موبائل ایپس جنریٹ کرتا ہے۔ دونوں بیگنر-فرینڈلی ہیں اور ایپ ڈویلپمنٹ کی کمپلیکسٹی کو کم کرتے ہیں۔</p><h3>Example</h3><p>گلائیڈ سے ایک simple task manager app بنانے کے steps: 1. گوگل شیٹس میں 3 کالم بنائیں: `Task`, `Status`, `Due Date`۔ 2. [گلائیڈ ایپس](https://www.glideapps.com/) پر جائیں، &quot;New App&quot; &gt; &quot;From Google Sheets&quot; select کریں۔ 3. &quot;Layout&quot; میں &quot;List&quot; یا &quot;Grid&quot; view choose کریں۔ 4. ایپ کو customise کریں (colors, icons, buttons add کریں۔) 5. &quot;Publish&quot; پر کلک کریں اور ایپ کا لنک یا QR code share کریں۔</p><h3>Practice</h3><p>اپنے گوگل شیٹس میں ایک simple &quot;Grocery List&quot; بنائیں (3 کالم: `Item`, `Quantity`, `Purchased`۔ پھر گلائیڈ سے اسے ایک موبائل ایپ میں convert کریں۔ ایپ کا preview دیکھیں اور ایک screenshot لیں۔</p><h3>Mini Project</h3><p>ایک **Weather App** بنائیں جو گوگل شیٹس سے weather data (City, Temperature, Condition) display کرے۔ Steps: 1. گوگل شیٹس میں 3 کالم بنائیں: `City`, `Temperature (°C)`, `Condition`۔ 2. گلائیڈ پر ایک &quot;Card&quot; layout select کریں۔ 3. ایپ کو publish کریں اور اپنے فون پر test کریں۔</p></div>
       
       
@@ -349,7 +363,7 @@ function fkcToggleTheme(){
       <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
         margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
       <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
-        “Waqt zaya mat karo, kyunke jo waqt guzar jata hai woh wapas nahi aata — aaj hi shuru karo.”
+        “Khud par yaqeen rakho, mehnat jari rakho — nateeja khud ba khud sath dega.”
       </p>
     </div>
     <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;
