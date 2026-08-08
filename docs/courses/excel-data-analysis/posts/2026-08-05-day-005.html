@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-05T23:26:21.346037";
+  var FKC_BUILD = "2026-08-08T22:50:53.554871";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -222,7 +222,7 @@ function fkcToggleTheme(){
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "headline": "Day 5 — **Charts aur Graphs: Data ko Visual Story Banaana**", "name": "Day 5 — **Charts aur Graphs: Data ko Visual Story Banaana**", "description": "", "learningResourceType": "Lesson", "educationalLevel": "Beginner", "inLanguage": "ur", "isPartOf": {"@type": "Course", "name": "Excel & Data Analysis"}, "datePublished": "2026-08-05", "publisher": {"@type": "Organization", "name": "FKC Trading Academy"}}</script>
     <div class="top"><a href="../../../index.html">← FKC Trading Academy</a>
     <a href="../index.html" class="course-back-link">/ Excel &amp; Data Analysis</a></div>
-    <span class="badge">Latest</span>
+    
     <p class="muted">📊 Excel &amp; Data Analysis · Day 05</p>
     <h1>Day 5 — **Charts aur Graphs: Data ko Visual Story Banaana**</h1>
     <p class="muted" style="margin:0 0 10px;">↩️ Pichla lesson: <strong>Day 4 — **Data Cleaning: Excel ka Secret Weapon**</strong> — aaj is se aage badhte hain.</p>
@@ -230,7 +230,21 @@ function fkcToggleTheme(){
       
       <img src="images/day-005.png" alt="Day 5 — **Charts aur Graphs: Data ko Visual Story Banaana**" style="width:100%;border-radius:12px;margin-bottom:14px;">
       <p class="muted" style="margin:0 0 6px;">🎬 AI Video Explanation</p><video src="videos/day-005.mp4" controls preload="metadata" poster="images/day-005.png" style="width:100%;border-radius:12px;margin-bottom:14px;background:#000;"></video>
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Excel mein charts aur graphs se data ko visually represent karke insights nikalna seekhein. Bar charts, pie charts, line graphs, aur scatter plots ka istemal karke trends, comparisons, aur distributions ko samajhna aasan ho jata hai. Charts dynamic bhi hote hain—data update hone par yeh bhi automatically adjust hote hain.</p><h3>Example</h3><p>1.</p><h3>Bar Chart</h3><p>Monthly sales data ko compare karne ke liye:<br>   - Select data (e.g., months in column A, sales in column B).<br>   - Insert → Bar Chart → Clustered Bar.<br>   - X-axis par months, Y-axis par sales values dikhein.<br>2.</p><h3>Pie Chart</h3><p>Market share ka breakdown:<br>   - Select categories (e.g., &quot;Product A&quot;, &quot;Product B&quot;) aur percentages.<br>   - Insert → Pie Chart → 2D Pie.<br>   - Har segment ka percentage aur label check karein.</p><h3>Practice</h3><p>Apne Excel mein ek **line graph** banayein jo 2023 ke 4 quarters ki company revenue ko show kare. Data yeh ho:<br>| Quarter | Revenue |<br>|---------|---------|<br>| Q1      | 50,000  |<br>| Q2      | 75,000  |<br>| Q3      | 60,000  |<br>| Q4      | 90,000  |</p><h3>Mini Project</h3><p>Ek **dashboard-style chart set** banayein jo:<br>- Bar chart: Product-wise sales (2023).<br>- Pie chart: Expense categories (e.g., Marketing 30%, Salaries 50%, etc.).<br>- Line graph: Monthly profit trend.<br>*Tip:* Sab charts ko ek hi sheet par place karein aur unhe align karein.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>کنسیپٹ</h3><p>ایکسل میں چارٹس اور گرافس کے ذریعے ڈیٹا کو بصری طور پر پیش کرکے بصیرت حاصل کرنا سیکھیں۔ بار چارٹس، پائی چارٹس، لائن گرافس، اور سکٹر پلاٹس کا استعمال کرتے ہوئے رجحانات، موازنوں، اور تقسیم کو سمجھنا آسان ہو جاتا ہے۔ چارٹس متحرک بھی ہوتے ہیں—ڈیٹا میں تبدیلی ہونے پر یہ خود بخود ایڈجسٹ ہو جاتے ہیں۔</p><h3>مثال</h3><p>1.<br>بار چارٹ: ماہانہ سیلز ڈیٹا کا موازنہ کرنے کے لیے:<br>- ڈیٹا کو منتخب کریں (مثلاً کالم A میں مہینے، کالم B میں سیلز)۔<br>- Insert → Bar Chart → Clustered Bar۔<br>- X-axis پر مہینے، Y-axis پر سیلز ویلیوز دیکھیں۔</p><p>2.<br>پائی چارٹ: مارکیٹ شیئر کا بریک ڈاؤن:<br>- زمرے منتخب کریں (مثلاً &quot;پروڈکٹ A&quot;، &quot;پروڈکٹ B&quot;) اور فیصد۔<br>- Insert → Pie Chart → 2D Pie۔<br>- ہر سگمنٹ کا فیصد اور لیبل چیک کریں۔</p><h3>پریکٹس</h3><p>اپنے ایکسل میں ایک لائن گراف بنائیں جو 2023 کے 4 کوارٹرز کی کمپنی ریونیو کو ظاہر کرے۔ ڈیٹا یہ ہے:<br>| کوارٹر | ریونیو |<br>|---------|---------|<br>| Q1      | 50,000  |<br>| Q2      | 75,000  |<br>| Q3      | 60,000  |<br>| Q4      | 90,000  |</p><h3>منی پروجیکٹ</h3><p>ایک ڈیش بورڈ طرز کا چارٹ سیٹ بنائیں جس میں شامل ہو:<br>- بار چارٹ: پروڈکٹ وائز سیلز (2023)۔<br>- پائی چارٹ: اخراجات کے زمرے (مثلاً مارکیٹنگ 30%، تنخواہیں 50% وغیرہ)۔<br>- لائن گراف: ماہانہ منافع کا رجحان۔<br>*ٹپ:* تمام چارٹس کو ایک ہی شیٹ پر رکھیں اور انہیں ترتیب دیں۔</p></div>
       
       
@@ -333,7 +347,7 @@ function fkcToggleTheme(){
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <div class="lesson-nav"><a class="btn alt" href="2026-08-05-day-004.html">← Day 4 — **Data Cleaning: Excel ka Secret Weapon**</a><span></span></div>
+    <div class="lesson-nav"><a class="btn alt" href="2026-08-05-day-004.html">← Day 4 — **Data Cleaning: Excel ka Secret Weapon**</a><a class="btn alt" href="2026-08-08-day-006.html">Day 6 — **PivotTables: Data ko Powerful Insights mein Badalna** →</a></div>
     <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
     
     
@@ -342,7 +356,30 @@ function fkcToggleTheme(){
         data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
       <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
-    <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
+    
+    <div class="daily-motivation" style="max-width:640px;margin:20px auto;padding:16px 20px;
+      background:linear-gradient(135deg,#fff7e6,#fef0f0);border-radius:14px;border:1px solid #f5e2c8;
+      text-align:center;">
+      <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
+        margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
+      <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
+        “Khud par yaqeen rakho, mehnat jari rakho — nateeja khud ba khud sath dega.”
+      </p>
+    </div>
+    <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;
+      background:linear-gradient(145deg,#f7f9fc,#eef2f9);border-radius:16px;border:1px solid #e6e9f0;
+      text-align:center;">
+      <p style="font-size:13px;letter-spacing:.03em;text-transform:uppercase;color:var(--muted);
+        margin:0 0 10px;font-weight:700;">✉️ Founder ki taraf se</p>
+      <p style="font-size:15px;line-height:1.7;color:#2a2f3a;margin:0 0 14px;">
+        Hamara maqsad sirf lessons post karna nahi — har us Pakistani tak muft, practical
+        taleem pohchana hai jo seekhna chahta hai lekin resources ya waqt nahi rakhta.
+        FKC Trading Academy ka vision hai: <b>roz thora seekho, mustaqil mehnat karo,
+        aur apni zindagi khud badlo.</b> Mission simple hai — koi bhi course, koi bhi fee
+        nahi, sirf aap ka irada.
+      </p>
+      <p style="font-size:13px;color:var(--muted);margin:0;">— Fazul Khan Chandio, Founder &amp; CEO</p>
+    </div><div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     <script>
     (function(){
       try {

@@ -6352,6 +6352,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 6,
+      "id": "day-006",
+      "date": "2026-08-08",
+      "title": "Day 6 — **PivotTables: Data ko Powerful Insights mein Badalna**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "PivotTables Excel ka sabse powerful tool hai jo bade data ko chand clicks mein summarize aur analyze kar deta hai. Yeh automatically categories, sub-totals, aur comparisons generate karta hai bina formulas likhe. Har business ya freelance project mein iski zaroorat hoti hai—chahe sales report ho ya expense tracking."
+        ],
+        [
+          "Example",
+          "1. Ek Excel sheet mein `Product`, `Region`, `Sales` aur `Month` columns hain.\n2. Insert > PivotTable select karo. Data range choose karo.\n3. PivotTable Fields mein:\n   - Rows mein `Region` aur `Product` drag karo.\n   - Values mein `Sales` add karo (yeh sum by default show karega).\n4. Ab dekho: Har region aur product ka total sales automatically calculate ho gaya!"
+        ],
+        [
+          "Practice",
+          "Apni Excel sheet mein ek `Employee` (Name, Department, Salary, Joining Date) dataset banao. Uspar PivotTable banake:\n- Har department ka average salary nikalna hai.\n- Joining Date ke hisab se employees count karna hai."
+        ],
+        [
+          "Mini Project",
+          "Ek fake e-commerce ka dataset banao (Order ID, Customer, Product, Quantity, Price, Order Date). Uspar PivotTable banake:\n- Har customer ka total spending nikalna.\n- Har month ki total sales ka bar chart banaana.\n- Top 3 best-selling products identify karna."
+        ]
+      ],
+      "answer_key": "department-wise average salary, joining date by year, customer total spending, month-wise sales, top 3 products",
+      "translations": {
+        "ur": {
+          "title": "دن ٦ — **پیوٹ ٹیبلز: ڈیٹا کو طاقتور ان سائٹس میں بدلنا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "پیوٹ ٹیبلز ایکسل کا سب سے طاقتور ٹول ہے جو بڑے ڈیٹا کو چند کلکس میں سمَرائز اور اینالیز کر دیتا ہے۔ یہ خود بخود کیٹیگریز، سب ٹوٹلز، اور کمپیریزنز جنریٹ کرتا ہے بغیر فارمولے لکھے۔ ہر بزنس یا فری لانس پروجیکٹ میں اس کی ضرورت ہوتی ہے—چاہے سیلز رپورٹ ہو یا اخراجات کی ٹریکنگ۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ ایک ایکسل شیٹ میں `Product`، `Region`، `Sales` اور `Month` کالم ہیں۔\n۲۔ Insert > PivotTable سلیکٹ کرو۔ ڈیٹا رینج چُنیں۔\n۳۔ PivotTable Fields میں:\n   - Rows میں `Region` اور `Product` ڈریگ کرو۔\n   - Values میں `Sales` شامل کرو (یہ sum بذریعہ ڈیفالٹ دِکھائے گا)۔\n۴۔ اب دیکھو: ہر ریجن اور پروڈکٹ کا ٹوٹل سیلز خود بخود کیلکولیٹ ہو گیا ہے!"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنی ایکسل شیٹ میں ایک `Employee` (Name, Department, Salary, Joining Date) ڈیٹاسیٹ بناؤ۔ اُس پر پیوٹ ٹیبل بنا کر:\n- ہر ڈیپارٹمنٹ کا ایوریج سیلری نکالنا ہے۔\n- Joining Date کے حساب سے ایمپلائز کی گنتی کرنی ہے۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک جعلی ای کامرس کا ڈیٹاسیٹ بناؤ (Order ID, Customer, Product, Quantity, Price, Order Date)۔ اُس پر پیوٹ ٹیبل بنا کر:\n- ہر کسٹمر کا ٹوٹل سپینڈنگ نکالنا۔\n- ہر مہینے کی ٹوٹل سیلز کا بار چارٹ بنانا۔\n- ٹاپ 3 بیسٹ سیلنگ پروڈکٹس شناخت کرنا۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "crypto-blockchain": [

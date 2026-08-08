@@ -4,9 +4,9 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>Day 3 — VLOOKUP aur XLOOKUP: Data ko tabdeel karne ka asaan tareeqa — Excel & Data Analysis</title>
-<meta property="og:title" content="Day 3 — VLOOKUP aur XLOOKUP: Data ko tabdeel karne ka asaan tareeqa — Excel & Data Analysis">
-<meta property="og:description" content="FKC Trading Academy · Excel & Data Analysis · Day 03">
+<title>Day 6 — **PivotTables: Data ko Powerful Insights mein Badalna** — Excel & Data Analysis</title>
+<meta property="og:title" content="Day 6 — **PivotTables: Data ko Powerful Insights mein Badalna** — Excel & Data Analysis">
+<meta property="og:description" content="FKC Trading Academy · Excel & Data Analysis · Day 06">
 <meta property="og:image" content="../../../logo.png">
 <meta name="twitter:card" content="summary_large_image">
 <script>
@@ -219,17 +219,17 @@ function fkcToggleTheme(){
 }
 </script>
 
-    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "headline": "Day 3 — VLOOKUP aur XLOOKUP: Data ko tabdeel karne ka asaan tareeqa", "name": "Day 3 — VLOOKUP aur XLOOKUP: Data ko tabdeel karne ka asaan tareeqa", "description": "", "learningResourceType": "Lesson", "educationalLevel": "Beginner", "inLanguage": "ur", "isPartOf": {"@type": "Course", "name": "Excel & Data Analysis"}, "datePublished": "2026-08-04", "publisher": {"@type": "Organization", "name": "FKC Trading Academy"}}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "headline": "Day 6 — **PivotTables: Data ko Powerful Insights mein Badalna**", "name": "Day 6 — **PivotTables: Data ko Powerful Insights mein Badalna**", "description": "", "learningResourceType": "Lesson", "educationalLevel": "Beginner", "inLanguage": "ur", "isPartOf": {"@type": "Course", "name": "Excel & Data Analysis"}, "datePublished": "2026-08-08", "publisher": {"@type": "Organization", "name": "FKC Trading Academy"}}</script>
     <div class="top"><a href="../../../index.html">← FKC Trading Academy</a>
     <a href="../index.html" class="course-back-link">/ Excel &amp; Data Analysis</a></div>
-    
-    <p class="muted">📊 Excel &amp; Data Analysis · Day 03</p>
-    <h1>Day 3 — VLOOKUP aur XLOOKUP: Data ko tabdeel karne ka asaan tareeqa</h1>
-    <p class="muted" style="margin:0 0 10px;">↩️ Pichla lesson: <strong>Day 2 — AVERAGE aur COUNTIF: Data ko samajhne ke liye zaroori functions</strong> — aaj is se aage badhte hain.</p>
+    <span class="badge">Latest</span>
+    <p class="muted">📊 Excel &amp; Data Analysis · Day 06</p>
+    <h1>Day 6 — **PivotTables: Data ko Powerful Insights mein Badalna**</h1>
+    <p class="muted" style="margin:0 0 10px;">↩️ Pichla lesson: <strong>Day 5 — **Charts aur Graphs: Data ko Visual Story Banaana**</strong> — aaj is se aage badhte hain.</p>
     <div class="card">
       
-      
-      
+      <img src="images/day-006.png" alt="Day 6 — **PivotTables: Data ko Powerful Insights mein Badalna**" style="width:100%;border-radius:12px;margin-bottom:14px;">
+      <p class="muted" style="margin:0 0 6px;">🎬 AI Video Explanation</p><video src="videos/day-006.mp4" controls preload="metadata" poster="images/day-006.png" style="width:100%;border-radius:12px;margin-bottom:14px;background:#000;"></video>
       <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
     <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
       <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
@@ -245,14 +245,14 @@ function fkcToggleTheme(){
     }
     </script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
-      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Aaj hum seekhenge ke do powerful functions ka istemal karke Excel mein kisi bhi table se specific data ko kaise dhundh sakte hain. VLOOKUP (Vertical Lookup) ek purana lekin zaroori function hai jo pehle column mein search karta hai aur uske corresponding row se data uthaata hai. XLOOKUP (Excel ka latest addition) isko aur behtar banata hai — yeh left se right search kar sakta hai, exact matches ko default banata hai, aur errors ko handle karne mein behtar hai.</p><h3>Example</h3><p>Maan lo ek *Sales* table hai jismein Product ID aur uske corresponding Price hai. Aapko Product ID `P101` ka price nikalna hai.</p><p>1.</p><h3>VLOOKUP ka tareeqa</h3><p>`=VLOOKUP(&quot;P101&quot;, A2:B10, 2, FALSE)`<br>   - `&quot;P101&quot;`: Jo value dhundhni hai.<br>   - `A2:B10`: Data ka range (Product ID column A mein, Price column B mein).<br>   - `2`: Price column ka index (A=1, B=2).<br>   - `FALSE`: Exact match.</p><p>2.</p><h3>XLOOKUP ka tareeqa</h3><p>`=XLOOKUP(&quot;P101&quot;, A2:A10, B2:B10, &quot;Not Found&quot;)`<br>   - `&quot;P101&quot;`: Search value.<br>   - `A2:A10`: Search range (Product ID column).<br>   - `B2:B10`: Return range (Price column).<br>   - `&quot;Not Found&quot;`: Agar value na mile toh yeh message.</p><h3>Practice</h3><p>Ek *Employees* table banao jismein Column A mein Employee IDs (E001, E002...) aur Column B mein unke Names hon. Phir VLOOKUP aur XLOOKUP ka istemal karke Employee ID `E003` ka name nikalne ka formula likho.</p><h3>Mini Project</h3><p>Ek *Products* table banao (Product ID, Product Name, Price). Phir ek naya sheet banao jismein Product IDs ka list ho. Har Product ID ke liye XLOOKUP ka istemal karke uska Name aur Price nikal kar ek table banaye.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>آج ہم سیکھیں گے کہ دو پاورفل فنکشنز کا استعمال کر کے ایکسل میں کسی بھی ٹیبل سے مخصوص ڈیٹا کو کیسے ڈھونڈھ سکتے ہیں۔ VLOOKUP (ورٹیکل لوک اپ) ایک پرانا لیکن ضروری فنکشن ہے جو پہلے کالم میں سرچ کرتا ہے اور اس کے مطابق والی راؤ سے ڈیٹا اٹھاتا ہے۔ XLOOKUP (ایکسسل کا لاسٹ ایڈیشن) اسے اور بہتر بناتا ہے — یہ لیفٹ سے رائٹ سرچ کر سکتا ہے، ایکسٹیکٹ میچز کو ڈیفالٹ بناتا ہے، اور ایررز کو ہینڈل کرنے میں بہتر ہے۔</p><h3>Example</h3><p>مان لو ایک *Sales* ٹیبل ہے جس میں Product ID اور اس کے corresponding Price ہے۔ آپکو Product ID `P101` کا price نکلنا ہے۔</p><h3>1</h3><p>VLOOKUP کا طریقہ: `=VLOOKUP(&quot;P101&quot;, A2:B10, 2, FALSE)`<br>   - `&quot;P101&quot;`: جو ویلیو ڈھونڈنی ہے۔<br>   - `A2:B10`: ڈیٹا کا رینج (Product ID کالم A میں، Price کالم B میں)۔<br>   - `2`: Price کالم کا انڈیکس (A=1, B=2)۔<br>   - `FALSE`: ایکسٹیکٹ میچ۔</p><h3>2</h3><p>XLOOKUP کا طریقہ: `=XLOOKUP(&quot;P101&quot;, A2:A10, B2:B10, &quot;Not Found&quot;)`<br>   - `&quot;P101&quot;`: سرچ ویلیو۔<br>   - `A2:A10`: سرچ رینج (Product ID کالم)۔<br>   - `B2:B10`: رٹرن رینج (Price کالم)۔<br>   - `&quot;Not Found&quot;`: اگر ویلیو نہ ملے تو یہ میسج۔</p><h3>Practice</h3><p>ایک *Employees* ٹیبل بناؤ جس میں کالم A میں Employee IDs (E001, E002...) اور کالم B میں انکے Names ہوں۔ پھر VLOOKUP اور XLOOKUP کا استعمال کر کے Employee ID `E003` کا نام نکلنے کا فارمولہ لکھو۔</p><h3>Mini Project</h3><p>ایک *Products* ٹیبل بناؤ (Product ID, Product Name, Price)۔ پھر ایک نیا شیٹ بناؤ جس میں Product IDs کا لسٹ ہو۔ ہر Product ID کے لیے XLOOKUP کا استعمال کر کے اسکا Name اور Price نکل کر ایک ٹیبل بنائے۔</p></div>
+      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>PivotTables Excel ka sabse powerful tool hai jo bade data ko chand clicks mein summarize aur analyze kar deta hai. Yeh automatically categories, sub-totals, aur comparisons generate karta hai bina formulas likhe. Har business ya freelance project mein iski zaroorat hoti hai—chahe sales report ho ya expense tracking.</p><h3>Example</h3><p>1. Ek Excel sheet mein `Product`, `Region`, `Sales` aur `Month` columns hain.<br>2. Insert &gt; PivotTable select karo. Data range choose karo.<br>3. PivotTable Fields mein:<br>   - Rows mein `Region` aur `Product` drag karo.<br>   - Values mein `Sales` add karo (yeh sum by default show karega).<br>4. Ab dekho: Har region aur product ka total sales automatically calculate ho gaya!</p><h3>Practice</h3><p>Apni Excel sheet mein ek `Employee` (Name, Department, Salary, Joining Date) dataset banao. Uspar PivotTable banake:<br>- Har department ka average salary nikalna hai.<br>- Joining Date ke hisab se employees count karna hai.</p><h3>Mini Project</h3><p>Ek fake e-commerce ka dataset banao (Order ID, Customer, Product, Quantity, Price, Order Date). Uspar PivotTable banake:<br>- Har customer ka total spending nikalna.<br>- Har month ki total sales ka bar chart banaana.<br>- Top 3 best-selling products identify karna.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>کنسیپٹ</h3><p>پیوٹ ٹیبلز ایکسل کا سب سے طاقتور ٹول ہے جو بڑے ڈیٹا کو چند کلکس میں سمَرائز اور اینالیز کر دیتا ہے۔ یہ خود بخود کیٹیگریز، سب ٹوٹلز، اور کمپیریزنز جنریٹ کرتا ہے بغیر فارمولے لکھے۔ ہر بزنس یا فری لانس پروجیکٹ میں اس کی ضرورت ہوتی ہے—چاہے سیلز رپورٹ ہو یا اخراجات کی ٹریکنگ۔</p><h3>مثال</h3><p>۱۔ ایک ایکسل شیٹ میں `Product`، `Region`، `Sales` اور `Month` کالم ہیں۔<br>۲۔ Insert &gt; PivotTable سلیکٹ کرو۔ ڈیٹا رینج چُنیں۔<br>۳۔ PivotTable Fields میں:<br>   - Rows میں `Region` اور `Product` ڈریگ کرو۔<br>   - Values میں `Sales` شامل کرو (یہ sum بذریعہ ڈیفالٹ دِکھائے گا)۔<br>۴۔ اب دیکھو: ہر ریجن اور پروڈکٹ کا ٹوٹل سیلز خود بخود کیلکولیٹ ہو گیا ہے!</p><h3>پریکٹس</h3><p>اپنی ایکسل شیٹ میں ایک `Employee` (Name, Department, Salary, Joining Date) ڈیٹاسیٹ بناؤ۔ اُس پر پیوٹ ٹیبل بنا کر:<br>- ہر ڈیپارٹمنٹ کا ایوریج سیلری نکالنا ہے۔<br>- Joining Date کے حساب سے ایمپلائز کی گنتی کرنی ہے۔</p><h3>منی پروجیکٹ</h3><p>ایک جعلی ای کامرس کا ڈیٹاسیٹ بناؤ (Order ID, Customer, Product, Quantity, Price, Order Date)۔ اُس پر پیوٹ ٹیبل بنا کر:<br>- ہر کسٹمر کا ٹوٹل سپینڈنگ نکالنا۔<br>- ہر مہینے کی ٹوٹل سیلز کا بار چارٹ بنانا۔<br>- ٹاپ 3 بیسٹ سیلنگ پروڈکٹس شناخت کرنا۔</p></div>
       
       
       <div class="quiz-box no-print">
         <p><b>📝 Apna Practice Check Karein</b></p>
         <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
         <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
-        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"product name, price"'>✅ Check Karein</button>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"department-wise average salary, joining date by year, customer total spending, month-wise sales, top 3 products"'>✅ Check Karein</button>
         <div class="quiz-result" id="fkc-quiz-result"></div>
       </div>
       <script>
@@ -272,23 +272,23 @@ function fkcToggleTheme(){
       }
       </script>
       
-      <div class="puzzle-box no-print" id="pz-excel-data-analysis-3">
+      <div class="puzzle-box no-print" id="pz-excel-data-analysis-6">
         <h3>🧩 Dimaghi Kasrat — Jode Milayein</h3>
-        <p class="puzzle-status" id="pz-excel-data-analysis-3-status">Cards par tap karke jode (pairs) milayein.</p>
-        <div class="puzzle-grid" id="pz-excel-data-analysis-3-grid"></div>
-        <div class="puzzle-win" id="pz-excel-data-analysis-3-win">🎉 Shabaash! Sab jode mil gaye — thodi der aur seekhne ke liye tayyar?</div>
+        <p class="puzzle-status" id="pz-excel-data-analysis-6-status">Cards par tap karke jode (pairs) milayein.</p>
+        <div class="puzzle-grid" id="pz-excel-data-analysis-6-grid"></div>
+        <div class="puzzle-win" id="pz-excel-data-analysis-6-win">🎉 Shabaash! Sab jode mil gaye — thodi der aur seekhne ke liye tayyar?</div>
       </div>
       <script>
       (function(){
-        var emojis = ["🍉", "🐱", "☀️", "🖊️", "🎁", "🐝"];
+        var emojis = ["🎯", "📚", "⭐", "🚀", "💡", "🏆"];
         var deck = emojis.concat(emojis);
         for (var i = deck.length - 1; i > 0; i--) {
           var j = Math.floor(Math.random() * (i + 1));
           var t = deck[i]; deck[i] = deck[j]; deck[j] = t;
         }
-        var grid = document.getElementById("pz-excel-data-analysis-3-grid");
-        var statusEl = document.getElementById("pz-excel-data-analysis-3-status");
-        var winEl = document.getElementById("pz-excel-data-analysis-3-win");
+        var grid = document.getElementById("pz-excel-data-analysis-6-grid");
+        var statusEl = document.getElementById("pz-excel-data-analysis-6-status");
+        var winEl = document.getElementById("pz-excel-data-analysis-6-win");
         var flipped = [], matchedCount = 0, moves = 0, lock = false;
         deck.forEach(function(val){
           var b = document.createElement("button");
@@ -330,24 +330,24 @@ function fkcToggleTheme(){
       
       <div class="no-print" style="margin-top:14px;">
         <label for="fkc-notes" class="muted" style="display:block;margin-bottom:4px;">📝 Apni Note (sirf aapke is browser mein save hoti hai):</label>
-        <textarea id="fkc-notes" data-slug="excel-data-analysis" data-lesson="day-003"
+        <textarea id="fkc-notes" data-slug="excel-data-analysis" data-lesson="day-006"
           placeholder="Yahan apni note likhein..." rows="3"
           style="width:100%;border-radius:10px;border:1px solid #ddd;padding:8px;font-family:inherit;"
           oninput="fkcSaveNote(this)"></textarea>
       </div>
     
       <div class="no-print">
-        <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Excel%20%26%20Data%20Analysis%20%28Day%2003%29%0A%0ADay%203%20%E2%80%94%20VLOOKUP%20aur%20XLOOKUP%3A%20Data%20ko%20tabdeel%20karne%20ka%20asaan%20tareeqa%0A%0AConcept%3A%0AAaj%20hum%20seekhenge%20ke%20do%20powerful%20functions%20ka%20istemal%20karke%20Excel%20mein%20kisi%20bhi%20table%20se%20specific%20data%20ko%20kaise%20dhundh%20sakte%20hain.%20VLOOKUP%20%28Vertical%20Lookup%29%20ek%20purana%20lekin%20zaroori%20function%20hai%20jo%20pehle%20column%20mein%20search%20karta%20hai%20aur%20uske%20corresponding%20row%20se%20data%20uthaata%20hai.%20XLOOKUP%20%28Excel%20ka%20latest%20addition%29%20isko%20aur%20behtar%20banata%20hai%20%E2%80%94%20yeh%20left%20se%20right%20search%20kar%20sakta%20hai%2C%20exact%20matches%20ko%20default%20banata%20hai%2C%20aur%20errors%20ko%20handle%20karne%20mein%20behtar%20hai.%0A%0AExample%3A%0AMaan%20lo%20ek%20%2ASales%2A%20table%20hai%20jismein%20Product%20ID%20aur%20uske%20corresponding%20Price%20hai.%20Aapko%20Product%20ID%20%60P101%60%20ka%20price%20nikalna%20hai.%0A%0A1.%0A%0AVLOOKUP%20ka%20tareeqa%3A%0A%60%3DVLOOKUP%28%22P101%22%2C%20A2%3AB10%2C%202%2C%20FALSE%29%60%0A%20%20%20-%20%60%22P101%22%60%3A%20Jo%20value%20dhundhni%20hai.%0A%20%20%20-%20%60A2%3AB10%60%3A%20Data%20ka%20range%20%28Product%20ID%20column%20A%20mein%2C%20Price%20column%20B%20mein%29.%0A%20%20%20-%20%602%60%3A%20Price%20column%20ka%20index%20%28A%3D1%2C%20B%3D2%29.%0A%20%20%20-%20%60FALSE%60%3A%20Exact%20match.%0A%0A2.%0A%0AXLOOKUP%20ka%20tareeqa%3A%0A%60%3DXLOOKUP%28%22P101%22%2C%20A2%3AA10%2C%20B2%3AB10%2C%20%22Not%20Found%22%29%60%0A%20%20%20-%20%60%22P101%22%60%3A%20Search%20value.%0A%20%20%20-%20%60A2%3AA10%60%3A%20Search%20range%20%28Product%20ID%20column%29.%0A%20%20%20-%20%60B2%3AB10%60%3A%20Return%20range%20%28Price%20column%29.%0A%20%20%20-%20%60%22Not%20Found%22%60%3A%20Agar%20value%20na%20mile%20toh%20yeh%20message.%0A%0APractice%3A%0AEk%20%2AEmployees%2A%20table%20banao%20jismein%20Column%20A%20mein%20Employee%20IDs%20%28E001%2C%20E002...%29%20aur%20Column%20B%20mein%20unke%20Names%20hon.%20Phir%20VLOOKUP%20aur%20XLOOKUP%20ka%20istemal%20karke%20Employee%20ID%20%60E003%60%20ka%20name%20nikalne%20ka%20formula%20likho.%0A%0AMini%20Project%3A%0AEk%20%2AProducts%2A%20table%20banao%20%28Product%20ID%2C%20Product%20Name%2C%20Price%29.%20Phir%20ek%20naya%20sheet%20banao%20jismein%20Product%20IDs%20ka%20list%20ho.%20Har%20Product%20ID%20ke%20liye%20XLOOKUP%20ka%20istemal%20karke%20uska%20Name%20aur%20Price%20nikal%20kar%20ek%20table%20banaye.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
+        <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Excel%20%26%20Data%20Analysis%20%28Day%2006%29%0A%0ADay%206%20%E2%80%94%20%2A%2APivotTables%3A%20Data%20ko%20Powerful%20Insights%20mein%20Badalna%2A%2A%0A%0AConcept%3A%0APivotTables%20Excel%20ka%20sabse%20powerful%20tool%20hai%20jo%20bade%20data%20ko%20chand%20clicks%20mein%20summarize%20aur%20analyze%20kar%20deta%20hai.%20Yeh%20automatically%20categories%2C%20sub-totals%2C%20aur%20comparisons%20generate%20karta%20hai%20bina%20formulas%20likhe.%20Har%20business%20ya%20freelance%20project%20mein%20iski%20zaroorat%20hoti%20hai%E2%80%94chahe%20sales%20report%20ho%20ya%20expense%20tracking.%0A%0AExample%3A%0A1.%20Ek%20Excel%20sheet%20mein%20%60Product%60%2C%20%60Region%60%2C%20%60Sales%60%20aur%20%60Month%60%20columns%20hain.%0A2.%20Insert%20%3E%20PivotTable%20select%20karo.%20Data%20range%20choose%20karo.%0A3.%20PivotTable%20Fields%20mein%3A%0A%20%20%20-%20Rows%20mein%20%60Region%60%20aur%20%60Product%60%20drag%20karo.%0A%20%20%20-%20Values%20mein%20%60Sales%60%20add%20karo%20%28yeh%20sum%20by%20default%20show%20karega%29.%0A4.%20Ab%20dekho%3A%20Har%20region%20aur%20product%20ka%20total%20sales%20automatically%20calculate%20ho%20gaya%21%0A%0APractice%3A%0AApni%20Excel%20sheet%20mein%20ek%20%60Employee%60%20%28Name%2C%20Department%2C%20Salary%2C%20Joining%20Date%29%20dataset%20banao.%20Uspar%20PivotTable%20banake%3A%0A-%20Har%20department%20ka%20average%20salary%20nikalna%20hai.%0A-%20Joining%20Date%20ke%20hisab%20se%20employees%20count%20karna%20hai.%0A%0AMini%20Project%3A%0AEk%20fake%20e-commerce%20ka%20dataset%20banao%20%28Order%20ID%2C%20Customer%2C%20Product%2C%20Quantity%2C%20Price%2C%20Order%20Date%29.%20Uspar%20PivotTable%20banake%3A%0A-%20Har%20customer%20ka%20total%20spending%20nikalna.%0A-%20Har%20month%20ki%20total%20sales%20ka%20bar%20chart%20banaana.%0A-%20Top%203%20best-selling%20products%20identify%20karna.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
         <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
       <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
-          data-slug="excel-data-analysis" data-lesson="day-003"
+          data-slug="excel-data-analysis" data-lesson="day-006"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <div class="lesson-nav"><a class="btn alt" href="2026-08-04-day-002.html">← Day 2 — AVERAGE aur COUNTIF: Data ko samajhne ke liye zaroori functions</a><a class="btn alt" href="2026-08-05-day-004.html">Day 4 — **Data Cleaning: Excel ka Secret Weapon** →</a></div>
+    <div class="lesson-nav"><a class="btn alt" href="2026-08-05-day-005.html">← Day 5 — **Charts aur Graphs: Data ko Visual Story Banaana**</a><span></span></div>
     <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
     
     
@@ -387,9 +387,9 @@ function fkcToggleTheme(){
           slug: "excel-data-analysis",
           courseName: "Excel & Data Analysis",
           courseIcon: "\ud83d\udcca",
-          title: "Day 3 \u2014 VLOOKUP aur XLOOKUP: Data ko tabdeel karne ka asaan tareeqa",
-          href: 'courses/excel-data-analysis/posts/2026-08-04-day-003.html',
-          day: 3
+          title: "Day 6 \u2014 **PivotTables: Data ko Powerful Insights mein Badalna**",
+          href: 'courses/excel-data-analysis/posts/2026-08-08-day-006.html',
+          day: 6
         }));
       } catch (e) {}
       var ta = document.getElementById('fkc-notes');
