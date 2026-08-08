@@ -1733,6 +1733,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 10,
+      "id": "day-010",
+      "date": "2026-08-08",
+      "title": "Day 10 — **Trading Discipline: Rules Ko Follow Karke Losses Ko Kaise Rokein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Trading discipline ka matlab hai apne trading plan aur rules ko 100% follow karna, chahe emotions kaisay bhi chalein. Bina discipline ke, even best strategy bhi fail ho sakti hai. Discipline mein shamil hai: stop-loss hamesha lagana, over-trading se bachna, aur emotional decisions (jaise revenge trading) ko roka jaana."
+        ],
+        [
+          "Example",
+          "Maana aapne EUR/USD pair par long trade liya, stop-loss 1.0800 par lagaya, aur target 1.0900 hai. Price 1.0810 tak girta hai, aapka stop-loss trigger ho jata hai. Ab agar aap \"ek baar aur try karte hain\" ke liye trade band kar dete hain, yeh discipline ki kami hai. Discipline ka rule hai: \"Ek baar stop-loss hit hone ke baad, trade band karo aur agle setup ka wait karo.\""
+        ],
+        [
+          "Practice",
+          "Apne trading journal mein 3 trades ko check karo:\n1. Kya aapne stop-loss lagaya tha?\n2. Kya aapne plan se zyada trade liya?\n3. Kya aapne emotional decision liya (jaise FOMO ya revenge trading)?"
+        ],
+        [
+          "Mini Project",
+          "Apne trading plan mein ek \"Discipline Checklist\" add karo:\n✅ Har trade ke liye stop-loss lagana\n✅ 1 din mein max 3 trades (over-trading se bachne ke liye)\n✅ Loss hone ke baad agle trade ke liye 15-30 min wait karna"
+        ]
+      ],
+      "answer_key": "stop-loss lagaya, plan se zyada trade, emotional decision",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۰ — ٹریڈنگ ڈسپلن: قواعد کی پیروی کرکے نقصانات کو کیسے روکیں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ٹریڈنگ ڈسپلن کا مطلب ہے اپنے ٹریڈنگ پلان اور قواعد کی سو فیصد پیروی کرنا، چاہے جذبات کیسے بھی ہوں۔ بغیر ڈسپلن کے، بہترین سٹریٹیجی بھی ناکام ہو سکتی ہے۔ ڈسپلن میں شامل ہے: سٹاپ لاس ہمیشہ لگانا، اوور ٹریڈنگ سے بچنا، اور جذباتی فیصلوں (جیسے ریوینج ٹریڈنگ) کو روکنا۔"
+            },
+            {
+              "label": "مثال",
+              "content": "مانا آپ نے EUR/USD جوڑے پر لانگ ٹریڈ لیا، سٹاپ لاس 1.0800 پر لگایا، اور ہدف 1.0900 ہے۔ قیمت 1.0810 تک گرتی ہے، آپ کا سٹاپ لاس ٹرگر ہو جاتا ہے۔ اب اگر آپ \"ایک بار اور کوشش کرتے ہیں\" کے لیے ٹریڈ بند کر دیتے ہیں، تو یہ ڈسپلن کی کمی ہے۔ ڈسپلن کا قاعدہ ہے: \"ایک بار سٹاپ لاس ہٹ ہونے کے بعد، ٹریڈ بند کرو اور اگلے سیٹ اپ کا انتظار کرو۔\""
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے ٹریڈنگ جرنل میں تین ٹریڈز کی جانچ کریں:\n۱۔ کیا آپ نے سٹاپ لاس لگایا تھا؟\n۲۔ کیا آپ نے پلان سے زیادہ ٹریڈ لیے؟\n۳۔ کیا آپ نے جذباتی فیصلہ لیا (جیسے FOMO یا ریوینج ٹریڈنگ)؟"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "اپنے ٹریڈنگ پلان میں ایک \"ڈسپلن چیک لسٹ\" شامل کریں:\n✅ ہر ٹریڈ کے لیے سٹاپ لاس لگانا\n✅ ایک دن میں زیادہ سے زیادہ ۳ ٹریڈز (اوور ٹریڈنگ سے بچنے کے لیے)\n✅ نقصان ہونے کے بعد اگلے ٹریڈ کے لیے ۱۵-۳۰ منٹ انتظار کرنا"
+            }
+          ]
+        }
+      }
     }
   ],
   "amazon-fba": [
