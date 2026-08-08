@@ -6018,6 +6018,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 6,
+      "id": "day-006",
+      "date": "2026-08-08",
+      "title": "Day 6 — **User Input Validation: Clean aur Secure Data Lekhna**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke user se input lene ke baad usko validate kaise karna hai — taake galat ya incomplete data website mein na chale jaye. JavaScript aur HTML attributes (jaise `required`, `pattern`) ka istemal karke hum yeh ensure kar sakte hain ke user ne sahi format mein data diya hai (e.g., email `@` ke saath, phone number sirf numbers)."
+        ],
+        [
+          "Example",
+          "Ek simple **contact form** banate hain jisme:\n1. Email field (`type=\"email\"`) — browser khud `@` check karega.\n2. Phone number (`type=\"tel\"` + `pattern=\"[0-9]{10}\"`) — sirf 10 digits allow honge.\n3. JavaScript se `onsubmit` event par check karo ke sab fields filled hain.\n\n```html\n<form id=\"contactForm\">\n  <input type=\"email\" name=\"email\" required>\n  <input type=\"tel\" name=\"phone\" pattern=\"[0-9]{10}\" required>\n  <button type=\"submit\">Bhejo</button>\n</form>\n\n<script>\n  document.getElementById(\"contactForm\").onsubmit = function(e) {\n    if (!this.checkValidity()) {\n      e.preventDefault();\n      alert(\"Please fill all fields correctly!\");\n    }\n  };\n</script>\n```"
+        ],
+        [
+          "Practice",
+          "Ek **signup form** banaye jisme:\n- Username (min 5 characters, sirf letters/numbers)\n- Password (min 8 characters, 1 uppercase, 1 number)\n- Confirm Password (password se match karna hai)\n- `required` attribute use karna hai."
+        ],
+        [
+          "Mini Project",
+          "**\"Restaurant Order Form\"** banaye:\n- User se naam, email, dish select (dropdown), quantity (number), aur special instructions (textarea) le.\n- Form submit hone se pehle check karo ke:\n  - Email valid hai (`@` aur `.` hai)\n  - Quantity 1 se zyada hai\n  - Dish select kiya gaya hai\n- Agar koi error ho to alert show karo, warna form submit ho jaye."
+        ]
+      ],
+      "answer_key": "username: letters/numbers, min 5, password: 8+ chars, 1 uppercase+number, confirm password match, email: @ aur .",
+      "translations": {
+        "ur": {
+          "title": "دن ٦ — **یوزر ان پٹ ویلیڈیشن: صاف اور محفوظ ڈیٹا لکھنا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم سیکھیں گے کہ یوزر سے ان پٹ لینے کے بعد اسے ویلیڈٹ کیسے کرنا ہے — تاکہ غلط یا نامکمل ڈیٹا ویب سائٹ میں نہ چل جائے۔ جاوااسکرپٹ اور ایچ ٹی ایم ایل ایٹریبیوٹس (جیسے `required`، `pattern`) کا استعمال کرکے ہم یہ یقینی بنا سکتے ہیں کہ یوزر نے صحیح فارمیٹ میں ڈیٹا دیا ہے (مثلاً ای میل میں `@` کے ساتھ، فون نمبر صرف نمبرز پر مشتمل ہو)"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک سادہ **کنٹیکٹ فارم** بناتے ہیں جس میں:\n١۔ ای میل فیلڈ (`type=\"email\"`) — براؤزر خود `@` چیک کرے گا۔\n٢۔ فون نمبر (`type=\"tel\"` + `pattern=\"[0-9]{10}\"`) — صرف ١٠ ہندسے قبول ہوں گے۔\n٣۔ جاوااسکرپٹ سے `onsubmit` ایونٹ پر چیک کریں کہ تمام فیلڈز بھرے ہوئے ہیں۔\n\n```html\n<form id=\"contactForm\">\n  <input type=\"email\" name=\"email\" required>\n  <input type=\"tel\" name=\"phone\" pattern=\"[0-9]{10}\" required>\n  <button type=\"submit\">بھیجو</button>\n</form>\n\n<script>\n  document.getElementById(\"contactForm\").onsubmit = function(e) {\n    if (!this.checkValidity()) {\n      e.preventDefault();\n      alert(\"براہ کرم تمام فیلڈز صحیح طریقے سے بھریں!\");\n    }\n  };\n</script>\n```"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "ایک **سائن اپ فارم** بنائیں جس میں:\n- یوزر نیم (کم از کم ٥ حروف، صرف حروف اور نمبرز)\n- پاسورڈ (کم از کم ٨ حروف، ١ بڑا حرف، ١ نمبر)\n- پاسورڈ کی تصدیق (پاسورڈ سے میچ ہونا چاہیے)\n- `required` ایٹریبیوٹ کا استعمال کریں"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "**\"ریستوران آرڈر فارم\"** بنائیں:\n- یوزر سے نام، ای میل، ڈش سلیکٹ (ڈراپ ڈاؤن)، مقدار (نمبر)، اور خصوصی ہدایات (ٹیکسٹ ایریا) لیں۔\n- فارم جمع کروانے سے پہلے چیک کریں کہ:\n  - ای میل درست ہے (`@` اور `.` موجود ہو)\n  - مقدار ١ سے زیادہ ہو\n  - ڈش سلیکٹ کی گئی ہو\n- اگر کوئی خرابی ہو تو الرٹ دکھائیں، ورنہ فارم جمع ہو جائے"
+            }
+          ]
+        }
+      }
     }
   ],
   "excel-data-analysis": [
