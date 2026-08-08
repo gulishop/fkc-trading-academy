@@ -3297,6 +3297,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 8,
+      "id": "day-008",
+      "date": "2026-08-08",
+      "title": "Day 8 — **Review Milne Ke Baad: Client Ko Dobara Hire Karne Ka Professional Approach**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj seekhoge ke kaise 5-star review milne ke baad bhi client ke saath long-term relationship banayein. Sirf review lene se kaam nahi hota—us review ko leverage karke future projects, referrals aur repeat business kaise secure karein. Yeh step freelancing ka \"hidden growth hack\" hai jo beginners ignore kar dete hain."
+        ],
+        [
+          "Example",
+          "1. **Review milne ke 24 hours ke andar** client ko thank you email bhejo (personalized, specific).\n2. **Future collaboration ka suggestion do**—e.g., *\"Agar aapko aur bhi services chahiye jaise [X], to main aapko discount offer kar sakta/ sakti hun.\"*\n3. **Referral request** karo: *\"Agar aapke kisi dost ko bhi isi tarah ki help chahiye, to unhe mere profile ka link bhej dena.\"*"
+        ],
+        [
+          "Practice",
+          "Aaj hi kisi purane client ko (jo review de chuka hai) ek short, professional email bhejo—jisme:\n- Unka shukriya ada karo.\n- Future collaboration ka option suggest karo.\n- Referral request karo (agar relevant ho)."
+        ],
+        [
+          "Mini Project",
+          "Ek **email template** taiyar karo jo aap har review milne ke baad use kar sakte ho. Template mein yeh points hon:\n1. Personal greeting (client ka naam).\n2. Review ke liye shukriya.\n3. Future services ka mention.\n4. Referral request (agar applicable ho)."
+        ]
+      ],
+      "answer_key": "thank you email, future collaboration suggestion, referral request",
+      "translations": {
+        "ur": {
+          "title": "دن ۸ — **ریویو ملنے کے بعد: کلائنٹ کو دوبارہ ہائر کرنے کا پیشہ ورانہ اپروچ**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج سیکھو گے کہ کیسے ۵ اسٹار ریویو ملنے کے بعد بھی کلائنٹ کے ساتھ طویل مدتی تعلق بنائیں۔ صرف ریویو لینے سے کام نہیں ہوتا—اس ریویو کو لیوریج کرکے مستقبل کے پروجیکٹس، ریفرلز اور ریپیٹ بزنس کیسے سیکیور کریں۔ یہ قدم فری لانسنگ کا وہ 'ہڈن گروتھ ہیک' ہے جو بیگنرز نظر انداز کر دیتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ **ریویو ملنے کے ۲۴ گھنٹے کے اندر** کلائنٹ کو تھینک یو ای میل بھیجو (پرسنلائزڈ، سپیسفک)۔\n۲۔ **مستقبل میں تعاون کا سجیشن دو**—مثال کے طور پر، ''اگر آپ کو اور بھی سروسز چاہئیں جیسے [X]، تو میں آپ کو ڈسکاؤنٹ آفر کر سکتا/سکتی ہوں۔''\n۳۔ **ریفرل ری کوئسٹ** کرو: ''اگر آپ کے کسی دوست کو بھی اسی طرح کی مدد چاہئے، تو انہیں میرے پروفائل کا لنک بھیج دینا۔''"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "آج ہی کسی پرانے کلائنٹ کو (جو ریویو دے چکا ہے) ایک مختصر، پیشہ ورانہ ای میل بھیجو—جس میں:\n- ان کا شکریہ ادا کرو۔\n- مستقبل میں تعاون کا آپشن سجسٹ کرو۔\n- ریفرل ری کوئسٹ کرو (اگر متعلقہ ہو)।"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **ای میل ٹیمپلیٹ** تیار کرو جو آپ ہر ریویو ملنے کے بعد استعمال کر سکتے ہو۔ ٹیمپلیٹ میں یہ پوائنٹس ہوں:\n۱۔ پرسنل گریٹنگ (کلائنٹ کا نام)۔\n۲۔ ریویو کے لیے شکریہ۔\n۳۔ مستقبل کی سروسز کا ذکر۔\n۴۔ ریفرل ری کوئسٹ (اگر لاگو ہو سکے تو)।"
+            }
+          ]
+        }
+      }
     }
   ],
   "graphic-design-canva": [
