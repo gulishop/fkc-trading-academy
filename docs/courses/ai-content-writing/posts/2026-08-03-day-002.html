@@ -9,6 +9,16 @@
 <meta property="og:description" content="FKC Trading Academy · AI Content Writing & Copywriting · Day 02">
 <meta property="og:image" content="../../../logo.png">
 <meta name="twitter:card" content="summary_large_image">
+<script>
+// Dark mode — theme paint se pehle set karte hain taake flash na ho.
+(function(){
+  try{
+    var t = localStorage.getItem("fkc_theme") ||
+      (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", t);
+  }catch(e){}
+})();
+</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z5FV45KG2C"></script>
 <script>
@@ -22,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T21:18:59.874247";
+  var FKC_BUILD = "2026-08-08T21:06:50.015233";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -46,6 +56,15 @@
 :root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
 --ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
 --accent:#2BAF66;--purple:#6D28D9;}
+html[data-theme="dark"]{--paper:#14161A;--panel:#1D2025;--line:#2C3038;
+--ink:#EDEFF2;--muted:#9AA1AB;--primary:#5B9DFF;--primary-dark:#3D7DE0;
+--accent:#3FCB7E;--purple:#A78BFA;}
+html[data-theme="dark"] img{opacity:.92;}
+.theme-toggle{position:fixed;bottom:16px;right:16px;z-index:999;
+width:44px;height:44px;border-radius:50%;border:1px solid var(--line);
+background:var(--panel);color:var(--ink);font-size:19px;cursor:pointer;
+box-shadow:0 2px 8px rgba(0,0,0,.15);display:flex;align-items:center;
+justify-content:center;}
 *{box-sizing:border-box;}
 @media (prefers-reduced-motion: no-preference){
   .fade-in{animation:fadeUp .45s ease both;}
@@ -53,7 +72,8 @@
   @keyframes fadeUp{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
 }
 body{margin:0;background:var(--paper);color:var(--ink);
-font-family:'Inter','IBM Plex Sans',sans-serif;line-height:1.55;}
+font-family:'Inter','IBM Plex Sans',sans-serif;line-height:1.55;
+transition:background .2s ease,color .2s ease;}
 .wrap{max-width:720px;margin:0 auto;padding:24px 16px 70px;}
 a{color:var(--primary);}
 .top{display:flex;align-items:baseline;gap:10px;color:var(--ink);
@@ -155,30 +175,76 @@ vertical-align:middle;}
 .lesson-nav{display:flex;justify-content:space-between;gap:8px;
 flex-wrap:wrap;margin-top:14px;}
 .lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.section-title{font-family:'Inter',sans-serif;font-weight:800;
+font-size:1.2em;margin:30px 0 2px;padding-top:18px;
+border-top:1px solid var(--line);display:flex;align-items:center;gap:8px;}
+.section-title.adults{color:var(--primary);}
+.section-title.kids{color:#DB4C77;}
 .quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
 .quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
 border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
 box-sizing:border-box;margin:6px 0;}
 .quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+.puzzle-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.puzzle-box h3{margin-top:0;}
+.puzzle-status{font-size:.85em;color:var(--muted);margin:0 0 10px;}
+.puzzle-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;
+max-width:340px;margin:0 auto;}
+.puzzle-card{aspect-ratio:1/1;border-radius:10px;border:none;
+background:var(--primary);color:#fff;font-size:1.6em;cursor:pointer;
+display:flex;align-items:center;justify-content:center;
+transition:transform .25s ease,background .25s ease;padding:0;}
+.puzzle-card.flipped,.puzzle-card.matched{background:#fff;
+border:1px solid var(--line);color:var(--ink);}
+.puzzle-card.matched{background:#EAFBF0;border-color:var(--accent);
+opacity:.85;cursor:default;}
+.puzzle-card:disabled{cursor:default;}
+.puzzle-win{display:none;text-align:center;margin-top:12px;
+background:#EAFBF0;border-radius:10px;padding:12px;font-weight:700;color:#15803d;}
 @media print{
   .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
-  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  .quiz-box,.puzzle-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
   body{background:#fff;}
   .card{box-shadow:none;border:none;}
 }
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
+<button type="button" class="theme-toggle" id="fkcThemeToggle" title="Dark/Light mode" onclick="fkcToggleTheme()">🌓</button>
+<script>
+function fkcToggleTheme(){
+  var cur = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", cur);
+  try{ localStorage.setItem("fkc_theme", cur); }catch(e){}
+}
+</script>
 
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "headline": "Day 2 — AI Se Blog Articles: Draft Se Publish Tak", "name": "Day 2 — AI Se Blog Articles: Draft Se Publish Tak", "description": "", "learningResourceType": "Lesson", "educationalLevel": "Beginner", "inLanguage": "ur", "isPartOf": {"@type": "Course", "name": "AI Content Writing & Copywriting"}, "datePublished": "2026-08-03", "publisher": {"@type": "Organization", "name": "FKC Trading Academy"}}</script>
     <div class="top"><a href="../../../index.html">← FKC Trading Academy</a>
     <a href="../index.html" class="course-back-link">/ AI Content Writing &amp; Copywriting</a></div>
     
     <p class="muted">✍️ AI Content Writing &amp; Copywriting · Day 02</p>
     <h1>Day 2 — AI Se Blog Articles: Draft Se Publish Tak</h1>
+    <p class="muted" style="margin:0 0 10px;">↩️ Pichla lesson: <strong>Day 1 — Copywriting Basics: Hook, Benefit &amp; CTA</strong> — aaj is se aage badhte hain.</p>
     <div class="card">
       
       
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Aaj seekhoge ke AI se blog article kaise draft karein, usko human-like banayein, aur publish ke liye edit karein. AI se content generate karna aasan hai, lekin usko authentic, engaging aur SEO-friendly banana zaroori hai. Aaj hum AI-generated draft ko refine karne ke practical steps dekhenge.</p><h3>Example</h3><p>1.</p><h3>Prompt Design</h3><p>&quot;Write a 500-word blog post in simple Urdu/Hindi about &#x27;How to Start a Blog in 2024&#x27; for beginners. Include 3 subheadings, a hook, and a CTA.&quot;<br>2.</p><h3>AI Output</h3><p>AI dega ek basic draft. Ab usko edit karna hai:<br>   -</p><h3>Language</h3><p>Urdu/Hindi ka mix remove karke ek consistent style choose karo (e.g., pure Urdu).<br>   -</p><h3>Tone</h3><p>Friendly aur motivational rakho (e.g., &quot;Aap bhi blogging shuru kar sakte hain!&quot;).<br>   -</p><h3>SEO</h3><p>Keywords add karo (e.g., &quot;blogging kaise shuru karein,&quot; &quot;free blogging platforms&quot;).<br>   -</p><h3>Structure</h3><p>Paragraphs ko short karo, bullet points add karo.</p><h3>Practice</h3><p>AI se ek 300-word draft generate karo &quot;5 Gharelu Nuskay Hair Loss Rokein&quot; topic par. Us draft ko edit karke pure Urdu mein convert karo, 2 keywords add karo, aur ek engaging CTA likho.</p><h3>Mini Project</h3><p>Ek 500-word blog post draft karo (AI se generate karke ya khud likh kar), phir usko AI tools (jaise Grammarly, Hemingway) se check karo. Improve karke ek final version taiyar karo jo publish ke liye ready ho.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>آج آپ سیکھیں گے کہ AI کی مدد سے بلاگ آرٹیکل کیسے ڈرافٹ بنایا جائے، اسے انسانی جیسا بنایا جائے اور اسے پبلش کرنے کے لیے کیسے ایڈٹ کیا جائے۔ AI سے کنسٹنٹ جنریٹ کرنا تو آسان ہے، لیکن اسے اصلی، دلچسپ اور SEO فرینڈلی بنانا ضروری ہے۔ آج ہم AI سے بنائے گئے ڈرافٹ کو بہتر بنانے کے عملی مرحلے دیکھیں گے۔</p><h3>Example</h3><p>1.</p><p>Prompt Design: &quot;2024 میں بلاگنگ کیسے شروع کریں&quot; کے موضوع پر ایک 500 الفاظ پر مشتمل سادہ اردو میں بلاگ پوسٹ لکھیں۔ تین ذیلی عنوانات، ایک ہک، اور ایک کال ٹو ایکشن شامل کریں۔</p><p>2.</p><p>AI Output: AI ایک بنیادی ڈرافٹ فراہم کرے گا۔ اب اسے ایڈٹ کرنا ہے:<br>   -<br>- زبان: اردو/ہندی کے امتزاج کو ہٹا کر ایک مستقل انداز چن لیں (مثلاً خالص اردو)۔<br>   -<br>- لہجہ: دوستانہ اور حوصلہ افزا رکھیں (مثلاً، &quot;آپ بھی بلاگنگ شروع کر سکتے ہیں!&quot;۔<br>   -<br>- SEO: کیورڈز شامل کریں (مثلاً، &quot;بلاگنگ کیسے شروع کریں&quot;، &quot;فری بلاگنگ پلیٹ فارمز&quot;۔<br>   -<br>- ساخت: پیراگراف کو چھوٹا کریں، بلٹ پوائنٹس شامل کریں۔</p><h3>Practice</h3><p>AI سے &quot;5 گھریلو نکھارے بالوں کے جھڑنے کو روکیں&quot; کے موضوع پر ایک 300 الفاظ پر مشتمل ڈرافٹ جنریٹ کریں۔ اس ڈرافٹ کو ایڈٹ کرکے خالص اردو میں تبدیل کریں، دو کیورڈز شامل کریں، اور ایک دلچسپ کال ٹو ایکشن لکھیں۔</p><h3>Mini Project</h3><p>ایک 500 الفاظ پر مشتمل بلاگ پوسٹ ڈرافٹ بنائیں (یا AI سے جنریٹ کریں یا خود لکھیں)، پھر اسے AI ٹولز (مثلاً Grammarly، Hemingway) سے چیک کریں۔ بہتری لا کر ایک آخری ورژن تیار کریں جو پبلش کے لیے تیار ہو۔</p></div>
       
       
@@ -205,9 +271,73 @@ box-sizing:border-box;margin:6px 0;}
         }
       }
       </script>
+      
+      <div class="puzzle-box no-print" id="pz-ai-content-writing-2">
+        <h3>🧩 Dimaghi Kasrat — Jode Milayein</h3>
+        <p class="puzzle-status" id="pz-ai-content-writing-2-status">Cards par tap karke jode (pairs) milayein.</p>
+        <div class="puzzle-grid" id="pz-ai-content-writing-2-grid"></div>
+        <div class="puzzle-win" id="pz-ai-content-writing-2-win">🎉 Shabaash! Sab jode mil gaye — thodi der aur seekhne ke liye tayyar?</div>
+      </div>
+      <script>
+      (function(){
+        var emojis = ["🎈", "🧩", "🎵", "🐢", "🌈", "⚽"];
+        var deck = emojis.concat(emojis);
+        for (var i = deck.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var t = deck[i]; deck[i] = deck[j]; deck[j] = t;
+        }
+        var grid = document.getElementById("pz-ai-content-writing-2-grid");
+        var statusEl = document.getElementById("pz-ai-content-writing-2-status");
+        var winEl = document.getElementById("pz-ai-content-writing-2-win");
+        var flipped = [], matchedCount = 0, moves = 0, lock = false;
+        deck.forEach(function(val){
+          var b = document.createElement("button");
+          b.type = "button";
+          b.className = "puzzle-card";
+          b.setAttribute("data-val", val);
+          b.textContent = "❓";
+          b.onclick = function(){
+            if (lock || b.classList.contains("matched") || b.classList.contains("flipped")) return;
+            b.classList.add("flipped");
+            b.textContent = val;
+            flipped.push(b);
+            if (flipped.length === 2) {
+              moves++;
+              lock = true;
+              var a = flipped[0], c = flipped[1];
+              if (a.getAttribute("data-val") === c.getAttribute("data-val")) {
+                a.classList.add("matched"); c.classList.add("matched");
+                matchedCount += 2;
+                flipped = []; lock = false;
+                statusEl.textContent = "Moves: " + moves + " · " + matchedCount + "/" + deck.length + " match hue";
+                if (matchedCount === deck.length) {
+                  winEl.style.display = "block";
+                  statusEl.textContent = "Complete! Total moves: " + moves;
+                }
+              } else {
+                setTimeout(function(){
+                  a.classList.remove("flipped"); a.textContent = "❓";
+                  c.classList.remove("flipped"); c.textContent = "❓";
+                  flipped = []; lock = false;
+                }, 700);
+              }
+            }
+          };
+          grid.appendChild(b);
+        });
+      })();
+      </script>
+      
+      <div class="no-print" style="margin-top:14px;">
+        <label for="fkc-notes" class="muted" style="display:block;margin-bottom:4px;">📝 Apni Note (sirf aapke is browser mein save hoti hai):</label>
+        <textarea id="fkc-notes" data-slug="ai-content-writing" data-lesson="day-002"
+          placeholder="Yahan apni note likhein..." rows="3"
+          style="width:100%;border-radius:10px;border:1px solid #ddd;padding:8px;font-family:inherit;"
+          oninput="fkcSaveNote(this)"></textarea>
+      </div>
+    
       <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20AI%20Content%20Writing%20%26%20Copywriting%20%28Day%2002%29%0A%0ADay%202%20%E2%80%94%20AI%20Se%20Blog%20Articles%3A%20Draft%20Se%20Publish%20Tak%0A%0AConcept%3A%0AAaj%20seekhoge%20ke%20AI%20se%20blog%20article%20kaise%20draft%20karein%2C%20usko%20human-like%20banayein%2C%20aur%20publish%20ke%20liye%20edit%20karein.%20AI%20se%20content%20generate%20karna%20aasan%20hai%2C%20lekin%20usko%20authentic%2C%20engaging%20aur%20SEO-friendly%20banana%20zaroori%20hai.%20Aaj%20hum%20AI-generated%20draft%20ko%20refine%20karne%20ke%20practical%20steps%20dekhenge.%0A%0AExample%3A%0A1.%0A%0APrompt%20Design%3A%0A%22Write%20a%20500-word%20blog%20post%20in%20simple%20Urdu/Hindi%20about%20%27How%20to%20Start%20a%20Blog%20in%202024%27%20for%20beginners.%20Include%203%20subheadings%2C%20a%20hook%2C%20and%20a%20CTA.%22%0A2.%0A%0AAI%20Output%3A%0AAI%20dega%20ek%20basic%20draft.%20Ab%20usko%20edit%20karna%20hai%3A%0A%20%20%20-%0A%0ALanguage%3A%0AUrdu/Hindi%20ka%20mix%20remove%20karke%20ek%20consistent%20style%20choose%20karo%20%28e.g.%2C%20pure%20Urdu%29.%0A%20%20%20-%0A%0ATone%3A%0AFriendly%20aur%20motivational%20rakho%20%28e.g.%2C%20%22Aap%20bhi%20blogging%20shuru%20kar%20sakte%20hain%21%22%29.%0A%20%20%20-%0A%0ASEO%3A%0AKeywords%20add%20karo%20%28e.g.%2C%20%22blogging%20kaise%20shuru%20karein%2C%22%20%22free%20blogging%20platforms%22%29.%0A%20%20%20-%0A%0AStructure%3A%0AParagraphs%20ko%20short%20karo%2C%20bullet%20points%20add%20karo.%0A%0APractice%3A%0AAI%20se%20ek%20300-word%20draft%20generate%20karo%20%225%20Gharelu%20Nuskay%20Hair%20Loss%20Rokein%22%20topic%20par.%20Us%20draft%20ko%20edit%20karke%20pure%20Urdu%20mein%20convert%20karo%2C%202%20keywords%20add%20karo%2C%20aur%20ek%20engaging%20CTA%20likho.%0A%0AMini%20Project%3A%0AEk%20500-word%20blog%20post%20draft%20karo%20%28AI%20se%20generate%20karke%20ya%20khud%20likh%20kar%29%2C%20phir%20usko%20AI%20tools%20%28jaise%20Grammarly%2C%20Hemingway%29%20se%20check%20karo.%20Improve%20karke%20ek%20final%20version%20taiyar%20karo%20jo%20publish%20ke%20liye%20ready%20ho.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
-        <a class="btn alt" href="https://t.me/share/url?url=&text=Day%202%20%E2%80%94%20AI%20Se%20Blog%20Articles%3A%20Draft%20Se%20Publish%20Tak%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
         <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
@@ -220,12 +350,62 @@ box-sizing:border-box;margin:6px 0;}
     <div class="lesson-nav"><a class="btn alt" href="2026-08-03-day-001.html">← Day 1 — Copywriting Basics: Hook, Benefit &amp; CTA</a><a class="btn alt" href="2026-08-04-day-003.html">Day 3 — Social Media Captions &amp; Ad Copy: Engagement Se Conversion Tak →</a></div>
     <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
     
+    
     <div class="no-print" style="margin:18px 0;text-align:center;">
       <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
         data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
       <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
-    <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
+    
+    <div class="daily-motivation" style="max-width:640px;margin:20px auto;padding:16px 20px;
+      background:linear-gradient(135deg,#fff7e6,#fef0f0);border-radius:14px;border:1px solid #f5e2c8;
+      text-align:center;">
+      <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
+        margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
+      <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
+        “Khud par yaqeen rakho, mehnat jari rakho — nateeja khud ba khud sath dega.”
+      </p>
+    </div>
+    <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;
+      background:linear-gradient(145deg,#f7f9fc,#eef2f9);border-radius:16px;border:1px solid #e6e9f0;
+      text-align:center;">
+      <p style="font-size:13px;letter-spacing:.03em;text-transform:uppercase;color:var(--muted);
+        margin:0 0 10px;font-weight:700;">✉️ Founder ki taraf se</p>
+      <p style="font-size:15px;line-height:1.7;color:#2a2f3a;margin:0 0 14px;">
+        Hamara maqsad sirf lessons post karna nahi — har us Pakistani tak muft, practical
+        taleem pohchana hai jo seekhna chahta hai lekin resources ya waqt nahi rakhta.
+        FKC Trading Academy ka vision hai: <b>roz thora seekho, mustaqil mehnat karo,
+        aur apni zindagi khud badlo.</b> Mission simple hai — koi bhi course, koi bhi fee
+        nahi, sirf aap ka irada.
+      </p>
+      <p style="font-size:13px;color:var(--muted);margin:0;">— Fazul Khan Chandio, Founder &amp; CEO</p>
+    </div><div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
+    <script>
+    (function(){
+      try {
+        localStorage.setItem('fkc_last_lesson', JSON.stringify({
+          slug: "ai-content-writing",
+          courseName: "AI Content Writing & Copywriting",
+          courseIcon: "\u270d\ufe0f",
+          title: "Day 2 \u2014 AI Se Blog Articles: Draft Se Publish Tak",
+          href: 'courses/ai-content-writing/posts/2026-08-03-day-002.html',
+          day: 2
+        }));
+      } catch (e) {}
+      var ta = document.getElementById('fkc-notes');
+      if (ta) {
+        try {
+          var saved = localStorage.getItem('fkc_note_' + ta.dataset.slug + '_' + ta.dataset.lesson);
+          if (saved) ta.value = saved;
+        } catch (e) {}
+      }
+    })();
+    function fkcSaveNote(el) {
+      try {
+        localStorage.setItem('fkc_note_' + el.dataset.slug + '_' + el.dataset.lesson, el.value);
+      } catch (e) {}
+    }
+    </script>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
   function getProgress(){
@@ -266,6 +446,25 @@ box-sizing:border-box;margin:6px 0;}
     }
     var wa = "https://wa.me/923333909816?text=" + encodeURIComponent(text);
     window.open(wa, "_blank");
+  };
+
+  window.fkcShowSyncCode = function(){
+    if(!window.fkcSyncProgressUp){ alert("Sync abhi ready nahi (Firebase load ho raha hai), thodi dair mein try karein."); return; }
+    var code = Math.random().toString(36).substring(2,8).toUpperCase();
+    window.fkcSyncProgressUp(code, function(ok){
+      if(ok) alert("Yeh code doosri device par 'Code Se Wapas Layein' mein daalein:\n\n" + code);
+      else alert("Sync fail ho gaya, dobara try karein.");
+    });
+  };
+
+  window.fkcEnterSyncCode = function(){
+    if(!window.fkcSyncProgressDown){ alert("Sync abhi ready nahi (Firebase load ho raha hai), thodi dair mein try karein."); return; }
+    var code = prompt("Wo code daalein jo pehli device par bana tha:");
+    if(!code || !code.trim()) return;
+    window.fkcSyncProgressDown(code.trim().toUpperCase(), function(ok){
+      if(ok){ alert("Progress wapas aa gayi ✅"); location.reload(); }
+      else alert("Yeh code nahi mila, dobara check karein.");
+    });
   };
 
   document.addEventListener("DOMContentLoaded", function(){
@@ -349,6 +548,27 @@ box-sizing:border-box;margin:6px 0;}
           created: firebase.firestore.FieldValue.serverTimestamp()
         });
       }catch(e){}
+    };
+
+    window.fkcSyncProgressUp = function(code, onDone){
+      try{
+        var data = localStorage.getItem("fkc_progress") || "{}";
+        window.fkcDb.collection("progress_sync").doc(code).set({
+          progress: data, updated: firebase.firestore.FieldValue.serverTimestamp()
+        }).then(function(){ if(onDone) onDone(true); })
+          .catch(function(){ if(onDone) onDone(false); });
+      }catch(e){ if(onDone) onDone(false); }
+    };
+
+    window.fkcSyncProgressDown = function(code, onDone){
+      try{
+        window.fkcDb.collection("progress_sync").doc(code).get().then(function(doc){
+          if(doc.exists && doc.data().progress){
+            localStorage.setItem("fkc_progress", doc.data().progress);
+            if(onDone) onDone(true);
+          } else { if(onDone) onDone(false); }
+        }).catch(function(){ if(onDone) onDone(false); });
+      }catch(e){ if(onDone) onDone(false); }
     };
   }catch(e){}
 })();

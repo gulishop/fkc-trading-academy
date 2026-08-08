@@ -2267,7 +2267,30 @@
         ]
       ],
       "answer_key": "hook, benefit, cta",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن 1 — کاپی رائٹنگ کی بنیادیات: ہوک، فائدہ اور سی ٹی اے",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "کاپی رائٹنگ کا مطلب ہے الفاظ کا استعمال کرکے قارئین کو عمل کرنے پر مجبور کرنا۔ آج ہم تین بنیادی عناصر سیکھیں گے:\n1. **ہوک** – پہلا جملہ جو پڑھنے والے کو روکے رکھے۔\n2. **فائدہ** – قاری کو بتاؤ کہ تم اسے کیا دینے جا رہے ہو۔\n3. **سی ٹی اے (کال ٹو ایکشن)** – قاری کو کیا کرنا ہے، واضح ہدایت دو۔"
+            },
+            {
+              "label": "مثال",
+              "content": "تصور کرو کہ تم ایک *\"10 منٹ کی صبح کی روٹین\"* کی ای بُک بیچ رہے ہو۔\n❌\n- خراب ہوک: \"یہ کتاب صبح کی روٹین کے بارے میں ہے۔\"\n✅\n- اچھا ہوک: \"صبح تھکا ہوا اٹھتے ہو؟ یہ 10 منٹ کی روٹین تمہیں پورا دن توانائی دے گی—کافی کے بغیر!\"\n- فائدہ: \"5 سائنسی طور پر ثابت شدہ عادتیں سیکھو جو توجہ بڑھائیں اور وزن کم کرنے میں مدد کریں۔\"\n- سی ٹی اے: \"ابھی ڈاؤن لوڈ کرو اور کل سے شروع کرو!\""
+            },
+            {
+              "label": "مشق",
+              "content": "اپنے پسندیدہ پروڈکٹ یا سروس کا اشتہاری کاپی لکھو۔ پہلے ایک جملے کا **ہوک**، پھر ایک لائن کا **فائدہ**، اور آخر میں **سی ٹی اے** لکھنا ہے۔"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "ایک واٹس ایپ اسٹیٹس یا انسٹاگرام کیپشن لکھو جس میں شامل ہو:\n- ہوک: \"سوشل میڈیا پر گھنٹوں ضائع کرنے سے تنگ آ گئے ہو؟\"\n- فائدہ: \"یہ مفت ٹول تمہیں خلفشار سے بچائے گا اور روزانہ 2 گھنٹے بچائے گا۔\"\n- سی ٹی اے: \"مجھے ‘فوکس’ بھیج کر ابھی حاصل کرو!\""
+            }
+          ]
+        }
+      }
     },
     {
       "day": 2,
@@ -2388,6 +2411,72 @@
             {
               "label": "Mini Project",
               "content": "ایک 3-پوسٹ سیریز بنائیں (ایک کیپشن + ایڈ کاپی) ایک ہائپوتھیٹیکل پروڈکٹ کے لیے (جیسے ایک آن لائن کورس، فٹنس سپلیمنٹ، یا لوکل سروس)۔ ہر پوسٹ کا الگ اینگل ہو—ایک ایجوکیشنل، ایک ایموشنل، اور ایک ڈسکاؤنٹ فوکسڈ۔"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "day": 4,
+      "id": "day-004",
+      "date": "2026-08-08",
+      "title": "Day 4 — **Landing Page Ka Magic: Trust Badhao, Conversions Badhao**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Landing page copywriting ek product/service ko bechne ka art hai—aisa page jo visitor ko sirf 5-10 seconds mein action lene par majboor kar de. Ismein **headline**, **benefit-driven bullet points**, **social proof**, aur **urgent CTA** ka combination hota hai. AI se yeh kaam fast ho sakta hai, lekin *human touch* (emotion + clarity) zaroori hai."
+        ],
+        [
+          "Example",
+          "Ek fitness app ka landing page:\n-"
+        ],
+        [
+          "Headline",
+          "\"30 Days Mein 10 KG Kam Karne Ka Secret\"\n-"
+        ],
+        [
+          "Bullet Points",
+          "\"AI-powered diet planner + live coach + progress tracker\"\n-"
+        ],
+        [
+          "Social Proof",
+          "\"10,000+ users ne 5-star reviews diye\"\n-"
+        ],
+        [
+          "CTA",
+          "\"Free Trial Shuru Karein — 7 Din Ke Liye\""
+        ],
+        [
+          "Practice",
+          "Apne pasandida product/service ka landing page draft likhein. Headline + 3 bullet points + 1 CTA likhein (AI se help lena allowed hai)."
+        ],
+        [
+          "Mini Project",
+          "Ek **fake landing page** banayein (Canva/WordPress par) ek imaginary SaaS product ke liye (e.g., \"AI Resume Builder\"). Include karein:\n1. Hero section (headline + subheadline)\n2. 3 key benefits\n3. Testimonial (fake bhi chalega)\n4. CTA button (\"Start Free Now\")"
+        ]
+      ],
+      "answer_key": "headline, benefits, social proof, urgent cta",
+      "translations": {
+        "ur": {
+          "title": "دن 4 — لینڈنگ پیج کا میجک: ٹرسٹ بڑھاؤ، کنورژن بڑھاؤ",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "لینڈنگ پیج کاپی رائٹنگ ایک پروڈکٹ یا سروس کو بیچنے کی فن ہے — ایسا پیج جو وزیٹر کو صرف 5 سے 10 سیکنڈ میں ایکشن لینے پر مجبور کر دے۔ اس میں ہیڈلائن، فائدے پر مبنی بلیٹ پوائنٹس، سوشل پروف، اور فوری کال ٹو ایکشن کا امتزاج ہوتا ہے۔ اے آئی سے یہ کام تیز ہو سکتا ہے، لیکن انسانی چھوؤں (جذبات + وضاحت) کی ضرورت لازمی ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک فٹنس ایپ کا لینڈنگ پیج:\n\nہیڈلائن: \"30 دن میں 10 کلو گرام کم کرنے کا راز\"\n\nبلیٹ پوائنٹس: \"اے آئی پر مبنی ڈائٹ پلانر + لائیو کوچ + پروگریس ٹریکر\"\n\nسوشل پروف: \"10,000+ صارفین نے 5 اسٹار ریویوز دیں\"\n\nسی ٹی اے: \"فری ٹرائل شروع کریں — 7 دن کے لیے\""
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے پسندیدہ پروڈکٹ یا سروس کا لینڈنگ پیج ڈرافٹ لکھیں۔ ہیڈلائن کے ساتھ 3 بلیٹ پوائنٹس اور 1 کال ٹو ایکشن لکھیں (اے آئی سے مدد لینا جائز ہے)।"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک فرضی لینڈنگ پیج بنائیں (Canva/WordPress پر) ایک خیالی SaaS پروڈکٹ کے لیے (مثال کے طور پر، \"اے آئی ریزیوم بلڈر\")۔ شامل کریں:\n1. ہیرو سیکشن (ہیڈلائن + سب ہیڈلائن)\n2. 3 کلیدی فوائد\n3. ٹیسٹیمونیل (فرضی بھی چلے گا)\n4. کال ٹو ایکشن بٹن (\"Start Free Now\")"
             }
           ]
         }

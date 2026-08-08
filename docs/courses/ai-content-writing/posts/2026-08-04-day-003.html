@@ -9,6 +9,16 @@
 <meta property="og:description" content="FKC Trading Academy · AI Content Writing & Copywriting · Day 03">
 <meta property="og:image" content="../../../logo.png">
 <meta name="twitter:card" content="summary_large_image">
+<script>
+// Dark mode — theme paint se pehle set karte hain taake flash na ho.
+(function(){
+  try{
+    var t = localStorage.getItem("fkc_theme") ||
+      (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", t);
+  }catch(e){}
+})();
+</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z5FV45KG2C"></script>
 <script>
@@ -22,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-04T21:18:59.874247";
+  var FKC_BUILD = "2026-08-08T21:06:50.015233";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -46,6 +56,15 @@
 :root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
 --ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
 --accent:#2BAF66;--purple:#6D28D9;}
+html[data-theme="dark"]{--paper:#14161A;--panel:#1D2025;--line:#2C3038;
+--ink:#EDEFF2;--muted:#9AA1AB;--primary:#5B9DFF;--primary-dark:#3D7DE0;
+--accent:#3FCB7E;--purple:#A78BFA;}
+html[data-theme="dark"] img{opacity:.92;}
+.theme-toggle{position:fixed;bottom:16px;right:16px;z-index:999;
+width:44px;height:44px;border-radius:50%;border:1px solid var(--line);
+background:var(--panel);color:var(--ink);font-size:19px;cursor:pointer;
+box-shadow:0 2px 8px rgba(0,0,0,.15);display:flex;align-items:center;
+justify-content:center;}
 *{box-sizing:border-box;}
 @media (prefers-reduced-motion: no-preference){
   .fade-in{animation:fadeUp .45s ease both;}
@@ -53,7 +72,8 @@
   @keyframes fadeUp{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
 }
 body{margin:0;background:var(--paper);color:var(--ink);
-font-family:'Inter','IBM Plex Sans',sans-serif;line-height:1.55;}
+font-family:'Inter','IBM Plex Sans',sans-serif;line-height:1.55;
+transition:background .2s ease,color .2s ease;}
 .wrap{max-width:720px;margin:0 auto;padding:24px 16px 70px;}
 a{color:var(--primary);}
 .top{display:flex;align-items:baseline;gap:10px;color:var(--ink);
@@ -155,30 +175,76 @@ vertical-align:middle;}
 .lesson-nav{display:flex;justify-content:space-between;gap:8px;
 flex-wrap:wrap;margin-top:14px;}
 .lesson-nav a{flex:1;min-width:120px;text-align:center;}
+.section-title{font-family:'Inter',sans-serif;font-weight:800;
+font-size:1.2em;margin:30px 0 2px;padding-top:18px;
+border-top:1px solid var(--line);display:flex;align-items:center;gap:8px;}
+.section-title.adults{color:var(--primary);}
+.section-title.kids{color:#DB4C77;}
 .quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
 .quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
 border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
 box-sizing:border-box;margin:6px 0;}
 .quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
+.puzzle-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.puzzle-box h3{margin-top:0;}
+.puzzle-status{font-size:.85em;color:var(--muted);margin:0 0 10px;}
+.puzzle-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;
+max-width:340px;margin:0 auto;}
+.puzzle-card{aspect-ratio:1/1;border-radius:10px;border:none;
+background:var(--primary);color:#fff;font-size:1.6em;cursor:pointer;
+display:flex;align-items:center;justify-content:center;
+transition:transform .25s ease,background .25s ease;padding:0;}
+.puzzle-card.flipped,.puzzle-card.matched{background:#fff;
+border:1px solid var(--line);color:var(--ink);}
+.puzzle-card.matched{background:#EAFBF0;border-color:var(--accent);
+opacity:.85;cursor:default;}
+.puzzle-card:disabled{cursor:default;}
+.puzzle-win{display:none;text-align:center;margin-top:12px;
+background:#EAFBF0;border-radius:10px;padding:12px;font-weight:700;color:#15803d;}
 @media print{
   .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
-  .quiz-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
+  .quiz-box,.puzzle-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
   body{background:#fff;}
   .card{box-shadow:none;border:none;}
 }
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="../../../logo.png" alt="FKC Trading Academy">
 <div><div class="bname">FKC Trading Academy</div><div class="btag">Learn · Earn · Grow</div></div></div>
+<button type="button" class="theme-toggle" id="fkcThemeToggle" title="Dark/Light mode" onclick="fkcToggleTheme()">🌓</button>
+<script>
+function fkcToggleTheme(){
+  var cur = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", cur);
+  try{ localStorage.setItem("fkc_theme", cur); }catch(e){}
+}
+</script>
 
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "headline": "Day 3 — Social Media Captions & Ad Copy: Engagement Se Conversion Tak", "name": "Day 3 — Social Media Captions & Ad Copy: Engagement Se Conversion Tak", "description": "", "learningResourceType": "Lesson", "educationalLevel": "Beginner", "inLanguage": "ur", "isPartOf": {"@type": "Course", "name": "AI Content Writing & Copywriting"}, "datePublished": "2026-08-04", "publisher": {"@type": "Organization", "name": "FKC Trading Academy"}}</script>
     <div class="top"><a href="../../../index.html">← FKC Trading Academy</a>
     <a href="../index.html" class="course-back-link">/ AI Content Writing &amp; Copywriting</a></div>
-    <span class="badge">Latest</span>
+    
     <p class="muted">✍️ AI Content Writing &amp; Copywriting · Day 03</p>
     <h1>Day 3 — Social Media Captions &amp; Ad Copy: Engagement Se Conversion Tak</h1>
+    <p class="muted" style="margin:0 0 10px;">↩️ Pichla lesson: <strong>Day 2 — AI Se Blog Articles: Draft Se Publish Tak</strong> — aaj is se aage badhte hain.</p>
     <div class="card">
       
       
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Social captions aur ad copy do alag cheez hain lekin inka maqsad ek hi hai: audience ko attract karke unse action lena. Caption wo text hai jo post ke saath jata hai (engagement ke liye), jabke ad copy wo text hai jo direct conversion ke liye design kiya gaya hai (clicks, sales, sign-ups). In dono mein hook, benefit, aur CTA ka combination hota hai—lekin ad copy mein urgency aur social proof zyada hota hai.</p><h3>Example</h3><p>Ek Instagram post ke liye caption:<br>*&quot;Ghar baithe paise kamane ka sabse aasan tareeka? 💰<br>Humara FREE ‘Content Writing Masterclass’ aaj hi join karein aur 10,000+ students ke saath seekhein! 👇<br>🔗 Link in bio&quot;*</p><p>Ad copy (Facebook/Google Ads ke liye):<br>*&quot;🚀 30 Dino Mein Freelance Content Writer Ban Jaeyein!<br>✅ 10+ Real Clients Se Kaam<br>✅ Har Mahine ₹50,000+ Kamayein<br>✅ 24/7 Support<br>👉 Abhi Apply Karen—Seats Limited Hain!&quot;*</p><h3>Practice</h3><p>Apne favourite brand ka ek Instagram post ya ad copy likhein. Use 3-4 lines mein likhein, jismein hook (attention grabber), benefit (kyun follow/click karein), aur CTA (action) ho.</p><h3>Mini Project</h3><p>Ek 3-post series banayein (ek caption + ad copy) ek hypothetical product ke liye (jaise ek online course, fitness supplement, ya local service). Har post ka alag angle ho—ek educational, ek emotional, aur ek discount-focused.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>سوشل میڈیا کیپشنز اور ایڈ کاپی دو الگ چیزیں ہیں لیکن ان کا مقصد ایک ہی ہے: سامعین کو متوجہ کرکے ان سے ایکشن لینا۔ کیپشن وہ ٹیکسٹ ہوتا ہے جو پوسٹ کے ساتھ جاتا ہے (اینگجمنٹ کے لیے)، جبکہ ایڈ کاپی وہ ٹیکسٹ ہوتا ہے جو ڈائریکٹ کنورژن کے لیے ڈیزائن کیا گیا ہوتا ہے (کلکس، سیلز، سائن اپس)۔ ان دونوں میں ہُک، بینیفٹ، اور سی ٹی اے کا کمبائنیشن ہوتا ہے—لیکن ایڈ کاپی میں ارجنسی اور سوشل پروف زیادہ ہوتا ہے۔</p><h3>Example</h3><p>ایک انسٹاگرام پوسٹ کے لیے کیپشن:<br>*&quot;گھر بیٹھے پیسے کمانے کا سب سے آسان طریقہ؟ 💰<br>ہمارا FREE ‘Content Writing Masterclass’ آج ہی جوائن کریں اور 10,000+ students کے ساتھ سیکھیں! 👇<br>🔗 Link in bio*&quot;</p><p>ایڈ کاپی (فیس بک/گوگل ایڈز کے لیے):<br>*&quot;🚀 30 دنوں میں freelance content writer بن جائیں!<br>✅ 10+ ریئل کلائنٹس سے کام<br>✅ ہر مہینے ₹50,000+ کماۓ<br>✅ 24/7 سپورٹ<br>👉 ابھی اپلائی کریں—سیٹس لیمیٹڈ ہیں!&quot;*</p><h3>Practice</h3><p>اپنے پسندیدہ برینڈ کا ایک انسٹاگرام پوسٹ یا ایڈ کاپی لکھیں۔ اسے 3-4 لائنوں میں لکھیں، جس میں ہُک (اٹینشن گریپر)، بینیفٹ (کیوں فالو/کلک کریں)، اور سی ٹی اے (ایکشن) ہو۔</p><h3>Mini Project</h3><p>ایک 3-پوسٹ سیریز بنائیں (ایک کیپشن + ایڈ کاپی) ایک ہائپوتھیٹیکل پروڈکٹ کے لیے (جیسے ایک آن لائن کورس، فٹنس سپلیمنٹ، یا لوکل سروس)۔ ہر پوسٹ کا الگ اینگل ہو—ایک ایجوکیشنل، ایک ایموشنل، اور ایک ڈسکاؤنٹ فوکسڈ۔</p></div>
       
       
@@ -205,9 +271,73 @@ box-sizing:border-box;margin:6px 0;}
         }
       }
       </script>
+      
+      <div class="puzzle-box no-print" id="pz-ai-content-writing-3">
+        <h3>🧩 Dimaghi Kasrat — Jode Milayein</h3>
+        <p class="puzzle-status" id="pz-ai-content-writing-3-status">Cards par tap karke jode (pairs) milayein.</p>
+        <div class="puzzle-grid" id="pz-ai-content-writing-3-grid"></div>
+        <div class="puzzle-win" id="pz-ai-content-writing-3-win">🎉 Shabaash! Sab jode mil gaye — thodi der aur seekhne ke liye tayyar?</div>
+      </div>
+      <script>
+      (function(){
+        var emojis = ["🍉", "🐱", "☀️", "🖊️", "🎁", "🐝"];
+        var deck = emojis.concat(emojis);
+        for (var i = deck.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var t = deck[i]; deck[i] = deck[j]; deck[j] = t;
+        }
+        var grid = document.getElementById("pz-ai-content-writing-3-grid");
+        var statusEl = document.getElementById("pz-ai-content-writing-3-status");
+        var winEl = document.getElementById("pz-ai-content-writing-3-win");
+        var flipped = [], matchedCount = 0, moves = 0, lock = false;
+        deck.forEach(function(val){
+          var b = document.createElement("button");
+          b.type = "button";
+          b.className = "puzzle-card";
+          b.setAttribute("data-val", val);
+          b.textContent = "❓";
+          b.onclick = function(){
+            if (lock || b.classList.contains("matched") || b.classList.contains("flipped")) return;
+            b.classList.add("flipped");
+            b.textContent = val;
+            flipped.push(b);
+            if (flipped.length === 2) {
+              moves++;
+              lock = true;
+              var a = flipped[0], c = flipped[1];
+              if (a.getAttribute("data-val") === c.getAttribute("data-val")) {
+                a.classList.add("matched"); c.classList.add("matched");
+                matchedCount += 2;
+                flipped = []; lock = false;
+                statusEl.textContent = "Moves: " + moves + " · " + matchedCount + "/" + deck.length + " match hue";
+                if (matchedCount === deck.length) {
+                  winEl.style.display = "block";
+                  statusEl.textContent = "Complete! Total moves: " + moves;
+                }
+              } else {
+                setTimeout(function(){
+                  a.classList.remove("flipped"); a.textContent = "❓";
+                  c.classList.remove("flipped"); c.textContent = "❓";
+                  flipped = []; lock = false;
+                }, 700);
+              }
+            }
+          };
+          grid.appendChild(b);
+        });
+      })();
+      </script>
+      
+      <div class="no-print" style="margin-top:14px;">
+        <label for="fkc-notes" class="muted" style="display:block;margin-bottom:4px;">📝 Apni Note (sirf aapke is browser mein save hoti hai):</label>
+        <textarea id="fkc-notes" data-slug="ai-content-writing" data-lesson="day-003"
+          placeholder="Yahan apni note likhein..." rows="3"
+          style="width:100%;border-radius:10px;border:1px solid #ddd;padding:8px;font-family:inherit;"
+          oninput="fkcSaveNote(this)"></textarea>
+      </div>
+    
       <div class="no-print">
         <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20AI%20Content%20Writing%20%26%20Copywriting%20%28Day%2003%29%0A%0ADay%203%20%E2%80%94%20Social%20Media%20Captions%20%26%20Ad%20Copy%3A%20Engagement%20Se%20Conversion%20Tak%0A%0AConcept%3A%0ASocial%20captions%20aur%20ad%20copy%20do%20alag%20cheez%20hain%20lekin%20inka%20maqsad%20ek%20hi%20hai%3A%20audience%20ko%20attract%20karke%20unse%20action%20lena.%20Caption%20wo%20text%20hai%20jo%20post%20ke%20saath%20jata%20hai%20%28engagement%20ke%20liye%29%2C%20jabke%20ad%20copy%20wo%20text%20hai%20jo%20direct%20conversion%20ke%20liye%20design%20kiya%20gaya%20hai%20%28clicks%2C%20sales%2C%20sign-ups%29.%20In%20dono%20mein%20hook%2C%20benefit%2C%20aur%20CTA%20ka%20combination%20hota%20hai%E2%80%94lekin%20ad%20copy%20mein%20urgency%20aur%20social%20proof%20zyada%20hota%20hai.%0A%0AExample%3A%0AEk%20Instagram%20post%20ke%20liye%20caption%3A%0A%2A%22Ghar%20baithe%20paise%20kamane%20ka%20sabse%20aasan%20tareeka%3F%20%F0%9F%92%B0%0AHumara%20FREE%20%E2%80%98Content%20Writing%20Masterclass%E2%80%99%20aaj%20hi%20join%20karein%20aur%2010%2C000%2B%20students%20ke%20saath%20seekhein%21%20%F0%9F%91%87%0A%F0%9F%94%97%20Link%20in%20bio%22%2A%0A%0AAd%20copy%20%28Facebook/Google%20Ads%20ke%20liye%29%3A%0A%2A%22%F0%9F%9A%80%2030%20Dino%20Mein%20Freelance%20Content%20Writer%20Ban%20Jaeyein%21%0A%E2%9C%85%2010%2B%20Real%20Clients%20Se%20Kaam%0A%E2%9C%85%20Har%20Mahine%20%E2%82%B950%2C000%2B%20Kamayein%0A%E2%9C%85%2024/7%20Support%0A%F0%9F%91%89%20Abhi%20Apply%20Karen%E2%80%94Seats%20Limited%20Hain%21%22%2A%0A%0APractice%3A%0AApne%20favourite%20brand%20ka%20ek%20Instagram%20post%20ya%20ad%20copy%20likhein.%20Use%203-4%20lines%20mein%20likhein%2C%20jismein%20hook%20%28attention%20grabber%29%2C%20benefit%20%28kyun%20follow/click%20karein%29%2C%20aur%20CTA%20%28action%29%20ho.%0A%0AMini%20Project%3A%0AEk%203-post%20series%20banayein%20%28ek%20caption%20%2B%20ad%20copy%29%20ek%20hypothetical%20product%20ke%20liye%20%28jaise%20ek%20online%20course%2C%20fitness%20supplement%2C%20ya%20local%20service%29.%20Har%20post%20ka%20alag%20angle%20ho%E2%80%94ek%20educational%2C%20ek%20emotional%2C%20aur%20ek%20discount-focused.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
-        <a class="btn alt" href="https://t.me/share/url?url=&text=Day%203%20%E2%80%94%20Social%20Media%20Captions%20%26%20Ad%20Copy%3A%20Engagement%20Se%20Conversion%20Tak%20%E2%80%94%20FKC%20Trading%20Academy" target="_blank" rel="noopener">✈️ Telegram par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
         <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
@@ -217,15 +347,65 @@ box-sizing:border-box;margin:6px 0;}
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <div class="lesson-nav"><a class="btn alt" href="2026-08-03-day-002.html">← Day 2 — AI Se Blog Articles: Draft Se Publish Tak</a><span></span></div>
+    <div class="lesson-nav"><a class="btn alt" href="2026-08-03-day-002.html">← Day 2 — AI Se Blog Articles: Draft Se Publish Tak</a><a class="btn alt" href="2026-08-08-day-004.html">Day 4 — **Landing Page Ka Magic: Trust Badhao, Conversions Badhao** →</a></div>
     <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
+    
     
     <div class="no-print" style="margin:18px 0;text-align:center;">
       <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5639688573760714"
         data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
       <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
-    <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
+    
+    <div class="daily-motivation" style="max-width:640px;margin:20px auto;padding:16px 20px;
+      background:linear-gradient(135deg,#fff7e6,#fef0f0);border-radius:14px;border:1px solid #f5e2c8;
+      text-align:center;">
+      <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
+        margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
+      <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
+        “Khud par yaqeen rakho, mehnat jari rakho — nateeja khud ba khud sath dega.”
+      </p>
+    </div>
+    <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;
+      background:linear-gradient(145deg,#f7f9fc,#eef2f9);border-radius:16px;border:1px solid #e6e9f0;
+      text-align:center;">
+      <p style="font-size:13px;letter-spacing:.03em;text-transform:uppercase;color:var(--muted);
+        margin:0 0 10px;font-weight:700;">✉️ Founder ki taraf se</p>
+      <p style="font-size:15px;line-height:1.7;color:#2a2f3a;margin:0 0 14px;">
+        Hamara maqsad sirf lessons post karna nahi — har us Pakistani tak muft, practical
+        taleem pohchana hai jo seekhna chahta hai lekin resources ya waqt nahi rakhta.
+        FKC Trading Academy ka vision hai: <b>roz thora seekho, mustaqil mehnat karo,
+        aur apni zindagi khud badlo.</b> Mission simple hai — koi bhi course, koi bhi fee
+        nahi, sirf aap ka irada.
+      </p>
+      <p style="font-size:13px;color:var(--muted);margin:0;">— Fazul Khan Chandio, Founder &amp; CEO</p>
+    </div><div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
+    <script>
+    (function(){
+      try {
+        localStorage.setItem('fkc_last_lesson', JSON.stringify({
+          slug: "ai-content-writing",
+          courseName: "AI Content Writing & Copywriting",
+          courseIcon: "\u270d\ufe0f",
+          title: "Day 3 \u2014 Social Media Captions & Ad Copy: Engagement Se Conversion Tak",
+          href: 'courses/ai-content-writing/posts/2026-08-04-day-003.html',
+          day: 3
+        }));
+      } catch (e) {}
+      var ta = document.getElementById('fkc-notes');
+      if (ta) {
+        try {
+          var saved = localStorage.getItem('fkc_note_' + ta.dataset.slug + '_' + ta.dataset.lesson);
+          if (saved) ta.value = saved;
+        } catch (e) {}
+      }
+    })();
+    function fkcSaveNote(el) {
+      try {
+        localStorage.setItem('fkc_note_' + el.dataset.slug + '_' + el.dataset.lesson, el.value);
+      } catch (e) {}
+    }
+    </script>
     </div><footer>FKC Trading Academy — daily lessons, automatically updated</footer></body></html><script>
 (function(){
   function getProgress(){
@@ -266,6 +446,25 @@ box-sizing:border-box;margin:6px 0;}
     }
     var wa = "https://wa.me/923333909816?text=" + encodeURIComponent(text);
     window.open(wa, "_blank");
+  };
+
+  window.fkcShowSyncCode = function(){
+    if(!window.fkcSyncProgressUp){ alert("Sync abhi ready nahi (Firebase load ho raha hai), thodi dair mein try karein."); return; }
+    var code = Math.random().toString(36).substring(2,8).toUpperCase();
+    window.fkcSyncProgressUp(code, function(ok){
+      if(ok) alert("Yeh code doosri device par 'Code Se Wapas Layein' mein daalein:\n\n" + code);
+      else alert("Sync fail ho gaya, dobara try karein.");
+    });
+  };
+
+  window.fkcEnterSyncCode = function(){
+    if(!window.fkcSyncProgressDown){ alert("Sync abhi ready nahi (Firebase load ho raha hai), thodi dair mein try karein."); return; }
+    var code = prompt("Wo code daalein jo pehli device par bana tha:");
+    if(!code || !code.trim()) return;
+    window.fkcSyncProgressDown(code.trim().toUpperCase(), function(ok){
+      if(ok){ alert("Progress wapas aa gayi ✅"); location.reload(); }
+      else alert("Yeh code nahi mila, dobara check karein.");
+    });
   };
 
   document.addEventListener("DOMContentLoaded", function(){
@@ -349,6 +548,27 @@ box-sizing:border-box;margin:6px 0;}
           created: firebase.firestore.FieldValue.serverTimestamp()
         });
       }catch(e){}
+    };
+
+    window.fkcSyncProgressUp = function(code, onDone){
+      try{
+        var data = localStorage.getItem("fkc_progress") || "{}";
+        window.fkcDb.collection("progress_sync").doc(code).set({
+          progress: data, updated: firebase.firestore.FieldValue.serverTimestamp()
+        }).then(function(){ if(onDone) onDone(true); })
+          .catch(function(){ if(onDone) onDone(false); });
+      }catch(e){ if(onDone) onDone(false); }
+    };
+
+    window.fkcSyncProgressDown = function(code, onDone){
+      try{
+        window.fkcDb.collection("progress_sync").doc(code).get().then(function(doc){
+          if(doc.exists && doc.data().progress){
+            localStorage.setItem("fkc_progress", doc.data().progress);
+            if(onDone) onDone(true);
+          } else { if(onDone) onDone(false); }
+        }).catch(function(){ if(onDone) onDone(false); });
+      }catch(e){ if(onDone) onDone(false); }
     };
   }catch(e){}
 })();
