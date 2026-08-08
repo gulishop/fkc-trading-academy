@@ -4610,6 +4610,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 6,
+      "id": "day-006",
+      "date": "2026-08-08",
+      "title": "Day 6 — **Store Ko Optimize Karna: Conversion Rate Badhane Ke 5 Must-Have Steps**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke kaise apne store ko aise optimize karein jo visitors ko customers mein badal de. Basics setup ke baad abhi focus hota hai: product pages, SEO, trust badhana, aur checkout process ko smooth banana. Yeh hee woh cheez hai jo 80% beginners chhod dete hain aur isse hi unke sales ka 50% loss hota hai."
+        ],
+        [
+          "Example",
+          "Ek student ne Etsy par \"Cat Lover Hoodie\" upload kiya. Usne product title mein sirf \"Cat Lover Hoodie\" likha, description mein 2 lines likhi, aur 1 hi photo use ki. Result: 100 views par 0 sales. Phir usne title ko \"Soft Unisex Cat Lover Hoodie - Funny Cat Design - Gift for Cat Owners\" kar diya, description mein 5 bullet points add kiye, aur 3 high-quality mockups upload kiye. Result: 100 views par 8 sales."
+        ],
+        [
+          "Practice",
+          "Apne ek existing product page ko lein aur usko optimize karein:\n1. Title ko SEO-friendly banayein (keywords include karein)\n2. Description mein 5-7 bullet points add karein (features + benefits)\n3. 3 alag-alag mockups upload karein (front, back, worn)\n4. Price ko $24.99 se $29.99 karke test karein (agar possible ho)"
+        ],
+        [
+          "Mini Project",
+          "Ek \"Before vs After\" comparison post taiyar karein:\n- Ek screenshot lijiye apne product page ka (current state)\n- Uske neeche ek screenshot lijiye optimized version ka\n- 3 bullet points likhein ke kya improvements kiye gaye hain\n- Is post ko apne Instagram/Facebook par share karein (community se feedback lo)"
+        ]
+      ],
+      "answer_key": "seo keywords, bullet points, high-quality mockups, price testing",
+      "translations": {
+        "ur": {
+          "title": "دن ٦ — **سٹور کو آپٹیمائز کرنا: کنورژن ریٹ بڑھانے کے ٥ لازمی اقدامات**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "آج ہم سیکھیں گے کہ کیسے اپنے سٹور کو اس طرح آپٹیمائز کریں جو وزیٹرز کو کسٹمرز میں بدل دے۔ بیسک سیٹ اپ کے بعد ابھی فوکس ہوتا ہے: پروڈکٹ پیجز، ایس ای او، ٹرسٹ بڑھانا، اور چیک آؤٹ پروسیس کو ہموار بنانا۔ یہی وہ چیز ہے جو ٨٠ فیصد بیگنرز چھوڑ دیتے ہیں اور اسی سے ان کی سیلز کا ٥٠ فیصد نقصان ہوتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک طالب علم نے ایٹسی پر \"کیٹ لوور ہُوڈی\" اپ لوڈ کی۔ اس نے پروڈکٹ ٹائٹل میں صرف \"کیٹ لوور ہُوڈی\" لکھا، ڈسکرپشن میں دو لائنیں لکھی، اور ایک ہی فوٹو استعمال کی۔ نتیجہ: ١٠٠ ویوز پر صفر سیلز۔ پھر اس نے ٹائٹل کو \"سوفٹ یونی سیکس کیٹ لوور ہُوڈی — فنّی کیٹ ڈیزائن — گِفٹ فار کیٹ اونرز\" کر دیا، ڈسکرپشن میں ٥ بلٹ پوائنٹس شامل کیے، اور ٣ ہائی کوالٹی ماک اپس اپ لوڈ کیے۔ نتیجہ: ١٠٠ ویوز پر ٨ سیلز۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے ایک موجودہ پروڈکٹ پیج کو لیں اور اسے آپٹیمائز کریں:\n١۔ ٹائٹل کو ایس ای او فرینڈلی بنائیں (کی ورڈز شامل کریں)\n٢۔ ڈسکرپشن میں ٥ سے ٧ بلٹ پوائنٹس شامل کریں (فیچرز + بینیفٹس)\n٣۔ ٣ الگ الگ ماک اپس اپ لوڈ کریں (سامنے، پیچھے، پہنا ہوا)\n٤۔ قیمت کو ٢٤.٩٩ ڈالر سے ٢٩.٩٩ ڈالر کر کے ٹیسٹ کریں (اگر ممکن ہو)"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک \"بلفورس ویز آفٹر\" کمپیرسن پوسٹ تیار کریں:\n— اپنے پروڈکٹ پیج کا ایک اسکرین شاٹ لیں (موجودہ حالت)\n— اس کے نیچے آپٹیمائزڈ ورژن کا اسکرین شاٹ لیں\n— ٣ بلٹ پوائنٹس لکھیں کہ کیا بہتری کی گئی ہے\n— اس پوسٹ کو اپنے انسٹاگرام/فیس بک پر شیئر کریں (کمیونٹی سے فیڈبیک لیں)"
+            }
+          ]
+        }
+      }
     }
   ],
   "cpp-daily-coding": [
