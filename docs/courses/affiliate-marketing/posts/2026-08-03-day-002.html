@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-05T22:09:17.042082";
+  var FKC_BUILD = "2026-08-08T21:24:25.034294";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -230,7 +230,21 @@ function fkcToggleTheme(){
       
       
       
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
       <div class="lang-content" data-lang="rm"><p>**Day 2 — Affiliate Links Placement: Kahan aur Kaise Lagayein?**</p><h3>Concept</h3><p>Affiliate links ko sahi jagah par place karna zaroori hai—nahi toh traffic bhi hai aur clicks bhi nahi. Links ko natural tarike se content mein integrate karna chahiye, taake readers ko lagay na ki tum unko &quot;bech rahe ho&quot;. Sabse effective places hain: product reviews, comparison posts, &quot;best of&quot; lists, aur &quot;how-to&quot; guides. Har platform (blog, YouTube, social media) ke liye placement strategy alag hoti hai.</p><h3>Example</h3><p>1.</p><h3>Blog/Article</h3><p>Ek &quot;Top 5 Budget Smartphones 2024&quot; post mein har product ke naam ke neeche affiliate link lagao, lekin &quot;Check Price&quot; ya &quot;Buy Now&quot; button ke saath.<br>2.</p><h3>YouTube</h3><p>Video description mein sabse pehle affiliate links dalo (Amazon Associates ke liye), phir aur details. Video ke do minute ke baad bhi link mention kar sakte ho.<br>3.</p><h3>Instagram/Facebook</h3><p>Caption mein &quot;Link in bio&quot; use karo, ya phir reel ke description mein link add karo (agar allowed ho).</p><h3>Practice</h3><p>Apne ek existing blog post ya social media post ko edit karo aur **2-3 natural affiliate links** add karo. Links ko aise place karo jaise tum kisi dost ko recommend kar rahe ho—na ki &quot;hard sell&quot; kar rahe ho.</p><h3>Mini Project</h3><p>Ek **100-150 words ka micro-blog post** likho jisme ek product recommend karna hai. Post mein:<br>- Product ka naam aur ek short review.<br>- &quot;Check Price&quot; button (affiliate link).<br>- Disclosure line add karo (e.g., &quot;Yeh post mein affiliate links hain&quot;).</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><p>**روز دوم — ایفلی ایٹ لنکس کی پوزیشن: کہاں اور کیسے لگائیں؟**</p><h3>تصور</h3><p>ایفلی ایٹ لنکس کو صحیح جگہ پر پلايس کرنا ضروری ہے—ورنہ ٹریفک بھی ہے مگر کلکس نہیں۔ لنکس کو نیچرل طریقے سے کنیٹ میں انٹیگریٹ کرنا چاہیے، تاکہ ریڈرز کو لگے نہ کہ تم ان کو &#x27;بیچ رہے ہو&#x27;۔ سب سے موثر جگہیں ہیں: پراڈکٹ ریویوز، کمپئیرسن پوسٹس، &#x27;بہترین&#x27; لسٹس، اور &#x27;ہاؤ ٹو&#x27; گائیڈز۔ ہر پلیٹ فارم (بلاگ، یوٹیوب، سوشل میڈیا) کے لیے پلايسمنٹ سٹریٹیجی الگ ہوتی ہے۔</p><h3>مثال</h3><p>1.<br>بلاگ/آرٹیکل: ایک &#x27;ٹاپ 5 بجٹ سمارٹ فونز 2024&#x27; پوسٹ میں ہر پراڈکٹ کے نام کے نیچے ایفلی ایٹ لنک لگاؤ، لیکن &#x27;چیک پرائس&#x27; یا &#x27;بائے ناؤ&#x27; بٹن کے ساتھ۔<br>2.<br>یوٹیوب: ویڈیو ڈسکریپشن میں سب سے پہلے ایفلی ایٹ لنکس ڈالو (ایمیزون ایسوسی ایٹس کے لیے)، پھر مزید ڈٹیلز۔ ویڈیو کے دو منٹ کے بعد بھی لنک مینشن کر سکتے ہو۔<br>3.<br>انسٹاگرام/فیس بک: کیپشن میں &#x27;لنک ان بایو&#x27; یوöse کرو، یا پھر ریل کی ڈسکریپشن میں لنک ایڈ کرو (اگر الاؤڈ ہو)۔</p><h3>مشق</h3><p>اپنے ایک ایکسٹنگ بلاگ پوسٹ یا سوشل میڈیا پوسٹ کو ایڈٹ کرو اور **2-3 نیچرل ایفلی ایٹ لنکس** ایڈ کرو۔ لنکس کو ایسے پلايس کرو جیسے تم کسی دوست کو ریکومینڈ کر رہے ہو—نا کہ &#x27;ہارڈ سیل&#x27; کر رہے ہو۔</p><h3>مینی پراجیکٹ</h3><p>ایک **100-150 الفاظ کا مائیکرو بلاگ پوسٹ** لکھو جس میں ایک پراڈکٹ ریکومینڈ کرنا ہے۔ پوسٹ میں:<br>- پراڈکٹ کا نام اور ایک شارٹ ریویو۔<br>- &#x27;چیک پرائس&#x27; بٹن (ایفلی ایٹ لنک)۔<br>- ڈسکلوژر لائن ایڈ کرو (e.g., &#x27;یہ پوسٹ میں ایفلی ایٹ لنکس ہیں&#x27;)۔</p></div>
       
       
@@ -342,7 +356,30 @@ function fkcToggleTheme(){
         data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
       <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
-    <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
+    
+    <div class="daily-motivation" style="max-width:640px;margin:20px auto;padding:16px 20px;
+      background:linear-gradient(135deg,#fff7e6,#fef0f0);border-radius:14px;border:1px solid #f5e2c8;
+      text-align:center;">
+      <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
+        margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
+      <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
+        “Khud par yaqeen rakho, mehnat jari rakho — nateeja khud ba khud sath dega.”
+      </p>
+    </div>
+    <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;
+      background:linear-gradient(145deg,#f7f9fc,#eef2f9);border-radius:16px;border:1px solid #e6e9f0;
+      text-align:center;">
+      <p style="font-size:13px;letter-spacing:.03em;text-transform:uppercase;color:var(--muted);
+        margin:0 0 10px;font-weight:700;">✉️ Founder ki taraf se</p>
+      <p style="font-size:15px;line-height:1.7;color:#2a2f3a;margin:0 0 14px;">
+        Hamara maqsad sirf lessons post karna nahi — har us Pakistani tak muft, practical
+        taleem pohchana hai jo seekhna chahta hai lekin resources ya waqt nahi rakhta.
+        FKC Trading Academy ka vision hai: <b>roz thora seekho, mustaqil mehnat karo,
+        aur apni zindagi khud badlo.</b> Mission simple hai — koi bhi course, koi bhi fee
+        nahi, sirf aap ka irada.
+      </p>
+      <p style="font-size:13px;color:var(--muted);margin:0;">— Fazul Khan Chandio, Founder &amp; CEO</p>
+    </div><div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     <script>
     (function(){
       try {
