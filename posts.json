@@ -6796,6 +6796,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 4,
+      "id": "day-004",
+      "date": "2026-08-08",
+      "title": "Day 4 — **Risk Management: Apne Investments Ko Kaise Bachaen?**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Risk management trading ka sabse zaroori hissa hai. Yeh samajhna hai ke market unpredictable hai—chahe kitna bhi strong analysis kar lo, loss hone ka chance hamesha rehta hai. Risk management ka matlab hai apne capital ko protect karna, over-trading se bachna, aur har trade ke liye clear rules set karna. Jaise ke \"1-2% se zyada capital ek trade mein mat lagana\" ya \"stop-loss zarur lagana\"."
+        ],
+        [
+          "Example",
+          "Maana aapne 10,000 ka capital hai. Rule yeh hai ke ek trade mein max 2% (200 rupees) ka risk lena hai. Agar aap 100 rupees ka share khareed rahe hain, toh aapka stop-loss 80 rupees par hoga (100-80=20, 20/100=20% loss, lekin capital ka sirf 2% hi lag raha hai)."
+        ],
+        [
+          "Practice",
+          "Apne trading account ka capital note karein. Ab ek simple rule set karein: \"Ek trade mein capital ka 1.5% se zyada risk nahi lena\". Ab koi 3-4 stocks ko shortlist karein aur har ek ke liye possible stop-loss calculate karein."
+        ],
+        [
+          "Mini Project",
+          "Ek \"Risk Management Plan\" banayein:\n1. Total capital = ______\n2. Max risk per trade (e.g., 1.5%) = ______\n3. 3 stocks select karein aur har ek ke liye stop-loss price likhein.\n4. Agar aapka 50,000 ka capital hai, toh har trade ka max loss = 750 rupees hoga."
+        ]
+      ],
+      "answer_key": "capital note karein, 1.5% calculate karein, stop-loss set karein, plan document karein",
+      "translations": {
+        "ur": {
+          "title": "دن ۴ — **رسک مینیجمنٹ: اپنے انویسٹمنٹس کو کیسے بچائیں؟**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "رسک مینیجمنٹ ٹریڈنگ کا سب سے ضروری حصہ ہے۔ یہ سمجھنا ہے کہ مارکیٹ غیر متوقع ہوتی ہے—چاہے کتنا ہی مضبوط تجزیہ کر لیا جائے، نقصان ہونے کا امکان ہمیشہ رہتا ہے۔ رسک مینیجمنٹ کا مطلب ہے اپنے کیپیٹل کو محفوظ رکھنا، اوور ٹریڈنگ سے بچنا، اور ہر ٹریڈ کے لیے واضح قواعد طے کرنا۔ جیسے کہ ’ایک ٹریڈ میں ۱-۲ فیصد سے زیادہ کیپیٹل مت لگائیں‘ یا ’سٹاپ لاس ضرور لگائیں‘۔"
+            },
+            {
+              "label": "مثال",
+              "content": "مانا آپ کے پاس ۱۰،۰۰۰ کا کیپیٹل ہے۔ اصول یہ ہے کہ ایک ٹریڈ میں زیادہ سے زیادہ ۲ فیصد (۲۰۰ روپے) کا رسک لینا ہے۔ اگر آپ ۱۰۰ روپے کا شیئر خرید رہے ہیں، تو آپ کا سٹاپ لاس ۸۰ روپے پر ہوگا (۱۰۰-۸۰=۲۰، ۲۰/۱۰۰=۲۰ فیصد نقصان، لیکن کیپیٹل کا صرف ۲ فیصد ہی لگ رہا ہے)।"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے ٹریڈنگ اکاؤنٹ کے کیپیٹل کو نوٹ کریں۔ اب ایک سادہ اصول طے کریں: ’ایک ٹریڈ میں کیپیٹل کا ۱.۵ فیصد سے زیادہ رسک نہیں لینا‘۔ اب کوئی ۳-۴ اسٹاکس کو شارٹ لسٹ کریں اور ہر ایک کے لیے ممکنہ سٹاپ لاس کا حساب لگائیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک ’رسک مینیجمنٹ پلان‘ بنائیں:\n۱۔ کل کیپیٹل = ______\n۲۔ ہر ٹریڈ پر زیادہ سے زیادہ رسک (مثال کے طور پر ۱.۵ فیصد) = ______\n۳۔ ۳ اسٹاکس منتخب کریں اور ہر ایک کے لیے سٹاپ لاس قیمت لکھیں۔\n۴۔ اگر آپ کا کیپیٹل ۵۰،۰۰۰ ہے، تو ہر ٹریڈ کا زیادہ سے زیادہ نقصان ۷۵۰ روپے ہوگا۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "tiktok-growth": [
