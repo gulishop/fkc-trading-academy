@@ -7336,6 +7336,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 9,
+      "id": "day-009",
+      "date": "2026-08-08",
+      "title": "Day 9 — **\"TikTok Par AI Tools Se Content Ko Kaise Optimize Karein\"**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "AI tools se aapka content aur bhi engaging, personalized aur viral ban sakta hai. AI se aap trending topics predict kar sakte hain, captions generate kar sakte hain, aur even apne videos ke performance ka analysis bhi kar sakte hain. Yeh tools beginners ke liye bhi accessible hain aur time bhi bachate hain."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Trending Topics Prediction",
+          "AI tools jaise *Google Trends* ya *TikTok Creative Center* se aap dekh sakte hain ki konsa topic ab trend kar raha hai.\n2."
+        ],
+        [
+          "Auto-Caption Generation",
+          "Tools jaise *CapCut* ya *Descript* se aap apne voiceover ko text mein convert kar sakte hain aur phir usko engaging captions mein badal sakte hain.\n3."
+        ],
+        [
+          "Performance Analysis",
+          "AI-powered analytics tools (jaise *SparkToro* ya *Hootsuite*) se aap dekh sakte hain ki aapke content ka engagement kaha par high hai aur kaha par improvement ki zarurat hai."
+        ],
+        [
+          "Practice",
+          "Aaj hi *CapCut* ya *Canva* mein jayein aur kisi bhi trending sound par ek 15-second ka video banayein. AI se auto-captioning ka istemal karein aur caption ko manually edit karke aur engaging banayein."
+        ],
+        [
+          "Mini Project",
+          "Ek *AI-generated content calendar* banayein. Iske liye:\n- TikTok Creative Center se top 5 trending topics nikal lijiye.\n- Har topic ke liye 3-5 content ideas likhiye (jaise challenges, tips, ya storytelling).\n- Har idea ke liye ek draft caption AI se generate kar lijiye aur usko manually edit karke finalize kijiye."
+        ]
+      ],
+      "answer_key": "trending topics, auto-captioning, performance analysis, content calendar",
+      "translations": {
+        "ur": {
+          "title": "دن ۹ — **ٹِک ٹاک پر اے آئی ٹولز سے کونٹینٹ کو کیسے آپٹیمائز کریں**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "اے آئی ٹولز سے آپ کا کونٹینٹ اور بھی اینگیجنگ، پرسنلائزڈ اور وائرل بن سکتا ہے۔ اے آئی سے آپ ٹرینڈنگ ٹاپکس کی پیشین گوئی کر سکتے ہیں، کیپشنز جنریٹ کر سکتے ہیں، اور یہاں تک کہ اپنے ویڈیوز کی پرفارمنس کا تجزیہ بھی کر سکتے ہیں۔ یہ ٹولز بیگنرز کے لیے بھی قابل رسائی ہیں اور وقت بھی بچاتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔\nٹرینڈنگ ٹاپکس کی پیشین گوئی: اے آئی ٹولز جیسے *گوگل ٹرینڈز* یا *ٹِک ٹاک کریئٹیو سینٹر* سے آپ دیکھ سکتے ہیں کہ کون سا ٹاپک اب ٹرینڈ کر رہا ہے۔\n۲۔\nآٹو کیپشن جنریشن: ٹولز جیسے *کیپ کٹ* یا *ڈسکریپٹ* سے آپ اپنے وائس اوور کو ٹیکسٹ میں کنورٹ کر سکتے ہیں اور پھر اسے اینگیجنگ کیپشنز میں بدل سکتے ہیں۔\n۳۔\nپرفارمنس اینالسسز: اے آئی پاورڈ اینالٹکس ٹولز (جیسے *اسپارک ٹورو* یا *ہوٹ سویٹ*) سے آپ دیکھ سکتے ہیں کہ آپ کے کونٹینٹ کا اینگیجمنٹ کہاں پر زیادہ ہے اور کہاں پر بہتری کی ضرورت ہے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "آج ہی *کیپ کٹ* یا *کینوا* میں جائیں اور کسی بھی ٹرینڈنگ ساؤنڈ پر ایک ۱۵ سیکنڈ کا ویڈیو بنائیں۔ اے آئی سے آٹو کیپشننگ کا استعمال کریں اور کیپشن کو مینوئلی ایڈٹ کر کے اور اینگیجنگ بنائیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک *اے آئی جنریٹڈ کونٹینٹ کیلنڈر* بنائیں۔ اس کے لیے:\n- ٹِک ٹاک کریئٹیو سینٹر سے ٹاپ ۵ ٹرینڈنگ ٹاپکس نکال لیں۔\n- ہر ٹاپک کے لیے ۳ سے ۵ کونٹینٹ آئیڈیاز لکھیں (جیسے چیلنجز، ٹپس، یا اسٹوری ٹیلنگ)۔\n- ہر آئیڈیا کے لیے ایک ڈرافٹ کیپشن اے آئی سے جنریٹ کریں اور اسے مینوئلی ایڈٹ کر کے فائنلائز کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "blogging-adsense": [
