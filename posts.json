@@ -1965,6 +1965,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 11,
+      "id": "day-011",
+      "date": "2026-08-09",
+      "title": "Day 11 — **Live Trading Ki Pehli Kadam: Real Account Se Pehla Trade**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Ab tak aap demo account par practice kar chuke hain. Ab asli paisa lagane ka waqt hai! Live trading mein sabse pehle yeh samajhna zaroori hai ke real account mein emotions, slippage aur market conditions real account ke hisaab se badal jati hain. Pehle trade se hi discipline aur risk management ka poora dhyaan rakhna hoga—ek chhota trade karke shuru karen, confidence build karen."
+        ],
+        [
+          "Example",
+          "Maana aapne apni strategy se EUR/USD pair par 1.1000 par buy order lagaya hai (lot size 0.01). Demo mein aapka SL 1.0950 aur TP 1.1050 tha. Live account mein:\n1. Order place karne se pehle double-check karen ke SL/TP sahi hai.\n2. Spread check karen (agar 1 pip se zyada ho to adjust karen).\n3. Trade ke baad emotions ko ignore karke plan par chalein—agar SL hit ho to next trade par focus karen."
+        ],
+        [
+          "Practice",
+          "Apna live account open karen aur **0.01 lot size** ke saath **1 trade** place karen (kisi bhi pair par). SL/TP set karen aur **screenshot** lekar trading journal mein note karen."
+        ],
+        [
+          "Mini Project",
+          "Ek **1-week trading plan** banayein jismein:\n- 3 trades ka target ho (ek buy, ek sell, ek range-bound).\n- Har trade ke liye SL/TP aur lot size pre-define ho.\n- Plan ko screenshot ke saath save karen aur week ke end par analyze karen."
+        ]
+      ],
+      "answer_key": "trade screenshot, sl/tp check, emotions control, plan follow",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۱ — لائیو ٹریڈنگ کے پہلے قدم: ریئل اکاؤنٹ سے پہلا ٹریڈ",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "اب تک آپ ڈیمو اکاؤنٹ پر پریکٹس کر چکے ہیں۔ اب اصلی پیسہ لگانے کا وقت ہے! لائیو ٹریڈنگ میں سب سے پہلے یہ سمجھنا ضروری ہے کہ ریئل اکاؤنٹ میں ایموشنز، سلپیج اور مارکیٹ کنڈیشنز ڈیمو اکاؤنٹ کے حساب سے بدل جاتی ہیں۔ پہلے ٹریڈ سے ہی ڈسپلن اور رسک مینجمنٹ کا پورا دھیان رکھنا ہوگا—ایک چھوٹا ٹریڈ کرکے شروعات کریں، کنفیڈنس بلڈ کریں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "مانا آپ نے اپنی اسٹریٹیجی سے EUR/USD جوڑے پر ۱.۱۰۰۰ پر بائی آرڈر لگایا ہے (لاٹ سائز ۰.۰۱)۔ ڈیمو میں آپ کا SL ۱.۰۹۵۰ اور TP ۱.۱۰۵۰ تھا۔ ریئل اکاؤنٹ میں:\n۱۔ آرڈر پلیس کرنے سے پہلے ڈبل چیک کریں کہ SL/TP صحیح ہے۔\n۲۔ سپریڈ چیک کریں (اگر ۱ پپ سے زیادہ ہو تو ایڈجسٹ کریں)۔\n۳۔ ٹریڈ کے بعد ایموشنز کو اگنور کرکے پلان پر چلیں—اگر SL ہٹ ہو تو اگلے ٹریڈ پر فوکس کریں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنا لائیو اکاؤنٹ کھولیں اور ۰.۰۱ لاٹ سائز کے ساتھ ۱ ٹریڈ پلیس کریں (کسی بھی جوڑے پر)۔ SL/TP سیٹ کریں اور اسکرین شاٹ لے کر ٹریڈنگ جرنل میں نوٹ کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک ہفتے کا ٹریڈنگ پلان بنائیں جس میں:\n- ۳ ٹریڈز کا ہدف ہو (ایک بائی، ایک سیل، ایک رینج باونڈ)۔\n- ہر ٹریڈ کے لیے SL/TP اور لاٹ سائز پہلے سے طے ہو۔\n- پلان کو اسکرین شاٹ کے ساتھ محفوظ کریں اور ہفتے کے آخر پر تجزیہ کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "amazon-fba": [
