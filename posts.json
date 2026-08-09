@@ -3264,6 +3264,72 @@
           ]
         }
       }
+    },
+    {
+      "day": 7,
+      "id": "day-007",
+      "date": "2026-08-09",
+      "title": "Day 7 — **Cash on Delivery (COD) Orders: Pakistan Mein Risks Se Kaise Bachain?**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "COD Pakistan mein dropshipping ka common option hai, lekin fraud orders aur high return rates ka khauf hota hai. Aaj seekhein ke COD orders ko kaise verify karein, trusted areas se orders ko prioritize karein, aur fraud se kaise bachein. Local suppliers ya cash pickup options bhi explore karein."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Order Verification",
+          "Agar koi customer Lahore se order karta hai lekin supplier Karachi se hai, toh COD reject kar dein.\n2."
+        ],
+        [
+          "Cash Pickup Option",
+          "Local suppliers ke saath baat karein ke wo cash pickup offer kar sakte hain (fraud risk kam ho jata hai)."
+        ],
+        [
+          "Practice",
+          "Apne store ke 3 recent COD orders ko check karo:\n- Customer ka city supplier ke city se match karta hai?\n- Order amount Rs. 5,000+ hai? (High-value orders fraud ke liye attractive hote hain)"
+        ],
+        [
+          "Mini Project",
+          "Ek simple COD policy draft karo:\n1. \"COD sirf Lahore, Karachi, Islamabad ke liye available hai.\"\n2. \"Rs. 3,000+ orders par hi COD.\""
+        ]
+      ],
+      "answer_key": "city match, high-value fraud, local pickup, policy draft",
+      "translations": {
+        "ur": {
+          "title": "دن 7 — **کیش آن ڈیلیوری (سی او ڈی) آرڈرز: پاکستان میں رسکس سے کیسے بچیں؟**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "سی او ڈی پاکستان میں ڈراپ شپنگ کا ایک عام آپشن ہے، لیکن فراڈ آرڈرز اور ہائی ریٹرن ریٹس کا خوف لاحق رہتا ہے۔ آج سیکھیں کہ سی او ڈی آرڈرز کو کیسے ویریفائی کریں، ٹرسٹڈ ایریاز سے آرڈرز کو ترجیح دیں، اور فراڈ سے کیسے بچیں۔ لوکل سپلائرز یا کیش پک اپ آپشنز بھی ایکسپلور کریں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1۔ اگر کوئی کسٹمر لاہور سے آرڈر کرتا ہے لیکن سپلائر کراچی میں ہے، تو سی او ڈی مسترد کر دیں۔\n2۔ لوکل سپلائرز کے ساتھ بات کریں کہ وہ کیش پک اپ کی پیشکش کر سکتے ہیں (فراڈ رسک کم ہو جاتا ہے)।"
+            },
+            {
+              "label": "آرڈر ویریفیکیشن",
+              "content": "اگر کوئی کسٹمر لاہور سے آرڈر کرتا ہے لیکن سپلائر کراچی میں ہے، تو سی او ڈی مسترد کر دیں۔"
+            },
+            {
+              "label": "کیش پک اپ آپشن",
+              "content": "لوکل سپلائرز کے ساتھ رابطہ کریں کہ کیا وہ کیش پک اپ کی سہولت فراہم کر سکتے ہیں، جس سے فراڈ کا رسک کم ہو جاتا ہے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے اسٹور کے تین حالیہ سی او ڈی آرڈرز کی جانچ کریں:\n- کیا کسٹمر کا شہر سپلائر کے شہر سے میل کھاتا ہے؟\n- کیا آرڈر کی رقم 5,000 روپے سے زائد ہے؟ (ہائی ویلیو آرڈرز فراڈ کے لیے پرکشش ہوتے ہیں)"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک سادہ سی او ڈی پالیسی کا مسودہ تیار کریں:\n1۔ \"سی او ڈی صرف لاہور، کراچی، اسلام آباد کے لیے دستیاب ہے۔\"\n2۔ \"3,000 روپے سے زائد کے آرڈرز پر ہی سی او ڈی۔\""
+            }
+          ]
+        }
+      }
     }
   ],
   "freelancing": [
