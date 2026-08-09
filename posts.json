@@ -6694,6 +6694,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 7,
+      "id": "day-007",
+      "date": "2026-08-09",
+      "title": "Day 7 — **CSS Animations aur Transitions: Interactive Effects Banana**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "CSS animations aur transitions se aap apne buttons, menus, ya kisi bhi element ko dynamic banate hain. Transitions se smooth changes (jaise color change ya size shift) hoti hain jab koi property change hoti hai, jabki animations se aap complex effects (jaise spinning, fading, ya bouncing) bana sakte hain. Yeh user experience ko improve karta hai aur website ko zyada engaging banata hai."
+        ],
+        [
+          "Example",
+          "Ek button ko hover karne par color change karne ka step-by-step:\n```css\n.button {\n  background: blue;\n  transition: background 0.3s ease;\n}\n.button:hover {\n  background: red;\n}\n```\nAb agar aap `button` element ko hover karenge, toh background color 0.3 seconds mein smoothly blue se red ho jayega."
+        ],
+        [
+          "Practice",
+          "Apne ek existing button ko select karke uspar `transition` property add karo taake uska `width` 0.5s mein badle jab mouse uspar hover kare. CSS aur HTML donon mein changes karne hain."
+        ],
+        [
+          "Mini Project",
+          "Ek \"Click Me\" button banao jo:\n1. Normal state mein blue hai.\n2. Hover par green ho jaye.\n3. Click karne par 1 second ke liye red ho jaye, phir wapas blue ho jaye.\n4. Transition smooth ho (0.3s)."
+        ]
+      ],
+      "answer_key": "transition: background 0.3s ease, button:hover background green, button:active background red",
+      "translations": {
+        "ur": {
+          "title": "دن 7 — سی ایس ایس اینیمیشنز اور ٹرانزیشنز: انٹرایکٹو ایفیکٹس بنانا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "سی ایس ایس اینیمیشنز اور ٹرانزیشنز سے آپ اپنے بٹنز، مینو، یا کسی بھی ایلیمنٹ کو ڈائنامک بنا سکتے ہیں۔ ٹرانزیشنز سے ہموار تبدیلیاں (جیسے کہ رنگ تبدیل ہونا یا سائز میں تبدیلی) ہوتی ہیں جب کوئی پراپرٹی تبدیل ہوتی ہے، جبکہ اینیمیشنز سے آپ پیچیدہ ایفیکٹس (جیسے کہ گھومنا، دھندلا ہونا، یا اچھلنا) بنا سکتے ہیں۔ یہ صارف کے تجربے کو بہتر بناتا ہے اور ویب سائٹ کو زیادہ دلچسپ بناتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک بٹن کو ہوور کرنے پر رنگ تبدیل کرنے کا مرحلہ وار طریقہ:\n```css\n.button {\n  background: blue;\n  transition: background 0.3s ease;\n}\n.button:hover {\n  background: red;\n}\n```\nاب اگر آپ `button` ایلیمنٹ کو ہوور کریں گے، تو بیک گراؤنڈ کا رنگ 0.3 سیکنڈ میں ہموار طریقے سے نیلے سے سرخ ہو جائے گا۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے کسی موجودہ بٹن کو منتخب کرکے اس پر `transition` پراپرٹی شامل کریں تاکہ اس کی `width` 0.5 سیکنڈ میں تبدیل ہو جب ماؤس اس پر ہوور کرے۔ سی ایس ایس اور ایچ ٹی ایم ایل دونوں میں تبدیلیاں کرنی ہیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک \"Click Me\" بٹن بنائیں جو:\n1. نارمل حالت میں نیلا ہو۔\n2. ہوور پر سبز ہو جائے۔\n3. کلک کرنے پر 1 سیکنڈ کے لیے سرخ ہو جائے، پھر واپس نیلا ہو جائے۔\n4. ٹرانزیشن ہموار ہو (0.3 سیکنڈ)۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "excel-data-analysis": [
