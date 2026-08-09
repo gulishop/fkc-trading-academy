@@ -8436,6 +8436,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 5,
+      "id": "day-005",
+      "date": "2026-08-09",
+      "title": "Day 5 — **Blog Images Ko Professional Banane Ke 10 Asaan Tarike (Formatting + Optimization)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke blog ke images ko kaise attractive, fast-loading aur SEO-friendly banaya jaye. Sahi formatting se user experience improve hoti hai, aur Google bhi images ko rank karta hai. Hum cover karenge: image size optimization, alt text, lazy loading, captions, aur WordPress/Blogger ke built-in tools."
+        ],
+        [
+          "Example",
+          "Ek blog post mein \"best running shoes\" ke topic par image lagate waqt:\n1. Image ko **1000px width** tak resize karen (zyaada nahi).\n2. **Alt text** mein \"best running shoes for men 2024\" likhein.\n3. **Compress** karke size 100KB se kam karen (TinyPNG ya ShortPixel use karen).\n4. **Lazy loading** enable karen taake page load time fast rahe."
+        ],
+        [
+          "Practice",
+          "Apne blog ke kisi ek post ki sabse badi image ko:\n- 800-1000px width tak resize karen (Canva ya Paint se).\n- Alt text add karen jo post ke keyword se match kare.\n- Compress karen taake size 150KB se kam ho."
+        ],
+        [
+          "Mini Project",
+          "Ek **3-image collage** banayein (Canva ya Figma se) jo ek hi topic par ho (e.g., \"blogging tips\"). Uske baad:\n- Sab images ko 700px width tak resize karen.\n- Sabke alt text mein \"blogging tips 2024\" shamil karen.\n- Collage ko post mein embed karen aur lazy loading check karen."
+        ]
+      ],
+      "answer_key": "resize, alt text, compress, lazy loading",
+      "translations": {
+        "ur": {
+          "title": "دن ٥ — بلاگ امیجز کو پیشہ ورانہ بنانے کے ١٠ آسان طریقے (فارمیٹنگ + آپٹیمائزیشن)",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "آج ہم سیکھیں گے کہ بلاگ کی امیجز کو کیسے پرکشش، تیز لوڈنگ اور ایس ای او فرینڈلی بنایا جائے۔ صحیح فارمیٹنگ سے صارف کا تجربہ بہتر ہوتا ہے، اور گوگل بھی امیجز کو رینک کرتا ہے۔ ہم کور کریں گے: امیج سائز آپٹیمائزیشن، آلٹ ٹیکسٹ، لیزی لوڈنگ، کیپشنز، اور ورڈپریس/بلاگر کے بلٹ ان ٹولز۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک بلاگ پوسٹ میں \"بہترین رننگ شووز\" کے موضوع پر امیج لگاتے وقت:\n١۔ امیج کو **١٠٠٠ پکسلز کی چوڑائی** تک ریسائز کریں (زیادہ نہیں)۔\n٢۔ **آلٹ ٹیکسٹ** میں \"best running shoes for men 2024\" لکھیں۔\n٣۔ **کمپریس** کرکے سائز ١٠٠ کیلوبائٹس سے کم کریں (ٹِنی پِی این جی یا شارٹ پکسل استعمال کریں)۔\n٤۔ **لیزی لوڈنگ** اینیبل کریں تاکہ پیج لوڈ ٹائم تیز رہے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے بلاگ کے کسی ایک پوسٹ کی سب سے بڑی امیج کو:\n- ٨٠٠ سے ١٠٠٠ پکسلز کی چوڑائی تک ریسائز کریں (کینوا یا پینٹ سے)۔\n- آلٹ ٹیکسٹ شامل کریں جو پوسٹ کے کی ورڈ سے میچ کرے۔\n- کمپریس کریں تاکہ سائز ١٥٠ کیلوبائٹس سے کم ہو۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **٣ امیجز کا کولاژ** بنائیں (کینوا یا فگما سے) جو ایک ہی موضوع پر ہو (مثال کے طور پر، \"بلاگنگ ٹپس\")۔ اس کے بعد:\n- تمام امیجز کو ٧٠٠ پکسلز کی چوڑائی تک ریسائز کریں۔\n- سب کے آلٹ ٹیکسٹ میں \"blogging tips 2024\" شامل کریں۔\n- کولاژ کو پوسٹ میں ایمبیڈ کریں اور لیزی لوڈنگ چیک کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "photography-editing": [
