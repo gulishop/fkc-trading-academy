@@ -7078,6 +7078,72 @@
           ]
         }
       }
+    },
+    {
+      "day": 7,
+      "id": "day-007",
+      "date": "2026-08-09",
+      "title": "Day 7 — **Data Validation: Excel Ko \"Smart\" Banana**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Data validation Excel ko \"smart\" banata hai—yeh ensure karta hai ke users sirf sahi format ya range ki values enter karain. Isse data entry errors kam hoti hain aur consistency banti hai. Common use cases: dropdown lists, number ranges, date restrictions, aur custom formulas."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Dropdown list banana",
+          "- Select cell (e.g., B2) → **Data** tab → **Data Validation** → **Allow: List** →"
+        ],
+        [
+          "Source",
+          "`Yes, No, Maybe` (comma-separated).\n2."
+        ],
+        [
+          "Number range restrict karna",
+          "- Select cell → **Data Validation** → **Allow: Whole number** → **Data: between** → **Minimum: 10, Maximum: 100**."
+        ],
+        [
+          "Practice",
+          "Apni Excel sheet mein ek column \"Product Category\" banain. Usmein **Data Validation** use karke ek dropdown list add karen jismein yeh options hon: `Electronics, Clothing, Groceries, Furniture`."
+        ],
+        [
+          "Mini Project",
+          "Ek **Employee Attendance Tracker** banain jismein:\n- Column A: Employee Name (text)\n- Column B: Attendance Status (dropdown: `Present, Absent, Leave`)\n- Column C: Salary (sirf numbers 30000–100000 ke beech allow hon)."
+        ]
+      ],
+      "answer_key": "dropdown list, data validation, range restrict, error handling",
+      "translations": {
+        "ur": {
+          "title": "دن ۷ — **ڈیٹا ویلیڈیشن: ایکسل کو \"سمارٹ\" بنانا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ڈیٹا ویلیڈیشن ایکسل کو \"سمارٹ\" بناتا ہے—یہ یقینی بناتا ہے کہ صارفین صرف درست فارمیٹ یا رینج کی ویلیوز داخل کریں۔ اس سے ڈیٹا انٹری کی غلطیاں کم ہوتی ہیں اور مستقل مزاجی برقرار رہتی ہے۔ عام استعمال کے مواقع: ڈراپ ڈاؤن لسٹس، نمبر رینجز، تاریخ کی پابندیاں، اور کسٹم فارمولے۔"
+            },
+            {
+              "label": "مثال: ۱",
+              "content": "ڈراپ ڈاؤن لسٹ بنانا:\n- سیل منتخب کریں (مثلاً B2) → **ڈیٹا** ٹیب → **ڈیٹا ویلیڈیشن** → **الاؤ: لسٹ** →\n- سورس: `Yes, No, Maybe` (کاما سے الگ کردہ)"
+            },
+            {
+              "label": "مثال: ۲",
+              "content": "نمبر رینج کی پابندی کرنا:\n- سیل منتخب کریں → **ڈیٹا ویلیڈیشن** → **الاؤ: ہول نمبر** → **ڈیٹا: بیٹوین** → **کم سے کم: ۱۰، زیادہ سے زیادہ: ۱۰۰**"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنی ایکسل شیٹ میں ایک کالم \"پروڈکٹ کیٹیگری\" بنائیں۔ اس میں **ڈیٹا ویلیڈیشن** استعمال کرکے ایک ڈراپ ڈاؤن لسٹ شامل کریں جس میں یہ آپشنز ہوں: `Electronics, Clothing, Groceries, Furniture`"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **ایمپلائی اٹینڈنس ٹریکر** بنائیں جس میں:\n- کالم A: ایمپلائی کا نام (ٹیکسٹ)\n- کالم B: اٹینڈنس اسٹیٹس (ڈراپ ڈاؤن: `Present, Absent, Leave`)\n- کالم C: سیلری (صرف نمبرز ۳۰۰۰۰–۱۰۰۰۰۰ کے درمیان اجازت ہو)"
+            }
+          ]
+        }
+      }
     }
   ],
   "crypto-blockchain": [
