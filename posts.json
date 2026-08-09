@@ -4040,6 +4040,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 6,
+      "id": "day-006",
+      "date": "2026-08-09",
+      "title": "Day 6 — Client Project Ka Basic Structure: Kaise Shuru Karein?",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Har no-code project ek client ke liye hota hai, isliye uska structure clear hona chahiye. Pehle **requirements** (kya chahiye?), **scope** (kitna hai?), aur **deliverables** (kya milega?) define karo. Phir **timeline** (kitne din mein?), **payment** (kitne ka?), aur **communication** (kaise update deni hai?) set karo. Yeh sab clear hone se project smooth chalta hai."
+        ],
+        [
+          "Example",
+          "Ek client ko ek **portfolio website** banana hai. Requirements: 5 pages, contact form, aur mobile-friendly. Scope: 3 din ka hai. Deliverables: Figma design + live website. Timeline: Monday se Wednesday. Payment: $200 advance, $300 baqi. Communication: Daily 10-minute call."
+        ],
+        [
+          "Practice",
+          "Apne ek imaginary client ke liye **requirements, scope, aur deliverables** likho (3-4 lines mein). Example: \"Client ko ek restaurant menu app chahiye, 2 screens, offline mode, 1 week mein deliver karna hai.\""
+        ],
+        [
+          "Mini Project",
+          "Ek **1-page Google Form** banayein jisme client se project requirements poochhein (3-5 questions). Link share karke logon se fill karwayein."
+        ]
+      ],
+      "answer_key": "requirements, scope, deliverables, timeline",
+      "translations": {
+        "ur": {
+          "title": "دن ۶ — کلائنٹ پروجیکٹ کا بنیادی ڈھانچہ: کیسے شروع کریں؟",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ہر نو کوڈ پروجیکٹ ایک کلائنٹ کے لیے ہوتا ہے، اس لیے اس کا ڈھانچہ واضح ہونا چاہیے۔ پہلے **ریکوائرمنٹس** (کیا چاہیے؟)، **اسکوپ** (کتنا ہے؟)، اور **ڈیلیور ایبلز** (کیا ملے گا؟) طے کریں۔ پھر **ٹائم لائن** (کتنے دن میں؟)، **پے منٹ** (کتنے کا؟)، اور **کمیونیکیشن** (کس طرح اپ ڈیٹ دینی ہے؟) سیٹ کریں۔ یہ سب واضح ہونے سے پروجیکٹ ہموار چلتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک کلائنٹ کو ایک **پورٹ فولیو ویب سائٹ** بنانی ہے۔ ریکوائرمنٹس: ۵ صفحات، رابطہ فارم، اور موبائل فرینڈلی۔ اسکوپ: ۳ دن کا ہے۔ ڈیلیور ایبلز: فگما ڈیزائن + لائیو ویب سائٹ۔ ٹائم لائن: پیر سے بدھ تک۔ پے منٹ: ۲۰۰ ڈالر ایڈوانس، ۳۰۰ ڈالر بقیہ۔ کمیونیکیشن: روزانہ ۱۰ منٹ کال۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے ایک خیالی کلائنٹ کے لیے **ریکوائرمنٹس، اسکوپ، اور ڈیلیور ایبلز** لکھیں (۳-۴ لائنوں میں)۔ مثال: \"کلائنٹ کو ایک ریسٹورنٹ مینو ایپ چاہیے، ۲ اسکرینز، آفلائن موڈ، ۱ ہفتے میں ڈیلیور کرنا ہے۔\""
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **۱ صفحہ کا گوگل فارم** بنائیں جس میں کلائنٹ سے پروجیکٹ ریکوائرمنٹس پوچھیں (۳-۵ سوالات)۔ لنک شیئر کرکے لوگوں سے بھروائیں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "digital-marketing-seo": [
