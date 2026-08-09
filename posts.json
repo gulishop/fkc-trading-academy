@@ -9664,6 +9664,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 5,
+      "id": "day-005",
+      "date": "2026-08-09",
+      "title": "Day 5 — \"Mera naam hai... aur mera ghar yahan hai!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachay, aaj hum seekhein ge ke apna naam aur ghar ka pata kaise bolna hai. Yeh bohat zaroori hai taake agar tum kabhi akela ho, toh kisi ko bhi apna pata bata sako. Yaad rakhna, tumhara naam tumhara hai—kisi ko tumhe us naam se bulane ka haq hai!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Rohan park mein khel raha tha. Akela ghar jaate waqt usko yaad aaya ke uska naam Rohan aur ghar ka pata hai. Usne ek aadmi se poocha, \"Mera naam Rohan hai. Mera ghar 123, Gandhi Nagar, Delhi mein hai.\" Aadmi ne usko ghar tak pohancha diya."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar tum kabhi akela ho aur kisi ko apna pata batana ho, toh tum kya karen ge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Tumhara naam tumhara hai—kisi ko tumhe us naam se bulane ka haq hai! Agar koi tumhe pareshan kare, toh foran ammi/abbu ko batana!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۵ — میرا نام ہے... اور میرا گھر یہاں ہے!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "بچو، آج ہم سیکھیں گے کہ اپنا نام اور گھر کا پتہ کیسے بولنا ہے۔ یہ بہت ضروری ہے تاکہ اگر تم کبھی اکیلے ہو تو کسی کو بھی اپنا پتہ بتا سکو۔ یاد رکھنا، تمہارا نام تمہارا ہے—کسی کو تمہیں اس نام سے بلانے کا حق ہے!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "روہن پارک میں کھیل رہا تھا۔ اکیلے گھر جاتے وقت اسے یاد آیا کہ اس کا نام روہن اور گھر کا پتہ ہے۔ اس نے ایک آدمی سے پوچھا، ’میرا نام روہن ہے۔ میرا گھر ۱۲۳، گاندھی نگر، دہلی میں ہے۔‘ آدمی نے اسے گھر تک پہنچا دیا۔"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "’بیٹا، اگر تم کبھی اکیلے ہو اور کسی کو اپنا پتہ بتانا ہو تو تم کیا کرو گے؟‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمہارا نام تمہارا ہے—کسی کو تمہیں اس نام سے بلانے کا حق ہے! اگر کوئی تمہیں پریشان کرے تو فوراً امّی/ابّو کو بتانا!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-pg": [
