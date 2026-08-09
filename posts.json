@@ -3784,6 +3784,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 9,
+      "id": "day-009",
+      "date": "2026-08-09",
+      "title": "Day 9 — **Freelancing Ko Scale Karna: Apne Business Ko Grow Karne Ke 5 Powerful Steps**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Freelancing se agency banane ka pehla kadam hai **ek se zyada platforms par expand karna** – lekin sirf accounts banane se kaam nahi hota. Aaj hum seekhenge ki kaise apne freelancing business ko **multiple income sources** aur **clients ke network** se grow karna hai. Iske liye **platform diversification**, **automation**, aur **brand building** ke strategies use karenge."
+        ],
+        [
+          "Example",
+          "Ek graphic designer ne shuru mein **Fiverr** par kaam shuru kiya, phir **Upwork**, **99designs**, aur **Instagram** par bhi portfolio share kiya. Usne **automated proposals** bhejne ke liye **Trello** use kiya, jisse usko **3x zyada orders** milne lage. Ab uske **5+ platforms** se regular income hai."
+        ],
+        [
+          "Practice",
+          "Apne **top 3 freelancing skills** ke liye **ek naya platform** choose karo (jaise Upwork, Toptal, Behance, LinkedIn, ya koi niche-specific site). Us platform par **complete profile** banao aur **1 proposal** bhej do."
+        ],
+        [
+          "Mini Project",
+          "**\"Freelancer Brand Kit\" banana** – Apne naam, logo (Canva se bana lo), color scheme, aur tagline ke saath ek **simple PDF/Canva template** banao jo aap har proposal ke saath attach kar sakte ho."
+        ]
+      ],
+      "answer_key": "fiverr, upwork, behance, automation tools, brand consistency",
+      "translations": {
+        "ur": {
+          "title": "دن ۹ — فری لانسنگ کو اسکیل کرنا: اپنے بزنس کو گرو کرنے کے ۵ طاقتور قدم",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "فری لانسنگ سے ایجنسی بنانے کا پہلا قدم ہے ایک سے زیادہ پلیٹ فارمز پر پھیلنا — لیکن صرف اکاؤنٹس بنانے سے کام نہیں چلتا۔ آج ہم سیکھیں گے کہ کیسے اپنے فری لانسنگ بزنس کو متعدد آمدنی کے ذرائع اور کلائنٹس کے نیٹ ورک سے بڑھایا جائے۔ اس کے لیے پلیٹ فارم ڈائیورسفیکیشن، آٹومیشن، اور برانڈ بلڈنگ کی حکمت عملیوں کا استعمال کریں گے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک گرافک ڈیزائنر نے شروع میں فائیور پر کام شروع کیا، پھر اپ ورک، ۹۹ ڈیزائنز، اور انسٹاگرام پر بھی پورٹ فولیو شیئر کیا۔ اس نے آٹومیٹڈ پروپوزلز بھیجنے کے لیے ٹریلو استعمال کیا، جس سے اسے تین گنا زیادہ آرڈرز ملنے لگے۔ اب اس کے پانچ سے زائد پلیٹ فارمز سے باقاعدہ آمدنی ہے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے ٹاپ تین فری لانسنگ اسکلز کے لیے ایک نیا پلیٹ فارم منتخب کریں (جیسے اپ ورک، ٹاپ ٹیل، بی ہینس، لنکڈ ان، یا کوئی نیچ اسپیسفک سائٹ)۔ اس پلیٹ فارم پر مکمل پروفائل بنائیں اور ایک پروپوزل بھیج دیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "فری لانس برانڈ کٹ بنانا — اپنے نام، لوگو (کینوا سے بنا لیں)، کلر سکیم، اور ٹیگ لائن کے ساتھ ایک سادہ پی ڈی ایف/کینوا ٹیمپلیٹ بنائیں جو آپ ہر پروپوزل کے ساتھ اٹیچ کر سکیں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "graphic-design-canva": [
