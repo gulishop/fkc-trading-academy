@@ -371,3 +371,5 @@
 [2026-08-08T23:41:06.081529] [photography-editing] Day 2 video skip: Agnes aur ffmpeg dono attempts fail.
 [2026-08-08T23:42:47.734388] [photography-editing] Day 3 video skip: Agnes aur ffmpeg dono attempts fail.
 [2026-08-08T23:50:49.230819] [voiceover-podcasting] Day 1 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-08T23:59:14.090224] [real-estate-business] Day 1 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-09T00:00:45.524270] [real-estate-business] Day 2 video skip: Agnes aur ffmpeg dono attempts fail.

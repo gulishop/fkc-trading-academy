@@ -8498,6 +8498,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 5,
+      "id": "day-005",
+      "date": "2026-08-08",
+      "title": "Day 5 — **Property Dealings Mein Trust Banana: 3 Golden Rules**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke property business mein trust kaise banaya jata hai—kyunki ek deal trust par hi toh hai. Trust sirf \"achha behavior\" se nahi, balki consistent actions, transparency aur professionalism se banta hai. Agar client ko lagta hai ke aap uski investment ko serious le rahe hain, toh wo aapko refer bhi karenge aur long-term business milegi."
+        ],
+        [
+          "Example",
+          "Imagine a client who wants to sell his property. Instead of just showing him listings, you:\n1. **Verify his documents** (FARD, registry) yourself and point out any red flags *before* he asks.\n2. **Give him 3 realistic valuation options** (not just one high number to impress).\n3. **Follow up weekly** with market updates—even if he’s not ready to sell yet."
+        ],
+        [
+          "Practice",
+          "Apne nearest 3 property dealers se milo aur poochho: *\"Aap kaisa trust build karte hain apne clients ke saath?\"* Unki 3 best practices note karo aur apne approach se compare karo."
+        ],
+        [
+          "Mini Project",
+          "Ek **1-page trust-building checklist** banayein jismein aapke 5 key actions honge jo aap har client ke saath apply karenge (e.g., \"Documents verify karke dikhana\", \"Follow-up schedule set karna\")."
+        ]
+      ],
+      "answer_key": "document verification, realistic valuation, consistent follow-up",
+      "translations": {
+        "ur": {
+          "title": "دن ٥ — پراپرٹی ڈیلنگز میں ٹرسٹ بنانا: ٣ گولڈن رولز",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم سیکھیں گے کہ پراپرٹی بزنس میں ٹرسٹ کیسے بنایا جاتا ہے—کیونکہ ایک ڈیل ٹرسٹ پر ہی تو ہے۔ ٹرسٹ صرف \"اچھا رویہ\" سے نہیں، بلکہ مستقل عمل، شفافیت اور پیشہ ورانہ رویے سے بنتا ہے۔ اگر کلائنٹ کو لگے کہ آپ اس کی سرمایہ کاری کو سنجیدگی سے لے رہے ہیں، تو وہ آپ کو ریفر بھی کریں گے اور طویل مدتی بزنس ملے گا۔"
+            },
+            {
+              "label": "مثال",
+              "content": "تصور کریں کہ ایک کلائنٹ اپنی پراپرٹی بیچنا چاہتا ہے۔ آپ محض لسٹنگز دکھانے کے بجائے یہ کرتے ہیں:\n١۔ **اس کے دستاویزات (فرد، رجسٹری) خود تصدیق کریں** اور کوئی بھی خطرے کی علامت *اس سے پوچھنے سے پہلے* بتا دیں۔\n٢۔ **اسے ٣ حقیقت پسندانہ ویلیویشن آپشنز دیں** (صرف ایک زیادہ نمبر دکھا کر مت لبھائیں)۔\n٣۔ **ہفتہ وار مارکیٹ اپڈیٹس کے ساتھ فالو اپ کریں**—چاہے وہ ابھی بیچنے کے لیے تیار نہ ہو۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے قریب ترین ٣ پراپرٹی ڈیلرز سے ملیں اور پوچھیں: *\"آپ اپنے کلائنٹس کے ساتھ ٹرسٹ کیسے بناتے ہیں؟\"* ان کی ٣ بہترین پریکٹس نوٹ کریں اور اپنے اپروچ سے موازنہ کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **١ صفحے کی ٹرسٹ بلڈنگ چیک لسٹ** بنائیں جس میں آپ کے ٥ کلیدی اقدامات ہوں گے جو آپ ہر کلائنٹ کے ساتھ اپلائی کریں گے (مثلاً، \"دستاویزات تصدیق کرکے دکھانا\"، \"فالو اپ شیڈول سیٹ کرنا\")۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "mobile-repairing": [
