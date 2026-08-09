@@ -8956,6 +8956,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 7,
+      "id": "day-007",
+      "date": "2026-08-09",
+      "title": "Day 7 — **Motherboard Trace Repair: Broken Paths ko Dobara Jodna**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Motherboard par chhoti chhoti traces (copper paths) agar tut jati hain to phone ka koi part kaam nahi karta (e.g., charging, display, or speaker). In traces ko repair karne ke liye jumper wires use karte hain ya copper foil lagate hain. Isme precision aur patience ki zaroorat hoti hai kyunki traces bohot patle hote hain."
+        ],
+        [
+          "Example",
+          "Agar charging port ka trace tut gaya hai, to:\n1. Multimeter se trace continuity check karo (broken hai ya nahi).\n2. Tutne wale trace ke dono ends par micro-drill se chhoti holes karo.\n3. 0.1mm jumper wire ko solder karo aur epoxy se fix karo."
+        ],
+        [
+          "Practice",
+          "Apne ek old PCB (e.g., charging port wala) lekar uske traces ko check karo. Agar koi trace broken ho to usko repair karne ki try karo (agar nahi hai to kisi aur PCB par practice karo)."
+        ],
+        [
+          "Mini Project",
+          "Ek broken charging trace ko repair karke uske continuity ko verify karo (multimeter se)."
+        ]
+      ],
+      "answer_key": "continuity check, jumper wire, solder, epoxy",
+      "translations": {
+        "ur": {
+          "title": "دن 7 — مدر بورڈ ٹریس ریپیئر: ٹوٹے ہوئے راستوں کو دوبارہ جوڑنا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "مدر بورڈ پر چھوٹی چھوٹی ٹریسز (تانبے کے راستے) اگر ٹوٹ جاتی ہیں تو فون کا کوئی حصہ کام نہیں کرتا (مثلاً، چارجر، ڈسپلے، یا سپیکر)۔ ان ٹریسز کو ریپیئر کرنے کے لیے جمپر وائرز استعمال کرتے ہیں یا تانبے کی فول استعمال کرتے ہیں۔ اس میں پریسیژن اور صبر کی ضرورت ہوتی ہے کیونکہ ٹریسز بہت پتلے ہوتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "اگر چارجر پورٹ کا ٹریس ٹوٹ گیا ہے تو:\n١۔ ملٹی میٹر سے ٹریس کی کنٹینویٹی چیک کرو (ٹوٹا ہوا ہے یا نہیں)۔\n٢۔ ٹوٹنے والے ٹریس کے دونوں سروں پر مائیکرو ڈرل سے چھوٹے سوراخ کرو۔\n٣۔ ٠.١ ملی میٹر جمپر وائر کو سولڈر کرو اور ایپوکسی سے فکس کرو۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے کسی پرانے پی سی بی (مثلاً، چارجر پورٹ والے) کو لے کر اس کی ٹریسز چیک کرو۔ اگر کوئی ٹریس ٹوٹا ہوا ہو تو اسے ریپیئر کرنے کی کوشش کرو (اگر نہیں ہے تو کسی اور پی سی بی پر پریکٹس کرو)।"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک ٹوٹے ہوئے چارجر ٹریس کو ریپیئر کر کے اس کی کنٹینویٹی کی تصدیق کرو (ملٹی میٹر سے)।"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-safety-education": [
