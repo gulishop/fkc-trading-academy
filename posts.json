@@ -8788,6 +8788,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 7,
+      "id": "day-007",
+      "date": "2026-08-09",
+      "title": "Day 7 — **Mobile Editing Apps: Snapseed vs. VSCO – Advanced Techniques**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum mobile editing apps ke advanced features par focus karenge. Snapseed (Google ka powerful app) aur VSCO (aesthetic presets aur film-like effects ke liye famous) mein deep edits karne ke tarike seekhenge. Focus rahega selective adjustments, healing tool, aur presets ko customize karne par."
+        ],
+        [
+          "Example",
+          "*Snapseed mein \"Selective\" tool ka istemal:*\n1. Photo open karen.\n2. \"Tools\" > \"Selective\" select karen.\n3. Adjustment point place karen (e.g., sky ya face par).\n4. Brush size adjust karke exposure, contrast, ya saturation badhaye/ghataen."
+        ],
+        [
+          "Practice",
+          "Apne phone se kisi photo ko Snapseed mein open karen aur \"Selective\" tool ka istemal karke **sirf clouds** ki brightness 20% badhayein (sky ko zyada clear banane ke liye)."
+        ],
+        [
+          "Mini Project",
+          "Ek photo ko **Snapseed** (advanced edits) aur **VSCO** (presets + film grain) dono mein edit karen, phir compare karen ki konsa style zyada pasand aaya. (Hint: VSCO mein \"A6\" ya \"HB2\" preset try karen.)"
+        ]
+      ],
+      "answer_key": "selective tool, sky exposure +20, vsco preset a6/hb2",
+      "translations": {
+        "ur": {
+          "title": "دن ۷ — موبائل ایڈیٹنگ ایپس: سنپ سیڈ بمقابلہ وی ایس سی او – ایڈوانسڈ تکنیکس",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج ہم موبائل ایڈیٹنگ ایپس کے ایڈوانسڈ فیچرز پر توجہ دیں گے۔ سنپ سیڈ (گوگل کا طاقتور ایپ) اور وی ایس سی او (ایسٹھٹک پری سیٹس اور فلم جیسے ایفیکٹس کے لیے مشہور) میں ڈیپ ایڈٹس کرنے کے طریقے سیکھیں گے۔ توجہ سلیکٹیو ایڈجسٹمنٹس، ہیئلنگ ٹول، اور پری سیٹس کو کسٹمائز کرنے پر رہے گی۔"
+            },
+            {
+              "label": "مثال",
+              "content": "*سنپ سیڈ میں \"سلیکٹیو\" ٹول کا استعمال:*\n۱۔ فوٹو کھولیں۔\n۲۔ \"ٹولز\" > \"سلیکٹیو\" سلیکٹ کریں۔\n۳۔ ایڈجسٹمنٹ پوائنٹ رکھیں (مثلاً آسمان یا چہرے پر)۔\n۴۔ برش سائز ایڈجسٹ کرکے ایکسپوژر، کنٹراسٹ، یا سیچوریشن بڑھائیں/گھٹائیں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے فون سے کسی فوٹو کو سنپ سیڈ میں کھولیں اور \"سلیکٹیو\" ٹول کا استعمال کرتے ہوئے صرف بادلوں کی برائٹنیس ۲۰ فیصد بڑھائیں (آسمان کو زیادہ صاف بنانے کے لیے)।"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک فوٹو کو سنپ سیڈ (ایڈوانسڈ ایڈٹس) اور وی ایس سی او (پری سیٹس + فلم گرین) دونوں میں ایڈٹ کریں، پھر موازنہ کریں کہ کون سا اسٹائل زیادہ پسند آیا۔ (اشارہ: وی ایس سی او میں \"A6\" یا \"HB2\" پری سیٹ آزمائیں۔)"
+            }
+          ]
+        }
+      }
     }
   ],
   "voiceover-podcasting": [
