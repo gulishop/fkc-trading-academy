@@ -269,6 +269,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 6,
+      "id": "day-006",
+      "date": "2026-08-09",
+      "title": "Day 6 — **Social Media Se Affiliate Traffic Kaise Badhayein (TikTok & Instagram Reels Strategy)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Social media par affiliate links share karne ka sabse effective tareeka hai **short-form video content** (TikTok/Reels) jo naturally product ko promote kare. Basics: 1) **Problem-Solution** format (e.g., \"Mera phone kharab ho gaya, yeh product ne bachaya!\"), 2) **Demo-style** videos (e.g., \"Yeh cream ne mere 10 din mein daag halka kar diye\"), 3) **Trend-jacking** (trending sounds/hashtags use karke). Link placement: **Bio link** ya **Swipe-up** (10K+ followers ke liye) ya **Comment section** mein \"Link in bio\" mention karna."
+        ],
+        [
+          "Example",
+          "Ek **TikTok Reel** banao jisme:\n1. 3 second mein problem batayein (\"Mera laptop slow ho gaya hai\")\n2. 5 second mein solution dikhayein (\"Yeh SSD ne mere laptop ki speed double kar di!\")\n3. Last 2 second mein CTA: \"Link in bio se le lo @50% discount!\""
+        ],
+        [
+          "Practice",
+          "Apne phone ya laptop ke **kisi 1 product** ke liye 15-second ka script likhein jo **problem-solution** format mein ho. Trending sound use karne ke liye **TikTok/Instagram Reels** explore page se 1 sound copy kar lein."
+        ],
+        [
+          "Mini Project",
+          "Ek **TikTok/Reels** video shoot karke upload karein (draft mein bhi chalega). Caption mein **affiliate link** ke liye \"Link in bio\" ya \"Swipe up\" mention karein. Hashtags: #AffiliateMarketing #ProductReview #[Niche]."
+        ]
+      ],
+      "answer_key": "problem-solution, trend-sound, link-in-bio, cta",
+      "translations": {
+        "ur": {
+          "title": "دن ۶ — سوشل میڈیا سے ایفیلی ایٹ ٹریفک کیسے بڑھائیں (ٹک ٹاک اور انسٹاگرام ریلز اسٹریٹی)",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "سوشل میڈیا پر ایفیلی ایٹ لنکس شیئر کرنے کا سب سے مؤثر طریقہ **شارٹ فارم ویڈیو کنٹینٹ** (ٹک ٹاک/ریلز) ہے جو قدرتی طور پر پروڈکٹ کو پروموٹ کرے۔ بنیادی باتیں: ١) **مسئلہ حل** فارمیٹ (مثال کے طور پر، ’میرا فون خراب ہو گیا، یہ پروڈکٹ نے بچایا!‘)، ٢) **ڈیمو اسٹائل** ویڈیوز (مثال کے طور پر، ’یہ کریم نے میرے دس دن میں داغ ہلکے کر دیے‘)، ٣) **ٹرینڈ جیکنگ** (ٹرینڈنگ آوازوں/ہیش ٹیگز کا استعمال کرتے ہوئے)۔ لنک پلیسمنٹ: **بائیو لنک** یا **سوئپ اپ** (دس ہزار سے زائد فالورز کے لیے) یا **کمنٹ سیکشن** میں ’لنک اِن بائیو‘ کا ذکر کرنا۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک **ٹک ٹاک ریل** بنائیں جس میں:\n١) تین سیکنڈ میں مسئلہ بتائیں (’میرا لیپ ٹاپ سست ہو گیا ہے‘)\n٢) پانچ سیکنڈ میں حل دکھائیں (’یہ ایس ایس ڈی نے میرے لیپ ٹاپ کی سپیڈ ڈبل کر دی!‘)\n٣) آخری دو سیکنڈ میں کال ٹو ایکشن: ’لنک اِن بائیو سے لیں @پچاس فیصد ڈسکاؤنٹ!‘"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے فون یا لیپ ٹاپ کے **کسی ایک پروڈکٹ** کے لیے پندرہ سیکنڈ کا اسکرپٹ لکھیں جو **مسئلہ حل** فارمیٹ میں ہو۔ ٹرینڈنگ آواز استعمال کرنے کے لیے **ٹک ٹاک/انسٹاگرام ریلز** ایکسپلور پیج سے ایک آواز کاپی کر لیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **ٹک ٹاک/ریلز** ویڈیو شوٹ کر کے اپ لوڈ کریں (ڈرافٹ میں بھی چل جائے گا)۔ کیپشن میں **ایفیلی ایٹ لنک** کے لیے ’لنک اِن بائیو‘ یا ’سوئپ اپ‘ کا ذکر کریں۔ ہیش ٹیگز: #ایفیلی ایٹ مارکیٹنگ #پروڈکٹ ریویو #[نیچ]"
+            }
+          ]
+        }
+      }
     }
   ],
   "youtube-automation": [
