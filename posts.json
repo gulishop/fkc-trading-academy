@@ -7588,6 +7588,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 5,
+      "id": "day-005",
+      "date": "2026-08-09",
+      "title": "Day 5 — **Trading Psychology: Apne Emotions Par Qabooz Kaise Rakhein?**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Trading mein emotions (dar, greed, excitement) sabse bade dushman hote hain. Jab bhi market volatile ho ya loss ho, investors panic karke galat decisions lete hain. Is lesson mein hum seekhenge ki kaise apne emotions ko control karke disciplined trading kiya ja sakta hai."
+        ],
+        [
+          "Example",
+          "Imagine aap ne ek stock ₹100 par khareeda. Price 10% gir gaya (₹90). Agar aap panic karke beche, to loss lock ho jayega. Lekin agar aapne stop-loss ₹85 set kiya hota, to sirf 5% loss hota. Discipline se rule follow karne se emotions ka asar kam ho jata hai."
+        ],
+        [
+          "Practice",
+          "Aaj se hi apne har trade ke liye **pre-defined entry, exit, aur stop-loss** set karna shuru karein. Kisi bhi trade ko emotion se na dekhain—bas apna plan follow karain."
+        ],
+        [
+          "Mini Project",
+          "Ek hypothetical trading scenario banao:\n- Stock: XYZ Ltd.\n- Entry Price: ₹200\n- Stop-Loss: ₹190\n- Target: ₹220\nAb 3 din tak market observe karo. Agar price stop-loss ya target tak nahi pahuncha, to kya action lena hai? Likh kar rakho."
+        ]
+      ],
+      "answer_key": "stop-loss, target, discipline, plan",
+      "translations": {
+        "ur": {
+          "title": "دن ٥ — ٹریڈنگ سائیکولوجی: اپنے جذبات پر قابو کیسے رکھیں؟",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ٹریڈنگ میں جذبات (ڈر، لالچ، جوش) سب سے بڑے دشمن ہوتے ہیں۔ جب بھی مارکیٹ وولٹائل ہو یا نقصان ہو، سرمایہ کار پینک کر کے غلط فیصلے لے لیتے ہیں۔ اس سبق میں ہم سیکھیں گے کہ کیسے اپنے جذبات پر کنٹرول کر کے منظم ٹریڈنگ کی جا سکتی ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "تصور کریں آپ نے ایک اسٹاک ₹١٠٠ پر خریدا۔ قیمت ١٠ فیصد گر گئی (₹٩٠)۔ اگر آپ پینک ہو کر بیچ دیتے ہیں تو نقصان فکس ہو جائے گا۔ لیکن اگر آپ نے اسٹاپ لاس ₹٨٥ پر سیٹ کیا ہوتا تو صرف ٥ فیصد نقصان ہوتا۔ نظم و ضبط سے اصولوں پر عمل کرنے سے جذبات کا اثر کم ہو جاتا ہے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "آج سے ہی اپنے ہر ٹریڈ کے لیے پہلے سے طے شدہ انٹری، ایگزٹ اور اسٹاپ لاس سیٹ کرنا شروع کریں۔ کسی بھی ٹریڈ کو جذبات کی بنیاد پر نہ دیکھیں—بس اپنا پلان فالو کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک فرضی ٹریڈنگ منظرنامہ بنائیں:\n- اسٹاک: XYZ Ltd.\n- انٹری پرائس: ₹٢٠٠\n- اسٹاپ لاس: ₹١٩٠\n- ہدف: ₹٢٢٠\nاب تین دن تک مارکیٹ کا مشاہدہ کریں۔ اگر قیمت اسٹاپ لاس یا ہدف تک نہ پہنچے تو کیا اقدام کرنا ہے؟ لکھ کر رکھ لیں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "tiktok-growth": [
