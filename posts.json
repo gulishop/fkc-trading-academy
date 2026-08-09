@@ -4034,6 +4034,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 4,
+      "id": "day-004",
+      "date": "2026-08-09",
+      "title": "Day 4 — **Brand Identity: Professional Brand Kit Banana**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Ek strong brand identity ke liye logo ke sath-sath **brand kit** bhi zaroori hai. Ismein colors, fonts, brand voice aur visual elements ka set hota hai jo sabhi designs ko consistent rakhta hai. Aaj hum seekhenge ke Canva mein apna brand kit kaise banayein taake har project professional dikhe."
+        ],
+        [
+          "Example",
+          "1. Open Canva → \"Brand Kit\" section mein jao.\n2. Apna logo upload karo (ya Canva se banao).\n3. 3-5 colors choose karo jo aapki brand ko represent kartein hain (use [coolors.co](https://coolors.co) for help).\n4. 2-3 fonts select karo (heading + body text).\n5. Save karo — ab sabhi templates mein yeh automatically apply hojayega."
+        ],
+        [
+          "Practice",
+          "Apne brand kit mein:\n- 3 colors (primary + secondary + accent)\n- 2 fonts (heading + body)\n- Apna logo upload karo\n- \"Save to Brand Kit\" par click karo."
+        ],
+        [
+          "Mini Project",
+          "Ek **social media post** design karo jismein aapka brand kit apply ho (colors + fonts + logo). Use for Instagram story ya Facebook post."
+        ]
+      ],
+      "answer_key": "logo-upload, 3-colors, 2-fonts, brand-kit-save",
+      "translations": {
+        "ur": {
+          "title": "دن ۴ — **برینڈ آئیڈینٹیٹی: پیشہ ورانہ برینڈ کٹ بنانا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "ایک مضبوط برینڈ آئیڈینٹیٹی کے لیے لوگو کے ساتھ ساتھ **برینڈ کٹ** بھی ضروری ہے۔ اس میں رنگ، فونٹس، برینڈ وائس اور بصری عناصر کا سیٹ ہوتا ہے جو تمام ڈیزائنز کو مستقل رکھتا ہے۔ آج ہم سیکھیں گے کہ کینوا میں اپنا برینڈ کٹ کیسے بنائیں تاکہ ہر پروجیکٹ پیشہ ورانہ نظر آئے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ کینوا کھولیں اور \"برینڈ کٹ\" سیکشن میں جائیں۔\n۲۔ اپنا لوگو اپ لوڈ کریں (یا کینوا سے بنائیں)۔\n۳۔ ۳ سے ۵ رنگ منتخب کریں جو آپ کی برینڈ کی نمائندگی کرتے ہوں (مدد کے لیے [coolors.co](https://coolors.co) استعمال کریں)۔\n۴۔ ۲ سے ۳ فونٹس منتخب کریں (ہیڈنگ + باڈی ٹیکسٹ)۔\n۵۔ سیو کریں — اب تمام ٹیمپلیٹس میں یہ خود بخود لاگو ہو جائے گا۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے برینڈ کٹ میں شامل کریں:\n- ۳ رنگ (پرائمری + سیکنڈری + ایکسینٹ)\n- ۲ فونٹس (ہیڈنگ + باڈی)\n- اپنا لوگو اپ لوڈ کریں\n- \"سیو ٹو برینڈ کٹ\" پر کلک کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **سوشل میڈیا پوسٹ** ڈیزائن کریں جس میں آپ کا برینڈ کٹ لاگو ہو (رنگ + فونٹس + لوگو)۔ اسے انسٹاگرام اسٹوری یا فیس بک پوسٹ کے لیے استعمال کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "no-code-app-dev": [
