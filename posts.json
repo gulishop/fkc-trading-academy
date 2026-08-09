@@ -9152,6 +9152,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 5,
+      "id": "day-005",
+      "date": "2026-08-09",
+      "title": "Day 5 — **Podcast Cover Art: Design Karna Seekhein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke ek engaging podcast cover art kaise banaya jata hai. Cover art hi pehla impression hai jo listeners ko attract karta hai. Isme logo, text, aur color scheme ka balance hona chahiye taake yeh professional aur memorable lage."
+        ],
+        [
+          "Example",
+          "1. **Canva** ya **Adobe Spark** khol kar ek new project select karen.\n2. **1400x1400 pixels** (square) size choose karen (Spotify/YouTube standard).\n3. **Background color** choose karen jo topic reflect kare (e.g., blue for tech, green for health).\n4. **Title text** bold font mein add karen (e.g., \"Tech Talks with [Your Name]\").\n5. **Relevant icon/image** add karen (e.g., mic for voice over, headphones for podcast)."
+        ],
+        [
+          "Practice",
+          "Apne podcast topic ya voice over niche ke hisab se ek simple cover art design karen (Canva ya Paint se). 3-4 elements (text + 1-2 images) se zyada na jayein."
+        ],
+        [
+          "Mini Project",
+          "Ek **300x300 pixels** ka thumbnail bhi design karen jo YouTube par use ho sakta hai. Isme title aur ek eye-catching element (e.g., arrow, highlight) add karen."
+        ]
+      ],
+      "answer_key": "title-bold, relevant-icon, color-scheme, square-dimensions",
+      "translations": {
+        "ur": {
+          "title": "دن ٥ — پوڈکاسٹ کور آرٹ: ڈیزائن کرنا سیکھیں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "آج ہم سیکھیں گے کہ ایک دلچسپ پوڈکاسٹ کور آرٹ کیسے بنایا جاتا ہے۔ کور آرٹ ہی پہلا تاثر ہے جو سننے والوں کو اپنی طرف متوجہ کرتا ہے۔ اس میں لوگو، متن، اور رنگوں کا توازن ہونا چاہیے تاکہ یہ پیشہ ورانہ اور یادگار لگے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "١۔ **کینوا** یا **ایڈوبی سپارک** کھول کر ایک نیا پروجیکٹ سلیکٹ کریں۔\n٢۔ **١٤٠٠x١٤٠٠ پکسلز** (اسکوئر) سائز منتخب کریں (اسپوٹفائی/یوٹیوب کا معیاری سائز)۔\n٣۔ پس منظر کا رنگ منتخب کریں جو موضوع کی عکاسی کرے (مثلاً، ٹیکنالوجی کے لیے نیلا، صحت کے لیے سبز)۔\n٤۔ عنوان کا متن موٹے فونٹ میں شامل کریں (مثلاً، \"ٹیک ٹاکس ود [آپ کا نام]\")۔\n٥۔ متعلقہ آئیکن/تصویر شامل کریں (مثلاً، مائیک آواز کے لیے، ہیڈفونز پوڈکاسٹ کے لیے)۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے پوڈکاسٹ کے موضوع یا آواز پر مبنی نیچ کے مطابق ایک سادہ کور آرٹ ڈیزائن کریں (کینوا یا پینٹ سے)۔ تین سے چار عناصر (متن + ایک دو تصاویر) سے زیادہ نہ جائیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **٣٠٠x٣٠٠ پکسلز** کا تھمب نیل بھی ڈیزائن کریں جو یوٹیوب پر استعمال ہو سکے۔ اس میں عنوان اور ایک توجہ دلانے والا عنصر (مثلاً، تیر، ہائی لائٹ) شامل کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "real-estate-business": [
