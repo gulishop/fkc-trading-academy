@@ -9866,6 +9866,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 5,
+      "id": "day-005",
+      "date": "2026-08-09",
+      "title": "Day 5 — \"Ginti 1 se 5 tak: Apne Hathon se Seekhein!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachon, aaj hum seekhenge ke apne hathon se ginti karna kitna asaan hai! Har hath mein 5 ungaliyan hoti hain, aur har ungali ek number ko dikhati hai. Yeh humein yeh yaad rakhne mein madad karta hai ke har cheez ka ek number hota hai."
+        ],
+        [
+          "Chhoti Kahani",
+          "Rani ne apne hathon se ginti karni shuru ki. Usne ek ungali uthai aur kaha, \"Ek!\" Phir do ungaliyan, \"Do!\" Aise hi usne 5 tak ginti kar li. Uske hathon ne usko yaad dila diya ke har cheez ka ek number hota hai."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, tum apne hathon se ginti karke dekho, kitni ungaliyan hain?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Hathon se ginti karna asaan hai, lekin yaad rakhna ke tumhara jism sirf tumhara hai, aur tumhe koi bhi cheez ajeeb lage to foran ammi/abbu ko batana hai!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ٥ — گنتی ١ سے ٥ تک: اپنے ہاتھوں سے سیکھیں!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "بچو، آج ہم سیکھیں گے کہ اپنے ہاتھوں سے گنتی کرنا کتنا آسان ہے! ہر ہاتھ میں پانچ انگلیاں ہوتی ہیں، اور ہر انگلی ایک نمبر کو دکھاتی ہے۔ یہ ہمیں یہ یاد رکھنے میں مدد کرتا ہے کہ ہر چیز کا ایک نمبر ہوتا ہے۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "رانی نے اپنے ہاتھوں سے گنتی کرنا شروع کی۔ اس نے ایک انگلی اٹھائی اور کہا، ’’ایک!‘‘ پھر دو انگلیاں، ’’دو!‘‘ ایسے ہی اس نے پانچ تک گنتی کر لی۔ اس کے ہاتھوں نے اسے یاد دلا دیا کہ ہر چیز کا ایک نمبر ہوتا ہے۔"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "’’بیٹا، تم اپنے ہاتھوں سے گنتی کر کے دیکھو، کتنی انگلیاں ہیں؟‘‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "ہاتھوں سے گنتی کرنا آسان ہے، لیکن یاد رکھنا کہ تمہارا جسم صرف تمہارا ہے، اور تمہیں کوئی بھی چیز عجیب لگے تو فوراً امّی/ابّو کو بتانا ہے!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-kg": [
