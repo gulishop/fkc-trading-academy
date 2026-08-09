@@ -10118,6 +10118,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 4,
+      "id": "day-004",
+      "date": "2026-08-09",
+      "title": "Day 4 — \"1, 2, 3... Nikal Kar Dekhein!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhein ge ke kaise cheezon ko kam kar ke dekhna hai! Jaise agar tumhare paas 5 toffees hain aur tumne 2 kha diin, to tumhare paas kitni bachti hain? Yeh \"tafreeq\" hai. Yad rakhna, tumhare jism par kisi ko bhi haath uthane ka haq nahi hai—chahe woh koi bhi ho!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Billi Rani ke paas 7 makkhi thi. Usne 3 makkhi pakad liin. Ab uske paas kitni makkhi bachti hain? (Thoda ruko... 7 se 3 nikalo... 4 reh gayi!) Dekha, kaise kam ho gaya? Tum bhi apne toys ya mehengaar se aise hi khel sakte ho!"
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar koi tumhe kisi cheez ke liye dabav daal raha ho, jaise 'yeh secret rakh' ya 'kisi ko mat batana', to tum kya karoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Tumhare dil aur jism ki hifazat sabse pehle hai—kisi ko bhi tumhare saath \"na\" kehne ka haq nahi! Agar koi cheez ajeeb lage, to foran humein batana. 💖"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ٤ — ایک، دو، تین... نکل کر دیکھیں!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج ہم سیکھیں گے کہ کیسے چیزوں کو کم کر کے دیکھنا ہے! جیسے اگر تمہارے پاس پانچ ٹافیاں ہیں اور تم نے دو کھا لیں، تو تمہارے پاس کتنی بچتی ہیں؟ یہ ’تفریق‘ ہے۔ یاد رکھنا، تمہارے جسم پر کسی کو بھی ہاتھ اٹھانے کا حق نہیں ہے—چاہے وہ کوئی بھی ہو!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "بلی رانی کے پاس سات مکھیاں تھیں۔ اس نے تین مکھیاں پکڑ لیں۔ اب اس کے پاس کتنی مکھیاں بچتی ہیں؟ (تھوڑا رُکو... سات سے تین نکالو... چار رہ گئیں!) دیکھا، کیسے کم ہو گیا؟ تم بھی اپنے کھلونوں یا میٹھے سے ایسا ہی کھیل سکتے ہو!"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "”بیٹا، اگر کوئی تمہیں کسی چیز کے لیے دباؤ ڈال رہا ہو، جیسے ’یہ راز رکھ‘ یا ’کسی کو مت بتانا‘، تو تم کیا کرو گے؟“"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمہارے دل اور جسم کی حفاظت سب سے پہلے ہے—کسی کو بھی تمہارے ساتھ ’نا‘ کہنے کا حق نہیں! اگر کوئی چیز عجیب لگے، تو فوراً ہمیں بتانا۔ 💖"
+            }
+          ]
+        }
+      }
     }
   ]
 }
