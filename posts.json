@@ -9210,6 +9210,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 5,
+      "id": "day-005",
+      "date": "2026-08-09",
+      "title": "Day 5 — Shaklein chhupaao aur dhoondo",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachon, aaj hum seekhenge ke agar koi cheez ya shakal chhupayi jaaye, toh hum use dhoondh sakte hain! Jaise pehle humne rangon aur gintein seekhi, ab hum seekhenge ke apne aap ko ya apni cheezon ko kaise chhupana hai aur kaise dhoondhna hai. Yeh humein samajhne mein madad karega ke koi cheez ya insaan kahin chhup gaya ho, toh hum use pehchaan sakte hain."
+        ],
+        [
+          "Chhoti Kahani",
+          "Rohan apne ghar ke baahar khel raha tha. Usne ek patthar lekar ek darakht ke peeche chhupa diya. Uske baad usne apni ammi se poochha, \"Ammi, kya aap yeh patthar dhoondh sakte hain?\" Ammi ne muskurate hue kaha, \"Haan beta, agar main thoda dhyaan se dekhoon, toh main use dhoondh sakti hoon!\" Rohan ne hansa aur kaha, \"Ab main bhi seekh jaaoonga!\""
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "Beta, agar tumhari koi cheez chhup jaaye, toh tum kya karoge?"
+        ],
+        [
+          "Yaad Rakhein",
+          "Apne aap ko ya apni cheezon ko chhupana aur dhoondhna ek achha tareeqa hai! Lekin yaad rakhna, tumhara jism tumhara hai, aur agar koi tumhein chhupane ke liye kahe, toh foran ammi/abbu ko batana."
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ٥ — شکلیں چھپاؤ اور ڈھونڈو",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "بچو، آج ہم سیکھیں گے کہ اگر کوئی چیز یا شکل چھپائی جائے تو ہم اسے ڈھونڈ سکتے ہیں! جیسے پہلے ہم نے رنگوں اور گنتی سیکھی، اب ہم سیکھیں گے کہ اپنے آپ کو یا اپنی چیزوں کو کیسے چھپانا ہے اور کیسے ڈھونڈنا ہے۔ یہ ہمیں سمجھنے میں مدد کرے گا کہ کوئی چیز یا انسان کہیں چھپ گیا ہو تو ہم اسے پہچان سکتے ہیں۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "روہان اپنے گھر کے باہر کھیل رہا تھا۔ اس نے ایک پتھر لے کر ایک درخت کے پیچھے چھپا دیا۔ اس کے بعد اس نے اپنی امی سے پوچھا، ’امی، کیا آپ یہ پتھر ڈھونڈ سکتی ہیں؟‘ امی نے مسکراتے ہوئے کہا، ’ہاں بیٹا، اگر میں تھوڑا دھیان سے دیکھوں تو میں اسے ڈھونڈ سکتی ہوں!‘ روہان نے ہنسا اور کہا، ’اب میں بھی سیکھ جاؤں گا!‘"
+            },
+            {
+              "label": "امی ابّو کے ساتھ بات کریں",
+              "content": "بیٹا، اگر تمہاری کوئی چیز چھپ جائے تو تم کیا کرو گے؟"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "اپنے آپ کو یا اپنی چیزوں کو چھپانا اور ڈھونڈنا ایک اچھا طریقہ ہے! لیکن یاد رکھنا، تمہارا جسم تمہارا ہے، اور اگر کوئی تمہیں چھپانے کے لیے کہے تو فوراً امی/ابّو کو بتانا۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-good-behavior": [
