@@ -1153,6 +1153,64 @@
           ]
         }
       }
+    },
+    {
+      "day": 7,
+      "id": "day-007",
+      "date": "2026-08-09",
+      "title": "Day 7 — **AI-Powered Content Creation: Apne Workflow ko 10x Fast Karein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "AI tools (jaise Canva AI, MidJourney, CapCut AI, Jasper) ka istemal karke content banane ka time 50% tak kam kar sakte hain. AI se drafts generate karne, thumbnails design karne, aur captions optimize karne mein madad milti hai. Bas AI prompts ko sahi tareeke se likhna aana chahiye."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Caption likhne ke liye",
+          "\"Write a 3-line Instagram caption for a fitness brand promoting protein powder, tone: motivational, emojis: 💪🔥\"\n2."
+        ],
+        [
+          "Thumbnail banane ke liye",
+          "Canva AI se \"futuristic gym background, neon text 'GAINS 2024', bold font\" prompt use karke 10 variants generate karo."
+        ],
+        [
+          "Practice",
+          "Apne niche ke hisaab se 1 AI prompt likhkar ek caption ya thumbnail generate karo. (e.g., \"Write a 2-line LinkedIn post for a digital marketing course targeting beginners in Hindi.\")"
+        ],
+        [
+          "Mini Project",
+          "Ek 3-day content calendar banayein jisme har post ke liye AI se 3 caption options generate karein aur sabse engaging choose karein. (Use: Notion ya Google Sheets)"
+        ]
+      ],
+      "answer_key": "caption draft, thumbnail variant, engagement score, ai prompt",
+      "translations": {
+        "ur": {
+          "title": "دن ۷ — **اے آئی سے چلنے والی مواد سازی: اپنے ورک فلو کو ۱۰ گنا تیز کریں**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "اے آئی ٹولز (جیسے کینوا اے آئی، مِڈ جرنی، کیپ کٹ اے آئی، جاسپر) کا استعمال کرکے مواد بنانے کا وقت ۵۰ فیصد تک کم کیا جا سکتا ہے۔ اے آئی سے ڈرافٹس تیار کرنے، تھمب نیلز ڈیزائن کرنے، اور کیپشنز کو بہتر بنانے میں مدد ملتی ہے۔ بس اے آئی پرامپٹس کو صحیح طریقے سے لکھنا آنا چاہیے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ کیپشن لکھنے کے لیے: \"فِٹنس برانڈ کے لیے پروٹین پاؤڈر کی تشہیر کے لیے ۳ سطری انسٹاگرام کیپشن لکھیں، لہجہ: حوصلہ افزا، ایموجیز: 💪🔥\"\n۲۔ تھمب نیل بنانے کے لیے: کینوا اے آئی سے \"فیوچرسٹک جم بیک گراؤنڈ، نیون ٹیکسٹ 'گینز ۲۰۲۴'، بولڈ فونٹ\" پرامپٹ استعمال کرکے ۱۰ ویریئنٹس جنریٹ کریں۔"
+            },
+            {
+              "label": "مشق",
+              "content": "اپنے نیچے کے حساب سے ایک اے آئی پرامپٹ لکھ کر ایک کیپشن یا تھمب نیل جنریٹ کریں۔ (مثال کے طور پر، \"ڈیجیٹل مارکیٹنگ کورس کے لیے ہندی میں بیگنرز کو ہدف بناتے ہوئے ۲ سطری لنکڈ اِن پوسٹ لکھیں۔\")"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "ایک ۳ روزہ مواد کیلنڈر بنائیں جس میں ہر پوسٹ کے لیے اے آئی سے ۳ کیپشن آپشنز جنریٹ کریں اور سب سے زیادہ دلچسپ کا انتخاب کریں۔ (استعمال کریں: نوشن یا گوگل شیٹس)"
+            }
+          ]
+        }
+      }
     }
   ],
   "facebook-page-growth": [
