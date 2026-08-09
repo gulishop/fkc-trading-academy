@@ -2253,6 +2253,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 7,
+      "id": "day-007",
+      "date": "2026-08-09",
+      "title": "Day 7 — **Amazon FBA Mein PPC Ads Kaise Shuru Karen (Beginner-Friendly Guide)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Amazon PPC (Pay-Per-Click) ads aapke product ko search results mein upar dikhane ka sabse asaan tareeka hai. Jab koi customer aapke product se related keyword search karega, toh aapka ad show hoga aur aapko sirf tab pay karna hoga jab koi us par click karega. Yeh beginner se intermediate level par ads chalane ka tareeka hai, jisse aapka product rank improve ho aur sales badhein."
+        ],
+        [
+          "Example",
+          "Maana aapne ek \"Wireless Bluetooth Headphones\" ka product launch kiya hai. Aap Amazon PPC mein ek campaign banayenge jisme aap \"bluetooth headphones\" ya \"wireless earbuds\" jaise keywords ko target karenge. Agar koi customer in keywords par search karega, toh aapka ad show hoga. Agar wo ad par click karega, toh aapko us click ka kuch amount pay karna hoga."
+        ],
+        [
+          "Practice",
+          "1. Apne Amazon Seller Central mein jaayein.\n2. \"Advertising\" tab par click karein aur \"Create Campaign\" select karein.\n3. Campaign type \"Sponsored Products\" choose karein.\n4. Apne product ko select karein aur daily budget set karein (shuru mein $5-$10 daily budget rakh sakte hain).\n5. Relevant keywords add karein (jaise \"bluetooth headphones\", \"wireless earbuds\").\n6. Bid amount set karein (shuru mein $0.50-$1.00 per click)."
+        ],
+        [
+          "Mini Project",
+          "Ek PPC campaign setup karein aur uske performance ko 7 din tak monitor karein. Har din ke clicks, impressions, aur spend ko note karein. Iske baad, jo keywords se best performance mil rahi hai, un par bid badhaayein aur jo keywords se koi click nahi aaya, unko hataayein ya bid kam karein."
+        ]
+      ],
+      "answer_key": "campaign setup, keywords selection, bid management, performance tracking",
+      "translations": {
+        "ur": {
+          "title": "دن ۷ — **ایمیزون ایف بی اے میں پی پی سی ایڈز کیسے شروع کریں (بیگنر فرینڈلی گائیڈ)**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ایمیزون پی پی سی (پے پر کلک) ایڈز آپ کے پروڈکٹ کو سرچ ریزلٹس میں اوپر دکھانے کا سب سے آسان طریقہ ہے۔ جب کوئی کسٹمر آپ کے پروڈکٹ سے متعلق کی ورڈ سرچ کرے گا، تو آپ کا ایڈ دکھایا جائے گا اور آپ کو صرف تب ادائیگی کرنی ہوگی جب کوئی اس پر کلک کرے گا۔ یہ بیگنر سے انٹرمیڈیٹ لیول پر ایڈز چلانے کا طریقہ ہے، جس سے آپ کے پروڈکٹ کی رینکنگ بہتر ہوگی اور سیلز میں اضافہ ہوگا۔"
+            },
+            {
+              "label": "مثال",
+              "content": "مانا آپ نے ایک \"وائرلیس بلوٹوتھ ہیڈ فونز\" کا پروڈکٹ لانچ کیا ہے۔ آپ ایمیزون پی پی سی میں ایک کیمپین بنائیں گے جس میں آپ \"بلوٹوتھ ہیڈ فونز\" یا \"وائرلیس ایئر بادز\" جیسے کی ورڈز کو ٹارگٹ کریں گے۔ اگر کوئی کسٹمر ان کی ورڈز پر سرچ کرے گا، تو آپ کا ایڈ دکھایا جائے گا۔ اگر وہ ایڈ پر کلک کرے گا، تو آپ کو اس کلک کی کچھ رقم ادا کرنی ہوگی۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "۱۔ اپنے ایمیزون سیلر سینٹرل میں جائیں۔\n۲۔ \"ایڈورٹائزنگ\" ٹیب پر کلک کریں اور \"کریئٹ کیمپین\" سلیکٹ کریں۔\n۳۔ کیمپین ٹائپ \"اسپانسرڈ پروڈکٹس\" چن لیں۔\n۴۔ اپنے پروڈکٹ کو سلیکٹ کریں اور ڈیلی بجٹ سیٹ کریں (شروع میں پانچ سے دس ڈالر روزانہ بجٹ رکھ سکتے ہیں)۔\n۵۔ متعلقہ کی ورڈز شامل کریں (جیسے \"بلوٹوتھ ہیڈ فونز\"، \"وائرلیس ایئر بادز\")۔\n۶۔ بولی کی رقم سیٹ کریں (شروع میں پچاس سینٹ سے ایک ڈالر فی کلک)۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک پی پی سی کیمپین سیٹ اپ کریں اور اس کی کارکردگی کو سات دن تک مانیٹر کریں۔ ہر دن کے کلکس، امپریشنز، اور خرچ کو نوٹ کریں۔ اس کے بعد، جن کی ورڈز سے بہترین کارکردگی مل رہی ہے، ان پر بولی بڑھائیں اور جن کی ورڈز سے کوئی کلک نہیں آیا، انہیں ہٹا دیں یا بولی کم کر دیں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "daraz-seller": [
