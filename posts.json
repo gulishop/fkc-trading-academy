@@ -9462,6 +9462,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 6,
+      "id": "day-006",
+      "date": "2026-08-09",
+      "title": "Day 6 — \"Apna saman khud sametna aur safai rakhna\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachon, jaise hum apne kapde, khilone aur kitaaben saaf rakhte hain, waise hi humein apna poora saman bhi thik se rakhna hai. Isse na sirf chhota sa time bachta hai, balki humein bhi pata rehta hai ke kya kahan hai. Safai rakhna bhi ek acha aadaab hai, jisse hum sabko khush rakhte hain."
+        ],
+        [
+          "Chhoti Kahani",
+          "Aman ke room mein har cheez bikharri thi. Ek din uske abbu ne kaha, \"Aman, aaj tum apne khilone khud samet lo.\" Aman ne samjha ke yeh koi game hai. Usne sab khilone ikattha kiye, aur dekha ke room bhi saaf lag raha hai. Ab usko khushii hui ke usne apna kaam khud kiya!"
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, tum apne khilone ya kapde khud sametne mein maza aata hai ya nahi?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Har cheez ko uski jagah par rakhna, taake sabko asaani ho aur tum bhi khush raho!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ٦ — اپنا سامان خود سمیٹنا اور صفائی رکھنا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "بچو، جیسے ہم اپنے کپڑے، کھلونے اور کتابیں صاف رکھتے ہیں، ویسے ہی ہمیں اپنا پورا سامان بھی ٹھیک سے رکھنا ہے۔ اس سے نہ صرف تھوڑا سا وقت بچتا ہے، بلکہ ہمیں بھی پتا رہتا ہے کہ کیا کہاں ہے۔ صفائی رکھنا بھی ایک اچھا آداب ہے، جس سے ہم سب کو خوش رکھتے ہیں۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "آمن کے کمرے میں ہر چیز بکھری ہوئی تھی۔ ایک دن اس کے اب्बو نے کہا، ’آمن، آج تم اپنے کھلونے خود سمیٹ لو۔‘ آمن نے سمجھا کہ یہ کوئی گیم ہے۔ اس نے سب کھلونے اکٹھے کیے، اور دیکھا کہ کمرہ بھی صاف لگ رہا ہے۔ اب اسے خوشی ہوئی کہ اس نے اپنا کام خود کیا!"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "بیٹا، تم اپنے کھلونے یا کپڑے خود سمیٹنے میں مزہ آتا ہے یا نہیں؟"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "ہر چیز کو اس کی جگہ پر رکھنا، تاکہ سب کو آسانی ہو اور تم بھی خوش رہو!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-nursery": [
