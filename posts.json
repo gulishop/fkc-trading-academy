@@ -5158,6 +5158,84 @@
           ]
         }
       }
+    },
+    {
+      "day": 7,
+      "id": "day-007",
+      "date": "2026-08-09",
+      "title": "Day 7 — **Facebook Ads Se First Sale Kaise Lein? (Beginner-Friendly Guide)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Facebook Ads POD business ke liye sabse powerful marketing tool hai. Isse targeted audience tak pahuncha ja sakta hai jo actual buyers bante hain. Budget control karna, right audience choose karna aur creatives (ads) ko optimize karna seekhna zaroori hai."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Audience Targeting",
+          "\"Men's T-Shirts\" niche mein \"Fitness Enthusiasts\" (30-45 age, interested in gym, weight loss) ko target karo.\n2."
+        ],
+        [
+          "Ad Creative",
+          "Canva se banaye gaye design ka mockup + \"Get Your Gym Motivation Tee\" caption ke saath carousel ad.\n3."
+        ],
+        [
+          "Budget",
+          "$5/day test karo, agar CTR > 2% ho to scale up karo."
+        ],
+        [
+          "Practice",
+          "Apne POD store ka Facebook Business Manager setup karo. Ek basic ad create karo (target audience: 25-35 age, interested in \"T-Shirts\", \"Streetwear\"). Ad mein apne best-selling design ka mockup use karo."
+        ],
+        [
+          "Mini Project",
+          "Ek 3-day Facebook Ads campaign run karo (budget: $15 total). Har din ad performance check karo aur 3rd day ke baad yeh decide karo:\n- Agar CTR > 1.5% ho → Scale up karo\n- Agar CTR < 1% ho → Ad creative ya audience change karo"
+        ]
+      ],
+      "answer_key": "audience testing, ctr >1.5%, mockup quality, budget scaling",
+      "translations": {
+        "ur": {
+          "title": "دن 7 — **فیس بک ایڈز سے پہلی سیل کیسے لیں؟ (بیگنر فرینڈلی گائیڈ)**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "فیس بک ایڈز پی او ڈی بزنس کے لیے سب سے طاقتور مارکیٹنگ ٹول ہے۔ اس سے ٹارگٹڈ آڈینس تک پہنچا جا سکتا ہے جو حقیقی خریدار بنتے ہیں۔ بجٹ کنٹرول کرنا، صحیح آڈینس کا انتخاب کرنا اور کریئیٹوز (ایڈز) کو آپٹیمائز کرنا سیکھنا ضروری ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1۔ آڈینس ٹارگٹنگ: \"مینز ٹی شرٹس\" نیچ میں \"فٹنس اینتھوسیسٹس\" (عمر 30-45، دلچسپی جِم، وزن کم کرنے میں) کو ٹارگٹ کرو۔"
+            },
+            {
+              "label": "",
+              "content": "2۔ ایڈ کریئیٹیو: کینوا سے بنائے گئے ڈیزائن کا ماک اپ + \"گیٹ یور جِم موٹیویشن ٹی\" کیپشن کے ساتھ کیراسل ایڈ۔"
+            },
+            {
+              "label": "",
+              "content": "3۔ بجٹ: 5 ڈالر روزانہ ٹیسٹ کرو، اگر سی ٹی آر 2 فیصد سے زیادہ ہو تو سکیل اپ کرو۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے پی او ڈی سٹور کا فیس بک بزنس مینیجر سیٹ اپ کرو۔ ایک بنیادی ایڈ بناؤ (ٹارگٹ آڈینس: عمر 25-35، دلچسپی \"ٹی شرٹس\"، \"اسٹریٹ ویئر\" میں)۔ ایڈ میں اپنے بہترین فروخت ہونے والے ڈیزائن کا ماک اپ استعمال کرو۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک 3 روزہ فیس بک ایڈز مہم چلاؤ (بجٹ: کل 15 ڈالر)۔ ہر روز ایڈ کی کارکردگی چیک کرو اور تیسرے دن کے بعد یہ فیصلہ کرو:"
+            },
+            {
+              "label": "",
+              "content": "اگر سی ٹی آر 1.5 فیصد سے زیادہ ہو → سکیل اپ کرو۔"
+            },
+            {
+              "label": "",
+              "content": "اگر سی ٹی آر 1 فیصد سے کم ہو → ایڈ کریئیٹیو یا آڈینس تبدیل کرو۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "cpp-daily-coding": [
