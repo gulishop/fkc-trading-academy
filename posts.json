@@ -8438,6 +8438,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 6,
+      "id": "day-006",
+      "date": "2026-08-10",
+      "title": "Day 6 — **Trading Orders: Limit vs Market vs Stop-Loss**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Trading orders hei woh commands jo aap broker ko dete hain ke shares khareedne ya bechne hain. **Market order** (turant khareed/bech de), **Limit order** (apna desired price set karo), aur **Stop-Loss order** (nuksaan limit set karo) sabse zyada use hote hain. Har order ka apna faida hai—samajhna zaroori hai ke kab kya use karna hai."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Market Order",
+          "Agar aapko 100 shares **turant** khareedne hain, to broker ko market order do. Broker current price (e.g., Rs. 100/share) par 100 shares khareed lega.\n2."
+        ],
+        [
+          "Limit Order",
+          "Agar aap Rs. 95/share par khareedna chahte hain (current price Rs. 100 hai), to limit order set karo. Jab price Rs. 95 aaye, order execute hoga.\n3."
+        ],
+        [
+          "Stop-Loss Order",
+          "Agar aap Rs. 90/share se zyada nuksaan nahi uthana chahte, to stop-loss Rs. 90 par set karo. Agar price Rs. 90 se neeche girta hai, order automatically execute ho jata hai."
+        ],
+        [
+          "Practice",
+          "Apne broker ke app ya website par jao aur:\n- **1 market order** (kisi bhi share ka 1 share khareedne ke liye).\n- **1 limit order** (apna desired price set karke).\n- **1 stop-loss order** (kisi share ka price set karke)."
+        ],
+        [
+          "Mini Project",
+          "Ek **trading plan** banayein:\n1. 3 shares select karo (e.g., OGDC, MCB, ENGRO).\n2. Har share ke liye **limit order** set karo (apna desired price likho).\n3. Har share ke liye **stop-loss** bhi set karo (nuksaan ki limit).\n4. 1 week tak track karo ke orders execute hue ya nahi."
+        ]
+      ],
+      "answer_key": "market order, limit order, stop-loss, execution price",
+      "translations": {
+        "ur": {
+          "title": "دن ٦ — ٹریڈنگ آرڈرز: لمٹ بمقابلہ مارکیٹ بمقابلہ سٹاپ لاس",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "ٹریڈنگ آرڈرز وہ کمانڈز ہیں جو آپ بروکر کو دیتے ہیں کہ شیئرز خریدنے یا بیچنے ہیں۔ مارکیٹ آرڈر (فوری خرید/بیچ دو)، لمٹ آرڈر (اپنا مطلوبہ قیمت سیٹ کرو)، اور سٹاپ لاس آرڈر (نقصان کی حد سیٹ کرو) سب سے زیادہ استعمال ہوتے ہیں۔ ہر آرڈر کا اپنا فائدہ ہے—سمجھنا ضروری ہے کہ کب کیا استعمال کرنا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "١۔ مارکیٹ آرڈر: اگر آپ کو ١٠٠ شیئرز فوری خریدنے ہیں، تو بروکر کو مارکیٹ آرڈر دیں۔ بروکر موجودہ قیمت (مثلاً ١٠٠ روپے فی شیئر) پر ١٠٠ شیئرز خرید لے گا۔\n٢۔ لمٹ آرڈر: اگر آپ ٩٥ روپے فی شیئر پر خریدنا چاہتے ہیں (موجودہ قیمت ١٠٠ روپے ہے)، تو لمٹ آرڈر سیٹ کریں۔ جب قیمت ٩٥ روپے پر آئے گی، آرڈر ایگزیکیوٹ ہو جائے گا۔\n٣۔ سٹاپ لاس آرڈر: اگر آپ ٩٠ روپے فی شیئر سے زیادہ نقصان نہیں اٹھانا چاہتے، تو سٹاپ لاس ٩٠ روپے پر سیٹ کریں۔ اگر قیمت ٩٠ روپے سے نیچے گرتی ہے، تو آرڈر خود بخود ایگزیکیوٹ ہو جاتا ہے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے بروکر کے ایپ یا ویب سائٹ پر جائیں اور:\n١۔ ایک مارکیٹ آرڈر دیں (کسی بھی شیئر کا ایک شیئر خریدنے کے لیے)۔\n٢۔ ایک لمٹ آرڈر سیٹ کریں (اپنی مطلوبہ قیمت سیٹ کر کے)۔\n٣۔ ایک سٹاپ لاس آرڈر سیٹ کریں (کسی شیئر کی قیمت سیٹ کر کے)।"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک ٹریڈنگ پلان بنائیں:\n١۔ تین شیئرز سلیکٹ کریں (مثلاً او جی ڈی سی، ایم سی بی، اینگرو)۔\n٢۔ ہر شیئر کے لیے لمٹ آرڈر سیٹ کریں (اپنی مطلوبہ قیمت لکھیں)۔\n٣۔ ہر شیئر کے لیے سٹاپ لاس بھی سیٹ کریں (نقصان کی حد)۔\n٤۔ ایک ہفتے تک ٹریک کریں کہ آرڈرز ایگزیکیوٹ ہوئے یا نہیں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "tiktok-growth": [
