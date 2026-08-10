@@ -9490,6 +9490,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 6,
+      "id": "day-006",
+      "date": "2026-08-10",
+      "title": "Day 6 — **Property Dealings Mein Digital Presence: Online Se Le Kar Offline Tak**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke property marketing mein digital tools kaise use kiye jaen—online listings se le kar social media tak. Zyada buyers/tenants online search karte hain, isliye ek strong digital presence zaruri hai. Ismein property ke photos, videos, aur accurate details share karna shamil hai."
+        ],
+        [
+          "Example",
+          "Ek 5 marla plot Lahore ke Johar Town ka hai. Aap:\n1. **Zameen.com** ya **OLX** par listing banayein (₨1.2 crore, 10 marla, possession ready).\n2. **Instagram/Facebook** par reel banayein—plot ke 360° video, location map, aur amenities show kartein hain.\n3. **WhatsApp Business** par auto-reply set karen (e.g., \"AOA! Plot details share ki ja rahi hain…\")."
+        ],
+        [
+          "Practice",
+          "Apne mobile se ek 10-second video banayein—ek property (ya koi chhota sa model) ka 360° tour. Video ke caption mein property ke 3 key points likhein."
+        ],
+        [
+          "Mini Project",
+          "Ek **Google Form** banayein jismein property ke 5 key details (price, size, location, amenities, contact) poochhein. Link ko WhatsApp groups ya Facebook par share karen aur 3 responses collect karen."
+        ]
+      ],
+      "answer_key": "property details, 360° video, auto-reply, google form",
+      "translations": {
+        "ur": {
+          "title": "دن ٦ — پراپرٹی ڈیلنگز میں ڈیجیٹل پریزنز: آن لائن سے لے کر آف لائن تک",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم سیکھیں گے کہ پراپرٹی مارکیٹنگ میں ڈیجیٹل ٹولز کیسے استعمال کیے جائیں—آن لائن لسٹنگز سے لے کر سوشل میڈیا تک۔ زیادہ سے زیادہ بائیرز اور ٹیننٹس آن لائن سرچ کرتے ہیں، اس لیے ایک مضبوط ڈیجیٹل پریزنز ضروری ہے۔ اس میں پراپرٹی کی تصاویر، ویڈیوز، اور درست تفصیلات شیئر کرنا شامل ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک ٥ مرلہ پلاٹ لاہور کے جوہر ٹاؤن کا ہے۔ آپ:\n١۔ زمیں ڈاٹ کام یا او ایل ایکس پر لسٹنگ بنائیں (١.٢ کروڑ روپے، ١٠ مرلہ، پزیشن ریڈی)۔\n٢۔ انسٹاگرام/فیس بک پر رییل بنائیں—پلاٹ کا ٣٦٠ ڈگری ویڈیو، لوکیشن میپ، اور سہولیات دکھائیں۔\n٣۔ واٹس ایپ بزنس پر آٹو ریپلائی سیٹ کریں (مثال کے طور پر، \"السلام علیکم! پلاٹ کی تفصیلات شیئر کی جا رہی ہیں…\")۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے موبائل سے ایک ١٠ سیکنڈ کی ویڈیو بنائیں—کسی پراپرٹی (یا چھوٹے سے ماڈل) کا ٣٦٠ ڈگری ٹور۔ ویڈیو کے کیپشن میں پراپرٹی کے ٣ کلیدی نکات لکھیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک گوگل فارم بنائیں جس میں پراپرٹی کے ٥ کلیدی تفصیلات (قیمت، سائز، لوکیشن، سہولیات، رابطہ نمبر) پوچھیں۔ لنک کو واٹس ایپ گروپس یا فیس بک پر شیئر کریں اور ٣ ریسپونسز جمع کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "mobile-repairing": [
