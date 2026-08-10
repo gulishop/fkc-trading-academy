@@ -2817,6 +2817,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 5,
+      "id": "day-005",
+      "date": "2026-08-10",
+      "title": "Day 5 — Daraz Ads (Sponsored Discovery) Ko Samajhna Aur Use Karna",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Daraz Ads (Sponsored Discovery) ek paid tool hai jo sellers ko apne products ko Daraz search aur category pages par top par dikhane mein help karta hai. Isse organic reach badhati hai, clicks milte hain, aur sales increase hoti hain. Ye CPC (Cost Per Click) model par chalta hai—har click par aapka budget kharch hota hai."
+        ],
+        [
+          "Example",
+          "Maana aap \"Wireless Earbuds\" bech rahe hain. Daraz Ads mein campaign banate hain, budget set karte hain (e.g. Rs. 5000), aur keywords jaise \"cheap wireless earbuds Pakistan\" ya \"best earbuds under 5000\" select karte hain. Jab koi user in keywords par search karega, aapka product sponsored listing mein upar show hoga."
+        ],
+        [
+          "Practice",
+          "Abhi apne Daraz Seller Center mein jao, \"Ads\" section mein click karo, aur ek naya campaign create karne ki koshish karo. Budget Rs. 1000 set karo aur ek relevant keyword choose karo."
+        ],
+        [
+          "Mini Project",
+          "Ek 3-day Daraz Ads campaign plan banao:\n1. Apne top 3 products select karo jin par ads lagani hai.\n2. Har product ke liye 2-3 keywords likho.\n3. Har product ke liye Rs. 500 ka daily budget decide karo."
+        ]
+      ],
+      "answer_key": "campaign setup, keyword selection, budget rs. 500/day, cpc model",
+      "translations": {
+        "ur": {
+          "title": "دن ٥ — داراز ایڈز (اسپانسرڈ ڈسکوری) کو سمجھنا اور استعمال کرنا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "داراز ایڈز (اسپانسرڈ ڈسکوری) ایک پےڈ ٹول ہے جو سیلرز کو اپنے پروڈکٹس کو داراز سرچ اور کیٹیگری پیجز پر سب سے اوپر دکھانے میں مدد دیتا ہے۔ اس سے آرگینک ریچ بڑھتی ہے، کلکس ملتے ہیں، اور سیلز میں اضافہ ہوتا ہے۔ یہ سی پی سی (کوسٹ پر کلک) ماڈل پر کام کرتا ہے—ہر کلک پر آپ کا بجٹ خرچ ہوتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "مانا آپ وائرلیس ایئر بڈز بیچ رہے ہیں۔ داراز ایڈز میں کیمپین بناتے ہیں، بجٹ سیٹ کرتے ہیں (مثلاً پانچ ہزار روپے)، اور کی ورڈز جیسے کہ ’سستے وائرلیس ایئر بڈز پاکستان‘ یا ’بہترین ایئر بڈز پانچ ہزار کے نیچے‘ سلیکٹ کرتے ہیں۔ جب کوئی صارف ان کی ورڈز پر سرچ کرے گا تو آپ کا پروڈکٹ اسپانسرڈ لسٹنگ میں اوپر دکھایا جائے گا۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "ابھی اپنے داراز سیلر سینٹر میں جائیں، ’ایڈز‘ سیکشن پر کلک کریں، اور ایک نیا کیمپین بنانے کی کوشش کریں۔ بجٹ ایک ہزار روپے سیٹ کریں اور ایک متعلقہ کی ورڈ منتخب کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک تین روزہ داراز ایڈز کیمپین پلان بنائیں:\n١۔ اپنے ٹاپ تین پروڈکٹس منتخب کریں جن پر ایڈز لگانے ہیں۔\n٢۔ ہر پروڈکٹ کے لیے دو سے تین کی ورڈز لکھیں۔\n٣۔ ہر پروڈکٹ کے لیے پانچ سو روپے کا روزانہ بجٹ طے کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "ai-content-writing": [

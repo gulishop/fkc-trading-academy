@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-05T10:18:19.953573";
+  var FKC_BUILD = "2026-08-10T20:25:02.071822";
   function fkcCheckVersion(){
     fetch("../../../version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -230,7 +230,21 @@ function fkcToggleTheme(){
       
       
       
-      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button></div>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
+    <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
+      <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
+      <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
+    </div>
+    <script>
+    function fkcToggleTranslateWidget() {
+        var el = document.getElementById('google_translate_element');
+        el.style.display = (el.style.display === 'none') ? 'inline-block' : 'none';
+    }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({autoDisplay: false}, 'google_translate_element');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
       <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Aaj seekhoge ke Daraz par Pakistan mein konsi products zyada bikti hain. Product research ka matlab hai market ki demand, competition, aur profit margin check karna. Aise products chuno jo zyada search kiye ja rahe hon, kam competition ho, aur aapke budget mein aaye.</p><h3>Example</h3><p>1. Daraz Seller Center &gt; &quot;Product Research&quot; section mein jao.<br>2. &quot;Trending Products&quot; ya &quot;Hot Searches&quot; dekho.<br>3. &quot;Fashion&quot; category mein &quot;Women&#x27;s Kurtas&quot; search karo — agar 10,000+ searches/month hain aur competition kam hai, to yeh product choose kar sakte ho.</p><h3>Practice</h3><p>Apne Daraz Seller Center account mein jao aur &quot;Product Research&quot; tool use karke **3 products** select karo jo aapko Pakistan market ke liye suitable lagte hain. Har product ke liye 2 reasons bhi likhna.</p><h3>Mini Project</h3><p>Ek Excel sheet banao jismein:<br>- Product name<br>- Monthly searches (Daraz se le sakte ho)<br>- Competition level (Low/Medium/High)<br>- Estimated profit margin (Price - Cost)<br>- Apka final decision (Yes/No)</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>Concept</h3><p>آج آپ سیکھیں گے کہ ڈاراز پر پاکستان میں کون سے پراڈکٹس زیادہ بکتے ہیں۔ پراڈکٹ ریسرچ کا مطلب ہے مارکیٹ کی ڈیمینڈ، کمپٹیشن، اور پروفٹ مارجن چیک کرنا۔ ایسے پراڈکٹس چننے ہیں جو زیادہ سرچ کئے جا رہے ہوں، کم کمپٹیشن ہو، اور آپ کے بجٹ میں آئے۔</p><h3>Example</h3><p>1. ڈاراز سیلر سینٹر &gt; &quot;پراڈکٹ ریسرچ&quot; سیکشن میں جائیں۔<br>2. &quot;ٹرینڈنگ پراڈکٹس&quot; یا &quot;ہاٹ سرچز&quot; دیکھیں۔<br>3. &quot;فیشن&quot; کیٹیگری میں &quot;Women&#x27;s Kurtas&quot; سرچ کریں — اگر 10,000+ سرچز/ماہ ہیں اور کمپٹیشن کم ہے، تو یہ پراڈکٹ چن سکتے ہیں۔</p><h3>Practice</h3><p>اپنے ڈاراز سیلر سینٹر اکاؤنٹ میں جائیں اور &quot;پراڈکٹ ریسرچ&quot; ٹول استعمال کر کے **3 پراڈکٹس** سلیکٹ کریں جو آپ کو پاکستان مارکیٹ کے لیے مناسب لگتے ہیں۔ ہر پراڈکٹ کے لیے 2 ریزنز بھی لکھنا۔</p><h3>Mini Project</h3><p>ایک ایکسل شیٹ بنائیں جس میں شامل ہوں:<br>- پراڈکٹ کا نام<br>- ماہانہ سرچز (ڈاراز سے لے سکتے ہیں)<br>- کمپٹیشن لیول (Low/Medium/High)<br>- تخمینہ پروفٹ مارجن (Price - Cost)<br>- آپ کا فائنل فیصلہ (Yes/No)</p></div>
       
       
@@ -342,7 +356,30 @@ function fkcToggleTheme(){
         data-ad-slot="2517808504" data-ad-format="auto" data-full-width-responsive="true"></ins>
       <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
-    <div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
+    
+    <div class="daily-motivation" style="max-width:640px;margin:20px auto;padding:16px 20px;
+      background:linear-gradient(135deg,#fff7e6,#fef0f0);border-radius:14px;border:1px solid #f5e2c8;
+      text-align:center;">
+      <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
+        margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
+      <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
+        “Aaj jo mushkil lag raha hai, mustaqil mazeed practice se woh aasan ho jayega.”
+      </p>
+    </div>
+    <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;
+      background:linear-gradient(145deg,#f7f9fc,#eef2f9);border-radius:16px;border:1px solid #e6e9f0;
+      text-align:center;">
+      <p style="font-size:13px;letter-spacing:.03em;text-transform:uppercase;color:var(--muted);
+        margin:0 0 10px;font-weight:700;">✉️ Founder ki taraf se</p>
+      <p style="font-size:15px;line-height:1.7;color:#2a2f3a;margin:0 0 14px;">
+        Hamara maqsad sirf lessons post karna nahi — har us Pakistani tak muft, practical
+        taleem pohchana hai jo seekhna chahta hai lekin resources ya waqt nahi rakhta.
+        FKC Trading Academy ka vision hai: <b>roz thora seekho, mustaqil mehnat karo,
+        aur apni zindagi khud badlo.</b> Mission simple hai — koi bhi course, koi bhi fee
+        nahi, sirf aap ka irada.
+      </p>
+      <p style="font-size:13px;color:var(--muted);margin:0;">— Fazul Khan Chandio, Founder &amp; CEO</p>
+    </div><div class="brand-footer"><img src="../../../logo.png" alt="FKC Trading Academy"><div class="txt"><b>FKC Trading Academy</b><br>Fazul Khan Chandio — Founder &amp; CEO<br><a class="wa-btn" href="https://wa.me/923333909816" target="_blank" rel="noopener">💬 WhatsApp par Contact karein</a><br><a href="../../../privacy.html">Privacy Policy</a></div></div>
     <script>
     (function(){
       try {

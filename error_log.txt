@@ -457,3 +457,7 @@
 [2026-08-10T20:20:34.983967] [amazon-fba] Day 2 video skip: Agnes aur ffmpeg dono attempts fail.
 [2026-08-10T20:20:41.757311] [amazon-fba] Day 3 video skip: Agnes aur ffmpeg dono attempts fail.
 [2026-08-10T20:20:45.346052] [amazon-fba] Day 4 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-10T20:27:31.678905] [daraz-seller] Day 1 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-10T20:29:11.642828] [daraz-seller] Day 2 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-10T20:29:14.933708] [daraz-seller] Day 3 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-10T20:30:46.015141] [daraz-seller] Day 4 video skip: Agnes aur ffmpeg dono attempts fail.
