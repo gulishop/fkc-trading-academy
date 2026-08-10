@@ -9998,6 +9998,72 @@
           ]
         }
       }
+    },
+    {
+      "day": 8,
+      "id": "day-008",
+      "date": "2026-08-10",
+      "title": "Day 8 — **EMMC IC Replacement: Data Recovery aur Chip Swap Ka Guide**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "EMMC (Embedded MultiMediaCard) ek aisi chip hoti hai jo mobile ke storage aur OS ko handle karti hai. Agar yeh chip corrupt ho jati hai ya fail ho jati hai, to phone boot nahi hoga, data lost ho sakta hai, ya \"EMMC Failure\" error aayega. Is lesson mein hum seekhenge ki EMMC ko kaise identify karna hai, replace karna hai, aur data recovery ke basic steps."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "EMMC ko identify karna",
+          "Phone ko khol kar motherboard par EMMC chip dhundho (usually 153/169 ball BGA package).\n2."
+        ],
+        [
+          "Chip ko remove karna",
+          "Hot air gun se 300°C-350°C par heat karke solder ko melt karo, phir chip ko nikal lo.\n3."
+        ],
+        [
+          "New EMMC install karna",
+          "Same position par new chip lagao aur proper soldering karo.\n4."
+        ],
+        [
+          "Data recovery (agar zaroori ho)",
+          "Old chip ko reader se connect karke data extract kar sakte hain."
+        ],
+        [
+          "Practice",
+          "Apne paas ek old/broken phone lo jiski EMMC chip visible ho. Uske motherboard ki photo le aur EMMC chip ki location ko identify karo (Google se \"Samsung Galaxy S7 EMMC location\" jaise search kar sakte ho)."
+        ],
+        [
+          "Mini Project",
+          "Ek broken phone lo jiski EMMC chip fail ho gayi hai. Uske liye:\n- EMMC chip ko remove karo.\n- New EMMC chip install karo (agar available ho).\n- Phone ko boot karne ki koshish karo."
+        ]
+      ],
+      "answer_key": "emmc chip location, bga package, hot air gun temperature, data recovery reader",
+      "translations": {
+        "ur": {
+          "title": "دن 8 — **ای ایم ایم سی آئی سی ری پلیسمنٹ: ڈیٹا ریکوری اور چپ سوئپ کا گائیڈ**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ای ایم ایم سی (ایمبیڈڈ ملٹی میڈیا کارڈ) ایک ایسی چپ ہوتی ہے جو موبائل کے اسٹوریج اور آپریٹنگ سسٹم کو ہینڈل کرتی ہے۔ اگر یہ چپ خراب ہو جاتی ہے یا فیل ہو جاتی ہے تو فون بوٹ نہیں ہوگا، ڈیٹا ضائع ہو سکتا ہے، یا \"ای ایم ایم سی فیلئر\" کی ایرر آئے گی۔ اس سبق میں ہم سیکھیں گے کہ ای ایم ایم سی کو کیسے شناخت کرنا ہے، ری پلیس کرنا ہے، اور ڈیٹا ریکوری کے بنیادی اقدامات۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ ای ایم ایم سی کو شناخت کرنا: فون کو کھول کر مدر بورڈ پر ای ایم ایم سی چپ تلاش کریں (عموماً ۱۵۳/۱۶۹ بال بی جی اے پیکج ہوتی ہے)۔\n۲۔ چپ کو ہٹانا: ہاٹ ایئر گن سے ۳۰۰°C-۳۵۰°C پر ہیٹ کرکے سولڈر کو پگھلا لیں، پھر چپ کو نکال لیں۔\n۳۔ نئی ای ایم ایم سی انسٹال کرنا: اسی پوزیشن پر نئی چپ لگائیں اور مناسب سولڈرنگ کریں۔\n۴۔ ڈیٹا ریکوری (اگر ضروری ہو): پرانی چپ کو ریڈر سے کنیکٹ کرکے ڈیٹا ایکسٹریکٹ کیا جا سکتا ہے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے پاس ایک پرانا یا خراب فون لیں جس کی ای ایم ایم سی چپ نظر آتی ہو۔ اس کے مدر بورڈ کی تصویر لیں اور ای ایم ایم سی چپ کی لوکیشن کو شناخت کریں (گوگل پر \"سامسنگ گیلکسی ایس ۷ ای ایم ایم سی لوکیشن\" جیسے الفاظ سے تلاش کر سکتے ہیں)।"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک خراب فون لیں جس کی ای ایم ایم سی چپ فیل ہو گئی ہو۔ اس کے لیے:\n- ای ایم ایم سی چپ کو ہٹائیں۔\n- نئی ای ایم ایم سی چپ انسٹال کریں (اگر دستیاب ہو)۔\n- فون کو بوٹ کرنے کی کوشش کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-safety-education": [
