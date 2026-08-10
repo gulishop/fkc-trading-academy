@@ -4,9 +4,9 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>Day 1 — C++ Setup aur "Hello World" Program — C++ Daily Coding</title>
-<meta property="og:title" content="Day 1 — C++ Setup aur "Hello World" Program — C++ Daily Coding">
-<meta property="og:description" content="FKC Trading Academy · C++ Daily Coding · Day 01">
+<title>Day 18 — **Lambda Functions: Inline Functions Ka Powerful Tool** — C++ Daily Coding</title>
+<meta property="og:title" content="Day 18 — **Lambda Functions: Inline Functions Ka Powerful Tool** — C++ Daily Coding">
+<meta property="og:description" content="FKC Trading Academy · C++ Daily Coding · Day 18">
 <meta property="og:image" content="../../../logo.png">
 <meta name="twitter:card" content="summary_large_image">
 <script>
@@ -219,17 +219,17 @@ function fkcToggleTheme(){
 }
 </script>
 
-    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "headline": "Day 1 — C++ Setup aur \"Hello World\" Program", "name": "Day 1 — C++ Setup aur \"Hello World\" Program", "description": "", "learningResourceType": "Lesson", "educationalLevel": "Beginner", "inLanguage": "ur", "isPartOf": {"@type": "Course", "name": "C++ Daily Coding"}, "datePublished": "2026-08-03", "publisher": {"@type": "Organization", "name": "FKC Trading Academy"}}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "headline": "Day 18 — **Lambda Functions: Inline Functions Ka Powerful Tool**", "name": "Day 18 — **Lambda Functions: Inline Functions Ka Powerful Tool**", "description": "", "learningResourceType": "Lesson", "educationalLevel": "Beginner", "inLanguage": "ur", "isPartOf": {"@type": "Course", "name": "C++ Daily Coding"}, "datePublished": "2026-08-10", "publisher": {"@type": "Organization", "name": "FKC Trading Academy"}}</script>
     <div class="top"><a href="../../../index.html">← FKC Trading Academy</a>
     <a href="../index.html" class="course-back-link">/ C++ Daily Coding</a></div>
-    
-    <p class="muted">💻 C++ Daily Coding · Day 01</p>
-    <h1>Day 1 — C++ Setup aur &quot;Hello World&quot; Program</h1>
-    
+    <span class="badge">Latest</span>
+    <p class="muted">💻 C++ Daily Coding · Day 18</p>
+    <h1>Day 18 — **Lambda Functions: Inline Functions Ka Powerful Tool**</h1>
+    <p class="muted" style="margin:0 0 10px;">↩️ Pichla lesson: <strong>Day 17 — **STL Containers: Vectors, Maps, aur Sets**</strong> — aaj is se aage badhte hain.</p>
     <div class="card">
       
-      
-      
+      <img src="images/day-018.png" alt="Day 18 — **Lambda Functions: Inline Functions Ka Powerful Tool**" style="width:100%;border-radius:12px;margin-bottom:14px;">
+      <p class="muted" style="margin:0 0 6px;">🎬 AI Video Explanation</p><video src="videos/day-018.mp4" controls preload="metadata" poster="images/day-018.png" style="width:100%;border-radius:12px;margin-bottom:14px;background:#000;"></video>
       <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
     <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
       <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
@@ -245,27 +245,50 @@ function fkcToggleTheme(){
     }
     </script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
-      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Aaj hum C++ programming shuru karne se pehle apne system par C++ compiler aur IDE (Integrated Development Environment) setup karenge. Compiler code ko machine language mein translate karta hai, jabki IDE coding, debugging aur running ko asaan banata hai. Pehle program ko &quot;Hello World&quot; kehte hain—yeh programming ki starting point hoti hai.</p><h3>Example</h3><p>1.</p><h3>Compiler Install karein</h3><p>- Windows: [MinGW-w64](https://www.mingw-w64.org/) download karein (ya [MSYS2](https://www.msys2.org/)).<br>   - Mac: Terminal mein `xcode-select --install` run karein.<br>   - Linux: `sudo apt install g++` (Ubuntu/Debian) ya `sudo dnf install gcc-c++` (Fedora).</p><p>2.</p><h3>IDE Install karein</h3><p>- [VS Code](https://code.visualstudio.com/) (lightweight, extensions: &quot;C/C++&quot; aur &quot;Code Runner&quot;).<br>   - Ya [Code::Blocks](https://www.codeblocks.org/) (simple IDE).</p><p>3.</p><h3>Pehl program likhein</h3><pre dir="ltr"><code>   #include &lt;iostream&gt;
-   using namespace std;
-
-   int main() {
-       cout &lt;&lt; &quot;Hello World!&quot; &lt;&lt; endl;
-       return 0;
-   }
-   </code></pre><p>- `g++ hello.cpp -o hello` se compile karein.<br>   - `./hello` (Linux/Mac) ya `hello.exe` (Windows) se run karein.</p><h3>Practice</h3><p>Apne system par C++ compiler aur VS Code setup karein, aur upar wala &quot;Hello World&quot; program run karein. Screenshot ya terminal output share karein.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>تصورات</h3><p>آج ہم C++ پروگرامنگ شروع کرنے سے پہلے اپنے سسٹم پر C++ کمپائلر اور IDE (انٹیگریٹڈ ڈویلپمنٹ ماحول) سیٹ اپ کریں گے۔ کمپائلر کوڈ کو مشین لینگویج میں ترجمہ کرتا ہے، جبکہ IDE کوڈنگ، ڈیبگنگ اور رننگ کو آسان بناتا ہے۔ پہلا پروگرام &#x27;Hello World&#x27; کہلاتا ہے—یہ پروگرامنگ کی ابتدائی نشانی ہوتی ہے۔</p><h3>مثال</h3><p>1.<br>کمپائلر انسٹال کریں:<br>- Windows: [MinGW-w64](https://www.mingw-w64.org/) ڈاؤن لوڈ کریں (یا [MSYS2](https://www.msys2.org/))۔<br>- Mac: ٹرمینل میں `xcode-select --install` رن کریں۔<br>- Linux: `sudo apt install g++` (اوبنٹو/ڈیبین) یا `sudo dnf install gcc-c++` (فیڈورا)۔</p><p>2.<br>IDE انسٹال کریں:<br>- [VS Code](https://code.visualstudio.com/) (ہلکا پھلکا، ایکسٹینشنز: &#x27;C/C++&#x27; اور &#x27;Code Runner&#x27;)۔<br>- یا [Code::Blocks](https://www.codeblocks.org/) (سادہ IDE)۔</p><p>3.<br>پہلا پروگرام لکھیں:</p><pre dir="ltr"><code>#include &lt;iostream&gt;
-using namespace std;
+      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Lambda functions C++ mein inline functions banane ka tareeka hai jo aapko directly code mein hi chhote functions define karne deta hai. Ye aapko STL algorithms (jaise `sort`, `for_each`) ya custom callbacks ke liye functions define karne mein madadgar hote hain. Inka syntax `[capture](parameters) -&gt; return_type { body }` hota hai.</p><h3>Example</h3><pre dir="ltr"><code>#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;algorithm&gt;
 
 int main() {
-    cout &lt;&lt; &quot;Hello World!&quot; &lt;&lt; endl;
+    std::vector&lt;int&gt; nums = {5, 2, 8, 1, 3};
+
+    // Lambda to sort in descending order
+    std::sort(nums.begin(), nums.end(), [](int a, int b) {
+        return a &gt; b;
+    });
+
+    // Lambda to print each element
+    std::for_each(nums.begin(), nums.end(), [](int n) {
+        std::cout &lt;&lt; n &lt;&lt; &quot; &quot;;
+    });
+
     return 0;
-}</code></pre><p>- `g++ hello.cpp -o hello` سے کمپائل کریں۔<br>- `./hello` (لِنکس/میک) یا `hello.exe` (ونڈوز) سے رن کریں۔</p><h3>مشق</h3><p>اپنے سسٹم پر C++ کمپائلر اور VS Code سیٹ اپ کریں، اور اوپر والا &#x27;Hello World&#x27; پروگرام رن کریں۔ اسکرین شاٹ یا ٹرمینل آؤٹ پٹ شیئر کریں۔</p></div>
+}</code></pre><p>Output: `8 5 3 2 1`</p><h3>Practice</h3><p>Ek lambda function likhein jo do integers ko multiply kare aur use `std::for_each` ke saath ek vector `numbers = {2, 4, 6, 8}` par apply kare.</p><h3>Mini Project</h3><p>Ek simple calculator program banayein jo user se 2 numbers aur operation (+, -, *, /) input le, phir lambda functions ka use karke result calculate kare.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>کنسیپٹ</h3><p>لیمڈا فنکشنز سی پلس پلس میں ان لائن فنکشنز بنانے کا طریقہ ہیں جو آپ کو براہ راست کوڈ میں ہی چھوٹے فنکشنز تعریف کرنے کی اجازت دیتے ہیں۔ یہ آپ کے لیے ایس ٹی ایل الگورتھمز (جیسے `sort`، `for_each`) یا کسٹم کال بیکس کے لیے فنکشنز تعریف کرنے میں مددگار ہوتے ہیں۔ ان کا سنٹیکس `[capture](parameters) -&gt; return_type { body }` ہوتا ہے۔</p><h3>مثال</h3><pre dir="ltr"><code>#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;algorithm&gt;
+
+int main() {
+    std::vector&lt;int&gt; nums = {5, 2, 8, 1, 3};
+
+    // لیبڈا نزولی ترتیب میں ترتیب دینے کے لیے
+    std::sort(nums.begin(), nums.end(), [](int a, int b) {
+        return a &gt; b;
+    });
+
+    // لیبڈا ہر عنصر کو پرنٹ کرنے کے لیے
+    std::for_each(nums.begin(), nums.end(), [](int n) {
+        std::cout &lt;&lt; n &lt;&lt; &quot; &quot;;
+    });
+
+    return 0;
+}</code></pre><p>آؤٹ پٹ: `8 5 3 2 1`</p><h3>پریکٹس</h3><p>ایک لیبڈا فنکشن لکھیں جو دو انٹیجرز کو ضرب دے اور اسے `std::for_each` کے ساتھ ایک ویکٹر `numbers = {2, 4, 6, 8}` پر لاگو کریں۔</p><h3>منی پروجیکٹ</h3><p>ایک سادہ کیلکولیٹر پروگرام بنائیں جو صارف سے دو نمبرز اور آپریشن (+، -، *، /) ان پٹ لے، پھر لیبڈا فنکشنز کا استعمال کرتے ہوئے نتیجہ کیلکولیٹ کرے۔</p></div>
       
       
       <div class="quiz-box no-print">
         <p><b>📝 Apna Practice Check Karein</b></p>
         <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
         <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
-        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"compiler, ide, g++, vs code, hello world"'>✅ Check Karein</button>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"multiply, for_each, lambda, vector"'>✅ Check Karein</button>
         <div class="quiz-result" id="fkc-quiz-result"></div>
       </div>
       <script>
@@ -285,23 +308,23 @@ int main() {
       }
       </script>
       
-      <div class="puzzle-box no-print" id="pz-cpp-daily-coding-1">
+      <div class="puzzle-box no-print" id="pz-cpp-daily-coding-18">
         <h3>🧩 Dimaghi Kasrat — Jode Milayein</h3>
-        <p class="puzzle-status" id="pz-cpp-daily-coding-1-status">Cards par tap karke jode (pairs) milayein.</p>
-        <div class="puzzle-grid" id="pz-cpp-daily-coding-1-grid"></div>
-        <div class="puzzle-win" id="pz-cpp-daily-coding-1-win">🎉 Shabaash! Sab jode mil gaye — thodi der aur seekhne ke liye tayyar?</div>
+        <p class="puzzle-status" id="pz-cpp-daily-coding-18-status">Cards par tap karke jode (pairs) milayein.</p>
+        <div class="puzzle-grid" id="pz-cpp-daily-coding-18-grid"></div>
+        <div class="puzzle-win" id="pz-cpp-daily-coding-18-win">🎉 Shabaash! Sab jode mil gaye — thodi der aur seekhne ke liye tayyar?</div>
       </div>
       <script>
       (function(){
-        var emojis = ["🍎", "🐶", "🌙", "🎨", "🔑", "🌸"];
+        var emojis = ["🎯", "📚", "⭐", "🚀", "💡", "🏆"];
         var deck = emojis.concat(emojis);
         for (var i = deck.length - 1; i > 0; i--) {
           var j = Math.floor(Math.random() * (i + 1));
           var t = deck[i]; deck[i] = deck[j]; deck[j] = t;
         }
-        var grid = document.getElementById("pz-cpp-daily-coding-1-grid");
-        var statusEl = document.getElementById("pz-cpp-daily-coding-1-status");
-        var winEl = document.getElementById("pz-cpp-daily-coding-1-win");
+        var grid = document.getElementById("pz-cpp-daily-coding-18-grid");
+        var statusEl = document.getElementById("pz-cpp-daily-coding-18-status");
+        var winEl = document.getElementById("pz-cpp-daily-coding-18-win");
         var flipped = [], matchedCount = 0, moves = 0, lock = false;
         deck.forEach(function(val){
           var b = document.createElement("button");
@@ -343,24 +366,24 @@ int main() {
       
       <div class="no-print" style="margin-top:14px;">
         <label for="fkc-notes" class="muted" style="display:block;margin-bottom:4px;">📝 Apni Note (sirf aapke is browser mein save hoti hai):</label>
-        <textarea id="fkc-notes" data-slug="cpp-daily-coding" data-lesson="day-001"
+        <textarea id="fkc-notes" data-slug="cpp-daily-coding" data-lesson="day-018"
           placeholder="Yahan apni note likhein..." rows="3"
           style="width:100%;border-radius:10px;border:1px solid #ddd;padding:8px;font-family:inherit;"
           oninput="fkcSaveNote(this)"></textarea>
       </div>
     
       <div class="no-print">
-        <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20C%2B%2B%20Daily%20Coding%20%28Day%2001%29%0A%0ADay%201%20%E2%80%94%20C%2B%2B%20Setup%20aur%20%22Hello%20World%22%20Program%0A%0AConcept%3A%0AAaj%20hum%20C%2B%2B%20programming%20shuru%20karne%20se%20pehle%20apne%20system%20par%20C%2B%2B%20compiler%20aur%20IDE%20%28Integrated%20Development%20Environment%29%20setup%20karenge.%20Compiler%20code%20ko%20machine%20language%20mein%20translate%20karta%20hai%2C%20jabki%20IDE%20coding%2C%20debugging%20aur%20running%20ko%20asaan%20banata%20hai.%20Pehle%20program%20ko%20%22Hello%20World%22%20kehte%20hain%E2%80%94yeh%20programming%20ki%20starting%20point%20hoti%20hai.%0A%0AExample%3A%0A1.%0A%0ACompiler%20Install%20karein%3A%0A-%20Windows%3A%20%5BMinGW-w64%5D%28https%3A//www.mingw-w64.org/%29%20download%20karein%20%28ya%20%5BMSYS2%5D%28https%3A//www.msys2.org/%29%29.%0A%20%20%20-%20Mac%3A%20Terminal%20mein%20%60xcode-select%20--install%60%20run%20karein.%0A%20%20%20-%20Linux%3A%20%60sudo%20apt%20install%20g%2B%2B%60%20%28Ubuntu/Debian%29%20ya%20%60sudo%20dnf%20install%20gcc-c%2B%2B%60%20%28Fedora%29.%0A%0A2.%0A%0AIDE%20Install%20karein%3A%0A-%20%5BVS%20Code%5D%28https%3A//code.visualstudio.com/%29%20%28lightweight%2C%20extensions%3A%20%22C/C%2B%2B%22%20aur%20%22Code%20Runner%22%29.%0A%20%20%20-%20Ya%20%5BCode%3A%3ABlocks%5D%28https%3A//www.codeblocks.org/%29%20%28simple%20IDE%29.%0A%0A3.%0A%0APehl%20program%20likhein%3A%0A%60%60%60cpp%0A%20%20%20%23include%20%3Ciostream%3E%0A%20%20%20using%20namespace%20std%3B%0A%0A%20%20%20int%20main%28%29%20%7B%0A%20%20%20%20%20%20%20cout%20%3C%3C%20%22Hello%20World%21%22%20%3C%3C%20endl%3B%0A%20%20%20%20%20%20%20return%200%3B%0A%20%20%20%7D%0A%20%20%20%60%60%60%0A%20%20%20-%20%60g%2B%2B%20hello.cpp%20-o%20hello%60%20se%20compile%20karein.%0A%20%20%20-%20%60./hello%60%20%28Linux/Mac%29%20ya%20%60hello.exe%60%20%28Windows%29%20se%20run%20karein.%0A%0APractice%3A%0AApne%20system%20par%20C%2B%2B%20compiler%20aur%20VS%20Code%20setup%20karein%2C%20aur%20upar%20wala%20%22Hello%20World%22%20program%20run%20karein.%20Screenshot%20ya%20terminal%20output%20share%20karein.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
+        <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20C%2B%2B%20Daily%20Coding%20%28Day%2018%29%0A%0ADay%2018%20%E2%80%94%20%2A%2ALambda%20Functions%3A%20Inline%20Functions%20Ka%20Powerful%20Tool%2A%2A%0A%0AConcept%3A%0ALambda%20functions%20C%2B%2B%20mein%20inline%20functions%20banane%20ka%20tareeka%20hai%20jo%20aapko%20directly%20code%20mein%20hi%20chhote%20functions%20define%20karne%20deta%20hai.%20Ye%20aapko%20STL%20algorithms%20%28jaise%20%60sort%60%2C%20%60for_each%60%29%20ya%20custom%20callbacks%20ke%20liye%20functions%20define%20karne%20mein%20madadgar%20hote%20hain.%20Inka%20syntax%20%60%5Bcapture%5D%28parameters%29%20-%3E%20return_type%20%7B%20body%20%7D%60%20hota%20hai.%0A%0AExample%3A%0A%60%60%60cpp%0A%23include%20%3Ciostream%3E%0A%23include%20%3Cvector%3E%0A%23include%20%3Calgorithm%3E%0A%0Aint%20main%28%29%20%7B%0A%20%20%20%20std%3A%3Avector%3Cint%3E%20nums%20%3D%20%7B5%2C%202%2C%208%2C%201%2C%203%7D%3B%0A%0A%20%20%20%20//%20Lambda%20to%20sort%20in%20descending%20order%0A%20%20%20%20std%3A%3Asort%28nums.begin%28%29%2C%20nums.end%28%29%2C%20%5B%5D%28int%20a%2C%20int%20b%29%20%7B%0A%20%20%20%20%20%20%20%20return%20a%20%3E%20b%3B%0A%20%20%20%20%7D%29%3B%0A%0A%20%20%20%20//%20Lambda%20to%20print%20each%20element%0A%20%20%20%20std%3A%3Afor_each%28nums.begin%28%29%2C%20nums.end%28%29%2C%20%5B%5D%28int%20n%29%20%7B%0A%20%20%20%20%20%20%20%20std%3A%3Acout%20%3C%3C%20n%20%3C%3C%20%22%20%22%3B%0A%20%20%20%20%7D%29%3B%0A%0A%20%20%20%20return%200%3B%0A%7D%0A%60%60%60%0AOutput%3A%20%608%205%203%202%201%60%0A%0APractice%3A%0AEk%20lambda%20function%20likhein%20jo%20do%20integers%20ko%20multiply%20kare%20aur%20use%20%60std%3A%3Afor_each%60%20ke%20saath%20ek%20vector%20%60numbers%20%3D%20%7B2%2C%204%2C%206%2C%208%7D%60%20par%20apply%20kare.%0A%0AMini%20Project%3A%0AEk%20simple%20calculator%20program%20banayein%20jo%20user%20se%202%20numbers%20aur%20operation%20%28%2B%2C%20-%2C%20%2A%2C%20/%29%20input%20le%2C%20phir%20lambda%20functions%20ka%20use%20karke%20result%20calculate%20kare.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
         <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
       <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
-          data-slug="cpp-daily-coding" data-lesson="day-001"
+          data-slug="cpp-daily-coding" data-lesson="day-018"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <div class="lesson-nav"><span></span><a class="btn alt" href="2026-08-03-day-002.html">Day 2 — Variables aur Data Types: Apne Programs Ko Smarter Banana →</a></div>
+    <div class="lesson-nav"><a class="btn alt" href="2026-08-09-day-017.html">← Day 17 — **STL Containers: Vectors, Maps, aur Sets**</a><span></span></div>
     <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
     
     
@@ -400,9 +423,9 @@ int main() {
           slug: "cpp-daily-coding",
           courseName: "C++ Daily Coding",
           courseIcon: "\ud83d\udcbb",
-          title: "Day 1 \u2014 C++ Setup aur \"Hello World\" Program",
-          href: 'courses/cpp-daily-coding/posts/2026-08-03-day-001.html',
-          day: 1
+          title: "Day 18 \u2014 **Lambda Functions: Inline Functions Ka Powerful Tool**",
+          href: 'courses/cpp-daily-coding/posts/2026-08-10-day-018.html',
+          day: 18
         }));
       } catch (e) {}
       var ta = document.getElementById('fkc-notes');
