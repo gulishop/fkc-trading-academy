@@ -5870,6 +5870,60 @@
           ]
         }
       }
+    },
+    {
+      "day": 8,
+      "id": "day-008",
+      "date": "2026-08-10",
+      "title": "Day 8 — **Profit Margin Ka Hisab Kitna Hona Chahiye? (Hidden Costs Ka Khauf Khatam Karein!)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Pricing sirf \"product cost + profit\" nahi hoti. Shipping fees, payment gateway charges, platform fees, aur even returns/fulfillment delays sab influence karte hain. Yahan hum \"true profit margin\" calculate karna seekhenge—jisme sab hidden costs shamil hain. Target: Har product par **30-50% net profit margin** rakhna (yaad rakhna, gross margin ≠ net margin)."
+        ],
+        [
+          "Example",
+          "Ek T-shirt ka:\n- Printful cost: ₹500\n- Shipping: ₹200\n- Payment gateway fee (2.9% + ₹10): ₹30\n- Platform fee (Shopify ₹29/month, divided per product): ₹10\n- **Total cost = ₹740**\n- Selling price: ₹1,200\n- **Gross profit = ₹460 (38%)**\n- **Net profit = ₹460 - ₹30 (ads) - ₹50 (promo) = ₹380 (~32% net)**"
+        ],
+        [
+          "Practice",
+          "Apne ek existing product ka **true cost breakdown** nikalo. Excel/Google Sheets mein:\n1. Product cost + shipping + payment fees + platform fees\n2. Selling price se subtract karo\n3. Net profit margin (%) calculate karo"
+        ],
+        [
+          "Mini Project",
+          "Ek **pricing strategy plan** banao:\n- 3 products ke liye **cost + selling price + net margin** calculate karo\n- 1 product ke liye **discount offer** propose karo (e.g., \"Buy 2, 10% off\") jo net margin ko maintain kare"
+        ]
+      ],
+      "answer_key": "cost_breakdown, net_margin_32%, discount_offer, hidden_costs",
+      "translations": {
+        "ur": {
+          "title": "دن 8 — **منافع کا حِساب کتنے فیصد ہونا چاہیے؟ (چھپے ہوئے اخراجات کا خوف ختم کریں!)**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "قیمت کا تعین صرف \"پراڈکٹ کی لاگت + منافع\" نہیں ہوتا۔ شپنگ فیس، ادائیگی گیٹ وے چارجز، پلیٹ فارم فیس، اور یہاں تک کہ واپسی یا ڈیلیوری میں تاخیر بھی منافع پر اثر انداز ہوتی ہے۔ یہاں ہم \"حقیقی منافع کا حِساب\" سیکھیں گے—جس میں تمام چھپے ہوئے اخراجات شامل ہوں گے۔ ہدف: ہر پراڈکٹ پر **30-50% خالص منافع کا حِساب** رکھنا (یاد رہے، مجموعی منافع ≠ خالص منافع)"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک ٹی شرٹ کا:"
+            },
+            {
+              "label": "مثال کے تفصیلی اعداد و شمار",
+              "content": "- پرنٹ فل کی لاگت: ₹500\n- شپنگ: ₹200\n- ادائیگی گیٹ وے فیس (2.9% + ₹10): ₹30\n- پلیٹ فارم فیس (شاپائفائی ₹29 ماہانہ، فی پراڈکٹ تقسیم): ₹10\n- **کل لاگت = ₹740**\n- فروخت کی قیمت: ₹1,200\n- **مجموعی منافع = ₹460 (38%)**\n- **خالص منافع = ₹460 - ₹30 (اشتہارات) - ₹50 (پروموشن) = ₹380 (~32% خالص)**"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے کسی موجودہ پراڈکٹ کا **حقیقی لاگت کا تجزیہ** نکالیں۔ ایکسل/گوگل شیٹس میں درج ذیل کریں:\n1. پراڈکٹ کی لاگت + شپنگ + ادائیگی فیس + پلیٹ فارم فیس\n2. فروخت کی قیمت سے تفریق کریں\n3. خالص منافع کا فیصد حساب لگائیں"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **قیمتوں کی حکمتِ عملی کا منصوبہ** بنائیں:\n- تین پراڈکٹس کے لیے **لاگت + فروخت کی قیمت + خالص منافع** کا حساب لگائیں\n- ایک پراڈکٹ کے لیے **ڈسکاؤنٹ آفر** تجویز کریں (مثلاً، \"دو خریدیں، 10% چھوٹ\") جو خالص منافع کو برقرار رکھے"
+            }
+          ]
+        }
+      }
     }
   ],
   "cpp-daily-coding": [
