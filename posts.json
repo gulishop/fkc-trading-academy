@@ -10302,6 +10302,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 6,
+      "id": "day-006",
+      "date": "2026-08-10",
+      "title": "Day 6 — \"Kahani banane ka game (baari baari ek jumla)\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke kaise hum apni khayalaton ko ek mazedaar kahani mein badal sakte hain! Har koi apni soch ka malik hai, aur humein yeh yaad rakhna hai ke humari soch aur kirdaar hamesha achchhe aur respectful hon. Koi bhi cheez hum par jabarjasti nahi kar sakta—humari marzi sabse pehle!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Aman aur Ayesha ne mil kar ek kahani shuru ki: \"Ek din, ek chhota sa panchi ne socha, 'Main ud jaunga...'\" Ayesha ne kaha, \"Uske par zara kamzor the, isliye...\" Aman ne poocha, \"Shayad usko kisi ne help di?\" Ayesha muskuraayi, \"Haan! Ek dost ne usko apne peechhe baitha liya aur...\" Kya hoga agla? Tum bhi apni kahani poori karo!"
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Agar tumhari kahani mein koi aisa character ho jo tumhe achchha nahi lagta, toh usko kaise sudhaaroge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Tumhari soch aur shabdon ka hissa hamesha tumhara hi hai—kisi ko tum par jabarjasti nahi karni chahiye!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ٦ — کہانی بنانے کا گیم (باری باری ایک جملہ)",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم سیکھیں گے کہ کیسے ہم اپنی خیالوں کو ایک مزے دار کہانی میں بدل سکتے ہیں! ہر کوئی اپنی سوچ کا مالک ہے، اور ہمیں یہ یاد رکھنا ہے کہ ہماری سوچ اور کردار ہمیشہ اچھے اور احترام کے ساتھ ہوں۔ کوئی بھی چیز ہم پر جبراً نہیں کر سکتی—ہماری مرضی سب سے پہلے!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "آمن اور عائشہ نے مل کر ایک کہانی شروع کی: ’’ایک دن، ایک چھوٹا سا پنچھی نے سوچا، ’میں اُڑ جاؤں گا...‘‘‘ عائشہ نے کہا، ’’اس کے پر ذرا کمزور تھے، اس لیے...‘‘ آمن نے پوچھا، ’’شاید اسے کسی نے مدد دی؟‘‘ عائشہ مسکرائی، ’’ہاں! ایک دوست نے اسے اپنے پیچھے بٹھالیا اور...‘‘ کیا ہوگا اگلا؟ تم بھی اپنی کہانی پوری کرو!"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "اگر تمہاری کہانی میں کوئی ایسا کردار ہو جو تمہیں اچھا نہیں لگتا، تو اسے کیسے سدھارو گے؟"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمہاری سوچ اور الفاظ کا حصہ ہمیشہ تمہارا ہی ہے—کسی کو تم پر جبراً نہیں کرنی چاہیے!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-good-behavior": [
