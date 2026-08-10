@@ -9052,6 +9052,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 10,
+      "id": "day-010",
+      "date": "2026-08-10",
+      "title": "Day 10 — **TikTok Par \"Cross-Promotion\" — Apne Content Ko Doosre Platforms Par Faila Kar Grow Karein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "TikTok ke alawa bhi apne content ko Instagram Reels, YouTube Shorts, Facebook aur Twitter par share karke followers badha sakte hain. Har platform ka algorithm alag hota hai, isliye har jagah apne content ko adapt karna zaroori hai. Cross-promotion se aapka reach badhta hai aur ek platform par fail hone par bhi doosre par traffic milta hai."
+        ],
+        [
+          "Example",
+          "Ek creator ne TikTok par fitness tips ke videos banaye. Usne:\n1. TikTok video ko Instagram Reels par bhi upload kiya (caption change ki: \"Full guide in comments!\").\n2. YouTube Shorts par bhi same video daala lekin thoda modify kiya (extra text overlay add kiya).\n3. Twitter par video ka teaser clip share kiya (\"Full video on TikTok!\").\nNateeja: TikTok followers ke alawa Instagram par 5K+ aur YouTube par 2K+ subscribers mile."
+        ],
+        [
+          "Practice",
+          "Aaj ke 3 videos ko doosre 3 platforms par bhi upload karo. Har jagah:\n- Caption/description alag rakhna (platform ke hisab se).\n- Hashtags adjust karna (TikTok ke trending hashtags Instagram ke liye zyada relevant nahi hote).\n- Thumbnail ya cover photo alag chune (har platform ka style alag hota hai)."
+        ],
+        [
+          "Mini Project",
+          "Ek \"Cross-Promotion Tracker\" spreadsheet banao jisme:\n- Har video ka link (TikTok, Reels, Shorts).\n- Har platform par kitne views/likes/comments aaye.\n- Kya modification ki thi (caption, hashtags, etc.).\nIs se aapko pata chalega ki kaun sa platform aapke liye sabse behtar hai."
+        ]
+      ],
+      "answer_key": "tiktok, reels, shorts, traffic, followers",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۰ — **ٹک ٹاک پر \"کراس پروموشن\" — اپنے مواد کو دوسرے پلیٹ فارمز پر پھیلا کر گرو کریں**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ٹک ٹاک کے علاوہ بھی اپنے مواد کو انسٹاگرام ریلز، یوٹیوب شارٹس، فیس بک اور ٹویٹر پر شیئر کر کے فالوورز بڑھا سکتے ہیں۔ ہر پلیٹ فارم کا الگورتھم الگ ہوتا ہے، اس لیے ہر جگہ اپنے مواد کو ایڈاپٹ کرنا ضروری ہے۔ کراس پروموشن سے آپ کا ریچ بڑھتا ہے اور ایک پلیٹ فارم پر ناکامی کی صورت میں بھی دوسرے پر ٹریفک ملتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک کریئٹر نے ٹک ٹاک پر فٹنس ٹپس کے ویڈیوز بنائے۔ اس نے:\n۱۔ ٹک ٹاک ویڈیو کو انسٹاگرام ریلز پر بھی اپ لوڈ کیا (کیپشن تبدیل کیا: \"مکمل گائیڈ کمنٹس میں!\")۔\n۲۔ یوٹیوب شارٹس پر بھی وہی ویڈیو ڈالی لیکن تھوڑا سا موڈیفائی کیا (اضافی ٹیکسٹ اوورلے شامل کیا)۔\n۳۔ ٹویٹر پر ویڈیو کا ٹیزر کلپ شیئر کیا (\"مکمل ویڈیو ٹک ٹاک پر!\")۔\nنتیجہ: ٹک ٹاک فالوورز کے علاوہ انسٹاگرام پر ۵ ہزار سے زائد اور یوٹیوب پر ۲ ہزار سے زائد سبسکرائبرز ملے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "آج کے تین ویڈیوز کو دوسرے تین پلیٹ فارمز پر بھی اپ لوڈ کریں۔ ہر جگہ:\n- کیپشن/ڈسکرپشن الگ رکھیں (پلیٹ فارم کے حساب سے)۔\n- ہیش ٹیگز ایڈجسٹ کریں (ٹک ٹاک کے ٹرینڈنگ ہیش ٹیگز انسٹاگرام کے لیے زیادہ متعلقہ نہیں ہوتے)۔\n- تھمب نیل یا کور فوٹو الگ چنیں (ہر پلیٹ فارم کا اسٹائل الگ ہوتا ہے)۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک \"کراس پروموشن ٹریکر\" سپریڈشیٹ بنائیں جس میں:\n- ہر ویڈیو کا لنک (ٹک ٹاک، ریلز، شارٹس)۔\n- ہر پلیٹ فارم پر کتنے ویوز/لائکس/کمنٹس آئے۔\n- کیا موڈیفیکیشن کی تھی (کیپشن، ہیش ٹیگز وغیرہ)۔\nاس سے آپ کو پتا چلے گا کہ کون سا پلیٹ فارم آپ کے لیے سب سے بہتر ہے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "blogging-adsense": [
