@@ -3125,6 +3125,76 @@
           ]
         }
       }
+    },
+    {
+      "day": 5,
+      "id": "day-005",
+      "date": "2026-08-10",
+      "title": "Day 5 — **Automated Email Sequences: Drip Campaigns Jo Convert Karein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Drip campaigns automated email sequences hain jo specific triggers (signup, purchase, inactivity) par users ko targeted messages bhejte hain. Inka maqsad engagement badhana, trust build karna aur conversions increase karna hai. Har email ka apna purpose hota hai—welcome, nurture, offer ya abandoned cart recovery."
+        ],
+        [
+          "Example",
+          "Ek SaaS company ka drip campaign:\n1."
+        ],
+        [
+          "Day 1 (Welcome)",
+          "\"Aapka 7-day free trial start ho gaya hai!\" (Hook + benefit)\n2."
+        ],
+        [
+          "Day 3 (Nurture)",
+          "\"3 ways our tool saves you 10+ hours/week\" (Social proof + value)\n3."
+        ],
+        [
+          "Day 5 (Offer)",
+          "\"Upgrade now & get 20% off—limited time!\" (CTA + urgency)"
+        ],
+        [
+          "Practice",
+          "Apne ya kisi imaginary business ke liye ek 3-email drip sequence likhein jo:\n-"
+        ],
+        [
+          "Trigger",
+          "User ne free trial sign up kiya ho\n-"
+        ],
+        [
+          "Goal",
+          "Paid subscription convert karna ho"
+        ],
+        [
+          "Mini Project",
+          "Ek \"Abandoned Cart Recovery\" drip sequence design karein (3 emails) jo online store ke liye ho. Har email ka subject line, main body (2-3 lines) aur CTA specify karein."
+        ]
+      ],
+      "answer_key": "welcome email, nurture content, offer hook, urgency",
+      "translations": {
+        "ur": {
+          "title": "دن ۵ — آٹومیٹڈ ای میل سیقوینسز: ڈرپ کیمپینز جو کنورٹ کریں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ڈرپ کیمپینز آٹومیٹڈ ای میل سیقوینسز ہوتے ہیں جو مخصوص ٹرگرز (سائن اپ، پرچیز، ان ایکٹیویٹی) پر صارفین کو ہدف بنائے گئے پیغامات بھیجتے ہیں۔ ان کا مقصد انگیجمنٹ بڑھانا، اعتماد قائم کرنا اور کنورژنز میں اضافہ کرنا ہوتا ہے۔ ہر ای میل کا اپنا مقصد ہوتا ہے—خوش آمدید، پرورش، آفر یا کارٹ چھوڑنے کی بازیابی۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک ساس کمپنی کا ڈرپ کیمپین:\n۱۔ دن ۱ (خوش آمدید): \"آپ کا ۷ روزہ فری ٹرائل شروع ہو گیا ہے!\" (ہک + فائدہ)\n۲۔ دن ۳ (پرورش): \"ہمارے ٹول سے آپ ہفتے میں ۱۰+ گھنٹے بچا سکتے ہیں—۳ طریقے\" (سوشل پروف + ویلیو)\n۳۔ دن ۵ (آفر): \"ابھی اپ گریڈ کریں اور ۲۰٪ چھوٹ حاصل کریں—محدود وقت کے لیے!\" (سی ٹی اے + اضطراریت)"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے یا کسی خیالی بزنس کے لیے ایک ۳ ای میلز کا ڈرپ سیقوینس لکھیں جو:\nٹرگر: صارف نے فری ٹرائل کے لیے سائن اپ کیا ہو\nمقصد: پےڈ سبسکرپشن میں کنورٹ کرنا ہو"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک \"کارٹ چھوڑنے کی بازیابی\" ڈرپ سیقوینس ڈیزائن کریں (۳ ای میلز) جو آن لائن اسٹور کے لیے ہو۔ ہر ای میل کا سبجیکٹ لائن، مرکزی باڈی (۲-۳ لائنیں) اور سی ٹی اے واضح کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "ai-tools": [
