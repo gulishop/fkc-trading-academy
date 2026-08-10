@@ -2565,6 +2565,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 8,
+      "id": "day-008",
+      "date": "2026-08-10",
+      "title": "Day 8 — **Amazon FBA Mein PPC Ads Ko Optimize Karna (Beginners Ke Liye Advanced Guide)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "PPC ads ko chalane ke baad sabse zaroori kaam hai unko *optimize* karna. Isse matlab hai ke jo ads chal rahi hain unki performance check karke unmein improvements karna taake cost kam ho aur sales badhe. Iske liye keywords, bids, and targeting ko adjust karna hota hai."
+        ],
+        [
+          "Example",
+          "Maana aapne ek product \"Wireless Charger\" ke liye PPC chalaya hai. Aapne *auto targeting* use kiya tha. Ab aapko *search term report* check karna hai. Wahan se pata chalta hai ke \"fast wireless charger\" aur \"qi wireless charger\" sabse zyada conversions de rahe hain. In keywords ko *manual targeting* mein add karke bid increase karo. Baki low-performing keywords ko pause kar do."
+        ],
+        [
+          "Practice",
+          "1. Apne Amazon Seller Central mein jao.\n2. *Campaign Manager* mein apne PPC campaign ko select karo.\n3. *Search Term Report* download karo (last 30 days ka).\n4. Top 3 keywords jo sabse zyada conversions de rahe hain, unko *manual targeting* campaign mein add karo.\n5. Baki sab keywords ko pause kar do."
+        ],
+        [
+          "Mini Project",
+          "Apne ek PPC campaign ke *search term report* ko analyze karke top 5 best-performing keywords ko identify karo. Unke liye bids ko 20% increase karo aur baki sabko pause kar do. 7 din baad check karo ke kya CTR ya conversions mein improvement aaya."
+        ]
+      ],
+      "answer_key": "search term report, manual targeting, pause low-performing, increase bids",
+      "translations": {
+        "ur": {
+          "title": "دن ۸ — ایمیزون ایف بی اے میں پی پی سی اشتہارات کو آپٹیمائز کرنا (بیگنرز کے لیے ایڈوانسڈ گائیڈ)",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "پی پی سی اشتہارات چلانے کے بعد سب سے ضروری کام ہے انہیں *آپٹیمائز* کرنا۔ اس سے مراد ہے کہ جو اشتہارات چل رہے ہیں ان کی کارکردگی چیک کرکے ان میں بہتری لانا تاکہ لاگت کم ہو اور سیلز بڑھیں۔ اس کے لیے کی ورڈز، بولیوں، اور ٹارگٹنگ کو ایڈجسٹ کرنا ہوتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "مانا آپ نے ایک پروڈکٹ \"وائرلیس چارجر\" کے لیے پی پی سی چلایا ہے۔ آپ نے *آٹو ٹارگٹنگ* استعمال کی تھی۔ اب آپ کو *سرچ ٹرم رپورٹ* چیک کرنی ہے۔ وہاں سے پتہ چلتا ہے کہ \"فاسٹ وائرلیس چارجر\" اور \"کیو آئی وائرلیس چارجر\" سب سے زیادہ کنورژن دے رہے ہیں۔ ان کی ورڈز کو *مینوئل ٹارگٹنگ* میں شامل کرکے بولی بڑھا دو۔ باقی کم کارکردگی والے کی ورڈز کو روک دو۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "۱۔ اپنے ایمیزون سیلر سینٹرل میں جاؤ۔\n۲۔ *کیمپین مینیجر* میں اپنے پی پی سی کیمپین کو سلیکٹ کرو۔\n۳۔ *سرچ ٹرم رپورٹ* ڈاؤن لوڈ کرو (پچھلے ۳۰ دن کی)।\n۴۔ ٹاپ ۳ کی ورڈز جو سب سے زیادہ کنورژن دے رہے ہیں، انہیں *مینوئل ٹارگٹنگ* کیمپین میں شامل کرو۔\n۵۔ باقی تمام کی ورڈز کو روک دو۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "اپنے ایک پی پی سی کیمپین کی *سرچ ٹرم رپورٹ* کا تجزیہ کرکے ٹاپ ۵ بہترین کارکردگی والے کی ورڈز کی شناخت کرو۔ ان کے لیے بولیوں کو ۲۰ فیصد بڑھا دو اور باقی سب کو روک دو۔ ۷ دن بعد چیک کرو کہ کیا سی ٹی آر یا کنورژن میں بہتری آئی۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "daraz-seller": [
