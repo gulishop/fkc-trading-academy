@@ -4520,6 +4520,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 5,
+      "id": "day-005",
+      "date": "2026-08-10",
+      "title": "Day 5 — **YouTube Thumbnails: Click-Worthy Design Secrets**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "YouTube thumbnails are the first impression of your video. Learn how to design thumbnails that grab attention using contrast, bold text, and strategic placement. We’ll cover size requirements (1280x720px), safe zones, and psychology tricks like the \"rule of thirds\" to make your thumbnails stand out in crowded feeds."
+        ],
+        [
+          "Example",
+          "1. Open Canva → Search \"YouTube Thumbnail\" template.\n2. Pick a high-contrast background (e.g., dark red with yellow text).\n3. Add **3-4 words max** in bold font (e.g., \"GONE WRONG!\" in Impact font).\n4. Use an arrow or circle to highlight a key element (e.g., a shocked face).\n5. Export as PNG (72dpi)."
+        ],
+        [
+          "Practice",
+          "Create a thumbnail for a hypothetical video titled *\"5 Canva Hacks You NEVER Knew!\"* Use a bright background, 1-2 words in bold, and a simple icon (e.g., a magic wand)."
+        ],
+        [
+          "Mini Project",
+          "Design **3 thumbnails** for different video topics (e.g., tutorial, vlog, reaction). Save them in a folder named \"YouTube Thumbnails.\""
+        ]
+      ],
+      "answer_key": "high-contrast, bold text, safe zones, png",
+      "translations": {
+        "ur": {
+          "title": "دن 5 — یوٹیوب تھمب نیلز: کلک ورتھ ڈیزائن کے راز",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "یوٹیوب تھمب نیلز آپ کے ویڈیو کی پہلی تاثر ہوتی ہیں۔ سیکھیں کہ کس طرح کنٹراسٹ، موٹے متن، اور حکمتِ عملی کے ساتھ رکھے گئے عناصر کا استعمال کرتے ہوئے ایسی تھمب نیلز ڈیزائن کی جائیں جو توجہ کھینچیں۔ ہم سائز کی شرائط (1280x720px)، سیف زونز، اور نفسیات کے حربے جیسے کہ ’تہائی کا قاعدہ‘ پر بات کریں گے تاکہ آپ کی تھمب نیلز بھیڑ بھاڑ والے فیڈز میں نمایاں ہو سکیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1. کینوا کھولیں → ’یوٹیوب تھمب نیل‘ ٹیمپلیٹ تلاش کریں۔\n2. ہائی کنٹراسٹ پس منظر منتخب کریں (مثلاً گہرا سرخ پس منظر جس پر پیلا متن ہو)۔\n3. موٹے فونٹ میں زیادہ سے زیادہ 3-4 الفاظ شامل کریں (مثلاً ’گون رونگ!‘ امپیکٹ فونٹ میں)۔\n4. کسی اہم عنصر کو نمایاں کرنے کے لیے تیر یا دائرہ استعمال کریں (مثلاً حیران چہرہ)۔\n5. PNG فارمیٹ میں ایکسپورٹ کریں (72dpi)।"
+            },
+            {
+              "label": "مشق",
+              "content": "ایک فرضی ویڈیو کے لیے جس کا عنوان ہے *’5 کینوا ہیکس جو آپ کبھی نہیں جانتے تھے!‘*، تھمب نیل بنائیں۔ روشن پس منظر، موٹے فونٹ میں 1-2 الفاظ، اور ایک سادہ آئیکن (مثلاً جادو کی چھڑی) استعمال کریں۔"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "تین مختلف ویڈیو موضوعات (مثلاً ٹیوٹوریل، وی لاگ، ری ایکشن) کے لیے تھمب نیلز ڈیزائن کریں۔ انہیں ’یوٹیوب تھمب نیلز‘ نامی فولڈر میں محفوظ کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "no-code-app-dev": [
