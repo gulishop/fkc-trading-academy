@@ -7482,6 +7482,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 8,
+      "id": "day-008",
+      "date": "2026-08-10",
+      "title": "Day 8 — **Website Performance Optimization: Fast aur Efficient Websites Banana**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke apni website ko kaise fast banayein. Performance optimization se loading time kam hota hai, user experience improve hota hai, aur search engines (jaise Google) bhi website ko zyada rank karte hain. Hum caching, image optimization, lazy loading, aur code minification jaise techniques cover karenge."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Images optimize karna",
+          "`img` tag mein `loading=\"lazy\"` add karke lazy loading enable karo. Example:\n   ```html\n   <img src=\"image.jpg\" alt=\"Example\" loading=\"lazy\">\n   ```\n2."
+        ],
+        [
+          "CSS aur JS minify karna",
+          "Unnecessary spaces aur comments remove karke files ka size kam karo. Online tools jaise [CSS Minifier](https://cssminifier.com/) ya [JS Minifier](https://javascript-minifier.com/) use kar sakte ho.\n3."
+        ],
+        [
+          "Browser caching enable karna",
+          "Server par `Cache-Control` header set karke repeat visitors ke liye loading time reduce karo."
+        ],
+        [
+          "Practice",
+          "Apni portfolio website ya kisi bhi existing project mein:\n1. Sabhi images mein `loading=\"lazy\"` add karo.\n2. Ek CSS file ko minify karke original ke saath replace karo.\n3. Google PageSpeed Insights ([link](https://pagespeed.web.dev/)) par apni website test karo aur suggestions follow karo."
+        ],
+        [
+          "Mini Project",
+          "**\"Fast Portfolio\"** – Apni portfolio website ko optimize karo taake:\n- Google PageSpeed Insights par score 90+ ho.\n- Mobile aur desktop dono par fast load ho.\n- Sabhi images optimized ho (WebP format use kar sakte ho)."
+        ]
+      ],
+      "answer_key": "lazy loading, minification, caching, webp format",
+      "translations": {
+        "ur": {
+          "title": "دن ٨ — ویب سائٹ پرفارمنس آپٹیمائزیشن: تیز اور مؤثر ویب سائٹس بنانا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم سیکھیں گے کہ اپنی ویب سائٹ کو کیسے تیز بنایا جائے۔ پرفارمنس آپٹیمائزیشن سے لوڈنگ ٹائم کم ہوتا ہے، صارف کا تجربہ بہتر ہوتا ہے، اور سرچ انجنز (جیسے گوگل) بھی ویب سائٹ کو زیادہ رینک کرتے ہیں۔ ہم کیچنگ، امیج آپٹیمائزیشن، لیزی لوڈنگ، اور کوڈ منیفیکیشن جیسے تکنیکس کور کریں گے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "١۔ امیجز کو آپٹیمائز کرنا: `img` ٹیگ میں `loading=\"lazy\"` شامل کرکے لیزی لوڈنگ فعال کریں۔ مثال:\n```html\n<img src=\"image.jpg\" alt=\"Example\" loading=\"lazy\">\n```\n٢۔ سی ایس ایس اور جے ایس کو منیفائی کرنا: غیر ضروری سپیسز اور کمنٹس ہٹا کر فائلز کا سائز کم کریں۔ آن لائن ٹولز جیسے [CSS Minifier](https://cssminifier.com/) یا [JS Minifier](https://javascript-minifier.com/) استعمال کر سکتے ہیں۔\n٣۔ براؤزر کیچنگ فعال کرنا: سرور پر `Cache-Control` ہیڈر سیٹ کرکے بار بار آنے والے وزیٹرز کے لیے لوڈنگ ٹائم کم کریں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنی پورٹ فولیو ویب سائٹ یا کسی بھی موجودہ پروجیکٹ میں:\n١۔ تمام امیجز میں `loading=\"lazy\"` شامل کریں۔\n٢۔ ایک سی ایس ایس فائل کو منیفائی کرکے اصل فائل کی جگہ استعمال کریں۔\n٣۔ گوگل پیج سپیڈ انسائٹس ([لنک](https://pagespeed.web.dev/)) پر اپنی ویب سائٹ ٹیسٹ کریں اور تجاویز پر عمل کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "\"فاسٹ پورٹ فولیو\" – اپنی پورٹ فولیو ویب سائٹ کو اس طرح آپٹیمائز کریں کہ:\n- گوگل پیج سپیڈ انسائٹس پر اسکور ٩٠+ ہو۔\n- موبائل اور ڈیسک ٹاپ دونوں پر تیز لوڈ ہو۔\n- تمام امیجز آپٹیمائزڈ ہوں (WebP فارمیٹ استعمال کر سکتے ہیں)।"
+            }
+          ]
+        }
+      }
     }
   ],
   "excel-data-analysis": [
