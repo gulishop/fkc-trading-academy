@@ -817,6 +817,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 9,
+      "id": "day-009",
+      "date": "2026-08-10",
+      "title": "Day 9 — YouTube Analytics Ko Samajhna: Apne Videos Ko Kaise Improve Karen",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "YouTube Analytics se aapko pata chalta hai ke aapke videos ka performance kaisa hai—views, watch time, CTR, audience retention, aur traffic sources. Is data ko samajh kar aap apne content ko improve kar sakte hain, jaise ke zyada watch time ke liye video length adjust karna, ya phir low CTR ke liye thumbnails aur titles ko test karna."
+        ],
+        [
+          "Example",
+          "Ek video ka **Audience Retention** graph check karen. Agar 50% viewers video ke 2-minute ke baad chhod dete hain, toh ho sakta hai ke introduction zyada lamba hai. Uske baad **CTR** (Click-Through Rate) check karen—agar 3% se kam hai, toh thumbnail ya title weak ho sakta hai."
+        ],
+        [
+          "Practice",
+          "Apne ek recent video ke **Audience Retention** aur **CTR** check karen. 2-3 main insights likhain ke aapka video kahan fail ho raha hai."
+        ],
+        [
+          "Mini Project",
+          "Ek **A/B Test** setup karen: Apne next video ke liye **2 different thumbnails** banayein aur unhe YouTube par upload karne se pehle **YouTube Studio** mein test karen (agar feature available ho). Dekhein kaun sa zyada CTR deta hai."
+        ]
+      ],
+      "answer_key": "retention graph, ctr low, a/b test, thumbnail improvement",
+      "translations": {
+        "ur": {
+          "title": "دن 9 — یوٹیوب اینالیٹکس کو سمجھنا: اپنے ویڈیوز کو کیسے بہتر کریں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "یوٹیوب اینالیٹکس سے آپ کو پتا چلتا ہے کہ آپ کے ویڈیوز کا پرفارمنس کیسا ہے—ویوز، واچ ٹائم، سی ٹی آر، آڈینس ریٹینشن، اور ٹریفک سورسز۔ اس ڈیٹا کو سمجھ کر آپ اپنے مواد کو بہتر بنا سکتے ہیں، جیسے کہ زیادہ واچ ٹائم کے لیے ویڈیو کی لمبائی ایڈجسٹ کرنا، یا پھر کم سی ٹی آر کے لیے تھمب نیلز اور ٹائٹلز کو ٹیسٹ کرنا۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک ویڈیو کا **آڈینس ریٹینشن** گراف چیک کریں۔ اگر 50 فیصد ویورز ویڈیو کے 2 منٹ کے بعد چھوڑ دیتے ہیں، تو ہو سکتا ہے کہ انٹروڈکشن زیادہ لمبا ہو۔ اس کے بعد **سی ٹی آر** (کلک تھرو ریٹ) چیک کریں—اگر 3 فیصد سے کم ہے، تو تھمب نیل یا ٹائٹل کمزور ہو سکتا ہے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے کسی حالیہ ویڈیو کے **آڈینس ریٹینشن** اور **سی ٹی آر** چیک کریں۔ 2-3 اہم ان سائٹس لکھیں کہ آپ کا ویڈیو کہاں ناکام ہو رہا ہے۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **اے/بی ٹیسٹ** سیٹ اپ کریں: اپنے اگلے ویڈیو کے لیے **2 مختلف تھمب نیلز** بنائیں اور انہیں یوٹیوب پر اپ لوڈ کرنے سے پہلے **YouTube Studio** میں ٹیسٹ کریں (اگر فیچر دستیاب ہو)۔ دیکھیں کون سا زیادہ سی ٹی آر دیتا ہے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "social-media-marketing": [
