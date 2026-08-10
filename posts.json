@@ -10856,6 +10856,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 6,
+      "id": "day-006",
+      "date": "2026-08-10",
+      "title": "Day 6 — \"Haftay ke din aur mausam ki duniya\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke haftay mein kitne din hote hain aur har din ka naam kya hai. Saath hi, mausam bhi alag-alag hota hai—kabhi dhoop, kabhi baarish, kabhi thanda. Yeh sab kuch hamari rooh ko khush rakhta hai!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Aman ko school jana tha. Usne dekha ke aaj barish ho rahi hai. Usne apne abbu se kaha, \"Abba, barish mein school kaise jaun?\" Abbu ne hassi ke muskuraate hue kaha, \"Beta, barish mein bhi school jaana hai! Bas, raincoat pehen lena aur chhatri le lena. Phir to barish bhi maza deti hai!\""
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar koi tumhe kaha ke 'barish ke din school mat jaana' to tum kya karoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Haftay ke har din ka naam yaad rakhna aur mausam ke hisaab se kapde pehenna—jaise dhoop mein topi pehenna aur barish mein chhatri le lena!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ٦ — ہفتے کے دن اور موسم کی دنیا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم سیکھیں گے کہ ہفتے میں کتنے دن ہوتے ہیں اور ہر دن کا نام کیا ہے۔ ساتھ ہی، موسم بھی الگ الگ ہوتا ہے—کبھی دھوپ، کبھی بارش، کبھی ٹھنڈا۔ یہ سب کچھ ہماری روح کو خوش رکھتا ہے!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "امان کو سکول جانا تھا۔ اس نے دیکھا کہ آج بارش ہو رہی ہے۔ اس نے اپنے اب्बو سے کہا، ’ابّا، بارش میں سکول کیسے جاؤں؟‘ ابّو نے ہنسی کے مسکراتے ہوئے کہا، ’بیٹا، بارش میں بھی سکول جانا ہے! بس، رین کوٹ پہن لینا اور چھتری لے لینا۔ پھر تو بارش بھی مزہ دیتی ہے!‘"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "’بیٹا، اگر کوئی تمہیں کہے کہ ’بارش کے دن سکول مت جانا‘ تو تم کیا کرو گے؟‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "ہفتے کے ہر دن کا نام یاد رکھنا اور موسم کے حساب سے کپڑے پہننا—جیسے دھوپ میں ٹوپی پہننا اور بارش میں چھتری لے لینا!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-pg": [
