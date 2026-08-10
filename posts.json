@@ -1531,6 +1531,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 3,
+      "id": "day-003",
+      "date": "2026-08-10",
+      "title": "Day 3 — Facebook Reels aur Video Content: Engagement Badhaane ka Powerful Weapon",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Facebook Reels aur video content aaj kal sabse engaging content formats hain. Short-form videos (15-60 seconds) zyada reach aur interaction dete hain kyun ke users ko quick entertainment ya value milti hai. Reels banane ka fayda yeh hai ke algorithm unhe organic reach mein boost deta hai, aur agar content engaging ho to page par traffic bhi badhta hai."
+        ],
+        [
+          "Example",
+          "Ek fitness page ka example lete hain. Unhone ek 30-second ka Reel banaya:\n1. 0:00-0:05: \"Aaj main batata hoon 5-minute workout jo ghar par hi ho sakti hai!\"\n2. 0:05-0:20: Quick workout steps (fast forward ya split-screen mein)\n3. 0:20-0:30: CTA: \"Agar aapko yeh workout pasand aaye to like karein, comment mein apna feedback dijiye!\""
+        ],
+        [
+          "Practice",
+          "Apne phone se ek 15-30 second ka Reel shoot karein. Topic apne page ke niche se choose karein (e.g., tutorial, behind-the-scenes, customer testimonial). Editing ke liye CapCut ya InShot use karein."
+        ],
+        [
+          "Mini Project",
+          "Ek \"3-Day Reels Challenge\" shuru karein:\n- Day 1: Ek educational Reel (e.g., \"5 tips for [apne niche ka topic]\")\n- Day 2: Ek trending audio par funny/relatable content\n- Day 3: Customer ya follower ka testimonial share karein"
+        ]
+      ],
+      "answer_key": "trending audio, quick tips, cta, engagement boost",
+      "translations": {
+        "ur": {
+          "title": "دن ٣ — فیس بک ریلز اور ویڈیو کنٹینٹ: انگیجمنٹ بڑھانے کا طاقتور ہتھیار",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "فیس بک ریلز اور ویڈیو کنٹینٹ آج کل سب سے زیادہ انگیجنگ کنٹینٹ فارمیٹس ہیں۔ شارٹ فارم ویڈیوز (پندرہ سے ساٹھ سیکنڈ) زیادہ ریچ اور انٹرایکشن دیتی ہیں کیونکہ صارفین کو جلدی تفریح یا ویلیو ملتی ہے۔ ریلز بنانے کا فائدہ یہ ہے کہ الگورتھم انہیں آرگینک ریچ میں بوسٹ دیتا ہے، اور اگر کنٹینٹ انگیجنگ ہو تو پیج پر ٹریفک بھی بڑھتی ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک فٹنس پیج کی مثال لیتے ہیں۔ انہوں نے تیس سیکنڈ کا ایک ریلز بنایا:\n١۔ ٠:٠٠-٠:٠٥: \"آج میں بتاتا ہوں پانچ منٹ کا ورک آؤٹ جو گھر پر ہی ہو سکتا ہے!\"\n٢۔ ٠:٠٥-٠:٢٠: جلدی ورک آؤٹ کے اقدامات (فاسٹ فارورڈ یا سپلٹ اسکرین میں)\n٣۔ ٠:٢٠-٠:٣٠: کال ٹو ایکشن: \"اگر آپ کو یہ ورک آؤٹ پسند آئے تو لائک کریں، کمنٹ میں اپنا فیڈبیک دیجیے!\""
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے فون سے پندرہ سے تیس سیکنڈ کا ریلز شوٹ کریں۔ ٹاپک اپنے پیج کے نیچے سے منتخب کریں (مثلاً ٹیوٹوریل، بہائینڈ دی سینز، کسٹمر ٹیسٹیمونیل)۔ ایڈیٹنگ کے لیے کیپ کٹ یا انشاٹ استعمال کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک \"تین روزہ ریلز چیلنج\" شروع کریں:\n- دن ١: ایک ایجوکیشنل ریلز (مثلاً \"پانچ ٹپس برائے [آپ کے نیچے کا ٹاپک]\")\n- دن ٢: ایک ٹرینڈنگ آڈیو پر مزاحیہ/ریلیٹ ایبل کنٹینٹ\n- دن ٣: کسٹمر یا فالور کا ٹیسٹیمونیل شیئر کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "forex-trading": [
