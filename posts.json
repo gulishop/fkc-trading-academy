@@ -10164,6 +10164,64 @@
           ]
         }
       }
+    },
+    {
+      "day": 6,
+      "id": "day-006",
+      "date": "2026-08-10",
+      "title": "Day 6 — **Podcast Intro aur Outro: Professional Banane ka Tarika**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Podcast ka intro aur outro uske \"pehchaan\" ki tarah hote hain. Intro mein listener ko topic, host ki personality, aur podcast ki vibe samajh aati hai. Outro mein listeners ko next episode ka teaser milta hai aur unhein subscribe karne ka yaad dilaaya jata hai. Professional sound ke liye intro/outro mein consistent music, clear voice, aur brand message hona chahiye."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Intro",
+          "\"Namaskar! Main [Host Name], aur aapke saath hai [Podcast Name] — ek show jahan hum discuss karte hain [topic] ke rochak aspects. Har episode mein hum [format, e.g. 'experts se baat karte hain' ya 'real stories share karte hain']. Aaj ke episode mein hum baat karenge [topic].\" (10-15 seconds)\n2."
+        ],
+        [
+          "Outro",
+          "\"Yeh tha aaj ka episode! Agar aapko yeh podcast pasand aaya ho, toh please subscribe karein, rate karein, aur apne doston ke saath share karein. Next week hum lautenge [next topic ka teaser]. Dhanyavaad!\""
+        ],
+        [
+          "Practice",
+          "Apne podcast ka 10-15 second ka intro record karein. Use Audacity mein trim karke save karein. Intro mein apna naam, podcast ka naam, aur 1-2 sentences ka topic introduction shamil karein."
+        ],
+        [
+          "Mini Project",
+          "Ek 20-30 second ka podcast intro/outro banayein jismein:\n- Background music (free se le sakte hain, e.g. YouTube Audio Library)\n- Apni voice (clear, confident tone)\n- Brand message (e.g. \"Yeh hai [Podcast Name], jahan hum [topic] ke raaz kholte hain\")"
+        ]
+      ],
+      "answer_key": "host name, podcast name, topic introduction",
+      "translations": {
+        "ur": {
+          "title": "دن ٦ — **پوڈکاسٹ انٹرو اور آؤٹرو: پیشہ ورانہ بنانے کا طریقہ**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "پوڈکاسٹ کا انٹرو اور آؤٹرو اس کی \"پہچان\" کی طرح ہوتے ہیں۔ انٹرو میں سننے والے کو ٹاپک، میزبان کی شخصیت، اور پوڈکاسٹ کی ویب سمجھ آتی ہے۔ آؤٹرو میں سننے والوں کو اگلے ایپی سوڈ کا ٹیزر ملتا ہے اور انہیں سبسکرائب کرنے کی یاد دلائی جاتی ہے۔ پیشہ ورانہ آواز کے لیے انٹرو/آؤٹرو میں مستقل میوزک، صاف آواز، اور برانڈ میسج ہونا چاہیے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "١۔\nانٹرو: \"نमस्कار! میں [میزبان کا نام]، اور آپ کے ساتھ ہے [پوڈکاسٹ کا نام] — ایک شو جہاں ہم ڈسکس کرتے ہیں [ٹاپک] کے دلچسپ پہلوؤں پر۔ ہر ایپی سوڈ میں ہم [فارمیٹ، مثلاً ’ماہرین سے بات کرتے ہیں‘ یا ’حقیقی کہانیاں شیئر کرتے ہیں‘]۔ آج کے ایپی سوڈ میں ہم بات کریں گے [ٹاپک]۔\" (١٠-١٥ سیکنڈ)\n\n٢۔\nآؤٹرو: \"یہ تھا آج کا ایپی سوڈ! اگر آپ کو یہ پوڈکاسٹ پسند آیا ہو، تو براہ کرم سبسکرائب کریں، ریٹ کریں، اور اپنے دوستوں کے ساتھ شیئر کریں۔ اگلے ہفتے ہم لائیں گے [اگلے ٹاپک کا ٹیزر]۔ شکریہ!\""
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے پوڈکاسٹ کا ١٠-١٥ سیکنڈ کا انٹرو ریکارڈ کریں۔ اسے آڈاسٹی میں ٹرم کر کے سیو کریں۔ انٹرو میں اپنا نام، پوڈکاسٹ کا نام، اور ١-٢ جملوں کا ٹاپک تعارف شامل کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک ٢٠-٣٠ سیکنڈ کا پوڈکاسٹ انٹرو/آؤٹرو بنائیں جس میں:\n- بیک گراؤنڈ میوزک (فری سے لے سکتے ہیں، مثلاً YouTube آڈیو لائبریری)\n- اپنی آواز (صاف، اعتماد سے بھرپور لہجہ)\n- برانڈ میسج (مثلاً \"یہ ہے [پوڈکاسٹ کا نام]، جہاں ہم [ٹاپک] کے راز کھولتے ہیں\")"
+            }
+          ]
+        }
+      }
     }
   ],
   "real-estate-business": [
