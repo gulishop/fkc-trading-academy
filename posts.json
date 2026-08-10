@@ -2255,6 +2255,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 12,
+      "id": "day-012",
+      "date": "2026-08-10",
+      "title": "Day 12 — **Trading Performance Ko Metrics Se Analyze Karna**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke apne trading performance ko numbers ke zariye kaise analyze karen. Har trade ke baad apne results ko track karne se pata chalta hai ke aapki strategy kaise chal rahi hai, kahan galtiyan ho rahi hain, aur kaise improve kiya ja sakta hai. Performance metrics jaise win rate, profit factor, aur risk-reward ratio se trading ki quality ka pata chalta hai."
+        ],
+        [
+          "Example",
+          "Maana aapne 10 trades kiye hain:\n- 6 trades jeet gaye (60% win rate)\n- 4 trades haren (40% loss rate)\n- Total profit: $300\n- Total loss: $200\nProfit factor = Total Profit / Total Loss = 300/200 = 1.5 (1 se zyada hona achha hai)\nRisk-reward ratio = Average profit per trade / Average loss per trade = (300/6) / (200/4) = 50/50 = 1:1"
+        ],
+        [
+          "Practice",
+          "Apne last 5 trades ke records ko nikalein aur in metrics ko calculate karen:\n1. Win rate (%)\n2. Profit factor\n3. Average profit per trade\n4. Average loss per trade"
+        ],
+        [
+          "Mini Project",
+          "Ek simple Excel sheet ya Google Sheets banayein jisme:\n- Har trade ka date, pair, entry/exit price, profit/loss (pips mein bhi)\n- Weekly/monthly performance summary (win rate, profit factor, max drawdown)\n- Notes: \"Kya galti thi? Kya improve karna hai?\""
+        ]
+      ],
+      "answer_key": "win rate, profit factor, risk-reward ratio, max drawdown",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۲ — ٹریڈنگ پرفارمنس کو میٹرکس سے اینالیز کرنا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم سیکھیں گے کہ اپنے ٹریڈنگ پرفارمنس کو نمبرز کے ذریعے کیسے اینالیز کیا جائے۔ ہر ٹریڈ کے بعد اپنے نتائج کو ٹریک کرنے سے پتا چلتا ہے کہ آپ کی سٹریٹیجی کیسے چل رہی ہے، کہاں غلطیاں ہو رہی ہیں، اور کیسے بہتری لائی جا سکتی ہے۔ پرفارمنس میٹرکس جیسے ون ریٹ، پروفٹ فیکٹر، اور رسک-ریوارڈ ریشو سے ٹریڈنگ کی کوالٹی کا پتا چلتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "مانا آپ نے ۱۰ ٹریڈز کیے ہیں:\n- ۶ ٹریڈز جیت گئے (۶۰٪ ون ریٹ)\n- ۴ ٹریڈز ہارے (۴۰٪ لاس ریٹ)\n- کل منافع: $۳۰۰\n- کل نقصان: $۲۰۰\nپروفٹ فیکٹر = کل منافع / کل نقصان = ۳۰۰/۲۰۰ = ۱.۵ (۱ سے زیادہ ہونا اچھا ہے)\nرسک-ریوارڈ ریشو = اوسط منافع فی ٹریڈ / اوسط نقصان فی ٹریڈ = (۳۰۰/۶) / (۲۰۰/۴) = ۵۰/۵۰ = ۱:۱"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے آخری ۵ ٹریڈز کے ریکارڈز نکالیں اور ان میٹرکس کو کیلکولیٹ کریں:\n۱۔ ون ریٹ (%)\n۲۔ پروفٹ فیکٹر\n۳۔ اوسط منافع فی ٹریڈ\n۴۔ اوسط نقصان فی ٹریڈ"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک سادہ ایکسل شیٹ یا گوگل شیٹس بنائیں جس میں:\n- ہر ٹریڈ کا تاریخ، جوڑا، انٹری/ایگزٹ قیمت، منافع/نقصان (پپس میں بھی)\n- ہفتہ وار/ماہانہ پرفارمنس سمری (ون ریٹ، پروفٹ فیکٹر، میکس ڈراڈاؤن)\n- نوٹس: \"کیا غلطی تھی؟ کیا بہتر کرنا ہے؟\""
+            }
+          ]
+        }
+      }
     }
   ],
   "amazon-fba": [
