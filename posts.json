@@ -4196,6 +4196,80 @@
           ]
         }
       }
+    },
+    {
+      "day": 10,
+      "id": "day-010",
+      "date": "2026-08-10",
+      "title": "Day 10 — **Freelancing Ko Agency Banane Ka Roadmap: Team Se Kaise Shuru Karein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Freelancing se agency banane ka matlab hai apne ek-person business ko scale karke ek team banana jo multiple projects handle kar sake. Pehle freelancer ke roop mein experience gain karne ke baad, aap apne work ko delegate kar sakte hain, specialized roles assign kar sakte hain, aur clients ko larger scope ke projects offer kar sakte hain."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Step 1",
+          "Apne freelancing ke 1-2 saal ke experience se \"most profitable services\" identify karein (e.g., logo design + social media content).\n2."
+        ],
+        [
+          "Step 2",
+          "Ek \"virtual assistant\" ya junior freelancer hire karein jo repetitive tasks (e.g., client communication, basic edits) sambhal le.\n3."
+        ],
+        [
+          "Step 3",
+          "Apne services ko \"package\" mein convert karein (e.g., \"Social Media Management Package\" = 10 posts + 2 graphics + weekly reports)."
+        ],
+        [
+          "Practice",
+          "Apne current freelancing services list karein aur decide karein ki kaun sa task aap delegate kar sakte hain (e.g., email responses, basic design edits). Ek job post create karein (Upwork/Fiverr par) ek junior assistant ke liye."
+        ],
+        [
+          "Mini Project",
+          "Ek **1-page \"Agency Proposal\"** taiyar karein jismein aap batayein:\n- Aapki agency ke services\n- Team structure (aap + 1 assistant)\n- Pricing model (e.g., \"Logo Design: $150 (you) + $50 (assistant)\")\n- Client ko kya benefit milega (e.g., \"Faster delivery, 24/7 support\")"
+        ]
+      ],
+      "answer_key": "freelancer se agency, delegate tasks, junior hire, package services",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۰ — فری لانسنگ کو ایجنسی بنانے کا روڈ میپ: ٹیم سے کیسے شروع کریں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "فری لانسنگ سے ایجنسی بنانے کا مطلب ہے اپنے ایک شخص بزنس کو سکیل کر کے ایک ٹیم بنانا جو متعدد پروجیکٹس ہینڈل کر سکے۔ پہلے فری لانسر کے روپ میں تجربہ حاصل کرنے کے بعد، آپ اپنے کام کو ڈیلیگیٹ کر سکتے ہیں، مخصوص رولز اسائن کر سکتے ہیں، اور کلائنٹس کو بڑے اسکوپ کے پروجیکٹس آفر کر سکتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔"
+            },
+            {
+              "label": "مرحلہ ۱",
+              "content": "اپنے فری لانسنگ کے ۱-۲ سال کے تجربے سے ’سب سے منافع بخش سروسز‘ شناخت کریں (مثلاً، لوگو ڈیزائن + سوشل میڈیا کنٹینٹ)۔"
+            },
+            {
+              "label": "مرحلہ ۲",
+              "content": "ایک ’ورچوئل اسسٹنٹ‘ یا جونیئر فری لانسر ہائر کریں جو ریپیٹیٹو ٹاسکس (مثلاً، کلائنٹ کمیونیکیشن، بنیادی ایڈٹس) سنبھال لے۔"
+            },
+            {
+              "label": "مرحلہ ۳",
+              "content": "اپنی سروسز کو ’پیکیج‘ میں کنورٹ کریں (مثلاً، ’سوشل میڈیا مینجمنٹ پیکج‘ = ۱۰ پوسٹس + ۲ گرافکس + ہفتہ وار رپورٹس)۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے موجودہ فری لانسنگ سروسز کی فہرست بنائیں اور فیصلہ کریں کہ کون سا ٹاسک آپ ڈیلیگیٹ کر سکتے ہیں (مثلاً، ای میل ریسپونسز، بنیادی ڈیزائن ایڈٹس)۔ ایک جاب پوسٹ کریئٹ کریں (اپ ورک/فائیور پر) ایک جونیئر اسسٹنٹ کے لیے۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **۱-صفحہ ’ایجنسی پروپوزل‘** تیار کریں جس میں آپ بتائیں:\n- آپ کی ایجنسی کی سروسز\n- ٹیم کا ڈھانچہ (آپ + ۱ اسسٹنٹ)\n- پرائسنگ ماڈل (مثلاً، ’لوگو ڈیزائن: $۱۵۰ (آپ) + $۵۰ (اسسٹنٹ)‘)\n- کلائنٹ کو کیا فائدہ ملے گا (مثلاً، ’فاسٹ ڈیلیوری، ۲۴/۷ سپورٹ‘)"
+            }
+          ]
+        }
+      }
     }
   ],
   "graphic-design-canva": [
