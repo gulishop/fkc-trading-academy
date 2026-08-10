@@ -1311,6 +1311,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 8,
+      "id": "day-008",
+      "date": "2026-08-10",
+      "title": "Day 8 — **AI-Powered Social Media Analytics: Data Se Insights Nikaalne ka A-Z**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum AI tools ka istemal karke social media ke data se actionable insights nikalna seekhenge. AI se hum real-time trends, audience behavior, aur content performance ko analyze kar sakte hain—jaise ki engagement rates, best posting times, aur ROI tracking. Isse hum apne clients ko accurate reports de sakte hain aur strategy ko optimize kar sakte hain."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Trend Analysis",
+          "AI tools jaise *Brandwatch* ya *Hootsuite Insights* se dekhein ke kya topics abhi viral hain.\n2."
+        ],
+        [
+          "Audience Segmentation",
+          "AI se pata lagayein ke aapki audience ka age group, location, aur interests kya hain.\n3."
+        ],
+        [
+          "Content Performance",
+          "AI-powered tools jaise *Sprout Social* se dekhein ke konse posts sabse zyada engagement pa rahe hain."
+        ],
+        [
+          "Practice",
+          "Apne ek client ya apne khud ke Instagram account ka data lein (jaise engagement rate, follower growth, aur top posts). Us data ko *Meta Business Suite* ya *Google Analytics* mein daal kar AI-generated insights nikalne ki koshish karein."
+        ],
+        [
+          "Mini Project",
+          "Ek **1-page AI-powered report** taiyar karein jisme:\n- Top 3 viral topics (AI se suggest kiye gaye)\n- Best posting time (AI analysis ke hisab se)\n- 3 content ideas jo aapke audience ke liye relevant hon"
+        ]
+      ],
+      "answer_key": "trend analysis, audience segmentation, content performance, posting time optimization",
+      "translations": {
+        "ur": {
+          "title": "دن ۸ — **اے آئی سے چلنے والی سوشل میڈیا اینالیٹکس: ڈیٹا سے ان سائٹس نکالنے کا اے ٹو زیڈ**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم اے آئی ٹولز کا استعمال کرتے ہوئے سوشل میڈیا کے ڈیٹا سے ایکشن ایبل ان سائٹس نکالنا سیکھیں گے۔ اے آئی کی مدد سے ہم ریئل ٹائم ٹرینڈز، آڈیئنس بی ہیویئر، اور کنٹینٹ پرفارمنس کا تجزیہ کر سکتے ہیں—جیسے کہ انگیجمنٹ ریٹس، بہترین پوسٹنگ ٹائمز، اور آر او آئی ٹریکنگ۔ اس سے ہم اپنے کلائنٹس کو درست رپورٹس دے سکتے ہیں اور اسٹریٹیجی کو بہتر بنا سکتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ ٹرینڈ اینالیسس: اے آئی ٹولز جیسے *برینڈ واچ* یا *ہوٹ سوٹ ان سائٹس* سے دیکھیں کہ کون سے ٹاپکس اس وقت وائرل ہو رہے ہیں۔\n۲۔ آڈیئنس سگمنٹیشن: اے آئی کی مدد سے پتہ لگائیں کہ آپ کی آڈیئنس کا ایج گروپ، لوکیشن، اور دلچسپیاں کیا ہیں۔\n۳۔ کنٹینٹ پرفارمنس: اے آئی سے چلنے والے ٹولز جیسے *اسپراوٹ سوشل* سے دیکھیں کہ کون سی پوسٹس سب سے زیادہ انگیجمنٹ حاصل کر رہی ہیں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے کسی کلائنٹ یا اپنے ذاتی انسٹاگرام اکاؤنٹ کا ڈیٹا لیں (جیسے انگیجمنٹ ریٹ، فالور گروتھ، اور ٹاپ پوسٹس)۔ اس ڈیٹا کو *میٹا بزنس سوٹ* یا *گوگل اینالیٹکس* میں ڈال کر اے آئی جنریٹڈ ان سائٹس نکالنے کی کوشش کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **ایک صفحے کی اے آئی سے چلنے والی رپورٹ** تیار کریں جس میں شامل ہو:\n- ٹاپ ۳ وائرل ٹاپکس (اے آئی کی تجویز کردہ)\n- بہترین پوسٹنگ ٹائم (اے آئی کے تجزیے کے مطابق)\n- ۳ کنٹینٹ آئیڈیاز جو آپ کی آڈیئنس کے لیے متعلقہ ہوں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "facebook-page-growth": [
