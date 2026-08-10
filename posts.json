@@ -4538,6 +4538,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 7,
+      "id": "day-007",
+      "date": "2026-08-10",
+      "title": "Day 7 — **AI-Powered No-Code Tools: Future aur Aaj ka Use**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "AI no-code tools aajkal ke sabse powerful innovations hain jo aapke projects ko 10x fast aur smart bana sakte hain. AI se aap content generate kar sakte hain, designs optimize kar sakte hain, aur even apne app/website ke liye code bhi likhwa sakte hain—sab kuch no-code hi. Aaj hum AI tools ko no-code workflow mein integrate karna seekhenge."
+        ],
+        [
+          "Example",
+          "1. **Framer AI** se ek landing page 2 minutes mein banayein:\n   - Framer website par jaen, \"Start with AI\" select karen.\n   - Apna prompt likhein: *\"A fitness app landing page with dark theme, workout images, and a signup button.\"*\n   - AI automatically design generate kar dega—bas customize karna hai.\n\n2. **Durable AI** se ek business website banaen:\n   - Durable.co par jaen, apna business type select karen (e.g., \"Coffee Shop\").\n   - AI automatically content, images, aur pages generate kar dega—bas apna logo upload karen."
+        ],
+        [
+          "Practice",
+          "Apne pichle project (Day 6 ka client project) ke liye **AI se ek blog post ya product description** generate karen. Prompt likhein: *\"Write a 150-word product description for a no-code app builder targeting beginners in Urdu/Hindi.\"*"
+        ],
+        [
+          "Mini Project",
+          "**\"AI-Powered Resume Builder\"** (Glide + AI):\n1. Glide par ek simple resume builder app banayein.\n2. AI tool (jaise **ResumeWorded**) se resume ko optimize karne ka option add karen.\n3. User apna text upload karega, AI feedback dega (e.g., \"Add more action verbs\")."
+        ]
+      ],
+      "answer_key": "resumeworded, action verbs, glide ai integration, user-friendly",
+      "translations": {
+        "ur": {
+          "title": "دن ۷ — **اے آئی پاورڈ نو کوڈ ٹولز: مستقبل اور آج کا استعمال**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "اے آئی نو کوڈ ٹولز آج کل کے سب سے طاقتور انوویشنز ہیں جو آپ کے پروجیکٹس کو دس گنا تیز اور سمارٹ بنا سکتے ہیں۔ اے آئی سے آپ مواد جنریٹ کر سکتے ہیں، ڈیزائنز آپٹیمائز کر سکتے ہیں، اور یہاں تک کہ اپنے ایپ یا ویب سائٹ کے لیے کوڈ بھی لکھوا سکتے ہیں—سب کچھ نو کوڈ ہی۔ آج ہم اے آئی ٹولز کو نو کوڈ ورک فلو میں انٹیگریٹ کرنا سیکھیں گے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ **فریمر اے آئی** سے دو منٹ میں لینڈنگ پیج بنائیں:\n- فریمر ویب سائٹ پر جائیں، \"Start with AI\" سلیکٹ کریں۔\n- اپنا پرامپٹ لکھیں: *\"اے فٹنس ایپ لینڈنگ پیج ود ڈارک تھیم، ورک آؤٹ امیجز، اینڈ اے سائن اپ بٹن۔\"*\n- اے آئی خود بخود ڈیزائن جنریٹ کر دے گا—بس کسٹمائز کرنا ہے۔\n\n۲۔ **ڈوریبل اے آئی** سے بزنس ویب سائٹ بنائیں:\n- ڈوریبل ڈاٹ کو پر جائیں، اپنا بزنس ٹائپ سلیکٹ کریں (مثال کے طور پر، \"کافی شاپ\")۔\n- اے آئی خود بخود مواد، تصاویر، اور پیجز جنریٹ کر دے گا—بس اپنا لوگو اپ لوڈ کریں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے پچھلے پروجیکٹ (دن ۶ کا کلائنٹ پروجیکٹ) کے لیے **اے آئی سے ایک بلاگ پوسٹ یا پروڈکٹ ڈسکرپشن** جنریٹ کریں۔ پرامپٹ لکھیں: *\"رائٹ اے ۱۵۰ ورڈ پروڈکٹ ڈسکرپشن فار اے نو کوڈ ایپ بلڈر ٹارگٹنگ بیگنرز ان اردو/ہندی۔\"*"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "**\"اے آئی پاورڈ ریزیومے بلڈر\" (گلائیڈ + اے آئی):**\n۱۔ گلائیڈ پر ایک سادہ ریزیومے بلڈر ایپ بنائیں۔\n۲۔ اے آئی ٹول (جیسے **ResumeWorded**) سے ریزیومے کو آپٹیمائز کرنے کا آپشن شامل کریں۔\n۳۔ صارف اپنا ٹیکسٹ اپ لوڈ کرے گا، اے آئی فیڈبیک دے گا (مثال کے طور پر، \"ایڈ مور ایکشن وربس\")۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "digital-marketing-seo": [
