@@ -7592,6 +7592,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 5,
+      "id": "day-005",
+      "date": "2026-08-11",
+      "title": "Day 5 — Functions: Reusable Code Blocks",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Functions ek reusable code block hote hain jo specific task perform karte hain. Inse code ko organize karne, repeat hone se bachne aur program ko modular banane mein help milti hai. Python mein `def` keyword se functions banaye jate hain."
+        ],
+        [
+          "Example",
+          "```python\ndef greet(name):\n    print(f\"Hello, {name}!\")\n\ngreet(\"Ali\")  # Output: Hello, Ali!\n```"
+        ],
+        [
+          "Practice",
+          "10 se 20 tak ke numbers ka sum calculate karne ka function `sum_range(start, end)` likhein."
+        ],
+        [
+          "Mini Project",
+          "Ek function `is_prime(num)` banayein jo check kare ke koi number prime hai ya nahi."
+        ]
+      ],
+      "answer_key": "sum_range, 155, is_prime, true/false",
+      "translations": {
+        "ur": {
+          "title": "دن ٥ — فنکشنز: قابلِ استعمال کوڈ بلاکس",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "فنکشنز قابلِ استعمال کوڈ بلاکس ہوتے ہیں جو مخصوص کام انجام دیتے ہیں۔ ان سے کوڈ کو منظم کرنے، دہرائے جانے سے بچنے اور پروگرام کو ماڈیولر بنانے میں مدد ملتی ہے۔ پائیتھن میں `def` کلیدی لفظ کے ذریعے فنکشنز بنائے جاتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "```python\ndef greet(name):\n    print(f\"Hello, {name}!\")\n\ngreet(\"Ali\")  # Output: Hello, Ali!\n```"
+            },
+            {
+              "label": "مشق",
+              "content": "دس سے بیس تک کے نمبرز کا مجموعہ حساب کرنے کے لیے ایک فنکشن `sum_range(start, end)` لکھیں۔"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "ایک فنکشن `is_prime(num)` بنائیں جو چیک کرے کہ کوئی عدد اول ہے یا نہیں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "web-development": [
