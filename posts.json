@@ -2475,6 +2475,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 13,
+      "id": "day-013",
+      "date": "2026-08-11",
+      "title": "Day 13 — **Forex Market Participants: Who Moves the Market?**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Forex market mein trading sirf aap aur aapka broker nahi karte — iske peeche bohat bade players hain jo rates ko control karte hain. Inhe **market participants** kehte hain, jinmein **banks, hedge funds, central banks, corporations, aur retail traders** shamil hain. Har participant ka apna role hai: banks liquidity provide karte hain, hedge funds trends banate hain, central banks stability maintain karte hain, corporations apne business ke liye currency exchange karte hain, aur retail traders (jaise aap) in sab ke beech mein trading karte hain."
+        ],
+        [
+          "Example",
+          "Imagine aap EUR/USD pair par buy kar rahe ho. Aapka order directly market tak nahi jaata — sabse pehle aapka broker us order ko **liquidity providers** (jaise large banks) tak bhejta hai. Agar koi bank us rate par sell karne ko ready hai, toh aapka trade execute ho jata hai. Agar nahi, toh broker dusre providers se match karta hai. Isi tarah, jab **European Central Bank (ECB)** interest rates badhata hai, toh EUR ki demand badh jati hai, aur rates upar chalte hain."
+        ],
+        [
+          "Practice",
+          "Apne MetaTrader par **Market Watch** window mein jayein aur koi bhi currency pair select karke **right-click → \"Specification\"** par click karein. Dekhein ki **\"Spread\"** aur **\"Swap\"** ke alawa kya kya details dikhai deti hain. In details se pata chale ga ki aapka broker kis liquidity provider se connected hai."
+        ],
+        [
+          "Mini Project",
+          "Ek **simple chart** banayein jismein aap 3 main participants (banks, hedge funds, central banks) ke actions ko show karein aur yeh explain karein ki unke decisions se currency pairs par kya asar hota hai. (Example: Hedge fund ne EUR/USD par short kiya → EUR weak hua → ECB ne interest rate badhaya → EUR phir strong hua.)"
+        ]
+      ],
+      "answer_key": "liquidity providers, banks, hedge funds, central banks",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۳ — فاریکس مارکیٹ کے شرکاء: مارکیٹ کو کون حرکت دیتا ہے؟",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "فاریکس مارکیٹ میں ٹریڈنگ صرف آپ اور آپ کا بروکر نہیں کرتے — اس کے پیچھے بہت بڑے کھلاڑی ہیں جو ریٹس کو کنٹرول کرتے ہیں۔ انہیں **مارکیٹ کے شرکاء** کہتے ہیں، جن میں **بینکس، ہیج فنڈز، سینٹرل بینکس، کارپوریشنز، اور ریٹیل ٹریڈرز** شامل ہیں۔ ہر شریک کا اپنا کردار ہے: بینکس لیکویڈیٹی فراہم کرتے ہیں، ہیج فنڈز رجحانات بناتے ہیں، سینٹرل بینکس استحکام برقرار رکھتے ہیں، کارپوریشنز اپنے بزنس کے لیے کرنسی ایکسچینج کرتے ہیں، اور ریٹیل ٹریڈرز (جیسے آپ) ان سب کے درمیان ٹریڈنگ کرتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "تصور کریں آپ EUR/USD جوڑے پر خرید رہے ہیں۔ آپ کا آرڈر براہ راست مارکیٹ تک نہیں جاتا — سب سے پہلے آپ کا بروکر اس آرڈر کو **لیکویڈیٹی فراہم کنندگان** (جیسے بڑے بینکس) تک بھیجتا ہے۔ اگر کوئی بینک اس ریٹ پر بیچنے کو تیار ہے، تو آپ کی ٹریڈ ایگزیکیوٹ ہو جاتی ہے۔ اگر نہیں، تو بروکر دوسرے فراہم کنندگان سے میچ کرتا ہے۔ اسی طرح، جب **یورپیئن سینٹرل بینک (ECB)** سود کی شرح بڑھاتا ہے، تو EUR کی مانگ بڑھ جاتی ہے، اور ریٹس اوپر چلے جاتے ہیں۔"
+            },
+            {
+              "label": "عملی مشق",
+              "content": "اپنے میٹا ٹریڈر پر **مارکیٹ واچ** ونڈو میں جائیں اور کوئی بھی کرنسی جوڑا منتخب کر کے **رائٹ کلک → \"تفصیلات\"** پر کلک کریں۔ دیکھیں کہ **\"سپریڈ\"** اور **\"سواپ\"** کے علاوہ کیا کیا تفصیلات دکھائی دیتی ہیں۔ ان تفصیلات سے پتہ چلے گا کہ آپ کا بروکر کس لیکویڈیٹی فراہم کنندہ سے منسلک ہے۔"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "ایک **سادہ چارٹ** بنائیں جس میں آپ تین اہم شرکاء (بینکس، ہیج فنڈز، سینٹرل بینکس) کے اقدامات دکھائیں اور یہ وضاحت کریں کہ ان کے فیصلوں سے کرنسی جوڑوں پر کیا اثر ہوتا ہے۔ (مثال: ہیج فنڈ نے EUR/USD پر شارٹ کیا → EUR کمزور ہوا → ECB نے سود کی شرح بڑھائی → EUR پھر مضبوط ہوا۔)"
+            }
+          ]
+        }
+      }
     }
   ],
   "amazon-fba": [
