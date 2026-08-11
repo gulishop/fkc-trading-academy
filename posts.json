@@ -397,6 +397,60 @@
           ]
         }
       }
+    },
+    {
+      "day": 8,
+      "id": "day-008",
+      "date": "2026-08-11",
+      "title": "Day 8 — **Affiliate Earnings Ka Hisaab: Aapki Har Link Ka ROI Nikalein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Har affiliate link ka performance track karna zaroori hai—kaunsi link kitni sales la rahi hai, kaunse traffic source se sabse zyada conversions ho rahe hain, aur kaunse content types behtar kaam kar rahe hain. Iske bina aap apne efforts ko optimize nahi kar sakte. Google Analytics 4 (GA4) aur affiliate networks ke built-in dashboards (jaise Amazon Associates ka \"Reports\" section) se aapko yeh data milta hai. Key metrics: **Click-Through Rate (CTR), Conversion Rate, Average Order Value (AOV), aur Earnings Per Click (EPC)**."
+        ],
+        [
+          "Example",
+          "Maana aapne ek blog post \"2024 ke Best Budget Smartphones\" likha hai aur usme 3 affiliate links hain:\n1. **Amazon** (₹15,000 ka smartphone)\n2. **Flipkart** (₹16,000 ka same model)\n3. **Daraz** (₹14,500 ka same model)\n\nGA4 se pata chalta hai:\n- Amazon link par **100 clicks** hue, **5 sales** hui (₹75,000 commission).\n- Flipkart par **80 clicks**, **2 sales** (₹32,000 commission).\n- Daraz par **120 clicks**, **3 sales** (₹43,500 commission)."
+        ],
+        [
+          "Practice",
+          "Apne kisi **ek affiliate link** (Amazon/Daraz/Flipkart) ka **CTR aur conversion rate** calculate karein:\n1. GA4 ya network dashboard se **total clicks** aur **total sales** note karein.\n2. **CTR = (Clicks / Impressions) × 100** (agar impressions available hain).\n3. **Conversion Rate = (Sales / Clicks) × 100**."
+        ],
+        [
+          "Mini Project",
+          ""
+        ],
+        [
+          "10-minute audit",
+          "Apne **sabse recent affiliate post** ke sabhi links ka performance check karein. Top 3 metrics note karein:\n- Best performing link (highest EPC)\n- Worst performing link (lowest CTR)\n- Kya aapko koi pattern nazar aata hai? (e.g., price range, product type, placement)"
+        ]
+      ],
+      "answer_key": "ctr, conversion rate, epc, ga4",
+      "translations": {
+        "ur": {
+          "title": "دن 8 — **افیلی ایٹ کمائی کا حساب: آپ کی ہر لنک کا ROI نکالیں**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ہر افیلی ایٹ لنک کا پرفارمنس ٹریک کرنا ضروری ہے—کون سی لنک کتنی سیلز لا رہی ہے، کس ٹریفک سورس سے سب سے زیادہ کنورژن ہو رہے ہیں، اور کون سے کونٹینٹ ٹائپس بہتر کام کر رہے ہیں۔ اس کے بغیر آپ اپنے ایفورٹس کو آپٹیمائز نہیں کر سکتے۔ گوگل اینالیٹکس 4 (GA4) اور افیلی ایٹ نیٹ ورکس کے بلٹ ان ڈیش بورڈز (جیسے ایمیزون ایسوسی ایٹس کا \"رپورٹس\" سیکشن) سے آپ کو یہ ڈیٹا ملتا ہے۔ کلیدی میٹرکس: **کلک تھرو ریٹ (CTR)، کنورژن ریٹ، ایوریج آرڈر ویلیو (AOV)، اور ارننگز پر کلک (EPC)**۔"
+            },
+            {
+              "label": "مثال",
+              "content": "مانا آپ نے ایک بلاگ پوسٹ \"2024 کے بہترین بجٹ سمارٹ فونز\" لکھی ہے اور اس میں 3 افیلی ایٹ لنکس ہیں:\n1. **ایمیزون** (₹15,000 کا سمارٹ فون)\n2. **فلپ کارٹ** (₹16,000 کا وہی ماڈل)\n3. **داراز** (₹14,500 کا وہی ماڈل)\n\nGA4 سے پتا چلتا ہے:\n- ایمیزون لنک پر **100 کلکس** ہوئے، **5 سیلز** ہوئیں (₹75,000 کمیشن)۔\n- فلپ کارٹ پر **80 کلکس**، **2 سیلز** (₹32,000 کمیشن)۔\n- داراز پر **120 کلکس**، **3 سیلز** (₹43,500 کمیشن)।"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے کسی **ایک افیلی ایٹ لنک** (ایمیزون/داراز/فلپ کارٹ) کا **CTR اور کنورژن ریٹ** کیلکولیٹ کریں:\n1. GA4 یا نیٹ ورک ڈیش بورڈ سے **ٹوٹل کلکس** اور **ٹوٹل سیلز** نوٹ کریں۔\n2. **CTR = (کلکس / امپریشنز) × 100** (اگر امپریشنز دستیاب ہوں)۔\n3. **کنورژن ریٹ = (سیلز / کلکس) × 100**۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "10 منٹ کا آڈٹ: اپنے **تازہ ترین افیلی ایٹ پوسٹ** کے تمام لنکس کا پرفارمنس چیک کریں۔ ٹاپ 3 میٹرکس نوٹ کریں:\n- بہترین پرفارمنس کرنے والی لنک (سب سے زیادہ EPC)\n- بدترین پرفارمنس کرنے والی لنک (سب سے کم CTR)\n- کیا آپ کو کوئی پیٹرن نظر آتا ہے؟ (مثلا، قیمت کی رینج، پروڈکٹ ٹائپ، پلیسمنٹ)"
+            }
+          ]
+        }
+      }
     }
   ],
   "youtube-automation": [
