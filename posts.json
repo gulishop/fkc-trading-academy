@@ -12846,6 +12846,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 6,
+      "id": "day-006",
+      "date": "2026-08-11",
+      "title": "Day 6 — \"Din, hafte, aur mahine ke naam\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke din, hafte aur mahine ke naam kaise hote hain. Har din ek naya din hota hai, aur har hafte mein 7 din hote hain. Har mahine mein kitne din hote hain, yeh bhi hum seekhenge. Yeh sab seekhne se hum apne aap ko time ka hisaab rakhna seekhenge."
+        ],
+        [
+          "Chhoti Kahani",
+          "Rohan ko school jaana tha. Usne apne calendar mein dekha ke aaj Friday hai. Usne socha, \"Friday ke baad Saturday aur Sunday hai, phir Monday se school shuru hoga.\" Usne apne calendar mein sab din ke naam likh diye. Ab Rohan ko pata chal gaya ke har din ka naam hota hai, aur har hafte mein 7 din hote hain."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, tumhare favourite din kaun sa hai? Aur tumhare favourite mahine kaun sa hai?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Har din ek naya din hota hai, aur har hafte mein 7 din hote hain. Har mahine mein kitne din hote hain, yeh bhi hum seekhenge."
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۶ — دن، ہفتے، اور مہینے کے نام",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج ہم سیکھیں گے کہ دن، ہفتے اور مہینے کے نام کیسے ہوتے ہیں۔ ہر دن ایک نیا دن ہوتا ہے، اور ہر ہفتے میں ۷ دن ہوتے ہیں۔ ہر مہینے میں کتنے دن ہوتے ہیں، یہ بھی ہم سیکھیں گے۔ یہ سب سیکھنے سے ہم اپنے آپ کو وقت کا حساب رکھنا سیکھیں گے۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "روہن کو سکول جانا تھا۔ اس نے اپنے کیلنڈر میں دیکھا کہ آج جمعہ ہے۔ اس نے سوچا، ’’جمعہ کے بعد ہفتہ اور اتوار ہے، پھر پیر سے سکول شروع ہوگا۔‘‘ اس نے اپنے کیلنڈر میں سب دنوں کے نام لکھ دیے۔ اب روہن کو پتا چل گیا کہ ہر دن کا نام ہوتا ہے، اور ہر ہفتے میں ۷ دن ہوتے ہیں۔"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "’’بیٹا، تمہارے پسندیدہ دن کون سا ہے؟ اور تمہارے پسندیدہ مہینے کون سے ہیں؟‘‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "ہر دن ایک نیا دن ہوتا ہے، اور ہر ہفتے میں ۷ دن ہوتے ہیں۔ ہر مہینے میں کتنے دن ہوتے ہیں، یہ بھی ہم سیکھیں گے۔"
+            }
+          ]
+        }
+      }
     }
   ]
 }
