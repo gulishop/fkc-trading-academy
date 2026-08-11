@@ -4996,6 +4996,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 6,
+      "id": "day-006",
+      "date": "2026-08-11",
+      "title": "Day 6 — **Infographics Banana: Data Ko Visual Story Mein Badalna**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Infographics data, statistics ya complex information ko aasan, attractive visuals mein convert karte hain. Canva ke templates aur tools se aap professional infographics bana sakte hain jo presentations, social media ya reports mein use ho sakte hain. Aaj hum seekhenge ki kaise data ko engaging visuals mein badalna hai."
+        ],
+        [
+          "Example",
+          "Ek simple \"Social Media Usage 2024\" infographic banane ke liye:\n1. Canva mein \"Infographic\" template search karen.\n2. Data add karen (e.g., \"Instagram: 2B users, Facebook: 3B users\").\n3. Bar graphs, icons, aur colors use karen taake data clear ho.\n4. Text ko concise rakhen (max 1 line per point)."
+        ],
+        [
+          "Practice",
+          "Ek 3-5 fact wali infographic banayein jo aapke college ya job ke topic par ho (e.g., \"AI ka Future in Pakistan\")."
+        ],
+        [
+          "Mini Project",
+          "Ek **1-page infographic** banayein jismein aapke favorite brand ke 5 key statistics (e.g., revenue, customers, growth) visual form mein present karen. Use aap apne portfolio mein add kar sakte hain."
+        ]
+      ],
+      "answer_key": "data visualization, icons, concise text, color hierarchy",
+      "translations": {
+        "ur": {
+          "title": "دن ٦ — انفوگرافکس بنانا: ڈیٹا کو بصری کہانی میں بدلنا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "انفوگرافکس ڈیٹا، شماریات یا پیچیدہ معلومات کو آسان اور دلکش بصری شکل میں تبدیل کرتے ہیں۔ کینوا کے ٹیمپلیٹس اور ٹولز کی مدد سے آپ پیشہ ورانہ انفوگرافکس بنا سکتے ہیں جو پریزنٹیشنز، سوشل میڈیا یا رپورٹس میں استعمال ہو سکتی ہیں۔ آج ہم سیکھیں گے کہ ڈیٹا کو دلچسپ بصری شکل میں کیسے بدلا جائے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک سادہ \"سوشل میڈیا استعمال ٢٠٢٤\" کی انفوگرافک بنانے کے لیے:\n١۔ کینوا میں \"انفوگرافک\" ٹیمپلیٹ تلاش کریں۔\n٢۔ ڈیٹا شامل کریں (مثلاً، \"انسٹاگرام: ٢ ارب صارفین، فیس بک: ٣ ارب صارفین\")۔\n٣۔ بار گرافس، آئیکنز اور رنگ استعمال کریں تاکہ ڈیٹا واضح ہو۔\n٤۔ متن کو مختصر رکھیں (ہر نقطے کے لیے زیادہ سے زیادہ ایک لائن)۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "ایک ٣ سے ٥ حقائق پر مشتمل انفوگرافک بنائیں جو آپ کے کالج یا نوکری کے موضوع پر ہو (مثلاً، \"پاکستان میں اے آئی کا مستقبل\")۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک صفحے کی انفوگرافک بنائیں جس میں آپ کے پسندیدہ برانڈ کے ٥ کلیدی اعداد و شمار (مثلاً، آمدنی، صارفین، ترقی) بصری شکل میں پیش کیے جائیں۔ اسے آپ اپنے پورٹ فولیو میں شامل کر سکتے ہیں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "no-code-app-dev": [
