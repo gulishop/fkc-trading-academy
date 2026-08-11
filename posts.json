@@ -9738,6 +9738,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 11,
+      "id": "day-011",
+      "date": "2026-08-11",
+      "title": "Day 11 — **TikTok Par \"Shadowban\" Se Bachne Ke 5 Asaan Tarike**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "TikTok ka algorithm aapke content ko \"shadowban\" kar sakta hai agar aapke videos par spam, copyrighted content, ya community guidelines ke khilaaf cheezain hain. Shadowban ka matlab hai ke aapke videos ko kam reach milti hai, lekin aapko pata nahi chalta. Is se bachne ke liye content quality, hashtags, aur engagement par dhyaan dena zaroori hai."
+        ],
+        [
+          "Example",
+          "Agar aap bar-bar same sound ya hashtag use kar rahe hain jo TikTok ne flag kar rakha hai, to aapka video shadowban ho sakta hai. Iske bajaye trending aur unique sounds ka istemal karein."
+        ],
+        [
+          "Practice",
+          "Apne last 5 videos ke hashtags check karein. Kya koi repeat ya banned hashtag use hua hai? Agar haan, to unhe remove karke naye trending hashtags add karein."
+        ],
+        [
+          "Mini Project",
+          "Ek naya video upload karein aur usme sirf 3-5 relevant hashtags use karein (banned ya spammy hashtags se bachein)."
+        ]
+      ],
+      "answer_key": "unique hashtags, trending sounds, content quality, community guidelines",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۱ — **ٹِک ٹاک پر \"شیڈوبین\" سے بچنے کے ۵ آسان طریقے**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ٹِک ٹاک کا الگورتھم آپ کے کونٹینٹ کو \"شیڈوبین\" کر سکتا ہے اگر آپ کے ویڈیوز پر سپیم، کاپی رائٹڈ مواد، یا کمیونٹی گائیڈ لائنز کے خلاف چیزیں ہوں۔ شیڈوبین کا مطلب ہے کہ آپ کے ویڈیوز کو کم ریچ ملتی ہے، لیکن آپ کو پتا نہیں چلتا۔ اس سے بچنے کے لیے کونٹینٹ کوالٹی، ہیش ٹیگز، اور انگیجمنٹ پر دھیان دینا ضروری ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "اگر آپ بار بار وہی آواز یا ہیش ٹیگ استعمال کر رہے ہیں جسے ٹِک ٹاک نے فلیگ کر رکھا ہے، تو آپ کا ویڈیو شیڈوبین ہو سکتا ہے۔ اس کے بجائے ٹرینڈنگ اور یونیک آوازوں کا استعمال کریں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے آخری پانچ ویڈیوز کے ہیش ٹیگز چیک کریں۔ کیا کوئی ریپیٹ یا بینڈ ہیش ٹیگ استعمال ہوا ہے؟ اگر ہاں، تو انہیں ہٹا کر نئے ٹرینڈنگ ہیش ٹیگز شامل کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک نیا ویڈیو اپ لوڈ کریں اور اس میں صرف ۳ سے ۵ متعلقہ ہیش ٹیگز استعمال کریں (بینڈ یا سپیمی ہیش ٹیگز سے بچیں)।"
+            }
+          ]
+        }
+      }
     }
   ],
   "blogging-adsense": [
