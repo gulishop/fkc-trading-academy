@@ -11538,6 +11538,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 7,
+      "id": "day-007",
+      "date": "2026-08-11",
+      "title": "Day 7 — \"Aankhein band karke aawaz pehchanna!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke aawazon ko pehchanna kaise hai! Kabhi kabhi aise log hote hain jo humse baat karte hain aur humein unki aawaz pehchanne mein madad milti hai. Lekin yaad rakhna: agar koi aapki aawaz sun raha hai aur aap usse comfortable nahi hain, toh aap \"na\" keh sakte hain. Koi bhi aapko \"secret\" rakhne ke liye majboor nahi kar sakta!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Areeba ne aankhein band ki aur kaha, \"Aunty, aapki aawaz sunai de rahi hai!\" Aunty ne hassi ke saath kaha, \"Bilkul sahi! Areeba, tumhari aawaz bhi pehchan sakti ho?\" Areeba ne muskurate hue kaha, \"Haan, main aapki aawaz pehchanti hoon!\""
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar koi tumse phone par baat kare aur tum uski aawaz pehchan na sako, toh kya karoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "\"Mera jism mera hai, main kisi ko bhi 'haan' ya 'na' kehne ke liye aazad hoon!\""
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۷ — \"آنکھیں بند کرکے آواز پہچاننا!\"",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم سیکھیں گے کہ آوازوں کو پہچاننا کیسے ہے! کبھی کبھی ایسے لوگ ہوتے ہیں جو ہم سے بات کرتے ہیں اور ہمیں ان کی آواز پہچاننے میں مدد ملتی ہے۔ لیکن یاد رکھنا: اگر کوئی آپ کی آواز سن رہا ہے اور آپ اسے کمفرٹ ایبل نہیں ہیں، تو آپ \"نہیں\" کہہ سکتے ہیں۔ کوئی بھی آپ کو \"سیکرٹ\" رکھنے کے لیے مجبور نہیں کر سکتا!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "عریبہ نے آنکھیں بند کیں اور کہا، \"آنٹی، آپ کی آواز سنائی دے رہی ہے!\" آنٹی نے ہنسی کے ساتھ کہا، \"بالکل صحیح! عریبہ، تم میری آواز بھی پہچان سکتی ہو؟\" عریبہ نے مسکراتے ہوئے کہا، \"ہاں، میں آپ کی آواز پہچانتی ہوں!\""
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "\"بیٹا، اگر کوئی تم سے فون پر بات کرے اور تم اس کی آواز نہ پہچان سکو، تو کیا کرو گے؟\""
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "\"میرا جسم میرا ہے، میں کسی کو بھی 'ہاں' یا 'نہیں' کہنے کے لیے آزاد ہوں!\""
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-good-behavior": [
