@@ -5172,6 +5172,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 8,
+      "id": "day-008",
+      "date": "2026-08-11",
+      "title": "Day 8 — **No-Code se Freelancing: Paise Kamane ke 5 Asaan Raste**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "No-code skills se freelancing karke extra income banai ja sakti hai. Clients ko websites, apps ya automation solutions chahiye hote hain lekin unhe developers ki zaroorat nahi hoti. Freelancing platforms (Upwork, Fiverr), social media (LinkedIn, Twitter), aur local businesses se projects mil sakte hain. No-code tools ki speed se tum 1-2 din mein hi projects deliver kar sakte ho."
+        ],
+        [
+          "Example",
+          "Ek client ko ek simple business website chahiye thi. Tumne **Framer** se 3 pages ki website 4 ghante mein banadi. Client ko pasand aayi, tumne Rs. 15,000 charge kiye. Client ne payment diya aur tumne project deliver kiya—sab kuch no-code se hua."
+        ],
+        [
+          "Practice",
+          "Apne LinkedIn ya Twitter par ek post likh: *\"Main no-code se websites/apps banata hoon. 24-48 ghante mein deliver. Contact karein.\"* 1-2 logon ko DM karke poochh."
+        ],
+        [
+          "Mini Project",
+          "Ek **Fiverr/Gumroad** account bana kar ek \"No-Code Website in 24 Hours\" service list karein. Pricing Rs. 5,000-15,000 rakhein."
+        ]
+      ],
+      "answer_key": "framer/webflow, upwork/fiverr, 5000-15000, 24-48 ghante",
+      "translations": {
+        "ur": {
+          "title": "دن ۸ — نو کوڈ سے فری لانسنگ: پیسے کمانے کے ۵ آسان راستے",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "نو کوڈ صلاحیتوں کے ذریعے فری لانسنگ کرکے اضافی آمدنی حاصل کی جا سکتی ہے۔ کلائنٹس کو ویب سائٹس، ایپس یا آٹومیشن سلوشنز کی ضرورت ہوتی ہے لیکن انہیں ڈویلپرز کی ضرورت نہیں ہوتی۔ فری لانسنگ پلیٹ فارمز (اپ ورک، فائیور)، سوشل میڈیا (لنکڈ ان، ٹوئٹر)، اور مقامی کاروباروں سے پروجیکٹس مل سکتے ہیں۔ نو کوڈ ٹولز کی رفتار سے تم ۱-۲ دن میں ہی پروجیکٹس ڈیلیور کر سکتے ہو۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک کلائنٹ کو ایک سادہ بزنس ویب سائٹ درکار تھی۔ تم نے فریمر سے ۳ پیجز کی ویب سائٹ ۴ گھنٹے میں بنا دی۔ کلائنٹ کو پسند آئی، تم نے ۱۵،۰۰۰ روپے چارج کیے۔ کلائنٹ نے ادائیگی کی اور تم نے پروجیکٹ ڈیلیور کیا—سب کچھ نو کوڈ سے ہوا۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے لنکڈ ان یا ٹوئٹر پر ایک پوسٹ لکھو: ’’میں نو کوڈ سے ویب سائٹس/ایپس بناتا ہوں۔ ۲۴-۴۸ گھنٹے میں ڈیلیور کرتا ہوں۔ رابطہ کریں۔‘‘ ۱-۲ لوگوں کو ڈائریکٹ میسج کرکے پوچھو۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک فائیور/گم روڈ اکاؤنٹ بنا کر ’’نو کوڈ ویب سائٹ ۲۴ گھنٹے میں‘‘ سروس لسٹ کرو۔ پرائسنگ ۵،۰۰۰-۱۵،۰۰۰ روپے رکھو۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "digital-marketing-seo": [
