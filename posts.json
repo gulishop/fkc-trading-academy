@@ -11134,6 +11134,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 9,
+      "id": "day-009",
+      "date": "2026-08-11",
+      "title": "Day 9 — **EMMC IC Ko Reball Karna: Chip Ko Dobara Useful Banana**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "EMMC (Embedded MultiMediaCard) IC ko reball karna ek advanced repair technique hai jo chip ke solder joints ko dobara melt karke naye solder balls lagane ka kaam karta hai. Agar phone boot nahi ho raha, data detect nahi ho raha ya EMMC chip loose ho gayi hai, to reballing se chip ko dobara functional banaya ja sakta hai. Iske liye high-quality solder paste, reballing stencil, hot air gun aur microscope ki zarurat hoti hai."
+        ],
+        [
+          "Example",
+          "1. Pehle EMMC chip ko motherboard se remove karo (agar chip loose hai to skip karo).\n2. Chip ke bottom par old solder ko clean karo (flux aur solder wick use karke).\n3. Reballing stencil ko chip par place karo aur solder balls ko stencil ke holes mein fill karo.\n4. Hot air gun se 250-300°C par solder balls ko melt karo taake naye joints ban jayein.\n5. Chip ko motherboard par dobara solder karo aur test karo."
+        ],
+        [
+          "Practice",
+          "Apne pasandeeda broken phone ya motherboard ka EMMC chip nikal kar uske bottom par solder clean karo (flux aur solder wick use karke). Agar stencil available ho to reballing ka practice karo."
+        ],
+        [
+          "Mini Project",
+          "Ek EMMC chip ko reball karke usko ek test board par solder karo aur check karo ki chip detect ho rahi hai ya nahi."
+        ]
+      ],
+      "answer_key": "clean solder, flux apply, stencil use, hot air melt",
+      "translations": {
+        "ur": {
+          "title": "دن ۹ — **ای ایم ایم سی آئی سی کو ری بال کرنا: چپ کو دوبارہ استعمال کے قابل بنانا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ای ایم ایم سی (ایمبیڈڈ ملٹی میڈیا کارڈ) آئی سی کو ری بال کرنا ایک ایڈوانسڈ ریپیئر تکنیک ہے جو چپ کے سولڈر جوائنٹس کو دوبارہ پگھلا کر نئے سولڈر بالز لگانے کا کام کرتی ہے۔ اگر فون بوٹ نہیں ہو رہا، ڈیٹا ڈیٹیکٹ نہیں ہو رہا یا ای ایم ایم سی چپ loose ہو گئی ہے، تو ری بالنگ سے چپ کو دوبارہ فنکشنل بنایا جا سکتا ہے۔ اس کے لیے ہائی کوالٹی سولڈر پیسٹ، ری بالنگ اسٹینسل، ہاٹ ایئر گن اور مائیکرو اسکوپ کی ضرورت ہوتی ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ پہلے ای ایم ایم سی چپ کو مدر بورڈ سے ہٹائیں (اگر چپ loose ہو تو اس مرحلے کو چھوڑ دیں)۔\n۲۔ چپ کے نیچے پرانے سولڈر کو صاف کریں (ف्लکس اور سولڈر وِک استعمال کر کے)۔\n۳۔ ری بالنگ اسٹینسل کو چپ پر رکھیں اور سولڈر بالز کو اسٹینسل کے سوراخوں میں بھریں۔\n۴۔ ہاٹ ایئر گن سے ۲۵۰-۳۰۰ ڈگری سینٹی گریڈ پر سولڈر بالز کو پگھلائیں تاکہ نئے جوائنٹس بن جائیں۔\n۵۔ چپ کو مدر بورڈ پر دوبارہ سولڈر کریں اور ٹیسٹ کریں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے پسندیدہ ٹوٹے ہوئے فون یا مدر بورڈ کا ای ایم ایم سی چپ نکال کر اس کے نیچے سولڈر صاف کریں (ف्लکس اور سولڈر وِک استعمال کرتے ہوئے)۔ اگر اسٹینسل دستیاب ہو تو ری بالنگ کا پریکٹس کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک ای ایم ایم سی چپ کو ری بال کر کے اسے ایک ٹیسٹ بورڈ پر سولڈر کریں اور چیک کریں کہ چپ ڈیٹیکٹ ہو رہی ہے یا نہیں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-safety-education": [
