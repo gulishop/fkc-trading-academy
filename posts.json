@@ -11890,6 +11890,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 8,
+      "id": "day-008",
+      "date": "2026-08-11",
+      "title": "Day 8 — **Janwaron aur paudon se pyaar aur nazuk sulook**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Janwaron aur paudon se bhi humein pyaar se rehna chahiye, kyunke woh bhi hamare jaise zindagi jeete hain. Unse nazakat se pesh aana seekhna hamari bhi zaroori tareen zimmedari hai. Unhein chhoone, pakadne ya unse baat karne ka tareeqa bhi humein achha hona chahiye."
+        ],
+        [
+          "Chhoti Kahani",
+          "Areeba ne ek chhota sa kutta dekha jo rasta bhool gaya tha. Usne usko pyaar se pakda, pani pilaya, aur thoda sa khana bhi diya. Kutta uske paas aa gaya aur uski ungali chusne laga. Areeba ko bhi bahut khushi hui! Usne socha, \"Janwaron se pyaar karna kitna achha lagta hai!\""
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar tum kisi janwar ya paudhe ko chhoo rahe ho, toh tum usko kaise feel karte ho? Kya tumhein lagta hai ki woh bhi tumhare jaise feel karte hain?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Janwaron aur paudon se pyaar se rehna hamari bhi zaroori tareen aadat hai. Unhein bhi hamare jaise hi pyaar aur respect ki zaroorat hoti hai!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۸ — جانوروں اور پودوں سے پیار اور نازک سلوک",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "جانوروں اور پودوں سے بھی ہمیں پیار سے رہنا چاہیے، کیونکہ وہ بھی ہمارے جیسے زندگی گزارتے ہیں۔ ان سے نازک انداز میں پیش آنا سیکھنا ہماری بھی ضروری ترین ذمہ داری ہے۔ انہیں چھونے، پکڑنے یا ان سے بات کرنے کا طریقہ بھی ہمیں اچھا ہونا چاہیے۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "عریبہ نے ایک چھوٹا سا کتا دیکھا جو راستہ بھول گیا تھا۔ اس نے اسے پیار سے پکڑا، پانی پلایا، اور تھوڑا سا کھانا بھی دیا۔ کتا اس کے پاس آ گیا اور اس کی انگلی چوسنے لگا۔ عریبہ کو بھی بہت خوشی ہوئی! اس نے سوچا، ’’جانوروں سے پیار کرنا کتنا اچھا لگتا ہے!‘‘"
+            },
+            {
+              "label": "امی ابّو کے ساتھ بات کریں",
+              "content": "’’بیٹا، اگر تم کسی جانور یا پودے کو چھو رہے ہو، تو تم اسے کیسا محسوس کرتے ہو؟ کیا تمہیں لگتا ہے کہ وہ بھی تمہارے جیسے محسوس کرتے ہیں؟‘‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "جانوروں اور پودوں سے پیار سے رہنا ہماری بھی ضروری ترین عادت ہے۔ انہیں بھی ہمارے جیسے ہی پیار اور احترام کی ضرورت ہوتی ہے!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-nursery": [
