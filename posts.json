@@ -1725,6 +1725,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 4,
+      "id": "day-004",
+      "date": "2026-08-11",
+      "title": "Day 4 — Facebook Groups Se Traffic Lekar Apne Page Ko Grow Karna",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Facebook Groups aise communities hain jahan log specific topics par discuss karte hain. Agar aap apne page ka link share karte hain, toh targeted traffic mil sakta hai. Lekin **spam** na karein—groups ke rules follow karna zaroori hai. Engagement aur value provide karne se hi traffic aata hai."
+        ],
+        [
+          "Example",
+          "1. Apne niche se related 3-5 active groups dhundhein (search karke).\n2. Group ke rules check karein—kya links share karne diye hain?\n3. Agar allowed hai, toh **valuable content** share karein (e.g., \"Maine yeh trick use ki aur 1000+ followers badhe—dekhein kaise!\" + apne page ka link).\n4. Agar links share karne par pabandi hai, toh **profile se link add karein** ya group ke admin se poochhein."
+        ],
+        [
+          "Practice",
+          "1. Apne niche ke 1 Facebook Group mein jayein.\n2. 5 minutes uske posts par padhein—dekhein log kya pooch rahe hain.\n3. **Ek valuable comment/post** karein (e.g., \"Maine yeh problem solve ki thi, yeh solution try karein!\" + apne page ka link agar allowed ho)."
+        ],
+        [
+          "Mini Project",
+          "Ek **Facebook Group Engagement Plan** banaein:\n- 3 groups select karein.\n- Har group mein 1 post ya comment karein (1 week ke liye).\n- Track karein ki kitne visitors aaye (Facebook Insights se)."
+        ]
+      ],
+      "answer_key": "group rules follow karein, valuable content, 3-5 groups, 1 week plan",
+      "translations": {
+        "ur": {
+          "title": "دن 4 — فیس بک گروپس سے ٹریفک لے کر اپنے پیج کو گرو کرنا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "فیس بک گروپس ایسی کمیونٹیز ہیں جہاں لوگ مخصوص موضوعات پر گفتگو کرتے ہیں۔ اگر آپ اپنے پیج کا لنک شیئر کرتے ہیں تو ٹارگٹڈ ٹریفک مل سکتا ہے۔ لیکن **سپیم** نہ کریں—گروپس کے قواعد کی پابندی کرنا ضروری ہے۔ انگیجمنٹ اور ویلیو فراہم کرنے سے ہی ٹریفک آتی ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1. اپنے نیچ سے متعلقہ 3-5 ایکٹو گروپس تلاش کریں (سرچ کر کے)۔\n2. گروپ کے قواعد چیک کریں—کیا لنکس شیئر کرنے کی اجازت ہے؟\n3. اگر اجازت ہے تو **ویلیو ایبل کنٹینٹ** شیئر کریں (مثال کے طور پر، \"میں نے یہ ٹرک استعمال کی اور 1000+ فالورز بڑھے—دیکھیں کیسے!\" + اپنے پیج کا لنک)۔\n4. اگر لنکس شیئر کرنے پر پابندی ہے تو **پروفائل سے لنک شامل کریں** یا گروپ کے ایڈمن سے پوچھیں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "1. اپنے نیچ کے ایک فیس بک گروپ میں جائیں۔\n2. 5 منٹ اس کی پوسٹس پر پڑھیں—دیکھیں لوگ کیا پوچھ رہے ہیں۔\n3. **ایک ویلیو ایبل کمنٹ/پوسٹ** کریں (مثال کے طور پر، \"میں نے یہ مسئلہ حل کیا تھا، یہ حل آزمائیں!\" + اپنے پیج کا لنک اگر اجازت ہو تو)।"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **فیس بک گروپ انگیجمنٹ پلان** بنائیں:\n- 3 گروپس منتخب کریں۔\n- ہر گروپ میں ایک پوسٹ یا کمنٹ کریں (ایک ہفتے کے لیے)۔\n- ٹریک کریں کہ کتنے وزیٹرز آئے (فیس بک انسائٹس سے)।"
+            }
+          ]
+        }
+      }
     }
   ],
   "forex-trading": [
