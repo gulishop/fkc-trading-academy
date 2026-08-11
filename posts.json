@@ -945,6 +945,72 @@
           ]
         }
       }
+    },
+    {
+      "day": 10,
+      "id": "day-010",
+      "date": "2026-08-11",
+      "title": "Day 10 — YouTube Automation Ka Next Level: AI Tools Se 10x Faster Content Banana",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "AI tools ab itne advanced ho gaye hain ke aap ek hi din mein 5-10 videos automate kar sakte hain—lekin sirf \"automate\" karne se kaam nahi chalta. Aaj seekhenge ke kaise AI se **script se thumbnail tak sab kuch** 10x faster generate karna hai, bina quality sacrifice kiye. Hum CapCut AI, Pictory, aur Runway ML jaise tools ka use karenge jo aapke existing content ko repurpose karke new videos banayenge."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Script Generation",
+          "Sudhar AI ya Jasper se 10 niche-specific scripts generate karwao (e.g., \"AI se paise kaise kamaye\").\n2."
+        ],
+        [
+          "Video Creation",
+          "Pictory ya CapCut AI se har script ka video banwao (stock footage + AI voiceover).\n3."
+        ],
+        [
+          "Thumbnail & Title",
+          "Canva ya MidJourney se 3-5 thumbnail options generate karo, phir sabse best CTR wala select karo.\n4."
+        ],
+        [
+          "Upload & Schedule",
+          "TubeBuddy ya VidIQ se SEO optimize karke, sab videos ko 1 week ke schedule mein upload karo."
+        ],
+        [
+          "Practice",
+          "Aaj **ek existing video** ko lekar uska **script, video, aur thumbnail** AI tools se generate karo. (E.g., agar aapka \"5 YouTube Growth Hacks\" video hai, to usko repurpose karke \"5 AI-Powered Growth Hacks\" video banao.)"
+        ],
+        [
+          "Mini Project",
+          "**AI Content Repurposing Pipeline** banayein:\n1. Ek YouTube video ya blog post select karo.\n2. Uske topic se 3-5 new video ideas generate karo (AI tools se).\n3. Har idea ka script, video, aur thumbnail AI se banayein.\n4. Sabko ek Excel sheet mein track karo (title, script link, video link, upload date)."
+        ]
+      ],
+      "answer_key": "ai script generator, pictory/capcut ai, canva/midjourney, tubebuddy/vidiq",
+      "translations": {
+        "ur": {
+          "title": "دن 10 — یوٹیوب آٹومیشن کا نیکسٹ لیول: اے آئی ٹولز سے 10x تیز مواد بنانا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "اے آئی ٹولز اب اتنے ایڈوانسڈ ہو چکے ہیں کہ آپ ایک ہی دن میں 5 سے 10 ویڈیوز آٹومیٹ کر سکتے ہیں—لیکن صرف \"آٹومیٹ\" کرنے سے کام نہیں چلتا۔ آج سیکھیں گے کہ کیسے اے آئی سے **اسکرپٹ سے تھمب نیل تک سب کچھ** 10x تیز جنریٹ کرنا ہے، بغیر کوالٹی قربان کیے۔ ہم کیپ کٹ اے آئی، پکٹری، اور رن وے ایم ایل جیسے ٹولز کا استعمال کریں گے جو آپ کے موجودہ مواد کو ری پرپز کرکے نئی ویڈیوز بنائیں گے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1۔ سدھر اے آئی یا جاسپر سے 10 نیچ سپیسفک اسکرپٹس جنریٹ کروائیں (مثلاً، \"اے آئی سے پیسے کیسے کمائیں\")۔\n2۔ پکٹری یا کیپ کٹ اے آئی سے ہر اسکرپٹ کی ویڈیو بنوائیں (اسٹاک فوٹیج + اے آئی وائس اوور)۔\n3۔ کینوا یا مڈ جرنی سے 3 سے 5 تھمب نیل آپشنز جنریٹ کریں، پھر سب سے بہترین سی ٹی آر والا سلیکٹ کریں۔\n4۔ ٹیوب بڈی یا وی ڈی آئی کیو سے ایس ای او آپٹیمائز کرکے، سب ویڈیوز کو ایک ہفتے کے شیڈول میں اپ لوڈ کریں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "آج **ایک موجودہ ویڈیو** لے کر اس کا **اسکرپٹ، ویڈیو، اور تھمب نیل** اے آئی ٹولز سے جنریٹ کریں۔ (مثلاً، اگر آپ کی \"5 یوٹیوب گروتھ ہیکس\" ویڈیو ہے، تو اسے ری پرپز کرکے \"5 اے آئی پاورڈ گروتھ ہیکس\" ویڈیو بنائیں۔)"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "**اے آئی مواد ری پرپزنگ پائپ لائن** بنائیں:\n1۔ ایک یوٹیوب ویڈیو یا بلاگ پوسٹ سلیکٹ کریں۔\n2۔ اس کے ٹاپک سے 3 سے 5 نئے ویڈیو آئیڈیاز جنریٹ کریں (اے آئی ٹولز سے)۔\n3۔ ہر آئیڈیا کا اسکرپٹ، ویڈیو، اور تھمب نیل اے آئی سے بنائیں۔\n4۔ سب کو ایک ایکسل شیٹ میں ٹریک کریں (ٹائٹل، اسکرپٹ لنک، ویڈیو لنک، اپ لوڈ ڈیٹ)۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "social-media-marketing": [
