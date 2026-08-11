@@ -10486,6 +10486,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 9,
+      "id": "day-009",
+      "date": "2026-08-11",
+      "title": "Day 9 — **Creative Composition: Breaking Rules for Unique Shots**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum composition ke advanced techniques seekhenge—jab aap rules ko break karke visually striking photos banayein. Rule of thirds ya symmetry jaise basics se aage badhte hue, hum seekhenge ki kaise unhe intentionally ignore karke bhi powerful images banayi ja sakti hain. Har rule ka purpose samajhne ke baad hi usse break karna hai—warna yeh \"creative\" nahi, \"confusing\" ho jayega."
+        ],
+        [
+          "Example",
+          "Ek sunset photo lete hain. Rule of thirds ke hisab se horizon neeche (1/3) rakhni hai, lekin aap usse bilkul upar (2/3) rakh kar sky ka zyada hissa show karenge—jisse clouds aur colors ka drama badh jayega. Ya fir subject ko frame ke bilkul center mein rakh kar symmetry ka use karenge (jaise kisi building ke darwaze ka photo), jo minimalist aur strong look deta hai."
+        ],
+        [
+          "Practice",
+          "Apne phone ya camera se ek photo lo jisme aap intentional rule-breaking kar rahe hain. Ya to:\n- Horizon ko rule of thirds se bilkul opposite rakh kar, ya\n- Subject ko bilkul center mein rakh kar symmetry ka use karke."
+        ],
+        [
+          "Mini Project",
+          "**\"Rule-Breaking Challenge\"**\nEk hi subject ke 3 different compositions lein:\n1. Rule of thirds (classic)\n2. Horizon bilkul upar ya neeche (drama)\n3. Subject bilkul center mein (symmetry)\nCompare karen—kaun sa version zyada engaging lagta hai aur kyun?"
+        ]
+      ],
+      "answer_key": "horizon upar, drama badha, symmetry strong",
+      "translations": {
+        "ur": {
+          "title": "دن ۹ — تخلیقی ترتیب: انوکھے شاٹس کے لیے قواعد توڑنا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج ہم ترتیب کے جدید طریقے سیکھیں گے—جب آپ قواعد کو توڑ کر بصری طور پر دلکش تصاویر بنائیں۔ تھرڈز کے اصول یا ہم آہنگی جیسے بنیادی اصولوں سے آگے بڑھتے ہوئے، ہم سیکھیں گے کہ انہیں دانستہ نظرانداز کر کے بھی طاقتور تصاویر کیسے بنائی جا سکتی ہیں۔ ہر اصول کے مقصد کو سمجھنے کے بعد ہی اسے توڑنا ہے—ورنہ یہ \"تخلیقی\" نہیں، \"الجھانے والا\" ہو جائے گا۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک سورج غروب کی تصویر لیتے ہیں۔ تھرڈز کے اصول کے مطابق افق کو نیچے (۱/۳) رکھنا ہوتا ہے، لیکن آپ اسے بالکل اوپر (۲/۳) رکھ کر آسمان کا زیادہ حصہ دکھائیں گے—جس سے بادلوں اور رنگوں کا ڈراما بڑھ جائے گا۔ یا پھر موضوع کو فریم کے بالکل وسط میں رکھ کر ہم آہنگی کا استعمال کریں گے (جیسے کسی عمارت کے دروازے کی تصویر)، جو سادہ اور مضبوط نظر دیتا ہے۔"
+            },
+            {
+              "label": "مشق",
+              "content": "اپنے فون یا کیمرے سے ایک تصویر لیں جس میں آپ دانستہ طور پر اصول توڑ رہے ہوں۔ یا تو:\n- افق کو تھرڈز کے اصول سے بالکل الٹ رکھ کر، یا\n- موضوع کو بالکل وسط میں رکھ کر ہم آہنگی کا استعمال کرتے ہوئے۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "\"قواعد توڑنے کا چیلنج\"\nایک ہی موضوع کی ۳ مختلف ترتیبوں میں تصاویر لیں:\n۱۔ تھرڈز کا اصول (کلاسیکی)\n۲۔ افق بالکل اوپر یا نیچے (ڈراما)\n۳۔ موضوع بالکل وسط میں (ہم آہنگی)\nموازنہ کریں—کون سا ورژن زیادہ دلچسپ لگتا ہے اور کیوں؟"
+            }
+          ]
+        }
+      }
     }
   ],
   "voiceover-podcasting": [
