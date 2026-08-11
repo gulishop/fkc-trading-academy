@@ -8526,6 +8526,60 @@
           ]
         }
       }
+    },
+    {
+      "day": 8,
+      "id": "day-008",
+      "date": "2026-08-11",
+      "title": "Day 8 — **Power Query: Excel ka \"Data Doctor\"**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Power Query Excel ka advanced tool hai jo data cleaning aur transformation ko 10x fast banata hai. Isse external files (CSV, Excel, databases) import karke automatically clean, filter, aur reshape kar sakte hain. No more manual copy-paste ya formulas—just \"Get & Transform\" se data ready ho jata hai."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Data import",
+          "File > Get Data > From File > From Excel. Apni Excel file select karo.\n2."
+        ],
+        [
+          "Cleaning steps",
+          "- Remove empty rows: Home > Remove Rows > Remove Blank Rows.\n   - Replace text: Transform > Replace Values (e.g., \"N/A\" → \"\").\n   - Split columns: Transform > Split Column > By Delimiter (e.g., comma-separated data).\n3."
+        ],
+        [
+          "Load",
+          "Close & Load → New sheet mein cleaned data aa jayega."
+        ],
+        [
+          "Practice",
+          "Apni Excel file se ek CSV file import karo (ya download karo). Power Query se:\n- Pehle 5 empty rows remove karo.\n- \"Unknown\" values ko \"\" (khali) se replace karo.\n- Ek column ko split karo jo comma (,) se separate hai."
+        ]
+      ],
+      "answer_key": "import csv, remove blank rows, replace \"unknown\", split by comma",
+      "translations": {
+        "ur": {
+          "title": "دن ۸ — **پاور کوئری: ایکسل کا \"ڈیٹا ڈاکٹر\"**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "پاور کوئری ایکسل کا ایک ایڈوانسڈ ٹول ہے جو ڈیٹا کلیننگ اور ٹرانسفارمیشن کو دس گنا تیز بنا دیتا ہے۔ اس کی مدد سے بیرونی فائلز (سی ایس وی، ایکسل، ڈیٹا بیسز) امپورٹ کرکے خود بخود صاف، فلٹر اور ری شیپ کیا جا سکتا ہے۔ اب دستی کاپی پیسٹ یا فارمولوں کی ضرورت نہیں — بس \"گٹ اینڈ ٹرانسفارم\" سے ڈیٹا تیار ہو جاتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ ڈیٹا امپورٹ کریں: فائل > گٹ ڈیٹا > فرام فائل > فرام ایکسل۔ اپنی ایکسل فائل سلیکٹ کریں۔\n۲۔ کلیننگ کے اقدامات:\n   - خالی قطاریں ہٹائیں: ہوم > ریموو رووز > ریموو بلینک رووز۔\n   - ٹیکسٹ تبدیل کریں: ٹرانسفارم > ری پلیس ویلیوز (مثال کے طور پر، \"این/اے\" → \"\")۔\n   - کالم تقسیم کریں: ٹرانسفارم > سپلٹ کالم > بائی ڈیلیمیٹر (مثال کے طور پر، کاما سے الگ شدہ ڈیٹا)۔\n۳۔ لوڈ کریں: کلوز اینڈ لوڈ → نئے شیٹ میں صاف شدہ ڈیٹا آ جائے گا۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنی ایکسل فائل سے ایک سی ایس وی فائل امپورٹ کریں (یا ڈاؤن لوڈ کریں)۔ پاور کوئری کی مدد سے:\n- پہلے پانچ خالی قطاریں ہٹائیں۔\n- \"ان نون\" ویلیوز کو \"\" (خالی) سے تبدیل کریں۔\n- ایک کالم کو تقسیم کریں جو کاما (،) سے الگ ہے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "crypto-blockchain": [
