@@ -12192,6 +12192,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 7,
+      "id": "day-007",
+      "date": "2026-08-11",
+      "title": "Day 7 — \"Awaazon se Banayein Lafz: Cat, Dog, Sun!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke kaise chhoti awaazon ko mila kar lafz banaate hain! Har lafz ki pehli awaaz hi uska naam hai. Jaise 'C' ki awaaz 'k' jaisi hoti hai, 'D' ki 'd' jaisi, aur 'S' ki 's' jaisi. Yeh fun hai aur har cheez ka naam seekhne ka!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Billi ne kaha, \"Mein 'Mew' karti hoon!\" Kutta ne kaha, \"Mein 'Bow'!\" Aur suraj ne muskurate hue kaha, \"Mein 'Sun'!\" Un sabne mil kar kaha, \"Awaazon se hi toh humare naam hain!\""
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar koi tumhe kaha ke 'chup rehna' ya 'secret rakhna' toh tum kya karoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Tumhara jism tumhara hai—uske baare mein koi bhi ajeeb baat chupana nahi! Hamesha kisi bade ko batana. 💙"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۷ — آوازوں سے بنائیں لفظ: کٹ، ڈاگ، سن!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم سیکھیں گے کہ کیسے چھوٹی آوازوں کو ملا کر لفظ بناتے ہیں! ہر لفظ کی پہلی آواز ہی اس کا نام ہے۔ جیسے ’سی‘ کی آواز ’ک‘ جیسی ہوتی ہے، ’ڈی‘ کی ’د‘ جیسی، اور ’ایس‘ کی ’س‘ جیسی۔ یہ فن ہے اور ہر چیز کا نام سیکھنے کا!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "بلی نے کہا، ’میں میو کرتی ہوں!‘ کتا نے کہا، ’میں باؤ!‘ اور سورج نے مسکراتے ہوئے کہا، ’میں سن!‘ ان سب نے مل کر کہا، ’آوازوں سے ہی تو ہمارے نام ہیں!‘"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "بیٹا، اگر کوئی تمہیں کہے کہ ’چپ رہنا‘ یا ’راز رکھنا‘ تو تم کیا کرو گے؟"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمہارا جسم تمہارا ہے—اس کے بارے میں کوئی بھی عجیب بات چھپانا نہیں! ہمیشہ کسی بڑے کو بتانا۔ 💙"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-pg": [
