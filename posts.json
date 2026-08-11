@@ -10560,6 +10560,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 7,
+      "id": "day-007",
+      "date": "2026-08-11",
+      "title": "Day 7 — **Property Deals Mein \"No\" Bolna Bhi Ek Skill Hai**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Negotiation sirf \"haan\" ya \"theek hai\" ke baad aati hai. Aaj seekhein ke kab \"no\" bolna zaroori hai, taake aapki value bane. Har deal mein \"no\" ek powerful tool hai—agar samajh kar use karo."
+        ],
+        [
+          "Example",
+          "Imagine: Ek buyer aapko Rs. 50 lakh ka offer de raha hai, jab property Rs. 60 lakh ki hai. Aap directly \"no\" bol sakte hain, lekin better approach yeh hai:\n1. \"Mujhe aapki interest pasand hai, lekin Rs. 50 lakh market value se 16% kam hai.\"\n2. \"Agar aap Rs. 55 lakh ka offer le kar aayein, to main discuss kar sakta/ sakti hoon.\""
+        ],
+        [
+          "Practice",
+          "Aaj kisi 1 property (ya fake scenario) ke liye 3 \"no\" ke options likhein—har option mein reason bhi add karein (e.g., \"No, kyunki buyer ki financing clear nahi hai\")."
+        ],
+        [
+          "Mini Project",
+          "Ek 10-line ka \"Negotiation Script\" taiyaar karein—jismein aap ek buyer ko Rs. 70 lakh ki property Rs. 65 lakh par bechein. Script mein \"no\" ka istemal karna hai (e.g., \"No, lekin Rs. 67 lakh par deal ho sakti hai\")."
+        ]
+      ],
+      "answer_key": "market value se kam, financing clear karo, counter offer, deal close",
+      "translations": {
+        "ur": {
+          "title": "دن ۷ — پراپرٹی ڈیلز میں \"نہ\" بولنا بھی ایک ہنر ہے",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "نیگوشیشن صرف \"ہاں\" یا \"ٹھیک ہے\" کے بعد آتی ہے۔ آج سیکھیں کہ کب \"نہ\" بولنا ضروری ہے، تاکہ آپ کی ویلیو برقرار رہے۔ ہر ڈیل میں \"نہ\" ایک طاقتور ٹول ہے—اگر سمجھ کر استعمال کریں تو۔"
+            },
+            {
+              "label": "مثال",
+              "content": "تصور کریں: ایک بائر آپ کو ۵۰ لاکھ روپے کا آفر دے رہا ہے، جبکہ پراپرٹی کی قیمت ۶۰ لاکھ روپے ہے۔ آپ براہ راست \"نہ\" بول سکتے ہیں، لیکن بہتر طریقہ یہ ہے:\n۱۔ \"مجھے آپ کی دلچسپی پسند ہے، لیکن ۵۰ لاکھ مارکیٹ ویلیو سے ۱۶ فیصد کم ہے۔\"\n۲۔ \"اگر آپ ۵۵ لاکھ کا آفر لے کر آئیں تو میں ڈسکس کر سکتا/سکتی ہوں۔\""
+            },
+            {
+              "label": "پریکٹس",
+              "content": "آج کسی ایک پراپرٹی (یا فرضی سینیریو) کے لیے ۳ \"نہ\" کے آپشنز لکھیں—ہر آپشن میں وجہ بھی شامل کریں (مثال کے طور پر، \"نہ، کیونکہ بائر کی فنانسنگ واضح نہیں ہے\")۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک ۱۰ لائن کا \"نیگوشیشن اسکرپٹ\" تیار کریں—جس میں آپ ایک بائر کو ۷۰ لاکھ کی پراپرٹی ۶۵ لاکھ میں بیچیں۔ اسکرپٹ میں \"نہ\" کا استعمال کرنا ہے (مثال کے طور پر، \"نہ، لیکن ۶۷ لاکھ پر ڈیل ہو سکتی ہے\")۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "mobile-repairing": [
