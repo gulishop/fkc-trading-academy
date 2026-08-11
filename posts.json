@@ -4646,6 +4646,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 11,
+      "id": "day-011",
+      "date": "2026-08-11",
+      "title": "Day 11 — **Niche Select Karna: Freelancing Mein Success Ka Pehla Secret**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Freelancing mein sabse pehle ek **specific niche** select karna zaroori hai. Agar aap sab kuch karne ki koshish karenge, to aap kisi bhi cheez mein expert nahi ban payenge. Niche select karne ka matlab hai apne skills ko **1-2 areas** par focus karna jahan aapka interest ho, market demand ho, aur aapka competition se farq ho."
+        ],
+        [
+          "Example",
+          "Man lo aap graphic design kar sakte hain, lekin agar aap **logo design** aur **social media posts** par focus karte hain, to aapko zyada clients milenge aur aapki pricing bhi behtar ho sakti hai. Iske liye:\n1. Apne skills list karo (e.g., writing, design, coding, video editing).\n2. Dekho konse skills ki market mein demand hai (Upwork/Fiverr trends check karo).\n3. Apne interest aur expertise ko match karo."
+        ],
+        [
+          "Practice",
+          "Aaj hi 10 minutes nikal kar:\n- Apne 3 skills select karo jo aap achhe se kar sakte hain.\n- Unme se 1 niche decide karo jise aap **agge 3 months** tak focus kar sakte hain."
+        ],
+        [
+          "Mini Project",
+          "**\"Niche Selection Worksheet\"** banao:\n1. Skill 1: [ ]\n2. Skill 2: [ ]\n3. Skill 3: [ ]\n4. Final Niche: [ ] (e.g., \"Urdu-English Translator for E-commerce Websites\")\n5. Why? (1 line reason, e.g., \"High demand + low competition\")"
+        ]
+      ],
+      "answer_key": "skills list karna, market demand check karna, niche decide karna",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۱ — **نیچ سلیکٹ کرنا: فری لانسنگ میں کامیابی کا پہلا راز**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "فری لانسنگ میں سب سے پہلے ایک **مخصوص نیچ** سلیکٹ کرنا ضروری ہے۔ اگر آپ سب کچھ کرنے کی کوشش کریں گے، تو آپ کسی بھی چیز میں ماہر نہیں بن پائیں گے۔ نیچ سلیکٹ کرنے کا مطلب ہے اپنے سکلز کو **۱-۲ ایریاز** پر فوکس کرنا جہاں آپ کی دلچسپی ہو، مارکیٹ ڈیمینڈ ہو، اور آپ کا مقابلہ سے فرق ہو۔"
+            },
+            {
+              "label": "مثال",
+              "content": "مان لیجیے آپ گرافک ڈیزائن کر سکتے ہیں، لیکن اگر آپ **لوگو ڈیزائن** اور **سوشل میڈیا پوسٹس** پر فوکس کرتے ہیں، تو آپ کو زیادہ کلائنٹس ملیں گے اور آپ کی پرائسنگ بھی بہتر ہو سکتی ہے۔ اس کے لیے:\n۱۔ اپنے سکلز لسٹ کریں (مثلاً، رائٹنگ، ڈیزائن، کوڈنگ، ویڈیو ایڈیٹنگ)۔\n۲۔ دیکھیں کن سکلز کی مارکیٹ میں ڈیمینڈ ہے (اپ ورک/فائیور ٹرینڈز چیک کریں)۔\n۳۔ اپنی دلچسپی اور مہارت کو میچ کریں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "آج ہی دس منٹ نکال کر:\n- اپنے تین سکلز سلیکٹ کریں جو آپ اچھے سے کر سکتے ہیں۔\n- ان میں سے ایک نیچ طے کریں جسے آپ **آگے تین ماہ** تک فوکس کر سکیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "**\"نیچ سلیکشن ورک شیٹ\"** بنائیں:\n۱۔ سکل ۱: [ ]\n۲۔ سکل ۲: [ ]\n۳۔ سکل ۳: [ ]\n۴۔ فائنل نیچ: [ ] (مثلاً، \"اردو-انگلش مترجم برائے ای کامرس ویب سائٹس\")\n۵۔ کیوں؟ (ایک لائن وجہ، مثلاً، \"ہائی ڈیمینڈ + لو کمپیٹیشن\")"
+            }
+          ]
+        }
+      }
     }
   ],
   "graphic-design-canva": [
