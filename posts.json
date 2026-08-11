@@ -11768,6 +11768,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 4,
+      "id": "day-004",
+      "date": "2026-08-11",
+      "title": "Day 4 — \"Ajeeb choo? 'NA' keh do!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke agar koi ajeeb tarike se tumhe choo raha ho ya tumhe uncomfortable feel kara raha ho, toh tumhe \"NA!\" kehna hai aur uske paas se hat jaana hai. Tumhara jism sirf tumhara hai, aur tumhe kisi ko bhi tumhe choone ka haq nahi hai. Agar koi tumhe dabav de ya koi secret rakhne ko kahe, toh usko mat suno—ammi/abbu ko batana zaroori hai!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Rohan school se aaya tha. Unke class mein ek bhaiya ne unhe galey laga kar zor se choo liya. Rohan ko accha nahi laga, lekin woh chup rahe kyunki bhaiya ne kaha tha \"Yeh secret hai.\" Par uski ammi ne socha ke Rohan ka mood thoda alag hai. Unhone poocha, \"Beta, tumhe kya hua?\" Rohan ne sab bata diya. Ammi ne usko gale lagaya aur kaha, \"Tumne bilkul theek kiya. Kisi ko tumhe choone ka haq nahi hai.\""
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar koi tumhe ajeeb tarike se choo raha ho, toh tum kya karoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Tumhara jism tumhara hai—kisi ko tumhe choone ka haq nahi! Agar koi ajeeb lage, toh \"NA!\" keh do aur ammi/abbu ko batana mat bhoolna."
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۴ — عجیب چھو؟ 'نہ' کہہ دو!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج ہم سیکھیں گے کہ اگر کوئی عجیب طریقے سے تمہیں چھو رہا ہو یا تمہیں uncomfortable feel کرا رہا ہو، تو تمہیں 'نہ!' کہنا ہے اور اس کے پاس سے ہٹ جانا ہے۔ تمہارا جسم صرف تمہارا ہے، اور تمہیں کسی کو بھی تمہیں چھونے کا حق نہیں ہے۔ اگر کوئی تم پر دباؤ ڈالے یا کوئی راز رکھنے کو کہے، تو اسے مت سنو—امّی/ابّو کو بتانا ضروری ہے!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "روہن سکول سے آیا تھا۔ ان کی کلاس میں ایک بھائیہ نے انہیں گلے لگا کر زور سے چھو لیا۔ روہن کو اچھا نہیں لگا، لیکن وہ چپ رہے کیونکہ بھائیہ نے کہا تھا 'یہ راز ہے۔' پر ان کی امّی نے سوچا کہ روہن کا موڈ تھوڑا الگ ہے۔ انہوں نے پوچھا، 'بیٹا، تمہیں کیا ہوا؟' روہن نے سب بتا دیا۔ امّی نے انہیں گلے لگا کر کہا، 'تم نے بالکل ٹھیک کیا۔ کسی کو تمہیں چھونے کا حق نہیں ہے۔'"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "بیٹا، اگر کوئی تمہیں عجیب طریقے سے چھو رہا ہو، تو تم کیا کرو گے؟"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمہارا جسم تمہارا ہے—کسی کو تمہیں چھونے کا حق نہیں! اگر کوئی عجیب لگے، تو 'نہ!' کہہ دو اور امّی/ابّو کو بتانا مت بھولنا۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-educational-games": [
