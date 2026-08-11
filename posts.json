@@ -12494,6 +12494,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 7,
+      "id": "day-007",
+      "date": "2026-08-11",
+      "title": "Day 7 — **Phalon aur Sabziyon ki Pehchan**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke phalon aur sabziyon ko kaise pehchana jata hai! Har phal aur sabzi ka apna alag rang, shape aur swad hota hai. Inhein pehchanna seekhne se hum healthy bhi rehte hain aur nature ke saath judte hain."
+        ],
+        [
+          "Chhoti Kahani",
+          "Aunty ke ghar mein ek sundar sabziyon ka garden hai. Riya ne dekha ke ek lal, gol, aur meetha phal hai—\"Yeh toh seb hai!\" usne kaha. Phir usne dekha ke ek hara, lambaa sabzi hai—\"Yeh bhindi hai!\" Riya ne sabziyon ko chhua, unka swad liya, aur unhein apne haath se ugaana bhi seekha. Aaj tum bhi inhein pehchano aur healthy raho!"
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, tumhein sabse pasandida phal aur sabzi kaun si hai? Chalo, milkar unhein pehchane!\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Har phal aur sabzi ka apna alag rang aur shape hota hai—ise pehchano aur healthy raho!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۷ — **پھلوں اور سبزیوں کی پہچان**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج ہم سیکھیں گے کہ پھلوں اور سبزیوں کو کیسے پہچانا جاتا ہے! ہر پھل اور سبزی کا اپنا الگ رنگ، شکل اور ذائقہ ہوتا ہے۔ انہیں پہچاننا سیکھنے سے ہم صحت مند بھی رہتے ہیں اور فطرت کے ساتھ جڑتے ہیں۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "آنتی کے گھر میں ایک خوبصورت سبزیوں کا باغ ہے۔ ریا نے دیکھا کہ ایک لال، گول اور میٹھا پھل ہے—\"یہ تو سیب ہے!\" اس نے کہا۔ پھر اس نے دیکھا کہ ایک ہرا، لمبا سبزی ہے—\"یہ بھنڈی ہے!\" ریا نے سبزیوں کو چھوا، ان کا ذائقہ لیا، اور انہیں اپنے ہاتھ سے اگانا بھی سیکھا۔ آج تم بھی انہیں پہچانو اور صحت مند رہو!"
+            },
+            {
+              "label": "امی ابّو کے ساتھ بات کریں",
+              "content": "\"بیٹا، تمہیں سب سے پسندیدہ پھل اور سبزی کون سی ہے؟ چلو، مل کر انہیں پہچانیں!\""
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "ہر پھل اور سبزی کا اپنا الگ رنگ اور شکل ہوتی ہے—اسے پہچانو اور صحت مند رہو!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-kg": [
