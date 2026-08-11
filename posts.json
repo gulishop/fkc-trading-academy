@@ -8076,6 +8076,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 9,
+      "id": "day-009",
+      "date": "2026-08-11",
+      "title": "Day 9 — **Website Accessibility Basics: Sabke Liye Inclusive Web Banana**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke ek accessible website kaise banayein taake visually impaired, motor disabilities, ya slow internet walay users bhi aapki website ko aasani se use kar saken. Accessibility sirf \"good practice\" nahi balki kayi countries mein legally required bhi hai. Hum focus karenge: semantic HTML, ARIA labels, keyboard navigation, aur contrast ratios."
+        ],
+        [
+          "Example",
+          "Ek simple form mein `<label>` ka istemal karna:\n```html\n<label for=\"email\">Email Address:</label>\n<input type=\"email\" id=\"email\" name=\"email\">\n```\nYeh screen readers ko batata hai ke \"Email Address\" input field ka label hai. Bina `<label>` ke, screen reader user ko pata nahi chalta ke yeh kya field hai."
+        ],
+        [
+          "Practice",
+          "Apne existing project ke kisi form ya navigation menu mein:\n1. Sabhi `<input>` elements ke liye `<label>` add karo (agar nahi hain).\n2. `<button>` elements mein `aria-label` attribute add karo agar text clear nahi hai (e.g., `<button aria-label=\"Close menu\">X</button>`)."
+        ],
+        [
+          "Mini Project",
+          "**\"Accessible Portfolio Card\"** banayein:\n- Ek card design karo jisme:\n  - Heading `<h2>` se ho (not `<div>`)\n  - Image ke liye `<img alt=\"Description\">` (alt text meaningful ho)\n  - \"Read More\" button ke liye `aria-label=\"Read more about [topic]\"`\n  - Keyboard se tab karne par focus visible ho (CSS: `button:focus { outline: 2px solid blue; }`)"
+        ]
+      ],
+      "answer_key": "semantic html, aria-labels, keyboard navigation, high contrast",
+      "translations": {
+        "ur": {
+          "title": "دن ۹ — **ویب سائٹ ایکسیسبلٹی کی بنیادیات: سب کے لیے جامع ویب بنانا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج ہم سیکھیں گے کہ ایک ایکسیسبل ویب سائٹ کیسے بنائی جائے تاکہ بصارت سے محروم، موٹر معذوری والے، یا سست انٹرنیٹ استعمال کرنے والے صارفین بھی آپ کی ویب سائٹ کو آسانی سے استعمال کر سکیں۔ ایکسیسبلٹی صرف \"اچھی پریکٹس\" نہیں بلکہ کئی ممالک میں قانونی طور پر لازمی بھی ہے۔ ہم توجہ دیں گے: سیمیٹک ایچ ٹی ایم ایل، ایریا لیبلز، کی بورڈ نیویگیشن، اور کنٹراسٹ ریٹیوز پر۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک سادہ فارم میں `<label>` کا استعمال کرنا:\n```html\n<label for=\"email\">ای میل ایڈریس:</label>\n<input type=\"email\" id=\"email\" name=\"email\">\n```\nیہ اسکرین ریڈرز کو بتاتا ہے کہ \"ای میل ایڈریس\" ان پٹ فیلڈ کا لیبل ہے۔ بغیر `<label>` کے، اسکرین ریڈر صارف کو پتہ نہیں چلتا کہ یہ کون سا فیلڈ ہے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے موجودہ پروجیکٹ کے کسی فارم یا نیویگیشن مینو میں:\n۱۔ تمام `<input>` عناصر کے لیے `<label>` شامل کریں (اگر نہیں ہیں)۔\n۲۔ `<button>` عناصر میں `aria-label` ایٹریبیوٹ شامل کریں اگر متن واضح نہیں ہے (مثال کے طور پر، `<button aria-label=\"مینو بند کریں\">X</button>`)।"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "**\"ایکسیسبل پورٹ فولیو کارڈ\" بنائیں:**\nایک کارڈ ڈیزائن کریں جس میں:\n- ہیڈنگ `<h2>` سے ہو (نہ کہ `<div>` سے)\n- تصویر کے لیے `<img alt=\"تفصیل\">` (آلٹ ٹیکسٹ معنی خیز ہو)\n- \"مزید پڑھیں\" بٹن کے لیے `aria-label=\"مزید پڑھیں [موضوع] کے بارے میں\"`\n- کی بورڈ سے ٹیب کرنے پر فوکس نظر آئے (سی ایس ایس: `button:focus { outline: 2px solid blue; }`)"
+            }
+          ]
+        }
+      }
     }
   ],
   "excel-data-analysis": [
