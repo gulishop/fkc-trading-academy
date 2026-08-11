@@ -6356,6 +6356,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 9,
+      "id": "day-009",
+      "date": "2026-08-11",
+      "title": "Day 9 — **Orders Handle Karna: Customer Experience Se Repeat Sales Tak**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum orders process karne se lekar customer experience improve karne tak sab kuch cover karenge. Yeh step sirf fulfillment nahi—yeh hai aapki brand ki reputation aur repeat customers banane ka raaz. Quick response, professional packaging, aur smooth delivery se customers aapko yaad rakhte hain aur dobara khareedte hain."
+        ],
+        [
+          "Example",
+          "Ek customer ne aapka T-shirt order kiya. Aapko yeh karna hai:\n1. Order confirm karo (email/Shopify par notification).\n2. Printful se order place karo (agar wo vendor hai) ya local printer ko details provide karo.\n3. Shipping confirm karne ke baad customer ko tracking number share karo.\n4. Delivery ke baad polite follow-up email bhej kar feedback maango."
+        ],
+        [
+          "Practice",
+          "Apne ek existing order (ya ek test order) ka complete process likho:\n- Order receive hone se lekar delivery confirm hone tak ke steps.\n- Har step par aapko kya action lena hai?"
+        ],
+        [
+          "Mini Project",
+          "Ek \"Order Confirmation Email\" template banao jo:\n- Order details (product, size, color)\n- Shipping time estimate\n- Tracking link\n- Feedback request\nInclude kare. Canva ya plain text mein bana sakte ho."
+        ]
+      ],
+      "answer_key": "order confirmation, tracking, feedback request, delivery follow-up",
+      "translations": {
+        "ur": {
+          "title": "دن ۹ — آرڈرز ہینڈل کرنا: کسٹمر ایکسپیرئنس سے ریپیٹ سیلز تک",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم آرڈرز پروسیس کرنے سے لے کر کسٹمر ایکسپیرئنس کو بہتر بنانے تک سب کچھ کور کریں گے۔ یہ قدم محض فلفلمنٹ نہیں ہے—یہ آپ کی برانڈ کی ریپوٹیشن اور ریپیٹ کسٹمرز بنانے کا راز ہے۔ فوری جواب، پیشہ ورانہ پیکجنگ، اور ہموار ڈیلیوری سے کسٹمرز آپ کو یاد رکھتے ہیں اور دوبارہ خریداری کرتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک کسٹمر نے آپ کا ٹی شرٹ آرڈر کیا ہے۔ آپ کو یہ کرنا ہے:\n١۔ آرڈر کی تصدیق کریں (ای میل/شاپائفائی پر نوٹیفیکیشن)۔\n٢۔ پرنٹ فل سے آرڈر پلیس کریں (اگر وہ وینڈر ہے) یا لوکل پرنٹر کو تفصیلات فراہم کریں۔\n٣۔ شپنگ کی تصدیق کے بعد کسٹمر کو ٹریکنگ نمبر شیئر کریں۔\n٤۔ ڈیلیوری کے بعد شائستہ فالو اپ ای میل بھیج کر فیڈبیک مانگیں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے کسی موجودہ آرڈر (یا ایک ٹیسٹ آرڈر) کا مکمل پروسیس لکھیں:\n- آرڈر وصول ہونے سے لے کر ڈیلیوری کی تصدیق تک کے مراحل۔\n- ہر مرحلے پر آپ کو کیا ایکشن لینا ہے؟"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک \"آرڈر کنفرمیشن ای میل\" ٹیمپلیٹ بنائیں جس میں شامل ہو:\n- آرڈر کی تفصیلات (پروڈکٹ، سائز، رنگ)\n- شپنگ کا اندازہ شدہ وقت\n- ٹریکنگ لنک\n- فیڈبیک کی درخواست\nکینوا یا پلین ٹیکسٹ میں بنا سکتے ہیں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "cpp-daily-coding": [
