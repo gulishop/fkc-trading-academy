@@ -14032,6 +14032,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 7,
+      "id": "day-007",
+      "date": "2026-08-12",
+      "title": "Day 7 — \"Aankhein Kholo, Shaklein Pehchano!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke kaise alag-alag shaklein pehchanein. Jaise rectangle (jaise notebook ya darwaza) aur oval (jaise egg ya moon). Har shakl ka apna ek khas tareeqa hota hai—kuch seedhe, kuch gol!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Aunty ke ghar mein ek pyara sa box hai. Usko rectangle kehlata hai. Aur uske paas ek chhota sa ball hai, jise oval kehte hain. Aunty ne kaha, \"In shaklein ko pehchano, beta! Rectangle mein 4 side hain, aur oval mein koi side nahi—bas gol shape hai.\""
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar tumhe koi ajeeb shakl ya cheez dikhe jo tumhe pasand na aaye, toh kya karoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Har shakl ka apna ek khas tareeqa hota hai—jaise rectangle ke 4 side, aur oval bilkul gol!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۷ — آنکھیں کھولو، شکلیں پہچانو!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج ہم سیکھیں گے کہ کیسے الگ الگ شکلیں پہچانی جائیں۔ جیسے ریکٹینگل (جیسے نوٹ بک یا دروازہ) اور اوول (جیسے انڈا یا چاند)۔ ہر شکل کا اپنا ایک خاص طریقہ ہوتا ہے—کچھ سیدھی، کچھ گول!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "آنتی کے گھر میں ایک پیارا سا باکس ہے۔ اسے ریکٹینگل کہتے ہیں۔ اور ان کے پاس ایک چھوٹا سا بال ہے، جسے اوول کہتے ہیں۔ آنتی نے کہا، ’’ان شکلیں کو پہچانو، بیٹا! ریکٹینگل میں ۴ سائڈز ہیں، اور اوول میں کوئی سائڈ نہیں—بس گول شکل ہے۔‘‘"
+            },
+            {
+              "label": "امی ابّو کے ساتھ بات کریں",
+              "content": "’’بیٹا، اگر تمہیں کوئی عجیب شکل یا چیز دکھے جو تمہیں پسند نہ آئے، تو کیا کرو گے؟‘‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "ہر شکل کا اپنا ایک خاص طریقہ ہوتا ہے—جیسے ریکٹینگل کے ۴ سائڈز، اور اوول بالکل گول!"
+            }
+          ]
+        }
+      }
     }
   ]
 }
