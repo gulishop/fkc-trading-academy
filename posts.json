@@ -4372,6 +4372,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 8,
+      "id": "day-008",
+      "date": "2026-08-12",
+      "title": "Day 8 — **Trust Badhana: 5 Simple Rules Se Customers Ko Loyal Banayein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Customer support sirf \"reply karna\" nahi hai—yeh trust banane ka process hai. Agar customer ko lagta hai ke aap uski problem ko samajhte hain, usko priority dete hain, aur transparent rehte hain, to wo bar-bar khareedega aur refer karega. Trust ka seedha matlab hai: **kam complaints, zyada repeat orders, aur organic growth**."
+        ],
+        [
+          "Example",
+          "Ek customer ne WhatsApp par order kiya lekin product 10 din baad bhi nahi aaya. Agar aap:\n❌ \"Humara supplier delay kar raha hai\" → Customer frustrated ho jata hai.\n✅ \"Mujhe maaf kijiye, supplier ne issue bataya hai—2 din mein delivery ho jayegi. Aapko koi extra discount milega?\" → Customer satisfied rehta hai."
+        ],
+        [
+          "Practice",
+          "Apne store ke **last 5 orders** check kijiye. Kitne orders mein customer ne koi query ki thi? Uske response mein aapne kitne time mein reply diya? (Ideal: 24 hours ke andar)"
+        ],
+        [
+          "Mini Project",
+          "Ek **Customer Support Policy** likhiye (3-4 bullet points):\n- Response time (e.g., \"24 hours ke andar reply\")\n- Refund policy ka clear mention\n- Apne \"human touch\" ka tareeqa (e.g., \"Hum aapki har problem ko personally solve karenge\")"
+        ]
+      ],
+      "answer_key": "24 hours, empathy, transparency, repeat buyer",
+      "translations": {
+        "ur": {
+          "title": "دن 8 — **ٹرسٹ بنانا: 5 سادہ اصولوں سے گاہکوں کو وفادار بنائیں**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "کسٹمر سپورٹ صرف \"ریپلائی کرنا\" نہیں ہے—یہ ٹرسٹ بنانے کا عمل ہے۔ اگر گاہک کو لگے کہ آپ اس کی مشکل کو سمجھتے ہیں، اسے ترجیح دیتے ہیں، اور شفاف رہتے ہیں، تو وہ بار بار خریدے گا اور دوسروں کو بھی بتائے گا۔ ٹرسٹ کا سیدھا مطلب ہے: **کم شکایات، زیادہ ریپیٹ آرڈرز، اور آرگینک گروتھ**۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک گاہک نے واٹس ایپ پر آرڈر کیا لیکن پروڈکٹ 10 دن بعد بھی نہیں آیا۔ اگر آپ:\n❌ \"ہمارا سپلائر دیر کر رہا ہے\" → گاہک مایوس ہو جاتا ہے۔\n✅ \"مجھے معاف کیجیے، سپلائر نے مسئلہ بتایا ہے—2 دن میں ڈیلیوری ہو جائے گی۔ آپ کو کوئی ایکسٹرا ڈسکاؤنٹ ملے گا؟\" → گاہک مطمئن رہتا ہے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے اسٹور کے **آخری 5 آرڈرز** چیک کیجیے۔ کتنے آرڈرز میں گاہک نے کوئی سوال کیا تھا؟ اس کے جواب میں آپ نے کتنے وقت میں ریپلائی دیا؟ (آئیڈیل: 24 گھنٹے کے اندر)"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **کسٹمر سپورٹ پالیسی** لکھیے (3-4 پوائنٹس):\n- ریسپانس ٹائم (مثال: \"24 گھنٹے کے اندر جواب\")\n- ریفنڈ پالیسی کا واضح ذکر\n- اپنے \"ہیومن ٹچ\" کا طریقہ (مثال: \"ہم آپ کی ہر مشکل کو ذاتی طور پر حل کریں گے\")"
+            }
+          ]
+        }
+      }
     }
   ],
   "freelancing": [
