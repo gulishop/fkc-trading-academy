@@ -13278,6 +13278,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 8,
+      "id": "day-008",
+      "date": "2026-08-12",
+      "title": "Day 8 — \"Phal, Sabzi, aur Janwaron ki Angrezi mein Pehchaan!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke phal, sabzi, aur janwaron ke naam English mein kaise hote hain. Har cheez ka ek naam hota hai, aur yeh seekhna bahut mazedar hai! Sabse zaroori cheez yeh hai ke tumhare jism par koi bhi hath na uthaye—tumhare jism par sirf tumhara haq hai."
+        ],
+        [
+          "Chhoti Kahani",
+          "Babli ne school mein ek picture dekhi jisme ek lal seb aur ek gajar thi. Teacher ne kaha, \"Yeh 'apple' aur 'carrot' hain!\" Babli ne muskura kar kaha, \"Mujhe yeh naam yaad hain!\" Uske baad usne apne dost ko bhi yeh naam bataye. Sabne mil kar seekha ke har cheez ka ek naam hota hai."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar tumhe koi cheez ka naam yaad na ho, to tum kya karoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Har cheez ka ek naam hota hai—chahe woh phal ho, sabzi ho, ya janwar! Tumhare jism par sirf tumhara haq hai."
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۸ — \"پھل، سبزی، اور جانوروں کی انگریزی میں پہچان!\"",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج ہم سیکھیں گے کہ پھل، سبزی، اور جانوروں کے نام انگریزی میں کیسے ہوتے ہیں۔ ہر چیز کا ایک نام ہوتا ہے، اور یہ سیکھنا بہت مزے دار ہے! سب سے ضروری چیز یہ ہے کہ تمہارے جسم پر کوئی بھی ہاتھ نہ اٹھائے—تمہارے جسم پر صرف تمہارا حق ہے۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "ببلی نے سکول میں ایک تصویر دیکھی جس میں ایک لال سیب اور ایک گاجر تھی۔ ٹیچر نے کہا، \"یہ ’ایپل‘ اور ’کیروٹ‘ ہیں!\" ببلی نے مسکرا کر کہا، \"مجھے یہ نام یاد ہیں!\" اس کے بعد اس نے اپنے دوست کو بھی یہ نام بتائے۔ سب نے مل کر سیکھا کہ ہر چیز کا ایک نام ہوتا ہے۔"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "\"بیٹا، اگر تمہیں کوئی چیز کا نام یاد نہ ہو، تو تم کیا کرو گے؟\""
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "ہر چیز کا ایک نام ہوتا ہے—چاہے وہ پھل ہو، سبزی ہو، یا جانور! تمہارے جسم پر صرف تمہارا حق ہے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-pg": [
