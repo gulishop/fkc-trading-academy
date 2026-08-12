@@ -3063,6 +3063,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 9,
+      "id": "day-009",
+      "date": "2026-08-12",
+      "title": "Day 9 — **Amazon FBA Mein \"Off-Page SEO\" Se Sales Aur Ranking Kaise Badhayein (Backlinks, Social Media, Email Marketing)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Amazon ke algorithm mein \"off-page SEO\" ka bhi role hai—yani aapke product ke *baahar* se hone wali activities se ranking aur sales par asar. Ismein shamil hain: backlinks (product page par pointing links), social media promotion, aur email marketing. Ye sabhi cheezain Amazon ke bahar hoti hain lekin aapke product ki credibility aur reach badhati hain, jisse ranking improve hoti hai."
+        ],
+        [
+          "Example",
+          "Ek seller ne \"Wireless Charging Pad\" becha. Usne Facebook Groups mein 100+ posts share ki, 30+ relevant blogs se backlinks liye (e.g., \"tech gadgets ke liye best charging pads\"), aur 500+ customers ko email bheje \"Thank You\" ke saath ek discount code. Result: Product ka ranking 15 se 3rd position par aaya aur sales 40% badhi."
+        ],
+        [
+          "Practice",
+          "Aaj hi ek relevant Facebook Group ya Reddit community dhundein (e.g., \"Amazon Sellers\" ya \"Tech Deals\"). Apne product ki category ya niche se related post likhein—*directly* promote na karein, balki value add karein (e.g., \"Mera experience: Wireless chargers ka best option kaun sa hai?\")."
+        ],
+        [
+          "Mini Project",
+          "Ek simple **email campaign** design karein:\n1. 3 email templates likhein (Welcome, Follow-up, Discount Offer).\n2. 10 fake customer emails (Excel mein) par yeh templates send karein (use karein [Mailchimp](https://mailchimp.com/) ya [Canva Email](https://www.canva.com/emails/)).\n3. Track karein kaun sa email sabse zyada open hua."
+        ]
+      ],
+      "answer_key": "facebook groups mein engagement, 3 email templates, 10 test emails",
+      "translations": {
+        "ur": {
+          "title": "دن 9 — **ایمیزون ایف بی اے میں \"آف پیج ایس ای او\" سے سیلز اور رینکنگ کیسے بڑھائیں (بیک لنکس، سوشل میڈیا، ای میل مارکیٹنگ)**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ایمیزون کے الگورتھم میں \"آف پیج ایس ای او\" کا بھی کردار ہوتا ہے—یعنی آپ کے پروڈکٹ کے *باہر* سے ہونے والی سرگرمیوں سے رینکنگ اور سیلز پر اثر پڑتا ہے۔ اس میں شامل ہیں: بیک لنکس (پروڈکٹ پیج پر پوائنٹنگ لنکس)، سوشل میڈیا پروموشن، اور ای میل مارکیٹنگ۔ یہ تمام چیزیں ایمیزون کے باہر ہوتی ہیں لیکن آپ کے پروڈکٹ کی کریڈیبلیٹی اور ریچ بڑھاتی ہیں، جس سے رینکنگ میں بہتری آتی ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک سیلر نے \"وائرلیس چارجر پیڈ\" بیچا۔ اس نے فیس بک گروپس میں 100 سے زائد پوسٹس شیئر کیں، 30 سے زائد متعلقہ بلاگز سے بیک لنکس حاصل کیے (مثلاً، \"ٹیک گیجٹس کے لیے بہترین چارجر پیڈز\")، اور 500 سے زائد گاہکوں کو \"تھینک یو\" کے ساتھ ایک ڈسکاؤنٹ کوڈ بھیجا۔ نتیجہ: پروڈکٹ کی رینکنگ 15ویں سے تیسرے نمبر پر آ گئی اور سیلز میں 40 فیصد اضافہ ہوا۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "آج ہی ایک متعلقہ فیس بک گروپ یا ریڈٹ کمیونٹی تلاش کریں (مثلاً، \"ایمیزون سیلرز\" یا \"ٹیک ڈیلز\")۔ اپنے پروڈکٹ کی کیٹیگری یا نیچ سے متعلق پوسٹ لکھیں—*براہ راست* پروموٹ نہ کریں، بلکہ ویلیو شامل کریں (مثلاً، \"میرا تجربہ: وائرلیس چارجرز کا بہترین آپشن کون سا ہے؟\")۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک سادہ **ای میل مہم** ڈیزائن کریں:\n1. تین ای میل ٹیمپلیٹس لکھیں (ویلکم، فالو اپ، ڈسکاؤنٹ آفر)۔\n2. دس جعلی گاہک ای میلز (ایکسل میں) پر یہ ٹیمپلیٹس بھیجیں (استعمال کریں [Mailchimp](https://mailchimp.com/) یا [Canva Email](https://www.canva.com/emails/))۔\n3. ٹریک کریں کہ کون سا ای میل سب سے زیادہ اوپن ہوا۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "daraz-seller": [
