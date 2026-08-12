@@ -11300,6 +11300,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 10,
+      "id": "day-010",
+      "date": "2026-08-12",
+      "title": "Day 10 — **Stock Photography: Sell Your Photos Online**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Stock photography mein aap apne photos ko online platforms par bech sakte hain, jahan businesses, bloggers aur creators unhe use kar sakte hain. Iske liye aapko high-quality, versatile aur trending topics par focus karna hoga. Aaj hum seekhenge ki kaise apne photos ko stock sites par upload karein aur unse earning karein."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Topic Choose karein",
+          "\"Work from home setup\" ya \"Healthy breakfast\" jaise trending topics par photos click karein.\n2."
+        ],
+        [
+          "Platform select karein",
+          "Shutterstock, Adobe Stock ya Alamy par account banayein.\n3."
+        ],
+        [
+          "Upload karein",
+          "Photos ko keywords, description aur category ke saath upload karein taake wo easily search ho sakein."
+        ],
+        [
+          "Practice",
+          "Apne mobile ya camera se 5 photos click karein jo stock photography ke liye suitable hon (e.g., nature, lifestyle, food). Unhe apne computer par save karein."
+        ],
+        [
+          "Mini Project",
+          "Ek simple stock photo shoot plan karein—ek topic choose karein (jaise \"morning coffee routine\") aur uske 10-15 photos click karein, har photo ko alag angle aur lighting mein capture karein."
+        ]
+      ],
+      "answer_key": "trending topics, high-quality, keywords, versatile",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۰ — **اسٹاک فوٹوگرافی: اپنی تصاویر آن لائن فروخت کریں**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "اسٹاک فوٹوگرافی میں آپ اپنی تصاویر کو آن لائن پلیٹ فارمز پر بیچ سکتے ہیں، جہاں کاروبار، بلاگرز اور تخلیق کار انہیں استعمال کر سکتے ہیں۔ اس کے لیے آپ کو اعلیٰ معیار کی، ورسٹائل اور ٹرینڈنگ موضوعات پر توجہ دینی ہوگی۔ آج ہم سیکھیں گے کہ کیسے اپنی تصاویر کو اسٹاک سائٹس پر اپ لوڈ کریں اور ان سے کمائی کریں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ موضوع منتخب کریں: \"گھر سے کام کرنے کا سیٹ اپ\" یا \"صحت بخش ناشتہ\" جیسے ٹرینڈنگ موضوعات پر تصاویر کھینچیں۔\n۲۔ پلیٹ فارم منتخب کریں: شٹر اسٹاک، ایڈوبی اسٹاک یا ایلمی پر اکاؤنٹ بنائیں۔\n۳۔ اپ لوڈ کریں: تصاویر کو کی ورڈز، تفصیل اور زمرے کے ساتھ اپ لوڈ کریں تاکہ وہ آسانی سے تلاش ہو سکیں۔"
+            },
+            {
+              "label": "مشق",
+              "content": "اپنے موبائل یا کیمرے سے ۵ ایسی تصاویر کھینچیں جو اسٹاک فوٹوگرافی کے لیے موزوں ہوں (مثلاً فطرت، طرز زندگی، خوراک)۔ انہیں اپنے کمپیوٹر پر محفوظ کریں۔"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "ایک سادہ اسٹاک فوٹو شوٹ کا منصوبہ بنائیں—ایک موضوع منتخب کریں (جیسے \"صبح کی کافی کا معمول\") اور اس کی ۱۰-۱۵ تصاویر کھینچیں، ہر تصویر کو مختلف زاویے اور روشنی میں کیپچر کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "voiceover-podcasting": [
