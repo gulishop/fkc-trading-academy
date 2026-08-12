@@ -8154,6 +8154,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 6,
+      "id": "day-006",
+      "date": "2026-08-12",
+      "title": "Day 6 — Object-Oriented Programming (OOP) Basics",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "OOP programming ka ek powerful tareeqa hai jo real-world entities (objects) ko code mein represent karta hai. Classes aur objects ka istemal karke code ko organized, reusable aur maintainable banaya ja sakta hai. Aaj hum `__init__`, methods, aur attributes jaise basic OOP concepts seekhenge."
+        ],
+        [
+          "Example",
+          "Ek `Car` class banate hain jo `brand`, `model`, aur `year` store karegi:\n```python\nclass Car:\n    def __init__(self, brand, model, year):\n        self.brand = brand\n        self.model = model\n        self.year = year\n\n    def display_info(self):\n        print(f\"Car: {self.brand} {self.model}, Year: {self.year}\")\n\n# Object create karna\nmy_car = Car(\"Toyota\", \"Corolla\", 2022)\nmy_car.display_info()  # Output: Car: Toyota Corolla, Year: 2022\n```"
+        ],
+        [
+          "Practice",
+          "Apni khud ki `Student` class banayein jo `name`, `age`, aur `grade` store kare. Ek method `introduce()` add karein jo \"Hi, I am [name], I am [age] years old and in grade [grade]\" print kare."
+        ],
+        [
+          "Mini Project",
+          "Ek `BankAccount` class banayein jo `account_holder` aur `balance` store kare. Methods `deposit(amount)` aur `withdraw(amount)` add karein. `balance` ko kabhi negative na hone dein."
+        ]
+      ],
+      "answer_key": "student, name/age/grade, introduce(), bankaccount, deposit/withdraw, balance>=0",
+      "translations": {
+        "ur": {
+          "title": "دن ٦ — آبجیکٹ اورینٹڈ پروگرامنگ (او او پی) کی بنیادی باتیں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آبجیکٹ اورینٹڈ پروگرامنگ پروگرامنگ کا ایک طاقتور طریقہ ہے جو حقیقی دنیا کی اشیاء (آبجیکٹس) کو کوڈ میں پیش کرتا ہے۔ کلاسز اور آبجیکٹس کا استعمال کرکے کوڈ کو منظم، قابلِ استعمال اور قابلِ دیکھ بھال بنایا جا سکتا ہے۔ آج ہم `__init__`، میتھڈز اور ایٹربیوٹس جیسے بنیادی او او پی تصورات سیکھیں گے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک `Car` کلاس بناتے ہیں جو `brand`، `model` اور `year` کو محفوظ کرے گی:\n```python\nclass Car:\n    def __init__(self, brand, model, year):\n        self.brand = brand\n        self.model = model\n        self.year = year\n\n    def display_info(self):\n        print(f\"Car: {self.brand} {self.model}, Year: {self.year}\")\n\n# آبجیکٹ بنانا\nmy_car = Car(\"Toyota\", \"Corolla\", 2022)\nmy_car.display_info()  # Output: Car: Toyota Corolla, Year: 2022\n```"
+            },
+            {
+              "label": "مشق",
+              "content": "اپنی خود کی `Student` کلاس بنائیں جو `name`، `age` اور `grade` کو محفوظ کرے۔ ایک میتھڈ `introduce()` شامل کریں جو \"Hi, I am [name], I am [age] years old and in grade [grade]\" پرنٹ کرے۔"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "ایک `BankAccount` کلاس بنائیں جو `account_holder` اور `balance` کو محفوظ کرے۔ میتھڈز `deposit(amount)` اور `withdraw(amount)` شامل کریں۔ `balance` کو کبھی منفی نہ ہونے دیں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "web-development": [
