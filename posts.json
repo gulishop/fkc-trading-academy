@@ -12926,6 +12926,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 9,
+      "id": "day-009",
+      "date": "2026-08-12",
+      "title": "Day 9 — **Ghussa aane par khud ko sambhalna**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachay, kabhi-kabhi humein gusse ka ehsaas hota hai—jaise koi cheez humari marzi ke khilaf ho jaye ya koi humein pareshan kar de. Gusse ka ehsaas aana normal hai, lekin humein apne gusse par qaboo rakhna hai. Isse hum khud ko aur doosron ko bhi safe rakhte hain. Gusse ke waqt deep breath lo, 1-2-3 tak gintein, ya apne dil ki baat kisi trusted bade ko bata do."
+        ],
+        [
+          "Chhoti Kahani",
+          "Aman ne apne dost se cycle maang kar di thi, lekin jab cycle wapas nahi mili, to usko bahut gussa aaya. Usne apne dil ki baat ammi ko batayi. Ammi ne usko samjhaya ke gusse ke waqt deep breath lo, aur phir cycle wapas le kar aao. Aman ne aisa hi kiya, aur cycle bhi mil gayi!"
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar tumhe kabhi gussa aaye, to tum kya karoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Gusse ke waqt apne aap ko shant karne ke liye deep breath lo—yeh tumhari sabse bari himmat hai!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۹ — غصہ آنے پر خود کو سنبھالنا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "بچو، کبھی کبھی ہمیں غصے کا احساس ہوتا ہے—جیسے کوئی چیز ہماری مرضی کے خلاف ہو جائے یا کوئی ہمیں پریشان کر دے۔ غصے کا احساس آنا نارمل ہے، لیکن ہمیں اپنے غصے پر قابو رکھنا ہے۔ اس سے ہم خود کو اور دوسروں کو بھی سیف رکھتے ہیں۔ غصے کے وقت گہری سانس لو، ایک دو تین تک گنتی کرو، یا اپنے دل کی بات کسی بھروسے مند بڑے کو بتا دو۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "آمن نے اپنے دوست سے سائیکل مانگ کر دی تھی، لیکن جب سائیکل واپس نہیں ملی، تو اسے بہت غصہ آیا۔ اس نے اپنے دل کی بات امی کو بتائی۔ امی نے اسے سمجھایا کہ غصے کے وقت گہری سانس لو، اور پھر سائیکل واپس لے کر آؤ۔ آمن نے ایسا ہی کیا، اور سائیکل بھی مل گئی!"
+            },
+            {
+              "label": "امی ابّو کے ساتھ بات کریں",
+              "content": "بیٹا، اگر تمہیں کبھی غصہ آئے، تو تم کیا کرو گے؟"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "غصے کے وقت اپنے آپ کو شانت کرنے کے لیے گہری سانس لو—یہ تمہاری سب سے بڑی ہمت ہے!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-nursery": [
