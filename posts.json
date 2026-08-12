@@ -3427,6 +3427,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 7,
+      "id": "day-007",
+      "date": "2026-08-12",
+      "title": "Day 7 — **Daraz Par Negative Reviews Ko Professional Tarike Se Handle Karna**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Negative reviews Daraz par seller ke reputation par bura asar dalte hain. Inko ignore karne ki bajaye, unko **professional response** dena chahiye taake customer trust bana rahe. Sabse pehle review ke **root cause** samajhein (late delivery, wrong product, quality issue) aur **empathy** ke saath jawab dein. Daraz ke **Review Management System** se bhi inko track kar sakte hain."
+        ],
+        [
+          "Example",
+          "Ek customer ne \"Product damaged\" ka review diya hai. Aapka response:\n*\"Assalamu Alaikum! Hum aapki pareshani ke liye maazrat chahte hain. Hum aapko **immediately replacement** bhej rahe hain. Kripya apna order ID ya address share karen. Shukriya!\"*\nIske baad Daraz ko **return request** accept karne ka message bhi bhej dein."
+        ],
+        [
+          "Practice",
+          "Apne Daraz Seller Center mein jayein → **Reviews** section mein ja kar **1 negative review** ko dhondhein. Uske liye **3-line ka professional response** likhein (Hindi/Urdu mein)."
+        ],
+        [
+          "Mini Project",
+          "Ek **template** taiyar karen jo sabhi negative reviews ke liye use ho sakta ho. Ismein:\n1. **Empathy** (maazrat)\n2. **Solution** (replace/repair/refund)\n3. **Follow-up** (contact details)"
+        ]
+      ],
+      "answer_key": "maazrat, replacement, daraz support, follow-up",
+      "translations": {
+        "ur": {
+          "title": "دن ۷ — **داراز پر نیگیٹو ریویوز کو پیشہ ورانہ طریقے سے ہینڈل کرنا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "داراز پر نیگیٹو ریویوز سیلر کی ریپوٹیشن پر برا اثر ڈالتی ہیں۔ انہیں نظرانداز کرنے کی بجائے، انہیں **پیشہ ورانہ جواب** دینا چاہیے تاکہ کسٹمر کا اعتماد برقرار رہے۔ سب سے پہلے ریویو کے **روٹ کاز** کو سمجھیں (دیر سے ڈیلیوری، غلط پروڈکٹ، کوالٹی کا مسئلہ) اور **ہمدردی** کے ساتھ جواب دیں۔ داراز کے **ریویو مینجمنٹ سسٹم** سے بھی انہیں ٹریک کیا جا سکتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک کسٹمر نے \"پروڈکٹ ڈیمیجڈ\" کا ریویو دیا ہے۔ آپ کا جواب:\n*\"السلام علیکم! ہم آپ کی پریشانی کے لیے معذرت خواہ ہیں۔ ہم آپ کو **فوری طور پر ری پلیسمنٹ** بھیج رہے ہیں۔ براہ کرم اپنا آرڈر آئی ڈی یا پتہ شیئر کریں۔ شکریہ!\"*\nاس کے بعد داراز کو **ریٹرن ریクویسٹ** قبول کرنے کا پیغام بھی بھیج دیں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے داراز سیلر سینٹر میں جائیں → **ریویوز** سیکشن میں جا کر **ایک نیگیٹو ریویو** تلاش کریں۔ اس کے لیے **۳ سطری پیشہ ورانہ جواب** لکھیں (ہندی/اردو میں)।"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **ٹیمپلیٹ** تیار کریں جو تمام نیگیٹو ریویوز کے لیے استعمال ہو سکے۔ اس میں شامل ہوں:\n۱۔ **ہمدردی** (معذرت)\n۲۔ **حل** (ری پلیس/مرمت/ریفنڈ)\n۳۔ **فالو اپ** (رابطے کی تفصیلات)"
+            }
+          ]
+        }
+      }
     }
   ],
   "ai-content-writing": [
