@@ -12524,6 +12524,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 8,
+      "id": "day-008",
+      "date": "2026-08-12",
+      "title": "Day 8 — \"Tukre jod ke puzzle banaana: Sabar seekho!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachon, jab hum puzzle ya jigsaw ke tukde jodte hain, toh humein thoda sabar rakhna hota hai. Agar ek tukda match nahi ho raha, toh gussa nahi aana chahiye—bas thoda dhyaan se dekhna hai. Sabar se kaam karne se hi puzzle poora hota hai, aur hum bhi mehnat karna seekh jaate hain!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Areeba ne ek naya puzzle liya. Pehle usko lag raha tha ke yeh toh bahut mushkil hai! Ek tukda match karne ke liye usko 5 baar try karna pada, lekin usne hara nahi maana. Uske baad usko ek tukda mil gaya, phir doosra… aur aise hi poora puzzle ho gaya! Areeba ko bahut khushi hui ke usne sabar rakha aur mehnat ki."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar tumhe koi kaam karte waqt gussa aaye toh kya karoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Puzzle ya koi bhi kaam karte waqt, agar thoda mushkil lage toh gussa mat karna—bas thoda aur try karna! Sabar se hi har cheez poori hoti hai. 💙"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ٨ — ٹکڑے جوڑ کے پہیلی بنانا: صبر سیکھو!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "بچو، جب ہم پہیلی یا جگسو کے ٹکڑے جوڑتے ہیں تو ہمیں تھوڑا صبر رکھنا ہوتا ہے۔ اگر ایک ٹکڑا میچ نہیں ہو رہا تو غصہ نہیں آنا چاہیے—بس تھوڑا دھیان سے دیکھنا ہے۔ صبر سے کام کرنے سے ہی پہیلی پوری ہوتی ہے، اور ہم بھی محنت کرنا سیکھ جاتے ہیں!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "عریبہ نے ایک نئی پہیلی لی۔ پہلے اسے لگ رہا تھا کہ یہ تو بہت مشکل ہے! ایک ٹکڑا میچ کرنے کے لیے اسے پانچ بار کوشش کرنی پڑی، لیکن اس نے ہار نہیں مانی۔ اس کے بعد اسے ایک ٹکڑا مل گیا، پھر دوسرا… اور ایسے ہی پوری پہیلی ہو گئی! عریبہ کو بہت خوشی ہوئی کہ اس نے صبر رکھا اور محنت کی۔"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "بیٹا، اگر تمہیں کوئی کام کرتے وقت غصہ آئے تو کیا کرو گے؟"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "پہیلی یا کوئی بھی کام کرتے وقت، اگر تھوڑا مشکل لگے تو غصہ مت کرنا—بس تھوڑا اور کوشش کرنا! صبر سے ہی ہر چیز پوری ہوتی ہے۔ 💙"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-good-behavior": [
