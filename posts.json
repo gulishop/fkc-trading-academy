@@ -6868,6 +6868,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 10,
+      "id": "day-010",
+      "date": "2026-08-12",
+      "title": "Day 10 — **Store Ko Automate Karna: Time Save Karein, Profit Badhaein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Store scale karne ka matlab hai manual kaam kam karna aur systems ko automatic banana. Automation se orders handle karne, emails bhejne, aur even product research tak ka time bachta hai. Isse aap apne business ko bade level par le ja sakte hain bina extra stress ke."
+        ],
+        [
+          "Example",
+          "Imagine aapko har order ke baad customer ko email bhejna hai. Aise mein **Zapier** ya **Shopify Flow** use karke yeh kaam automatic kar sakte hain. Bas ek trigger set karo (jaise \"order placed\") aur action (jaise \"email send\")—ab aapka kaam khatam!"
+        ],
+        [
+          "Practice",
+          "Apne store ke kisi ek manual process ko identify karo (jaise order confirmations, inventory updates, ya social media posts scheduling) aur uske liye automation tool dhundho (Zapier, Make.com, ya store ke built-in tools)."
+        ],
+        [
+          "Mini Project",
+          "Apne store ke liye **3 automation rules** banayein:\n1. New order aane par customer ko thank you email bhejna.\n2. Low stock alert aapke email par bhejna.\n3. Har naye product ke launch par Instagram par post schedule karna."
+        ]
+      ],
+      "answer_key": "zapier, shopify flow, triggers, actions",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۰ — **سٹور کو آٹومیٹ کرنا: وقت بچائیں، منافع بڑھائیں**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "سٹور کو سکیل کرنے کا مطلب ہے دستی کاموں کو کم کرنا اور سسٹمز کو خودکار بنانا۔ آٹومیشن سے آرڈرز ہینڈل کرنے، ای میلز بھیجنے، اور یہاں تک کہ پروڈکٹ ریسرچ کا وقت بچتا ہے۔ اس سے آپ اپنے بزنس کو بڑے لیول پر لے جا سکتے ہیں بغیر اضافی دباؤ کے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "تصور کریں کہ آپ کو ہر آرڈر کے بعد گاہک کو ای میل بھیجنی ہے۔ ایسے میں **Zapier** یا **Shopify Flow** استعمال کر کے یہ کام خودکار کر سکتے ہیں۔ بس ایک ٹرگر سیٹ کریں (جیسے \"آرڈر پلیس ہوا\") اور ایکشن (جیسے \"ای میل بھیجو\") — اب آپ کا کام ختم!"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے سٹور کے کسی ایک دستی عمل کی شناخت کریں (جیسے آرڈر کنفرمیشنز، انوینٹری اپ ڈیٹس، یا سوشل میڈیا پوسٹس شیڈولنگ) اور اس کے لیے آٹومیشن ٹول تلاش کریں (Zapier، Make.com، یا سٹور کے بلٹ ان ٹولز)۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "اپنے سٹور کے لیے **۳ آٹومیشن رولز** بنائیں:\n۱۔ نیا آرڈر آنے پر گاہک کو تھینک یو ای میل بھیجنا۔\n۲۔ کم اسٹاک الرٹ آپ کے ای میل پر بھیجنا۔\n۳۔ ہر نئے پروڈکٹ کے لانچ پر انسٹاگرام پر پوسٹ شیڈول کرنا۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "cpp-daily-coding": [
