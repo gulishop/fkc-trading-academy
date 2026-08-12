@@ -9340,6 +9340,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 5,
+      "id": "day-005",
+      "date": "2026-08-12",
+      "title": "Day 5 — **DYOR: Apne Investments Ka Research Kaise Kare**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "DYOR (Do Your Own Research) crypto investing ka sabse zaroori step hai. Kisi bhi coin ya project mein invest karne se pehle uske whitepaper, team, use case, aur market trends ko analyze karna zaroori hai. Baseless hype ya FOMO (Fear Of Missing Out) se bachne ke liye DYOR karna must hai."
+        ],
+        [
+          "Example",
+          "Agar koi \"XYZ Token\" ka hype sun raha hai, to pehle check kare:\n1. **Whitepaper** (project ka blueprint) — kya yeh real problem solve kar raha hai?\n2. **Team** (LinkedIn/GitHub) — kya inke background credible hain?\n3. **Tokenomics** (supply, distribution) — kya supply zyada toh nahi hai?\n4. **Community** (Twitter, Discord) — kya log actively discuss kar rahe hain?"
+        ],
+        [
+          "Practice",
+          "Aaj ek naya crypto project (jaise \"SOL\" ya \"ADA\") lein aur 10 minutes mein uske whitepaper ya official website se 3 key points nikalein jo aapko investing ke liye important lagin."
+        ],
+        [
+          "Mini Project",
+          "Ek simple spreadsheet banaein jismein aap 3 crypto projects (ek Bitcoin, ek Ethereum, aur ek altcoin) ko compare karein — unke market cap, circulating supply, aur recent price movement ke hisab se."
+        ]
+      ],
+      "answer_key": "whitepaper analysis, team credibility, tokenomics, community sentiment",
+      "translations": {
+        "ur": {
+          "title": "دن 5 — **ڈی وائی او آر: اپنے انویسٹمنٹس کا ریسرچ کیسے کریں**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ڈی وائی او آر (اپنا ریسرچ خود کریں) کرپٹو انویسٹنگ کا سب سے ضروری قدم ہے۔ کسی بھی کوائن یا پروجیکٹ میں انویسٹ کرنے سے پہلے اس کے وائٹ پیپر، ٹیم، یوز کیس، اور مارکیٹ ٹرینڈز کا تجزیہ کرنا لازمی ہے۔ بے بنیاد ہائپ یا ایف او ایم او (فیر آف مسنگ آؤٹ) سے بچنے کے لیے ڈی وائی او آر کرنا ضروری ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "اگر کوئی \"ایکس وائے زیڈ ٹوکن\" کا ہائپ سن رہا ہے، تو پہلے چیک کریں:\n1. **وائٹ پیپر** (پروجیکٹ کا بلیو پرنٹ) — کیا یہ حقیقی مسئلہ حل کر رہا ہے؟\n2. **ٹیم** (لنکڈان/گٹ ہب) — کیا ان کا بیک گراؤنڈ قابل اعتبار ہے؟\n3. **ٹوکنومکس** (سپلائی، ڈسٹری بیوشن) — کیا سپلائی زیادہ تو نہیں ہے؟\n4. **کمیونٹی** (ٹوئٹر، ڈسکارڈ) — کیا لوگ فعال طور پر بحث کر رہے ہیں؟"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "آج ایک نیا کرپٹو پروجیکٹ (جیسے \"ایس او ایل\" یا \"اے ڈی اے\") لیں اور دس منٹ میں اس کے وائٹ پیپر یا آفیشل ویب سائٹ سے تین کلیدی نکات نکالیں جو آپ کو انویسٹنگ کے لیے اہم لگتے ہوں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک سادہ سپریڈشیٹ بنائیں جس میں آپ تین کرپٹو پروجیکٹس (ایک بٹ کوائن، ایک ایتھریم، اور ایک آلٹ کوائن) کا موازنہ کریں — ان کے مارکیٹ کیپ، سرکولیٹنگ سپلائی، اور حالیہ قیمت کی حرکت کے حساب سے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "psx-stock-trading": [
