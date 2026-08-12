@@ -1621,6 +1621,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 9,
+      "id": "day-009",
+      "date": "2026-08-12",
+      "title": "Day 9 — **AI-Powered Chatbots: 24/7 Customer Support ka Secret**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "AI chatbots aajkal businesses ke liye customer support ka game-changer ban gaye hain. Ye 24/7 available rehte hain, bar-bar repeat hone wale sawalon ka jawab dete hain, aur manual effort bhi kam karte hain. Aap inhe Instagram DMs, WhatsApp Business, ya website par laga sakte hain. AI tools jaise ManyChat, Chatfuel, ya Tidio se bina coding ke bhi chatbots banaye ja sakte hain."
+        ],
+        [
+          "Example",
+          "Ek local restaurant ka chatbot:\n1. Customer: \"Menu kya hai?\"\n2. Chatbot: \"Yahan se apna menu download karein: [link] 📲\"\n3. Customer: \"Timings?\"\n4. Chatbot: \"Hum subah 9 se raat 11 tak khulte hain. 🕒\""
+        ],
+        [
+          "Practice",
+          "Aaj hi ManyChat ya Chatfuel par ek free account banayein aur ek simple chatbot create karein jo \"Hello\" ka jawab \"Assalamu Alaikum! Aap kaise help kar sakta ho?\" de."
+        ],
+        [
+          "Mini Project",
+          "Ek 3-message ka AI chatbot design karein jo ek hypothetical e-commerce store ke liye \"Order Status\" poochne par automatic response de. (Example: \"Aapka order #1234 abhi dispatch ho chuka hai! 🚚\")"
+        ]
+      ],
+      "answer_key": "manychat, chatfuel, tidio, 24/7 support, automated responses",
+      "translations": {
+        "ur": {
+          "title": "دن ۹ — **اے آئی پاورڈ چیٹ بوٹس: ۲۴/۷ کسٹمر سپورٹ کا راز**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "اے آئی چیٹ بوٹس آج کل بزنسز کے لیے کسٹمر سپورٹ کا گیم چینجر بن چکے ہیں۔ یہ چوبیس گھنٹے دستیاب رہتے ہیں، بار بار دہرائے جانے والے سوالات کے جوابات دیتے ہیں، اور مینوئل محنت بھی کم کرتے ہیں۔ آپ انہیں انسٹاگرام ڈیمز، واٹس ایپ بزنس، یا ویب سائٹ پر لگا سکتے ہیں۔ اے آئی ٹولز جیسے مینی چیٹ، چیٹ فیول، یا ٹیڈیو سے بغیر کوڈنگ کے بھی چیٹ بوٹس بنائے جا سکتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک مقامی ریستوراں کا چیٹ بوٹ:\n١۔ کسٹمر: \"مینو کیا ہے؟\"\n٢۔ چیٹ بوٹ: \"یہاں سے اپنا مینو ڈاؤن لوڈ کریں: [لنک] 📲\"\n٣۔ کسٹمر: \"ٹائمنگ؟\"\n٤۔ چیٹ بوٹ: \"ہم صبح نو بجے سے رات گیارہ بجے تک کھلتے ہیں۔ 🕒\""
+            },
+            {
+              "label": "پریکٹس",
+              "content": "آج ہی مینی چیٹ یا چیٹ فیول پر ایک فری اکاؤنٹ بنائیں اور ایک سادہ سا چیٹ بوٹ تخلیق کریں جو \"ہیلو\" کا جواب \"السلام علیکم! میں آپ کی کس طرح مدد کر سکتا ہوں؟\" دے۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک تین میسج کا اے آئی چیٹ بوٹ ڈیزائن کریں جو ایک فرضی ای کامرس اسٹور کے لیے \"آرڈر اسٹیٹس\" پوچھنے پر خودکار جواب دے۔ (مثال: \"آپ کا آرڈر #۱۲۳۴ ابھی ڈسپچ ہو چکا ہے! 🚚\")"
+            }
+          ]
+        }
+      }
     }
   ],
   "facebook-page-growth": [
