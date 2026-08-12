@@ -5050,6 +5050,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 12,
+      "id": "day-012",
+      "date": "2026-08-12",
+      "title": "Day 12 — **Freelancing Ka Legal Side: Contracts, Payments aur Taxes Se Kaise Nibhaye**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Freelancing mein legal aspects jaise contracts, payments aur taxes bhi utne hi important hain jitne skills. Bina proper contracts ke aap apne payment ya intellectual property (IP) rights kho sakte hain. Similarly, taxes aur invoices ka khayal rakhna bhi freelancer ke liye zaroori hai. Aaj hum seekhenge ki kaise ek strong contract banayein, secure payments manage karein aur tax ke liabilities ko samajhein."
+        ],
+        [
+          "Example",
+          "Ek client ne apne logo design ka order diya. Aapne 50% advance payment li aur kaam complete karke deliver kar diya. Lekin client ne payment nahi diya. Agar aapke paas written contract tha jisme payment terms clear thein, to aap legal action le sakte the. Isliye contract mein **scope of work, payment milestones (e.g., 50% advance, 50% delivery par), delivery timeline, aur late payment penalties** zaroor mention karein."
+        ],
+        [
+          "Practice",
+          "Apne ek existing ya future project ke liye ek simple contract draft karo. Ismein yeh points zaroor include karo:\n1. Project ka title aur description\n2. Payment terms (advance, milestones, final payment)\n3. Delivery timeline aur revisions ki limit\n4. IP rights (kaun sa content client ka hoga aur kaun sa aapka)\n5. Termination clause (agar project cancel ho to kya hoga)"
+        ],
+        [
+          "Mini Project",
+          "Ek **Freelancer Contract Template** banayein jo aap future mein use kar sakte ho. Is template mein sab zaroori clauses hon. Aap isko Google Docs ya Canva par design kar sakte hain."
+        ]
+      ],
+      "answer_key": "contract, payment milestones, ip rights, late payment penalty",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۲ — فری لانسنگ کا قانونی پہلو: کنٹریکٹس، ادائیگیاں اور ٹیکسز سے کیسے نبھائیں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "فری لانسنگ میں قانونی پہلوؤں جیسے کنٹریکٹس، ادائیگیاں اور ٹیکسز بھی اتنے ہی اہم ہیں جتنے کہ ہنر۔ بغیر مناسب کنٹریکٹس کے آپ اپنی ادائیگی یا دانشورانہ ملکیت (آئی پی) کے حقوق کھو سکتے ہیں۔ اسی طرح ٹیکسز اور انوائسز کا خیال رکھنا بھی فری لانسر کے لیے ضروری ہے۔ آج ہم سیکھیں گے کہ کیسے ایک مضبوط کنٹریکٹ بنائیں، محفوظ ادائیگیاں منظم کریں اور ٹیکس کی ذمہ داریوں کو سمجھیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک کلائنٹ نے اپنے لوگو ڈیزائن کا آرڈر دیا۔ آپ نے پچاس فیصد ایڈوانس ادائیگی لی اور کام مکمل کرکے ڈیلیور کر دیا۔ لیکن کلائنٹ نے ادائیگی نہیں کی۔ اگر آپ کے پاس تحریری کنٹریکٹ ہوتا جس میں ادائیگی کی شرائط واضح تھیں، تو آپ قانونی کارروائی کر سکتے تھے۔ اس لیے کنٹریکٹ میں کام کا دائرہ کار، ادائیگی کے سنگ میل (مثلاً پچاس فیصد ایڈوانس، پچاس فیصد ڈیلیوری پر)، ڈیلیوری کا ٹائم لائن، اور تاخیر پر جرمانے کا ذکر ضرور کریں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے کسی موجودہ یا مستقبل کے پروجیکٹ کے لیے ایک سادہ کنٹریکٹ کا مسودہ تیار کریں۔ اس میں یہ نکات ضرور شامل کریں: ۱۔ پروجیکٹ کا عنوان اور تفصیل ۲۔ ادائیگی کی شرائط (ایڈوانس، سنگ میل، حتمی ادائیگی) ۳۔ ڈیلیوری کا ٹائم لائن اور نظر ثانی کی حد ۴۔ دانشورانہ ملکیت کے حقوق (کس مواد پر کلائنٹ کا حق ہوگا اور کس پر آپ کا) ۵۔ اختتامی شق (اگر پروجیکٹ منسوخ ہو تو کیا ہوگا)"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک فری لانسر کنٹریکٹ ٹیمپلیٹ بنائیں جسے آپ مستقبل میں استعمال کر سکیں۔ اس ٹیمپلیٹ میں تمام ضروری شقیں شامل ہوں۔ آپ اسے Google Docs یا Canva پر ڈیزائن کر سکتے ہیں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "graphic-design-canva": [
