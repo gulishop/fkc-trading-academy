@@ -11396,6 +11396,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 8,
+      "id": "day-008",
+      "date": "2026-08-12",
+      "title": "Day 8 — **Rental Property Management: 3 Key Rules for Smooth Operations**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Rental property management ka matlab hai kisi property ko tenant ke zariye use karne ke liye maintain karna, rent collect karna, aur property ki dekhbhaal karna. Isme tenant selection, rent pricing, maintenance, aur legal compliance shamil hain. Agar aap ek property dealer hain ya investor, toh rental management aapki income ka ek major source hai."
+        ],
+        [
+          "Example",
+          "Imagine aapke paas Lahore mein 2 marla ka flat hai. Aapko ek reliable tenant chahiye jo time par rent de aur property ko damage na kare. Pehle, aapko market research karna hoga: similar flats ka average rent kitna hai? (e.g., Rs. 25,000–30,000). Phir, tenant ke liye criteria set karo (e.g., salary slip, reference check). Agar tenant mil jata hai, toh rent agreement banana hoga (11 months ka, stamp duty ke saath)."
+        ],
+        [
+          "Practice",
+          "Apne area mein 3 rental properties ka rent rate find karo (Zameen.com ya OLX se). 1 property ka rent agreement ka draft likho (terms: rent, security deposit, maintenance charges)."
+        ],
+        [
+          "Mini Project",
+          "Ek simple **Rental Property Checklist** banayein jismein shamil ho:\n1. Tenant screening criteria (salary, job, references)\n2. Rent agreement ke essential points\n3. Monthly maintenance checklist (e.g., plumbing, electricity)"
+        ]
+      ],
+      "answer_key": "market research, tenant criteria, rent agreement draft, maintenance checklist",
+      "translations": {
+        "ur": {
+          "title": "دن ۸ — رینٹل پراپرٹی مینجمنٹ: ہموار آپریشنز کے لیے ۳ کلیدی اصول",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "رینٹل پراپرٹی مینجمنٹ کا مطلب ہے کسی پراپرٹی کو ٹیننٹ کے ذریعے استعمال کرنے کے لیے مینٹین کرنا، کرایہ وصول کرنا، اور پراپرٹی کی دیکھ بھال کرنا۔ اس میں ٹیننٹ سلیکشن، کرایہ کی قیمت طے کرنا، مینٹیننس، اور قانونی تعمیل شامل ہیں۔ اگر آپ ایک پراپرٹی ڈیلر ہیں یا سرمایہ کار، تو رینٹل مینجمنٹ آپ کی آمدنی کا ایک بڑا ذریعہ ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "تصور کریں آپ کے پاس لاہور میں ۲ مرلہ کا فلیٹ ہے۔ آپ کو ایک قابل اعتماد ٹیننٹ چاہیے جو وقت پر کرایہ ادا کرے اور پراپرٹی کو نقصان نہ پہنچائے۔ پہلے، آپ کو مارکیٹ ریسرچ کرنی ہوگی: اسی طرح کے فلیٹس کا اوسط کرایہ کتنا ہے؟ (مثلاً، ۲۵،۰۰۰ تا ۳۰،۰۰۰ روپے)۔ پھر، ٹیننٹ کے لیے معیار طے کریں (مثلاً، سیلری سلپ، ریفرنس چیک)۔ اگر ٹیننٹ مل جاتا ہے، تو کرایہ کا معاہدہ بنانا ہوگا (۱۱ ماہ کا، اسٹیمپ ڈیوٹی کے ساتھ)۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے علاقے میں ۳ رینٹل پراپرٹیز کا کرایہ ریٹ معلوم کریں (زمین ڈاٹ کام یا اولیکس سے)۔ ایک پراپرٹی کا کرایہ معاہدہ کا ڈرافٹ لکھیں (شرائط: کرایہ، سیکیورٹی ڈپازٹ، مینٹیننس چارجز)۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک سادہ **رینٹل پراپرٹی چیک لسٹ** بنائیں جس میں شامل ہو:\n۱۔ ٹیننٹ اسکریننگ کے معیار (سیلری، نوکری، ریفرنسز)\n۲۔ کرایہ معاہدے کے ضروری نکات\n۳۔ ماہانہ مینٹیننس چیک لسٹ (مثلاً، پلمبنگ، بجلی)"
+            }
+          ]
+        }
+      }
     }
   ],
   "mobile-repairing": [
