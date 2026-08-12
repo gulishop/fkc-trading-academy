@@ -10958,6 +10958,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 7,
+      "id": "day-007",
+      "date": "2026-08-12",
+      "title": "Day 7 — **Podcast Hosting Platforms: Kaha Upload Karen?**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Podcast ko Spotify ya YouTube par publish karne se pehle ek **hosting platform** chahiye jo aapki audio files store kare aur RSS feed generate kare. Bina hosting ke, platforms par upload nahi ho sakta. Popular options hain Anchor (free), Buzzsprout, Podbean, ya Libsyn. Har platform ke apne features hain—Anchor simple hai, Buzzsprout advanced analytics deta hai."
+        ],
+        [
+          "Example",
+          "1. **Anchor.fm** par account banayein → \"New Episode\" par click karein → Apni audio file upload karein → Title/description add karein → \"Publish\" par click karein.\n2. **Spotify par publish hone ke liye**, Anchor automatically RSS feed generate karta hai. Spotify par \"Submit a Show\" par jayein aur RSS feed paste karein."
+        ],
+        [
+          "Practice",
+          "Apna ek **test episode** (5-10 seconds ka) upload karein kisi bhi hosting platform (Anchor/Buzzsprout) par. Title mein \"Test Episode - [Apna Naam]\" likhein."
+        ],
+        [
+          "Mini Project",
+          "Ek **3-minute ka test podcast episode** record karein (intro + 2 lines ka content + outro), usse hosting platform par upload karein, aur RSS feed ko Spotify par submit karein."
+        ]
+      ],
+      "answer_key": "anchor, buzzsprout, rss feed, spotify submit",
+      "translations": {
+        "ur": {
+          "title": "دن ۷ — پوڈکاسٹ ہوسٹنگ پلیٹ فارمز: کہاں اپ لوڈ کریں؟",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "پوڈکاسٹ کو سپاٹفائی یا یوٹیوب پر پبلش کرنے سے پہلے ایک ہوسٹنگ پلیٹ فارم کی ضرورت ہوتی ہے جو آپ کی آڈیو فائلز کو اسٹور کرے اور آر ایس ایس فیڈ جنریٹ کرے۔ بغیر ہوسٹنگ کے، پلیٹ فارمز پر اپ لوڈ نہیں ہو سکتا۔ مقبول آپشنز میں اینکر (مفت)، بزسپراوٹ، پوڈبین، یا لِبسن شامل ہیں۔ ہر پلیٹ فارم کے اپنے فیچرز ہوتے ہیں—اینکر سادہ ہے، بزسپراوٹ ایڈوانسڈ اینالیٹکس فراہم کرتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ **اینکر ڈاٹ ایف ایم** پر اکاؤنٹ بنائیں → \"نیو ایپی سوڈ\" پر کلک کریں → اپنی آڈیو فائل اپ لوڈ کریں → ٹائٹل/ڈسکرپشن شامل کریں → \"پبلش\" پر کلک کریں۔\n۲۔ **سپاٹفائی پر پبلش ہونے کے لیے**، اینکر خود بخود آر ایس ایس فیڈ جنریٹ کرتا ہے۔ سپاٹفائی پر \"سبمٹ اے شو\" پر جائیں اور آر ایس ایس فیڈ پیسٹ کریں۔"
+            },
+            {
+              "label": "مشق",
+              "content": "اپنا ایک ٹیسٹ ایپی سوڈ (۵ سے ۱۰ سیکنڈ کا) کسی بھی ہوسٹنگ پلیٹ فارم (اینکر/بزسپراوٹ) پر اپ لوڈ کریں۔ ٹائٹل میں \"ٹیسٹ ایپی سوڈ - [آپ کا نام]\" لکھیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک تین منٹ کا ٹیسٹ پوڈکاسٹ ایپی سوڈ ریکارڈ کریں (انٹرو + دو لائنز کا مواد + آؤٹرو)، اسے ہوسٹنگ پلیٹ فارم پر اپ لوڈ کریں، اور آر ایس ایس فیڈ کو سپاٹفائی پر جمع کرائیں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "real-estate-business": [
