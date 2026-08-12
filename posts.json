@@ -2625,6 +2625,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 14,
+      "id": "day-014",
+      "date": "2026-08-12",
+      "title": "Day 14 — **Support aur Resistance: Market Ki \"Zindabad\" Lines**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Support aur resistance forex trading mein wo invisible lines hain jo market ke \"udne\" ya \"girne\" ki had ko dikhati hain. Support wo level hai jahan buyers zyada hote hain aur price wapas upar chalta hai, jabki resistance wo level hai jahan sellers zyada hote hain aur price wapas neeche girta hai. Ye levels traders ko entry/exit points suggest karte hain."
+        ],
+        [
+          "Example",
+          "Imagine EUR/USD chart par price 1.1000 se gir raha hai lekin har baar 1.0950 par ruk jaata hai. Yahan 1.0950 \"support\" hai. Agar price 1.1100 tak chala jaye lekin har baar 1.1050 par ruk jaata hai, to 1.1050 \"resistance\" hai. Aapko yeh lines identify karni hain taake pata chale kab buy karna hai (support par) ya sell karna hai (resistance par)."
+        ],
+        [
+          "Practice",
+          "Apne MetaTrader par kisi currency pair (e.g., GBP/USD) ka 1-hour chart kholo. Pichle 2-3 din ke price action ko dekh kar 2 support aur 2 resistance levels mark karo. Hint: Look for \"bounces\" ya \"rejections\" in price."
+        ],
+        [
+          "Mini Project",
+          "Ek screenshot lo jismein aapne apne marked support/resistance levels ke saath chart ho. Us screenshot ko apne trading journal mein add karo aur next 24 hours mein kya hota hai, note karo."
+        ]
+      ],
+      "answer_key": "support level, resistance level, bounce, rejection",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۴ — سپورٹ اور ریزسٹنس: مارکیٹ کی \"زِندہ باد\" لائنیں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "فوریکس ٹریڈنگ میں سپورٹ اور ریزسٹنس وہ ان ویزیبل لائنیں ہیں جو مارکیٹ کے \"اُڑنے\" یا \"گِرنے\" کی حد کو دکھاتی ہیں۔ سپورٹ وہ لیول ہے جہاں بائیرز زیادہ ہوتے ہیں اور قیمت واپس اوپر چلتی ہے، جبکہ ریزسٹنس وہ لیول ہے جہاں سیلرز زیادہ ہوتے ہیں اور قیمت واپس نیچے گِرتی ہے۔ یہ لیولز ٹریڈرز کو انٹری/ایگزٹ پوائنٹس تجویز کرتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "تصور کریں کہ EUR/USD چارٹ پر قیمت ۱.۱۰۰۰ سے گِر رہی ہے لیکن ہر بار ۱.۰۹۵۰ پر رُک جاتی ہے۔ یہاں ۱.۰۹۵۰ \"سپورٹ\" ہے۔ اگر قیمت ۱.۱۱۰۰ تک چلی جائے لیکن ہر بار ۱.۱۰۵۰ پر رُک جاتی ہے، تو ۱.۱۰۵۰ \"ریزسٹنس\" ہے۔ آپ کو یہ لائنیں آئیڈینٹیفائی کرنی ہیں تاکہ پتا چل سکے کہ کب خریدنا ہے (سپورٹ پر) یا بیچنا ہے (ریزسٹنس پر)।"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے میٹا ٹریڈر پر کسی کرنسی پیئر (مثلاً GBP/USD) کا ایک گھنٹے کا چارٹ کھولیں۔ پچھلے دو سے تین دن کے پرائس ایکشن کو دیکھ کر دو سپورٹ اور دو ریزسٹنس لیولز مارک کریں۔ ہنٹ: قیمت میں \"باؤنسز\" یا \"ریجیکشنز\" تلاش کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک اسکرین شاٹ لیں جس میں آپ کے مارک کردہ سپورٹ/ریزسٹنس لیولز کے ساتھ چارٹ ہو۔ اس اسکرین شاٹ کو اپنے ٹریڈنگ جرنل میں شامل کریں اور اگلے ۲۴ گھنٹوں میں کیا ہوتا ہے، نوٹ کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "amazon-fba": [
