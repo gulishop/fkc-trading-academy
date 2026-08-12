@@ -13630,6 +13630,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 8,
+      "id": "day-008",
+      "date": "2026-08-12",
+      "title": "Day 8 — \"Ammi, Abbu, aur ghar walon ke naam\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachay, aaj hum seekhein ge ke apne ghar walon ke naam kaise yaad rakhein. Jaisa ke hum apne doston ke naam yaad rakhte hain, waise hi apne parivar ke logon ke naam bhi yaad rakhna zaroori hai. Is se humein pata chalta hai ke hum kaun hain aur humein kaun dekhbhaal raha hai."
+        ],
+        [
+          "Chhoti Kahani",
+          "Rahul ne apne naye school mein ek dost banaya. Uske dost ne poocha, \"Tumhara naam kya hai?\" Rahul ne socha, \"Mera naam toh main jaanta hoon, par mera ghar wala kaun hai?\" Usne apne ammi, abbu, dada-dadi aur behen ke naam yaad kare. Ab jab koi poochega, \"Tumhara ghar kaun hai?\" toh woh confidently jawab de sakta hai."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, tumhare ghar mein sabse pehle tumhara naam kaun lete hain?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Apne ghar walon ke naam yaad rakhna, taake jab bhi zaroorat ho, tum unhein bulaa sako."
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۸ — امی، ابو، اور گھر والوں کے نام",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "بچو، آج ہم سیکھیں گے کہ اپنے گھر والوں کے نام کیسے یاد رکھیں۔ جیسا کہ ہم اپنے دوستوں کے نام یاد رکھتے ہیں، ویسے ہی اپنے خاندان کے لوگوں کے نام بھی یاد رکھنا ضروری ہے۔ اس سے ہمیں پتا چلتا ہے کہ ہم کون ہیں اور ہمیں کون دیکھ بھال رہا ہے۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "راہُل نے اپنے نئے سکول میں ایک دوست بنایا۔ اس کے دوست نے پوچھا، ’تمہارا نام کیا ہے؟‘ راہُل نے سوچا، ’میرا نام تو میں جانتا ہوں، پر میرا گھر والا کون ہے؟‘ اس نے اپنی امی، ابو، دادا دادی اور بہن کے نام یاد کیے۔ اب جب کوئی پوچھے گا، ’تمہارا گھر کون ہے؟‘ تو وہ اعتماد سے جواب دے سکتا ہے۔"
+            },
+            {
+              "label": "امی ابو کے ساتھ بات کریں",
+              "content": "’بیٹا، تمہارے گھر میں سب سے پہلے تمہارا نام کون لیتے ہیں؟‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "اپنے گھر والوں کے نام یاد رکھنا، تاکہ جب بھی ضرورت ہو، تم انہیں بلا سکو۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-kg": [
