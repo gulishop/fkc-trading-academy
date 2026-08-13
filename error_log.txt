@@ -653,3 +653,5 @@
 [2026-08-13T22:39:47.674331] [python-programming] Day 2 video skip: Agnes aur ffmpeg dono attempts fail.
 [2026-08-13T23:04:43.375354] [web-development] Day 1 video skip: Agnes aur ffmpeg dono attempts fail.
 [2026-08-13T23:06:13.382876] [web-development] Day 2 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-13T23:26:33.523397] [crypto-blockchain] Day 1 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-13T23:28:14.168643] [crypto-blockchain] Day 2 video skip: Agnes aur ffmpeg dono attempts fail.

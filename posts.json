@@ -9972,6 +9972,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 6,
+      "id": "day-006",
+      "date": "2026-08-13",
+      "title": "Day 6 — **Phishing aur Social Engineering: Crypto Ka Sabse Bada Khauf**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Phishing aur social engineering crypto mein sabse common scams hain. Hackers log fake emails, messages, ya websites banate hain jo real crypto platforms jaise wallets, exchanges, ya support teams ke jaise dikhte hain. Unka maqsad tumhare private keys, seed phrases, ya login details churaana hota hai."
+        ],
+        [
+          "Example",
+          "Ek scammer tumhare Telegram/Discord par \"Binance Support Team\" se message karta hai: *\"Aapka account hack ho gaya hai! Is link par click karein aur apna password reset karein.\"* Link par click karne par ek fake Binance login page khulta hai jo real page jaisa hi dikhta hai. Agar tumne apna password daal diya, to scammer ne tumhara account hack kar liya."
+        ],
+        [
+          "Practice",
+          "1. Apne email ya social media par koi suspicious message ya link aaya hai? Agar haan, usko report karein (phishing@binance.com ya platform ki official support).\n2. Kisi bhi crypto platform par login karne se pehle URL check karein: `https://` hona chahiye aur spelling sahi honi chahiye (e.g., `binance.com` not `binancee.com`)."
+        ],
+        [
+          "Mini Project",
+          "Ek fake phishing email ya message create karein (sirf learning ke liye) jo real scam ki tarah dikhe lekin warning message ho. Apne classmates ko bhejein aur unse feedback lo ke kya unko scam samajh aaya ya nahi."
+        ]
+      ],
+      "answer_key": "fake link, url check, report scam, seed phrase share na kare",
+      "translations": {
+        "ur": {
+          "title": "دن ٦ — فشنگ اور سوشل انجینئرنگ: کرپٹو کا سب سے بڑا خوف",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "فشنگ اور سوشل انجینئرنگ کرپٹو میں سب سے عام سکیمز ہیں۔ ہیکرز جعلی ای میلز، پیغامات، یا ویب سائٹس بناتے ہیں جو اصلی کرپٹو پلیٹ فارمز جیسے والیٹس، ایکسچینجز، یا سپورٹ ٹیموں کی طرح دکھائی دیتی ہیں۔ ان کا مقصد آپ کے پرائیویٹ کیز، سیڈ فریز، یا لاگ ان تفصیلات چرانا ہوتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک سکیمر آپ کے ٹیلیگرام/ڈسکارڈ پر \"بائننس سپورٹ ٹیم\" سے پیغام کرتا ہے: *\"آپ کا اکاؤنٹ ہیک ہو گیا ہے! اس لنک پر کلک کریں اور اپنا پاسورڈ ری سیٹ کریں۔\"* لنک پر کلک کرنے پر ایک جعلی بائننس لاگ ان صفحہ کھلتا ہے جو اصلی صفحے جیسا ہی دکھائی دیتا ہے۔ اگر آپ نے اپنا پاسورڈ ڈال دیا، تو سکیمر نے آپ کا اکاؤنٹ ہیک کر لیا۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "١۔ کیا آپ کے ای میل یا سوشل میڈیا پر کوئی مشکوک پیغام یا لنک آیا ہے؟ اگر ہاں، تو اسے رپورٹ کریں (phishing@binance.com یا پلیٹ فارم کی آفیشل سپورٹ پر)۔\n٢۔ کسی بھی کرپٹو پلیٹ فارم پر لاگ ان کرنے سے پہلے یو آر ایل چیک کریں: `https://` ہونا چاہیے اور سپیلنگ صحیح ہونی چاہیے (مثلاً `binance.com` نہ کہ `binancee.com`)۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک جعلی فشنگ ای میل یا پیغام بنائیں (صرف سیکھنے کے لیے) جو اصلی سکیم کی طرح دکھائی دے لیکن اس میں وارننگ پیغام ہو۔ اپنے کلاس میٹس کو بھیجیں اور ان سے فیڈبیک لیں کہ کیا انہیں سکیم سمجھ آئی یا نہیں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "psx-stock-trading": [
