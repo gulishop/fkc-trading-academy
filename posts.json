@@ -1721,6 +1721,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 10,
+      "id": "day-010",
+      "date": "2026-08-13",
+      "title": "Day 10 — **AI-Powered Social Media Management Tools: Apne Workflow ko Automate Karein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "AI tools se social media management ka time 50% tak kam ho sakta hai. In tools se content scheduling, engagement tracking, aur analytics generation automate hota hai. AI-powered bots replies bhi handle kar sakte hain, aur audience insights bhi provide karte hain."
+        ],
+        [
+          "Example",
+          "1. **Hootsuite** ya **Buffer** jaise tools use karke AI se best posting times suggest karwayein.\n2. **ManyChat** ya **Chatfuel** se 24/7 automated replies setup karein (e.g., \"Shukriya! Aapka message hum tak pohanchega...\").\n3. **Canva AI** se graphics generate karke content creation speed badhayein."
+        ],
+        [
+          "Practice",
+          "Apne ek existing social media account ke liye **AI tool (jaise Buffer ya ManyChat) se 1 post schedule karein** aur ek automated reply set karein."
+        ],
+        [
+          "Mini Project",
+          "Ek **AI-powered social media management plan** banayein jismein:\n- 1 week ka content calendar (AI se suggest kiye gaye times ke saath)\n- 3 automated replies (common FAQs ke liye)\n- 1 AI-generated post idea (Canva AI ya MidJourney use karke)"
+        ]
+      ],
+      "answer_key": "post schedule, automated replies, ai-generated content, engagement tracking",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۰ — **اے آئی سے چلنے والے سوشل میڈیا مینجمنٹ ٹولز: اپنے ورک فلو کو آٹومیٹ کریں**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "اے آئی ٹولز کے ذریعے سوشل میڈیا مینجمنٹ کا وقت پچاس فیصد تک کم کیا جا سکتا ہے۔ ان ٹولز سے مواد کی شیڈولنگ، انگیجمنٹ ٹریکنگ، اور اینالیٹکس جنریشن خودکار ہو جاتا ہے۔ اے آئی سے چلنے والے بوٹس جوابات بھی سنبھال سکتے ہیں، اور سامعین کے بصیرت بھی فراہم کرتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ **ہوٹ سوٹ** یا **بفر** جیسے ٹولز استعمال کرکے اے آئی سے بہترین پوسٹنگ اوقات تجویز کرائیں۔\n۲۔ **مینی چیٹ** یا **چیٹ فیول** کے ذریعے چوبیس گھنٹے خودکار جوابات سیٹ کریں (مثلاً، \"شکریہ! آپ کا پیغام ہم تک پہنچے گا...\")۔\n۳۔ **کینوا اے آئی** سے گرافکس جنریٹ کرکے مواد کی تخلیق کی رفتار بڑھائیں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے کسی موجودہ سوشل میڈیا اکاؤنٹ کے لیے **اے آئی ٹول (جیسے بفر یا مینی چیٹ) سے ایک پوسٹ شیڈول کریں** اور ایک خودکار جواب سیٹ کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **اے آئی سے چلنے والا سوشل میڈیا مینجمنٹ پلان** بنائیں جس میں شامل ہو:\n- ایک ہفتے کا مواد کیلنڈر (اے آئی سے تجویز کردہ اوقات کے ساتھ)\n- تین خودکار جوابات (عام سوالوں کے لیے)\n- ایک اے آئی سے جنریٹ کردہ پوسٹ کا آئیڈیا (**کینوا اے آئی** یا **مڈ جرنی** استعمال کرکے)"
+            }
+          ]
+        }
+      }
     }
   ],
   "facebook-page-growth": [
