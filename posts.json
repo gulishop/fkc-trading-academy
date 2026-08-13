@@ -2837,6 +2837,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 15,
+      "id": "day-015",
+      "date": "2026-08-13",
+      "title": "Day 15 — **Trading Journal Banana: Apne Trades Ka Hisaab Rakho**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Trading journal ek notebook ya spreadsheet hai jisme aap har trade ka detail record rakhte hain. Isse aap apni mistakes, patterns, aur emotional decisions ko identify kar sakte hain. Yeh discipline badhata hai aur future trades ko improve karta hai."
+        ],
+        [
+          "Example",
+          "1. Trade ka date/time likhein.\n2. Pair (e.g., EUR/USD), entry/exit price, lot size, aur profit/loss (P&L) likhein.\n3. Reason for trade (technical/fundamental) aur emotions (e.g., \"FOMO se entry ki\") note karen.\n4. Agar stop-loss hit hua to reason likhein."
+        ],
+        [
+          "Practice",
+          "Apne MetaTrader se last 5 trades ke details nikalein aur ek simple journal banayein (Excel ya Google Sheets mein). Include karen:\n- Trade ka pair\n- Entry/exit price\n- P&L (points mein)\n- Trade ka reason"
+        ],
+        [
+          "Mini Project",
+          "Ek trading journal template banayein jo aap future mein use kar sakte hain. Include karen:\n- Trade ka summary (pair, direction, timeframe)\n- Entry/exit conditions\n- Emotional state (e.g., \"Confident\", \"Stressed\")\n- Lessons learned"
+        ]
+      ],
+      "answer_key": "date, pair, entry/exit, p&l, reason, emotions",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۵ — ٹریڈنگ جرنل بنانا: اپنے ٹریڈز کا حساب رکھو",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ٹریڈنگ جرنل ایک نوٹ بک یا سپریڈ شیٹ ہوتی ہے جس میں آپ ہر ٹریڈ کا تفصیلی ریکارڈ رکھتے ہیں۔ اس سے آپ اپنی غلطیوں، پیٹرنز، اور جذباتی فیصلوں کی شناخت کر سکتے ہیں۔ یہ ڈسپلن بڑھاتا ہے اور مستقبل کے ٹریڈز کو بہتر بناتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ ٹریڈ کا تاریخ/وقت لکھیں۔\n۲۔ جوڑا (مثلاً، EUR/USD)، انٹری/ایگزٹ قیمت، لاٹ سائز، اور منافع/نقصان (P&L) لکھیں۔\n۳۔ ٹریڈ کی وجہ (ٹیکنیکل/فاؤنڈمینٹل) اور جذبات (مثلاً، \"FOMO سے انٹری کی\") نوٹ کریں۔\n۴۔ اگر سٹاپ لاس ہٹا تو وجہ لکھیں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے میٹا ٹریڈر سے پچھلے ۵ ٹریڈز کی تفصیلات نکالیں اور ایک سادہ جرنل بنائیں (ایکسل یا گوگل شیٹس میں)۔ شامل کریں:\n- ٹریڈ کا جوڑا\n- انٹری/ایگزٹ قیمت\n- P&L (پوائنٹس میں)\n- ٹریڈ کی وجہ"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک ٹریڈنگ جرنل ٹیمپلیٹ بنائیں جسے آپ مستقبل میں استعمال کر سکیں۔ شامل کریں:\n- ٹریڈ کا خلاصہ (جوڑا، سمت، ٹائم فریم)\n- انٹری/ایگزٹ کی شرائط\n- جذباتی حالت (مثلاً، \"اعتماد سے بھرپور\"، \"تناؤ میں\")\n- سیکھے گئے اسباق"
+            }
+          ]
+        }
+      }
     }
   ],
   "amazon-fba": [
