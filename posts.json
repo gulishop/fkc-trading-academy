@@ -15308,6 +15308,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 8,
+      "id": "day-008",
+      "date": "2026-08-13",
+      "title": "Day 8 — \"Apne baaray mein bolna: Mera naam, meri umar, mera school!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachay, aaj hum seekhenge ke apne baaray mein kaise batayein! Jaise tumhara naam kya hai, tum kitne saal ke ho, aur tumhara school kya hai. Isse logon ko pata chalta hai tum kaun ho aur tumhara ghar kaise pohanchein. Yeh sab kuch aise hi hai jaise tum apne dost ko introduce karte ho!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Areeba ne apne school mein ek naya bachcha dekha. Usne poochha, \"Tumhara naam kya hai?\" Areeba ne muskurate hue kaha, \"Mera naam Areeba hai, main 7 saal ki hoon, aur main ABC School mein padhti hoon.\" Us bachche ko bhi Areeba ki tarah apne baaray mein batana aagaya!"
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar koi tumse pooche ke tumhara naam kya hai, tum kitne saal ke ho, aur tumhara school kya hai, to tum kya jawab doge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Tumhara jism sirf tumhara hai. Agar koi cheez ajeeb lage, to foran humein ya kisi trusted insaan ko batana mat bhulna!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۸ — \"اپنے بارے میں بولنا: میرا نام، میری عمر، میرا سکول!\"",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "بچو، آج ہم سیکھیں گے کہ اپنے بارے میں کیسے بتائیں! جیسے تمہارا نام کیا ہے، تم کتنے سال کے ہو، اور تمہارا سکول کیا ہے۔ اس سے لوگوں کو پتا چلتا ہے تم کون ہو اور تمہارا گھر کیسے پہنچیں۔ یہ سب کچھ ایسے ہی ہے جیسے تم اپنے دوست کو متعارف کراتے ہو!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "عریبہ نے اپنے سکول میں ایک نیا بچہ دیکھا۔ اس نے پوچھا، \"تمہارا نام کیا ہے؟\" عریبہ نے مسکراتے ہوئے کہا، \"میرا نام عریبہ ہے، میں سات سال کی ہوں، اور میں اے بی سی سکول میں پڑھتی ہوں۔\" اس بچے کو بھی عریبہ کی طرح اپنے بارے میں بتانا آ گیا!"
+            },
+            {
+              "label": "امی ابّو کے ساتھ بات کریں",
+              "content": "\"بیٹا، اگر کوئی تم سے پوچھے کہ تمہارا نام کیا ہے، تم کتنے سال کے ہو، اور تمہارا سکول کیا ہے، تو تم کیا جواب دو گے؟\""
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمہارا جسم صرف تمہارا ہے۔ اگر کوئی چیز عجیب لگے، تو فوراً ہمیں یا کسی بھروسے مند انسان کو بتانا مت بھولنا!"
+            }
+          ]
+        }
+      }
     }
   ]
 }
