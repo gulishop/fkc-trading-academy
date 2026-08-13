@@ -12996,6 +12996,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 11,
+      "id": "day-011",
+      "date": "2026-08-13",
+      "title": "Day 11 — **Mobile Charging Port Repair: Common Issues aur Step-by-Step Fix**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Mobile charging port mein dust, lint, ya damaged pins ki wajah se charging issues hote hain. Kabhi-kabhi port ke pins bend ho jate hain ya solder joints weak ho jate hain. Aaj hum port ko clean karne, pins ko straight karne, aur soldering se repair karne ka tareeqa seekhenge."
+        ],
+        [
+          "Example",
+          "Agar koi phone charging nahi ho raha lekin charger work kar raha hai, to sabse pehle port ko torch se check karen. Agar dust ya lint jam hai, to isi needle se clean karen. Agar pins bent hain, to tweezers se carefully straight karen. Agar solder joints weak hain, to soldering iron se rework karen."
+        ],
+        [
+          "Practice",
+          "Apne ek old phone ka charging port khol kar usko torch se check karen. Agar dust ya lint hai to clean karen. Agar pins bent hain to unko straight karen."
+        ],
+        [
+          "Mini Project",
+          "Ek damaged charging port ko repair kar ke us phone ko charge karne ka test karen."
+        ]
+      ],
+      "answer_key": "clean port, straight pins, solder joints, test charge",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۱ — موبائل چارجنگ پورٹ ریپیئر: عام مسائل اور مرحلہ وار حل",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "موبائل چارجنگ پورٹ میں دھول، لنٹ، یا ڈیمیجڈ پنز کی وجہ سے چارجنگ کے مسائل ہوتے ہیں۔ کبھی کبھی پورٹ کے پنز مڑ جاتے ہیں یا سولڈر جوائنٹس کمزور ہو جاتے ہیں۔ آج ہم پورٹ کو صاف کرنے، پنز کو سیدھا کرنے، اور سولڈرنگ سے ریپیئر کرنے کا طریقہ سیکھیں گے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "اگر کوئی فون چارج نہیں ہو رہا لیکن چارجر کام کر رہا ہے، تو سب سے پہلے پورٹ کو ٹارچ سے چیک کریں۔ اگر دھول یا لنٹ پھنسا ہوا ہے، تو اسے سوئی سے صاف کریں۔ اگر پنز مڑے ہوئے ہیں، تو ٹویزرز سے احتیاط سے سیدھا کریں۔ اگر سولڈر جوائنٹس کمزور ہیں، تو سولڈرنگ آئرن سے ریورک کریں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے کسی پرانے فون کا چارجنگ پورٹ کھول کر اسے ٹارچ سے چیک کریں۔ اگر دھول یا لنٹ موجود ہے تو اسے صاف کریں۔ اگر پنز مڑے ہوئے ہیں تو انہیں سیدھا کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک ڈیمیجڈ چارجنگ پورٹ کو ریپیئر کر کے اس فون کو چارج کرنے کا ٹیسٹ کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-safety-education": [
