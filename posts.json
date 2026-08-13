@@ -9212,6 +9212,64 @@
           ]
         }
       }
+    },
+    {
+      "day": 10,
+      "id": "day-010",
+      "date": "2026-08-13",
+      "title": "Day 10 — **Advanced CSS: Custom Properties (Variables) aur Advanced Selectors**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum **CSS Custom Properties** (variables) aur **advanced selectors** (like `:nth-child`, `:not()`, attribute selectors) seekhenge. Variables se styling ko reusable banaya ja sakta hai, jabke advanced selectors se specific elements ko target karna asaan ho jata hai. Yeh performance bhi improve karta hai aur code maintain karne mein bhi help karta hai."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Variables",
+          "```css\n   :root {\n     --primary-color: #3498db;\n     --spacing: 1rem;\n   }\n   .button {\n     background: var(--primary-color);\n     padding: var(--spacing);\n   }\n   ```\n2."
+        ],
+        [
+          "Advanced Selector",
+          "```css\n   /* Every odd list item */\n   li:nth-child(odd) { background: #f0f0f0; }\n\n   /* All inputs except password */\n   input:not([type=\"password\"]) { border: 1px solid #ccc; }\n   ```"
+        ],
+        [
+          "Practice",
+          "Apne **portfolio website** ke liye ek CSS file mein 3 custom variables define karo (`--main-bg`, `--text-color`, `--accent-color`). In variables ko navbar, buttons, aur footer mein use karo."
+        ],
+        [
+          "Mini Project",
+          "Ek **dynamic theme switcher** banao jo ek button click par `--main-bg` aur `--text-color` change kar de (e.g., light/dark mode)."
+        ]
+      ],
+      "answer_key": "root variables, :nth-child, :not(), reusable styling",
+      "translations": {
+        "ur": {
+          "title": "دن ١٠ — ایڈوانسڈ سی ایس ایس: کسٹم پراپرٹیز (ویری ایبلز) اور ایڈوانسڈ سلیکٹرز",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم **سی ایس ایس کسٹم پراپرٹیز** (ویری ایبلز) اور **ایڈوانسڈ سلیکٹرز** (جیسے `:nth-child`، `:not()`، ایٹریبیوٹ سلیکٹرز) سیکھیں گے۔ ویری ایبلز سے اسٹائلنگ کو ری یوز ایبل بنایا جا سکتا ہے، جبکہ ایڈوانسڈ سلیکٹرز سے مخصوص ایلیمنٹس کو ٹارگٹ کرنا آسان ہو جاتا ہے۔ یہ پرفارمنس کو بہتر بھی کرتا ہے اور کوڈ مینٹین کرنے میں بھی مدد دیتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "١۔\n**ویری ایبلز:**\n```css\n:root {\n  --primary-color: #3498db;\n  --spacing: 1rem;\n}\n.button {\n  background: var(--primary-color);\n  padding: var(--spacing);\n}\n```\n\n٢۔\n**ایڈوانسڈ سلیکٹر:**\n```css\n/* ہر طاق نمبر والی لسٹ آئٹم */\nli:nth-child(odd) { background: #f0f0f0; }\n\n/* تمام ان پٹس سوائے پاسورڈ کے */\ninput:not([type=\"password\"]) { border: 1px solid #ccc; }\n```"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے **پورٹ فولیو ویب سائٹ** کے لیے ایک سی ایس ایس فائل میں ٣ کسٹم ویری ایبلز (`--main-bg`، `--text-color`، `--accent-color`) ڈیفائن کریں۔ ان ویری ایبلز کو نیویگیشن بار، بٹنز، اور فوٹر میں استعمال کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **ڈائنامک تھیم سوئچر** بنائیں جو ایک بٹن کے کلک پر `--main-bg` اور `--text-color` تبدیل کر دے (مثال کے طور پر، لائٹ/ڈارک موڈ)۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "excel-data-analysis": [
