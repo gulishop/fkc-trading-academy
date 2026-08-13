@@ -14454,6 +14454,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 9,
+      "id": "day-009",
+      "date": "2026-08-13",
+      "title": "Day 9 — \"Adab: Please, Thank You, Sorry kab bolein\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachon, adab se rehna hamari pehchaan hai. Jab hum kisi se kuch maangte hain to \"please\" kehte hain, jab koi hamein kuch deta hai to \"thank you\" kehte hain, aur agar humse koi galti ho jaye to \"sorry\" kehte hain. Yeh shabd hamari zindagi ko khushiyon se bhar dete hain."
+        ],
+        [
+          "Chhoti Kahani",
+          "Rohan ne apne dost Ali ko apna pencil maanga: \"Ali, please, mera pencil de dena.\" Ali ne pencil diya to Rohan ne kaha: \"Thank you, Ali bhai!\" Phir Rohan ne apne ghar ka glass gira diya. Usne kaha: \"Sorry, Ammi, main dobara nahi karunga.\""
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar tum kisi se kuch maangoge to pehle kya kehoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Adab se rehna hamari aadat ban jaye, taake sab hamse pyar karein."
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۹ — \"ادب: پلیز، تھینک یو، سوری کب بولیں\"",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "بچو، ادب سے رہنا ہماری پہچان ہے۔ جب ہم کسی سے کچھ مانگتے ہیں تو \"پلیز\" کہتے ہیں، جب کوئی ہمیں کچھ دیتا ہے تو \"تھینک یو\" کہتے ہیں، اور اگر ہم سے کوئی غلطی ہو جائے تو \"سوری\" کہتے ہیں۔ یہ الفاظ ہماری زندگی کو خوشیوں سے بھر دیتے ہیں۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "روہان نے اپنے دوست علی کو اپنا پنسل مانگا: \"علی، پلیز، میرا پنسل دے دینا۔\" علی نے پنسل دیا تو روہان نے کہا: \"تھینک یو، علی بھائی!\" پھر روہان نے اپنے گھر کا گلاس گرا دیا۔ اس نے کہا: \"سوری، امی، میں دوبارہ نہیں کروں گا۔\""
+            },
+            {
+              "label": "امی ابو کے ساتھ بات کریں",
+              "content": "\"بیٹا، اگر تم کسی سے کچھ مانگو گے تو پہلے کیا کہو گے؟\""
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "ادب سے رہنا ہماری عادت بن جائے، تاکہ سب ہم سے پیار کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-pg": [
