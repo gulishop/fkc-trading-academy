@@ -6066,6 +6066,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 10,
+      "id": "day-010",
+      "date": "2026-08-13",
+      "title": "Day 10 — **No-Code ki Limitations: Kab Use Karna Chahiye aur Kab Nahi?**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "No-code tools powerful hain, lekin har samay sabkuch solve nahi karte. Inki limitations samajhna zaroori hai taake aap realistic expectations rakhein. Common issues: customization limits, performance bottlenecks, vendor lock-in, aur complex logic handle na kar paana. Jaise FlutterFlow se advanced animations ya Webflow se dynamic database queries mushkil hoti hain."
+        ],
+        [
+          "Example",
+          "Ek student ne Glide se ek e-commerce app banaya. Usne payment integration ki, lekin custom discount engine ya real-time inventory sync nahi kar paaya. Glide ke built-in features se yeh possible nahi tha, isliye usko custom code (low-code) ya alternative solution (jaise Airtable + Make.com) ki zaroorat padi."
+        ],
+        [
+          "Practice",
+          "Apne current project mein **ek limitation** identify karo jo aapko lagta hai aapka no-code tool handle nahi kar paa raha. Likh do: *\"Meri [tool name] se yeh problem hai: [problem ka naam]\"*."
+        ],
+        [
+          "Mini Project",
+          "Ek **\"No-Code vs Low-Code\"** comparison chart banayein. Do columns mein:\n1. **No-Code Limitations** (e.g., \"Custom animations impossible\")\n2. **Low-Code Workaround** (e.g., \"Framer + custom JS snippet\")\nUse 3-4 tools (Webflow, FlutterFlow, Glide, Bubble) ke liye fill karo."
+        ]
+      ],
+      "answer_key": "customization limits, vendor lock-in, performance issues, complex logic",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۰ — نو کوڈ کی محدودیات: کب استعمال کرنا چاہیے اور کب نہیں؟",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "نو کوڈ ٹولز طاقتور ہوتے ہیں، لیکن ہر وقت ہر چیز حل نہیں کرتے۔ ان کی محدودیات کو سمجھنا ضروری ہے تاکہ آپ حقیقت پسندانہ توقعات رکھ سکیں۔ عام مسائل میں حسب ضرورت تبدیلیوں کی حدیں، کارکردگی کی رکاوٹیں، وینڈر لاک ان، اور پیچیدہ منطق کو سنبھال نہ پانا شامل ہیں۔ جیسے کہ فلٹر فلو سے ایڈوانسڈ اینیمیشنز یا ویب فلو سے ڈائنامک ڈیٹا بیس کوئریز مشکل ہوتی ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک طالب علم نے گ्लائیڈ کے ذریعے ایک ای کامرس ایپ بنائی۔ اس نے ادائیگیوں کا انٹیگریشن تو کر لیا، لیکن کسٹم ڈسکاؤنٹ انجن یا ریئل ٹائم انوینٹری سنک نہیں کر سکا۔ گ್ಲائیڈ کے بلٹ ان فیچرز سے یہ ممکن نہیں تھا، اس لیے اسے کسٹم کوڈ (لو کوڈ) یا متبادل حل (جیسے ایئر ٹیبل + میک ڈاٹ کام) کی ضرورت پڑی۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے موجودہ پروجیکٹ میں ایک ایسی محدودیت کی نشاندہی کریں جو آپ کو لگتا ہے کہ آپ کا نو کوڈ ٹول سنبھال نہیں پا رہا۔ لکھیں: *میری [ٹول کا نام] سے یہ مسئلہ ہے: [مسئلے کا نام]*۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک *نو کوڈ بمقابلہ لو کوڈ* موازنہ چارٹ بنائیں۔ دو کالموں میں:\n۱۔ **نو کوڈ کی محدودیات** (مثال کے طور پر، *کسٹم اینیمیشنز ناممکن*)\n۲۔ **لو کوڈ کا حل** (مثال کے طور پر، *فریمر + کسٹم جاوا اسکرپٹ سنپٹ*)\n۳-۴ ٹولز (ویب فلو، فلٹر فلو، گ্লائیڈ، ببل) کے لیے بھریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "digital-marketing-seo": [
