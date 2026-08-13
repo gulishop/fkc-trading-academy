@@ -14052,6 +14052,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 10,
+      "id": "day-010",
+      "date": "2026-08-13",
+      "title": "Day 10 — **Jo mila us par khush rehna**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke shukar guzar hona kya hai. Shukar guzar hona matlab hai jo cheez humein milti hai, usse khush rehna. Agar tumhein koi naya khel, kapda, ya khana pasand hai, toh uske liye Allah ka shukar ada karna. Zindagi mein har cheez ka apna maza hai—chhoti cheezein bhi!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Ameer ke paas ek naya cycle tha. Usne usko dekh kar khush hona chahiye, lekin usko ek aur cycle aur achhi dikh rahi thi. Usne apne abbu se kaha, \"Mera cycle itna acha nahi hai.\" Abbu ne muskurate hue kaha, \"Ameer, tumhare cycle se tum rasta talash sikh rahe ho, isliye yeh cycle tumhare liye sabse achhi hai. Shukar guzar ho.\""
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "Tumhein kya cheez sabse zyada pasand hai jo tumhare paas hai?"
+        ],
+        [
+          "Yaad Rakhein",
+          "Jo tumhare paas hai, uske liye shukar guzar rehna. Zindagi ko khushiyon se bhara hona seekhna."
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۰ — **جو ملا اُس پر خوش رہنا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج ہم سیکھیں گے کہ شکر گزار ہونا کیا ہے۔ شکر گزار ہونا مطلب ہے جو چیز ہمیں ملتی ہے، اُس سے خوش رہنا۔ اگر تمہیں کوئی نیا کھیل، کپڑا، یا کھانا پسند ہے، تو اُس کے لیے اللہ کا شکر ادا کرنا۔ زندگی میں ہر چیز کا اپنا مزہ ہے—چھوٹی چیزیں بھی!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "امیر کے پاس ایک نیا سائیکل تھا۔ اُس نے اُسے دیکھ کر خوش ہونا چاہیے، لیکن اُسے ایک اور سائیکل اور اچھی دکھائی دے رہی تھی۔ اُس نے اپنے اب्बو سے کہا، ’میرا سائیکل اتنا اچھا نہیں ہے۔‘ ابّو نے مسکراتے ہوئے کہا، ’امیر، تمہارے سائیکل سے تم راستہ تلاش سیکھ رہے ہو، اس لیے یہ سائیکل تمہارے لیے سب سے اچھی ہے۔ شکر گزار ہو۔‘"
+            },
+            {
+              "label": "امی ابّو کے ساتھ بات کریں",
+              "content": "تمہیں کیا چیز سب سے زیادہ پسند ہے جو تمہارے پاس ہے؟"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "جو تمہارے پاس ہے، اُس کے لیے شکر گزار رہنا۔ زندگی کو خوشیوں سے بھرا ہونا سیکھنا۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-nursery": [
