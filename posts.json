@@ -12322,6 +12322,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 9,
+      "id": "day-009",
+      "date": "2026-08-13",
+      "title": "Day 9 — **Property Investment Strategies: Safe vs. High-Return Approaches**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Property investment mein do main approaches hain: *safe (low-risk)* aur *high-return (high-risk)*. Safe investments mein steady income (rental) aur long-term appreciation (land, residential) shamil hain, jabke high-return options mein commercial properties, under-construction projects, ya flipping (quick buy-sell) aate hain. Risk tolerance aur financial goals ke hisaab se strategy choose karni chahiye."
+        ],
+        [
+          "Example",
+          "*Safe Approach:* 2020 mein Lahore ke Defence Housing Authority (DHA) mein 5 marla plot ₹5M mein khareeda. 2024 tak uski value ₹12M ho gayi, aur monthly rent ₹50,000 mil raha hai.\n*High-Return Approach:* 2023 mein Rawalpindi ke under-construction commercial plaza ₹20M mein khareeda. 2025 tak completion hone par uski value ₹40M tak pohanch sakti hai, lekin risk hai construction delay ya market crash ka."
+        ],
+        [
+          "Practice",
+          "Apne local market mein do properties dhundhain:\n1) Ek \"safe\" investment (e.g., residential plot ya fully constructed house).\n2) Ek \"high-return\" opportunity (e.g., under-construction project ya commercial property).\nDono ke pros-cons aur estimated ROI (Return on Investment) ka hisaab likhein."
+        ],
+        [
+          "Mini Project",
+          "Ek **Property Investment Plan** banayein:\n- Apna budget batayein (e.g., ₹5M).\n- 3 potential properties select karin (1 safe, 1 high-return, 1 hybrid).\n- Har ek ke liye 1-page summary likhein: location, expected ROI, risks, aur exit strategy."
+        ]
+      ],
+      "answer_key": "safe: residential, rental income, long-term, low volatility; high-return: commercial, under-construction, high risk, quick profit",
+      "translations": {
+        "ur": {
+          "title": "دن ۹ — **پراپرٹی انویسٹمنٹ اسٹریٹیز: سیف بمقابلہ ہائی ریٹرن اپروچز**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "پراپرٹی انویسٹمنٹ میں بنیادی طور پر دو طریقے ہوتے ہیں: *سیف (لو رسک)* اور *ہائی ریٹرن (ہائی رسک)*۔ سیف انویسٹمنٹس میں مستحکم آمدنی (کرایہ) اور طویل مدتی قدر میں اضافہ (زمین، رہائشی پراپرٹیز) شامل ہوتا ہے، جبکہ ہائی ریٹرن آپشنز میں کمرشل پراپرٹیز، انڈر کنسٹرکشن پروجیکٹس، یا فلیپنگ (فوری خرید و فروخت) آتے ہیں۔ رسک ٹالرنس اور مالی اہداف کے مطابق اسٹریٹی کا انتخاب کرنا چاہیے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "*سیف اپروچ:* ۲۰۲۰ میں لاہور کے ڈیفنس ہاؤسنگ اتھارٹی (ڈی ایچ اے) میں ۵ مرلہ پلاٹ ۵۰ لاکھ روپے میں خریدا۔ ۲۰۲۴ تک اس کی ویلیو ۱ کروڑ ۲۰ لاکھ روپے ہو گئی، اور ماہانہ کرایہ ۵۰ ہزار روپے مل رہا ہے۔\n*ہائی ریٹرن اپروچ:* ۲۰۲۳ میں راولپنڈی کے انڈر کنسٹرکشن کمرشل پلازہ کو ۲ کروڑ روپے میں خریدا۔ ۲۰۲۵ تک مکمل ہونے پر اس کی ویلیو ۴ کروڑ روپے تک پہنچ سکتی ہے، لیکن رسک ہے کہ کنسٹرکشن میں تاخیر ہو یا مارکیٹ کریش ہو جائے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے مقامی مارکیٹ میں دو پراپرٹیز تلاش کریں:\n۱) ایک \"سیف\" انویسٹمنٹ (مثلاً رہائشی پلاٹ یا مکمل تعمیر شدہ گھر)۔\n۲) ایک \"ہائی ریٹرن\" موقع (مثلاً انڈر کنسٹرکشن پروجیکٹ یا کمرشل پراپرٹی)۔\nدونوں کے فوائد و نقصانات اور اندازہً ریٹرن آن انویسٹمنٹ (آر او آئی) کا حساب لکھیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **پراپرٹی انویسٹمنٹ پلان** بنائیں:\n- اپنا بجٹ بتائیں (مثلاً ۵۰ لاکھ روپے)۔\n- تین ممکنہ پراپرٹیز منتخب کریں (ایک سیف، ایک ہائی ریٹرن، ایک ہائبرڈ)۔\n- ہر ایک کے لیے ایک صفحے کا خلاصہ لکھیں: لوکیشن، متوقع آر او آئی، رسک، اور ایگزٹ اسٹریٹی۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "mobile-repairing": [
