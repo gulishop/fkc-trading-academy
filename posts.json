@@ -7342,6 +7342,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 11,
+      "id": "day-011",
+      "date": "2026-08-13",
+      "title": "Day 11 — **Niche Research: Apna Target Audience Kaise Dhundhein?**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Print on demand mein success ka pehla raaz hai ek *specific niche* choose karna. Niche research ka matlab hai apne ideal customer ko samajhna, unke interests, problems, aur trends ko analyze karna. Ek achha niche wo hai jo: (1) Passion/interest-based ho, (2) Competition kam ho, aur (3) Profit margin achha de. Bina niche research ke, aapka design generic ho jayega aur marketing mushkil ho jayegi."
+        ],
+        [
+          "Example",
+          "Ek student ne \"Pets\" niche choose kiya, lekin usne further research kiya to pata chala ki \"Golden Retriever lovers\" ka sub-niche aur bhi profitable hai. Usne Google Trends par \"Golden Retriever gifts\" search kiya aur dekha ki demand barh rahi hai. Phir Etsy par search kiya to \"Golden Retriever mugs\" ka competition kam tha lekin orders zyada the."
+        ],
+        [
+          "Practice",
+          "Apne interest ke 3 niches list karein (e.g., fitness, gaming, parenting). Phir har niche ke liye:\n1. Google Trends par search karein (last 5 years ka data dekhein).\n2. Etsy/Amazon par search karein (kitne sellers hain? kitne orders hain?).\n3. Reddit/Facebook groups mein poochhein (log kya pooch rahe hain?)."
+        ],
+        [
+          "Mini Project",
+          "Apne top 3 niches mein se *ek niche* choose karein aur uske liye:\n- 3 trending keywords list karein (e.g., \"Gym Motivation Quotes\", \"Cute Cat Lover Gifts\").\n- 1 design idea draft karein (sketch ya Canva mein).\n- 1 social media post idea likhein (e.g., \"Which one is your favorite? Vote below!\")."
+        ]
+      ],
+      "answer_key": "google trends data, etsy competition analysis, trending keywords, design draft",
+      "translations": {
+        "ur": {
+          "title": "دن 11 — **نیچ ریسرچ: اپنا ٹارگٹ آڈینس کیسے ڈھونڈیں؟**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "پرنٹ آن ڈیمینڈ میں کامیابی کا پہلا راز ہے ایک *مخصوص نیچ* کا انتخاب کرنا۔ نیچ ریسرچ کا مطلب ہے اپنے آئیڈیل کسٹمر کو سمجھنا، ان کی دلچسپیوں، مسائل، اور رجحانات کا تجزیہ کرنا۔ ایک اچھا نیچ وہ ہوتا ہے جو: (1) شوق یا دلچسپی پر مبنی ہو، (2) مقابلہ کم ہو، اور (3) منافع کا مارجن اچھا دے۔ بغیر نیچ ریسرچ کے، آپ کا ڈیزائن جنرل ہو جائے گا اور مارکیٹنگ مشکل ہو جائے گی۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک طالب علم نے \"پٹس\" نیچ کا انتخاب کیا، لیکن اس نے مزید ریسرچ کی تو پتا چلا کہ \"گولڈن ریٹریور لوورز\" کا سب-نیچ اور بھی منافع بخش ہے۔ اس نے گوگل ٹرینڈز پر \"گولڈن ریٹریور گفٹس\" سرچ کیا اور دیکھا کہ مانگ بڑھ رہی ہے۔ پھر ایٹسی پر سرچ کیا تو \"گولڈن ریٹریور مگز\" کا مقابلہ کم تھا لیکن آرڈرز زیادہ تھے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنی دلچسپی کے تین نیچز کی فہرست بنائیں (مثلاً فٹنس، گیمنگ، پیرنٹنگ)۔ پھر ہر نیچ کے لیے:\n1. گوگل ٹرینڈز پر سرچ کریں (پچھلے 5 سال کا ڈیٹا دیکھیں)۔\n2. ایٹسی/ایمیزون پر سرچ کریں (کتنے سیلرز ہیں؟ کتنے آرڈرز ہیں؟)\n3. ریڈٹ/فیس بک گروپس میں پوچھیں (لوگ کیا پوچھ رہے ہیں؟)"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "اپنے ٹاپ 3 نیچز میں سے *ایک نیچ* کا انتخاب کریں اور اس کے لیے:\n- 3 ٹرینڈنگ کی ورڈز کی فہرست بنائیں (مثلاً \"جم موٹیویشن کوٹس\"، \"کیوٹ کیٹ لوور گفٹس\")۔\n- 1 ڈیزائن آئیڈیا کا ڈرافٹ بنائیں (سکچ یا کینوا میں)۔\n- 1 سوشل میڈیا پوسٹ کا آئیڈیا لکھیں (مثلاً \"آپ کا پسندیدہ کون سا ہے؟ نیچے ووٹ کریں!\")۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "cpp-daily-coding": [
