@@ -5374,6 +5374,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 13,
+      "id": "day-013",
+      "date": "2026-08-13",
+      "title": "Day 13 — **Freelancing Mein \"Cold Pitching\": Client Milne Ka Sabse Powerful (Aur Kam Use) Tarika**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Cold pitching ka matlab hai kisi client ko unki permission ke bina directly approach karna (email, DM, ya platform message). Yeh freelancers ke liye bohat effective hai jab profile weak ho ya competition zyada ho. Key: **Personalization + Value Offer + Clear CTA**. 90% freelancers yeh nahi karte, isliye yeh 10x chances badha deta hai."
+        ],
+        [
+          "Example",
+          "Ek graphic designer ne 50+ Dribbble designers ke portfolios check kiye, unke designs mein improvements suggest kiye (free), aur unse bola: *\"Maine aapke project X mein Y improvement suggest kiya hai—agar aapko yeh pasand aaya to main aapke next project par bhi same approach apna sakta hoon. 30-minute call par discuss kar sakte hain?\"*"
+        ],
+        [
+          "Practice",
+          "Apne niche ke 3 potential clients ke LinkedIn/Instagram profiles check karo. Unke **recent work** ya **challenges** ko identify karo. Ab unko ek **3-line DM** bhej do jisme:\n1. Unke work ki **specific praise** ho\n2. Unke **kisi problem** ka solution suggest karo (free)\n3. **Next step** ka proposal do (call, email, ya proposal link)"
+        ],
+        [
+          "Mini Project",
+          "Ek **cold pitch template** banao jo aap har bar use kar sako (3-4 lines max). Isme:\n- Client ka naam\n- Unke project ka reference\n- Aapki service ka **1 unique benefit**\n- Call-to-action (e.g., \"Kya aapko 15-minute call pasand hai?\")"
+        ]
+      ],
+      "answer_key": "client ka naam, specific praise, free solution, cta",
+      "translations": {
+        "ur": {
+          "title": "دن 13 — فری لانسنگ میں \"کولڈ پیچنگ\": کلائنٹ ملنے کا سب سے طاقتور (اور کم استعمال) طریقہ",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "کولڈ پیچنگ کا مطلب ہے کسی کلائنٹ کو ان کی اجازت کے بغیر براہ راست رابطہ کرنا (ای میل، ڈائریکٹ میسج، یا پلیٹ فارم میسج)۔ یہ فری لانسرز کے لیے بہت مؤثر ہوتا ہے جب پروفائل کمزور ہو یا مقابلہ زیادہ ہو۔ کلیدی باتیں: **پرسنلائزیشن + ویلیو آفر + واضح کال ٹو ایکشن**۔ نوے فیصد فری لانسرز یہ نہیں کرتے، اس لیے یہ موقع دس گنا بڑھا دیتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک گرافک ڈیزائنر نے پچاس سے زائد ڈریبل ڈیزائنرز کے پورٹ فولیوز چیک کیے، ان کے ڈیزائنز میں بہتری کے مشورے دیے (مفت)، اور ان سے کہا: *\"میں نے آپ کے پروجیکٹ ایکس میں وائے بہتری کا مشورہ دیا ہے—اگر آپ کو یہ پسند آیا تو میں آپ کے اگلے پروجیکٹ پر بھی یہی طریقہ اپنا سکتا ہوں۔ کیا ہم تیس منٹ کی کال پر بات کر سکتے ہیں؟\"*"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے شعبے کے تین ممکنہ کلائنٹس کے لنکڈ ان/انسٹاگرام پروفائلز چیک کریں۔ ان کے **حالیہ کام** یا **چیلنجز** کی نشاندہی کریں۔ اب ان کو ایک **تین سطری ڈائریکٹ میسج** بھیجیں جس میں شامل ہو:\n1. ان کے کام کی **مخصوص تعریف**\n2. ان کی **کسی مشکل** کا حل تجویز کریں (مفت)\n3. **اگلا قدم** تجویز کریں (کال، ای میل، یا پروجیکٹ لنک)"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **کولڈ پیچ ٹیمپلیٹ** بنائیں جسے آپ ہر بار استعمال کر سکیں (زیادہ سے زیادہ تین سے چار سطریں)۔ اس میں شامل ہو:\n- کلائنٹ کا نام\n- ان کے پروجیکٹ کا حوالہ\n- آپ کی سروس کا **ایک منفرد فائدہ**\n- کال ٹو ایکشن (مثال کے طور پر، *\"کیا آپ کو پندرہ منٹ کی کال پسند ہے؟\"*)"
+            }
+          ]
+        }
+      }
     }
   ],
   "graphic-design-canva": [
