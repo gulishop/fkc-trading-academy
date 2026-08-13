@@ -14856,6 +14856,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 9,
+      "id": "day-009",
+      "date": "2026-08-13",
+      "title": "Day 9 — Roz ki cheezein",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhein ge ke roz ki cheezein kya hain aur inhe kaise pehchanein. Har cheez ka apna naam aur istemal hota hai. In cheezon ko pehchanna seekhna aapki zindagi ko aur bhi asaan bana dega!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Babli ne apne ghar mein ek lal cup dekha. Usne kaha, \"Ammi, yeh cup hai!\" Ammi ne muskurate hue kaha, \"Haan beta, yeh cup hai jismein hum pani piate hain.\" Babli ne cup ko uthaya aur apne hath mein pakda. Usne socha, \"Kitna sundar hai yeh cup!\""
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, tumhari pasandida cheez kya hai? Kya woh cheez tumhe pasand hai kyun?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Roz ki cheezein ko pehchanna seekhein aur unhe apne hath mein pakadne ka maza lo!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۹ — روز کی چیزیں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم سیکھیں گے کہ روز کی چیزیں کیا ہیں اور انہیں کیسے پہچانیں۔ ہر چیز کا اپنا نام اور استعمال ہوتا ہے۔ ان چیزوں کو پہچاننا سیکھنا آپ کی زندگی کو اور بھی آسان بنا دے گا!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "بلی نے اپنے گھر میں ایک لال کپ دیکھا۔ اس نے کہا، ’’امّی، یہ کپ ہے!‘‘ امّی نے مسکراتے ہوئے کہا، ’’ہاں بیٹا، یہ کپ ہے جس میں ہم پانی پیتے ہیں۔‘‘ ببلی نے کپ کو اٹھایا اور اپنے ہاتھ میں پکڑا۔ اس نے سوچا، ’’کتنا خوبصورت ہے یہ کپ!‘‘"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "’’بیٹا، تمہاری پسندیدہ چیز کیا ہے؟ کیا وہ چیز تمہیں پسند ہے کیوں؟‘‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "روز کی چیزوں کو پہچاننا سیکھیں اور انہیں اپنے ہاتھ میں پکڑنے کا مزہ لو!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-kg": [
