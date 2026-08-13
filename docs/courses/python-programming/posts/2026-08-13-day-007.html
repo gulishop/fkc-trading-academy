@@ -4,9 +4,9 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>Day 6 — Object-Oriented Programming (OOP) Basics — Python Programming</title>
-<meta property="og:title" content="Day 6 — Object-Oriented Programming (OOP) Basics — Python Programming">
-<meta property="og:description" content="FKC Trading Academy · Python Programming · Day 06">
+<title>Day 7 — Error Handling: Try-Except Blocks — Python Programming</title>
+<meta property="og:title" content="Day 7 — Error Handling: Try-Except Blocks — Python Programming">
+<meta property="og:description" content="FKC Trading Academy · Python Programming · Day 07">
 <meta property="og:image" content="../../../logo.png">
 <meta name="twitter:card" content="summary_large_image">
 <script>
@@ -219,17 +219,17 @@ function fkcToggleTheme(){
 }
 </script>
 
-    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "headline": "Day 6 — Object-Oriented Programming (OOP) Basics", "name": "Day 6 — Object-Oriented Programming (OOP) Basics", "description": "", "learningResourceType": "Lesson", "educationalLevel": "Beginner", "inLanguage": "ur", "isPartOf": {"@type": "Course", "name": "Python Programming"}, "datePublished": "2026-08-12", "publisher": {"@type": "Organization", "name": "FKC Trading Academy"}}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "headline": "Day 7 — Error Handling: Try-Except Blocks", "name": "Day 7 — Error Handling: Try-Except Blocks", "description": "", "learningResourceType": "Lesson", "educationalLevel": "Beginner", "inLanguage": "ur", "isPartOf": {"@type": "Course", "name": "Python Programming"}, "datePublished": "2026-08-13", "publisher": {"@type": "Organization", "name": "FKC Trading Academy"}}</script>
     <div class="top"><a href="../../../index.html">← FKC Trading Academy</a>
     <a href="../index.html" class="course-back-link">/ Python Programming</a></div>
-    
-    <p class="muted">🐍 Python Programming · Day 06</p>
-    <h1>Day 6 — Object-Oriented Programming (OOP) Basics</h1>
-    <p class="muted" style="margin:0 0 10px;">↩️ Pichla lesson: <strong>Day 5 — Functions: Reusable Code Blocks</strong> — aaj is se aage badhte hain.</p>
+    <span class="badge">Latest</span>
+    <p class="muted">🐍 Python Programming · Day 07</p>
+    <h1>Day 7 — Error Handling: Try-Except Blocks</h1>
+    <p class="muted" style="margin:0 0 10px;">↩️ Pichla lesson: <strong>Day 6 — Object-Oriented Programming (OOP) Basics</strong> — aaj is se aage badhte hain.</p>
     <div class="card">
       
-      <img src="images/day-006.png" alt="Day 6 — Object-Oriented Programming (OOP) Basics" style="width:100%;border-radius:12px;margin-bottom:14px;">
-      <p class="muted" style="margin:0 0 6px;">🎬 AI Video Explanation</p><video src="videos/day-006.mp4" controls preload="metadata" poster="images/day-006.png" style="width:100%;border-radius:12px;margin-bottom:14px;background:#000;"></video>
+      <img src="images/day-007.png" alt="Day 7 — Error Handling: Try-Except Blocks" style="width:100%;border-radius:12px;margin-bottom:14px;">
+      <p class="muted" style="margin:0 0 6px;">🎬 AI Video Explanation</p><video src="videos/day-007.mp4" controls preload="metadata" poster="images/day-007.png" style="width:100%;border-radius:12px;margin-bottom:14px;background:#000;"></video>
       <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
     <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
       <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
@@ -245,36 +245,28 @@ function fkcToggleTheme(){
     }
     </script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
-      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>OOP programming ka ek powerful tareeqa hai jo real-world entities (objects) ko code mein represent karta hai. Classes aur objects ka istemal karke code ko organized, reusable aur maintainable banaya ja sakta hai. Aaj hum `__init__`, methods, aur attributes jaise basic OOP concepts seekhenge.</p><h3>Example</h3><p>Ek `Car` class banate hain jo `brand`, `model`, aur `year` store karegi:</p><pre dir="ltr"><code>class Car:
-    def __init__(self, brand, model, year):
-        self.brand = brand
-        self.model = model
-        self.year = year
-
-    def display_info(self):
-        print(f&quot;Car: {self.brand} {self.model}, Year: {self.year}&quot;)
-
-# Object create karna
-my_car = Car(&quot;Toyota&quot;, &quot;Corolla&quot;, 2022)
-my_car.display_info()  # Output: Car: Toyota Corolla, Year: 2022</code></pre><h3>Practice</h3><p>Apni khud ki `Student` class banayein jo `name`, `age`, aur `grade` store kare. Ek method `introduce()` add karein jo &quot;Hi, I am [name], I am [age] years old and in grade [grade]&quot; print kare.</p><h3>Mini Project</h3><p>Ek `BankAccount` class banayein jo `account_holder` aur `balance` store kare. Methods `deposit(amount)` aur `withdraw(amount)` add karein. `balance` ko kabhi negative na hone dein.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>تصور</h3><p>آبجیکٹ اورینٹڈ پروگرامنگ پروگرامنگ کا ایک طاقتور طریقہ ہے جو حقیقی دنیا کی اشیاء (آبجیکٹس) کو کوڈ میں پیش کرتا ہے۔ کلاسز اور آبجیکٹس کا استعمال کرکے کوڈ کو منظم، قابلِ استعمال اور قابلِ دیکھ بھال بنایا جا سکتا ہے۔ آج ہم `__init__`، میتھڈز اور ایٹربیوٹس جیسے بنیادی او او پی تصورات سیکھیں گے۔</p><h3>مثال</h3><p>ایک `Car` کلاس بناتے ہیں جو `brand`، `model` اور `year` کو محفوظ کرے گی:</p><pre dir="ltr"><code>class Car:
-    def __init__(self, brand, model, year):
-        self.brand = brand
-        self.model = model
-        self.year = year
-
-    def display_info(self):
-        print(f&quot;Car: {self.brand} {self.model}, Year: {self.year}&quot;)
-
-# آبجیکٹ بنانا
-my_car = Car(&quot;Toyota&quot;, &quot;Corolla&quot;, 2022)
-my_car.display_info()  # Output: Car: Toyota Corolla, Year: 2022</code></pre><h3>مشق</h3><p>اپنی خود کی `Student` کلاس بنائیں جو `name`، `age` اور `grade` کو محفوظ کرے۔ ایک میتھڈ `introduce()` شامل کریں جو &quot;Hi, I am [name], I am [age] years old and in grade [grade]&quot; پرنٹ کرے۔</p><h3>چھوٹا پروجیکٹ</h3><p>ایک `BankAccount` کلاس بنائیں جو `account_holder` اور `balance` کو محفوظ کرے۔ میتھڈز `deposit(amount)` اور `withdraw(amount)` شامل کریں۔ `balance` کو کبھی منفی نہ ہونے دیں۔</p></div>
+      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Programs mein errors aana normal hai—jaise file na milna, division by zero, ya invalid input. `try-except` blocks in Python errors ko &quot;pakad&quot; kar unko handle karne mein madad karte hain. Isse program crash hone se bachta hai aur user-friendly messages show karte hain.</p><h3>Example</h3><pre dir="ltr"><code>try:
+    num = int(input(&quot;Apna number likhein: &quot;))
+    result = 10 / num
+    print(&quot;Result:&quot;, result)
+except ValueError:
+    print(&quot;Error: Number hi likhna tha!&quot;)
+except ZeroDivisionError:
+    print(&quot;Error: Zero se divide nahi ho sakta!&quot;)</code></pre><h3>Practice</h3><p>Ek program banayein jo user se ek file ka naam le aur usko read kare. Agar file na mile to &quot;File not found!&quot; print kare, warna uski content dikhaye.</p><h3>Mini Project</h3><p>Ek simple calculator banayein jo:<br>1. User se do numbers le.<br>2. Operation (+, -, *, /) pooche.<br>3. Agar division by zero ho to &quot;Cannot divide by zero!&quot; dikhaye.<br>4. Agar invalid operation ho to &quot;Invalid operation!&quot; dikhaye.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>کانسپٹ</h3><p>پروگرامز میں ایررز آنا معمول کی بات ہے—جیسے فائل نہ ملنا، زیرو سے تقسیم کرنا، یا انوالڈ ان پٹ۔ پائیتھن میں `try-except` بلاکس ایررز کو &quot;پکڑ&quot; کر انہیں ہینڈل کرنے میں مدد دیتے ہیں۔ اس سے پروگرام کریش ہونے سے بچتا ہے اور صارف دوست پیغامات دکھائے جاتے ہیں۔</p><h3>مثال</h3><pre dir="ltr"><code>try:
+    num = int(input(&quot;اپنا نمبر لکھیں: &quot;))
+    result = 10 / num
+    print(&quot;نتیجہ:&quot;, result)
+except ValueError:
+    print(&quot;ایرر: نمبر ہی لکھنا تھا!&quot;)
+except ZeroDivisionError:
+    print(&quot;ایرر: زیرو سے تقسیم نہیں ہو سکتی!&quot;)</code></pre><h3>پریکٹس</h3><p>ایک پروگرام بنائیں جو صارف سے ایک فائل کا نام لے اور اسے پڑھے۔ اگر فائل نہ ملے تو &quot;فائل نہیں ملی!&quot; پرنٹ کرے، ورنہ اس کی مواد دکھائے۔</p><h3>منی پروجیکٹ</h3><p>ایک سادہ کیلکولیٹر بنائیں جو:<br>١۔ صارف سے دو نمبرز لے۔<br>٢۔ آپریشن (+، −، ×، ÷) پوچھے۔<br>٣۔ اگر زیرو سے تقسیم ہو تو &quot;زیرو سے تقسیم نہیں ہو سکتی!&quot; دکھائے۔<br>٤۔ اگر انوالڈ آپریشن ہو تو &quot;انوالڈ آپریشن!&quot; دکھائے۔</p></div>
       
       
       <div class="quiz-box no-print">
         <p><b>📝 Apna Practice Check Karein</b></p>
         <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
         <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
-        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"student, name/age/grade, introduce(), bankaccount, deposit/withdraw, balance>=0"'>✅ Check Karein</button>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"file read error, zero division, invalid input, try-except"'>✅ Check Karein</button>
         <div class="quiz-result" id="fkc-quiz-result"></div>
       </div>
       <script>
@@ -294,23 +286,23 @@ my_car.display_info()  # Output: Car: Toyota Corolla, Year: 2022</code></pre><h3
       }
       </script>
       
-      <div class="puzzle-box no-print" id="pz-python-programming-6">
+      <div class="puzzle-box no-print" id="pz-python-programming-7">
         <h3>🧩 Dimaghi Kasrat — Jode Milayein</h3>
-        <p class="puzzle-status" id="pz-python-programming-6-status">Cards par tap karke jode (pairs) milayein.</p>
-        <div class="puzzle-grid" id="pz-python-programming-6-grid"></div>
-        <div class="puzzle-win" id="pz-python-programming-6-win">🎉 Shabaash! Sab jode mil gaye — thodi der aur seekhne ke liye tayyar?</div>
+        <p class="puzzle-status" id="pz-python-programming-7-status">Cards par tap karke jode (pairs) milayein.</p>
+        <div class="puzzle-grid" id="pz-python-programming-7-grid"></div>
+        <div class="puzzle-win" id="pz-python-programming-7-win">🎉 Shabaash! Sab jode mil gaye — thodi der aur seekhne ke liye tayyar?</div>
       </div>
       <script>
       (function(){
-        var emojis = ["🎯", "📚", "⭐", "🚀", "💡", "🏆"];
+        var emojis = ["🍎", "🐶", "🌙", "🎨", "🔑", "🌸"];
         var deck = emojis.concat(emojis);
         for (var i = deck.length - 1; i > 0; i--) {
           var j = Math.floor(Math.random() * (i + 1));
           var t = deck[i]; deck[i] = deck[j]; deck[j] = t;
         }
-        var grid = document.getElementById("pz-python-programming-6-grid");
-        var statusEl = document.getElementById("pz-python-programming-6-status");
-        var winEl = document.getElementById("pz-python-programming-6-win");
+        var grid = document.getElementById("pz-python-programming-7-grid");
+        var statusEl = document.getElementById("pz-python-programming-7-status");
+        var winEl = document.getElementById("pz-python-programming-7-win");
         var flipped = [], matchedCount = 0, moves = 0, lock = false;
         deck.forEach(function(val){
           var b = document.createElement("button");
@@ -352,24 +344,24 @@ my_car.display_info()  # Output: Car: Toyota Corolla, Year: 2022</code></pre><h3
       
       <div class="no-print" style="margin-top:14px;">
         <label for="fkc-notes" class="muted" style="display:block;margin-bottom:4px;">📝 Apni Note (sirf aapke is browser mein save hoti hai):</label>
-        <textarea id="fkc-notes" data-slug="python-programming" data-lesson="day-006"
+        <textarea id="fkc-notes" data-slug="python-programming" data-lesson="day-007"
           placeholder="Yahan apni note likhein..." rows="3"
           style="width:100%;border-radius:10px;border:1px solid #ddd;padding:8px;font-family:inherit;"
           oninput="fkcSaveNote(this)"></textarea>
       </div>
     
       <div class="no-print">
-        <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Python%20Programming%20%28Day%2006%29%0A%0ADay%206%20%E2%80%94%20Object-Oriented%20Programming%20%28OOP%29%20Basics%0A%0AConcept%3A%0AOOP%20programming%20ka%20ek%20powerful%20tareeqa%20hai%20jo%20real-world%20entities%20%28objects%29%20ko%20code%20mein%20represent%20karta%20hai.%20Classes%20aur%20objects%20ka%20istemal%20karke%20code%20ko%20organized%2C%20reusable%20aur%20maintainable%20banaya%20ja%20sakta%20hai.%20Aaj%20hum%20%60__init__%60%2C%20methods%2C%20aur%20attributes%20jaise%20basic%20OOP%20concepts%20seekhenge.%0A%0AExample%3A%0AEk%20%60Car%60%20class%20banate%20hain%20jo%20%60brand%60%2C%20%60model%60%2C%20aur%20%60year%60%20store%20karegi%3A%0A%60%60%60python%0Aclass%20Car%3A%0A%20%20%20%20def%20__init__%28self%2C%20brand%2C%20model%2C%20year%29%3A%0A%20%20%20%20%20%20%20%20self.brand%20%3D%20brand%0A%20%20%20%20%20%20%20%20self.model%20%3D%20model%0A%20%20%20%20%20%20%20%20self.year%20%3D%20year%0A%0A%20%20%20%20def%20display_info%28self%29%3A%0A%20%20%20%20%20%20%20%20print%28f%22Car%3A%20%7Bself.brand%7D%20%7Bself.model%7D%2C%20Year%3A%20%7Bself.year%7D%22%29%0A%0A%23%20Object%20create%20karna%0Amy_car%20%3D%20Car%28%22Toyota%22%2C%20%22Corolla%22%2C%202022%29%0Amy_car.display_info%28%29%20%20%23%20Output%3A%20Car%3A%20Toyota%20Corolla%2C%20Year%3A%202022%0A%60%60%60%0A%0APractice%3A%0AApni%20khud%20ki%20%60Student%60%20class%20banayein%20jo%20%60name%60%2C%20%60age%60%2C%20aur%20%60grade%60%20store%20kare.%20Ek%20method%20%60introduce%28%29%60%20add%20karein%20jo%20%22Hi%2C%20I%20am%20%5Bname%5D%2C%20I%20am%20%5Bage%5D%20years%20old%20and%20in%20grade%20%5Bgrade%5D%22%20print%20kare.%0A%0AMini%20Project%3A%0AEk%20%60BankAccount%60%20class%20banayein%20jo%20%60account_holder%60%20aur%20%60balance%60%20store%20kare.%20Methods%20%60deposit%28amount%29%60%20aur%20%60withdraw%28amount%29%60%20add%20karein.%20%60balance%60%20ko%20kabhi%20negative%20na%20hone%20dein.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
+        <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Python%20Programming%20%28Day%2007%29%0A%0ADay%207%20%E2%80%94%20Error%20Handling%3A%20Try-Except%20Blocks%0A%0AConcept%3A%0APrograms%20mein%20errors%20aana%20normal%20hai%E2%80%94jaise%20file%20na%20milna%2C%20division%20by%20zero%2C%20ya%20invalid%20input.%20%60try-except%60%20blocks%20in%20Python%20errors%20ko%20%22pakad%22%20kar%20unko%20handle%20karne%20mein%20madad%20karte%20hain.%20Isse%20program%20crash%20hone%20se%20bachta%20hai%20aur%20user-friendly%20messages%20show%20karte%20hain.%0A%0AExample%3A%0A%60%60%60python%0Atry%3A%0A%20%20%20%20num%20%3D%20int%28input%28%22Apna%20number%20likhein%3A%20%22%29%29%0A%20%20%20%20result%20%3D%2010%20/%20num%0A%20%20%20%20print%28%22Result%3A%22%2C%20result%29%0Aexcept%20ValueError%3A%0A%20%20%20%20print%28%22Error%3A%20Number%20hi%20likhna%20tha%21%22%29%0Aexcept%20ZeroDivisionError%3A%0A%20%20%20%20print%28%22Error%3A%20Zero%20se%20divide%20nahi%20ho%20sakta%21%22%29%0A%60%60%60%0A%0APractice%3A%0AEk%20program%20banayein%20jo%20user%20se%20ek%20file%20ka%20naam%20le%20aur%20usko%20read%20kare.%20Agar%20file%20na%20mile%20to%20%22File%20not%20found%21%22%20print%20kare%2C%20warna%20uski%20content%20dikhaye.%0A%0AMini%20Project%3A%0AEk%20simple%20calculator%20banayein%20jo%3A%0A1.%20User%20se%20do%20numbers%20le.%0A2.%20Operation%20%28%2B%2C%20-%2C%20%2A%2C%20/%29%20pooche.%0A3.%20Agar%20division%20by%20zero%20ho%20to%20%22Cannot%20divide%20by%20zero%21%22%20dikhaye.%0A4.%20Agar%20invalid%20operation%20ho%20to%20%22Invalid%20operation%21%22%20dikhaye.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
         <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
       <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
-          data-slug="python-programming" data-lesson="day-006"
+          data-slug="python-programming" data-lesson="day-007"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <div class="lesson-nav"><a class="btn alt" href="2026-08-11-day-005.html">← Day 5 — Functions: Reusable Code Blocks</a><a class="btn alt" href="2026-08-13-day-007.html">Day 7 — Error Handling: Try-Except Blocks →</a></div>
+    <div class="lesson-nav"><a class="btn alt" href="2026-08-12-day-006.html">← Day 6 — Object-Oriented Programming (OOP) Basics</a><span></span></div>
     <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
     
     
@@ -409,9 +401,9 @@ my_car.display_info()  # Output: Car: Toyota Corolla, Year: 2022</code></pre><h3
           slug: "python-programming",
           courseName: "Python Programming",
           courseIcon: "\ud83d\udc0d",
-          title: "Day 6 \u2014 Object-Oriented Programming (OOP) Basics",
-          href: 'courses/python-programming/posts/2026-08-12-day-006.html',
-          day: 6
+          title: "Day 7 \u2014 Error Handling: Try-Except Blocks",
+          href: 'courses/python-programming/posts/2026-08-13-day-007.html',
+          day: 7
         }));
       } catch (e) {}
       var ta = document.getElementById('fkc-notes');

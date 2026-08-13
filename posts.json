@@ -8678,6 +8678,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 7,
+      "id": "day-007",
+      "date": "2026-08-13",
+      "title": "Day 7 — Error Handling: Try-Except Blocks",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Programs mein errors aana normal hai—jaise file na milna, division by zero, ya invalid input. `try-except` blocks in Python errors ko \"pakad\" kar unko handle karne mein madad karte hain. Isse program crash hone se bachta hai aur user-friendly messages show karte hain."
+        ],
+        [
+          "Example",
+          "```python\ntry:\n    num = int(input(\"Apna number likhein: \"))\n    result = 10 / num\n    print(\"Result:\", result)\nexcept ValueError:\n    print(\"Error: Number hi likhna tha!\")\nexcept ZeroDivisionError:\n    print(\"Error: Zero se divide nahi ho sakta!\")\n```"
+        ],
+        [
+          "Practice",
+          "Ek program banayein jo user se ek file ka naam le aur usko read kare. Agar file na mile to \"File not found!\" print kare, warna uski content dikhaye."
+        ],
+        [
+          "Mini Project",
+          "Ek simple calculator banayein jo:\n1. User se do numbers le.\n2. Operation (+, -, *, /) pooche.\n3. Agar division by zero ho to \"Cannot divide by zero!\" dikhaye.\n4. Agar invalid operation ho to \"Invalid operation!\" dikhaye."
+        ]
+      ],
+      "answer_key": "file read error, zero division, invalid input, try-except",
+      "translations": {
+        "ur": {
+          "title": "دن ۷ — ایرر ہینڈلنگ: ٹرائی-ایکسپٹ بلاکس",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "پروگرامز میں ایررز آنا معمول کی بات ہے—جیسے فائل نہ ملنا، زیرو سے تقسیم کرنا، یا انوالڈ ان پٹ۔ پائیتھن میں `try-except` بلاکس ایررز کو \"پکڑ\" کر انہیں ہینڈل کرنے میں مدد دیتے ہیں۔ اس سے پروگرام کریش ہونے سے بچتا ہے اور صارف دوست پیغامات دکھائے جاتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "```python\ntry:\n    num = int(input(\"اپنا نمبر لکھیں: \"))\n    result = 10 / num\n    print(\"نتیجہ:\", result)\nexcept ValueError:\n    print(\"ایرر: نمبر ہی لکھنا تھا!\")\nexcept ZeroDivisionError:\n    print(\"ایرر: زیرو سے تقسیم نہیں ہو سکتی!\")\n```"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "ایک پروگرام بنائیں جو صارف سے ایک فائل کا نام لے اور اسے پڑھے۔ اگر فائل نہ ملے تو \"فائل نہیں ملی!\" پرنٹ کرے، ورنہ اس کی مواد دکھائے۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک سادہ کیلکولیٹر بنائیں جو:\n١۔ صارف سے دو نمبرز لے۔\n٢۔ آپریشن (+، −، ×، ÷) پوچھے۔\n٣۔ اگر زیرو سے تقسیم ہو تو \"زیرو سے تقسیم نہیں ہو سکتی!\" دکھائے۔\n٤۔ اگر انوالڈ آپریشن ہو تو \"انوالڈ آپریشن!\" دکھائے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "web-development": [
