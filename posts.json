@@ -13600,6 +13600,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 9,
+      "id": "day-009",
+      "date": "2026-08-13",
+      "title": "Day 9 — \"Doctor-Doctor ya Dukan-Dukan: Aise khelen ke sab theek rahe!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhein ge ke role-play games khelte waqt apne aap ka aur doosron ka khayal kaise rakhna hai. Jaise jab tum doctor ban ke injection lagate ho ya dukaan mein sabziyan bechte ho, yaad rakhna ke har kisi ka 'na' kehne ka haq hai. Agar koi tumhe 'secret' rakhne ke liye kaha jaaye, toh foran ammi/abbu ko batana hai—chahe woh koi bhi ho."
+        ],
+        [
+          "Chhoti Kahani",
+          "Areeba doctor banna chahti thi. Usne apne teddy bear ko patient banaya. Jab uske dost ne kaha, \"Injection lagate waqt chilla mat,\" toh Areeba ne socha, \"Par agar teddy bear ko dard ho?\" Usne apne dost se poochha, \"Tumhe lagta hai ke teddy bear ko injection lagana theek hai?\" Uske dost ne kaha, \"Nahi, agar koi 'na' kahe toh hume ruka dena chahiye.\" Areeba ne samajh liya ke har kisi ki feelings important hain."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar koi tumse khele aur tumhe lagta hai ke woh thoda alag sa hai, toh tum kya karogi?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Tumhara jism tumhara hai—agar koi cheez ajeeb lage, toh foran ammi/abbu ko batana!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن نَو — ڈاکٹر ڈاکٹر یا دُکان دُکان: ایسے کھیلیں کہ سب ٹھیک رہے!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "آج ہم سیکھیں گے کہ رول پلے گیمز کھیلتے وقت اپنے آپ کا اور دوسروں کا خیال کیسے رکھنا ہے۔ جیسے جب تم ڈاکٹر بن کے انجکشن لگاتے ہو یا دُکان میں سبزیاں بیچتے ہو، یاد رکھنا کہ ہر کسی کا ’نہ‘ کہنے کا حق ہے۔ اگر کوئی تمہیں ’سیکرٹ‘ رکھنے کے لیے کہے، تو فوراً امی/ابّو کو بتانا ہے—چاہے وہ کوئی بھی ہو۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "عریبہ ڈاکٹر بننا چاہتی تھی۔ اس نے اپنے ٹیڈی بیئر کو مریض بنایا۔ جب اس کے دوست نے کہا، ’انجکشن لگاتے وقت چِلّا مت،‘ تو عریبہ نے سوچا، ’پر اگر ٹیڈی بیئر کو درد ہو؟‘ اس نے اپنے دوست سے پوچھا، ’تمہیں لگتا ہے کہ ٹیڈی بیئر کو انجکشن لگانا ٹھیک ہے؟‘ اس کے دوست نے کہا، ’نہیں، اگر کوئی نہ کہے تو ہمیں رُک جانا چاہیے۔‘ عریبہ نے سمجھ لیا کہ ہر کسی کی فیْلِنگز اِیمپورٹنٹ ہیں۔"
+            },
+            {
+              "label": "امی ابّو کے ساتھ بات کریں",
+              "content": "’بیٹا، اگر کوئی تم سے کھیلے اور تمہیں لگے کہ وہ تھوڑا الگ سا ہے، تو تم کیا کرو گے؟‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمہارا جسم تمہارا ہے—اگر کوئی چیز عجیب لگے، تو فوراً امی/ابّو کو بتانا!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-good-behavior": [
