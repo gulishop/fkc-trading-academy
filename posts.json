@@ -5040,6 +5040,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 9,
+      "id": "day-009",
+      "date": "2026-08-14",
+      "title": "Day 9 — **Automated Email Sequences: Apne Customers Ko Repeat Khareedne Par Majboor Karne Ka Formula**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke kaise automated email sequences (welcome, abandoned cart, post-purchase) se apne customers ko dobara khareedne par majboor kar sakte hain. Har email ka specific purpose hota hai—trust build karna, urgency create karna, ya discount offer karna. Yeh system bina manual follow-up ke 20-30% extra sales generate kar sakta hai."
+        ],
+        [
+          "Example",
+          "Ek customer ne aapka product cart mein add kiya lekin payment complete nahi kiya. Ab aapko 3 automated emails bhejne hain:\n1."
+        ],
+        [
+          "1st Email (1 hour baad)",
+          "\"Aapka cart khali ho gaya!\" + 10% discount code.\n2."
+        ],
+        [
+          "2nd Email (24 hours baad)",
+          "\"Aapka favorite product wait kar raha hai!\" + scarcity (\"Only 3 left!\").\n3."
+        ],
+        [
+          "3rd Email (48 hours baad)",
+          "\"Last chance! 24 hours mein discount khatam ho jayega.\""
+        ],
+        [
+          "Practice",
+          "Apne Shopify store mein **Klaviyo** ya **Mailchimp** setup karein aur ek abandoned cart email sequence create karein (3 emails, 10% discount offer)."
+        ],
+        [
+          "Mini Project",
+          "Ek **post-purchase email sequence** design karein jismein:\n- Thank you email (order confirmation)\n- Review request (5 days baad)\n- Upsell offer (10 days baad, related product)"
+        ]
+      ],
+      "answer_key": "welcome email, abandoned cart reminder, scarcity, post-purchase upsell",
+      "translations": {
+        "ur": {
+          "title": "دن 9 — آٹومیٹڈ ای میل سیقوینسز: اپنے کسٹمرز کو دوبارہ خریدنے پر مجبور کرنے کا فارمولا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم سیکھیں گے کہ کیسے آٹومیٹڈ ای میل سیقوینسز (ویلکم، کارٹ چھوڑنے والے، پوسٹ پرچیز) کے ذریعے اپنے کسٹمرز کو دوبارہ خریدنے پر مجبور کیا جا سکتا ہے۔ ہر ای میل کا ایک مخصوص مقصد ہوتا ہے — ٹرسٹ بنانا، اَرجنسی پیدا کرنا، یا ڈِسکانٹ آفر کرنا۔ یہ سسٹم بغیر مینوئل فالو اپ کے 20-30% اضافی سیلز جنریٹ کر سکتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک کسٹمر نے آپ کا پروڈکٹ کارٹ میں شامل کیا لیکن ادائیگی مکمل نہیں کی۔ اب آپ کو 3 آٹومیٹڈ ای میلز بھیجنے ہیں:\n\n۱۔ پہلی ای میل (ایک گھنٹے بعد): \"آپ کا کارٹ خالی ہو گیا!\" + 10% ڈِسکانٹ کوڈ۔\n۲۔ دوسری ای میل (24 گھنٹے بعد): \"آپ کا پسندیدہ پروڈکٹ انتظار کر رہا ہے!\" + کمیابی (\"صرف 3 باقی ہیں!\")\n۳۔ تیسری ای میل (48 گھنٹے بعد): \"آخری موقع! 24 گھنٹے میں ڈِسکانٹ ختم ہو جائے گا۔\""
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے Shopify اسٹور میں Klaviyo یا Mailchimp سیٹ اپ کریں اور ایک کارٹ چھوڑنے والی ای میل سیقوینس بنائیں (3 ای میلز، 10% ڈِسکانٹ آفر کے ساتھ)"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک پوسٹ پرچیز ای میل سیقوینس ڈیزائن کریں جس میں شامل ہو:\n- تھینک یو ای میل (آرڈر کنفرمیشن)\n- ریویو ریクویسٹ (5 دن بعد)\n- اپ سیل آفر (10 دن بعد، متعلقہ پروڈکٹ)"
+            }
+          ]
+        }
+      }
     }
   ],
   "freelancing": [
