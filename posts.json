@@ -13802,6 +13802,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 12,
+      "id": "day-012",
+      "date": "2026-08-14",
+      "title": "Day 12 — **Mobile Charging Circuit Faults: Diagnosis aur Repair**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Mobile charging circuit mein common faults ko identify karna aur repair karna seekhiye. Charging port se lekar battery tak ka complete path check karna hai—har component (charging IC, fuse, diode, resistor) ki role samajhiye. Faults jaise \"not charging\", \"slow charging\", ya \"charging but not turning on\" ko trace karne ke liye multimeter aur schematics ka use karna hai."
+        ],
+        [
+          "Example",
+          "*Problem:* Samsung Galaxy S20 charging nahi kar raha, lekin charging port ko clean karne ke baad bhi same issue hai.\n*Diagnosis:*\n1. Battery voltage check karo (3.7V se kam?).\n2. Charging port ke pins par voltage check karo (5V expected).\n3. Charging IC (PMIC) ke input/output pins check karo.\n4. Fuse ya resistor (R1201) check karo agar open ho."
+        ],
+        [
+          "Practice",
+          "Apne kisi old/broken phone ka charging circuit diagram download karo (Google par \"Samsung S20 charging circuit diagram\" search karo). Multimeter se charging port ke pins par voltage check karo aur ek fault diagnose karo (e.g., pin 1 par 0V hai, lekin expected 5V hai)."
+        ],
+        [
+          "Mini Project",
+          "Ek broken charging port wale phone ko lekar:\n- Charging port ko replace karo.\n- Charging IC ke input/output pins par voltage check karo.\n- Agar charging IC faulty hai, to use replace karo ya reball karo."
+        ]
+      ],
+      "answer_key": "battery voltage low, charging port pins 0v, charging ic input 0v, fuse open",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۲ — موبائل چارجنگ سرکٹ کے فالٹس: تشخیص اور مرمت",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "موبائل چارجنگ سرکٹ میں عام فالٹس کی شناخت اور مرمت کرنا سیکھیں۔ چارجنگ پورٹ سے لے کر بیٹری تک کا مکمل راستہ چیک کرنا ہے—ہر جزو (چارجنگ آئی سی، فیوز، ڈائیوڈ، ریزسٹر) کا کردار سمجھیں۔ فالٹس جیسے کہ \"چارج نہیں ہو رہا\"، \"سست چارجنگ\"، یا \"چارج ہو رہا ہے مگر فون آن نہیں ہو رہا\" کو ٹریس کرنے کے لیے ملٹی میٹر اور سکیمٹکس کا استعمال کریں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "*مسئلہ:* سام سنگ گیلکسی ایس ۲۰ چارج نہیں ہو رہا، لیکن چارجنگ پورٹ کو صاف کرنے کے بعد بھی وہی مسئلہ ہے۔\n*تشخیص:*\n۱۔ بیٹری وولٹیج چیک کریں (۳.۷ وولٹ سے کم؟)\n۲۔ چارجنگ پورٹ کے پنوں پر وولٹیج چیک کریں (۵ وولٹ متوقع ہے)\n۳۔ چارجنگ آئی سی (پی ایم آئی سی) کے ان پٹ/آؤٹ پٹ پن چیک کریں\n۴۔ فیوز یا ریزسٹر (آر ۱۲۰۱) چیک کریں اگر اوپن ہو۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے کسی پرانے/خراب فون کا چارجنگ سرکٹ ڈایاگرام ڈاؤن لوڈ کریں (گوگل پر \"سام سنگ ایس ۲۰ چارجنگ سرکٹ ڈایاگرام\" سرچ کریں)۔ ملٹی میٹر سے چارجنگ پورٹ کے پنوں پر وولٹیج چیک کریں اور ایک فالٹ کی تشخیص کریں (مثلاً پن ۱ پر ۰ وولٹ ہے، لیکن متوقع ۵ وولٹ ہے)"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک خراب چارجنگ پورٹ والے فون کو لے کر:\n- چارجنگ پورٹ کو تبدیل کریں\n- چارجنگ آئی سی کے ان پٹ/آؤٹ پٹ پنوں پر وولٹیج چیک کریں\n- اگر چارجنگ آئی سی خراب ہے تو اسے تبدیل کریں یا ری بال کریں"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-safety-education": [
