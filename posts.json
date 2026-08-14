@@ -3971,6 +3971,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 9,
+      "id": "day-009",
+      "date": "2026-08-14",
+      "title": "Day 9 — **Daraz Par Competitor Analysis Se Profit Margin Badhane Ka Tarika**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Competitor analysis se pata chalta hai ke market mein kaunse products beche ja rahe hain, unki pricing kya hai, aur unke weaknesses kya hain. Isse apne product ko behtar banaya ja sakta hai aur profit margin increase kiya ja sakta hai."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Product Research",
+          "Daraz par ek product search karein (e.g., \"Wireless Earbuds\").\n2."
+        ],
+        [
+          "Top Sellers Check",
+          "Top 5 listings ke pricing, reviews, aur product details ko note karein.\n3."
+        ],
+        [
+          "Gap Analysis",
+          "Dekhein ke kya features missing hain ya pricing zyada hai. (e.g., agar competitors Rs. 5,000 mein bech rahe hain, lekin koi Rs. 4,500 mein beche to uski pricing strategy ko analyze karein.)"
+        ],
+        [
+          "Practice",
+          "Apne niche ke top 3 competitors ke listings ko open karein aur unki pricing, reviews, aur product specifications ko note karein. Phir ek short comparison table banayein."
+        ],
+        [
+          "Mini Project",
+          "Apne product ke liye ek **competitor pricing chart** banayein jismein:\n- Competitor ka product name\n- Unka price\n- Unke reviews (rating)\n- Unke weaknesses (agar koi ho)"
+        ]
+      ],
+      "answer_key": "competitor names, pricing range, review ratings, product gaps",
+      "translations": {
+        "ur": {
+          "title": "دن نائن — **داراز پر مقابلہ جاتی تجزیے سے منافع کا مارجن بڑھانے کا طریقہ**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "مقابلہ جاتی تجزیے سے پتا چلتا ہے کہ مارکیٹ میں کون سے پروڈکٹس بیچے جا رہے ہیں، ان کی پرائسنگ کیا ہے، اور ان کی کمزوریاں کیا ہیں۔ اس سے اپنے پروڈکٹ کو بہتر بنایا جا سکتا ہے اور منافع کا مارجن بڑھایا جا سکتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ پروڈکٹ ریسرچ: داراز پر کوئی پروڈکٹ سرچ کریں (مثلاً، \"وائرلیس ایئر بڈز\")۔\n۲۔ ٹاپ سیلرز چیک: ٹاپ ۵ لسٹنگز کی پرائسنگ، ریویوز، اور پروڈکٹ کی تفصیلات نوٹ کریں۔\n۳۔ گیپ اینالسس: دیکھیں کہ کون سے فیچرز غائب ہیں یا پرائسنگ زیادہ ہے۔ (مثلاً، اگر مقابلہ کرنے والے ۵۰۰۰ روپے میں بیچ رہے ہیں، لیکن کوئی ۴۵۰۰ روپے میں بیچے تو اس کی پرائسنگ سٹریٹیجی کا تجزیہ کریں۔)"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے نیچ کے ٹاپ ۳ مقابلہ کرنے والوں کی لسٹنگز کھولیں اور ان کی پرائسنگ، ریویوز، اور پروڈکٹ کی تفصیلات نوٹ کریں۔ پھر ایک مختصر موازنہ ٹیبل بنائیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "اپنے پروڈکٹ کے لیے ایک **مقابلہ جاتی پرائسنگ چارٹ** بنائیں جس میں شامل ہو:\n- مقابلہ کرنے والے کا پروڈکٹ کا نام\n- ان کی قیمت\n- ان کے ریویوز (ریٹنگ)\n- ان کی کمزوریاں (اگر کوئی ہوں)"
+            }
+          ]
+        }
+      }
     }
   ],
   "ai-content-writing": [
