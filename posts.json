@@ -7232,6 +7232,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 4,
+      "id": "day-004",
+      "date": "2026-08-14",
+      "title": "Day 4 — **Advanced Transitions: Motion aur Energy Badhaein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum advanced transitions par focus karenge jo aapke edits ko professional aur engaging banayein. Simple cuts ke alag, motion-based transitions (jaise zoom, spin, slide) aur effects (glitch, blur, color shifts) use karke apne videos ko dynamic banayein. Yeh transitions pacing ko maintain karte hue visual interest bhi add karte hain."
+        ],
+        [
+          "Example",
+          "CapCut mein:\n1. Do clips select karo.\n2. \"Transition\" tab mein \"Zoom\" ya \"Slide\" choose karo.\n3. Transition duration adjust karo (0.5-1 second ideal hai).\n4. \"Apply\" par click karo — ab clip change hone par zoom-in/out ya slide effect aayega.\n\nPremiere Pro mein:\n1. Razor tool se clips cut karo.\n2. Transition folder se \"Dip to Black\" ya \"Cross Dissolve\" drag karo clips ke beech.\n3. Duration ko 15-30 frames par set karo (Ctrl+K se trim adjust karo)."
+        ],
+        [
+          "Practice",
+          "Apne phone ya laptop se 2-3 clips record karo (e.g., walking, talking, object move karte hue). Unhe CapCut/Premiere mein import karo aur **2 alag advanced transitions** apply karo (ek motion-based, ek effect-based)."
+        ],
+        [
+          "Mini Project",
+          "Ek 15-second ka \"transition showcase\" video banayein jismein:\n- 3 alag transitions hon (e.g., zoom, glitch, slide).\n- Har transition ke beech 1-2 second ka gap ho.\n- Background music ho jo transitions ke timing se match kare."
+        ]
+      ],
+      "answer_key": "zoom, slide, glitch effect, dip to black",
+      "translations": {
+        "ur": {
+          "title": "دن 4 — ایڈوانسڈ ٹرانزیشنز: موشن اور انرجی بڑھائیں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "آج ہم ایڈوانسڈ ٹرانزیشنز پر فوکس کریں گے جو آپ کے ایڈٹس کو پیشہ ورانہ اور دلچسپ بنائیں۔ سادہ کٹس کے برعکس، موشن بیسڈ ٹرانزیشنز (جیسے زوم، سپِن، سلائیڈ) اور ایفیکٹس (گلیچ، بلر، کلر شفٹس) استعمال کرکے اپنے ویڈیوز کو متحرک بنائیں۔ یہ ٹرانزیشنز پیسنگ کو برقرار رکھتے ہوئے بصری دلچسپی بھی شامل کرتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "کیپ کٹ میں:\n١۔ دو کلپس سلیکٹ کریں۔\n٢۔ \"ٹرانزیشن\" ٹیب میں \"زوم\" یا \"سلائیڈ\" چُنیں۔\n٣۔ ٹرانزیشن دوریشن ایڈجسٹ کریں (٠.٥ سے ١ سیکنڈ مثالی ہے)۔\n٤۔ \"ایپلائی\" پر کلک کریں — اب کلپ تبدیل ہوتے وقت زوم اِن/آؤٹ یا سلائیڈ ایفیکٹ آئے گا۔\n\nپریمیر پرو میں:\n١۔ ریزر ٹول سے کلپس کاٹیں۔\n٢۔ ٹرانزیشن فولڈر سے \"ڈپ ٹو بلیک\" یا \"کراس ڈِزالو\" کلپس کے درمیان ڈریگ کریں۔\n٣۔ دوریشن کو ١٥ سے ٣٠ فریمز پر سیٹ کریں (Ctrl+K سے ٹریم ایڈجسٹ کریں)।"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے فون یا لیپ ٹاپ سے ٢-٣ کلپس ریکارڈ کریں (مثال کے طور پر چلتے ہوئے، بات کرتے ہوئے، کوئی چیز حرکت کرتے ہوئے)۔ انہیں کیپ کٹ/پریمیر میں امپورٹ کریں اور ٢ الگ ایڈوانسڈ ٹرانزیشنز لگائیں (ایک موشن بیسڈ، ایک ایفیکٹ بیسڈ)।"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک ١٥ سیکنڈ کا \"ٹرانزیشن شوکیس\" ویڈیو بنائیں جس میں:\n- ٣ الگ ٹرانزیشنز ہوں (مثال کے طور پر زوم، گلیچ، سلائیڈ)۔\n- ہر ٹرانزیشن کے درمیان ١-٢ سیکنڈ کا وقفہ ہو۔\n- بیک گراؤنڈ میوزک ہو جو ٹرانزیشنز کے ٹائمنگ سے میچ کرے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "print-on-demand": [
