@@ -1891,6 +1891,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 11,
+      "id": "day-011",
+      "date": "2026-08-14",
+      "title": "Day 11 — **AI-Powered Social Media Strategy: Smart Planning Se Results Badhao**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "AI tools ab sirf content creation ya analytics tak hi nahi, balki *social media strategy* banane mein bhi help kar rahe hain. AI se aap apne target audience, best posting times, aur even content gaps ko identify kar sakte hain. For example, AI tools like **Hootsuite Insights** ya **Sprout Social** se competitor analysis karke pata chalta hai ki konsa content perform kar raha hai."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Audience Insights",
+          "AI tool se pata chalta hai ki aapki audience 25-35 saal ki women hain jo fitness content prefer karti hain.\n2."
+        ],
+        [
+          "Content Gap Analysis",
+          "AI compare karta hai aapke competitors ke content se aur batata hai ki aapko kya missing hai (e.g., \"rehabilitation exercises\" ka topic cover nahi hai).\n3."
+        ],
+        [
+          "Optimal Posting Time",
+          "AI batata hai ki subah 9 AM ya sham 7 PM sabse behtar hai."
+        ],
+        [
+          "Practice",
+          "Apne niche ke 3 competitors ke Instagram/LinkedIn profiles ko AI tool (jaise **SocialBee** ya **Buffer**) mein paste karke dekhiye ki unke top-performing posts kaun se hain. 2-3 keywords note kar lijiye jo unke content mein repeat ho rahe hain."
+        ],
+        [
+          "Mini Project",
+          "Ek **1-week ka AI-generated content calendar** banaiye:\n- Monday: Competitor analysis se nikle 2 keywords par reel/video.\n- Wednesday: Audience insights se nikle 1 trending topic par carousel post.\n- Friday: User-generated content (UGC) ko promote karne ka post."
+        ]
+      ],
+      "answer_key": "competitor analysis, trending topics, audience insights, ugc promotion",
+      "translations": {
+        "ur": {
+          "title": "دن 11 — **اے آئی سے چلنے والی سوشل میڈیا اسٹریٹیجی: سمارٹ پلاننگ سے نتائج بڑھائیں**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "اے آئی ٹولز اب صرف مواد کی تخلیق یا تجزیات تک ہی محدود نہیں رہے، بلکہ سوشل میڈیا اسٹریٹیجی بنانے میں بھی مدد فراہم کر رہے ہیں۔ اے آئی کی مدد سے آپ اپنے ہدف کے ناظرین، بہترین پوسٹنگ کے اوقات، اور یہاں تک کہ مواد کے خلا کو بھی شناخت کر سکتے ہیں۔ مثال کے طور پر، **Hootsuite Insights** یا **Sprout Social** جیسے اے آئی ٹولز سے مقابلہ کے تجزیے کے ذریعے پتا چلتا ہے کہ کون سا مواد بہتر کارکردگی دکھا رہا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ ناظرین کے بصیرت: اے آئی ٹول سے پتا چلتا ہے کہ آپ کے ناظرین 25-35 سال کی خواتین ہیں جو فٹنس کے مواد کو ترجیح دیتی ہیں۔\n۲۔ مواد کے خلا کا تجزیہ: اے آئی آپ کے حریفوں کے مواد کا موازنہ کرتا ہے اور بتاتا ہے کہ آپ سے کیا چیز غائب ہے (مثلاً، \"ری ہیبلیٹیشن ورزشیں\" کا موضوع کور نہیں کیا گیا ہے)۔\n۳۔ بہترین پوسٹنگ کا وقت: اے آئی بتاتا ہے کہ صبح 9 بجے یا شام 7 بجے سب سے بہتر وقت ہے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے شعبے کے تین حریفوں کے انسٹاگرام یا لنکڈ ان پروفائلز کو اے آئی ٹول (جیسے **SocialBee** یا **Buffer**) میں پیسٹ کر کے دیکھیں کہ ان کی سب سے زیادہ کارکردگی دکھانے والی پوسٹس کون سی ہیں۔ ان کے مواد میں بار بار آنے والے 2-3 کلیدی الفاظ نوٹ کر لیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک ہفتے کا اے آئی سے تیار کردہ مواد کا کیلنڈر بنائیں:\n- پیر: مقابلہ کے تجزیے سے نکلے ہوئے 2 کلیدی الفاظ پر رییل یا ویڈیو۔\n- بدھ: ناظرین کے بصیرت سے نکلے ہوئے ایک ٹرینڈنگ موضوع پر کاروسل پوسٹ۔\n- جمعہ: صارفین کی تخلیق کردہ مواد (یو جی سی) کو فروغ دینے کی پوسٹ۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "facebook-page-growth": [
