@@ -14116,6 +14116,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 10,
+      "id": "day-010",
+      "date": "2026-08-14",
+      "title": "Day 10 — **Apne Real Estate Business Ko Scale Karne Ke 3 Powerful Steps**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Apne business ko scale karna matlab hai apne operations ko expand karna taake zyada deals ho sakein, team build ho, aur efficiency badhe. Iske liye 3 key areas par focus karna hota hai: **Team Building**, **Process Automation**, aur **Brand Expansion**. Agar aap akela kaam kar rahe hain, toh ek team banane se deals ka volume badhta hai. Agar processes manual hain, toh automation se time bachta hai. Aur agar aapka brand strong nahi hai, toh clients trust nahi banate."
+        ],
+        [
+          "Example",
+          "Imagine aap akela property dealer hain. Aapko har deal ke liye personally market karna, documents verify karne hain, aur clients ko follow-up karna hai. Ab agar aap ek **property consultant** aur ek **legal assistant** ko hire kar lein, toh aapka focus sirf high-value tasks par rahega. Iske alawa, agar aap **CRM software** (jaise HubSpot ya Zoho) use karna shuru kar dein, toh client tracking aur follow-ups automatic ho jayein."
+        ],
+        [
+          "Practice",
+          "Aaj hi ek list banaein:\n1. Apne business ke sabse time-consuming tasks identify karo (jaise documents verify karna, listings update karna).\n2. Unmein se 1 task ko automate karne ka plan banao (jaise Excel se CRM par shift karna).\n3. Agar aapke paas budget hai, toh ek freelancer ya part-time assistant hire karne ke options explore karo."
+        ],
+        [
+          "Mini Project",
+          "**\"Team Building Plan\"**\n- Ek simple Excel sheet banao jismein 3 roles ke liye job descriptions likho (jaise \"Property Researcher\", \"Client Coordinator\", \"Marketing Specialist\").\n- Har role ke liye 2-3 key responsibilities bhi mention karo.\n- Agar aapko lagta hai ki aapko abhi team ki zaroorat nahi, toh isko future ke liye save kar lo."
+        ]
+      ],
+      "answer_key": "team hire karna, automation tools, crm software, brand expansion",
+      "translations": {
+        "ur": {
+          "title": "دن ١٠ — اپنے رئیل اسٹیٹ بزنس کو سکیل کرنے کے ٣ طاقتور قدم",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "اپنے بزنس کو سکیل کرنا کا مطلب ہے اپنے آپریشنز کو توسیع دینا تاکہ زیادہ ڈیلز ہو سکیں، ٹیم بن سکے، اور ایفیشینسی بڑھے۔ اس کے لیے ٣ کلیدی شعبوں پر توجہ دینا ہوتی ہے: **ٹیم بلڈنگ**، **پروسیس آٹومیشن**، اور **برانڈ ایکسپینشن**۔ اگر آپ اکیلے کام کر رہے ہیں، تو ایک ٹیم بنانے سے ڈیلز کا حجم بڑھتا ہے۔ اگر پروسیسز مینوئل ہیں، تو آٹومیشن سے وقت بچتا ہے۔ اور اگر آپ کا برانڈ مضبوط نہیں ہے، تو کلائنٹس ٹرسٹ نہیں بناتے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "تصور کریں آپ اکیلے پراپرٹی ڈیلر ہیں۔ آپ کو ہر ڈیل کے لیے ذاتی طور پر مارکیٹنگ کرنی ہے، دستاویزات کی تصدیق کرنی ہے، اور کلائنٹس کو فالو اپ کرنا ہے۔ اب اگر آپ ایک **پراپرٹی کنسلٹنٹ** اور ایک **لیگل اسسٹنٹ** کو ہائر کر لیں، تو آپ کا فوکس صرف ہائی ویلیو ٹاسکس پر رہے گا۔ اس کے علاوہ، اگر آپ **سی آر ایم سوفٹویئر** (جیسے ہب اسپاٹ یا زوہو) استعمال کرنا شروع کر دیں، تو کلائنٹ ٹریکنگ اور فالو اپس خودکار ہو جائیں گے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "آج ہی ایک لسٹ بنائیں:\n١۔ اپنے بزنس کے سب سے زیادہ وقت لینے والے ٹاسکس کی شناخت کریں (جیسے دستاویزات کی تصدیق کرنا، لسٹنگز اپڈیٹ کرنا)۔\n٢۔ ان میں سے ایک ٹاسک کو آٹومیٹ کرنے کا پلان بنائیں (جیسے ایکسل سے سی آر ایم پر شفٹ کرنا)۔\n٣۔ اگر آپ کے پاس بجٹ ہے، تو ایک فری لانسر یا پارٹ ٹائم اسسٹنٹ ہائر کرنے کے آپشنز تلاش کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "**\"ٹیم بلڈنگ پلان\"**\nایک سادہ ایکسل شیٹ بنائیں جس میں ٣ رولز کے لیے جاب ڈسکرپشنز لکھیں (جیسے \"پراپرٹی ریسرچر\"، \"کلائنٹ کوآرڈینیٹر\"، \"مارکیٹنگ سپیشلسٹ\")۔\nہر رول کے لیے ٢-٣ کلیدی ذمہ داریاں بھی ذکر کریں۔\nاگر آپ کو لگتا ہے کہ آپ کو ابھی ٹیم کی ضرورت نہیں ہے، تو اسے مستقبل کے لیے محفوظ کر لیں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "mobile-repairing": [
