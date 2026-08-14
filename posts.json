@@ -9942,6 +9942,72 @@
           ]
         }
       }
+    },
+    {
+      "day": 11,
+      "id": "day-011",
+      "date": "2026-08-14",
+      "title": "Day 11 — **Meta Tags aur SEO Basics: Apni Website Ko Google Par Dikhana**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Meta tags HTML ke `<head>` section mein hoti hain jo search engines (jaise Google) ko batati hain ke aapki website kya hai. SEO (Search Engine Optimization) ka matlab hai apni website ko search results mein upar lane ke liye techniques use karna. Meta tags aur SEO ke basics se aapki website zyada visible aur professional dikhegi."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Meta Tags ka Structure",
+          "```html\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <meta name=\"description\" content=\"Meri portfolio website jahan main apne web development projects dikhata hoon.\">\n  <meta name=\"keywords\" content=\"web development, portfolio, HTML, CSS\">\n  <title>Mera Portfolio | Web Developer</title>\n</head>\n```\n2."
+        ],
+        [
+          "SEO ka Basic Step",
+          "- Apni website ka `title` aur `description` meta tags mein unique aur relevant rakho.\n- `keywords` meta tag ab kam use hota hai, lekin `description` Google search results mein show hoti hai."
+        ],
+        [
+          "Practice",
+          "Apni portfolio website ke `<head>` section mein yeh meta tags add karo:\n- `description` mein apne portfolio ka 1-2 line ka introduction likho.\n- `title` ko \"Mera Portfolio | [Apna Naam]\" format mein change karo."
+        ],
+        [
+          "Mini Project",
+          "Ek **SEO-friendly blog post** banayein:\n1. Ek HTML file banayein (`blog.html`).\n2. Uske `<head>` mein meta tags add karo (title, description, viewport).\n3. Page par ek heading (`<h1>`) aur 2-3 paragraphs likhein.\n4. Google par \"site:apni-website.com\" search karke check karo ke meta tags kaise dikhte hain."
+        ]
+      ],
+      "answer_key": "title tag, description meta, viewport meta, seo-friendly content",
+      "translations": {
+        "ur": {
+          "title": "دن 11 — میٹا ٹیگز اور ایس ای او بنیادی باتیں: اپنی ویب سائٹ کو گوگل پر دکھانا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "میٹا ٹیگز ایچ ٹی ایم ایل کے `<head>` سیکشن میں ہوتی ہیں جو سرچ انجنز (جیسے گوگل) کو بتاتی ہیں کہ آپ کی ویب سائٹ کیا ہے۔ ایس ای او (سرچ انجن آپٹیمائزیشن) کا مطلب ہے اپنی ویب سائٹ کو سرچ نتائج میں اوپر لانے کے لیے تکنیکس استعمال کرنا۔ میٹا ٹیگز اور ایس ای او کی بنیادی باتوں سے آپ کی ویب سائٹ زیادہ نظر آئے گی اور پیشہ ورانہ دکھے گی۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1۔\nمیٹا ٹیگز کا اسٹرکچر:"
+            },
+            {
+              "label": "میٹا ٹیگز کا اسٹرکچر",
+              "content": "```html\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <meta name=\"description\" content=\"میری پورٹ فولیو ویب سائٹ جہاں میں اپنے ویب ڈویلپمنٹ پروجیکٹس دکھاتا ہوں۔\">\n  <meta name=\"keywords\" content=\"ویب ڈویلپمنٹ، پورٹ فولیو، ایچ ٹی ایم ایل، سی ایس ایس\">\n  <title>میرا پورٹ فولیو | ویب ڈویلپر</title>\n</head>\n```\n2۔\nایس ای او کا بنیادی قدم:"
+            },
+            {
+              "label": "ایس ای او کا بنیادی قدم",
+              "content": "- اپنی ویب سائٹ کا `title` اور `description` میٹا ٹیگز میں منفرد اور متعلقہ رکھو۔\n- `keywords` میٹا ٹیگ اب کم استعمال ہوتا ہے، لیکن `description` گوگل سرچ نتائج میں دکھائی دیتی ہے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنی پورٹ فولیو ویب سائٹ کے `<head>` سیکشن میں یہ میٹا ٹیگز شامل کرو:\n- `description` میں اپنے پورٹ فولیو کا 1-2 لائن کا تعارف لکھو۔\n- `title` کو \"میرا پورٹ فولیو | [اپنا نام]\" فارمیٹ میں تبدیل کرو۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **ایس ای او دوستانہ بلاگ پوسٹ** بنائیں:\n1۔ ایک ایچ ٹی ایم ایل فائل بنائیں (`blog.html`)۔\n2۔ اس کے `<head>` میں میٹا ٹیگز شامل کریں (title, description, viewport)۔\n3۔ صفحے پر ایک ہیڈنگ (`<h1>`) اور 2-3 پیراگراف لکھیں۔\n4۔ گوگل پر \"site:اپنی-ویب سائٹ.com\" سرچ کرکے چیک کریں کہ میٹا ٹیگز کیسے دکھائی دیتے ہیں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "excel-data-analysis": [
