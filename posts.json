@@ -14444,6 +14444,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 10,
+      "id": "day-010",
+      "date": "2026-08-14",
+      "title": "Day 10 — \"Parivar ka Pyaara Game Night: Screen se door, dil se paas!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke screen ke bina bhi kitne mazaydar games khele ja sakte hain! Sabse zyada important yeh hai ke tumhara jism tumhara hi hai—kisi ko bhi tumse yeh kehne ka haq nahi ke tum \"na\" kehne se dar jao. Agar koi tumhe barbaad karne ko kahe ya tumhe ajeeb lage, toh foran ammi-abbu ya kisi trusted bade ko batana hai—chahe woh koi secret hi kyun na ho."
+        ],
+        [
+          "Chhoti Kahani",
+          "Areeba ke ghar mein sabke liye ek \"Game Night\" thi. Sabne mil kar \"Antakshari\" khela. Areeba ne \"A\" se shuru kiya, uske dada ne \"Aam\" bola, phir uski behen ne \"Aaloo\"… aur aise hi sabne mil kar khela. Sabke chehre khush the! Koi screen nahi, sirf ek doosre ke saath mazay karna."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar koi tumhe kisi game mein barbaad karne ko kahe, toh tum kya karoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Tumhara jism tumhara hai—\"na\" kehne ka pura haq hai! Agar koi tumhe darae ya ajeeb lage, toh foran batana hai."
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۰ — \"پَرِوار کا پیارا گیم نائٹ: سکرین سے دور، دِل سے پاس!\"",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "آج ہم سیکھیں گے کہ سکرین کے بغیر بھی کتنے مزے دار گیمز کھیلے جا سکتے ہیں! سب سے زیادہ اہم یہ ہے کہ تمہارا جسم تمہارا ہی ہے—کسی کو بھی تم سے یہ کہنے کا حق نہیں کہ تم \"نا\" کہنے سے ڈر جاؤ۔ اگر کوئی تمہیں برباد کرنے کو کہے یا تمہیں عجیب لگے، تو فوراً امی ابّو یا کسی بھروسے مند بڑے کو بتانا ہے—چاہے وہ کوئی راز ہی کیوں نہ ہو۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "عریبہ کے گھر میں سب کے لیے ایک \"گیم نائٹ\" تھی۔ سب نے مل کر \"انٹک شری\" کھیلا۔ عریبہ نے \"الف\" سے شروع کیا، اس کے دادا نے \"آم\" کہا، پھر اس کی بہن نے \"آلو\"… اور ایسے ہی سب نے مل کر کھیلا۔ سب کے چہرے خوش تھے! کوئی سکرین نہیں، صرف ایک دوسرے کے ساتھ مزے کرنا۔"
+            },
+            {
+              "label": "امی ابّو کے ساتھ بات کریں",
+              "content": "\"بیٹا، اگر کوئی تمہیں کسی گیم میں برباد کرنے کو کہے، تو تم کیا کرو گے؟\""
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمہارا جسم تمہارا ہے—\"نا\" کہنے کا پورا حق ہے! اگر کوئی تمہیں ڈرائے یا عجیب لگے، تو فوراً بتانا ہے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-good-behavior": [
