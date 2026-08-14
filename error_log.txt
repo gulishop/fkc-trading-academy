@@ -711,3 +711,6 @@
 [2026-08-14T23:07:51.059390] [tiktok-growth] Day 2 video skip: Agnes aur ffmpeg dono attempts fail.
 [2026-08-14T23:07:58.659143] [tiktok-growth] Day 3 video skip: Agnes aur ffmpeg dono attempts fail.
 [2026-08-14T23:08:01.490482] [tiktok-growth] Day 4 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-14T23:19:44.771607] [blogging-adsense] Day 1 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-14T23:21:16.761549] [blogging-adsense] Day 2 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-14T23:22:57.479069] [blogging-adsense] Day 3 video skip: Agnes aur ffmpeg dono attempts fail.
