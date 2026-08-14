@@ -14664,6 +14664,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 6,
+      "id": "day-006",
+      "date": "2026-08-14",
+      "title": "Day 6 — \"Trusted adult kaun hota hai aur unhe foran batana\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachon, aaj hum seekhenge ke trusted adult kaun hote hain. Yeh woh bade log hote hain jin par tumhe poori trust hai, jaise ammi, abbu, teacher, ya dadi-dada. Agar tumhe kabhi koi cheez ajeeb lage, ya koi aapko \"secret rakhne\" ke liye khe, toh foran in trusted adults ko batana hai. Yeh tumhari hifazat ke liye zaroori hai!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Rohan ko school ke baahar ek uncle ne chocolate di aur kaha, \"Yeh hamare beech ka secret hai, kisi ko mat batana.\" Rohan ko yeh ajeeb laga, kyunki ammi ne kaha hai ke secrets sirf achhe hote hain. Usne foran apni teacher ko bataya. Teacher ne usko samjhaya ke trusted adults hi hote hain jinhe sab bataya ja sakta hai."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar koi tumhe secret rakhne ke liye khe, toh tum kya karoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Tumhara jism tumhara hai, aur tumhara dil bhi! Agar koi cheez ajeeb lage, toh foran trusted adult ko batana hai."
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ٦ — \"ٹرَسٹڈ ایڈَلٹ کون ہوتا ہے اور اُنہیں فوراً بتانا\"",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "بچو، آج ہم سیکھیں گے کہ ٹرسٹڈ ایڈَلٹ کون ہوتے ہیں۔ یہ وہ بڑے لوگ ہوتے ہیں جن پر تمہیں پوری ٹرسٹ ہے، جیسے امی، ابّو، ٹیچر، یا دادی-दادا۔ اگر تمہیں کبھی کوئی چیز عجیب لگے، یا کوئی تمہیں \"سیکرٹ رکھنے\" کے لیے کہے، تو فوراً ان ٹرسٹڈ ایڈَلٹس کو بتانا ہے۔ یہ تمہاری حفاظت کے لیے ضروری ہے!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "روہن کو سکول کے باہر ایک انکل نے چاکلیٹ دی اور کہا، \"یہ ہمارے درمیان کا راز ہے، کسی کو مت بتانا۔\" روہن کو یہ عجیب لگا، کیونکہ امی نے کہا تھا کہ راز صرف اچھے ہوتے ہیں۔ اُس نے فوراً اپنی ٹیچر کو بتایا۔ ٹیچر نے اُسے سمجھایا کہ ٹرسٹڈ ایڈَلٹس ہی ہوتے ہیں جنہیں سب بتایا جا سکتا ہے۔"
+            },
+            {
+              "label": "امی ابّو کے ساتھ بات کریں",
+              "content": "\"بیٹا، اگر کوئی تمہیں راز رکھنے کے لیے کہے، تو تم کیا کرو گے؟\""
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمہارا جسم تمہارا ہے، اور تمہارا دل بھی! اگر کوئی چیز عجیب لگے، تو فوراً ٹرسٹڈ ایڈَلٹ کو بتانا ہے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-educational-games": [
