@@ -3495,6 +3495,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 10,
+      "id": "day-010",
+      "date": "2026-08-14",
+      "title": "Day 10 — **Amazon FBA Mein Profit & Loss Track Karne Ka Complete Guide**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Amazon FBA mein profit track karna zaroori hai taake pata chale ke business profitable hai ya nahi. Har sale ka cost (product cost, Amazon fees, PPC, shipping, etc.) nikal kar net profit calculate karna hai. Isse future decisions (pricing, scaling, product selection) mein help milti hai."
+        ],
+        [
+          "Example",
+          "Maana aapne ek product ₹500 mein khareeda, Amazon fees ₹150 hai, PPC par ₹50 kharch hue, to total cost ₹700 hua. Agar product ₹1200 mein becha, to profit = 1200 - 700 = ₹500. Agar margin kam hai, to pricing ya supplier negotiation par sochna hoga."
+        ],
+        [
+          "Practice",
+          "Apne ek product ka complete cost break-down nikalo (product cost + Amazon fees + PPC + shipping + any other expenses). Excel ya Google Sheets mein ek simple table banake calculate karo."
+        ],
+        [
+          "Mini Project",
+          "Ek simple **Profit Margin Calculator** spreadsheet banayein jisme:\n- Product cost\n- Amazon fees (referral + FBA fees)\n- PPC cost\n- Shipping cost\n- Net profit (sale price - total cost)\nInput karke automatically margin % nikalne ka formula add karen."
+        ]
+      ],
+      "answer_key": "product_cost, amazon_fees, ppc_cost, net_profit, margin_percentage",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۰ — ایمیزون ایف بی اے میں منافع اور نقصان ٹریک کرنے کا مکمل گائیڈ",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "ایمیزون ایف بی اے میں منافع ٹریک کرنا ضروری ہے تاکہ پتا چل سکے کہ کاروبار منافع بخش ہے یا نہیں۔ ہر سیل کا لاگت (پراڈکٹ لاگت، ایمیزون فیس، پی پی سی، شپنگ وغیرہ) نکال کر نیٹ منافع کا حساب لگانا ہے۔ اس سے مستقبل کے فیصلوں (قیمت طے کرنا، توسیع، پراڈکٹ سلیکشن) میں مدد ملتی ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "مانا آپ نے ایک پراڈکٹ پانچ سو روپے میں خریدا، ایمیزون فیس ایک سو پچاس روپے ہے، پی پی سی پر پچاس روپے خرچ ہوئے، تو کل لاگت سات سو روپے ہوئی۔ اگر پراڈکٹ بارہ سو روپے میں بکا، تو منافع = بارہ سو - سات سو = پانچ سو روپے۔ اگر مارجن کم ہے، تو قیمت یا سپلائر سے بات چیت پر غور کرنا ہوگا۔"
+            },
+            {
+              "label": "عملی مشق",
+              "content": "اپنے ایک پراڈکٹ کا مکمل لاگت کا تجزیہ نکالیں (پراڈکٹ لاگت + ایمیزون فیس + پی پی سی + شپنگ + دیگر اخراجات)۔ ایکسل یا گوگل شیٹس میں ایک سادہ جدول بنا کر حساب لگائیں۔"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "ایک سادہ **منافع مارجن کیلکولیٹر** اسپریڈشیٹ بنائیں جس میں درج ذیل شامل ہوں:\n- پراڈکٹ لاگت\n- ایمیزون فیس (ریفرل + ایف بی اے فیس)\n- پی پی سی لاگت\n- شپنگ لاگت\n- نیٹ منافع (سیل پرائس - کل لاگت)\nان پٹ کرکے خود بخود مارجن فیصد نکالنے کا فارمولا شامل کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "daraz-seller": [
