@@ -7964,6 +7964,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 12,
+      "id": "day-012",
+      "date": "2026-08-14",
+      "title": "Day 12 — **Print on Demand Ke Liye Best Vendors: Printful vs. Local vs. Alternatives**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Print on Demand (POD) mein vendor choose karna ek foundation hai—jahan se quality, pricing, aur delivery depend karti hai. **Printful** global leader hai (high quality, reliable shipping), **local vendors** (India/Pakistan) mein cost-effective options mil sakte hain, lekin shipping time zyada ho sakta hai. **Alternatives** (Printify, Gelato, Redbubble) bhi options hain, har ek ke pros-cons hain."
+        ],
+        [
+          "Example",
+          "1. **Printful** (Global): Agar aap US/EU mein sell kar rahe hain, toh shipping fast hoga (3-5 days), lekin cost thoda zyada.\n2. **Local Vendor** (India/Pakistan): Agar aap local audience ko target kar rahe hain, toh cost kam ho sakti hai, lekin shipping time 7-15 days ho sakta hai.\n3. **Printify** (Alternative): Multiple print providers se quotes compare kar sakte hain, lekin quality vary kar sakti hai."
+        ],
+        [
+          "Practice",
+          "Apne niche ke hisab se **3 vendors** (Printful, 1 local, 1 alternative) ko shortlist karo aur unki **pricing, shipping time, aur quality** compare karo. Ek Excel sheet banao aur har ek ke pros-cons likho."
+        ],
+        [
+          "Mini Project",
+          "Ek **mock order** place karo (agar possible ho) ya phir vendor ki website se **sample product** order karo taake quality check kar sako. (Agar budget na ho, toh online reviews aur YouTube unboxing videos dekh kar decision lo.)"
+        ]
+      ],
+      "answer_key": "printful: high quality, global shipping, premium pricing; local: low cost, slow shipping; printify: flexible, variable quality",
+      "translations": {
+        "ur": {
+          "title": "دن 12 — **پرنٹ آن ڈیمانڈ کے لیے بہترین وینڈرز: پرنٹ فل بمقابلہ لوکل بمقابلہ متبادل**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "پرنٹ آن ڈیمانڈ (POD) میں وینڈر کا انتخاب ایک بنیاد ہے—جہاں سے کوالٹی، پرائسنگ، اور ڈیلیوری کا انحصار ہوتا ہے۔ **پرنٹ فل** عالمی لیڈر ہے (اعلیٰ کوالٹی، قابل اعتماد شپنگ)، **لوکل وینڈرز** (بھارت/پاکستان) میں لاگت مؤثر آپشنز مل سکتے ہیں، لیکن شپنگ کا وقت زیادہ ہو سکتا ہے۔ **متبادل** (پرنٹیفائی، جیلیٹو، ریڈ بابل) بھی اختیارات ہیں، ہر ایک کے اپنے فوائد اور نقصانات ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1. **پرنٹ فل** (عالمی): اگر آپ امریکہ/یورپ میں سیل کر رہے ہیں، تو شپنگ تیز ہو گی (3-5 دن)، لیکن لاگت تھوڑی زیادہ ہو سکتی ہے۔\n2. **لوکل وینڈر** (بھارت/پاکستان): اگر آپ مقامی سامعین کو ہدف بنا رہے ہیں، تو لاگت کم ہو سکتی ہے، لیکن شپنگ کا وقت 7-15 دن ہو سکتا ہے۔\n3. **پرنٹیفائی** (متبادل): متعدد پرنٹ فراہم کنندگان سے کوٹیشنز کا موازنہ کر سکتے ہیں، لیکن کوالٹی مختلف ہو سکتی ہے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے نیچ کے حساب سے **3 وینڈرز** (پرنٹ فل، 1 لوکل، 1 متبادل) کو شارٹ لسٹ کریں اور ان کی **پرائسنگ، شپنگ کا وقت، اور کوالٹی** کا موازنہ کریں۔ ایک ایکسل شیٹ بنائیں اور ہر ایک کے فوائد اور نقصانات لکھیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **موک آرڈر** رکھیں (اگر ممکن ہو) یا پھر وینڈر کی ویب سائٹ سے **نمونہ پروڈکٹ** آرڈر کریں تاکہ کوالٹی چیک کر سکیں۔ (اگر بجٹ نہ ہو، تو آن لائن ریویوز اور YouTube ان باکسنگ ویڈیوز دیکھ کر فیصلہ کریں۔)"
+            }
+          ]
+        }
+      }
     }
   ],
   "cpp-daily-coding": [
