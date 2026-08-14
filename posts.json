@@ -3057,6 +3057,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 16,
+      "id": "day-016",
+      "date": "2026-08-14",
+      "title": "Day 16 — **Trading Orders: Market, Limit & Stop Orders Ko Samajhna**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Trading orders hei woh instructions jo aap broker ko dete hain ke kab, kaise aur kis price par trade enter ya exit karna hai. **Market Order** abhi ka price par execute hota hai, **Limit Order** ek specific price par enter/exit karta hai jab market uss level tak pahunch jaye, jabki **Stop Order** ek trigger price par market order ban jata hai (jaise stop-loss ya take-profit). Orders timing aur strategy ke liye zaroori hain."
+        ],
+        [
+          "Example",
+          "Maana aap **EUR/USD** par **1.0800** par **Buy** karna chahte hain lekin abhi market **1.0795** par hai. Aap:\n1. **Market Order** se abhi **1.0795** par buy kar sakte hain.\n2. **Limit Order** set kar sakte hain ke jab market **1.0800** tak aaye to buy ho.\n3. **Stop Order** set kar sakte hain ke agar market **1.0790** tak gir jaye to **sell** ho (stop-loss)."
+        ],
+        [
+          "Practice",
+          "MetaTrader 4/5 mein:\n1. **Market Order** banane ke liye: Chart par right-click > \"New Order\" > Type = \"Market Execution\".\n2. **Limit Order** banane ke liye: Same process > Type = \"Pending Order\" > Order Type = \"Buy Limit\" ya \"Sell Limit\".\n3. **Stop Order** banane ke liye: Order Type = \"Buy Stop\" ya \"Sell Stop\"."
+        ],
+        [
+          "Mini Project",
+          "Ek **EUR/USD** ka chart kholo. **3 orders** create karo:\n- 1 **Buy Market Order**\n- 1 **Sell Limit Order** (current price se 20 pips upar)\n- 1 **Buy Stop Order** (current price se 15 pips neeche)"
+        ]
+      ],
+      "answer_key": "market order, limit order, stop order, pending order",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۶ — ٹریڈنگ آرڈرز: مارکیٹ، لمٹ اور اسٹاپ آرڈرز کو سمجھنا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ٹریڈنگ آرڈرز وہ ہدایات ہوتی ہیں جو آپ بروکر کو دیتے ہیں کہ کب، کیسے اور کس قیمت پر ٹریڈ داخل یا خارج کرنا ہے۔ **مارکیٹ آرڈر** موجودہ قیمت پر فوراً عمل میں آتا ہے، **لمٹ آرڈر** ایک مخصوص قیمت پر داخل/خارج ہوتا ہے جب مارکیٹ اس لیول تک پہنچ جائے، جبکہ **اسٹاپ آرڈر** ایک ٹرگر قیمت پر مارکیٹ آرڈر بن جاتا ہے (جیسے اسٹاپ لاس یا ٹیک پرافٹ)۔ آرڈرز کی ٹائمنگ اور حکمت عملی کے لیے ضروری ہوتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "مانا آپ **یورو/امریکی ڈالر** پر **۱.۰۸۰۰** پر **خرید** کرنا چاہتے ہیں لیکن فی الحال مارکیٹ **۱.۰۷۹۵** پر ہے۔ آپ:\n۱۔ **مارکیٹ آرڈر** کے ذریعے ابھی **۱.۰۷۹۵** پر خرید سکتے ہیں۔\n۲۔ **لمٹ آرڈر** سیٹ کر سکتے ہیں کہ جب مارکیٹ **۱.۰۸۰۰** تک آئے تو خرید ہو۔\n۳۔ **اسٹاپ آرڈر** سیٹ کر سکتے ہیں کہ اگر مارکیٹ **۱.۰۷۹۰** تک گر جائے تو **فروخت** ہو (اسٹاپ لاس)।"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "**میٹا ٹریڈر ۴/۵** میں:\n۱۔ **مارکیٹ آرڈر** بنانے کے لیے: چارٹ پر رائٹ کلک کریں > \"نیو آرڈر\" > ٹائپ = \"مارکیٹ ایگزیکیوشن\"۔\n۲۔ **لمٹ آرڈر** بنانے کے لیے: اسی عمل کے تحت > ٹائپ = \"پینڈنگ آرڈر\" > آرڈر ٹائپ = \"بائی لمٹ\" یا \"سیل لمٹ\"۔\n۳۔ **اسٹاپ آرڈر** بنانے کے لیے: آرڈر ٹائپ = \"بائی اسٹاپ\" یا \"سیل اسٹاپ\"۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "**یورو/امریکی ڈالر** کا چارٹ کھولیں۔ **۳ آرڈرز** بنائیں:\n- ۱ **بائی مارکیٹ آرڈر**\n- ۱ **سیل لمٹ آرڈر** (موجودہ قیمت سے ۲۰ پپس اوپر)\n- ۱ **بائی اسٹاپ آرڈر** (موجودہ قیمت سے ۱۵ پپس نیچے)"
+            }
+          ]
+        }
+      }
     }
   ],
   "amazon-fba": [
