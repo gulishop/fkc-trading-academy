@@ -1,0 +1,22 @@
+{
+  "title": "دن ۸ — آبجیکٹ اورینٹڈ پروگرامنگ: کلاسز اور آبجیکٹس",
+  "preamble": "",
+  "sections": [
+    {
+      "label": "کنسیپٹ",
+      "content": "آبجیکٹ اورینٹڈ پروگرامنگ میں ہم کوڈ کو حقیقی دنیا کی اشیاء (کلاسز) اور ان کے مثالوں (آبجیکٹس) میں ترتیب دیتے ہیں۔ ایک کلاس بلیو پرنٹ ہوتی ہے (جیسے ’کار‘)، جبکہ آبجیکٹ اس بلیو پرنٹ کا حقیقی نفاذ ہوتا ہے (جیسے ’میری_کار = کار()‘)۔ اس سے کوڈ دوبارہ قابل استعمال، قابلِ مرمت اور توسیع پذیر بن جاتا ہے۔"
+    },
+    {
+      "label": "مثال",
+      "content": "```python\nclass Car:\n    def __init__(self, brand, model):\n        self.brand = brand\n        self.model = model\n\n    def display(self):\n        print(f\"Car: {self.brand} {self.model}\")\n\n# Object creation\nmy_car = Car(\"Toyota\", \"Corolla\")\nmy_car.display()  # Output: Car: Toyota Corolla\n```"
+    },
+    {
+      "label": "پریکٹس",
+      "content": "ایک `Student` کلاس بنائیں جس میں `name`، `age`، اور `grade` خصوصیات ہوں۔ ایک طریقہ `display_info()` شامل کریں جو یہ تفصیلات پرنٹ کرے۔ پھر `student1 = Student(\"علی\", ۱۵، \"دسویں\")` آبجیکٹ بنائیں اور اس کی معلومات دکھائیں۔"
+    },
+    {
+      "label": "منی پروجیکٹ",
+      "content": "ایک سادہ `BankAccount` کلاس بنائیں جس میں:\n- `__init__` میں `account_holder` اور `balance` خصوصیات ہوں\n- `deposit(amount)` طریقہ ہو جو بیلنس بڑھائے\n- `withdraw(amount)` طریقہ ہو جو بیلنس کم کرے (اگر کافی رقم موجود ہو)\n- `display_balance()` طریقہ ہو جو موجودہ بیلنس دکھائے۔"
+    }
+  ]
+}

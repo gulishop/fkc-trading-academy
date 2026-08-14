@@ -9350,6 +9350,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 8,
+      "id": "day-008",
+      "date": "2026-08-14",
+      "title": "Day 8 — Object-Oriented Programming: Classes aur Objects",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "OOP mein hum code ko real-world entities (classes) aur unke instances (objects) mein organize karte hain. Ek class blueprint hoti hai (jaise 'Car'), jabki object us blueprint ka actual implementation hota hai (jaise 'my_car = Car()'). Isse code reusable, maintainable aur scalable ban jata hai."
+        ],
+        [
+          "Example",
+          "```python\nclass Car:\n    def __init__(self, brand, model):\n        self.brand = brand\n        self.model = model\n\n    def display(self):\n        print(f\"Car: {self.brand} {self.model}\")\n\n# Object creation\nmy_car = Car(\"Toyota\", \"Corolla\")\nmy_car.display()  # Output: Car: Toyota Corolla\n```"
+        ],
+        [
+          "Practice",
+          "Ek `Student` class banaye jisme `name`, `age`, aur `grade` attributes hon. Ek method `display_info()` add kare jo yeh details print kare. Phir `student1 = Student(\"Ali\", 15, \"10th\")` object create karke uski info display kare."
+        ],
+        [
+          "Mini Project",
+          "Ek simple `BankAccount` class banaye jisme:\n- `__init__` mein `account_holder` aur `balance` attributes hon\n- `deposit(amount)` method ho jo balance badhaye\n- `withdraw(amount)` method ho jo balance kam kare (agar sufficient funds hon)\n- `display_balance()` method ho jo current balance show kare"
+        ]
+      ],
+      "answer_key": "student class, display_info(), bankaccount, deposit, withdraw, display_balance",
+      "translations": {
+        "ur": {
+          "title": "دن ۸ — آبجیکٹ اورینٹڈ پروگرامنگ: کلاسز اور آبجیکٹس",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آبجیکٹ اورینٹڈ پروگرامنگ میں ہم کوڈ کو حقیقی دنیا کی اشیاء (کلاسز) اور ان کے مثالوں (آبجیکٹس) میں ترتیب دیتے ہیں۔ ایک کلاس بلیو پرنٹ ہوتی ہے (جیسے ’کار‘)، جبکہ آبجیکٹ اس بلیو پرنٹ کا حقیقی نفاذ ہوتا ہے (جیسے ’میری_کار = کار()‘)۔ اس سے کوڈ دوبارہ قابل استعمال، قابلِ مرمت اور توسیع پذیر بن جاتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "```python\nclass Car:\n    def __init__(self, brand, model):\n        self.brand = brand\n        self.model = model\n\n    def display(self):\n        print(f\"Car: {self.brand} {self.model}\")\n\n# Object creation\nmy_car = Car(\"Toyota\", \"Corolla\")\nmy_car.display()  # Output: Car: Toyota Corolla\n```"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "ایک `Student` کلاس بنائیں جس میں `name`، `age`، اور `grade` خصوصیات ہوں۔ ایک طریقہ `display_info()` شامل کریں جو یہ تفصیلات پرنٹ کرے۔ پھر `student1 = Student(\"علی\", ۱۵، \"دسویں\")` آبجیکٹ بنائیں اور اس کی معلومات دکھائیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک سادہ `BankAccount` کلاس بنائیں جس میں:\n- `__init__` میں `account_holder` اور `balance` خصوصیات ہوں\n- `deposit(amount)` طریقہ ہو جو بیلنس بڑھائے\n- `withdraw(amount)` طریقہ ہو جو بیلنس کم کرے (اگر کافی رقم موجود ہو)\n- `display_balance()` طریقہ ہو جو موجودہ بیلنس دکھائے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "web-development": [
