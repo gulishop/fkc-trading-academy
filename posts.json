@@ -12578,6 +12578,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 9,
+      "id": "day-009",
+      "date": "2026-08-14",
+      "title": "Day 9 — **Audience Engagement: Apne Listeners Ko Loyal Banane ke 5 Tarike**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke kaise apne podcast ya voice-over audience ko loyal banayein. Consistency ke saath saath engagement bhi zaroori hai—listeners ko sirf sunne nahi, balki unse interact karne ka mauka dena chahiye. Iske liye social media, community building, aur feedback ka istemal karna seekhein."
+        ],
+        [
+          "Example",
+          "Ek fitness podcast host ne Instagram reels par daily 1-minute workout tips share karne shuru kiye. Listeners ne unke posts par comments mein apne progress share kiye, jisse host ne unke naam se motivational posts bana kar encourage kiya. Result: 30% zyada engagement aur 15% zyada subscribers."
+        ],
+        [
+          "Practice",
+          "Apne podcast ya voice-over ke topic se related ek Instagram/Facebook post banayein jisme listeners ko ek simple question poochhein (e.g., \"Aapko sabse zyada kya pasand hai meri voice mein?\" ya \"Aapka favorite podcast episode konsa hai?\")."
+        ],
+        [
+          "Mini Project",
+          "Ek \"Listener of the Week\" post banayein—ek listener ka interview ya unke feedback ko highlight karke. Isse community feel badhegi aur dusre listeners bhi engage honge."
+        ]
+      ],
+      "answer_key": "feedback, interaction, community, loyalty",
+      "translations": {
+        "ur": {
+          "title": "دن ۹ — سامعین کی دلچسپی: اپنے سننے والوں کو وفادار بنانے کے ۵ طریقے",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج ہم سیکھیں گے کہ کیسے اپنے پوڈکاسٹ یا وائس اوور کے سامعین کو وفادار بنایا جائے۔ مستقل مزاجی کے ساتھ ساتھ انگیجمنٹ بھی ضروری ہے—سننے والوں کو صرف سننے نہیں بلکہ ان سے تعامل کرنے کا موقع دینا چاہیے۔ اس کے لیے سوشل میڈیا، کمیونٹی بلڈنگ، اور فیڈبیک کا استعمال سیکھیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک فٹنس پوڈکاسٹ ہوسٹ نے انسٹاگرام ریلز پر روزانہ ایک منٹ کے ورک آؤٹ ٹپس شیئر کرنے شروع کیے۔ سامعین نے ان کی پوسٹس پر کمنٹس میں اپنے پروگریس شیئر کیے، جس سے ہوسٹ نے ان کے نام سے حوصلہ افزائی کی پوسٹس بنا کر ان کی ترغیب دی۔ نتیجہ: تیس فیصد زیادہ انگیجمنٹ اور پندرہ فیصد زیادہ سبسکرائبرز۔"
+            },
+            {
+              "label": "عملی مشق",
+              "content": "اپنے پوڈکاسٹ یا وائس اوور کے موضوع سے متعلق ایک انسٹاگرام/فیس بک پوسٹ بنائیں جس میں سامعین سے ایک سادہ سوال پوچھیں (مثلاً، ’’آپ کو میری آواز میں سب سے زیادہ کیا پسند ہے؟‘‘ یا ’’آپ کا پسندیدہ پوڈکاسٹ ایپی سوڈ کون سا ہے؟‘‘)۔"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "ایک ’’ہفتے کا بہترین سامع‘‘ پوسٹ بنائیں—کسی ایک سامع کا انٹرویو یا ان کے فیڈبیک کو نمایاں کر کے۔ اس سے کمیونٹی کا احساس بڑھے گا اور دوسرے سامعین بھی تعامل کریں گے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "real-estate-business": [
