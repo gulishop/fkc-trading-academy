@@ -1227,6 +1227,64 @@
           ]
         }
       }
+    },
+    {
+      "day": 13,
+      "id": "day-013",
+      "date": "2026-08-14",
+      "title": "Day 13 — **AI-Powered Video Editing: CapCut Aur Pictory Se Pro-Level Videos Banana**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "AI tools jaise CapCut aur Pictory se videos edit karna seekhiye—automated transitions, auto-subtitles, aur AI voiceovers ke saath. Ye tools beginner-friendly hain lekin advanced effects bhi offer karte hain, jaise background music sync, auto-captions, aur even AI-powered voice cloning."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "CapCut mein AI editing",
+          "Apne footage ko upload karo → \"Auto Captions\" par click karo → AI subtitles generate honge. Phir \"Auto Cut\" feature use karke boring parts hata do.\n2."
+        ],
+        [
+          "Pictory se AI video banane ka step",
+          "Apne script ko paste karo → Pictory AI se relevant clips dhundega → Background music aur transitions automatically add kar dega."
+        ],
+        [
+          "Practice",
+          "Apne phone ya laptop par CapCut install karo, koi 1-minute ka raw footage upload karo, aur \"Auto Captions\" + \"Auto Cut\" features try karo. 2-3 variations save karo."
+        ],
+        [
+          "Mini Project",
+          "Ek 1-minute ka AI-edited video banayein (topic: \"Top 3 AI Tools For YouTube Automation\")—CapCut/Pictory use karke, subtitles, background music, aur transitions add karke."
+        ]
+      ],
+      "answer_key": "auto captions, auto cut, background music sync, ai transitions",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۳ — **اے آئی سے چلنے والی ویڈیو ایڈیٹنگ: کیپ کٹ اور پکٹری سے پیشہ ورانہ ویڈیوز بنانا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "اے آئی ٹولز جیسے کیپ کٹ اور پکٹری سے ویڈیوز ایڈیٹ کرنا سیکھیں—خودکار ٹرانزیشنز، آٹو سب ٹائٹلز، اور اے آئی وائس اوور کے ساتھ۔ یہ ٹولز بیگنر فرینڈلی ہیں لیکن ایڈوانسڈ ایفیکٹس بھی پیش کرتے ہیں، جیسے بیک گراؤنڈ میوزک سنک، آٹو کیپشنز، اور یہاں تک کہ اے آئی سے چلنے والی وائس کلوننگ۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ کیپ کٹ میں اے آئی ایڈیٹنگ: اپنے فوٹیج کو اپ لوڈ کریں → \"آٹو کیپشنز\" پر کلک کریں → اے آئی سب ٹائٹلز جنریٹ ہو جائیں گے۔ پھر \"آٹو کٹ\" فیچر استعمال کر کے بورنگ حصے ہٹا دیں۔\n۲۔ پکٹری سے اے آئی ویڈیو بنانے کا مرحلہ: اپنے اسکرپٹ کو پیسٹ کریں → پکٹری اے آئی متعلقہ کلپس ڈھونڈے گا → بیک گراؤنڈ میوزک اور ٹرانزیشنز خود بخود شامل کر دے گا۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے فون یا لیپ ٹاپ پر کیپ کٹ انسٹال کریں، کوئی ایک منٹ کا راء فوٹیج اپ لوڈ کریں، اور \"آٹو کیپشنز\" اور \"آٹو کٹ\" فیچرز آزما کر دیکھیں۔ دو سے تین ویری ایشنز محفوظ کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک منٹ کی اے آئی سے ایڈیٹ کی گئی ویڈیو بنائیں (ٹاپک: \"یوٹیوب آٹومیشن کے لیے ٹاپ ۳ اے آئی ٹولز\")—کیپ کٹ یا پکٹری استعمال کرتے ہوئے، سب ٹائٹلز، بیک گراؤنڈ میوزک، اور ٹرانزیشنز شامل کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "social-media-marketing": [
