@@ -14946,6 +14946,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 11,
+      "id": "day-011",
+      "date": "2026-08-14",
+      "title": "Day 11 — \"Pyaar ke shabd: Please, Thank You, aur Sorry\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachay, jab hum kisi ko pyaar se baat karte hain, toh hum \"Please\" kehte hain. Jab koi humare liye kuch achha karta hai, toh hum \"Thank You\" kehte hain. Aur jab humse galti ho jati hai, toh hum \"Sorry\" kehte hain. In shabdon se hum sabke dil jeet lete hain aur sab khush rehte hain!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Aman ne apni behen ki kitab le li, lekin usko pata nahi tha ke woh uski hi hai. Usne behen se poocha, \"Please, mujhe yeh kitab de do?\" Behen ne muskurate hue de di. Phir Aman ne \"Thank You\" kaha. Uske baad, usne apni behen ko ek chocolate di aur \"Sorry\" kaha ke kal usne unki pencil chura li thi. Behen ne bhi \"Sorry\" kaha aur dono ne ek doosre ko gale laga liya."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, aaj tumne kisi ko 'Please' ya 'Thank You' kaha hai? Unhe kaise feel hua hoga?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Hamesha pyaar se baat karo, kyunki shabdon se dil jeete jaate hain!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۱ — پیار کے الفاظ: پلیز، تھینک یو، اور سوری",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "بچو، جب ہم کسی کو پیار سے بات کرتے ہیں، تو ہم \"پلیز\" کہتے ہیں۔ جب کوئی ہمارے لیے کچھ اچھا کرتا ہے، تو ہم \"تھینک یو\" کہتے ہیں۔ اور جب ہم سے غلطی ہو جاتی ہے، تو ہم \"سوری\" کہتے ہیں۔ ان الفاظ سے ہم سب کے دل جیت لیتے ہیں اور سب خوش رہتے ہیں!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "امان نے اپنی بہن کی کتاب لے لی، لیکن اسے پتا نہیں تھا کہ وہ اسی کی ہے۔ اس نے بہن سے پوچھا، \"پلیز، مجھے یہ کتاب دے دو؟\" بہن نے مسکراتے ہوئے دے دی۔ پھر امان نے \"تھینک یو\" کہا۔ اس کے بعد، اس نے اپنی بہن کو ایک چاکلیٹ دی اور \"سوری\" کہا کہ کل اس نے ان کی پنسل چرا لی تھی۔ بہن نے بھی \"سوری\" کہا اور دونوں نے ایک دوسرے کو گले لگا لیا۔"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "بیٹا، آج تم نے کسی کو 'پلیز' یا 'تھینک یو' کہا ہے؟ انہیں کیسا محسوس ہوا ہوگا؟"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "ہمیشہ پیار سے بات کرو، کیونکہ الفاظ سے دل جیتے جاتے ہیں!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-nursery": [
