@@ -12944,6 +12944,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 11,
+      "id": "day-011",
+      "date": "2026-08-14",
+      "title": "Day 11 — **Understanding White Balance: Fixing Color Casts**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "White balance (WB) controls the color temperature of your photo—cool (blue) or warm (orange). Incorrect WB makes whites look off (e.g., yellow under tungsten lights). Learn to set WB manually or use presets (Daylight, Cloudy, Shade) to match the light source."
+        ],
+        [
+          "Example",
+          "1. Shoot a white wall under warm indoor light (yellowish).\n2. Set WB to \"Daylight\" (blueish) → wall looks too blue.\n3. Switch to \"Incandescent\" (tungsten) → wall turns white. Correct!"
+        ],
+        [
+          "Practice",
+          "Take 3 photos of the same subject under different light (sunlight, shade, indoor bulb). Compare WB settings: Auto vs. Manual. Note which looks most natural."
+        ],
+        [
+          "Mini Project",
+          "*\"White Balance Challenge\"* – Shoot a neutral-colored object (e.g., white mug) in 3 lighting conditions. Edit WB in Lightroom/Snapseed to make it look white. Share side-by-side comparisons."
+        ]
+      ],
+      "answer_key": "auto wb, incandescent, daylight, color cast",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۱ — وائٹ بیلنس کو سمجھنا: رنگوں کے کاسٹ کو ٹھیک کرنا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "وائٹ بیلنس (ڈبلیو بی) آپ کی تصویر کے رنگوں کے درجہ حرارت کو کنٹرول کرتا ہے — ٹھنڈا (نیلا) یا گرم (نارنجی)۔ غلط وائٹ بیلنس سفید رنگ کو غیر معمولی بنا دیتا ہے (مثلاً ٹنگسٹن لائٹس کے نیچے پیلا نظر آنا)۔ روشنی کے ماخذ سے مطابقت کے لیے وائٹ بیلنس کو دستی طور پر سیٹ کرنا سیکھیں یا پری سیٹس (دھوپ، بادل، سایہ) استعمال کریں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ گرم اندرونی روشنی (پیلی سی) کے نیچے سفید دیوار کی تصویر لیں۔\n۲۔ وائٹ بیلنس کو \"دھوپ\" (نیلی سی) پر سیٹ کریں → دیوار زیادہ نیلی نظر آئے گی۔\n۳۔ \"انکینڈیسینٹ\" (ٹنگسٹن) پر تبدیل کریں → دیوار سفید ہو جائے گی۔ صحیح!"
+            },
+            {
+              "label": "مشق",
+              "content": "ایک ہی موضوع کی تین تصاویر مختلف روشنیوں (سورج کی روشنی، سایہ، اندرونی بلب) کے تحت لیں۔ وائٹ بیلنس کی سیٹنگز کا موازنہ کریں: خودکار بمقابلہ دستی۔ نوٹ کریں کہ کون سی تصویر سب سے زیادہ قدرتی لگتی ہے۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "\"وائٹ بیلنس چیلنج\" — تین مختلف روشنیوں میں کسی غیر جانبدار رنگ کی چیز (مثلاً سفید مگ) کی تصویر لیں۔ لائٹ روم یا سنپ سیڈ میں وائٹ بیلنس ایڈٹ کر کے اسے سفید بنائیں۔ ساتھ ساتھ موازنہ پیش کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "voiceover-podcasting": [
