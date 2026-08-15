@@ -16196,6 +16196,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 12,
+      "id": "day-012",
+      "date": "2026-08-15",
+      "title": "Day 12 — \"Bado ki izzat karna aur unki baat sunna\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bado ki izzat karna aur unki baat sunna bahut zaroori hai, kyunke woh tumse zyada jaante hain aur tumhe seekhate hain. Unki baat dhyaan se sunne se tumhe bhi achha lagega aur woh tumse aur zyada pyaar karenge."
+        ],
+        [
+          "Chhoti Kahani",
+          "Rohan ke dadaji ne usko ek khubsurat kahani sunayi. Rohan ne poori dhyaan se suni aur phir apne dadaji ko gale laga liya. Dadaji ne usko kaha, \"Tumne meri baat sunne ka time diya, isliye tumhe yeh kahani sunane ka mauqa mila.\""
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar tumhari koi baat koi bade insaan ne mana kar di ho, to tum kya karoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Bado ki baat sunna aur unki izzat karna tumhe bhi achha insaan banayega."
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۲ — بزرگوں کی عزت کرنا اور ان کی بات سننا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "بڑوں کی عزت کرنا اور ان کی بات سننا بہت ضروری ہے، کیونکہ وہ تم سے زیادہ جانتے ہیں اور تمہیں سکھاتے ہیں۔ ان کی بات غور سے سننے سے تمہیں بھی اچھا لگے گا اور وہ تم سے اور زیادہ پیار کریں گے۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "روہان کے دادا جی نے اسے ایک خوبصورت کہانی سنائی۔ روہان نے پوری دھیان سے سنی اور پھر اپنے دادا جی کو گلے لگا لیا۔ دادا جی نے اسے کہا، ’’تم نے میری بات سننے کا وقت دیا، اس لیے تمہیں یہ کہانی سنانے کا موقع ملا۔‘‘"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "’’بیٹا، اگر تمہاری کوئی بات کوئی بڑا انسان نے منع کر دی ہو، تو تم کیا کرو گے؟‘‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "بڑوں کی بات سننا اور ان کی عزت کرنا تمہیں بھی اچھا انسان بنائے گا۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-nursery": [
