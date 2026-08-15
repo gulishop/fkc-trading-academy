@@ -11924,6 +11924,60 @@
           ]
         }
       }
+    },
+    {
+      "day": 9,
+      "id": "day-009",
+      "date": "2026-08-15",
+      "title": "Day 9 — **Algorithmic Trading: Computer Se Trading Kaise Karein?**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Algorithmic trading mein computer programs (algorithms) use karke automated buy/sell orders lagaye jate hain. Isse speed, accuracy, aur emotion-free trading hoti hai. Beginners ko pehle manual trading se familiar hona chahiye, lekin yeh advanced technique hai jo long-term efficiency badhati hai."
+        ],
+        [
+          "Example",
+          "Ek simple moving average crossover strategy: Agar 50-day MA 200-day MA se upar chala jaye (\"Golden Cross\"), to buy signal generate hota hai. Python mein `ta-lib` library use karke yeh code likha ja sakta hai:\n```python\nimport talib\nimport pandas as pd\n\ndata = pd.read_csv('stock_data.csv')\ndata['MA50'] = talib.SMA(data['Close'], timeperiod=50)\ndata['MA200'] = talib.SMA(data['Close'], timeperiod=200)\nbuy_signal = data['MA50'] > data['MA200']\n```"
+        ],
+        [
+          "Practice",
+          "Apne Excel ya Google Sheets mein PSX ki kisi 1 company (e.g., LUCK) ka 1 saal ka data download karke, 10-day aur 50-day moving averages calculate karein. Kab \"Golden Cross\" ya \"Death Cross\" hua?"
+        ],
+        [
+          "Mini Project",
+          "Ek simple Python script likhein jo LUCK ke 2023 ke data par moving average crossover strategy test kare. (Hint: `yfinance` library use karke data fetch karein)"
+        ]
+      ],
+      "answer_key": "golden cross: 2023-03-15, death cross: 2023-09-20, profit: 12%",
+      "translations": {
+        "ur": {
+          "title": "دن ۹ — الگورتھمک ٹریڈنگ: کمپیوٹر سے ٹریڈنگ کیسے کریں؟",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "الگورتھمک ٹریڈنگ میں کمپیوٹر پروگرامز (الگورتھمز) استعمال کرکے خودکار خرید و فروخت کے آرڈرز لگائے جاتے ہیں۔ اس سے رفتار، درستگی، اور جذبات سے پاک ٹریڈنگ ممکن ہوتی ہے۔ بیگنرز کو پہلے مینوئل ٹریڈنگ سے واقف ہونا چاہیے، لیکن یہ ایک ایڈوانسڈ تکنیک ہے جو طویل مدتی کارکردگی کو بہتر بناتی ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک سادہ موونگ ایوریج کراس اوور اسٹریٹیجی: اگر ۵۰ دن کا موونگ ایوریج ۲۰۰ دن کے موونگ ایوریج سے اوپر چلا جائے (\"گولڈن کراس\")، تو خرید کا سگنل جنریٹ ہوتا ہے۔ پائیتھن میں `ta-lib` لائبریری استعمال کرکے یہ کوڈ لکھا جا سکتا ہے:"
+            },
+            {
+              "label": "",
+              "content": "```python\nimport talib\nimport pandas as pd\n\ndata = pd.read_csv('stock_data.csv')\ndata['MA50'] = talib.SMA(data['Close'], timeperiod=50)\ndata['MA200'] = talib.SMA(data['Close'], timeperiod=200)\nbuy_signal = data['MA50'] > data['MA200']\n```"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے ایکسل یا گوگل شیٹس میں پی ایس ایکس کی کسی ایک کمپنی (مثلاً لک) کا ایک سال کا ڈیٹا ڈاؤن لوڈ کرکے، ۱۰ دن اور ۵۰ دن کے موونگ ایوریجز کا حساب لگائیں۔ بتائیں کہ \"گولڈن کراس\" یا \"ڈیتھ کراس\" کب ہوا؟"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک سادہ پائیتھن اسکرپٹ لکھیں جو لک کے ۲۰۲۳ کے ڈیٹا پر موونگ ایوریج کراس اوور اسٹریٹیجی کی جانچ کرے۔ (اشارہ: ڈیٹا حاصل کرنے کے لیے `yfinance` لائبریری استعمال کریں)"
+            }
+          ]
+        }
+      }
     }
   ],
   "tiktok-growth": [
