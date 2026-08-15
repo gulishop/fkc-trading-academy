@@ -10652,6 +10652,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 12,
+      "id": "day-012",
+      "date": "2026-08-15",
+      "title": "Day 12 — **CSS Transitions aur Animations: Smooth aur Interactive Effects Banana**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "CSS transitions aur animations se hum elements ko smoothly change kar sakte hain (jaise color, size, position). Transitions ek property se judi hoti hain (e.g., `transition: all 0.3s ease;`), jabki animations `@keyframes` ke zariye multiple steps define karti hain. Yeh user experience ko improve karte hain aur website ko zyada interactive banate hain."
+        ],
+        [
+          "Example",
+          "Ek button ka background color hover par 0.5s mein badalne ke liye:\n```css\n.button {\n  background: blue;\n  transition: background 0.5s ease;\n}\n.button:hover {\n  background: red;\n}\n```\nEk simple animation (fade-in) ke liye:\n```css\n@keyframes fadeIn {\n  from { opacity: 0; }\n  to { opacity: 1; }\n}\n.box {\n  animation: fadeIn 1s ease-in;\n}\n```"
+        ],
+        [
+          "Practice",
+          "Apne ek existing HTML element (jaise `<div>` ya `<button>`) par hover par scale 1.2 tak badalne ke liye CSS transition use karo. `transition` property ka use karna hai."
+        ],
+        [
+          "Mini Project",
+          "Ek **loading spinner** banana hai jo 2s tak rotate ho aur phir disappear ho. Iske liye:\n1. Ek `<div>` banana hai spinner ke liye.\n2. `@keyframes` use karke usko rotate karna hai.\n3. Animation ko `animation` property se apply karna hai (2s duration, `linear` timing)."
+        ]
+      ],
+      "answer_key": "transition: all 0.3s ease, hover: scale(1.2), @keyframes spin, animation: spin 2s linear",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۲ — **سی ایس ایس ٹرانزیشنز اور اینیمیشنز: ہموار اور انٹرایکٹو ایفیکٹس بنانا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "سی ایس ایس ٹرانزیشنز اور اینیمیشنز کی مدد سے ہم عناصر کو ہموار طریقے سے تبدیل کر سکتے ہیں (جیسے کہ رنگ، سائز، پوزیشن وغیرہ)۔ ٹرانزیشنز کسی ایک پراپرٹی سے وابستہ ہوتی ہیں (مثلاً `transition: all 0.3s ease;`)، جبکہ اینیمیشنز `@keyframes` کے ذریعے متعدد مراحل طے کرتی ہیں۔ یہ صارف کے تجربے کو بہتر بناتے ہیں اور ویب سائٹ کو زیادہ انٹرایکٹو بناتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک بٹن کا پس منظر کا رنگ ہوور پر ۰.۵ سیکنڈ میں تبدیل کرنے کے لیے:\n```css\n.button {\n  background: blue;\n  transition: background 0.5s ease;\n}\n.button:hover {\n  background: red;\n}\n```\n\nایک سادہ اینیمیشن (فیڈ-ان) کے لیے:\n```css\n@keyframes fadeIn {\n  from { opacity: 0; }\n  to { opacity: 1; }\n}\n.box {\n  animation: fadeIn 1s ease-in;\n}\n```"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے کسی موجود ایچ ٹی ایم ایل عنصر (جیسے `<div>` یا `<button>`) پر ہوور کرنے پر اسے سکیل ۱.۲ تک بڑھانے کے لیے سی ایس ایس ٹرانزیشن کا استعمال کریں۔ `transition` پراپرٹی کا استعمال ضروری ہے۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **لوڈنگ سپنر** بنانا ہے جو ۲ سیکنڈ تک گھومتا رہے اور پھر غائب ہو جائے۔ اس کے لیے:\n۱۔ سپنر کے لیے ایک `<div>` بنائیں۔\n۲۔ `@keyframes` کا استعمال کرتے ہوئے اسے گھمائیں۔\n۳۔ اینیمیشن کو `animation` پراپرٹی کے ذریعے لاگو کریں (۲ سیکنڈ دورانیہ، `linear` ٹائمنگ کے ساتھ)।"
+            }
+          ]
+        }
+      }
     }
   ],
   "excel-data-analysis": [
