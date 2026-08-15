@@ -7012,6 +7012,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 12,
+      "id": "day-012",
+      "date": "2026-08-15",
+      "title": "Day 12 — **No-Code Hosting: Apne Website Ko Live Karein (Framer/Webflow/Wix)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Har no-code website builder (Framer/Webflow/Wix) ka apna hosting system hota hai. Yeh hosting ka matlab hai ke aapka website internet par accessible ho raha hai. Aaj hum seekhenge ke kaise apne no-code project ko live karein, hosting ka basic concept samajhein, aur best practices follow karein."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Framer",
+          "Project publish karne ke baad, Framer aapko ek `.framer.app` subdomain deta hai (e.g., `myproject.framer.app`). Custom domain add karne ke liye, settings mein ja kar DNS records update karein.\n2."
+        ],
+        [
+          "Webflow",
+          "\"Publish\" button press karne par, Webflow hosting par deploy ho jata hai. Custom domain ke liye, hosting settings mein ja kar domain add karein aur DNS records ko point karein.\n3."
+        ],
+        [
+          "Wix",
+          "\"Publish\" button se website live hoti hai. Custom domain add karne ke liye, \"Domains\" section mein ja kar domain purchase ya connect karein."
+        ],
+        [
+          "Practice",
+          "Apne kisi bhi no-code website builder (Framer/Webflow/Wix) mein ek simple page banayein aur use publish karein. Agar custom domain available hai, to use bhi add karein."
+        ],
+        [
+          "Mini Project",
+          "Ek no-code website banayein (3-5 pages) aur use Framer/Webflow/Wix par live karein. Custom domain add karne ki koshish bhi karein (agar possible ho)."
+        ]
+      ],
+      "answer_key": "publish button, hosting settings, custom domain, dns records",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۲ — نو کوڈ ہوسٹنگ: اپنی ویب سائٹ کو لائیو کریں (فریمر/ویب فلو/وکس)",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ہر نو کوڈ ویب سائٹ بلڈر (فریمر/ویب فلو/وکس) کا اپنا ہوسٹنگ سسٹم ہوتا ہے۔ ہوسٹنگ کا مطلب یہ ہے کہ آپ کی ویب سائٹ انٹرنیٹ پر قابل رسائی ہو رہی ہے۔ آج ہم سیکھیں گے کہ کیسے اپنے نو کوڈ پروجیکٹ کو لائیو کریں، ہوسٹنگ کا بنیادی تصور سمجھیں، اور بہترین طریقے اپنائیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ فریمر: پروجیکٹ پبلش کرنے کے بعد، فریمر آپ کو ایک `.framer.app` سب ڈومین دیتا ہے (مثال کے طور پر، `myproject.framer.app`)۔ کسٹم ڈومین شامل کرنے کے لیے، سیٹنگز میں جا کر ڈی این ایس ریکارڈز اپ ڈیٹ کریں۔\n۲۔ ویب فلو: \"پبلش\" بٹن دبانے پر، ویب فلو ہوسٹنگ پر ڈیپلائی ہو جاتا ہے۔ کسٹم ڈومین کے لیے، ہوسٹنگ سیٹنگز میں جا کر ڈومین شامل کریں اور ڈی این ایس ریکارڈز کو پوائنٹ کریں۔\n۳۔ وکس: \"پبلش\" بٹن سے ویب سائٹ لائیو ہوتی ہے۔ کسٹم ڈومین شامل کرنے کے لیے، \"ڈومینز\" سیکشن میں جا کر ڈومین خریدیں یا کنیکٹ کریں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے کسی بھی نو کوڈ ویب سائٹ بلڈر (فریمر/ویب فلو/وکس) میں ایک سادہ صفحہ بنائیں اور اسے پبلش کریں۔ اگر کسٹم ڈومین دستیاب ہے، تو اسے بھی شامل کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک نو کوڈ ویب سائٹ بنائیں (۳ سے ۵ صفحات پر مشتمل) اور اسے فریمر/ویب فلو/وکس پر لائیو کریں۔ اگر ممکن ہو تو کسٹم ڈومین شامل کرنے کی کوشش بھی کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "digital-marketing-seo": [
