@@ -16698,6 +16698,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 11,
+      "id": "day-011",
+      "date": "2026-08-15",
+      "title": "Day 11 — \"A se Z tak alphabets pehchanna\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachon, aaj hum seekhein ge ke har cheez ka naam alif se ye ke zay tak hota hai. Har cheez ka naam ek alifba hai, aur har alifba ka apna ek awaz hai. Aise hi, tumhara naam bhi A se Z tak ke alifba se banta hai. Har cheez ka naam pehchanna seekhna zaroori hai, taake hum sab ko samajh sakein."
+        ],
+        [
+          "Chhoti Kahani",
+          "Areeba ne apne ghar ke aas-paas dekha ke har cheez ka naam alif se ye ke zay tak hai. Usne dekha ke \"A\" se \"Apple\", \"B\" se \"Ball\", aur \"C\" se \"Cat\" shuru hota hai. Areeba ne socha ke agar woh in sab cheezon ke naam pehchaan le, toh woh bhi ek chhoti teacher ban sakti hai!"
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, tumhara naam ka pehla alifba konsa hai? Aur tumhara pasandida fruit ka pehla alifba konsa hai?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Har cheez ka naam alif se ye ke zay tak hota hai, aur har cheez ka apna ek awaz hai. Aise hi, tumhara naam bhi ek alifba hai!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۱ — \"الف سے یے تک حروف تہجی پہچاننا\"",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "بچو، آج ہم سیکھیں گے کہ ہر چیز کا نام الف سے یے تک ہوتا ہے۔ ہر چیز کا نام ایک حرفِ تہجی ہے، اور ہر حرفِ تہجی کی اپنی ایک آواز ہے۔ ایسے ہی، تمہارا نام بھی الف سے یے تک کے حروفِ تہجی سے بنتا ہے۔ ہر چیز کا نام پہچاننا سیکھنا ضروری ہے، تاکہ ہم سب کو سمجھ سکیں۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "عریبہ نے اپنے گھر کے آس پاس دیکھا کہ ہر چیز کا نام الف سے یے تک ہے۔ اس نے دیکھا کہ \"الف\" سے \"سیب\"، \"بے\" سے \"بال\"، اور \"جی\" سے \"بلی\" شروع ہوتا ہے۔ عریبہ نے سوچا کہ اگر وہ ان سب چیزوں کے نام پہچان لے، تو وہ بھی ایک چھوٹی ٹیچر بن سکتی ہے!"
+            },
+            {
+              "label": "امی ابّو کے ساتھ بات کریں",
+              "content": "\"بیٹا، تمہارے نام کا پہلا حرفِ تہجی کون سا ہے؟ اور تمہارا پسندیدہ پھل کا پہلا حرفِ تہجی کون سا ہے؟\""
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "ہر چیز کا نام الف سے یے تک ہوتا ہے، اور ہر چیز کی اپنی ایک آواز ہے۔ ایسے ہی، تمہارا نام بھی ایک حرفِ تہجی ہے!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-pg": [
