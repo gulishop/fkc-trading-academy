@@ -17200,6 +17200,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 11,
+      "id": "day-011",
+      "date": "2026-08-15",
+      "title": "Day 11 — **Rangon ki Pehchan: Laal, Neela, Peela, Hara**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachon, aaj hum seekhein ge ke kaise hum apne aas-paas ke rangon ko pehchan sakte hain! Har rang ka apna ek khas matlab hota hai, jaise laal rang 'ruk jao' ya 'khatre ki nishani' ho sakta hai. Hamesha yaad rakhna ke tumhara jism tumhara hai—agar koi cheez tumhe ajeeb lage to tum 'na' keh sakte ho."
+        ],
+        [
+          "Chhoti Kahani",
+          "Rani ne apne school ke bag mein ek laal rang ka box dekha. Usne socha, \"Yeh laal rang to 'ruk jao' ka signal hai!\" Isliye usne us box ko chod diya. Uske teacher ne uski himmat ki tareef ki!"
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar tumhe koi cheez laal, neela, peela, ya hara rang mein dikhe to tum kya samajhoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Har rang ka apna ek khas matlab hota hai—agar tumhe koi rang ya cheez ajeeb lage to tum foran ammi/abbu ko batana!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۱ — **رنگوں کی پہچان: لال، نیلا، پیلا، ہرا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "بچو، آج ہم سیکھیں گے کہ کیسے ہم اپنے آس پاس کے رنگوں کو پہچان سکتے ہیں! ہر رنگ کا اپنا ایک خاص مطلب ہوتا ہے، جیسے لال رنگ ’رک جاؤ‘ یا ’خطرے کی نشانی‘ ہو سکتا ہے۔ ہمیشہ یاد رکھنا کہ تمہارا جسم تمہارا ہے—اگر کوئی چیز تمہیں عجیب لگے تو تم ’نہ‘ کہہ سکتے ہو۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "رانی نے اپنے اسکول کے باغ میں ایک لال رنگ کا باکس دیکھا۔ اس نے سوچا، ’یہ لال رنگ تو ’رک جاؤ‘ کا سگنل ہے!‘ اس لیے اس نے اس باکس کو چھوڑ دیا۔ اس کے ٹیچر نے اس کی ہمت کی تعریف کی!"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "’بیٹا، اگر تمہیں کوئی چیز لال، نیلا، پیلا، یا ہرا رنگ میں دکھے تو تم کیا سمجھو گے؟‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "ہر رنگ کا اپنا ایک خاص مطلب ہوتا ہے—اگر تمہیں کوئی رنگ یا چیز عجیب لگے تو تم فوراً امّی/ابّو کو بتانا!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-kg": [
