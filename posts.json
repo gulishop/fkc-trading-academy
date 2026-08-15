@@ -9994,6 +9994,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 9,
+      "id": "day-009",
+      "date": "2026-08-15",
+      "title": "Day 9 — Python Modules: Reusing Code Like a Pro",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Modules Python files hain jinse hum reusable code (functions, classes, variables) ko organize karte hain. Libraries (jaise `math`, `random`) pre-built modules hain jo extra functionality provide karte hain. `import` statement se hum in modules ko apne program mein include karte hain."
+        ],
+        [
+          "Example",
+          "1. Ek `calculator.py` module banayein:\n```python\n# calculator.py\ndef add(a, b):\n    return a + b\n```\n2. Main program mein use karen:\n```python\nimport calculator\nresult = calculator.add(5, 3)\nprint(result)  # Output: 8\n```\n3. Direct functions import karen:\n```python\nfrom calculator import add\nprint(add(5, 3))  # Output: 8\n```"
+        ],
+        [
+          "Practice",
+          "Ek `greetings.py` module banayein jisme `say_hello(name)` function ho. Phir ek main program mein is function ko call karke `\"Hello, [name]!\"` print karein."
+        ],
+        [
+          "Mini Project",
+          "Ek simple **Contact Book** banayein jo:\n1. Ek `contacts.py` module mein `add_contact(name, phone)` aur `get_contact(name)` functions ho.\n2. Main program mein user se input le kar contacts add kare aur retrieve kare.\n3. Output mein contact list show ho."
+        ]
+      ],
+      "answer_key": "`greetings.py` file, `say_hello(name)` function, `import greetings`, `greetings.say_hello(\"ali\")`",
+      "translations": {
+        "ur": {
+          "title": "دن ۹ — پائیتھن ماڈیولز: کوڈ کو پیشہ ورانہ انداز میں دوبارہ استعمال کرنا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "ماڈیولز پائیتھن فائلز ہوتی ہیں جن کے ذریعے ہم قابلِ استعمال کوڈ (فنکشنز، کلاسز، متغیرات) کو منظم کرتے ہیں۔ لائبریریاں (جیسے `math`، `random`) پہلے سے تیار شدہ ماڈیولز ہیں جو اضافی فعالیت فراہم کرتی ہیں۔ `import` اسٹیٹمنٹ کے ذریعے ہم ان ماڈیولز کو اپنے پروگرام میں شامل کرتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ ایک `calculator.py` ماڈیول بنائیں:\n```python\n# calculator.py\ndef add(a, b):\n    return a + b\n```\n۲۔ مین پروگرام میں استعمال کریں:\n```python\nimport calculator\nresult = calculator.add(5, 3)\nprint(result)  # آؤٹ پٹ: ۸\n```\n۳۔ براہِ راست فنکشنز درآمد کریں:\n```python\nfrom calculator import add\nprint(add(5, 3))  # آؤٹ پٹ: ۸\n```"
+            },
+            {
+              "label": "مشق",
+              "content": "ایک `greetings.py` ماڈیول بنائیں جس میں `say_hello(name)` فنکشن ہو۔ پھر ایک مین پروگرام میں اس فنکشن کو کال کرکے `\"Hello, [نام]!\"` پرنٹ کریں۔"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "ایک سادہ **رابطہ کتاب** بنائیں جو:\n۱۔ ایک `contacts.py` ماڈیول میں `add_contact(name, phone)` اور `get_contact(name)` فنکشنز رکھے۔\n۲۔ مین پروگرام میں صارف سے ان پٹ لے کر رابطے شامل کرے اور بازیافت کرے۔\n۳۔ آؤٹ پٹ میں رابطوں کی فہرست دکھائے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "web-development": [
