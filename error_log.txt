@@ -751,3 +751,6 @@
 [2026-08-15T21:19:55.047534] [affiliate-marketing] Day 1 video skip: Agnes aur ffmpeg dono attempts fail.
 [2026-08-15T21:21:57.474414] [affiliate-marketing] Day 2 video skip: Agnes aur ffmpeg dono attempts fail.
 [2026-08-15T21:23:27.811356] [affiliate-marketing] Day 3 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-15T21:41:16.812061] [print-on-demand] Day 1 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-15T21:43:03.998810] [print-on-demand] Day 2 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-15T21:44:44.643301] [print-on-demand] Day 3 video skip: Agnes aur ffmpeg dono attempts fail.
