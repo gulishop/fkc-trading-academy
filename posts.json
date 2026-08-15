@@ -5402,6 +5402,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 10,
+      "id": "day-010",
+      "date": "2026-08-15",
+      "title": "Day 10 — **Store Ko Scale Karne Ke 3 Powerful Stages (Beginner Se Pro Tak)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Scale karna matlab hai apne store ko bade level par le jana—behtar profit, zyada orders, aur kam mehnat. Pehle stage mein efficiency badhao, doosre mein revenue badhao, teesre mein team ya automation se kaam kam karo. Har stage ke liye alag strategy hoti hai."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Stage 1 (Efficiency)",
+          "- Apne best-selling product ki order fulfillment speed badhao (e.g., supplier se 24-hour delivery confirm karo).\n   - Shopify apps jaise **Oberlo** ya **DSers** use karke bulk orders automate karo.\n\n2."
+        ],
+        [
+          "Stage 2 (Revenue)",
+          "- Upsell/cross-sell: Product page par \"Frequently Bought Together\" section add karo (e.g., phone case + screen protector).\n   - Email marketing se abandoned carts recover karo (Day 9 ke sequence use karo).\n\n3."
+        ],
+        [
+          "Stage 3 (Automation)",
+          "- Customer support ke liye **Chatfuel** ya **ManyChat** setup karo jo FAQs automatically answer kare.\n   - Facebook Ads ke liye **Rule-Based Retargeting** set karo (e.g., 3-day window mein jo visitors checkout na kare, unko discount offer dikhao)."
+        ],
+        [
+          "Practice",
+          "Apne store ke 1 best-selling product ke liye **upsell offer** design karo (e.g., \"Buy 2, Get 10% Off\"). Product page par add karne ka screenshot ya description likho."
+        ],
+        [
+          "Mini Project",
+          "Ek **scalability checklist** banayein (3 points):\n1. Order fulfillment time reduce karne ka tareeka.\n2. Upsell/cross-sell ka ek idea.\n3. Automation ke liye ek app ya tool ka naam."
+        ]
+      ],
+      "answer_key": "efficiency badhana, upsell add karna, automation tools",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۰ — **اسٹور کو سکیل کرنے کے ۳ طاقتور مراحل (بیگنر سے پرو تک)**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "سکیل کرنا کا مطلب ہے اپنے اسٹور کو بڑے لیول پر لے جانا—بہتر منافع، زیادہ آرڈرز، اور کم محنت۔ پہلے مرحلے میں ایفیشینسی بڑھاؤ، دوسرے میں ریونیو بڑھاؤ، تیسرے میں ٹیم یا آٹومیشن سے کام کم کرو۔ ہر مرحلے کے لیے الگ اسٹریٹیجی ہوتی ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔\n- **مرحلہ ۱ (ایفیشینسی):** اپنے بہترین فروخت ہونے والے پروڈکٹ کی آرڈر فل فل ممنٹ سپیڈ بڑھاؤ (مثال کے طور پر، سپلائر سے ۲۴ گھنٹے کی ڈیلیوری کی تصدیق کرو)۔\n- **شاپیفائی ایپس** جیسے **اوبرلو** یا **ڈیسرز** استعمال کرکے بلک آرڈرز کو آٹومیٹ کرو۔\n\n۲۔\n- **مرحلہ ۲ (ریونیو):** اپ سیل/کراس سیل: پروڈکٹ پیج پر \"اکثر ایک ساتھ خریدا گیا\" سیکشن شامل کرو (مثال کے طور پر، فون کیس + اسکرین پروٹیکٹر)۔\n- ای میل مارکیٹنگ سے ترک شدہ کارٹس کو ری کवर کرو (دن ۹ کے سیquence کو استعمال کرو)۔\n\n۳۔\n- **مرحلہ ۳ (آٹومیشن):** کسٹمر سپورٹ کے لیے **چیٹ فیول** یا **مینی چیٹ** سیٹ اپ کرو جو عام سوالات کے جوابات خود بخود دے۔\n- فیس بک ایڈز کے لیے **رول بیسڈ ری ٹارگٹنگ** سیٹ کرو (مثال کے طور پر، ۳ دن کے ونڈو میں جو وزیٹرز چیک آؤٹ نہ کریں، انہیں ڈسکاؤنٹ آفر دکھاؤ)"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے اسٹور کے ایک بہترین فروخت ہونے والے پروڈکٹ کے لیے **اپ سیل آفر** ڈیزائن کرو (مثال کے طور پر، \"۲ خریدو، ۱۰٪ چھوٹ حاصل کرو\")۔ پروڈکٹ پیج پر شامل کرنے کا اسکرین شاٹ یا تفصیل لکھو۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **سکیل ایبلٹی چیک لسٹ** بناؤ (۳ نکات):\n۱۔ آرڈر فل فل ممنٹ ٹائم کم کرنے کا طریقہ۔\n۲۔ اپ سیل/کراس سیل کا ایک آئیڈیا۔\n۳۔ آٹومیشن کے لیے ایک ایپ یا ٹول کا نام۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "freelancing": [
