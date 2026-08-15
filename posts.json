@@ -3307,6 +3307,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 17,
+      "id": "day-017",
+      "date": "2026-08-15",
+      "title": "Day 17 — **Trading Psychology: Emotions Ko Control Karne Ke 3 Golden Rules**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Trading mein 80% success psychology par hai – emotions (fear, greed, revenge trading) aapki sabse badi enemy hain. Jab loss hota hai, traders \"ek aur try karte hain\" ya \"abhi recover karunga\" ke chakkar mein zyada risk le lete hain. Jab profit hota hai, greed aati hai aur woh trade zyada chhoda dete hain. Aaj hum seekhenge ke kaise apne emotions ko recognize karke un par control rakha jaaye."
+        ],
+        [
+          "Example",
+          "Imagine aapne EUR/USD mein long trade liya, aur market ne 50 pips profit ke baad reverse kar diya. Ab aapka loss ho raha hai – aapka brain \"chalo recover karte hain\" ke signal bhejta hai. Aap 2x lot size se trade karte hain, lekin market aur girti hai. Yeh hai \"revenge trading\" ka classic trap. Solution: Pehle se hi decide kar lo ke loss kitna hone do (stop-loss), aur profit ke peeche na bhago."
+        ],
+        [
+          "Practice",
+          "Apne aaj ke trading journal mein 1 trade select karo jismein aapko emotions feel hue the. Likho:\n1. Trade enter karne se pehle aapki emotion kya thi?\n2. Trade ke dauran kya emotions badle?\n3. Aapne kaise react kiya?"
+        ],
+        [
+          "Mini Project",
+          "\"Emotion Tracker\" chart banao:\n- X-axis: Time (trade enter se exit tak)\n- Y-axis: Emotion scale (-10 to +10, -10 = extreme fear, +10 = extreme greed)\n- Apne trade ke dauran emotions ka graph draw karo. Aapko pata chalega ke kab aapki emotions ne decision li."
+        ]
+      ],
+      "answer_key": "fear, greed, revenge trading, stop-loss discipline",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۷ — ٹریڈنگ سائیکالوجی: جذبات کو کنٹرول کرنے کے ۳ گولڈن رولز",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ٹریڈنگ میں ۸۰ فیصد کامیابی سائیکالوجی پر منحصر ہے — جذبات (خوف، لالچ، ریوینج ٹریڈنگ) آپ کی سب سے بڑی دشمن ہیں۔ جب نقصان ہوتا ہے تو ٹریڈرز ’’ایک اور کوشش کرتے ہیں‘‘ یا ’’ابھی ریکور کر لوں گا‘‘ کے چکر میں زیادہ رسک لے لیتے ہیں۔ جب منافع ہوتا ہے تو لالچ آتی ہے اور وہ ٹریڈ زیادہ چھوڑ دیتے ہیں۔ آج ہم سیکھیں گے کہ کس طرح اپنے جذبات کو پہچان کر ان پر کنٹرول رکھا جائے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "تصور کریں آپ نے EUR/USD میں لانگ ٹریڈ لیا اور مارکیٹ نے ۵۰ پِپس منافع کے بعد ریورس کر دیا۔ اب آپ کا نقصان ہو رہا ہے — آپ کا دماغ ’’چلو ریکور کرتے ہیں‘‘ کا سگنل بھیجتا ہے۔ آپ ڈبل لوٹ سائز سے ٹریڈ کرتے ہیں لیکن مارکیٹ اور گِرتی ہے۔ یہ ہے ’’ریوینج ٹریڈنگ‘‘ کا کلاسک ٹریپ۔ حل: پہلے سے ہی طے کر لیں کہ نقصان کتنا ہونے دیں گے (سٹاپ لاس) اور منافع کے پیچھے نہ بھاگیں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے آج کے ٹریڈنگ جرنل میں ایک ٹریڈ منتخب کریں جس میں آپ کو جذبات محسوس ہوئے ہوں۔ لکھیں:\n١۔ ٹریڈ داخل کرنے سے پہلے آپ کا جذبہ کیا تھا؟\n٢۔ ٹریڈ کے دوران جذبات میں کیا تبدیلی آئی؟\n٣۔ آپ نے کیسے ردِ عمل دیا؟"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "’’ایموشن ٹریکر‘‘ چارٹ بنائیں:\n- ایکس ایکسس: ٹائم (ٹریڈ داخلے سے اخراج تک)\n- وائے ایکسس: ایموشن اسکیل (-١٠ سے +١٠ تک، -١٠ = انتہائی خوف، +١٠ = انتہائی لالچ)\n- اپنے ٹریڈ کے دوران جذبات کا گراف بنائیں۔ آپ کو پتا چلے گا کہ کب آپ کے جذبات نے فیصلہ کیا۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "amazon-fba": [
