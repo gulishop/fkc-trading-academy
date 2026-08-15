@@ -4283,6 +4283,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 10,
+      "id": "day-010",
+      "date": "2026-08-15",
+      "title": "Day 10 — **Daraz Par AI Tools Se Product Research Kaise Tez Karein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "AI tools se product research karna ab seller ke liye zaroori ho gaya hai. AI se aap competitors ke best-selling products, pricing trends, aur customer reviews analyze kar sakte hain—bas 2-3 clicks mein! Tools jaise **Jungle Scout, Helium 10, oRDS, ya Daraz ke hi AI-powered search filters** use karke aap time bacha sakte hain aur accurate data pa sakte hain."
+        ],
+        [
+          "Example",
+          "1. **Jungle Scout** par \"Pakistan\" select karein, category choose karein (e.g., \"Home & Kitchen\").\n2. \"Top Products\" section mein AI-generated best sellers dekhhein—jismein sales volume, rating, aur pricing trends hon.\n3. **Daraz ke search bar** mein AI filter use karein: \"Best Selling\" + \"Low Competition\" select karein, phir \"Price: Low to High\" sort karein."
+        ],
+        [
+          "Practice",
+          "Aaj ke liye, **ek category choose karke** (e.g., \"Men's Fashion\" ya \"Baby Products\") **Daraz par AI filters use karke top 3 trending products** nikalain. Har product ka **current price, rating, aur estimated sales** note karein."
+        ],
+        [
+          "Mini Project",
+          "**\"AI-Powered Product Research Report\"** banayein:\n- 1 page ka simple report likhein jismein:\n  1. 3 trending products ke naam + links.\n  2. Har product ka **AI se nikalta hua \"opportunity score\"** (e.g., \"High demand, low competition\").\n  3. Apna **next listing ka plan** (kon sa product add karna hai aur kyun)."
+        ]
+      ],
+      "answer_key": "trending products list, ai filters used, opportunity score, next listing plan",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۰ — دراز پر اے آئی ٹولز سے پروڈکٹ ریسرچ کیسے تیز کریں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "اے آئی ٹولز سے پروڈکٹ ریسرچ کرنا اب سیلر کے لیے ضروری ہو گیا ہے۔ اے آئی سے آپ مقابلہ کرنے والوں کے بہترین فروخت ہونے والے پروڈکٹس، قیمتوں کے رجحانات، اور کسٹمر ریویوز کا تجزیہ کر سکتے ہیں—بس دو سے تین کلکس میں! ٹولز جیسے جنگل سکاؤٹ، ہیلیم ۱۰، او آر ڈی ایس، یا دراز کے ہی اے آئی پاورڈ سرچ فلٹرز استعمال کر کے آپ وقت بچا سکتے ہیں اور درست ڈیٹا حاصل کر سکتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ جنگل سکاؤٹ پر \"پاکستان\" سلیکٹ کریں، کیٹیگری منتخب کریں (مثلاً \"ہوم اینڈ کچن\")۔\n۲۔ \"ٹاپ پروڈکٹس\" سیکشن میں اے آئی جنریٹڈ بہترین سیلرز دیکھیں—جس میں سیلز والیوم، ریٹنگ، اور پرائسنگ ٹرینڈز ہوں۔\n۳۔ دراز کے سرچ بار میں اے آئی فلٹر استعمال کریں: \"بہترین فروخت\" + \"کم مقابلہ\" سلیکٹ کریں، پھر \"قیمت: کم سے زیادہ\" سورت کریں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "آج کے لیے، ایک کیٹیگری منتخب کر کے (مثلاً \"مینز فیشن\" یا \"بیبی پروڈکٹس\") دراز پر اے آئی فلٹرز استعمال کر کے ٹاپ ۳ ٹرینڈنگ پروڈکٹس نکالیں۔ ہر پروڈکٹ کا موجودہ قیمت، ریٹنگ، اور اندازہً سیلز نوٹ کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "\"اے آئی پاورڈ پروڈکٹ ریسرچ رپورٹ\" بنائیں:\nایک صفحے کی سادہ رپورٹ لکھیں جس میں شامل ہو:\n۱۔ ۳ ٹرینڈنگ پروڈکٹس کے نام اور لنکس۔\n۲۔ ہر پروڈکٹ کا اے آئی سے نکلتا ہوا \"آپورچونٹی سکور\" (مثلاً \"زیادہ طلب، کم مقابلہ\")۔\n۳۔ آپ کا اگلا لسٹنگ کا پلان (کون سا پروڈکٹ شامل کرنا ہے اور کیوں)।"
+            }
+          ]
+        }
+      }
     }
   ],
   "ai-content-writing": [
