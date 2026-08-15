@@ -15030,6 +15030,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 11,
+      "id": "day-011",
+      "date": "2026-08-15",
+      "title": "Day 11 — **Pakistan Mein Real Estate Market Trends 2024: Kya Kar Rahi Hai Industry?**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Pakistan ka real estate market 2024 mein kaafi dynamic hai—inflation, government policies (jaise Naya Housing Scheme), aur foreign remittances ka impact sab kuch change kar raha hai. Key trends: **Islamabad/Rawalpindi mein high-end projects ka boom**, **Karachi mein affordable housing ka demand**, aur **digital transactions ka increase** (jaise Roshan Digital Account se property khareedna). Investors ko **location-based opportunities** (jaise Gwadar, Lahore ke outskirts) aur **regulatory changes** (jaise FBR ke new rules) samajhna zaroori hai."
+        ],
+        [
+          "Example",
+          "Ek investor Lahore ke **DHA Phase 6** mein 2 kanal plot khareedna chahta hai. Uske liye:\n1."
+        ],
+        [
+          "Market Rate Check",
+          "DHA ki official website ya **Zameen.com** par latest rates dekhein (2024 mein ~Rs. 50,000/sq. yard).\n2."
+        ],
+        [
+          "Trend Analysis",
+          "2023 se 2024 tak **15% price increase** hui hai—isliye early entry faydemand.\n3."
+        ],
+        [
+          "Government Impact",
+          "Punjab Housing Authority ki **Naya Housing Scheme** se DHA ke prices par pressure hai."
+        ],
+        [
+          "Practice",
+          "Apne **local area (shahar ya mohalla)** mein 2-3 recent property deals (sale/rent) ka research karain. **Zameen.com** ya **OLX** se prices note karain aur **1 year ke price change** ko calculate karain."
+        ],
+        [
+          "Mini Project",
+          "**\"Trend Comparison Report\"** banaein:\n- Apne shehar ke **2 popular areas** (jaise Karachi mein DHA vs. Gulshan-e-Iqbal) ke **2023 vs. 2024 prices** compare karain.\n- **1 graph** banaein (Excel ya Canva se) jo price movement dikhaye.\n- **1 paragraph** likhein: *\"In areas mein 2024 mein kya trends nazar a rahi hain?\"*"
+        ]
+      ],
+      "answer_key": "dha lahore 50k/sq. yard, gulshan-e-iqbal 35k/sq. yard, 15% increase, zameen.com, olx",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۱ — **پاکستان میں رئیل اسٹیٹ مارکیٹ ٹرینڈز ۲۰۲۴: انڈسٹری کیا کر رہی ہے؟**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "پاکستان کا رئیل اسٹیٹ مارکیٹ ۲۰۲۴ میں کافی ڈائنامک ہے—انفلیشن، گورنمنٹ پالیسیاں (جیسے نیا ہاؤسنگ سکیم)، اور فارن ریمیٹنسز کا اثر سب کچھ بدل رہا ہے۔ کلیدی رجحانات: **اسلام آباد/راولپنڈی میں ہائی اینڈ پراجیکٹس کا بوم**، **کراچی میں افورڈ ایبل ہاؤسنگ کی مانگ**، اور **ڈیجیٹل ٹرانزیکشنز میں اضافہ** (جیسے روشن ڈیجیٹل اکاؤنٹ سے پراپرٹی خریدنا)। سرمایہ کاروں کو **لوکیشن بیسڈ مواقع** (جیسے گوادر، لاہور کے آؤٹ سکर्टس) اور **ریگولیٹری تبدیلیاں** (جیسے ایف بی آر کے نئے قواعد) سمجھنا ضروری ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک سرمایہ کار لاہور کے **ڈی ایچ اے فیز ۶** میں ۲ کنال پلاٹ خریدنا چاہتا ہے۔ اس کے لیے:\n۱۔ مارکیٹ ریٹ چیک: ڈی ایچ اے کی آفیشل ویب سائٹ یا **زمین ڈاٹ کام** پر تازہ ترین ریٹس دیکھیں (۲۰۲۴ میں ~۵۰,۰۰۰ روپے فی مربع گز)۔\n۲۔ ٹرینڈ اینالسس: ۲۰۲۳ سے ۲۰۲۴ تک **۱۵ فیصد قیمت میں اضافہ** ہوا ہے—اس لیے ابتدائی داخلہ فائدہ مند ہے۔\n۳۔ گورنمنٹ امپیکٹ: پنجاب ہاؤسنگ اتھارٹی کی **نیا ہاؤسنگ سکیم** سے ڈی ایچ اے کی قیمتوں پر دباؤ ہے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے **مقامی علاقے (شہر یا محلہ)** میں ۲-۳ حالیہ پراپرٹی ڈیلز (سیل/رینٹ) کا ریسرچ کریں۔ **زمین ڈاٹ کام** یا **اولیکس** سے قیمتیں نوٹ کریں اور **ایک سال کے قیمت میں تبدیلی** کا حساب لگائیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "**\"ٹرینڈ کمپیریزن رپورٹ\"** بنائیں:\n- اپنے شہر کے **۲ مقبول علاقے** (جیسے کراچی میں ڈی ایچ اے بمقابلہ گلشنِ اقبال) کے **۲۰۲۳ بمقابلہ ۲۰۲۴ کی قیمتیں** کا موازنہ کریں۔\n- **ایک گراف** بنائیں (ایکسل یا کینوا سے) جو قیمتوں کی نقل و حرکت دکھائے۔\n- **ایک پیراگراف** لکھیں: *\"ان علاقوں میں ۲۰۲۴ میں کیا رجحانات نظر آ رہے ہیں؟\"*"
+            }
+          ]
+        }
+      }
     }
   ],
   "mobile-repairing": [
