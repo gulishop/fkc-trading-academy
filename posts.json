@@ -13800,6 +13800,64 @@
           ]
         }
       }
+    },
+    {
+      "day": 12,
+      "id": "day-012",
+      "date": "2026-08-15",
+      "title": "Day 12 — **Leading Lines & Framing: Guiding the Viewer’s Eye**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Leading lines aur framing photography mein aise composition techniques hain jo viewer ki nazar ko photo ke important parts tak guide karte hain. Leading lines natural ya man-made lines hoti hain (sadiyan, rail tracks, buildings ki edges) jo photo ke center of interest tak le jati hain. Framing mein hum subject ko natural ya artificial frames (darwaze, windows, trees) se surround karte hain taki background distract na ho aur subject highlight ho."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Leading Lines",
+          "Ek long exposure shot lo jismein road ya railway track center se shuru ho aur photo ke end tak chale jaye. Camera ko ground ke level par rakh ke shoot karo taaki lines zyada prominent nazar aayein.\n2."
+        ],
+        [
+          "Framing",
+          "Ek portrait shoot karte waqt, subject ke peeche ek darwaza ya window ka frame use karo. Subject ko frame ke center par place karo taaki wo naturally highlight ho."
+        ],
+        [
+          "Practice",
+          "Apne ghar ya street par 3 alag-alag leading lines wali photos lo (jaise stairs, fence, ya building ki side). Har photo mein lines ko subject tak guide karne ka notice karo."
+        ],
+        [
+          "Mini Project",
+          "Ek single photo shoot karo jismein **dono techniques** use ki gayin hon:\n- Leading lines: Kisi road ya path ko use karo jo photo ke center tak chale.\n- Framing: Photo ke edges par natural frame (jaise trees ya pillars) add karo taaki subject center mein achhe se dikhe."
+        ]
+      ],
+      "answer_key": "lines, subject, frame, center",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۲ — لیڈنگ لائنز اور فریمنگ: ناظر کی نظر کی رہنمائی",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "لیڈنگ لائنز اور فریمنگ فوٹوگرافی میں ایسے کمپوزیشن ٹیکنکس ہیں جو ناظر کی نظر کو تصویر کے اہم حصوں تک رہنمائی کرتے ہیں۔ لیڈنگ لائنز قدرتی یا مصنوعی لکیریں ہوتی ہیں (جیسے سڑکیں، ریلوے ٹریک، عمارتوں کے کنارے) جو تصویر کے مرکزِ دلچسپی تک لے جاتی ہیں۔ فریمنگ میں ہم سبجیکٹ کو قدرتی یا مصنوعی فریموں (دروازے، کھڑکیاں، درخت) سے گھیرتے ہیں تاکہ پس منظر توجہ نہ بھٹکا سکے اور سبجیکٹ نمایاں ہو جائے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔\nلیڈنگ لائنز: ایک لمبی ایکسپوژر شاٹ لیں جس میں سڑک یا ریلوے ٹریک مرکز سے شروع ہو کر تصویر کے آخر تک جائے۔ کیمرے کو زمین کی سطح پر رکھ کر شوٹ کریں تاکہ لکیریں زیادہ نمایاں نظر آئیں۔\n۲۔\nفریمنگ: پورٹریٹ شوٹ کرتے وقت، سبجیکٹ کے پیچھے کسی دروازے یا کھڑکی کے فریم کا استعمال کریں۔ سبجیکٹ کو فریم کے مرکز میں رکھیں تاکہ وہ قدرتی طور پر نمایاں ہو جائے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے گھر یا گلی میں تین مختلف لیڈنگ لائنز والی تصاویر لیں (جیسے سیڑھیاں، باڑ، یا عمارت کا کنارہ)۔ ہر تصویر میں لکیروں کو سبجیکٹ تک رہنمائی کرتے ہوئے نوٹ کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک واحد تصویر شوٹ کریں جس میں دونوں ٹیکنکس استعمال کی گئی ہوں:\n- لیڈنگ لائنز: کسی سڑک یا راستے کو استعمال کریں جو تصویر کے مرکز تک جائے۔\n- فریمنگ: تصویر کے کناروں پر قدرتی فریم (جیسے درخت یا ستون) شامل کریں تاکہ سبجیکٹ مرکز میں اچھے سے نظر آئے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "voiceover-podcasting": [
