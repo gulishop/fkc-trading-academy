@@ -6258,6 +6258,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 15,
+      "id": "day-015",
+      "date": "2026-08-15",
+      "title": "Day 15 — **Freelancing Mein \"Repeat Clients\" Banane Ka Sabse Asaan Tarika**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Repeat clients freelancing ki success ka backbone hote hain. Naye client lena zaroori hai, lekin existing client se bar bar kaam lena time, effort aur commission fees bachata hai. Aaj seekhoge ki kaise loyal clients build karne hain, unke satisfaction ko kaise maintain karna hai, aur unhe bar bar kaise hire karna hai."
+        ],
+        [
+          "Example",
+          "Ek graphic designer ka client hai jo logo design karwana chahta hai. Pehle project ke baad usko 3 additional services offer karo:\n1. Branding guidelines (₹5,000)\n2. Social media posts (₹3,000/month)\n3. Website banner updates (₹2,000)\nHar service ke liye ek discount offer karo (e.g., \"3 services lene par 15% off\"). Agar client satisfied hai, toh yeh additional services easily approve ho jayengi."
+        ],
+        [
+          "Practice",
+          "Apne ek existing client (ya kisi friend/relative se bhi) ko ek email bhejiye jismein aap 1-2 extra services suggest karein jo unke project ko enhance kar sakein. Email mein clear benefits batayein aur ek small discount offer karein."
+        ],
+        [
+          "Mini Project",
+          "Ek \"Client Retention Plan\" banao:\n1. Apne top 3 clients ki list banao.\n2. Har client ke liye 1-2 extra services ya upsell ka idea likho.\n3. Ek automated follow-up system (e.g., WhatsApp/email template) taiyar karo jo har 2 weeks baad unse milne ka request kare."
+        ]
+      ],
+      "answer_key": "loyal clients, upsell, automated follow-up, satisfaction",
+      "translations": {
+        "ur": {
+          "title": "دن 15 — فری لانسنگ میں \"ریپیٹ کلائنٹس\" بنانے کا سب سے آسان طریقہ",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "ریپیٹ کلائنٹس فری لانسنگ کی کامیابی کی ریڑھ کی ہڈی ہوتے ہیں۔ نئے کلائنٹ حاصل کرنا ضروری ہے، لیکن موجودہ کلائنٹ سے بار بار کام لینا وقت، محنت اور کمیشن فیس بچاتا ہے۔ آج سیکھو گے کہ کیسے وفادار کلائنٹس بنانے ہیں، ان کی اطمینان کو کیسے برقرار رکھنا ہے، اور انہیں بار بار کیسے ہائر کرنا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک گرافک ڈیزائنر کا کلائنٹ ہے جو لوگو ڈیزائن کروا نا چاہتا ہے۔ پہلے پروجیکٹ کے بعد اسے 3 اضافی سروسز آفر کرو:\n1. برانڈنگ گائیڈلائنز (₹5,000)\n2. سوشل میڈیا پوسٹس (₹3,000/ماہ)\n3. ویب سائٹ بینر اپ ڈیٹس (₹2,000)\nہر سروس کے لیے ایک ڈسکاؤنٹ آفر کرو (مثال کے طور پر، \"3 سروسز لینے پر 15% چھوٹ\")۔ اگر کلائنٹ مطمئن ہے، تو یہ اضافی سروسز آسانی سے منظور ہو جائیں گی۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے ایک موجودہ کلائنٹ (یا کسی دوست/رشتہ دار سے بھی) کو ایک ای میل بھیجو جس میں آپ 1-2 اضافی سروسز تجویز کرو جو ان کے پروجیکٹ کو بہتر بنا سکتی ہیں۔ ای میل میں واضح فوائد بتائیں اور ایک چھوٹا ڈسکاؤنٹ آفر کرو۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک \"کلائنٹ ریٹینشن پلان\" بناؤ:\n1. اپنے ٹاپ 3 کلائنٹس کی لسٹ بناؤ۔\n2. ہر کلائنٹ کے لیے 1-2 اضافی سروسز یا اپ سیل کا آئیڈیا لکھو۔\n3. ایک آٹومیٹڈ فالو اپ سسٹم (مثلاً، واٹس ایپ/ای میل ٹیمپلیٹ) تیار کرو جو ہر 2 ہفتے بعد ان سے ملنے کا درخواست کرے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "graphic-design-canva": [
