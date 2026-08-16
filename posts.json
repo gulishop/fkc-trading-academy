@@ -15894,6 +15894,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 14,
+      "id": "day-014",
+      "date": "2026-08-16",
+      "title": "Day 14 — **Fingerprint Sensor Repair: Broken, Unresponsive ya Glitchy Sensor ka Fix**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Fingerprint sensor repair mein common issues jaise sensor ka broken hona, unresponsive hona, ya glitchy response (jaise sensor ka bar-bar fail hona) ko diagnose aur fix karna sikhaya jayega. Sensor ke hardware (flex cable damage, sensor ki chip ka loose hona) ya software (driver issue, OS conflict) ki wajah se yeh problems hoti hain. Aaj hum hardware-level troubleshooting par focus karenge."
+        ],
+        [
+          "Example",
+          "Agar kisi phone ka fingerprint sensor kaam nahi kar raha, toh pehle check karenge ki sensor ka flex cable properly connected hai ya nahi. Agar cable intact hai, toh sensor ko gently press karke check karenge ki kya sensor ka chip thoda sa move ho raha hai. Agar sensor chip loose hai, toh use reballing ya replacement ke zariye fix kiya ja sakta hai."
+        ],
+        [
+          "Practice",
+          "Apne ek old phone ka fingerprint sensor ka flex cable disconnect karke dobara connect karen. Check karen ki sensor ab kaam kar raha hai ya nahi. Agar nahi, toh sensor ke chip ko gently press karke dekhain ki kya sensor ka response improve hota hai."
+        ],
+        [
+          "Mini Project",
+          "Ek old phone ka fingerprint sensor remove karke, uske flex cable ko clean karke dobara install karen. Agar sensor kaam karta hai, toh usko repair karke dikhain. Agar nahi, toh sensor ko replace karke test karen."
+        ]
+      ],
+      "answer_key": "flex cable check, sensor chip loose, reballing/replacement, test fingerprint",
+      "translations": {
+        "ur": {
+          "title": "دن 14 — فنگر پرنٹ سینسر ریپیئر: ٹوٹا ہوا، غیر جواب دہ یا گلیچی سینسر کا فکس",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "فنگر پرنٹ سینسر ریپیئر میں عام مسائل جیسے سینسر کا ٹوٹا ہوا ہونا، غیر جواب دہ ہونا، یا گلیچی ریسپانس (جیسے سینسر کا بار بار فیل ہونا) کو ڈائیگنوز اور فکس کرنا سکھایا جائے گا۔ سینسر کے ہارڈویئر (فلیکس کیبل کا ڈیمیج ہونا، سینسر کی چپ کا loose ہونا) یا سافٹ ویئر (ڈرائیور مسئلہ، آپریٹنگ سسٹم کا ٹکراﺅ) کی وجہ سے یہ مسائل ہوتے ہیں۔ آج ہم ہارڈویئر لیول ٹربل شوٹنگ پر توجہ دیں گے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "اگر کسی فون کا فنگر پرنٹ سینسر کام نہیں کر رہا ہے تو پہلے چیک کریں گے کہ سینسر کا فلیکس کیبل ٹھیک سے کنیکٹڈ ہے یا نہیں۔ اگر کیبل صحیح حالت میں ہے تو سینسر کو آہستہ سے دبا کر چیک کریں گے کہ کیا سینسر کی چپ تھوڑی سی حرکت کر رہی ہے۔ اگر سینسر چپ loose ہے تو اسے ری بالنگ یا ری پلیسمنٹ کے ذریعے فکس کیا جا سکتا ہے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے کسی پرانے فون کا فنگر پرنٹ سینسر کا فلیکس کیبل ڈس کنیکٹ کر کے دوبارہ کنیکٹ کریں۔ چیک کریں کہ سینسر اب کام کر رہا ہے یا نہیں۔ اگر نہیں تو سینسر کی چپ کو آہستہ سے دبا کر دیکھیں کہ کیا سینسر کا ریسپانس بہتر ہوتا ہے۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک پرانے فون کا فنگر پرنٹ سینسر ہٹا کر اس کے فلیکس کیبل کو صاف کر کے دوبارہ انسٹال کریں۔ اگر سینسر کام کرتا ہے تو اسے ریپیئر کر کے دکھائیں۔ اگر نہیں تو سینسر کو ری پلیس کر کے ٹیسٹ کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-safety-education": [
