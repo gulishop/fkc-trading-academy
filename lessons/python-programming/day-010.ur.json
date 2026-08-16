@@ -1,0 +1,22 @@
+{
+  "title": "دن ۱۰ — ویب سکریپنگ کی بنیادیات: ڈیٹا نکالنا",
+  "preamble": "",
+  "sections": [
+    {
+      "label": "تصور",
+      "content": "ویب سکریپنگ پائیتھن میں ایک طاقتور تکنیک ہے جس کے ذریعے ہم ویب سائٹس سے ڈیٹا نکال سکتے ہیں۔ `requests` اور `BeautifulSoup` لائبریریز کا استعمال کرتے ہوئے ہم ایچ ٹی ایم ایل صفحات کو پارس کر سکتے ہیں اور مطلوبہ ڈیٹا حاصل کر سکتے ہیں۔ یہ بیگنرز کے لیے آسان ہے اور حقیقی دنیا کے اطلاقات جیسے قیمتوں کا موازنہ، خبروں کی جمع آوری، یا تحقیق میں کام آتی ہے۔"
+    },
+    {
+      "label": "مثال",
+      "content": "۱۔ لائبریریز انسٹال کریں: `pip install requests beautifulsoup4`\n۲۔ کسی ویب سائٹ کا ایچ ٹی ایم ایل حاصل کریں:\n```python\nimport requests\nfrom bs4 import BeautifulSoup\n\nurl = \"https://example.com\"\nresponse = requests.get(url)\nsoup = BeautifulSoup(response.text, 'html.parser')\n```\n۳۔ مخصوص ڈیٹا نکالیں (مثلاً تمام `<h2>` ٹیگز):\n```python\nheadings = soup.find_all('h2')\nfor heading in headings:\n    print(heading.text)\n```"
+    },
+    {
+      "label": "مشق",
+      "content": "اپنی پسندیدہ ویب سائٹ (جیسے خبروں کا پورٹل یا ای کامرس سائٹ) کا یو آر ایل لیں اور اس کے تمام `<a>` ٹیگز کے متن اور لنکس پرنٹ کریں۔"
+    },
+    {
+      "label": "چھوٹا پروجیکٹ",
+      "content": "ایک سادہ سکرپٹ بنائیں جو \"https://books.toscrape.com/\" سے تمام کتابوں کے عنوانات اور قیمتوں کو نکال کر ایک لسٹ میں محفوظ کرے۔"
+    }
+  ]
+}
