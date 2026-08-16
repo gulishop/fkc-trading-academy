@@ -1,4 +1,4 @@
-// build: 2026-08-16T20:45:45.102435
+// build: 2026-08-16T21:05:54.544848
 self.addEventListener('install',e=>self.skipWaiting());
 self.addEventListener('activate',e=>self.clients.claim());
 self.addEventListener('fetch',e=>{
