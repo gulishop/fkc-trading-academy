@@ -5776,6 +5776,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 11,
+      "id": "day-011",
+      "date": "2026-08-16",
+      "title": "Day 11 — **Supplier Negotiation: Apne Profit Margins Ko Kaise Badhayein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Supplier negotiation ek aisa skill hai jo aapke profit margins ko 10-30% tak badha sakta hai. AliExpress ya local suppliers ke saath deal karne ka matlab hai: better pricing, faster shipping, aur extra benefits jaise free samples ya priority support. Yeh negotiation ek art hai—patience, confidence aur clear communication se hi hota hai."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Price Negotiation",
+          "AliExpress par ek product ₹500 ka hai. Aap message karte hain:\n   *\"Hello! I’m interested in bulk order of [product]. Can you offer me 30% discount for 50+ units? Also, can you provide free samples?\"*\n2."
+        ],
+        [
+          "Shipping Negotiation",
+          "Agar supplier ₹200 shipping charge lagata hai, poochhein:\n   *\"If I order 100 units, can you reduce shipping to ₹100?\"*\n3."
+        ],
+        [
+          "Exclusive Deals",
+          "Agar aap long-term supplier banane ka promise karte hain, poochhein:\n   *\"Can you give me exclusive pricing for 6 months if I commit to 200 units/month?\"*"
+        ],
+        [
+          "Practice",
+          "Apne current ya potential supplier ko ek polite aur professional message bhejiye—ya to price discount ya free samples ke liye. Clear aur specific requests likhein."
+        ],
+        [
+          "Mini Project",
+          "Ek **Supplier Negotiation Tracker** spreadsheet banayein jisme:\n- Supplier ka naam\n- Product ka naam\n- Original price\n- Negotiated price\n- Extra benefits (free shipping/samples)\n- Follow-up date"
+        ]
+      ],
+      "answer_key": "discount request, free samples, shipping reduction, long-term deal",
+      "translations": {
+        "ur": {
+          "title": "دن 11 — سپلائر نیگوشیشن: اپنے پروفٹ مارجنز کو کیسے بڑھائیں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "سپلائر نیگوشیشن ایک ایسا ہنر ہے جو آپ کے پروفٹ مارجنز کو 10 سے 30 فیصد تک بڑھا سکتا ہے۔ علی ایکسپریس یا مقامی سپلائرز کے ساتھ ڈیل کرنے کا مطلب ہے: بہتر قیمت، تیز تر شپنگ، اور اضافی فوائد جیسے مفت سیمپلز یا پرائوریٹی سپورٹ۔ یہ نیگوشیشن ایک آرٹ ہے—صبر، اعتماد اور واضح کمیونیکیشن سے ہی ممکن ہوتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1۔ قیمت پر نیگوشیشن: علی ایکسپریس پر کوئی پروڈکٹ پانچ سو روپے کی ہے۔ آپ میسج کرتے ہیں:\n*«ہیلو! مجھے [پروڈکٹ] کے بلک آرڈر میں دلچسپی ہے۔ کیا آپ پچاس سے زائد یونٹس کے لیے تیس فیصد ڈسکاؤنٹ دے سکتے ہیں؟ نیز، کیا آپ مفت سیمپل فراہم کر سکتے ہیں؟»*\n\n2۔ شپنگ پر نیگوشیشن: اگر سپلائر دو سو روپے شپنگ چارج لگاتا ہے تو پوچھیں:\n*«اگر میں سو یونٹس آرڈر کروں تو کیا آپ شپنگ کو سو روپے تک کم کر سکتے ہیں؟»*\n\n3۔ خصوصی ڈیلز: اگر آپ طویل مدتی سپلائر بننے کا وعدہ کریں تو پوچھیں:\n*«اگر میں دو سو یونٹس ماہانہ کی کمیٹمنٹ کروں تو کیا آپ چھ ماہ کے لیے خصوصی قیمت دے سکتے ہیں؟»*"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے موجودہ یا ممکنہ سپلائر کو ایک شائستہ اور پیشہ ورانہ میسج بھیجیں—خواہ قیمت پر ڈسکاؤنٹ کے لیے ہو یا مفت سیمپلز کے لیے۔ اپنے مطالبات واضح اور مخصوص لکھیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **سپلائر نیگوشیشن ٹریکر** اسپریڈشیٹ بنائیں جس میں درج ذیل شامل ہوں:\n- سپلائر کا نام\n- پروڈکٹ کا نام\n- اصل قیمت\n- طے شدہ قیمت\n- اضافی فوائد (مفت شپنگ/سیمپلز)\n- فالو اپ کی تاریخ"
+            }
+          ]
+        }
+      }
     }
   ],
   "freelancing": [
