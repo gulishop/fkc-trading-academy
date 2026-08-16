@@ -16670,6 +16670,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 12,
+      "id": "day-012",
+      "date": "2026-08-16",
+      "title": "Day 12 — \"Harf ki khoj: Ghar mein cheezein dhoond kar khel!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke har harf ko pehchan kar usse shuru hone wali cheezein dhoondhein. Yeh game sirf mazedaar hai, aur koi bhi cheez dhundhne ya chunne ka haq sirf tumhara hai. Agar koi cheez tumhe pasand na aaye, toh tum \"na\" keh sakte ho—kisi ko bura nahin lagega!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Aman ko \"A\" ka harf seekhna tha. Usne dekha ke \"A\" se shuru hone wali cheez hai \"Apple\" (seb). Phir usne \"B\" dekha—\"Ball\" (goli) uske paas thi! Usne mazaak mein kaha, \"Mummy, aaj main harf ka detective ban gaya!\""
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar tumhe koi cheez pasand na aaye toh tum kya karoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Harf ki khoj karte waqt yaad rakhna—tumhari pasand sabse pehle hai! Agar koi cheez tumhe comfortable na lage, toh foran batana."
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۲ — حرف کی کھوج: گھر میں چیزیں ڈھونڈ کر کھیل!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم سیکھیں گے کہ ہر حرف کو پہچان کر اس سے شروع ہونے والی چیزیں ڈھونڈیں۔ یہ گیم صرف مزے دار ہے، اور کوئی بھی چیز ڈھونڈنے یا چننے کا حق صرف تمہارا ہے۔ اگر کوئی چیز تمہیں پسند نہ آئے، تو تم \"نہ\" کہہ سکتے ہو—کسی کو برا نہیں لگے گا!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "امان کو \"الف\" کا حرف سیکھنا تھا۔ اس نے دیکھا کہ \"الف\" سے شروع ہونے والی چیز ہے \"ایپل\" (سیب)۔ پھر اس نے \"ب\" دیکھا—\"بال\" (گولی) اس کے پاس تھی! اس نے مذاق میں کہا، \"ممی، آج میں حرف کا ڈیٹیکٹو بن گیا!\""
+            },
+            {
+              "label": "امی ابو کے ساتھ بات کریں",
+              "content": "\"بیٹا، اگر تمہیں کوئی چیز پسند نہ آئے تو تم کیا کرو گے؟\""
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "حرف کی کھوج کرتے وقت یاد رکھنا—تمہاری پسند سب سے پہلے ہے! اگر کوئی چیز تمہیں آرام دہ نہ لگے، تو فوراً بتانا۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-good-behavior": [
