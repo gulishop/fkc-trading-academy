@@ -2203,6 +2203,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 13,
+      "id": "day-013",
+      "date": "2026-08-16",
+      "title": "Day 13 — **AI-Powered Viral Reels/Shorts: Algorithms Ko Samajh Kar Engagement Badhao**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "AI tools se viral Reels/Shorts banane ka raaz algorithms ko samajhna hai. TikTok aur Instagram Reels ke algorithms \"watch time,\" \"completion rate,\" aur \"shares\" ko priority dete hain. AI se aap yeh metrics predict kar sakte hain—jaise ki sabse engaging hooks, trending sounds, aur best posting times—taaki aapke content ka reach badhe."
+        ],
+        [
+          "Example",
+          "Ek AI tool (jaise CapCut ya InVideo) use karke aap 3 viral Reels ke patterns analyze karen:\n1."
+        ],
+        [
+          "Hook (0-3 sec)",
+          "\"Aap yeh nahi jaante…\" ya \"Yeh trick aapki zindagi badal degi!\"\n2."
+        ],
+        [
+          "Trending Sound",
+          "AI se top 5 sounds download karke unke lyrics ko apne script mein integrate karen.\n3."
+        ],
+        [
+          "CTA (Call-to-Action)",
+          "\"Agar aapko yeh video pasand aaya toh like karein aur comment mein apna experience share karein!\""
+        ],
+        [
+          "Practice",
+          "Apne niche (e.g., fitness, tech, food) ka 1 Reel script likhein jo AI se suggest kiye gaye 3 trends ko follow kare. Hook, trending sound, aur CTA zaroor add karen."
+        ],
+        [
+          "Mini Project",
+          "Ek **AI-generated Reel** banayein (CapCut ya Canva AI use karke) jismein:\n- AI se suggest kiya gaya trending sound ho.\n- Hook 3 seconds se pehle aaye.\n- End mein \"Agar video pasand aaya toh follow karein!\" type ka CTA ho.\nPost karein aur 24 ghante mein engagement (likes, shares, comments) note karen."
+        ]
+      ],
+      "answer_key": "hook+trending+cta, watch time+completion, niche+trend, 24ghante+metrics",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۳ — **اے آئی سے وائرل ریلز/شارٹس: الگورتھمز کو سمجھ کر انگیجمنٹ بڑھاؤ**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "اے آئی ٹولز سے وائرل ریلز/شارٹس بنانے کا راز الگورتھمز کو سمجھنا ہے۔ ٹک ٹاک اور انسٹاگرام ریلز کے الگورتھمز \"واچ ٹائم،\" \"کمپلیشن ریٹ،\" اور \"شیئرز\" کو ترجیح دیتے ہیں۔ اے آئی سے آپ یہ میٹرکس پیش گوئی کر سکتے ہیں—جیسے کہ سب سے زیادہ انگیجنگ ہکس، ٹرینڈنگ ساؤنڈز، اور بہترین پوسٹنگ ٹائمز—تاکہ آپ کے مواد کا ریچ بڑھے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک اے آئی ٹول (جیسے کپ کٹ یا ان ویڈیو) استعمال کرکے آپ تین وائرل ریلز کے پیٹرنز کا تجزیہ کریں:\n۱۔ ہک (۰-۳ سیکنڈ): \"آپ یہ نہیں جانتے…\" یا \"یہ ٹرک آپ کی زندگی بدل دے گا!\"\n۲۔ ٹرینڈنگ ساؤنڈ: اے آئی سے ٹاپ ۵ ساؤنڈز ڈاؤن لوڈ کرکے ان کے بولوں کو اپنے سکرپٹ میں شامل کریں۔\n۳۔ سی ٹی اے (کال ٹو ایکشن): \"اگر آپ کو یہ ویڈیو پسند آئی تو لائک کریں اور کمنٹ میں اپنا تجربہ شیئر کریں!\""
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے نیچ (مثلاً فٹنس، ٹیک، فوڈ) کا ایک ریلز سکرپٹ لکھیں جو اے آئی سے تجویز کردہ تین ٹرینڈز پر عمل کرے۔ ہک، ٹرینڈنگ ساؤنڈ، اور سی ٹی اے ضرور شامل کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **اے آئی جنریٹڈ ریلز** بنائیں (کپ کٹ یا کینوا اے آئی استعمال کرکے) جس میں:\n- اے آئی سے تجویز کردہ ٹرینڈنگ ساؤنڈ ہو۔\n- ہک ۳ سیکنڈ سے پہلے آئے۔\n- آخر میں \"اگر ویڈیو پسند آئی تو فالو کریں!\" جیسا سی ٹی اے ہو۔\nپوسٹ کریں اور ۲۴ گھنٹے میں انگیجمنٹ (لائکس، شیئرز، کمنٹس) نوٹ کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "facebook-page-growth": [
