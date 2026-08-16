@@ -17824,6 +17824,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 12,
+      "id": "day-012",
+      "date": "2026-08-16",
+      "title": "Day 12 — \"1 se 10 tak Ginti: Likhein aur Bolen!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhein ge ke 1 se 10 tak ki ginti kaise likhein aur bolin. Yeh humari roz ki zindagi mein bhi kaam aati hai, jaise jab hum ginti kartein hain ya koi cheez count kartein hain. Yaad rakhna, tumhara jism tumhara hai, isliye agar koi tumhe \"na\" kehne ko bole, toh foran ammi/abbu ko batana."
+        ],
+        [
+          "Chhoti Kahani",
+          "Babli ne apne ghar mein 5 chhote chidiya dekhein. Usne unhein ginte hue kaha, \"1, 2, 3, 4, 5!\" Phir usne apne ammi ko bataya, \"Ammi, maine 5 chidiya dekhein!\" Ammi ne usko gale lagaya aur kaha, \"Bara acha hai, Babli!\""
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar koi tumhe koi cheez karne ko bole jo tumhe acha na lage, toh tum kya karogi?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Tumhara jism tumhara hai, isliye \"na\" kehne ka pura haq hai!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۲ — ایک سے دس تک گنتی: لکھیں اور بولیں!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج ہم سیکھیں گے کہ ایک سے دس تک کی گنتی کیسے لکھیں اور بولیں۔ یہ ہماری روز کی زندگی میں بھی کام آتی ہے، جیسے جب ہم گنتی کرتے ہیں یا کوئی چیز گنتے ہیں۔ یاد رکھنا، تمہارا جسم تمہارا ہے، اس لئے اگر کوئی تمہیں \"نا\" کہنے کو بولے، تو فوراً امی/ابو کو بتانا۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "ببلی نے اپنے گھر میں پانچ چھوٹی چڑیاں دیکھیں۔ اس نے انہیں گنتے ہوئے کہا، \"۱، ۲، ۳، ۴، ۵!\" پھر اس نے اپنی امی کو بتایا، \"امی، میں نے پانچ چڑیاں دیکھیں!\" امی نے اسے گले لگایا اور کہا، \"بہت اچھا ہے، ببلی!\""
+            },
+            {
+              "label": "امی ابو کے ساتھ بات کریں",
+              "content": "\"بیٹا، اگر کوئی تمہیں کوئی چیز کرنے کو بولے جو تمہیں اچھا نہ لگے، تو تم کیا کرو گی؟\""
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمہارا جسم تمہارا ہے، اس لئے \"نا\" کہنے کا پورا حق ہے!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-pg": [
