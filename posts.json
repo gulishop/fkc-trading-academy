@@ -14674,6 +14674,64 @@
           ]
         }
       }
+    },
+    {
+      "day": 13,
+      "id": "day-013",
+      "date": "2026-08-16",
+      "title": "Day 13 — **Golden Hour vs. Blue Hour: Mastering Time-Based Lighting**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Har din ke do golden periods hote hain—*Golden Hour* (sunrise/sunset) aur *Blue Hour* (just before sunrise/sunset)—jahan light soft, warm, aur dramatic hoti hai. In waqt ki lighting se photos mein depth, mood, aur professional look aata hai. Har ek ka apna color temperature aur mood hota hai, jise samajhkar aap apne shots ko behtareen bana sakte hain."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Golden Hour (1 hour after sunrise / before sunset)",
+          "- Light warm (orange/red tones), shadows soft.\n   - *Example:* Portrait shoot—subject ko sun ke side se light mile, background mein bhi soft glow ho.\n2."
+        ],
+        [
+          "Blue Hour (just before sunrise / after sunset)",
+          "- Sky blue, city lights glow kar rahi hoti hain.\n   - *Example:* Cityscape photography—tripod use karke long exposure se traffic light trails capture karo."
+        ],
+        [
+          "Practice",
+          "Apne phone/DSLR se *Golden Hour* aur *Blue Hour* mein ek hi subject ke 2 photos lo:\n1. Golden Hour: Warm tones, soft shadows.\n2. Blue Hour: Cool tones, city lights in background."
+        ],
+        [
+          "Mini Project",
+          "Ek mini photo series banayein (3-5 photos) jismein:\n- 2 photos *Golden Hour* mein leni hain (ek portrait, ek landscape).\n- 2 photos *Blue Hour* mein leni hain (ek cityscape, ek architecture).\nHar photo ke saath 1 line ka caption likhein jo mood describe kare (e.g., \"Golden glow se zindagi ka fresh start\")."
+        ]
+      ],
+      "answer_key": "golden hour: warm, soft shadows, portrait, landscape; blue hour: blue tones, city lights, long exposure, moody",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۳ — گولڈن آور بلیو آور: ٹائم بیسڈ لائٹنگ میں مہارت",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ہر دن کے دو گولڈن پیریڈز ہوتے ہیں—*گولڈن آور* (سورج طلوع/غروب ہوتے وقت) اور *بلیو آور* (سورج طلوع ہونے سے ٹھیک پہلے/غروب ہونے کے فوراً بعد)—جہاں روشنی نرم، گرم اور ڈرامائی ہوتی ہے۔ ان اوقات کی لائٹنگ سے تصاویر میں گہرائی، موڈ اور پیشہ ورانہ نظر آتی ہے۔ ہر ایک کا اپنا رنگین درجہ حرارت اور موڈ ہوتا ہے، جسے سمجھ کر آپ اپنے شاٹس کو بہترین بنا سکتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ گولڈن آور (سورج طلوع ہونے کے ایک گھنٹے بعد / غروب ہونے سے پہلے):\n- روشنی گرم (نارنجی/سرخ ٹونز)، سائے نرم۔\n- *مثال:* پورٹریٹ شوٹ—سبجیکٹ کو سورج کی طرف سے روشنی ملے، پس منظر میں بھی نرم چمک ہو۔\n\n۲۔ بلیو آور (سورج طلوع ہونے سے ٹھیک پہلے / غروب ہونے کے بعد):\n- آسمان نیلا، شہر کی لائٹس چمک رہی ہوتی ہیں۔\n- *مثال:* سٹی سکیپ فوٹوگرافی—ٹرائی پوڈ استعمال کر کے لمبی ایکسپوژر سے ٹریفک لائٹ ٹریلز کیپچر کریں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے فون یا ڈی ایس ایل آر سے *گولڈن آور* اور *بلیو آور* میں ایک ہی سبجیکٹ کی دو تصاویر لیں:\n۱۔ گولڈن آور: گرم ٹونز، نرم سائے۔\n۲۔ بلیو آور: ٹھنڈے ٹونز، پس منظر میں شہر کی لائٹس۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک چھوٹی فوٹو سیریز بنائیں (۳ سے ۵ تصاویر) جس میں:\n- ۲ تصاویر *گولڈن آور* میں لیں (ایک پورٹریٹ، ایک لینڈ سکیپ)۔\n- ۲ تصاویر *بلیو آور* میں لیں (ایک سٹی سکیپ، ایک آرکیٹیکچر)۔\nہر تصویر کے ساتھ ایک لائن کا کیپشن لکھیں جو موڈ کو بیان کرے (مثلاً، \"گولڈن چمک سے زندگی کا تازہ آغاز\")۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "voiceover-podcasting": [
