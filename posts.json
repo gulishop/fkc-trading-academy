@@ -3519,6 +3519,80 @@
           ]
         }
       }
+    },
+    {
+      "day": 18,
+      "id": "day-018",
+      "date": "2026-08-16",
+      "title": "Day 18 — **TradingView Ka Use: Advanced Charts & Indicators**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "TradingView ek powerful free/paid platform hai jo real-time charts, indicators, aur trading tools provide karta hai. Yeh beginner se advanced traders tak ke liye perfect hai. Aaj hum seekhenge ki kaise TradingView par charts analyze karein, indicators add karein, aur unse signals nikalain."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Chart Setup",
+          "TradingView.com par jao, koi currency pair (e.g., EUR/USD) search karo.\n2."
+        ],
+        [
+          "Indicators Add",
+          "\"Indicators\" button par click karke \"Moving Average\" (MA) 50 aur 200 add karo.\n3."
+        ],
+        [
+          "Signal Check",
+          "Agar MA 50 MA 200 ko \"upward crossover\" kar raha hai, toh \"buy\" signal ho sakta hai."
+        ],
+        [
+          "Practice",
+          "1. TradingView par apna account banayein (free version bhi kaafi hai).\n2. EUR/USD ya kisi aur pair ka daily chart khol kar MA 20 aur 50 add karein.\n3. Dekhein ki MA 20 kab MA 50 ko cross kar raha hai — yeh \"buy/sell\" signal ho sakta hai."
+        ],
+        [
+          "Mini Project",
+          "Apne selected pair par **3 indicators** (e.g., RSI, MACD, Bollinger Bands) add karke ek simple trading strategy banayein. Har indicator ka kaam samajhein aur dekhein ki unke signals kaise interact karte hain."
+        ]
+      ],
+      "answer_key": "ma cross, rsi overbought/oversold, macd divergence",
+      "translations": {
+        "ur": {
+          "title": "دن 18 — ٹریڈنگ ویو کا استعمال: ایڈوانسڈ چارٹس اور انڈیکیٹرز",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "ٹریڈنگ ویو ایک طاقتور فری/پےڈ پلیٹ فارم ہے جو ریئل ٹائم چارٹس، انڈیکیٹرز، اور ٹریڈنگ ٹولز فراہم کرتا ہے۔ یہ بیگنرز سے لے کر ایڈوانسڈ ٹریڈرز تک کے لیے بہترین ہے۔ آج ہم سیکھیں گے کہ ٹریڈنگ ویو پر چارٹس کا تجزیہ کیسے کریں، انڈیکیٹرز شامل کیسے کریں، اور ان سے سگنلز کیسے نکالیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1۔"
+            },
+            {
+              "label": "چارٹ سیٹ اپ",
+              "content": "ٹریڈنگ ویو ڈاٹ کام پر جائیں، کوئی کرنسی جوڑا (مثلاً یورو/امریکی ڈالر) تلاش کریں۔"
+            },
+            {
+              "label": "انڈیکیٹرز شامل کریں",
+              "content": "\"انڈیکیٹرز\" کے بٹن پر کلک کر کے \"موونگ ایوریج\" (ایم اے) 50 اور 200 شامل کریں۔"
+            },
+            {
+              "label": "سگنل چیک کریں",
+              "content": "اگر ایم اے 50، ایم اے 200 کو \"اپورڈ کراس اوور\" کر رہا ہے تو یہ \"بائی\" سگنل ہو سکتا ہے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "1۔ ٹریڈنگ ویو پر اپنا اکاؤنٹ بنائیں (فری ورژن بھی کافی ہے)۔\n2۔ یورو/امریکی ڈالر یا کسی اور جوڑے کا ڈیلی چارٹ کھول کر ایم اے 20 اور 50 شامل کریں۔\n3۔ دیکھیں کہ ایم اے 20 کب ایم اے 50 کو کراس کر رہا ہے — یہ \"بائی/سیل\" سگنل ہو سکتا ہے۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "اپنے منتخب کردہ جوڑے پر **3 انڈیکیٹرز** (مثلاً آر ایس آئی، ایم اے سی ڈی، بولنجر بینڈز) شامل کر کے ایک سادہ ٹریڈنگ اسٹریٹیجی بنائیں۔ ہر انڈیکیٹر کا کام سمجھیں اور دیکھیں کہ ان کے سگنلز کیسے ایک دوسرے کے ساتھ تعامل کرتے ہیں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "amazon-fba": [
