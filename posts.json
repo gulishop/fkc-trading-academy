@@ -18376,6 +18376,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 12,
+      "id": "day-012",
+      "date": "2026-08-16",
+      "title": "Day 12 — **Gol, Chaur, Teeno: Aaj Seekhein Shapes!**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachon, aaj hum seekhenge ke kaun si cheez gol hai, kaun si chaur hai, aur kaun si teeno wali hai! Har shape ka apna naam hai, aur har shape ki apni khasiyat hoti hai. Jaise gol shape goli hoti hai, chaur shape tahta hai, aur teeno shape pahaad jaisi hoti hai."
+        ],
+        [
+          "Chhoti Kahani",
+          "Ameer ko park mein khelte waqt ek gol ball mila. Usne dekha ke uski dadaji ne ek chaur plate rakhi hai. Phir usne dekha ke uski behen ne ek teeno wali chapati banayi hai. Ameer ne sab shapes ko pehchaan liya aur muskuraya!"
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, tumhari favourite shape kaun si hai? Gol, chaur, ya teeno?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Har shape ka apna naam aur apni khasiyat hoti hai. Agar koi cheez ajeeb lage, toh foran ammi/abbu ko batana mat bhulna!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۲ — گول، چور، تینو: آج سیکھیں شیپس!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "بچو، آج ہم سیکھیں گے کہ کون سی چیز گول ہے، کون سی چور ہے، اور کون سی تینو والی ہے! ہر شیپ کا اپنا نام ہے، اور ہر شیپ کی اپنی خاصیت ہوتی ہے۔ جیسے گول شیپ گولی ہوتی ہے، چور شیپ تختہ ہوتا ہے، اور تینو والی شیپ پہاڑ جیسی ہوتی ہے۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "عامر کو پارک میں کھیلتے ہوئے ایک گول بال ملا۔ اس نے دیکھا کہ اس کی دادا جی نے ایک چور پلیٹ رکھی ہے۔ پھر اس نے دیکھا کہ اس کی بہن نے ایک تینو والی چپاتی بنائی ہے۔ عامر نے سب شیپس کو پہچان لیا اور مسکرایا!"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "بیٹا، تمہاری فیورٹ شیپ کون سی ہے؟ گول، چور، یا تینو؟"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "ہر شیپ کا اپنا نام اور اپنی خاصیت ہوتی ہے۔ اگر کوئی چیز عجیب لگے، تو فوراً امّی/ابّو کو بتانا مت بھولنا!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-kg": [
