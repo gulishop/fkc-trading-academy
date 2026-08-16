@@ -7536,6 +7536,84 @@
           ]
         }
       }
+    },
+    {
+      "day": 13,
+      "id": "day-013",
+      "date": "2026-08-16",
+      "title": "Day 13 — **FlutterFlow vs Glide: App Banane ke 2 Best No-Code Tools**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "FlutterFlow aur Glide do popular no-code app builders hain jo beginners se lekar intermediate users ke liye perfect hain. FlutterFlow Flutter-based apps banata hai (jaise native apps), jabki Glide spreadsheets (Google Sheets/Excel) se directly mobile apps generate karta hai. Dono ka apna style hai—FlutterFlow zyada customization deta hai, jabki Glide zyada quick aur spreadsheet-based hai."
+        ],
+        [
+          "Example",
+          "-"
+        ],
+        [
+          "FlutterFlow",
+          "Agar tum ek food delivery app banana chahte ho, toh FlutterFlow ke drag-and-drop UI se screens design kar sakte ho, Firebase se backend connect kar sakte ho, aur custom logic (jaise order tracking) add kar sakte ho.\n-"
+        ],
+        [
+          "Glide",
+          "Agar tum ek simple inventory app banana chahte ho (jaise shop ke products track karna), toh Google Sheets mein data enter karo, Glide se app generate karo, aur real-time updates dekh sako."
+        ],
+        [
+          "Practice",
+          "1."
+        ],
+        [
+          "FlutterFlow",
+          "[FlutterFlow](https://flutterflow.io) par jao, ek naya project start karo, aur ek basic login screen design karo (2-3 buttons + text fields).\n2."
+        ],
+        [
+          "Glide",
+          "[Glide](https://glideapps.com) par jao, Google Sheets se ek dummy data (jaise \"Product Name, Price, Stock\") enter karo, aur usse ek basic app generate karo."
+        ],
+        [
+          "Mini Project",
+          ""
+        ],
+        [
+          "\"Task Manager App\" banayein",
+          "-"
+        ],
+        [
+          "FlutterFlow",
+          "Ek app banayein jisme users tasks add kar saken, complete kar saken, aur Firebase se data save ho.\n-"
+        ],
+        [
+          "Glide",
+          "Ek Google Sheet banayein jisme \"Task, Status, Due Date\" ho, aur Glide se uska app banayein jo mobile par show ho."
+        ]
+      ],
+      "answer_key": "flutterflow: login screen, buttons, firebase; glide: google sheets, app generate",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۳ — **فلٹر فلو بمقابلہ گ्लائیڈ: ایپ بنانے کے دو بہترین نو کوڈ ٹولز**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "فلٹر فلو اور گ্লائیڈ دو مقبول نو کوڈ ایپ بلڈرز ہیں جو بیگنرز سے لے کر انٹرمیڈیٹ صارفین کے لیے بہترین ہیں۔ فلٹر فلو فلٹر پر مبنی ایپس بناتا ہے (جیسے نیٹو ایپس)، جبکہ گ্লائیڈ اسپریڈ شیٹس (گوگل شیٹس/ایکسل) سے براہ راست موبائل ایپس جنریٹ کرتا ہے۔ دونوں کا اپنا انداز ہے—فلٹر فلو زیادہ کسٹمائزیشن فراہم کرتا ہے، جبکہ گ्लائیڈ زیادہ تیز اور اسپریڈ شیٹ پر مبنی ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "-\nفلٹر فلو: اگر آپ ایک فوڈ ڈیلیوری ایپ بنانا چاہتے ہیں، تو فلٹر فلو کے ڈریگ اینڈ ڈراپ یو آئی سے اسکرینز ڈیزائن کر سکتے ہیں، فائر بیس سے بیک اینڈ کنیکٹ کر سکتے ہیں، اور کسٹم منطق (جیسے آرڈر ٹریکنگ) شامل کر سکتے ہیں۔\n-\nگ্লائیڈ: اگر آپ ایک سادہ انوینٹری ایپ بنانا چاہتے ہیں (جیسے دکان کے پروڈکٹس ٹریک کرنا)، تو گوگل شیٹس میں ڈیٹا داخل کریں، گ್ಲائیڈ سے ایپ جنریٹ کریں، اور ریئل ٹائم اپ ڈیٹس دیکھ سکیں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "۱۔\nفلٹر فلو: فلٹر فلو کی ویب سائٹ پر جائیں، ایک نیا پروجیکٹ شروع کریں، اور ایک بنیادی لاگ ان اسکرین ڈیزائن کریں (۲-۳ بٹنز + ٹیکسٹ فیلڈز)۔\n۲۔\nگ্লائیڈ: گ್ಲائیڈ کی ویب سائٹ پر جائیں، گوگل شیٹس میں ڈمی ڈیٹا (جیسے \"پروڈکٹ کا نام، قیمت، اسٹاک\") داخل کریں، اور اس سے ایک بنیادی ایپ جنریٹ کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "\"ٹاسک مینیجر ایپ\" بنائیں:\n-\nفلٹر فلو: ایک ایپ بنائیں جس میں صارفین ٹاسکس شامل کر سکیں، مکمل کر سکیں، اور فائر بیس میں ڈیٹا محفوظ ہو۔\n-\nگ્લائیڈ: ایک گوگل شیٹ بنائیں جس میں \"ٹاسک، اسٹیٹس، ڈیو ڈیٹ\" ہو، اور گ್ಲائیڈ سے اس کی ایپ بنائیں جو موبائل پر دکھائی دے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "digital-marketing-seo": [
