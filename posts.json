@@ -11364,6 +11364,60 @@
           ]
         }
       }
+    },
+    {
+      "day": 13,
+      "id": "day-013",
+      "date": "2026-08-16",
+      "title": "Day 13 — **JavaScript Basics: Variables, Functions aur Events**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "JavaScript (JS) ek programming language hai jo websites ko \"live\" banati hai. Is se hum buttons click karne par kuch hota hai, forms validate kar sakte hain, aur real-time updates show kar sakte hain. Aaj hum variables (data store karne ke liye), functions (code ko reusable banane ke liye), aur events (user actions jaise click, scroll) par focus karenge."
+        ],
+        [
+          "Example",
+          "Ek simple button banayein jo click karne par ek alert show kare:\n```html\n<button id=\"myButton\">Click Me!</button>\n```\n```javascript\nconst button = document.getElementById(\"myButton\");\nbutton.addEventListener(\"click\", function() {\n  alert(\"Button clicked!\");\n});\n```\nYahan `const` ek variable hai jo button ko store karta hai, `addEventListener` ek event handle karta hai, aur `function()` ek reusable block hai jo click hone par run hota hai."
+        ],
+        [
+          "Practice",
+          "Ek simple calculator banayein:\n1. Do input fields (`<input type=\"number\">`) aur ek button add karein.\n2. Button click par do numbers ko add karke result `<p>` mein display karein.\n3. Hint: `document.getElementById(\"result\").textContent = num1 + num2;`"
+        ],
+        [
+          "Mini Project",
+          ""
+        ],
+        [
+          "\"Click Counter\" webpage",
+          "- Ek button aur ek `<p>` element add karein.\n- Har click par `<p>` mein counter increment hona chahiye (e.g., \"Clicks: 5\").\n- Extra: Counter ko localStorage mein save karein taake page refresh hone par bhi count rahe."
+        ]
+      ],
+      "answer_key": "variable declaration, event listener, dom manipulation",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۳ — **جاوا اسکرپٹ کی بنیادیات: ویری ایبلز، فنکشنز اور ایونٹس**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "جاوا اسکرپٹ (JS) ایک پروگرامنگ لینگویج ہے جو ویب سائٹس کو \"لائیو\" بناتی ہے۔ اس کے ذریعے ہم بٹنز پر کلک کرنے پر کچھ کر سکتے ہیں، فارمز کو ویلیڈیٹ کر سکتے ہیں، اور ریئل ٹائم اپ ڈیٹس دکھا سکتے ہیں۔ آج ہم ویری ایبلز (ڈیٹا اسٹور کرنے کے لیے)، فنکشنز (کوڈ کو ری یوز ایبل بنانے کے لیے)، اور ایونٹس (یوزر ایکشنز جیسے کلک، اسکرول) پر توجہ دیں گے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک سادہ بٹن بنائیں جو کلک کرنے پر الرٹ دکھائے:\n```html\n<button id=\"myButton\">Click Me!</button>\n```\n```javascript\nconst button = document.getElementById(\"myButton\");\nbutton.addEventListener(\"click\", function() {\n  alert(\"Button clicked!\");\n});\n```\nیہاں `const` ایک ویری ایبل ہے جو بٹن کو اسٹور کرتا ہے، `addEventListener` ایک ایونٹ ہینڈل کرتا ہے، اور `function()` ایک ری یوز ایبل بلاک ہے جو کلک ہونے پر چلتا ہے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "ایک سادہ کیلکولیٹر بنائیں:\n۱۔ دو ان پٹ فیلڈز (`<input type=\"number\">`) اور ایک بٹن شامل کریں۔\n۲۔ بٹن کلک پر دونوں نمبرز کو جمع کر کے نتیجہ `<p>` میں دکھائیں۔\n۳۔ ہنٹ: `document.getElementById(\"result\").textContent = num1 + num2;`"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "\"کلک کاؤنٹر\" ویب پیج:\n- ایک بٹن اور ایک `<p>` ایلیمنٹ شامل کریں۔\n- ہر کلک پر `<p>` میں کاؤنٹر بڑھنا چاہیے (مثال کے طور پر، \"Clicks: 5\")۔\n- اضافی: کاؤنٹر کو `localStorage` میں محفوظ کریں تاکہ پیج ریفریش ہونے پر بھی گنتی برقرار رہے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "excel-data-analysis": [
