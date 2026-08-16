@@ -6682,6 +6682,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 16,
+      "id": "day-016",
+      "date": "2026-08-16",
+      "title": "Day 16 — **Freelancing Mein \"Upselling\" Kaise Karein: Client Se Zyada Paise Kaise Kamayein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Freelancing mein \"upselling\" ka matlab hai ek client ko extra services ya upgraded packages offer karke unka order value badhana. Yeh ek client ke saath hi zyada kamane ka sabse effective tareeka hai. Upselling tab kaam aata hai jab client pehle se hi aap ke work se impressed ho, isliye yeh trust build karne ke baad hi karna chahiye."
+        ],
+        [
+          "Example",
+          "Ek graphic designer ko ek client ne ek logo design karne ke liye hire kiya hai. Client ko logo pasand aata hai, lekin woh abhi aur bhi designs (business card, social media posts) chahte hain. Designer ne pehle hi apne portfolio mein yeh services di hui hain, toh woh client ko propose kar sakta hai: *\"Aapka logo toh ready hai! Kya aapko business card aur Instagram post bhi chahiye? Main aapko ek discounted package offer kar sakta hoon.\"*"
+        ],
+        [
+          "Practice",
+          "Apne kisi existing client ya potential client ko ek email ya message bhej kar ek upsell proposal likhein. Yeh proposal short, clear aur faydemand honi chahiye."
+        ],
+        [
+          "Mini Project",
+          "Ek \"Upsell Package\" banayein jo aap apne portfolio ya gig description mein add kar sakte hain. Ismein 2-3 extra services hon jinse client ko value mile aur aapki income badhe."
+        ]
+      ],
+      "answer_key": "discounted package, extra services, client trust, higher order value",
+      "translations": {
+        "ur": {
+          "title": "دن 16 — فری لانسنگ میں \"اپ سیلنگ\" کیسے کریں: کلائنٹ سے زیادہ پیسے کیسے کمائیں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "فری لانسنگ میں \"اپ سیلنگ\" کا مطلب ہے کہ ایک کلائنٹ کو اضافی سروسز یا اپ گریڈڈ پیکجز پیش کرکے ان کے آرڈر کی ویلیو بڑھانا۔ یہ ایک کلائنٹ کے ساتھ ہی زیادہ کمائی کا سب سے مؤثر طریقہ ہے۔ اپ سیلنگ تب کام آتی ہے جب کلائنٹ پہلے سے ہی آپ کے کام سے متاثر ہو، اس لیے یہ ٹرسٹ بنانے کے بعد ہی کرنا چاہیے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک گرافک ڈیزائنر کو ایک کلائنٹ نے لوگو ڈیزائن کروانے کے لیے ہائر کیا ہے۔ کلائنٹ کو لوگو پسند آتا ہے، لیکن وہ ابھی اور بھی ڈیزائنز ( بزنس کارڈ، سوشل میڈیا پوسٹس) چاہتے ہیں۔ ڈیزائنر نے پہلے ہی اپنے پورٹ فولیو میں یہ سروسز دی ہوئی ہیں، تو وہ کلائنٹ کو پیشکش کر سکتا ہے: \"آپ کا لوگو تو تیار ہے! کیا آپ کو بزنس کارڈ اور انسٹاگرام پوسٹ بھی چاہیے؟ میں آپ کو ایک ڈسکاؤنٹڈ پیکج آفر کر سکتا ہوں۔\""
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے کسی موجودہ کلائنٹ یا ممکنہ کلائنٹ کو ایک ای میل یا میسج بھیج کر ایک اپ سیل تجویز لکھیں۔ یہ تجویز مختصر، واضح اور فائدہ مند ہونی چاہیے۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک \"اپ سیل پیکج\" بنائیں جو آپ اپنے پورٹ فولیو یا گیگ ڈسکرپشن میں شامل کر سکیں۔ اس میں 2-3 اضافی سروسز ہوں جن سے کلائنٹ کو ویلیو ملے اور آپ کی آمدنی بڑھے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "graphic-design-canva": [
