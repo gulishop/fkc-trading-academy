@@ -9142,6 +9142,60 @@
           ]
         }
       }
+    },
+    {
+      "day": 14,
+      "id": "day-014",
+      "date": "2026-08-16",
+      "title": "Day 14 — **AI Tools Se Designs Ko Professional Banana (Midjourney, DALL·E, Canva Magic)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "AI tools se designs ko fast, unique aur professional level par le ja sakte hain. Midjourney/DALL·E se concept art generate karke Canva mein refine karo. AI se \"prompt engineering\" seekhna zaroori hai—clear instructions se hi behtareen results milte hain."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Prompt",
+          "*\"A minimalist cat wearing a graduation cap, vector art, white background, 4K, trending on Pinterest\"*\n2. **Midjourney/DALL·E** se 4-6 variants generate karo.\n3. **Canva** mein AI-generated image ko upload karke:\n   - Background remove karo (Canva AI se hi).\n   - Text add karo (\"Class of 2024\").\n   - Mockup par lagao (T-shirt/phone case)."
+        ],
+        [
+          "Practice",
+          "Apne niche ke hisab se **3 AI prompts** likho aur Midjourney/DALL·E se generate karo. Best variant ko Canva mein edit karke ek simple mockup banao."
+        ],
+        [
+          "Mini Project",
+          "**\"AI + Canva Se Ek Product Mockup Banana\"**\n- Ek trending niche (e.g., \"Gamer Humor\" ya \"Pet Lovers\") choose karo.\n- AI se 1 design generate karo.\n- Canva mein:\n  - Text add karo (urdu/hindi).\n  - Mockup (T-shirt/phone case) par lagao.\n  - Export karo (PNG, 300 DPI)."
+        ]
+      ],
+      "answer_key": "ai prompt, canva edits, mockup variant, niche relevance",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۴ — **اے آئی ٹولز سے ڈیزائنز کو پیشہ ورانہ بنانا (مِڈجرنی، ڈالی·ای، کینوا میجک)**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "اے آئی ٹولز کی مدد سے ڈیزائنز کو تیزی سے، منفرد اور پیشہ ورانہ سطح پر لے جایا جا سکتا ہے۔ مِڈجرنی یا ڈالی·ای سے تصوراتی آرٹ جنریٹ کرکے کینوا میں اسے بہتر بنایا جا سکتا ہے۔ اے آئی سے \"پرامپٹ انجینئرنگ\" سیکھنا ضروری ہے — واضح ہدایات سے ہی بہترین نتائج حاصل ہوتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ پرامپٹ: *\"ایک مینیملسٹ بلی گریجویشن کیپ پہنے ہوئے، ویکٹر آرٹ، سفید پس منظر، ۴کے، ٹرینڈنگ آن پنٹیرسٹ\"*\n۲۔ **مِڈجرنی/ڈالی·ای** سے ۴-۶ مختلف ورژن جنریٹ کرو۔\n۳۔ **کینوا** میں اے آئی سے بنائی گئی تصویر اپ لوڈ کرکے:\n   - پس منظر ہٹاؤ (کینوا اے آئی سے ہی)۔\n   - متن شامل کرو (\"کلاس آف ۲۰۲۴\")۔\n   - ماک اپ پر لگاؤ (ٹی شرٹ/فون کیس)۔"
+            },
+            {
+              "label": "مشق",
+              "content": "اپنے ذوق کے مطابق **۳ اے آئی پرامپٹس** لکھو اور مِڈجرنی یا ڈالی·ای سے جنریٹ کرو۔ بہترین ورژن کو کینوا میں ایڈٹ کرکے ایک سادہ ماک اپ بناؤ۔"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "**\"اے آئی + کینوا سے ایک پروڈکٹ ماک اپ بنانا\"**\n- ایک ٹرینڈنگ نیچ (مثلاً \"گیمر ہumor\" یا \"پیٹ لوورز\") منتخب کرو۔\n- اے آئی سے ایک ڈیزائن جنریٹ کرو۔\n- کینوا میں:\n  - متن شامل کرو (اردو/ہندی میں)۔\n  - ماک اپ (ٹی شرٹ/فون کیس) پر لگاؤ۔\n  - ایکسپورٹ کرو (پی این جی، ۳۰۰ ڈی پی آئی)۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "cpp-daily-coding": [
