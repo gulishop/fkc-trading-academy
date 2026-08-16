@@ -18978,6 +18978,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 11,
+      "id": "day-011",
+      "date": "2026-08-16",
+      "title": "Day 11 — \"Chhote Alfaz Jorr Kar Padhna!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke chhote shabdon ko jod kar kaise padhte hain! Jaise 'cat', 'sun', 'bag' — yeh sab chhote shabdo se bante hain. Yeh seekhna bhi zaroori hai taake tum aur achi tarah padh sako."
+        ],
+        [
+          "Chhoti Kahani",
+          "Billi Mimi ne ek din dekha ke uske bag mein ek chhota sa 'sun' (sooraj) chhupa hai! Usne socha, \"Main isko padh kar dekhti hoon!\" Usne 's-u-n' ko jod kar 'sun' kaha, aur uske bag mein ek chhota sa sooraj jaise toy mila. Mimi bohat khush hui!"
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "Tumhari favourite chhoti cheez ka naam batao — jaise 'pen', 'cup', ya 'mat' — aur usko jod kar kaise padhte hain?"
+        ],
+        [
+          "Yaad Rakhein",
+          "Chhote shabdon ko jod kar padhna seekhna, tumhari reading aur bhi strong banayega!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۱ — چھوٹے الفاظ جوڑ کر پڑھنا!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج ہم سیکھیں گے کہ چھوٹے الفاظ کو جوڑ کر کیسے پڑھتے ہیں! جیسے ’کیٹ‘، ’سن‘، ’بیگ‘ — یہ سب چھوٹے حروف سے بنتے ہیں۔ یہ سیکھنا بھی ضروری ہے تاکہ تم اور اچھی طرح پڑھ سکو۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "بلی میمی نے ایک دن دیکھا کہ اس کے بیگ میں ایک چھوٹا سا ’سن‘ (سورج) چھپا ہے! اس نے سوچا، ’میں اسے پڑھ کر دیکھتی ہوں!‘ اس نے ’س-اُ-ن‘ کو جوڑ کر ’سن‘ کہا، اور اس کے بیگ میں ایک چھوٹا سا سورج جیسا کھلونا ملا۔ میمی بہت خوش ہوئی!"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "تمہاری پسندیدہ چھوٹی چیز کا نام بتاؤ — جیسے ’پین‘، ’کپ‘، یا ’میٹ‘ — اور اسے جوڑ کر کیسے پڑھتے ہیں؟"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "چھوٹے الفاظ کو جوڑ کر پڑھنا سیکھنا، تمہاری ریڈنگ اور بھی مضبوط بنائے گا!"
+            }
+          ]
+        }
+      }
     }
   ]
 }
