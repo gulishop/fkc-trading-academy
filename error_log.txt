@@ -824,3 +824,8 @@
 [2026-08-16T23:34:42.156127] [photography-editing] Day 1 video skip: Agnes aur ffmpeg dono attempts fail.
 [2026-08-16T23:36:29.174029] [photography-editing] Day 2 video skip: Agnes aur ffmpeg dono attempts fail.
 [2026-08-16T23:37:59.318865] [photography-editing] Day 3 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-16T23:52:01.419427] [real-estate-business] Day 12 image generate nahi ho saki (3 attempts fail), skip kar rahe hain: HTTP Error 502: Bad Gateway
+[2026-08-16T23:53:38.569368] [real-estate-business] Day 12 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-16T23:55:08.997191] [real-estate-business] Day 1 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-16T23:56:50.331402] [real-estate-business] Day 2 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-16T23:58:31.757616] [real-estate-business] Day 12 video skip: Agnes aur ffmpeg dono attempts fail.

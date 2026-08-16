@@ -15966,6 +15966,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 12,
+      "id": "day-012",
+      "date": "2026-08-16",
+      "title": "Day 12 — **Property Dealings Mein \"Due Diligence\" Kaise Karein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Property dealings mein \"due diligence\" ka matlab hai property aur uske saare legal, financial aur physical aspects ki poori research karna taake future mein koi surprise na ho. Isse aap fraud se bach sakte hain, property ki real value samajh sakte hain aur deal ko confidently final kar sakte hain."
+        ],
+        [
+          "Example",
+          "Maan lo aap ek plot khareed rahe hain. Due diligence ke liye:\n1."
+        ],
+        [
+          "Land Record Check",
+          "Patwari se malum karein ki plot ka malik kaun hai, kya koi mortgage ya dispute hai.\n2."
+        ],
+        [
+          "Approvals Verify",
+          "Check karein ki property ke liye building approvals (NA, CDA, LDA etc.) hain ya nahi.\n3."
+        ],
+        [
+          "Physical Inspection",
+          "Plot visit karein, boundaries check karein, koi illegal construction toh nahi hai."
+        ],
+        [
+          "Practice",
+          "Apne area ki kisi property ka due diligence checklist banaein (3-5 points). Jaise:\n- [ ] Land record (Fard) check karna\n- [ ] Approvals (NA, layout plan) verify karna\n- [ ] Seller ki identity aur title verify karna"
+        ],
+        [
+          "Mini Project",
+          "Kisi local property dealer se poochhein ki wo due diligence ke liye konsi 3 sabse common mistakes dekhte hain. Unke answers note karein aur apne checklist mein add karein."
+        ]
+      ],
+      "answer_key": "land record, approvals, seller identity, physical inspection",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۲ — پراپرٹی ڈیلنگز میں \"ڈو ڈیلیجنس\" کیسے کریں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "پراپرٹی ڈیلنگز میں \"ڈو ڈیلیجنس\" کا مطلب ہے پراپرٹی اور اس کے سارے قانونی، مالی اور فزیکل پہلوؤں کی مکمل ریسرچ کرنا تاکہ مستقبل میں کوئی حیرت انگیز صورتحال سامنے نہ آئے۔ اس سے آپ فراڈ سے بچ سکتے ہیں، پراپرٹی کی حقیقی ویلیو سمجھ سکتے ہیں اور ڈیل کو اعتماد کے ساتھ فائنل کر سکتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "مان لیجیے آپ ایک پلاٹ خرید رہے ہیں۔ ڈو ڈیلیجنس کے لیے درج ذیل اقدامات کریں:\n۱۔ لینڈ ریکارڈ چیک: پٹواری سے معلوم کریں کہ پلاٹ کا مالک کون ہے، کیا کوئی مورگیج یا ڈسپوٹ ہے۔\n۲۔ اپروولز ویریفائی: چیک کریں کہ پراپرٹی کے لیے بلڈنگ اپروولز (این اے، سی ڈی اے، ایل ڈی اے وغیرہ) موجود ہیں یا نہیں۔\n۳۔ فزیکل انسپیکشن: پلاٹ کا دورہ کریں، حدود چیک کریں، کوئی غیر قانونی تعمیر تو نہیں ہے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے علاقے کی کسی پراپرٹی کا ڈو ڈیلیجنس چیک لسٹ بنائیں (۳ سے ۵ پوائنٹس)۔ جیسے:\n- [ ] لینڈ ریکارڈ (فرد) چیک کرنا\n- [ ] اپروولز (این اے، لی آؤٹ پلان) ویریفائی کرنا\n- [ ] سیلر کی شناخت اور ٹائٹل ویریفائی کرنا"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "کسی مقامی پراپرٹی ڈیلر سے پوچھیں کہ وہ ڈو ڈیلیجنس کے دوران کون سی تین سب سے عام غلطیاں دیکھتے ہیں۔ ان کے جوابات نوٹ کریں اور اپنے چیک لسٹ میں شامل کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "mobile-repairing": [
