@@ -14002,6 +14002,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 10,
+      "id": "day-010",
+      "date": "2026-08-16",
+      "title": "Day 10 — **Blog Ko Scale Karne Ke 3 Advanced Strategies (2024)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum advanced strategies seekhenge jin se aapka blog grow karega aur monetization ke naye sources unlock honge. Scale karne ka matlab hai traffic, engagement aur revenue ko consistently badhate rehna—chahe wo new content se ho, existing content ko upgrade karke, ya multiple income streams add karke."
+        ],
+        [
+          "Example",
+          "Ek student ne apne blog par 10 articles publish kiye the, lekin traffic 500 se 2000 monthly nahi badh raha. Usne:\n1. **Content Refresh** kiya (old posts ko update kiya, new keywords add kiye).\n2. **Email List** banayi (lead magnet offer kiya).\n3. **Digital Products** launch kiye (eBooks, templates)."
+        ],
+        [
+          "Practice",
+          "Apne blog ke **3 oldest posts** select karke unhe update karein:\n- Naye keywords add karein (Ahrefs/Google Keyword Planner se).\n- Images ko optimize karein (compress, alt text add karein).\n- Internal linking badhayein (related posts se link karein)."
+        ],
+        [
+          "Mini Project",
+          "Ek **\"Lead Magnet\"** create karein (free downloadable resource jaise checklist, template, ya guide) aur usko blog par promote karein. Email subscribers badhane ke liye isko use karein."
+        ]
+      ],
+      "answer_key": "content refresh, email list, digital products, traffic boost",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۰ — بلاگ کو سکیل کرنے کے ۳ ایڈوانسڈ اسٹریٹیز (۲۰۲۴)",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم ایڈوانسڈ اسٹریٹیز سیکھیں گے جن سے آپ کا بلاگ گرو کرے گا اور مونیٹائزیشن کے نئے ذرائع انلاک ہوں گے۔ سکیل کرنے کا مطلب ہے ٹریفک، انگیجمنٹ اور ریونیو کو مسلسل بڑھاتے رہنا—چاہے وہ نیا مواد ہو، موجودہ مواد کو اپ گریڈ کرکے، یا متعدد آمدنی کے ذرائع شامل کرکے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک طالب علم نے اپنے بلاگ پر ۱۰ آرٹیکلز پبلش کیے تھے، لیکن ٹریفک ۵۰۰ سے ۲۰۰۰ ماہانہ نہیں بڑھ رہا تھا۔ اس نے:\n۱۔ **کونٹینٹ ریفریش** کیا (پرانے پوسٹس کو اپ ڈیٹ کیا، نئے کی ورڈز شامل کیے)۔\n۲۔ **ای میل لسٹ** بنائی (لیڈ میگنیٹ پیش کیا)۔\n۳۔ **ڈیجیٹل پروڈکٹس** لانچ کیں (ای بُکس، ٹیمپلیٹس)۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے بلاگ کے **۳ قدیم ترین پوسٹس** سلیکٹ کرکے انہیں اپ ڈیٹ کریں:\n- نئے کی ورڈز شامل کریں (اہرفس/گوگل کی ورڈ پلانر سے)۔\n- امیجز کو آپٹیمائز کریں (کمپریس کریں، آلٹ ٹیکسٹ شامل کریں)۔\n- انٹرنل لنکنگ بڑھائیں (متعلقہ پوسٹس سے لنک کریں)۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **لیڈ میگنیٹ** بنائیں (فری ڈاؤن لوڈ ایبل ریسورس جیسے چیک لسٹ، ٹیمپلیٹ، یا گائیڈ) اور اسے بلاگ پر پروموٹ کریں۔ ای میل سبسکرائبرز بڑھانے کے لیے اسے استعمال کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "photography-editing": [
