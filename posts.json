@@ -8094,6 +8094,64 @@
           ]
         }
       }
+    },
+    {
+      "day": 14,
+      "id": "day-014",
+      "date": "2026-08-17",
+      "title": "Day 14 — **No-Code Automation: Zindagi Bana Dein \"Robot\" Banana Seekh Lo!**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Database aur automation ka matlab hai apne no-code tools ko itna smart bana dena ke wo khud hi kaam karne lage. Airtable aur Notion ke alawa **Zapier** ya **Make (Integromat)** jaise tools use karke hum manual tasks ko automate kar sakte hain. Jaise: \"Jab koi form submit kare to automatically email bhej do\" ya \"Excel sheet mein new entry aate hi Google Sheet update ho jaye\"."
+        ],
+        [
+          "Example",
+          "Ek freelancer hai jo clients se orders le raha hai. Har order ke baad wo:\n1. Google Form bharata hai (order details)\n2. Airtable mein entry add hoti hai\n3. Zapier detect karta hai \"New entry in Airtable\" → automatically email client ko \"Thank you\" bhejta hai\n4. Notion task board update ho jata hai \"Order #123 - Pending\""
+        ],
+        [
+          "Practice",
+          "Apne **Google Drive** mein ek folder banayein \"No-Code Automation Test\". Uske andar ek **Google Sheet** banayein jisme 3 columns ho: `Name`, `Email`, `Status`. Phir **Zapier** mein ek \"Zap\" create karein jo:\n- Trigger: \"New Google Sheet Row\"\n- Action: \"Send Email\" (apne hi email par test karo)"
+        ],
+        [
+          "Mini Project",
+          "Ek **automated lead tracker** banayein:\n1. Google Form banayein (3 fields: Name, Email, Service)\n2. Airtable mein ek table banayein \"Leads\" (same fields)\n3. Zapier se connect karein: \"New Google Form Submission → New Airtable Record\"\n4. Notion mein ek board banayein \"Leads Pipeline\" (To Do, In Progress, Done)\n5."
+        ],
+        [
+          "Bonus",
+          "Add karein \"When Airtable status changes to 'Done', send WhatsApp message via Twilio\""
+        ]
+      ],
+      "answer_key": "google sheet row add, zapier trigger, email send, airtable update",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۴ — نو کوڈ آٹومیشن: زندگی بنا دیں \"روبوٹ\" بننا سیکھ لو!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ڈیٹا بیس اور آٹومیشن کا مطلب ہے اپنے نو کوڈ ٹولز کو اتنا سمارٹ بنا دینا کہ وہ خود ہی کام کرنے لگیں۔ ایئر ٹیبل اور نوشن کے علاوہ **زاپئر** یا **میک (انٹیگرومیٹ)** جیسے ٹولز استعمال کرکے ہم دستی کاموں کو آٹومیٹ کر سکتے ہیں۔ جیسے: \"جب کوئی فارم جمع کرے تو خود بخود ای میل بھیج دو\" یا \"ایکسل شیٹ میں نئی انٹری آتے ہی گوگل شیٹ اپ ڈیٹ ہو جائے۔\""
+            },
+            {
+              "label": "مثال",
+              "content": "ایک فری لانس ہے جو کلائنٹس سے آرڈرز لے رہا ہے۔ ہر آرڈر کے بعد وہ:\n۱۔ گوگل فارم بھرتا ہے (آرڈر کی تفصیلات)\n۲۔ ایئر ٹیبل میں انٹری شامل ہوتی ہے\n۳۔ زاپئر \"ایئر ٹیبل میں نئی انٹری\" کو ڈٹیکٹ کرتا ہے → خود بخود کلائنٹ کو \"تھینک یو\" ای میل بھیجتا ہے\n۴۔ نوشن ٹاسک بورڈ اپ ڈیٹ ہو جاتا ہے \"آرڈر #۱۲۳ - زیر التواء\""
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے **گوگل ڈرائیو** میں ایک فولڈر بنائیں \"نو کوڈ آٹومیشن ٹیسٹ\"۔ اس کے اندر ایک **گوگل شیٹ** بنائیں جس میں ۳ کالم ہوں: `Name`، `Email`، `Status`۔ پھر **زاپئر** میں ایک \"زپ\" کریئٹ کریں جو:\n- ٹرگر: \"نیو گوگل شیٹ رو\"\n- ایکشن: \"سینڈ ای میل\" (اپنے ہی ای میل پر ٹیسٹ کریں)"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **آٹومیٹڈ لیڈ ٹریکر** بنائیں:\n۱۔ گوگل فارم بنائیں (۳ فیلڈز: نام، ای میل، سروس)\n۲۔ ایئر ٹیبل میں ایک ٹیبل بنائیں \"لیڈز\" (ایک ہی فیلڈز)\n۳۔ زاپئر سے کنیکٹ کریں: \"نیو گوگل فارم سبمشن → نیو ایئر ٹیبل ریکارڈ\"\n۴۔ نوشن میں ایک بورڈ بنائیں \"لیڈز پائپ لائن\" (ٹو ڈو، ان پروگریس، ڈن)\n۵۔"
+            },
+            {
+              "label": "بونس",
+              "content": "شامل کریں \"جب ایئر ٹیبل کا سٹیٹس 'ڈن' میں تبدیل ہو جائے تو ٹوئیلو کے ذریعے واٹس ایپ میسج بھیجیں۔\""
+            }
+          ]
+        }
+      }
     }
   ],
   "digital-marketing-seo": [
