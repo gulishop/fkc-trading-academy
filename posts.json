@@ -20164,6 +20164,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 12,
+      "id": "day-012",
+      "date": "2026-08-17",
+      "title": "Day 12 — \"Ginti 1 se 50 tak: Aaj Seekhein!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge 1 se 50 tak ki ginti! Yeh seekhna bhi zaroori hai aur maza bhi aata hai. Yaad rakhna, tumhara jism tumhara hai—koi tumhe \"na\" kehne ka haq nahi rakhta. Agar koi cheez ajeeb lage, foran ammi/abbu ya kisi bade ko batana."
+        ],
+        [
+          "Chhoti Kahani",
+          "Ameer ki dost ne use 1 se 50 tak ginti yaad karne ko kaha. Ameer ne roz 5-5 numbers yaad kiye. Aaj usne poori 50 tak ginti sunai! Uske dost ne kaha, \"Tumne itni badi ginti yaad kar li? Wah!\" Ameer ko bahut khushi hui."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, tumne aaj kitni numbers yaad ki? Kya tumhe yeh ginti yaad karna acha lagta hai?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Tumhara jism tumhara hai—koi tumhe \"na\" kehne ka haq nahi rakhta. Agar koi cheez ajeeb lage, foran ammi/abbu ko batana!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۲ — گنتی ۱ سے ۵۰ تک: آج سیکھیں!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج ہم سیکھیں گے ۱ سے ۵۰ تک کی گنتی! یہ سیکھنا بھی ضروری ہے اور مزہ بھی آتا ہے۔ یاد رکھنا، تمہارا جسم تمہارا ہے—کوئی تمہیں ’’نا‘‘ کہنے کا حق نہیں رکھتا۔ اگر کوئی چیز عجیب لگے، فوراً امی/ابو یا کسی بڑے کو بتانا۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "عامر کے دوست نے اسے ۱ سے ۵۰ تک گنتی یاد کرنے کو کہا۔ عامر نے روز پانچ پانچ نمبر یاد کیے۔ آج اس نے پوری ۵۰ تک گنتی سنائی! اس کے دوست نے کہا، ’’تم نے اتنی بڑی گنتی یاد کر لی؟ واہ!‘‘ عامر کو بہت خوشی ہوئی۔"
+            },
+            {
+              "label": "امی ابو کے ساتھ بات کریں",
+              "content": "’’بیٹا، تم نے آج کتنے نمبر یاد کیے؟ کیا تمہیں یہ گنتی یاد کرنا اچھا لگتا ہے؟‘‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمہارا جسم تمہارا ہے—کوئی تمہیں ’’نا‘‘ کہنے کا حق نہیں رکھتا۔ اگر کوئی چیز عجیب لگے، فوراً امی/ابو کو بتانا!"
+            }
+          ]
+        }
+      }
     }
   ]
 }
