@@ -4293,6 +4293,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 12,
+      "id": "day-012",
+      "date": "2026-08-17",
+      "title": "Day 12 — **Amazon FBA Mein \"Branding\" Ka Complete Guide (Logo, Packaging, Brand Story)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Amazon FBA mein \"branding\" sirf ek logo ya naam nahi hai—yeh ek customer ko loyal banane ka process hai. Strong branding se aapki product ki pehchaan banti hai, trust banta hai, aur competition se alag nazar aate hain. Isme logo design, packaging, brand story, aur customer experience shamil hain."
+        ],
+        [
+          "Example",
+          "Ek chhota sa \"organic herbal tea\" ka brand lo. Aapka logo green aur earthy colors mein hoga (nature ka feel), packaging biodegradable material ki hogi, aur product box par ek chhoti si \"story\" likhi hogi: *\"Har cup se aap nature ko samajh sakte hain.\"* Isse customer ko emotional connection milti hai."
+        ],
+        [
+          "Practice",
+          "Apne product ya niche ke liye ek simple logo design karne ki koshish karen. Canva ya Looka jaise free tools use karen. Logo ko aapki product ki personality reflect karna chahiye (e.g., premium, eco-friendly, tech-savvy)."
+        ],
+        [
+          "Mini Project",
+          "Ek \"brand style guide\" taiyaar karen:\n1. Logo (color scheme + font)\n2. Packaging design ka rough sketch\n3. 3-line brand story\n4. Product ke saath aane wale ek chhote note ka draft"
+        ]
+      ],
+      "answer_key": "logo, packaging, brand story, customer trust",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۲ — **ایمیزون ایف بی اے میں \"برانڈنگ\" کا مکمل گائیڈ (لوگو، پیکجنگ، برانڈ اسٹوری)**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ایمیزون ایف بی اے میں \"برانڈنگ\" صرف ایک لوگو یا نام نہیں ہے—یہ ایک گاہک کو وفادار بنانے کا عمل ہے۔ مضبوط برانڈنگ سے آپ کے پروڈکٹ کی پہچان بنتی ہے، اعتبار قائم ہوتا ہے، اور مقابلے سے الگ نظر آتے ہیں۔ اس میں لوگو ڈیزائن، پیکجنگ، برانڈ اسٹوری، اور گاہک کا تجربہ شامل ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک چھوٹا سا \"آرگینک ہربل ٹی\" کا برانڈ لیں۔ آپ کا لوگو سبز اور ارتھي رنگوں میں ہوگا (فطرت کا احساس)، پیکجنگ بائیوڈیگریڈیبل میٹریل کی ہوگی، اور پروڈکٹ باکس پر ایک چھوٹی سی \"اسٹوری\" لکھی ہوگی: *\"ہر کپ سے آپ فطرت کو سمجھ سکتے ہیں۔\"* اس سے گاہک کو جذباتی تعلق ملتا ہے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے پروڈکٹ یا نیچ کے لیے ایک سادہ لوگو ڈیزائن کرنے کی کوشش کریں۔ کینوا یا لوکا جیسے مفت ٹولز استعمال کریں۔ لوگو کو آپ کے پروڈکٹ کی شخصیت کی عکاسی کرنی چاہیے (مثلاً، پریمیم، ایکو فرینڈلی، ٹیک سیوی)۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک \"برانڈ اسٹائل گائیڈ\" تیار کریں:\n۱۔ لوگو (رنگ سکیم + فونٹ)\n۲۔ پیکجنگ ڈیزائن کا خاکہ\n۳۔ تین سطری برانڈ اسٹوری\n۴۔ پروڈکٹ کے ساتھ آنے والے ایک چھوٹے نوٹ کا ڈرافٹ"
+            }
+          ]
+        }
+      }
     }
   ],
   "daraz-seller": [
