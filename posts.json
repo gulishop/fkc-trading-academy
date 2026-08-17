@@ -1535,6 +1535,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 16,
+      "id": "day-016",
+      "date": "2026-08-17",
+      "title": "Day 16 — **YouTube Automation Ka \"Secret Weapon\": \"CTR Optimization\" Jo Views 2x-5x Badha De**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "CTR (Click-Through Rate) wo % hai jo dikhata hai ke kitne viewers ne aapka video dekhne ke liye click kiya. Agar CTR low hai (3% se kam), to YouTube samajhta hai ke video \"relevant\" nahi hai—isliye ranking kam ho jati hai. Hum \"CTR Optimization\" ke 3 key factors cover karenge: **Thumbnail + Title Combo**, **First 3 Seconds ka Hook**, aur **YouTube Algorithm ki Patience**."
+        ],
+        [
+          "Example",
+          "Ek student ne ek video ka title badla *\"How to Make Money Online in 2024\"* se *\"Make ₹50,000/Month in 2024 (Step-by-Step Guide)\"*—CTR 2.1% se badhkar 4.8% ho gaya. Thumbnail mein \"₹50,000\" ka text add karne se aur 1.5% increase hua."
+        ],
+        [
+          "Practice",
+          "Apne **top 3 videos** ke CTR check karo (YouTube Studio > Analytics > Reach > CTR). Agar kisi ka CTR 3% se kam hai, to **1 hour** mein thumbnail ya title mein **1 change** karo (e.g., number add karo, emotion badhao, ya \"Secret\" word use karo)."
+        ],
+        [
+          "Mini Project",
+          "Ek **\"CTR Test\"** banayein:\n1. Ek video ke **2 thumbnail options** banayein (Canva se).\n2. A/B test ke liye **1 week** tak dono thumbnails ko same video par use karo.\n3. Week end par CTR compare karo—jo zyada ho, usko permanent rakho."
+        ]
+      ],
+      "answer_key": "ctr test, a/b thumbnail, number inclusion, emotion-driven hook",
+      "translations": {
+        "ur": {
+          "title": "دن 16 — **یوٹیوب آٹومیشن کا \"سیکرٹ ویپن\": \"سی ٹی آر آپٹیمائزیشن\" جو ویوز 2x-5x بڑھا دے**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "سی ٹی آر (کلک تھرو ریٹ) وہ فیصد ہے جو ظاہر کرتا ہے کہ کتنے ویورز نے آپ کا ویڈیو دیکھنے کے لیے کلک کیا۔ اگر سی ٹی آر کم ہے (3% سے کم)، تو یوٹیوب سمجھتا ہے کہ ویڈیو \"ریلیونٹ\" نہیں ہے—اس لیے رینکنگ کم ہو جاتی ہے۔ ہم \"سی ٹی آر آپٹیمائزیشن\" کے تین کلیدی عوامل کور کریں گے: **تھمب نیل + ٹائٹل کا امتزاج**، **پہلے تین سیکنڈز کا ہوک**، اور **یوٹیوب الگورتھم کی صبر آزمائی**۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک طالب علم نے ایک ویڈیو کا ٹائٹل بدلا *\"ہاؤ ٹو میک منی آن لائن ان 2024\"* سے *\"ماہانہ ₹50,000 کمائیں 2024 میں (اسٹپ بائی اسٹپ گائیڈ)\"*—سی ٹی آر 2.1% سے بڑھ کر 4.8% ہو گیا۔ تھمب نیل میں \"₹50,000\" کا ٹیکسٹ شامل کرنے سے مزید 1.5% اضافہ ہوا۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے **ٹاپ 3 ویڈیوز** کا سی ٹی آر چیک کریں (یوٹیوب اسٹوڈیو > اینالیٹکس > ریچ > سی ٹی آر)۔ اگر کسی کا سی ٹی آر 3% سے کم ہے، تو **ایک گھنٹے** میں تھمب نیل یا ٹائٹل میں **ایک تبدیلی** کریں (مثلا نمبر شامل کریں، جذبات بڑھائیں، یا \"سیکرٹ\" لفظ استعمال کریں)۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **\"سی ٹی آر ٹیسٹ\"** بنائیں:\n1. ایک ویڈیو کے **دو تھمب نیل آپشنز** بنائیں (کینوا سے)۔\n2. اے/بی ٹیسٹ کے لیے **ایک ہفتے** تک دونوں تھمب نیلز کو اسی ویڈیو پر استعمال کریں۔\n3. ہفتے کے آخر پر سی ٹی آر کا موازنہ کریں—جو زیادہ ہو، اسے مستقل رکھیں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "social-media-marketing": [
