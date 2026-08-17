@@ -18358,6 +18358,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 14,
+      "id": "day-014",
+      "date": "2026-08-17",
+      "title": "Day 14 — **Apni cheezein doosron ke sath share karna**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachon, yaad rakhna ke har cheez humari apni nahi hoti. Jo cheezein humare paas hain, unhe doosron ke sath share karna bhi seekhna zaroori hai. Jaise agar tumhare paas ek naya pencil hai, toh usko doosre bachay ko bhi dikhakar use karne do. Isse doosron ko bhi khushi milti hai aur tumhare dil mein bhi khushiyan aati hain."
+        ],
+        [
+          "Chhoti Kahani",
+          "Rohan ke paas ek naya football tha. Usne usko apne dost Ali ko bhi dikhaya. Ali ne bhi us football se khela aur dono ne milkar khub maza liya. Rohan ko samajh aaya ke share karne se doosron ko bhi khushi milti hai aur uska dil bhi khush ho gaya."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "Tumhare paas kon si cheez hai jo tum doosron ke sath share karte ho?"
+        ],
+        [
+          "Yaad Rakhein",
+          "Share karna seekhna ek achha akhlaq hai. Isse doosron ke dil bhi khush hote hain aur tumhara dil bhi."
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۴ — **اپنی چیزیں دوسروں کے ساتھ شیئر کرنا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "بچو، یاد رکھنا کہ ہر چیز ہماری اپنی نہیں ہوتی۔ جو چیزیں ہمارے پاس ہیں، انہیں دوسروں کے ساتھ شیئر کرنا بھی سیکھنا ضروری ہے۔ جیسے اگر تمہارے پاس ایک نیا پینسل ہے، تو اسے دوسرے بچے کو بھی دکھا کر استعمال کرنے دو۔ اس سے دوسروں کو بھی خوشی ملتی ہے اور تمہارے دل میں بھی خوشیاں آتی ہیں۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "روہن کے پاس ایک نیا فٹ بال تھا۔ اس نے اسے اپنے دوست علی کو بھی دکھایا۔ علی نے بھی اس فٹ بال سے کھیلا اور دونوں نے مل کر خوب مزہ لیا۔ روہن کو سمجھ آیا کہ شیئر کرنے سے دوسروں کو بھی خوشی ملتی ہے اور اس کا دل بھی خوش ہو گیا۔"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "تمہارے پاس کون سی چیز ہے جو تم دوسروں کے ساتھ شیئر کرتے ہو؟"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "شیئر کرنا سیکھنا ایک اچھا اخلاق ہے۔ اس سے دوسروں کے دل بھی خوش ہوتے ہیں اور تمہارا دل بھی۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-nursery": [
