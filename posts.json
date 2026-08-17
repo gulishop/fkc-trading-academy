@@ -7600,6 +7600,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 8,
+      "id": "day-008",
+      "date": "2026-08-17",
+      "title": "Day 8 — **AI-Powered Design Hacks: Canva ke Smart Features**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Canva ke AI tools se design process ko fast aur smart banaya ja sakta hai. **Magic Edit** (objects ko edit karein), **Magic Eraser** (background se unwanted elements remove karein), aur **Magic Design** (automatically templates generate karein) jaise features se beginners bhi professional-level designs bana sakte hain."
+        ],
+        [
+          "Example",
+          "1. **Magic Edit** se kisi photo mein object add karne ke liye:\n   - Photo upload karein → **Edit photo** → **Magic Edit** → naya object describe karein (e.g., \"sunflowers in background\").\n   - AI automatically photo mein integrate kar dega.\n\n2. **Magic Design** se presentation ke liye template generate karne ke liye:\n   - **Create a design** → **Magic Design** → topic likhein (e.g., \"Digital Marketing Plan\").\n   - Canva 3-4 relevant templates suggest karega."
+        ],
+        [
+          "Practice",
+          "Apni ek purani photo lein aur **Magic Eraser** se background se ek unwanted object remove karein."
+        ],
+        [
+          "Mini Project",
+          "Ek **Instagram post** design karein jisme:\n- **Magic Design** se 3 templates mein se ek choose karein.\n- **Magic Edit** se photo mein ek extra element add karein (e.g., coffee cup).\n- **Brand colors** apply karein aur export karein."
+        ]
+      ],
+      "answer_key": "photo edit, background remove, object add, template select",
+      "translations": {
+        "ur": {
+          "title": "دن ۸ — **اے آئی سے چلنے والے ڈیزائن ہیکس: کینوا کے سمارٹ فیچرز**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "کینوا کے اے آئی ٹولز سے ڈیزائن کا عمل تیز اور سمارٹ بنایا جا سکتا ہے۔ **میجک ایڈٹ** (اشیاء میں ترمیم کریں)، **میجک ایریزر** (بیک گراؤنڈ سے غیر مطلوبہ عناصر ہٹائیں)، اور **میجک ڈیزائن** (خودکار طور پر ٹیمپلیٹس جنریٹ کریں) جیسے فیچرز سے نوآموز بھی پیشہ ورانہ سطح کے ڈیزائن بنا سکتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ **میجک ایڈٹ** سے کسی تصویر میں کوئی شے شامل کرنے کے لیے:\n- تصویر اپ لوڈ کریں → **ایڈٹ فوٹو** → **میجک ایڈٹ** → نئی شے کی تفصیل لکھیں (مثلاً، \"بیک گراؤنڈ میں سن فلاورز\")۔\n- اے آئی خود بخود تصویر میں ضم کر دے گا۔\n\n۲۔ **میجک ڈیزائن** سے پریزنٹیشن کے لیے ٹیمپلیٹ جنریٹ کرنے کے لیے:\n- **ڈیزائن بنائیں** → **میجک ڈیزائن** → موضوع لکھیں (مثلاً، \"ڈیجیٹل مارکیٹنگ پلان\")۔\n- کینوا تین سے چار متعلقہ ٹیمپلیٹس تجویز کرے گا۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنی کسی پرانی تصویر لیں اور **میجک ایریزر** سے بیک گراؤنڈ سے کوئی غیر مطلوبہ شے ہٹائیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **انسٹاگرام پوسٹ** ڈیزائن کریں جس میں:\n- **میجک ڈیزائن** سے تین ٹیمپلیٹس میں سے ایک منتخب کریں۔\n- **میجک ایڈٹ** سے تصویر میں کوئی اضافی عنصر شامل کریں (مثلاً، کافی کا کپ)۔\n- **برینڈ رنگ** لگائیں اور ایکسپورٹ کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "no-code-app-dev": [
