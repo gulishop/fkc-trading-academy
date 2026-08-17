@@ -7150,6 +7150,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 17,
+      "id": "day-017",
+      "date": "2026-08-17",
+      "title": "Day 17 — **Freelancing Mein \"Client Retention\": Repeat Business Ka Sabse Asaan Formula**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Client retention ka matlab hai kisi client ko ek baar service dene ke baad dobara hire karne ke liye convince karna. Yeh freelancing ka \"sweet spot\" hai—kyunki repeat clients se 80% income aati hai, lekin iske liye consistency aur trust build karna zaroori hai. Aaj seekhenge kaise client ko \"wow\" experience do, taaki wo dobara aaye aur refer bhi kare."
+        ],
+        [
+          "Example",
+          "Ek graphic designer ne ek client ko logo design diya. Usne project ke baad ek follow-up email bheja: \"Aapka logo ready hai! Agar aapko koi aur design chahiye (business card, banner, social media graphics), toh main 10% discount offer kar raha hun.\" Client ne social media graphics ka order diya, aur iske baad har 3 mahine mein repeat order aate rahe."
+        ],
+        [
+          "Practice",
+          "Apne 1-2 past clients ko ek short, friendly email bhejo. Message yeh ho: *\"Mera [service] aapko pasand aaya? Agar aapko future mein koi aur [service] chahiye, toh main aapko priority support aur [discount/free add-on] offer kar sakta hun. Kya aapko abhi koi help chahiye?\"*"
+        ],
+        [
+          "Mini Project",
+          "Ek \"Client Retention Plan\" banao—3 steps:\n1. Follow-up email template likho (3-4 lines ka).\n2. Ek free add-on ya discount decide karo jo repeat clients ko do.\n3. Excel sheet mein 5 past clients ki list banao, aur unko follow karne ka schedule set karo (e.g., 1 week, 1 month, 3 months baad)."
+        ]
+      ],
+      "answer_key": "follow-up email, discount offer, priority support, repeat order",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۷ — فری لانسنگ میں \"کلائنٹ ریٹینشن\": ریپیٹ بزنس کا سب سے آسان فارمولا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "کلائنٹ ریٹینشن کا مطلب ہے کسی کلائنٹ کو ایک بار سروس دینے کے بعد دوبارہ ہائر کرنے کے لیے قائل کرنا۔ یہ فری لانسنگ کا \"سویٹ سپاٹ\" ہے—کیونکہ ریپیٹ کلائنٹس سے ۸۰ فیصد آمدنی آتی ہے، لیکن اس کے لیے کنسسٹنسی اور ٹرسٹ بنانا ضروری ہے۔ آج سیکھیں گے کہ کلائنٹ کو \"واو\" تجربہ کیسے دیں، تاکہ وہ دوبارہ آئے اور ریفر بھی کرے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک گرافک ڈیزائنر نے ایک کلائنٹ کو لوگو ڈیزائن دیا۔ اس نے پروجیکٹ کے بعد ایک فالو اپ ای میل بھیجی: \"آپ کا لوگو تیار ہے! اگر آپ کو کوئی اور ڈیزائن چاہیے ( بزنس کارڈ، بینر، سوشل میڈیا گرافکس)، تو میں ۱۰ فیصد ڈسکاؤنٹ آفر کر رہا ہوں۔\" کلائنٹ نے سوشل میڈیا گرافکس کا آرڈر دیا، اور اس کے بعد ہر تین ماہ میں ریپیٹ آرڈرز آتے رہے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے ۱-۲ پچھلے کلائنٹس کو ایک مختصر اور دوستانہ ای میل بھیجو۔ پیغام یہ ہو: \"میرا [سروس] آپ کو پسند آیا؟ اگر آپ کو مستقبل میں کوئی اور [سروس] چاہیے، تو میں آپ کو پرائیوریٹی سپورٹ اور [ڈسکاؤنٹ/فری ایڈ آن] آفر کر سکتا ہوں۔ کیا آپ کو ابھی کوئی مدد چاہیے؟\""
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک \"کلائنٹ ریٹینشن پلان\" بناؤ—۳ اقدامات:\n۱۔ فالو اپ ای میل ٹیمپلیٹ لکھو (۳-۴ لائنز کا)۔\n۲۔ ایک فری ایڈ آن یا ڈسکاؤنٹ طے کرو جو ریپیٹ کلائنٹس کو دو۔\n۳۔ ایکسل شیٹ میں ۵ پچھلے کلائنٹس کی لسٹ بناؤ، اور ان کو فالو کرنے کا شیڈول سیٹ کرو (مثلاً، ۱ ہفتہ، ۱ ماہ، ۳ ماہ بعد)।"
+            }
+          ]
+        }
+      }
     }
   ],
   "graphic-design-canva": [
