@@ -5017,6 +5017,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 11,
+      "id": "day-011",
+      "date": "2026-08-18",
+      "title": "Day 11 — **Daraz Par Best Selling Products Ki Top 10 Categories Ko Samajhna**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Daraz par sabse zyada bechne wale products ki categories ko identify karna ek seller ke liye bohat zaroori hai. In categories mein competition zyada hota hai, lekin demand bhi high hoti hai. Aaj hum seekhenge ke kaise in top categories ko analyze karke apne business ke liye best products choose karein."
+        ],
+        [
+          "Example",
+          "1. **Daraz Seller Center** mein jao → **Analytics** → **Top Selling Categories** par click karo.\n2. **Filters** laga kar \"Pakistan\" select karo aur **last 30 days** ka data dekho.\n3. Dekho ke konsi categories mein **highest sales volume** hai (e.g., Electronics, Fashion, Home Appliances).\n4. **Competition check karo** — agar top 5 sellers mein 100+ reviews hain, toh competition tough hai."
+        ],
+        [
+          "Practice",
+          "Apne Daraz Seller Center mein jao, **Top Selling Categories** section mein ja kar **Pakistan** ke liye **last 30 days** ke data ko dekho. Top 3 categories note karo jin mein aapka interest hai."
+        ],
+        [
+          "Mini Project",
+          "Ek **simple Excel sheet** banayein jismein aap neechay di gayi details fill karein:\n- **Top 3 Categories** (e.g., Mobile Accessories, Women’s Clothing, Home Decor)\n- **Average Price Range** (e.g., Rs. 1,000–5,000)\n- **Competition Level** (Low/Medium/High)\n- **Your Potential Product Idea** (e.g., Wireless Earbuds under Rs. 3,000)"
+        ]
+      ],
+      "answer_key": "top 3 categories, price range, competition level, product idea",
+      "translations": {
+        "ur": {
+          "title": "دن 11 — داراز پر بیسٹ سیلنگ پروڈکٹس کی ٹاپ 10 کیٹگریز کو سمجھنا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "داراز پر سب سے زیادہ بیچنے والے پروڈکٹس کی کیٹگریز کو شناخت کرنا ایک سیلر کے لیے بہت ضروری ہے۔ ان کیٹگریز میں مقابلہ زیادہ ہوتا ہے، لیکن مانگ بھی بلند ہوتی ہے۔ آج ہم سیکھیں گے کہ کیسے ان ٹاپ کیٹگریز کا تجزیہ کرکے اپنے بزنس کے لیے بہترین پروڈکٹس کا انتخاب کریں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1. **داراز سیلر سینٹر** میں جائیں → **اینالیٹکس** → **ٹاپ سیلنگ کیٹگریز** پر کلک کریں۔\n2. **فلٹرز** لگا کر \"پاکستان\" سلیکٹ کریں اور **گزشتہ 30 دنوں** کا ڈیٹا دیکھیں۔\n3. دیکھیں کہ کونسی کیٹگریز میں **سب سے زیادہ سیلز والیوم** ہے (مثلاً، الیکٹرانکس، فیشن، ہوم اپلائینسز)۔\n4. **مقابلے کا جائزہ لیں** — اگر ٹاپ 5 سیلرز میں 100+ ریویوز ہیں، تو مقابلہ مشکل ہے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے داراز سیلر سینٹر میں جائیں، **ٹاپ سیلنگ کیٹگریز** سیکشن میں جا کر **پاکستان** کے لیے **گزشتہ 30 دنوں** کا ڈیٹا دیکھیں۔ ٹاپ 3 کیٹگریز نوٹ کریں جن میں آپ کی دلچسپی ہے۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **سادہ ایکسل شیٹ** بنائیں جس میں آپ درج ذیل تفصیلات بھریں:\n- **ٹاپ 3 کیٹگریز** (مثلاً، موبائل ایکسیسریز، خواتین کا لباس، ہوم ڈیکور)\n- **اوسط قیمت کی رینج** (مثلاً، 1,000 تا 5,000 روپے)\n- **مقابلے کی سطح** (کم/درمیانی/زیادہ)\n- **آپ کا ممکنہ پروڈکٹ آئیڈیا** (مثلاً، وائرلیس ایئر بڈز 3,000 روپے سے کم)"
+            }
+          ]
+        }
+      }
     }
   ],
   "ai-content-writing": [
