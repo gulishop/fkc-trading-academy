@@ -7386,6 +7386,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 18,
+      "id": "day-018",
+      "date": "2026-08-18",
+      "title": "Day 18 — **Freelancing Mein \"Testimonials\" Kaise Layein: Trust Badhane Ka Sabse Asaan Formula**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Testimonials freelancing mein trust banane ka sabse powerful tool hain. Jab aap koi project complete kar lein, client se feedback lo lekin sirf review ke liye na poochhein—usko ek \"testimonial\" banane mein help karein. Isse aapka profile professional dikhta hai aur future clients ko confidence milta hai."
+        ],
+        [
+          "Example",
+          "Ek client ne aapka logo design project complete kiya. Aap unse poochhein: *\"Sir, aapka feedback hamare liye bohat valuable hai. Kya aap 2-3 lines likh sakte hain jo hum apne portfolio mein use kar sakte hain?\"* Agar client busy ho, to aap unko ek draft bhi provide kar sakte hain jo wo edit kar de."
+        ],
+        [
+          "Practice",
+          "Apne ek past client ko message karein aur poochhein ki kya wo aapke liye 1-2 lines ka testimonial de sakte hain. Agar nahi to unko ek draft bhi send karein."
+        ],
+        [
+          "Mini Project",
+          "Ek \"Testimonial Request Template\" banaein jo aap har client ko bhej sakte hain. Ismein project ka naam, client ka naam, aur aapki services ka zikr hona chahiye."
+        ]
+      ],
+      "answer_key": "client ka naam, project ka naam, 2-3 positive lines, portfolio mein use",
+      "translations": {
+        "ur": {
+          "title": "دن اٹھارہ — فری لانسنگ میں \"ٹیسٹیمونیلز\" کیسے لیں: ٹرسٹ بڑھانے کا سب سے آسان فارمولا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ٹیسٹیمونیلز فری لانسنگ میں ٹرسٹ بنانے کا سب سے طاقتور ٹول ہیں۔ جب آپ کوئی پروجیکٹ مکمل کر لیں، کلائنٹ سے فیڈبیک لے لیں لیکن صرف ریویو کے لیے نہ پوچھیں—اسے ایک \"ٹیسٹیمونیل\" بنانے میں مدد کریں۔ اس سے آپ کا پروفائل پیشہ ورانہ لگتا ہے اور مستقبل کے کلائنٹس کو اعتماد ملتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک کلائنٹ نے آپ کا لوگو ڈیزائن پروجیکٹ مکمل کیا۔ آپ ان سے پوچھیں: *\"سر، آپ کا فیڈبیک ہمارے لیے بہت قیمتی ہے۔ کیا آپ ۲-۳ لائنیں لکھ سکتے ہیں جو ہم اپنے پورٹ فولیو میں استعمال کر سکیں؟\"* اگر کلائنٹ مصروف ہو تو آپ انہیں ایک ڈرافٹ بھی فراہم کر سکتے ہیں جسے وہ ایڈٹ کر دیں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے کسی سابقہ کلائنٹ کو میسج کریں اور پوچھیں کہ کیا وہ آپ کے لیے ۱-۲ لائنوں کا ٹیسٹیمونیل دے سکتے ہیں۔ اگر نہیں تو انہیں ایک ڈرافٹ بھی بھیجیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک \"ٹیسٹیمونیل ری کوئسٹ ٹیمپلیٹ\" بنائیں جو آپ ہر کلائنٹ کو بھیج سکیں۔ اس میں پروجیکٹ کا نام، کلائنٹ کا نام، اور آپ کی سروسز کا ذکر ہونا چاہیے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "graphic-design-canva": [
