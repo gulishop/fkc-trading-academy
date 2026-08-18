@@ -11650,6 +11650,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 11,
+      "id": "day-011",
+      "date": "2026-08-18",
+      "title": "Day 11 — Python Data Structures: Stacks aur Queues",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Stacks (LIFO - Last In First Out) aur Queues (FIFO - First In First Out) Python mein common data structures hain jo data ko organize karte hain. Stacks mein last add kiye gaye item pehle remove hota hai (jaise plates ka stack), jabki queues mein pehle add kiye gaye item pehle remove hote hain (jaise ticket line). Inhe `list` ya `collections.deque` se implement kar sakte hain."
+        ],
+        [
+          "Example",
+          "```python\n# Stack (LIFO)\nstack = []\nstack.append(1)  # Push\nstack.append(2)\nstack.append(3)\nprint(stack.pop())  # 3 (last in, first out)\n\n# Queue (FIFO)\nfrom collections import deque\nqueue = deque()\nqueue.append(1)  # Enqueue\nqueue.append(2)\nqueue.append(3)\nprint(queue.popleft())  # 1 (first in, first out)\n```"
+        ],
+        [
+          "Practice",
+          "Ek program likho jo:\n1. Ek empty stack banaye\n2. 3 numbers stack mein push kare (e.g., 10, 20, 30)\n3. Stack ko print kare\n4. 2 items pop kare aur remaining stack print kare"
+        ],
+        [
+          "Mini Project",
+          "Ek simple **Text Editor** banaye jo:\n- Ek stack use kare text ko store karne ke liye\n- `u` press karne par last action undo ho (pop from stack)\n- `r` press karne par text print ho\n- `q` press karne par program exit ho"
+        ]
+      ],
+      "answer_key": "stack=[10, 20, 30], stack=[10], undo, undo",
+      "translations": {
+        "ur": {
+          "title": "دن 11 — پائیتھن ڈیٹا اسٹرکچرز: اسٹیکس اور کیوز",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "اسٹیکس (لائفو - لاسٹ اِن فرسٹ آؤٹ) اور کیوز (فائفو - فرسٹ اِن فرسٹ آؤٹ) پائیتھن میں عام ڈیٹا اسٹرکچرز ہیں جو ڈیٹا کو منظم کرتے ہیں۔ اسٹیکس میں آخر میں شامل کیا گیا آئٹم پہلے ہٹایا جاتا ہے (جیسے پلیٹس کا اسٹیک)، جبکہ کیوز میں پہلے شامل کیا گیا آئٹم پہلے ہٹایا جاتا ہے (جیسے ٹکٹ لائن)۔ انہیں `list` یا `collections.deque` سے امپلیمنٹ کیا جا سکتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "```python\n# Stack (LIFO)\nstack = []\nstack.append(1)  # Push\nstack.append(2)\nstack.append(3)\nprint(stack.pop())  # 3 (last in, first out)\n\n# Queue (FIFO)\nfrom collections import deque\nqueue = deque()\nqueue.append(1)  # Enqueue\nqueue.append(2)\nqueue.append(3)\nprint(queue.popleft())  # 1 (first in, first out)\n```"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "ایک پروگرام لکھو جو:\n1. ایک خالی اسٹیک بنائے\n2. اسٹیک میں 3 نمبرز پُش کرے (مثلاً 10، 20، 30)\n3. اسٹیک کو پرنٹ کرے\n4. 2 آئٹمز پاپ کرے اور باقی ماندہ اسٹیک پرنٹ کرے"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک سادہ **ٹیکسٹ ایڈیٹر** بناؤ جو:\n- ٹیکسٹ کو اسٹور کرنے کے لیے ایک اسٹیک استعمال کرے\n- `u` دبانے پر آخری ایکشن انڈو ہو (اسٹیک سے پاپ)\n- `r` دبانے پر ٹیکسٹ پرنٹ ہو\n- `q` دبانے پر پروگرام ختم ہو جائے"
+            }
+          ]
+        }
+      }
     }
   ],
   "web-development": [
