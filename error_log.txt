@@ -860,3 +860,6 @@
 [2026-08-18T10:05:18.904836] [mobile-repairing] Day 1 video skip: Agnes aur ffmpeg dono attempts fail.
 [2026-08-18T10:07:06.208106] [mobile-repairing] Day 2 video skip: Agnes aur ffmpeg dono attempts fail.
 [2026-08-18T10:08:53.345028] [mobile-repairing] Day 3 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-18T19:32:49.671391] [youtube-automation] Day 1 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-18T19:34:30.474232] [youtube-automation] Day 2 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-18T19:34:33.496251] [youtube-automation] Day 3 video skip: Agnes aur ffmpeg dono attempts fail.

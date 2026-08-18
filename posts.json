@@ -1585,6 +1585,80 @@
           ]
         }
       }
+    },
+    {
+      "day": 17,
+      "id": "day-017",
+      "date": "2026-08-18",
+      "title": "Day 17 — **AdSense Approval Ke Baad Paise Kaise Milein? (Step-by-Step Process)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "AdSense approve hone ke baad bhi paise directly nahi milte. Pehle \"Payment Threshold\" (₹10,000) complete karna hota hai, phir payment method add karna hota hai. Har month ke end mein earnings calculate hoti hain, jo next month ke 21st-26th ke beech pay hoti hain. Important: \"Tax Info\" (Form 15G/15H) bhi submit karna hota hai warna TDS katega."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Earnings Track",
+          "YouTube Studio → Monetization → \"Earnings\" tab check karo.\n2."
+        ],
+        [
+          "Payment Method",
+          "Bank account add karo (IFSC, Account Number, Name match hona chahiye).\n3."
+        ],
+        [
+          "Tax Form",
+          "\"Tax Info\" mein jao, India ke liye \"Form 15G\" (agar income tax slab se niche ho) ya \"Form 15H\" (senior citizens ke liye) submit karo."
+        ],
+        [
+          "Practice",
+          "Apne YouTube Studio ke \"Monetization\" section mein jao aur check karo:\n- Aapka current balance kitna hai?\n- Payment threshold complete hua ya nahi?\n- Tax form (15G/15H) submit kiya hai ya nahi?"
+        ],
+        [
+          "Mini Project",
+          "Ek simple spreadsheet banayein jismein aap har month ki earnings, views, aur payment date track kar sakte hain. Columns: Month, Views, Earnings (₹), Payment Received (Yes/No), Notes."
+        ]
+      ],
+      "answer_key": "earnings tab, payment threshold ₹10, 000, bank account add, form 15g/15h",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۷ — ایڈسینس اپروول کے بعد پیسے کیسے ملیں؟ (اسٹیپ بائی اسٹیپ عمل)",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ایڈسینس اپروو ہونے کے بعد بھی پیسے براہ راست نہیں ملتے۔ پہلے \"پے منٹ تھریش ہولڈ\" (₹۱۰,۰۰۰) مکمل کرنا ہوتا ہے، پھر پے منٹ میتھڈ شامل کرنا ہوتا ہے۔ ہر مہینے کے آخر میں کمائی کا حساب لگایا جاتا ہے، جو اگلے مہینے کی ۲۱ سے ۲۶ تاریخ کے درمیان ادا کی جاتی ہے۔ اہم بات: \"ٹیکس انفارمیشن\" (فارم ۱۵جی/۱۵ایچ) بھی جمع کروانا ہوتا ہے ورنہ ٹی ڈی ایس کاٹ لیا جائے گا۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔"
+            },
+            {
+              "label": "ارنینگ ٹریک",
+              "content": "یوٹیوب اسٹوڈیو → مانیٹائزیشن → \"ارنینگس\" ٹیب چیک کریں۔"
+            },
+            {
+              "label": "پے منٹ میتھڈ",
+              "content": "۲۔ بینک اکاؤنٹ شامل کریں (آئی ایف ایس سی، اکاؤنٹ نمبر، نام میچ ہونا چاہیے)।"
+            },
+            {
+              "label": "ٹیکس فارم",
+              "content": "۳۔ \"ٹیکس انفارمیشن\" میں جائیں، انڈیا کے لیے \"فارم ۱۵جی\" (اگر آمدنی ٹیکس سلیب سے کم ہو) یا \"فارم ۱۵ایچ\" (سینئر سٹیزنز کے لیے) جمع کروائیں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے یوٹیوب اسٹوڈیو کے \"مانیٹائزیشن\" سیکشن میں جائیں اور چیک کریں:\n- آپ کا موجودہ بیلنس کتنا ہے؟\n- پے منٹ تھریش ہولڈ مکمل ہوا یا نہیں؟\n- ٹیکس فارم (۱۵جی/۱۵ایچ) جمع کروایا ہے یا نہیں؟"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک سادہ سپریڈشیٹ بنائیں جس میں آپ ہر مہینے کی ارنینگس، ویوز، اور پے منٹ کی تاریخ ٹریک کر سکیں۔ کالمز: مہینہ، ویوز، ارنینگس (₹)، پے منٹ موصول ہوا (ہاں/نہیں)، نوٹس۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "social-media-marketing": [
