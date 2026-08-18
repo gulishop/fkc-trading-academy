@@ -15838,6 +15838,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 14,
+      "id": "day-014",
+      "date": "2026-08-18",
+      "title": "Day 14 — **Mastering Depth of Field: Blur vs. Sharpness Control**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Depth of field (DoF) control karein ke photo mein background blur ho ya sab kuch sharp rahe. Aperture (f-number), focal length aur subject distance kaise DoF par asar dalte hain—yeh samjhaein. Portrait photography mein blur background (bokeh) kaise create karte hain, aur landscape ya street photography mein sab kuch sharp rakhne ke tips bhi batayein."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Portrait",
+          "50mm lens, f/1.8 par shoot karo—background blur ho jayega.\n2."
+        ],
+        [
+          "Landscape",
+          "24mm lens, f/11 par shoot karo—sab kuch sharp rahega.\n3."
+        ],
+        [
+          "Street",
+          "35mm lens, f/5.6 par shoot karo—middle ground sharp, background thoda blur."
+        ],
+        [
+          "Practice",
+          "Apne phone ya camera se ek hi scene ke 3 photos lo:\n- **f/1.8** (blur background),\n- **f/8** (medium blur),\n- **f/16** (sab sharp).\nCompare karo ke DoF kaise badla."
+        ],
+        [
+          "Mini Project",
+          "Ek portrait shoot karo jismein:\n- Background blur ho (f/1.4–f/2.8),\n- Ek landscape shoot karo jismein sab sharp ho (f/11–f/16).\nDono photos ko Lightroom mein edit karo ke DoF effect aur strong ho."
+        ]
+      ],
+      "answer_key": "f/1.8: blur background, shallow dof, bokeh; f/8: balanced blur; f/16: deep dof, sharp all",
+      "translations": {
+        "ur": {
+          "title": "دن 14 — ڈیپتھ آف فیلڈ میں مہارت: بلر بمقابلہ شارپنس کنٹرول",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "ڈیپتھ آف فیلڈ (DoF) کو کنٹرول کریں کہ تصویر میں پس منظر دھندلا ہو یا سب کچھ واضح رہے۔ ایپرچر (f-نمبر)، فوکل لینتھ اور سبجیکٹ کے فاصلے کا ڈیپتھ آف فیلڈ پر کیا اثر ہوتا ہے—اسے سمجھیں۔ پورٹریٹ فوٹوگرافی میں دھندلے پس منظر (بوکے) کیسے بناتے ہیں، اور لینڈ اسکیپ یا اسٹریٹ فوٹوگرافی میں سب کچھ واضح رکھنے کے ٹپس بھی بتائیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1. پورٹریٹ: 50mm لینس، f/1.8 پر شوٹ کریں—پس منظر دھندلا ہو جائے گا۔\n2. لینڈ اسکیپ: 24mm لینس، f/11 پر شوٹ کریں—سب کچھ واضح رہے گا۔\n3. اسٹریٹ: 35mm لینس، f/5.6 پر شوٹ کریں—درمیانی حصہ واضح، پس منظر تھوڑا دھندلا۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے فون یا کیمرے سے ایک ہی منظر کی تین تصاویر لیں:\n- **f/1.8** (دھندلا پس منظر)،\n- **f/8** (درمیانی دھندلاہٹ)،\n- **f/16** (سب کچھ واضح)۔\nموازنہ کریں کہ ڈیپتھ آف فیلڈ کیسے بدلا۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک پورٹریٹ شوٹ کریں جس میں:\n- پس منظر دھندلا ہو (f/1.4–f/2.8)،\n- ایک لینڈ اسکیپ شوٹ کریں جس میں سب کچھ واضح ہو (f/11–f/16)۔\nدونوں تصاویر کو لائٹ روم میں ایڈٹ کریں کہ ڈیپتھ آف فیلڈ کا اثر اور بھی نمایاں ہو۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "voiceover-podcasting": [
