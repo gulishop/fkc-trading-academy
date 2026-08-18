@@ -8464,6 +8464,80 @@
           ]
         }
       }
+    },
+    {
+      "day": 15,
+      "id": "day-015",
+      "date": "2026-08-18",
+      "title": "Day 15 — **AI-Powered No-Code: Smart Workflows Banana Seekhain**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "AI no-code tools ko aur bhi powerful banata hai. AI se aap apne no-code project ko fast automate kar sakte hain—jaise content generate karna, data clean karna, ya even apne app/website ke liye design suggestions lena. AI APIs (jaise Zapier + AI, Make.com + AI) ya built-in AI features (Framer AI, Webflow AI) se aap manual work 50% tak reduce kar sakte hain."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "AI se Blog Post Likhwana",
+          "Framer ya Webflow mein ek AI tool (jaise \"Copy.ai\" ya \"Jasper\") use karke apne niche ke keywords se 1000+ words ka blog draft generate kar sakte hain.\n2."
+        ],
+        [
+          "AI se Images Banana",
+          "DALL·E ya Midjourney ki help se apne website ke liye unique images bana saken (Framer/Webflow mein drag-and-drop se upload kar saken)."
+        ],
+        [
+          "Practice",
+          "Apne **Day 14 ke automation project** (No-Code Automation) mein **1 AI step add karo**—jaise:\n- Agar aapne Airtable + Gmail automation banaya tha, toh usme **AI se email subject lines generate karne ka step add karo** (Zapier ke \"AI by Zapier\" action use karke)."
+        ],
+        [
+          "Mini Project",
+          "**\"AI-Powered Portfolio Website\"**\n-"
+        ],
+        [
+          "Step 1",
+          "Framer ya Webflow mein ek portfolio website banayein.\n-"
+        ],
+        [
+          "Step 2",
+          "AI se apne resume ka content generate karke website par paste kar dein (tools: [ResumeWorded](https://resumeworded.com/) ya [Jasper](https://www.jasper.ai/)).\n-"
+        ],
+        [
+          "Step 3",
+          "AI se 3 unique project images generate karke website mein add kar dein (DALL·E/Midjourney).\n-"
+        ],
+        [
+          "Final Output",
+          "Ek fully functional portfolio website jo AI ki madad se 1 hour se kam mein ban jayegi."
+        ]
+      ],
+      "answer_key": "ai content generation, dall·e images, zapier ai, framer ai",
+      "translations": {
+        "ur": {
+          "title": "دن 15 — **اے آئی پاورڈ نو کوڈ: اسمارٹ ورک فلو بنانا سیکھیں**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "اے آئی نو کوڈ ٹولز کو اور بھی طاقتور بناتا ہے۔ اے آئی کی مدد سے آپ اپنے نو کوڈ پروجیکٹ کو تیز رفتار خودکار بنا سکتے ہیں — جیسے کہ مواد تیار کرنا، ڈیٹا صاف کرنا، یا یہاں تک کہ اپنی ایپ/ویب سائٹ کے لیے ڈیزائن کے مشورے لینا۔ اے آئی اے پی آئیز (جیسے زپیئر + اے آئی، میک ڈاٹ کام + اے آئی) یا بلٹ ان اے آئی فیچرز (فریمر اے آئی، ویب فلو اے آئی) کے ذریعے آپ دستی کام کو 50 فیصد تک کم کر سکتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1. \nاے آئی سے بلاگ پوسٹ لکھوانا: فریمر یا ویب فلو میں کوئی اے آئی ٹول (جیسے \"کاپی ڈاٹ اے آئی\" یا \"جاسپر\") استعمال کر کے اپنے نیچ کے کی ورڈز سے 1000 سے زائد الفاظ کا بلاگ ڈرافٹ تیار کر سکتے ہیں۔\n2. \nاے آئی سے تصاویر بنانا: ڈال-ای یا مڈ جرنی کی مدد سے اپنی ویب سائٹ کے لیے منفرد تصاویر بنا سکتے ہیں (فریمر/ویب فلو میں ڈریگ اینڈ ڈراپ کے ذریعے اپ لوڈ کر سکتے ہیں)।"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے **دن 14 کے آٹومیشن پروجیکٹ** (نو کوڈ آٹومیشن) میں **ایک اے آئی مرحلہ شامل کریں** — جیسے:\nاگر آپ نے ایئر ٹیبل + جی میل آٹومیشن بنایا تھا، تو اس میں **اے آئی سے ای میل سبجیکٹ لائنز جنریٹ کرنے کا مرحلہ شامل کریں** (زپیئر کے \"اے آئی بذریعہ زپیئر\" ایکشن کا استعمال کرتے ہوئے)।"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "**\"اے آئی پاورڈ پورٹ فولیو ویب سائٹ\"**\n\nمرحلہ 1: فریمر یا ویب فلو میں ایک پورٹ فولیو ویب سائٹ بنائیں۔\n\nمرحلہ 2: اے آئی سے اپنے ریزیومے کا مواد جنریٹ کر کے ویب سائٹ پر پیسٹ کر دیں (ٹولز: [ResumeWorded](https://resumeworded.com/) یا [Jasper](https://www.jasper.ai/))۔\n\nمرحلہ 3: اے آئی سے 3 منفرد پروجیکٹ تصاویر جنریٹ کر کے ویب سائٹ میں شامل کر دیں (ڈال-ای/مڈ جرنی)।\n\nفائنل آؤٹ پٹ: ایک مکمل فعال پورٹ فولیو ویب سائٹ جو اے آئی کی مدد سے ایک گھنٹے سے کم وقت میں تیار ہو جائے گی۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "digital-marketing-seo": [
