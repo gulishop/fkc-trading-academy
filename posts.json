@@ -9144,6 +9144,60 @@
           ]
         }
       }
+    },
+    {
+      "day": 5,
+      "id": "day-005",
+      "date": "2026-08-18",
+      "title": "Day 5 — **Color Grading: Mood Banane Ka Rahasya**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Color grading ek video ka mood, tone aur professional look set karne ka process hai. Yeh bas \"brightness/contrast\" se zyada hai – yeh colors ko adjust karke ek consistent aur engaging visual style banata hai. Har platform (Reels, YouTube, Shorts) ke liye alag mood hota hai: Reels mein vibrant colors, YouTube mein cinematic tones, aur shorts mein high-contrast pop."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "CapCut mein",
+          "\"Adjust\" > \"Color\" par click karein.\n2. **Temperature slider** se warm (orange) ya cool (blue) mood set karein.\n3. **Vibrance** badhaein taake colors zyada lively dikhein (lekin overdo na karein).\n4. **Shadows/Highlights** ko adjust karein taake details saaf dikhein."
+        ],
+        [
+          "Practice",
+          "Apne ek pehle se edit kiye hue video mein \"Color\" tab kholein aur:\n- Temperature ko -10 se +10 tak adjust karein (warm vs cool effect dekhne ke liye).\n- Vibrance ko 5-15% badhaein aur effect note karein."
+        ],
+        [
+          "Mini Project",
+          "Ek 10-second clip (apni choice ka) lein aur usko 3 alag moods mein color grade karein:\n1. **Happy/Vibrant** (high vibrance, warm tones)\n2. **Moodi/Cinematic** (cool tones, low contrast)\n3. **Dark/Drama** (high contrast, shadows boost)"
+        ]
+      ],
+      "answer_key": "warm tones, high vibrance, cool tones, low contrast",
+      "translations": {
+        "ur": {
+          "title": "دن 5 — **کالر گریڈنگ: موڈ بنانے کا راز**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "کالر گریڈنگ ایک ویڈیو کا موڈ، ٹون اور پیشہ ورانہ لوک سیٹ کرنے کا عمل ہے۔ یہ صرف \"برائٹنیس/کنٹراسٹ\" سے زیادہ ہے — یہ رنگوں کو ایڈجسٹ کرکے ایک مستقل اور دلچسپ بصری اسٹائل بناتا ہے۔ ہر پلیٹ فارم (ریلز، یوٹیوب، شارٹس) کے لیے الگ موڈ ہوتا ہے: ریلز میں زندہ رنگ، یوٹیوب میں سینیمیٹک ٹونز، اور شارٹس میں ہائی کنٹراسٹ پاپ۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1. کیپ کٹ میں: \"ایڈجسٹ\" > \"کالر\" پر کلک کریں۔\n2. **ٹیمپریچر سلائیڈر** سے گرم (اورنج) یا ٹھنڈا (بلیو) موڈ سیٹ کریں۔\n3. **وائبنس** بڑھائیں تاکہ رنگ زیادہ زندہ دکھائی دیں (لیکن زیادہ نہ کریں)۔\n4. **شیڈوز/ہائی لائٹس** کو ایڈجسٹ کریں تاکہ تفصیلات صاف دکھائی دیں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے پہلے سے ایڈٹ کیے ہوئے ویڈیو میں \"کالر\" ٹیب کھولیں اور:\n- ٹیمپریچر کو -10 سے +10 تک ایڈجسٹ کریں (گرم بمقابلہ ٹھنڈے ایفیکٹ دیکھنے کے لیے)۔\n- وائبنس کو 5-15% بڑھائیں اور ایفیکٹ نوٹ کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک 10 سیکنڈ کا کلپ (اپنی پسند کا) لیں اور اسے 3 مختلف موڈز میں کالر گریڈ کریں:\n1. **خوشی/زندہ** (ہائی وائبنس، گرم ٹونز)\n2. **مودی/سینیمیٹک** (ٹھنڈے ٹونز، لو کنٹراسٹ)\n3. **ڈارک/ڈراما** (ہائی کنٹراسٹ، شیڈوز بوسٹ)"
+            }
+          ]
+        }
+      }
     }
   ],
   "print-on-demand": [
