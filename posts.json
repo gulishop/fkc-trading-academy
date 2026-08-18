@@ -663,6 +663,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 13,
+      "id": "day-013",
+      "date": "2026-08-18",
+      "title": "Day 13 — **Affiliate Marketing Ke Liye \"High-Ticket\" Products Kaise Dhundein (Zyada Commission, Zyada Profit)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "High-ticket affiliate products wo hain jinke bechne par commission zyada milti hai (₹5000+ ya USD $50+). Inka fayda yeh hai ke ek sale se hi zyada commission milti hai, lekin inke liye audience ka trust aur credibility zaroori hoti hai. Aise products un niches mein milte hain jahan customers expensive decisions lete hain (e.g., gadgets, courses, insurance, real estate tools)."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Amazon Associates",
+          "\"Amazon Luxury Beauty\" category ke products (e.g., ₹8000 ka perfume) — 10% commission.\n2."
+        ],
+        [
+          "Flipkart Affiliate",
+          "\"Smartphones\" category — ₹1000-₹3000 commission per sale.\n3."
+        ],
+        [
+          "Niche-Specific Programs",
+          "\"SEMrush\" (₹5000+ commission per sale) ya \"Bluehost\" hosting (₹5000+ per signup)."
+        ],
+        [
+          "Practice",
+          "Apne niche ke 3 high-ticket products dhundein jo aap promote kar sakte hain. Unki commission rate, cookie duration, aur customer reviews check karen."
+        ],
+        [
+          "Mini Project",
+          "Ek simple comparison post ya video banayein jisme 2-3 high-ticket products ke features, prices, aur aapki affiliate links share karen. (e.g., \"2024 Ke 3 Best DSLR Cameras Under ₹80,000\")"
+        ]
+      ],
+      "answer_key": "amazon beauty, flipkart smartphones, semrush",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۳ — ایفیلیٹ مارکیٹنگ کے لیے \"ہائی ٹکٹ\" پروڈکٹس کیسے ڈھونڈیں (زیادہ کمیشن، زیادہ منافع)",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ہائی ٹکٹ ایفیلیٹ پروڈکٹس وہ ہوتے ہیں جن کی فروخت پر زیادہ کمیشن ملتا ہے (₹۵۰۰۰+ یا یو ایس ڈی $۵۰+ سے زیادہ)۔ ان کا فائدہ یہ ہے کہ ایک سیل سے ہی زیادہ کمیشن حاصل ہوتا ہے، لیکن ان کے لیے سامعین کا اعتماد اور کریڈیبلیٹی بہت ضروری ہوتی ہے۔ ایسے پروڈکٹس ان نیچز میں ملتے ہیں جہاں صارفین مہنگے فیصلے کرتے ہیں (مثلاً گیجٹس، کورسز، انشورنس، رئیل اسٹیٹ ٹولز وغیرہ)"
+            },
+            {
+              "label": "مثالیں",
+              "content": "۱۔ ایمیزون ایسوسی ایٹس: \"ایمیزون لکژری بیوٹی\" کیٹیگری کے پروڈکٹس (مثلاً ₹۸۰۰۰ کا پرفیوم) — ۱۰ فیصد کمیشن۔\n۲۔ فلپ کارٹ ایفیلیٹ: \"اسمارٹ فونز\" کیٹیگری — ₹۱۰۰۰ سے ₹۳۰۰۰ تک کمیشن فی سیل۔\n۳۔ نیچ سپیسفک پروگرامز: \"ایس ای ایم رش\" (₹۵۰۰۰+ کمیشن فی سیل) یا \"بلیو ہوسٹ\" ہوسٹنگ (₹۵۰۰۰+ فی سائن اپ)"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے نیچ کے تین ہائی ٹکٹ پروڈکٹس تلاش کریں جنہیں آپ پروموٹ کر سکتے ہیں۔ ان کی کمیشن ریٹ، کوکی دورانیہ، اور صارفین کے ریویوز چیک کریں"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک سادہ موازنہ پوسٹ یا ویڈیو بنائیں جس میں دو سے تین ہائی ٹکٹ پروڈکٹس کے فیچرز، قیمتوں، اور آپ کے ایفیلیٹ لنکس شیئر کیے جائیں۔ (مثلاً \"۲۰۲۴ کے تین بہترین ڈی ایس ایل آر کیمرے ₹۸۰،۰۰۰ سے کم میں\")"
+            }
+          ]
+        }
+      }
     }
   ],
   "youtube-automation": [
