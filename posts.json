@@ -10066,6 +10066,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 15,
+      "id": "day-015",
+      "date": "2026-08-18",
+      "title": "Day 15 — **Store Ko Brand Karna: Logo, Banner & Visual Identity Banaein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Ek POD store ki pehchan uska **branding** hai. Isse logo, banner, product mockups, aur consistent color scheme se define karte hain. Strong branding se customers yaad rehte hain aur trust banta hai. Aaj seekhein ke kaise ek professional-looking store setup karein jo alag nazar aaye."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Logo",
+          "Canva par ek simple text-based logo banain (e.g., \"Artify\" + ek brush stroke icon).\n2."
+        ],
+        [
+          "Banner",
+          "Store ke niche ke hisab se ek 1200x300px banner banain (e.g., \"Custom Art for Gamers\" + trending colors).\n3."
+        ],
+        [
+          "Color Scheme",
+          "2-3 main colors choose karein (e.g., dark blue + neon green) aur sab designs mein use karein."
+        ],
+        [
+          "Practice",
+          "Apne store ke niche ke hisab se **ek logo aur banner** banain (Canva ya Looka use karein). Color scheme bhi decide kar lein."
+        ],
+        [
+          "Mini Project",
+          "Ek **social media post** design karein jo aapke store ke branding ko reflect kare (e.g., Instagram story mein \"New Drop Alert!\" + logo + trending design ka mockup)."
+        ]
+      ],
+      "answer_key": "logo: text+icon, banner: 1200x300px, colors: 2-3, post: mockup+cta",
+      "translations": {
+        "ur": {
+          "title": "دن ١٥ — **سٹور کو برانڈ کرنا: لوگو، بینر اور بصری شناخت بنائیں**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ایک پی او ڈی سٹور کی پہچان اس کا **برانڈنگ** ہوتا ہے۔ اسے لوگو، بینر، پروڈکٹ ماک اپس، اور مستقل رنگ سکیم سے متعین کیا جاتا ہے۔ مضبوط برانڈنگ سے گاہک یاد رکھتے ہیں اور اعتماد بنتا ہے۔ آج سیکھیں کہ کیسے ایک پیشہ ورانہ نظر آنے والا سٹور سیٹ اپ کریں جو الگ نظر آئے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "١۔ **لوگو**: کینوا پر ایک سادہ ٹیکسٹ بیسڈ لوگو بنائیں (مثلاً، \"آرٹِفائی\" + ایک برش اسٹروک آئیکن)۔\n٢۔ **بینر**: سٹور کے نیچے کے حساب سے ایک ١٢٠٠x٣٠٠ پکسل کا بینر بنائیں (مثلاً، \"کسٹم آرٹ فار گیمرز\" + ٹرینڈنگ رنگ)۔\n٣۔ **رنگ سکیم**: دو سے تین مرکزی رنگ منتخب کریں (مثلاً، گہرا نیلا + نیون گرین) اور تمام ڈیزائنز میں استعمال کریں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے سٹور کے نیچے کے حساب سے **ایک لوگو اور بینر** بنائیں (کینوا یا لوکا استعمال کریں)۔ رنگ سکیم بھی طے کر لیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **سوشل میڈیا پوسٹ** ڈیزائن کریں جو آپ کے سٹور کے برانڈنگ کو ظاہر کرے (مثلاً، انسٹاگرام اسٹوری میں \"نیو ڈراپ الرٹ!\" + لوگو + ٹرینڈنگ ڈیزائن کا ماک اپ)"
+            }
+          ]
+        }
+      }
     }
   ],
   "cpp-daily-coding": [
