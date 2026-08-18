@@ -3903,6 +3903,92 @@
           ]
         }
       }
+    },
+    {
+      "day": 19,
+      "id": "day-019",
+      "date": "2026-08-18",
+      "title": "Day 19 — **Economic Calendar: News Se Profit Kaise Banaye?**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Economic calendar forex trading ka \"weather forecast\" hai. Isme important economic events (like interest rate decisions, GDP reports, employment data) ki timing aur impact ka pata chalta hai. In news se market volatility badhti hai—traders ko pata hota hai kab price move hoga. Fundamental analysis ka yeh backbone hai."
+        ],
+        [
+          "Example",
+          "1. **US Non-Farm Payrolls (NFP)** — Har mahine ka pehla Friday, US mein jobs report aata hai.\n2."
+        ],
+        [
+          "Impact",
+          "Agar jobs zyada badhe (e.g., +300K vs +200K expected), USD strengthen hoga, EUR/USD pair gir sakta hai.\n3."
+        ],
+        [
+          "Trading Plan",
+          "NFP se pehle EUR/USD short karo (agar positive news expected ho), ya stop-loss zyada wide rakho kyunki volatility badhegi."
+        ],
+        [
+          "Practice",
+          "1."
+        ],
+        [
+          "Economic Calendar Check",
+          "[Forex Factory](https://www.forexfactory.com/) ya [Investing.com](https://www.investing.com/economic-calendar/) kholo.\n2. **Aaj ke 3 important news events** dhundo (country, impact level, expected vs actual result).\n3. **1-2 currency pairs** select karo jin par yeh news asar karegi (e.g., USD/JPY, GBP/USD)."
+        ],
+        [
+          "Mini Project",
+          "Ek **trading plan** banayo:\n-"
+        ],
+        [
+          "Currency Pair",
+          "EUR/USD\n-"
+        ],
+        [
+          "News Event",
+          "ECB (European Central Bank) Interest Rate Decision\n-"
+        ],
+        [
+          "Expected Outcome",
+          "Agar rate cut hota hai to EUR weak hoga.\n-"
+        ],
+        [
+          "Entry",
+          "Sell EUR/USD (agar confirmation ho)\n-"
+        ],
+        [
+          "Stop-Loss",
+          "50 pips upar\n-"
+        ],
+        [
+          "Take-Profit",
+          "100 pips neeche"
+        ]
+      ],
+      "answer_key": "ecb decision, eur/usd sell, 50 pips sl, 100 pips tp",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۹ — اکنامک کیلنڈر: نیوز سے منافع کیسے بنائیں؟",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "اکنامک کیلنڈر فاریکس ٹریڈنگ کا \"موسم کی پیشن گوئی\" ہے۔ اس میں اہم اقتصادی واقعات (جیسے سود کی شرح کے فیصلے، جی ڈی پی رپورٹس، روزگار کے اعداد و شمار) کا وقت اور اثرات کا پتہ چلتا ہے۔ ان خبروں سے مارکیٹ کی اتار چڑھاؤ بڑھتی ہے—ٹریڈرز کو معلوم ہوتا ہے کہ کب قیمت میں حرکت ہوگی۔ بنیادی تجزیہ کا یہ ریڑھ کی ہڈی ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ **امریکی نان فارم پے رولز (این ایف پی)** — ہر مہینے کے پہلے جمعہ کو امریکہ میں روزگار کی رپورٹ آتی ہے۔\n۲۔ **اثر:** اگر روزگار میں زیادہ اضافہ ہو (مثلاً +۳۰۰ کے مقابلے میں +۲۰۰ کے متوقع)، تو امریکی ڈالر مضبوط ہوگا اور EUR/USD جوڑا گر سکتا ہے۔\n۳۔ **ٹریڈنگ پلان:** این ایف پی سے پہلے EUR/USD شارٹ کرو (اگر مثبت خبر متوقع ہو)، یا سٹاپ لاس زیادہ وسیع رکھو کیونکہ اتار چڑھاؤ بڑھے گی۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "۱۔ **اکنامک کیلنڈر چیک کریں:** [Forex Factory](https://www.forexfactory.com/) یا [Investing.com](https://www.investing.com/economic-calendar/) کھولیں۔\n۲۔ **آج کے ۳ اہم نیوز ایونٹس** تلاش کریں (ملک، اثر کی سطح، متوقع بمقابلہ اصل نتیجہ)۔\n۳۔ **۱-۲ کرنسی جوڑے** منتخب کریں جن پر یہ خبر اثر انداز ہوگی (مثلاً USD/JPY، GBP/USD)।"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **ٹریڈنگ پلان** بنائیں:\n- **کرنسی جوڑا:** EUR/USD\n- **نیوز ایونٹ:** ای سی بی (یورپی سینٹرل بینک) کا سود کی شرح کا فیصلہ\n- **متوقع نتیجہ:** اگر شرح میں کمی ہوتی ہے تو یورو کمزور ہوگا۔\n- **انٹری:** EUR/USD بیچیں (اگر تصدیق ہو)\n- **سٹاپ لاس:** ۵۰ پپس اوپر\n- **ٹیک پرافٹ:** ۱۰۰ پپس نیچے"
+            }
+          ]
+        }
+      }
     }
   ],
   "amazon-fba": [
