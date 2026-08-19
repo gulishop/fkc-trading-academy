@@ -20494,6 +20494,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 14,
+      "id": "day-014",
+      "date": "2026-08-19",
+      "title": "Day 14 — **Shaklein aur unke naam (Square, Circle, Star)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhein ge ke kya cheez square hai, kya circle hai, aur kya star hai. Har shakl ka apna ek khas naam hota hai. In shaklein ko pehchanna seekhna aapke liye bohat aasan aur mazedaar hai!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Areeba ne apne school mein ek naya drawing book liya. Usne dekha ke uske teacher ne ek square, ek circle, aur ek star banaya hai. Areeba ne socha, \"Main bhi yeh shaklein banana seekhungi!\" Usne apne pencil se square banaya, phir circle, aur phir star. Uske drawing book mein sab shaklein theek theek ban gayi!"
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar tumhe koi shakl ya cheez dekhne mein ajeeb lage, toh kya karoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Har shakl ka apna naam hota hai, aur har cheez ko respect karna chahiye!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۴ — شکلیں اور ان کے نام (سکوائر، سرکل، اسٹار)",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم سیکھیں گے کہ سکوائر کیا چیز ہے، سرکل کیا ہے، اور اسٹار کیا ہے۔ ہر شکل کا اپنا ایک خاص نام ہوتا ہے۔ ان شکلوں کو پہچاننا سیکھنا آپ کے لیے بہت آسان اور مزے دار ہے!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "عریبہ نے اپنے سکول میں ایک نیا ڈرائنگ بک لیا۔ اس نے دیکھا کہ اس کے ٹیچر نے ایک سکوائر، ایک سرکل، اور ایک اسٹار بنایا ہے۔ عریبہ نے سوچا، ’’میں بھی یہ شکلیں بنانا سیکھوں گی!‘‘ اس نے اپنے پینسل سے سکوائر بنایا، پھر سرکل، اور پھر اسٹار۔ اس کی ڈرائنگ بک میں سب شکلیں ٹھیک ٹھیک بن گئیں!"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "’’بیٹا، اگر تمہیں کوئی شکل یا چیز دیکھنے میں عجیب لگے، تو کیا کرو گے؟‘‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "ہر شکل کا اپنا نام ہوتا ہے، اور ہر چیز کو احترام کرنا چاہیے!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-pg": [
