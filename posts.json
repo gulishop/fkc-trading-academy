@@ -8922,6 +8922,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 16,
+      "id": "day-016",
+      "date": "2026-08-19",
+      "title": "Day 16 — **No-Code se Paise Kamana: Freelancing aur Side Hustle Ka Roadmap**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "No-code tools se freelancing karke extra income banana seekhein. Aaj seekhein ki kaise apne skills ko monetize karna hai, kahan clients dhundhein, aur kaun se services offer kar sakte hain. Freelancing platforms (Upwork, Fiverr), local businesses ke liye websites banakar, aur side hustle ke tips bhi cover honge."
+        ],
+        [
+          "Example",
+          "Ek student ne FlutterFlow se ek simple e-commerce app banaya. Usne Upwork par \"No-Code App Developer\" ka profile banaya aur 3 clients ko $200-$300 per project par hire kiya. Har project 2-3 din mein complete kiya aur $600-$900 extra kamaye."
+        ],
+        [
+          "Practice",
+          "1. Upwork/Fiverr par ek profile banayein aur \"No-Code Website/App Developer\" ka title likhein.\n2. Apne skills ke hisaab se 3 services select karein (e.g., \"Wix Website Banana\", \"Airtable Database Setup\", \"Glide App Development\")."
+        ],
+        [
+          "Mini Project",
+          "Ek simple \"Portfolio Website\" banayein (Framer/Webflow se) aur usko Upwork par ek client ko $150-$200 ke liye offer karein. Project description mein likhein: \"5 pages ki responsive website, 24-hour delivery, unlimited revisions.\""
+        ]
+      ],
+      "answer_key": "upwork profile, 3 services, portfolio website, $150-$200 offer",
+      "translations": {
+        "ur": {
+          "title": "دن 16 — نو کوڈ سے پیسے کمانا: فری لانسنگ اور سائیڈ ہسل کا روڈ میپ",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "نو کوڈ ٹولز سے فری لانسنگ کرکے اضافی آمدنی کمانا سیکھیں۔ آج سیکھیں کہ کیسے اپنے سکلز کو مونیٹائز کرنا ہے، کہاں کلائنٹس ڈھونڈنے ہیں، اور کون سی سروسز پیش کر سکتے ہیں۔ فری لانسنگ پلیٹ فارمز (Upwork، Fiverr)، مقامی کاروباروں کے لیے ویب سائٹس بنا کر، اور سائیڈ ہسل کے ٹپس بھی کور ہوں گے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک طالب علم نے FlutterFlow سے ایک سادہ ای کامرس ایپ بنائی۔ اس نے Upwork پر \"نو کوڈ ایپ ڈویلپر\" کا پروفائل بنایا اور 3 کلائنٹس کو $200-$300 فی پروجیکٹ پر ہائر کیا۔ ہر پروجیکٹ 2-3 دن میں مکمل کیا اور $600-$900 اضافی کمائے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "1. Upwork/Fiverr پر ایک پروفائل بنائیں اور \"نو کوڈ ویب سائٹ/ایپ ڈویلپر\" کا ٹائٹل لکھیں۔\n2. اپنے سکلز کے حساب سے 3 سروسز سلیکٹ کریں (مثال کے طور پر، \"وکس ویب سائٹ بنانا\"، \"ایئر ٹیبل ڈیٹا بیس سیٹ اپ\"، \"گلائیڈ ایپ ڈویلپمنٹ\")۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک سادہ \"پورٹ فولیو ویب سائٹ\" بنائیں (Framer/Webflow سے) اور اسے Upwork پر کسی کلائنٹ کو $150-$200 کے لیے پیش کریں۔ پروجیکٹ کی تفصیل میں لکھیں: \"5 صفحات کی ریسپانسیو ویب سائٹ، 24 گھنٹے میں ڈیلیوری، لامحدود ریویژنز۔\""
+            }
+          ]
+        }
+      }
     }
   ],
   "digital-marketing-seo": [
