@@ -21748,6 +21748,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 13,
+      "id": "day-013",
+      "date": "2026-08-19",
+      "title": "Day 13 — \"Ginti ka Khazana: 1 se 10 tak!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhein ge ke kaise 1 se 10 tak ki numbers ko jama karte hain! Yeh bhi yaad rakhna zaroori hai ke tumhara jism tumhara hai—kisi ko tum par hath uthane ka haq nahi hai. Agar koi tumhein chhoo le ya ajeeb lage, toh foran ammi/abbu ko batana, chahe woh koi bhi ho."
+        ],
+        [
+          "Chhoti Kahani",
+          "Aunty ne Ayaan ko 3 seep pakdein diin, phir aur 2 seep diin. Ayaan ne ginti karke kaha, \"3 + 2 = 5 seep!\" Uncle ne muskurate hue kaha, \"Bilkul theek! Ab tumhara khazana aur bhi mazboot ho raha hai!\""
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar koi tumhein itni seep na de aur tumhein laga ke woh galat kar raha hai, toh tum kya karoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Tumhara jism tumhara hai—kisi ko tum par hath uthane ka haq nahi!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۳ — گنتی کا خزانہ: ۱ سے ۱۰ تک!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم سیکھیں گے کہ کیسے ۱ سے ۱۰ تک کی نمبرز کو جمع کرتے ہیں! یہ بھی یاد رکھنا ضروری ہے کہ تمہارا جسم تمہارا ہے—کسی کو تم پر ہاتھ اٹھانے کا حق نہیں ہے۔ اگر کوئی تمہیں چھو لے یا عجیب لگے، تو فوراً امی/ابو کو بتانا، چاہے وہ کوئی بھی ہو۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "آنتی نے ایان کو ۳ سیپ پکڑائیں دیں، پھر اور ۲ سیپ دیں۔ ایان نے گنتی کرکے کہا، ’’۳ + ۲ = ۵ سیپ!‘‘ انکل نے مسکراتے ہوئے کہا، ’’بالکل ٹھیک! اب تمہارا خزانہ اور بھی مضبوط ہو رہا ہے!‘‘"
+            },
+            {
+              "label": "امی ابو کے ساتھ بات کریں",
+              "content": "’’بیٹا، اگر کوئی تمہیں اتنی سیپ نہ دے اور تمہیں لگا کہ وہ غلط کر رہا ہے، تو تم کیا کرو گے؟‘‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمہارا جسم تمہارا ہے—کسی کو تم پر ہاتھ اٹھانے کا حق نہیں!"
+            }
+          ]
+        }
+      }
     }
   ]
 }
