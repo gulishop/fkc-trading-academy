@@ -17196,6 +17196,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 13,
+      "id": "day-013",
+      "date": "2026-08-18",
+      "title": "Day 13 — **Property Dealings Mein \"Due Diligence\" Kaise Karein (Advanced Techniques)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Due diligence sirf documents check karne tak hi mahdood nahi hai. Isme property ki physical condition, market trends, legal disputes, aur future potential ka bhi deep analysis shamil hai. Advanced due diligence mein aap property ke structural audit, zameen ke future development plans, aur local government policies ka bhi study karte hain."
+        ],
+        [
+          "Example",
+          "Ek buyer ne Lahore ke Defence Housing Authority (DHA) ki ek plot khareedi. Usne sirf registry check ki aur payment kar di. Baad mein pata chala ki woh plot DHA ke \"Residential Zone\" se \"Commercial Zone\" mein convert ho raha hai. Result: usko plot bechne ya develop karne mein legal issues aaye. Advanced due diligence mein aapko zameen ke \"Land Use Permit\" aur local development authority ke future plans ka bhi pata hona chahiye."
+        ],
+        [
+          "Practice",
+          "Apne local market se kisi 1-2 sal purani property ka case study lo. Uske legal documents (registry, FARD, mutation) ke alawa, uske surrounding area ke development plans (metro bus routes, new highways, commercial projects) ka research karo. Pata karo ki kya us property ki value mein koi negative impact ho sakta hai."
+        ],
+        [
+          "Mini Project",
+          "Ek \"Due Diligence Checklist\" banayein jismein shamil ho:\n1. Legal documents (registry, FARD, mutation, power of attorney)\n2. Property ki physical condition (cracks, water logging, structural issues)\n3. Local market trends (property prices ke 5 saal ka trend)\n4. Government policies (zoning laws, development projects)\n5. Neighbourhood analysis (schools, hospitals, crime rate)"
+        ]
+      ],
+      "answer_key": "registry check, fard verification, structural audit, local development plans, zoning laws",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۳ — پراپرٹی لین دین میں \"ڈو ڈیلیجنس\" کیسے کریں (ایڈوانسڈ تکنیکس)",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ڈو ڈیلیجنس صرف دستاویزات کی جانچ تک محدود نہیں ہے۔ اس میں پراپرٹی کی فزیکل حالت، مارکیٹ ٹرینڈز، قانونی تنازعات، اور مستقبل کے امکانات کا بھی گہرائی سے تجزیہ شامل ہوتا ہے۔ ایڈوانسڈ ڈو ڈیلیجنس میں آپ پراپرٹی کے ساختی آڈٹ، زمین کے مستقبل کے ترقیاتی منصوبوں، اور مقامی حکومت کی پالیسیوں کا بھی مطالعہ کرتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک خریدار نے لاہور کے ڈیفنس ہاؤسنگ اتھارٹی (ڈی ایچ اے) کی ایک پلاٹ خریدی۔ اس نے صرف رجسٹری چیک کی اور ادائیگی کر دی۔ بعد میں پتہ چلا کہ وہ پلاٹ ڈی ایچ اے کے \"ریزیڈینشل زون\" سے \"کمرشل زون\" میں تبدیل ہو رہا ہے۔ نتیجہ: اسے پلاٹ بیچنے یا ترقی دینے میں قانونی مسائل کا سامنا کرنا پڑا۔ ایڈوانسڈ ڈو ڈیلیجنس میں آپ کو زمین کے \"لینڈ یوز پرمٹ\" اور مقامی ترقیاتی اتھارٹی کے مستقبل کے منصوبوں کا بھی علم ہونا چاہیے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے مقامی مارکیٹ سے کسی ایک سے دو سال پرانی پراپرٹی کا کیس اسٹڈی لیں۔ اس کے قانونی دستاویزات (رجسٹری، فرد، میوٹیشن) کے علاوہ، اس کے اردگرد کے علاقے کے ترقیاتی منصوبوں (میٹرو بس روٹس، نئی شاہراہیں، کمرشل پروجیکٹس) کا تحقیق کریں۔ معلوم کریں کہ کیا اس پراپرٹی کی قیمت پر کوئی منفی اثر پڑ سکتا ہے۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک \"ڈو ڈیلیجنس چیک لسٹ\" بنائیں جس میں شامل ہو:\n۱۔ قانونی دستاویزات (رجسٹری، فرد، میوٹیشن، پاور آف اٹارنی)\n۲۔ پراپرٹی کی فزیکل حالت (دراڑیں، پانی کا جمع ہونا، ساختی مسائل)\n۳۔ مقامی مارکیٹ ٹرینڈز (پراپرٹی کی قیمتوں کا پانچ سال کا رجحان)\n۴۔ حکومت کی پالیسیاں (زوننگ قوانین، ترقیاتی منصوبے)\n۵۔ پڑوس کا تجزیہ (اسکولز، ہسپتالز، کرائم ریٹ)"
+            }
+          ]
+        }
+      }
     }
   ],
   "mobile-repairing": [
