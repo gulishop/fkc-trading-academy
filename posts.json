@@ -18186,6 +18186,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 17,
+      "id": "day-017",
+      "date": "2026-08-19",
+      "title": "Day 17 — **Mobile Motherboard Faults: Common IC Issues aur Repair Techniques**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Mobile motherboard par IC (Integrated Circuit) ki kharabiya sabse challenging hoti hain. Common faults mein charging IC, power IC, audio IC ya baseband IC shamil hain. Inko diagnose karne ke liye multimeter, DC power supply, aur schematic diagrams ki zaroorat hoti hai. Repair mein hot air gun, flux, aur soldering iron ka istemal hota hai."
+        ],
+        [
+          "Example",
+          "Agar phone charge nahi ho raha aur charging IC ka voltage check karne par 0V aata hai, to:\n1. IC ka power pin identify karo (schematic se).\n2. DC power supply se 3.7V apply karo aur check karo ki kya IC voltage pass kar rahi hai.\n3. Agar nahi, to IC ko replace karo ya reballing karo."
+        ],
+        [
+          "Practice",
+          "Apne pasandeeda 2-3 mobile motherboards lein aur unke charging IC ya power IC ko identify karen. Multimeter se voltage check karen aur notes likhein."
+        ],
+        [
+          "Mini Project",
+          "Ek faulty charging IC wali motherboard lein. Uske power pins par voltage check karen, IC ko desolder karen, aur new IC solder karen. Repair ke baad phone ko test karen."
+        ]
+      ],
+      "answer_key": "voltage check, ic replace, soldering, test",
+      "translations": {
+        "ur": {
+          "title": "دن 17 — موبائل مدر بورڈ کی خرابیاں: عام آئی سی مسائل اور مرمت کی تکنیکیں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "موبائل مدر بورڈ پر آئی سی (انٹیگریٹڈ سرکٹ) کی خرابیاں سب سے مشکل مسائل میں سے ہوتی ہیں۔ عام خرابیوں میں چارجر آئی سی، پاور آئی سی، آڈیو آئی سی یا بیس بینڈ آئی سی شامل ہیں۔ انہیں تشخیص کرنے کے لیے ملٹی میٹر، ڈی سی پاور سپلائی اور سکیمیٹک ڈایاگرام کی ضرورت ہوتی ہے۔ مرمت میں ہاٹ ایئر گن، ف्लکس اور سولڈرنگ آئرن کا استعمال کیا جاتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "اگر فون چارچ نہیں ہو رہا اور چارجر آئی سی کا وولٹیج چیک کرنے پر 0V آتا ہے تو:\n1. آئی سی کا پاور پن شناخت کریں (سکیمیٹک سے)۔\n2. ڈی سی پاور سپلائی سے 3.7V لگائیں اور چیک کریں کہ کیا آئی سی وولٹیج پاس کر رہی ہے۔\n3. اگر نہیں تو آئی سی کو تبدیل کریں یا ری بالنگ کریں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے پسندیدہ 2-3 موبائل مدر بورڈز لیں اور ان کے چارجر آئی سی یا پاور آئی سی کو شناخت کریں۔ ملٹی میٹر سے وولٹیج چیک کریں اور نوٹس لکھیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک خراب چارجر آئی سی والی مدر بورڈ لیں۔ اس کے پاور پنز پر وولٹیج چیک کریں، آئی سی کو ڈی سولڈر کریں اور نئی آئی سی سولڈر کریں۔ مرمت کے بعد فون کو ٹیسٹ کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-safety-education": [
