@@ -1721,6 +1721,76 @@
           ]
         }
       }
+    },
+    {
+      "day": 18,
+      "id": "day-018",
+      "date": "2026-08-19",
+      "title": "Day 18 — **YouTube Automation Ka \"Evergreen Content\" Formula: Channel Ko Har Season Mein Grow Rakhein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj seekhein ke kaise \"Evergreen Content\" banayein jo har season/month mein views deta rahe. Evergreen content wo hai jo kabhi outdated nahi hota (jaise \"How to tie a tie\" ya \"Best budget laptops 2024\"). AI tools (jaise Google Trends, AnswerThePublic) se topics dhundein jo long-term interest rakhein. Consistency ke saath in videos ko publish karne se channel hamesha grow karta rahega."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Topic Research",
+          "Google Trends par \"AI tools for students\" search karen. Agar yeh topic har month stable interest rakhta hai, to is par video banayein.\n2."
+        ],
+        [
+          "Script",
+          "\"5 Best Free AI Tools For Students In 2024 (Step-by-Step Guide)\" — yeh title har saal update hoga lekin core content same rahega.\n3."
+        ],
+        [
+          "Upload",
+          "Har 2 haftay baad ek naya evergreen video upload karen."
+        ],
+        [
+          "Practice",
+          "Apne niche ke 3 evergreen topics dhundein (Google Trends ya AnswerThePublic se) aur unke titles likhein."
+        ],
+        [
+          "Mini Project",
+          "Ek 1-minute script outline likhein ek evergreen topic par (jaise \"How to start a YouTube channel in 2024\")."
+        ]
+      ],
+      "answer_key": "trends check karein, stable topics, long-term interest",
+      "translations": {
+        "ur": {
+          "title": "دن ١٨ — یوٹیوب آٹومیشن کا \"ایورگرین مواد\" فارمولا: چینل کو ہر موسم میں گرو کرتے رہیں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج سیکھیں گے کہ کیسے \"ایورگرین مواد\" بنائیں جو ہر موسم یا مہینے میں ویوز دیتا رہے۔ ایورگرین مواد وہ ہوتا ہے جو کبھی پرانا نہیں ہوتا (جیسے \"گرہ کیسے لگائیں\" یا \"بہترین بجٹ لیپ ٹاپس ٢٠٢٤\")۔ اے آئی ٹولز (جیسے گوگل ٹرینڈز، آنسر دی پبلک) سے ایسے موضوعات ڈھونڈیں جو طویل مدتی دلچسپی رکھتے ہوں۔ مستقل مزاجی کے ساتھ ان ویڈیوز کو شائع کرنے سے چینل ہمیشہ بڑھتا رہے گا۔"
+            },
+            {
+              "label": "مثال",
+              "content": "١۔ موضوع کی تحقیق: گوگل ٹرینڈز پر \"اے آئی ٹولز فار اسٹوڈنٹس\" تلاش کریں۔ اگر یہ موضوع ہر مہینے مستحکم دلچسپی رکھتا ہے تو اس پر ویڈیو بنائیں۔"
+            },
+            {
+              "label": "",
+              "content": "٢۔ سکرپٹ: \"٥ بہترین مفت اے آئی ٹولز فار اسٹوڈنٹس ان ٢٠٢٤ (مرحلہ وار گائیڈ)\" — یہ عنوان ہر سال اپ ڈیٹ ہوگا لیکن بنیادی مواد وہی رہے گا۔"
+            },
+            {
+              "label": "",
+              "content": "٣۔ اپ لوڈ: ہر دو ہفتے بعد ایک نیا ایورگرین ویڈیو اپ لوڈ کریں۔"
+            },
+            {
+              "label": "عملی مشق",
+              "content": "اپنے شعبے کے تین ایورگرین موضوعات ڈھونڈیں (گوگل ٹرینڈز یا آنسر دی پبلک سے) اور ان کے عنوانات لکھیں۔"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "ایک ایورگرین موضوع پر ایک منٹ کا سکرپٹ خاکہ لکھیں (جیسے \"یوٹیوب چینل کیسے شروع کریں ٢٠٢٤ میں\")۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "social-media-marketing": [
