@@ -966,3 +966,5 @@
 [2026-08-20T22:25:43.838541] [cpp-daily-coding] Day 11 video skip: Agnes aur ffmpeg dono attempts fail.
 [2026-08-20T22:27:30.783953] [cpp-daily-coding] Day 12 video skip: Agnes aur ffmpeg dono attempts fail.
 [2026-08-20T22:29:17.172292] [cpp-daily-coding] Day 13 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-20T22:47:56.113380] [web-development] Day 1 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-20T22:49:32.354654] [web-development] Day 2 video skip: Agnes aur ffmpeg dono attempts fail.

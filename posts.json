@@ -13399,6 +13399,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 14,
+      "id": "day-014",
+      "date": "2026-08-20",
+      "title": "Day 14 — **CSS Frameworks: Bootstrap aur Tailwind CSS Se Fast Development**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "CSS frameworks jaise Bootstrap aur Tailwind CSS pre-built components aur utilities provide karte hain jo responsive aur modern websites banane ko 10x fast kar dete hain. Inke grids, buttons, cards aur utility classes (margins, padding, colors) ke zariye tum bina zyada CSS likhe hi professional-looking websites bana sakte ho."
+        ],
+        [
+          "Example",
+          "Bootstrap ka grid system:\n```html\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-md-6\">Left Side (6 columns on medium screens)</div>\n    <div class=\"col-md-6\">Right Side (6 columns on medium screens)</div>\n  </div>\n</div>\n```\nTailwind CSS ka utility class example:\n```html\n<button class=\"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded\">\n  Click Me\n</button>\n```"
+        ],
+        [
+          "Practice",
+          "Ek simple 3-column layout banane ke liye Bootstrap ya Tailwind CSS ka istemal karo. Har column mein ek heading aur paragraph ho. Mobile par yeh 1 column, tablet par 2, aur desktop par 3 columns mein show hona chahiye."
+        ],
+        [
+          "Mini Project",
+          "**\"Restaurant Menu Page\"** — Bootstrap ya Tailwind CSS use karke ek responsive menu page banao jisme:\n- Header (logo + navigation)\n- 3-4 food items (card format mein)\n- Footer (contact info)\nSab responsive ho (mobile, tablet, desktop par sahi dikhe)."
+        ]
+      ],
+      "answer_key": "bootstrap grid, col-md-4, tailwind grid-cols-1 md:grid-cols-3, card, container",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۴ — **سی ایس ایس فریم ورکس: بوٹسٹریپ اور ٹیلونڈ سی ایس ایس سے فاسٹ ڈویلپمنٹ**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "سی ایس ایس فریم ورکس جیسے بوٹسٹریپ اور ٹیلونڈ سی ایس ایس پری بلٹ کمپونینٹس اور یوٹیلٹیز فراہم کرتے ہیں جو رسپانسیو اور جدید ویب سائٹس بنانے کو دس گنا تیز کر دیتے ہیں۔ ان کے گرڈز، بٹنز، کارڈز اور یوٹیلٹی کلاسز (مارجنز، پیڈنگ، رنگ) کے ذریعے تم بغیر زیادہ سی ایس ایس لکھے ہی پیشہ ورانہ نظر آنے والی ویب سائٹس بنا سکتے ہو۔"
+            },
+            {
+              "label": "مثال",
+              "content": "بوٹسٹریپ کا گرڈ سسٹم:\n```html\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-md-6\">Left Side (6 columns on medium screens)</div>\n    <div class=\"col-md-6\">Right Side (6 columns on medium screens)</div>\n  </div>\n</div>\n```\nٹیلونڈ سی ایس ایس کی یوٹیلٹی کلاس کی مثال:\n```html\n<button class=\"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded\">\n  Click Me\n</button>\n```"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "ایک سادہ تین کالمز کا لے آؤٹ بنانے کے لیے بوٹسٹریپ یا ٹیلونڈ سی ایس ایس کا استعمال کرو۔ ہر کالم میں ایک ہیڈنگ اور پیراگراف ہو۔ موبائل پر یہ ایک کالم، ٹیبلٹ پر دو، اور ڈیسک ٹاپ پر تین کالمز میں دکھائی دینا چاہیے۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "**\"ریستوران مینو پیج\"** — بوٹسٹریپ یا ٹیلونڈ سی ایس ایس استعمال کرتے ہوئے ایک رسپانسیو مینو پیج بناؤ جس میں:\n- ہیڈر (لوگو + نیویگیشن)\n- تین سے چار فوڈ آئٹمز (کارڈ فارمیٹ میں)\n- فوٹر (کنٹیکٹ انفارمیشن)\nسب رسپانسیو ہوں (موبائل، ٹیبلٹ، ڈیسک ٹاپ پر صحیح دکھائی دیں۔)"
+            }
+          ]
+        }
+      }
     }
   ],
   "excel-data-analysis": [
