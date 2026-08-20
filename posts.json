@@ -17671,6 +17671,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 11,
+      "id": "day-011",
+      "date": "2026-08-20",
+      "title": "Day 11 — **Voice Over ki Quality Check: Professional Sound Kaise Banaye?**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke apne voice over ya podcast ki audio quality ko kaise professionally check karein. Yeh sirf recording ke baad hi nahi, balki recording se pehle aur recording ke dauran bhi zaroori hai. Mic setup, room acoustics, aur editing ke baad final check—yeh sab kuch professional sound ke liye zaroori hai."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Recording se pehle",
+          "Mic ko 6-12 inches door rakhein, pop filter use karein, aur room ke background noise check karein (AC, fridge, etc.).\n2."
+        ],
+        [
+          "Recording ke dauran",
+          "1-2 inches ke distance par mouth se mic ko point karein, aur -12dB to -6dB ke beech mein audio level maintain karein.\n3."
+        ],
+        [
+          "Recording ke baad",
+          "Audacity mein \"Analyze > Contrast\" se audio levels check karein. Peak level -3dB se zyada na ho."
+        ],
+        [
+          "Practice",
+          "Apne aaj ke recording (ya kisi purane clip) ko Audacity mein kholein. \"Effect > Normalize\" apply karein taake audio -3dB tak adjust ho. Phir \"Analyze > Silence Finder\" se long pauses ya unwanted noise detect karein."
+        ],
+        [
+          "Mini Project",
+          "Ek 1-minute ka voice over record karein (topic: \"Apna Pyaara Ghar\"). Uske baad:\n- Room noise remove karein (Noise Reduction effect use karein).\n- Audio levels ko normalize karein.\n- Final file ko MP3 (192kbps) mein export karein."
+        ]
+      ],
+      "answer_key": "room noise, -3db, normalize, 192kbps",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۱ — وائس اوور کی کوالٹی چیک: پیشہ ورانہ آواز کیسے بنائیں؟",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم سیکھیں گے کہ اپنے وائس اوور یا پوڈکاسٹ کی آڈیو کوالٹی کو کیسے پیشہ ورانہ طریقے سے چیک کیا جائے۔ یہ صرف ریکارڈنگ کے بعد ہی نہیں، بلکہ ریکارڈنگ سے پہلے اور ریکارڈنگ کے دوران بھی ضروری ہے۔ مائیک سیٹ اپ، روم اکیوسٹکس، اور ایڈیٹنگ کے بعد فائنل چیک — یہ سب کچھ پیشہ ورانہ آواز کے لیے ضروری ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ ریکارڈنگ سے پہلے: مائیک کو ۶ سے ۱۲ انچ دور رکھیں، پاپ فلٹر استعمال کریں، اور کمرے کے پس منظر کے شور (اے سی، فریج وغیرہ) چیک کریں۔\n۲۔ ریکارڈنگ کے دوران: منہ سے مائیک کو ۱ سے ۲ انچ کے فاصلے پر پوئنٹ کریں، اور -۱۲ ڈی بی سے -۶ ڈی بی کے درمیان آڈیو لیول برقرار رکھیں۔\n۳۔ ریکارڈنگ کے بعد: آڈیسیٹی میں \"Analyze > Contrast\" سے آڈیو لیولز چیک کریں۔ پیک لیول -۳ ڈی بی سے زیادہ نہ ہو۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے آج کے ریکارڈنگ (یا کسی پرانے کلپ) کو آڈیسیٹی میں کھولیں۔ \"Effect > Normalize\" اپلائی کریں تاکہ آڈیو -۳ ڈی بی تک ایڈجسٹ ہو جائے۔ پھر \"Analyze > Silence Finder\" سے لمبی خاموشیاں یا غیر ضروری شور کا پتہ لگائیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک منٹ کا وائس اوور ریکارڈ کریں (ٹاپک: \"اپنا پیارا گھر\")۔ اس کے بعد:\n- روم کے شور کو ہٹائیں (Noise Reduction ایفیکٹ استعمال کریں)۔\n- آڈیو لیولز کو نارملائز کریں۔\n- فائنل فائل کو ایم پی تھری (۱۹۲ کلو بٹس فی سیکنڈ) میں ایکسپورٹ کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "real-estate-business": [
