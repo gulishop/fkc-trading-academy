@@ -14829,6 +14829,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 11,
+      "id": "day-011",
+      "date": "2026-08-20",
+      "title": "Day 11 — **Pakistan Stock Exchange (PSX) Mein Trading Kaise Shuru Hota Hai?**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "PSX (Pakistan Stock Exchange) ek regulated marketplace hai jahan investors shares khareedte aur bechte hain. Yeh ek auction system par chalta hai jahan buyers aur sellers ke beech orders match hote hain. Har company ke shares ki price demand aur supply par depend karti hai. PSX mein trading ke liye aapko ek brokerage account ki zaroorat hoti hai jo aapki behalf par orders place karta hai."
+        ],
+        [
+          "Example",
+          "Imagine aap XYZ Company ke 100 shares khareedna chahte hain. Aapka broker aapki behalf par PSX par order place karega. Agar koi aur investor 100 shares bech raha hai usi price par, to aapka order fulfill ho jayega. Agar nahi, to aapko higher price par bechne wale ya lower price par khareedne wale ka wait karna hoga."
+        ],
+        [
+          "Practice",
+          "Apne mobile ya laptop par PSX ki official website ya kisi brokerage app (jaise JS Bank, UBL Funds, ya AKD) ko open karein. Dekhein ki \"Buy\" aur \"Sell\" buttons kaise dikhte hain aur ek dummy order place karne ki koshish karein (real transaction na karein)."
+        ],
+        [
+          "Mini Project",
+          "Ek simple Excel sheet banayein jismein aap 5 random PSX companies (jaise OGDC, MCB, PTCL, etc.) ke last 7 days ke closing prices note karein. Har din ke price mein kya change aaya? Kya aapko koi pattern nazar aata hai?"
+        ]
+      ],
+      "answer_key": "brokerage account, auction system, demand-supply, order fulfillment",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۱ — پاکستان اسٹاک ایکسچینج (پی ایس ایکس) میں ٹریڈنگ کیسے شروع ہوتی ہے؟",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "پی ایس ایکس (پاکستان اسٹاک ایکسچینج) ایک ریگولیٹڈ مارکیٹ پلیس ہے جہاں سرمایہ کار شیئرز خریدتے اور بیچتے ہیں۔ یہ ایک نیلامی نظام پر چلتا ہے جہاں خریداروں اور بیچنے والوں کے درمیان آرڈرز میچ ہوتے ہیں۔ ہر کمپنی کے شیئرز کی قیمت طلب اور رسد پر منحصر ہوتی ہے۔ پی ایس ایکس میں ٹریڈنگ کے لیے آپ کو ایک بروکریج اکاؤنٹ کی ضرورت ہوتی ہے جو آپ کی جانب سے آرڈرز پلیس کرتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "تصور کریں کہ آپ ایکس وائی زیڈ کمپنی کے ۱۰۰ شیئرز خریدنا چاہتے ہیں۔ آپ کا بروکر آپ کی جانب سے پی ایس ایکس پر آرڈر پلیس کرے گا۔ اگر کوئی اور سرمایہ کار اسی قیمت پر ۱۰۰ شیئرز بیچ رہا ہے تو آپ کا آرڈر پورا ہو جائے گا۔ اگر نہیں تو آپ کو زیادہ قیمت پر بیچنے والے یا کم قیمت پر خریدنے والے کا انتظار کرنا ہوگا۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے موبائل یا لیپ ٹاپ پر پی ایس ایکس کی آفیشل ویب سائٹ یا کسی بروکریج ایپ (جیسے جے ایس بینک، یو بی ایل فنڈز، یا اے کے ڈی) کو کھولیں۔ دیکھیں کہ \"خرید\" اور \"فروخت\" کے بٹنز کیسے دکھائی دیتے ہیں اور ایک ڈمی آرڈر پلیس کرنے کی کوشش کریں (حقیقی ٹرانزیکشن نہ کریں)۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک سادہ ایکسل شیٹ بنائیں جس میں آپ ۵ مختلف پی ایس ایکس کمپنیوں (جیسے او جی ڈی سی، ایم سی بی، پی ٹی سی ایل وغیرہ) کے گزشتہ ۷ دنوں کے اختتامی قیمتوں کو نوٹ کریں۔ ہر دن کی قیمت میں کیا تبدیلی آئی؟ کیا آپ کو کوئی پیٹرن نظر آتا ہے؟"
+            }
+          ]
+        }
+      }
     }
   ],
   "tiktok-growth": [
