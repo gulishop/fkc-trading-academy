@@ -2757,6 +2757,88 @@
           ]
         }
       }
+    },
+    {
+      "day": 16,
+      "id": "day-016",
+      "date": "2026-08-20",
+      "title": "Day 16 — **Meta Ads Manager Se Paid Campaigns Setup Karna: Zero Se Hero Banein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Meta Ads Manager (Facebook & Instagram Ads ka dashboard) se paid campaigns setup karna seekhiye. Target audience, budget, aur ad creatives kaise choose karein—yeh sab practical steps ke saath samjha jaega. AI tools ki madad se best targeting kaise karein, yeh bhi cover hoga."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Campaign Objective Choose Karein",
+          "\"Traffic\" ya \"Conversions\" select karein.\n2."
+        ],
+        [
+          "Audience Targeting",
+          "\"Men, 25-35, interested in fitness\" jaise filters lagayein.\n3."
+        ],
+        [
+          "Budget & Schedule",
+          "Rs. 500/day, 7 days tak run karne ka plan.\n4."
+        ],
+        [
+          "Ad Creative",
+          "1080x1080 image ya 9:16 video upload karein.\n5."
+        ],
+        [
+          "Placement",
+          "\"Automatic Placements\" ya \"Instagram Feed\" select karein."
+        ],
+        [
+          "Practice",
+          "Apne business ya kisi fake brand ke liye Meta Ads Manager mein ek basic campaign create karein. Target audience, budget, aur ad type choose karke screenshot lein."
+        ],
+        [
+          "Mini Project",
+          "Ek 3-step Facebook/Instagram ad campaign design karein:\n1."
+        ],
+        [
+          "Audience",
+          "\"Students in Lahore interested in online courses\"\n2."
+        ],
+        [
+          "Ad Creative",
+          "15-sec Reel jo \"Free Trial\" offer kare\n3."
+        ],
+        [
+          "Budget",
+          "Rs. 1000, 5 days tak run karne ka plan"
+        ]
+      ],
+      "answer_key": "traffic, conversions, audience insights, creative testing",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۶ — میٹا ایڈز مینیجر سے پیڈ مہمات سیٹ اپ کرنا: زیرو سے ہیرو بنیں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "میٹا ایڈز مینیجر (فیس بک اور انسٹاگرام ایڈز کا ڈیش بورڈ) سے پیڈ مہمات سیٹ اپ کرنا سیکھیں۔ ٹارگٹ آڈینس، بجٹ، اور ایڈ کریئیٹوز کا انتخاب کیسے کریں — یہ سب عملی مراحل کے ساتھ سمجھایا جائے گا۔ اے آئی ٹولز کی مدد سے بہترین ٹارگٹنگ کیسے کی جائے، یہ بھی کور ہو گا۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ مہم کا مقصد منتخب کریں: \"ٹریفک\" یا \"کنورژنز\" کا انتخاب کریں۔\n۲۔ آڈینس ٹارگٹنگ: \"مرد، ۲۵-۳۵ سال، فٹنس میں دلچسپی\" جیسے فلٹرز لگائیں۔\n۳۔ بجٹ اور شیڈول: ۵۰۰ روپے روزانہ، ۷ دن تک چلانے کا پلان بنائیں۔\n۴۔ ایڈ کریئیٹو: ۱۰۸۰x۱۰۸۰ امیج یا ۹:۱۶ ویڈیو اپ لوڈ کریں۔\n۵۔ پلیسمنٹ: \"آٹومیٹک پلیسمنٹس\" یا \"انسٹاگرام فیڈ\" منتخب کریں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے بزنس یا کسی فرضی برانڈ کے لیے میٹا ایڈز مینیجر میں ایک بنیادی مہم تخلیق کریں۔ ٹارگٹ آڈینس، بجٹ، اور ایڈ کی قسم منتخب کر کے اسکرین شاٹ لیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک ۳ قدمی فیس بک/انسٹاگرام ایڈ مہم ڈیزائن کریں:\n۱۔ آڈینس: \"لاہور میں آن لائن کورسز میں دلچسپی رکھنے والے طلبہ\"\n۲۔ ایڈ کریئیٹو: ۱۵ سیکنڈ کا ریئل جو \"فری ٹرائل\" آفر کرے\n۳۔ بجٹ: ۱۰۰۰ روپے، ۵ دن تک چلانے کا پلان"
+            }
+          ]
+        }
+      }
     }
   ],
   "facebook-page-growth": [
