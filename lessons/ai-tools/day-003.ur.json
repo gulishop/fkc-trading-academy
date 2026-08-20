@@ -1,0 +1,22 @@
+{
+  "title": "دن ٣ — اے آئی سے امیجز بنانا: مڈجرنی اور آئیڈیوگرام کی بنیادی باتیں",
+  "preamble": "",
+  "sections": [
+    {
+      "label": "تصور",
+      "content": "اے آئی امیج جنریشن ٹولز جیسے مڈجرنی اور آئیڈیوگرام آپ کو ٹیکسٹ سے حقیقت پسندانہ، آرٹسٹک یا منفرد امیجز بنانے میں مدد کرتے ہیں۔ بس ایک پرامپٹ لکھنا ہے، اور اے آئی اسے تصور کرتا ہے۔ یہ ڈیزائن، مارکیٹنگ، سوشل میڈیا اور فری لانسنگ کے لیے بہت مفید ہے۔"
+    },
+    {
+      "label": "مثال",
+      "content": "مڈجرنی میں امیج بنانے کے لیے:\n١۔ ڈِسکارڈ سرور جوائن کریں (midjourney.com)\n٢۔ `/imagine prompt: a cyberpunk city at night, neon lights, futuristic, highly detailed` لکھیں\n٣۔ اے آئی ٤ امیجز جنریٹ کرے گا، پھر آپ \"Upscale\" یا \"Variation\" کر سکتے ہیں۔"
+    },
+    {
+      "label": "پریکٹس",
+      "content": "اپنے ڈِسکارڈ میں مڈجرنی جوائن کریں، اور یہ پرامپٹ آزما کر دیکھیں:\n`/imagine prompt: a cute corgi dog wearing a chef hat, cooking in a kitchen, cartoon style`"
+    },
+    {
+      "label": "منی پروجیکٹ",
+      "content": "ایک ٣ امیجز کی سیریز بنائیں:\n١۔ \"A futuristic office in 2050\"\n٢۔ \"A cozy library with floating books\"\n٣۔ \"A dragon flying over a medieval castle\"\nسب کو ایک ساتھ سیو کر کے ایک فولڈر میں رکھیں۔"
+    }
+  ]
+}
