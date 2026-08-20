@@ -11035,6 +11035,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 16,
+      "id": "day-016",
+      "date": "2026-08-20",
+      "title": "Day 16 — **Store Ko Optimize Karna: Traffic Badhaein & Conversions Badhaein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum store ko is tarah se optimize karenge ke visitors zyada aayein aur jo aaye wo khareed lein. SEO, user experience (UX), aur conversion rate optimization (CRO) ke basics cover karenge. Yeh isliye zaroori hai ke store professional dikhe, fast load ho, aur customers ko purchase karne mein koi problem na aaye."
+        ],
+        [
+          "Example",
+          "Ek store par 1000 visitors aate hain lekin sirf 10 log khareedte hain. Agar hum:\n1."
+        ],
+        [
+          "SEO",
+          "Product titles aur descriptions mein keywords add karen (e.g., \"Custom Cat Lover T-Shirt for Women – Funny Cat Design\").\n2."
+        ],
+        [
+          "UX",
+          "Website speed check karen (Google PageSpeed Insights) aur mobile-friendly banayein.\n3."
+        ],
+        [
+          "CRO",
+          "\"Add to Cart\" button ka color change karen (red se green) — isse 20% zyada conversions ho sakte hain."
+        ],
+        [
+          "Practice",
+          "Apne store ke homepage ya kisi product page ka URL copy karen aur:\n1. Google PageSpeed Insights par check karen (score 70+ hona chahiye).\n2. Ek product title aur description likhein jismein 2-3 relevant keywords hon (e.g., \"Vintage Travel Poster – Minimalist Wall Art for Home Decor\")."
+        ],
+        [
+          "Mini Project",
+          "Ek **A/B test** setup karen:\n- Apne store par do alag-alag \"Add to Cart\" button colors try karen (e.g., blue vs. orange).\n- 1 week tak track karen ke konse color se zyada conversions aaye. (Tools: Google Optimize ya Facebook Ads Manager ka built-in A/B test feature.)"
+        ]
+      ],
+      "answer_key": "pagespeed score, keywords, mobile-friendly, a/b test",
+      "translations": {
+        "ur": {
+          "title": "دن 16 — **سٹور کو آپٹیمائز کرنا: ٹریفک بڑھائیں اور کنورژن بڑھائیں**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم سٹور کو اس طرح سے آپٹیمائز کریں گے کہ وزیٹرز زیادہ آئیں اور جو آئیں وہ خرید لیں۔ ایس ای او، یوزر ایکسپیریئنس (یو ایکس)، اور کنورژن ریٹ آپٹیمائزیشن (سی آر او) کے بنیادی اصولوں پر بات کریں گے۔ یہ اس لیے ضروری ہے کہ سٹور پیشہ ورانہ نظر آئے، تیزی سے لوڈ ہو، اور گاہکوں کو خریداری کرنے میں کوئی مشکل نہ ہو۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک سٹور پر 1000 وزیٹرز آتے ہیں لیکن صرف 10 لوگ خریداری کرتے ہیں۔ اگر ہم:\n1.\n- ایس ای او: پروڈکٹ ٹائٹلز اور ڈسکرپشنز میں کی ورڈز شامل کریں (مثال کے طور پر، \"کسٹم کیٹ لوور ٹی شرٹ فار ویمن – فنّی کیٹ ڈیزائن\")۔\n2.\n- یو ایکس: ویب سائٹ کی رفتار چیک کریں (گوگل پیج سپیڈ انسائٹس) اور موبائل فرینڈلی بنائیں۔\n3.\n- سی آر او: \"ایڈ ٹو کارٹ\" بٹن کا رنگ تبدیل کریں (سرخ سے سبز) — اس سے 20 فیصد زیادہ کنورژن ہو سکتے ہیں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے سٹور کی ہوم پیج یا کسی پروڈکٹ پیج کا یو آر ایل کاپی کریں اور:\n1. گوگل پیج سپیڈ انسائٹس پر چیک کریں (اسکور 70+ ہونا چاہیے)۔\n2. ایک پروڈکٹ ٹائٹل اور ڈسکرپشن لکھیں جس میں 2-3 متعلقہ کی ورڈز ہوں (مثال کے طور پر، \"ونٹیج ٹریول پوسٹر – منیملسٹ وال آرٹ فار ہوم ڈیکور\")۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **اے/بی ٹیسٹ** سیٹ اپ کریں:\n- اپنے سٹور پر دو مختلف \"ایڈ ٹو کارٹ\" بٹن کے رنگ آزمائیں (مثال کے طور پر، نیلا بمقابلہ نارنجی)۔\n- ایک ہفتے تک ٹریک کریں کہ کس رنگ سے زیادہ کنورژن آئے۔ (ٹولز: گوگل آپٹیمائز یا فیس بک ایڈز مینیجر کا بلٹ ان اے/بی ٹیسٹ فیچر۔)"
+            }
+          ]
+        }
+      }
     }
   ],
   "cpp-daily-coding": [
