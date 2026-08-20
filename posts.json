@@ -4347,6 +4347,60 @@
           ]
         }
       }
+    },
+    {
+      "day": 20,
+      "id": "day-020",
+      "date": "2026-08-20",
+      "title": "Day 20 — **Position Sizing: Apne Risk Ko Smartly Manage Karein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Position sizing ka matlab hai har trade mein kitna capital lagana hai taake risk ko control kiya ja sake. Har trade ka risk 1-2% se zyada nahi hona chahiye. Iske liye apko apne account balance, stop-loss level, aur pip value ka calculation karna aata hona chahiye."
+        ],
+        [
+          "Example",
+          "Maana aapka account balance $1000 hai aur aap har trade ka risk 1% rakhna chahte hain. Matlab har trade ka maximum loss $10 hona chahiye. Agar EUR/USD ka trade kar rahe hain aur stop-loss 50 pips hai, toh:\n- Pip value = $1 (standard lot ke liye)\n- Risk per pip = $1\n- Total risk = $10\n- Required position size = $10 / 50 pips = 0.2 lots"
+        ],
+        [
+          "Practice",
+          "Apne MetaTrader mein ek demo account khol kar ek currency pair select karein. Apne account balance ke hisaab se position size calculate karein taake har trade ka risk 1-2% se zyada na ho. Stop-loss lagakar dekhain ki kitne lots mein trade karna hai."
+        ],
+        [
+          "Mini Project",
+          "Ek Excel sheet ya Google Sheet banayein jismein aap har trade ke liye position size calculate kar sakte hain. Ismein account balance, risk percentage, stop-loss level, aur pip value daal kar automatic position size nikalne ka formula banaein."
+        ]
+      ],
+      "answer_key": "1% rule, pip value, stop-loss level, position size formula",
+      "translations": {
+        "ur": {
+          "title": "دن 20 — پوزیشن سائزنگ: اپنے رسک کو سمارٹلی مینیج کریں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "پوزیشن سائزنگ کا مطلب ہے ہر ٹریڈ میں کتنا کیپیٹل لگانا ہے تاکہ رسک کو کنٹرول کیا جا سکے۔ ہر ٹریڈ کا رسک 1-2 فیصد سے زیادہ نہیں ہونا چاہیے۔ اس کے لیے آپ کو اپنے اکاؤنٹ بیلنس، سٹاپ لاس لیول، اور پِپ ویلیو کا کیلکولیشن آنا چاہیے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "مانا آپ کا اکاؤنٹ بیلنس 1000 ڈالر ہے اور آپ ہر ٹریڈ کا رسک 1 فیصد رکھنا چاہتے ہیں۔ مطلب ہر ٹریڈ کا زیادہ سے زیادہ نقصان 10 ڈالر ہونا چاہیے۔ اگر EUR/USD کا ٹریڈ کر رہے ہیں اور سٹاپ لاس 50 پِپس ہے، تو:"
+            },
+            {
+              "label": "کیلکولیشنز",
+              "content": "پِپ ویلیو = 1 ڈالر (اسٹینڈرڈ لاٹ کے لیے)\nرسک فی پِپ = 1 ڈالر\nکل رسک = 10 ڈالر\nدرکار پوزیشن سائز = 10 ڈالر / 50 پِپس = 0.2 لاٹس"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے میٹا ٹریڈر میں ایک ڈیمو اکاؤنٹ کھول کر کوئی کرنسی جوڑا منتخب کریں۔ اپنے اکاؤنٹ بیلنس کے حساب سے پوزیشن سائز کا کیلکولیشن کریں تاکہ ہر ٹریڈ کا رسک 1-2 فیصد سے زیادہ نہ ہو۔ سٹاپ لاس لگا کر دیکھیں کہ کتنے لاٹس میں ٹریڈ کرنا ہے۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک ایکسل شیٹ یا گوگل شیٹ بنائیں جس میں آپ ہر ٹریڈ کے لیے پوزیشن سائز کا کیلکولیشن کر سکیں۔ اس میں اکاؤنٹ بیلنس، رسک فیصد، سٹاپ لاس لیول، اور پِپ ویلیو ڈال کر خودکار پوزیشن سائز نکالنے کا فارمولا بنائیں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "amazon-fba": [
