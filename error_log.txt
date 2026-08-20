@@ -927,3 +927,5 @@
 [2026-08-20T19:48:44.558937] [ai-tools] Day 1 video skip: Agnes aur ffmpeg dono attempts fail.
 [2026-08-20T19:48:47.732596] [ai-tools] Day 2 video skip: Agnes aur ffmpeg dono attempts fail.
 [2026-08-20T19:49:00.545770] [ai-tools] Day 3 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-20T19:55:25.617218] [facebook-page-growth] Day 1 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-20T19:55:42.922338] [facebook-page-growth] Day 2 video skip: Agnes aur ffmpeg dono attempts fail.
