@@ -18356,6 +18356,76 @@
           ]
         }
       }
+    },
+    {
+      "day": 18,
+      "id": "day-018",
+      "date": "2026-08-20",
+      "title": "Day 18 — **Mobile Repair Shop ka Layout: Practical Space Planning**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Ek mobile repair shop ka layout efficient hona chahiye taake tools, spare parts aur workflow smooth ho. Space ko zones mein divide karo: diagnosis area, repair station, charging/soldering spot, aur customer interaction space. Ventilation, lighting aur safety bhi zaroori hai—khaskar soldering aur battery repair ke liye."
+        ],
+        [
+          "Example",
+          "Ek 10x12 feet ke shop ka layout:\n1."
+        ],
+        [
+          "Front Counter (3x2 ft)",
+          "Customer se baat karne aur diagnosis karne ke liye.\n2."
+        ],
+        [
+          "Repair Bench (4x2 ft)",
+          "Tools aur spare parts ke liye drawer ke saath.\n3."
+        ],
+        [
+          "Soldering Station (2x1 ft)",
+          "Fireproof mat ke saath, extractor fan laga hua.\n4."
+        ],
+        [
+          "Charging Area (2x1 ft)",
+          "Batteries charge karne ke liye safe shelf.\n5."
+        ],
+        [
+          "Storage (3x2 ft)",
+          "Spare parts aur tools ke liye locked cabinet."
+        ],
+        [
+          "Practice",
+          "Apne ghar ya garage mein ek chhota sa layout sketch karo—har zone ka size aur use mention karo."
+        ],
+        [
+          "Mini Project",
+          "Ek **3x4 feet ka cardboard model** banana hai jismein apne shop ka 3D layout banaya jaaye. Har zone ke liye color-coded labels lagao (e.g., red = soldering, blue = diagnosis)."
+        ]
+      ],
+      "answer_key": "diagnosis area, repair bench, soldering station, storage, ventilation",
+      "translations": {
+        "ur": {
+          "title": "دن ١٨ — موبائل ریپئیر شاپ کا لیآؤٹ: پراکٹیکل سپیس پلاننگ",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ایک موبائل ریپئیر شاپ کا لیآؤٹ ایفیشینٹ ہونا چاہیے تاکہ ٹولز، سپیئر پارٹس اور ورک فلو سموتھ رہے۔ اسپیس کو زونز میں تقسیم کرو: ڈائیگنوسس ایریا، ریپئیر اسٹیشن، چارچنگ/سولڈرنگ سپاٹ، اور کسٹمر انٹرایکشن سپیس۔ وینٹیلیشن، لائٹنگ اور سیفٹی بھی ضروری ہے—خاص کر سولڈرنگ اور بیٹری ریپئیر کے لیے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک دس بائی بارہ فٹ کی شاپ کا لیآؤٹ:\n١۔ فرنٹ کاؤنٹر (تین بائی دو فٹ): کسٹمر سے بات کرنے اور ڈائیگنوسس کرنے کے لیے۔\n٢۔ ریپئیر بینچ (چار بائی دو فٹ): ٹولز اور سپیئر پارٹس کے لیے دراز کے ساتھ۔\n٣۔ سولڈرنگ اسٹیشن (دو بائی ایک فٹ): فائر پروف میٹ کے ساتھ، ایکسٹریکٹر فین لگا ہوا۔\n٤۔ چارچنگ ایریا (دو بائی ایک فٹ): بیٹریز چارچ کرنے کے لیے سیف شیلف۔\n٥۔ اسٹوریج (تین بائی دو فٹ): سپیئر پارٹس اور ٹولز کے لیے لاکڈ کیبنٹ۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے گھر یا گیراج میں ایک چھوٹا سا لیآؤٹ سکچ بناؤ—ہر زون کا سائز اور استعمال ذکر کرو۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک تین بائی چار فٹ کا کارڈ بورڈ ماڈل بنانا ہے جس میں اپنی شاپ کا تھری ڈی لیآؤٹ بنایا جائے۔ ہر زون کے لیے کلر کوڈڈ لیبلز لگاؤ (مثال کے طور پر، سرخ = سولڈرنگ، نیلا = ڈائیگنوسس)।"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-safety-education": [
