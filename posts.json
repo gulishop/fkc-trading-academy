@@ -9042,6 +9042,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 17,
+      "id": "day-017",
+      "date": "2026-08-20",
+      "title": "Day 17 — **No-Code se AI Tools Integration: Advanced Workflows Banana**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum no-code development ko AI tools ke saath integrate karna seekhenge taake apne workflows ko aur bhi smart banaya ja sake. AI se hum repetitive tasks automate kar sakte hain, data analyze kar sakte hain, aur even apne app/website ko \"smart\" bana sakte hain. Yeh advanced level ka topic hai jo no-code ko next level par le jaata hai."
+        ],
+        [
+          "Example",
+          "1. **AI-powered chatbot banana** (Glide/Framer + AI tools jaise ManyChat ya Landbot).\n2. **AI se content generate karna** (Notion AI ya Copy.ai ka use karke apne website ke liye blog posts likhwana).\n3. **AI se data analyze karna** (Airtable ke records ko AI tool jaise Akkio ya Google Sheets ke AI add-on se process karna)."
+        ],
+        [
+          "Practice",
+          "Apne kisi existing no-code project (jaise ek simple website ya app) mein AI integration try karo. Jaise:\n- Ek AI chatbot add karo jo users ke questions ka answer de sake.\n- Ya phir AI se apne project ke liye ek \"smart\" feature add karo (jaise automatic email responses ya data insights)."
+        ],
+        [
+          "Mini Project",
+          "**\"AI-Powered Personal Portfolio Website\"**\n1. Framer/Webflow mein ek simple portfolio website banayo.\n2. Usmein ek AI chatbot add karo jo visitors ke questions ka answer de sake (jaise \"Mera project kya hai?\" ya \"Mujhe contact kaise karna hai?\").\n3. AI tool jaise ManyChat ya Landbot use karke chatbot set karo."
+        ]
+      ],
+      "answer_key": "chatbot setup, ai integration, workflow automation, smart features",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۷ — نو کوڈ سے اے آئی ٹولز انٹیگریشن: ایڈوانسڈ ورک فلو بنانا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "آج ہم نو کوڈ ڈویلپمنٹ کو اے آئی ٹولز کے ساتھ انٹیگریٹ کرنا سیکھیں گے تاکہ اپنے ورک فلو کو اور بھی سمارٹ بنایا جا سکے۔ اے آئی سے ہم ریپیٹیٹو ٹاسکس کو آٹومیٹ کر سکتے ہیں، ڈیٹا اینالائز کر سکتے ہیں، اور یہاں تک کہ اپنے ایپ/ویب سائٹ کو \"سمارٹ\" بنا سکتے ہیں۔ یہ ایڈوانسڈ لیول کا ٹاپک ہے جو نو کوڈ کو اگلے لیول پر لے جاتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ **اے آئی پاورڈ چیٹ بوٹ بنانا** (گلائیڈ/فریمر + اے آئی ٹولز جیسے مینی چیٹ یا لینڈ بوٹ)۔\n۲۔ **اے آئی سے کونٹینٹ جنریٹ کرنا** (نوٹین اے آئی یا کوپی ڈاٹ اے آئی کا استعمال کرکے اپنی ویب سائٹ کے لیے بلاگ پوسٹس لکھوانا)۔\n۳۔ **اے آئی سے ڈیٹا اینالائز کرنا** (ایئر ٹیبل کے ریکارڈز کو اے آئی ٹول جیسے اکّیو یا گوگل شیٹس کے اے آئی ایڈ آن سے پروسیس کرنا)।"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے کسی موجودہ نو کوڈ پروجیکٹ (جیسے ایک سادہ ویب سائٹ یا ایپ) میں اے آئی انٹیگریشن آزما کر دیکھو۔ جیسے:\n- ایک اے آئی چیٹ بوٹ شامل کرو جو صارفین کے سوالات کے جوابات دے سکے۔\n- یا پھر اے آئی سے اپنے پروجیکٹ کے لیے ایک \"سمارٹ\" فیچر شامل کرو (جیسے آٹومیٹک ای میل رسپونسز یا ڈیٹا انسائٹس)।"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "**\"اے آئی پاورڈ پرسنل پورٹ فولیو ویب سائٹ\"**\n۱۔ فریمر/ویب فلو میں ایک سادہ پورٹ فولیو ویب سائٹ بناؤ۔\n۲۔ اس میں ایک اے آئی چیٹ بوٹ شامل کرو جو وزیٹرز کے سوالات کے جوابات دے سکے (جیسے \"میرا پروجیکٹ کیا ہے؟\" یا \"مجھے رابطہ کیسے کرنا ہے؟\")۔\n۳۔ اے آئی ٹول جیسے مینی چیٹ یا لینڈ بوٹ استعمال کرکے چیٹ بوٹ سیٹ کرو۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "digital-marketing-seo": [
