@@ -16245,6 +16245,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 11,
+      "id": "day-011",
+      "date": "2026-08-20",
+      "title": "Day 11 — **Blog Ke Liye Perfect Domain Name Kaise Choose Karein (2024 Guide)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhein ge ke ek professional aur SEO-friendly domain name kaise select karein jo yaad rahe aur brand value bana sake. Domain name aapki blog ki pehchan hai—isliye isko smartly choose karna zaroori hai. Avoid karna hai: complex spellings, numbers, hyphens, aur long names."
+        ],
+        [
+          "Example",
+          "Agar aapka niche \"Urdu cooking\" hai, to:\n❌ `BestUrduCooking123.com` (complex + number)\n✅ `UrduKitchen.pk` (short, memorable, local TLD)"
+        ],
+        [
+          "Practice",
+          "Apne niche ke liye 3 domain name options likhein jo:\n1. 2-3 words ke hon\n2. Easy to spell/say hon\n3. .com, .pk, .in mein available hon (use [Namecheap](https://www.namecheap.com/) ya [GoDaddy](https://www.godaddy.com/) check karne ke liye)"
+        ],
+        [
+          "Mini Project",
+          "Ek \"Domain Name Brainstorming Sheet\" banaein jismein:\n- Aapka niche\n- 5 potential domain names\n- Availability check (✅/❌)\n- Short reason (kyun choose kiya)"
+        ]
+      ],
+      "answer_key": "short, memorable, .com/.pk, niche-relevant",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۱ — **بلاگ کے لیے پرفیکٹ ڈومین نیم کیسے چُنیں (۲۰۲۴ گائیڈ)**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم سیکھیں گے کہ ایک پیشہ ورانہ اور ایس ای او فرینڈلی ڈومین نیم کیسے منتخب کریں جو یاد رہے اور برانڈ ویلیو بنا سکے۔ ڈومین نیم آپ کے بلاگ کی پہچان ہے—اس لیے اسے سمارٹلی چننا ضروری ہے۔ پیچیدہ سپیلنگز، نمبرز، ہائفنز، اور لمبے ناموں سے گریز کرنا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "اگر آپ کا نیچ \"اردو ککنگ\" ہے، تو:\n❌ `BestUrduCooking123.com` (پیچیدہ + نمبر)\n✅ `اردو کچن.پی کے` (چھوٹا، یاد رکھنے میں آسان، مقامی ٹی ایل ڈی)"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے نیچ کے لیے ۳ ڈومین نیم آپشنز لکھیں جو:\n۱۔ دو سے تین الفاظ کے ہوں\n۲۔ بولنے اور لکھنے میں آسان ہوں\n۳۔ `.com`، `.pk`، `.in` میں دستیاب ہوں (چیک کرنے کے لیے [Namecheap](https://www.namecheap.com/) یا [GoDaddy](https://www.godaddy.com/) استعمال کریں)"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک \"ڈومین نیم برین اسٹورمنگ شیٹ\" بنائیں جس میں شامل ہو:\n- آپ کا نیچ\n- ۵ ممکنہ ڈومین نیمز\n- دستیابی کی جانچ (✅/❌)\n- مختصر وجہ (کیوں چنا)"
+            }
+          ]
+        }
+      }
     }
   ],
   "photography-editing": [
