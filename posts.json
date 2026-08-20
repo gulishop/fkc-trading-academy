@@ -725,6 +725,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 14,
+      "id": "day-014",
+      "date": "2026-08-20",
+      "title": "Day 14 — **Affiliate Links Ko \"No-Follow\" Ya \"Sponsored\" Karne Ka Sahi Tarika**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Google aur FTC (Federal Trade Commission) ke rules ke mutabiq, affiliate links ko ya to \"no-follow\" ya \"sponsored\" karna zaroori hai. Aise links SEO ko negatively affect nahi karte aur legal bhi rehte hain. Yeh step affiliate marketing ko transparent rakhta hai aur trust build karne mein madad karta hai."
+        ],
+        [
+          "Example",
+          "Ek blog post mein affiliate link lagate waqt, HTML code mein `rel=\"sponsored\"` ya `rel=\"nofollow\"` add karo:\n`<a href=\"https://example.com/product\" rel=\"sponsored\">Buy Now</a>`\nWordPress users ke liye, \"Link\" option mein \"Sponsored\" checkbox select karo."
+        ],
+        [
+          "Practice",
+          "Apne kisi existing affiliate link ko edit karke usko \"sponsored\" ya \"no-follow\" mark karo. Check karo ki woh sahi tarike se apply hua hai."
+        ],
+        [
+          "Mini Project",
+          "Ek simple blog post ya social media caption likhein jismein 2-3 affiliate links hon, sabhi ko \"sponsored\" ya \"no-follow\" ke saath format karo. Post ko publish karne se pehle validate karo."
+        ]
+      ],
+      "answer_key": "sponsored, no-follow, seo-friendly, ftc-compliant",
+      "translations": {
+        "ur": {
+          "title": "دن 14 — **ایفیلی ایٹ لنکس کو \"نو فالو\" یا \"اسپانسرڈ\" کرنے کا صحیح طریقہ**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "گوگل اور ایف ٹی سی (فیڈرل ٹریڈ کمیشن) کے قواعد کے مطابق، ایفیلی ایٹ لنکس کو یا تو \"نو فالو\" یا \"اسپانسرڈ\" کرنا ضروری ہے۔ ایسے لنکس ایس ای او کو منفی طور پر متاثر نہیں کرتے اور قانونی طور پر بھی محفوظ رہتے ہیں۔ یہ قدم ایفیلی ایٹ مارکیٹنگ کو شفاف رکھتا ہے اور اعتماد قائم کرنے میں مدد کرتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک بلاگ پوسٹ میں ایفیلی ایٹ لنک لگاتے وقت، ایچ ٹی ایم ایل کوڈ میں `rel=\"sponsored\"` یا `rel=\"nofollow\"` شامل کریں:\n`<a href=\"https://example.com/product\" rel=\"sponsored\">ابھی خریدیں</a>`\nورڈپریس صارفین کے لیے، \"لنک\" آپشن میں \"اسپانسرڈ\" چیک باکس سلیکٹ کریں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے کسی موجودہ ایفیلی ایٹ لنک کو ایڈٹ کرکے اسے \"اسپانسرڈ\" یا \"نو فالو\" کے طور پر نشان زد کریں۔ چیک کریں کہ وہ صحیح طریقے سے لاگو ہوا ہے یا نہیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک سادہ بلاگ پوسٹ یا سوشل میڈیا کیپشن لکھیں جس میں 2-3 ایفیلی ایٹ لنکس ہوں، ان سب کو \"اسپانسرڈ\" یا \"نو فالو\" کے ساتھ فارمیٹ کریں۔ پوسٹ کو شائع کرنے سے پہلے اس کی تصدیق کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "youtube-automation": [
