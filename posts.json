@@ -8647,6 +8647,64 @@
           ]
         }
       }
+    },
+    {
+      "day": 9,
+      "id": "day-009",
+      "date": "2026-08-20",
+      "title": "Day 9 — **Freelance Design Ka Business: Fiverr aur Etsy par Apna Design Kaise Beche**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Freelance design bech kar paisa kamana ek popular side hustle hai. Fiverr par logo, social media posts, ya presentations bech sakte hain jabke Etsy par digital products (templates, mockups, etc.) list kiye ja sakte hain. Aaj seekhenge kaise apne design skills ko monetize karna hai, pricing strategies, aur kaise attract kare clients."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Fiverr par Gig Create karna",
+          "- \"I will design a professional logo for your brand\" likh kar gig title do.\n   - 3-5 design samples upload karo (Canva se bana hua).\n   - Pricing: $5-$20 (beginner ke liye) ya $30+ (advanced).\n   - Gig description mein batado ki aap Canva expert hain aur unlimited revisions offer karte hain.\n\n2."
+        ],
+        [
+          "Etsy par Digital Product List karna",
+          "- \"Canva Instagram Story Template Pack\" naam ka product banayo.\n   - 3-5 high-quality preview images upload karo.\n   - $5-$15 price tag lagao (competitors ko check kar ke)."
+        ],
+        [
+          "Practice",
+          "Apne Fiverr ya Etsy account create karo aur ek simple gig/product list karo (example: \"I will design a YouTube thumbnail in Canva\")."
+        ],
+        [
+          "Mini Project",
+          "Ek Canva template (jaise Instagram post, logo, ya resume) banayo aur usko Fiverr (services) ya Etsy (digital product) par list karo. Screenshot ya link share karo (agar possible ho)."
+        ]
+      ],
+      "answer_key": "fiverr gig title, 3-5 samples, pricing strategy, etsy product name, preview images",
+      "translations": {
+        "ur": {
+          "title": "دن 9 — فری لانس ڈیزائن کا بزنس: فائیور اور ایٹسی پر اپنا ڈیزائن کیسے بیچیں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "فری لانس ڈیزائن بیچ کر پیسہ کمانا ایک مقبول سائیڈ ہسل ہے۔ فائیور پر لوگو، سوشل میڈیا پوسٹس، یا پریزنٹیشنز بیچ سکتے ہیں جبکہ ایٹسی پر ڈیجیٹل پروڈکٹس (ٹیمپلیٹس، ماک اپس وغیرہ) لسٹ کیے جا سکتے ہیں۔ آج سیکھیں گے کہ اپنے ڈیزائننگ سکلز کو کس طرح مونیٹائز کرنا ہے، پرائسنگ اسٹریٹجیز، اور کس طرح کلائنٹس کو اپنی طرف متوجہ کرنا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "١۔ فائیور پر گیگ کریٹ کرنا:\n- \"میں آپ کے برانڈ کے لیے ایک پیشہ ورانہ لوگو ڈیزائن کروں گا\" لکھ کر گیگ ٹائٹل دیں۔\n- ٣ سے ٥ ڈیزائن سیمپلز اپ لوڈ کریں (کینوا سے بنائے ہوئے)۔\n- پرائسنگ: ٥ سے ٢٠ ڈالر (بیگنر کے لیے) یا ٣٠ ڈالر سے زیادہ (ایڈوانسڈ کے لیے)۔\n- گیگ ڈسکرپشن میں بتائیں کہ آپ کینوا کے ماہر ہیں اور لامحدود ریویژنز پیش کرتے ہیں۔\n\n٢۔ ایٹسی پر ڈیجیٹل پروڈکٹ لسٹ کرنا:\n- \"کینوا انسٹاگرام اسٹوری ٹیمپلیٹ پیک\" کے نام سے پروڈکٹ بنائیں۔\n- ٣ سے ٥ اعلیٰ معیار کی پری ویو امیجز اپ لوڈ کریں۔\n- ٥ سے ١٥ ڈالر کی قیمت لگائیں (کمپیٹیٹرز کو چیک کرنے کے بعد)।"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنا فائیور یا ایٹسی اکاؤنٹ بنائیں اور ایک سادہ گیگ یا پروڈکٹ لسٹ کریں (مثال: \"میں کینوا میں یوٹیوب تھمب نیل ڈیزائن کروں گا\")۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک کینوا ٹیمپلیٹ (جیسے انسٹاگرام پوسٹ، لوگو، یا ریزیومے) بنائیں اور اسے فائیور (سروسز) یا ایٹسی (ڈیجیٹل پروڈکٹ) پر لسٹ کریں۔ اسکرین شاٹ یا لنک شیئر کریں (اگر ممکن ہو)۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "no-code-app-dev": [
