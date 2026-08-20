@@ -4935,6 +4935,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 13,
+      "id": "day-013",
+      "date": "2026-08-20",
+      "title": "Day 13 — **Amazon FBA Mein \"Supplier Negotiation\" Ka Complete Guide (Alibaba Se Best Deal Kaise Karein)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Supplier negotiation Amazon FBA ka ek crucial step hai jismein aap apne product ki cost, quality aur delivery terms par best deal secure karte hain. Alibaba par suppliers ke saath negotiation ka art hai—pata karna ki kaun sa supplier flexible hai, minimum order quantity (MOQ) kam karna, aur unit price reduce karna. Yeh skill aapki profit margins badha sakti hai."
+        ],
+        [
+          "Example",
+          "Maana aap ek wireless charger ke liye supplier dhund rahe hain. Alibaba par ek supplier ka price $5 hai with MOQ 500 units. Aap unse baat karte hain:\n1."
+        ],
+        [
+          "MOQ Reduction",
+          "\"Agar main 300 units ka order dunga to price kya hoga?\"\n2."
+        ],
+        [
+          "Unit Price Negotiation",
+          "\"Agar main 1000 units ka order dunga to $4.5 per unit kaise milega?\"\n3."
+        ],
+        [
+          "Payment Terms",
+          "\"50% advance aur 50% delivery par kaise hoga?\""
+        ],
+        [
+          "Practice",
+          "Apne kisi existing ya future product ke liye Alibaba par 3 suppliers ko message karein aur:\n- MOQ reduce karne ke liye poochhein.\n- Unit price discount ke liye negotiate karein.\n- Payment terms (T/T, LC, etc.) discuss karein."
+        ],
+        [
+          "Mini Project",
+          "Ek **Supplier Negotiation Script** taiyaar karein jismein aap:\n1. Apne product ka clear description likhein.\n2. 3 negotiation points (MOQ, price, payment) mention karein.\n3. Supplier ko professional aur friendly message likhein (template Alibaba par available hai)."
+        ]
+      ],
+      "answer_key": "moq reduction, unit price discount, payment terms, advance payment",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۳ — **ایمیزون ایف بی اے میں \"سپلائر نیگوشیشن\" کا مکمل گائیڈ (علی بابا سے بہترین ڈیل کیسے کریں)**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "سپلائر نیگوشیشن ایمیزون ایف بی اے کا ایک اہم قدم ہے جس میں آپ اپنے پروڈکٹ کی لاگت، کوالٹی اور ڈیلیوری شرائط پر بہترین ڈیل حاصل کرتے ہیں۔ علی بابا پر سپلائرز کے ساتھ نیگوشیشن کا فن ہے — یہ جاننا کہ کون سا سپلائر لچکدار ہے، مِنی مَم آرڈر کوئنٹیٹی (ایم او کیو) کم کرنا، اور یونٹ پرائس کو کم کرنا۔ یہ ہنر آپ کے منافع کے مارجنز بڑھا سکتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "مانا آپ وائرلیس چارجر کے لیے سپلائر ڈھونڈ رہے ہیں۔ علی بابا پر ایک سپلائر کا پرائس پانچ ڈالر ہے جس کی ایم او کیو پانچ سو یونٹس ہے۔ آپ ان سے بات کرتے ہیں:\n۱۔ ایم او کیو ریڈکشن: \"اگر میں تین سو یونٹس کا آرڈر دوں گا تو پرائس کیا ہوگی؟\"\n۲۔ یونٹ پرائس نیگوشیشن: \"اگر میں ایک ہزار یونٹس کا آرڈر دوں گا تو چار ڈالر پچاس سینٹ فی یونٹ کیسے ملے گا؟\"\n۳۔ پے منٹ ٹرمز: \"پچاس فیصد ایڈوانس اور پچاس فیصد ڈیلیوری پر کیسے ہوگا؟\""
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے کسی موجودہ یا مستقبل کے پروڈکٹ کے لیے علی بابا پر تین سپلائرز کو میسج کریں اور:\n- ایم او کیو کم کرنے کے لیے پوچھیں۔\n- یونٹ پرائس پر ڈسکاؤنٹ کے لیے نیگوشیشن کریں۔\n- پے منٹ ٹرمز (ٹی/ٹی، ایل سی وغیرہ) پر بات کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **سپلائر نیگوشیشن اسکرپٹ** تیار کریں جس میں آپ:\n۱۔ اپنے پروڈکٹ کا واضح تفصیل لکھیں۔\n۲۔ تین نیگوشیشن پوائنٹس (ایم او کیو، پرائس، پے منٹ) کا ذکر کریں۔\n۳۔ سپلائر کو پیشہ ورانہ اور دوستانہ میسج لکھیں (ٹیمپلیٹ علی بابا پر دستیاب ہے)۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "daraz-seller": [
