@@ -1903,6 +1903,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 20,
+      "id": "day-020",
+      "date": "2026-08-21",
+      "title": "Day 20 — **Team Banane Se Pehle: Apne Automation Channel Ka \"System\" Banana**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke team banane se pehle apne channel ka ek \"system\" kaise banaye. Automation channel ko scale karne ka pehla step hai: apne processes ko document karna, tools automate karna, aur team members ko train karne ke liye ek blueprint banana. Bina system ke team banana chaos hai—har cheez repeat karni paregi aur quality control mushkil ho jayegi."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Process Document",
+          "Har video ke liye ek checklist banayein (script, voiceover, editing, thumbnail, upload).\n2."
+        ],
+        [
+          "Tools",
+          "CapCut templates, AI voiceover scripts, aur Canva thumbnails ka template save karke rakhein.\n3."
+        ],
+        [
+          "Training",
+          "Ek video ya PDF banayein jisme team ko batayein ke har step kaise karna hai (e.g., \"Voiceover ka pitch 0.8x se 1.2x ke beech hona chahiye\")."
+        ],
+        [
+          "Practice",
+          "Apne channel ke liye ek **1-pager \"Standard Operating Procedure\" (SOP)** banayein. Ismein likhein:\n- Har video ke liye kaun kaun se steps hain?\n- Har step ka time limit kya hai?\n- Quality check ke liye kya criteria hain?"
+        ],
+        [
+          "Mini Project",
+          "Ek **SOP template** banayein (Google Docs/Notion) jismein aapke channel ke sabhi processes likhein. Is template ko apne team (ya future team) ke saath share karne ke liye taiyar rakhein."
+        ]
+      ],
+      "answer_key": "sop, checklist, time limits, quality criteria",
+      "translations": {
+        "ur": {
+          "title": "دن 20 — ٹیم بنانے سے پہلے: اپنے آٹومیشن چینل کا \"سسٹم\" بنانا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم سیکھیں گے کہ ٹیم بنانے سے پہلے اپنے چینل کا ایک \"سسٹم\" کیسے بنایا جائے۔ آٹومیشن چینل کو سکیل کرنے کا پہلا قدم ہے: اپنے پراسیسز کو ڈاکیومنٹ کرنا، ٹولز کو آٹومیٹ کرنا، اور ٹیم ممبرز کو ٹرین کرنے کے لیے ایک بلیو پرنٹ بنانا۔ بغیر سسٹم کے ٹیم بنانا کیاس ہے—ہر چیز کو بار بار کرنا پڑے گا اور کوالٹی کنٹرول مشکل ہو جائے گا۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1۔\nہر ویڈیو کے لیے ایک چیک لسٹ بنائیں (اسکرپٹ، وائس اوور، ایڈیٹنگ، تھمب نیل، اپ لوڈ)۔\n2۔\nٹولز: کیپ کٹ ٹیمپلیٹس، اے آئی وائس اوور اسکرپٹس، اور کینوا تھمب نیلز کا ٹیمپلیٹ محفوظ کر کے رکھیں۔\n3۔\nٹریننگ: ایک ویڈیو یا پی ڈی ایف بنائیں جس میں ٹیم کو بتائیں کہ ہر قدم کیسے کرنا ہے (مثال کے طور پر، \"وائس اوور کا پچ 0.8x سے 1.2x کے درمیان ہونا چاہیے\")۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے چینل کے لیے ایک **ون پیجر \"اسٹینڈرڈ آپریٹنگ پروسیجر\" (ایس او پی)** بنائیں۔ اس میں لکھیں:\n- ہر ویڈیو کے لیے کون کون سے قدم ہیں؟\n- ہر قدم کا ٹائم لِمِٹ کیا ہے؟\n- کوالٹی چیک کے لیے کیا کریٹیریا ہیں؟"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **ایس او پی ٹیمپلیٹ** بنائیں (گوگل ڈاکس/نوٹِیئن) جس میں آپ کے چینل کے تمام پراسیسز لکھیں۔ اس ٹیمپلیٹ کو اپنی ٹیم (یا مستقبل کی ٹیم) کے ساتھ شیئر کرنے کے لیے تیار رکھیں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "social-media-marketing": [
