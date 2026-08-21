@@ -5937,6 +5937,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 12,
+      "id": "day-012",
+      "date": "2026-08-21",
+      "title": "Day 12 — **Daraz Par Seasonal Products Ka Fikar Karna: Eid, Ramadan, Aur Mehndi Season Mein Profit Kaise Badhaye**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Har season ke saath Pakistani market mein demand badalti hai. Eid, Ramadan, aur Mehndi season mein specific products (jaise dresses, jewelry, gifts) ka demand 3-5x badh jata hai. Aaj seekhoge ki kaise seasonal trends ko pehle se identify karke, inventory aur promotions plan karne se sales aur profit increase hota hai."
+        ],
+        [
+          "Example",
+          "Ramadan 2024 ke liye, Daraz par \"Eid Dresses\" category mein search volume 80% badh gaya tha. Ek seller ne 15 days pehle se 500+ listings add ki, aur \"Ramadan Discount\" vouchers chalaye. Result: 3x sales aur 40% zyada profit margin."
+        ],
+        [
+          "Practice",
+          "Apne Daraz Seller Center mein jaye → \"Reports\" → \"Trending Searches\" check karein. Apne category ke 3 seasonal keywords (jaise \"Eid Dresses 2024\", \"Ramadan Gift Sets\") note karein jo aane wale 30 days mein trend mein aa sakte hain."
+        ],
+        [
+          "Mini Project",
+          "1. Apne niche ke 3 seasonal products select karein (jaise Mehndi dresses, Eid jewelry).\n2. Google Trends ya Daraz ke \"Trending Searches\" se unke demand ka pattern check karein.\n3. Ek simple Excel sheet banayein jismein:\n   - Product name\n   - Expected demand month\n   - Current stock\n   - Planned discount/voucher"
+        ]
+      ],
+      "answer_key": "seasonal trends, demand forecasting, inventory planning, promotional strategy",
+      "translations": {
+        "ur": {
+          "title": "دن ١٢ — دراز پر سیزنل پروڈکٹس کا فکر کرنا: عید، رمضان، اور مہندی سیزن میں منافع کیسے بڑھائے",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ہر سیزن کے ساتھ پاکستانی مارکیٹ میں ڈیمانڈ بدلتے رہتی ہے۔ عید، رمضان، اور مہندی کے سیزن میں مخصوص پروڈکٹس (جیسے ڈریسز، جواہرات، تحائف) کی ڈیمانڈ ٣ سے ٥ گنا تک بڑھ جاتی ہے۔ آج سیکھو گے کہ کیسے سیزنل ٹرینڈز کو پہلے سے شناخت کرکے، انوینٹری اور پروموشنز پلان کرنے سے سیلز اور منافع میں اضافہ ہوتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "رمضان ٢٠٢٤ کے لیے، دراز پر \"عید ڈریسز\" کیٹیگری میں سرچ والیوم ٨٠ فیصد بڑھ گیا تھا۔ ایک سیلر نے ١٥ دن پہلے سے ٥٠٠ سے زائد لسٹنگز شامل کیں، اور \"رمضان ڈسکاؤنٹ\" واؤچرز چلائے۔ نتیجہ: ٣ گنا سیلز اور ٤٠ فیصد زیادہ منافع مارجن۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے دراز سیلر سینٹر میں جائیں → \"رپورٹس\" → \"ٹرینڈنگ سرچز\" چیک کریں۔ اپنی کیٹیگری کے ٣ سیزنل کی ورڈز (جیسے \"عید ڈریسز ٢٠٢٤\"، \"رمضان گفٹ سیٹس\") نوٹ کریں جو آنے والے ٣٠ دنوں میں ٹرینڈ میں آ سکتے ہیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "١۔ اپنے نیچ کے ٣ سیزنل پروڈکٹس سلیکٹ کریں (جیسے مہندی ڈریسز، عید جواہرات)۔\n٢۔ گوگل ٹرینڈز یا دراز کے \"ٹرینڈنگ سرچز\" سے ان کی ڈیمانڈ کا پیٹرن چیک کریں۔\n٣۔ ایک سادہ ایکسل شیٹ بنائیں جس میں درج ذیل شامل ہو:\n   - پروڈکٹ کا نام\n   - متوقع ڈیمانڈ کا مہینہ\n   - موجودہ اسٹاک\n   - پلان شدہ ڈسکاؤنٹ/واؤچر"
+            }
+          ]
+        }
+      }
     }
   ],
   "ai-content-writing": [
