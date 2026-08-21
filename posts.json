@@ -22615,6 +22615,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 13,
+      "id": "day-013",
+      "date": "2026-08-21",
+      "title": "Day 13 — **Janwaron ki Aawaazain aur Naam**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhein ge ke har janwar ki alag aawaaz hoti hai, jaise ghar mein rakhe jaane wale pet animals. In aawaazon ko pehchan kar hum janwaron ke saath achhe se baat kar sakte hain. Yeh seekhna bhi zaroori hai ke kisi janwar ko pareshan na karein, kyunki har janwar bhi hamari tarah hi apne aap ko mehsoos karta hai."
+        ],
+        [
+          "Chhoti Kahani",
+          "Bilal ne ek din dekha ke uske ghar ka kutta \"Bhoo bhoo\" kar raha hai. Bilal ne socha ke kutta bhookha hai, isliye usne use roti de di. Par kutta abhi bhi \"Bhoo bhoo\" kar raha tha. Tab Bilal ki ammi ne kaha, \"Bilal, yeh kutta dar raha hai, kyunki uske paas ek bhediya aaya hai.\" Bilal ne kutta ko chhua nahi, balki use chup rehne ke liye kaha. Kutta thoda shanti se ho gaya."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar tum kisi janwar ki aawaaz sunte ho, toh tum kya samajhte ho ke woh kya keh raha hai?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Janwaron ki aawaazain unke dil ki baat hoti hain. Unhe pareshan mat karo, bas unki aawaaz sun kar samajhne ki koshish karo."
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۳ — جانوروں کی آوازیں اور نام",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج ہم سیکھیں گے کہ ہر جانور کی الگ آواز ہوتی ہے، جیسے گھر میں رکھے جانے والے پالتو جانور۔ ان آوازوں کو پہچان کر ہم جانوروں کے ساتھ اچھے سے بات کر سکتے ہیں۔ یہ سیکھنا بھی ضروری ہے کہ کسی جانور کو پریشان نہ کریں، کیونکہ ہر جانور بھی ہماری طرح ہی اپنے آپ کو محسوس کرتا ہے۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "بلال نے ایک دن دیکھا کہ اس کے گھر کا کتا ’بھو بھو‘ کر رہا ہے۔ بلال نے سوچا کہ کتا بھوکا ہے، اس لیے اس نے اسے روٹی دے دی۔ پر کتا ابھی بھی ’بھو بھو‘ کر رہا تھا۔ تب بلال کی امی نے کہا، ’بلال، یہ کتا ڈر رہا ہے، کیونکہ اس کے پاس ایک بھیڑیا آیا ہے۔‘ بلال نے کتے کو چھوا نہیں، بلکہ اسے چپ رہنے کے لیے کہا۔ کتا تھوڑا شانت ہو گیا۔"
+            },
+            {
+              "label": "امی ابّو کے ساتھ بات کریں",
+              "content": "’بیٹا، اگر تم کسی جانور کی آواز سنتے ہو، تو تم کیا سمجھتے ہو کہ وہ کیا کہہ رہا ہے؟‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "جانوروں کی آوازیں ان کے دل کی بات ہوتی ہیں۔ انہیں پریشان مت کرو، بس ان کی آواز سن کر سمجھنے کی کوشش کرو۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-kg": [
