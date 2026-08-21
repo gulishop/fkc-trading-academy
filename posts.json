@@ -9223,6 +9223,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 10,
+      "id": "day-010",
+      "date": "2026-08-21",
+      "title": "Day 10 — **Canva Se Pro-Level Designs Banane Ke Advanced Tips**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum advanced Canva techniques seekhenge jo aapke designs ko professional aur unique banayenge. Hum focus karenge: **Grids aur frames ka istemal**, **custom shapes aur effects**, aur **advanced typography tricks** ke zariye apne designs ko next level par le jaane ke."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Grids ka use",
+          "Apne design ko structured banane ke liye `Elements > Grids` se ek grid select karen, phir uske andar apne elements (text, images) ko arrange karen.\n2."
+        ],
+        [
+          "Custom shapes",
+          "`Elements > Shapes` se ek shape select karen, phir `Effects > Shadow` ya `Glow` add karen taake depth aaye.\n3."
+        ],
+        [
+          "Advanced typography",
+          "Text box select karen, phir `Effects > Curve` ya `3D` apply karen taake text 3D effect dekhne ko mile."
+        ],
+        [
+          "Practice",
+          "Apne existing design mein ek **grid layout** apply karen aur 3 alag elements (text, image, shape) ko uske andar arrange karen taake design balanced ho."
+        ],
+        [
+          "Mini Project",
+          "Ek **Instagram post** design karen jisme:\n- 2-3 images ka grid layout ho\n- Custom background shape (jaise hexagon ya rounded rectangle)\n- Bold typography (effects jaise shadow ya outline ke saath)"
+        ]
+      ],
+      "answer_key": "grid layout, custom shapes, 3d text, balanced composition",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۰ — **کینوا سے پرو لیول ڈیزائن بنانے کے ایڈوانسڈ ٹپس**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم ایڈوانسڈ کینوا تکنیکس سیکھیں گے جو آپ کے ڈیزائنز کو پیشہ ورانہ اور انوکھا بنائیں گے۔ ہم توجہ دیں گے: **گرڈز اور فریمز کا استعمال**، **کسٹم شیپس اور ایفیکٹس**، اور **ایڈوانسڈ ٹائپوگرافی ٹرکس** کے ذریعے اپنے ڈیزائنز کو اگلے لیول پر لے جانے کے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔\nگرڈز کا استعمال: اپنے ڈیزائن کو منظم بنانے کے لیے `Elements > Grids` سے ایک گرڈ منتخب کریں، پھر اس کے اندر اپنے عناصر (ٹیکسٹ، تصاویر) کو ترتیب دیں۔\n\n۲۔\nکسٹم شیپس: `Elements > Shapes` سے ایک شیپ منتخب کریں، پھر `Effects > Shadow` یا `Glow` شامل کریں تاکہ گہرائی آئے۔\n\n۳۔\nایڈوانسڈ ٹائپوگرافی: ٹیکسٹ باکس منتخب کریں، پھر `Effects > Curve` یا `3D` اپلائی کریں تاکہ ٹیکسٹ تھری ڈی ایفیکٹ دکھائی دے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے موجودہ ڈیزائن میں ایک **گرڈ لی آؤٹ** اپلائی کریں اور تین مختلف عناصر (ٹیکسٹ، تصویر، شیپ) کو اس کے اندر ترتیب دیں تاکہ ڈیزائن متوازن ہو۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **انسٹاگرام پوسٹ** ڈیزائن کریں جس میں:\n- دو سے تین تصاویر کا گرڈ لی آؤٹ ہو\n- کسٹم بیک گراؤنڈ شیپ (جیسے ہیکساگون یا راؤنڈڈ ریکٹینگل)\n- بولڈ ٹائپوگرافی (ایفیکٹس جیسے شیڈو یا آؤٹ لائن کے ساتھ)"
+            }
+          ]
+        }
+      }
     }
   ],
   "no-code-app-dev": [
