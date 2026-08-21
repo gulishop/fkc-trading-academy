@@ -13495,6 +13495,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 12,
+      "id": "day-012",
+      "date": "2026-08-21",
+      "title": "Day 12 — Lambda Functions aur Higher-Order Functions",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Lambda functions Python mein chhoti, anonymous functions hain jo `def` ke bina ek line mein define hoti hain. Higher-order functions wo hain jo doosri functions ko arguments ke taur par le sakti hain ya return kar sakti hain (jaise `map()`, `filter()`, `sorted()`)."
+        ],
+        [
+          "Example",
+          "```python\n# Lambda function\nsquare = lambda x: x * x\nprint(square(5))  # Output: 25\n\n# Higher-order function example\nnumbers = [1, 2, 3, 4]\nsquared = list(map(lambda x: x**2, numbers))\nprint(squared)  # Output: [1, 4, 9, 16]\n```"
+        ],
+        [
+          "Practice",
+          "Ek lambda function banayein jo do numbers ka sum return kare, phir use `map()` ke saath ek list ke har element par apply kare."
+        ],
+        [
+          "Mini Project",
+          "Ek program banayein jo:\n1. User se ek list of numbers input le.\n2. Lambda function use karke sirf even numbers filter kare.\n3. Un even numbers ko square kare.\n4. Result print kare."
+        ]
+      ],
+      "answer_key": "lambda x, y:x+y, map, filter, even numbers",
+      "translations": {
+        "ur": {
+          "title": "دن 12 — لیمدا فنکشنز اور ہائر-آرڈر فنکشنز",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "لیمدا فنکشنز پائیتھن میں چھوٹی، بے نام (اینامنس) فنکشنز ہوتی ہیں جو `ڈیف` کے بغیر ایک لائن میں تعریف کی جاتی ہیں۔ ہائر-آرڈر فنکشنز وہ ہوتی ہیں جو دوسری فنکشنز کو آرگیومنٹس کے طور پر لے سکتی ہیں یا واپس کر سکتی ہیں (جیسے `میپ()`، `فلٹر()`، `سورٹڈ()` وغیرہ)"
+            },
+            {
+              "label": "مثال",
+              "content": "```python\n# Lambda function\nsquare = lambda x: x * x\nprint(square(5))  # آؤٹ پٹ: 25\n\n# Higher-order function example\nnumbers = [1, 2, 3, 4]\nsquared = list(map(lambda x: x**2, numbers))\nprint(squared)  # آؤٹ پٹ: [1, 4, 9, 16]\n```"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "ایک لیمدا فنکشن بنائیں جو دو نمبرز کا مجموعہ واپس کرے، پھر اسے `میپ()` کے ساتھ ایک لسٹ کے ہر عنصر پر اپلائی کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک پروگرام بنائیں جو:\n1. صارف سے نمبرز کی ایک لسٹ ان پٹ لے۔\n2. لیمدا فنکشن استعمال کرکے صرف جفت نمبرز فلٹر کرے۔\n3. ان جفت نمبرز کو مربع کرے۔\n4. نتیجہ پرنٹ کرے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "web-development": [

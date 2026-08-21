@@ -32,7 +32,7 @@
 <link rel="icon" href="logo.png">
 <link rel="manifest" href="manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-21T21:59:27.257573";
+  var FKC_BUILD = "2026-08-21T22:15:38.634874";
   function fkcCheckVersion(){
     fetch("version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
@@ -721,11 +721,11 @@ function fkcToggleTheme(){
       <div class="body">
         <h2>Python Programming</h2>
         <p class="tag">Python zero se seekhein — beginner-friendly, roz ek naya coding lesson</p>
-        <p class="latest">📖 Day 11 — Python Data Structures: Stacks aur Queues</p>
+        <p class="latest">📖 Day 12 — Lambda Functions aur Higher-Order Functions</p>
         <p class="tag" style="margin-top:4px">🕒 Roz 3:00 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="python-programming" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('python-programming', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#0056D2"><span class="stub-n" style="color:#0056D2">11</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#0056D2"><span class="stub-n" style="color:#0056D2">12</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/web-development/index.html">
       <div class="stamp" style="--accent-bg:#2BAF661a;color:#2BAF66">🌐</div>
