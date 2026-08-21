@@ -17323,6 +17323,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 12,
+      "id": "day-012",
+      "date": "2026-08-21",
+      "title": "Day 12 — **Blog Ke Liye Best Platform Kaise Choose Karein (Blogger vs WordPress)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Blog setup karne ke liye sabse pehle platform choose karna zaroori hai. **Blogger** (free, Google ka) aur **WordPress** (self-hosted) do sabse popular options hain. Har ek ke apne faide-nuksan hain—Blogger beginner-friendly hai, jabki WordPress zyada flexible hai. Aaj hum in dono ke beech ka farq samjhenge taake aap apne goals ke hisaab se best choice kar saken."
+        ],
+        [
+          "Example",
+          "Agar aap **shauq se blogging** kar rahe hain aur paise kamane ka immediate plan nahi hai, to **Blogger** aapke liye best hai:\n1. Free hosting (blogspot.com domain)\n2. Google Adsense approval easy\n3. Setup in 5 minutes\n\nLekin agar aap **serious business** karna chahte hain aur long-term growth chahte hain, to **WordPress** (self-hosted) choose karein:\n1. Custom domain (example.com)\n2. Hazar plugins for SEO, speed, security\n3. Full control over design & monetization"
+        ],
+        [
+          "Practice",
+          "Apne blog ke goal likhein (hobby, part-time income, full-time business) aur decide karein ki aap Blogger ya WordPress use karenge. Reason bhi likhein (2-3 lines)."
+        ],
+        [
+          "Mini Project",
+          "Ek **Blogger account** create karein aur ek test post publish karein. (Ya agar WordPress choose kiya hai, to ek hosting provider se domain khareed kar basic setup karein.)"
+        ]
+      ],
+      "answer_key": "blogger: free, easy, google adsense, limited, blogspot.com\nwordpress: flexible, self-hosted, plugins, custom domain, scalable",
+      "translations": {
+        "ur": {
+          "title": "دن ١٢ — **بلاگ کے لیے بہترین پلیٹفارم کیسے چنیں (بلاگر بمقابلہ ورڈپریس)**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "بلاگ سیٹ اپ کرنے کے لیے سب سے پہلے پلیٹفارم کا انتخاب کرنا ضروری ہے۔ **بلاگر** (فری، گوگل کا) اور **ورڈپریس** (سیلف ہوسٹڈ) دو سب سے مقبول آپشنز ہیں۔ ہر ایک کے اپنے فوائد اور نقصانات ہیں—بلاگر بیگنر فرینڈلی ہے جبکہ ورڈپریس زیادہ لچکدار ہے۔ آج ہم ان دونوں کے درمیان فرق سمجھیں گے تاکہ آپ اپنے مقاصد کے مطابق بہترین انتخاب کر سکیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "اگر آپ **شوق سے بلاگنگ** کر رہے ہیں اور پیسے کمانے کا فوری منصوبہ نہیں ہے تو **بلاگر** آپ کے لیے بہترین ہے:\n١۔ فری ہوسٹنگ (blogspot.com ڈومین)\n٢۔ گوگل ایڈسینس اپروول آسان\n٣۔ سیٹ اپ صرف ٥ منٹ میں\n\nلیکن اگر آپ **سنجیدہ بزنس** کرنا چاہتے ہیں اور طویل مدتی نمو چاہتے ہیں تو **ورڈپریس** (سیلف ہوسٹڈ) منتخب کریں:\n١۔ کسٹم ڈومین (example.com)\n٢۔ ہزاروں پلگنز برائے ایس ای او، سپیڈ، سیکیورٹی\n٣۔ ڈیزائن اور مونیٹائزیشن پر مکمل کنٹرول"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے بلاگ کا مقصد لکھیں (ہابی، پارٹ ٹائم آمدنی، فل ٹائم بزنس) اور فیصلہ کریں کہ آپ بلاگر استعمال کریں گے یا ورڈپریس۔ وجہ بھی لکھیں (٢-٣ سطور میں)"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **بلاگر اکاؤنٹ** بنائیں اور ایک ٹیسٹ پوسٹ شائع کریں۔ (یا اگر ورڈپریس منتخب کیا ہے تو کسی ہوسٹنگ پرووائیڈر سے ڈومین خرید کر بنیادی سیٹ اپ کریں)"
+            }
+          ]
+        }
+      }
     }
   ],
   "photography-editing": [
