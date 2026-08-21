@@ -4633,6 +4633,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 21,
+      "id": "day-021",
+      "date": "2026-08-21",
+      "title": "Day 21 — **Trading Strategy Ko Backtest Karna: Apne Plan Ki Kamzoriyaan Nikalo**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Backtesting ek trading strategy ko historical data par test karne ka process hai. Ye batata hai ke strategy past market conditions mein kitni effective thi. Is se pata chalta hai ke strategy mein kya kamzoriyaan hain aur unko improve karna hai. Yeh confidence bhi deta hai ke strategy live trading mein kaise perform kar sakti hai."
+        ],
+        [
+          "Example",
+          "1. TradingView par ek strategy select karo (e.g., \"Moving Average Crossover\").\n2. Chart par right-click karo > \"Add Alert\" > \"Strategy Tester\" select karo.\n3. Apne strategy ke parameters set karo (e.g., MA 50 aur MA 200).\n4. \"Test\" button press karo aur results dekho (win rate, profit factor, max drawdown)."
+        ],
+        [
+          "Practice",
+          "Apne ek existing strategy ko (ya ek naya simple strategy) ko TradingView ya MetaTrader par backtest karo. 6 mahine ya 1 saal ka data use karo aur results note karo."
+        ],
+        [
+          "Mini Project",
+          "Ek simple backtest report taiyar karo jismein:\n- Strategy ka naam\n- Tested period (e.g., Jan 2023 - Jun 2023)\n- Win rate (%)\n- Profit factor (total profit / total loss)\n- Max drawdown (%)"
+        ]
+      ],
+      "answer_key": "win rate, profit factor, drawdown, historical data",
+      "translations": {
+        "ur": {
+          "title": "دن ۲۱ — ٹریڈنگ اسٹریٹی کو بیک ٹیسٹ کرنا: اپنے پلان کی کمزوریاں نکالو",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "بیک ٹیسٹنگ ایک ٹریڈنگ اسٹریٹی کو تاریخی ڈیٹا پر ٹیسٹ کرنے کا عمل ہے۔ یہ بتاتا ہے کہ اسٹریٹی ماضی کے مارکیٹ حالات میں کتنی مؤثر تھی۔ اس سے پتہ چلتا ہے کہ اسٹریٹی میں کیا کمزوریاں ہیں اور انہیں بہتر بنانا ہے۔ یہ اعتماد بھی دیتا ہے کہ اسٹریٹی لائیو ٹریڈنگ میں کیسے پرفارم کر سکتی ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ ٹریڈنگ ویو پر ایک اسٹریٹی سلیکٹ کرو (مثلاً، \"موونگ ایوریج کراس اوور\")۔\n۲۔ چارٹ پر رائٹ کلک کرو > \"ایڈ الرٹ\" > \"اسٹریٹی ٹیسٹر\" سلیکٹ کرو۔\n۳۔ اپنی اسٹریٹی کے پیرامیٹرز سیٹ کرو (مثلاً، ایم اے ۵۰ اور ایم اے ۲۰۰)۔\n۴۔ \"ٹیسٹ\" بٹن دباؤ اور نتائج دیکھو (ون ریٹ، پرافٹ فیکٹر، میکس ڈراڈاؤن)।"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنی کسی موجودہ اسٹریٹی کو (یا ایک نئی سادہ اسٹریٹی) کو ٹریڈنگ ویو یا میٹا ٹریڈر پر بیک ٹیسٹ کرو۔ چھ ماہ یا ایک سال کا ڈیٹا استعمال کرو اور نتائج نوٹ کرو۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک سادہ بیک ٹیسٹ رپورٹ تیار کرو جس میں درج ذیل شامل ہوں:\n- اسٹریٹی کا نام\n- ٹیسٹڈ پیریڈ (مثلاً، جنوری ۲۰۲۳ تا جون ۲۰۲۳)\n- ون ریٹ (%)\n- پرافٹ فیکٹر (کل منافع / کل نقصان)\n- میکس ڈراڈاؤن (%)"
+            }
+          ]
+        }
+      }
     }
   ],
   "amazon-fba": [
