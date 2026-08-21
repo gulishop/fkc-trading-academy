@@ -22013,6 +22013,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 16,
+      "id": "day-016",
+      "date": "2026-08-21",
+      "title": "Day 16 — **Din aur Mausam: Apne Dinon Ko Pehchano!**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhein ge ke dinon ke naam hain Monday se Sunday tak. Mausam bhi alag hota hai—kabhi dhoop, kabhi baarish, kabhi thanda. Har mausam apne khas rang aur feeling lata hai. Aaj hum yeh bhi yaad rakhein ke har mausam ka apna maza hai!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Areeba ne socha, \"Mummy, aaj toh baarish hai! Dekho, pani gir raha hai.\" Uske abbu ne hansa kar kaha, \"Haan, baarish ka mausam hai. Chhatri lekar school jaana, aur pani mein na naachein—pata nahi kya ho!\" Areeba ne muskurate hue kaha, \"Thik hai, Abbu!\""
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, tumhein sabse zyada kaunsa mausam pasand hai—dhoop, baarish ya thanda?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Har mausam ka apna maza hai, lekin hamesha apne aap ko safe rakhna zaroori hai!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ١٦ — **دن اور موسم: اپنے دنوں کو پہچانو!**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم سیکھیں گے کہ دنوں کے نام ہیں پیر سے اتوار تک۔ موسم بھی الگ ہوتا ہے—کبھی دھوپ، کبھی بارش، کبھی ٹھنڈا۔ ہر موسم اپنے خاص رنگ اور احساس لاتا ہے۔ آج ہم یہ بھی یاد رکھیں گے کہ ہر موسم کا اپنا مزہ ہے!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "عریبہ نے سوچا، ’’ممی، آج تو بارش ہے! دیکھو، پانی گر رہا ہے۔‘‘ اس کے اب्बو نے ہنس کر کہا، ’’ہاں، بارش کا موسم ہے۔ چھتری لے کر سکول جانا، اور پانی میں نہ ناچنا—پتا نہیں کیا ہو!‘‘ عریبہ نے مسکراتے ہوئے کہا، ’’ٹھیک ہے، ابّو!‘‘"
+            },
+            {
+              "label": "امی ابّو کے ساتھ بات کریں",
+              "content": "’’بیٹا، تمہیں سب سے زیادہ کون سا موسم پسند ہے—دھوپ، بارش یا ٹھنڈا؟‘‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "ہر موسم کا اپنا مزہ ہے، لیکن ہمیشہ اپنے آپ کو محفوظ رکھنا ضروری ہے!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-pg": [
