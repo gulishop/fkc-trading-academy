@@ -9797,6 +9797,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 18,
+      "id": "day-018",
+      "date": "2026-08-21",
+      "title": "Day 18 — **No-Code se Paise Kamana: Freelancing ka Next Level (Portfolio & Pitching)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Freelancing mein sirf skills nahi, balki apne work ko bechein aur clients ko convince karne ka tareeqa bhi zaroori hai. Aaj seekhein ke kaise ek strong portfolio banaya jae, niche niche clients dhunde, aur apne no-code projects ko behtar tarike se pitch karke high-paying gigs hasil karein."
+        ],
+        [
+          "Example",
+          "Ek student ne FlutterFlow se ek \"Task Manager App\" banaya. Usne portfolio ke liye:\n1. **GitHub/GitLab** par code aur apk file upload ki.\n2. **Loom** par 2-minute video banayi jo app ke features explain karti hai.\n3. **Upwork** par gig likhte waqt keywords jaise \"FlutterFlow Expert\", \"Custom App Builder\" use kiye.\n4. Client ko proposal mein likha: *\"Maine aapke business ke liye ek task management app banaya hai jo 50% zyada efficient hai. Aapko sirf ₹15,000 mein mil sakta hai—agar aapko demo chahiye to main free 15-minute call par explain kar sakta/sakti hun.\"*"
+        ],
+        [
+          "Practice",
+          "Apne kisi bhi no-code project (website/app) ke liye ek **1-paragraph pitch** likhein jo aap Upwork/Fiverr par use kar sakte hain. Pitch mein project ka naam, technology, aur client ko milne wale benefits zaroor shamil karein."
+        ],
+        [
+          "Mini Project",
+          "**\"Portfolio Website in 30 Minutes\"** — Framer/Webflow/Wix par ek simple portfolio banayein jisme:\n- 3 no-code projects ke screenshots/links\n- Ek \"Hire Me\" button jo aapki email/Upwork profile par redirect ho\n- Ek \"About Me\" section jisme apne skills aur experience ka zikr ho"
+        ]
+      ],
+      "answer_key": "portfolio, github, loom, upwork gig",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۸ — نو کوڈ سے پیسے کمانا: فری لانسنگ کا نیکسٹ لیول (پورٹ فولیو اور پچنگ)",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "فری لانسنگ میں صرف سکلز ہی نہیں، بلکہ اپنے کام کو بیچنے اور کلائنٹس کو قائل کرنے کا طریقہ بھی بہت ضروری ہے۔ آج سیکھیں کہ کیسے ایک مضبوط پورٹ فولیو بنایا جائے، نیچے نیچے کلائنٹس ڈھونڈے جائیں، اور اپنے نو کوڈ پروجیکٹس کو بہتر طریقے سے پچ کرکے ہائی پےنگ گیگز حاصل کریں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک طالب علم نے فلٹر فلو سے ایک \"ٹاسک مینیجر ایپ\" بنائی۔ اس نے پورٹ فولیو کے لیے:\n۱۔ **گٹ ہب/گٹ لیب** پر کوڈ اور اے پی کے فائل اپ لوڈ کی۔\n۲۔ **لوم** پر دو منٹ کی ویڈیو بنائی جو ایپ کے فیچرز کو بیان کرتی ہے۔\n۳۔ **اپ ورک** پر گیگ لکھتے وقت کی ورڈز جیسے \"فلٹر فلو ایکسپرٹ\"، \"کسٹم ایپ بلڈر\" استعمال کیے۔\n۴۔ کلائنٹ کو پروپوزل میں لکھا: \"میں نے آپ کے بزنس کے لیے ایک ٹاسک مینجمنٹ ایپ بنائی ہے جو پچاس فیصد زیادہ ایفیشنٹ ہے۔ آپ کو صرف پندرہ ہزار روپے میں مل سکتی ہے—اگر آپ کو ڈیمو چاہیے تو میں فری پندرہ منٹ کال پر وضاحت کر سکتا/سکتی ہوں۔\""
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے کسی بھی نو کوڈ پروجیکٹ (ویب سائٹ/ایپ) کے لیے ایک پیراگراف پچ لکھیں جو آپ اپ ورک/فائیور پر استعمال کر سکتے ہیں۔ پچ میں پروجیکٹ کا نام، ٹیکنالوجی، اور کلائنٹ کو ملنے والے فوائد ضرور شامل کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "\"پورٹ فولیو ویب سائٹ تیس منٹس میں\" — فریمر/ویب فلو/وکس پر ایک سادہ پورٹ فولیو بنائیں جس میں:\n- تین نو کوڈ پروجیکٹس کے اسکرین شاٹس/لنکس\n- ایک \"ہائر می\" بٹن جو آپ کی ای میل/اپ ورک پروفائل پر ری ڈائریکٹ ہو\n- ایک \"اباؤٹ می\" سیکشن جس میں اپنے سکلز اور تجربے کا ذکر ہو"
+            }
+          ]
+        }
+      }
     }
   ],
   "digital-marketing-seo": [
