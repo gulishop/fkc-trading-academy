@@ -18861,6 +18861,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 12,
+      "id": "day-012",
+      "date": "2026-08-21",
+      "title": "Day 12 — **Podcast Script Writing: Storytelling Techniques**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Podcast script likhna sirf information dena nahi hai—yeh ek *story* sunana hai. Har episode ko ek **intro, body, aur conclusion** ke saath structure do, jismein **conflict, emotion, aur resolution** ho. Tone control karne ke liye **pitch, pace, aur pauses** ka istemal karo—jaise ek kahani sunate waqt karte hain."
+        ],
+        [
+          "Example",
+          "Ek *true crime podcast* ki script likhte waqt:\n-"
+        ],
+        [
+          "Intro",
+          "\"Aaj hum baat karenge ek aise case ki jo 20 saal tak unsolved raha...\" *(slow pace, mysterious tone)*\n-"
+        ],
+        [
+          "Body",
+          "\"Police ko pehli clue milti hai jab victim ki diary milti hai...\" *(faster pace, suspenseful)*\n-"
+        ],
+        [
+          "Conclusion",
+          "\"Is case ka sabse chilling detail yeh hai ki...\" *(pause, then slow delivery)*"
+        ],
+        [
+          "Practice",
+          "Apne man pasand topic par ek **30-second script** likho jismein:\n1. Ek *hook* (attention grabber)\n2. Ek *main point* (1 line)\n3. Ek *call-to-action* (e.g., \"Aage sunne ke liye subscribe karen\")"
+        ],
+        [
+          "Mini Project",
+          "Ek **5-minute podcast script** likho (kisi bhi niche ka), jismein:\n- **Intro** (15 sec)\n- **3 main points** (1 min each)\n- **Conclusion + CTA** (30 sec)\n- **Tone** ko deliberate change karo (e.g., serious → excited → calm)"
+        ]
+      ],
+      "answer_key": "hook, main point, cta, tone shift",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۲ — پوڈکاسٹ اسکرپٹ رائٹنگ: اسٹوری ٹیلنگ تکنیکس",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "پوڈکاسٹ اسکرپٹ لکھنا صرف معلومات دینا نہیں ہے—یہ ایک *کہانی* سنانا ہے۔ ہر ایپی سوڈ کو ایک **انٹرو، باڈی، اور کنکلوژن** کے ساتھ اسٹرکچر دو، جس میں **تنازعہ، جذبات، اور حل** ہو۔ ٹون کنٹرول کرنے کے لیے **پچ، پیس، اور پازز** کا استعمال کرو—جیسے ایک کہانی سناتے وقت کرتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک *ٹرو کرائم پوڈکاسٹ* کی اسکرپٹ لکھتے وقت:\n\nانٹرو: \"آج ہم بات کریں گے ایک ایسے کیس کی جو ۲۰ سال تک انسلوڈ رہا...\" *(سست رفتار، پراسرار ٹون)*\n\nباڈی: \"پولیس کو پہلی کلُو ملتی ہے جب متاثر کی ڈائری ملتی ہے...\" *(تیز رفتار، سسپنس سے بھرپور)*\n\nکنکلوژن: \"اس کیس کا سب سے خوفناک تفصیل یہ ہے کہ...\" *(پاز، پھر سست ڈیلیوری)*"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے پسندیدہ موضوع پر ایک **۳۰ سیکنڈ کا اسکرپٹ** لکھو جس میں:\n۱۔ ایک *ہُک* (توجہ حاصل کرنے والا)\n۲۔ ایک *مین پوائنٹ* (ایک لائن)\n۳۔ ایک *کال ٹو ایکشن* (مثلاً، \"آگے سننے کے لیے سبسکرائب کریں\")"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **۵ منٹ کا پوڈکاسٹ اسکرپٹ** لکھو (کسی بھی نیچ کا)، جس میں:\n- **انٹرو** (۱۵ سیکنڈ)\n- **۳ مین پوائنٹس** (۱ منٹ ہر ایک)\n- **کنکلوژن + سی ٹی اے** (۳۰ سیکنڈ)\n- **ٹون** کو دانستہ طور پر تبدیل کرو (مثلاً، سنجیدہ → پرجوش → پرسکون)"
+            }
+          ]
+        }
+      }
     }
   ],
   "real-estate-business": [
