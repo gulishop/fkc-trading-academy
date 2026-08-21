@@ -8665,6 +8665,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 20,
+      "id": "day-020",
+      "date": "2026-08-21",
+      "title": "Day 20 — **Freelancing Se Long-Term Wealth Kaise Banayein: Passive Income Sources**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Freelancing se aap sirf active income hi nahi, balki passive income bhi generate kar sakte hain. Iske liye aapko apne skills ko re-usable products (jaise templates, courses, ebooks) mein convert karna hoga. Aise sources se aap baar baar paise kamate hain bina har roz naye clients dhundne ke."
+        ],
+        [
+          "Example",
+          "Ek graphic designer apne logo templates ko Creative Market ya Etsy par bechta hai. Har beche gaye template se usko $10-50 milte hain, aur usko sirf ek baar design karna hota hai. Is tarah, ek hi template se saal bhar mein $1000+ passive income ho sakti hai."
+        ],
+        [
+          "Practice",
+          "Apne freelancing skill se ek simple product (jaise Canva template, Notion planner, ya audio clip) banayein aur kisi platform (Fiverr, Gumroad, ya apni website) par upload karein."
+        ],
+        [
+          "Mini Project",
+          "Ek \"Social Media Content Calendar\" template banayein jo freelancers ko bechein. Uske liye:\n1. Canva par ek professional-looking template design karein.\n2. Uske 3-5 variants banayein (jaise Instagram, LinkedIn, Twitter ke liye).\n3. Gumroad ya Etsy par upload karein aur $5-10 ka price set karein."
+        ]
+      ],
+      "answer_key": "template design, gumroad/etsy upload, $5-10 price, passive income",
+      "translations": {
+        "ur": {
+          "title": "دن 20 — فری لانسنگ سے طویل مدتی دولت کیسے بنائیں: پیسیو انکم کے ذرائع",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "فری لانسنگ سے آپ صرف ایکٹیو انکم ہی نہیں بلکہ پیسیو انکم بھی جنریٹ کر سکتے ہیں۔ اس کے لیے آپ کو اپنے ہنر کو دوبارہ استعمال ہونے والے پروڈکٹس (جیسے ٹیمپلیٹس، کورسز، ای بُکس) میں تبدیل کرنا ہوگا۔ ایسے ذرائع سے آپ بار بار پیسے کماتے ہیں بغیر ہر روز نئے کلائنٹس ڈھونڈنے کے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک گرافک ڈیزائنر اپنے لوگو ٹیمپلیٹس کو کریئٹیو مارکیٹ یا ایٹسی پر بیچتا ہے۔ ہر بیچے گئے ٹیمپلیٹ سے اسے 10 سے 50 ڈالر ملتے ہیں، اور اسے صرف ایک بار ڈیزائن کرنا ہوتا ہے۔ اس طرح، ایک ہی ٹیمپلیٹ سے سال بھر میں 1000 ڈالر سے زائد پیسیو انکم ہو سکتی ہے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے فری لانسنگ ہنر سے ایک سادہ پروڈکٹ (جیسے کینوا ٹیمپلیٹ، نوشن پلانر، یا آڈیو کلپ) بنائیں اور کسی پلیٹ فارم (Fiverr، Gumroad، یا اپنی ویب سائٹ) پر اپ لوڈ کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک \"سوشل میڈیا کنٹینٹ کیلنڈر\" ٹیمپلیٹ بنائیں جو فری لانسرز کو بیچیں۔ اس کے لیے:\n1. کینوا پر ایک پیشہ ورانہ نظر آنے والا ٹیمپلیٹ ڈیزائن کریں۔\n2. اس کے 3 سے 5 ویریئنٹس بنائیں (جیسے انسٹاگرام، لنکڈان، ٹویٹر کے لیے)۔\n3. Gumroad یا Etsy پر اپ لوڈ کریں اور 5 سے 10 ڈالر کی قیمت مقرر کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "graphic-design-canva": [
