@@ -7555,6 +7555,72 @@
           ]
         }
       }
+    },
+    {
+      "day": 14,
+      "id": "day-014",
+      "date": "2026-08-21",
+      "title": "Day 14 — **Landing Page Secrets: 3 Seconds Mein Customer Ko \"Buy\" Button Tak Kaise Lay Jayein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Landing page aapki store ka \"pehla impresssion\" hai – agar yeh boring ya confusing hui to customer 3 seconds mein hi chala jayega. Aaj seekhein ki ek high-converting landing page ka structure kya hota hai, aur kaise \"Buy Now\" button ko sabse zyada visible aur clickable banaya ja sakta hai."
+        ],
+        [
+          "Example",
+          "Ek **sellable product** (jaise \"Anti-Gravity Pillow\") ki landing page ka structure:\n1."
+        ],
+        [
+          "Hero Section (Top)",
+          "Ek bold headline (\"Say Goodbye to Neck Pain!\"), sub-headline (\"Scientifically proven pillow that adapts to your sleep\"), aur ek **bright \"Buy Now\" button** (color: neon green, size: large, fixed at top-right).\n2."
+        ],
+        [
+          "Social Proof",
+          "3-4 customer reviews (screenshot format mein) + \"10,000+ Happy Sleepers\" ka badge.\n3."
+        ],
+        [
+          "Benefits Section",
+          "Bullet points (✅ \"Ergonomic Design\" ✅ \"30-Night Trial\" ✅ \"Free Shipping\").\n4."
+        ],
+        [
+          "Urgency",
+          "\"Only 5 left in stock!\" ya \"Limited-time discount: 30% off\"."
+        ],
+        [
+          "Practice",
+          "Apne **current store ke kisi bhi product page** ko check karo:\n- Headline kitna clear hai? (Agar 5+ words ho to simplify karo)\n- \"Add to Cart\" button ka color aur size kya hai? (Agar dull ho to bright color change karo)\n- Kya 1+ social proof (review/video) hai? Agar nahi, to fake na karo – bas real reviews add karo."
+        ],
+        [
+          "Mini Project",
+          "Ek **Google Docs ya Canva** mein apne product ka landing page draft banayein (3 sections: Hero, Benefits, CTA). Use screenshot karke ek WhatsApp group ya Discord channel par share karo aur feedback lo."
+        ]
+      ],
+      "answer_key": "clear headline, bright cta button, social proof",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۴ — لینڈنگ پیج کے راز: ۳ سیکنڈز میں کسٹمر کو \"بائی\" بٹن تک کیسے لے جائیں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "لینڈنگ پیج آپ کی اسٹور کا \"پہلا تاثر\" ہوتا ہے — اگر یہ بورنگ یا کنفیوزنگ ہو تو کسٹمر صرف ۳ سیکنڈز میں ہی چلا جائے گا۔ آج سیکھیں کہ ایک ہائی کنورٹنگ لینڈنگ پیج کا سٹرکچر کیا ہوتا ہے، اور \"بائی ناؤ\" بٹن کو سب سے زیادہ نظر آنے والا اور کلک ایبل کیسے بنایا جا سکتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک **سیل ایبل پروڈکٹ** (جیسے \"اینٹی گریویٹی پِلّو\") کے لینڈنگ پیج کا سٹرکچر:\n۱۔ ہیرو سیکشن (ٹاپ): ایک بولڈ ہیڈلائن (\"نیک پین کو الوداع کہہ دیجیے!\")، سب ہیڈلائن (\"سائنٹفکلی ثابت شدہ پِلّو جو آپ کی نیند کے مطابق ڈھل جاتا ہے\")، اور ایک **برائٹ \"بائی ناؤ\" بٹن** (رنگ: نیون گرین، سائز: لارج، ٹاپ رائٹ پر فکسڈ)۔\n۲۔ سوشل پروف: ۳-۴ کسٹمر ریویوز (اسکرین شاٹ فارمیٹ میں) + \"۱۰،۰۰۰+ ہیپی سلیپرز\" کا بیج۔\n۳۔ بینفٹس سیکشن: بلٹ پوائنٹس (✅ \"ارگونوومک ڈیزائن\" ✅ \"۳۰ راتوں کا ٹرائل\" ✅ \"فری شپنگ\")۔\n۴۔ اَرجنسی: \"صرف ۵ باقی بچے ہیں!\" یا \"لمیٹڈ ٹائم ڈسکاؤنٹ: ۳۰٪ آف\"۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے **موجودہ اسٹور کے کسی بھی پروڈکٹ پیج** کو چیک کریں:\n- ہیڈلائن کتنا واضح ہے؟ (اگر ۵+ الفاظ ہوں تو سِمپل بنائیں)\n- \"ایڈ ٹو کارٹ\" بٹن کا رنگ اور سائز کیا ہے؟ (اگر ڈل ہو تو برائٹ رنگ تبدیل کریں)\n- کیا ۱+ سوشل پروف (ریویو/ویڈیو) ہے؟ اگر نہیں تو جھوٹا نہ کریں — بس اصلی ریویوز شامل کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **گوگل ڈاکس یا کینوا** میں اپنے پروڈکٹ کا لینڈنگ پیج ڈرافٹ بنائیں (۳ سیکشنز: ہیرو، بینفٹس، سی ٹی اے)۔ اس کا اسکرین شاٹ لے کر ایک واٹس ایپ گروپ یا ڈِسکارڈ چینل پر شیئر کریں اور فیڈبیک لیں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "freelancing": [
