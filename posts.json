@@ -3423,6 +3423,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 7,
+      "id": "day-007",
+      "date": "2026-08-21",
+      "title": "Day 7 — Facebook Marketplace Se Online Bechna: Zero Investment Ka Business",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Facebook Marketplace aajkal online bechne ka sabse accessible tareeka hai—bina ads ke, bina website ke, sirf apne Facebook Page se. Yahan par local aur online donon tarah ke buyers milte hain. Aap apne products ko categorize karke, photos aur description se attractive banakar bech sakte hain. Zaroori hai ke aap competitive pricing karein aur buyer ke sawaal jaldi reply karein."
+        ],
+        [
+          "Example",
+          "Maana ek student hai jo handmade candles banata hai. Usne Marketplace par \"Handmade Scented Candles\" category mein apne product ko list kiya. Photos mein candle ki lighting, size, aur packaging ko clearly show kiya. Description mein likha: \"100% natural wax, 8-hour burn time, ₹350 each. Free delivery in Delhi NCR.\" Usne 3-4 sawaal ke jaldi reply diya, to pehle hi din 2 orders aaye."
+        ],
+        [
+          "Practice",
+          "Apne Facebook Page se 1 product ko Marketplace par list karein. Photo quality, title, aur description ko optimize karein."
+        ],
+        [
+          "Mini Project",
+          "Ek 3-day challenge: Har din 1 naya product list karein aur buyer ke sawaal ka 24-hour response time maintain karein. Har din ke results ko note karein (views, inquiries, sales)."
+        ]
+      ],
+      "answer_key": "high-quality photos, competitive price, quick replies",
+      "translations": {
+        "ur": {
+          "title": "دن ۷ — فیس بک مارکیٹ پلیس سے آن لائن بیچنا: زیرو انویسٹمنٹ کا بزنس",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "فیس بک مارکیٹ پلیس آج کل آن لائن بیچنے کا سب سے قابل رسائی طریقہ ہے— بغیر اشتہارات کے، بغیر ویب سائٹ کے، صرف اپنے فیس بک پیج سے۔ یہاں پر لوکل اور آن لائن دونوں طرح کے خریدار ملتے ہیں۔ آپ اپنے پروڈکٹس کو کیٹیگریائز کرکے، تصاویر اور تفصیل سے پرکشش بنا کر بیچ سکتے ہیں۔ ضروری ہے کہ آپ مسابقتی قیمت رکھیں اور خریدار کے سوالات کا جلد جواب دیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "مانا ایک طالب علم ہے جو ہاتھ سے بنے ہوئے موم بتیاں بناتا ہے۔ اس نے مارکیٹ پلیس پر \"ہاتھ سے بنی خوشبودار موم بتیاں\" کیٹیگری میں اپنے پروڈکٹ کو لسٹ کیا۔ تصاویر میں موم بتی کی روشنی، سائز، اور پیکنگ کو واضح طور پر دکھایا۔ تفصیل میں لکھا: \"۱۰۰٪ قدرتی موم، ۸ گھنٹے جلنے کا وقت، ۳۵۰ روپے فی موم بتی۔ دہلی این سی آر میں مفت ڈیلیوری۔\" اس نے ۳-۴ سوالات کے جلد جواب دیے تو پہلے ہی دن ۲ آرڈرز آئے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے فیس بک پیج سے ایک پروڈکٹ کو مارکیٹ پلیس پر لسٹ کریں۔ تصویر کی کوالٹی، ٹائٹل، اور تفصیل کو بہتر بنائیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک ۳ روزہ چیلنج: ہر روز ایک نیا پروڈکٹ لسٹ کریں اور خریدار کے سوالات کا ۲۴ گھنٹے کے اندر جواب دیں۔ ہر روز کے نتائج کو نوٹ کریں (ویوز، انکوائریز، سیلز)।"
+            }
+          ]
+        }
+      }
     }
   ],
   "forex-trading": [
