@@ -23367,6 +23367,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 14,
+      "id": "day-014",
+      "date": "2026-08-21",
+      "title": "Day 14 — \"Ginti ka Khel: 1 se 10 tak ka Tafreeq!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhein ge ke kaise ek cheez se do cheezein nikalne se kya hota hai! Tafreeq ka matlab hai \"nikalna\" ya \"kam karna\". Yeh bhi ek khel hai jaise ginti ka, bas ismein hum numbers ko chhota karte hain. Yaad rakhna, tumhara jism tumhara hai, koi tumhe \"na\" kehne ka haq nahi rakhta."
+        ],
+        [
+          "Chhoti Kahani",
+          "Billi Rani ne ek din 5 mackerel machhliyan khariid li. Usne 2 kha liin. Ab uske paas kitni machhliyan bachin? (Thoda sochne do) Haan, 3! Tafreeq ka yeh khel hai."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar koi tumhe kisi cheez ke liye 'na' kehne ko bole, toh tum kya karoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Tumhara jism tumhara hai, use koi \"na\" nahi keh sakta! Agar koi ajeeb baat ho, toh ammi-abbu ko zaroor batana."
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۴ — گنتی کا کھیل: ۱ سے ۱۰ تک کا تفریق!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم سیکھیں گے کہ کیسے ایک چیز سے دو چیزیں نکالنے سے کیا ہوتا ہے! تفریق کا مطلب ہے ’نکالنا‘ یا ’کم کرنا‘۔ یہ بھی ایک کھیل ہے جیسے گنتی کا، بس اس میں ہم نمبرز کو چھوٹا کرتے ہیں۔ یاد رکھنا، تمہارا جسم تمہارا ہے، کوئی تمہیں ’نا‘ کہنے کا حق نہیں رکھتا۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "بلی رانی نے ایک دن ۵ میکریل مچھلیاں خریدیں۔ اس نے ۲ کھا لیں۔ اب اس کے پاس کتنی مچھلیاں بچیں؟ (تھوڑا سوچنے دو) ہاں، ۳! تفریق کا یہی کھیل ہے۔"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "’بیٹا، اگر کوئی تمہیں کسی چیز کے لیے ’نا‘ کہنے کو بولے، تو تم کیا کرو گے؟‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمہارا جسم تمہارا ہے، اسے کوئی ’نا‘ نہیں کہہ سکتا! اگر کوئی عجیب بات ہو، تو امّی ابّو کو ضرور بتانا۔"
+            }
+          ]
+        }
+      }
     }
   ]
 }
