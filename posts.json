@@ -775,6 +775,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 15,
+      "id": "day-015",
+      "date": "2026-08-21",
+      "title": "Day 15 — **Affiliate Links Ko \"Cloaking\" Karne Ka Sahi Tarika (Safe & SEO-Friendly)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Cloaking affiliate links ka matlab hai unhe short, clean aur professional banana taake wo dekhne mein achhe lagen, trust banaye rakhein aur spam ya phishing samjhe bina click karein. Ye SEO ke liye bhi faydemand hai kyunke long, messy links search engines ko confuse kar sakte hain. Cloaking se links \"human-readable\" bante hain aur accidental clicks bhi kam hote hain."
+        ],
+        [
+          "Example",
+          "1. Original Amazon link: `https://www.amazon.in/dp/B08N5KWB9H/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=yourid-21`\n2. Cloaked link: `https://yourwebsite.com/recommends/best-laptop`\n3. Iske liye WordPress plugins jaise \"Pretty Links\" ya \"ThirstyAffiliates\" use karo ya phir .htaccess se custom redirects set karo."
+        ],
+        [
+          "Practice",
+          "Apne ek affiliate link ko cloaking karke dekho. Agar WordPress use kar rahe ho to \"Pretty Links\" plugin install karke ek short link create karo. Agar blogger ya dusre platform use kar rahe ho to URL shortener jaise Bitly ya TinyURL ka use karo (lekin cloaking ke liye yeh temporary solution hai)."
+        ],
+        [
+          "Mini Project",
+          "Apne blog/website par 3 affiliate links cloak karo aur unhe \"Recommended Products\" section mein add karo. Har link ke liye ek short description bhi likho jo product ke benefits bataye."
+        ]
+      ],
+      "answer_key": "short, clean, trust, seo-friendly",
+      "translations": {
+        "ur": {
+          "title": "دن 15 — **ایفیلی ایٹ لنکس کو \"کلوکنگ\" کرنے کا صحیح طریقہ (سیف اور ایس ای او فرینڈلی)**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ایفیلی ایٹ لنکس کو کلوکنگ کرنے کا مطلب ہے انہیں مختصر، صاف اور پیشہ ورانہ بنانا تاکہ وہ دیکھنے میں اچھے لگیں، اعتماد قائم رکھیں اور اسپیم یا فشنگ سمجھے بغیر کلک کیے جائیں۔ یہ ایس ای او کے لیے بھی فائدہ مند ہے کیونکہ لمبے اور گڈ مڈ لنکس سرچ انجنز کو کنفیوز کر سکتے ہیں۔ کلوکنگ سے لنکس \"ہیومن ریڈ ایبل\" بنتے ہیں اور حادثاتی کلکس بھی کم ہوتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1. اصل ایمیزون لنک: `https://www.amazon.in/dp/B08N5KWB9H/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=yourid-21`\n2. کلوکڈ لنک: `https://yourwebsite.com/recommends/best-laptop`\n3. اس کے لیے ورڈپریس پلگنز جیسے \"پریٹی لنکس\" یا \"تھرسٹی ایفیلی ایٹس\" استعمال کریں یا پھر .htaccess سے کسٹم ری ڈائریکٹس سیٹ کریں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے ایک ایفیلی ایٹ لنک کو کلوکنگ کر کے دیکھیں۔ اگر ورڈپریس استعمال کر رہے ہیں تو \"پریٹی لنکس\" پلگ ان انسٹال کر کے ایک شارٹ لنک بنائیں۔ اگر بلاگر یا دوسرے پلیٹ فارم استعمال کر رہے ہیں تو یو آر ایل شارٹنر جیسے Bitly یا TinyURL کا استعمال کریں (لیکن کلوکنگ کے لیے یہ عارضی حل ہے)۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "اپنے بلاگ/ویب سائٹ پر 3 ایفیلی ایٹ لنکس کلوک کریں اور انہیں \"ری کمنڈڈ پروڈکٹس\" سیکشن میں شامل کریں۔ ہر لنک کے لیے ایک مختصر تفصیل بھی لکھیں جو پروڈکٹ کے فوائد بتائے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "youtube-automation": [
