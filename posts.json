@@ -19505,6 +19505,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 19,
+      "id": "day-019",
+      "date": "2026-08-21",
+      "title": "Day 19 — **Mobile Repair Shop ka Profit Margin: Kaise Set Kare aur Business Ko Grow Kare**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Har repair shop ka profit margin depend karta hai: **cost of parts + labor + overhead expenses (rent, bills, etc.)** par. Beginner ko pehle **cost calculation** samajhna chahiye—parts ka rate, time lagana, aur market demand. Phir **pricing strategy** decide karni hai (fixed price vs. per-hour). Customer dealing mein **transparency** aur **trust** build karna zaroori hai—overcharging ya hidden charges se business kharab hoti hai."
+        ],
+        [
+          "Example",
+          "Ek customer ka **screen replacement** ka case: Part cost = ₹2000, labor = 30 mins (₹150/hour rate), overhead = ₹50. Total cost = ₹2000 + ₹75 + ₹50 = **₹2125**. Agar market mein ₹2500 charge hota hai, toh **₹375 profit** per repair. Agar customer ko pata chal gaya toh next time wo doosre shop par chale jayega—isliye **fair pricing** zaroori hai."
+        ],
+        [
+          "Practice",
+          "Apne local market mein **3-4 repair shops** ke screen replacement ke rates note karo. Apne cost calculation ke hisaab se **apna price range** decide karo (e.g., ₹2100–₹2300). Compare karo ki kya tumhara price **competitive** hai ya **premium** (better quality claim karke)."
+        ],
+        [
+          "Mini Project",
+          "**\"Pricing Strategy Report\"** banao:\n1. 5 common repairs (screen, battery, charging port, speaker, fingerprint) ke **cost breakdown** likho.\n2. Market rates ke comparison ke baad **apna suggested price list** banao.\n3. Ek **customer-friendly pricing policy** likho (e.g., \"No hidden charges, parts ki receipt zaroor milegi\")."
+        ]
+      ],
+      "answer_key": "cost breakdown, market comparison, fair pricing, customer trust",
+      "translations": {
+        "ur": {
+          "title": "دن 19 — موبائل ریپئیر شاپ کا پرافٹ مارجن: کیسے سیٹ کریں اور بزنس کو گرو کریں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ہر ریپئیر شاپ کا پرافٹ مارجن تین باتوں پر منحصر ہوتا ہے: پارٹس کی لاگت، لیبر، اور اوور ہیڈ اخراجات (کرایہ، بلز وغیرہ)۔ بیگنر کو سب سے پہلے لاگت کا حساب سمجھنا چاہیے — پارٹس کی قیمت، وقت لگنا، اور مارکیٹ کی مانگ۔ اس کے بعد پرائسنگ کی حکمت عملی طے کرنی ہوتی ہے (فکسڈ قیمت بمقابلہ فی گھنٹہ)۔ کسٹمر ڈیلنگ میں شفافیت اور اعتماد قائم کرنا بہت ضروری ہے — اوور چارجنگ یا چھپے ہوئے چارجز سے بزنس خراب ہوتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک کسٹمر کا اسکرین ریپلیسمنٹ کا کیس لیں: پارٹ کی لاگت = 2000 روپے، لیبر = 30 منٹ (150 روپے فی گھنٹہ کی شرح)، اوور ہیڈ = 50 روپے۔ کل لاگت = 2000 + 75 + 50 = 2125 روپے۔ اگر مارکیٹ میں 2500 روپے چارج کیا جاتا ہے تو ہر ریپئیر پر 375 روپے کا منافع ہوتا ہے۔ اگر کسٹمر کو پتہ چل گیا تو اگلی بار وہ دوسری شاپ پر چلا جائے گا — اس لیے منصفانہ قیمت مقرر کرنا ضروری ہے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے لوکل مارکیٹ میں تین سے چار ریپئیر شاپس کے اسکرین ریپلیسمنٹ کے ریٹس نوٹ کریں۔ اپنی لاگت کے حساب سے اپنا پرائس رینج طے کریں (مثلاً 2100 سے 2300 روپے تک)۔ موازنہ کریں کہ کیا آپ کی قیمت مقابلہ کرنے والی ہے یا پریمیم (بہتر کوالٹی کا دعویٰ کرتے ہوئے)۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "\"پرائسنگ اسٹریٹیجی رپورٹ\" بنائیں:\n1. پانچ عام ریپئیرز (اسکرین، بیٹری، چارچنگ پورٹ، سپیکر، فنگر پرنٹ) کی لاگت کا تفصیلی حساب لکھیں۔\n2. مارکیٹ ریٹس کے موازنہ کے بعد اپنا تجویز کردہ پرائس لسٹ بنائیں۔\n3. ایک کسٹمر فرینڈلی پرائسنگ پالیسی لکھیں (مثلاً \"چھپے ہوئے چارجز نہیں، پارٹس کی رسید ضرور ملے گی\")۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-safety-education": [
