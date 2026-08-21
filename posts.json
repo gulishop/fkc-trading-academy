@@ -21261,6 +21261,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 16,
+      "id": "day-016",
+      "date": "2026-08-21",
+      "title": "Day 16 — **Apna saman khud sametna aur safai rakhna**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Beta, tumhari cheezein tumhari zindagi ko aasan banati hain. Apna saman khud sametna aur room/safai rakhna sirf \"gandi cheez\" nahi, balki tumhari aadat bhi hai jo tumhe responsible banati hai. Jab tum apna saman rakhte ho, to tumhe pata hota hai ke tumhara sab kuch apne paas hai, aur tumhe koi cheez khojne ki tension nahi rehti."
+        ],
+        [
+          "Chhoti Kahani",
+          "Arham ne school se aate hi bag khol kar sab cheezein khidki par rakh di. Uske abbu ne poocha, \"Beta, tumhara bag itna khali kyun hai?\" Arham ne hansa kar kaha, \"Abbu, maine sab cheezein apne jagah rakh di hain!\" Uske abbu ne usko gale lagaya aur kaha, \"Wah! Tum to ek responsible bachay ho.\""
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "Beta, agar tum apna saman khud sametoge to tumhe kya maza aayega?"
+        ],
+        [
+          "Yaad Rakhein",
+          "Tumhara room tumhara \"safe space\" hai—usko saaf aur saaf rakhna tumhara kaam hai!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۶ — **اپنا سامان خود سمیٹنا اور صفائی رکھنا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "بیٹا، تمہاری چیزیں تمہاری زندگی کو آسان بناتی ہیں۔ اپنا سامان خود سمیٹنا اور کمرے کی صفائی رکھنا صرف \"گندی چیز\" نہیں، بلکہ تمہاری عادت بھی ہے جو تمہیں ذمہ دار بناتی ہے۔ جب تم اپنا سامان رکھتے ہو، تو تمہیں پتا ہوتا ہے کہ تمہارا سب کچھ اپنے پاس ہے، اور تمہیں کوئی چیز کھونے کی ٹینشن نہیں رہتی۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "ارحم نے سکول سے آتے ہی بیگ کھول کر سب چیزیں کھڑکی پر رکھ دیں۔ اس کے اب्बو نے پوچھا، \"بیٹا، تمہارا بیگ اتنا خالی کیوں ہے؟\" ارحم نے ہنس کر کہا، \"اب्बو، میں نے سب چیزیں اپنی جگہ رکھ دی ہیں!\" اس کے اب्बو نے اسے گले لگایا اور کہا، \"واہ! تم تو ایک ذمہ دار بچے ہو۔\""
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "بیٹا، اگر تم اپنا سامان خود سمیٹو گے تو تمہیں کیا مزہ آئے گا؟"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمہارا کمرہ تمہارا \"سیف سپیس\" ہے—اسے صاف اور صاف رکھنا تمہارا کام ہے!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-nursery": [
