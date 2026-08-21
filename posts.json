@@ -10421,6 +10421,72 @@
           ]
         }
       }
+    },
+    {
+      "day": 4,
+      "id": "day-004",
+      "date": "2026-08-21",
+      "title": "Day 4 — **Content Marketing Strategy: Apne Audience Ko Attract Aur Retain Karen**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Content marketing ek long-term strategy hai jisme valuable, relevant aur consistent content banaya jata hai taake apne target audience ko attract, engage aur retain kiya ja sake. Ye SEO ka bhi backbone hai kyunke search engines chahte hain ke users ko useful content mile. Isme blogs, videos, social media posts, infographics, aur email content shamil hote hain."
+        ],
+        [
+          "Example",
+          "Ek fitness trainer ka example lete hain. Unka target audience \"home workout beginners\" hai. Unka content strategy yeh ho sakta hai:\n1."
+        ],
+        [
+          "Blog Posts",
+          "\"5 Minute Home Workouts for Beginners\"\n2."
+        ],
+        [
+          "YouTube Videos",
+          "\"How to Do Squats Correctly at Home\"\n3."
+        ],
+        [
+          "Social Media",
+          "Instagram reels par \"Quick 10-Minute Workout Routine\"\n4."
+        ],
+        [
+          "Email Newsletter",
+          "Weekly workout tips aur discounts on their premium plans"
+        ],
+        [
+          "Practice",
+          "Apne business ya interest ke hisaab se 3 types ke content ideas likhein (jaise blog, video, social media post). Har idea ka 1 line ka description bhi add karen."
+        ],
+        [
+          "Mini Project",
+          "Ek simple **content calendar** banayein (Excel ya Google Sheets mein) jisme aapke 1 week ke content plan hon. Columns hon: Date, Content Type (Blog/Video/Social), Topic, Platform (Website/YouTube/Instagram)."
+        ]
+      ],
+      "answer_key": "content ideas, content calendar, audience engagement, value-driven",
+      "translations": {
+        "ur": {
+          "title": "دن ۴ — **کنٹینٹ مارکیٹنگ اسٹریٹیجی: اپنے آڈینس کو اٹریکٹ اور ریٹین کریں**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "کنٹینٹ مارکیٹنگ ایک طویل مدتی اسٹریٹیجی ہے جس میں قیمتی، متعلقہ اور مسلسل مواد تخلیق کیا جاتا ہے تاکہ اپنے ہدف کے ناظرین کو اپنی طرف متوجہ، مشغول اور برقرار رکھا جا سکے۔ یہ ایس ای او کا بھی ریڑھ کی ہڈی ہے کیونکہ سرچ انجن چاہتے ہیں کہ صارفین کو مفید مواد ملے۔ اس میں بلاگز، ویڈیوز، سوشل میڈیا پوسٹس، انفوگرافکس اور ای میل کنٹینٹ شامل ہوتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک فٹنس ٹرینر کی مثال لیتے ہیں۔ ان کا ہدف ناظرین ’گھر پر ورزش کرنے والے ابتدائی افراد‘ ہیں۔ ان کی کنٹینٹ اسٹریٹیجی کچھ یوں ہو سکتی ہے:\n١۔ بلاگ پوسٹس: ’ابتدائی افراد کے لیے ۵ منٹ کی گھر پر ورزشیں‘\n٢۔ یوٹیوب ویڈیوز: ’گھر پر سکواٹس صحیح طریقے سے کیسے کریں‘\n٣۔ سوشل میڈیا: انسٹاگرام ریلز پر ’تیز ۱۰ منٹ کی ورزش کی روٹین‘\n٤۔ ای میل نیوز لیٹر: ہفتہ وار ورزش کے مشورے اور پریمیم پلانز پر رعایتیں"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے بزنس یا دلچسپی کے مطابق ۳ اقسام کے کنٹینٹ آئیڈیاز لکھیں (مثلاً بلاگ، ویڈیو، سوشل میڈیا پوسٹ)۔ ہر آئیڈیا کا ایک جملے میں مختصر تعارف بھی شامل کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک سادہ **کنٹینٹ کیلنڈر** بنائیں (ایکسل یا گوگل شیٹس میں) جس میں آپ کے ایک ہفتے کے کنٹینٹ پلان ہوں۔ کالمز ہوں:\nتاریخ، کنٹینٹ کی قسم (بلاگ/ویڈیو/سوشل)، موضوع، پلیٹ فارم (ویب سائٹ/یوٹیوب/انسٹاگرام)"
+            }
+          ]
+        }
+      }
     }
   ],
   "video-editing": [
