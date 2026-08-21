@@ -14811,6 +14811,60 @@
           ]
         }
       }
+    },
+    {
+      "day": 9,
+      "id": "day-009",
+      "date": "2026-08-21",
+      "title": "Day 9 — **Excel Dashboards: Data Ko \"Live\" Report Mein Badalna**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Excel dashboards ek hi screen par multiple charts, tables aur key metrics ko combine karke real-time insights provide karte hain. Aaj hum seekhenge kaise ek interactive dashboard banaya jaye jo data ko \"live\" report mein badal de. Iske liye PivotTables, Charts, Slicers aur conditional formatting ka combination use hoga."
+        ],
+        [
+          "Example",
+          "1. Ek sales dataset se **PivotTable** banayein (Rows: Product Category, Values: Total Sales).\n2. Us PivotTable se **Column Chart** create karen (Sales by Category).\n3. **Slicer** add karen (Filter: Region ya Month).\n4. Dashboard mein **KPI cards** (Total Sales, Avg Sale) add karen using formulas.\n5. Sab elements ko align karen aur professional look dene ke liye **Page Layout** adjust karen."
+        ],
+        [
+          "Practice",
+          "Apne Excel mein ek **simple sales dashboard** banayein:\n- Ek PivotTable banayein jo **Monthly Sales by Product** show kare.\n- Uske neeche ek **Line Chart** add karen jo trend dikhaye.\n- Right mein ek **Slicer** add karen jo **Year** filter kare.\n- Top par ek **KPI card** banayein jo **Total Sales** show kare."
+        ],
+        [
+          "Mini Project",
+          "**\"Company Performance Dashboard\"**\n- 3-4 sheets se data import karen (Sales, Expenses, Customer Feedback).\n- Ek dashboard banayein jo:\n  - **Top 5 Products by Revenue** (Bar Chart)\n  - **Monthly Profit Trend** (Line Chart)\n  - **Customer Satisfaction Score** (Gauge Chart)\n  - **Region-wise Performance** (Pie Chart)\n  -"
+        ],
+        [
+          "Filters",
+          "Quarter, Product Category\n- Dashboard ko **professional look** dene ke liye themes aur colors use karen."
+        ]
+      ],
+      "answer_key": "pivottable, column chart, slicer, kpi card, line chart",
+      "translations": {
+        "ur": {
+          "title": "دن 9 — ایکسل ڈیش بورڈز: ڈیٹا کو \"لائیو\" رپورٹ میں بدلنا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "ایکسل ڈیش بورڈز ایک ہی اسکرین پر متعدد چارٹس، ٹیبلز اور کلیدی میٹرکس کو ملا کر ریئل ٹائم ان سائٹس فراہم کرتے ہیں۔ آج ہم سیکھیں گے کہ کیسے ایک انٹرایکٹو ڈیش بورڈ بنایا جائے جو ڈیٹا کو \"لائیو\" رپورٹ میں تبدیل کر دے۔ اس کے لیے پیوٹ ٹیبلز، چارٹس، سلائسرز اور کنڈیشنل فارمیٹنگ کا مجموعہ استعمال ہوگا۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1. ایک سیلز ڈیٹاسیٹ سے **پیوٹ ٹیبل** بنائیں (قطاریں: پروڈکٹ کیٹیگری، اقدار: کل سیلز)۔\n2. اس پیوٹ ٹیبل سے **کالم چارٹ** بنائیں (کیٹیگری کے لحاظ سے سیلز)۔\n3. **سلائسر** شامل کریں (فلٹر: ریجن یا مہینہ)۔\n4. ڈیش بورڈ میں **کے پی آئی کارڈز** (کل سیلز، اوسط سیل) فارمولاز کا استعمال کرتے ہوئے شامل کریں۔\n5. تمام عناصر کو ترتیب دیں اور پیشہ ورانہ شکل دینے کے لیے **پیج لے آؤٹ** ایڈجسٹ کریں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے ایکسل میں ایک **سادہ سیلز ڈیش بورڈ** بنائیں:\n- ایک پیوٹ ٹیبل بنائیں جو **مہینے کے لحاظ سے پروڈکٹ سیلز** دکھائے۔\n- اس کے نیچے ایک **لائن چارٹ** شامل کریں جو رجحان دکھائے۔\n- دائیں جانب ایک **سلائسر** شامل کریں جو **سال** فلٹر کرے۔\n- اوپر ایک **کے پی آئی کارڈ** بنائیں جو **کل سیلز** دکھائے۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "**\"کمپنی پرفارمنس ڈیش بورڈ\"**\n- 3-4 شیٹس سے ڈیٹا امپورٹ کریں (سیلز، اخراجات، کسٹمر فیڈبیک)۔\n- ایک ڈیش بورڈ بنائیں جو:\n  - **ٹاپ 5 پروڈکٹس بذریعہ ریونیو** (بار چارٹ)\n  - **مہینے کے لحاظ سے منافع کا رجحان** (لائن چارٹ)\n  - **کسٹمر سٹیسفیکشن اسکور** (گیج چارٹ)\n  - **ریجن کے لحاظ سے پرفارمنس** (پائی چارٹ)\n- فلٹرز: کوارٹر، پروڈکٹ کیٹیگری\n- ڈیش بورڈ کو **پیشہ ورانہ شکل** دینے کے لیے تھیمز اور رنگ استعمال کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "crypto-blockchain": [
