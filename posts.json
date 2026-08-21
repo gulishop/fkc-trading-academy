@@ -20509,6 +20509,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 16,
+      "id": "day-016",
+      "date": "2026-08-21",
+      "title": "Day 16 — \"Kahani banane ka game: Saath mein muskurayein!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhein ge ke kaise hum ek saath ek dilchasp kahani bana sakte hain! Isse humari kalpana zyada tezi se badhegi aur hum ek doosre ki baaton ko sunna bhi seekhein ge. Yaad rakhna, har koi ki soch alag hoti hai – isliye humein sabki baaton ka respect karna hai."
+        ],
+        [
+          "Chhoti Kahani",
+          "Aman aur Ayesha ne mil kar ek kahani shuru ki. Aman ne kaha, \"Ek chhota sa jadoogar...\" Ayesha ne jod diya, \"jo apne jadoo ki chhadi se...\" Phir Aman ne kaha, \"har roz ek naya rang bana deta tha!\" Aise hi unki kahani roshan ho gayi, aur unhein bahut maza aaya."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar tumhari kahani mein koi aisa character ho jo tumhein pasand na ho, toh kya karoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Hamesha yaad rakhna ke tumhari soch hi sabse behtareen hai – isliye khush rehna aur apni kalpana ko udne do!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۶ — کہانی بنانے کا گیم: ساتھ میں مسکرائیں!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم سیکھیں گے کہ کیسے ہم ایک ساتھ ایک دلچسپ کہانی بنا سکتے ہیں! اس سے ہماری कलپنا زیادہ تیزی سے بڑھے گی اور ہم ایک دوسرے کی باتوں کو سننا بھی سیکھیں گے۔ یاد رکھنا، ہر کسی کی سوچ الگ ہوتی ہے — اس لیے ہمیں سب کی باتوں کا احترام کرنا ہے۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "امان اور عائشہ نے مل کر ایک کہانی شروع کی۔ امان نے کہا، ’’ایک چھوٹا سا جادوگر...‘‘ عائشہ نے جوڑ دیا، ’’جو اپنے جادو کی چھڑی سے...‘‘ پھر امان نے کہا، ’’ہر روز ایک نیا رنگ بنا دیتا تھا!‘‘ ایسے ہی ان کی کہانی روشن ہو گئی، اور انہیں بہت مزہ آیا۔"
+            },
+            {
+              "label": "امی ابّو کے ساتھ بات کریں",
+              "content": "’’بیٹا، اگر تمہاری کہانی میں کوئی ایسا کردار ہو جو تمہیں پسند نہ ہو، تو کیا کرو گے؟‘‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "ہمیشہ یاد رکھنا کہ تمہاری سوچ ہی سب سے بہترین ہے — اس لیے خوش رہنا اور اپنی कलپنا کو اُڑنے دو!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-good-behavior": [
