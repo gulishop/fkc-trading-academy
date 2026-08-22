@@ -9117,6 +9117,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 21,
+      "id": "day-021",
+      "date": "2026-08-22",
+      "title": "Day 21 — **Freelancing Mein \"AI Tools\" Ka Sahi Istemal: Time & Money Save Karne Ka Formula**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "AI tools freelancing ki productivity 10x badha dete hain—chahe content likhna ho, designs banani ho, ya client communication. In tools se repetitive tasks automate karke, aap zyada orders le sakte hain aur quality bhi improve hoti hai. Sabse pehle apni skill ke hisaab se sahi AI tools choose karna hai (e.g., copywriting ke liye Jasper, graphic design ke liye Midjourney)."
+        ],
+        [
+          "Example",
+          "Ek logo design freelancer hai. Uske liye **Midjourney** ka istemal karke:\n1. Client ki requirement ke hisaab se prompt likhna (e.g., \"minimalist logo for a coffee shop, black and gold colors\").\n2. 5-10 variations generate karna.\n3. Best 3 options client ko send karna + unpar manual tweaks karna."
+        ],
+        [
+          "Practice",
+          "Apni skill ke hisaab se **1 AI tool** choose karke, ek chhota sa task (e.g., blog ka intro paragraph, social media caption, ya logo concept) generate karo. Prompt ko 2-3 baar refine karke best result nikalne ki koshish karo."
+        ],
+        [
+          "Mini Project",
+          "Ek **AI-powered portfolio page** banana—jismein:\n- Apni 3 best skills mention karo.\n- Har skill ke liye AI se generate kiya hua **1 example output** add karo (e.g., agar writer ho to AI se likha hua blog post ka paragraph).\n- Page ko Canva ya Carrd par design karo aur shareable link bana lo."
+        ]
+      ],
+      "answer_key": "midjourney, jasper, prompt-refinement, canva",
+      "translations": {
+        "ur": {
+          "title": "دن ۲۱ — فری لانسنگ میں \"اے آئی ٹولز\" کا صحیح استعمال: ٹائم اور پیسے بچانے کا فارمولا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "اے آئی ٹولز فری لانسنگ کی پروڈکٹوٹی دس گنا بڑھا دیتے ہیں—چاہے مواد لکھنا ہو، ڈیزائن بنانا ہو، یا کلائنٹ کمیونیکیشن۔ ان ٹولز سے ریپیٹٹو ٹاسکس خودکار بنا کر، آپ زیادہ آرڈرز لے سکتے ہیں اور کوالٹی بھی بہتر ہوتی ہے۔ سب سے پہلے اپنی سکل کے حساب سے صحیح اے آئی ٹولز کا انتخاب کرنا ہے (مثلاً، کاپی رائٹنگ کے لیے جاسپر، گرافک ڈیزائن کے لیے مِڈ جرنی)"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک لوگو ڈیزائن فری لانسر ہے۔ اس کے لیے مِڈ جرنی کا استعمال کرتے ہوئے:\n۱۔ کلائنٹ کی ریquireمنٹ کے مطابق پرامپٹ لکھنا (مثلاً، \"منیملسٹ لوگو برائے کافی شاپ، بلیک اینڈ گولڈ کلرز\")۔\n۲۔ پانچ سے دس ویریئیشنز جنریٹ کرنا۔\n۳۔ بہترین تین آپشنز کلائنٹ کو بھیجنا اور ان پر مینوئل ٹویکس کرنا۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنی سکل کے حساب سے ایک اے آئی ٹول منتخب کر کے، ایک چھوٹا سا ٹاسک (مثلاً، بلاگ کا انٹرو پیراگراف، سوشل میڈیا کیپشن، یا لوگو کنسیپٹ) جنریٹ کرو۔ پرامپٹ کو دو سے تین بار ریفائن کر کے بہترین نتیجہ نکالنے کی کوشش کرو۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک اے آئی پاورڈ پورٹ فولیو پیج بنانا—جس میں:\n- اپنی تین بہترین سکلز کا ذکر کرو۔\n- ہر سکل کے لیے اے آئی سے جنریٹ کیا ہوا ایک مثالی آؤٹ پٹ شامل کرو (مثلاً، اگر رائٹر ہو تو اے آئی سے لکھا ہوا بلاگ پوسٹ کا پیراگراف)۔\n- پیج کو کینوا یا کارڈ پر ڈیزائن کر کے شیئر ایبل لنک بنا لو۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "graphic-design-canva": [
