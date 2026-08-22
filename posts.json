@@ -4833,6 +4833,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 22,
+      "id": "day-022",
+      "date": "2026-08-22",
+      "title": "Day 22 — **Trading Discipline: Apne Plan Ko 100% Follow Karne Ka Rahasya**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Trading psychology ke baad bhi bohat traders apne plan se hatte hain—ek trade mein zyada profit ka redha ya loss ka dar. Discipline ka matlab hai apne rules ko 100% follow karna, chahe market kaisa bhi ho. Iske liye **pre-trade checklist** banana zaroori hai: har trade se pehle apne entry/exit points, risk level, aur market conditions ko verify karo. Discipline se hi long-term success milti hai."
+        ],
+        [
+          "Example",
+          "Ek trader ne apne plan mein likha hai: \"Sirf London session ke 2nd hour mein EUR/USD par trade karunga, risk 1% se zyada nahi hoga.\" Lekin jab market ne 1.5% ka sudden move dikhaya, toh usne greed mein extra lot size le liya. Result: 3% loss. Agar woh apne plan par chalta, toh yeh loss avoid hota."
+        ],
+        [
+          "Practice",
+          "Apne trading plan ka ek **pre-trade checklist** banao (3-5 bullet points). Har trade se pehle usko follow karo aur ek note bana lo ki aaj kitne % rules follow hue."
+        ],
+        [
+          "Mini Project",
+          "Ek hypothetical trade lo (jaise EUR/USD par 1.1000 par buy, stop-loss 1.0950, take-profit 1.1050). Apne checklist se check karo ki:\n1. Market condition (trend/range) sahi hai?\n2. Risk reward ratio 1:2 se zyada hai?\n3. News calendar mein koi major event nahi hai?\nHar point ka answer \"Haan/Nahi\" mein likho."
+        ]
+      ],
+      "answer_key": "pre-trade checklist, rules follow, risk reward check, hypothetical trade verify",
+      "translations": {
+        "ur": {
+          "title": "دن ۲۲ — ٹریڈنگ ڈسپلن: اپنے پلان کو ۱۰۰٪ فالو کرنے کا راز",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ٹریڈنگ سائیکالوجی کے بعد بھی بہت سارے ٹریڈرز اپنے پلان سے ہٹ جاتے ہیں—ایک ٹریڈ میں زیادہ منافع کا لالچ یا نقصان کا ڈر۔ ڈسپلن کا مطلب ہے اپنے اصولوں کو سو فیصد فالو کرنا، چاہے مارکیٹ کیسی بھی ہو۔ اس کے لیے **پری ٹریڈ چیک لسٹ** بنانا ضروری ہے: ہر ٹریڈ سے پہلے اپنے انٹری/ایگزٹ پوائنٹس، رسک لیول، اور مارکیٹ کنڈیشنز کو ویریفائی کرو۔ ڈسپلن سے ہی طویل مدتی کامیابی ملتی ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک ٹریڈر نے اپنے پلان میں لکھا تھا: ’صرف لندن سیشن کے دوسرے گھنٹے میں EUR/USD پر ٹریڈ کروں گا، رسک ایک فیصد سے زیادہ نہیں ہوگا۔‘ لیکن جب مارکیٹ نے اچانک ڈیڑھ فیصد کا موو دکھایا تو اس نے لالچ میں ایکسٹرا لاٹ سائز لے لیا۔ نتیجہ: تین فیصد کا نقصان۔ اگر وہ اپنے پلان پر چلتا تو یہ نقصان ٹل سکتا تھا۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے ٹریڈنگ پلان کی ایک **پری ٹریڈ چیک لسٹ** بناؤ (تین سے پانچ بلیٹ پوائنٹس)۔ ہر ٹریڈ سے پہلے اسے فالو کرو اور ایک نوٹ بنا لو کہ آج کتنے فیصد اصول فالو ہوئے۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک فرضی ٹریڈ لو (جیسے EUR/USD پر ۱.۱۰۰۰ پر بائے، سٹاپ لاس ۱.۰۹۵۰، ٹیک پرافٹ ۱.۱۰۵۰)۔ اپنی چیک لسٹ سے چیک کرو کہ:\n۱۔ مارکیٹ کنڈیشن (ٹرینڈ/رینج) صحیح ہے؟\n۲۔ رسک ریوارڈ ریٹيو ۱:۲ سے زیادہ ہے؟\n۳۔ نیوز کیلنڈر میں کوئی میجر ایونٹ نہیں ہے؟\nہر پوائنٹ کا جواب ’ہاں/نہیں‘ میں لکھو۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "amazon-fba": [
