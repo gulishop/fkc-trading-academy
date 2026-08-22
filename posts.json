@@ -14101,6 +14101,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 13,
+      "id": "day-013",
+      "date": "2026-08-22",
+      "title": "Day 13 — Advanced String Manipulation: Formatting aur Advanced Operations",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum strings ke advanced operations seekhenge - formatting (f-strings, .format()), string methods (split, join, replace), aur regular expressions (regex) ke basics. Strings Python mein sabse zyada use hone wale data types hain, inke advanced features se code readable aur powerful ban jaata hai."
+        ],
+        [
+          "Example",
+          "```python\nname = \"Ali\"\nage = 25\n# f-string se formatting\nprint(f\"Mera naam {name} hai aur main {age} saal ka hoon\")\n\n# String methods\ntext = \"python programming\"\nprint(text.upper())        # PYTHON PROGRAMMING\nprint(text.split())        # ['python', 'programming']\nprint(\"-\".join(text.split()))  # python-programming\n\n# Regex se email validation\nimport re\nemail = \"test@example.com\"\nif re.match(r\"[^@]+@[^@]+\\.[^@]+\", email):\n    print(\"Valid email\")\n```"
+        ],
+        [
+          "Practice",
+          "Ek program likho jo user se input le aur check kare:\n1. Kya input mein sirf alphabets hain?\n2. Kya input ki length 5 se zyada hai?\n3. Input ko title case mein convert karke print karo."
+        ],
+        [
+          "Mini Project",
+          "Ek simple text-based game banaye:\n- User ko ek word guess karna hai\n- Program word ko shuffle karke show kare\n- User ko hints milte rahen (jaise word ki length)\n- 3 wrong guesses ke baad game end ho"
+        ]
+      ],
+      "answer_key": "isalpha(), len(), title()",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۳ — اسٹرِنگ کی ایڈوانسڈ مینیپولیشن: فارمیٹنگ اور ایڈوانسڈ آپریشنز",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم اسٹرِنگز کے ایڈوانسڈ آپریشنز سیکھیں گے — فارمیٹنگ (ایف-اسٹرِنگز، ڈاٹ فارمیٹ)، اسٹرِنگ میتھڈز (سپلِٹ، جوائن، رِپلیس)، اور ریگولر ایکسپریشنز (ریجیکس) کی بنیادی باتیں۔ پائیتھن میں اسٹرِنگز سب سے زیادہ استعمال ہونے والے ڈیٹا ٹائپس میں سے ہیں، ان کے ایڈوانسڈ فیچرز سے کوڈ ریڈ ایبل اور پاورفل بن جاتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "```python\nname = \"Ali\"\nage = 25\n# f-string سے فارمیٹنگ\nprint(f\"میرا نام {name} ہے اور میں {age} سال کا ہوں\")\n\n# String methods\ntext = \"python programming\"\nprint(text.upper())        # PYTHON PROGRAMMING\nprint(text.split())        # ['python', 'programming']\nprint(\"-\".join(text.split()))  # python-programming\n\n# Regex سے ای میل ویلیڈیشن\nimport re\nemail = \"test@example.com\"\nif re.match(r\"[^@]+@[^@]+\\.[^@]+\", email):\n    print(\"Valid email\")\n```"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "ایک پروگرام لکھو جو صارف سے ان پُٹ لے اور چیک کرے:\n۱۔ کیا ان پُٹ میں صرف حروفِ تہجی ہیں؟\n۲۔ کیا ان پُٹ کی لمبائی ۵ سے زیادہ ہے؟\n۳۔ ان پُٹ کو ٹائٹل کیس میں کنورٹ کرکے پرنٹ کرو۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک سادہ ٹیکسٹ بیسڈ گیم بناؤ:\n- صارف کو ایک لفظ گیس کرنا ہے۔\n- پروگرام لفظ کو شفل کرکے دکھائے۔\n- صارف کو ہنٹس ملتے رہیں (جیسے لفظ کی لمبائی)۔\n- ۳ غلط گیسز کے بعد گیم ختم ہو جائے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "web-development": [
