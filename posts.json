@@ -24155,6 +24155,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 14,
+      "id": "day-014",
+      "date": "2026-08-22",
+      "title": "Day 14 — \"Haath, Pair, Aankh, Naak: Apne Jism ke Hisse\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhein ge ke humare jism ke kaun kaun se hisse hain. Har hissa ka apna kaam hai, jaise haath se khelte hain, pair se chalte hain, aankh se dekhte hain, aur naak se sason ko mahsoos karte hain. Yeh sab hisse hamare liye bohat important hain!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Areeba ne apne haath se ball pakad kar khela. Uske pair ne usko daurne mein madad di. Usne apni aankh se dekha ke ball kahan hai, aur naak se usne khushboo ya mehka liya. Har hissa ne mil kar Areeba ki kheli ko poora kiya!"
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, tumhara haath kya kya kar sakta hai? Pair kya kya kar sakta hai?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Tumhara jism sirf tumhara hai. Koi tumhe touch karne ki ijazat nahi de sakta jab tak tum khush nahi ho. Agar koi cheez ajeeb lage to foran ammi/abbu ko batana!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۴ — ہاتھ، پاؤں، آنکھ، ناک: اپنے جسم کے حصے",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج ہم سیکھیں گے کہ ہمارے جسم کے کون کون سے حصے ہیں۔ ہر حصہ کا اپنا کام ہے، جیسے ہاتھ سے کھیلتے ہیں، پاؤں سے چلتے ہیں، آنکھ سے دیکھتے ہیں، اور ناک سے سانسوں کو محسوس کرتے ہیں۔ یہ سب حصے ہمارے لیے بہت اہم ہیں!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "عریبہ نے اپنے ہاتھ سے بال پکڑ کر کھیلا۔ اس کے پاؤں نے اسے دوڑنے میں مدد دی۔ اس نے اپنی آنکھ سے دیکھا کہ بال کہاں ہے، اور ناک سے اس نے خوشبو یا مہک لی۔ ہر حصہ نے مل کر عریبہ کی کھیل کو پورا کیا!"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "بیٹا، تمہارا ہاتھ کیا کیا کر سکتا ہے؟ پاؤں کیا کیا کر سکتا ہے؟"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمہارا جسم صرف تمہارا ہے۔ کوئی تمہیں چھونے کی اجازت نہیں دے سکتا جب تک تم خوش نہیں ہو۔ اگر کوئی چیز عجیب لگے تو فوراً امّی/ابّو کو بتانا!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-kg": [
