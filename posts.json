@@ -2015,6 +2015,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 21,
+      "id": "day-021",
+      "date": "2026-08-22",
+      "title": "Day 21 — **YouTube Automation Ka \"Auto-Pilot Mode\" Setup: Channel Ko 100% Automate Karne Ka Step-by-Step Blueprint**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke kaise apna YouTube channel **100% automate** karna hai—yani ek baar setup karne ke baad **khud-ba-khud** videos upload hon, views aayein, aur paise bane. Iske liye **AI tools, automation scripts, aur scheduling system** ka istemal karna hoga. Auto-pilot mode ka matlab hai: **kam effort, zyada results**."
+        ],
+        [
+          "Example",
+          "1. **Niche aur content plan** (AI se generate karwao)\n2. **Script AI se likhwao** (Pictory ya Jasper use karo)\n3. **Voiceover AI se generate karwao** (ElevenLabs ya Murf.ai)\n4. **Video AI se edit karwao** (CapCut ya Runway ML)\n5. **Thumbnail AI se design karwao** (Canva ya MidJourney)\n6. **Upload schedule set karo** (TubeBuddy ya VidIQ)\n7. **Monetization aur analytics check karo** (YouTube Studio)"
+        ],
+        [
+          "Practice",
+          "Apne **current channel** ya ek **new channel** ke liye **auto-pilot setup** ka plan banao. Niche, content type, aur tools select karo jo tum use karna chaho."
+        ],
+        [
+          "Mini Project",
+          "Ek **AI-generated video script** likh kar **ElevenLabs se voiceover** generate karo, aur **CapCut mein edit** karo. Phir **TubeBuddy se upload schedule** set karo."
+        ]
+      ],
+      "answer_key": "ai tools selection, auto-script generation, voiceover ai, capcut editing, tubebuddy scheduling",
+      "translations": {
+        "ur": {
+          "title": "دن 21 — یوٹیوب آٹومیشن کا \"آٹو-پائلٹ موڈ\" سیٹ اپ: چینل کو 100% آٹومیٹ کرنے کا سٹیپ بائی سٹیپ بلیو پرنٹ",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم سیکھیں گے کہ کیسے اپنا یوٹیوب چینل **سو فیصد آٹومیٹ** کرنا ہے—یعنی ایک بار سیٹ اپ کرنے کے بعد **خود بخود** ویڈیوز اپ لوڈ ہوں، ویوز آئیں، اور پیسے بنیں۔ اس کے لیے **اے آئی ٹولز، آٹومیشن اسکرپٹس، اور شیڈولنگ سسٹم** کا استعمال کرنا ہوگا۔ آٹو-پائلٹ موڈ کا مطلب ہے: **کم محنت، زیادہ نتائج**۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1. **نیچ اور کنٹینٹ پلان** (اے آئی سے جنریٹ کرواؤ)\n2. **اسکرپٹ اے آئی سے لکھواؤ** (Pictory یا Jasper استعمال کرو)\n3. **وائس اوور اے آئی سے جنریٹ کرواؤ** (ElevenLabs یا Murf.ai)\n4. **ویڈیو اے آئی سے ایڈٹ کرواؤ** (CapCut یا Runway ML)\n5. **تھمب نیل اے آئی سے ڈیزائن کرواؤ** (Canva یا MidJourney)\n6. **اپ لوڈ شیڈول سیٹ کرو** (TubeBuddy یا VidIQ)\n7. **مونٹائزیشن اور اینالیٹکس چیک کرو** (YouTube Studio)"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے **موجودہ چینل** یا ایک **نیا چینل** کے لیے **آٹو-پائلٹ سیٹ اپ** کا پلان بناؤ۔ نیچے، کنٹینٹ کی قسم، اور ٹولز منتخب کرو جو تم استعمال کرنا چاہو۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **اے آئی جنریٹڈ ویڈیو اسکرپٹ** لکھ کر **ElevenLabs سے وائس اوور** جنریٹ کرو، اور **CapCut میں ایڈٹ** کرو۔ پھر **TubeBuddy سے اپ لوڈ شیڈول** سیٹ کرو۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "social-media-marketing": [
