@@ -12407,6 +12407,64 @@
           ]
         }
       }
+    },
+    {
+      "day": 18,
+      "id": "day-018",
+      "date": "2026-08-22",
+      "title": "Day 18 — **Profit Margin Ko Optimize Karne Ke 5 Advanced Tips**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Profit margin ka matlab hai aapki har sale ke baad kitna profit bachta hai. Print on demand mein yeh depend karta hai: product cost, shipping, platform fees, marketing cost, aur aapki pricing strategy. Agar margin kam hai to scale karna mushkil ho jata hai. Is lesson mein advanced tactics seekhein jo aapki profit ko 20-50% tak badha sakte hain."
+        ],
+        [
+          "Example",
+          "Maana aap ek T-shirt $25 mein bech rahe hain. Cost breakup:\n- Printful cost: $12\n- Shipping: $5\n- Etsy fees: $3.50\n- Marketing: $2\nTotal cost: $22.50 → Profit: $2.50 (10% margin)."
+        ],
+        [
+          "Solution",
+          "Agar aap same T-shirt ko apne website par $29 mein bechen (aur shipping free karen), to:\n- Printful cost: $12\n- Shipping: $0 (free shipping threshold set karke)\n- Website fees: $1 (Shopify basic)\n- Marketing: $2\nTotal cost: $15 → Profit: $14 (48% margin)."
+        ],
+        [
+          "Practice",
+          "Apne ek existing product ka cost breakup nikalein (Excel ya Google Sheets mein). Har cost ko alag-alag likhein aur total profit calculate karein. Ab sochein ke kaunse cost ko reduce kiya ja sakta hai (e.g., bulk orders ke discounts, free shipping threshold, ya marketing cost optimization)."
+        ],
+        [
+          "Mini Project",
+          "Ek \"Profit Margin Calculator\" spreadsheet banaein jo aapko kisi bhi product ka cost, price, aur profit automatically calculate kar de. Iske liye:\n1. Columns: Product Name, Selling Price, Product Cost, Shipping Cost, Platform Fees, Marketing Cost, Total Cost, Profit, Margin (%).\n2. Formula: `=B2-(C2+D2+E2+F2)` (Profit) aur `=G2/B2*100` (Margin %)."
+        ]
+      ],
+      "answer_key": "cost breakup, profit calculation, bulk discounts, free shipping threshold, margin percentage",
+      "translations": {
+        "ur": {
+          "title": "دن 18 — **منافع کے مارجن کو بہتر بنانے کے 5 ایڈوانسڈ ٹپس**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "منافع کا مارجن اس بات کا تعین کرتا ہے کہ آپ کی ہر سیل کے بعد کتنا منافع بچتا ہے۔ پرنٹ آن ڈیمینڈ میں یہ مندرجہ ذیل عوامل پر منحصر ہوتا ہے: پروڈکٹ کی لاگت، شپنگ، پلیٹ فارم فیس، مارکیٹنگ لاگت، اور آپ کی پرائسنگ اسٹریٹیجی۔ اگر مارجن کم ہو تو سکیل کرنا مشکل ہو جاتا ہے۔ اس سبق میں ایڈوانسڈ حکمت عملی سیکھیں جو آپ کے منافع کو 20-50 فیصد تک بڑھا سکتی ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "فرض کریں آپ ایک ٹی شرٹ 25 ڈالر میں بیچ رہے ہیں۔ لاگت کا تفصیلی حساب کچھ یوں ہے:\n- پرنٹ فل کی لاگت: 12 ڈالر\n- شپنگ: 5 ڈالر\n- ایٹسی فیس: 3.50 ڈالر\n- مارکیٹنگ: 2 ڈالر\nکل لاگت: 22.50 ڈالر → منافع: 2.50 ڈالر (10 فیصد مارجن)।"
+            },
+            {
+              "label": "حل",
+              "content": "اگر آپ وہی ٹی شرٹ اپنے ویب سائٹ پر 29 ڈالر میں بیچیں (اور شپنگ فری کریں)، تو:\n- پرنٹ فل کی لاگت: 12 ڈالر\n- شپنگ: 0 ڈالر (فری شپنگ کی حد مقرر کر کے)\n- ویب سائٹ فیس: 1 ڈالر (شاپائفائی بیسک)\n- مارکیٹنگ: 2 ڈالر\nکل لاگت: 15 ڈالر → منافع: 14 ڈالر (48 فیصد مارجن)।"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے کسی موجودہ پروڈکٹ کا لاگت کا تفصیلی حساب نکالیں (ایکسل یا گوگل شیٹس میں)۔ ہر لاگت کو الگ الگ لکھیں اور کل منافع کا حساب لگائیں۔ اب سوچیں کہ کون سی لاگت کو کم کیا جا سکتا ہے (مثلاً بلک آرڈرز پر ڈسکاؤنٹ، فری شپنگ کی حد، یا مارکیٹنگ لاگت کو بہتر بنانا)।"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک \"منافع مارجن کیلکولیٹر\" اسپریڈشیٹ بنائیں جو آپ کو کسی بھی پروڈکٹ کی لاگت، قیمت، اور منافع خود بخود حساب کر کے دے۔ اس کے لیے:\n1. کالمز: پروڈکٹ کا نام، سیلنگ پرائس، پروڈکٹ کی لاگت، شپنگ لاگت، پلیٹ فارم فیس، مارکیٹنگ لاگت، کل لاگت، منافع، مارجن (فیصد)\n2. فارمولہ: `=B2-(C2+D2+E2+F2)` (منافع) اور `=G2/B2*100` (مارجن فیصد)"
+            }
+          ]
+        }
+      }
     }
   ],
   "cpp-daily-coding": [
