@@ -22701,6 +22701,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 17,
+      "id": "day-017",
+      "date": "2026-08-22",
+      "title": "Day 17 — **Dosti mein pyaar aur mil kar khelna**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Dost bannana bahut achha hai, lekin sabse zaroori hai ke hum apne dost ke saath pyaar se baat karein, unki baat sunain, aur unke saath mil kar khelain. Jab hum mil kar khelte hain, toh sab khush rehte hain aur koi bhi akela mehsoos nahi karta."
+        ],
+        [
+          "Chhoti Kahani",
+          "Rohan aur Ayesha ek hi school mein padhte hain. Unka sabse pasandida khel hai \"Chor-Police\". Ek din, Rohan ne Ayesha ko chor banna chaha, lekin Ayesha ne mana kar diya. Rohan ne pucha, \"Kyun?\" Ayesha ne muskurate hue kaha, \"Kyunki humein mil kar khelna hai, aur main chahti hoon ke hum dono ek saath khelain.\" Rohan samajh gaya aur unho ne mil kar khelna shuru kar diya. Unka din aur bhi khush ho gaya!"
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, tumhare sabse pasandida dost kaun hai? Unke saath tum kya kya khelte ho?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Dost ke saath pyaar se baat karo, unki baat suno, aur mil kar khelne se zindagi aur bhi khush ho jati hai!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۷ — **دوستی میں پیار اور مل کر کھیلنا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "دوست بنانا بہت اچھا ہے، لیکن سب سے ضروری ہے کہ ہم اپنے دوست کے ساتھ پیار سے بات کریں، ان کی بات سنیں، اور ان کے ساتھ مل کر کھیلیں۔ جب ہم مل کر کھیلتے ہیں، تو سب خوش رہتے ہیں اور کوئی بھی اکیلا محسوس نہیں کرتا۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "روہن اور عائشہ ایک ہی سکول میں پڑھتے ہیں۔ ان کا سب سے پسندیدہ کھیل ہے \"چور-پولیس\"۔ ایک دن، روہن نے عائشہ کو چور بننا چاہا، لیکن عائشہ نے منع کر دیا۔ روہن نے پوچھا، \"کیوں؟\" عائشہ نے مسکراتے ہوئے کہا، \"کیونکہ ہمیں مل کر کھیلنا ہے، اور میں چاہتی ہوں کہ ہم دونوں ایک ساتھ کھیلیں۔\" روہن سمجھ گیا اور انہوں نے مل کر کھیلنا شروع کر دیا۔ ان کا دن اور بھی خوش ہو گیا!"
+            },
+            {
+              "label": "امی ابّو کے ساتھ بات کریں",
+              "content": "\"بیٹا، تمہارے سب سے پسندیدہ دوست کون ہے؟ ان کے ساتھ تم کیا کیا کھیلتے ہو؟\""
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "دوست کے ساتھ پیار سے بات کرو، ان کی بات سنو، اور مل کر کھیلنے سے زندگی اور بھی خوش ہو جاتی ہے!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-nursery": [
