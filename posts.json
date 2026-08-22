@@ -10489,6 +10489,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 19,
+      "id": "day-019",
+      "date": "2026-08-22",
+      "title": "Day 19 — **No-Code SEO: Apni Website/App Ko Google Par Rank Karwayein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "No-code websites/apps ko bhi SEO (Search Engine Optimization) ki zarurat hoti hai taake Google par visible rahein. Basics jaise keywords, meta tags, sitemap, aur speed optimization no-code tools (Framer/Webflow/Wix) par bhi apply hote hain. AI tools (jaise SurferSEO ya Framer AI) se keywords aur content optimization bhi kar sakte hain."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Keyword Research",
+          "Google Keyword Planner ya Ubersuggest se \"best no-code tools\" jaise keywords dhundhein.\n2."
+        ],
+        [
+          "Meta Tags",
+          "Framer/Webflow mein page settings mein \"SEO Title\" aur \"Description\" add karein (e.g., \"Top 5 No-Code Website Builders - 2024 Guide\").\n3."
+        ],
+        [
+          "Sitemap",
+          "Wix/Framer mein auto-generated sitemap enable karein taake Google crawl kar sake."
+        ],
+        [
+          "Practice",
+          "Apni no-code website (ya ek dummy page) ke liye:\n- 1 relevant keyword choose karein.\n- Meta title aur description likhein (50-60 characters title, 150-160 characters description).\n- Sitemap check karein (agar tool support karta ho)."
+        ],
+        [
+          "Mini Project",
+          "Ek no-code website (Framer/Webflow/Wix) banayein aur uske 3 pages (Home, About, Contact) ke liye SEO optimize karein. Google Search Console mein submit karein."
+        ]
+      ],
+      "answer_key": "keyword research, meta tags, sitemap, google search console",
+      "translations": {
+        "ur": {
+          "title": "دن 19 — نو کوڈ ایس ای او: اپنی ویب سائٹ/ایپ کو گوگل پر رینک کرائیں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "نو کوڈ ویب سائٹس اور ایپس کو بھی ایس ای او (سرچ انجن آپٹیمائزیشن) کی ضرورت ہوتی ہے تاکہ گوگل پر نظر آ سکیں۔ بنیادی باتیں جیسے کہ ورڈز، میٹا ٹیگز، سائٹ میپ، اور سپیڈ آپٹیمائزیشن نو کوڈ ٹولز (فریمر/ویب فلو/وکس) پر بھی لاگو ہوتی ہیں۔ اے آئی ٹولز (جیسے سرفر ایس ای او یا فریمر اے آئی) سے کی ورڈز اور مواد کی آپٹیمائزیشن بھی کی جا سکتی ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1۔ کی ورڈ ریسرچ: گوگل کی ورڈ پلانر یا ابر سجسٹ سے \"بہترین نو کوڈ ٹولز\" جیسے کی ورڈز تلاش کریں۔\n2۔ میٹا ٹیگز: فریمر/ویب فلو میں پیج سیٹنگز میں \"ایس ای او ٹائٹل\" اور \"ڈسکرپشن\" شامل کریں (مثال کے طور پر، \"ٹاپ 5 نو کوڈ ویب سائٹ بلڈرز - 2024 گائیڈ\")۔\n3۔ سائٹ میپ: وکس/فریمر میں خودکار طور پر بننے والا سائٹ میپ فعال کریں تاکہ گوگل اسے کرال کر سکے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنی نو کوڈ ویب سائٹ (یا ایک ڈمی پیج) کے لیے:\n- ایک متعلقہ کی ورڈ منتخب کریں۔\n- میٹا ٹائٹل اور ڈسکرپشن لکھیں (ٹائٹل کے لیے 50-60 حروف، ڈسکرپشن کے لیے 150-160 حروف)۔\n- سائٹ میپ چیک کریں (اگر ٹول سپورٹ کرتا ہو)۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک نو کوڈ ویب سائٹ (فریمر/ویب فلو/وکس) بنائیں اور اس کے تین پیجز (ہوم، اباؤٹ، کنٹیکٹ) کے لیے ایس ای او آپٹیمائز کریں۔ گوگل سرچ کنسول میں جمع کرائیں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "digital-marketing-seo": [
