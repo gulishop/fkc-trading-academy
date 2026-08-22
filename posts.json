@@ -3121,6 +3121,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 18,
+      "id": "day-018",
+      "date": "2026-08-22",
+      "title": "Day 18 — **AI-Powered Chatbots: Customer Service Ko Automate Karke Engagement Badhao**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "AI chatbots aajkal social media par customers ke queries ko instantly handle karte hain, engagement badhate hain aur time bachate hain. Unhe setup karne se pehle apne brand voice ko define karna zaroori hai. Chatbots se FAQs, order tracking aur basic support provide karke team ko complex issues par focus karne ka mauka milta hai."
+        ],
+        [
+          "Example",
+          "Ek local restaurant ka Instagram page chatbot setup karna:\n1. **Tool choose karo** (jaise ManyChat ya Chatfuel).\n2. **Flow design karo** (e.g., \"Menu dekhna hai\" → \"Chicken Biryani / Paneer Tikka\" → Order placement).\n3. **AI responses add karo** (e.g., \"Sorry, hamara kitchen 30 min mein band hoga\").\n4. **Testing karo** (fake Instagram account se message bhej kar check karo)."
+        ],
+        [
+          "Practice",
+          "Apne business ya niche ke liye ek simple chatbot flow design karo (3-4 steps). Jaise:\n- Welcome message\n- Service choose karne ka option\n- Contact details provide karna"
+        ],
+        [
+          "Mini Project",
+          "Ek **ManyChat/Chatfuel account create karo** aur ek **3-step chatbot flow** setup karo (jaise \"Hi! Main XYZ ka assistant hoon. Aapko kya chahiye?\" → \"1. Menu 2. Delivery 3. Contact\"). Screenshot ya GIF le kar share karo."
+        ]
+      ],
+      "answer_key": "manychat setup, 3-step flow, customer service automation, engagement increase",
+      "translations": {
+        "ur": {
+          "title": "دن ١٨ — **اے آئی پاورڈ چیٹ بوٹس: کسٹمر سروس کو آٹومیٹ کرکے انگیجمنٹ بڑھاؤ**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "اے آئی چیٹ بوٹس آج کل سوشل میڈیا پر کسٹمرز کے سوالات کو فوری طور پر حل کرتے ہیں، انگیجمنٹ بڑھاتے ہیں اور وقت بچاتے ہیں۔ انہیں سیٹ اپ کرنے سے پہلے اپنے برانڈ کی آواز کو واضح کرنا ضروری ہے۔ چیٹ بوٹس کے ذریعے اکثر پوچھے جانے والے سوالات (ایف اے کیوز)، آرڈر ٹریکنگ اور بنیادی سپورٹ فراہم کرکے ٹیم کو پیچیدہ مسائل پر توجہ دینے کا موقع ملتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک مقامی ریستوران کا انسٹاگرام پیج چیٹ بوٹ سیٹ اپ کرنا:\n١۔ **ٹول منتخب کرو** (جیسے مینی چیٹ یا چیٹ فیول)۔\n٢۔ **فلو ڈیزائن کرو** (مثال کے طور پر، \"مینو دیکھنا ہے\" → \"چکن بریانی / پنیر تکہ\" → آرڈر پلیسمنٹ)۔\n٣۔ **اے آئی جوابات شامل کرو** (مثال کے طور پر، \"معاف کیجئے گا، ہماری کچن تیس منٹ میں بند ہو جائے گی\")۔\n٤۔ **ٹیسٹنگ کرو** (جھوٹے انسٹاگرام اکاؤنٹ سے پیغام بھیج کر چیک کرو)।"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے بزنس یا نیچ کے لیے ایک سادہ چیٹ بوٹ فلو ڈیزائن کرو (تین سے چار مراحل)۔ جیسے:\n- خوش آمدید پیغام\n- سروس منتخب کرنے کا آپشن\n- رابطے کی تفصیلات فراہم کرنا"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **منی چیٹ/چیٹ فیول اکاؤنٹ بناؤ** اور ایک **تین مراحل پر مشتمل چیٹ بوٹ فلو** سیٹ اپ کرو (جیسے \"ہائے! میں ایکس وائے زیڈ کا اسسٹنٹ ہوں۔ آپ کو کیا چاہیے؟\" → \"١۔ مینو ٢۔ ڈیلیوری ٣۔ رابطہ\")۔ اسکرین شاٹ یا جی آئی ایف لے کر شیئر کرو۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "facebook-page-growth": [
