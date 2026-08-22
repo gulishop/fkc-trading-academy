@@ -18079,6 +18079,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 13,
+      "id": "day-013",
+      "date": "2026-08-22",
+      "title": "Day 13 — **Blog Ke Liye Evergreen Content Kaise Banayein (Jo Hamesha Traffic Laye)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Evergreen content wo articles hote hain jo kabhi outdated nahi hote—jaise \"How to lose weight\" ya \"Best budget smartphones 2024\". Inki demand hamesha rehti hai, isliye yeh long-term traffic ka sabse powerful source hote hain. Aaj seekhein ke kaise aise topics choose karein, research karein, aur unhe SEO-friendly banayein taake wo months/years tak rank karein."
+        ],
+        [
+          "Example",
+          "Ek blogger ne \"Best budget smartphones under 20,000\" likha. Usne:\n1. Google Trends se check kiya ke yeh topic kabhi trend nahi hota.\n2. Amazon aur Flipkart se latest models ki list banayi.\n3. Har phone ke pros/cons likhe + affiliate links add kiye.\n4. 6 months baad bhi yeh article #1 position par rank kar raha hai."
+        ],
+        [
+          "Practice",
+          "Apne niche se ek evergreen topic choose karein (jaise \"best running shoes for beginners\") aur uske liye 5 relevant keywords find karein (Google Keyword Planner ya Ubersuggest use karein)."
+        ],
+        [
+          "Mini Project",
+          "Ek 500-800 words ka evergreen article draft karein jisme:\n- Introduction (problem + solution)\n- Top 5-7 items ki list (with pros/cons)\n- Conclusion (call-to-action)"
+        ]
+      ],
+      "answer_key": "evergreen topics, high-demand keywords, long-term traffic, affiliate potential",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۳ — **بلاگ کے لیے ایورگرین مواد کیسے بنائیں (جو ہمیشہ ٹریفک لائے)**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ایورگرین مواد وہ مضامین ہوتے ہیں جو کبھی پرانے نہیں ہوتے—جیسے کہ ’وزن کیسے کم کریں‘ یا ’بہترین بجٹ اسمارٹ فونز ۲۰۲۴‘۔ ان کی مانگ ہمیشہ رہتی ہے، اس لیے یہ طویل مدتی ٹریفک کا سب سے طاقتور ذریعہ ہوتے ہیں۔ آج سیکھیں کہ کیسے ایسے موضوعات کا انتخاب کریں، تحقیق کریں، اور انہیں ایس ای او دوستانہ بنائیں تاکہ وہ مہینوں یا سالوں تک رینک کرتے رہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک بلاگر نے ’بجٹ میں بہترین اسمارٹ فونز ۲۰ ہزار کے اندر‘ لکھا۔ اس نے:\n۱۔ گوگل ٹرینڈز سے چیک کیا کہ یہ موضوع کبھی ٹرینڈ نہیں ہوتا۔\n۲۔ ایمیزون اور فلپ کارٹ سے تازہ ترین ماڈلز کی فہرست بنائی۔\n۳۔ ہر فون کے فوائد اور نقصانات لکھے اور ایفلی ایٹ لنکس شامل کیے۔\n۴۔ چھ ماہ بعد بھی یہ مضمون نمبر ایک پوزیشن پر رینک کر رہا ہے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے شعبے سے ایک ایورگرین موضوع منتخب کریں (جیسے کہ ’بہترین دوڑنے والے جوتے برائے نئے افراد‘) اور اس کے لیے پانچ متعلقہ کی ورڈز تلاش کریں (گوگل کی ورڈ پلانر یا اُبرسجسٹ استعمال کریں)।"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک ۵۰۰ سے ۸۰۰ الفاظ کا ایورگرین مضمون کا مسودہ تیار کریں جس میں شامل ہو:\n- تعارف (مسئلہ اور حل)\n- پانچ سے سات اشیاء کی فہرست (فوائد اور نقصانات کے ساتھ)\n- اختتام (عمل کی دعوت)"
+            }
+          ]
+        }
+      }
     }
   ],
   "photography-editing": [
