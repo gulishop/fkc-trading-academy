@@ -6845,6 +6845,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 10,
+      "id": "day-010",
+      "date": "2026-08-22",
+      "title": "Day 10 — **AI-Powered Personalization: Har Customer Ko Unique Feel Karwayein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "AI se apni copy ko personalize karna seekhiye taake har customer ko lagay ke yeh sirf uske liye likha gaya hai. AI tools (jaise Hyper-Personalization engines ya dynamic content generators) ki madad se aap apni writing ko audience ke interests, behavior aur past interactions ke hisaab se customize kar sakte hain. Isse engagement badhta hai aur conversions bhi."
+        ],
+        [
+          "Example",
+          "Ek e-commerce brand ke liye product description likhte waqt, AI tool customer ke browsing history ya purchase pattern ke hisaab se dynamic content generate karega. Jaise:\n*\"Aapne last month mein running shoes dekhi hain—yeh new arrival shoes aapke style ke perfect match hain!\"*"
+        ],
+        [
+          "Practice",
+          "Apne ya kisi doosre brand ke liye ek 3-line AI-generated copy likhein jo ek specific audience segment (jaise \"new moms\" ya \"tech enthusiasts\") ko target kare. AI tool (jaise Copy.ai ya Jasper) ka use karke dekhein."
+        ],
+        [
+          "Mini Project",
+          "Ek **AI-powered email sequence** design karen jo customer ke past purchases ya website activity ke hisaab se personalize ho. 3 emails ka outline banaen (subject lines + first line of each email)."
+        ]
+      ],
+      "answer_key": "personalized hooks, dynamic segments, higher engagement, conversion boost",
+      "translations": {
+        "ur": {
+          "title": "دن 10 — **اے آئی سے چلنے والی ذاتی سازی: ہر گاہک کو منفرد محسوس کرائیں**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "اے آئی کی مدد سے اپنی کاپی کو ذاتی بنانا سیکھیں تاکہ ہر گاہک کو یہ محسوس ہو کہ یہ خاص طور پر اسی کے لیے لکھا گیا ہے۔ اے آئی ٹولز (جیسے ہائپر پرسنلائزیشن انجنز یا ڈائنامک مواد جنریٹرز) کی مدد سے آپ اپنی تحریر کو سامعین کی دلچسپیوں، رویے اور ماضی کی تعاملات کے مطابق اپنی مرضی کے مطابق بنا سکتے ہیں۔ اس سے مشغولیت بڑھتی ہے اور کنورژن بھی۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ای کامرس برانڈ کے لیے پروڈکٹ کی تفصیل لکھتے وقت، اے آئی ٹول گاہک کی براؤزنگ ہسٹری یا خریداری کے طرز عمل کے مطابق ڈائنامک مواد تیار کرے گا۔ جیسے:\n\"آپ نے پچھلے مہینے رننگ شوز دیکھی ہیں—یہ نئی آنے والی شوز آپ کے انداز کے لیے بہترین میچ ہیں!\""
+            },
+            {
+              "label": "مشق",
+              "content": "اپنے یا کسی دوسرے برانڈ کے لیے تین سطری اے آئی سے تیار کردہ کاپی لکھیں جو کسی مخصوص سامعین کے حصے (جیسے \"نئی مائیں\" یا \"ٹیکنالوجی کے شوقین\") کو نشانہ بنائے۔ اے آئی ٹول (جیسے Copy.ai یا Jasper) کا استعمال کرکے دیکھیں۔"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "ایک **اے آئی سے چلنے والا ای میل سیquence** ڈیزائن کریں جو گاہک کی ماضی کی خریداریوں یا ویب سائٹ کی سرگرمی کے مطابق ذاتی بنایا گیا ہو۔ تین ای میلز کا خاکہ بنائیں (موضوعی خطوط + ہر ای میل کی پہلی سطر)।"
+            }
+          ]
+        }
+      }
     }
   ],
   "ai-tools": [
