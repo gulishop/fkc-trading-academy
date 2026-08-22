@@ -14963,6 +14963,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 16,
+      "id": "day-016",
+      "date": "2026-08-22",
+      "title": "Day 16 — **JavaScript Events: User Interactions Ko Handle Karna**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "JavaScript events wo actions hain jo user website par perform karta hai (jaise click, hover, typing). Aaj hum seekhenge ki kaise `addEventListener()` use karke yeh events capture karein aur unke hisab se code run karain. Events web pages ko dynamic banati hain—jaise buttons click karne par content change karna ya forms submit karne par validation check karna."
+        ],
+        [
+          "Example",
+          "Ek simple button banain jo click hone par ek alert show kare:\n```html\n<button id=\"alertBtn\">Click Me!</button>\n```\n```javascript\nconst button = document.getElementById(\"alertBtn\");\nbutton.addEventListener(\"click\", function() {\n  alert(\"Button clicked!\");\n});\n```"
+        ],
+        [
+          "Practice",
+          "Ek form banain jisme 2 fields hon (name aur email). Form submit hone par console.log mein \"Form submitted!\" print ho. (Hint: `submit` event use karo)"
+        ],
+        [
+          "Mini Project",
+          "**\"Click Counter\"**\n- Ek button aur ek `<p>` element banain.\n- Button click karne par `<p>` mein counter increase ho (e.g., \"Clicks: 1\", \"Clicks: 2\", etc.).\n- Reset button bhi add karain jo counter ko 0 par le aaye."
+        ]
+      ],
+      "answer_key": "button.addeventlistener, click, counter++, reset",
+      "translations": {
+        "ur": {
+          "title": "دن 16 — **جاوا اسکرپٹ ایونٹس: صارف کی تعاملات کو ہینڈل کرنا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "جاوا اسکرپٹ ایونٹس وہ ایکشنز ہوتے ہیں جو صارف ویب سائٹ پر انجام دیتا ہے (جیسے کلک، ہوور، ٹائپنگ وغیرہ)۔ آج ہم سیکھیں گے کہ کیسے `addEventListener()` استعمال کرکے ان ایونٹس کو کیپچر کیا جائے اور ان کے مطابق کوڈ چلایا جائے۔ ایونٹس ویب پیجز کو متحرک بناتے ہیں—جیسے بٹنز کلک کرنے پر مواد تبدیل کرنا یا فارمز جمع کروانے پر ویلیڈیشن چیک کرنا۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک سادہ بٹن بنائیں جو کلک ہونے پر الرٹ دکھائے:\n```html\n<button id=\"alertBtn\">مجھے کلک کریں!</button>\n```\n```javascript\nconst button = document.getElementById(\"alertBtn\");\nbutton.addEventListener(\"click\", function() {\n  alert(\"بٹن کلک ہوا!\");\n});\n```"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "ایک فارم بنائیں جس میں دو فیلڈز ہوں (نام اور ای میل)۔ فارم جمع کروانے پر `console.log` میں \"فارم جمع ہوا!\" پرنٹ ہو۔ (اشارہ: `submit` ایونٹ استعمال کریں)"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "**\"کلک کاؤنٹر\"**\n- ایک بٹن اور ایک `<p>` ایلیمنٹ بنائیں۔\n- بٹن کلک کرنے پر `<p>` میں کاؤنٹر بڑھے (مثلاً، \"کلکس: 1\"، \"کلکس: 2\" وغیرہ)۔\n- ری سیٹ بٹن بھی شامل کریں جو کاؤنٹر کو 0 پر لے آئے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "excel-data-analysis": [
