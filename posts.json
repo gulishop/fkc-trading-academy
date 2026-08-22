@@ -21899,6 +21899,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 17,
+      "id": "day-017",
+      "date": "2026-08-22",
+      "title": "Day 17 — \"Aankhein band karke aawaz pehchanno!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachon, aaj hum seekhein ge ke kaise aankhein band karke bhi aawaz pehchanni hai! Yeh game humein aur bhi tez aur dhyaan se sunein ka tareeqa sikhata hai. Kabhi-kabhi aise bhi hota hai ke humein kisi cheez ko pehchanna hota hai bina usko dekhay, jaise ke koi dost door se bulata hai ya phir koi instrument bajta hai. Aise waqt humari aawaz pehchanna bohat zaroori hota hai!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Ek din, Ayaan ne aankhein band ki aur kaha, \"Abbu, main sun raha hoon!\" Abbu ne ek ghanti bajayi aur Ayaan ne turant kaha, \"Ye toh ghanti hai!\" Abbu ne muskura kar kaha, \"Bilkul sahi! Aankhein band karke bhi hum aawaz pehchanna seekh sakte hain.\""
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar tum kisi aise aawaz ko sun rahe ho jo tumhein ajeeb lage, toh kya karoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Hamesha yaad rakhna, tumhari aawaz pehchanna aur tumhara imaan tumhare liye sabse pehle hai!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۷ — آنکھیں بند کرکے آواز پہچانو!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "بچو، آج ہم سیکھیں گے کہ کیسے آنکھیں بند کرکے بھی آواز پہچاننی ہے! یہ گیم ہمیں اور بھی تیز اور دھیان سے سننے کا طریقہ سکھاتا ہے۔ کبھی کبھی ایسا بھی ہوتا ہے کہ ہمیں کسی چیز کو پہچاننا ہوتا ہے بغیر اسے دیکھے، جیسے کہ کوئی دوست دور سے بلاتا ہے یا پھر کوئی آلہ بجاتا ہے۔ ایسے وقت ہماری آواز پہچاننا بہت ضروری ہوتا ہے!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "ایک دن ایان نے آنکھیں بند کیں اور کہا، ’اب्बو، میں سن رہا ہوں!‘ ابّو نے ایک گھنٹی بجائی اور ایان نے فوراً کہا، ’یہ تو گھنٹی ہے!‘ ابّو نے مسکرا کر کہا، ’بالکل صحیح! آنکھیں بند کرکے بھی ہم آواز پہچاننا سیکھ سکتے ہیں۔‘"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "’بیٹا، اگر تم کسی ایسی آواز کو سن رہے ہو جو تمہیں عجیب لگے تو کیا کرو گے؟‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "ہمیشہ یاد رکھنا، تمہاری آواز پہچاننا اور تمہارا ایمان تمہارے لیے سب سے پہلے ہے!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-good-behavior": [
