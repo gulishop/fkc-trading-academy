@@ -20491,6 +20491,76 @@
           ]
         }
       }
+    },
+    {
+      "day": 15,
+      "id": "day-015",
+      "date": "2026-08-22",
+      "title": "Day 15 — **Property Dealings Mein \"Title Verification\" Kaise Karein (Complete Guide)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Property dealings mein \"Title Verification\" sabse zaroori step hai. Yeh confirm karta hai ke property kisi ke naam hai ya nahi, kya koi mortgage/lien hai, aur kya seller real owner hai. Bina title verify kiye deal karne se fraud ya legal disputes ka risk rehta hai. Pakistan mein title verification land records (FARD), mutation, aur property cards se ki jaati hai."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "FARD Check",
+          "Punjab mein [Punjab Land Records Authority](https://plra.punjab.gov.pk/) se property ka FARD (land record) nikalo.\n2."
+        ],
+        [
+          "Mutation Verify",
+          "Check karo ke seller ke naam mutation (record of ownership transfer) hui hai ya nahi.\n3."
+        ],
+        [
+          "Encumbrance Certificate",
+          "12-20 saal ke record se pata karo ke property par koi loan/lien toh nahi hai."
+        ],
+        [
+          "Practice",
+          "Apne local tehsil office ya [Land Record Authority website](https://plra.punjab.gov.pk/) se kisi property ka FARD aur mutation report nikal kar dekhhein."
+        ],
+        [
+          "Mini Project",
+          "Kisi 2-3 properties ke FARD aur mutation reports collect karin, unke owner, area, aur koi pending dues check karin. Compare karin ke konsi property legally safest hai."
+        ]
+      ],
+      "answer_key": "fard, mutation, encumbrance, lien",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۵ — پراپرٹی لین دین میں \"ٹائٹل ویریفیکیشن\" کیسے کریں (کمپلیٹ گائیڈ)",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "پراپرٹی لین دین میں \"ٹائٹل ویریفیکیشن\" سب سے ضروری قدم ہے۔ یہ تصدیق کرتا ہے کہ پراپرٹی کس کے نام ہے یا نہیں، کیا کوئی مارگیج/لین ہے، اور کیا سیلر اصلی مالک ہے۔ بغیر ٹائٹل ویریفائی کیے ڈیل کرنے سے فراڈ یا قانونی تنازعات کا خطرہ رہتا ہے۔ پاکستان میں ٹائٹل ویریفیکیشن لینڈ ریکارڈز (فرد)، میوٹیشن، اور پراپرٹی کارڈز سے کی جاتی ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ فرد چیک: پنجاب میں پنجاب لینڈ ریکارڈز اتھارٹی کی ویب سائٹ سے پراپرٹی کا فرد (لینڈ ریکارڈ) نکالیں۔"
+            },
+            {
+              "label": "",
+              "content": "۲۔ میوٹیشن ویریفائی: چیک کریں کہ سیلر کے نام میوٹیشن (ملکیت کی منتقلی کا ریکارڈ) ہوئی ہے یا نہیں۔"
+            },
+            {
+              "label": "",
+              "content": "۳۔ انکمبرنس سرٹیفیکیٹ: ۱۲ سے ۲۰ سال کے ریکارڈ سے پتا کریں کہ پراپرٹی پر کوئی قرض یا لین تو نہیں ہے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے مقامی تحصیل آفس یا لینڈ ریکارڈ اتھارٹی کی ویب سائٹ سے کسی پراپرٹی کا فرد اور میوٹیشن رپورٹ نکال کر دیکھیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "کسی دو سے تین پراپرٹیز کے فرد اور میوٹیشن رپورٹس جمع کریں، ان کے مالک، رقبہ، اور کوئی زیر التواء واجبات چیک کریں۔ موازنہ کریں کہ کون سی پراپرٹی قانونی طور پر محفوظ ترین ہے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "mobile-repairing": [
