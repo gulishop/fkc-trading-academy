@@ -24957,6 +24957,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 15,
+      "id": "day-015",
+      "date": "2026-08-22",
+      "title": "Day 15 — \"Mera Pehla Jumla: 'Mein khush hoon!'\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhein ge ke kaise chhote, simple jumlay banayein! Yeh jumlay hamari feelings batayein ge. Yaad rakhna, tumhara jism tumhara hai—kisi ko tum par haath uthaane ka haq nahi. Agar koi tumhe pareshan kare, toh foran ammi/abbu ko batana!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Aman ne football khela. Usne goal maara! Uske chehre par khushi thi. Usne kaha, *\"Mein khush hoon!\"* Uske dost ne usko gale lagaya. Sab khush the!"
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "Aaj tumne kya kaha jo tumhe khush kiya? Yaad hai?"
+        ],
+        [
+          "Yaad Rakhein",
+          "Tumhara jism tumhara hai—kisi ko tumhe takleef dene ka haq nahi! Agar koi ajeeb baat kare, toh chup mat rehna."
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ١٥ — میرا پہلا جملہ: میں خوش ہوں!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج ہم سیکھیں گے کہ کیسے چھوٹے، سادہ جملے بنائیں! یہ جملے ہماری احساسات بتائیں گے۔ یاد رکھنا، تمہارا جسم تمہارا ہے—کسی کو تم پر ہاتھ اٹھانے کا حق نہیں۔ اگر کوئی تمہیں پریشان کرے، تو فوراً امی/ابو کو بتانا!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "امان نے فٹ بال کھیلا۔ اس نے گول مارا! اس کے چہرے پر خوشی تھی۔ اس نے کہا، *میں خوش ہوں!* اس کے دوست نے اسے گلے لگایا۔ سب خوش تھے!"
+            },
+            {
+              "label": "امی ابو کے ساتھ بات کریں",
+              "content": "آج تم نے کیا کہا جو تمہیں خوش کیا؟ یاد ہے؟"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمہارا جسم تمہارا ہے—کسی کو تمہیں تکلیف دینے کا حق نہیں! اگر کوئی عجیب بات کرے، تو چپ مت رہنا۔"
+            }
+          ]
+        }
+      }
     }
   ]
 }
