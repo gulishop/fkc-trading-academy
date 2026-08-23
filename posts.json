@@ -19795,6 +19795,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 17,
+      "id": "day-017",
+      "date": "2026-08-23",
+      "title": "Day 17 — **Snapseed aur VSCO se Pro-Level Editing: Advanced Tools ka Istemal**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Snapseed aur VSCO ke advanced tools (jaise Selective, Healing, Curves, Grain) ka istemal karke photos ko professional level par edit karna sikhaya jayega. In apps se color grading, details enhance karna aur unwanted elements remove karna seekhoge."
+        ],
+        [
+          "Example",
+          "Ek portrait photo mein background se ek unwanted object remove karna hai:\n1. Snapseed → *Tools* → *Healing* → Unwanted area par tap karke drag karo.\n2. VSCO → *Edit* → *Selective* → Shadows/Hightlights adjust karke details badhao."
+        ],
+        [
+          "Practice",
+          "Apni kisi photo ko Snapseed ya VSCO mein khol kar *Healing* ya *Selective* tool use karke koi 1 unwanted element remove karo."
+        ],
+        [
+          "Mini Project",
+          "Ek photo ko Snapseed aur VSCO donon apps se edit karke compare karo—kaun sa app aapki photo ke liye better hai?"
+        ]
+      ],
+      "answer_key": "healing tool, selective adjustments, unwanted object remove, comparison",
+      "translations": {
+        "ur": {
+          "title": "دن ١٧ — **سنپ سیڈ اور وی ایس سی او سے پرو لیول ایڈیٹنگ: ایڈوانسڈ ٹولز کا استعمال**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "سنپ سیڈ اور وی ایس سی او کے ایڈوانسڈ ٹولز (جیسے سلیکٹیو، ہیلینگ، کروز، گین) کا استعمال کرتے ہوئے تصاویر کو پیشہ ورانہ سطح پر ایڈٹ کرنا سکھایا جائے گا۔ ان ایپس کے ذریعے کلر گریڈنگ، تفصیلات کو بہتر بنانا اور غیر مطلوب عناصر کو ہٹانا سیکھیں گے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک پورٹریٹ فوٹو میں پس منظر سے کوئی غیر مطلوب شے ہٹانی ہے:\n١۔ سنپ سیڈ → *ٹولز* → *ہیلینگ* → غیر مطلوب حصے پر ٹیپ کرکے ڈریگ کریں۔\n٢۔ وی ایس سی او → *ایڈٹ* → *سلیکٹیو* → شیڈوز/ہائی لائٹس ایڈجسٹ کرکے تفصیلات بڑھائیں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنی کسی تصویر کو سنپ سیڈ یا وی ایس سی او میں کھول کر *ہیلینگ* یا *سلیکٹیو* ٹول کا استعمال کرتے ہوئے کوئی ایک غیر مطلوب عنصر ہٹائیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک تصویر کو سنپ سیڈ اور وی ایس سی او دونوں ایپس سے ایڈٹ کرکے موازنہ کریں—کون سی ایپ آپ کی تصویر کے لیے بہتر ہے؟"
+            }
+          ]
+        }
+      }
     }
   ],
   "voiceover-podcasting": [
