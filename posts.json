@@ -10987,6 +10987,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 20,
+      "id": "day-020",
+      "date": "2026-08-23",
+      "title": "Day 20 — **No-Code ki Real-World Limitations: Kab \"No-Code\" Nahi Karna Chahiye?**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Har no-code tool ki apni limits hoti hain. Agar aapka project complex hai (jaise custom AI models, real-time multiplayer games, ya ultra-high-performance apps), toh no-code tools kaam nahi aayenge. Yahan hum samjhenge ki kab no-code se kaam chalega aur kab professional coding ya custom solutions ki zaroorat hai."
+        ],
+        [
+          "Example",
+          "Imagine a **real-time stock trading app** where users buy/sell shares instantly. No-code tools (jaise Glide ya Bubble) iske liye kaam nahi karenge kyunki:\n1."
+        ],
+        [
+          "Speed",
+          "No-code backend real-time data processing ke liye optimized nahi hota.\n2."
+        ],
+        [
+          "Security",
+          "Trading apps ko bank-level security chahiye, jo no-code platforms provide nahi karte.\n3."
+        ],
+        [
+          "Custom Logic",
+          "Har user ke transaction ko validate karne ke liye complex rules chahiye, jo no-code tools mein limited hain."
+        ],
+        [
+          "Practice",
+          "Apne project ya idea ko lekar socho: **Kya iske liye no-code tool ka use karna safe aur efficient hai?** 3 reasons likho kyun no-code iske liye suitable hai ya nahi."
+        ],
+        [
+          "Mini Project",
+          "**\"No-Code vs. Code\" Comparison Chart** banao:\n- Ek side mein no-code tools ke 3 limitations likho.\n- Doosri side mein unke alternatives (jaise custom code, third-party APIs, ya hybrid solutions).\n- Use Canva ya Google Sheets mein design karo."
+        ]
+      ],
+      "answer_key": "complex logic, real-time processing, custom security, scalability issues",
+      "translations": {
+        "ur": {
+          "title": "دن 20 — نو کوڈ کی حقیقی دنیا کی حدود: کب \"نو کوڈ\" نہیں کرنا چاہیے؟",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "ہر نو کوڈ ٹول کی اپنی حدود ہوتی ہیں۔ اگر آپ کا پروجیکٹ پیچیدہ ہے (جیسے کسٹم اے آئی ماڈلز، ریئل ٹائم ملٹی پلیئر گیمز، یا الٹرا ہائی پرفارمنس ایپس)، تو نو کوڈ ٹولز کام نہیں آئیں گے۔ یہاں ہم سمجھیں گے کہ کب نو کوڈ سے کام چلے گا اور کب پیشہ ورانہ کوڈنگ یا کسٹم حل کی ضرورت ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "تصور کریں ایک **ریئل ٹائم اسٹاک ٹریڈنگ ایپ** کا جہاں صارفین فوری طور پر شیئرز خریدتے اور بیچتے ہیں۔ نو کوڈ ٹولز (جیسے گِلائیڈ یا ببل) اس کے لیے کام نہیں کریں گے کیونکہ:\n\n١۔ رفتار: نو کوڈ بیک اینڈ ریئل ٹائم ڈیٹا پروسیسنگ کے لیے بہتر نہیں ہوتا۔\n٢۔ سیکیورٹی: ٹریڈنگ ایپس کو بینک لیول سیکیورٹی چاہیے، جو نو کوڈ پلیٹ فارمز فراہم نہیں کرتے۔\n٣۔ کسٹم منطق: ہر صارف کے لین دین کی توثیق کے لیے پیچیدہ قواعد درکار ہوتے ہیں، جو نو کوڈ ٹولز میں محدود ہوتے ہیں۔"
+            },
+            {
+              "label": "عملی مشق",
+              "content": "اپنے پروجیکٹ یا آئیڈیا کو لے کر سوچیں: **کیا اس کے لیے نو کوڈ ٹول کا استعمال محفوظ اور موثر ہے؟** تین وجوہات لکھیں کہ نو کوڈ اس کے لیے موزوں ہے یا نہیں۔"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "**\"نو کوڈ بمقابلہ کوڈ\" تقابلی چارٹ** بنائیں:\n\nایک طرف نو کوڈ ٹولز کی تین حدود لکھیں۔\nدوسری طرف ان کے متبادل (جیسے کسٹم کوڈ، تھرڈ پارٹی اے پی آئیز، یا ہائبرڈ حل) لکھیں۔\nاسے کینوا یا گوگل شیٹس میں ڈیزائن کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "digital-marketing-seo": [
