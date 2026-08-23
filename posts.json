@@ -5081,6 +5081,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 23,
+      "id": "day-023",
+      "date": "2026-08-23",
+      "title": "Day 23 — **Live Trading Se Pehle: Real Account Setup Ka Complete Guide**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Ab tak aap demo account par practice kar chuken hain. Ab real account open karne ka time hai, lekin ismein bhi planning zaroori hai. Real account setup karne se pehle apne broker ki policies (spread, leverage, withdrawal), KYC requirements, aur account verification process ko samajh lo. Exness ya kisi bhi broker par real account open karne ke baad, pehle chhote lot size se trading shuru karen (jaise 0.01 lot) taake risk manage rahe."
+        ],
+        [
+          "Example",
+          "Exness par real account open karne ke steps:\n1. Website par \"Open Real Account\" par click karen.\n2. Apna personal info (name, email, phone) fill karen.\n3. KYC ke liye ID proof (CNIC/Passport) aur address proof upload karen.\n4. Account type choose karen (Standard, Pro, Raw Spread).\n5. MetaTrader 4/5 download karen aur login credentials se connect karen.\n6. Pehle trade mein 0.01 lot EUR/USD pair par 10 pips stop-loss lagayein."
+        ],
+        [
+          "Practice",
+          "Apne selected broker ki website par jayein aur real account open karne ke steps ko follow karen. KYC documents ready rakhein."
+        ],
+        [
+          "Mini Project",
+          "Apne real account ki settings (leverage, currency, notification alerts) ko optimize karen taake trading convenient ho."
+        ]
+      ],
+      "answer_key": "kyc documents, account type selection, 0.01 lot, stop-loss",
+      "translations": {
+        "ur": {
+          "title": "دن ۲۳ — لائیو ٹریڈنگ سے پہلے: ریئل اکاؤنٹ سیٹ اپ کا مکمل گائیڈ",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "اب تک آپ ڈیمو اکاؤنٹ پر پریکٹس کر چکے ہیں۔ اب ریئل اکاؤنٹ کھولنے کا وقت ہے، لیکن اس میں بھی پلاننگ ضروری ہے۔ ریئل اکاؤنٹ سیٹ اپ کرنے سے پہلے اپنے بروکر کی پالیسیز (اسپریڈ، لیوریج، وِدڈرآل)، کے وائی سی کی شرائط، اور اکاؤنٹ ویریفیکیشن کے عمل کو سمجھ لیں۔ ایکسنس یا کسی بھی بروکر پر ریئل اکاؤنٹ کھولنے کے بعد، پہلے چھوٹے لاٹ سائز سے ٹریڈنگ شروع کریں (جیسے ۰.۰۱ لاٹ) تاکہ رسک مینج رہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایکسنس پر ریئل اکاؤنٹ کھولنے کے مراحل:\n۱۔ ویب سائٹ پر \"اوپن ریئل اکاؤنٹ\" پر کلک کریں۔\n۲۔ اپنی ذاتی معلومات (نام، ای میل، فون) بھریں۔\n۳۔ کے وائی سی کے لیے آئی ڈی پروف (شناختی کارڈ/پاسپورٹ) اور پتے کا ثبوت اپ لوڈ کریں۔\n۴۔ اکاؤنٹ کی قسم منتخب کریں (اسٹینڈرڈ، پرو، را سپریڈ)۔\n۵۔ میٹا ٹریڈر ۴/۵ ڈاؤن لوڈ کریں اور لاگ ان کریڈینشلز سے کنیکٹ کریں۔\n۶۔ پہلے ٹریڈ میں ۰.۰۱ لاٹ یورو/امریکی ڈالر جوڑے پر ۱۰ پپس اسٹاپ لاس لگائیں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے منتخب کردہ بروکر کی ویب سائٹ پر جائیں اور ریئل اکاؤنٹ کھولنے کے مراحل پر عمل کریں۔ کے وائی سی دستاویزات تیار رکھیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "اپنے ریئل اکاؤنٹ کی سیٹنگز (لیوریج، کرنسی، نوٹیفیکیشن الرٹس) کو بہتر بنائیں تاکہ ٹریڈنگ آسان ہو۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "amazon-fba": [
