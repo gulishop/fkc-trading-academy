@@ -21745,6 +21745,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 21,
+      "id": "day-021",
+      "date": "2026-08-23",
+      "title": "Day 21 — **Mobile Charging Port Repair: Loose ya Broken Port ka Fix**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Mobile charging port repair ek common aur zaruri skill hai jo har repair shop ke liye essential hai. Agar port loose ho ya broken ho to charging aur data transfer mein dikkat hoti hai. Isme port ko replace karna ya solder karna sikhaya jata hai."
+        ],
+        [
+          "Example",
+          "1. Port loose ho to PCB se solder ko reflow karo ya port ko naya replace karo.\n2. Broken port ko nikalne ke liye hot air gun se solder melt karo, phir naya port lagao."
+        ],
+        [
+          "Practice",
+          "Apne old/broken mobile ka charging port check karo. Agar loose hai to soldering iron se reflow karo, warna port replace karne ka practice karo."
+        ],
+        [
+          "Mini Project",
+          "Ek broken charging port wale mobile ko repair karke charging aur data transfer test karo."
+        ]
+      ],
+      "answer_key": "port loose, solder reflow, replace, test charging",
+      "translations": {
+        "ur": {
+          "title": "دن ۲۱ — موبائل چارجنگ پورٹ ریپیئر: لوس یا بریک پورٹ کا فکس",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "موبائل چارجنگ پورٹ ریپیئر ایک عام اور ضروری ہنر ہے جو ہر ریپیئر شاپ کے لیے لازمی ہے۔ اگر پورٹ لوس ہو یا ٹوٹا ہوا ہو تو چارجنگ اور ڈیٹا ٹرانسفر میں دشواری ہوتی ہے۔ اس میں پورٹ کو ری پلیس کرنا یا سولڈر کرنا سکھایا جاتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ اگر پورٹ لوس ہو تو پی سی بی سے سولڈر کو ری فلو کرو یا پورٹ کو نیا ری پلیس کرو۔\n۲۔ ٹوٹے ہوئے پورٹ کو نکالنے کے لیے ہاٹ ایئر گن سے سولڈر میلٹ کرو، پھر نیا پورٹ لگاؤ۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے پرانے یا خراب موبائل کا چارجنگ پورٹ چیک کرو۔ اگر لوس ہے تو سولڈرنگ آئرن سے ری فلو کرو، ورنہ پورٹ ری پلیس کرنے کی پریکٹس کرو۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک ٹوٹے ہوئے چارجنگ پورٹ والے موبائل کو ریپیئر کرکے چارجنگ اور ڈیٹا ٹرانسفر ٹیسٹ کرو۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-safety-education": [
