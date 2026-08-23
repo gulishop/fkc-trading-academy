@@ -17263,6 +17263,64 @@
           ]
         }
       }
+    },
+    {
+      "day": 13,
+      "id": "day-013",
+      "date": "2026-08-23",
+      "title": "Day 13 — **Bullish aur Bearish Markets: Trends Samajhna Aur Trading Strategy Banana**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bullish market mein prices lambi muddat tak upar jaati hain (investors confident hote hain), jabki bearish market mein prices girti hain (investors pessimistic hote hain). In trends ko pehchanna trading decisions lene ke liye zaroori hai. Bullish trend mein \"buy\" karna faydemand hota hai, jabki bearish trend mein \"sell\" ya \"short sell\" karna better option ho sakta hai."
+        ],
+        [
+          "Example",
+          "Imagine PSX ka KSE-100 Index:\n-"
+        ],
+        [
+          "Bullish Trend",
+          "Agar 3 mahine mein index 40,000 se 48,000 tak chala gaya ho, toh yeh bullish hai. Aap is waqt companies jinki growth strong hai (e.g., FMCG ya IT sector) mein invest kar sakte hain.\n-"
+        ],
+        [
+          "Bearish Trend",
+          "Agar index 48,000 se girkar 42,000 tak aaya ho, toh yeh bearish hai. Aapko defensive stocks (e.g., utilities) ya cash hold karna chahiye."
+        ],
+        [
+          "Practice",
+          "Apne favorite PSX stock (e.g., MCB ya Engro) ka 6-month chart kholo. Dekho ki:\n1. Trend upar ja raha hai ya neeche?\n2. Agar bullish hai, toh \"buy\" ka signal hai. Agar bearish hai, toh \"sell\" ya \"wait\" ka signal hai."
+        ],
+        [
+          "Mini Project",
+          "Ek simple trading strategy banayein:\n- Agar stock ka 50-day moving average 200-day moving average se upar hai, toh \"buy\" signal.\n- Agar neeche hai, toh \"sell\" signal.\nApne selected stock par yeh check karein aur result note karein."
+        ]
+      ],
+      "answer_key": "bullish/bearish trend, moving averages, buy/sell signals",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۳ — **بولش اور بیئرش مارکیٹس: ٹرینڈز سمجھنا اور ٹریڈنگ اسٹریٹیجی بنانا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "بولش مارکیٹ میں قیمتیں لمبی مدت تک اوپر جاتی ہیں (انویسٹرز کا اعتماد بڑھتا ہے)، جبکہ بیئرش مارکیٹ میں قیمتیں گرتی ہیں (انویسٹرز مایوس ہوتے ہیں)۔ ان ٹرینڈز کو پہچاننا ٹریڈنگ کے فیصلے لینے کے لیے ضروری ہے۔ بولش ٹرینڈ میں \"بائی\" کرنا فائدہ مند ہوتا ہے، جبکہ بیئرش ٹرینڈ میں \"سیل\" یا \"شارٹ سیل\" کرنا بہتر آپشن ہو سکتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "پی ایس ایکس کے کے ایس ای-۱۰۰ انڈیکس کا تصور کریں:\n\nبولش ٹرینڈ: اگر تین ماہ میں انڈیکس ۴۰,۰۰۰ سے ۴۸,۰۰۰ تک چلا گیا ہو، تو یہ بولش ہے۔ آپ اس وقت کمپنیوں میں سرمایہ کاری کر سکتے ہیں جن کی گروتھ مضبوط ہے (مثلاً ایف ایم سی جی یا آئی ٹی سیکٹر)۔\n\nبیئرش ٹرینڈ: اگر انڈیکس ۴۸,۰۰۰ سے گر کر ۴۲,۰۰۰ تک آ گیا ہو، تو یہ بیئرش ہے۔ آپ کو دفاعی اسٹاکس (مثلاً یوٹیلیٹیز) یا کیش ہولڈ کرنا چاہیے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے پسندیدہ پی ایس ایکس اسٹاک (مثلاً ایم سی بی یا اینگرو) کا چھ ماہ کا چارٹ کھولیں۔ دیکھیں کہ:\n۱۔ ٹرینڈ اوپر جا رہا ہے یا نیچے؟\n۲۔ اگر بولش ہے، تو \"بائی\" کا سگنل ہے۔ اگر بیئرش ہے، تو \"سیل\" یا \"ویٹ\" کا سگنل ہے۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک سادہ ٹریڈنگ اسٹریٹیجی بنائیں:\n- اگر اسٹاک کا ۵۰ دن کا موونگ ایوریج ۲۰۰ دن کے موونگ ایوریج سے اوپر ہے، تو \"بائی\" سگنل۔\n- اگر نیچے ہے، تو \"سیل\" سگنل۔\nاپنے منتخب کردہ اسٹاک پر یہ چیک کریں اور نتیجہ نوٹ کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "tiktok-growth": [
