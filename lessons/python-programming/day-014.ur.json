@@ -1,0 +1,22 @@
+{
+  "title": "دن ۱۴ — آبجیکٹ اورینٹڈ پروگرامنگ: انہیریٹنس اور پولی مورفزم",
+  "preamble": "",
+  "sections": [
+    {
+      "label": "کنسیپٹ",
+      "content": "انہیریٹنس آبجیکٹ اورینٹڈ پروگرامنگ کا ایک بنیادی تصور ہے جس میں ایک کلاس (چائلڈ کلاس) دوسری کلاس (پیرنٹ کلاس) کی خصوصیات اور طریقے وراثت میں حاصل کرتی ہے۔ پولی مورفزم کا مطلب ہے ’کئی شکلیں‘ — یعنی ایک ہی طریقے کا مختلف کلاسوں میں الگ الگ نفاذ ہونا۔ یہ کوڈ کی دوبارہ استعمالیت اور لچک کو بڑھاتا ہے۔"
+    },
+    {
+      "label": "مثال",
+      "content": "```python\nclass Animal:  # Parent class\n    def speak(self):\n        print(\"Animal sound\")\n\nclass Dog(Animal):  # Child class (inherits from Animal)\n    def speak(self):  # Polymorphism (override)\n        print(\"Bark!\")\n\nclass Cat(Animal):\n    def speak(self):\n        print(\"Meow!\")\n\nanimals = [Dog(), Cat()]\nfor animal in animals:\n    animal.speak()  # Same method call, different outputs\n```"
+    },
+    {
+      "label": "پریکٹس",
+      "content": "ایک `Vehicle` کلاس بنائیں جس میں `start()` طریقہ ہو۔ پھر `Car` اور `Bike` کلاسیں بنائیں جو `Vehicle` سے انہیریٹ کریں اور `start()` طریقے کو اوور رائیڈ کر کے مختلف نتائج دکھائیں۔"
+    },
+    {
+      "label": "منی پروجیکٹ",
+      "content": "ایک سادہ `BankAccount` سسٹم بنائیں جس میں:\n۱۔ `Account` کلاس ہو (پیرنٹ) جس میں `balance` خصوصیت ہو۔\n۲۔ `SavingsAccount` اور `CurrentAccount` کلاسیں بنائیں جو `Account` سے انہیریٹ کریں۔\n۳۔ دونوں میں `deposit()` اور `withdraw()` طریقوں کو اوور رائیڈ کر کے الگ منطق لگائیں (مثلاً `SavingsAccount` میں نکالنے کی حد ہو)"
+    }
+  ]
+}

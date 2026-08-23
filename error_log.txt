@@ -1136,3 +1136,5 @@
 [2026-08-23T21:57:26.455685] [forex-trading] Day 4 video skip: Agnes aur ffmpeg dono attempts fail.
 [2026-08-23T21:58:57.140596] [forex-trading] Day 5 video skip: Agnes aur ffmpeg dono attempts fail.
 [2026-08-23T22:00:27.858977] [forex-trading] Day 6 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-23T22:32:30.929349] [python-programming] Day 1 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-23T22:34:00.936262] [python-programming] Day 2 video skip: Agnes aur ffmpeg dono attempts fail.
