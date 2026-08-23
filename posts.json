@@ -12983,6 +12983,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 19,
+      "id": "day-019",
+      "date": "2026-08-23",
+      "title": "Day 19 — **Customer Service Kaise Dein? (Returns, Reviews & Trust Build Karna)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Print on demand mein customer service sirf complaints handle karna nahi hai—yeh trust build karne aur repeat customers paalne ka zariya hai. Returns, refunds, aur reviews ka proactively manage karna aapki brand ki credibility badhata hai. Agar customer ko koi issue ho aur aap usko professionally solve kar dein, toh wo dobara khareedne ke liye ready ho jata hai."
+        ],
+        [
+          "Example",
+          "Ek customer ko T-shirt pehne ke pata chalta hai ki size mismatch hai. Aap usko:\n1. **Clear return policy** batayein (e.g., \"30 days return, no questions asked\").\n2. **Easy return process** provide karein (prepaid return label ya simple steps).\n3. **Quick refund** dein (24-48 hours mein).\n4. **Follow-up email** bhej kar puchein ki wo dobara khareedna pasand karega ya nahi."
+        ],
+        [
+          "Practice",
+          "Apne store ki return policy likhein (3-5 lines mein). Include karein:\n- Return ki time limit (e.g., \"30 days\").\n- Kaunse items return ho sakte hain (e.g., \"sabhi items, packaging intact\").\n- Refund process (e.g., \"automatic refund after item receive\")."
+        ],
+        [
+          "Mini Project",
+          "Ek **customer service email template** banaein jo aap use karenge jab koi complaint kare. Format:\n1."
+        ],
+        [
+          "Subject",
+          "\"Your Concern is Our Priority – [Order #]\"\n2."
+        ],
+        [
+          "Body",
+          "Empathy show karein + solution propose karein + next steps batayein.\n3."
+        ],
+        [
+          "Tone",
+          "Polite, professional, aur solution-oriented."
+        ]
+      ],
+      "answer_key": "return policy, refund process, customer trust, repeat sales",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۹ — کسٹمر سروس کیسے دیں؟ (ریٹرنز، ریویوز اور ٹرسٹ بلڈ کرنا)",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "پرنٹ آن ڈیمینڈ میں کسٹمر سروس صرف شکایات سننا نہیں ہے—یہ ٹرسٹ بلڈ کرنے اور ریپیٹ کسٹمرز حاصل کرنے کا ذریعہ ہے۔ ریٹرنز، ریفنڈز، اور ریویوز کو پروایکٹو طریقے سے مینیج کرنا آپ کی برانڈ کی کریڈیبلیٹی بڑھاتا ہے۔ اگر کسٹمر کو کوئی مسئلہ ہو اور آپ اسے پیشہ ورانہ طریقے سے حل کر دیں، تو وہ دوبارہ خریدنے کے لیے تیار ہو جاتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک کسٹمر کو ٹی شرٹ پہننے کے بعد پتا چلتا ہے کہ سائز میس میچ ہے۔ آپ اسے یہ کریں:\n۱۔ **کلئیر ریٹرن پالیسی** بتائیں (مثلاً، \"۳۰ دن ریٹرن، کوئی سوال نہیں پوچھا جائے گا\")۔\n۲۔ **آسان ریٹرن پروسیس** فراہم کریں (پری پیڈ ریٹرن لیبل یا سادہ اقدامات)۔\n۳۔ **فوری ریفنڈ** دیں (۲۴-۴۸ گھنٹوں میں)۔\n۴۔ **فالو اپ ای میل** بھیج کر پوچھیں کہ کیا وہ دوبارہ خریدنا پسند کرے گا یا نہیں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے اسٹور کی ریٹرن پالیسی لکھیں (۳-۵ لائنوں میں)۔ شامل کریں:\n- ریٹرن کی ٹائم لِمِٹ (مثلاً، \"۳۰ دن\")۔\n- کون سے آئٹمز ریٹرن ہو سکتے ہیں (مثلاً، \"تمام آئٹمز، پیکنگ صحیح حالت میں\")۔\n- ریفنڈ پروسیس (مثلاً، \"آئٹم موصول ہونے کے بعد خودکار ریفنڈ\")۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **کسٹمر سروس ای میل ٹیمپلیٹ** بنائیں جسے آپ شکایت ملنے پر استعمال کریں گے۔ فارمیٹ:\n۱۔\n- سبجیکٹ: \"آپ کی تشویش ہماری اولین ترجیح ہے – [آرڈر #]\"\n۲۔\n- باڈی: ہمدردی دکھائیں + حل تجویز کریں + اگلے اقدامات بتائیں۔\n۳۔\n- ٹون: شائستہ، پیشہ ورانہ، اور حل پر مبنی۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "cpp-daily-coding": [
