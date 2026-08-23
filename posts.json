@@ -18903,6 +18903,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 14,
+      "id": "day-014",
+      "date": "2026-08-23",
+      "title": "Day 14 — **Blog Ke Liye \"Search Intent\" Samajhna (Sabse Important SEO Skill 2024)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Search intent matlab yeh ke user Google par kya search kar raha hai—uska asli maqsad kya hai? Agar aapka article us intent ke hisaab se nahi hai, toh ranking ka chance kam ho jata hai. 3 main types hain: **Informational** (jaana hai), **Navigational** (kisi specific page par pohanchna hai), aur **Transactional** (khareedna hai). Google ab intent-based results priority deta hai."
+        ],
+        [
+          "Example",
+          "Agar koi search kare *\"iPhone 15 price in Pakistan\"* toh uska intent **Transactional** hai—usko khareedne ka maqsad hai. Lekin agar search ho *\"iPhone 15 vs iPhone 14\"* toh **Informational** hai. Aapka content inke hisaab se banana hoga."
+        ],
+        [
+          "Practice",
+          "Apne niche se koi 1 keyword select karo (e.g., *\"best budget laptop under 50000\"*). Google par search karo aur top 3 results ko dekho—har result ka type (Informational/Transactional/Navigational) identify karo."
+        ],
+        [
+          "Mini Project",
+          "1. Apne niche ke 3 keywords choose karo.\n2. Har keyword ke liye 1-2 competitor articles open karo.\n3. Check karo ke woh articles kya type ke hain (informational ya transactional).\n4. Apne hisaab se decide karo ke aapka future article kaise hona chahiye."
+        ]
+      ],
+      "answer_key": "informational, transactional, navigational",
+      "translations": {
+        "ur": {
+          "title": "دن 14 — بلاگ کے لیے \"سرچ انٹینٹ\" سمجھنا (سب سے اہم ایس ای او ہنر 2024)",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "سرچ انٹینٹ کا مطلب یہ ہے کہ صارف گوگل پر کیا تلاش کر رہا ہے—اس کا اصل مقصد کیا ہے؟ اگر آپ کا آرٹیکل اس انٹینٹ کے حساب سے نہیں ہے، تو رینکنگ کا موقع کم ہو جاتا ہے۔ تین اہم اقسام ہیں: **انفارمیشنل** (جاننا ہے)، **نیویگیشنل** (کسی مخصوص صفحے پر پہنچنا ہے)، اور **ٹرانزیکشنل** (خریدنا ہے)। گوگل اب انٹینٹ پر مبنی نتائج کو ترجیح دیتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "اگر کوئی تلاش کرے *\"آئی فون 15 کی قیمت پاکستان میں\"* تو اس کا انٹینٹ **ٹرانزیکشنل** ہے—اسے خریدنے کا مقصد ہے۔ لیکن اگر تلاش ہو *\"آئی فون 15 بمقابلہ آئی فون 14\"* تو **انفارمیشنل** ہے۔ آپ کا مواد ان کے حساب سے بنانا ہوگا۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے نیچ سے کوئی ایک کی ورڈ منتخب کریں (مثلاً، *\"بہترین بجٹ لیپ ٹاپ 50000 کے تحت\"*)۔ گوگل پر تلاش کریں اور ٹاپ 3 نتائج کو دیکھیں—ہر نتیجے کی قسم (انفارمیشنل/ٹرانزیکشنل/نیویگیشنل) کی شناخت کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "1. اپنے نیچ کے تین کی ورڈز منتخب کریں۔\n2. ہر کی ورڈ کے لیے 1-2 مقابلہ دار آرٹیکلز کھولیں۔\n3. چیک کریں کہ وہ آرٹیکلز کس قسم کے ہیں (انفارمیشنل یا ٹرانزیکشنل)۔\n4. اپنے حساب سے طے کریں کہ آپ کا مستقبل کا آرٹیکل کیسا ہونا چاہیے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "photography-editing": [
