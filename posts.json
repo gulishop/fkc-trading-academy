@@ -24591,6 +24591,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 18,
+      "id": "day-018",
+      "date": "2026-08-23",
+      "title": "Day 18 — **Phal, Sabzi aur Janwaron ki Angrezi Mein Pehchan**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachon, aaj hum seekhenge ke phal, sabzi aur janwaron ke naam angrezi mein kaise hote hain. Lekin saath hi ek important baat: koi bhi insaan aapko jabardasti chhua nahi kar sakta. Aapka shareer sirf aapka hai, aur agar koi aapko pareshan kare toh zaroor ammi/abbu ya kisi trusted bade ko batana hai—chahe woh koi bhi ho!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Rohan ne park mein ek badi si teddy bear dekha. Usne socha, \"Mummy, kya main usko pakad sakta hoon?\" Par usne yaad kiya ke ammi ne kaha tha ke koi bhi janwar ya insaan jabardasti nahi chhua karna chahiye. Isliye Rohan ne teddy bear ko dekh kar muskura diya, par pakadna nahi."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar koi janwar ya insaan tumhe chhune ki koshish kare toh tum kya karoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Apne shareer ka khayal rakhna sabse zaroori hai. Agar koi cheez ajeeb lage toh zaroor batana! 💖"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ١٨ — **پھل، سبزی اور جانوروں کی انگریزی میں پہچان**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "بچو، آج ہم سیکھیں گے کہ پھل، سبزی اور جانوروں کے نام انگریزی میں کیسے ہوتے ہیں۔ لیکن ساتھ ہی ایک اہم بات: کوئی بھی انسان آپ کو زبردستی چھو نہیں سکتا۔ آپ کا جسم صرف آپ کا ہے، اور اگر کوئی آپ کو پریشان کرے تو ضرور امی/ابو یا کسی بھروسے والے بڑے کو بتانا ہے—چاہے وہ کوئی بھی ہو!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "روہن نے پارک میں ایک بڑی سی ٹیڈی بیئر دیکھی۔ اس نے سوچا، ’’ممی، کیا میں اسے پکڑ سکتا ہوں؟‘‘ پر اس نے یاد کیا کہ امی نے کہا تھا کہ کوئی بھی جانور یا انسان زبردستی نہیں چھوا کرنا چاہیے۔ اس لیے روہن نے ٹیڈی بیئر کو دیکھ کر مسکرایا، پر پکڑا نہیں۔"
+            },
+            {
+              "label": "امی ابو کے ساتھ بات کریں",
+              "content": "’’بیٹا، اگر کوئی جانور یا انسان تمہیں چھونے کی کوشش کرے تو تم کیا کرو گے؟‘‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "اپنے جسم کا خیال رکھنا سب سے ضروری ہے۔ اگر کوئی چیز عجیب لگے تو ضرور بتانا! 💖"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-pg": [
