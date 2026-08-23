@@ -7193,6 +7193,64 @@
           ]
         }
       }
+    },
+    {
+      "day": 11,
+      "id": "day-011",
+      "date": "2026-08-23",
+      "title": "Day 11 — **Brand Voice & Tone: Apne Brand Ki Personality Banana**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Har brand ki ek unique \"voice\" hoti hai—jaise friendly, professional, humorous, ya inspirational. Tone is voice ka real-time expression hai (e.g., same brand \"professional\" tone se \"urgent\" ho sakta hai). Aaj seekhein ke apne brand ki personality define karna kyun zaroori hai, aur kaise consistent rahe bina monotonous lage."
+        ],
+        [
+          "Example",
+          "Ek fitness brand:\n-"
+        ],
+        [
+          "Voice",
+          "Motivational, encouraging\n-"
+        ],
+        [
+          "Tone variations",
+          "- Blog post: *\"Har step aapko stronger banata hai!\"*\n  - Urgent ad: *\"Aaj hi shuru karo—kal zyada mushkil ho sakti hai!\"*\n  - Customer complaint response: *\"Hum samajhte hain aapka frustration—chalo milkar hal nikalte hain.\"*"
+        ],
+        [
+          "Practice",
+          "Apne brand (ya imaginary brand) ke liye 3 sentences likhein—har sentence same \"voice\" mein lekin alag \"tone\" mein. Example:\n1. Product launch: *\"Yeh naya gadget aapki life badal dega!\"* (excited)\n2. Refund policy: *\"Hum aapki satisfaction ko priority dete hain.\"* (professional)\n3. Social media reply: *\"Bhai, yeh toh mazaak hai—chalo discuss karte hain!\"* (casual)"
+        ],
+        [
+          "Mini Project",
+          "Ek \"Brand Voice Guide\" banao (1 paragraph):\n- Brand name: [Apna naam]\n- Voice: [2 adjectives, e.g., \"friendly, quirky\"]\n- 3 tone examples (different scenarios ke liye)\n- 3 words jinse avoid karna hai (e.g., \"boring,\" \"too salesy\")"
+        ]
+      ],
+      "answer_key": "motivational, consistent, adaptable, personality",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۱ — برانڈ وائس اور ٹون: اپنے برانڈ کی شخصیت بنانا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ہر برانڈ کی ایک منفرد \"وائس\" ہوتی ہے—جیسے دوستانہ، پیشہ ورانہ، مزاحیہ، یا حوصلہ افزا۔ ٹون اسی وائس کا حقیقی وقت میں اظہار ہوتا ہے (مثال کے طور پر، ایک ہی برانڈ پیشہ ورانہ ٹون سے \"فوری\" بھی ہو سکتا ہے)۔ آج سیکھیں کہ اپنے برانڈ کی شخصیت کی وضاحت کرنا کیوں ضروری ہے، اور کیسے مسلسل رہتے ہوئے بوریت کا شکار نہ ہوں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک فٹنس برانڈ:\n\nوائس: حوصلہ افزا، ترغیبی\n\nٹون کی مختلف حالتیں:\n- بلاگ پوسٹ: *\"ہر قدم آپ کو مضبوط بناتا ہے!\"*\n- فوری اشتہار: *\"آج ہی شروع کریں—کل زیادہ مشکل ہو سکتی ہے!\"*\n- صارف کی شکایت کا جواب: *\"ہم آپ کے مایوسی کو سمجھتے ہیں—آئیں مل کر حل نکالتے ہیں۔\"*"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے برانڈ (یا خیالی برانڈ) کے لیے ۳ جملے لکھیں—ہر جملہ ایک ہی \"وائس\" میں ہو لیکن مختلف \"ٹون\" میں۔ مثال:\n۱۔ پروڈکٹ لانچ: *\"یہ نیا گیجٹ آپ کی زندگی بدل دے گا!\"* (جوشیلی)\n۲۔ ریفنڈ پالیسی: *\"ہم آپ کی اطمینان کو ترجیح دیتے ہیں۔\"* (پیشہ ورانہ)\n۳۔ سوشل میڈیا کا جواب: *\"بھائی، یہ تو مزاق ہے—آئیں بات کرتے ہیں!\"* (غیر رسمی)"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک \"برانڈ وائس گائیڈ\" بنائیں (۱ پیراگراف):\n- برانڈ کا نام: [اپنا نام]\n- وائس: [۲ صفتیں، جیسے \"دوستانہ، دلچسپ\"]\n- ۳ ٹون کی مثالیں (مختلف حالات کے لیے)\n- ۳ الفاظ جن سے پرہیز کرنا ہے (جیسے \"بورنگ،\" \"زیادہ سیلزی\")"
+            }
+          ]
+        }
+      }
     }
   ],
   "ai-tools": [
