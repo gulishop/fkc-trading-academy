@@ -875,6 +875,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 17,
+      "id": "day-017",
+      "date": "2026-08-23",
+      "title": "Day 17 — **Email Marketing Se Affiliate Sales: Apne Subscribers Ko Buyers Mein Badlo**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Email marketing affiliate sales ka sabse powerful source hai kyunke subscribers already trust karte hain. Yahan pehle value provide karo, phir affiliate offers share karo. Important: Har email mein 1 hi CTA ho (clear aur specific)."
+        ],
+        [
+          "Example",
+          "1. **Welcome Email Series** (3-5 emails):\n   - Email 1: \"Mera 3-step formula for [niche problem]\"\n   - Email 2: \"Log is solution ke liye [affiliate product] use karte hain\"\n   - Email 3: Case study + discount link\n2. **Promotional Email**:\n   - Subject: \"Aaj hi le lo 20% discount!\"\n   - Body: \"Mere favorite [product] ka yeh deal 24 hours tak hai\""
+        ],
+        [
+          "Practice",
+          "Apne email list ke 10 subscribers ko ek promotional email bhejiye. Subject line test karo (A/B testing ke liye do subject lines likhein)."
+        ],
+        [
+          "Mini Project",
+          "Ek 3-email welcome series draft karo (niche: fitness/tech/finance mein se koi ek). Har email ka purpose, subject line, aur 2-3 main points likhein."
+        ]
+      ],
+      "answer_key": "value-first, single-cta, urgency, personalization",
+      "translations": {
+        "ur": {
+          "title": "دن 17 — ای میل مارکیٹنگ سے ایفیلی ایٹ سیلز: اپنے سبسکرائبرز کو بائرز میں بدلو",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ای میل مارکیٹنگ ایفیلی ایٹ سیلز کا سب سے طاقتور ذریعہ ہے کیونکہ سبسکرائبرز پہلے ہی آپ پر اعتبار کرتے ہیں۔ یہاں پہلے ویلیو فراہم کرو، پھر ایفیلی ایٹ آفرز شیئر کرو۔ اہم بات: ہر ای میل میں صرف ایک ہی کال ٹو ایکشن ہو (واضح اور مخصوص)"
+            },
+            {
+              "label": "مثال",
+              "content": "1. **ویلکم ای میل سیریز** (3-5 ای میلز):\n   - ای میل 1: \"میرا 3-اسٹیپ فارمولا برائے [نیچ کا مسئلہ]\"\n   - ای میل 2: \"لوگ اس حل کے لیے [ایفیلی ایٹ پروڈکٹ] استعمال کرتے ہیں\"\n   - ای میل 3: کیس اسٹڈی + ڈسکاؤنٹ لنک\n2. **پروموشنل ای میل**:\n   - سبجیکٹ: \"آج ہی لے لو 20% ڈسکاؤنٹ!\"\n   - باڈی: \"میرے پسندیدہ [پروڈکٹ] کا یہ ڈیل 24 گھنٹے تک ہے\""
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنی ای میل لسٹ کے 10 سبسکرائبرز کو ایک پروموشنل ای میل بھیجو۔ سبجیکٹ لائن ٹیسٹ کرو (اے/بی ٹیسٹنگ کے لیے دو سبجیکٹ لائنیں لکھو)"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک 3-ای میل ویلکم سیریز کا ڈرافٹ تیار کرو (نیچ: فٹنس/ٹیک/فنانس میں سے کوئی ایک منتخب کرو)۔ ہر ای میل کا مقصد، سبجیکٹ لائن، اور 2-3 اہم نکات لکھو"
+            }
+          ]
+        }
+      }
     }
   ],
   "youtube-automation": [
