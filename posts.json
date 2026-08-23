@@ -9565,6 +9565,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 22,
+      "id": "day-022",
+      "date": "2026-08-23",
+      "title": "Day 22 — **Freelancing Mein \"Cold Pitching\" Kaise Karein: Direct Clients Tak Kaise Pahunchein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Cold pitching ek powerful technique hai jismein aap potential clients ko unke inbox mein message bhejte hain—bina kisi introduction ke. Yeh Fiverr/Upwork se alag hai kyunki yahan aap direct communication karte hain, jisse trust banta hai aur high-paying projects milte hain. Key hai: **short, relevant, aur value-driven** messages bhejna."
+        ],
+        [
+          "Example",
+          "Ek graphic designer ko ek local restaurant ka owner milta hai. Uske Instagram par unki posts dekhte hain aur unko yeh message bhejte hain:\n*\"Hi [Name], main [Your Name] hun, ek freelance graphic designer hun. Aapke Instagram par dekha ke aapke posts mein design consistency achi hai—lekin ek professional touch se yeh aur bhi engaging ho sakte hain. Main aapko 3 logo design concepts bhej sakta hun free mein, taake aap dekh saken kaise aapki brand aur strong ho sakti hai. Agar interest ho to reply karen!\"*"
+        ],
+        [
+          "Practice",
+          "Apne niche ke 5 potential clients ke LinkedIn/Instagram profiles dekhein. Har ek ke liye **3-line ka personalised message** likhein jo unki pain points address karein."
+        ],
+        [
+          "Mini Project",
+          "Ek cold email draft taiyaar karen jo aap kisi local business (jaise dentist, gym, boutique) ko bhej sakte hain. Email mein:\n1. Unki current service ka mention\n2. Aapka solution (1-2 lines)\n3. Call-to-action (free consultation ya sample)"
+        ]
+      ],
+      "answer_key": "personalized, pain-point, free-value, clear-cta",
+      "translations": {
+        "ur": {
+          "title": "دن ۲۲ — فری لانسنگ میں \"کولڈ پیچنگ\" کیسے کریں: براہ راست کلائنٹس تک کیسے پہنچیں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "کولڈ پیچنگ ایک طاقتور تکنیک ہے جس میں آپ پوٹینشل کلائنٹس کو ان کے ان باکس میں میسج بھیجتے ہیں—بغیر کسی تعارف کے۔ یہ فائیور/اپ ورک سے مختلف ہے کیونکہ یہاں آپ براہ راست کمیونیکیشن کرتے ہیں، جس سے اعتماد بنتا ہے اور ہائی پےنگ پروجیکٹس ملتے ہیں۔ کلید ہے: مختصر، متعلقہ اور ویلیو ڈرائیون میسجز بھیجنا۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک گرافک ڈیزائنر کو ایک مقامی ریسٹورنٹ کا مالک ملتا ہے۔ اس کے انسٹاگرام پر ان کی پوسٹس دیکھتے ہیں اور انہیں یہ میسج بھیجتے ہیں:\n\"ہائے [نام]، میں [آپ کا نام] ہوں، ایک فری لانس گرافک ڈیزائنر ہوں۔ آپ کے انسٹاگرام پر دیکھا کہ آپ کی پوسٹس میں ڈیزائن کنسیسٹنسی اچھی ہے—لیکن ایک پیشہ ورانہ ٹچ سے یہ اور بھی انگیجنگ ہو سکتی ہیں۔ میں آپ کو ۳ لوگو ڈیزائن کنسیپٹس مفت میں بھیج سکتا ہوں، تاکہ آپ دیکھ سکیں کہ کیسے آپ کی برانڈ اور مضبوط ہو سکتی ہے۔ اگر دلچسپی ہو تو ریپلائی کریں!\""
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے نیچ کے ۵ پوٹینشل کلائنٹس کے لنکڈ ان/انسٹاگرام پروفائلز دیکھیں۔ ہر ایک کے لیے ۳ لائن کا پرسنلائزڈ میسج لکھیں جو ان کے پین پوائنٹس کو ایڈریس کرے۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک کولڈ ای میل ڈرافٹ تیار کریں جو آپ کسی مقامی بزنس (جیسے ڈینٹسٹ، جم، بوٹیک) کو بھیج سکتے ہیں۔ ای میل میں شامل کریں:\n۱۔ ان کی موجودہ سروس کا ذکر\n۲۔ آپ کا حل (۱-۲ لائنز)\n۳۔ کال ٹو ایکشن (فری کنسلٹیشن یا سیمپل)"
+            }
+          ]
+        }
+      }
     }
   ],
   "graphic-design-canva": [
