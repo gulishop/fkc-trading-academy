@@ -3299,6 +3299,76 @@
           ]
         }
       }
+    },
+    {
+      "day": 19,
+      "id": "day-019",
+      "date": "2026-08-23",
+      "title": "Day 19 — **AI Tools Se Freelance Projects Kaise Dhundein (Upwork/Fiverr Se)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "AI tools jaise Upwork, Fiverr aur AI-powered job matchers (e.g., Toptal, PeoplePerHour) se freelance clients dhundna seekhein. AI algorithms match karenge tumhare skills ko client ke requirements se, lekin pitch perfect hona zaroori hai. AI se bhi zyada important hai \"human touch\" — proposal likhte waqt client ki pain points ko samajh kar unke solutions propose karna."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "AI Job Matching",
+          "Upwork par \"Social Media Marketing\" search karo, phir \"AI Recommended\" filter apply karo. AI tumhe relevant gigs show karega.\n2."
+        ],
+        [
+          "Proposal Template (AI + Human Touch)",
+          "-"
+        ],
+        [
+          "AI-Generated Hook",
+          "\"I noticed your post for Instagram Reels growth — here’s how I increased engagement by 300% for a client using AI tools.\"\n   -"
+        ],
+        [
+          "Human Touch",
+          "\"Your target audience seems to be Gen Z — I’ll create Reels with trending sounds + AI-generated captions for maximum reach.\""
+        ],
+        [
+          "Practice",
+          "Upwork/Fiverr par ek freelance gig browse karo jo tumhare skills (e.g., \"Meta Ads\" ya \"AI Reels\") se match karta ho. Uske proposal ka first 2 lines likho — AI tools se keywords extract karo aur client ki pain points ko highlight karo."
+        ],
+        [
+          "Mini Project",
+          "Ek Upwork/Fiverr profile ka \"Overview\" section likho jo AI tools (e.g., Canva AI, Midjourney) aur tumhare skills ko combine karta ho. Max 150 words."
+        ]
+      ],
+      "answer_key": "ai keywords, pain points, 300% engagement, trending sounds",
+      "translations": {
+        "ur": {
+          "title": "دن 19 — **اے آئی ٹولز سے فری لانس پروجیکٹس کیسے ڈھونڈیں (اپ ورک/فائیور سے)**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "اے آئی ٹولز جیسے اپ ورک، فائیور اور اے آئی پاورڈ جاب میچرز (مثال کے طور پر ٹاپ ٹیل، پیپل پر آور) سے فری لانس کلائنٹس ڈھونڈنا سیکھیں۔ اے آئی الگورتھمز آپ کے سکلز کو کلائنٹ کی ضروریات سے میچ کریں گے، لیکن پچ پرфект ہونا ضروری ہے۔ اے آئی سے بھی زیادہ اہم ہے 'ہیومن ٹچ' — پروپوزل لکھتے وقت کلائنٹ کی پین پوائنٹس کو سمجھ کر ان کے حل پیش کرنا۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1۔\nاے آئی جاب میچنگ: اپ ورک پر 'سوشل میڈیا مارکیٹنگ' سرچ کریں، پھر 'اے آئی ری کمنڈڈ' فلٹر لگائیں۔ اے آئی آپ کو متعلقہ گِگز دکھائے گا۔\n2۔"
+            },
+            {
+              "label": "پروپوزل ٹیمپلیٹ (اے آئی + ہیومن ٹچ)",
+              "content": "- اے آئی جنریٹڈ ہُک: \"میں نے نوٹ کیا کہ آپ کا پوسٹ انسٹاگرام ریلز کی گروتھ کے لیے ہے — یہاں بتاتا ہوں کہ میں نے کس طرح ایک کلائنٹ کے لیے اے آئی ٹولز استعمال کرکے انگیجمنٹ کو 300% بڑھایا۔\"\n-\n- ہیومن ٹچ: \"آپ کا ٹارگٹ آڈینس جین زی لگتا ہے — میں ریلز بناؤں گا ٹرینڈنگ ساؤنڈز کے ساتھ اور اے آئی جنریٹڈ کیپشنز کے ذریعے زیادہ سے زیادہ ریچ حاصل کروں گا۔\""
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپ ورک/فائیور پر کوئی فری لانس گِگ براؤز کریں جو آپ کے سکلز (مثال کے طور پر 'میٹا ایڈز' یا 'اے آئی ریلز') سے میچ کرتا ہو۔ اس کے پروپوزل کے پہلے دو لائنز لکھیں — اے آئی ٹولز سے کی ورڈز ایکسٹریکٹ کریں اور کلائنٹ کی پین پوائنٹس کو ہائی لائٹ کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "اپ ورک/فائیور پروفائل کا 'اوور ویو' سیکشن لکھیں جو اے آئی ٹولز (جیسے کینوا اے آئی، مِڈ جرنی) اور آپ کے سکلز کو ملا کر بنایا گیا ہو۔ زیادہ سے زیادہ 150 الفاظ۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "facebook-page-growth": [
