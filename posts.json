@@ -5867,6 +5867,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 16,
+      "id": "day-016",
+      "date": "2026-08-23",
+      "title": "Day 16 — **Amazon FBA Mein \"Amazon SEO\" Ka Complete Guide (Search Rank Badhane Ke 5 Powerful Tips)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Amazon SEO ka matlab hai apne product listing ko optimize karna taake Amazon ke search algorithm mein aapka product top par aaye. Iske liye keywords, title, bullet points, aur backend keywords ka sahi istemal zaroori hai. Bina SEO ke aapka product chhupa reh jata hai, chahe woh kitna bhi accha ho."
+        ],
+        [
+          "Example",
+          "Ek seller \"Wireless Charger\" bechta hai. Usne title mein sirf \"Wireless Charger\" likha, lekin jab usne \"Fast Wireless Charger 10W Qi Certified for iPhone Samsung\" likha, toh uska ranking 10 se 3 tak badh gaya."
+        ],
+        [
+          "Practice",
+          "Apne product ke lien se \"Title\" aur \"Bullet Points\" ko edit karke 3-5 relevant keywords add karein. (Jaise \"Wireless Charger\" ki jagah \"Fast Wireless Charger 10W Qi Certified for iPhone Samsung\" likhein)."
+        ],
+        [
+          "Mini Project",
+          "Ek Excel sheet banaen jismein 10 relevant keywords likhein jo aapke product ke liye best hon. Har keyword ke peeche search volume (Amazon Keyword Tool se) bhi likhein."
+        ]
+      ],
+      "answer_key": "fast wireless charger, 10w qi certified, iphone samsung compatible, high-speed charging, universal wireless charger",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۶ — **ایمیزون ایف بی اے میں \"ایمیزون ایس ای او\" کا مکمل گائیڈ (سرچ رینک بڑھانے کے ۵ طاقتور ٹپس)**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ایمیزون ایس ای او کا مطلب ہے اپنے پروڈکٹ لسٹنگ کو اس طرح سے بہتر بنانا کہ ایمیزون کے سرچ الگورتھم میں آپ کا پروڈکٹ سب سے اوپر آئے۔ اس کے لیے کی ورڈز، ٹائٹل، بلٹ پوائنٹس، اور بیک اینڈ کی ورڈز کا صحیح استعمال بہت ضروری ہے۔ ایس ای او کے بغیر آپ کا پروڈکٹ چھپا رہ جاتا ہے، چاہے وہ کتنا ہی اچھا کیوں نہ ہو۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک سیلر \"وائرلیس چارجر\" بیچتا ہے۔ اس نے ٹائٹل میں صرف \"وائرلیس چارجر\" لکھا، لیکن جب اس نے \"فاسٹ وائرلیس چارجر ۱۰ ڈبلیو کیو آئی سرٹیفائیڈ برائے آئی فون سام سنگ\" لکھا تو اس کا رینکنگ ۱۰ سے بڑھ کر ۳ تک پہنچ گیا۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے پروڈکٹ کے لیے \"ٹائٹل\" اور \"بلٹ پوائنٹس\" میں ترمیم کرکے ۳ سے ۵ متعلقہ کی ورڈز شامل کریں۔ (جیسے \"وائرلیس چارجر\" کی جگہ \"فاسٹ وائرلیس چارجر ۱۰ ڈبلیو کیو آئی سرٹیفائیڈ برائے آئی فون سام سنگ\" لکھیں۔)"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک ایکسل شیٹ بنائیں جس میں ۱۰ متعلقہ کی ورڈز لکھیں جو آپ کے پروڈکٹ کے لیے بہترین ہوں۔ ہر کی ورڈ کے پیچھے سرچ والیوم (ایمیزون کی ورڈ ٹول سے) بھی لکھیں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "daraz-seller": [
