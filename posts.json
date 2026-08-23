@@ -22887,6 +22887,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 18,
+      "id": "day-018",
+      "date": "2026-08-23",
+      "title": "Day 18 — \"Puzzle aur jigsaw se sabar aur soch badhaen!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachon, jab hum puzzle ya jigsaw khelte hain, toh humein ek ek karke sab parts jodni hoti hain. Isi tarah, zindagi mein bhi kabhi-kabhi humein chhoti chhoti cheezein karni hoti hain, lekin agar hum sabar rakhein aur achhe se sochen, toh hum har mushkil ko hal kar sakte hain!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Aman ko ek naya jigsaw puzzle mila. Usne socha, \"Mujhe pehle sabse edge ke pieces dhoondne hain.\" Usne thoda sabar kiya, aur ek ek karke sab pieces jodte gaye. Aakhiri mein, usko ek puri tasveer mil gayi! Usne samjha, \"Agar main ek saath sab jodna chahta, toh mushkil ho jata, lekin ek ek karke karne se, main jeet gaya!\""
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar tum koi puzzle khel rahe ho aur usko hal karne mein mushkil ho rahi ho, toh tum kya karoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Har mushkil ko hal karne ke liye sabar aur soch zaroori hai—chahe woh puzzle ho ya zindagi ka koi sawal!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن اٹھارہ — پہیلی اور جگسا سے صبر اور سوچ بڑھائیں!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "بچو، جب ہم پہیلی یا جگسا کھیلتے ہیں تو ہمیں ایک ایک کرکے سارے حصے جوڑنے ہوتے ہیں۔ اسی طرح، زندگی میں بھی کبھی کبھی ہمیں چھوٹی چھوٹی چیزیں کرنی ہوتی ہیں، لیکن اگر ہم صبر رکھیں اور اچھے سے سوچیں تو ہم ہر مشکل کو حل کر سکتے ہیں!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "امان کو ایک نیا جگسا پہیلی ملا۔ اس نے سوچا، ’مجھے پہلے سب سے کنارے کے ٹکڑے ڈھونڈنے ہیں۔‘ اس نے تھوڑا صبر کیا، اور ایک ایک کرکے سارے ٹکڑے جوڑتے گئے۔ آخر میں، اسے ایک پوری تصویر مل گئی! اس نے سمجھا، ’اگر میں ایک ساتھ سب جوڑنا چاہتا تو مشکل ہو جاتا، لیکن ایک ایک کرکے کرنے سے، میں جیت گیا!‘"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "’بیٹا، اگر تم کوئی پہیلی کھیل رہے ہو اور اسے حل کرنے میں مشکل ہو رہی ہو تو تم کیا کرو گے؟‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "ہر مشکل کو حل کرنے کے لیے صبر اور سوچ ضروری ہے—چاہے وہ پہیلی ہو یا زندگی کا کوئی سوال!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-good-behavior": [
