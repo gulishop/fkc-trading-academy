@@ -23739,6 +23739,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 18,
+      "id": "day-018",
+      "date": "2026-08-23",
+      "title": "Day 18 — **Janwaron aur paudon se pyaar aur nazuk sulook**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Janwaron aur paudon se bhi humein pyaar aur respect karni chahiye, kyunki woh bhi hamare jaise zindagi jeete hain. Unhe pareshan mat karo, na hi unki cheezon ko haani pohochao. Jaise hum chahte hain ke koi hamari izzat kare, waise hi unki bhi izzat karo."
+        ],
+        [
+          "Chhoti Kahani",
+          "Rohan ne ek chhota sa kutha dekha jo rasta bhul gaya tha. Usne usko ghar le ja kar pani aur khana diya. Kuthe ne bhi uske paimaan se poochha, aur Rohan ko bahut khushi hui ke usne ek jaanwar ki madad ki."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar tum kisi janwar ya paudhe ko pareshan hote hue dekho, to tum kya karoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Janwaron aur paudon ko bhi insaan samajh kar unse pyaar se pesh aao."
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن اٹھارہ — **جانوروں اور پودوں سے پیار اور نازک سلوک**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "جانوروں اور پودوں سے بھی ہمیں پیار اور احترام کرنا چاہیے، کیونکہ وہ بھی ہماری طرح زندگی گزارتے ہیں۔ انہیں پریشان مت کرو، نہ ہی ان کی چیزوں کو نقصان پہنچاؤ۔ جیسے ہم چاہتے ہیں کہ کوئی ہماری عزت کرے، ویسے ہی ان کی بھی عزت کرو۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "روہان نے ایک چھوٹا سا کتا دیکھا جو راستہ بھول گیا تھا۔ اس نے اسے گھر لے جا کر پانی اور کھانا دیا۔ کتے نے بھی اس کے پیمانے سے دم ہلائی، اور روہان کو بہت خوشی ہوئی کہ اس نے ایک جانور کی مدد کی۔"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "”بیٹا، اگر تم کسی جانور یا پودے کو پریشان ہوتے ہوئے دیکھو، تو تم کیا کرو گے؟“"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "جانوروں اور پودوں کو بھی انسان سمجھ کر ان سے پیار سے پیش آؤ۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-nursery": [
