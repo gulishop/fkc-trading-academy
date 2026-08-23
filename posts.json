@@ -15643,6 +15643,92 @@
           ]
         }
       }
+    },
+    {
+      "day": 17,
+      "id": "day-017",
+      "date": "2026-08-23",
+      "title": "Day 17 — **JavaScript: Local Storage aur Session Storage – User Data Save Karna**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum JavaScript ke `localStorage` aur `sessionStorage` ko seekhenge. Ye storage methods browser mein key-value pairs ke form mein data save karte hain (jaise user preferences, login status, ya form data). `localStorage` permanently save hota hai jab tak manually delete na kiya jaye, jabke `sessionStorage` sirf tab tak rahta hai jab tak browser tab khula ho."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "localStorage mein data save karna",
+          "```javascript\n   localStorage.setItem('username', 'Ali123');\n   ```\n2."
+        ],
+        [
+          "Data retrieve karna",
+          "```javascript\n   const user = localStorage.getItem('username');\n   console.log(user); // Output: \"Ali123\"\n   ```\n3."
+        ],
+        [
+          "Data remove karna",
+          "```javascript\n   localStorage.removeItem('username');\n   ```"
+        ],
+        [
+          "Practice",
+          "Ek simple form banayein jisme user apna naam aur email enter kare. Submit karne par ye data `localStorage` mein save ho jaye. Page refresh hone par bhi data display ho."
+        ],
+        [
+          "Mini Project",
+          "**\"Todo List App with Persistence\"**\n- Ek todo list banayein jisme:\n  - User naye tasks add kar sake.\n  - Tasks `localStorage` mein save hon.\n  - Page refresh hone par tasks wapas show hon.\n- Hint: `localStorage.setItem('tasks', JSON.stringify(tasks))` aur `JSON.parse(localStorage.getItem('tasks'))` use karna."
+        ]
+      ],
+      "answer_key": "saveitem, getitem, removeitem, json.stringify",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۷ — **جاوااسکرپٹ: لوکل اسٹوریج اور سیشن اسٹوریج – صارف ڈیٹا محفوظ کرنا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم جاوااسکرپٹ کے `localStorage` اور `sessionStorage` کو سیکھیں گے۔ یہ اسٹوریج طریقے براؤزر میں کی-ویلیو پیئرز کی شکل میں ڈیٹا محفوظ کرتے ہیں (جیسے صارف کی ترجیحات، لاگ ان اسٹیٹس، یا فارم ڈیٹا)۔ `localStorage` مستقل طور پر محفوظ ہوتا ہے جب تک کہ دستی طور پر حذف نہ کیا جائے، جبکہ `sessionStorage` صرف اس وقت تک رہتا ہے جب تک براؤزر ٹیب کھلا ہو۔"
+            },
+            {
+              "label": "مثال: ۱۔",
+              "content": "`localStorage` میں ڈیٹا محفوظ کرنا:"
+            },
+            {
+              "label": "",
+              "content": "```javascript\nlocalStorage.setItem('username', 'Ali123');\n```"
+            },
+            {
+              "label": "۲۔",
+              "content": "ڈیٹا بازیافت کرنا:"
+            },
+            {
+              "label": "",
+              "content": "```javascript\nconst user = localStorage.getItem('username');\nconsole.log(user); // آؤٹ پٹ: \"Ali123\"\n```"
+            },
+            {
+              "label": "۳۔",
+              "content": "ڈیٹا حذف کرنا:"
+            },
+            {
+              "label": "",
+              "content": "```javascript\nlocalStorage.removeItem('username');\n```"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "ایک سادہ فارم بنائیں جس میں صارف اپنا نام اور ای میل درج کرے۔ جمع کرنے پر یہ ڈیٹا `localStorage` میں محفوظ ہو جائے۔ صفحہ ریفریش ہونے پر بھی ڈیٹا دکھائی دے۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "**ٹوڈو لسٹ ایپ ود پرسسٹنس**\nایک ٹوڈو لسٹ بنائیں جس میں:\n- صارف نئے ٹاسکس شامل کر سکے۔\n- ٹاسکس `localStorage` میں محفوظ ہوں۔\n- صفحہ ریفریش ہونے پر ٹاسکس واپس دکھائی دیں۔"
+            },
+            {
+              "label": "ہنٹ",
+              "content": "`localStorage.setItem('tasks', JSON.stringify(tasks))` اور `JSON.parse(localStorage.getItem('tasks'))` استعمال کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "excel-data-analysis": [
