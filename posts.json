@@ -26145,6 +26145,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 16,
+      "id": "day-016",
+      "date": "2026-08-23",
+      "title": "Day 16 — \"Din, hafte, aur mahine ke naam\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhein ge ke din, hafte, aur mahine ke naam kya hain. Har din ek naya din hota hai, aur har hafte mein 7 din hote hain. Mahine bhi alag-alag hote hain, jaise January, February, March... aur har mahine mein kitne din hain, yeh bhi important hai!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Babli ne apne dost ko poocha, \"Tumhara favourite din kaun sa hai?\" Uske dost ne kaha, \"Mera favourite din Friday hai, kyunki Friday ko school mein sports ka time hota hai!\" Babli ne muskura kar kaha, \"Mera bhi Friday hi hai, kyunki Friday ko hum sab mil kar khelte hain!\""
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, tumhara favourite din kaun sa hai? Aur kyun?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Har din ek naya din hai, aur har din tumhara hai!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۶ — دن، ہفتے، اور مہینے کے نام",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم سیکھیں گے کہ دن، ہفتے، اور مہینے کے نام کیا ہیں۔ ہر دن ایک نیا دن ہوتا ہے، اور ہر ہفتے میں سات دن ہوتے ہیں۔ مہینے بھی الگ الگ ہوتے ہیں، جیسے جنوری، فروری، مارچ... اور ہر مہینے میں کتنے دن ہیں، یہ بھی اہم ہے!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "ببلی نے اپنے دوست سے پوچھا، ’تمہارا فیورٹ دن کون سا ہے؟‘ اس کے دوست نے کہا، ’میرا فیورٹ دن جمعہ ہے، کیونکہ جمعہ کو سکول میں سپورٹس کا ٹائم ہوتا ہے!‘ ببلی نے مسکرا کر کہا، ’میرا بھی جمعہ ہی ہے، کیونکہ جمعہ کو ہم سب مل کر کھیلتے ہیں!‘"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "’بیٹا، تمہارا فیورٹ دن کون سا ہے؟ اور کیوں؟‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "ہر دن ایک نیا دن ہے، اور ہر دن تمہارا ہے!"
+            }
+          ]
+        }
+      }
     }
   ]
 }
