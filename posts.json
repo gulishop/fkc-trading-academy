@@ -25293,6 +25293,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 15,
+      "id": "day-015",
+      "date": "2026-08-23",
+      "title": "Day 15 — **Ginti 1 se 5 tak: Apne Haathon se Gintein!**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhein ge ke kaise apne haathon se gintein kar sakte hain! Har cheez ko gintein se hum uski value samajhte hain. Yeh bhi yaad rakhna zaroori hai ke tumhara jism tumhara hai—agar koi tumhe gintein ya hisaab karne ke liye dabone ya zor karne ko kahe, toh \"NA!\" keh do. Apne ammi-abbu ko zaroor batana!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Areeba ne apne haathon se gintein karna seekha. Usne ek, do, teen, chaar, paanch… karke apne saare toys ko gina. Uske dost ne kaha, \"Areeba, tumne itni achhi ginti ki!\" Areeba ko bahut khushi hui. Usne socha, \"Mera jism mera hai, aur main khush hoon!\""
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar koi tumhe gintein ya hisaab karne ke liye dabone ko kahe, toh tum kya karoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Tumhara jism tumhara hai—kisi ko bhi tumhe dabone ya zor karne ka haq nahi!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۵ — گنتی ۱ سے ۵ تک: اپنے ہاتھوں سے گنیں!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "آج ہم سیکھیں گے کہ کیسے اپنے ہاتھوں سے گنتی کر سکتے ہیں! ہر چیز کو گنتے ہوئے ہم اس کی ویلیو سمجھتے ہیں۔ یہ بھی یاد رکھنا ضروری ہے کہ تمہارا جسم تمہارا ہے—اگر کوئی تمہیں گنتی یا حساب کرنے کے لیے دبونے یا زور کرنے کو کہے، تو ’نا!‘ کہہ دو۔ اپنے امی ابو کو ضرور بتانا!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "عریبہ نے اپنے ہاتھوں سے گنتی کرنا سیکھا۔ اس نے ایک، دو، تین، چار، پانچ… کرکے اپنے سارے ٹوائز کو گنا۔ اس کے دوست نے کہا، ’عریبہ، تم نے اتنی اچھی گنتی کی!‘ عریبہ کو بہت خوشی ہوئی۔ اس نے سوچا، ’میرا جسم میرا ہے، اور میں خوش ہوں!‘"
+            },
+            {
+              "label": "امی ابو کے ساتھ بات کریں",
+              "content": "’بیٹا، اگر کوئی تمہیں گنتی یا حساب کرنے کے لیے دبونے کو کہے، تو تم کیا کرو گے؟‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمہارا جسم تمہارا ہے—کسی کو بھی تمہیں دبونے یا زور کرنے کا حق نہیں!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-kg": [
