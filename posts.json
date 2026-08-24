@@ -5247,6 +5247,76 @@
           ]
         }
       }
+    },
+    {
+      "day": 24,
+      "id": "day-024",
+      "date": "2026-08-24",
+      "title": "Day 24 — **Trading Journal: Apne Trades Ka Hisaab Rakhein aur Improve Karen**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Har successful trader ek **trading journal** rakhta hai—ek digital ya physical record jisme har trade ki details (entry/exit points, reason, emotion, result) likhi hoti hain. Isse aap repeat mistakes identify kar sakte hain, strategies improve kar sakte hain, aur discipline maintain kar sakte hain. Yeh sirf \"profit/loss\" se zyada hai—psychology aur decision-making ka bhi record hai."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Trade Setup",
+          "EUR/USD buy kiya @ 1.0800 (reason: RSI oversold + support breakout).\n2."
+        ],
+        [
+          "Entry/Exit",
+          "1.0800 par enter, 1.0850 par exit (50 pips profit).\n3."
+        ],
+        [
+          "Risk",
+          "1% risk per trade (₹500 loss if stop-loss @ 1.0750).\n4."
+        ],
+        [
+          "Emotion",
+          "\"FOMO tha, lekin plan follow kiya.\"\n5."
+        ],
+        [
+          "Mistake",
+          "\"Chart pe zyada zoom kiya, entry thoda late hui.\""
+        ],
+        [
+          "Practice",
+          "Apne **MetaTrader ke \"Account History\"** se last 5 trades ko copy karke ek simple table banao (columns: Pair, Entry/Exit, Pips, Reason, Profit/Loss, Emotion). Excel ya Google Sheets use kar sakte ho."
+        ],
+        [
+          "Mini Project",
+          "1. **10 trades ka journal** banayein (demo ya live—kuch bhi).\n2. Har trade ke baad **3 lines ka reflection** likhein:\n   - \"Kya sahi hua?\"\n   - \"Kya galti hui?\"\n   - \"Agla trade kaise improve karunga?\""
+        ]
+      ],
+      "answer_key": "trade details, emotion notes, profit/loss, repeat mistakes, improvement plan",
+      "translations": {
+        "ur": {
+          "title": "دن ۲۴ — ٹریڈنگ جرنل: اپنے ٹریڈز کا حساب رکھیں اور بہتری لائیں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ہر کامیاب ٹریڈر ایک **ٹریڈنگ جرنل** رکھتا ہے—ایک ڈیجیٹل یا فزیکل ریکارڈ جس میں ہر ٹریڈ کی تفصیلات (اینٹری/ایگزٹ پوائنٹس، وجہ، جذبات، نتیجہ) لکھی ہوتی ہیں۔ اس سے آپ بار بار ہونے والی غلطیاں شناخت کر سکتے ہیں، حکمت عملیوں میں بہتری لا سکتے ہیں، اور ڈسپلن برقرار رکھ سکتے ہیں۔ یہ صرف \"منافع/نقصان\" سے زیادہ ہے—نفسیات اور فیصلہ سازی کا بھی ریکارڈ ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔\nٹریڈ سیٹ اپ: EUR/USD کو ۱.۰۸۰۰ پر خریدا (وجہ: RSI اوور سولڈ + سپورٹ بریک آؤٹ)۔\n۲۔\nاینٹری/ایگزٹ: ۱.۰۸۰۰ پر داخلہ، ۱.۰۸۵۰ پر خارج (۵۰ پپس منافع)۔\n۳۔\nرسک: ہر ٹریڈ پر ۱٪ رسک (اگر سٹاپ لاس ۱.۰۷۵۰ پر ہو تو ₹۵۰۰ نقصان)۔\n۴۔\nجذبات: \"FOMO تھا، لیکن پلان پر عمل کیا\"۔\n۵۔\nغلطی: \"چارٹ پر زیادہ زوم کیا، اینٹری تھوڑی دیر سے ہوئی\"۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے **میٹا ٹریڈر کے \"اکاؤنٹ ہسٹری\"** سے آخری ۵ ٹریڈز کو کاپی کر کے ایک سادہ ٹیبل بنائیں (کالم: جوڑا، اینٹری/ایگزٹ، پپس، وجہ، منافع/نقصان، جذبات)۔ ایکسل یا گوگل شیٹس استعمال کر سکتے ہیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "۱۔ **۱۰ ٹریڈز کا جرنل** بنائیں (ڈیمو یا لائیو—کچھ بھی ہو سکتا ہے)۔\n۲۔ ہر ٹریڈ کے بعد **۳ سطروں کا ریفلیکشن** لکھیں:\n   - \"کیا صحیح ہوا؟\"\n   - \"کیا غلطی ہوئی؟\"\n   - \"اگلا ٹریڈ کیسے بہتر کروں گا؟\""
+            }
+          ]
+        }
+      }
     }
   ],
   "amazon-fba": [
