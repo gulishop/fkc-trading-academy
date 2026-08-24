@@ -21399,6 +21399,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 14,
+      "id": "day-014",
+      "date": "2026-08-24",
+      "title": "Day 14 — **Podcast Promotion: Social Media Se Apne Content Ko Kaise Grow Karein?**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Podcast promotion sirf upload karne se nahi hoti—social media par strategic approach se share karna zaroori hai. Har platform (Instagram, Twitter, LinkedIn, YouTube Shorts) ke alag engagement rules hote hain. Aaj hum seekhenge ki kaise apne podcast clips ko viral banane wale formats mein convert karke, hashtags aur timing ka istemal karke reach badhaye."
+        ],
+        [
+          "Example",
+          "Ek 10-minute podcast episode ka 60-second highlight clip banaye. Usmein:\n1. Ek shocking fact ya question add karein (e.g., *\"90% listeners ne yeh galti ki hai!\"*).\n2. Caption mein relevant hashtags (#PodcastHacks #UrduPodcast) aur CTA (e.g., *\"Full episode link bio mein!\"*) likhein.\n3. Post karne ka best time test karein (e.g., 9 AM ya 7 PM)."
+        ],
+        [
+          "Practice",
+          "Apne last podcast episode se ek 30-60 second ka engaging clip banaye. Usmein:\n- Ek interesting moment (laughter, debate, surprising fact) select karein.\n- Caption mein 3 relevant hashtags aur ek CTA add karein."
+        ],
+        [
+          "Mini Project",
+          "Ek \"Podcast Teaser Series\" banaye:\n1. Har episode ke liye 3 teaser clips banaye (15-30 sec har clip).\n2. Har clip ko alag platform par post karein (e.g., Instagram Reels, Twitter, LinkedIn).\n3. 1 week tak daily post karein aur engagement track karein."
+        ]
+      ],
+      "answer_key": "highlights, hashtags, timing, cta",
+      "translations": {
+        "ur": {
+          "title": "دن 14 — پوڈکاسٹ پروموشن: سوشل میڈیا سے اپنے مواد کو کیسے گرو کریں؟",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "پوڈکاسٹ پروموشن صرف اپ لوڈ کرنے سے نہیں ہوتی—سوشل میڈیا پر اسٹریٹجک اپروچ سے شیئر کرنا ضروری ہے۔ ہر پلیٹ فارم (انسٹاگرام، ٹویٹر، لنکڈ اِن، یوٹیوب شارٹس) کے الگ انگیجمنٹ کے اصول ہوتے ہیں۔ آج ہم سیکھیں گے کہ کیسے اپنے پوڈکاسٹ کلپس کو وائرل بنانے والے فارمیٹس میں کنورٹ کرکے، ہیش ٹیگز اور ٹائمنگ کا استعمال کرکے ریچ بڑھائی جائے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک دس منٹ کی پوڈکاسٹ ایپی سوڈ کا ساٹھ سیکنڈ کا ہائی لائٹ کلپ بنائیں۔ اس میں:\n1. ایک حیران کن حقیقت یا سوال شامل کریں (مثلاً، ''نوے فیصد سننے والوں نے یہ غلطی کی ہے!'')\n2. کیپشن میں متعلقہ ہیش ٹیگز (#پوڈکاسٹ_ہیکس #اردو_پوڈکاسٹ) اور کال ٹو ایکشن (مثلاً، ''مکمل ایپی سوڈ کا لنک بائیو میں!'') لکھیں۔\n3. پوسٹ کرنے کا بہترین وقت ٹیسٹ کریں (مثلاً، نو بجے صبح یا سات بجے شام)"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنی آخری پوڈکاسٹ ایپی سوڈ سے ایک تیس سے ساٹھ سیکنڈ کا دلچسپ کلپ بنائیں۔ اس میں:\n- ایک دلچسپ لمحہ (ہنسی، مباحثہ، حیران کن حقیقت) منتخب کریں۔\n- کیپشن میں تین متعلقہ ہیش ٹیگز اور ایک کال ٹو ایکشن شامل کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک ''پوڈکاسٹ ٹیزر سیریز'' بنائیں:\n1. ہر ایپی سوڈ کے لیے تین ٹیزر کلپس بنائیں (پندرہ سے تیس سیکنڈ ہر کلپ)\n2. ہر کلپ کو الگ پلیٹ فارم پر پوسٹ کریں (مثلاً، انسٹاگرام ریلز، ٹویٹر، لنکڈ اِن)\n3. ایک ہفتے تک روزانہ پوسٹ کریں اور انگیجمنٹ ٹریک کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "real-estate-business": [
