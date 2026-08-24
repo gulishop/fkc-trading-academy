@@ -19571,6 +19571,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 15,
+      "id": "day-015",
+      "date": "2026-08-24",
+      "title": "Day 15 — **Blog Ke Liye \"Internal Linking\" Strategy (SEO Ka Secret Weapon)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Internal linking ka matlab hai apne hi blog ke doosre articles ka link apne post mein add karna. Ye SEO ke liye itna important hai kyun ke:\n1) Google ko pata chalta hai ki aapka content related hai\n2) Users zyada time blog par rehte hain (bounce rate kam hota hai)\n3) PageRank distribute hota hai, jisse ranking improve hoti hai"
+        ],
+        [
+          "Example",
+          "Ek \"Digital Marketing\" blog post likh rahe ho. Usmein aap \"SEO\" ya \"Content Marketing\" se related articles ka link add kar sakte hain. Jaise:\n*\"Agar aap SEO ke basics seekhna chahte hain, toh yeh guide padhein: [SEO Kya Hai? Beginner Guide]\"*"
+        ],
+        [
+          "Practice",
+          "Apne latest blog post mein 2-3 relevant internal links add karein. Link text (anchor text) natural ho, forced na lage."
+        ],
+        [
+          "Mini Project",
+          "Ek 500-word ka blog post likhein (ya existing post edit karein) aur usmein 3-4 internal links add karein. Post publish karne se pehle check karein ke links kaam kar rahe hain."
+        ]
+      ],
+      "answer_key": "relevant articles, natural anchor text, bounce rate reduce, page rank distribute",
+      "translations": {
+        "ur": {
+          "title": "دن 15 — بلاگ کے لیے \"انٹرنل لنکنگ\" اسٹریٹی (ایس ای او کا سیکریٹ ہتھیار)",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "انٹرنل لنکنگ کا مطلب ہے اپنے ہی بلاگ کے دوسرے آرٹیکلز کا لنک اپنے پوسٹ میں شامل کرنا۔ یہ ایس ای او کے لیے اتنا اہم ہے کیونکہ:\n١) گوگل کو پتہ چلتا ہے کہ آپ کا مواد آپس میں متعلق ہے\n٢) صارفین زیادہ وقت بلاگ پر رہتے ہیں (باؤنس ریٹ کم ہوتا ہے)\n٣) پیج رینک تقسیم ہوتا ہے، جس سے رینکنگ بہتر ہوتی ہے"
+            },
+            {
+              "label": "مثال",
+              "content": "اگر آپ \"ڈجیٹل مارکیٹنگ\" پر بلاگ پوسٹ لکھ رہے ہیں تو اس میں آپ \"ایس ای او\" یا \"کونٹینٹ مارکیٹنگ\" سے متعلقہ آرٹیکلز کا لنک شامل کر سکتے ہیں۔ جیسے:\n\"اگر آپ ایس ای او کی بنیادی باتیں سیکھنا چاہتے ہیں تو یہ گائیڈ پڑھیں: [ایس ای او کیا ہے؟ بیگنر گائیڈ]\""
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے تازہ ترین بلاگ پوسٹ میں ٢-٣ متعلقہ انٹرنل لنکس شامل کریں۔ لنک ٹیکسٹ (اینکر ٹیکسٹ) قدرتی ہو، زبردستی نہ لگے۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک ٥٠٠ الفاظ کا بلاگ پوسٹ لکھیں (یا موجودہ پوسٹ میں ترمیم کریں) اور اس میں ٣-٤ انٹرنل لنکس شامل کریں۔ پوسٹ شائع کرنے سے پہلے چیک کریں کہ لنکس کام کر رہے ہیں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "photography-editing": [
