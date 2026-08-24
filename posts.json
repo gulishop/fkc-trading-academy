@@ -10001,6 +10001,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 23,
+      "id": "day-023",
+      "date": "2026-08-24",
+      "title": "Day 23 — **Freelancing Mein \"Upselling\" Kaise Karein: Extra Services Se Extra Income**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Upselling ka matlab hai client ko extra services ya add-ons offer karna jo unke project ko enhance karein. Yeh trust build karne ke baad hota hai—client ko samajh aata hai ke tum unke liye valuable ho. Upselling se 20-50% extra income generate hoti hai, bina naye clients dhundne ke."
+        ],
+        [
+          "Example",
+          "Ek logo design ka order mila. Client ko bas ek logo chahiye tha, lekin tum usko samjhao ke ek **brand identity package** (logo + business card + social media banners) bhi le sakte hain. Agar client agree karta hai, to tumhara commission double ho jata hai."
+        ],
+        [
+          "Practice",
+          "Apne 1-2 existing clients ko ek email bhej kar ek relevant upsell offer karo. Jaise:\n*\"Maine aapka [service] complete kar diya hai. Kya aapko [related service] bhi chahiye? Yeh aapke project ko [benefit] dega!\"*"
+        ],
+        [
+          "Mini Project",
+          "Ek **upsell offer template** taiyar karo jo tum future mein use kar sako. Ismein in points ko zaroor shamil karo:\n1. Main service ka reference\n2. Upsell service ka description\n3. Extra value (time/cost saving)\n4. Clear CTA (Call to Action)"
+        ]
+      ],
+      "answer_key": "main service reference, upsell description, extra value, cta",
+      "translations": {
+        "ur": {
+          "title": "دن ۲۳ — فری لانسنگ میں \"اپ سیلنگ\" کیسے کریں: اضافی سروسز سے اضافی آمدنی",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "اپ سیلنگ کا مطلب ہے کلائنٹ کو اضافی سروسز یا ایڈ آنز پیش کرنا جو ان کے پروجیکٹ کو بہتر بنائیں۔ یہ اعتماد قائم کرنے کے بعد ہوتا ہے—کلائنٹ کو سمجھ آتا ہے کہ آپ ان کے لیے قیمتی ہیں۔ اپ سیلنگ سے ۲۰ سے ۵۰ فیصد تک اضافی آمدنی پیدا ہوتی ہے، بغیر نئے کلائنٹس ڈھونڈے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک لوگو ڈیزائن کا آرڈر ملا۔ کلائنٹ کو بس ایک لوگو چاہیے تھا، لیکن آپ اسے سمجھائیں کہ ایک **برینڈ آئیڈینٹیٹی پیکج** (لوگو + بزنس کارڈ + سوشل میڈیا بینرز) بھی لے سکتے ہیں۔ اگر کلائنٹ راضی ہو جاتا ہے تو آپ کا کمیشن دگنا ہو جاتا ہے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے ۱-۲ موجودہ کلائنٹس کو ایک ای میل بھیج کر ایک متعلقہ اپ سیل آفر کریں۔ جیسے:\n\"میں نے آپ کا [سروس] مکمل کر دیا ہے۔ کیا آپ کو [متعلقہ سروس] بھی چاہیے؟ یہ آپ کے پروجیکٹ کو [فائدہ] دے گا!\""
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **اپ سیل آفر ٹیمپلیٹ** تیار کریں جسے آپ مستقبل میں استعمال کر سکیں۔ اس میں ان نکات کو ضرور شامل کریں:\n۱۔ مین سروس کا حوالہ\n۲۔ اپ سیل سروس کی تفصیل\n۳۔ اضافی قدر (وقت/لاگت کی بچت)\n۴۔ واضح کال ٹو ایکشن (سی ٹی اے)"
+            }
+          ]
+        }
+      }
     }
   ],
   "graphic-design-canva": [
