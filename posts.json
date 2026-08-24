@@ -20513,6 +20513,72 @@
           ]
         }
       }
+    },
+    {
+      "day": 18,
+      "id": "day-018",
+      "date": "2026-08-24",
+      "title": "Day 18 — **Social Media Photography: Platform-Specific Optimization**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Har social media platform (Instagram, Facebook, TikTok, LinkedIn) ke apne alag rules hote hain. Photo ki aspect ratio, resolution, crop, aur even colors ko platform ke hisaab se adjust karna zaroori hai. For example, Instagram Reels ke liye vertical 9:16 format chahiye, jabki LinkedIn par square ya horizontal photos best hote hain. Alag platforms par engagement bhi alag hota hai—Instagram par bright aur contrasty photos zyada pasand kiye jaate hain, jabki Pinterest par soft aur pastel tones achhe lagte hain."
+        ],
+        [
+          "Example",
+          "Instagram ke liye ek photo ko optimize karne ka step-by-step tarika:\n1."
+        ],
+        [
+          "Crop",
+          "Original photo ko 4:5 (1080x1350) ya 1:1 (square) mein crop karo.\n2."
+        ],
+        [
+          "Resolution",
+          "1080x1080 (square) ya 1080x1350 (portrait) ensure karo—low-res photos blur ho jaate hain.\n3."
+        ],
+        [
+          "Colors",
+          "Vibrant aur warm tones (reds, oranges) zyada engagement dete hain, lekin over-saturation avoid karo.\n4."
+        ],
+        [
+          "Text/Overlays",
+          "Agar caption mein text hai, to photo ke bottom 25% mein place karo (Instagram text overlay restrictions ke hisaab se)."
+        ],
+        [
+          "Practice",
+          "Apne phone ya camera se ek photo lo (portrait ya landscape). Uske 3 alag versions banayein:\n- Instagram Feed (1:1 ya 4:5)\n- Instagram Story/Reel (9:16 vertical)\n- LinkedIn (1.91:1 ya 1:1). Har version ko Lightroom/Snapseed mein edit karke save karo."
+        ],
+        [
+          "Mini Project",
+          "Ek **\"Social Media Content Calendar\"** banao:\n1. 3 alag platforms (e.g., Instagram, LinkedIn, Pinterest) ke liye 1-1 photo select karo.\n2. Har photo ko platform ke hisaab se crop, edit, aur resize karo.\n3. Ek simple caption banao (platform ke hisaab se).\n4. Result ko ek PDF ya Canva poster mein arrange karo aur share karo (optional: class group mein)."
+        ]
+      ],
+      "answer_key": "1:1 crop, 9:16 vertical, 1.91:1, vibrant colors",
+      "translations": {
+        "ur": {
+          "title": "دن 18 — سوشل میڈیا فوٹوگرافی: پلیٹ فارم کے مطابق اصلاح",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "ہر سوشل میڈیا پلیٹ فارم (انسٹاگرام، فیس بک، ٹک ٹاک، لنکڈ اِن) کے اپنے الگ اصول ہوتے ہیں۔ فوٹو کی ایسپیکٹ ریٹيو، ریزولوشن، کٹرائی، اور یہاں تک کہ رنگوں کو پلیٹ فارم کے حساب سے ایڈجسٹ کرنا ضروری ہے۔ مثال کے طور پر، انسٹاگرام ریلز کے لیے عمودی 9:16 فارمیٹ چاہیے، جبکہ لنکڈ اِن پر مربع یا افقی تصاویر بہتر ہوتی ہیں۔ مختلف پلیٹ فارمز پر انگیجمنٹ بھی الگ ہوتی ہے—انسٹاگرام پر روشن اور کنٹراسٹ والی تصاویر زیادہ پسند کی جاتی ہیں، جبکہ پنٹرسٹ پر نرم اور پیسٹل ٹونز اچھے لگتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "انسٹاگرام کے لیے ایک فوٹو کو بہتر بنانے کا مرحلہ وار طریقہ:\n1.\n- کٹرائی: اصل فوٹو کو 4:5 (1080x1350) یا 1:1 (مربع) میں کاٹو۔\n2.\n- ریزولوشن: 1080x1080 (مربع) یا 1080x1350 (پورٹریٹ) یقینی بناؤ—کم ریزولوشن والی تصاویر دھندلی ہو جاتی ہیں۔\n3.\n- رنگ: زندہ اور گرم ٹونز (لال، نارنجی) زیادہ انگیجمنٹ دیتے ہیں، لیکن زیادہ سیچوریشن سے پرہیز کرو۔\n4.\n- متن/اوورلیز: اگر کیپشن میں متن ہے تو فوٹو کے نچلے 25 فیصد حصے میں رکھو (انسٹاگرام کے متن اوورلیز پابندیوں کے مطابق)।"
+            },
+            {
+              "label": "مشق",
+              "content": "اپنے فون یا کیمرے سے ایک فوٹو لو (پورٹریٹ یا لینڈ اسکیپ)۔ اس کے تین مختلف ورژن بناؤ:\n- انسٹاگرام فیڈ (1:1 یا 4:5)\n- انسٹاگرام اسٹوری/ریل (9:16 عمودی)\n- لنکڈ اِن (1.91:1 یا 1:1)۔ ہر ورژن کو لائٹ روم/سنیپ سیڈ میں ایڈٹ کرکے محفوظ کرو۔"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "ایک **\"سوشل میڈیا مواد کیلنڈر\"** بناؤ:\n1. تین مختلف پلیٹ فارمز (مثلاً انسٹاگرام، لنکڈ اِن، پنٹرسٹ) کے لیے ایک ایک فوٹو منتخب کرو۔\n2. ہر فوٹو کو پلیٹ فارم کے حساب سے کاٹو، ایڈٹ کرو اور ری سائز کرو۔\n3. ایک سادہ کیپشن بناؤ (پلیٹ فارم کے مطابق)।\n4. نتیجہ کو ایک پی ڈی ایف یا کینوا پوسٹر میں ترتیب دو اور شیئر کرو (اختیاری: کلاس گروپ میں)۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "voiceover-podcasting": [
