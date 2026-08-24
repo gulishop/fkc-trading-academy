@@ -26529,6 +26529,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 16,
+      "id": "day-016",
+      "date": "2026-08-24",
+      "title": "Day 16 — \"Chhote-Bade, Upar-Neeche: Apne Aas-Paas ki Cheezon ko Pehchaanain!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhein ge ke chhote-bade aur upar-neeche kaisay concepts hain jo humari roozana zindagi mein kaam aate hain. Yeh seekhna zaroori hai taake hum apne aas-paas ki cheezon ko behtar samajhein aur apni hifazat bhi kar saken."
+        ],
+        [
+          "Chhoti Kahani",
+          "Bachay ne dekha ke uska dost ka ghara chhota hai, lekin uske school ka ghara bade hai. Usne socha ke \"chhota\" aur \"bada\" ka matlab kya hota hai? Uske teacher ne bataya ke har cheez ka size alag hota hai, aur humein yeh pehchaanna hai ke kon si cheez chhoti hai aur kon si badi. Isi tarah, jab hum stairs chadte hain, toh hum upar jaate hain, aur jab neeche utarte hain, toh neeche aate hain."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, tumne aaj kya cheez dekhi jo chhoti thi aur kya cheez dekhi jo badi thi?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Chhote-bade aur upar-neeche jaise concepts seekh kar hum apni duniya ko behtar samajh sakte hain."
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۶ — چھوٹے بڑے، اوپر نیچے: اپنے آس پاس کی چیزوں کو پہچانیں!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم سیکھیں گے کہ چھوٹے بڑے اور اوپر نیچے کیسے تصورات ہیں جو ہماری روزانہ زندگی میں کام آتے ہیں۔ یہ سیکھنا ضروری ہے تاکہ ہم اپنے آس پاس کی چیزوں کو بہتر سمجھیں اور اپنی حفاظت بھی کر سکیں۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "بچے نے دیکھا کہ اس کے دوست کا گھر چھوٹا ہے، لیکن اس کے سکول کا گھر بڑا ہے۔ اس نے سوچا کہ ’چھوٹا‘ اور ’بڑا‘ کا مطلب کیا ہوتا ہے؟ اس کے ٹیچر نے بتایا کہ ہر چیز کا سائز الگ ہوتا ہے، اور ہمیں یہ پہچاننا ہے کہ کون سی چیز چھوٹی ہے اور کون سی بڑی۔ اسی طرح، جب ہم سیڑھیاں چڑھتے ہیں، تو ہم اوپر جاتے ہیں، اور جب نیچے اترتے ہیں، تو نیچے آتے ہیں۔"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "’’بیٹا، تم نے آج کیا چیز دیکھی جو چھوٹی تھی اور کیا چیز دیکھی جو بڑی تھی؟‘‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "چھوٹے بڑے اور اوپر نیچے جیسے تصورات سیکھ کر ہم اپنی دنیا کو بہتر سمجھ سکتے ہیں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-kg": [
