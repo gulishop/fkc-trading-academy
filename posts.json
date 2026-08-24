@@ -22769,6 +22769,64 @@
           ]
         }
       }
+    },
+    {
+      "day": 22,
+      "id": "day-022",
+      "date": "2026-08-24",
+      "title": "Day 22 — **Mobile Speaker & Microphone Repair: Sound Issues ka Fix**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum mobile ke speaker aur microphone ki common problems aur unke repair techniques seekhenge. Speaker mein sound nahi aana, mic ka kaam na karna, ya phir distorted audio jaise issues kaise diagnose aur fix karenge — yeh sab practical steps ke saath samjhaenge."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Speaker ka sound nahi aana",
+          "- Phone ko silent mode se normal mode par le aao.\n   - Volume check karo (kya koi headphone lagay hue to nahi hai?).\n   - Speaker grill ko clean karo (dust ya debris se block ho sakta hai).\n   - Agar sound nahi aata, to speaker ko replace karo ya soldering se check karo.\n\n2."
+        ],
+        [
+          "Microphone ka kaam na karna",
+          "- Call karke test karo (agar caller ko aapki awaaz nahi sunai deti).\n   - Mic grill ko clean karo (earpiece ke pas ka chota sa hole).\n   - Software se check karo (settings > accessibility > hearing aids > test)."
+        ],
+        [
+          "Practice",
+          "Apne ek old phone ka speaker/mic test karo:\n- Speaker: Koi audio file play karo aur check karo kya sound aa raha hai.\n- Mic: Voice recorder open karo, \"test\" bol kar record karo, phir sun kar verify karo."
+        ],
+        [
+          "Mini Project",
+          "Ek broken speaker/mic wala phone lekar:\n1. Speaker grill ko clean karo.\n2. Agar sound nahi aata, to speaker ko remove karke naya install karo (agar available ho).\n3. Mic test karo aur report likho ki problem solve hui ya nahi."
+        ]
+      ],
+      "answer_key": "speaker grill clean, volume check, speaker replace, mic grill clean",
+      "translations": {
+        "ur": {
+          "title": "دن ۲۲ — موبائل سپیکر اور مائیکروفون کی مرمت: آواز کے مسائل کا حل",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم موبائل کے سپیکر اور مائیکروفون کی عام مشکلات اور ان کی مرمت کی تکنیک سیکھیں گے۔ سپیکر میں آواز نہ آنا، مائیک کا کام نہ کرنا، یا پھر ڈسٹورٹڈ آڈیو جیسے مسائل کو کیسے ڈائیگنوز اور فکس کریں گے — یہ سب عملی مراحل کے ساتھ سمجھائیں گے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔\nسپیکر کی آواز نہ آنا:\n- فون کو سائلنٹ موڈ سے نارمل موڈ پر لے آؤ۔\n- والیوم چیک کرو (کیا کوئی ہیڈفون لگا ہوا تو نہیں ہے؟)\n- سپیکر گرِل کو صاف کرو (دھول یا ملبہ سے بلاک ہو سکتا ہے)۔\n- اگر آواز نہ آئے تو سپیکر کو ری پلیس کرو یا سولڈرنگ سے چیک کرو۔\n\n۲۔\nمائیکروفون کا کام نہ کرنا:\n- کال کر کے ٹیسٹ کرو (اگر کال کرنے والے کو آپ کی آواز سنائی نہ دے)۔\n- مائیک گرِل کو صاف کرو (ایئرپیس کے پاس کا چھوٹا سا سوراخ)۔\n- سوفٹ ویئر سے چیک کرو (سیٹنگز > ایکسیسیبلٹی > ہیرنگ ایڈز > ٹیسٹ)"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے کسی پرانے فون کا سپیکر/مائیک ٹیسٹ کرو:\n- سپیکر: کوئی آڈیو فائل چلا کر چیک کرو کہ آواز آ رہی ہے یا نہیں۔\n- مائیک: وائس ریکارڈر کھولو، \"ٹیسٹ\" بول کر ریکارڈ کرو، پھر سن کر تصدیق کرو۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک خراب سپیکر/مائیک والا فون لے کر:\n۱۔ سپیکر گرِل کو صاف کرو۔\n۲۔ اگر آواز نہ آئے تو سپیکر کو ہٹا کر نیا انسٹال کرو (اگر دستیاب ہو)۔\n۳۔ مائیک ٹیسٹ کرو اور رپورٹ لکھو کہ مسئلہ حل ہوا یا نہیں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-safety-education": [
