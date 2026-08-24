@@ -27431,6 +27431,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 17,
+      "id": "day-017",
+      "date": "2026-08-24",
+      "title": "Day 17 — \"Aaj Seekhein: Rectangle aur Oval ki Pehchan!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachon, aaj hum seekhenge do aise shapes ke baare mein jinhe aap rozana zindagi mein bhi dekhte hain! Rectangle ek aisa shape hai jismein 4 sides hoti hain aur sabhi sides do do karke barabar hoti hain. Oval ek gol shape hai, jaise egg ya moon. In shapes ko pehchanna seekhna bahut zaroori hai taake aapko koi cheez samajhne mein asaani ho."
+        ],
+        [
+          "Chhoti Kahani",
+          "Ameer ke paas ek khubsurat notebook hai. Uske pages rectangle shape ke hain. Uske dadaji ne usko kaha ke \"Ameer, yeh rectangle shape hai, jaise tumhare darwaze ya windows.\" Ameer ne gaur kiya ke uske school bag ka base bhi rectangle hai. Phir usne apne plate mein dekha ke uska sandwich oval shape ka hai. Ameer ne socha, \"Aaj maine do naye shapes seekh liye!\""
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, tumne aaj kya kya rectangle ya oval shape dekhe hain? Chalo, mil kar unke naam likhein!\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Jab bhi koi cheez tumhe pehchane mein mushkil ho, ya phir koi aisa shape ho jo tumhe ajeeb lage, toh foran mujhe ya kisi trusted bade insaan ko batana."
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۷ — آج سیکھیں: ریکٹینگل اور اوول کی پہچان!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "بچو، آج ہم دو ایسے شیپس کے بارے میں سیکھیں گے جنہیں آپ روزانہ زندگی میں بھی دیکھتے ہیں! ریکٹینگل ایک ایسا شیپ ہے جس میں ۴ سائڈز ہوتی ہیں اور سبھی سائڈز دو دو کر کے برابر ہوتی ہیں۔ اوول ایک گول شیپ ہے، جیسے انڈا یا چاند۔ ان شیپس کو پہچاننا سیکھنا بہت ضروری ہے تاکہ آپ کو کوئی چیز سمجھنے میں آسانی ہو۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "امیر کے پاس ایک خوبصورت نوٹ بک ہے۔ اس کے صفحات ریکٹینگل شیپ کے ہیں۔ اس کے دادا جی نے اسے کہا کہ ’’امیر، یہ ریکٹینگل شیپ ہے، جیسے تمہارے دروازے یا ونڈوز۔‘‘ امیر نے غور کیا کہ اس کے سکول بیگ کا بیس بھی ریکٹینگل ہے۔ پھر اس نے اپنے پلیٹ میں دیکھا کہ اس کا سینڈوچ اوول شیپ کا ہے۔ امیر نے سوچا، ’’آج میں نے دو نئے شیپس سیکھ لیے!‘‘"
+            },
+            {
+              "label": "امی ابّو کے ساتھ بات کریں",
+              "content": "’’بیٹا، تم نے آج کیا کیا ریکٹینگل یا اوول شیپ دیکھے ہیں؟ چلو، مل کر ان کے نام لکھیں!‘‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "جب بھی کوئی چیز تمہیں پہچاننے میں مشکل ہو، یا پھر کوئی ایسا شیپ ہو جو تمہیں عجیب لگے، تو فوراً مجھے یا کسی بھروسے مند بڑے انسان کو بتانا۔"
+            }
+          ]
+        }
+      }
     }
   ]
 }
