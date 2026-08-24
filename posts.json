@@ -22331,6 +22331,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 17,
+      "id": "day-017",
+      "date": "2026-08-24",
+      "title": "Day 17 — **Negotiation Skills: Property Deal Karne Ka Art**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Negotiation real estate business ka backbone hai. Yeh ek art hai jismein aapki communication, patience aur strategy ka combination hota hai. Aapko buyer aur seller ke interests ko balance karna hai taake dono parties ko win-win situation mile. Aapki body language, tone aur timing bhi negotiation mein crucial role play karte hain."
+        ],
+        [
+          "Example",
+          "Imagine a seller ne property ka price Rs. 50,000 zyada rakha hai. Aapko pata hai market mein uski value Rs. 40,000 zyada hai. Aap poochhein: *\"Sir, aapko property ka price Rs. 50,000 zyada lag raha hai, lekin market mein uski value Rs. 40,000 zyada hai. Kya hum Rs. 45,000 par agree ho sakte hain?\"* Isse seller ko lagta hai aap realistic ho aur negotiation fair hai."
+        ],
+        [
+          "Practice",
+          "Apne kisi friend ya family member ke saath ek mock negotiation session karo. Ek role seller ka aur ek role buyer ka nibhao. Try karo ki dono parties ko satisfied karne ki koshish karo."
+        ],
+        [
+          "Mini Project",
+          "Ek property listing ko analyze karo aur uske liye negotiation strategy likho. Consider karo:\n- Property ki actual market value\n- Seller ki expectations\n- Buyer ki budget\n- Possible counter-offers"
+        ]
+      ],
+      "answer_key": "market value, seller expectations, buyer budget, counter-offer",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۷ — مذاکرات کی مہارت: پراپرٹی ڈیل کرنے کا فن",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "مذاکرات رئیل اسٹیٹ بزنس کی ریڑھ کی ہڈی ہیں۔ یہ ایک فن ہے جس میں آپ کی کمیونیکیشن، صبر اور حکمتِ عملی کا امتزاج ہوتا ہے۔ آپ کو خریدار اور بیچنے والے کے مفادات میں توازن برقرار رکھنا ہے تاکہ دونوں فریقوں کو جیت جیت کی صورت ملے۔ آپ کی باڈی لینگویج، لہجہ اور ٹائمنگ بھی مذاکرات میں کلیدی کردار ادا کرتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "تصور کریں کہ ایک بیچنے والے نے پراپرٹی کی قیمت پچاس ہزار روپے زیادہ رکھی ہے۔ آپ کو معلوم ہے کہ مارکیٹ میں اس کی قدر چالیس ہزار روپے زیادہ ہے۔ آپ پوچھیں: *سر، آپ کو پراپرٹی کی قیمت پچاس ہزار روپے زیادہ لگ رہی ہے، لیکن مارکیٹ میں اس کی قدر چالیس ہزار روپے زیادہ ہے۔ کیا ہم پینتالیس ہزار پر متفق ہو سکتے ہیں؟* اس سے بیچنے والے کو لگتا ہے کہ آپ حقیقت پسند ہیں اور مذاکرات منصفانہ ہیں۔"
+            },
+            {
+              "label": "مشق",
+              "content": "اپنے کسی دوست یا خاندان کے فرد کے ساتھ ایک مشق کے طور پر مذاکرات کا سیشن کریں۔ ایک کردار بیچنے والے کا اور دوسرا خریدار کا ادا کریں۔ کوشش کریں کہ دونوں فریقوں کو مطمئن کرنے کی کوشش ہو۔"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "ایک پراپرٹی کی لسٹنگ کا تجزیہ کریں اور اس کے لیے مذاکرات کی حکمتِ عملی لکھیں۔ مندرجہ ذیل باتوں کو مدِنظر رکھیں:\n- پراپرٹی کی اصل مارکیٹ ویلیو\n- بیچنے والے کی توقعات\n- خریدار کا بجٹ\n- ممکنہ جوابی پیشکشیں"
+            }
+          ]
+        }
+      }
     }
   ],
   "mobile-repairing": [
