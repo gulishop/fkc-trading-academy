@@ -8745,6 +8745,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 17,
+      "id": "day-017",
+      "date": "2026-08-24",
+      "title": "Day 17 — **COD Orders Ko Secure Karein: Pakistan Mein Fraud Se Kaise Bachain**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "COD (Cash on Delivery) Pakistan mein dropshipping ka common method hai, lekin fraud orders (fake addresses, chargebacks) ka risk bhi zyada hai. Aaj seekhein ke COD orders ko kaise verify karein, high-risk areas ko identify karein, aur fraud se kaise bachain—bina sales ko affect karein."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Address Verification",
+          "Agar order Lahore ke \"Model Town\" se hai lekin courier company ka record show karta hai ke woh area \"closed\" hai, toh order reject kar dein.\n2."
+        ],
+        [
+          "Phone Number Check",
+          "Agar customer ka number \"0300-1234567\" hai lekin Google par search karne par woh number kisi scam report se match karta hai, toh order cancel kar dein.\n3."
+        ],
+        [
+          "Prepaid COD",
+          "Agar order value Rs. 5,000+ hai, toh customer ko \"Prepaid COD\" ka option dein (e.g., \"JazzCash se advance payment karne par Rs. 200 discount\")."
+        ],
+        [
+          "Practice",
+          "Apne store ke last 5 COD orders ko check karain. Har order ke liye yeh verify karein:\n- Kya shipping address valid hai? (Google Maps par check karein)\n- Kya customer ka number kisi fraud report se match karta hai? (Truecaller ya local forums check karein)"
+        ],
+        [
+          "Mini Project",
+          "Ek simple Excel sheet banaein jismein har COD order ke liye yeh columns hon:\n1. Order ID\n2. Customer Name\n3. Shipping Address (valid/invalid)\n4. Phone Number (fraud/clean)\n5. Order Value (Rs.)\n6. Decision (Accept/Reject/Prepaid COD)"
+        ]
+      ],
+      "answer_key": "address verification, phone number check, prepaid cod, fraud detection",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۷ — **سی او ڈی آرڈرز کو محفوظ کریں: پاکستان میں فراڈ سے کیسے بچیں**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "سی او ڈی (کیش آن ڈیلیوری) پاکستان میں ڈراپ شپنگ کا عام طریقہ ہے، لیکن فراڈ آرڈرز (جعلی پتے، چارچ بیکس) کا خطرہ بھی زیادہ ہوتا ہے۔ آج سیکھیں کہ سی او ڈی آرڈرز کو کیسے تصدیق کریں، ہائی رسک ایریاز کی شناخت کریں، اور فراڈ سے کیسے بچیں—بغیر سیلز کو متاثر کیے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔\nایڈریس کی تصدیق: اگر آرڈر لاہور کے \"ماڈل ٹاؤن\" سے ہے لیکن کوریئر کمپنی کا ریکارڈ دکھاتا ہے کہ وہ ایریا \"بند\" ہے، تو آرڈر مسترد کر دیں۔\n۲۔\nفون نمبر کی چیکنگ: اگر کسٹمر کا نمبر \"۰۳۰۰-۱۲۳۴۵۶۷\" ہے لیکن گوگل پر تلاش کرنے پر وہ نمبر کسی فراڈ رپورٹ سے میچ کرتا ہے، تو آرڈر منسوخ کر دیں۔\n۳۔\nپری پیڈ سی او ڈی: اگر آرڈر کی مالیت ۵,۰۰۰ روپے سے زیادہ ہے، تو کسٹمر کو \"پری پیڈ سی او ڈی\" کا آپشن دیں (مثلاً، \"جاز کیش سے ایڈوانس ادائیگی پر ۲۰۰ روپے کی چھوٹ\")۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے اسٹور کے آخری ۵ سی او ڈی آرڈرز کو چیک کریں۔ ہر آرڈر کے لیے یہ تصدیق کریں:\n• کیا شپنگ ایڈریس درست ہے؟ (گوگل میپس پر چیک کریں)\n• کیا کسٹمر کا نمبر کسی فراڈ رپورٹ سے میچ کرتا ہے؟ (ٹروکالر یا مقامی فورمز چیک کریں)"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک سادہ ایکسل شیٹ بنائیں جس میں ہر سی او ڈی آرڈر کے لیے یہ کالمز ہوں:\n۱۔ آرڈر آئی ڈی\n۲۔ کسٹمر کا نام\n۳۔ شپنگ ایڈریس (درست/غلط)\n۴۔ فون نمبر (فراڈ/کلین)\n۵۔ آرڈر کی مالیت (روپے)\n۶۔ فیصلہ (قبول کریں/مسترد کریں/پری پیڈ سی او ڈی)"
+            }
+          ]
+        }
+      }
     }
   ],
   "freelancing": [
