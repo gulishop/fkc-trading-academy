@@ -3477,6 +3477,64 @@
           ]
         }
       }
+    },
+    {
+      "day": 20,
+      "id": "day-020",
+      "date": "2026-08-24",
+      "title": "Day 20 — **AI Se Social Media Ads Ko Optimize Karke ROI Badhao**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "AI tools se social media ads ko kaise optimize karna hai, yeh seekhiye. AI algorithms data analyze karke best audience, bidding strategy aur ad creative suggest karte hain, jisse CPL (Cost Per Lead) aur CPA (Cost Per Acquisition) kam hote hain. AI-powered tools jaise Facebook Advantage+ Shopping Campaigns ya Google Performance Max ads ko automatically optimize karte hain."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Meta Ads Manager mein AI ka istemal",
+          "- Campaign setup karte waqt \"Advantage+ Shopping Campaigns\" select karein.\n   - AI automatically best audience, placements aur bidding strategy choose karega.\n   - Ad creatives (images/videos) upload karein, AI unhe test karega aur best-performing ko zyada budget dega.\n\n2."
+        ],
+        [
+          "Google Ads mein Performance Max ka istemal",
+          "- Performance Max campaign banayein.\n   - AI multiple channels (YouTube, Search, Display) par ads ko optimize karega.\n   - Audience signals (demographics, interests) provide karein, AI unhe refine karega."
+        ],
+        [
+          "Practice",
+          "Apne ek existing ad account mein AI-powered feature (jaise Meta ka Advantage+ ya Google ka Performance Max) enable karein aur 3 din tak results track karein. CPL/CPA mein kya farq aaya?"
+        ],
+        [
+          "Mini Project",
+          "Ek naya Facebook/Instagram ad campaign banayein jo AI (Advantage+) ka istemal kare. 7 din tak results analyze karein aur ek 1-paragraph ka report likhein ki AI ne kaise performance improve ki."
+        ]
+      ],
+      "answer_key": "audience targeting, bidding optimization, creative testing, cpl reduction",
+      "translations": {
+        "ur": {
+          "title": "دن 20 — **اے آئی سے سوشل میڈیا اشتہارات کو آپٹیمائز کرکے آر او آئی بڑھائیں**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "اے آئی ٹولز سے سوشل میڈیا اشتہارات کو کیسے آپٹیمائز کرنا ہے، یہ سیکھیں۔ اے آئی الگورتھمز ڈیٹا کا تجزیہ کرکے بہترین ٹارگٹ آڈینس، بولی لگانے کی حکمت عملی اور اشتہاری کریئٹیو تجویز کرتے ہیں، جس سے سی پی ایل (کاسٹ پر لیڈ) اور سی پی اے (کاسٹ پر ایکوزیشن) کم ہوتے ہیں۔ اے آئی سے چلنے والے ٹولز جیسے فیس بک ایڈوانٹیج پلس شاپنگ مہمات یا گوگل پرفارمنس میکس اشتہارات کو خود بخود آپٹیمائز کرتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1۔ میٹا ایڈز مینیجر میں اے آئی کا استعمال:\n- مہم سیٹ اپ کرتے وقت \"ایڈوانٹیج پلس شاپنگ مہمات\" سلیکٹ کریں۔\n- اے آئی خود بخود بہترین آڈینس، پوزیشنز اور بولی لگانے کی حکمت عملی کا انتخاب کرے گا۔\n- اشتہاری کریئٹیوز (تصاویر/ویڈیوز) اپ لوڈ کریں، اے آئی انہیں ٹیسٹ کرے گا اور بہترین کارکردگی والے کو زیادہ بجٹ دے گا۔\n\n2۔ گوگل ایڈز میں پرفارمنس میکس کا استعمال:\n- پرفارمنس میکس مہم بنائیں۔\n- اے آئی متعدد چینلز (یوٹیوب، سرچ، ڈسپلے) پر اشتہارات کو آپٹیمائز کرے گا۔\n- آڈینس سگنلز (ڈیموگرافکس، دلچسپیاں) فراہم کریں، اے آئی انہیں ریفائن کرے گا۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے موجودہ اشتہاری اکاؤنٹ میں اے آئی سے چلنے والے فیچر (جیسے میٹا کا ایڈوانٹیج پلس یا گوگل کا پرفارمنس میکس) کو فعال کریں اور تین دن تک نتائج کو ٹریک کریں۔ سی پی ایل/سی پی اے میں کیا فرق آیا؟"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک نیا فیس بک/انسٹاگرام اشتہاری مہم بنائیں جو اے آئی (ایڈوانٹیج پلس) کا استعمال کرے۔ سات دن تک نتائج کا تجزیہ کریں اور ایک پیراگراف کا رپورٹ لکھیں کہ اے آئی نے کارکردگی کو کیسے بہتر بنایا۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "facebook-page-growth": [
