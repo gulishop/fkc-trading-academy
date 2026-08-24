@@ -12323,6 +12323,68 @@
           ]
         }
       }
+    },
+    {
+      "day": 6,
+      "id": "day-006",
+      "date": "2026-08-24",
+      "title": "Day 6 — **Audio Sync Magic: Music aur Dialogue Ko Perfectly Align Karein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Sound design ka matlab hai apne video ki audio ko professional banana—music, dialogue, aur background sounds ko timing aur mood ke hisab se align karna. Aaj hum seekhenge ki kaise music ko video ke mood ke hisab se choose karna hai, dialogue ko timing ke saath sync karna hai, aur background sounds (ambience) ka istemal karna hai taake video aur audio ka connection strong ho."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Music Sync",
+          "Ek motivational video mein upbeat music use karo lekin usko video ke climax par peak par lehrane do (jaise koi achievement show ho raha ho).\n2."
+        ],
+        [
+          "Dialogue Sync",
+          "Ek interview mein speaker ki lips movement ke hisab se audio cut karo taake realistic lage.\n3."
+        ],
+        [
+          "Ambience",
+          "Outdoor scene mein birds chirne ya traffic noise add karo taake scene zyada realistic ho."
+        ],
+        [
+          "Practice",
+          "Apne phone ya laptop par koi 10-second ka clip lo (ya pehle se edit kiya hua video use karo). Usme:\n- Ek trending background music add karo (CapCut mein \"Music\" tab se).\n- Music ko video ke timing ke hisab se adjust karo (drag karke length badhao/ghatao ya fade in/out use karo).\n- Agar dialogue hai, to usko music ke hisab se trim karo taake clash na ho."
+        ],
+        [
+          "Mini Project",
+          "Ek **15-30 second ka Reel** banayein jisme:\n- Ek trending audio (music ya viral sound) use ho.\n- Dialogue ya voiceover ko music ke hisab se sync karo.\n- Background mein subtle ambience add karo (jaise rain, cafe noise, etc.).\n- Export karne se pehle check karo ki audio aur video ka timing perfect hai."
+        ]
+      ],
+      "answer_key": "music timing adjust, dialogue sync, ambience add, volume balance",
+      "translations": {
+        "ur": {
+          "title": "دن 6 — آڈیو سنک میجک: میوزک اور ڈائیلاگ کو پرفیکٹلی الائن کریں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ساؤنڈ ڈیزائن کا مطلب ہے اپنے ویڈیو کی آڈیو کو پیشہ ورانہ بنانا—میوزک، ڈائیلاگ، اور بیک گراؤنڈ ساؤنڈز کو ٹائمنگ اور موڈ کے حساب سے الائن کرنا۔ آج ہم سیکھیں گے کہ کیسے میوزک کو ویڈیو کے موڈ کے حساب سے چننا ہے، ڈائیلاگ کو ٹائمنگ کے ساتھ سنک کرنا ہے، اور بیک گراؤنڈ ساؤنڈز (ایمبینس) کا استعمال کرنا ہے تاکہ ویڈیو اور آڈیو کا کنکشن مضبوط ہو۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1. میوزک سنک: ایک موٹیویشنل ویڈیو میں اپ بیٹ میوزک استعمال کرو لیکن اسے ویڈیو کے کلائمکس پر پیک پر لے آؤ (جیسے کوئی اچیومنٹ شو ہو رہا ہو)۔\n2. ڈائیلاگ سنک: ایک انٹرویو میں سپیکر کی لبز موومنٹ کے حساب سے آڈیو کاٹو تاکہ ریئلسٹک لگے۔\n3. ایمبینس: آؤٹ ڈور سین میں پرندوں کی چہچہاہٹ یا ٹریفک کا شور شامل کرو تاکہ سین زیادہ ریئلسٹک ہو۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے فون یا لیپ ٹاپ پر کوئی دس سیکنڈ کا کلپ لو (یا پہلے سے ایڈٹ کیا ہوا ویڈیو استعمال کرو)۔ اس میں:\n- ایک ٹرینڈنگ بیک گراؤنڈ میوزک شامل کرو (کیپ کٹ میں \"میوزک\" ٹیب سے)۔\n- میوزک کو ویڈیو کی ٹائمنگ کے حساب سے ایڈجسٹ کرو (ڈریگ کرکے لمبائی بڑھاؤ/گھٹاؤ یا فیڈ ان/آؤٹ استعمال کرو)۔\n- اگر ڈائیلاگ ہے تو اسے میوزک کے حساب سے ٹریم کرو تاکہ کلش نہ ہو۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک پندرہ سے تیس سیکنڈ کا رییل بنائیں جس میں:\n- ایک ٹرینڈنگ آڈیو (میوزک یا وائرل ساؤنڈ) استعمال ہو۔\n- ڈائیلاگ یا وائس اوور کو میوزک کے حساب سے سنک کرو۔\n- بیک گراؤنڈ میں ہلکا سا ایمبینس شامل کرو (جیسے بارش، کیفے کا شور وغیرہ)۔\n- ایکسپورٹ کرنے سے پہلے چیک کرو کہ آڈیو اور ویڈیو کی ٹائمنگ بالکل ٹھیک ہے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "print-on-demand": [
