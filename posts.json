@@ -23973,6 +23973,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 19,
+      "id": "day-019",
+      "date": "2026-08-24",
+      "title": "Day 19 — \"Doctor-Doctor aur Dukan-Dukan: Khel ke seekhein!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhein ge ke khel ke zariye kaise hum apne aap ko aur doosron ko safe rakh sakte hain. Jab tum doctor-doctor ya dukaan-dukaan khelte ho, yaad rakhna ke tumhari body sirf tumhari hai. Agar koi tumse pooche ke \"Mera hath pakad lo\" ya \"Mujhe gale lagao\", toh tum \"Na, meri body meri hai\" keh sakte ho. Koi bhi cheez secret rakhne ki zaroorat nahi!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Aman aur Ayesha ne doctor-doctor khela. Aman ne kaha, \"Ayesha, tumhari temperature check karte hain.\" Ayesha ne haath badhaya. Aman ne socha, \"Agar main uska haath pakad loon toh kya hoga?\" Usne Ayesha se poochha, \"Kya main tumhara haath pakad sakta hoon?\" Ayesha ne muskurate hue kaha, \"Nahi, meri body meri hai!\" Aman ne samajh liya ke yeh theek baat hai."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar koi tumse pooche ke 'Chalo, tumhara haath pakad lo' toh tum kya karoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Tumhari body tumhari hai—kisi ko bhi \"Na\" kehne ka haq hai! Agar koi cheez ajeeb lage, toh ammi/abbu ko zaroor batana."
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۹ — ڈاکٹر ڈاکٹر اور دکان دکان: کھیل کے سیکھیں!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم سیکھیں گے کہ کھیل کے ذریعے کیسے ہم اپنے آپ کو اور دوسروں کو محفوظ رکھ سکتے ہیں۔ جب تم ڈاکٹر ڈاکٹر یا دکان دکان کھیلتے ہو، یاد رکھنا کہ تمہارا بدن صرف تمہارا ہے۔ اگر کوئی تم سے پوچھے کہ ’میرا ہاتھ پکڑ لو‘ یا ’مجھے گلے لگاﺅ‘، تو تم ’نہیں، میرا بدن میرا ہے‘ کہہ سکتے ہو۔ کسی بھی چیز کو راز رکھنے کی ضرورت نہیں ہے!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "امان اور عائشہ نے ڈاکٹر ڈاکٹر کھیلا۔ امان نے کہا، ’عائشہ، تمہارا ٹمپریچر چیک کرتے ہیں۔‘ عائشہ نے ہاتھ بڑھایا۔ امان نے سوچا، ’اگر میں اس کا ہاتھ پکڑ لوں تو کیا ہوگا؟‘ اس نے عائشہ سے پوچھا، ’کیا میں تمہارا ہاتھ پکڑ سکتا ہوں؟‘ عائشہ نے مسکراتے ہوئے کہا، ’نہیں، میرا بدن میرا ہے!‘ امان نے سمجھ لیا کہ یہ ٹھیک بات ہے۔"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "’بیٹا، اگر کوئی تم سے پوچھے کہ ’چلو، تمہارا ہاتھ پکڑ لو‘ تو تم کیا کرو گے؟‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمہارا بدن تمہارا ہے—کسی کو بھی ’نہیں‘ کہنے کا حق ہے! اگر کوئی چیز عجیب لگے، تو امّی/ابّو کو ضرور بتانا۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-good-behavior": [
