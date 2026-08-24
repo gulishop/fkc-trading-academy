@@ -15291,6 +15291,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 15,
+      "id": "day-015",
+      "date": "2026-08-24",
+      "title": "Day 15 — Object-Oriented Programming: Encapsulation aur Abstraction",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Encapsulation aur abstraction OOP ke do powerful concepts hain jo code ko secure aur maintainable banate hain. Encapsulation ka matlab hai data aur uske functions ko ek single unit (class) mein bundle karna, jabki abstraction ka matlab hai complex details ko chhupa kar sirf zaroori functionality provide karna."
+        ],
+        [
+          "Example",
+          "```python\nclass BankAccount:\n    def __init__(self, balance=0):\n        self.__balance = balance  # Encapsulation: private variable\n\n    def deposit(self, amount):\n        if amount > 0:\n            self.__balance += amount\n            print(f\"Deposited: {amount}\")\n\n    def withdraw(self, amount):\n        if 0 < amount <= self.__balance:\n            self.__balance -= amount\n            print(f\"Withdrawn: {amount}\")\n        else:\n            print(\"Insufficient balance!\")\n\n    def get_balance(self):  # Abstraction: sirf balance show karna\n        return self.__balance\n```"
+        ],
+        [
+          "Practice",
+          "Ek `Student` class banayein jisme `name` aur `marks` private variables hon. `add_marks()` aur `get_percentage()` methods banaen. `get_percentage()` sirf percentage return kare."
+        ],
+        [
+          "Mini Project",
+          "Ek `LibraryBook` class banayein jo `title`, `author`, aur `is_available` (private) store kare. `borrow()` aur `return_book()` methods banaen jo availability check karein. `get_status()` se book ki availability pata chale."
+        ]
+      ],
+      "answer_key": "private variables, methods, abstraction, encapsulation",
+      "translations": {
+        "ur": {
+          "title": "دن 15 — آبجیکٹ اورینٹڈ پروگرامنگ: انکپسولیشن اور ابسٹریکشن",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "انکپسولیشن اور ابسٹریکشن آبجیکٹ اورینٹڈ پروگرامنگ کے دو طاقتور تصورات ہیں جو کوڈ کو محفوظ اور قابلِ انتظام بناتے ہیں۔ انکپسولیشن کا مطلب ہے ڈیٹا اور اس کے فنکشنز کو ایک ہی یونٹ (کلاس) میں بند کرنا، جبکہ ابسٹریکشن کا مطلب ہے پیچیدہ تفصیلات کو چھپا کر صرف ضروری فعالیت فراہم کرنا۔"
+            },
+            {
+              "label": "مثال",
+              "content": "```python\nclass BankAccount:\n    def __init__(self, balance=0):\n        self.__balance = balance  # Encapsulation: private variable\n\n    def deposit(self, amount):\n        if amount > 0:\n            self.__balance += amount\n            print(f\"Deposited: {amount}\")\n\n    def withdraw(self, amount):\n        if 0 < amount <= self.__balance:\n            self.__balance -= amount\n            print(f\"Withdrawn: {amount}\")\n        else:\n            print(\"Insufficient balance!\")\n\n    def get_balance(self):  # Abstraction: sirf balance show karna\n        return self.__balance\n```"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "ایک `Student` کلاس بنائیں جس میں `name` اور `marks` پرائیویٹ ویری ایبلز ہوں۔ `add_marks()` اور `get_percentage()` میتھڈز بنائیں۔ `get_percentage()` صرف فیصد واپس کرے۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک `LibraryBook` کلاس بنائیں جو `title`، `author`، اور `is_available` (پرائیویٹ) اسٹور کرے۔ `borrow()` اور `return_book()` میتھڈز بنائیں جو دستیابی چیک کریں۔ `get_status()` سے کتاب کی دستیابی کا پتہ چلے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "web-development": [
