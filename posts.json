@@ -3593,6 +3593,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 21,
+      "id": "day-021",
+      "date": "2026-08-25",
+      "title": "Day 21 — **Crisis Management: Social Media Par Brand Ko Safeguard Karna**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Social media par koi bhi brand kabhi bhi crisis ka shikaar ho sakta hai—negative comments, viral complaints, ya fake news. Aaj seekhein ke kaise aise waqt mein brand ki reputation protect karni hai, response plan banayein, aur negative sentiment ko positive mein convert karna hai."
+        ],
+        [
+          "Example",
+          "Ek fast-food chain ke Twitter par customer ne video post ki ke uske burger mein plastic mila hai. Team ne:\n1. **24-hour response window** mein official statement diya (\"Hum is par gaur kar rahe hain...\").\n2. **Direct message** karke customer se details maangi.\n3. **Video response** upload ki ke investigation show ho.\n4. **Follow-up post** kiya ke issue resolve ho gaya hai aur compensation di gayi."
+        ],
+        [
+          "Practice",
+          "Apne ya kisi brand ka **crisis response plan** likhein (3 steps):\n1. Crisis type (e.g., product failure, PR scandal)\n2. Response time (kitne ghante mein react karna hai)\n3. Key message (kya kehna hai)"
+        ],
+        [
+          "Mini Project",
+          "Ek **social media crisis simulation** taiyaar karo:\n- Ek fake negative comment/post create karo (e.g., \"Aapki service itni kharab hai ke main dobara nahi aunga!\").\n- Uske liye **3-line ka professional response** likho jo brand ki reputation bacha sake."
+        ]
+      ],
+      "answer_key": "acknowledge, investigate, respond, follow-up",
+      "translations": {
+        "ur": {
+          "title": "دن 21 — کرائسس مینیجمینٹ: سوشل میڈیا پر برانڈ کو سیف گارڈ کرنا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "سوشل میڈیا پر کوئی بھی برانڈ کبھی بھی کرائسس کا شکار ہو سکتا ہے—منفی کمنٹس، وائرل شکایات، یا جھوٹی خبریں۔ آج سیکھیں کہ ایسے وقت میں برانڈ کی ریپیوٹیشن کیسے پروٹیکٹ کرنی ہے، رسپانس پلان بنانا ہے، اور منفی سینٹیمینٹ کو مثبت میں کیسے کنورٹ کرنا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک فاسٹ فوڈ چین کے ٹوئٹر پر کسٹمر نے ویڈیو پوسٹ کی کہ اس کے برگر میں پلاسٹک ملا ہے۔ ٹیم نے:\n1. **24 گھنٹے کے رسپانس ونڈو** میں آفیشل بیان دیا (\"ہم اس پر غور کر رہے ہیں...\")۔\n2. **ڈائریکٹ میسج** کرکے کسٹمر سے تفصیلات مانگیں۔\n3. **ویڈیو رسپانس** اپ لوڈ کی کہ انویسٹی گیشن دکھائی جائے۔\n4. **فالو اپ پوسٹ** کی کہ مسئلہ حل ہو گیا ہے اور کمپنسیشن دی گئی ہے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے یا کسی برانڈ کا **کرائسس رسپانس پلان** لکھیں (3 اقدامات):\n1. کرائسس کی قسم (مثلاً، پروڈکٹ فیلئر، پی آر سکینڈل)\n2. رسپانس ٹائم (کتنے گھنٹے میں ری ایکٹ کرنا ہے)\n3. کلیدی پیغام (کیا کہنا ہے)"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **سوشل میڈیا کرائسس سمولیشن** تیار کریں:\n- ایک جعلی منفی کمنٹ/پوسٹ بنائیں (مثلاً، \"آپ کی سروس اتنی خراب ہے کہ میں دوبارہ نہیں آؤں گا!\")\n- اس کے لیے **3 سطری کا پیشہ ورانہ رسپانس** لکھیں جو برانڈ کی ریپیوٹیشن بچا سکے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "facebook-page-growth": [
