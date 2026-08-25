@@ -26819,6 +26819,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 20,
+      "id": "day-020",
+      "date": "2026-08-25",
+      "title": "Day 20 — **Pencil Pakadna aur Seedhi Lakeerein Banana**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachon, aaj hum seekhenge ke pencil ko theek se kaise pakadna hai taake seedhi aur sundar lakeerein ban sakein. Yeh zaroori hai kyun ke isse na sirf likhna aasan hota hai, balki humare haath bhi thake nahin. Hamesha yaad rakhna ke tumhari zindagi mein koi bhi cheez tumhara haath pakadne ya tumhe takleef dene ka haq nahi rakhti—agar koi aisa karne ki koshish kare, toh foran ammi-abbu ko batana."
+        ],
+        [
+          "Chhoti Kahani",
+          "Areeba ne pencil ko theek se pakadna seekha. Usne ek sundar sundar saira banaaya. Uske teacher ne kaha, \"Areeba, tumhari lakeerein itni sundar hain! Yeh isliye hai kyun ke tumne pencil theek se pakadi hai.\" Areeba ko bahut khushi hui."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, tumne aaj pencil kaise pakadi? Kya tumhe comfortable feel hua?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Pencil ko theek se pakadna seekho, taake tumhari lakeerein bhi sundar banein!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۲۰ — **پینسل پکڑنا اور سیدھی لکیریں بنانا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "بچو، آج ہم سیکھیں گے کہ پینسل کو ٹھیک سے کیسے پکڑنا ہے تاکہ سیدھی اور خوبصورت لکیریں بنا سکیں۔ یہ ضروری ہے کیونکہ اس سے نہ صرف لکھنا آسان ہوتا ہے، بلکہ ہمارے ہاتھ بھی تھکتے نہیں۔ ہمیشہ یاد رکھنا کہ تمہاری زندگی میں کوئی بھی چیز تمہارا ہاتھ پکڑنے یا تمہیں تکلیف دینے کا حق نہیں رکھتی—اگر کوئی ایسا کرنے کی کوشش کرے، تو فوراً امی ابو کو بتانا۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "عریبہ نے پینسل کو ٹھیک سے پکڑنا سیکھا۔ اس نے ایک خوبصورت خوبصورت سیرا بنایا۔ اس کے ٹیچر نے کہا، ’’عریبہ، تمہاری لکیریں اتنی خوبصورت ہیں! یہ اس لیے ہے کیونکہ تم نے پینسل ٹھیک سے پکڑی ہے۔‘‘ عریبہ کو بہت خوشی ہوئی۔"
+            },
+            {
+              "label": "امی ابو کے ساتھ بات کریں",
+              "content": "’’بیٹا، تم نے آج پینسل کیسے پکڑی؟ کیا تمہیں کمفرٹ ایبل محسوس ہوا؟‘‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "پینسل کو ٹھیک سے پکڑنا سیکھو، تاکہ تمہاری لکیریں بھی خوبصورت بنیں!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-pg": [
