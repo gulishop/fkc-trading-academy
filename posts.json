@@ -24915,6 +24915,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 20,
+      "id": "day-020",
+      "date": "2026-08-25",
+      "title": "Day 20 — **Parivar ki Raat: Screen ke bina khushiyan badhaein!**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhein ge ke screen ke bina bhi kitni mazaak games khel sakte hain! Lekin yaad rakhna, har khel mein hamesha respect aur safety sabse pehle hai. Kisi bhi game mein agar koi cheez aapko ajeeb lage to turant ammi/abbu ko batana hai—chahe woh koi bhi game ho!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Aarav ne apne chachu ke ghar mein sabke saath \"Kya hai yeh?\" game khela. Sabke paas ek cheez thi, aur ek doosre se poochte the, \"Yeh kya hai?\" Lekin ek bachcha, Riya, ne ek cheez pakdi jo usko thoda ajeeb laga. Usne turant apni ammi ko bataya. Ammi ne usko samjhaya ke agar koi cheez aapko comfort na de to usko chhod dena hai—aur yeh bilkul theek hai!"
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar tum kisi game mein koi ajeeb feeling feel karo, to kya karoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Har game mein apna aur doosron ka respect karna—kyunki sabki feelings important hain! 💖"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ٢٠ — **پَرِوار کی رات: سکرین کے بغیر خوشیاں بڑھائیں!**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "آج ہم سیکھیں گے کہ سکرین کے بغیر بھی کتنی مزے دار گیمز کھیل سکتے ہیں! لیکن یاد رکھنا، ہر کھیل میں ہمیشہ احترام اور سیفٹی سب سے پہلے ہے۔ کسی بھی گیم میں اگر کوئی چیز آپ کو عجیب لگے تو فوراً امی/ابو کو بتانا ہے—چاہے وہ کوئی بھی گیم ہو!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "آراؤ نے اپنے چچا کے گھر میں سب کے ساتھ \"یہ کیا ہے؟\" گیم کھیلی۔ سب کے پاس ایک چیز تھی، اور ایک دوسرے سے پوچھتے تھے، \"یہ کیا ہے؟\" لیکن ایک بچہ، ریا، نے ایک چیز پکڑی جو اسے تھوڑا عجیب لگا۔ اس نے فوراً اپنی امی کو بتایا۔ امی نے اسے سمجھایا کہ اگر کوئی چیز آپ کو آرام نہ دے تو اسے چھوڑ دینا ہے—اور یہ بالکل ٹھیک ہے!"
+            },
+            {
+              "label": "امی ابو کے ساتھ بات کریں",
+              "content": "\"بیٹا، اگر تم کسی گیم میں کوئی عجیب فِیلنگ محسوس کرو، تو کیا کرو گے؟\""
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "ہر گیم میں اپنا اور دوسروں کا احترام کرنا—کیونکہ سب کی فیْلنگز اہم ہیں! 💖"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-good-behavior": [
