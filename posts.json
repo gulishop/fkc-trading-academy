@@ -5425,6 +5425,64 @@
           ]
         }
       }
+    },
+    {
+      "day": 25,
+      "id": "day-025",
+      "date": "2026-08-25",
+      "title": "Day 25 — **Forex Market Participants: Kaun Hai Aur Kaise Influence Karte Hain?**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Forex market mein sirf traders hi nahi, balki banks, corporations, governments, aur hedge funds bhi active hain. Har participant ka apna role hai—kuch liquidity provide karte hain, kuch long-term trends banate hain, aur kuch short-term volatility increase karte hain. In participants ko samajhna isliye zaroori hai kyunki inke actions se market movements predict karne mein help milti hai."
+        ],
+        [
+          "Example",
+          "Ek **central bank** (jaise RBI) jab interest rates badhata hai, toh uski currency (INR) strong hoti hai—kyunki investors zyada return ke liye usko khareedte hain. Vise versa, ek **hedge fund** jab koi currency pair par bulk order lagata hai, toh uski price briefly move kar sakti hai, chahe fundamentals kuch bhi ho."
+        ],
+        [
+          "Practice",
+          "Apne trading platform par **Economic Calendar** check karein aur dekhiye ki aaj konse major participants (jaise ECB, Fed, ya large banks) ke announcements hain. Unke statements ka currency pairs par immediate asar note karein."
+        ],
+        [
+          "Mini Project",
+          "1."
+        ],
+        [
+          "Participants ka Breakdown",
+          "Ek chart banaen jismein 5 major forex market participants ke roles aur unke trading styles (short-term/long-term) likhein.\n2."
+        ],
+        [
+          "Case Study",
+          "Kisi ek currency pair (jaise EUR/USD) ke recent movement ko analyze karein—kya uske peeche koi major participant (jaise ECB) ka role tha?"
+        ]
+      ],
+      "answer_key": "central bank, hedge funds, liquidity providers, corporations, governments",
+      "translations": {
+        "ur": {
+          "title": "دن ۲۵ — **فاریکس مارکیٹ کے شرکاء: کون ہیں اور کیسے اثر انداز ہوتے ہیں؟**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "فاریکس مارکیٹ میں صرف تاجر ہی نہیں بلکہ بینک، کارپوریشنز، حکومتیں اور ہیج فنڈز بھی فعال ہوتے ہیں۔ ہر شریک کا اپنا کردار ہوتا ہے—کچھ لیکویڈیٹی فراہم کرتے ہیں، کچھ طویل مدتی رجحانات بناتے ہیں اور کچھ مختصر مدتی اتار چڑھاؤ بڑھاتے ہیں۔ ان شرکاء کو سمجھنا اس لیے ضروری ہے کیونکہ ان کے اقدامات سے مارکیٹ کی حرکات کی پیش گوئی میں مدد ملتی ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک **سینٹرل بینک** (جیسے آر بی آئی) جب سود کی شرح بڑھاتا ہے تو اس کی کرنسی (ان آر) مضبوط ہوتی ہے—کیونکہ سرمایہ کار زیادہ منافع کے لیے اسے خریدتے ہیں۔ اس کے برعکس، ایک **ہیج فنڈ** جب کسی کرنسی جوڑے پر بڑے آرڈر لگاتا ہے تو اس کی قیمت مختصر وقت کے لیے حرکت کر سکتی ہے، چاہے بنیادی عوامل کچھ بھی ہوں۔"
+            },
+            {
+              "label": "عملی مشق",
+              "content": "اپنے ٹریڈنگ پلیٹ فارم پر **اکنامک کیلنڈر** چیک کریں اور دیکھیں کہ آج کون سے بڑے شرکاء (جیسے ای سی بی، فیڈ یا بڑے بینک) کے اعلانات ہیں۔ ان کے بیانات کا کرنسی جوڑوں پر فوری اثر نوٹ کریں۔"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "۱۔ شرکاء کا تجزیہ: ایک چارٹ بنائیں جس میں ۵ بڑے فاریکس مارکیٹ شرکاء کے کردار اور ان کے ٹریڈنگ اسٹائلز (مختصر مدتی/طویل مدتی) لکھیں۔\n۲۔ کیس اسٹڈی: کسی ایک کرنسی جوڑے (جیسے یورو/امریکی ڈالر) کی حالیہ حرکت کا تجزیہ کریں—کیا اس کے پیچھے کسی بڑے شریک (جیسے ای سی بی) کا کردار تھا؟"
+            }
+          ]
+        }
+      }
     }
   ],
   "amazon-fba": [
