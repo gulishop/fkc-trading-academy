@@ -25867,6 +25867,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 20,
+      "id": "day-020",
+      "date": "2026-08-25",
+      "title": "Day 20 — **Shukar guzar hona — jo mila us par khush rehna**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachon, yaad rakhna ke zindagi mein har cheez humari pasand se nahi hoti. Kabhi kabhi humein jo milta hai, usse khush rehna seekhna chahiye. Jaise agar tumhein koi naya khelna ya khilona mila, to usse poora maza lo. Agar koi cheez tumhein pasand nahi, to usko bura mat samajhna — sabki apni pasand hoti hai!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Rohan ko school se wapas aate hi pata chala ke uska dost ne usko ek naya football gift kiya hai. Rohan ko football pasand nahi tha, usko cricket zyada acha lagta hai. Usne pehle toh thoda udaas hua, lekin phir usne socha, \"Chalo, is football se khel kar dekhte hain!\" Usne apne dost ke sath football khela aur usko bhi maza aaya. Pata chala ke har cheez ka apna maza hota hai!"
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar tumhein koi cheez pasand nahi aati, to tum kya karoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Jo cheez tumhein milti hai, usse poora maza lo — chahe woh koi bhi cheez ho!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۲۰ — **شکر گزار ہونا — جو ملا اس پر خوش رہنا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "بچو، یاد رکھنا کہ زندگی میں ہر چیز ہماری پسند کے مطابق نہیں ہوتی۔ کبھی کبھی ہمیں جو ملتا ہے، اس پر خوش رہنا سیکھنا چاہیے۔ جیسے اگر تمہیں کوئی نیا کھیلنا یا کھلونا ملا، تو اس سے پورا مزہ لو۔ اگر کوئی چیز تمہیں پسند نہیں، تو اسے برا مت سمجھنا — سب کی اپنی پسند ہوتی ہے!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "روہن کو سکول سے واپس آتے ہی پتا چلا کہ اس کے دوست نے اسے ایک نیا فٹ بال گفٹ کیا ہے۔ روہن کو فٹ بال پسند نہیں تھا، اسے کرکٹ زیادہ اچھا لگتا ہے۔ اس نے پہلے تو تھوڑا اداس ہوا، لیکن پھر اس نے سوچا، ’چلو، اس فٹ بال سے کھیل کر دیکھتے ہیں!‘ اس نے اپنے دوست کے ساتھ فٹ بال کھیلا اور اسے بھی مزہ آیا۔ پتا چلا کہ ہر چیز کا اپنا مزہ ہوتا ہے!"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "’بیٹا، اگر تمہیں کوئی چیز پسند نہیں آتی، تو تم کیا کرو گے؟‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "جو چیز تمہیں ملتی ہے، اس سے پورا مزہ لو — چاہے وہ کوئی بھی چیز ہو!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-nursery": [
