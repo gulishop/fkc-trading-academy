@@ -11903,6 +11903,76 @@
           ]
         }
       }
+    },
+    {
+      "day": 22,
+      "id": "day-022",
+      "date": "2026-08-25",
+      "title": "Day 22 — **Landing Pages: No-Code Se High-Converting Pages Banana**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum landing pages banayenge — wo dedicated pages jo ek specific action (jaise \"Sign Up\" ya \"Buy Now\") ke liye design ki jati hain. No-code tools (Framer/Webflow/Wix) se aap inhe 30 minutes se bhi kam mein bana sakte hain. Landing pages ka goal hota hai visitors ko convert karna, isliye unhe simple, fast-loading aur visually appealing banana zaroori hai."
+        ],
+        [
+          "Example",
+          "Ek fitness app ka landing page banana hai. Steps:\n1."
+        ],
+        [
+          "Headline",
+          "\"30 Days Mein Banayein Apna Perfect Body\" (bold, clear)\n2."
+        ],
+        [
+          "Subheadline",
+          "\"AI-powered workout plans + nutrition guide — sirf ₹499 mein!\"\n3."
+        ],
+        [
+          "CTA Button",
+          "\"Free Trial Shuru Karein\" (green button, prominent)\n4."
+        ],
+        [
+          "Social Proof",
+          "\"10,000+ users ne apna goal achieve kiya\" (testimonials section)\n5."
+        ],
+        [
+          "Mobile-friendly",
+          "Check karna hai ki page har device par theek dikhe."
+        ],
+        [
+          "Practice",
+          "Apne laptop ya phone se **Framer** ya **Wix** open karein. Ek blank landing page create karein aur niche diye gaye elements add karein:\n- Ek headline (apne business idea ke hisab se)\n- Ek subheadline (value proposition)\n- Ek CTA button (jaise \"Get Started\" ya \"Learn More\")\n- Ek image/video (placeholder ya apni file upload karein)\n- Ek simple form (jaise \"Email address\" field + \"Submit\" button)"
+        ],
+        [
+          "Mini Project",
+          "**\"Portfolio Landing Page\"** — Apna no-code portfolio website banayein jo sirf aapki skills aur projects dikhaye. Include karein:\n1. Hero section (aapka intro + main heading)\n2. Projects gallery (3-4 cards)\n3. Contact form (name, email, message)\n4. Footer (social links)\nUse karein **Framer** (free tier) ya **Webflow** (starter plan)."
+        ]
+      ],
+      "answer_key": "headline, subheadline, cta button, mobile-friendly",
+      "translations": {
+        "ur": {
+          "title": "دن ۲۲ — **لینڈنگ پیجز: نو کوڈ سے ہائی کنورٹنگ پیجز بنانا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم لینڈنگ پیجز بنائیں گے — وہ مخصوص صفحات جو کسی خاص ایکشن (جیسے \"سائن اپ\" یا \"بائی ناؤ\") کے لیے ڈیزائن کیے جاتے ہیں۔ نو کوڈ ٹولز (فریمر/ویب فلو/وکس) سے آپ انہیں ۳۰ منٹ سے بھی کم وقت میں بنا سکتے ہیں۔ لینڈنگ پیجز کا مقصد وزیٹرز کو کنورٹ کرنا ہوتا ہے، اس لیے انہیں سادہ، فاسٹ لوڈنگ اور ویژیلی اپیلنگ بنانا ضروری ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک فٹنس ایپ کا لینڈنگ پیج بنانا ہے۔ اسٹیپس:\n۱۔ ہیڈ لائن: \"۳۰ دن میں بنائیں اپنا پرفیکٹ باڈی\" (بولڈ، صاف)\n۲۔ سب ہیڈ لائن: \"اے آئی پاورڈ ورک آؤٹ پلانز + نیوٹریشن گائیڈ — صرف ۴۹۹ روپے میں!\"\n۳۔ سی ٹی اے بٹن: \"فری ٹرائل شروع کریں\" (سبز بٹن، نمایاں)\n۴۔ سوشل پروف: \"۱۰،۰۰۰+ صارفین نے اپنا ہدف حاصل کیا\" (ٹیسٹیمونیلز سیکشن)\n۵۔ موبائل فرینڈلی: چیک کرنا ہے کہ پیج ہر ڈیوائس پر ٹھیک دکھائی دے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے لیپ ٹاپ یا فون سے فریمر یا وکس کھولیں۔ ایک خالی لینڈنگ پیج بنائیں اور نیچے دیے گئے عناصر شامل کریں:\n- ایک ہیڈ لائن (اپنے بزنس آئیڈیا کے مطابق)\n- ایک سب ہیڈ لائن (ویلیو پروپوزیشن)\n- ایک سی ٹی اے بٹن (جیسے \"گٹ اسٹارٹڈ\" یا \"لرن مور\")\n- ایک امیج/ویڈیو (پلیس ہولڈر یا اپنی فائل اپ لوڈ کریں)\n- ایک سادہ فارم (جیسے \"ای میل ایڈریس\" فیلڈ + \"سبمٹ\" بٹن)"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "\"پورٹ فولیو لینڈنگ پیج\" — اپنا نو کوڈ پورٹ فولیو ویب سائٹ بنائیں جو صرف آپ کی صلاحیتیں اور پروجیکٹس دکھائے۔ شامل کریں:\n۱۔ ہیرو سیکشن (آپ کا تعارف + مین ہیڈنگ)\n۲۔ پروجیکٹس گیلری (۳-۴ کارڈز)\n۳۔ کنٹیکٹ فارم (نام، ای میل، میسج)\n۴۔ فوٹر (سوشل لنکس)\nاستعمال کریں فریمر (فری ٹائر) یا ویب فلو (اسٹارٹر پلان)۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "digital-marketing-seo": [
