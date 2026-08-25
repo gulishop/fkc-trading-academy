@@ -6999,6 +6999,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 14,
+      "id": "day-014",
+      "date": "2026-08-25",
+      "title": "Day 14 — **Daraz Par High-Converting Product Videos Banane Ka Complete Guide**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Product videos Daraz par conversion rate 2-3x badha dete hain. Aaj seekhein ke kaise 15-30 second ke engaging videos banayein jo customers ko \"Add to Cart\" par click karne par majboor kar dein. Focus rahein: clear lighting, close-up shots, aur product ke unique features ko highlight karna."
+        ],
+        [
+          "Example",
+          "Ek \"Bluetooth Earbuds\" ka video banane ka tarika:\n1. 5 sec: Earbuds ko box se nikalte hue (unboxing style).\n2. 10 sec: Close-up shot jisme buttons aur charging case ka zoom-in ho.\n3. 5 sec: Earbuds ko kisi ke ears par lagate hue (real usage show karo).\n4. 5 sec: \"Super bass, 20hr battery\" jaise key features text ke saath."
+        ],
+        [
+          "Practice",
+          "Apne ek existing product ka video banane ke liye:\n- Mobile se 10-15 second ka clip record karo.\n- Editing app (CapCut/InShot) se text add karo aur background music lagao.\n- Video ko Daraz listing ke \"Media\" section mein upload karo."
+        ],
+        [
+          "Mini Project",
+          "Ek \"Daraz Par Top 5 Products Ke Video Examples\" naam ka folder banaen aur har product ke video ka link save karo. Next class mein discuss karenge ke unmein kya common hai."
+        ]
+      ],
+      "answer_key": "unboxing, close-up, usage demo, text overlay",
+      "translations": {
+        "ur": {
+          "title": "دن 14 — دراز پر ہائی کنورٹنگ پروڈکٹ ویڈیوز بنانے کا مکمل گائیڈ",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "پروڈکٹ ویڈیوز دراز پر کنورژن ریٹ 2-3 گنا بڑھا دیتی ہیں۔ آج سیکھیں کہ کیسے 15-30 سیکنڈ کی دلچسپ ویڈیوز بنائی جائیں جو گاہکوں کو \"ایڈ ٹو کارٹ\" پر کلک کرنے پر مجبور کر دیں۔ توجہ رکھیں: صاف روشنی، کلوز اپ شاٹس، اور پروڈکٹ کے منفرد فیچرز کو نمایاں کرنا۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک \"بلوٹوتھ ایئر buds\" کی ویڈیو بنانے کا طریقہ:\n1. 5 سیکنڈ: ایئر buds کو باکس سے نکالتے ہوئے (ان باکسنگ اسٹائل)۔\n2. 10 سیکنڈ: کلوز اپ شاٹ جس میں بٹنز اور چارچنگ کیس کا زوم ان ہو۔\n3. 5 سیکنڈ: ایئر buds کو کسی کے کانوں پر لگاتے ہوئے (حقیقی استعمال دکھائیں)۔\n4. 5 سیکنڈ: \"سپر بیس، 20 گھنٹے بیٹری\" جیسے کلیدی فیچرز ٹیکسٹ کے ساتھ۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے کسی موجودہ پروڈکٹ کی ویڈیو بنانے کے لیے:\n- موبائل سے 10-15 سیکنڈ کا کلپ ریکارڈ کریں۔\n- ایڈیٹنگ ایپ (CapCut/InShot) سے ٹیکسٹ شامل کریں اور بیک گراؤنڈ میوزک لگائیں۔\n- ویڈیو کو دراز لسٹنگ کے \"میڈیا\" سیکشن میں اپ لوڈ کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک فولڈر بنائیں جس کا نام \"دراز پر ٹاپ 5 پروڈکٹس کے ویڈیو مثالیں\" ہو اور ہر پروڈکٹ کی ویڈیو کا لنک محفوظ کریں۔ اگلی کلاس میں ان پر بات کریں گے کہ ان میں کیا مشترک ہے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "ai-content-writing": [
