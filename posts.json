@@ -15801,6 +15801,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 16,
+      "id": "day-016",
+      "date": "2026-08-25",
+      "title": "Day 16 — Regular Expressions (Regex) Basics",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Regex ek powerful tool hai jo strings ke andar patterns ko search, extract, aur manipulate karne ke liye use hota hai. Python mein `re` module se regex operations perform kiye ja sakte hain. Aaj hum basic regex patterns aur functions jaise `re.search()`, `re.findall()`, aur `re.sub()` seekhenge."
+        ],
+        [
+          "Example",
+          "```python\nimport re\n\ntext = \"Mera number 0300-1234567 hai aur email abc123@gmail.com hai.\"\npattern = r\"\\d{3}-\\d{7}\"  # 3 digits, dash, 7 digits\nmatch = re.search(pattern, text)\nif match:\n    print(\"Phone number found:\", match.group())  # Output: 0300-1234567\n\nemails = re.findall(r\"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}\", text)\nprint(\"Emails found:\", emails)  # Output: ['abc123@gmail.com']\n```"
+        ],
+        [
+          "Practice",
+          "Apne naam aur contact details wali ek string banao. Usmein se sirf phone number extract karne ke liye regex pattern likho."
+        ],
+        [
+          "Mini Project",
+          "Ek text file (`data.txt`) mein multiple phone numbers (e.g., 0300-1234567, 0311-9876543) aur emails store karo. In sabko regex se extract karke ek new file (`contacts.txt`) mein save karo."
+        ]
+      ],
+      "answer_key": "phone pattern: `\\d{3}-\\d{7}`, email pattern: `[a-za-z0-9._%+-]+@[a-za-z0-9.-]+\\.[a-za-z]{2, }`",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۶ — ریگولر ایکسپریشنز (ریجیکس) کی بنیادیات",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "ریجیکس ایک طاقتور ٹول ہے جو سٹرنگز کے اندر پیٹرنز کو تلاش کرنے، نکالنے اور ان میں تبدیلی کرنے کے لیے استعمال ہوتا ہے۔ پائیتھن میں `re` ماڈیول کے ذریعے ریجیکس آپریشنز انجام دیے جا سکتے ہیں۔ آج ہم بنیادی ریجیکس پیٹرنز اور فنکشنز جیسے `re.search()`، `re.findall()`، اور `re.sub()` سیکھیں گے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "```python\nimport re\n\ntext = \"میرا نمبر ۰۳۰۰-۱۲۳۴۵۶۷ ہے اور ای میل abc123@gmail.com ہے۔\"\npattern = r\"\\d{3}-\\d{7}\"  # ۳ ہندسے، ڈیش، ۷ ہندسے\nmatch = re.search(pattern, text)\nif match:\n    print(\"فون نمبر ملا:\", match.group())  # آؤٹ پٹ: ۰۳۰۰-۱۲۳۴۵۶۷\n\nemails = re.findall(r\"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}\", text)\nprint(\"ای میلز ملیں:\", emails)  # آؤٹ پٹ: ['abc123@gmail.com']\n```"
+            },
+            {
+              "label": "مشق",
+              "content": "اپنے نام اور رابطے کی تفصیلات والی ایک سٹرنگ بنائیں۔ اس میں سے صرف فون نمبر نکالنے کے لیے ریجیکس پیٹرن لکھیں۔"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "ایک ٹیکسٹ فائل (`data.txt`) میں متعدد فون نمبرز (مثلاً ۰۳۰۰-۱۲۳۴۵۶۷، ۰۳۱۱-۹۸۷۶۵۴۳) اور ای میلز محفوظ کریں۔ ان سب کو ریجیکس کے ذریعے نکال کر ایک نئی فائل (`contacts.txt`) میں محفوظ کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "web-development": [
