@@ -10279,6 +10279,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 24,
+      "id": "day-024",
+      "date": "2026-08-25",
+      "title": "Day 24 — **Freelancing Mein \"Case Studies\" Banana: Apne Work Ko Prove Karne Ka Sabse Strongest Weapon**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Case studies freelancers ke liye \"proof of concept\" hoti hain. Yeh show karti hain ke aapka kaam kaisa hai, clients ko kya results mile, aur aapki skills kitni valuable hain. Bina experience ke bhi aap apne learning projects, mockups, ya free work ko case study mein convert kar sakte hain. Yehi hei jo clients ko convince karta hai ke aap real deal hain."
+        ],
+        [
+          "Example",
+          "Maana aap graphic designer hain. Aapne ek logo banaya hai apne practice ke liye. Usko case study mein convert karne ke liye:\n1. Project background: \"Ek local chai shop ke liye logo design kiya.\"\n2. Challenges: \"Shop owner ko modern lekin traditional look chahiye tha.\"\n3. Solution: \"Typography aur colors ka combination use kiya jo chai culture reflect kare.\"\n4. Results: \"Owner ne feedback diya ke logo ne unki sales mein 20% increase kiya.\""
+        ],
+        [
+          "Practice",
+          "Apne kisi bhi past project (even if it's practice/learning) ko 4-5 bullet points mein case study format mein likhiye. Include kijiye: project ka maqsad, aapki approach, challenges, aur koi positive feedback (agar hai to)."
+        ],
+        [
+          "Mini Project",
+          "Ek case study create kijiye ek imaginary client ke liye (jaise \"Ek YouTuber ke liye thumbnail design\"). Use social media post ya blog format mein likhiye aur apne portfolio mein add kijiye."
+        ]
+      ],
+      "answer_key": "project background, challenges, solution, results",
+      "translations": {
+        "ur": {
+          "title": "دن ۲۴ — فری لانسنگ میں \"کیس اسٹڈیز\" بنانا: اپنے کام کو ثابت کرنے کا سب سے مضبوط ہتھیار",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "کیس اسٹڈیز فری لانسرز کے لیے \"پروف آف کانسپٹ\" ہوتی ہیں۔ یہ دکھاتی ہیں کہ آپ کا کام کیسا ہے، کلائنٹس کو کیا نتائج ملے، اور آپ کی صلاحیتیں کتنی قیمتی ہیں۔ بغیر تجربے کے بھی آپ اپنے لرننگ پروجیکٹس، ماک اپس، یا فری کام کو کیس اسٹڈی میں تبدیل کر سکتے ہیں۔ یہی وہ چیز ہے جو کلائنٹس کو قائل کرتی ہے کہ آپ حقیقی ڈیل ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "مانا آپ گرافک ڈیزائنر ہیں۔ آپ نے اپنے پریکٹس کے لیے ایک لوگو بنایا ہے۔ اسے کیس اسٹڈی میں تبدیل کرنے کے لیے:\n۱۔ پروجیکٹ کا پس منظر: \"ایک مقامی چائے کی دکان کے لیے لوگو ڈیزائن کیا۔\"\n۲۔ چیلنجز: \"دکان کے مالک کو جدید مگر روایتی نظر آنا چاہیے تھا۔\"\n۳۔ حل: \"ٹائپوگرافی اور رنگوں کا امتزاج استعمال کیا جو چائے کی ثقافت کی عکاسی کرے۔\"\n۴۔ نتائج: \"مالک نے فیڈبیک دیا کہ لوگو نے ان کی سیلز میں ۲۰ فیصد اضافہ کیا۔\""
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے کسی بھی ماضی کے پروجیکٹ (چاہے وہ پریکٹس یا لرننگ کے لیے ہو) کو ۴-۵ پوائنٹس میں کیس اسٹڈی فارمیٹ میں لکھیں۔ شامل کریں: پروجیکٹ کا مقصد، آپ کا اپروچ، چیلنجز، اور کوئی مثبت فیڈبیک (اگر موجود ہو تو)।"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک خیالی کلائنٹ کے لیے کیس اسٹڈی بنائیں (جیسے \"ایک یوٹیوبر کے لیے تھمب نیل ڈیزائن\")۔ اسے سوشل میڈیا پوسٹ یا بلاگ فارمیٹ میں لکھیں اور اپنے پورٹ فولیو میں شامل کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "graphic-design-canva": [
