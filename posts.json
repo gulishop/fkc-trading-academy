@@ -23119,6 +23119,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 18,
+      "id": "day-018",
+      "date": "2026-08-25",
+      "title": "Day 18 — **Rental Property Management: Landlord Se Tenant Tak**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Rental property management mein aapko property ki dekhbhaal, tenant selection, rent collection, aur legal compliance ka dhyaan rakhna hota hai. Yeh sirf \"property rent par dena\" nahi, balki ek systematic process hai jismein tenant satisfaction, maintenance, aur financial planning shamil hain. Aapko tenant screening, lease agreements, aur property ki regular maintenance ka plan banana hota hai."
+        ],
+        [
+          "Example",
+          "Imagine aapka 2-marla flat Lahore mein hai. Aapko tenant dhundhne ke liye:\n1. **Tenant Criteria** set karo (e.g., monthly income 50k+, job stability, no pets).\n2. **Listing** karo (OLX, Facebook Groups, local brokers).\n3. **Screening** karo (ID verification, salary slips, previous landlord reference).\n4. **Lease Agreement** banayo (11 months, security deposit, maintenance rules).\n5. **Rent Collection** ka system rakho (bank transfer, due date reminders)."
+        ],
+        [
+          "Practice",
+          "Apne ghar ya kisi relative ke rental property ke liye 3 tenant criteria likho (e.g., \"Tenant must have a job in same city\")."
+        ],
+        [
+          "Mini Project",
+          "Ek **sample lease agreement** draft karo (Google par \"rental agreement Pakistan format\" search karke base le sakte ho). Include: rent amount, security deposit, maintenance responsibility, notice period."
+        ]
+      ],
+      "answer_key": "tenant criteria, lease agreement, rent collection, maintenance",
+      "translations": {
+        "ur": {
+          "title": "دن اٹھارہ — رینٹل پراپرٹی مینجمنٹ: مالک سے ٹیننٹ تک",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "رینٹل پراپرٹی مینجمنٹ میں آپ کو پراپرٹی کی دیکھ بھال، ٹیننٹ سلیکشن، کرایہ وصولی، اور قانونی تعمیل کا خیال رکھنا ہوتا ہے۔ یہ صرف \"پراپرٹی کرائے پر دینا\" نہیں بلکہ ایک منظم عمل ہے جس میں ٹیننٹ کی تسکین، مینٹیننس، اور مالی منصوبہ بندی شامل ہیں۔ آپ کو ٹیننٹ اسکریننگ، لیز ایگریمنٹس، اور پراپرٹی کی باقاعدہ دیکھ بھال کا پلان بنانا ہوتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "تصور کریں آپ کا دو مرلہ فلیٹ لاہور میں ہے۔ آپ کو ٹیننٹ ڈھونڈنے کے لیے:\n١۔ ٹیننٹ کے معیار طے کریں (مثلاً، ماہانہ آمدنی پچاس ہزار سے زائد، نوکری کی استحکام، پالتو جانور نہیں رکھنے کی شرط)۔\n٢۔ اشتہار دیں (او ایل ایکس، فیس بک گروپس، مقامی دلال)۔\n٣۔ اسکریننگ کریں (شناختی کارڈ کی تصدیق، تنخواہ کی سلپس، سابقہ مالک کا حوالہ)۔\n٤۔ لیز ایگریمنٹ بنائیں (گیارہ ماہ، سیکیورٹی ڈپازٹ، مینٹیننس کے قواعد)۔\n٥۔ کرایہ وصولی کا نظام رکھیں (بینک ٹرانسفر، آخری تاریخ کی یاددہانیاں)۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے گھر یا کسی رشتہ دار کی رینٹل پراپرٹی کے لیے تین ٹیننٹ کے معیارات لکھیں (مثلاً، \"ٹیننٹ کا اسی شہر میں نوکری ہونا ضروری ہے\")۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک نمونہ لیز ایگریمنٹ کا ڈرافٹ تیار کریں (گوگل پر \"رینٹل ایگریمنٹ پاکستان فارمیٹ\" تلاش کرکے بنیاد لے سکتے ہیں)۔ شامل کریں: کرایہ کی رقم، سیکیورٹی ڈپازٹ، مینٹیننس کی ذمہ داریاں، نوٹس پیریڈ۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "mobile-repairing": [
