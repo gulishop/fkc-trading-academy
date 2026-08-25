@@ -1240,3 +1240,6 @@
 [2026-08-25T23:24:32.064562] [blogging-adsense] Day 1 video skip: Agnes aur ffmpeg dono attempts fail.
 [2026-08-25T23:26:08.989778] [blogging-adsense] Day 2 video skip: Agnes aur ffmpeg dono attempts fail.
 [2026-08-25T23:27:49.977924] [blogging-adsense] Day 3 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-25T23:37:50.190523] [photography-editing] Day 1 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-25T23:39:22.563580] [photography-editing] Day 2 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-25T23:41:10.363415] [photography-editing] Day 3 video skip: Agnes aur ffmpeg dono attempts fail.
