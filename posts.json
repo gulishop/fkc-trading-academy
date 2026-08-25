@@ -23681,6 +23681,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 23,
+      "id": "day-023",
+      "date": "2026-08-25",
+      "title": "Day 23 — **Mobile Camera Repair: Focus & Lens Issues ka Fix**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Mobile camera repair mein focus aur lens issues sabse common hain. Agar camera blur, black screen ya focus na kar raha ho to yeh hardware ya software fault ho sakta hai. Lens damage, dust, ya improper alignment se bhi yeh problems hoti hain. Aaj hum seekhenge ki kaise camera module ko diagnose karna hai aur common faults ko fix karna hai."
+        ],
+        [
+          "Example",
+          "Agar koi customer aaye aur kehta hai ki uska camera blur images le raha hai:\n1. Pehle check karo ki lens par koi dust ya scratch to nahi hai.\n2. Camera app ko reset karo ya dusre app se test karo.\n3. Agar problem hardware hai to lens module ko replace ya properly align karo."
+        ],
+        [
+          "Practice",
+          "Apne ek old mobile ka camera module lo aur check karo ki:\n- Lens par koi dust ya scratch hai ya nahi.\n- Camera app open karke zoom karke test karo."
+        ],
+        [
+          "Mini Project",
+          "Ek mobile ka camera lens clean karke uski quality check karo aur report likho ki improvement kaisa hai."
+        ]
+      ],
+      "answer_key": "dust removal, lens alignment, app test, module replace",
+      "translations": {
+        "ur": {
+          "title": "دن ۲۳ — موبائل کیمرہ ریپئیر: فوکس اور لینز کے مسائل کا فکس",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "موبائل کیمرہ ریپئیر میں فوکس اور لینز کے مسائل سب سے عام ہوتے ہیں۔ اگر کیمرہ دھندلا، بلیک اسکرین دکھا رہا ہو یا فوکس نہ کر رہا ہو تو یہ ہارڈویئر یا سافٹ ویئر کی خرابی ہو سکتی ہے۔ لینز کو نقصان، دھول یا غلط الائنمنٹ کی وجہ سے بھی یہ مسائل پیدا ہوتے ہیں۔ آج ہم سیکھیں گے کہ کیمرہ ماڈیول کو کیسے ڈائیگنوز کرنا ہے اور عام خرابیوں کو کیسے ٹھیک کرنا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "اگر کوئی کسٹمر آئے اور کہے کہ اس کا کیمرہ دھندلی تصاویر لے رہا ہے تو:\n١۔ پہلے چیک کرو کہ لینز پر کوئی دھول یا سکریچ تو نہیں ہے۔\n٢۔ کیمرہ ایپ کو ری سیٹ کرو یا کسی دوسری ایپ سے ٹیسٹ کرو۔\n٣۔ اگر مسئلہ ہارڈویئر کا ہے تو لینز ماڈیول کو تبدیل کرو یا صحیح طریقے سے الائن کرو۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے کسی پرانے موبائل کا کیمرہ ماڈیول لو اور چیک کرو کہ:\n- لینز پر کوئی دھول یا سکریچ ہے یا نہیں۔\n- کیمرہ ایپ کھول کر زوم کر کے ٹیسٹ کرو۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک موبائل کا کیمرہ لینز صاف کر کے اس کی کوالٹی چیک کرو اور رپورٹ لکھو کہ بہتری کیسی ہے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-safety-education": [
