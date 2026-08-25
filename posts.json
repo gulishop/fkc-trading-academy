@@ -28573,6 +28573,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 18,
+      "id": "day-018",
+      "date": "2026-08-25",
+      "title": "Day 18 — \"Apne Baaray Mein Bolna: Mera Naam, Meri Umar, Mera School\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke apne baaray mein kaise achha se baat karein. Jab koi tumse pooche, \"Tumhara naam kya hai?\" ya \"Tumhara school kya hai?\" toh tum confidently jawab do. Yeh seekhna zaroori hai taake log tumhe pehchane aur tumhara khayal rakh sakein."
+        ],
+        [
+          "Chhoti Kahani",
+          "Rohan apne school ke playground mein khush tha. Uske teacher ne poocha, \"Tumhara naam kya hai?\" Rohan ne muskurate hue kaha, \"Mera naam Rohan hai, main 5 saal ka hoon, aur mein ABC School mein padhta hoon.\" Teacher ne uski taareef ki. Yeh sun kar Rohan aur bhi zyada khush ho gaya."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar koi tumse pooche ke tumhara naam kya hai ya tumhara school kya hai, toh tum kya jawab doge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Tumhara jism tumhara hai, use kisi ko bhi chuna chunai ka haq nahi. Agar koi cheez ajeeb lage, toh foran ammi/abbu ko batana."
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن اٹھارہ — \"اپنے بارے میں بولنا: میرا نام، میری عمر، میرا سکول\"",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج ہم سیکھیں گے کہ اپنے بارے میں کیسے اچھا سے بات کریں۔ جب کوئی تم سے پوچھے، \"تمہارا نام کیا ہے؟\" یا \"تمہارا سکول کیا ہے؟\" تو تم اعتماد کے ساتھ جواب دو۔ یہ سیکھنا ضروری ہے تاکہ لوگ تمہیں پہچانیں اور تمہارا خیال رکھ سکیں۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "روہن اپنے سکول کے پلے گراؤنڈ میں خوش تھا۔ اس کے ٹیچر نے پوچھا، \"تمہارا نام کیا ہے؟\" روہن نے مسکراتے ہوئے کہا، \"میرا نام روہن ہے، میں پانچ سال کا ہوں، اور میں اے بی سی سکول میں پڑھتا ہوں۔\" ٹیچر نے اس کی تعریف کی۔ یہ سن کر روہن اور بھی زیادہ خوش ہو گیا۔"
+            },
+            {
+              "label": "امی ابّو کے ساتھ بات کریں",
+              "content": "\"بیٹا، اگر کوئی تم سے پوچھے کہ تمہارا نام کیا ہے یا تمہارا سکول کیا ہے، تو تم کیا جواب دو گے؟\""
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمہارا جسم تمہارا ہے، اسے کسی کو بھی چھونے چھونے کا حق نہیں۔ اگر کوئی چیز عجیب لگے، تو فوراً امی/ابّو کو بتانا۔"
+            }
+          ]
+        }
+      }
     }
   ]
 }
