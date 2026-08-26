@@ -3743,6 +3743,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 22,
+      "id": "day-022",
+      "date": "2026-08-26",
+      "title": "Day 22 — **AI-Powered Social Media Content Repurposing: 1 Post Se 10+ Platforms Par Publish Karna**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Har platform ke liye alag content banana time-consuming hai. AI tools se ek hi post ko reformat karke multiple platforms (Instagram, LinkedIn, Twitter, Pinterest, YouTube Shorts, etc.) par publish kar sakte hain. Isse consistency bhi maintain hoti hai aur effort bhi half ho jata hai."
+        ],
+        [
+          "Example",
+          "1. Ek blog post likhein (e.g., \"5 AI Tools for Social Media Growth\").\n2. AI tool (jaise **Repurpose.io** ya **Descript**) use karke:\n   - Blog se **LinkedIn post** banayein (key points + CTA).\n   - **Twitter thread** mein convert karein (10 tweets sequence mein).\n   - **Instagram carousel** banayein (har slide par 1 point).\n   - **YouTube Shorts script** generate karein (hook + 3 tips).\n3. Scheduler (jaise **Buffer** ya **Hootsuite**) se sab platforms par schedule kar dein."
+        ],
+        [
+          "Practice",
+          "Apne phone ya laptop ke screenshot lekar batayein ki aapne ek existing post ko kaise repurpose kar sakte hain (e.g., ek Instagram Reel script se Twitter thread kaise bana sakte hain)."
+        ],
+        [
+          "Mini Project",
+          "Ek **1000-word blog post** ya **YouTube video script** lein aur usse **3 alag platforms ke liye content** banayein (e.g., LinkedIn post, Twitter thread, Instagram carousel). Screenshot saath mein submit karein."
+        ]
+      ],
+      "answer_key": "blog se linkedin post, twitter thread, instagram carousel",
+      "translations": {
+        "ur": {
+          "title": "دن 22 — **اے آئی سے چلنے والی سوشل میڈیا مواد کی دوبارہ استعمال کاری: ایک پوسٹ سے 10+ پلیٹ فارمز پر شائع کرنا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "ہر پلیٹ فارم کے لیے الگ مواد بنانا وقت طلب کام ہے۔ اے آئی ٹولز کی مدد سے ایک ہی پوسٹ کو دوبارہ فارمیٹ کرکے کئی پلیٹ فارمز (انسٹاگرام، لنکڈان، ٹوئٹر، پنٹیرسٹ، یوٹیوب شارٹس وغیرہ) پر شائع کیا جا سکتا ہے۔ اس سے مستقل مزاجی بھی برقرار رہتی ہے اور محنت بھی آدھی ہو جاتی ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1. ایک بلاگ پوسٹ لکھیں (مثلاً، \"سوشل میڈیا کی ترقی کے لیے 5 اے آئی ٹولز\")۔\n2. اے آئی ٹول (جیسے **Repurpose.io** یا **Descript**) استعمال کرکے:\n   - بلاگ سے **لنکڈان پوسٹ** بنائیں (اہم نکات + کال ٹو ایکشن)۔\n   - **ٹوئٹر تھریڈ** میں تبدیل کریں (10 ٹویٹس ترتیب وار)۔\n   - **انسٹاگرام کاروسل** بنائیں (ہر سلائیڈ پر ایک نقطہ)۔\n   - **یوٹیوب شارٹس کا اسکرپٹ** تیار کریں (ہک + 3 ٹپس)۔\n3. شیڈولر (جیسے **Buffer** یا **Hootsuite**) سے تمام پلیٹ فارمز پر شیڈول کر دیں۔"
+            },
+            {
+              "label": "عملی مشق",
+              "content": "اپنے فون یا لیپ ٹاپ کے اسکرین شاٹس لے کر بتائیں کہ آپ نے ایک موجودہ پوسٹ کو کیسے دوبارہ استعمال کیا ہے (مثلاً، ایک انسٹاگرام ریئل اسکرپٹ سے ٹوئٹر تھریڈ کیسے بنایا جا سکتا ہے)।"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "ایک **ہزار الفاظ کی بلاگ پوسٹ** یا **یوٹیوب ویڈیو کا اسکرپٹ** لیں اور اسے **تین مختلف پلیٹ فارمز کے لیے مواد** بنائیں (مثلاً، لنکڈان پوسٹ، ٹوئٹر تھریڈ، انسٹاگرام کاروسل)۔ اسکرین شاٹس کے ساتھ جمع کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "facebook-page-growth": [
