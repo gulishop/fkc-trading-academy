@@ -27807,6 +27807,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 21,
+      "id": "day-021",
+      "date": "2026-08-26",
+      "title": "Day 21 — **A se Z tak alphabets pehchanna**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachay, aaj hum seekhenge ke har cheez ka pehla letter kya hota hai. Jaise ‘A’ for Apple, ‘B’ for Ball — isse hum zindagi bhar har cheez ko pehchaneinge. Har cheez ka pehla letter yaad rakhna, humein zyada confident banata hai!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Rohan ne apni maasi se ek chota sa alphabet book liya. Usne har page par ek cheez dekhi — ‘A’ par Apple, ‘B’ par Ball. Usne socha, “Agar main har cheez ka pehla letter yaad rakh loon, to main kisi bhi cheez ka naam bata sakta hoon!”"
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "“Beta, tumhari favourite cheez ka pehla letter kya hai? Aur agar kisi cheez ka pehla letter yaad na ho, to tum kya karoge?”"
+        ],
+        [
+          "Yaad Rakhein",
+          "Har cheez ka pehla letter yaad rakhna, tumhein zyada smart banayega — jaise ek detective jo har clue ko samajh leta hai!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن اکیس — **ا سے ز تک حروف تہجی پہچاننا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "بچو، آج ہم سیکھیں گے کہ ہر چیز کا پہلا حرف کیا ہوتا ہے۔ جیسے ’ا‘ برائے ایپل، ’ب‘ برائے بال — اس سے ہم زندگی بھر ہر چیز کو پہچان سکیں گے۔ ہر چیز کا پہلا حرف یاد رکھنا، ہمیں زیادہ اعتماد مند بناتا ہے!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "روہان نے اپنی ماسی سے ایک چھوٹا سا الف بائی کتاب لیا۔ اس نے ہر صفحے پر ایک چیز دیکھی — ’ا‘ پر ایپل، ’ب‘ پر بال۔ اس نے سوچا، ’’اگر میں ہر چیز کا پہلا حرف یاد رکھ لوں تو میں کسی بھی چیز کا نام بتا سکتا ہوں!‘‘"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "’’بیٹا، تمہاری پسندیدہ چیز کا پہلا حرف کیا ہے؟ اور اگر کسی چیز کا پہلا حرف یاد نہ ہو تو تم کیا کرو گے؟‘‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "ہر چیز کا پہلا حرف یاد رکھنا، تمھیں زیادہ سمارٹ بنائے گا — جیسے ایک ڈیٹیکٹو جو ہر کلیو کو سمجھ لیتا ہے!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-pg": [
