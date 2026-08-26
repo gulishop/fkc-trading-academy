@@ -1247,3 +1247,7 @@
 [2026-08-25T23:55:47.519621] [real-estate-business] Day 1 video skip: Agnes aur ffmpeg dono attempts fail.
 [2026-08-25T23:57:18.479615] [real-estate-business] Day 2 video skip: Agnes aur ffmpeg dono attempts fail.
 [2026-08-25T23:58:59.186924] [real-estate-business] Day 12 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-26T07:25:02.173510] [no-code-app-dev] Day 23 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: The read operation timed out
+[2026-08-26T07:26:46.531777] [no-code-app-dev] Day 1 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-26T07:28:35.791876] [no-code-app-dev] Day 2 video skip: Agnes aur ffmpeg dono attempts fail.
+[2026-08-26T07:30:30.781982] [no-code-app-dev] Day 3 video skip: Agnes aur ffmpeg dono attempts fail.
