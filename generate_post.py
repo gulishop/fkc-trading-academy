@@ -2298,10 +2298,12 @@ ICON_512 = "icons/icon-512.png"
 def pwa_head_extra(manifest_href, icon192_href):
     return (
         f'<link rel="manifest" href="{manifest_href}">'
-        '<meta name="theme-color" content="#0B1220">'
+        '<meta name="theme-color" content="#4F46E5">'
         f'<link rel="apple-touch-icon" href="{icon192_href}">'
         '<meta name="apple-mobile-web-app-capable" content="yes">'
+        '<meta name="mobile-web-app-capable" content="yes">'
         '<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">'
+        f'<meta name="apple-mobile-web-app-title" content="{html.escape(BRAND_NAME[:12])}">'
     )
 
 
@@ -2311,17 +2313,27 @@ def pwa_register_script(sw_href):
         "window.addEventListener('load',function(){"
         f"navigator.serviceWorker.register('{sw_href}').then(function(reg){{"
         "reg.update();"
-        "setInterval(function(){reg.update();},20000);"
-        # app background se wapas khulte hi turant naya version check karo,
-        # taake 20s wait na karna pade
+        "setInterval(function(){reg.update();},15000);"
         "document.addEventListener('visibilitychange',function(){"
         "if(!document.hidden){reg.update();}"
         "});"
         "window.addEventListener('focus',function(){reg.update();});"
+        # Naya SW milte hi turant activate karo (waiting stage skip)
+        "if(reg.waiting){reg.waiting.postMessage({type:'SKIP_WAITING'});}"
+        "reg.addEventListener('updatefound',function(){"
+        "var nw=reg.installing;if(!nw)return;"
+        "nw.addEventListener('statechange',function(){"
+        "if(nw.state==='installed'&&navigator.serviceWorker.controller){"
+        "nw.postMessage({type:'SKIP_WAITING'});"
+        "}}"
+        "});"
+        "});"
         "}}).catch(function(){});"
         "var fkcReloaded=false;"
         "navigator.serviceWorker.addEventListener('controllerchange',function(){"
-        "if(fkcReloaded)return;fkcReloaded=true;window.location.reload();"
+        "if(fkcReloaded)return;fkcReloaded=true;"
+        # Soft reload — installed PWA users ko turant naya content
+        "window.location.reload();"
         "});"
         "});}</script>"
     )
@@ -2331,34 +2343,99 @@ def build_manifest_json():
     manifest = {
         "name": BRAND_NAME,
         "short_name": BRAND_NAME[:12],
-        "start_url": ".",
-        "scope": ".",
-        "display": "fullscreen",
-        "display_override": ["fullscreen", "standalone"],
-        "background_color": "#0B1220",
-        "theme_color": "#0B1220",
+        "description": "Rozana free practical lessons — Learn · Earn · Grow",
+        "start_url": "./?source=pwa",
+        "scope": "./",
+        "display": "standalone",
+        "display_override": ["standalone", "fullscreen", "minimal-ui"],
+        "orientation": "portrait-primary",
+        "background_color": "#0B0F19",
+        "theme_color": "#4F46E5",
+        "categories": ["education", "lifestyle"],
+        "lang": "ur",
+        "dir": "ltr",
         "icons": [
-            {"src": ICON_192, "sizes": "192x192", "type": "image/png"},
-            {"src": ICON_512, "sizes": "512x512", "type": "image/png", "purpose": "any maskable"},
+            {"src": ICON_192, "sizes": "192x192", "type": "image/png", "purpose": "any"},
+            {"src": ICON_512, "sizes": "512x512", "type": "image/png", "purpose": "any"},
+            {"src": ICON_512, "sizes": "512x512", "type": "image/png", "purpose": "maskable"},
         ],
     }
     return json.dumps(manifest, ensure_ascii=False, indent=2)
 
 
 def build_service_worker_js():
-    # Build timestamp is a comment (not code) so it changes every run —
-    # browser sirf byte-for-byte diff check karta hai naya SW detect
-    # karne ke liye. Bina isके, agar SW file ka logic kabhi na badle,
-    # to browser kabhi update hi nahi samjhega.
+    """Strong PWA Service Worker:
+    - Har build pe naya cache name (timestamp se) → purana cache auto delete
+    - HTML/pages: Network-first (hamesha latest lesson), offline pe cache
+    - Images/CSS/JS/fonts: Cache-first (tez + offline)
+    - skipWaiting + clients.claim → installed app turant update
+    - version.json hamesha network se (cache bypass)
+    """
     build_stamp = datetime.datetime.utcnow().isoformat()
-    return (
-        f"// build: {build_stamp}\n"
-        "self.addEventListener('install',e=>self.skipWaiting());\n"
-        "self.addEventListener('activate',e=>self.clients.claim());\n"
-        "self.addEventListener('fetch',e=>{\n"
-        "  e.respondWith(fetch(e.request,{cache:'no-store'}).catch(()=>caches.match(e.request)));\n"
-        "});\n"
-    )
+    cache_name = f"fkc-v-{build_stamp.replace(':', '').replace('.', '')[:18]}"
+    return f"""// build: {build_stamp}
+const CACHE = "{cache_name}";
+const PRECACHE = ["./", "./index.html", "./manifest.webmanifest"];
+
+self.addEventListener("install", (e) => {{
+  e.waitUntil(
+    caches.open(CACHE).then((c) => c.addAll(PRECACHE).catch(() => {{}})).then(() => self.skipWaiting())
+  );
+}});
+
+self.addEventListener("activate", (e) => {{
+  e.waitUntil(
+    caches.keys().then((keys) =>
+      Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k)))
+    ).then(() => self.clients.claim())
+  );
+}});
+
+self.addEventListener("message", (e) => {{
+  if (e.data && e.data.type === "SKIP_WAITING") self.skipWaiting();
+}});
+
+self.addEventListener("fetch", (e) => {{
+  const req = e.request;
+  if (req.method !== "GET") return;
+
+  const url = new URL(req.url);
+
+  // version.json + SW itself — always network, never cache
+  if (url.pathname.endsWith("version.json") || url.pathname.endsWith("sw.js")) {{
+    e.respondWith(fetch(req, {{ cache: "no-store" }}).catch(() => caches.match(req)));
+    return;
+  }}
+
+  // HTML pages — Network first, fallback to cache (latest lessons always)
+  if (req.headers.get("accept") && req.headers.get("accept").includes("text/html")) {{
+    e.respondWith(
+      fetch(req)
+        .then((res) => {{
+          const copy = res.clone();
+          caches.open(CACHE).then((c) => c.put(req, copy));
+          return res;
+        }})
+        .catch(() => caches.match(req).then((r) => r || caches.match("./index.html")))
+    );
+    return;
+  }}
+
+  // Static assets (images, css, js, fonts, mp4) — Cache first, then network
+  e.respondWith(
+    caches.match(req).then((cached) => {{
+      if (cached) return cached;
+      return fetch(req).then((res) => {{
+        if (res && res.status === 200 && res.type === "basic") {{
+          const copy = res.clone();
+          caches.open(CACHE).then((c) => c.put(req, copy));
+        }}
+        return res;
+      }}).catch(() => cached);
+    }})
+  );
+}});
+"""
 
 
 def ensure_pwa_icons():
@@ -2401,11 +2478,11 @@ def ensure_pwa_icons():
             canvas.convert("RGB").save(full_path, "PNG")
             continue
 
-        img = Image.new("RGB", (size, size), "#0B1220")
+        img = Image.new("RGB", (size, size), "#0B0F19")
         draw = ImageDraw.Draw(img)
         pad = int(size * 0.08)
         draw.rounded_rectangle(
-            [pad, pad, size - pad, size - pad], radius=int(size * 0.16), fill="#0056D2"
+            [pad, pad, size - pad, size - pad], radius=int(size * 0.16), fill="#4F46E5"
         )
         font_size = int(size * 0.4)
         try:
@@ -2426,26 +2503,26 @@ def ensure_pwa_icons():
 def pwa_install_prompt_html():
     """Naye visitors ko 'Add to Home Screen' ka nudge deta hai — Android
     par native install prompt trigger karta hai, iOS Safari par manual
-    instructions dikhata hai (kyunki iOS beforeinstallprompt support
-    nahi karta). Agar already installed (standalone mode) ho to kabhi
-    nahi dikhta. Ek baar band karne par 7 din tak dobara nahi aata."""
+    instructions dikhata hai. Already installed (standalone) pe nahi dikhta.
+    Ek baar band karne par 7 din tak dobara nahi aata."""
     return """
 <style>
-#pwa-install-banner{position:fixed;left:12px;right:12px;bottom:12px;
-background:#0B1220;color:#fff;border-radius:14px;padding:14px 16px;
-display:none;align-items:center;gap:12px;box-shadow:0 8px 24px rgba(0,0,0,.25);
-z-index:9999;font-size:.88em;}
-#pwa-install-banner.show{display:flex;}
-#pwa-install-banner .txt{flex:1;line-height:1.4;}
-#pwa-install-banner .txt b{display:block;margin-bottom:2px;}
-#pwa-install-banner button{background:#0056D2;color:#fff;border:none;
-border-radius:10px;padding:8px 14px;font-weight:600;font-size:.92em;
-flex-shrink:0;}
-#pwa-install-banner .close-x{background:transparent;color:#9aa4b2;
-padding:4px 6px;font-size:1.1em;}
+#pwa-install-banner{position:fixed;left:14px;right:14px;bottom:18px;
+background:linear-gradient(145deg,#151B2B,#0B0F19);color:#fff;border-radius:18px;
+padding:16px 18px;display:none;align-items:center;gap:14px;
+box-shadow:0 12px 40px rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.08);
+z-index:9999;font-size:.9em;backdrop-filter:blur(12px);}
+#pwa-install-banner.show{display:flex;animation:fkcSlideUp .4s ease;}
+@keyframes fkcSlideUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:none;}}
+#pwa-install-banner .txt{flex:1;line-height:1.45;}
+#pwa-install-banner .txt b{display:block;margin-bottom:3px;font-size:1.05em;}
+#pwa-install-banner button{background:linear-gradient(135deg,#4F46E5,#8B5CF6);color:#fff;border:none;
+border-radius:12px;padding:10px 16px;font-weight:700;font-size:.92em;flex-shrink:0;
+box-shadow:0 4px 14px rgba(79,70,229,.35);}
+#pwa-install-banner .close-x{background:transparent;color:#94A3B8;padding:4px 8px;font-size:1.15em;border:none;}
 </style>
 <div id="pwa-install-banner">
-  <div class="txt"><b>📲 App install karein</b><span id="pwa-install-txt">Fullscreen experience aur roz ke reminders ke liye Home Screen par add karein.</span></div>
+  <div class="txt"><b>📲 App Install Karein</b><span id="pwa-install-txt">Home Screen par add karein — offline bhi chalega aur naye lessons automatic update.</span></div>
   <button id="pwa-install-btn" type="button">Install</button>
   <button class="close-x" type="button" id="pwa-install-close" aria-label="Band karein">✕</button>
 </div>
@@ -2476,7 +2553,7 @@ padding:4px 6px;font-size:1.1em;}
 
   if(isIOS){
     document.getElementById("pwa-install-txt").textContent =
-      "Safari ke Share ⬆️ button se 'Add to Home Screen' choose karein.";
+      "Safari → Share ⬆️ → 'Add to Home Screen' select karein.";
     banner.classList.add("show");
     document.getElementById("pwa-install-btn").style.display = "none";
     return;
@@ -2505,15 +2582,16 @@ VERSION_FILENAME = "version.json"
 
 
 def live_update_script_html(version_href):
-    """Har {LIVE_UPDATE_INTERVAL}ms mein version.json check karta hai
-    (cache:no-store se, taake browser/CDN cache kabhi beech mein na aaye).
-    Naya build detect hote hi page khud reload ho jata hai — normal
-    browser tab ho ya installed PWA, dono mein kaam karta hai, aur
-    service worker update se bhi zyada tez hai."""
+    """Har 6 second mein version.json check (cache bypass).
+    Naya build detect hote hi page auto reload — browser tab + installed
+    PWA dono mein. App background se wapas aate hi bhi turant check."""
     return f"""<script>
 (function(){{
   var FKC_BUILD = {json.dumps(BUILD_STAMP)};
+  var checking = false;
   function fkcCheckVersion(){{
+    if(checking) return;
+    checking = true;
     fetch("{version_href}?t=" + Date.now(), {{cache:"no-store"}})
       .then(function(r){{ return r.json(); }})
       .then(function(data){{
@@ -2521,13 +2599,15 @@ def live_update_script_html(version_href):
           window.location.reload();
         }}
       }})
-      .catch(function(){{}});
+      .catch(function(){{}})
+      .finally(function(){{ checking = false; }});
   }}
-  setInterval(fkcCheckVersion, 8000);
+  setInterval(fkcCheckVersion, 6000);
   document.addEventListener("visibilitychange", function(){{
     if(!document.hidden) fkcCheckVersion();
   }});
   window.addEventListener("focus", fkcCheckVersion);
+  window.addEventListener("online", fkcCheckVersion);
 }})();
 </script>"""
 
@@ -3526,6 +3606,186 @@ def streak_badge_script_html():
 </script>"""
 
 
+def power_features_css():
+    """Extra CSS for dashboard, bookmarks, confetti, referral, etc."""
+    return """
+.fkc-dash{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+padding:18px;margin:0 0 20px;box-shadow:var(--shadow);}
+.fkc-dash-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;margin-top:12px;}
+.fkc-stat{background:var(--paper);border-radius:var(--radius-sm);padding:14px 12px;text-align:center;}
+.fkc-stat .n{font-size:1.5em;font-weight:800;color:var(--primary);line-height:1.1;}
+.fkc-stat .l{font-size:.72em;color:var(--muted);margin-top:4px;text-transform:uppercase;letter-spacing:.04em;}
+.fkc-bookmark-btn{background:transparent;border:1px solid var(--line);border-radius:999px;
+padding:8px 16px;cursor:pointer;font-size:13px;font-weight:600;color:var(--ink);
+display:inline-flex;align-items:center;gap:6px;margin:6px 6px 0 0;transition:all .2s;}
+.fkc-bookmark-btn.on{background:#FEF3C7;border-color:#F59E0B;color:#B45309;}
+.fkc-ref-box{background:linear-gradient(135deg,rgba(79,70,229,.08),rgba(139,92,246,.08));
+border:1px solid var(--line);border-radius:var(--radius);padding:16px;margin:16px 0;}
+.fkc-ref-code{font-family:monospace;font-weight:700;font-size:1.1em;letter-spacing:.08em;
+background:var(--panel);padding:8px 14px;border-radius:8px;display:inline-block;margin:8px 0;}
+.fkc-confetti{position:fixed;inset:0;pointer-events:none;z-index:99999;overflow:hidden;}
+.fkc-confetti i{position:absolute;width:8px;height:8px;border-radius:2px;opacity:.9;
+animation:fkcFall 2.2s ease-out forwards;}
+@keyframes fkcFall{0%{transform:translateY(-20px) rotate(0);opacity:1}
+100%{transform:translateY(100vh) rotate(720deg);opacity:0}}
+.fkc-audio-only{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-sm);
+padding:12px 14px;margin:0 0 14px;}
+.fkc-read-time{display:inline-flex;align-items:center;gap:4px;font-size:.8em;color:var(--muted);}
+"""
+
+
+def power_features_script_html():
+    """Unified powerful client features: bookmarks, dashboard stats, referral, confetti, complete celebration."""
+    return """
+<script>
+window.fkcPower = {
+  get: function(k, def){ try{ var v=localStorage.getItem(k); return v?JSON.parse(v):def; }catch(e){ return def; } },
+  set: function(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} },
+  bookmarks: function(){ return this.get("fkc_bookmarks", []); },
+  toggleBookmark: function(item){
+    var list = this.bookmarks();
+    var idx = list.findIndex(function(x){ return x.href===item.href; });
+    if(idx>=0) list.splice(idx,1); else list.unshift(item);
+    if(list.length>50) list=list.slice(0,50);
+    this.set("fkc_bookmarks", list);
+    return idx<0;
+  },
+  isBookmarked: function(href){
+    return this.bookmarks().some(function(x){ return x.href===href; });
+  },
+  confetti: function(){
+    var box=document.createElement("div"); box.className="fkc-confetti";
+    document.body.appendChild(box);
+    var colors=["#4F46E5","#10B981","#F59E0B","#EC4899","#06B6D4","#8B5CF6"];
+    for(var i=0;i<48;i++){
+      var el=document.createElement("i");
+      el.style.left=(Math.random()*100)+"%";
+      el.style.background=colors[i%colors.length];
+      el.style.animationDelay=(Math.random()*0.6)+"s";
+      el.style.transform="rotate("+Math.random()*360+"deg)";
+      box.appendChild(el);
+    }
+    setTimeout(function(){ box.remove(); }, 2800);
+  },
+  refCode: function(){
+    var c=localStorage.getItem("fkc_ref_code");
+    if(!c){
+      c="FKC"+Math.random().toString(36).slice(2,8).toUpperCase();
+      localStorage.setItem("fkc_ref_code", c);
+    }
+    return c;
+  },
+  completedCount: function(){
+    try{
+      var p=JSON.parse(localStorage.getItem("fkc_progress")||"{}");
+      var n=0; Object.keys(p).forEach(function(s){ Object.keys(p[s]||{}).forEach(function(l){ if(p[s][l]) n++; }); });
+      return n;
+    }catch(e){ return 0; }
+  }
+};
+
+// Bookmark button handler
+function fkcToggleBookmark(btn){
+  var item={
+    href: btn.dataset.href,
+    title: btn.dataset.title,
+    course: btn.dataset.course,
+    day: btn.dataset.day,
+    icon: btn.dataset.icon||"📌"
+  };
+  var on = window.fkcPower.toggleBookmark(item);
+  btn.classList.toggle("on", on);
+  btn.innerHTML = on ? "⭐ Saved" : "☆ Save Lesson";
+}
+
+// Complete button celebration
+(function(){
+  var orig = window.fkcToggleComplete;
+  // hook after original if exists; otherwise we just add confetti on click via event
+  document.addEventListener("click", function(e){
+    var btn = e.target.closest && e.target.closest("#fkc-complete-btn");
+    if(!btn) return;
+    setTimeout(function(){
+      if(btn.classList.contains("done") || (btn.textContent||"").indexOf("Completed")!==-1){
+        try{ window.fkcPower.confetti(); }catch(err){}
+      }
+    }, 80);
+  });
+})();
+</script>
+"""
+
+
+def student_dashboard_html():
+    """Home page pe powerful student dashboard — streak, completed, bookmarks, referral."""
+    return """
+    <div class="fkc-dash fade-in no-print" id="fkc-dashboard">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;">
+        <div>
+          <div class="eyebrow">Aapka Dashboard</div>
+          <h2 style="margin:0;">📊 Progress &amp; Rewards</h2>
+        </div>
+        <button type="button" class="btn alt" style="margin:0;padding:8px 14px;font-size:12px;" onclick="fkcShareReferral()">🔗 Invite Dost</button>
+      </div>
+      <div class="fkc-dash-grid" id="fkc-dash-stats">
+        <div class="fkc-stat"><div class="n" id="fkc-stat-streak">0</div><div class="l">Din Streak</div></div>
+        <div class="fkc-stat"><div class="n" id="fkc-stat-done">0</div><div class="l">Complete</div></div>
+        <div class="fkc-stat"><div class="n" id="fkc-stat-saved">0</div><div class="l">Saved</div></div>
+        <div class="fkc-stat"><div class="n" id="fkc-stat-level">1</div><div class="l">Level</div></div>
+      </div>
+      <div id="fkc-bookmarks-list" style="margin-top:14px;"></div>
+      <div class="fkc-ref-box" id="fkc-ref-box" style="display:none;">
+        <b>🎁 Referral Code</b>
+        <div class="muted" style="font-size:.85em;margin:4px 0 0;">Apna code share karein — dost join karein to dono ko motivation!</div>
+        <div class="fkc-ref-code" id="fkc-ref-code">—</div>
+        <button type="button" class="btn" style="margin-top:6px;" onclick="fkcCopyRef()">📋 Copy Code</button>
+      </div>
+    </div>
+    <script>
+    (function(){
+      function refreshDash(){
+        try{
+          var s = JSON.parse(localStorage.getItem("fkc_streak")||"null") || {count:0};
+          var done = window.fkcPower ? window.fkcPower.completedCount() : 0;
+          var saved = (window.fkcPower ? window.fkcPower.bookmarks() : []).length;
+          var level = Math.max(1, Math.floor(done/5)+1);
+          var el;
+          if(el=document.getElementById("fkc-stat-streak")) el.textContent = s.count||0;
+          if(el=document.getElementById("fkc-stat-done")) el.textContent = done;
+          if(el=document.getElementById("fkc-stat-saved")) el.textContent = saved;
+          if(el=document.getElementById("fkc-stat-level")) el.textContent = level;
+          var box = document.getElementById("fkc-bookmarks-list");
+          if(box){
+            var bms = window.fkcPower ? window.fkcPower.bookmarks() : [];
+            if(!bms.length){ box.innerHTML = ""; return; }
+            box.innerHTML = "<p style='margin:0 0 8px;font-weight:700;font-size:.9em;'>⭐ Saved Lessons</p>" +
+              bms.slice(0,6).map(function(b){
+                return "<a href='"+b.href+"' style='display:block;padding:8px 0;border-bottom:1px solid var(--line);text-decoration:none;color:inherit;font-size:.9em;'>"+
+                  (b.icon||"📌")+" <b>"+b.course+"</b> — Day "+b.day+": "+b.title+"</a>";
+              }).join("");
+          }
+        }catch(e){}
+      }
+      window.fkcShareReferral = function(){
+        var box=document.getElementById("fkc-ref-box");
+        var code=window.fkcPower.refCode();
+        document.getElementById("fkc-ref-code").textContent = code;
+        box.style.display = "block";
+        var text = "Main FKC Trading Academy pe daily free lessons leta/leti hoon. Mera referral code: "+code+" — aap bhi join karo!";
+        if(navigator.share){ navigator.share({title:"FKC Academy", text:text}).catch(function(){}); }
+      };
+      window.fkcCopyRef = function(){
+        var code=document.getElementById("fkc-ref-code").textContent;
+        if(navigator.clipboard) navigator.clipboard.writeText(code).then(function(){ alert("Code copy ho gaya: "+code); });
+        else alert(code);
+      };
+      refreshDash();
+      setTimeout(refreshDash, 400);
+    })();
+    </script>
+    """
+
+
 def home_search_script_html():
     """Home page ke course cards ko search box se filter karta hai
     (sirf client-side JS, koi backend/tool nahi chahiye)."""
@@ -3554,35 +3814,48 @@ def pdf_download_button_html():
 
 
 def quiz_check_html(answer_key):
-    """Existing 'Answer Key' keywords (already Mistral se milte hain, koi
-    nayi AI call nahi) se ek self-check quiz box banata hai — student
-    apna jawab likhta hai aur JS check karta hai kitne keywords match hue.
-    Sab kuch client-side hai, kisi cost/limit ka khatra nahi."""
+    """Powerful self-check quiz — keywords match + score save + best score."""
     if not answer_key:
         return ""
     keys_js = json.dumps(answer_key, ensure_ascii=False)
     return f"""
-      <div class="quiz-box no-print">
-        <p><b>📝 Apna Practice Check Karein</b></p>
-        <p class="muted" style="font-size:.85em;">Upar ka "Practice" step apne alfaaz mein neeche likhein, phir check karein.</p>
+      <div class="quiz-box no-print" id="fkc-quiz-box">
+        <p><b>📝 Practice Check + Score</b></p>
+        <p class="muted" style="font-size:.85em;">Lesson ka practice step apne alfaaz mein likhein. Keywords match hone par score milega.</p>
         <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
-        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='{keys_js}'>✅ Check Karein</button>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='{keys_js}'>✅ Check &amp; Score</button>
         <div class="quiz-result" id="fkc-quiz-result"></div>
+        <div id="fkc-quiz-best" class="muted" style="font-size:.8em;margin-top:6px;"></div>
       </div>
       <script>
+      (function(){{
+        try {{
+          var best = localStorage.getItem("fkc_quiz_best_" + (document.getElementById("fkc-complete-btn")||{{}}).dataset.slug + "_" + (document.getElementById("fkc-complete-btn")||{{}}).dataset.lesson);
+          if(best) document.getElementById("fkc-quiz-best").textContent = "🏆 Aapka best score: " + best;
+        }} catch(e){{}}
+      }})();
       function fkcCheckQuiz(btn){{
-        var keys = JSON.parse(btn.getAttribute("data-keys"));
+        var keys = JSON.parse(btn.getAttribute("data-keys")||"[]");
         var ans = (document.getElementById("fkc-quiz-answer").value || "").toLowerCase();
         var hit = 0;
-        keys.forEach(function(k){{ if(k && ans.indexOf(k) !== -1) hit++; }});
+        keys.forEach(function(k){{ if(k && ans.indexOf(String(k).toLowerCase()) !== -1) hit++; }});
+        var total = keys.length || 1;
+        var pct = Math.round((hit/total)*100);
         var el = document.getElementById("fkc-quiz-result");
-        if(hit === 0){{
-          el.textContent = "Koi keyword match nahi hua — dobara try karein ya lesson dobara parhein.";
-          el.style.color = "#D97706";
-        }} else {{
-          el.textContent = "✅ " + hit + "/" + keys.length + " keywords match hue — shabaash!";
-          el.style.color = "var(--accent)";
-        }}
+        var color = pct >= 70 ? "var(--accent)" : (pct >= 40 ? "#D97706" : "#EF4444");
+        var msg = pct >= 70 ? "🔥 Zabardast! " : (pct >= 40 ? "👍 Theek hai, thoda aur improve karein. " : "📚 Lesson dobara parhein. ");
+        el.innerHTML = msg + "<b>" + hit + "/" + total + "</b> keywords (" + pct + "%)";
+        el.style.color = color;
+        try {{
+          var slug = (document.getElementById("fkc-complete-btn")||{{}}).dataset.slug || "";
+          var lid = (document.getElementById("fkc-complete-btn")||{{}}).dataset.lesson || "";
+          var key = "fkc_quiz_best_" + slug + "_" + lid;
+          var prev = parseInt(localStorage.getItem(key)||"0",10);
+          if(pct > prev) {{
+            localStorage.setItem(key, String(pct));
+            document.getElementById("fkc-quiz-best").textContent = "🏆 Naya best score: " + pct + "%";
+          }}
+        }} catch(e){{}}
       }}
       </script>"""
 
