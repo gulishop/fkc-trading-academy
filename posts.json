@@ -29661,6 +29661,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 19,
+      "id": "day-019",
+      "date": "2026-08-26",
+      "title": "Day 19 — \"Kahani sunna aur us par sawal ka jawab dena\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachay, jab koi kahani sunayega, toh usko dil se sunna hai. Uske baad uske sawal ka jawab dena bhi seekhna hai. Yeh sirf kahani sunne ke baare mein nahi, balki zindagi mein bhi koi cheez poori tarah samajhne ke liye zaroori hai."
+        ],
+        [
+          "Chhoti Kahani",
+          "Aman ko school se ek kahani sunai gayi thi. Usmein ek chhota sa chidiya tha jo apne ghar jaana chahta tha. Raste mein usko ek badi si billi milti hai. Chidiya ne socha, \"Maine toh kabhi kisi billi ko nahin dekha, yeh kaisi hai?\" Usne apne dost se poochha. Dost ne kaha, \"Billi badi hoti hai, lekin woh chidiya ko nuqsan nahin pahunchati.\" Aman ne socha, \"Agar main chidiya hota, toh main bhi apne dost se poochhta.\""
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "Tumhari favourite kahani kaunsi hai? Usmein sabse mazedaar cheez kya thi?"
+        ],
+        [
+          "Yaad Rakhein",
+          "Kahani sunne ke baad uske baare mein sochna aur sawal karna achha hai. Agar koi cheez samajh na aaye, toh pooch lena chahiye!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۹ — کہانی سننا اور اس پر سوال کا جواب دینا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "بچو، جب کوئی کہانی سنائے گا، تو اسے دل سے سننا ہے۔ اس کے بعد اس کے سوال کا جواب دینا بھی سیکھنا ہے۔ یہ صرف کہانی سننے کے بارے میں نہیں، بلکہ زندگی میں بھی کوئی چیز پوری طرح سمجھنے کے لیے ضروری ہے۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "آمن کو سکول سے ایک کہانی سنائی گئی تھی۔ اس میں ایک چھوٹا سا چڑیا تھا جو اپنے گھر جانا چاہتا تھا۔ راستے میں اسے ایک بڑی سی بلی ملتی ہے۔ چڑیا نے سوچا، ’میں نے تو کبھی کسی بلی کو نہیں دیکھا، یہ کیسی ہے؟‘ اس نے اپنے دوست سے پوچھا۔ دوست نے کہا، ’بلی بڑی ہوتی ہے، لیکن وہ چڑیا کو نقصان نہیں پہنچاتی۔‘ آمن نے سوچا، ’اگر میں چڑیا ہوتا، تو میں بھی اپنے دوست سے پوچھتا۔‘"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "تمہاری فیورٹ کہانی کون سی ہے؟ اس میں سب سے مزے دار چیز کیا تھی؟"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "کہانی سننے کے بعد اس کے بارے میں سوچنا اور سوال کرنا اچھا ہے۔ اگر کوئی چیز سمجھ نہ آئے، تو پوچھ لینا چاہیے!"
+            }
+          ]
+        }
+      }
     }
   ]
 }
