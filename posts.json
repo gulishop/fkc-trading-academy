@@ -2409,6 +2409,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 25,
+      "id": "day-025",
+      "date": "2026-08-26",
+      "title": "Day 25 — **YouTube Automation Mein \"Engagement Rate\" Kaise Badhaye? (Likes, Comments, Shares Ka Secret)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Engagement rate (likes, comments, shares) YouTube algorithm ka sabse important ranking factor hai. Agar viewers video ke saath interact nahi karte, to YouTube usko \"low-quality\" samajhta hai—chahe views kitne bhi ho. Is lesson mein hum seekhenge ke kaise AI tools aur psychological triggers use karke engagement automatically badhaya ja sakta hai."
+        ],
+        [
+          "Example",
+          "Ek faceless channel \"Top 10 Unknown Facts\" ka hai. Pehle video ka engagement rate 1.5% tha (300 likes/20k views). Ab hum AI se \"Did You Know?\" style hooks banayenge, aur video ke end mein \"Comment karke batao: Aapko konsa fact sabse zyada pasand aaya?\" type prompt add karenge. Result: Engagement 4.2% tak badh gaya (840 likes/20k views)."
+        ],
+        [
+          "Practice",
+          "Apne channel ke latest video ke description mein **3 different types ke \"Call-to-Action\" (CTA)** add karo:\n1. Question-based (e.g., \"Aapka favorite fact kaun sa hai? Comment mein batana!\")\n2. Poll-style (e.g., \"Aapko yeh video pasand aaya? 👍/👎\")\n3. Challenge (e.g., \"Agar aap yeh fact pehle se jaante the to 'I knew it!' comment karo\")"
+        ],
+        [
+          "Mini Project",
+          "Ek **AI-generated \"Engagement Booster\" template** banayein:\n- 5 different hooks (questions, polls, challenges)\n- 3 different CTA options\n- Har video ke description mein inmein se 1-2 use karne ka system banayein\n(Use karne ke liye: Canva AI ya Copy.ai)"
+        ]
+      ],
+      "answer_key": "question-based cta, poll-style cta, challenge cta, ai-generated hooks",
+      "translations": {
+        "ur": {
+          "title": "دن ۲۵ — یوٹیوب آٹومیشن میں \"اینگیجمنٹ ریٹ\" کیسے بڑھائیں؟ (لائکس، کمنٹس، شیئرز کا راز)",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "اینگیجمنٹ ریٹ (لائکس، کمنٹس، شیئرز) یوٹیوب الگورتھم کا سب سے اہم رینکنگ فیکٹر ہے۔ اگر ویورز ویڈیو کے ساتھ انٹرایکٹ نہیں کرتے، تو یوٹیوب اسے \"لو کوالٹی\" سمجھتا ہے—چاہے ویوز کتنے ہی کیوں نہ ہوں۔ اس سبق میں ہم سیکھیں گے کہ کیسے اے آئی ٹولز اور سائیکولوجیکل ٹرگرز استعمال کرکے اینگیجمنٹ خود بخود بڑھایا جا سکتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک فیس لیس چینل \"ٹاپ ۱۰ ان نوَن فیکٹس\" کا ہے۔ پہلے ویڈیو کا اینگیجمنٹ ریٹ ۱.۵٪ تھا (۳۰۰ لائکس/۲۰ ہزار ویوز)۔ اب ہم اے آئی سے \"ڈڈ یو نو؟\" اسٹائل ہکس بنائیں گے، اور ویڈیو کے آخر میں \"کمنٹ کرکے بتائو: آپ کو کون سا فیکٹ سب سے زیادہ پسند آیا؟\" ٹائپ کا پرامپٹ شامل کریں گے۔ نتیجہ: اینگیجمنٹ ۴.۲٪ تک بڑھ گیا (۸۴۰ لائکس/۲۰ ہزار ویوز)۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے چینل کی تازہ ترین ویڈیو کے ڈسکرپشن میں **۳ مختلف قسموں کے \"کال ٹو ایکشن\" (سی ٹی اے)** شامل کریں:\n۱۔ سوال پر مبنی (مثال: \"آپ کا فیورٹ فیکٹ کون سا ہے؟ کمنٹ میں بتائیں!\")\n۲۔ پول اسٹائل (مثال: \"آپ کو یہ ویڈیو پسند آئی؟ 👍/👎\")\n۳۔ چیلنج (مثال: \"اگر آپ یہ فیکٹ پہلے سے جانتے تھے تو 'I knew it!' کمنٹ کریں\")"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **اے آئی جنریٹڈ \"اینگیجمنٹ بوسٹر\" ٹیمپلیٹ** بنائیں:\n- ۵ مختلف ہکس (سوالات، پولز، چیلنجز)\n- ۳ مختلف سی ٹی اے آپشنز\n- ہر ویڈیو کے ڈسکرپشن میں ان میں سے ۱-۲ استعمال کرنے کا سسٹم بنائیں\n(استعمال کرنے کے لیے: Canva AI یا Copy.ai)"
+            }
+          ]
+        }
+      }
     }
   ],
   "social-media-marketing": [
