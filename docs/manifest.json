@@ -1,26 +1,42 @@
 {
   "name": "FKC Trading Academy",
   "short_name": "FKC Trading ",
-  "start_url": ".",
-  "scope": ".",
-  "display": "fullscreen",
+  "description": "Rozana free practical lessons — Learn · Earn · Grow",
+  "start_url": "./?source=pwa",
+  "scope": "./",
+  "display": "standalone",
   "display_override": [
+    "standalone",
     "fullscreen",
-    "standalone"
+    "minimal-ui"
   ],
-  "background_color": "#0B1220",
-  "theme_color": "#0B1220",
+  "orientation": "portrait-primary",
+  "background_color": "#0B0F19",
+  "theme_color": "#4F46E5",
+  "categories": [
+    "education",
+    "lifestyle"
+  ],
+  "lang": "ur",
+  "dir": "ltr",
   "icons": [
     {
       "src": "icons/icon-192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }

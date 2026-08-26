@@ -925,6 +925,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 18,
+      "id": "day-018",
+      "date": "2026-08-26",
+      "title": "Day 18 — **Affiliate Marketing Ke Paise Kaise Track Karein (Analytics Tools & Reports)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Affiliate marketing mein paise track karna zaroori hai taake pata chale ke konsa link, content, ya traffic source sabse zyada sales la raha hai. Iske liye **analytics tools** (Google Analytics, affiliate dashboard) aur **custom reports** banane hote hain. Bina tracking ke, aapko pata nahi chale ga ke kya kaam kar raha hai aur kya nahi."
+        ],
+        [
+          "Example",
+          "1. **Amazon Associates Dashboard** mein ja kar \"Reports\" section check karein. Yahan \"Earnings\" aur \"Clicks\" ka breakdown mile ga.\n2. **Google Analytics 4 (GA4)** mein \"Acquisition\" > \"Traffic Acquisition\" par click karein. Yahan dekh sakte hain ke konsa social media platform (TikTok/Instagram) se zyada traffic aa raha hai aur uske baad kitni sales hui."
+        ],
+        [
+          "Practice",
+          "Apne affiliate program (Amazon/Daraz) ke dashboard se **pichle 7 din ke clicks aur earnings ka screenshot lein**. Agar GA4 use kar rahe hain to \"Traffic Sources\" report ka screenshot bhi lein."
+        ],
+        [
+          "Mini Project",
+          "Ek **simple Excel/Google Sheets** file banayein jismein aap har din ke clicks, impressions, aur earnings note karein. Isse aapko trends samajhne mein aasani hogi."
+        ]
+      ],
+      "answer_key": "clicks, earnings, traffic sources, conversion rate",
+      "translations": {
+        "ur": {
+          "title": "دن 18 — ایفیلی ایٹ مارکیٹنگ کے پیسے کیسے ٹریک کریں (اینالیٹکس ٹولز اور رپورٹس)",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ایفیلی ایٹ مارکیٹنگ میں پیسے ٹریک کرنا بہت ضروری ہے تاکہ پتہ چل سکے کہ کون سا لنک، کون سا مواد، یا کون سا ٹریفک سورس سب سے زیادہ سیلز لا رہا ہے۔ اس کے لیے اینالیٹکس ٹولز (گوگل اینالیٹکس، ایفیلی ایٹ ڈیش بورڈ) اور کسٹم رپورٹس بنانی پڑتی ہیں۔ ٹریکنگ کے بغیر آپ کو معلوم نہیں ہوگا کہ کیا کام کر رہا ہے اور کیا نہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1. **ایمیزون ایسوسی ایٹس ڈیش بورڈ** میں جا کر \"رپورٹس\" سیکشن چیک کریں۔ یہاں \"کمائی\" اور \"کلکس\" کا بریک ڈاؤن ملے گا۔\n2. **گوگل اینالیٹکس 4 (GA4)** میں \"اکویزیشن\" > \"ٹریفک اکویزیشن\" پر کلک کریں۔ یہاں دیکھ سکتے ہیں کہ کون سا سوشل میڈیا پلیٹ فارم (ٹک ٹاک/انسٹاگرام) سے زیادہ ٹریفک آ رہا ہے اور اس کے بعد کتنی سیلز ہوئی ہیں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے ایفیلی ایٹ پروگرام (ایمیزون/داراز) کے ڈیش بورڈ سے پچھلے 7 دن کے کلکس اور کمائی کا اسکرین شاٹ لیں۔ اگر GA4 استعمال کر رہے ہیں تو \"ٹریفک سورسز\" رپورٹ کا اسکرین شاٹ بھی لیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک سادہ **ایکسل/گوگل شیٹس** فائل بنائیں جس میں آپ ہر دن کے کلکس، امپریشنز، اور کمائی نوٹ کریں۔ اس سے آپ کو ٹرینڈز سمجھنے میں آسانی ہوگی۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "youtube-automation": [

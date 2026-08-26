@@ -30,10 +30,13 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5639688573760714" crossorigin="anonymous"></script>
 <script src="https://pl30647963.effectivecpmnetwork.com/35/50/90/355090180a90a458c3f1895b8e9f6607.js"></script>
 <link rel="icon" href="logo.png">
-<link rel="manifest" href="manifest.json"><meta name="theme-color" content="#0B1220"><link rel="apple-touch-icon" href="icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},20000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
+<link rel="manifest" href="manifest.json"><meta name="theme-color" content="#4F46E5"><link rel="apple-touch-icon" href="icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="FKC Trading "><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},15000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});if(reg.waiting){reg.waiting.postMessage({type:'SKIP_WAITING'});}reg.addEventListener('updatefound',function(){var nw=reg.installing;if(!nw)return;nw.addEventListener('statechange',function(){if(nw.state==='installed'&&navigator.serviceWorker.controller){nw.postMessage({type:'SKIP_WAITING'});}}});});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-08-26T10:12:18.203624";
+  var FKC_BUILD = "2026-08-26T12:45:32.436669";
+  var checking = false;
   function fkcCheckVersion(){
+    if(checking) return;
+    checking = true;
     fetch("version.json?t=" + Date.now(), {cache:"no-store"})
       .then(function(r){ return r.json(); })
       .then(function(data){
@@ -41,171 +44,189 @@
           window.location.reload();
         }
       })
-      .catch(function(){});
+      .catch(function(){})
+      .finally(function(){ checking = false; });
   }
-  setInterval(fkcCheckVersion, 8000);
+  setInterval(fkcCheckVersion, 6000);
   document.addEventListener("visibilitychange", function(){
     if(!document.hidden) fkcCheckVersion();
   });
   window.addEventListener("focus", fkcCheckVersion);
+  window.addEventListener("online", fkcCheckVersion);
 })();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--paper:#F7F9FA;--panel:#FFFFFF;--line:#E3E6E8;
---ink:#1C1D1F;--muted:#6A6F73;--primary:#0056D2;--primary-dark:#00419e;
---accent:#2BAF66;--purple:#6D28D9;}
-html[data-theme="dark"]{--paper:#14161A;--panel:#1D2025;--line:#2C3038;
---ink:#EDEFF2;--muted:#9AA1AB;--primary:#5B9DFF;--primary-dark:#3D7DE0;
---accent:#3FCB7E;--purple:#A78BFA;}
-html[data-theme="dark"] img{opacity:.92;}
-.theme-toggle{position:fixed;bottom:16px;right:16px;z-index:999;
-width:44px;height:44px;border-radius:50%;border:1px solid var(--line);
-background:var(--panel);color:var(--ink);font-size:19px;cursor:pointer;
-box-shadow:0 2px 8px rgba(0,0,0,.15);display:flex;align-items:center;
-justify-content:center;}
+:root{
+  --paper:#F4F6FB;--panel:#FFFFFF;--line:rgba(15,23,42,.08);
+  --ink:#0F172A;--muted:#64748B;--primary:#4F46E5;--primary-dark:#4338CA;
+  --accent:#10B981;--purple:#8B5CF6;
+  --shadow:0 4px 24px rgba(15,23,42,.06);--shadow-lg:0 12px 40px rgba(15,23,42,.1);
+  --radius:16px;--radius-sm:12px;
+}
+html[data-theme="dark"]{
+  --paper:#0B0F19;--panel:#151B2B;--line:rgba(255,255,255,.08);
+  --ink:#F1F5F9;--muted:#94A3B8;--primary:#818CF8;--primary-dark:#6366F1;
+  --accent:#34D399;--purple:#A78BFA;
+  --shadow:0 4px 24px rgba(0,0,0,.3);--shadow-lg:0 12px 40px rgba(0,0,0,.4);
+}
+html[data-theme="dark"] img{opacity:.94;}
 *{box-sizing:border-box;}
-@media (prefers-reduced-motion: no-preference){
-  .fade-in{animation:fadeUp .45s ease both;}
-  .fade-in.d2{animation-delay:.06s;} .fade-in.d3{animation-delay:.12s;}
-  @keyframes fadeUp{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
+@media (prefers-reduced-motion:no-preference){
+  .fade-in{animation:fadeUp .5s cubic-bezier(.22,1,.36,1) both;}
+  .fade-in.d2{animation-delay:.07s;} .fade-in.d3{animation-delay:.14s;}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:none;}}
 }
 body{margin:0;background:var(--paper);color:var(--ink);
-font-family:'Inter','IBM Plex Sans',sans-serif;line-height:1.55;
-transition:background .2s ease,color .2s ease;}
-.wrap{max-width:720px;margin:0 auto;padding:24px 16px 70px;}
-a{color:var(--primary);}
+font-family:'Inter',system-ui,-apple-system,sans-serif;line-height:1.6;
+-webkit-font-smoothing:antialiased;transition:background .25s,color .25s;}
+.wrap{max-width:760px;margin:0 auto;padding:28px 18px 80px;}
+a{color:var(--primary);text-decoration-thickness:1.5px;text-underline-offset:3px;}
+.theme-toggle{position:fixed;bottom:20px;right:20px;z-index:999;
+width:48px;height:48px;border-radius:50%;border:1px solid var(--line);
+background:var(--panel);color:var(--ink);font-size:20px;cursor:pointer;
+box-shadow:var(--shadow-lg);display:flex;align-items:center;justify-content:center;
+backdrop-filter:blur(12px);transition:transform .2s;}
+.theme-toggle:hover{transform:scale(1.08);}
 .top{display:flex;align-items:baseline;gap:10px;color:var(--ink);
-font-weight:600;font-size:14px;border-bottom:1px solid var(--line);
-padding-bottom:14px;margin-bottom:20px;}
+font-weight:600;font-size:13px;border-bottom:1px solid var(--line);
+padding-bottom:16px;margin-bottom:24px;}
 .top .lbl{color:var(--muted);font-weight:400;}
-h1{font-family:'Inter',sans-serif;font-weight:800;font-size:1.55em;
-margin:.2em 0;letter-spacing:-.01em;color:var(--ink);}
-h2{font-family:'Inter',sans-serif;font-weight:700;font-size:1.12em;
-margin:1em 0 .35em;color:var(--ink);}
-h3{color:var(--primary);font-size:.95em;margin:1.2em 0 .3em;font-weight:700;}
-p{margin:.45em 0;}
-.muted{color:var(--muted);font-size:.9em;}
-.eyebrow{display:inline-block;color:var(--primary);font-size:.72em;
-font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px;}
+h1{font-weight:800;font-size:1.7em;margin:.15em 0;letter-spacing:-.03em;color:var(--ink);line-height:1.25;}
+h2{font-weight:700;font-size:1.15em;margin:1.1em 0 .4em;color:var(--ink);letter-spacing:-.01em;}
+h3{color:var(--primary);font-size:.98em;margin:1.3em 0 .35em;font-weight:700;}
+p{margin:.5em 0;}
+.muted{color:var(--muted);font-size:.92em;}
+.eyebrow{display:inline-block;color:var(--primary);font-size:.7em;
+font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px;}
 .card{background:var(--panel);border:1px solid var(--line);
-border-radius:10px;padding:18px;margin:16px 0;
-box-shadow:0 1px 3px rgba(20,23,28,.06);}
-.btn{display:inline-flex;align-items:center;gap:8px;background:var(--primary);
-color:#fff;font-weight:600;font-size:14px;text-decoration:none;
-padding:11px 18px;border:none;border-radius:6px;cursor:pointer;
-margin:6px 6px 0 0;}
-.btn.alt{background:#fff;color:var(--ink);border:1px solid var(--line);}
-.btn.green{background:var(--accent);}
-.grid{display:flex;flex-direction:column;gap:12px;margin:18px 0 30px;}
-.ccard{display:flex;align-items:center;gap:14px;background:var(--panel);
-border:1px solid var(--line);border-radius:10px;padding:14px;
-text-decoration:none;color:inherit;box-shadow:0 1px 3px rgba(20,23,28,.05);}
-.ccard:hover{border-color:var(--primary);box-shadow:0 2px 8px rgba(0,86,210,.12);}
-.ccard .stamp{width:52px;height:52px;flex-shrink:0;display:flex;
-align-items:center;justify-content:center;font-size:1.5em;border-radius:10px;
-background:var(--accent-bg,rgba(0,86,210,.08));}
+border-radius:var(--radius);padding:22px;margin:18px 0;
+box-shadow:var(--shadow);}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;
+background:linear-gradient(135deg,var(--primary),var(--primary-dark));
+color:#fff!important;font-weight:600;font-size:14px;text-decoration:none;
+padding:12px 22px;border:none;border-radius:999px;cursor:pointer;
+margin:6px 6px 0 0;box-shadow:0 4px 14px rgba(79,70,229,.25);
+transition:transform .2s,box-shadow .2s;}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(79,70,229,.35);}
+.btn.alt{background:var(--panel);color:var(--ink)!important;border:1px solid var(--line);
+box-shadow:var(--shadow);}
+.btn.alt:hover{border-color:var(--primary);}
+.btn.green{background:linear-gradient(135deg,#10B981,#059669);box-shadow:0 4px 14px rgba(16,185,129,.25);}
+.grid{display:flex;flex-direction:column;gap:14px;margin:20px 0 32px;}
+.ccard{display:flex;align-items:center;gap:16px;background:var(--panel);
+border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;
+text-decoration:none;color:inherit;box-shadow:var(--shadow);
+transition:transform .22s,box-shadow .22s,border-color .22s;}
+.ccard:hover{transform:translateY(-3px);border-color:var(--primary);
+box-shadow:var(--shadow-lg);}
+.ccard .stamp{width:54px;height:54px;flex-shrink:0;display:flex;
+align-items:center;justify-content:center;font-size:1.55em;border-radius:14px;
+background:var(--accent-bg,rgba(79,70,229,.1));}
 .ccard .body{flex:1;min-width:0;}
-.ccard .body h2{margin:0 0 3px;font-size:1.02em;}
-.ccard .tag{font-size:.82em;color:var(--muted);margin:0 0 4px;}
+.ccard .body h2{margin:0 0 4px;font-size:1.05em;}
+.ccard .tag{font-size:.82em;color:var(--muted);margin:0 0 3px;}
 .ccard .latest{font-size:.8em;margin:0;overflow:hidden;text-overflow:ellipsis;
-white-space:nowrap;color:var(--ink);opacity:.75;}
-.ccard .stub{flex-shrink:0;text-align:center;padding-left:10px;
+white-space:nowrap;color:var(--ink);opacity:.8;}
+.ccard .stub{flex-shrink:0;text-align:center;padding-left:12px;
 border-left:1px solid var(--line);}
-.ccard .stub-n{font-weight:800;font-size:1.15em;color:var(--primary);line-height:1;}
-.ccard .stub-l{font-size:.62em;color:var(--muted);text-transform:uppercase;
-letter-spacing:.03em;margin-top:2px;}
-.plist a{display:flex;align-items:center;gap:12px;background:var(--panel);
-border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin:8px 0;
-text-decoration:none;color:var(--ink);box-shadow:0 1px 2px rgba(20,23,28,.04);}
-.plist a:hover{border-color:var(--primary);}
+.ccard .stub-n{font-weight:800;font-size:1.2em;color:var(--primary);line-height:1;}
+.ccard .stub-l{font-size:.6em;color:var(--muted);text-transform:uppercase;
+letter-spacing:.04em;margin-top:3px;}
+.plist a{display:flex;align-items:center;gap:14px;background:var(--panel);
+border:1px solid var(--line);border-radius:var(--radius-sm);padding:14px 16px;margin:8px 0;
+text-decoration:none;color:var(--ink);box-shadow:var(--shadow);
+transition:border-color .2s,transform .2s;}
+.plist a:hover{border-color:var(--primary);transform:translateX(3px);}
 .plist .d{display:flex;align-items:center;justify-content:center;
-flex-shrink:0;width:34px;height:34px;border-radius:50%;
-background:rgba(0,86,210,.09);color:var(--primary);font-weight:700;
-font-size:.72em;}
-.badge{display:inline-block;background:var(--accent);color:#fff;
-font-size:.7em;font-weight:700;padding:3px 10px;border-radius:20px;
-margin-bottom:8px;text-transform:uppercase;letter-spacing:.04em;}
-footer{color:var(--muted);font-size:12px;margin-top:40px;text-align:center;}
-.brand-bar{display:flex;align-items:center;gap:12px;margin-bottom:6px;}
-.brand-bar img{width:46px;height:46px;border-radius:10px;flex-shrink:0;
-object-fit:cover;background:#fff;border:1px solid var(--line);}
-.brand-bar .bname{font-family:'Inter',sans-serif;font-weight:800;
-color:var(--ink);font-size:1.1em;line-height:1.25;}
+flex-shrink:0;width:36px;height:36px;border-radius:50%;
+background:linear-gradient(135deg,rgba(79,70,229,.12),rgba(139,92,246,.12));
+color:var(--primary);font-weight:700;font-size:.75em;}
+.badge{display:inline-block;background:linear-gradient(135deg,#10B981,#059669);color:#fff;
+font-size:.68em;font-weight:700;padding:4px 12px;border-radius:999px;
+margin-bottom:10px;text-transform:uppercase;letter-spacing:.04em;}
+footer{color:var(--muted);font-size:12px;margin-top:48px;text-align:center;}
+.brand-bar{display:flex;align-items:center;gap:14px;margin-bottom:8px;}
+.brand-bar img{width:48px;height:48px;border-radius:14px;flex-shrink:0;
+object-fit:cover;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);}
+.brand-bar .bname{font-weight:800;color:var(--ink);font-size:1.15em;line-height:1.25;letter-spacing:-.02em;}
 .brand-bar .btag{color:var(--muted);font-size:.78em;}
-.brand-footer{border-top:1px solid var(--line);margin-top:34px;
-padding-top:16px;display:flex;align-items:center;gap:12px;}
-.brand-footer img{width:36px;height:36px;border-radius:8px;flex-shrink:0;
+.brand-footer{border-top:1px solid var(--line);margin-top:40px;
+padding-top:20px;display:flex;align-items:center;gap:14px;}
+.brand-footer img{width:38px;height:38px;border-radius:10px;flex-shrink:0;
 object-fit:cover;background:#fff;border:1px solid var(--line);}
-.brand-footer .txt{font-size:.8em;color:var(--muted);line-height:1.5;}
+.brand-footer .txt{font-size:.8em;color:var(--muted);line-height:1.55;}
 .brand-footer .txt b{color:var(--ink);}
 .wa-btn{display:inline-flex;align-items:center;gap:6px;background:#25D366;
-color:#fff!important;border-radius:16px;padding:4px 12px;font-size:.85em;
+color:#fff!important;border-radius:999px;padding:5px 14px;font-size:.85em;
 font-weight:600;margin:4px 0;text-decoration:none;}
-.notify-btn{display:inline-flex;align-items:center;gap:6px;background:#fff;
-color:var(--primary);border:1px solid var(--line);border-radius:20px;
-font-size:.76em;font-weight:700;padding:5px 12px;cursor:pointer;
-margin-top:6px;white-space:nowrap;}
+.notify-btn{display:inline-flex;align-items:center;gap:6px;background:var(--panel);
+color:var(--primary);border:1px solid var(--line);border-radius:999px;
+font-size:.76em;font-weight:700;padding:6px 14px;cursor:pointer;
+margin-top:8px;white-space:nowrap;transition:all .2s;}
 .notify-btn.subscribed{background:var(--accent);color:#fff;border-color:var(--accent);}
 .ccard .notify-btn{margin-top:8px;}
-.progress-wrap{margin:14px 0 22px;}
-.progress-track{background:var(--line);border-radius:20px;height:10px;
-overflow:hidden;}
-.progress-fill{background:var(--accent);height:100%;width:0%;
-transition:width .4s ease;}
+.progress-wrap{margin:16px 0 24px;}
+.progress-track{background:var(--line);border-radius:999px;height:8px;overflow:hidden;}
+.progress-fill{background:linear-gradient(90deg,var(--accent),#34D399);height:100%;width:0%;
+transition:width .5s cubic-bezier(.22,1,.36,1);border-radius:999px;}
 .complete-btn.done{background:var(--accent);}
-#fkc-cert-btn{background:var(--purple);}
-.lang-tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;}
+#fkc-cert-btn{background:linear-gradient(135deg,var(--purple),#7C3AED);}
+.lang-tabs{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap;}
 .lang-tab{background:var(--paper);border:1px solid var(--line);color:var(--muted);
-border-radius:20px;font-size:.82em;font-weight:700;padding:6px 16px;cursor:pointer;}
+border-radius:999px;font-size:.82em;font-weight:700;padding:7px 18px;cursor:pointer;
+transition:all .2s;}
 .lang-tab.active{background:var(--primary);color:#fff;border-color:var(--primary);}
-.lang-content[dir="rtl"]{font-family:'Noto Nastaliq Urdu',serif;line-height:2.1;
-font-size:1.05em;text-align:right;}
-pre{background:#0b1220;color:#e6edf3;padding:12px 14px;border-radius:10px;
-overflow-x:auto;font-family:Consolas,'Fira Code',monospace;font-size:.85em;
-line-height:1.5;direction:ltr;text-align:left;unicode-bidi:isolate;margin:12px 0;}
+.lang-content[dir="rtl"]{font-family:'Noto Nastaliq Urdu',serif;line-height:2.15;
+font-size:1.06em;text-align:right;}
+pre{background:#0B1220;color:#E2E8F0;padding:16px 18px;border-radius:var(--radius-sm);
+overflow-x:auto;font-family:'JetBrains Mono',Consolas,monospace;font-size:.86em;
+line-height:1.55;direction:ltr;text-align:left;unicode-bidi:isolate;margin:14px 0;}
 pre code{font-family:inherit;background:none;padding:0;}
-.fkc-search{width:100%;padding:12px 14px;border:1px solid var(--line);
-border-radius:8px;font-size:15px;margin:10px 0 4px;box-sizing:border-box;
-font-family:inherit;}
-.streak-badge{display:none;background:#EA580C;color:#fff;font-size:.72em;
-font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;
+.fkc-search{width:100%;padding:14px 18px;border:1px solid var(--line);
+border-radius:999px;font-size:15px;margin:12px 0 6px;box-sizing:border-box;
+font-family:inherit;background:var(--panel);color:var(--ink);
+box-shadow:var(--shadow);transition:border-color .2s;}
+.fkc-search:focus{outline:none;border-color:var(--primary);}
+.streak-badge{display:none;background:linear-gradient(135deg,#F97316,#EA580C);color:#fff;
+font-size:.7em;font-weight:700;padding:3px 11px;border-radius:999px;margin-left:8px;
 vertical-align:middle;}
-.lesson-nav{display:flex;justify-content:space-between;gap:8px;
-flex-wrap:wrap;margin-top:14px;}
+.lesson-nav{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:18px;}
 .lesson-nav a{flex:1;min-width:120px;text-align:center;}
-.section-title{font-family:'Inter',sans-serif;font-weight:800;
-font-size:1.2em;margin:30px 0 2px;padding-top:18px;
-border-top:1px solid var(--line);display:flex;align-items:center;gap:8px;}
+.section-title{font-weight:800;font-size:1.25em;margin:36px 0 4px;padding-top:22px;
+border-top:1px solid var(--line);display:flex;align-items:center;gap:10px;letter-spacing:-.02em;}
 .section-title.adults{color:var(--primary);}
-.section-title.kids{color:#DB4C77;}
-.quiz-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
-.quiz-box textarea{width:100%;min-height:60px;border:1px solid var(--line);
-border-radius:8px;padding:10px;font-family:inherit;font-size:14px;
-box-sizing:border-box;margin:6px 0;}
-.quiz-result{font-size:.88em;margin-top:6px;font-weight:600;}
-.puzzle-box{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px;}
+.section-title.kids{color:#EC4899;}
+.quiz-box{margin-top:18px;border-top:1px dashed var(--line);padding-top:16px;}
+.quiz-box textarea{width:100%;min-height:70px;border:1px solid var(--line);
+border-radius:var(--radius-sm);padding:12px;font-family:inherit;font-size:14px;
+box-sizing:border-box;margin:8px 0;background:var(--paper);color:var(--ink);}
+.quiz-result{font-size:.88em;margin-top:8px;font-weight:600;}
+.puzzle-box{margin-top:18px;border-top:1px dashed var(--line);padding-top:16px;}
 .puzzle-box h3{margin-top:0;}
-.puzzle-status{font-size:.85em;color:var(--muted);margin:0 0 10px;}
-.puzzle-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;
-max-width:340px;margin:0 auto;}
-.puzzle-card{aspect-ratio:1/1;border-radius:10px;border:none;
-background:var(--primary);color:#fff;font-size:1.6em;cursor:pointer;
+.puzzle-status{font-size:.85em;color:var(--muted);margin:0 0 12px;}
+.puzzle-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;
+max-width:360px;margin:0 auto;}
+.puzzle-card{aspect-ratio:1;border-radius:14px;border:none;
+background:linear-gradient(135deg,var(--primary),var(--purple));color:#fff;font-size:1.7em;cursor:pointer;
 display:flex;align-items:center;justify-content:center;
-transition:transform .25s ease,background .25s ease;padding:0;}
-.puzzle-card.flipped,.puzzle-card.matched{background:#fff;
+transition:transform .25s,background .25s;padding:0;box-shadow:var(--shadow);}
+.puzzle-card.flipped,.puzzle-card.matched{background:var(--panel);
 border:1px solid var(--line);color:var(--ink);}
-.puzzle-card.matched{background:#EAFBF0;border-color:var(--accent);
-opacity:.85;cursor:default;}
+.puzzle-card.matched{background:#ECFDF5;border-color:var(--accent);opacity:.9;cursor:default;}
 .puzzle-card:disabled{cursor:default;}
-.puzzle-win{display:none;text-align:center;margin-top:12px;
-background:#EAFBF0;border-radius:10px;padding:12px;font-weight:700;color:#15803d;}
+.puzzle-win{display:none;text-align:center;margin-top:14px;
+background:#ECFDF5;border-radius:var(--radius-sm);padding:14px;font-weight:700;color:#059669;}
+@media (max-width:520px){
+  .wrap{padding:20px 14px 70px;}
+  h1{font-size:1.45em;}
+  .ccard{padding:14px;}
+}
 @media print{
   .top,.notify-btn,.lang-tabs,.btn,.brand-footer,.lesson-nav,footer,
-  .quiz-box,.puzzle-box,.badge,#fkc-complete-btn,.no-print{display:none!important;}
-  body{background:#fff;}
-  .card{box-shadow:none;border:none;}
+  .quiz-box,.puzzle-box,.badge,#fkc-complete-btn,.no-print,.theme-toggle{display:none!important;}
+  body{background:#fff;} .card{box-shadow:none;border:none;}
 }
 </style></head><body><div class="wrap">
 <div class="brand-bar fade-in"><img src="logo.png" alt="FKC Trading Academy">
@@ -223,8 +244,8 @@ function fkcToggleTheme(){
     <span class="lbl">Digital Hub — apni pasand ka course chunein</span></div>
     <span class="eyebrow fade-in">Course Library</span>
     <h1 class="fade-in">🎓 Roz ek naya practical lesson<span class="streak-badge" id="fkc-streak-badge"></span></h1>
-    <p class="muted fade-in d2">📅 Har course ka naya lesson roz raat 12:00 AM se subah 5:30 AM Pakistan time ke darmiyan yahan post hota hai — har course card par uska waqt likha hai.
-    Jis course mein interest ho us par tap karein — daily lesson step-by-step parhein aur practice karein.</p>
+    <p class="muted fade-in d2">📅 Har course ka naya lesson roz raat 12:00 AM se subah 5:30 AM Pakistan time ke darmiyan post hota hai.
+    Apni pasand ka skill chunein, daily step-by-step seekhein aur practice karein — bilkul free.</p>
     <div id="fkc-continue-card" style="display:none;"></div>
     <input type="text" id="fkc-course-search" class="fkc-search" placeholder="🔍 Course dhoondein...">
     <p class="fade-in d2"><a class="btn alt" href="games.html">🎮 Games Zone — Khel Khel Mein Seekhein</a></p>
@@ -321,7 +342,7 @@ function fkcToggleTheme(){
     }
     #fkc-app-popup .popup-btn {
         display: inline-block;
-        background: linear-gradient(135deg, #0056D2, #6D28D9);
+        background: linear-gradient(135deg, #4F46E5, #8B5CF6);
         color: #fff;
         font-weight: 700;
         font-size: 14px;
@@ -530,7 +551,7 @@ function fkcToggleTheme(){
     <p class="muted fade-in" style="margin-top:-6px;">Skills, business, aur earning ke daily courses.</p>
     <div class="grid">
     <a class="ccard fade-in" href="courses/youtube-automation/index.html">
-      <div class="stamp" style="--accent-bg:#0056D21a;color:#0056D2">🎬</div>
+      <div class="stamp" style="--accent-bg:#4F46E51a;color:#4F46E5">🎬</div>
       <div class="body">
         <h2>YouTube Automation</h2>
         <p class="tag">Bina face show kiye YouTube channel banayein aur grow karein</p>
@@ -538,10 +559,10 @@ function fkcToggleTheme(){
         <p class="tag" style="margin-top:4px">🕒 Roz 12:00 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="youtube-automation" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('youtube-automation', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#0056D2"><span class="stub-n" style="color:#0056D2">24</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#4F46E5"><span class="stub-n" style="color:#4F46E5">24</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/social-media-marketing/index.html">
-      <div class="stamp" style="--accent-bg:#2BAF661a;color:#2BAF66">📱</div>
+      <div class="stamp" style="--accent-bg:#10B9811a;color:#10B981">📱</div>
       <div class="body">
         <h2>Social Media Marketing</h2>
         <p class="tag">Brands aur businesses ke liye social media grow karna seekhein</p>
@@ -549,10 +570,10 @@ function fkcToggleTheme(){
         <p class="tag" style="margin-top:4px">🕒 Roz 12:10 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="social-media-marketing" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('social-media-marketing', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#2BAF66"><span class="stub-n" style="color:#2BAF66">21</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#10B981"><span class="stub-n" style="color:#10B981">21</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/ai-tools/index.html">
-      <div class="stamp" style="--accent-bg:#6D28D91a;color:#6D28D9">🤖</div>
+      <div class="stamp" style="--accent-bg:#8B5CF61a;color:#8B5CF6">🤖</div>
       <div class="body">
         <h2>AI Tools &amp; Automation</h2>
         <p class="tag">Roz kaam aasan banane wale AI tools aur automation seekhein</p>
@@ -560,10 +581,10 @@ function fkcToggleTheme(){
         <p class="tag" style="margin-top:4px">🕒 Roz 12:20 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="ai-tools" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('ai-tools', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#6D28D9"><span class="stub-n" style="color:#6D28D9">04</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#8B5CF6"><span class="stub-n" style="color:#8B5CF6">04</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/facebook-page-growth/index.html">
-      <div class="stamp" style="--accent-bg:#D9730D1a;color:#D9730D">👍</div>
+      <div class="stamp" style="--accent-bg:#F59E0B1a;color:#F59E0B">👍</div>
       <div class="body">
         <h2>Facebook Page Growth</h2>
         <p class="tag">Facebook Page se organic reach aur sales badhana seekhein</p>
@@ -571,10 +592,10 @@ function fkcToggleTheme(){
         <p class="tag" style="margin-top:4px">🕒 Roz 12:30 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="facebook-page-growth" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('facebook-page-growth', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#D9730D"><span class="stub-n" style="color:#D9730D">07</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#F59E0B"><span class="stub-n" style="color:#F59E0B">07</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/amazon-fba/index.html">
-      <div class="stamp" style="--accent-bg:#0EA5A51a;color:#0EA5A5">📦</div>
+      <div class="stamp" style="--accent-bg:#06B6D41a;color:#06B6D4">📦</div>
       <div class="body">
         <h2>Amazon FBA</h2>
         <p class="tag">Amazon par apna private-label product bech kar business banayein</p>
@@ -582,10 +603,10 @@ function fkcToggleTheme(){
         <p class="tag" style="margin-top:4px">🕒 Roz 12:40 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="amazon-fba" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('amazon-fba', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#0EA5A5"><span class="stub-n" style="color:#0EA5A5">16</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#06B6D4"><span class="stub-n" style="color:#06B6D4">16</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/daraz-seller/index.html">
-      <div class="stamp" style="--accent-bg:#DB4C771a;color:#DB4C77">🛒</div>
+      <div class="stamp" style="--accent-bg:#EC48991a;color:#EC4899">🛒</div>
       <div class="body">
         <h2>Daraz Seller</h2>
         <p class="tag">Pakistan ke sabse bade marketplace par apni dukaan banayein</p>
@@ -593,10 +614,10 @@ function fkcToggleTheme(){
         <p class="tag" style="margin-top:4px">🕒 Roz 12:50 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="daraz-seller" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('daraz-seller', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#DB4C77"><span class="stub-n" style="color:#DB4C77">14</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#EC4899"><span class="stub-n" style="color:#EC4899">14</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/dropshipping/index.html">
-      <div class="stamp" style="--accent-bg:#0056D21a;color:#0056D2">🚚</div>
+      <div class="stamp" style="--accent-bg:#4F46E51a;color:#4F46E5">🚚</div>
       <div class="body">
         <h2>Dropshipping</h2>
         <p class="tag">Bina stock rakhe online store se products bechna seekhein</p>
@@ -604,10 +625,10 @@ function fkcToggleTheme(){
         <p class="tag" style="margin-top:4px">🕒 Roz 1:00 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="dropshipping" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('dropshipping', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#0056D2"><span class="stub-n" style="color:#0056D2">17</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#4F46E5"><span class="stub-n" style="color:#4F46E5">17</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/freelancing/index.html">
-      <div class="stamp" style="--accent-bg:#2BAF661a;color:#2BAF66">💼</div>
+      <div class="stamp" style="--accent-bg:#10B9811a;color:#10B981">💼</div>
       <div class="body">
         <h2>Freelancing</h2>
         <p class="tag">Fiverr, Upwork jaisi platforms se ghar baithe kamana seekhein</p>
@@ -615,10 +636,10 @@ function fkcToggleTheme(){
         <p class="tag" style="margin-top:4px">🕒 Roz 1:10 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="freelancing" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('freelancing', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#2BAF66"><span class="stub-n" style="color:#2BAF66">24</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#10B981"><span class="stub-n" style="color:#10B981">24</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/digital-marketing-seo/index.html">
-      <div class="stamp" style="--accent-bg:#6D28D91a;color:#6D28D9">📈</div>
+      <div class="stamp" style="--accent-bg:#8B5CF61a;color:#8B5CF6">📈</div>
       <div class="body">
         <h2>Digital Marketing &amp; SEO</h2>
         <p class="tag">Websites aur brands ko Google par rank karwana seekhein</p>
@@ -626,10 +647,10 @@ function fkcToggleTheme(){
         <p class="tag" style="margin-top:4px">🕒 Roz 1:20 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="digital-marketing-seo" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('digital-marketing-seo', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#6D28D9"><span class="stub-n" style="color:#6D28D9">04</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#8B5CF6"><span class="stub-n" style="color:#8B5CF6">04</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/graphic-design-canva/index.html">
-      <div class="stamp" style="--accent-bg:#D9730D1a;color:#D9730D">🎨</div>
+      <div class="stamp" style="--accent-bg:#F59E0B1a;color:#F59E0B">🎨</div>
       <div class="body">
         <h2>Graphic Design (Canva)</h2>
         <p class="tag">Bina design background ke professional graphics banayein</p>
@@ -637,10 +658,10 @@ function fkcToggleTheme(){
         <p class="tag" style="margin-top:4px">🕒 Roz 1:30 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="graphic-design-canva" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('graphic-design-canva', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#D9730D"><span class="stub-n" style="color:#D9730D">10</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#F59E0B"><span class="stub-n" style="color:#F59E0B">10</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/ai-content-writing/index.html">
-      <div class="stamp" style="--accent-bg:#0EA5A51a;color:#0EA5A5">✍️</div>
+      <div class="stamp" style="--accent-bg:#06B6D41a;color:#06B6D4">✍️</div>
       <div class="body">
         <h2>AI Content Writing &amp; Copywriting</h2>
         <p class="tag">AI ki madad se paisa kamane wala content aur copy likhein</p>
@@ -648,10 +669,10 @@ function fkcToggleTheme(){
         <p class="tag" style="margin-top:4px">🕒 Roz 1:40 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="ai-content-writing" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('ai-content-writing', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#0EA5A5"><span class="stub-n" style="color:#0EA5A5">11</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#06B6D4"><span class="stub-n" style="color:#06B6D4">11</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/video-editing/index.html">
-      <div class="stamp" style="--accent-bg:#DB4C771a;color:#DB4C77">🎞️</div>
+      <div class="stamp" style="--accent-bg:#EC48991a;color:#EC4899">🎞️</div>
       <div class="body">
         <h2>Video Editing (CapCut/Premiere)</h2>
         <p class="tag">Reels se le kar YouTube tak — video editing ek in-demand skill</p>
@@ -659,21 +680,21 @@ function fkcToggleTheme(){
         <p class="tag" style="margin-top:4px">🕒 Roz 1:50 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="video-editing" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('video-editing', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#DB4C77"><span class="stub-n" style="color:#DB4C77">07</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#EC4899"><span class="stub-n" style="color:#EC4899">07</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/affiliate-marketing/index.html">
-      <div class="stamp" style="--accent-bg:#0056D21a;color:#0056D2">🔗</div>
+      <div class="stamp" style="--accent-bg:#4F46E51a;color:#4F46E5">🔗</div>
       <div class="body">
         <h2>Affiliate Marketing</h2>
         <p class="tag">Doosron ke products promote kar ke commission kamayein</p>
-        <p class="latest">📖 Day 17 — **Email Marketing Se Affiliate Sales: Apne Subscribers Ko Buyers Mein Badlo**</p>
+        <p class="latest">📖 Day 18 — **Affiliate Marketing Ke Paise Kaise Track Karein (Analytics Tools &amp; Reports)**</p>
         <p class="tag" style="margin-top:4px">🕒 Roz 2:00 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="affiliate-marketing" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('affiliate-marketing', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#0056D2"><span class="stub-n" style="color:#0056D2">17</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#4F46E5"><span class="stub-n" style="color:#4F46E5">18</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/print-on-demand/index.html">
-      <div class="stamp" style="--accent-bg:#2BAF661a;color:#2BAF66">👕</div>
+      <div class="stamp" style="--accent-bg:#10B9811a;color:#10B981">👕</div>
       <div class="body">
         <h2>Print on Demand</h2>
         <p class="tag">Apni design se t-shirts/mugs bech kar bina inventory ke kamayein</p>
@@ -681,10 +702,10 @@ function fkcToggleTheme(){
         <p class="tag" style="margin-top:4px">🕒 Roz 2:10 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="print-on-demand" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('print-on-demand', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#2BAF66"><span class="stub-n" style="color:#2BAF66">21</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#10B981"><span class="stub-n" style="color:#10B981">21</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/no-code-app-dev/index.html">
-      <div class="stamp" style="--accent-bg:#6D28D91a;color:#6D28D9">🧩</div>
+      <div class="stamp" style="--accent-bg:#8B5CF61a;color:#8B5CF6">🧩</div>
       <div class="body">
         <h2>No-Code App &amp; Website Building</h2>
         <p class="tag">Bina coding seekhe apps aur websites banana seekhein</p>
@@ -692,10 +713,10 @@ function fkcToggleTheme(){
         <p class="tag" style="margin-top:4px">🕒 Roz 2:20 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="no-code-app-dev" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('no-code-app-dev', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#6D28D9"><span class="stub-n" style="color:#6D28D9">23</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#8B5CF6"><span class="stub-n" style="color:#8B5CF6">23</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/forex-trading/index.html">
-      <div class="stamp" style="--accent-bg:#D9730D1a;color:#D9730D">💹</div>
+      <div class="stamp" style="--accent-bg:#F59E0B1a;color:#F59E0B">💹</div>
       <div class="body">
         <h2>Forex Trading</h2>
         <p class="tag">Currency market mein trading karna sikhein — basics se lekar strategy tak</p>
@@ -703,10 +724,10 @@ function fkcToggleTheme(){
         <p class="tag" style="margin-top:4px">🕒 Roz 2:30 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="forex-trading" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('forex-trading', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#D9730D"><span class="stub-n" style="color:#D9730D">25</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#F59E0B"><span class="stub-n" style="color:#F59E0B">25</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/cpp-daily-coding/index.html">
-      <div class="stamp" style="--accent-bg:#DB4C771a;color:#DB4C77">💻</div>
+      <div class="stamp" style="--accent-bg:#EC48991a;color:#EC4899">💻</div>
       <div class="body">
         <h2>C++ Daily Coding</h2>
         <p class="tag">C++ zero se seekhein — roz ek naya coding lesson, practice ke sath</p>
@@ -714,10 +735,10 @@ function fkcToggleTheme(){
         <p class="tag" style="margin-top:4px">🕒 Roz 2:50 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="cpp-daily-coding" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('cpp-daily-coding', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#DB4C77"><span class="stub-n" style="color:#DB4C77">19</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#EC4899"><span class="stub-n" style="color:#EC4899">19</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/python-programming/index.html">
-      <div class="stamp" style="--accent-bg:#0056D21a;color:#0056D2">🐍</div>
+      <div class="stamp" style="--accent-bg:#4F46E51a;color:#4F46E5">🐍</div>
       <div class="body">
         <h2>Python Programming</h2>
         <p class="tag">Python zero se seekhein — beginner-friendly, roz ek naya coding lesson</p>
@@ -725,10 +746,10 @@ function fkcToggleTheme(){
         <p class="tag" style="margin-top:4px">🕒 Roz 3:00 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="python-programming" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('python-programming', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#0056D2"><span class="stub-n" style="color:#0056D2">16</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#4F46E5"><span class="stub-n" style="color:#4F46E5">16</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/web-development/index.html">
-      <div class="stamp" style="--accent-bg:#2BAF661a;color:#2BAF66">🌐</div>
+      <div class="stamp" style="--accent-bg:#10B9811a;color:#10B981">🌐</div>
       <div class="body">
         <h2>Web Development</h2>
         <p class="tag">HTML, CSS, aur JavaScript se apni pehli website banayein</p>
@@ -736,10 +757,10 @@ function fkcToggleTheme(){
         <p class="tag" style="margin-top:4px">🕒 Roz 3:10 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="web-development" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('web-development', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#2BAF66"><span class="stub-n" style="color:#2BAF66">17</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#10B981"><span class="stub-n" style="color:#10B981">17</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/excel-data-analysis/index.html">
-      <div class="stamp" style="--accent-bg:#6D28D91a;color:#6D28D9">📊</div>
+      <div class="stamp" style="--accent-bg:#8B5CF61a;color:#8B5CF6">📊</div>
       <div class="body">
         <h2>Excel &amp; Data Analysis</h2>
         <p class="tag">Excel se data manage, analyze, aur professional reports banana seekhein</p>
@@ -747,10 +768,10 @@ function fkcToggleTheme(){
         <p class="tag" style="margin-top:4px">🕒 Roz 3:20 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="excel-data-analysis" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('excel-data-analysis', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#6D28D9"><span class="stub-n" style="color:#6D28D9">09</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#8B5CF6"><span class="stub-n" style="color:#8B5CF6">09</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/crypto-blockchain/index.html">
-      <div class="stamp" style="--accent-bg:#D9730D1a;color:#D9730D">₿</div>
+      <div class="stamp" style="--accent-bg:#F59E0B1a;color:#F59E0B">₿</div>
       <div class="body">
         <h2>Crypto &amp; Blockchain Basics</h2>
         <p class="tag">Cryptocurrency aur blockchain ki basics samajhein, safely invest karna seekhein</p>
@@ -758,10 +779,10 @@ function fkcToggleTheme(){
         <p class="tag" style="margin-top:4px">🕒 Roz 3:30 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="crypto-blockchain" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('crypto-blockchain', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#D9730D"><span class="stub-n" style="color:#D9730D">09</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#F59E0B"><span class="stub-n" style="color:#F59E0B">09</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/psx-stock-trading/index.html">
-      <div class="stamp" style="--accent-bg:#0EA5A51a;color:#0EA5A5">📈</div>
+      <div class="stamp" style="--accent-bg:#06B6D41a;color:#06B6D4">📈</div>
       <div class="body">
         <h2>Stock Market Trading (PSX)</h2>
         <p class="tag">Pakistan Stock Exchange mein invest aur trade karna seekhein</p>
@@ -769,10 +790,10 @@ function fkcToggleTheme(){
         <p class="tag" style="margin-top:4px">🕒 Roz 3:40 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="psx-stock-trading" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('psx-stock-trading', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#0EA5A5"><span class="stub-n" style="color:#0EA5A5">13</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#06B6D4"><span class="stub-n" style="color:#06B6D4">13</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/tiktok-growth/index.html">
-      <div class="stamp" style="--accent-bg:#DB4C771a;color:#DB4C77">🎵</div>
+      <div class="stamp" style="--accent-bg:#EC48991a;color:#EC4899">🎵</div>
       <div class="body">
         <h2>TikTok Growth &amp; Monetization</h2>
         <p class="tag">TikTok par followers badhayein aur content se paise kamayein</p>
@@ -780,10 +801,10 @@ function fkcToggleTheme(){
         <p class="tag" style="margin-top:4px">🕒 Roz 3:50 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="tiktok-growth" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('tiktok-growth', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#DB4C77"><span class="stub-n" style="color:#DB4C77">14</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#EC4899"><span class="stub-n" style="color:#EC4899">14</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/blogging-adsense/index.html">
-      <div class="stamp" style="--accent-bg:#0056D21a;color:#0056D2">✍️</div>
+      <div class="stamp" style="--accent-bg:#4F46E51a;color:#4F46E5">✍️</div>
       <div class="body">
         <h2>Blogging &amp; Adsense</h2>
         <p class="tag">Blog shuru karein aur Google Adsense se passive income banayein</p>
@@ -791,10 +812,10 @@ function fkcToggleTheme(){
         <p class="tag" style="margin-top:4px">🕒 Roz 4:00 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="blogging-adsense" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('blogging-adsense', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#0056D2"><span class="stub-n" style="color:#0056D2">16</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#4F46E5"><span class="stub-n" style="color:#4F46E5">16</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/photography-editing/index.html">
-      <div class="stamp" style="--accent-bg:#2BAF661a;color:#2BAF66">📷</div>
+      <div class="stamp" style="--accent-bg:#10B9811a;color:#10B981">📷</div>
       <div class="body">
         <h2>Photography &amp; Editing</h2>
         <p class="tag">Mobile ya camera se professional photos lena aur Lightroom mein edit karna</p>
@@ -802,10 +823,10 @@ function fkcToggleTheme(){
         <p class="tag" style="margin-top:4px">🕒 Roz 4:10 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="photography-editing" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('photography-editing', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#2BAF66"><span class="stub-n" style="color:#2BAF66">19</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#10B981"><span class="stub-n" style="color:#10B981">19</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/voiceover-podcasting/index.html">
-      <div class="stamp" style="--accent-bg:#6D28D91a;color:#6D28D9">🎙️</div>
+      <div class="stamp" style="--accent-bg:#8B5CF61a;color:#8B5CF6">🎙️</div>
       <div class="body">
         <h2>Voice Over &amp; Podcasting</h2>
         <p class="tag">Voice over skills seekhein aur apna podcast shuru karein</p>
@@ -813,10 +834,10 @@ function fkcToggleTheme(){
         <p class="tag" style="margin-top:4px">🕒 Roz 4:20 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="voiceover-podcasting" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('voiceover-podcasting', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#6D28D9"><span class="stub-n" style="color:#6D28D9">15</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#8B5CF6"><span class="stub-n" style="color:#8B5CF6">15</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/real-estate-business/index.html">
-      <div class="stamp" style="--accent-bg:#D9730D1a;color:#D9730D">🏠</div>
+      <div class="stamp" style="--accent-bg:#F59E0B1a;color:#F59E0B">🏠</div>
       <div class="body">
         <h2>Real Estate Business</h2>
         <p class="tag">Pakistan mein real estate business shuru karna seekhein</p>
@@ -824,10 +845,10 @@ function fkcToggleTheme(){
         <p class="tag" style="margin-top:4px">🕒 Roz 4:30 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="real-estate-business" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('real-estate-business', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#D9730D"><span class="stub-n" style="color:#D9730D">18</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#F59E0B"><span class="stub-n" style="color:#F59E0B">18</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/mobile-repairing/index.html">
-      <div class="stamp" style="--accent-bg:#0EA5A51a;color:#0EA5A5">📱</div>
+      <div class="stamp" style="--accent-bg:#06B6D41a;color:#06B6D4">📱</div>
       <div class="body">
         <h2>Mobile Repairing Business</h2>
         <p class="tag">Mobile repairing seekh kar apna business shuru karein</p>
@@ -835,14 +856,14 @@ function fkcToggleTheme(){
         <p class="tag" style="margin-top:4px">🕒 Roz 4:40 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="mobile-repairing" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('mobile-repairing', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#0EA5A5"><span class="stub-n" style="color:#0EA5A5">24</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#06B6D4"><span class="stub-n" style="color:#06B6D4">24</span><span class="stub-l">lessons</span></div>
     </a></div>
 
     <h2 class="section-title kids fade-in">🧸 Bachon Ke Liye Courses</h2>
     <p class="muted fade-in" style="margin-top:-6px;">Nursery, KG, Play Group, achi adaatein, aur educational games — sab free.</p>
     <div class="grid">
     <a class="ccard fade-in" href="courses/kids-safety-education/index.html">
-      <div class="stamp" style="--accent-bg:#0EA5A51a;color:#0EA5A5">🛡️</div>
+      <div class="stamp" style="--accent-bg:#06B6D41a;color:#06B6D4">🛡️</div>
       <div class="body">
         <h2>Bachon Ki Hifazat (Good Touch, Bad Touch)</h2>
         <p class="tag">Bachon ko apni hifazat, apne jism ke huq, aur &#x27;na&#x27; kehna sikhayein — asaan, pyaar bhare andaz mein. Ammi/Abbu ke sath milkar padhayein.</p>
@@ -850,10 +871,10 @@ function fkcToggleTheme(){
         <p class="tag" style="margin-top:4px">🕒 Roz 2:40 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="kids-safety-education" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('kids-safety-education', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#0EA5A5"><span class="stub-n" style="color:#0EA5A5">07</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#06B6D4"><span class="stub-n" style="color:#06B6D4">07</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/kids-pg/index.html">
-      <div class="stamp" style="--accent-bg:#DB4C771a;color:#DB4C77">🧸</div>
+      <div class="stamp" style="--accent-bg:#EC48991a;color:#EC4899">🧸</div>
       <div class="body">
         <h2>Play Group (PG) Course</h2>
         <p class="tag">Chhote bachon (Play Group age) ke liye pehla seekhne ka safar — rang, shakalein, aawazein, aur pyaar bhare basics.</p>
@@ -861,10 +882,10 @@ function fkcToggleTheme(){
         <p class="tag" style="margin-top:4px">🕒 Roz 4:50 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="kids-pg" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('kids-pg', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#DB4C77"><span class="stub-n" style="color:#DB4C77">18</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#EC4899"><span class="stub-n" style="color:#EC4899">18</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/kids-nursery/index.html">
-      <div class="stamp" style="--accent-bg:#0056D21a;color:#0056D2">🔤</div>
+      <div class="stamp" style="--accent-bg:#4F46E51a;color:#4F46E5">🔤</div>
       <div class="body">
         <h2>Nursery Course</h2>
         <p class="tag">Nursery age ke bachon ke liye alphabets, ginti, aur bunyadi seekhne ki mazedaar lessons.</p>
@@ -872,10 +893,10 @@ function fkcToggleTheme(){
         <p class="tag" style="margin-top:4px">🕒 Roz 5:00 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="kids-nursery" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('kids-nursery', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#0056D2"><span class="stub-n" style="color:#0056D2">21</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#4F46E5"><span class="stub-n" style="color:#4F46E5">21</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/kids-kg/index.html">
-      <div class="stamp" style="--accent-bg:#2BAF661a;color:#2BAF66">📚</div>
+      <div class="stamp" style="--accent-bg:#10B9811a;color:#10B981">📚</div>
       <div class="body">
         <h2>Kindergarten (KG) Course</h2>
         <p class="tag">KG level bachon ke liye padhai — chhote jumlay, ginti mein jama-tafreeq, aur seekhne ka agla qadam.</p>
@@ -883,10 +904,10 @@ function fkcToggleTheme(){
         <p class="tag" style="margin-top:4px">🕒 Roz 5:10 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="kids-kg" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('kids-kg', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#2BAF66"><span class="stub-n" style="color:#2BAF66">19</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#10B981"><span class="stub-n" style="color:#10B981">19</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/kids-good-behavior/index.html">
-      <div class="stamp" style="--accent-bg:#6D28D91a;color:#6D28D9">🌟</div>
+      <div class="stamp" style="--accent-bg:#8B5CF61a;color:#8B5CF6">🌟</div>
       <div class="body">
         <h2>Bachon Mein Achi Adaat (Good Behavior)</h2>
         <p class="tag">Bachon ko roz ek achi adaat sikhayein — adab, sachai, sharing, aur bado ki izzat, pyaar bhare andaz mein.</p>
@@ -894,10 +915,10 @@ function fkcToggleTheme(){
         <p class="tag" style="margin-top:4px">🕒 Roz 5:20 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="kids-good-behavior" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('kids-good-behavior', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#6D28D9"><span class="stub-n" style="color:#6D28D9">21</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#8B5CF6"><span class="stub-n" style="color:#8B5CF6">21</span><span class="stub-l">lessons</span></div>
     </a>
     <a class="ccard fade-in" href="courses/kids-educational-games/index.html">
-      <div class="stamp" style="--accent-bg:#D9730D1a;color:#D9730D">🎮</div>
+      <div class="stamp" style="--accent-bg:#F59E0B1a;color:#F59E0B">🎮</div>
       <div class="body">
         <h2>Bachon Ke Educational Games</h2>
         <p class="tag">Khel khel mein seekhna — ammi/abbu ghar par bachon ke sath khel kar sikhane wale asaan games.</p>
@@ -905,7 +926,7 @@ function fkcToggleTheme(){
         <p class="tag" style="margin-top:4px">🕒 Roz 5:30 AM PKT par naya lesson</p>
         <button type="button" class="notify-btn" data-notify-slug="kids-educational-games" onclick="event.preventDefault();event.stopPropagation();fkcToggleNotify('kids-educational-games', this);">🔔 Notify Me</button>
       </div>
-      <div class="stub" style="color:#D9730D"><span class="stub-n" style="color:#D9730D">21</span><span class="stub-l">lessons</span></div>
+      <div class="stub" style="color:#F59E0B"><span class="stub-n" style="color:#F59E0B">21</span><span class="stub-l">lessons</span></div>
     </a></div>
 
     
@@ -1065,21 +1086,22 @@ function fkcToggleTheme(){
 })();
 </script>
 <style>
-#pwa-install-banner{position:fixed;left:12px;right:12px;bottom:12px;
-background:#0B1220;color:#fff;border-radius:14px;padding:14px 16px;
-display:none;align-items:center;gap:12px;box-shadow:0 8px 24px rgba(0,0,0,.25);
-z-index:9999;font-size:.88em;}
-#pwa-install-banner.show{display:flex;}
-#pwa-install-banner .txt{flex:1;line-height:1.4;}
-#pwa-install-banner .txt b{display:block;margin-bottom:2px;}
-#pwa-install-banner button{background:#0056D2;color:#fff;border:none;
-border-radius:10px;padding:8px 14px;font-weight:600;font-size:.92em;
-flex-shrink:0;}
-#pwa-install-banner .close-x{background:transparent;color:#9aa4b2;
-padding:4px 6px;font-size:1.1em;}
+#pwa-install-banner{position:fixed;left:14px;right:14px;bottom:18px;
+background:linear-gradient(145deg,#151B2B,#0B0F19);color:#fff;border-radius:18px;
+padding:16px 18px;display:none;align-items:center;gap:14px;
+box-shadow:0 12px 40px rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.08);
+z-index:9999;font-size:.9em;backdrop-filter:blur(12px);}
+#pwa-install-banner.show{display:flex;animation:fkcSlideUp .4s ease;}
+@keyframes fkcSlideUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:none;}}
+#pwa-install-banner .txt{flex:1;line-height:1.45;}
+#pwa-install-banner .txt b{display:block;margin-bottom:3px;font-size:1.05em;}
+#pwa-install-banner button{background:linear-gradient(135deg,#4F46E5,#8B5CF6);color:#fff;border:none;
+border-radius:12px;padding:10px 16px;font-weight:700;font-size:.92em;flex-shrink:0;
+box-shadow:0 4px 14px rgba(79,70,229,.35);}
+#pwa-install-banner .close-x{background:transparent;color:#94A3B8;padding:4px 8px;font-size:1.15em;border:none;}
 </style>
 <div id="pwa-install-banner">
-  <div class="txt"><b>📲 App install karein</b><span id="pwa-install-txt">Fullscreen experience aur roz ke reminders ke liye Home Screen par add karein.</span></div>
+  <div class="txt"><b>📲 App Install Karein</b><span id="pwa-install-txt">Home Screen par add karein — offline bhi chalega aur naye lessons automatic update.</span></div>
   <button id="pwa-install-btn" type="button">Install</button>
   <button class="close-x" type="button" id="pwa-install-close" aria-label="Band karein">✕</button>
 </div>
@@ -1110,7 +1132,7 @@ padding:4px 6px;font-size:1.1em;}
 
   if(isIOS){
     document.getElementById("pwa-install-txt").textContent =
-      "Safari ke Share ⬆️ button se 'Add to Home Screen' choose karein.";
+      "Safari → Share ⬆️ → 'Add to Home Screen' select karein.";
     banner.classList.add("show");
     document.getElementById("pwa-install-btn").style.display = "none";
     return;
