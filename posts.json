@@ -28659,6 +28659,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 18,
+      "id": "day-018",
+      "date": "2026-08-26",
+      "title": "Day 18 — **Ammi, Abbu, aur Ghar Walon ke Naam**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachay, aaj hum seekhein ge ke apne ghar walon ke naam kaise yaad rakhein. Har shaks ka naam alag hota hai, aur yeh naam hi humein pehchaanata hai. Apne ghar walon ke naam yaad rakhna zaroori hai taake agar kisi ko koi problem ho to hum unhein bula saken."
+        ],
+        [
+          "Chhoti Kahani",
+          "Rahul ne apne ghar walon ke naam yaad karne ke liye ek khel khela. Usne ammi, abbu, didi, aur bhai ke naam likhe aur unke photos ke neeche likh diya. Jab uske dost ne poocha, \"Tumhare ghar mein aur kaun rehta hai?\" toh Rahul ne sabke naam bata diye. Ghar walon ke naam yaad rakhne se hum sabke saath mehsoos karte hain ke hum safe hain."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, tumhare ghar mein sabse pehle tum apna naam batao, phir ammi ka, abbu ka, aur jo bhi ghar mein rehte hain unke naam batao.\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Apne ghar walon ke naam yaad rakhna zaroori hai, lekin kisi bhi shaks ko tumhare naam ya pata poochne se pehle tumhe pata hona chahiye ke woh kaisa insaan hai. Agar koi ajeeb baat ho toh foran ammi ya abbu ko batana mat bhulna!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن اٹھارہ — **امّی، ابّو، اور گھر والوں کے نام**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "بچّو، آج ہم سیکھیں گے کہ اپنے گھر والوں کے نام کیسے یاد رکھیں۔ ہر شخص کا نام الگ ہوتا ہے، اور یہی نام ہی ہمیں پہچانواتا ہے۔ اپنے گھر والوں کے نام یاد رکھنا ضروری ہے تاکہ اگر کسی کو کوئی مسئلہ ہو تو ہم انہیں بلا سکیں۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "راہُل نے اپنے گھر والوں کے نام یاد کرنے کے لیے ایک کھیل کھیلا۔ اس نے امّی، ابّو، دیدی، اور بھائی کے نام لکھے اور ان کی تصاویر کے نیچے لکھ دیا۔ جب اس کے دوست نے پوچھا، ’’تمہارے گھر میں اور کون رہتا ہے؟‘‘ تو راہُل نے سب کے نام بتا دیے۔ گھر والوں کے نام یاد رکھنے سے ہم سب کے ساتھ محسوس کرتے ہیں کہ ہم محفوظ ہیں۔"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "’’بیٹا، تمہارے گھر میں سب سے پہلے تم اپنا نام بتاؤ، پھر امّی کا، ابّو کا، اور جو بھی گھر میں رہتے ہیں ان کے نام بتاؤ۔‘‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "اپنے گھر والوں کے نام یاد رکھنا ضروری ہے، لیکن کسی بھی شخص کو تمہارا نام یا پتہ پوچھنے سے پہلے تمہیں پتا ہونا چاہیے کہ وہ کیسا انسان ہے۔ اگر کوئی عجیب بات ہو تو فوراً امّی یا ابّو کو بتانا مت بھولنا!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-kg": [
