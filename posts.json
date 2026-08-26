@@ -24492,6 +24492,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 24,
+      "id": "day-024",
+      "date": "2026-08-26",
+      "title": "Day 24 — **Mobile Charging & Data Port Cleaning: Deep Cleaning Technique**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Charging aur data port mein dust, lint ya corrosion ki wajah se poor connection hota hai. Is lesson mein advanced cleaning techniques seekhein gaye—jisme ultrasonic cleaner, isopropyl alcohol aur brushes ka istemal shamil hai. Yeh skill zyada time-consuming hai lekin repair success rate 30% tak badha deti hai."
+        ],
+        [
+          "Example",
+          "1. Port ko kholne ke liye plastic pry tool use karo.\n2. Ultrasonic cleaner (99% isopropyl alcohol + 5-10 min ultrasonic waves) se port ko saaf karo.\n3. Soft toothbrush se remaining dust nikal do.\n4. Cotton swab (isopropyl alcohol mein bheega hua) se edges clean karo."
+        ],
+        [
+          "Practice",
+          "Apne ek old/broken charging port wala phone lein aur upar di gayi steps ko follow karke port ko deep clean karo."
+        ],
+        [
+          "Mini Project",
+          "Ek video banao jisme port cleaning process step-by-step dikhaye (30-60 seconds tak). Video ke caption mein likhna: \"Agar charging port ka issue hai, toh yeh trick try karen!\""
+        ]
+      ],
+      "answer_key": "ultrasonic cleaner, isopropyl alcohol, plastic pry tool, cotton swab",
+      "translations": {
+        "ur": {
+          "title": "دن ۲۴ — موبائل چارجنگ اور ڈیٹا پورٹ کی صفائی: گہری صفائی کا طریقہ",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "چارجنگ اور ڈیٹا پورٹ میں دھول، لنٹ یا زنگ کی وجہ سے کنکشن کمزور ہو جاتا ہے۔ اس سبق میں جدید صفائی کے طریقے سیکھیں گے—جن میں الٹراسونک کلینر، آئسو پروپائل الکحل اور برشز کا استعمال شامل ہے۔ یہ ہنر زیادہ وقت طلب ہے لیکن مرمت کی کامیابی کی شرح کو ۳۰ فیصد تک بڑھا دیتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ پورٹ کھولنے کے لیے پلاسٹک پری ٹول استعمال کریں۔\n۲۔ الٹراسونک کلینر (۹۹ فیصد آئسو پروپائل الکحل + ۵-۱۰ منٹ الٹراسونک ویوز) سے پورٹ صاف کریں۔\n۳۔ نرم ٹوتھ برش سے باقی دھول نکال دیں۔\n۴۔ کاٹن سواپ (آئسو پروپائل الکحل میں بھگو کر) سے کناروں کو صاف کریں۔"
+            },
+            {
+              "label": "مشق",
+              "content": "اپنا کوئی پرانا یا خراب چارجنگ پورٹ والا فون لیں اور اوپر دیے گئے مراحل پر عمل کرتے ہوئے پورٹ کی گہری صفائی کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک ویڈیو بنائیں جس میں پورٹ صفائی کا عمل قدم بہ قدم دکھایا جائے (۳۰-۶۰ سیکنڈ تک)۔ ویڈیو کے کیپشن میں لکھیں: \"اگر چارجنگ پورٹ میں مسئلہ ہے، تو یہ ٹرک آزمائیں!\""
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-safety-education": [
