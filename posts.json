@@ -10695,6 +10695,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 25,
+      "id": "day-025",
+      "date": "2026-08-26",
+      "title": "Day 25 — **Freelancing Mein \"Automation\" Ka Powerful Use: Time & Money Dono Bachao**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Freelancing mein automation ka matlab hai manual tasks ko software/tools se automate karke apna time aur effort save karna. Isse aap repetitive kaam (jaise proposals likhna, invoices bhejna, follow-ups) ko 10x faster kar sakte hain. AI tools, bots, aur no-code platforms se aap client communication, project management, aur billing ko automate kar sakte hain."
+        ],
+        [
+          "Example",
+          "Ek graphic designer har roz 5-10 clients ko proposals bhejta hai. Instead of manually typing, wo **Canva** + **Zapier** use karta hai:\n1. Canva mein proposal template banata hai.\n2. Zapier se har naye client ka email automatically proposal send hota hai.\n3. Follow-up bhi 3 din baad auto-trigger hota hai."
+        ],
+        [
+          "Practice",
+          "Apne freelancing workflow mein **1 repetitive task** identify karo jo aap roz karte ho (jaise invoices bhejna, social media posts schedule karna). Uske liye **1 automation tool** dhundo (jaise **Trello + Slack** for task reminders, ya **TextExpander** for email templates)."
+        ],
+        [
+          "Mini Project",
+          "**\"Auto-Proposal System\" banana**:\n1. Google Docs mein proposal template taiyar karo.\n2. **Zapier** ya **Make.com** se connect karo taake naye client ka email automatically proposal receive kare.\n3. 3 din baad auto-follow-up bhi set karo."
+        ]
+      ],
+      "answer_key": "canva template, zapier integration, auto-follow-up, time saved",
+      "translations": {
+        "ur": {
+          "title": "دن ۲۵ — فری لانسنگ میں \"آٹومیشن\" کا طاقتور استعمال: وقت اور پیسے دونوں بچاؤ",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "فری لانسنگ میں آٹومیشن کا مطلب ہے دستی کاموں کو سافٹ ویئر یا ٹولز کے ذریعے خودکار بنا کر اپنا وقت اور محنت بچانا۔ اس سے آپ بار بار کیے جانے والے کاموں (جیسے پروپوزل لکھنا، انوائس بھیجنا، فالو اپس) کو ۱۰ گنا تیز کر سکتے ہیں۔ اے آئی ٹولز، بوٹس، اور نو کوڈ پلیٹ فارمز کی مدد سے آپ کلائنٹ کمیونیکیشن، پروجیکٹ مینجمنٹ، اور بلنگ کو خودکار بنا سکتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک گرافک ڈیزائنر روزانہ ۵ سے ۱۰ کلائنٹس کو پروپوزل بھیجتا ہے۔ دستی طور پر ٹائپ کرنے کی بجائے وہ **کینوا** اور **زیپیئر** استعمال کرتا ہے:\n۱۔ کینوا میں پروپوزل ٹیمپلیٹ بناتا ہے۔\n۲۔ زیپیئر کے ذریعے ہر نئے کلائنٹ کا ای میل خود بخود پروپوزل بھیجتا ہے۔\n۳۔ فالو اپ بھی ۳ دن بعد خودکار طور پر ٹرگر ہوتا ہے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے فری لانسنگ ورک فلو میں **ایک بار بار کیا جانے والا کام** شناخت کریں جو آپ روز کرتے ہیں (جیسے انوائس بھیجنا، سوشل میڈیا پوسٹس شیڈول کرنا)۔ اس کے لیے **ایک آٹومیشن ٹول** تلاش کریں (جیسے **ٹریلو + سلیک** ٹاسک یاد دہانیوں کے لیے، یا **ٹیکسٹ ایکسپینڈر** ای میل ٹیمپلیٹس کے لیے)।"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "\"آٹو پروپوزل سسٹم\" بنانا:\n۱۔ گوگل ڈاکس میں پروپوزل ٹیمپلیٹ تیار کریں۔\n۲۔ **زیپیئر** یا **میک ڈاٹ کام** سے کنیکٹ کریں تاکہ نئے کلائنٹ کا ای میل خود بخود پروپوزل وصول کرے۔\n۳۔ ۳ دن بعد خودکار فالو اپ بھی سیٹ کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "graphic-design-canva": [
