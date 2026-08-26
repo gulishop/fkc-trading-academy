@@ -29954,6 +29954,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 20,
+      "id": "day-020",
+      "date": "2026-08-26",
+      "title": "Day 20 — \"Chhote Alfaz aur Numbers ki Practice!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhein ge ke kaise chhote-2 alfaz aur numbers likhna hai. Yeh bhi yaad rakhna zaroori hai ke tumhare jism ka hisab tumhare paas hai—koi bhi tumse pooch sake, ya tumhe koi cheez ajeeb lage, toh tum foran ammi/abbu ko batana. Koi secret rakhne ki zaroorat nahi!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Aman ko school mein \"Mera Ghar\" topic par paragraph likhna tha. Usne \"Mera ghar mein 4 kamre hain\" likha. Teacher ne poocha, \"Aur tumhara room?\" Aman ne muskura kar kaha, \"Wahan meri drawing wall hai!\" Teacher ne uski mehnat ki tareef ki. Yeh dekh kar Aman ko bhi yaqeen aa gaya ke practice se hi sab kuch seekha jaata hai."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar tumhe koi cheez ajeeb lage ya tumhe koi baat yaad na aaye, toh tum mujhe ya abbu ko zaroor batana, chahye woh chhoti si hi kyun na ho?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Tumhare jism ka hisab tumhare paas hai—kisi ko bhi \"na\" kehne ka poora haq hai!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۲۰ — چھوٹے الفاظ اور نمبرز کی پریکٹس!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم سیکھیں گے کہ کیسے چھوٹے چھوٹے الفاظ اور نمبرز لکھنا ہے۔ یہ بھی یاد رکھنا ضروری ہے کہ تمہارے جسم کا حساب تمہارے پاس ہے—کوئی بھی تم سے پوچھ سکے، یا تمہیں کوئی چیز عجیب لگے، تو تم فوراً امی/ابو کو بتانا۔ کوئی راز رکھنے کی ضرورت نہیں!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "امان کو سکول میں \"میرا گھر\" ٹاپک پر پیراگراف لکھنا تھا۔ اس نے لکھا، \"میرے گھر میں ۴ کمرے ہیں۔\" ٹیچر نے پوچھا، \"اور تمہارا کمرہ؟\" امان نے مسکرا کر کہا، \"وہاں میری ڈرائنگ وال ہے!\" ٹیچر نے اس کی محنت کی تعریف کی۔ یہ دیکھ کر امان کو بھی یقین آ گیا کہ پریکٹس سے ہی سب کچھ سیکھا جاتا ہے۔"
+            },
+            {
+              "label": "امی ابو کے ساتھ بات کریں",
+              "content": "\"بیٹا، اگر تمہیں کوئی چیز عجیب لگے یا تمہیں کوئی بات یاد نہ آئے، تو تم مجھے یا ابو کو ضرور بتانا، چاہے وہ چھوٹی سی ہی کیوں نہ ہو؟\""
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمہارے جسم کا حساب تمہارے پاس ہے—کسی کو بھی \"نہ\" کہنے کا پورا حق ہے!"
+            }
+          ]
+        }
+      }
     }
   ]
 }
