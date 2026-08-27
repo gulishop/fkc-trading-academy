@@ -12756,6 +12756,53 @@
       ],
       "answer_key": "flutterflow: ui design, firebase, stripe, flutter, native-like; glide: google sheets, spreadsheets, simple apps, no coding",
       "translations": {}
+    },
+    {
+      "day": 24,
+      "id": "day-024",
+      "date": "2026-08-27",
+      "title": "Day 24 — **No-Code Automation: Zindagi Badal Dein (Zapier + Make.com Se Workflow Banana)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "No-code automation tools jaise **Zapier** ya **Make.com** (pehle Integromat) aapke manual tasks ko seconds mein automate kar dete hain. Maan lo, har roz 10 emails check karne ki bajaye, ek click se naye leads ko Airtable mein save karna, Slack par notification bhejna, aur Google Sheets mein data update karna—sab automatic! Bas triggers (jaise email aana) aur actions (jaise database update) set karo."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Trigger",
+          "Koi naya Google Form submit kare.\n2."
+        ],
+        [
+          "Action",
+          "Us data ko automatically Airtable mein add karo + Slack channel par \"New lead!\" message bhej do.\n3."
+        ],
+        [
+          "Bonus",
+          "Agar email address Gmail se hai, to usko Google Contacts mein bhi add kar do."
+        ],
+        [
+          "Practice",
+          "Zapier ya Make.com par ek **free account** banaen. Phir ek simple automation set karein:\n-"
+        ],
+        [
+          "Trigger",
+          "\"New email in Gmail\" (subject mein \"Order\" word ho).\n-"
+        ],
+        [
+          "Action",
+          "\"Add row to Google Sheets\" (email subject, sender name, aur date save ho)."
+        ],
+        [
+          "Mini Project",
+          "**\"Lead Tracker System\"**\n1. Ek Google Form banaen (fields: Name, Email, Product Interest).\n2. Form submit hone par:\n   - Data Google Sheets mein save ho.\n   - Airtable mein bhi add ho.\n   - Slack par notification aaye (\"New lead from [Name] for [Product]!\").\n3. Har 24 ghante mein ek automated email bheje jise \"Thanks for your interest! Here’s a 10% discount code: XYZ\" ho."
+        ]
+      ],
+      "answer_key": "gmail trigger, google sheets action, slack notification, airtable sync",
+      "translations": {}
     }
   ],
   "digital-marketing-seo": [
