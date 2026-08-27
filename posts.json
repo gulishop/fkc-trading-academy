@@ -25418,6 +25418,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 8,
+      "id": "day-008",
+      "date": "2026-08-27",
+      "title": "Day 8 — \"Video-call par ajnabi se bach kar!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachon, jab tum video-call par kisi se baat karte ho, toh yaad rakhna ke tumhari screen par jo bhi aata hai, woh sabhi achhe nahi hote. Koi bhi ajeeb insaan tumse baat kar raha ho, tumhari photo ya video maang raha ho, ya tumhe koi gift dene ka vaada kar raha ho—yeh sab cheezein \"online safety\" ke liye theek nahi hain. Tumhe kabhi bhi apne jism ya family ke baare mein aise logon ko batana nahi chahiye."
+        ],
+        [
+          "Chhoti Kahani",
+          "Rohan ne video-call par ek \"uncle\" se baat ki. Uncle ne poocha, \"Tumhara school kaisa hai?\" Rohan ne jawab diya. Phir uncle ne kaha, \"Mera beta tumhare school mein hi padhta hai, uska naam bhi Rohan hai! Kya tum usko photo bhej sakte ho?\" Rohan ko yeh ajeeb laga. Usne apne abbu ko bataya. Abbu ne kaha, \"Tumne bilkul theek kiya, Rohan. Kisi bhi ajnabi ko photo bhejni chahiye nahi.\""
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar tum video-call par kisi se baat karte ho aur woh tumse koi ajeeb cheez pooche, toh tum kya karogi?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "\"Meri screen par jo hai, woh sab achhe nahi hote—agar koi ajeeb lage, toh foran ammi-abbu ko batana!\""
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۸ — ویڈیو کال پر اجنبی سے بچ کر!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "بچو، جب تم ویڈیو کال پر کسی سے بات کرتے ہو تو یاد رکھنا کہ تمہاری سکرین پر جو بھی آتا ہے، وہ سب اچھے نہیں ہوتے۔ کوئی بھی عجیب انسان تم سے بات کر رہا ہو، تمہاری تصویر یا ویڈیو مانگ رہا ہو، یا تمہیں کوئی تحفہ دینے کا وعدہ کر رہا ہو—یہ سب چیزیں آن لائن سیفٹی کے لیے ٹھیک نہیں ہیں۔ تمہیں کبھی بھی اپنے جسم یا خاندان کے بارے میں ایسے لوگوں کو بتانا نہیں چاہیے۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "روہن نے ویڈیو کال پر ایک \"انکل\" سے بات کی۔ انکل نے پوچھا، \"تمہارا سکول کیسا ہے؟\" روہن نے جواب دیا۔ پھر انکل نے کہا، \"میرا بیٹا تمہارے سکول میں ہی پڑھتا ہے، اس کا نام بھی روہن ہے! کیا تم اسے تصویر بھیج سکتے ہو؟\" روہن کو یہ عجیب لگا۔ اس نے اپنے اب्बو کو بتایا۔ ابّو نے کہا، \"تم نے بالکل ٹھیک کیا، روہن۔ کسی بھی اجنبی کو تصویر نہیں بھیجنی چاہیے۔\""
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "بیٹا، اگر تم ویڈیو کال پر کسی سے بات کرتے ہو اور وہ تم سے کوئی عجیب چیز پوچھے، تو تم کیا کرو گی؟"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "میری سکرین پر جو ہے، وہ سب اچھے نہیں ہوتے—اگر کوئی عجیب لگے، تو فوراً امّی ابّو کو بتانا!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-educational-games": [
