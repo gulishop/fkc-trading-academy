@@ -29796,6 +29796,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 19,
+      "id": "day-019",
+      "date": "2026-08-27",
+      "title": "Day 19 — **Roz ki Cheezein: Apne Hisse hain!**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachon, aaj hum seekhenge ke roz ki cheezein jaise cup, ball, kitab aur khilona sabke apne hisse hain. Koi cheez tumhari nahi hai jab tak tumhe maaluum na ho ya tum use use karne ko kaha jaaye. Agar koi cheez tumhe pasand nahi ho, toh \"na\" kehne ka tumhara poora haq hai!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Ayaan ne school se ek naya football laaya. Usne sabko kaha ke \"Yeh mera hai!\" Lekin jab uske dost ne poocha, \"Kya main bhi khel sakta hoon?\" toh Ayaan ne muskurate hue kaha, \"Haan, chalo mil kar khelte hain!\" Sabne mil kar khushii se khela."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar koi cheez tumhe pasand nahi ho, toh kya tum \"na\" keh sakte ho?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Roz ki cheezein sabke hisse hain. Koi cheez tumhari nahi hai jab tak tumhe maaluum na ho!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۹ — روز کی چیزیں: اپنے حصے ہیں!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "بچو، آج ہم سیکھیں گے کہ روز کی چیزیں جیسے کپ، بال، کتاب اور کھلونا سب کے اپنے حصے ہیں۔ کوئی چیز تمہاری نہیں ہے جب تک تمہیں معلوم نہ ہو یا تم اسے استعمال کرنے کو کہا جائے۔ اگر کوئی چیز تمہیں پسند نہیں ہو، تو ’نہیں‘ کہنے کا تمہارا پورا حق ہے!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "ایان نے سکول سے ایک نیا فٹ بال لایا۔ اس نے سب کو کہا کہ ’یہ میرا ہے!‘ لیکن جب اس کے دوست نے پوچھا، ’کیا میں بھی کھیل سکتا ہوں؟‘ تو ایان نے مسکراتے ہوئے کہا، ’ہاں، چلو مل کر کھیلتے ہیں!‘ سب نے مل کر خوشی سے کھیلا۔"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "’بیٹا، اگر کوئی چیز تمہیں پسند نہ ہو، تو کیا تم ’نہیں‘ کہہ سکتے ہو؟‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "روز کی چیزیں سب کے حصے ہیں۔ کوئی چیز تمہاری نہیں ہے جب تک تمہیں معلوم نہ ہو!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-kg": [
