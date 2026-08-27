@@ -30898,6 +30898,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 21,
+      "id": "day-021",
+      "date": "2026-08-27",
+      "title": "Day 21 — \"Chhote alfaz jorr kar padhna!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhein ge ke kaise chhote alfaz ko jod kar padhna hai! Jaise \"cat\" (bil), \"sun\" (sooraj), \"bag\" (thaila). Yeh seekhna seekhne ka maza hai, aur humein kabhi bhi kisi ko \"na\" kehne ka haq hai agar hum comfortable nahi lag rahe."
+        ],
+        [
+          "Chhoti Kahani",
+          "Bilal aur Ayesha ne apne ghar ke bag mein khel rahe the. Unhone \"bag\" (thaila) likha, \"cat\" (bil) parha, aur \"sun\" (sooraj) dekha. Unhein seekhne ka itna maza aaya ke woh aur bhi alfaz jod kar padhne lage!"
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, tumhein kya lagta hai ke hum aur kya chhote alfaz jod kar padhein?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Hamesha yaad rakhna ke tumhara jism tumhara hai, aur tumhe koi bhi cheez ajeeb lage to foran ammi/abbu ko batana hai!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن اکیس — چھوٹے الفاظ جوڑ کر پڑھنا!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج ہم سیکھیں گے کہ کیسے چھوٹے الفاظ کو جوڑ کر پڑھنا ہے! جیسے \"کَیٹ\" (بل)، \"سَن\" (سورج)، \"بَیگ\" (تھیلہ)۔ یہ سیکھنا سیکھنے کا مزہ ہے، اور ہمیں کبھی بھی کسی کو \"نہ\" کہنے کا حق ہے اگر ہمیں آرام دہ نہ لگ رہا ہو۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "بلال اور عائشہ نے اپنے گھر کے باغ میں کھیل رہے تھے۔ انہوں نے \"بَیگ\" (تھیلہ) لکھا، \"کَیٹ\" (بل) پڑھا، اور \"سَن\" (سورج) دیکھا۔ انہیں سیکھنے کا اتنا مزہ آیا کہ وہ اور بھی الفاظ جوڑ کر پڑھنے لگے!"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "\"بیٹا، تمہیں کیا لگتا ہے کہ ہم اور کیا چھوٹے الفاظ جوڑ کر پڑھیں؟\""
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "ہمیشہ یاد رکھنا کہ تمہارا جسم تمہارا ہے، اور تمہیں کوئی بھی چیز عجیب لگے تو فوراً امّی/ابّو کو بتانا ہے!"
+            }
+          ]
+        }
+      }
     }
   ]
 }
