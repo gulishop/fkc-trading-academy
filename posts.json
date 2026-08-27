@@ -22974,6 +22974,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 16,
+      "id": "day-016",
+      "date": "2026-08-27",
+      "title": "Day 16",
+      "preamble": "Day 16 — **Podcast Hosting Platforms: Kaise Choose Karein Aur Setup Karein?**",
+      "sections": [
+        [
+          "Concept",
+          "Podcast hosting platforms aapki audio files ko store karte hain aur unhe streaming services (Spotify, Apple Podcasts, etc.) tak reach karne mein madad karte hain. In platforms par hosting karne se pehle inke features (storage, analytics, monetization options) samajhna zaroori hai. Aaj hum dekhenge ki kaise ek achha hosting platform choose karna hai aur usko setup karna hai."
+        ],
+        [
+          "Example",
+          "Jaise agar aapka podcast \"Tech Ki Baat\" hai, to aapko ek platform chahiye jo unlimited storage, detailed analytics, aur easy integration (Spotify, YouTube) offer kare. **Anchor.fm** (free) ya **Buzzsprout** (paid) aise platforms hain jo beginners ke liye suitable hain. Setup ke liye:\n1. Platform par account banayein.\n2. \"New Podcast\" par click karein aur details (title, description) fill karein.\n3. Audio file upload karein aur \"Publish\" par click karein.\n4. Platform se provided RSS feed ko Spotify/Apple Podcasts mein submit karein."
+        ],
+        [
+          "Practice",
+          "Apne podcast ka hosting platform choose karke uska account banayein aur ek test episode upload karein."
+        ],
+        [
+          "Mini Project",
+          "Ek 2-minute ka test episode record karein, usko hosting platform par upload karein, aur uska RSS feed copy karke Spotify ya Apple Podcasts par submit karein."
+        ]
+      ],
+      "answer_key": "anchor.fm, buzzsprout, rss feed, spotify submission",
+      "translations": {
+        "ur": {
+          "title": "دن سولہ",
+          "preamble": "دن سولہ — **پوڈکاسٹ ہوسٹنگ پلیٹ فارمز: کیسے چنیں اور سیٹ اپ کریں؟**",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "پوڈکاسٹ ہوسٹنگ پلیٹ فارمز آپ کی آڈیو فائلز کو اسٹور کرتے ہیں اور انہیں سٹریمنگ سروسز (جیسے سپاٹفائی، ایپل پوڈکاسٹس وغیرہ) تک پہنچانے میں مدد کرتے ہیں۔ ان پلیٹ فارمز پر ہوسٹنگ کرنے سے پہلے ان کے فیچرز (اسٹوریج، اینالیٹکس، مانیٹائزیشن آپشنز) سمجھنا ضروری ہے۔ آج ہم دیکھیں گے کہ کیسے ایک اچھا ہوسٹنگ پلیٹ فارم چنا جائے اور اسے سیٹ اپ کیا جائے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "مثلاً اگر آپ کا پوڈکاسٹ \"ٹیک کی بات\" ہے، تو آپ کو ایک ایسا پلیٹ فارم چاہیے جو لامحدود اسٹوریج، تفصیلی اینالیٹکس، اور آسان انٹیگریشن (سپاٹفائی، یوٹیوب) پیش کرے۔ **اینکر ڈاٹ ایف ایم** (مفت) یا **بزسپروٹ** (ادا شدہ) ایسے پلیٹ فارمز ہیں جو بیگنرز کے لیے موزوں ہیں۔ سیٹ اپ کے لیے درج ذیل اقدامات کریں:\n1. پلیٹ فارم پر اکاؤنٹ بنائیں۔\n2. \"نیا پوڈکاسٹ\" پر کلک کریں اور تفصیلات (عنوان، تفصیل) بھریں۔\n3. آڈیو فائل اپ لوڈ کریں اور \"پبلش\" پر کلک کریں۔\n4. پلیٹ فارم سے فراہم کردہ آر ایس ایس فیڈ کو سپاٹفائی/ایپل پوڈکاسٹس میں جمع کرائیں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے پوڈکاسٹ کا ہوسٹنگ پلیٹ فارم چن کر اس پر اکاؤنٹ بنائیں اور ایک ٹیسٹ ایپی سوڈ اپ لوڈ کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک دو منٹ کا ٹیسٹ ایپی سوڈ ریکارڈ کریں، اسے ہوسٹنگ پلیٹ فارم پر اپ لوڈ کریں، اور اس کا آر ایس ایس فیڈ کاپی کر کے سپاٹفائی یا ایپل پوڈکاسٹس پر جمع کرائیں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "real-estate-business": [
