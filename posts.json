@@ -28894,6 +28894,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 22,
+      "id": "day-022",
+      "date": "2026-08-27",
+      "title": "Day 22 — **1 se 10 tak ginti likhna aur bolna**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhein ge ke 1 se 10 tak ki ginti kaise likhte hain aur bolte hain. Yeh bhi yaad rakhna hai ke har cheez ka apna ek number hota hai—jaise tumhari 2 aankhein, 1 nose, 10 fingers! Har cheez ka apna hissa hai, aur tumhara jism bhi tumhara hi hai. Koi tumhe yeh kehne ka haq nahi hai ke tumhe \"na\" keh dein ya tumhara hissa ho."
+        ],
+        [
+          "Chhoti Kahani",
+          "Bachpan ne ek chhota sa ladka tha, Ali. Uske abbu ne use 1 se 10 tak ki ginti sikhane ke liye ek khel banaya. Har cheez ko count karte—1 teddy bear, 2 shoes, 3 apples. Ali ne muskurate hue kaha, \"Abbu, main bhi 10 tak count kar sakta hoon!\" Uske abbu ne kaha, \"Bilkul! Aur agar koi tumhe yeh kehne ki koshish kare ke tumhe 'na' keh dein, toh foran mujhe batana, kyun ke tumhara jism tumhara hai.\""
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar koi tumhe koi ajeeb cheez kehne ko bole, toh tum kya karoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Tumhara jism tumhara hai—kisi ko bhi tumhe \"na\" kehne ka haq nahi!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۲۲ — ۱ سے ۱۰ تک گنتی لکھنا اور بولنا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج ہم سیکھیں گے کہ ۱ سے ۱۰ تک کی گنتی کیسے لکھتے اور بولتے ہیں۔ یہ بھی یاد رکھنا ہے کہ ہر چیز کا اپنا ایک نمبر ہوتا ہے—جیسے تمہاری ۲ آنکھیں، ۱ ناک، ۱۰ انگلیاں! ہر چیز کا اپنا حصہ ہے، اور تمہارا جسم بھی تمہارا ہی ہے۔ کوئی تمہیں یہ کہنے کا حق نہیں ہے کہ تمہیں ’نا‘ کہہ دیں یا تمہارا حصہ ہو۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "بچپن میں ایک چھوٹا سا لڑکا تھا، علی۔ اس کے اب्बو نے اسے ۱ سے ۱۰ تک کی گنتی سکھانے کے لیے ایک کھیل بنایا۔ ہر چیز کو گنتے—۱ ٹیڈی بیئر، ۲ جوتے، ۳ سیب۔ علی نے مسکراتے ہوئے کہا، ’اب्बو، میں بھی ۱۰ تک گنتی کر سکتا ہوں!‘ اس کے اب्बو نے کہا، ’بالکل! اور اگر کوئی تمہیں یہ کہنے کی کوشش کرے کہ تمہیں ’نا‘ کہہ دیں، تو فوراً مجھے بتانا، کیونکہ تمہارا جسم تمہارا ہے۔‘"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "’بیٹا، اگر کوئی تمہیں کوئی عجیب چیز کہنے کو بولے، تو تم کیا کرو گے؟‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمہارا جسم تمہارا ہے—کسی کو بھی تمہیں ’نا‘ کہنے کا حق نہیں!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-pg": [
