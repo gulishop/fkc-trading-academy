@@ -19186,6 +19186,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 14,
+      "id": "day-014",
+      "date": "2026-08-27",
+      "title": "Day 14 — **Market Psychology: Fear, Greed, aur Trading Decisions**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Market psychology samajhna trading ka hidden power hai. Fear aur greed investors ke decisions ko kaise distort karte hain—jaise FOMO (Fear Of Missing Out) ya panic selling. Fear jab market girta hai to investors jaldi se shares bech dete hain, jabke greed jab market upar chalta hai to log zyada risk lete hain. In emotions ko recognize karke aap better trading decisions le sakte hain."
+        ],
+        [
+          "Example",
+          "Imagine PSX mein 2023 ke election results ke baad market ne 10% gain kiya. Aapke friend ne kaha: *\"Yeh toh sirf shuru hai, ab toh market 50% upar jayega!\"* Yeh greed ka example hai—log unrealistic expectations rakhte hain. Vise versa, jab 2022 mein global recession ka fear tha, logon ne shares bech diye jabke companies strong the. Yeh fear-driven decision tha."
+        ],
+        [
+          "Practice",
+          "Aaj ke PSX market ko check karein (yaad rakhein, PSX ka closing time 3:30 PM hai). Kya aapko koi news ya event nazar aaya jo market ko move kar raha hai? Note karein ki kya yeh fear, greed, ya rational decision se driven lag raha hai."
+        ],
+        [
+          "Mini Project",
+          "1. PSX ka 1-week ka chart lein (TradingView ya PSX website se).\n2. 3 major ups/downs ko identify karein.\n3. Har move ke peeche ki \"emotion\" (fear/greed/rational) guess karein.\n4. Ek short paragraph likhein ki aapko kya lagta hai market ne in moves ke peeche kya socha."
+        ]
+      ],
+      "answer_key": "fear, greed, fomo, rational decision",
+      "translations": {
+        "ur": {
+          "title": "دن 14 — مارکیٹ سائیکولوجی: خوف، لالچ، اور ٹریڈنگ فیصلے",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "مارکیٹ سائیکولوجی کو سمجھنا ٹریڈنگ کا پوشیدہ طاقت ہے۔ خوف اور لالچ سرمایہ کاروں کے فیصلوں کو کس طرح مسخ کرتے ہیں—جیسے FOMO (Fear Of Missing Out) یا پینک سیلنگ۔ خوف جب مارکیٹ گرتی ہے تو سرمایہ کار جلدی سے شیئرز بیچ دیتے ہیں، جبکہ لالچ جب مارکیٹ اوپر جاتی ہے تو لوگ زیادہ رسک لیتے ہیں۔ ان جذبات کو پہچان کر آپ بہتر ٹریڈنگ فیصلے لے سکتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "تصور کریں پی ایس ایکس میں 2023 کے انتخابات کے نتائج کے بعد مارکیٹ نے 10 فیصد کا فائدہ کیا۔ آپ کے دوست نے کہا: ’’یہ تو بس شروع ہے، اب تو مارکیٹ 50 فیصد اوپر جائے گی!‘‘ یہ لالچ کی مثال ہے—لوگ غیر حقیقی توقعات رکھتے ہیں۔ اس کے برعکس، جب 2022 میں عالمی کساد بازاری کا خوف تھا، لوگوں نے شیئرز بیچ دیے جبکہ کمپنیاں مضبوط تھیں۔ یہ خوف پر مبنی فیصلہ تھا۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "آج کے پی ایس ایکس مارکیٹ کو چیک کریں (یاد رکھیں، پی ایس ایکس کا اختتامی وقت سوا تین بجے ہے)۔ کیا آپ کو کوئی خبر یا واقعہ نظر آیا جو مارکیٹ کو حرکت دے رہا ہے؟ نوٹ کریں کہ کیا یہ خوف، لالچ، یا عقلی فیصلے سے چل رہا لگتا ہے۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "1. پی ایس ایکس کا ایک ہفتے کا چارٹ لیں (TradingView یا پی ایس ایکس ویب سائٹ سے)۔\n2. تین بڑی اوپر/نیچے کی حرکات کی شناخت کریں۔\n3. ہر حرکت کے پیچھے کی ’’جذباتی وجہ‘‘ (خوف/لالچ/عقلی) کا اندازہ لگائیں۔\n4. ایک مختصر پیراگراف لکھیں کہ آپ کو کیا لگتا ہے مارکیٹ نے ان حرکات کے پیچھے کیا سوچا۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "tiktok-growth": [
