@@ -11315,6 +11315,72 @@
           ]
         }
       }
+    },
+    {
+      "day": 11,
+      "id": "day-011",
+      "date": "2026-08-27",
+      "title": "Day 11 — **Brand Style Guides: Apna Design System Banana**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Har successful brand ki pehchaan uska consistent design system hota hai. Aaj seekhein ke kaise ek **Brand Style Guide** banaya jaye jo aapke fonts, colors, logo usage, aur visual elements ko define kare. Isse aapke saare designs cohesive aur professional dikhenge—chahe wo social media post ho, logo ho, ya presentation."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Colors",
+          "Apne brand ke liye 3-5 primary colors choose karo (e.g., #FF6B6B for primary, #4ECDC4 for secondary).\n2."
+        ],
+        [
+          "Fonts",
+          "2 fonts select karo—ek heading ke liye (e.g., Poppins Bold), ek body text ke liye (e.g., Open Sans Regular).\n3."
+        ],
+        [
+          "Logo Rules",
+          "Logo ka size, spacing, aur background (white/transparent) specify karo.\n4."
+        ],
+        [
+          "Templates",
+          "Pre-made Canva templates mein yeh guidelines apply karo taake consistency bani rahe."
+        ],
+        [
+          "Practice",
+          "Apne brand (ya kisi fictional brand) ke liye ek **Brand Style Guide** banane ke liye:\n1. Canva mein ek new document kholo.\n2. 3-5 colors, 2 fonts, aur logo usage rules likho.\n3. Ek simple template design karo jismein yeh guidelines apply hon."
+        ],
+        [
+          "Mini Project",
+          "**\"Mera Brand Kit\"**\n- Ek Canva document banayein jismein:\n  - Apne brand colors (hex codes ke saath)\n  - Apne selected fonts\n  - Logo usage ke 2-3 rules (e.g., \"Logo ka size 100px se kam nahi hona chahiye\")\n  - Ek sample design (e.g., Instagram post ya business card) jismein yeh guidelines follow ki gayi hain."
+        ]
+      ],
+      "answer_key": "color palette, font pair, logo rules, template example",
+      "translations": {
+        "ur": {
+          "title": "دن 11 — **Brand Style Guides: اپنا ڈیزائن سسٹم بنانا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "ہر کامیاب برانڈ کی پہچان اس کا مستقل ڈیزائن سسٹم ہوتا ہے۔ آج سیکھیں کہ کیسے ایک **Brand Style Guide** بنایا جائے جو آپ کے فونٹس، رنگوں، لوگو کے استعمال، اور بصری عناصر کو واضح کرے۔ اس سے آپ کے سارے ڈیزائنز مربوط اور پیشہ ورانہ نظر آئیں گے—چاہے وہ سوشل میڈیا پوسٹ ہو، لوگو ہو، یا پریزنٹیشن۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1.\n- رنگ: اپنے برانڈ کے لیے 3-5 بنیادی رنگ منتخب کریں (مثلاً، پرائمری کے لیے #FF6B6B، سیکنڈری کے لیے #4ECDC4)۔\n2.\n- فونٹس: 2 فونٹس منتخب کریں—ایک سرخی کے لیے (مثلاً، Poppins Bold)، ایک باڈی ٹیکسٹ کے لیے (مثلاً، Open Sans Regular)۔\n3.\n- لوگو کے اصول: لوگو کا سائز، فاصلہ، اور پس منظر (سفید/شفاف) واضح کریں۔\n4.\n- ٹیمپلیٹس: پہلے سے بنے ہوئے Canva ٹیمپلیٹس میں یہ ہدایات لاگو کریں تاکہ تسلسل برقرار رہے۔"
+            },
+            {
+              "label": "مشق",
+              "content": "اپنے برانڈ (یا کسی فرضی برانڈ) کے لیے ایک **Brand Style Guide** بنانے کے لیے:\n1. Canva میں ایک نیا دستاویز کھولیں۔\n2. 3-5 رنگ، 2 فونٹس، اور لوگو کے استعمال کے اصول لکھیں۔\n3. ایک سادہ ٹیمپلیٹ ڈیزائن کریں جس میں یہ ہدایات لاگو ہوں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "**\"میرا برانڈ کٹ\"**\n- ایک Canva دستاویز بنائیں جس میں:\n  - اپنے برانڈ کے رنگ (ہیکس کوڈز کے ساتھ)\n  - اپنے منتخب کردہ فونٹس\n  - لوگو کے استعمال کے 2-3 اصول (مثلاً، \"لوگو کا سائز 100px سے کم نہیں ہونا چاہیے\")\n  - ایک نمونہ ڈیزائن (مثلاً، Instagram پوسٹ یا بزنس کارڈ) جس میں یہ ہدایات فالو کی گئی ہوں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "no-code-app-dev": [
