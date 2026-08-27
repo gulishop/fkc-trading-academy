@@ -14582,6 +14582,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 22,
+      "id": "day-022",
+      "date": "2026-08-27",
+      "title": "Day 22 — **Print on Demand Ke Liye Best Platforms: Local vs. International Vendors Ka Comparison**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Print on Demand (POD) mein platform choose karna ek crucial decision hai. Local vendors (jaise India-based) low shipping cost aur faster delivery offer karte hain, lekin limited product range aur higher cost per unit ho sakti hai. International vendors (jaise Printful, Printify) global reach, wide product catalog, aur automated fulfillment provide karte hain, lekin shipping time zyada ho sakta hai. Har ek ke apne pros-cons hain—apne business goals ke hisab se decide karna zaroori hai."
+        ],
+        [
+          "Example",
+          "Agar aap India mein customers ko target kar rahe hain, to **local vendor** (jaise **Printrove** ya **PrintXpand**) use karna better hai—kyunki shipping 3-5 days mein ho jata hai aur cost bhi kam rehta hai. Lekin agar aap global audience ko serve karna chahte hain, to **Printful** ya **Printify** better options hain, kyunki unke worldwide fulfillment centers hain aur product range bhi zyada hai."
+        ],
+        [
+          "Practice",
+          "Apne business model ke hisab se **3 platforms** (2 international + 1 local) shortlist karo aur unke:\n- Shipping time (local vs. global)\n- Product cost per unit\n- Return policy\n- Integration options (Shopify, Etsy, etc.)\nCompare karo. Notion ya Excel mein ek simple table banao."
+        ],
+        [
+          "Mini Project",
+          "Ek **hypothetical POD store** ke liye **2 product ideas** select karo (ek local vendor se, ek international se). Unke:\n- Final cost (product + shipping)\n- Expected delivery time\n- Profit margin\nCalculate karo aur decide karo ki kaunsa zyada suitable hai."
+        ]
+      ],
+      "answer_key": "local: fast shipping, low cost per unit, limited products; international: global reach, automated fulfillment, higher cost per unit",
+      "translations": {
+        "ur": {
+          "title": "دن 22 — **پرنٹ آن ڈیمانڈ کے لیے بہترین پلیٹ فارمز: لوکل بمقابلہ انٹرنیشنل وینڈرز کا موازنہ**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسیپٹ",
+              "content": "پرنٹ آن ڈیمانڈ (POD) میں پلیٹ فارم منتخب کرنا ایک انتہائی اہم فیصلہ ہے۔ لوکل وینڈرز (جیسے بھارت پر مبنی) کم شپنگ لاگت اور تیز تر ترسیل پیش کرتے ہیں، لیکن محدود پروڈکٹ رینج اور فی یونٹ زیادہ لاگت ہو سکتی ہے۔ انٹرنیشنل وینڈرز (جیسے Printful، Printify) عالمی رسائی، وسیع پروڈکٹ کیٹلاگ، اور خودکار تکمیل فراہم کرتے ہیں، لیکن شپنگ کا وقت زیادہ ہو سکتا ہے۔ ہر ایک کے اپنے فائدے اور نقصانات ہیں—اپنے کاروباری مقاصد کے مطابق فیصلہ کرنا ضروری ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "اگر آپ بھارت میں کسٹمرز کو ٹارگٹ کر رہے ہیں، تو **لوکل وینڈر** (جیسے **Printrove** یا **PrintXpand**) استعمال کرنا بہتر ہے—کیونکہ شپنگ 3 سے 5 دنوں میں ہو جاتی ہے اور لاگت بھی کم رہتی ہے۔ لیکن اگر آپ عالمی سامعین کو خدمات فراہم کرنا چاہتے ہیں، تو **Printful** یا **Printify** بہتر آپشنز ہیں، کیونکہ ان کے دنیا بھر میں تکمیل کے مراکز (فل فلمنٹ سینٹرز) ہیں اور پروڈکٹ رینج بھی زیادہ ہے۔"
+            },
+            {
+              "label": "مشق",
+              "content": "اپنے کاروباری ماڈل کے حساب سے **3 پلیٹ فارمز** (2 انٹرنیشنل + 1 لوکل) شارٹ لسٹ کریں اور ان کے:\n- شپنگ کا وقت (لوکل بمقابلہ عالمی)\n- پروڈکٹ کی فی یونٹ لاگت\n- واپسی کی پالیسی (ریٹرن پالیسی)\n- انٹیگریشن کے اختیارات (Shopify، Etsy، وغیرہ)\nکا موازنہ کریں۔ Notion یا Excel میں ایک سادہ ٹیبل بنائیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **فرضی POD اسٹور** کے لیے **2 پروڈکٹ آئیڈیاز** منتخب کریں (ایک لوکل وینڈر سے، ایک انٹرنیشنل سے)۔ ان کے:\n- حتمی لاگت (پروڈکٹ + شپنگ)\n- متوقع ڈیلیوری کا وقت\n- منافع کا مارجن\nکا حساب لگائیں اور فیصلہ کریں کہ کون سا زیادہ موزوں ہے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "cpp-daily-coding": [
