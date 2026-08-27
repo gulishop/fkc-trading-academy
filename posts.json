@@ -17416,6 +17416,64 @@
           ]
         }
       }
+    },
+    {
+      "day": 18,
+      "id": "day-018",
+      "date": "2026-08-27",
+      "title": "Day 18 — **Website Performance Optimization: Fast Loading Kaise Banaye**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke website ko kaise fast load karaya ja sakta hai. Performance optimization se user experience improve hota hai, bounce rate kam hota hai, aur SEO bhi better hota hai. Hum compress karna, caching use karna, aur lazy loading jaise techniques par focus karenge."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Images compress karna",
+          "- Online tools jaise TinyPNG ya ImageOptim use karen.\n   - HTML mein `<img src=\"compressed.jpg\" loading=\"lazy\" alt=\"...\">` add karen (lazy loading ke liye).\n2."
+        ],
+        [
+          "CSS aur JS ko minify karna",
+          "- Tools jaise Terser (JS) ya CSSNano (CSS) use karen.\n   - Minified files ko HTML mein `<link rel=\"stylesheet\" href=\"styles.min.css\">` jaise link karen."
+        ],
+        [
+          "Practice",
+          "Apni ek existing website ya portfolio ke images ko compress karke, unhe lazy loading add karein. CSS/JS files ko minify karke check karein ke site ab fast load hoti hai."
+        ],
+        [
+          "Mini Project",
+          "**\"Fast Portfolio\" Challenge**\n- Apni portfolio website ke 3 performance issues fix karein (e.g., unoptimized images, render-blocking CSS/JS, no caching).\n- Google PageSpeed Insights ya GTmetrix par test karein aur screenshot share karein."
+        ]
+      ],
+      "answer_key": "compress images, lazy loading, minify css/js, caching headers",
+      "translations": {
+        "ur": {
+          "title": "دن ١٨ — ویب سائٹ پرفارمنس آپٹیمائزیشن: فاسٹ لوڈنگ کیسے بنائیں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم سیکھیں گے کہ ویب سائٹ کو کیسے تیز لوڈ کرایا جا سکتا ہے۔ پرفارمنس آپٹیمائزیشن سے صارف کا تجربہ بہتر ہوتا ہے، باؤنس ریٹ کم ہوتا ہے، اور ایس ای او بھی بہتر ہوتا ہے۔ ہم کمپریس کرنا، کیچنگ استعمال کرنا، اور لیزی لوڈنگ جیسے تکنیکس پر توجہ دیں گے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "١۔\nتصاویر کمپریس کرنا:\n- آن لائن ٹولز جیسے ٹِنی پینگ یا امیج آپٹِم استعمال کریں۔\n- ایچ ٹی ایم ایل میں `<img src=\"compressed.jpg\" loading=\"lazy\" alt=\"...\">` شامل کریں (لیزی لوڈنگ کے لیے)۔\n٢۔\nسی ایس ایس اور جے ایس کو مِنِفائی کرنا:\n- ٹولز جیسے ٹَرسر (جے ایس) یا سی ایس ایس نینو (سی ایس ایس) استعمال کریں۔\n- مِنِفائیڈ فائلز کو ایچ ٹی ایم ایل میں `<link rel=\"stylesheet\" href=\"styles.min.css\">` جیسے لنک کریں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنی کسی موجود ویب سائٹ یا پورٹ فولیو کی تصاویر کو کمپریس کرکے، ان میں لیزی لوڈنگ شامل کریں۔ سی ایس ایس/جے ایس فائلز کو مِنِفائی کرکے چیک کریں کہ سائٹ اب تیز لوڈ ہوتی ہے۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "\"فاسٹ پورٹ فولیو\" چیلنج\nاپنی پورٹ فولیو ویب سائٹ کے تین پرفارمنس مسائل ٹھیک کریں (مثلاً، غیر آپٹِمَئزڈ تصاویر، رینڈر بلاکنگ سی ایس ایس/جے ایس، کوئی کیچنگ نہیں)۔ گوگل پیج سپیڈ اِن سائٹس یا جی ٹی میٹرکس پر ٹیسٹ کریں اور اسکرین شاٹ شیئر کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "excel-data-analysis": [
