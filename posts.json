@@ -26790,6 +26790,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 22,
+      "id": "day-022",
+      "date": "2026-08-27",
+      "title": "Day 22 — **Harf ki khoj: Ghar mein cheezein dhoondhein!**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhein ge ke harf ko pehchanne ka kya matlab hai. Har cheez ka naam kisi harf se shuru hota hai—jaise 'A' se 'Apple', 'B' se 'Book'. Isse humari zubaan aur dimag mazboot hote hain. Yeh bhi yaad rakhna zaroori hai ke har cheez ka naam sirf uska hi hai—usko chuna ya istemal karna sirf tumhara hi haq hai!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Areeba ne socha, \"Mera naam 'A' se shuru hota hai! Aaj main 'A' ki khoj karungi.\" Usne dekha ke 'Aunty' ka cupboard mein 'Aloo' hai, 'Aloo' ke saath 'Apple' bhi hai. Usne mazaak mein kaha, \"Aunty, aapke ghar mein 'A' ki duniya hai!\" Aunty ne muskurate hue kaha, \"Haan beta, tumne achha socha!\""
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, tumhari favourite cheez ka naam kaun se harf se shuru hota hai?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Harf seekhna mazaa hai, lekin kisi cheez ko chunna ya istemal karna sirf tumhara hi haq hai—agar koi tumhe force kare, toh zaroor ammi-abbu ko batana!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۲۲ — حرف کی کھوج: گھر میں چیزیں ڈھونڈھیں!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "آج ہم سیکھیں گے کہ حرف کو پہچاننے کا کیا مطلب ہے۔ ہر چیز کا نام کسی حرف سے شروع ہوتا ہے—جیسے ’ا‘ سے ’ایپل‘، ’ب‘ سے ’کتاب‘۔ اس سے ہماری زبان اور دماغ مضبوط ہوتے ہیں۔ یہ بھی یاد رکھنا ضروری ہے کہ ہر چیز کا نام صرف اسی کا ہے—اسے چُننا یا استعمال کرنا صرف تمہارا ہی حق ہے!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "عریبہ نے سوچا، ’میرا نام ’ا‘ سے شروع ہوتا ہے! آج میں ’ا‘ کی کھوج کروں گی۔‘ اس نے دیکھا کہ آنٹی کے کپ بورڈ میں ’آلو‘ ہے، ’آلو‘ کے ساتھ ’ایپل‘ بھی ہے۔ اس نے مزاق میں کہا، ’آنٹی، آپ کے گھر میں ’ا‘ کی دنیا ہے!‘ آنٹی نے مسکراتے ہوئے کہا، ’ہاں بیٹا، تم نے اچھا سوچا!‘"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "’بیٹا، تمہاری پسندیدہ چیز کا نام کون سے حرف سے شروع ہوتا ہے؟‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "حرف سیکھنا مزہ ہے، لیکن کسی چیز کو چُننا یا استعمال کرنا صرف تمہارا ہی حق ہے—اگر کوئی تمہیں زبردستی کرے، تو ضرور امّی ابّو کو بتانا!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-good-behavior": [
