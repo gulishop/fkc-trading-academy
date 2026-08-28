@@ -18710,6 +18710,45 @@
           ]
         }
       }
+    },
+    {
+      "day": 10,
+      "id": "day-010",
+      "date": "2026-08-28",
+      "title": "Day 10 — **Crypto Mining: Kaise Kamaen? (Poora Guide Pakistan Mein)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Crypto mining ek process hai jisme powerful computers blockchain transactions ko validate karte hain aur rewards ke taur par crypto coins (jaise Bitcoin) milte hain. Pakistan mein mining legal hai lekin government ke regulations aur electricity costs ko dhyan mein rakhna zaroori hai. Mining ke liye ASIC miners ya high-end GPUs chahiye, aur electricity consumption bhi zyada hoti hai."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Hardware",
+          "Bitcoin mining ke liye ASIC miner (jaise Antminer S19) ya Ethereum ke liye GPU (jaise RTX 3080) lena hoga.\n2."
+        ],
+        [
+          "Software",
+          "Mining software install karen (jaise CGMiner ya PhoenixMiner).\n3."
+        ],
+        [
+          "Pool Join",
+          "Akela mining mushkil hai, isliye mining pools (jaise F2Pool ya Slush Pool) join karke rewards share karen."
+        ],
+        [
+          "Practice",
+          "Apne local market se mining hardware ki prices check karen aur electricity cost (per kWh) calculate karen. Kya mining se profit hoga? (Hint: [Mining Calculator](https://www.cryptocompare.com/mining/calculator/) use karen)."
+        ],
+        [
+          "Mini Project",
+          "Ek simple mining profitability report taiyar karen:\n- Hardware cost: _____ PKR\n- Monthly electricity cost: _____ PKR\n- Expected monthly profit: _____ PKR\n- Break-even time: _____ months"
+        ]
+      ],
+      "answer_key": "asic miner, mining pool, electricity cost, profitability calculator",
+      "translations": {}
     }
   ],
   "psx-stock-trading": [
