@@ -14818,6 +14818,33 @@
           ]
         }
       }
+    },
+    {
+      "day": 23,
+      "id": "day-023",
+      "date": "2026-08-28",
+      "title": "Day 23 — **Trending Niches aur Sub-Niches: Profitable Opportunities Pehle Pehle Hi Pakdo**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Print on Demand mein success ka raaz hai *trending niches aur unke andar ke sub-niches* pehle se identify karna. Ek broad niche (jaise \"fitness\") se behtar hai specific sub-niches (jaise \"yoga for office workers\" ya \"gym motivation for beginners\") kyunke competition kam hoti hai aur customers zyada engaged rehte hain. Google Trends, Etsy, Amazon Best Sellers, aur Reddit communities se data collect karke *rising trends* pakdo."
+        ],
+        [
+          "Example",
+          "1. **Google Trends** par \"AI tools for students\" search karo — agar graph upward hai, to is niche mein designs banana shuru karo.\n2. **Etsy** par \"minimalist wall art\" search karo, phir \"minimalist wall art for small apartments\" (sub-niche) par focus karo.\n3. **Reddit** par r/PrintOnDemand ya r/Design subreddits mein \"What’s trending in 2024?\" jaise posts check karo."
+        ],
+        [
+          "Practice",
+          "Apne laptop/phone se *3 trending niches* dhundho jo aapko pasand aayein. Har niche ke liye:\n- 1 broad keyword (e.g., \"pet lovers\")\n- 1 sub-niche (e.g., \"pet lovers who work from home\")\n- 1 reason (e.g., \"Google Trends par 'WFH with pets' searches 200% badhe hain\")"
+        ],
+        [
+          "Mini Project",
+          "Ek *trending niche* select karke uske liye:\n1. 3 design ideas likho (text-based, illustration-based, ya abstract).\n2. Canva ya AI tool se ek quick mockup banalo (T-shirt ya mug par).\n3. Etsy/Amazon par check karo ki kya similar designs already available hain (competition ka estimate)."
+        ]
+      ],
+      "answer_key": "trending niches, sub-niches, google trends, etsy research",
+      "translations": {}
     }
   ],
   "cpp-daily-coding": [
