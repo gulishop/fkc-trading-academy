@@ -10880,6 +10880,33 @@
           ]
         }
       }
+    },
+    {
+      "day": 26,
+      "id": "day-026",
+      "date": "2026-08-28",
+      "title": "Day 26 — **Freelancing Mein \"Scaling\" Kaise Karein: Ek Client Se Nahi, Multiple Projects Se Income Badhao**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke kaise ek freelancer apne business ko scale karein—matlab ek client se zyada projects lena, team banana, ya even ek agency mein convert karna. Scaling ka matlab hai apne time ko multiply karna bina extra effort ke. Iske liye systems, delegation, aur automation ka istemal zaroori hai."
+        ],
+        [
+          "Example",
+          "Imagine aap ek graphic designer ho jo 1 project/day complete karte ho. Agar aap ek assistant hire kar lein jo basic edits kare, toh aap 2-3 projects/day handle kar sakte ho. Ya fir templates banakar re-use kar sakte ho (jaise resume designs), jisse har project par kam time lagta hai."
+        ],
+        [
+          "Practice",
+          "Apne current service mein se **ek task** identify karo jo repeatable hai (jaise social media posts design karna). Uske liye ek **template ya checklist** banayein jo aap har project ke liye use kar sakte ho."
+        ],
+        [
+          "Mini Project",
+          "Ek **simple automation system** setup karo—jaise Canva templates ya Notion checklist—jo aapke 1-2 common tasks ko 50% faster bana de."
+        ]
+      ],
+      "answer_key": "template, checklist, automation, delegation",
+      "translations": {}
     }
   ],
   "graphic-design-canva": [
