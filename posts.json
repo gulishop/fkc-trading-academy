@@ -9505,6 +9505,37 @@
           ]
         }
       }
+    },
+    {
+      "day": 19,
+      "id": "day-019",
+      "date": "2026-08-28",
+      "title": "Day 19 — **Store Ko Scale Karne Ke Pehle: Profit Margins Ko Optimize Karna**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Dropshipping business ko scale karne se pehle sabse zaroori cheez hai **profit margins ko maximize karna**. Agar aapke product ka cost zyada hai, ads par zyada kharcha ho raha hai, ya shipping charges zyada hain, toh scale karne ka matlab hai **loss**. Is lesson mein hum dekhenge ke kaise apne **profit margins ko analyze karna**, **hidden costs ko identify karna**, aur **pricing strategy ko optimize karna** hai."
+        ],
+        [
+          "Example",
+          "Maana aapka ek product hai jo AliExpress se **$5** ka aata hai, lekin aap usko **$25** par bech rahe hain. Lekin agar aapki shipping cost **$10** hai, ads par **$8** kharcha ho raha hai, toh aapka **actual profit** sirf **$2** rehta hai. Is tarah, agar aap scale karte hain, toh loss hi badhega."
+        ],
+        [
+          "Solution",
+          "Shipping cost ko local supplier se kam karo, ya ads ko optimize karo."
+        ],
+        [
+          "Practice",
+          "Apne **top 3 best-selling products** ke liye ek **profit margin calculator** banao. Har product ka:\n1. Product cost (AliExpress/local supplier)\n2. Shipping cost\n3. Ads cost (per order)\n4. Platform fees (Shopify, payment gateway)\n5. Expected selling price\nCalculate karo ke **actual profit per order** kitna hai."
+        ],
+        [
+          "Mini Project",
+          "Ek **spreadsheet** banayein jisme:\n- Har product ka **cost breakdown** ho\n- **Break-even point** (kitne orders ke baad profit hoga)\n- **Scaling ke liye minimum profit margin** (e.g., 30% se zyada hona chahiye)\n- **Potential improvements** (e.g., supplier change, pricing adjust, upsell strategy)"
+        ]
+      ],
+      "answer_key": "product cost, shipping, ads cost, platform fees, profit margin",
+      "translations": {}
     }
   ],
   "freelancing": [
