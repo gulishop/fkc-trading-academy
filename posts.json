@@ -1025,6 +1025,33 @@
           ]
         }
       }
+    },
+    {
+      "day": 20,
+      "id": "day-020",
+      "date": "2026-08-28",
+      "title": "Day 20 — **Affiliate Marketing Ko \"Evergreen\" Content Se Long-Term Traffic Kaise Banayein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Affiliate marketing mein long-term success ke liye \"evergreen content\" (aise content jo time ke saath outdated na ho) banana zaroori hai. Isse aapka traffic aur sales months/years tak chalta rehta hai. Evergreen topics (jaise \"best budget laptops 2024\" ya \"how to start a blog\") par focus karo jo hamesha search kiye jaate hain."
+        ],
+        [
+          "Example",
+          "Ek blog post likho: *\"Top 5 Laptops Under 50,000 Rupees in Pakistan (2024)\"*. Isme latest models, specs, aur affiliate links add karo. Update karne ke liye sirf price/specs badlo—URL same rehne de."
+        ],
+        [
+          "Practice",
+          "Apne niche ka 1 evergreen topic choose karo aur uske liye 300-500 words ka outline banao (headings + subheadings). Example: \"Best Wireless Earbuds Under 10,000 in India (2024)\"."
+        ],
+        [
+          "Mini Project",
+          "Ek 1000-word evergreen blog post draft karo (Google Docs mein). Include:\n1. Introduction (problem + solution)\n2. Top 3-5 products (with specs, pros/cons)\n3. Comparison table\n4. Call-to-action (affiliate links + discount codes)"
+        ]
+      ],
+      "answer_key": "evergreen, traffic, update, affiliate links",
+      "translations": {}
     }
   ],
   "youtube-automation": [
