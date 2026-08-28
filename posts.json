@@ -12985,6 +12985,45 @@
       ],
       "answer_key": "gmail trigger, google sheets action, slack notification, airtable sync",
       "translations": {}
+    },
+    {
+      "day": 25,
+      "id": "day-025",
+      "date": "2026-08-28",
+      "title": "Day 25 — **AI + No-Code: Smart Tools Se Kaam 10x Fast Karein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "AI no-code tools ke saath milkar kaam ko 10x fast banata hai. AI se content generate karo, designs optimize karo, aur automation ko smart banaya ja sakta hai. AI-powered no-code tools jaise **Durable.co**, **Bubble + AI plugins**, ya **Zapier AI** ka istemal karke zyada efficient workflows banaye ja sakte hain."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Website Builder + AI",
+          "Durable.co mein AI se apni business ki details daal kar automatically ek professional website generate karwa lo.\n2."
+        ],
+        [
+          "App Builder + AI",
+          "FlutterFlow ke AI mode se app screens design karwa lo, phir unhe customize karo.\n3."
+        ],
+        [
+          "AI Automation",
+          "Zapier mein \"AI by Zapier\" action use karke emails ya messages ko automatically reply karwao."
+        ],
+        [
+          "Practice",
+          "AI-powered no-code tool (Durable.co ya Bubble AI) ka istemal karke ek **1-pager landing page** generate karo. Apne business ya idea ke hisaab se prompt likho (e.g., \"AI-powered fitness app landing page with dark theme\")."
+        ],
+        [
+          "Mini Project",
+          "**\"AI Assistant for Small Business\"** – Ek no-code AI chatbot banao jo customer ke questions ka jawab de (tools: Glide + AI21 Labs ya Zapier AI). Chatbot ko apne business ke FAQs ya product details se train karo."
+        ]
+      ],
+      "answer_key": "ai prompt, landing page template, chatbot flow, no-code ai tools",
+      "translations": {}
     }
   ],
   "digital-marketing-seo": [
