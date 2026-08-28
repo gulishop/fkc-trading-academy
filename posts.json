@@ -3870,6 +3870,33 @@
           ]
         }
       }
+    },
+    {
+      "day": 23,
+      "id": "day-023",
+      "date": "2026-08-28",
+      "title": "Day 23 — **Brand Storytelling: Emotional Connection Se Loyalty Banana**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Har brand ki pehchaan uski kahani hoti hai. Storytelling se aap audience ke emotions ko capture kar sakte hain, jisse unke dil mein jagah banti hai. Log yaad rakhte hain *kyun* aap exist karte hain, *kya* karte hain nahi. Emotional connection se trust banta hai, aur trust se hi long-term customers milte hain."
+        ],
+        [
+          "Example",
+          "Ek local chai brand ki kahani sunao: \"Humne 1980 mein ek chai wala bhaiya se shuru kiya tha jo subah 4 baje uth ke chai banata tha. Ab humare 50+ shops hain, lekin har cup mein uski mehnat ka swad hai.\" Iske saath visuals (old photo vs new shop) aur reel mein founder ki interview add karo."
+        ],
+        [
+          "Practice",
+          "Apne ya kisi brand ki 3-line story likhein jo audience ko emotionally attach kare. Focus karo: *Problem* → *Solution* → *Impact*."
+        ],
+        [
+          "Mini Project",
+          "Ek 15-30 second ka reel script likhein aur uske liye 3 visuals (text/photo/video) select karo jo kahani ko support karein. (e.g., before/after, founder ka message, customer testimonial)"
+        ]
+      ],
+      "answer_key": "problem, solution, impact, emotional hook",
+      "translations": {}
     }
   ],
   "facebook-page-growth": [
