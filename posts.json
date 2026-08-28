@@ -25739,7 +25739,80 @@
         ]
       ],
       "answer_key": "plastic pry tool, screws, connectors, oem frame",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن ۲۵ — موبائل کے بیک کور اور فریم کی تبدیلی: مرحلہ وار گائیڈ",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "موبائل کے بیک کور اور فریم کو تبدیل کرنا ایک عام مرمت ہے جو گاہکوں کو بار بار درپیش ہوتی ہے (مثلاً، ٹوٹا ہوا بیک کور یا ڈھیلا فریم)۔ اس میں ٹولز (پلاسٹک پرائی ٹولز، سکریو ڈرائیور)، سپیئر پارٹس (او ایم یا آفٹر مارکیٹ)، اور احتیاط سے ہینڈلنگ کی ضرورت ہوتی ہے تاکہ اندرونی اجزاء (بیٹری، کیمرہ وغیرہ) کو نقصان نہ پہنچے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ بیک کور کو ہٹائیں: پلاسٹک پرائی ٹول سے بیک کور کے کناروں کو آہستہ سے اٹھائیں (زور مت لگائیں)۔\n۲۔ سکریوز چیک کریں: فریم کے سکریوز کو کھولیں (کچھ ماڈلز میں چھپے ہوئے سکریوز ہوتے ہیں، مثلاً بیٹری یا سم کارڈ ٹرے کے نیچے)۔\n۳۔ فریم کو الگ کریں: فریم کو آہستہ سے اٹھائیں، کنیکٹرز (مثلاً فنگر پرنٹ سینسر، ریئر کیمرہ) کو ڈس کنیکٹ کرنے کی ضرورت پڑ سکتی ہے۔\n۴۔ نیا فریم انسٹال کریں: سکریوز کو ٹائٹ کریں، لیکن زیادہ زور مت لگائیں ورنہ تھریڈز خراب ہو سکتے ہیں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے کسی پرانے موبائل کا بیک کور اور فریم ہٹائیں اور پھر اصل فریم کو دوبارہ انسٹال کریں۔ ہر مرحلے کو دو سے تین بار دہرانے سے اعتماد آئے گا۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک گاہک کا موبائل لیں جس کا بیک کور ٹوٹا ہوا ہو۔ اس کے لیے:\n- بیک کور کو ہٹائیں۔\n- نیا او ایم یا آفٹر مارکیٹ بیک کور انسٹال کریں۔\n- موبائل کو ٹیسٹ کریں (چارجنگ، بٹنز، کیمرہ)۔"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "day": 26,
+      "id": "day-026",
+      "date": "2026-08-28",
+      "title": "Day 26 — **Mobile Circuit Tracing: Fault Finding Without Schematic**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Har repair ke liye circuit tracing zaroori hai—agar schematic na ho to bhi. Aaj seekhoge ki multimeter aur visual inspection se kaise traces karte hain, short circuits, open circuits aur faulty components identify karte hain. Isse repair time aur cost dono kam hote hain."
+        ],
+        [
+          "Example",
+          "Agar charging na ho rahi ho, to:\n1. Battery connector se charging IC tak trace karo (visual check: solder joints, burns).\n2. Multimeter se continuity test karo (0 ohm = short, ∞ = open).\n3. USB port se charging IC tak voltage check karo (5V expected)."
+        ],
+        [
+          "Practice",
+          "Apne ek kharab mobile ka charging circuit trace karo—battery connector se charging IC tak ke traces check karo aur koi short/open ya damaged component identify karo."
+        ],
+        [
+          "Mini Project",
+          "Ek kharab mobile ka charging circuit diagram manually sketch karo (sirf important points: battery connector, charging IC, USB port, resistors/capacitors)."
+        ]
+      ],
+      "answer_key": "battery connector, charging ic, continuity test, 5v voltage",
+      "translations": {
+        "ur": {
+          "title": "دن چھبیس — موبائل سرکٹ ٹریسنگ: سکیمیٹک کے بغیر فالٹ تلاش کرنا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "ہر مرمت کے لیے سرکٹ ٹریسنگ ضروری ہے—اگر سکیمیٹک نہ ہو تب بھی۔ آج سیکھو گے کہ ملٹی میٹر اور بصری معائنہ سے کیسے ٹریس کرتے ہیں، شارٹ سرکٹس، اوپن سرکٹس اور خراب اجزاء کی شناخت کرتے ہیں۔ اس سے مرمت کا وقت اور لاگت دونوں کم ہوتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "اگر چارجنگ نہ ہو رہی ہو، تو:\n١۔ بیٹری کنیکٹر سے چارجنگ آئی سی تک ٹریس کرو (بصری چیک: سولڈر جوائنٹس، جلنے کے نشانات)۔\n٢۔ ملٹی میٹر سے کنٹی نیوٹی ٹیسٹ کرو (صفر اوہم = شارٹ، لامتناہی = اوپن)۔\n٣۔ یو ایس بی پورٹ سے چارجنگ آئی سی تک وولٹیج چیک کرو (پانچ وولٹ متوقع ہے)।"
+            },
+            {
+              "label": "مشق",
+              "content": "اپنے ایک خراب موبائل کا چارجنگ سرکٹ ٹریس کرو—بیٹری کنیکٹر سے چارجنگ آئی سی تک کے ٹریس چیک کرو اور کوئی شارٹ/اوپن یا خراب جزو شناخت کرو۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک خراب موبائل کا چارجنگ سرکٹ ڈایاگرام دستی طور پر اسکچ کرو (صرف اہم پوائنٹس: بیٹری کنیکٹر، چارجنگ آئی سی، یو ایس بی پورٹ، ریزسٹرز/کیپیسٹرز)।"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-safety-education": [
