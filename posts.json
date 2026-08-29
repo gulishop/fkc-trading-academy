@@ -2613,6 +2613,33 @@
       ],
       "answer_key": "trends, low-competition, high-retention, recurring-traffic",
       "translations": {}
+    },
+    {
+      "day": 28,
+      "id": "day-028",
+      "date": "2026-08-29",
+      "title": "Day 28 — **YouTube Automation Mein \"Channel Growth Ka Secret: The 80/20 Rule\"**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Har channel ke growth ka 80% results sirf 20% efforts se aate hain. Yeh rule batata hai ke kaunse 20% actions par focus karne se maximum growth milti hai. Ismein hum dekhenge ke kaunse videos, keywords, aur strategies sabse zyada traffic aur engagement lane mein madadgar hain—aur unko priority kaise dein."
+        ],
+        [
+          "Example",
+          "Ek channel jo \"AI Tools\" par videos bana raha hai usko pata chalta hai ke:\n- Unke 10% videos (e.g., \"AI se Resume Banane Ka Tarika\") 60% views generate karte hain.\n- Unke 5 keywords (e.g., \"AI resume maker\") 70% search traffic lane mein help karte hain.\n- Unke 3 thumbnails (e.g., red background + bold text) 4x zyada CTR dete hain.\nIsliye, unko inhi 20% par focus karke baki 80% time save karna chahiye."
+        ],
+        [
+          "Practice",
+          "Apne YouTube Studio ke \"Analytics\" section mein jao. \"Top Videos\" aur \"Top Search Terms\" check karo. Apne top 3 videos aur top 3 keywords note karo jo sabse zyada views/clicks lane mein madad kar rahe hain."
+        ],
+        [
+          "Mini Project",
+          "Ek simple Excel sheet banao jismein:\n1. Top 5 videos ke titles\n2. Unke views aur CTR\n3. Top 5 keywords\n4. Unke search volume (Google Keyword Planner se)\nIn data ko analyze karke decide karo ke aane wale 10 videos mein kaunse topics/keywords repeat karne hain."
+        ]
+      ],
+      "answer_key": "top videos, top keywords, high ctr, repeat strategy",
+      "translations": {}
     }
   ],
   "social-media-marketing": [
