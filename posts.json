@@ -15232,6 +15232,45 @@
       ],
       "answer_key": "trending niches, sub-niches, google trends, etsy research",
       "translations": {}
+    },
+    {
+      "day": 24,
+      "id": "day-024",
+      "date": "2026-08-29",
+      "title": "Day 24 — **Mockups Banane Ke Advanced Tips: Realistic aur High-Converting Images Banayein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Mockups realistic design presentations hain jo aapke products ko professional aur attractive banate hain. AI tools (jaise Canva Magic Media, MidJourney, DALL·E) aur advanced techniques (like shadow adjustment, background blending) use karke aap mockups ko next level par le ja sakte hain. High-quality mockups se conversion rates badhati hain aur customers ko product ka real feel milta hai."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "AI se mockup generate karein",
+          "- Canva mein \"Magic Media\" tool use karein ya MidJourney prompt: *\"A realistic white cotton t-shirt mockup on a wooden table, soft natural lighting, professional product photography style, high resolution\"*\n2."
+        ],
+        [
+          "Shadows aur lighting adjust karein",
+          "- Canva ke \"Effects\" mein \"Drop Shadow\" add karein (X: 5, Y: 5, Blur: 10) aur brightness/contrast tweak karein.\n3."
+        ],
+        [
+          "Background blend karein",
+          "- Unsplash se free background download karein (e.g., \"minimalist white studio\") aur usko mockup ke saath align karein."
+        ],
+        [
+          "Practice",
+          "Apne ek existing design ka mockup banayein (ya ek new design bana kar) using **Canva Magic Media** ya **MidJourney**. Try different backgrounds (wooden table, plain white, lifestyle setting) aur shadows adjust karein."
+        ],
+        [
+          "Mini Project",
+          "Ek **3-mockup set** banayein:\n1. Plain white background (clean look)\n2. Lifestyle setting (e.g., t-shirt pehle se kisi person pe)\n3. Trending aesthetic (e.g., neon glow, vintage filter)\nSabko apne Instagram/Facebook page par post karein."
+        ]
+      ],
+      "answer_key": "ai prompt optimization, shadow settings, background blending, lifestyle mockup",
+      "translations": {}
     }
   ],
   "cpp-daily-coding": [
