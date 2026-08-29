@@ -4000,6 +4000,76 @@
         ]
       ],
       "answer_key": "problem, solution, impact, emotional hook",
+      "translations": {
+        "ur": {
+          "title": "دن 23 — **برانڈ اسٹوری ٹیلنگ: جذباتی تعلق سے وفاداری بنانا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسیپٹ",
+              "content": "ہر برانڈ کی پہچان اس کی کہانی ہوتی ہے۔ اسٹوری ٹیلنگ سے آپ سامعین کے جذبات کو اپنے قابو میں لا سکتے ہیں، جس سے ان کے دل میں جگہ بنتی ہے۔ لوگ یاد رکھتے ہیں کہ *کیوں* آپ وجود رکھتے ہیں، نہ کہ آپ *کیا* کرتے ہیں۔ جذباتی تعلق سے اعتماد بنتا ہے، اور اعتماد سے ہی طویل مدتی کسٹمرز ملتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک مقامی چائے کے برانڈ کی کہانی سنائیں: \"ہم نے 1980 میں ایک چائے والے بھائی سے شروعات کی تھی جو صبح 4 بجے اٹھ کر چائے بناتا تھا۔ اب ہماری 50 سے زائد دکانیں ہیں، لیکن ہر کپ میں اس کی محنت کا ذائقہ ہے۔\" اس کے ساتھ بصری مواد (پرانی تصویر بمقابلہ نئی دکان) اور ریل میں بانی کا انٹرویو شامل کریں۔"
+            },
+            {
+              "label": "مشق",
+              "content": "اپنے یا کسی برانڈ کی 3 سطری کہانی لکھیں جو سامعین کو جذباتی طور پر جوڑے۔ توجہ مرکوز کریں: *مسئلہ* ← *حل* ← *اثر*۔"
+            },
+            {
+              "label": "مِنی پروجیکٹ",
+              "content": "ایک 15 سے 30 سیکنڈ کا ریل اسکرپٹ لکھیں اور اس کے لیے 3 بصری عناصر (ٹیکسٹ/تصویر/ویڈیو) منتخب کریں جو کہانی کو سپورٹ کریں۔ (مثلاً: پہلے/بعد میں، بانی کا پیغام، گاہک کا تاثر)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "day": 24,
+      "id": "day-024",
+      "date": "2026-08-29",
+      "title": "Day 24 — **Instagram Reels aur Shorts Se Viral Growth Ka Secret: Algorithmic Hack**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Instagram Reels aur YouTube Shorts ka algorithm aajkal content ko \"discover\" karne ka sabse powerful tareeka hai. Yeh teen cheezein decide karti hain ki aapka content viral hoga ya nahi: **Watch Time (kitna time viewers ne dekha), Engagement Rate (likes, comments, shares), aur Shareability (kitne users ne save/forward kiya)**. AI-powered editing tools (jaise CapCut, InShot) aur trending audio ka istemal karke aapka content algorithm ko \"like\" karwa sakta hai."
+        ],
+        [
+          "Example",
+          "Ek fitness trainer ka Reel hai \"30-second fat-burning workout\" jo 5M+ views le gaya:\n1."
+        ],
+        [
+          "Trending Audio",
+          "Usne \"Oh No\" sound (trending) use kiya jo uske niche ke 100+ Reels mein bhi chal raha tha.\n2."
+        ],
+        [
+          "Hook in 3 seconds",
+          "Pehle frame mein usne kaha \"Agar aap yeh 30 seconds nahi kar sakte... toh aapko yeh video dekhni chahiye!\" (curiosity gap).\n3."
+        ],
+        [
+          "Text Overlay",
+          "Har step par bold text \"DO IT NOW!\" se viewers ko action lene par majboor kiya.\n4."
+        ],
+        [
+          "CTA",
+          "Video end par \"Agar aapko yeh pasand aaya toh save karke rakh lo!\" (save rate badhaya)."
+        ],
+        [
+          "Practice",
+          "Apne phone se 15-second ka ek Reel banao:\n- **Trending audio** (Instagram ke \"Audio\" tab se lelo ya YouTube Shorts par search karlo).\n- **Pehle 3 seconds** mein ek suna hua line bolo jo viewers ko \"rukne\" par majboor kar de (e.g., \"Yeh trick aapko 1000 followers kaise degi?\").\n- **Text overlay** zaroor add karo (CapCut mein \"Auto Captions\" feature use karo).\n-"
+        ],
+        [
+          "Hashtags",
+          "Sirf 3-5 relevant hashtags (#FitnessMotivation, #ViralReels) — bina #trending ke."
+        ],
+        [
+          "Mini Project",
+          "Ek **7-day Reels Challenge** shuru karo:\n- Roz 1 Reel post karo (same niche par).\n- Har Reel ke analytics check karo (views, reach, saves).\n- **Day 7** par sabse best-performing Reel ko **boost karke** Rs. 500 ka ad spend karo (Meta Ads Manager se) aur growth rate compare karo."
+        ]
+      ],
+      "answer_key": "trending audio, 3-second hook, text overlay, save rate",
       "translations": {}
     }
   ],
