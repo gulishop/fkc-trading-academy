@@ -1282,3 +1282,6 @@
 [2026-08-29T05:24:45.411643] [kids-nursery] Day 24 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 429: Too Many Requests
 [2026-08-29T07:16:43.714568] [kids-good-behavior] Day 23 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: The read operation timed out
 [2026-08-29T07:21:26.455544] [kids-good-behavior] Day 24 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: The read operation timed out
+[2026-08-29T12:49:52.181242] [no-code-app-dev] Day 23 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: The read operation timed out
+[2026-08-29T12:54:47.249968] [no-code-app-dev] Day 25 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: The read operation timed out
+[2026-08-29T12:58:40.897040] [no-code-app-dev] Day 26 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: The read operation timed out

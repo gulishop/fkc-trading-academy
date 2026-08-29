@@ -1,0 +1,22 @@
+{
+  "title": "دن 24 — **نو کوڈ آٹومیشن: زندگی بدل دیں (Zapier + Make.com سے ورک فلو بنانا)**",
+  "preamble": "",
+  "sections": [
+    {
+      "label": "تصور",
+      "content": "نو کوڈ آٹومیشن ٹولز جیسے **Zapier** یا **Make.com** (پہلے Integromat) آپ کے مینوئل کاموں کو سیکنڈوں میں خودکار (automate) کر دیتے ہیں۔ مان لیں، ہر روز 10 ای میلز چیک کرنے کی بجائے، ایک کلک سے نئی لیڈز کو Airtable میں محفوظ کرنا، Slack پر نوٹیفکیشن بھیجنا، اور Google Sheets میں ڈیٹا اپ ڈیٹ کرنا—سب خودکار! بس ٹریگرز (جیسے ای میل آنا) اور ایکشنز (جیسے ڈیٹا بیس اپ ڈیٹ ہونا) سیٹ کریں۔"
+    },
+    {
+      "label": "مثال",
+      "content": "1.\n- ٹریگر: کوئی نیا Google Form جمع کروائے۔\n2.\n- ایکشن: اس ڈیٹا کو خود بخود Airtable میں شامل کریں + Slack چینل پر \"New lead!\" میسج بھیج دیں۔\n3.\n- بونس: اگر ای میل ایڈریس Gmail سے ہے، تو اس کو Google Contacts میں بھی شامل کر دیں۔"
+    },
+    {
+      "label": "مشق",
+      "content": "Zapier یا Make.com پر ایک **مفت اکاؤنٹ** بنائیں۔ پھر ایک سادہ آٹومیشن سیٹ کریں:\n-\n- ٹریگر: \"New email in Gmail\" (سبجیکٹ میں \"Order\" کا لفظ ہو)۔\n-\n- ایکشن: \"Add row to Google Sheets\" (ای میل کا سبجیکٹ، بھیجنے والے کا نام، اور تاریخ محفوظ ہو)۔"
+    },
+    {
+      "label": "منی پروجیکٹ",
+      "content": "**\"Lead Tracker System\"**\n1. ایک Google Form بنائیں (فیلڈز: Name، Email، Product Interest)۔\n2. فارم جمع ہونے پر:\n   - ڈیٹا Google Sheets میں محفوظ ہو۔\n   - Airtable میں بھی شامل ہو۔\n   - Slack پر نوٹیفکیشن آئے (\"New lead from [Name] for [Product]!\")۔\n3. ہر 24 گھنٹے میں ایک خودکار ای میل بھیجے جس میں \"Thanks for your interest! Here’s a 10% discount code: XYZ\" ہو۔"
+    }
+  ]
+}

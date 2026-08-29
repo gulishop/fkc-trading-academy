@@ -13061,7 +13061,30 @@
         ]
       ],
       "answer_key": "gmail trigger, google sheets action, slack notification, airtable sync",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن 24 — **نو کوڈ آٹومیشن: زندگی بدل دیں (Zapier + Make.com سے ورک فلو بنانا)**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "نو کوڈ آٹومیشن ٹولز جیسے **Zapier** یا **Make.com** (پہلے Integromat) آپ کے مینوئل کاموں کو سیکنڈوں میں خودکار (automate) کر دیتے ہیں۔ مان لیں، ہر روز 10 ای میلز چیک کرنے کی بجائے، ایک کلک سے نئی لیڈز کو Airtable میں محفوظ کرنا، Slack پر نوٹیفکیشن بھیجنا، اور Google Sheets میں ڈیٹا اپ ڈیٹ کرنا—سب خودکار! بس ٹریگرز (جیسے ای میل آنا) اور ایکشنز (جیسے ڈیٹا بیس اپ ڈیٹ ہونا) سیٹ کریں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1.\n- ٹریگر: کوئی نیا Google Form جمع کروائے۔\n2.\n- ایکشن: اس ڈیٹا کو خود بخود Airtable میں شامل کریں + Slack چینل پر \"New lead!\" میسج بھیج دیں۔\n3.\n- بونس: اگر ای میل ایڈریس Gmail سے ہے، تو اس کو Google Contacts میں بھی شامل کر دیں۔"
+            },
+            {
+              "label": "مشق",
+              "content": "Zapier یا Make.com پر ایک **مفت اکاؤنٹ** بنائیں۔ پھر ایک سادہ آٹومیشن سیٹ کریں:\n-\n- ٹریگر: \"New email in Gmail\" (سبجیکٹ میں \"Order\" کا لفظ ہو)۔\n-\n- ایکشن: \"Add row to Google Sheets\" (ای میل کا سبجیکٹ، بھیجنے والے کا نام، اور تاریخ محفوظ ہو)۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "**\"Lead Tracker System\"**\n1. ایک Google Form بنائیں (فیلڈز: Name، Email، Product Interest)۔\n2. فارم جمع ہونے پر:\n   - ڈیٹا Google Sheets میں محفوظ ہو۔\n   - Airtable میں بھی شامل ہو۔\n   - Slack پر نوٹیفکیشن آئے (\"New lead from [Name] for [Product]!\")۔\n3. ہر 24 گھنٹے میں ایک خودکار ای میل بھیجے جس میں \"Thanks for your interest! Here’s a 10% discount code: XYZ\" ہو۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 25,
@@ -13100,6 +13123,33 @@
         ]
       ],
       "answer_key": "ai prompt, landing page template, chatbot flow, no-code ai tools",
+      "translations": {}
+    },
+    {
+      "day": 26,
+      "id": "day-026",
+      "date": "2026-08-29",
+      "title": "Day 26 — **Client Project ka Scope & Deliverables: \"Kya Dena Hai\" aur \"Kya Nahi\"**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Har no-code project ki success uske **clear scope** aur **defined deliverables** par depend karti hai. Aaj seekhein ke client se project lene se pehle kya poochna hai, kaise milestones set karne hain, aur final delivery mein kya include karna hai. \"Scope creep\" (extra kaam ka dhundh) se bachne ke liye boundaries set karna zaroori hai."
+        ],
+        [
+          "Example",
+          "Ek client ko ek **Glide app** banana hai jo employees ki attendance track kare. Pehle pooch:\n1. \"App mein kya features honge?\" (e.g., GPS check-in, leave requests)\n2. \"Kya existing data (Excel) import karni hai?\"\n3. \"App ka design kitna customized hona chahiye?\"\nDeliverables define karen:\n- Functional app (Glide)\n- 1-page user guide (Notion)\n- 30-minute training video (Loom)"
+        ],
+        [
+          "Practice",
+          "Apne ek imaginary client se **3 questions poochen** jo project scope clarify karne ke liye zaroori hain. Apni learning notes mein likh kar rakhein."
+        ],
+        [
+          "Mini Project",
+          "Ek **Notion template** banayein jo client ko project deliver karne ke liye use ho sakta hai. Include karen:\n- Project scope (1 paragraph)\n- Milestones (timeline)\n- Deliverables list (bullet points)\n- Client approval section"
+        ]
+      ],
+      "answer_key": "project scope, milestones, deliverables, client approval",
       "translations": {}
     }
   ],
