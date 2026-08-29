@@ -7628,6 +7628,33 @@
           ]
         }
       }
+    },
+    {
+      "day": 15,
+      "id": "day-015",
+      "date": "2026-08-29",
+      "title": "Day 15 — **Daraz Ads (Sponsored Discovery) Se Sales Kaise Badhayein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Daraz Ads (Sponsored Discovery) ek paid marketing tool hai jo aapke products ko Daraz search results aur category pages par top par dikhata hai. Isse organic reach ke saath-saath paid traffic bhi milta hai, jisse sales badh sakti hain. Aapko budget set karna, keywords choose karna aur bids adjust karna aata hona chahiye."
+        ],
+        [
+          "Example",
+          "Ek seller \"Wireless Earbuds\" bechta hai. Usne Daraz Ads par \"wireless earbuds\" keyword par Rs. 500 daily budget rakha aur Rs. 10 ka bid lagaya. Uske ad ne 200 clicks diye aur 10 sales hui, jisse Rs. 500 cost ke badle Rs. 5000 revenue hua."
+        ],
+        [
+          "Practice",
+          "Apne Daraz Seller Center mein ja kar \"Ads\" section mein click karein, phir \"Create Campaign\" par click karein. Ek simple sponsored product campaign setup karein (1 product, Rs. 300 daily budget, Rs. 5 ka bid)."
+        ],
+        [
+          "Mini Project",
+          "Ek 3-product sponsored discovery campaign setup karein aur 3 din tak monitor karein. Har product ke liye CTR (Click-Through Rate) aur conversion rate note karein."
+        ]
+      ],
+      "answer_key": "campaign setup, keyword selection, bid adjustment, ctr monitoring",
+      "translations": {}
     }
   ],
   "ai-content-writing": [
