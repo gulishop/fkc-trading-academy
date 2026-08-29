@@ -17846,6 +17846,45 @@
           ]
         }
       }
+    },
+    {
+      "day": 19,
+      "id": "day-019",
+      "date": "2026-08-29",
+      "title": "Day 19 — **Introduction to APIs: Fetching Data from External Sources**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "APIs (Application Programming Interfaces) allow websites to fetch data from external services like weather apps, news sites, or databases. Today, we’ll learn how to use JavaScript’s `fetch()` to get data from a public API (e.g., JSONPlaceholder for fake posts) and display it on a webpage. APIs are crucial for dynamic content without manual updates."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "API Endpoint",
+          "Use `https://jsonplaceholder.typicode.com/posts` (returns 100 fake blog posts).\n2."
+        ],
+        [
+          "Fetch Data",
+          "```javascript\n   fetch('https://jsonplaceholder.typicode.com/posts')\n     .then(response => response.json())\n     .then(data => {\n       data.slice(0, 5).forEach(post => {\n         document.body.innerHTML += `<div><h3>${post.title}</h3><p>${post.body}</p></div>`;\n       });\n     });\n   ```\n3."
+        ],
+        [
+          "Error Handling",
+          "Add `.catch(error => console.error('Error:', error))`."
+        ],
+        [
+          "Practice",
+          "Create a button with ID `loadPosts`. When clicked, fetch and display the first 3 posts from the same API above. Use `console.log()` to log the fetched data first."
+        ],
+        [
+          "Mini Project",
+          "Build a simple **\"Weather App\"** that fetches real-time weather data from a free API like [OpenWeatherMap](https://openweathermap.org/api) (requires free API key). Display the temperature and weather description for a user-input city."
+        ]
+      ],
+      "answer_key": "button click, fetch(), .json(), console.log(data)",
+      "translations": {}
     }
   ],
   "excel-data-analysis": [
