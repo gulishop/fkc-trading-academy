@@ -1298,3 +1298,4 @@
 [2026-08-29T23:22:55.907734] [print-on-demand] Day 24 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 429: Too Many Requests
 [2026-08-29T23:35:56.746897] [forex-trading] Day 26 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 429: Too Many Requests
 [2026-08-29T23:39:05.376365] [forex-trading] Day 27 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 429: Too Many Requests
+[2026-08-29T23:54:10.729251] [python-programming] Day 17 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 429: Too Many Requests

@@ -17134,6 +17134,33 @@
           ]
         }
       }
+    },
+    {
+      "day": 17,
+      "id": "day-017",
+      "date": "2026-08-29",
+      "title": "Day 17 — Working with JSON Data: Read, Write, and Parse",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "JSON (JavaScript Object Notation) is a lightweight data format used everywhere—APIs, config files, and data storage. Python’s built-in `json` module lets you convert Python dictionaries to JSON strings (`json.dump()`/`json.dumps()`) and back (`json.load()`/`json.loads()`). It’s essential for web apps, APIs, and config management."
+        ],
+        [
+          "Example",
+          "```python\nimport json\n\n# Writing to a JSON file\ndata = {\"name\": \"Ali\", \"age\": 25, \"city\": \"Lahore\"}\nwith open(\"user.json\", \"w\") as file:\n    json.dump(data, file, indent=4)  # indent for pretty formatting\n\n# Reading from a JSON file\nwith open(\"user.json\", \"r\") as file:\n    loaded_data = json.load(file)\nprint(loaded_data[\"name\"])  # Output: Ali\n```"
+        ],
+        [
+          "Practice",
+          "Create a dictionary with 3 key-value pairs (e.g., `{\"book\": \"Python Crash Course\", \"author\": \"Eric Matthes\", \"year\": 2019}`). Save it to `book.json` and then read it back to print the author’s name."
+        ],
+        [
+          "Mini Project",
+          "Build a simple contact book that:\n1. Takes user input (name, phone, email) and saves it to `contacts.json`.\n2. Lets users search for a contact by name and display their details."
+        ]
+      ],
+      "answer_key": "save dictionary to file, load and print author name",
+      "translations": {}
     }
   ],
   "web-development": [
