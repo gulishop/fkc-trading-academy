@@ -6031,6 +6031,33 @@
       ],
       "answer_key": "market order, limit order, stop order, stop-limit order",
       "translations": {}
+    },
+    {
+      "day": 27,
+      "id": "day-027",
+      "date": "2026-08-29",
+      "title": "Day 27 — **Trading Psychology: Emotions Ko Control Karne Ke 5 Powerful Tips**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Trading mein emotions (fear, greed, overconfidence) sabse bade dushman hote hain. Jab loss hota hai to frustration, jab profit hota hai to overtrading ka khauf rehta hai. Aaj hum seekhenge ki kaise emotions ko recognize karke un par control rakha jaaye, taaki disciplined trading ho sake."
+        ],
+        [
+          "Example",
+          "Ek trader ne 5 trades mein 4 jeet liye, lekin 5th trade mein greed se zyada position size le liya. Loss hone par wo frustration mein aur trades karne laga aur pura account khatam ho gaya. Yahan greed aur frustration ne kaam kiya. Solution: Har trade ke baad 5-10 min break lo aur next trade ka plan fresh mind se banao."
+        ],
+        [
+          "Practice",
+          "Apne aaj ke 3 trades (ya demo trades) ka emotional logbook banao:\n1. Trade enter karne se pehle kya emotion the? (e.g., \"confident\", \"nervous\")\n2. Trade ke dauran kya feel hua? (e.g., \"loss hone par panic\")\n3. Trade exit karne ke baad kya emotion the? (e.g., \"relieved\", \"disappointed\")"
+        ],
+        [
+          "Mini Project",
+          "Ek \"Trading Pause Rule\" banayein: Har trade ke baad 15 min break lo aur uske dauran emotions ko note karo. 1 week tak follow karo aur dekho ki kaise discipline improve hoti hai."
+        ]
+      ],
+      "answer_key": "emotions recognize, pause rule, disciplined trades, emotional logbook",
+      "translations": {}
     }
   ],
   "amazon-fba": [
