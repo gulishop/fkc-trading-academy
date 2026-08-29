@@ -2562,6 +2562,56 @@
         ]
       ],
       "answer_key": "shorts download, capcut edit, long-form video, description link",
+      "translations": {
+        "ur": {
+          "title": "دن 26 — **YouTube آٹومیشن میں \"Shorts سے ٹریفک کیسے لے جائیں\"؟ (ٹرینڈنگ Shorts کو لانگ فارم ویڈیو میں تبدیل کرنے کا ہیک)**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسیپٹ",
+              "content": "آج ہم سیکھیں گے کہ ٹرینڈنگ YouTube Shorts کو کیسے اپنی لانگ فارم ویڈیوز میں تبدیل کر کے چینل پر ٹریفک لے جائیں۔ Shorts سے ویوز ملتے ہیں، لیکن انہیں لانگ فارم ویڈیوز میں ڈال کر مستقل سبسکرائبرز اور واچ ٹائم بڑھائیں۔ AI ٹولز (جیسے CapCut، Pictory) اور ایڈیٹنگ ٹرکس سے یہ کام آٹومیٹڈ بھی ہو سکتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1. ٹرینڈنگ Shorts پر جائیں (جیسے \"AI سے لوگو بنانے کا طریقہ\")۔\n2. اس Shorts کو ڈاؤن لوڈ کریں (4K Video Downloader سے)۔\n3. CapCut میں امپورٹ کریں، اصل ویڈیو کو 2x اسپیڈ سے بڑھائیں (اگر Shorts 15s کا ہے تو 30s کی ویڈیو بن جائے گی)۔\n4. اس کے نیچے \"AI سے لوگو بنانے کے 5 ایڈوانسڈ ٹپس\" لکھ کر ایک لانگ فارم ویڈیو اسکرپٹ شامل کریں۔\n5. بیک گراؤنڈ میں رائلٹی فری میوزک لگائیں اور تھمب نیل میں \"AI Logo Generator\" لکھ کر کلک ایبل بنائیں۔"
+            },
+            {
+              "label": "مشق",
+              "content": "اپنے چینل پر ایک ٹرینڈنگ Shorts کو منتخب کریں اور اس کو 1-2 منٹ کی لانگ فارم ویڈیو میں تبدیل کریں۔ CapCut یا Pictory کا استعمال کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک Shorts کو لانگ فارم ویڈیو میں تبدیل کر کے اپلوڈ کریں اور اس کی ڈسکرپشن میں \"Full Guide: [Topic]\" لکھ کر لنک شامل کریں۔"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "day": 27,
+      "id": "day-027",
+      "date": "2026-08-29",
+      "title": "Day 27 — **YouTube Automation Mein \"Evergreen Content\" Kaise Banaye? (Jo Har Season Mein Views Dete Rahen)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Evergreen content wo videos hote hain jo har season mein search hote rehte hain—jaise \"How to tie a tie\" ya \"Best budget laptops 2024\". In videos par traffic kabhi kam nahi hota, jabki trending topics 1-2 mahine baad fade ho jate hain. Automation ke liye yeh goldmine hain kyunki inko baar-baar promote kar sakte hain bina naye videos banaye."
+        ],
+        [
+          "Example",
+          "Ek channel jo \"Home workout for beginners\" par videos banata hai, usko har mahine 50K views milte hain kyunki yeh topic kabhi outdated nahi hota. Aise topics dhundne ke liye **Google Trends** ya **TubeBuddy** ka use karo aur \"All time\" filter lagao."
+        ],
+        [
+          "Practice",
+          "Apne niche se 3 evergreen topics select karo jo:\n1. Har saal search kiye jate hain\n2. Competition kam hai (low competition keywords)\n3. 5+ saal purane videos bhi views le rahe hain"
+        ],
+        [
+          "Mini Project",
+          "Ek spreadsheet banao jisme:\n- Topic name\n- Search volume (Ahrefs/Google Keyword Planner se)\n- Competition score (TubeBuddy se)\n- Pichle 3 saal ka average views (VidIQ se)\nTop 3 topics ko highlight karo jo sabse zyada potential rakhte hain."
+        ]
+      ],
+      "answer_key": "trends, low-competition, high-retention, recurring-traffic",
       "translations": {}
     }
   ],
