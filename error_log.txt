@@ -1326,3 +1326,6 @@
 [2026-08-30T22:47:13.877200] [freelancing] Day 26 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 429: Too Many Requests
 [2026-08-30T22:50:09.356475] [freelancing] Day 27 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 429: Too Many Requests
 [2026-08-30T22:53:14.325245] [freelancing] Day 28 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 429: Too Many Requests
+[2026-08-30T23:07:25.527957] [affiliate-marketing] Day 20 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 429: Too Many Requests
+[2026-08-30T23:10:21.500590] [affiliate-marketing] Day 21 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 429: Too Many Requests
+[2026-08-30T23:13:26.643573] [affiliate-marketing] Day 22 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 429: Too Many Requests
