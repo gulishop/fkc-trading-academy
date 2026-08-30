@@ -7747,6 +7747,68 @@
         ]
       ],
       "answer_key": "campaign setup, keyword selection, bid adjustment, ctr monitoring",
+      "translations": {
+        "ur": {
+          "title": "دن 15 — **Daraz Ads (Sponsored Discovery) سے سیلز کیسے بڑھائیں**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "Daraz Ads (Sponsored Discovery) ایک پیڈ مارکیٹنگ ٹول ہے جو آپ کے پروڈکٹس کو Daraz سرچ رزلٹس اور کیٹیگری پیجز پر ٹاپ پر دکھاتا ہے۔ اس سے آرگینک ریچ کے ساتھ ساتھ پیڈ ٹریفک بھی ملتا ہے، جس سے سیلز بڑھ سکتی ہیں۔ آپ کو بجٹ سیٹ کرنا، کی ورڈز منتخب کرنا اور بڈز ایڈجسٹ کرنا آتا ہونا چاہیے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک سیلر \"Wireless Earbuds\" بیچتا ہے۔ اس نے Daraz Ads پر \"wireless earbuds\" کی ورڈ پر 500 روپے روزانہ کا بجٹ رکھا اور 10 روپے کی بڈ لگائی۔ اس کے ایڈ نے 200 کلکس دیے اور 10 سیلز ہوئیں، جس سے 500 روپے خرچ کے بدلے 5000 روپے ریونیو حاصل ہوا۔"
+            },
+            {
+              "label": "مشق",
+              "content": "اپنے Daraz Seller Center میں جا کر \"Ads\" سیکشن پر کلک کریں، پھر \"Create Campaign\" پر کلک کریں۔ ایک سادہ اسپانسرڈ پروڈکٹ کمپین سیٹ اپ کریں (1 پروڈکٹ، 300 روپے روزانہ بجٹ، 5 روپے کی بڈ)۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک 3 پروڈکٹس والی اسپانسرڈ ڈسکوری کمپین سیٹ اپ کریں اور 3 دن تک مانیٹر کریں۔ ہر پروڈکٹ کے لیے CTR (Click-Through Rate) اور کنورژن ریٹ نوٹ کریں۔"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "day": 16,
+      "id": "day-016",
+      "date": "2026-08-30",
+      "title": "Day 16 — **Daraz Par Orders Aur Delivery Ko 100% Smooth Banane Ka Complete Guide**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Daraz par orders aur delivery ko efficiently manage karna ek successful seller ki pehchaan hai. Is lesson mein hum Daraz Express (Daraz ki own delivery service) aur Dropshipping model ko step-by-step samjhenge. Orders ko track karna, delivery time ko optimize karna, aur customer ko timely updates dena sales badhane ka raaz hai."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Order Confirmation",
+          "Jab koi customer order kare, toh \"Order Confirmed\" status par click karke customer ko email/SMS notification bhej do.\n2."
+        ],
+        [
+          "Daraz Express",
+          "Agar product Daraz Express se deliver karna hai, toh \"Ready to Ship\" par click karke Daraz ko product bhej do. Daraz team delivery handle karegi.\n3."
+        ],
+        [
+          "Dropshipping",
+          "Agar Dropshipping model use kar rahe ho, toh supplier ko order forward karke customer ko tracking number share kar do."
+        ],
+        [
+          "Practice",
+          "Apne Daraz Seller Center mein jake \"Orders\" section mein jayein. Koi 1 pending order select karke \"Ready to Ship\" par click karen. Agar Daraz Express use kar rahe hain, toh \"Daraz Express\" option choose karen."
+        ],
+        [
+          "Mini Project",
+          "Ek simple Excel sheet banayein jismein aap apne 5 recent orders ka status (Confirmed, Ready to Ship, Shipped, Delivered) track karen. Har order ke liye estimated delivery date bhi likhein."
+        ]
+      ],
+      "answer_key": "order confirmed, ready to ship, daraz express, dropshipping tracking",
       "translations": {}
     }
   ],
