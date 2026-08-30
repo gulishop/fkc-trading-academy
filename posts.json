@@ -15512,6 +15512,45 @@
       ],
       "answer_key": "ai prompt optimization, shadow settings, background blending, lifestyle mockup",
       "translations": {}
+    },
+    {
+      "day": 25,
+      "id": "day-025",
+      "date": "2026-08-30",
+      "title": "Day 25 — **Store Ko International Market Mein Le Jaana: Global Customers Ko Target Karne Ke Strategies**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke apne POD store ko international level par kaise le jaen. Ismein shipping policies, currency conversion, local marketing strategies, aur cultural preferences shamil hain. Global audience ko attract karne ke liye apne store ko universal banaen jo har region ke customers ko appeal kare."
+        ],
+        [
+          "Example",
+          "Ek Pakistani designer ne apne store ko US, UK, aur Middle East mein promote karne ke liye:\n1."
+        ],
+        [
+          "Shipping",
+          "Printful ke global shipping options use kiye (US/EU warehouses).\n2."
+        ],
+        [
+          "Pricing",
+          "USD mein prices set kiye lekin local currency (PKR, INR) mein bhi display kiye.\n3."
+        ],
+        [
+          "Marketing",
+          "Facebook aur Instagram ads ko regional audiences (US, UK, UAE) target kiye."
+        ],
+        [
+          "Practice",
+          "Apne store ke kisi ek product ke liye international shipping options check karo (Printful/Redbubble par). Agar nahi hai to ek alternative vendor dhundho jo global shipping offer kare."
+        ],
+        [
+          "Mini Project",
+          "Ek social media post draft karo jo apne product ko global audience ke liye promote kare. Ismein:\n- Universal design (language-neutral)\n- International pricing (USD + local currency)\n- Global shipping details"
+        ]
+      ],
+      "answer_key": "usd pricing, local currency display, global warehouses, cultural sensitivity",
+      "translations": {}
     }
   ],
   "cpp-daily-coding": [
