@@ -30302,7 +30302,30 @@
         ]
       ],
       "answer_key": "",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن 23 — **رنگوں کے نام انگریزی میں**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "بچو، آج ہم سیکھیں گے کہ رنگوں کے نام انگریزی میں کیا ہیں۔ رنگ سب کے لیے خوشیوں اور خوشیوں کے رنگ ہیں—جیسے آسمان نیلا ہے، گھاس ہری ہے، اور سونا رنگ سن ہے۔ ہر رنگ کا اپنا ایک خاص مزہ ہے!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "عریبہ نے اپنی ڈرائنگ بک میں ایک سندر پرندہ بنایا۔ اس نے اس کے پروں کو نیلا، پیلا، اور لال رنگ سے رنگا۔ جب اس کی امی نے پوچھا، ”عریبہ، یہ رنگوں کے نام بتاؤ،“ تو عریبہ نے مسکراتے ہوئے کہا، ”نیلا، پیلا، لال!“ امی نے کہا، ”بہت خوب! رنگوں سے زندگی اور بھی رنگین ہو جاتی ہے۔“"
+            },
+            {
+              "label": "امی ابو کے ساتھ بات کریں",
+              "content": "”بیٹا، اگر تمہیں کوئی رنگ پسند ہو، تو اس کا نام بتاؤ۔ کیا تمہیں سب سے زیادہ پسند رنگ کون سا ہے؟“"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "رنگوں کے نام یاد کرنے کا آسان طریقہ ہے کہ ہر رنگ کو اپنے دل سے دیکھ کر اس کا نام یاد کرنا—جیسے آسمان نیلا، چاند روشنی پیلا، اور دل کا رنگ لال!"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 24,
@@ -30326,6 +30349,33 @@
         [
           "Yaad Rakhein",
           "Har cheez ki shakl ka naam yaad rakhna—chahe woh *square*, *circle*, ya *star* ho. Lekin yaad rakhna, aapki jism ki shakl sirf aapki hai, aur koi bhi aapko 'na' kehne ka haq nahi rakhta! Agar koi ajeeb baat ho, toh turant humein batana. 💖"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {}
+    },
+    {
+      "day": 25,
+      "id": "day-025",
+      "date": "2026-08-30",
+      "title": "Day 25 — \"Apna naam aur ghar ka pata bolna seekhna\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachay, aaj hum seekhein ge ke apna naam aur ghar ka pata kaise bolna hai. Yeh zaroori hai ke tum apna naam aur ghar ka pata achi tarah yaad rakho, taake agar tum kabhi akela ho, toh tum apne aap ko pehchana sako aur apne ghar tak pohanch sako."
+        ],
+        [
+          "Chhoti Kahani",
+          "Ek din, Ali park mein khel raha tha. Usne ek nayi ball dekhi aur uske peeche bhagna shuru kar diya. Akela reh gaya toh usko yaad aaya ke usko apna naam aur ghar ka pata yaad rakhna hai. Usne apne dost se poochha, aur woh usko ghar le gaya."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, tumhara naam kya hai? Aur tumhara ghar kahan hai?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Tumhara jism sirf tumhara hai. Agar koi tumse aise pooche ke tum apna naam ya ghar ka pata na do, toh foran ammi/abbu ya kisi trusted bade insaan ko batana hai."
         ]
       ],
       "answer_key": "",
