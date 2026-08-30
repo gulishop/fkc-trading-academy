@@ -32511,6 +32511,33 @@
           ]
         }
       }
+    },
+    {
+      "day": 24,
+      "id": "day-024",
+      "date": "2026-08-30",
+      "title": "Day 24 — \"Chhoti Ginti ka Khushal Tafreeq karna!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke kaise chhoti ginti mein se chhota number nikaalna hai. Tafreeq karna bhi ek khel hai, jaise ginti karna! Yaad rakhna, tumhara jism tumhara hai, aur koi tumhein \"na\" kehne ka haq nahi rakhta. Agar koi cheez ajeeb lage, toh foran ammi/abbu ko batana."
+        ],
+        [
+          "Chhoti Kahani",
+          "Rani ne apne dost ko 5 toffee di. Uske dost ne 2 toffee kha li. Ab Rani ke paas kitni toffee bachengi? Tafreeq karo: 5 – 2 = 3. Dekh, kaise kam ho gayi! Tafreeq karna bhi aasan hai, bas dil se try karo."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar koi tumhein koi cheez karne ko bole jo tumhein na ho, toh tum kya karogi?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Tumhara jism tumhara hai, use kisi ko bhi \"na\" kehne ka poora haq hai! Agar koi cheez ajeeb lage, toh chup chap mat rehna, baat karna. 💖"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {}
     }
   ]
 }
