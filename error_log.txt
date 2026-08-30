@@ -1313,3 +1313,7 @@
 [2026-08-30T05:35:48.902970] [kids-good-behavior] Day 23 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 429: Too Many Requests
 [2026-08-30T05:38:44.935353] [kids-good-behavior] Day 24 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 429: Too Many Requests
 [2026-08-30T05:41:50.652711] [kids-good-behavior] Day 25 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 429: Too Many Requests
+[2026-08-30T12:05:54.400038] [no-code-app-dev] Day 23 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 503: Service Unavailable
+[2026-08-30T12:09:03.917846] [no-code-app-dev] Day 25 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 503: Service Unavailable
+[2026-08-30T12:12:10.307073] [no-code-app-dev] Day 26 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 503: Service Unavailable
+[2026-08-30T12:15:16.273469] [no-code-app-dev] Day 27 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 429: Too Many Requests
