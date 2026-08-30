@@ -18206,6 +18206,33 @@
       ],
       "answer_key": "button click, fetch(), .json(), console.log(data)",
       "translations": {}
+    },
+    {
+      "day": 20,
+      "id": "day-020",
+      "date": "2026-08-30",
+      "title": "Day 20 — **Introduction to Web Accessibility: Making Websites Inclusive**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Web accessibility ensures websites work for everyone, including people with disabilities (visual, motor, cognitive). Learn WCAG guidelines, ARIA roles, keyboard navigation, and semantic HTML to create inclusive sites. Even small changes (like alt text, proper contrast) make a big difference."
+        ],
+        [
+          "Example",
+          "1. Add `alt=\"A red apple on a wooden table\"` to `<img>` for screen readers.\n2. Use `<button>` instead of `<div>` for clickable elements (keyboard accessible).\n3. Ensure color contrast (e.g., dark text on light background)."
+        ],
+        [
+          "Practice",
+          "Take your portfolio website and:\n- Add `alt` text to all images.\n- Test keyboard navigation (Tab/Enter should work everywhere).\n- Use semantic tags (`<header>`, `<nav>`, `<main>`)."
+        ],
+        [
+          "Mini Project",
+          "Create a simple accessible contact form with:\n- Labels for all inputs (`<label for=\"email\">`).\n- Error messages (e.g., \"Please enter a valid email\").\n- Focus styles for keyboard users (CSS `:focus`)."
+        ]
+      ],
+      "answer_key": "alt text, semantic html, keyboard navigation, aria labels",
+      "translations": {}
     }
   ],
   "excel-data-analysis": [
