@@ -1,1 +1,8 @@
-
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "app.web.fkc_trading_academy.twa",
+        "sha256_cert_fingerprints": ["BC:96:36:68:BA:D2:63:77:72:8E:7E:E2:A1:17:FE:73:96:86:11:F9:12:23:91:2E:6E:62:8E:99:BE:A0:17:B3"]
+      }
+    }]
