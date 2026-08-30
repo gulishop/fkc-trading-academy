@@ -22984,6 +22984,45 @@
       ],
       "answer_key": "client expectations, pricing structure, delivery timeline, advance payment",
       "translations": {}
+    },
+    {
+      "day": 21,
+      "id": "day-021",
+      "date": "2026-08-30",
+      "title": "Day 21 — **White Balance: True Colors Ko Capture Karna**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "White balance (WB) yeh control karta hai ke photo mein colors \"real\" dikhein ya na. Agar WB galat hai, to photo either too warm (yellow/orange) ya too cool (blue) ho sakti hai. Har light source (sunlight, bulb, shade) ka apna temperature hota hai—WB usko neutral white mein adjust karta hai."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Auto WB (AWB)",
+          "Camera ka default setting—lekin kabhi kabhi yeh bhi galat ho sakta hai (e.g., tungsten light mein).\n2."
+        ],
+        [
+          "Manual WB",
+          "Camera mein preset options use karo (Daylight, Cloudy, Shade, Tungsten, Fluorescent) ya custom WB set karo (white/grey card se).\n3."
+        ],
+        [
+          "Mobile trick",
+          "Snapseed mein \"WB\" tool use karke photo ke neutral area (e.g., white wall) ko tap karke colors adjust karo."
+        ],
+        [
+          "Practice",
+          "Apne phone/camera se ek white/grey object (e.g., A4 paper, grey card) ki photo lo—pehle AWB se, phir manual WB (preset ya custom) se. Compare karo ke konsi photo zyada natural colors dikha rahi hai."
+        ],
+        [
+          "Mini Project",
+          "Ek hi scene ki 3 photos lo:\n1. Daylight preset se\n2. Cloudy preset se\n3. Custom WB (white card se)\nPhir decide karo ke konsi setting sabse accurate colors dikha rahi hai."
+        ]
+      ],
+      "answer_key": "neutral white, warm, cool, tungsten",
+      "translations": {}
     }
   ],
   "voiceover-podcasting": [
