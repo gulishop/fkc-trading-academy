@@ -26546,6 +26546,49 @@
       ],
       "answer_key": "off karo, battery nikaal, silica gel, alcohol clean",
       "translations": {}
+    },
+    {
+      "day": 28,
+      "id": "day-028",
+      "date": "2026-08-30",
+      "title": "Day 28 — **Mobile Fingerprint Sensor Repair: Dead/Unresponsive Sensor ka Fix**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Mobile fingerprint sensor ka repair karna ek advanced skill hai jo hardware aur software donon ki understanding maangta hai. Sensor dead ho jane ya unresponsive ho jane ke common reasons mein damaged flex cable, oxidized contacts, ya corrupted software settings shamil hain. Is lesson mein hum sensor ko test karne, flex cable replace karne, aur software reset karne ke steps cover karenge."
+        ],
+        [
+          "Example",
+          "Agar kisi Redmi Note 8 ka fingerprint sensor kaam nahi kar raha:\n1."
+        ],
+        [
+          "Test",
+          "Phone ke *Settings > Additional Settings > Fingerprint* mein jake check karein ki sensor detect ho raha hai ya nahi.\n2."
+        ],
+        [
+          "Hardware Check",
+          "Back cover hata kar sensor ke flex cable ko disconnect kar ke dobara connect karein (reseat).\n3."
+        ],
+        [
+          "Software Reset",
+          "Phone ko *Fastboot mode* mein restart kar ke *Factory Reset* karein (backup le kar).\n4."
+        ],
+        [
+          "Flex Replacement",
+          "Agar cable damaged hai to naya flex cable install karein (step-by-step guide follow karein)."
+        ],
+        [
+          "Practice",
+          "Apne ek old phone ka fingerprint sensor check karein—agar unresponsive ho to:\n- Sensor ke flex cable ko disconnect/connect karein.\n- Phone restart karein.\n- Agar ab bhi kaam nahi kar raha to next step (flex replacement) ke liye prepare rahein."
+        ],
+        [
+          "Mini Project",
+          "Ek broken fingerprint sensor wale phone ko repair kar ke uska fingerprint unlocking test karein. Har step ka photo/video bana kar notes mein save karein."
+        ]
+      ],
+      "answer_key": "flex cable reseat, oxidized contacts clean, factory reset, new flex install",
+      "translations": {}
     }
   ],
   "kids-safety-education": [
