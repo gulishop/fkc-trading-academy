@@ -6124,6 +6124,53 @@
       ],
       "answer_key": "emotions recognize, pause rule, disciplined trades, emotional logbook",
       "translations": {}
+    },
+    {
+      "day": 28,
+      "id": "day-028",
+      "date": "2026-08-30",
+      "title": "Day 28 — **TradingView: Advanced Charting aur Indicators Se Behtar Analysis Kaise Karen**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "TradingView forex trading ka sabse powerful free tool hai. Isme advanced charts, 100+ indicators, drawing tools, aur real-time data milti hai. Aaj hum seekhenge ke kaise TradingView par professional jaise charts set karein, indicators add karein, aur unse behtar signals nikalain."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Chart Setup",
+          "TradingView.com khol kar kisi currency pair (e.g., EUR/USD) ka chart open karein.\n2."
+        ],
+        [
+          "Timeframe Select",
+          "1H ya 4H timeframe choose karein (short-term trading ke liye).\n3."
+        ],
+        [
+          "Indicators Add",
+          "\"Indicators\" button par click karke \"Moving Average (MA)\" aur \"RSI\" add karein.\n4."
+        ],
+        [
+          "Drawing Tools",
+          "\"Trend Line\" ya \"Fibonacci Retracement\" use karke support/resistance levels mark karein.\n5."
+        ],
+        [
+          "Alerts Set",
+          "Price kisi level par pahunchne par notification pane ke liye \"Create Alert\" use karein."
+        ],
+        [
+          "Practice",
+          "Apne TradingView account mein:\n- 1H timeframe par GBP/USD ka chart khol kar MA (14) aur RSI add karein.\n- 2-3 support/resistance levels draw karein.\n- Price jab kisi level par close ho to alert set karein."
+        ],
+        [
+          "Mini Project",
+          "Ek 10-minute ka video record karein jisme aap TradingView par:\n1. Ek currency pair ka chart khol rahe hain.\n2. 2 indicators add kar rahe hain.\n3. Ek trend line draw kar rahe hain.\n4. Alert set kar rahe hain.\nVideo ko apne trading group ya friend ko share karein aur feedback lijiye."
+        ]
+      ],
+      "answer_key": "chart open, ma/rsi add, support/resistance draw, alert set",
+      "translations": {}
     }
   ],
   "amazon-fba": [
