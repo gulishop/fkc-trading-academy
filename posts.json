@@ -21922,6 +21922,33 @@
       ],
       "answer_key": "seo optimized title, pinterest pin design, quora answer link, traffic report",
       "translations": {}
+    },
+    {
+      "day": 18,
+      "id": "day-018",
+      "date": "2026-08-30",
+      "title": "Day 18 — **Blog Ke Liye \"Email List\" Banana: Sabse Powerful Traffic Source (2024 Guide)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Email list banana bloggers ke liye sabse reliable aur long-term traffic source hai. Jab bhi Google algorithm badle ya social media algorithm change ho, aapka email list aapko directly audience tak pohancha deta hai. Yahan hum discuss karenge ki kaise free tools (Mailchimp, ConvertKit) ya WordPress plugins (FluentCRM) se email list build ki jaati hai."
+        ],
+        [
+          "Example",
+          "1. **Lead Magnet Banayein** (Freebie): Jaise \"SEO Checklist PDF\" ya \"Blogging Mistakes Guide\" jo readers ko email de kar mile.\n2. **Signup Form Add Karein**: WordPress mein \"OptinMonster\" plugin use karke popup ya sidebar form lagayein.\n3. **Automated Welcome Email**: Mailchimp mein \"Welcome Series\" setup karein jo subscribe karne par automatically chale."
+        ],
+        [
+          "Practice",
+          "Apne blog par ek **freebie** (lead magnet) create karein aur uske liye signup form add karein. (Jaise \"Free Blogging Tips PDF\" ka link share karke readers ko subscribe karne ke liye encourage karein)."
+        ],
+        [
+          "Mini Project",
+          "Apne blog par ek **popup form** add karein jo 10 seconds baad dikhe aur \"Free SEO Guide\" ke liye signup karne ka option ho."
+        ]
+      ],
+      "answer_key": "lead magnet, popup form, mailchimp, welcome email",
+      "translations": {}
     }
   ],
   "photography-editing": [
