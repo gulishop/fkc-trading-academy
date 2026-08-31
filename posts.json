@@ -13617,6 +13617,33 @@
       ],
       "answer_key": "airtable tables, softr/bubble ui, authentication, database connection",
       "translations": {}
+    },
+    {
+      "day": 28,
+      "id": "day-028",
+      "date": "2026-08-31",
+      "title": "Day 28 — **No-Code Freelancing: Paise Kamane ke 5 Real Ways**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "No-code freelancing ka matlab hai apne no-code skills ko bech kar paise kamana. Yahan aap website, app, automation ya AI tools banakar clients ko deliver karte hain. Freelancing platforms (Upwork, Fiverr) se lekar direct outreach tak sab kuch cover hota hai. Aaj hum 5 practical ways dekhenge jo beginner se intermediate students bhi implement kar sakte hain."
+        ],
+        [
+          "Example",
+          "Ek student ne **Framer** se portfolio website banai (2-3 pages) aur Upwork par \"I will build a responsive portfolio website in 24 hours\" offer kiya. Usne $200 charge kiye aur 3 clients ko deliver kiya. Har project 1-2 din mein complete hua."
+        ],
+        [
+          "Practice",
+          "1. Apne no-code tool (Framer/Webflow/Glide) ka ek demo project banayein (jaise ek dummy e-commerce site ya task manager app).\n2. Upwork/Fiverr par jayein aur \"I will build a [X] in no-code\" title se gig create karen. Price $50-$150 rakhein."
+        ],
+        [
+          "Mini Project",
+          "**\"No-Code Business Card Website\"** – Ek single-page website banayein jo aapki freelancing services promote kare (contact form + services list). Host karen Vercel par aur link ko apne social media par share karen."
+        ]
+      ],
+      "answer_key": "framer/webflow, $50-$150, upwork/fiverr, 24-hour delivery",
+      "translations": {}
     }
   ],
   "digital-marketing-seo": [
