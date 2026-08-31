@@ -29709,7 +29709,30 @@
         ]
       ],
       "answer_key": "",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن 23 — **سچ بولنا کیوں ضروری ہے؟**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "بچے، سچ بولنا ایک بہت ہی اچھا اور ایمان والا کام ہے۔ جب تم سچ بولتے ہو، تو لوگ تم پر بھروسا کرتے ہیں اور تمہارا دل بھی صاف رہتا ہے۔ جھوٹ بولنے سے صرف پریشانیاں ہی آتی ہیں، اس لیے ہمیشہ سچ ہی بولنا چاہیے۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "روہن نے ایک دن اپنے دوست کی سائیکل چرا لی۔ اس نے اپنے ابو سے جھوٹ بولا کہ سائیکل اس کی نہیں ہے۔ لیکن جب سائیکل کا مالک اس کو ڈھونڈتا ہوا آیا، تو روہن کو بہت شرم آئی۔ اس نے سچ بول دیا، اور سائیکل واپس کر دی۔ اس کے ابو نے اس کو معاف کر دیا اور روہن نے وعدہ کیا کہ آگے سے ہمیشہ سچ ہی بولے گا۔"
+            },
+            {
+              "label": "امی ابو کے ساتھ بات کریں",
+              "content": "\"بیٹا، اگر تم کسی غلطی کے بعد سچ بولو گے، تو کیا تمہیں لگتا ہے کہ ہم تم سے زیادہ پیار کریں گے؟\""
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "ہمیشہ سچ بولنا چاہیے، چاہے کچھ بھی ہو۔ سچ بولنا تمہارا ایمان ہے!"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 24,
@@ -29760,6 +29783,33 @@
         [
           "Yaad Rakhein",
           "Jab bhi intezar karna ho, deep breath lo aur socho ke \"Allah sabar walon ko pasand karte hain.\""
+        ]
+      ],
+      "answer_key": "",
+      "translations": {}
+    },
+    {
+      "day": 26,
+      "id": "day-026",
+      "date": "2026-08-31",
+      "title": "Day 26 — Apna saman khud sametna aur safai rakhna",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Beta, jab tum apne kapde, khilone ya kitaabain khud samete aur apne kamre ko saaf rakhte ho, toh tum ek responsible bachay ban jaate ho! Is se tumhara bhi dil khush rehta hai, aur ammi-abbu ko bhi madad milti hai. Har cheez ko uski jagah par rakhna seekhna bhi ek accha habit hai."
+        ],
+        [
+          "Chhoti Kahani",
+          "Rohan ne apne kamre mein khilone bikhaye the. Jab usne khud unhein saaf kiya, toh usko pata chala ke sab kuch alag-alag jagah par rakhne se usko sab cheezein dhundne mein bhi aasani hoti hai. Usne socha, \"Agar main roz thoda saametun, toh mera kamra hamesha saaf rahega!\""
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "Beta, tum apne kamre mein sabse pehle kya cheez sametoge? Kya tum sochte ho ke isse tumhara kamra kitna saaf ho jayega?"
+        ],
+        [
+          "Yaad Rakhein",
+          "Hamesha apni cheezein uski jagah par rakhna, taake tumhe unhein dhundne mein mushkil na ho!"
         ]
       ],
       "answer_key": "",
