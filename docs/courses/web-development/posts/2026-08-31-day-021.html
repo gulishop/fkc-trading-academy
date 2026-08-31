@@ -4,9 +4,9 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>Day 19 — **Introduction to APIs: Fetching Data from External Sources** — Web Development</title>
-<meta property="og:title" content="Day 19 — **Introduction to APIs: Fetching Data from External Sources** — Web Development">
-<meta property="og:description" content="FKC Trading Academy · Web Development · Day 19">
+<title>Day 21 — **CSS Animations aur Transitions: Web Pages Ko Zinda Banana** — Web Development</title>
+<meta property="og:title" content="Day 21 — **CSS Animations aur Transitions: Web Pages Ko Zinda Banana** — Web Development">
+<meta property="og:description" content="FKC Trading Academy · Web Development · Day 21">
 <meta property="og:image" content="../../../logo.png">
 <meta name="twitter:card" content="summary_large_image">
 <script>
@@ -252,16 +252,16 @@ function fkcToggleTheme(){
 }
 </script>
 
-    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "headline": "Day 19 — **Introduction to APIs: Fetching Data from External Sources**", "name": "Day 19 — **Introduction to APIs: Fetching Data from External Sources**", "description": "", "learningResourceType": "Lesson", "educationalLevel": "Beginner", "inLanguage": "ur", "isPartOf": {"@type": "Course", "name": "Web Development"}, "datePublished": "2026-08-29", "publisher": {"@type": "Organization", "name": "FKC Trading Academy"}}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "headline": "Day 21 — **CSS Animations aur Transitions: Web Pages Ko Zinda Banana**", "name": "Day 21 — **CSS Animations aur Transitions: Web Pages Ko Zinda Banana**", "description": "", "learningResourceType": "Lesson", "educationalLevel": "Beginner", "inLanguage": "ur", "isPartOf": {"@type": "Course", "name": "Web Development"}, "datePublished": "2026-08-31", "publisher": {"@type": "Organization", "name": "FKC Trading Academy"}}</script>
     <div class="top"><a href="../../../index.html">← FKC Trading Academy</a>
     <a href="../index.html" class="course-back-link">/ Web Development</a></div>
-    
-    <p class="muted">🌐 Web Development · Day 19</p>
-    <h1>Day 19 — **Introduction to APIs: Fetching Data from External Sources**</h1>
-    <p class="muted" style="margin:0 0 10px;">↩️ Pichla lesson: <strong>Day 18 — **Website Performance Optimization: Fast Loading Kaise Banaye**</strong> — aaj is se aage badhte hain.</p>
+    <span class="badge">Latest</span>
+    <p class="muted">🌐 Web Development · Day 21</p>
+    <h1>Day 21 — **CSS Animations aur Transitions: Web Pages Ko Zinda Banana**</h1>
+    <p class="muted" style="margin:0 0 10px;">↩️ Pichla lesson: <strong>Day 20 — **Introduction to Web Accessibility: Making Websites Inclusive**</strong> — aaj is se aage badhte hain.</p>
     <div class="card">
       
-      <img src="images/day-019.png" alt="Day 19 — **Introduction to APIs: Fetching Data from External Sources**" style="width:100%;border-radius:12px;margin-bottom:14px;">
+      <img src="images/day-021.png" alt="Day 21 — **CSS Animations aur Transitions: Web Pages Ko Zinda Banana**" style="width:100%;border-radius:12px;margin-bottom:14px;">
       
       <div class="lang-tabs">
     <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
@@ -278,21 +278,32 @@ function fkcToggleTheme(){
     }
     </script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
-      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>APIs (Application Programming Interfaces) allow websites to fetch data from external services like weather apps, news sites, or databases. Today, we’ll learn how to use JavaScript’s `fetch()` to get data from a public API (e.g., JSONPlaceholder for fake posts) and display it on a webpage. APIs are crucial for dynamic content without manual updates.</p><h3>Example</h3><p>1.</p><h3>API Endpoint</h3><p>Use `https://jsonplaceholder.typicode.com/posts` (returns 100 fake blog posts).<br>2.</p><h3>Fetch Data</h3><pre dir="ltr"><code>   fetch(&#x27;https://jsonplaceholder.typicode.com/posts&#x27;)
-     .then(response =&gt; response.json())
-     .then(data =&gt; {
-       data.slice(0, 5).forEach(post =&gt; {
-         document.body.innerHTML += `&lt;div&gt;&lt;h3&gt;${post.title}&lt;/h3&gt;&lt;p&gt;${post.body}&lt;/p&gt;&lt;/div&gt;`;
-       });
-     });
-   </code></pre><p>3.</p><h3>Error Handling</h3><p>Add `.catch(error =&gt; console.error(&#x27;Error:&#x27;, error))`.</p><h3>Practice</h3><p>Create a button with ID `loadPosts`. When clicked, fetch and display the first 3 posts from the same API above. Use `console.log()` to log the fetched data first.</p><h3>Mini Project</h3><p>Build a simple **&quot;Weather App&quot;** that fetches real-time weather data from a free API like [OpenWeatherMap](https://openweathermap.org/api) (requires free API key). Display the temperature and weather description for a user-input city.</p></div>
+      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>CSS Animations aur Transitions se hum web pages ko zyada interactive aur engaging bana sakte hain. Transitions se elements ki state change (jaise hover par color badalna) smooth hoti hai, jabke Animations se complex movements (jaise loading indicators ya sliding banners) bana sakte hain. Yeh performance par bhi zyada asar nahi dalte.</p><h3>Example</h3><p>1.</p><h3>Transition Example</h3><pre dir="ltr"><code>.button {
+  background: blue;
+  transition: background 0.3s ease;
+}
+.button:hover {
+  background: red;
+}</code></pre><p>2.</p><h3>Animation Example</h3><pre dir="ltr"><code>@keyframes slide-in {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+.banner {
+  animation: slide-in 1s forwards;
+}</code></pre><h3>Practice</h3><p>Apni existing website ke ek button ya div par hover karne par color change karne ke liye CSS transition add karo. Example:</p><pre dir="ltr"><code>.your-element {
+  background: green;
+  transition: background 0.5s ease;
+}
+.your-element:hover {
+  background: purple;
+}</code></pre><h3>Mini Project</h3><p>**&quot;Animated Card Flip&quot;** – Ek card banao jo hover par 180 degrees rotate ho aur back side par text show ho. Hint: `transform: rotateY(180deg)` aur `backface-visibility: hidden` use karo.</p></div>
       
       
       <div class="quiz-box no-print" id="fkc-quiz-box">
         <p><b>📝 Practice Check + Score</b></p>
         <p class="muted" style="font-size:.85em;">Lesson ka practice step apne alfaaz mein likhein. Keywords match hone par score milega.</p>
         <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
-        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"button click, fetch(), .json(), console.log(data)"'>✅ Check &amp; Score</button>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"transition, hover, animation, keyframes"'>✅ Check &amp; Score</button>
         <div class="quiz-result" id="fkc-quiz-result"></div>
         <div id="fkc-quiz-best" class="muted" style="font-size:.8em;margin-top:6px;"></div>
       </div>
@@ -328,23 +339,23 @@ function fkcToggleTheme(){
       }
       </script>
       
-      <div class="puzzle-box no-print" id="pz-web-development-19">
+      <div class="puzzle-box no-print" id="pz-web-development-21">
         <h3>🧩 Dimaghi Kasrat — Jode Milayein</h3>
-        <p class="puzzle-status" id="pz-web-development-19-status">Cards par tap karke jode (pairs) milayein.</p>
-        <div class="puzzle-grid" id="pz-web-development-19-grid"></div>
-        <div class="puzzle-win" id="pz-web-development-19-win">🎉 Shabaash! Sab jode mil gaye — thodi der aur seekhne ke liye tayyar?</div>
+        <p class="puzzle-status" id="pz-web-development-21-status">Cards par tap karke jode (pairs) milayein.</p>
+        <div class="puzzle-grid" id="pz-web-development-21-grid"></div>
+        <div class="puzzle-win" id="pz-web-development-21-win">🎉 Shabaash! Sab jode mil gaye — thodi der aur seekhne ke liye tayyar?</div>
       </div>
       <script>
       (function(){
-        var emojis = ["🍎", "🐶", "🌙", "🎨", "🔑", "🌸"];
+        var emojis = ["🍉", "🐱", "☀️", "🖊️", "🎁", "🐝"];
         var deck = emojis.concat(emojis);
         for (var i = deck.length - 1; i > 0; i--) {
           var j = Math.floor(Math.random() * (i + 1));
           var t = deck[i]; deck[i] = deck[j]; deck[j] = t;
         }
-        var grid = document.getElementById("pz-web-development-19-grid");
-        var statusEl = document.getElementById("pz-web-development-19-status");
-        var winEl = document.getElementById("pz-web-development-19-win");
+        var grid = document.getElementById("pz-web-development-21-grid");
+        var statusEl = document.getElementById("pz-web-development-21-status");
+        var winEl = document.getElementById("pz-web-development-21-win");
         var flipped = [], matchedCount = 0, moves = 0, lock = false;
         deck.forEach(function(val){
           var b = document.createElement("button");
@@ -386,24 +397,24 @@ function fkcToggleTheme(){
       
       <div class="no-print" style="margin-top:14px;">
         <label for="fkc-notes" class="muted" style="display:block;margin-bottom:4px;">📝 Apni Note (sirf aapke is browser mein save hoti hai):</label>
-        <textarea id="fkc-notes" data-slug="web-development" data-lesson="day-019"
+        <textarea id="fkc-notes" data-slug="web-development" data-lesson="day-021"
           placeholder="Yahan apni note likhein..." rows="3"
           style="width:100%;border-radius:10px;border:1px solid #ddd;padding:8px;font-family:inherit;"
           oninput="fkcSaveNote(this)"></textarea>
       </div>
     
       <div class="no-print">
-        <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Web%20Development%20%28Day%2019%29%0A%0ADay%2019%20%E2%80%94%20%2A%2AIntroduction%20to%20APIs%3A%20Fetching%20Data%20from%20External%20Sources%2A%2A%0A%0AConcept%3A%0AAPIs%20%28Application%20Programming%20Interfaces%29%20allow%20websites%20to%20fetch%20data%20from%20external%20services%20like%20weather%20apps%2C%20news%20sites%2C%20or%20databases.%20Today%2C%20we%E2%80%99ll%20learn%20how%20to%20use%20JavaScript%E2%80%99s%20%60fetch%28%29%60%20to%20get%20data%20from%20a%20public%20API%20%28e.g.%2C%20JSONPlaceholder%20for%20fake%20posts%29%20and%20display%20it%20on%20a%20webpage.%20APIs%20are%20crucial%20for%20dynamic%20content%20without%20manual%20updates.%0A%0AExample%3A%0A1.%0A%0AAPI%20Endpoint%3A%0AUse%20%60https%3A//jsonplaceholder.typicode.com/posts%60%20%28returns%20100%20fake%20blog%20posts%29.%0A2.%0A%0AFetch%20Data%3A%0A%60%60%60javascript%0A%20%20%20fetch%28%27https%3A//jsonplaceholder.typicode.com/posts%27%29%0A%20%20%20%20%20.then%28response%20%3D%3E%20response.json%28%29%29%0A%20%20%20%20%20.then%28data%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20data.slice%280%2C%205%29.forEach%28post%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20%20%20document.body.innerHTML%20%2B%3D%20%60%3Cdiv%3E%3Ch3%3E%24%7Bpost.title%7D%3C/h3%3E%3Cp%3E%24%7Bpost.body%7D%3C/p%3E%3C/div%3E%60%3B%0A%20%20%20%20%20%20%20%7D%29%3B%0A%20%20%20%20%20%7D%29%3B%0A%20%20%20%60%60%60%0A3.%0A%0AError%20Handling%3A%0AAdd%20%60.catch%28error%20%3D%3E%20console.error%28%27Error%3A%27%2C%20error%29%29%60.%0A%0APractice%3A%0ACreate%20a%20button%20with%20ID%20%60loadPosts%60.%20When%20clicked%2C%20fetch%20and%20display%20the%20first%203%20posts%20from%20the%20same%20API%20above.%20Use%20%60console.log%28%29%60%20to%20log%20the%20fetched%20data%20first.%0A%0AMini%20Project%3A%0ABuild%20a%20simple%20%2A%2A%22Weather%20App%22%2A%2A%20that%20fetches%20real-time%20weather%20data%20from%20a%20free%20API%20like%20%5BOpenWeatherMap%5D%28https%3A//openweathermap.org/api%29%20%28requires%20free%20API%20key%29.%20Display%20the%20temperature%20and%20weather%20description%20for%20a%20user-input%20city.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
+        <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Web%20Development%20%28Day%2021%29%0A%0ADay%2021%20%E2%80%94%20%2A%2ACSS%20Animations%20aur%20Transitions%3A%20Web%20Pages%20Ko%20Zinda%20Banana%2A%2A%0A%0AConcept%3A%0ACSS%20Animations%20aur%20Transitions%20se%20hum%20web%20pages%20ko%20zyada%20interactive%20aur%20engaging%20bana%20sakte%20hain.%20Transitions%20se%20elements%20ki%20state%20change%20%28jaise%20hover%20par%20color%20badalna%29%20smooth%20hoti%20hai%2C%20jabke%20Animations%20se%20complex%20movements%20%28jaise%20loading%20indicators%20ya%20sliding%20banners%29%20bana%20sakte%20hain.%20Yeh%20performance%20par%20bhi%20zyada%20asar%20nahi%20dalte.%0A%0AExample%3A%0A1.%0A%0ATransition%20Example%3A%0A%60%60%60css%0A.button%20%7B%0A%20%20background%3A%20blue%3B%0A%20%20transition%3A%20background%200.3s%20ease%3B%0A%7D%0A.button%3Ahover%20%7B%0A%20%20background%3A%20red%3B%0A%7D%0A%60%60%60%0A2.%0A%0AAnimation%20Example%3A%0A%60%60%60css%0A%40keyframes%20slide-in%20%7B%0A%20%20from%20%7B%20transform%3A%20translateX%28-100%25%29%3B%20%7D%0A%20%20to%20%7B%20transform%3A%20translateX%280%29%3B%20%7D%0A%7D%0A.banner%20%7B%0A%20%20animation%3A%20slide-in%201s%20forwards%3B%0A%7D%0A%60%60%60%0A%0APractice%3A%0AApni%20existing%20website%20ke%20ek%20button%20ya%20div%20par%20hover%20karne%20par%20color%20change%20karne%20ke%20liye%20CSS%20transition%20add%20karo.%20Example%3A%0A%60%60%60css%0A.your-element%20%7B%0A%20%20background%3A%20green%3B%0A%20%20transition%3A%20background%200.5s%20ease%3B%0A%7D%0A.your-element%3Ahover%20%7B%0A%20%20background%3A%20purple%3B%0A%7D%0A%60%60%60%0A%0AMini%20Project%3A%0A%2A%2A%22Animated%20Card%20Flip%22%2A%2A%20%E2%80%93%20Ek%20card%20banao%20jo%20hover%20par%20180%20degrees%20rotate%20ho%20aur%20back%20side%20par%20text%20show%20ho.%20Hint%3A%20%60transform%3A%20rotateY%28180deg%29%60%20aur%20%60backface-visibility%3A%20hidden%60%20use%20karo.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
         <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
       <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
-          data-slug="web-development" data-lesson="day-019"
+          data-slug="web-development" data-lesson="day-021"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <div class="lesson-nav"><a class="btn alt" href="2026-08-27-day-018.html">← Day 18 — **Website Performance Optimization: Fast Loading Kaise Banaye**</a><a class="btn alt" href="2026-08-30-day-020.html">Day 20 — **Introduction to Web Accessibility: Making Websites Inclusive** →</a></div>
+    <div class="lesson-nav"><a class="btn alt" href="2026-08-30-day-020.html">← Day 20 — **Introduction to Web Accessibility: Making Websites Inclusive**</a><span></span></div>
     <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
     
     
@@ -443,9 +454,9 @@ function fkcToggleTheme(){
           slug: "web-development",
           courseName: "Web Development",
           courseIcon: "\ud83c\udf10",
-          title: "Day 19 \u2014 **Introduction to APIs: Fetching Data from External Sources**",
-          href: 'courses/web-development/posts/2026-08-29-day-019.html',
-          day: 19
+          title: "Day 21 \u2014 **CSS Animations aur Transitions: Web Pages Ko Zinda Banana**",
+          href: 'courses/web-development/posts/2026-08-31-day-021.html',
+          day: 21
         }));
       } catch (e) {}
       var ta = document.getElementById('fkc-notes');

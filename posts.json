@@ -18606,6 +18606,41 @@
       ],
       "answer_key": "alt text, semantic html, keyboard navigation, aria labels",
       "translations": {}
+    },
+    {
+      "day": 21,
+      "id": "day-021",
+      "date": "2026-08-31",
+      "title": "Day 21 — **CSS Animations aur Transitions: Web Pages Ko Zinda Banana**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "CSS Animations aur Transitions se hum web pages ko zyada interactive aur engaging bana sakte hain. Transitions se elements ki state change (jaise hover par color badalna) smooth hoti hai, jabke Animations se complex movements (jaise loading indicators ya sliding banners) bana sakte hain. Yeh performance par bhi zyada asar nahi dalte."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Transition Example",
+          "```css\n.button {\n  background: blue;\n  transition: background 0.3s ease;\n}\n.button:hover {\n  background: red;\n}\n```\n2."
+        ],
+        [
+          "Animation Example",
+          "```css\n@keyframes slide-in {\n  from { transform: translateX(-100%); }\n  to { transform: translateX(0); }\n}\n.banner {\n  animation: slide-in 1s forwards;\n}\n```"
+        ],
+        [
+          "Practice",
+          "Apni existing website ke ek button ya div par hover karne par color change karne ke liye CSS transition add karo. Example:\n```css\n.your-element {\n  background: green;\n  transition: background 0.5s ease;\n}\n.your-element:hover {\n  background: purple;\n}\n```"
+        ],
+        [
+          "Mini Project",
+          "**\"Animated Card Flip\"** – Ek card banao jo hover par 180 degrees rotate ho aur back side par text show ho. Hint: `transform: rotateY(180deg)` aur `backface-visibility: hidden` use karo."
+        ]
+      ],
+      "answer_key": "transition, hover, animation, keyframes",
+      "translations": {}
     }
   ],
   "excel-data-analysis": [
