@@ -30942,7 +30942,30 @@
         ]
       ],
       "answer_key": "",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن ۲۴ — **شکلیں اور ان کے نام (اسکوائر، سرکل، اسٹار)**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسیپٹ",
+              "content": "آج ہم سیکھیں گے کہ ہر چیز کی ایک شکل ہوتی ہے! جیسے آپ کا دودھ کا گلاس، آپ کی روٹی، یا آپ کی پینسل کا باکس—ہر چیز ایک نہ ایک شکل میں ہوتی ہے۔ یہ شکلیں ہمیں چیزوں کو پہچاننے میں مدد کرتی ہیں۔ اور سب سے مزیدار بات؟ ہر شکل کا ایک خاص نام ہوتا ہے!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "آپ کے دوست ایان نے ایک خوبصورت گریٹنگ کارڈ بنایا۔ اس نے ایک *اسکوائر* (چوکور) میں ایک *سرکل* (گول) اور *اسٹار* (ستارہ) بنائے۔ ایان نے کہا، \"یہ اسٹار ممی کو پسند آئے گا!\" آپ بھی اپنی فیورٹ شکلیں بنا کر ایک خوبصورت ڈرائنگ بنا سکتے ہیں!"
+            },
+            {
+              "label": "امی ابو کے ساتھ بات کریں",
+              "content": "\"بیٹا، اگر تمھیں اسکول میں کسی چیز کی شکل پہچاننے میں مشکل ہو، تو تم کیا کرو گے؟\""
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "ہر چیز کی شکل کا نام یاد رکھنا—چاہے وہ *اسکوائر*، *سرکل*، یا *اسٹار* ہو۔ لیکن یاد رکھنا، آپ کے جسم کی شکل صرف آپ کی ہے، اور کوئی بھی آپ کو 'نا' کہنے کا حق نہیں رکھتا! اگر کوئی عجیب بات ہو، تو فوراً ہمیں بتانا۔ 💖"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 25,
@@ -30966,6 +30989,56 @@
         [
           "Yaad Rakhein",
           "Tumhara jism sirf tumhara hai. Agar koi tumse aise pooche ke tum apna naam ya ghar ka pata na do, toh foran ammi/abbu ya kisi trusted bade insaan ko batana hai."
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن 25 — \"اپنا نام اور گھر کا پتہ بولنا سیکھنا\"",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "بچے، آج ہم سیکھیں گے کہ اپنا نام اور گھر کا پتہ کیسے بولنا ہے۔ یہ ضروری ہے کہ تم اپنا نام اور گھر کا پتہ اچھی طرح یاد رکھو، تاکہ اگر تم کبھی اکیلا ہو، تو تم اپنے آپ کو پہچانا سکو اور اپنے گھر تک پہنچ سکو۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "ایک دن، علی پارک میں کھیل رہا تھا۔ اس نے ایک نئی بال دیکھی اور اس کے پیچھے بھاگنا شروع کر دیا۔ اکیلا رہ گیا تو اس کو یاد آیا کہ اس کو اپنا نام اور گھر کا پتہ یاد رکھنا ہے۔ اس نے اپنے دوست سے پوچھا، اور وہ اس کو گھر لے گیا۔"
+            },
+            {
+              "label": "امی ابو کے ساتھ بات کریں",
+              "content": "\"بیٹا، تمہارا نام کیا ہے؟ اور تمہارا گھر کہاں ہے؟\""
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمہارا جسم صرف تمہارا ہے۔ اگر کوئی تم سے ایسے پوچھے کہ تم اپنا نام یا گھر کا پتہ نہ دو، تو فوراً امی/ابو یا کسی قابلِ اعتماد بڑے انسان کو بتانا ہے۔"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "day": 26,
+      "id": "day-026",
+      "date": "2026-08-31",
+      "title": "Day 26 — **Din aur Mausam ke Saath Pyar Se Milna**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke din kaun-koun se hain aur mausam kaise hota hai. Har din alag hota hai, aur har mausam alag rang layega. Yeh sab humare liye khushiyon ka hissa hai!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Rohan ko subah uthte hi pata chalta hai ke aaj *Monday* hai. \"Maa, Monday kya hota hai?\" poochta hai. Maa muskurati hain, \"Beta, Monday pehla din hai jisme hum school jaate hain aur naye dost milte hain. Aaj mausam bhi dhoop wala hai, toh tum apna cap pehen lena!\""
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, tumhe sabse zyada kaunsa din pasand hai aur kyun?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Har mausam alag hai, par tumhara jism sirf tumhara hai. Agar koi cheez ajeeb lage, toh chup mat rehna—ammi-abbu ko zaroor batana!"
         ]
       ],
       "answer_key": "",
