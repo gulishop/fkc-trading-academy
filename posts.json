@@ -23469,7 +23469,80 @@
         ]
       ],
       "answer_key": "neutral white, warm, cool, tungsten",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن 21 — **وائٹ بیلنس: اصل رنگوں کو کیپچر کرنا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسیپٹ",
+              "content": "وائٹ بیلنس (WB) یہ کنٹرول کرتا ہے کہ فوٹو میں رنگ \"حقیقی\" نظر آئیں یا نہیں۔ اگر WB غلط ہے، تو تصویر یا تو بہت زیادہ وارم (پیلی/نارنجی) یا بہت زیادہ کول (نیلی) ہو سکتی ہے۔ ہر لائٹ سورس (سورج کی روشنی، بلب، سایہ) کا اپنا ٹمپریچر ہوتا ہے—WB اس کو نیوٹرل سفید میں ایڈجسٹ کرتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1.\n- آٹو WB (AWB): کیمرے کی ڈیفالٹ سیٹنگ—لیکن کبھی کبھی یہ بھی غلط ہو سکتی ہے (مثلاً ٹنگسٹن لائٹ میں)۔\n2.\n- مینوئل WB: کیمرے میں پری سیٹ آپشنز استعمال کریں (Daylight, Cloudy, Shade, Tungsten, Fluorescent) یا کسٹم WB سیٹ کریں (وائٹ/گرے کارڈ سے)۔\n3.\n- موبائل ٹرک: Snapseed میں \"WB\" ٹول استعمال کر کے فوٹو کے نیوٹرل ایریا (مثلاً سفید دیوار) پر ٹیپ کر کے رنگ ایڈجسٹ کریں۔"
+            },
+            {
+              "label": "مشق",
+              "content": "اپنے فون/کیمرے سے ایک سفید/گرے چیز (مثلاً A4 پیپر، گرے کارڈ) کی فوٹو لیں—پہلے AWB سے، پھر مینوئل WB (پری سیٹ یا کسٹم) سے۔ موازنہ کریں کہ کون سی فوٹو زیادہ قدرتی رنگ دکھا رہی ہے۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک ہی منظر کی 3 تصاویر لیں:\n1. Daylight پری سیٹ سے\n2. Cloudy پری سیٹ سے\n3. کسٹم WB (وائٹ کارڈ سے)\nپھر فیصلہ کریں کہ کون سی سیٹنگ سب سے درست رنگ دکھا رہی ہے۔"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "day": 22,
+      "id": "day-022",
+      "date": "2026-08-31",
+      "title": "Day 22 — **Leading Lines: Composition Ko Dynamic Banana**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Leading lines wo visual elements hote hain jo viewer ki nazar ko photo ke main subject ki taraf guide karte hain. Ye lines natural (sadak, nadi, rail tracks) ya man-made (buildings, fences) ho sakti hain. Inka istemal photo ko depth aur movement ka ehsaas deta hai, aur composition ko zyada engaging banata hai."
+        ],
+        [
+          "Example",
+          "Ek road photo lo jo horizon tak chali gayi hai. Road ki lines viewer ki nazar ko photo ke center (mountain view) tak le jati hain. Alag alag angles try karen: low angle se lines zyada dramatic lagti hain, high angle se lines flat ho jati hain."
+        ],
+        [
+          "Practice",
+          "Apni photo library se 3 photos nikalein jinme leading lines clear nazar aati hain. Har photo ke liye yeh bataye:\n1. Line ka type (straight, curved, zigzag)\n2. Line viewer ko kahan le jati hai\n3. Line photo ko kaise dynamic banati hai"
+        ],
+        [
+          "Mini Project",
+          "Ek photo shoot plan karen jisme leading lines ka istemal ho. Example:\n- Urban: Building ki stairs ya escalator\n- Nature: Nadi ya path\n- Abstract: Shadows ya reflections\nPhoto ko edit karen (cropping, contrast adjust) taake lines aur clear ho jayein."
+        ]
+      ],
+      "answer_key": "straight lines, horizon, depth, dynamic",
+      "translations": {
+        "ur": {
+          "title": "دن 22 — **لیڈنگ لائنز: کمپوزیشن کو ڈائنامک بنانا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسیپٹ",
+              "content": "لیڈنگ لائنز وہ بصری عناصر ہوتے ہیں جو دیکھنے والے کی نظر کو تصویر کے مرکزی موضوع کی طرف گائیڈ کرتے ہیں۔ یہ لائنز قدرتی (سڑک، ندی، ریل کی پٹریاں) یا انسان ساختہ (عمارتیں، باڑ) ہو سکتی ہیں۔ ان کا استعمال تصویر کو گہرائی اور حرکت کا احساس دیتا ہے، اور کمپوزیشن کو زیادہ پرکشش بناتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک سڑک کی تصویر لیں جو افق تک جا رہی ہو۔ سڑک کی لائنیں دیکھنے والے کی نظر کو تصویر کے مرکز (پہاڑ کے منظر) تک لے جاتی ہیں۔ مختلف زاویے آزمائیں: نچلے زاویے (لو اینگل) سے لائنیں زیادہ ڈرامائی لگتی ہیں، اونچے زاویے (ہائی اینگل) سے لائنیں سپاٹ ہو جاتی ہیں۔"
+            },
+            {
+              "label": "مشق",
+              "content": "اپنی فوٹو لائبریری سے 3 تصاویر نکالیں جن میں لیڈنگ لائنز واضح نظر آتی ہوں۔ ہر تصویر کے لیے یہ بتائیں:\n1. لائن کی قسم (سیدھی، خم دار، ٹیڑھی میڑھی/زگ زیگ)\n2. لائن دیکھنے والے کو کہاں لے جاتی ہے\n3. لائن تصویر کو کیسے ڈائنامک بناتی ہے"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک فوٹو شوٹ کا منصوبہ بنائیں جس میں لیڈنگ لائنز کا استعمال ہو۔ مثال کے طور پر:\n- اربن (شہری): عمارت کی سیڑھیاں یا برقی زینہ (ایسکلیٹر)\n- نیچر (فطرت): ندی یا پگڈنڈی\n- ایبسٹریکٹ (تجریدی): سائے یا انعکاس\nتصویر کو ایڈٹ کریں (کراپنگ، کنٹراسٹ ایڈجسٹ) تاکہ لائنیں اور واضح ہو جائیں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "voiceover-podcasting": [
