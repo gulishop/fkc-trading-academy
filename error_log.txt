@@ -1352,3 +1352,6 @@
 [2026-08-31T14:17:30.163336] [no-code-app-dev] Day 26 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 503: Service Unavailable
 [2026-08-31T14:20:50.015508] [no-code-app-dev] Day 27 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 429: Too Many Requests
 [2026-08-31T14:23:55.542711] [no-code-app-dev] Day 28 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 429: Too Many Requests
+[2026-08-31T17:19:05.294479] [mobile-repairing] Day 27 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 429: Too Many Requests
+[2026-08-31T17:22:53.547685] [mobile-repairing] Day 28 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 429: Too Many Requests
+[2026-08-31T17:25:59.434347] [mobile-repairing] Day 29 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 429: Too Many Requests
