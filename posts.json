@@ -17460,7 +17460,80 @@
         ]
       ],
       "answer_key": "save dictionary to file, load and print author name",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن 17 — JSON ڈیٹا کے ساتھ کام کرنا: پڑھنا، لکھنا، اور پارس کرنا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "JSON (جاوا اسکرپٹ آبجیکٹ نوٹیشن) ایک ہلکا پھلکا ڈیٹا فارمیٹ ہے جو ہر جگہ استعمال ہوتا ہے—APIs، کنفیگ فائلز، اور ڈیٹا اسٹوریج۔ پائتھن کا بلٹ ان `json` ماڈیول آپ کو پائتھن ڈکشنریز کو JSON اسٹرنگز (`json.dump()`/`json.dumps()`) میں اور واپس (`json.load()`/`json.loads()`) تبدیل کرنے دیتا ہے۔ یہ ویب ایپس، APIs، اور کنفیگ مینجمنٹ کے لیے نہایت ضروری ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "```python\nimport json\n\n# Writing to a JSON file\ndata = {\"name\": \"Ali\", \"age\": 25, \"city\": \"Lahore\"}\nwith open(\"user.json\", \"w\") as file:\n    json.dump(data, file, indent=4)  # indent for pretty formatting\n\n# Reading from a JSON file\nwith open(\"user.json\", \"r\") as file:\n    loaded_data = json.load(file)\nprint(loaded_data[\"name\"])  # Output: Ali\n```"
+            },
+            {
+              "label": "مشق",
+              "content": "3 کلید-قیمت (key-value) کے جوڑوں والی ایک ڈکشنری بنائیں (مثلاً `{\"book\": \"Python Crash Course\", \"author\": \"Eric Matthes\", \"year\": 2019}`)۔ اسے `book.json` میں محفوظ کریں اور پھر مصنف کا نام پرنٹ کرنے کے لیے اسے دوبارہ پڑھیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک سادہ کانٹیکٹ بک بنائیں جو:\n1. صارف کا ان پٹ (نام، فون، ای میل) لے اور اسے `contacts.json` میں محفوظ کرے۔\n2. صارفین کو نام کے ذریعے رابطہ تلاش کرنے اور ان کی تفصیلات دکھانے کی سہولت فراہم کرے۔"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "day": 18,
+      "id": "day-018",
+      "date": "2026-08-31",
+      "title": "Day 18 — Web Scraping Basics with Python",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke kaise Python ki madad se websites se data extract kar sakte hain. Web scraping se hum automatic tareeke se information collect kar sakte hain jaise product prices, news articles, ya contact details. Iske liye hum `requests` aur `BeautifulSoup` libraries use karenge."
+        ],
+        [
+          "Example",
+          "1. Pehle `pip install requests beautifulsoup4` kar ke libraries install kar lein.\n2. Ek simple webpage ka HTML fetch karne ke liye:\n```python\nimport requests\nfrom bs4 import BeautifulSoup\n\nurl = \"https://example.com\"\nresponse = requests.get(url)\nsoup = BeautifulSoup(response.text, 'html.parser')\nprint(soup.prettify())  # Page ka pura HTML structure\n```\n3. Ab kisi specific element (jaise sabse pehla `<h1>`) ko extract karne ke liye:\n```python\nheading = soup.find('h1').text\nprint(heading)\n```"
+        ],
+        [
+          "Practice",
+          "Ek chhoti si script bana aur `https://books.toscrape.com/` se sabse pehli book ka title aur price print karwa."
+        ],
+        [
+          "Mini Project",
+          "Ek script bana jo `https://quotes.toscrape.com/` se sabhi quotes aur unke authors ko extract karke ek dictionary mein store kar de."
+        ]
+      ],
+      "answer_key": "requests.get(), beautifulsoup, soup.find(), .text",
+      "translations": {
+        "ur": {
+          "title": "دن 18 — پائتھن کے ساتھ ویب اسکریپنگ کے بنیادی اصول",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج ہم سیکھیں گے کہ کیسے Python کی مدد سے ویب سائٹس سے ڈیٹا حاصل (extract) کر سکتے ہیں۔ ویب اسکریپنگ سے ہم خودکار طریقے سے معلومات اکٹھی کر سکتے ہیں جیسے پروڈکٹ کی قیمتیں، خبروں کے مضامین، یا رابطے کی تفصیلات۔ اس کے لیے ہم `requests` اور `BeautifulSoup` لائبریریز استعمال کریں گے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1. پہلے `pip install requests beautifulsoup4` کر کے لائبریریز انسٹال کر لیں۔\n2. ایک سادہ ویب پیج کا HTML لانے کے لیے:\n```python\nimport requests\nfrom bs4 import BeautifulSoup\n\nurl = \"https://example.com\"\nresponse = requests.get(url)\nsoup = BeautifulSoup(response.text, 'html.parser')\nprint(soup.prettify())  # پیج کا پورا HTML اسٹرکچر\n```\n3. اب کسی مخصوص ایلیمنٹ (جیسے سب سے پہلا `<h1>`) کو حاصل کرنے کے لیے:\n```python\nheading = soup.find('h1').text\nprint(heading)\n```"
+            },
+            {
+              "label": "مشق",
+              "content": "ایک چھوٹی سی اسکرپٹ بنائیں اور `https://books.toscrape.com/` سے سب سے پہلی کتاب کا عنوان اور قیمت پرنٹ کروائیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک اسکرپٹ بنائیں جو `https://quotes.toscrape.com/` سے تمام اقوال اور ان کے مصنفین کو حاصل کر کے ایک ڈکشنری میں محفوظ کر دے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "web-development": [

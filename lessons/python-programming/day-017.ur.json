@@ -1,0 +1,22 @@
+{
+  "title": "دن 17 — JSON ڈیٹا کے ساتھ کام کرنا: پڑھنا، لکھنا، اور پارس کرنا",
+  "preamble": "",
+  "sections": [
+    {
+      "label": "تصور",
+      "content": "JSON (جاوا اسکرپٹ آبجیکٹ نوٹیشن) ایک ہلکا پھلکا ڈیٹا فارمیٹ ہے جو ہر جگہ استعمال ہوتا ہے—APIs، کنفیگ فائلز، اور ڈیٹا اسٹوریج۔ پائتھن کا بلٹ ان `json` ماڈیول آپ کو پائتھن ڈکشنریز کو JSON اسٹرنگز (`json.dump()`/`json.dumps()`) میں اور واپس (`json.load()`/`json.loads()`) تبدیل کرنے دیتا ہے۔ یہ ویب ایپس، APIs، اور کنفیگ مینجمنٹ کے لیے نہایت ضروری ہے۔"
+    },
+    {
+      "label": "مثال",
+      "content": "```python\nimport json\n\n# Writing to a JSON file\ndata = {\"name\": \"Ali\", \"age\": 25, \"city\": \"Lahore\"}\nwith open(\"user.json\", \"w\") as file:\n    json.dump(data, file, indent=4)  # indent for pretty formatting\n\n# Reading from a JSON file\nwith open(\"user.json\", \"r\") as file:\n    loaded_data = json.load(file)\nprint(loaded_data[\"name\"])  # Output: Ali\n```"
+    },
+    {
+      "label": "مشق",
+      "content": "3 کلید-قیمت (key-value) کے جوڑوں والی ایک ڈکشنری بنائیں (مثلاً `{\"book\": \"Python Crash Course\", \"author\": \"Eric Matthes\", \"year\": 2019}`)۔ اسے `book.json` میں محفوظ کریں اور پھر مصنف کا نام پرنٹ کرنے کے لیے اسے دوبارہ پڑھیں۔"
+    },
+    {
+      "label": "منی پروجیکٹ",
+      "content": "ایک سادہ کانٹیکٹ بک بنائیں جو:\n1. صارف کا ان پٹ (نام، فون، ای میل) لے اور اسے `contacts.json` میں محفوظ کرے۔\n2. صارفین کو نام کے ذریعے رابطہ تلاش کرنے اور ان کی تفصیلات دکھانے کی سہولت فراہم کرے۔"
+    }
+  ]
+}

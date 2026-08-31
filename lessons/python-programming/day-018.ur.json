@@ -1,0 +1,22 @@
+{
+  "title": "دن 18 — پائتھن کے ساتھ ویب اسکریپنگ کے بنیادی اصول",
+  "preamble": "",
+  "sections": [
+    {
+      "label": "تصور",
+      "content": "آج ہم سیکھیں گے کہ کیسے Python کی مدد سے ویب سائٹس سے ڈیٹا حاصل (extract) کر سکتے ہیں۔ ویب اسکریپنگ سے ہم خودکار طریقے سے معلومات اکٹھی کر سکتے ہیں جیسے پروڈکٹ کی قیمتیں، خبروں کے مضامین، یا رابطے کی تفصیلات۔ اس کے لیے ہم `requests` اور `BeautifulSoup` لائبریریز استعمال کریں گے۔"
+    },
+    {
+      "label": "مثال",
+      "content": "1. پہلے `pip install requests beautifulsoup4` کر کے لائبریریز انسٹال کر لیں۔\n2. ایک سادہ ویب پیج کا HTML لانے کے لیے:\n```python\nimport requests\nfrom bs4 import BeautifulSoup\n\nurl = \"https://example.com\"\nresponse = requests.get(url)\nsoup = BeautifulSoup(response.text, 'html.parser')\nprint(soup.prettify())  # پیج کا پورا HTML اسٹرکچر\n```\n3. اب کسی مخصوص ایلیمنٹ (جیسے سب سے پہلا `<h1>`) کو حاصل کرنے کے لیے:\n```python\nheading = soup.find('h1').text\nprint(heading)\n```"
+    },
+    {
+      "label": "مشق",
+      "content": "ایک چھوٹی سی اسکرپٹ بنائیں اور `https://books.toscrape.com/` سے سب سے پہلی کتاب کا عنوان اور قیمت پرنٹ کروائیں۔"
+    },
+    {
+      "label": "منی پروجیکٹ",
+      "content": "ایک اسکرپٹ بنائیں جو `https://quotes.toscrape.com/` سے تمام اقوال اور ان کے مصنفین کو حاصل کر کے ایک ڈکشنری میں محفوظ کر دے۔"
+    }
+  ]
+}
