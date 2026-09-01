@@ -27349,6 +27349,33 @@
       ],
       "answer_key": "power ic remove, flux apply, soldering, test",
       "translations": {}
+    },
+    {
+      "day": 30,
+      "id": "day-030",
+      "date": "2026-09-01",
+      "title": "Day 30 — **AI-Powered Mobile Repair Assistant: Chatbot & Automation Setup**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "AI tools jaise chatbots aur automation software se apne mobile repair business ko 24/7 customer support, appointment booking, aur troubleshooting guide provide kar sakte hain. Isse time bachta hai, customer satisfaction badhti hai, aur manual work kam hota hai. Aaj hum seekhenge ki kaise ek simple AI assistant banaya ja sakta hai jo common mobile issues ke solutions bataye aur repair process ko streamline kare."
+        ],
+        [
+          "Example",
+          "Ek customer aapki website par aata hai aur poochta hai \"Mera mobile charging nahi ho raha, kya karun?\" Toh AI assistant usko yeh steps batayega:\n1. Charging port clean karen (Day 24 se yaad rakhna).\n2. Battery health check karen (agar removable hai).\n3. Charging cable aur adapter test karen.\n4. Agar problem solve na ho, toh repair appointment book karen."
+        ],
+        [
+          "Practice",
+          "Apne ek common mobile issue (jaise \"WiFi not connecting\" ya \"Touchscreen not working\") ke liye 5-7 simple troubleshooting steps likhein jo ek AI assistant user ko bataye. Har step ko \"Step 1:\", \"Step 2:\" format mein likhein."
+        ],
+        [
+          "Mini Project",
+          "Ek simple Google Forms ya Typeform banayein jismein customers apne mobile issue select kar sakte hain (jaise \"Screen broken\", \"Battery drain\", \"Software crash\"). Form submit karne ke baad, unko automatically ek email ya WhatsApp message mile jismein AI assistant ke steps hon (example ke hisaab se)."
+        ]
+      ],
+      "answer_key": "port clean, battery check, cable test, appointment book",
+      "translations": {}
     }
   ],
   "kids-safety-education": [
