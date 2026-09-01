@@ -14316,6 +14316,69 @@
           ]
         }
       }
+    },
+    {
+      "day": 8,
+      "id": "day-008",
+      "date": "2026-09-01",
+      "title": "Day 8 — **YouTube SEO: Thumbnails aur Titles Se Views Badhaein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "YouTube SEO sirf video content ka hai—thumbnails aur titles bhi search aur click-through rate (CTR) par bade asar dalte hain. Ek achha thumbnail aur title video ko \"clickable\" banata hai, chahe content kitna bhi accha ho. Aaj seekhein ke kaise **high-CTR thumbnails** banayein aur **SEO-friendly titles** likhein jo algorithm ko bhi impress karein."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Thumbnail Design",
+          "-"
+        ],
+        [
+          "Contrast",
+          "Background se text/face alag ho (e.g., white text on dark bg ya vice versa).\n   -"
+        ],
+        [
+          "Emotion",
+          "Ek cheez jo dekhne wale ko \"yeh dekh!\" kahe—jaise surprise, curiosity, ya urgency.\n   -"
+        ],
+        [
+          "Text",
+          "Max 3-5 words, bold font (e.g., \"I Tried $100 vs $1000 Lighting!\").\n   -"
+        ],
+        [
+          "Tools",
+          "Canva (pre-made templates), Photoshop, ya CapCut ka \"Text\" tool.\n\n2."
+        ],
+        [
+          "Title Writing",
+          "-"
+        ],
+        [
+          "Formula",
+          "[Keyword] + [Promise/Result] + [Curiosity Hook]\n     - Example: *\"I Spent 24 Hours in a $1M Mansion… Here’s What Happened\"* (vs *\"Mansion Tour\"*).\n   -"
+        ],
+        [
+          "Keywords",
+          "YouTube search bar mein type karke \"suggested searches\" dekhein (e.g., \"how to edit videos in CapCut\" → \"how to edit videos in CapCut for beginners 2024\").\n   -"
+        ],
+        [
+          "Length",
+          "60 characters tak (mobile pe full show hota hai)."
+        ],
+        [
+          "Practice",
+          "Apne **Day 7 ke Short-Form video** (ya kisi existing video) ka **3 different thumbnail + title** banayein. Har ek mein:\n- Ek \"high-contrast\" design ho.\n- Ek \"curiosity hook\" ho (e.g., \"You Won’t Believe What Happens Next!\").\n- Ek \"keyword-rich\" title ho (e.g., \"CapCut Se Viral Reels Kaise Banayein? 5 Tips 2024\")."
+        ],
+        [
+          "Mini Project",
+          "Ek **YouTube video idea** choose karke uska **thumbnail + title** banayein jo **CTR 5%+** paida kar sake. (Hint: \"Top 10\" ya \"Mistakes\" wale titles zyada click hote hain.)"
+        ]
+      ],
+      "answer_key": "high contrast, curiosity hook, keyword placement, mobile-friendly",
+      "translations": {}
     }
   ],
   "print-on-demand": [
