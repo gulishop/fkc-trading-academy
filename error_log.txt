@@ -1376,3 +1376,5 @@
 [2026-09-01T02:09:55.973708] [kids-pg] Day 20 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 429: Too Many Requests
 [2026-09-01T02:12:51.560561] [kids-pg] Day 21 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 429: Too Many Requests
 [2026-09-01T02:15:56.300236] [kids-pg] Day 22 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 429: Too Many Requests
+[2026-09-01T03:16:53.660766] [kids-nursery] Day 26 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 429: Too Many Requests
+[2026-09-01T03:19:58.585034] [kids-nursery] Day 27 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 429: Too Many Requests
