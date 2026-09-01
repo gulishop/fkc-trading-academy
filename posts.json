@@ -13698,6 +13698,41 @@
       ],
       "answer_key": "framer/webflow, $50-$150, upwork/fiverr, 24-hour delivery",
       "translations": {}
+    },
+    {
+      "day": 29,
+      "id": "day-029",
+      "date": "2026-09-01",
+      "title": "Day 29 — **No-Code Hosting aur Domain: Apni Website Ko Live Karein (Framer/Webflow Se)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Hosting aur domain kya hote hain? Hosting ek \"jagah\" hai jahan aapki website ki files rakhi jati hain, jabki domain us jagah ka address hai (jaise `www.tumharasite.com`). No-code tools jaise Framer/Webflow in dono ko integrate karte hain. Free hosting bhi available hai (Framer ka built-in hosting), lekin custom domain ke liye paid hosting zaroori hoti hai."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Framer/Webflow se hosting setup",
+          "- Framer/Webflow project publish karo.\n   - \"Publish\" button press karo — yeh automatically hosting provide karta hai.\n   - Agar custom domain chahiye (jaise `tumharasite.com`), to domain registrar (GoDaddy, Namecheap) se domain khareedo aur Framer/Webflow ke DNS settings mein add karo.\n\n2."
+        ],
+        [
+          "Free hosting ka istemal",
+          "- Framer ka free plan: `tumharaproject.framer.app` subdomain milega.\n   - Webflow ka free hosting: `tumharaproject.webflow.io`."
+        ],
+        [
+          "Practice",
+          "Apne Framer/Webflow project ko publish karo (chahe free subdomain ya custom domain ke saath). Agar custom domain nahi hai, to pehle `tumharaproject.framer.app` ya `tumharaproject.webflow.io` par check karo."
+        ],
+        [
+          "Mini Project",
+          "Ek 1-pager portfolio website banayein (Framer/Webflow se) aur use live karein. Isme:\n- Apna naam, skills, aur 1-2 project links add karein.\n- Free hosting use karein (subdomain)."
+        ]
+      ],
+      "answer_key": "publish button, dns settings, subdomain, custom domain",
+      "translations": {}
     }
   ],
   "digital-marketing-seo": [
