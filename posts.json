@@ -18433,6 +18433,33 @@
           ]
         }
       }
+    },
+    {
+      "day": 19,
+      "id": "day-019",
+      "date": "2026-09-01",
+      "title": "Day 19 — Working with APIs: Fetching and Using External Data",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "APIs (Application Programming Interfaces) allow your Python programs to communicate with external services like weather apps, social media, or payment gateways. We'll learn how to make HTTP requests to APIs, handle responses (JSON/XML), and extract useful data using the `requests` library."
+        ],
+        [
+          "Example",
+          "1. Install `requests` (if not installed): `pip install requests`\n2. Fetch data from a free API (e.g., JSONPlaceholder for fake posts):\n   ```python\n   import requests\n   response = requests.get(\"https://jsonplaceholder.typicode.com/posts/1\")\n   data = response.json()  # Convert JSON response to Python dict\n   print(data[\"title\"])    # Access specific data\n   ```\n3. Handle errors (e.g., invalid URL):\n   ```python\n   try:\n       response = requests.get(\"https://invalid.url\")\n       response.raise_for_status()  # Raises error for bad status codes\n   except requests.exceptions.RequestException as e:\n       print(\"Error:\", e)\n   ```"
+        ],
+        [
+          "Practice",
+          "Use the [OpenWeatherMap API](https://openweathermap.org/api) (sign up for a free API key) to fetch and print the current temperature of your city. Hint: Use `requests.get()` with the API endpoint and parse the JSON response."
+        ],
+        [
+          "Mini Project",
+          "Build a **5-day weather forecast CLI tool** that:\n1. Takes a city name as input.\n2. Fetches weather data from OpenWeatherMap API.\n3. Prints the forecast in a readable format (e.g., \"Day 1: Sunny, 25°C\")."
+        ]
+      ],
+      "answer_key": "api request, json parsing, error handling, http status codes",
+      "translations": {}
     }
   ],
   "web-development": [
