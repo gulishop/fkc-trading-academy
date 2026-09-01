@@ -11745,7 +11745,30 @@
         ]
       ],
       "answer_key": "template, checklist, automation, delegation",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن چھبیس — فری لانسنگ میں \"اسکیلنگ\" کیسے کریں: ایک کلائنٹ سے نہیں، متعدد پروجیکٹس سے آمدنی بڑھائیں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج ہم سیکھیں گے کہ کیسے ایک فری لانسر اپنے بزنس کو اسکیل کرے—مطلب ایک کلائنٹ سے زیادہ پروجیکٹس لینا، ٹیم بنانا، یا یہاں تک کہ ایک ایجنسی میں تبدیل کرنا۔ اسکیلنگ کا مطلب ہے اپنے وقت کو ضرب دینا بغیر اضافی محنت کے۔ اس کے لیے سسٹمز، ڈیلیگیشن، اور آٹومیشن کا استعمال ضروری ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "تصور کریں آپ ایک گرافک ڈیزائنر ہیں جو روزانہ ایک پروجیکٹ مکمل کرتے ہیں۔ اگر آپ ایک اسسٹنٹ ہائر کر لیں جو بنیادی ایڈٹس کرے، تو آپ روزانہ دو سے تین پروجیکٹس سنبھال سکتے ہیں۔ یا پھر ٹیمپلیٹس بنا کر دوبارہ استعمال کر سکتے ہیں (جیسے ریزیومے ڈیزائنز)، جس سے ہر پروجیکٹ پر کم وقت لگتا ہے۔"
+            },
+            {
+              "label": "عملی مشق",
+              "content": "اپنی موجودہ سروس میں سے ایک ایسا کام شناخت کریں جو بار بار دہرایا جاتا ہو (جیسے سوشل میڈیا پوسٹس ڈیزائن کرنا)۔ اس کے لیے ایک ٹیمپلیٹ یا چیک لسٹ بنائیں جسے آپ ہر پروجیکٹ کے لیے استعمال کر سکیں۔"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "ایک سادہ آٹومیشن سسٹم سیٹ اپ کریں—جیسے Canva ٹیمپلیٹس یا Notion چیک لسٹ—جو آپ کے ایک سے دو عام کاموں کو پچاس فیصد تیزی سے مکمل کر دے۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 27,
@@ -11772,7 +11795,30 @@
         ]
       ],
       "answer_key": "polite tone, clear subject, 3-4 lines, professional closing",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن ۲۷ — فری لانسنگ میں \"فالو اپ\" کیسے کریں: کھوئی ہوئی مواقع دوبارہ حاصل کرنے کا فارمولا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "فالو اپ کا مطلب ہے کلائنٹ کے ریسپانس کا انتظار کرنے کے بعد دوبارہ رابطہ کرنا۔ ۸۰ فیصد فری لانسرز اپنے پروپوزل بھیجنے کے بعد فالو اپ نہیں کرتے، جس سے ان کے مواقع ۹۷ فیصد تک کم ہو جاتے ہیں۔ فالو اپ سے آپ پیشہ ورانہ رہتے ہیں، کلائنٹ کو یاد دلاتے ہیں، اور \"بِزی\" یا \"بھولے گئے\" ریسپانسز کو دوبارہ فعال کر سکتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک کلائنٹ نے آپ کا پروپوزل مسترد کر دیا لیکن کوئی وجہ نہیں بتائی۔ آپ تین دن بعد ای میل بھیج سکتے ہیں:\n\"ہائے [کلائنٹ کا نام]، مجھے اندازہ ہے کہ آپ مصروف ہوں گے۔ بس اپنے [پروجیکٹ کا نام] کے پروپوزل پر فالو اپ کرنا چاہتا تھا۔ اگر آپ کو کوئی وضاحت درکار ہو یا سوالات ہوں تو میں مزید بات چیت کے لیے تیار ہوں۔ آپ کے خیالات کا انتظار رہے گا!\""
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے ان باکس سے ایک پروپوزل یا پچ منتخب کریں جو تین سے پانچ دن سے زیر التواء ہو، اور اس کلائنٹ کو شائستہ فالو اپ ای میل بھیج دیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "دس کلائنٹس کو فالو اپ کرنے کا منصوبہ بنائیں (کس پلیٹ فارم کے، کیسے، کب)۔ ہر فالو اپ کا ڈرافٹ لکھیں۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 28,
@@ -11799,7 +11845,96 @@
         ]
       ],
       "answer_key": "delivery confirmation, payment reminder, feedback request, future collaboration",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن اٹھائیس — فری لانسنگ میں \"ایگزٹ اسٹریٹی\" بنانا: پروجیکٹ ختم کرنے کا پیشہ ورانہ طور",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "ہر فری لانسٹر کو پروجیکٹ ختم کرنے کا پیشہ ورانہ طریقہ آنا چاہیے۔ یہ صرف ادائیگی محفوظ کرنے کے لیے نہیں بلکہ اگلے پروجیکٹس اور ریفرلز کے لیے بھی ضروری ہے۔ ایگزٹ اسٹریٹی میں ڈیلیوری، فیڈبیک، ادائیگی، اور اگلی مواقع کے لیے گراؤنڈ ورک شامل ہوتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک لوگو ڈیزائنر نے ایک کلائنٹ کو فائنل ڈیزائن ڈیلیور کرنے کے بعد ایک ای میل بھیجی:\n\"محترم [کلائنٹ کا نام]، میں آپ کا پروجیکٹ مکمل کر چکا ہوں۔ آپ اسے ریویو کر سکتے ہیں اور اگر کوئی تبدیلیاں چاہیے تو ۴۸ گھنٹے کے اندر بتائیں۔ ادائیگی کے لیے آپ کو انوائس بھیج دیا گیا ہے۔ اس پروجیکٹ کے بعد میں آپ کو ایک فیڈبیک فارم بھیج رہا ہوں—یہ صرف بہتری کے لیے ہے۔ اگر آپ کو مستقبل میں کوئی اور مدد چاہیے تو میں یہاں موجود ہوں۔\""
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے کسی پرانے پروجیکٹ یا خیالی منظر نامے کے لیے ایک \"ایگزٹ ای میل\" کا ڈرافٹ تیار کریں۔ اس میں ڈیلیوری کی تصدیق، ادائیگی کی یاد دہانی، فیڈبیک کی درخواست، اور اگلے مواقع کا ذکر ضرور ہو۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک \"پروجیکٹ مکمل کرنے کی چیک لسٹ\" بنائیں جس میں یہ اقدامات ہوں:\n۱۔ فائنل ڈیلیوری (فائلز/لنکس)\n۲۔ انوائس بھیجنا\n۳۔ فیڈبیک کی درخواست\n۴۔ ٹیسٹیمونیل/ریفرنس کے لیے فالو اپ"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "day": 29,
+      "id": "day-029",
+      "date": "2026-09-01",
+      "title": "Day 29 — **Freelancing Mein \"AI Tools\" Ka Smart Use: Productivity Badhaein, Competitors Se Aage Niklen**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "AI tools freelancing ki productivity, quality aur speed mein drastic improvement la sakte hain. In tools se research, content creation, design, coding aur even client communication automate karke time aur effort bacha sakte hain. Sabse bade freelancers AI ko apne workflow ka integral hissa banate hain—agar tum bhi inka smart use karoge, toh competitors se 2x-3x zyada efficient ban sakte ho."
+        ],
+        [
+          "Example",
+          "Ek logo designer hai jo har project ke liye 10+ fonts aur color palettes manually check karta hai. AI tool jaise **Adobe Firefly** ya **Canva Magic Design** use karke sirf 2-3 clicks mein 50+ unique design options generate kar sakta hai. Phir unme se best select karke client ko bhej deta hai—yeh process time 80% kam ho jata hai."
+        ],
+        [
+          "Practice",
+          "Apne freelancing skill ke hisaab se 1 AI tool choose karo (jaise:\n-"
+        ],
+        [
+          "Content writers",
+          "Jasper.ai, Copy.ai\n-"
+        ],
+        [
+          "Graphic designers",
+          "Midjourney, DALL·E\n-"
+        ],
+        [
+          "Developers",
+          "GitHub Copilot, Tabnine\n-"
+        ],
+        [
+          "Social media managers",
+          "CapCut AI, Pictory)\nAur usko 15 minutes tak explore karo. Dekho ke yeh kaise kaam karta hai aur apne daily task mein kaise integrate kar sakte ho."
+        ],
+        [
+          "Mini Project",
+          "Ek **AI-generated logo** banao (Midjourney/DALL·E se prompt: *\"A modern minimalist logo for a freelance web developer, blue and white colors, clean typography\"*). Phir usko Canva ya Figma mein edit karke ek professional portfolio-ready design bana lo."
+        ]
+      ],
+      "answer_key": "midjourney prompt, canva edit steps, logo file format",
+      "translations": {
+        "ur": {
+          "title": "دن ۲۹ — فری لانسنگ میں \"اے آئی ٹولز\" کا سمارٹ استعمال: پروڈکٹوٹی بڑھائیں، مقابلوں سے آگے نکلیں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "اے آئی ٹولز فری لانسنگ کی پروڈکٹوٹی، کوالٹی اور سپیڈ میں ڈرامائی بہتری لا سکتے ہیں۔ ان ٹولز کی مدد سے ریسرچ، کنٹینٹ کریئیشن، ڈیزائن، کوڈنگ اور یہاں تک کہ کلائنٹ کمیونیکیشن کو آٹومیٹ کرکے وقت اور محنت بچائی جا سکتی ہے۔ سب سے کامیاب فری لانسرز اے آئی کو اپنے ورک فلو کا لازمی حصہ بناتے ہیں—اگر آپ بھی ان کا سمارٹ استعمال کریں گے تو مقابلوں سے دو سے تین گنا زیادہ ایفیشنٹ ہو سکتے ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک لوگو ڈیزائنر ہے جو ہر پروجیکٹ کے لیے دس سے زائد فونٹس اور کلر پیلیٹس دستی طور پر چیک کرتا ہے۔ اے آئی ٹول جیسے **ایڈوبی فائر فلائی** یا **کینوا میجک ڈیزائن** استعمال کرکے صرف دو سے تین کلکس میں پچاس سے زائد منفرد ڈیزائن آپشنز جنریٹ کر سکتا ہے۔ پھر ان میں سے بہترین سلیکٹ کرکے کلائنٹ کو بھیج دیتا ہے—یہ عمل اسی فیصد کم ہو جاتا ہے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے فری لانسنگ اسکل کے مطابق ایک اے آئی ٹول منتخب کریں (جیسے:\n\n- کنٹینٹ رائٹرز: جاسپر ڈاٹ اے آئی، کاپی ڈاٹ اے آئی\n- گرافک ڈیزائنرز: مڈ جرنی، ڈالی\n- ڈیولپرز: گٹ ہب کوپائلٹ، ٹیب نائن\n- سوشل میڈیا مینیجرز: کیپ کٹ اے آئی، پکٹری)\nاور اسے پندرہ منٹ تک ایکسپلور کریں۔ دیکھیں کہ یہ کیسے کام کرتا ہے اور اپنے روزمرہ کے کاموں میں کیسے انٹیگریٹ کر سکتے ہیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **اے آئی جنریٹڈ لوگو** بنائیں (مڈ جرنی/ڈالی سے پرامپٹ: *\"A modern minimalist logo for a freelance web developer, blue and white colors, clean typography\"*)۔ پھر اسے کینوا یا فگما میں ایڈٹ کرکے ایک پیشہ ورانہ پورٹ فولیو کے لیے تیار ڈیزائن بنا لیں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "graphic-design-canva": [
