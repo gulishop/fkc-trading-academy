@@ -2666,7 +2666,30 @@
         ]
       ],
       "answer_key": "trends, low-competition, high-retention, recurring-traffic",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن ۲۷ — یوٹیوب آٹومیشن میں \"ایورگرین مواد\" کیسے بنائیں؟ (جو ہر موسم میں ویوز دیتے رہیں)",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "ایورگرین مواد وہ ویڈیوز ہوتے ہیں جو ہر موسم میں تلاش کیے جاتے رہتے ہیں—جیسے \"گرہ کیسے باندھیں\" یا \"بہترین بجٹ لیپ ٹاپس ۲۰۲۴\"۔ ان ویڈیوز پر ٹریفک کبھی کم نہیں ہوتی، جبکہ ٹرینڈنگ موضوعات ایک دو ماہ بعد ماند پڑ جاتے ہیں۔ آٹومیشن کے لیے یہ سونے کی کان ہیں کیونکہ انہیں بار بار پروموٹ کیا جا سکتا ہے بغیر نئی ویڈیوز بنائے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک چینل جو \"گھر پر ورزش برائے ابتدائی افراد\" پر ویڈیوز بناتا ہے، اسے ہر ماہ پچاس ہزار ویوز ملتے ہیں کیونکہ یہ موضوع کبھی پرانا نہیں ہوتا۔ ایسے موضوعات ڈھونڈنے کے لیے گوگل ٹرینڈز یا ٹیوب بڈی کا استعمال کریں اور \"آل ٹائم\" فلٹر لگائیں۔"
+            },
+            {
+              "label": "عملی مشق",
+              "content": "اپنے شعبے سے تین ایورگرین موضوعات منتخب کریں جو:\n۱۔ ہر سال تلاش کیے جاتے ہیں\n۲۔ مقابلہ کم ہو (کم مقابلے والے کی ورڈز)\n۳۔ پانچ سال سے زیادہ پرانی ویڈیوز بھی ویوز لے رہی ہوں"
+            },
+            {
+              "label": "چھوٹا منصوبہ",
+              "content": "ایک سپریڈشیٹ بنائیں جس میں درج ذیل شامل ہو:\n- موضوع کا نام\n- تلاش کا حجم (اہرفس/گوگل کی ورڈ پلانر سے)\n- مقابلے کا اسکور (ٹیوب بڈی سے)\n- پچھلے تین سال کا اوسط ویوز (وڈ آئی کیو سے)\nسب سے زیادہ صلاحیت رکھنے والے تین موضوعات کو نمایاں کریں۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 28,
@@ -2693,7 +2716,30 @@
         ]
       ],
       "answer_key": "top videos, top keywords, high ctr, repeat strategy",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن ۲۸ — یوٹیوب آٹومیشن میں \"چینل گروتھ کا راز: ۸۰/۲۰ اصول\"",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "ہر چینل کی گروتھ کا ۸۰ فیصد نتیجہ صرف ۲۰ فیصد کوششوں سے حاصل ہوتا ہے۔ یہ اصول بتاتا ہے کہ کون سے ۲۰ فیصد اقدامات پر توجہ دینے سے زیادہ سے زیادہ گروتھ ملتی ہے۔ اس میں ہم دیکھیں گے کہ کون سی ویڈیوز، کی ورڈز، اور حکمت عملی سب سے زیادہ ٹریفک اور انگیجمنٹ لانے میں مددگار ہیں—اور انہیں ترجیح کیسے دی جائے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک چینل جو \"اے آئی ٹولز\" پر ویڈیوز بنا رہا ہے اسے پتہ چلتا ہے کہ:\n- ان کی ۱۰ فیصد ویڈیوز (مثلاً، \"اے آئی سے ریزیومے بنانے کا طریقہ\") ۶۰ فیصد ویوز جنریٹ کرتی ہیں۔\n- ان کے ۵ کی ورڈز (مثلاً، \"اے آئی ریزیومے میکر\") ۷۰ فیصد سرچ ٹریفک لانے میں مدد کرتے ہیں۔\n- ان کے ۳ تھمب نیلز (مثلاً، سرخ پس منظر + بولڈ ٹیکسٹ) ۴ گنا زیادہ سی ٹی آر دیتے ہیں۔\nلہٰذا، انہیں انہی ۲۰ فیصد پر توجہ مرکوز کرکے باقی ۸۰ فیصد وقت بچانا چاہیے۔"
+            },
+            {
+              "label": "عملی مشق",
+              "content": "اپنے یوٹیوب اسٹوڈیو کے \"اینالیٹکس\" سیکشن میں جائیں۔ \"ٹاپ ویڈیوز\" اور \"ٹاپ سرچ ٹرمز\" چیک کریں۔ اپنے ٹاپ ۳ ویڈیوز اور ٹاپ ۳ کی ورڈز نوٹ کریں جو سب سے زیادہ ویوز/کلکس لانے میں مدد کر رہے ہیں۔"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "ایک سادہ ایکسل شیٹ بنائیں جس میں:\n۱۔ ٹاپ ۵ ویڈیوز کے عنوان\n۲۔ ان کے ویوز اور سی ٹی آر\n۳۔ ٹاپ ۵ کی ورڈز\n۴۔ ان کا سرچ والیوم (گوگل کی ورڈ پلانر سے)\nاس ڈیٹا کا تجزیہ کرکے فیصلہ کریں کہ آنے والی ۱۰ ویڈیوز میں کون سے موضوعات/کی ورڈز دہرائے جائیں۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 29,
@@ -2759,6 +2805,72 @@
         ]
       ],
       "answer_key": "elevenlabs, jasper.ai, runway ml, auto-subtitles",
+      "translations": {
+        "ur": {
+          "title": "دن 30 — **YouTube Automation کا اگلا لیول: AI Tools سے کام کو 10x تیز کرنے کا ہیک**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "AI tools جیسے **Jasper، Midjourney، Descript، اور Runway ML** آپ کی YouTube Automation کو 10x تیز بناتے ہیں۔ ان سے اسکرپٹ لکھنے سے لے کر ویڈیو ایڈٹ کرنے تک کام 50% کم وقت میں ہو سکتا ہے۔ AI سے **auto-captioning، auto-subtitles، اور حتیٰ کہ AI voiceovers** بھی تیار کیے جا سکتے ہیں جو بالکل قدرتی لگتے ہیں۔ بس ان ٹولز کو سمجھ کر استعمال کرنا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1. **AI Script Writer (Jasper.ai)** – اپنے ٹاپک کا ٹائٹل ڈال کر 5-10 منٹ میں اسکرپٹ تیار کروا لیں۔\n2. **AI Voiceover (ElevenLabs)** – اپنے اسکرپٹ کو AI کے ذریعے حقیقت پسندانہ آواز میں تبدیل کر لیں (10+ زبانوں کی سپورٹ)۔\n3. **AI Video Editor (Runway ML)** – آٹو کٹ، آٹو سب ٹائٹل، اور بیک گراؤنڈ میوزک شامل کر کے ویڈیو تیار کر لیں۔"
+            },
+            {
+              "label": "مشق",
+              "content": "آج ہی **ElevenLabs** پر ایک مفت اکاؤنٹ بنا کر اپنے اسکرپٹ کا AI voiceover تیار کریں اور CapCut میں استعمال کر کے ویڈیو ایڈٹ کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **AI-generated شارٹ ویڈیو** (30-60 سیکنڈ) بنائیں جو **ٹرینڈنگ ٹاپک** پر ہو۔ اسے **YouTube Shorts** پر اپلوڈ کریں اور انگیجمنٹ چیک کریں۔"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "day": 31,
+      "id": "day-031",
+      "date": "2026-09-01",
+      "title": "Day 31 — **YouTube Automation Mein \"AI Se Competitor Research\" Kaise Kare? (Niche Aur Content Ideas Chune Ka Smart Hack)**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "AI tools se competitors analyze karke unke best-performing videos, keywords, aur audience engagement patterns samajhna seekhein. Yeh strategy aapko unique content ideas dhundne aur YouTube algorithm ko samajhne mein madad karegi. Tools jaise TubeBuddy, VidIQ, aur AI-powered platforms (jaise ChatGPT + YouTube search) use karen."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Competitor Video Analysis",
+          "TubeBuddy ya VidIQ mein kisi top channel ka URL paste karen.\n2."
+        ],
+        [
+          "Best Videos Filter",
+          "\"Top Videos\" section mein jaakar highest views aur engagement wale videos dekhhein.\n3."
+        ],
+        [
+          "Keyword Extraction",
+          "Video titles aur descriptions se main keywords copy karen.\n4."
+        ],
+        [
+          "AI Se Ideas Generate",
+          "ChatGPT ko prompt dein: *\"YouTube channel [niche] ke liye 5 unique video ideas suggest karo jo high engagement rakhti hain.\"*"
+        ],
+        [
+          "Practice",
+          "Apne niche ke 3 top competitors ke YouTube channels ko TubeBuddy/VidIQ se analyze karen aur unke top 3 videos ke titles aur keywords ka note banayein."
+        ],
+        [
+          "Mini Project",
+          "Ek simple spreadsheet banayein jismein:\n- Competitor ka channel name\n- Top video ka title\n- Main keyword\n- Views aur engagement (likes/comments)\n- Aapki us keyword par video banane ki planning"
+        ]
+      ],
+      "answer_key": "competitor analysis, high-engagement keywords, unique content ideas, spreadsheet tracking",
       "translations": {}
     }
   ],
