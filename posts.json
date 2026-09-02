@@ -34820,7 +34820,30 @@
         ]
       ],
       "answer_key": "",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن ۲۵ — چھوٹے جملے بنانا!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "بچو، آج ہم سیکھیں گے کہ کیسے چھوٹے سے جملے بنا سکتے ہیں! یہ جملے ہماری احساسات یا چیزوں کے بارے میں بتاتے ہیں۔ یاد رکھنا، تمہارا جسم صرف تمہارا ہے، کوئی تمہیں ’نہ‘ کہنے کا حق نہیں رکھتا۔ اگر کوئی چیز عجیب لگے، تو فوراً امی/ابو کو بتانا۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "امان نے پارک میں ایک لال بال دیکھا۔ اس نے کہا ’یہ میرا لال بال ہے!‘ اور اس کے دوست نے کہا ’میں بھی خوش ہوں!‘ دیکھو، کتنے آسان جملے ہیں!"
+            },
+            {
+              "label": "امی ابو کے ساتھ بات کریں",
+              "content": "آج تم نے کیا کوئی ایسا جملہ سنا جو تمہیں پسند آیا؟"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمہارے جملے تمہاری احساسات اور چیزوں کے بارے میں بتاتے ہیں — انہیں پوری عزت دو!"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 26,
@@ -34847,7 +34870,80 @@
         ]
       ],
       "answer_key": "",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن ۲۶ — **دن، ہفتے، اور مہینے کے نام**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "آج ہم سیکھیں گے کہ دن، ہفتے، اور مہینے کے نام کیسے ہوتے ہیں۔ ہر دن کا اپنا نام ہوتا ہے، جیسے سوموار، منگلوار... اور ہر ہفتے میں سات دن ہوتے ہیں۔ یہ سب سیکھنے سے تمہیں وقت کی سمجھ آتی ہے—جیسے تم کب سکول جاتے ہو، کب چھٹیاں ہوتی ہیں، اور کب تمہارے دوست کا یومِ پیدائش ہے!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "تمہاری دوست عائشہ نے کہا، ’میرا یومِ پیدائش تو فرائیڈے کو ہے!‘ تم نے پوچھا، ’فرائیڈے کون سا دن ہے؟‘ اس نے کہا، ’اس کے بعد والا دن!‘ تم نے سوچا، ’آہ! تو کل ہی ہے!‘ پھر تم نے اپنے کیلنڈر میں دیکھا—ہاں، فرائیڈے ہی تھا۔ ایسے ہی تم بھی دن، ہفتے، اور مہینے کے نام یاد کر سکتے ہو!"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "’بیٹا، تمہارا پسندیدہ دن کون سا ہے؟ اور اس دن تم کیا کرنا پسند کرو گے؟‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "ہر دن ایک نیا موقع ہے—کچھ نیا سیکھنے، خوش رہنے، اور اپنے آپ کو مضبوط بنانے کا!"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "day": 27,
+      "id": "day-027",
+      "date": "2026-09-02",
+      "title": "Day 27 — **Aankhein, chehre, aur shapes ki pehchan!**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachon, aaj hum seekhenge ke kaise hum apni aankhon se chehre aur shapes ko pehchaan sakte hain! Har shape ka apna khas roop hota hai, jaise rectangle (jaise notebook) ya oval (jaise egg). Inhe pehchaan karna seekhna aapke liye ek fun game ki tarah hai!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Aun Ali ke paas ek kalaai hai jismein ek rectangle aur ek oval shape ka design hai. Unhe pata hai ke rectangle ka har side seedha hota hai, aur oval ka shape gol hota hai. Jab woh apni kalaai dekhta hai, toh usko lagta hai jaise woh ek chhota sa puzzle solve kar raha hai!"
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar tumhe kisi shape ke baare mein yaad rakhna ho, toh tum kya karoge? Kya tum apni aankhon se us shape ko dekhoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Apni aankhon aur hathon se shapes ko dekhna aur mahsoos karna seekhna ek accha tareeka hai!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ستائیس — آنکھیں، چہرے، اور شکلیں کی پہچان!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "بچو، آج ہم سیکھیں گے کہ کیسے ہم اپنی آنکھوں سے چہروں اور شکلوں کو پہچان سکتے ہیں! ہر شکل کا اپنا خاص روپ ہوتا ہے، جیسے ریکٹینگل (جیسے نوٹ بک) یا اوول (جیسے انڈا)۔ انہیں پہچاننا سیکھنا آپ کے لیے ایک تفریحی کھیل کی طرح ہے!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "آئن علی کے پاس ایک کلائی ہے جس میں ایک ریکٹینگل اور ایک اوول شکل کا ڈیزائن ہے۔ انہیں پتا ہے کہ ریکٹینگل کا ہر سائیڈ سیدھا ہوتا ہے، اور اوول کا شکل گول ہوتا ہے۔ جب وہ اپنی کلائی دیکھتا ہے، تو اسے لگتا ہے جیسے وہ ایک چھوٹا سا پہیلی حل کر رہا ہے!"
+            },
+            {
+              "label": "امی ابّو کے ساتھ بات کریں",
+              "content": "بیٹا، اگر تمہیں کسی شکل کے بارے میں یاد رکھنا ہو، تو تم کیا کرو گے؟ کیا تم اپنی آنکھوں سے اس شکل کو دیکھو گے؟"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "اپنی آنکھوں اور ہاتھوں سے شکلوں کو دیکھنا اور محسوس کرنا سیکھنا ایک اچھا طریقہ ہے!"
+            }
+          ]
+        }
+      }
     }
   ]
 }
