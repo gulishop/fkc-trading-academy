@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#4F46E5"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="FKC Trading "><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},15000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});if(reg.waiting){reg.waiting.postMessage({type:'SKIP_WAITING'});}reg.addEventListener('updatefound',function(){var nw=reg.installing;if(!nw)return;nw.addEventListener('statechange',function(){if(nw.state==='installed'&&navigator.serviceWorker.controller){nw.postMessage({type:'SKIP_WAITING'});}}});});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-09-01T01:19:31.880099";
+  var FKC_BUILD = "2026-09-02T00:09:41.479801";
   var checking = false;
   function fkcCheckVersion(){
     if(checking) return;
@@ -255,15 +255,15 @@ function fkcToggleTheme(){
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "headline": "Day 22 — **CSS Variables aur Custom Properties: Reusable Styles Banana**", "name": "Day 22 — **CSS Variables aur Custom Properties: Reusable Styles Banana**", "description": "", "learningResourceType": "Lesson", "educationalLevel": "Beginner", "inLanguage": "ur", "isPartOf": {"@type": "Course", "name": "Web Development"}, "datePublished": "2026-09-01", "publisher": {"@type": "Organization", "name": "FKC Trading Academy"}}</script>
     <div class="top"><a href="../../../index.html">← FKC Trading Academy</a>
     <a href="../index.html" class="course-back-link">/ Web Development</a></div>
-    <span class="badge">Latest</span>
+    
     <p class="muted">🌐 Web Development · Day 22</p>
     <h1>Day 22 — **CSS Variables aur Custom Properties: Reusable Styles Banana**</h1>
     <p class="muted" style="margin:0 0 10px;">↩️ Pichla lesson: <strong>Day 21 — **CSS Animations aur Transitions: Web Pages Ko Zinda Banana**</strong> — aaj is se aage badhte hain.</p>
     <div class="card">
       
       <img src="images/day-022.png" alt="Day 22 — **CSS Variables aur Custom Properties: Reusable Styles Banana**" style="width:100%;border-radius:12px;margin-bottom:14px;">
-      
-      <div class="lang-tabs">
+      <p class="muted" style="margin:0 0 6px;">🎬 AI Video Explanation</p><video src="videos/day-022.mp4" controls preload="metadata" poster="images/day-022.png" style="width:100%;border-radius:12px;margin-bottom:14px;background:#000;"></video>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
     <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
       <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
       <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
@@ -288,7 +288,17 @@ function fkcToggleTheme(){
   background: var(--primary-color);
   padding: var(--spacing-unit);
   font-family: var(--font-main);
-}</code></pre><p>Ab agar `--primary-color` change karni ho to sirf `:root` mein update karo, saare elements automatically reflect honge.</p><h3>Practice</h3><p>Apne existing project mein 3 CSS variables define karo: `--main-bg`, `--text-color`, aur `--border-radius`. Inhe `&lt;body&gt;` aur `&lt;button&gt;` elements par apply karo.</p><h3>Mini Project</h3><p>Ek simple &quot;Theme Switcher&quot; banaye jo 2 buttons se `--main-bg` aur `--text-color` ko toggle kare (JavaScript se). Pehle light theme, phir dark theme ka button add karo.</p></div>
+}</code></pre><p>Ab agar `--primary-color` change karni ho to sirf `:root` mein update karo, saare elements automatically reflect honge.</p><h3>Practice</h3><p>Apne existing project mein 3 CSS variables define karo: `--main-bg`, `--text-color`, aur `--border-radius`. Inhe `&lt;body&gt;` aur `&lt;button&gt;` elements par apply karo.</p><h3>Mini Project</h3><p>Ek simple &quot;Theme Switcher&quot; banaye jo 2 buttons se `--main-bg` aur `--text-color` ko toggle kare (JavaScript se). Pehle light theme, phir dark theme ka button add karo.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>کنسیپٹ</h3><p>سی ایس ایس ویری ایبلز (یا کسٹم پراپرٹیز) آپ کو ری یوز ایبل ویلیوز ڈیفائن کرنے کی اجازت دیتے ہیں جو پورے پروجیکٹ میں استعمال ہو سکتی ہیں۔ ان کے ذریعے رنگ، فونٹس، سپیسنگ، اور یہاں تک کہ پیچیدہ کیلکولیشنز کو سینٹرلی مینیج کیا جا سکتا ہے۔ براؤزر سپورٹ مضبوط ہے، اور ڈائنامک تبدیلیاں بھی آسانی سے جاوا اسکرپٹ کے ذریعے اپلائی کی جا سکتی ہیں۔</p><h3>مثال</h3><pre dir="ltr"><code>:root {
+  --primary-color: #3498db;
+  --spacing-unit: 1rem;
+  --font-main: &#x27;Arial&#x27;, sans-serif;
+}
+
+.button {
+  background: var(--primary-color);
+  padding: var(--spacing-unit);
+  font-family: var(--font-main);
+}</code></pre><p>اب اگر `--primary-color` تبدیل کرنی ہو تو صرف `:root` میں اپڈیٹ کریں، سارے عناصر خود بخود ریفلیکٹ ہو جائیں گے۔</p><h3>پریکٹس</h3><p>اپنے موجودہ پروجیکٹ میں تین سی ایس ایس ویری ایبلز ڈیفائن کریں: `--main-bg`، `--text-color`، اور `--border-radius`۔ انہیں `&lt;body&gt;` اور `&lt;button&gt;` عناصر پر اپلائی کریں۔</p><h3>منی پروجیکٹ</h3><p>ایک سادہ &quot;تھیم سوئچر&quot; بنائیں جو دو بٹنز کے ذریعے `--main-bg` اور `--text-color` کو ٹوگل کرے (جاوا اسکرپٹ کے ذریعے)۔ پہلے لائٹ تھیم، پھر ڈارک تھیم کا بٹن شامل کریں۔</p></div>
       
       
       <div class="quiz-box no-print" id="fkc-quiz-box">
@@ -406,7 +416,7 @@ function fkcToggleTheme(){
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <div class="lesson-nav"><a class="btn alt" href="2026-08-31-day-021.html">← Day 21 — **CSS Animations aur Transitions: Web Pages Ko Zinda Banana**</a><span></span></div>
+    <div class="lesson-nav"><a class="btn alt" href="2026-08-31-day-021.html">← Day 21 — **CSS Animations aur Transitions: Web Pages Ko Zinda Banana**</a><a class="btn alt" href="2026-09-02-day-023.html">Day 23 — **Modern CSS: Container Queries aur Scoped Styles** →</a></div>
     <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
     
     
@@ -422,7 +432,7 @@ function fkcToggleTheme(){
       <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
         margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
       <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
-        “Roz thora seekho, roz thora aagay badho — mustaqil mehnat hi kamiyabi ki asal kunji hai.”
+        “Aaj ka ek chhota qadam, kal ki bari kamiyabi ki buniyad banta hai.”
       </p>
     </div>
     <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;

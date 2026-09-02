@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#4F46E5"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="FKC Trading "><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},15000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});if(reg.waiting){reg.waiting.postMessage({type:'SKIP_WAITING'});}reg.addEventListener('updatefound',function(){var nw=reg.installing;if(!nw)return;nw.addEventListener('statechange',function(){if(nw.state==='installed'&&navigator.serviceWorker.controller){nw.postMessage({type:'SKIP_WAITING'});}}});});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-09-01T01:19:31.880099";
+  var FKC_BUILD = "2026-09-02T00:09:41.479801";
   var checking = false;
   function fkcCheckVersion(){
     if(checking) return;
@@ -262,8 +262,8 @@ function fkcToggleTheme(){
     <div class="card">
       
       <img src="images/day-019.png" alt="Day 19 — **Introduction to APIs: Fetching Data from External Sources**" style="width:100%;border-radius:12px;margin-bottom:14px;">
-      
-      <div class="lang-tabs">
+      <p class="muted" style="margin:0 0 6px;">🎬 AI Video Explanation</p><video src="videos/day-019.mp4" controls preload="metadata" poster="images/day-019.png" style="width:100%;border-radius:12px;margin-bottom:14px;background:#000;"></video>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
     <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
       <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
       <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
@@ -285,7 +285,13 @@ function fkcToggleTheme(){
          document.body.innerHTML += `&lt;div&gt;&lt;h3&gt;${post.title}&lt;/h3&gt;&lt;p&gt;${post.body}&lt;/p&gt;&lt;/div&gt;`;
        });
      });
-   </code></pre><p>3.</p><h3>Error Handling</h3><p>Add `.catch(error =&gt; console.error(&#x27;Error:&#x27;, error))`.</p><h3>Practice</h3><p>Create a button with ID `loadPosts`. When clicked, fetch and display the first 3 posts from the same API above. Use `console.log()` to log the fetched data first.</p><h3>Mini Project</h3><p>Build a simple **&quot;Weather App&quot;** that fetches real-time weather data from a free API like [OpenWeatherMap](https://openweathermap.org/api) (requires free API key). Display the temperature and weather description for a user-input city.</p></div>
+   </code></pre><p>3.</p><h3>Error Handling</h3><p>Add `.catch(error =&gt; console.error(&#x27;Error:&#x27;, error))`.</p><h3>Practice</h3><p>Create a button with ID `loadPosts`. When clicked, fetch and display the first 3 posts from the same API above. Use `console.log()` to log the fetched data first.</p><h3>Mini Project</h3><p>Build a simple **&quot;Weather App&quot;** that fetches real-time weather data from a free API like [OpenWeatherMap](https://openweathermap.org/api) (requires free API key). Display the temperature and weather description for a user-input city.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>تصور</h3><p>اے پی آئیز (ایپلیکیشن پروگرامنگ انٹرفیسز) ویب سائٹس کو بیرونی سروسز جیسے کہ موسمیات کی ایپس، خبروں کی ویب سائٹس، یا ڈیٹا بیسز سے ڈیٹا حاصل کرنے کی اجازت دیتے ہیں۔ آج ہم سیکھیں گے کہ جاوا اسکرپٹ کے `fetch()` فنکشن کا استعمال کرتے ہوئے کس طرح کسی عوامی اے پی آئی (مثلاً JSONPlaceholder جعلی پوسٹس کے لیے) سے ڈیٹا حاصل کیا جائے اور اسے ویب پیج پر دکھایا جائے۔ اے پی آئیز متحرک مواد کے لیے انتہائی اہم ہیں جس کے لیے دستی اپ ڈیٹس کی ضرورت نہیں ہوتی۔</p><h3>مثال: ۱</h3><p>اے پی آئی اینڈ پوائنٹ: `https://jsonplaceholder.typicode.com/posts` کا استعمال کریں (جو ۱۰۰ جعلی بلاگ پوسٹس واپس کرتا ہے)</p><h3>مثال: ۲</h3><p>ڈیٹا حاصل کرنا:</p><h3>کوڈ</h3><pre dir="ltr"><code>   fetch(&#x27;https://jsonplaceholder.typicode.com/posts&#x27;)
+     .then(response =&gt; response.json())
+     .then(data =&gt; {
+       data.slice(0, 5).forEach(post =&gt; {
+         document.body.innerHTML += `&lt;div&gt;&lt;h3&gt;${post.title}&lt;/h3&gt;&lt;p&gt;${post.body}&lt;/p&gt;&lt;/div&gt;`;
+       });
+     });</code></pre><h3>مثال: ۳</h3><p>خرابیوں کا انتظام: `.catch(error =&gt; console.error(&#x27;خرابی:&#x27;, error))` شامل کریں۔</p><h3>مشق</h3><p>ایک بٹن بنائیں جس کی شناخت `loadPosts` ہو۔ جب اس پر کلک کیا جائے تو اسی اے پی آئی سے پہلے تین پوسٹس حاصل کر کے دکھائیں۔ پہلے حاصل شدہ ڈیٹا کو `console.log()` کے ذریعے لاگ کریں۔</p><h3>چھوٹا پروجیکٹ</h3><p>ایک سادہ **موسمیات کی ایپ** بنائیں جو مفت اے پی آئی جیسے کہ OpenWeatherMap سے حقیقی وقت کا موسمی ڈیٹا حاصل کرے (جس کے لیے مفت اے پی آئی کلید درکار ہوتی ہے)۔ صارف کے ذریعے داخل کردہ شہر کے لیے درجہ حرارت اور موسمی حالات کی تفصیل دکھائیں۔</p></div>
       
       
       <div class="quiz-box no-print" id="fkc-quiz-box">
@@ -419,7 +425,7 @@ function fkcToggleTheme(){
       <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
         margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
       <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
-        “Roz thora seekho, roz thora aagay badho — mustaqil mehnat hi kamiyabi ki asal kunji hai.”
+        “Aaj ka ek chhota qadam, kal ki bari kamiyabi ki buniyad banta hai.”
       </p>
     </div>
     <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;

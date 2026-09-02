@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#4F46E5"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="FKC Trading "><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},15000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});if(reg.waiting){reg.waiting.postMessage({type:'SKIP_WAITING'});}reg.addEventListener('updatefound',function(){var nw=reg.installing;if(!nw)return;nw.addEventListener('statechange',function(){if(nw.state==='installed'&&navigator.serviceWorker.controller){nw.postMessage({type:'SKIP_WAITING'});}}});});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-09-01T01:19:31.880099";
+  var FKC_BUILD = "2026-09-02T00:09:41.479801";
   var checking = false;
   function fkcCheckVersion(){
     if(checking) return;
@@ -262,8 +262,8 @@ function fkcToggleTheme(){
     <div class="card">
       
       <img src="images/day-020.png" alt="Day 20 — **Introduction to Web Accessibility: Making Websites Inclusive**" style="width:100%;border-radius:12px;margin-bottom:14px;">
-      
-      <div class="lang-tabs">
+      <p class="muted" style="margin:0 0 6px;">🎬 AI Video Explanation</p><video src="videos/day-020.mp4" controls preload="metadata" poster="images/day-020.png" style="width:100%;border-radius:12px;margin-bottom:14px;background:#000;"></video>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
     <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
       <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
       <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
@@ -278,7 +278,7 @@ function fkcToggleTheme(){
     }
     </script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
-      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Web accessibility ensures websites work for everyone, including people with disabilities (visual, motor, cognitive). Learn WCAG guidelines, ARIA roles, keyboard navigation, and semantic HTML to create inclusive sites. Even small changes (like alt text, proper contrast) make a big difference.</p><h3>Example</h3><p>1. Add `alt=&quot;A red apple on a wooden table&quot;` to `&lt;img&gt;` for screen readers.<br>2. Use `&lt;button&gt;` instead of `&lt;div&gt;` for clickable elements (keyboard accessible).<br>3. Ensure color contrast (e.g., dark text on light background).</p><h3>Practice</h3><p>Take your portfolio website and:<br>- Add `alt` text to all images.<br>- Test keyboard navigation (Tab/Enter should work everywhere).<br>- Use semantic tags (`&lt;header&gt;`, `&lt;nav&gt;`, `&lt;main&gt;`).</p><h3>Mini Project</h3><p>Create a simple accessible contact form with:<br>- Labels for all inputs (`&lt;label for=&quot;email&quot;&gt;`).<br>- Error messages (e.g., &quot;Please enter a valid email&quot;).<br>- Focus styles for keyboard users (CSS `:focus`).</p></div>
+      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Web accessibility ensures websites work for everyone, including people with disabilities (visual, motor, cognitive). Learn WCAG guidelines, ARIA roles, keyboard navigation, and semantic HTML to create inclusive sites. Even small changes (like alt text, proper contrast) make a big difference.</p><h3>Example</h3><p>1. Add `alt=&quot;A red apple on a wooden table&quot;` to `&lt;img&gt;` for screen readers.<br>2. Use `&lt;button&gt;` instead of `&lt;div&gt;` for clickable elements (keyboard accessible).<br>3. Ensure color contrast (e.g., dark text on light background).</p><h3>Practice</h3><p>Take your portfolio website and:<br>- Add `alt` text to all images.<br>- Test keyboard navigation (Tab/Enter should work everywhere).<br>- Use semantic tags (`&lt;header&gt;`, `&lt;nav&gt;`, `&lt;main&gt;`).</p><h3>Mini Project</h3><p>Create a simple accessible contact form with:<br>- Labels for all inputs (`&lt;label for=&quot;email&quot;&gt;`).<br>- Error messages (e.g., &quot;Please enter a valid email&quot;).<br>- Focus styles for keyboard users (CSS `:focus`).</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>تصور</h3><p>ویب رسائی اس بات کو یقینی بناتی ہے کہ ویب سائٹس ہر شخص کے لیے کام کریں، بشمول معذوریوں (بصری، حرکی، علمی) والے افراد۔ ڈبلیو سی اے جی رہنما خطوط، ایریا رولز، کی بورڈ نیویگیشن، اور سمنٹک ایچ ٹی ایم ایل سیکھیں تاکہ جامع سائٹس بنائی جا سکیں۔ چھوٹی تبدیلیاں بھی (جیسے الٹ ٹیکسٹ، مناسب کنٹراسٹ) بڑا فرق پیدا کرتی ہیں۔</p><h3>مثال</h3><p>۱۔ اسکرین ریڈرز کے لیے `&lt;img&gt;` میں `alt=&quot;لکڑی کی میز پر سرخ سیب&quot;` شامل کریں۔<br>۲۔ کلک ایبل عناصر کے لیے `&lt;div&gt;` کی بجائے `&lt;button&gt;` استعمال کریں (کی بورڈ رسائی کے قابل)۔<br>۳۔ رنگوں کے درمیان کنٹراسٹ یقینی بنائیں (مثلاً ہلکے پس منظر پر گہرا متن)۔</p><h3>مشق</h3><p>اپنی پورٹ فولیو ویب سائٹ لیں اور:<br>- تمام تصاویر میں `alt` ٹیکسٹ شامل کریں۔<br>- کی بورڈ نیویگیشن کی جانچ کریں (ٹیب/اینٹر ہر جگہ کام کریں)۔<br>- سمنٹک ٹیگز (`&lt;header&gt;`، `&lt;nav&gt;`، `&lt;main&gt;`) استعمال کریں۔</p><h3>چھوٹا پروجیکٹ</h3><p>ایک سادہ رسائی پذیر رابطہ فارم بنائیں جس میں شامل ہوں:<br>- تمام ان پٹس کے لیے لیبلز (`&lt;label for=&quot;email&quot;&gt;`)۔<br>- غلطی کے پیغامات (مثلاً &quot;براہ کرم درست ای میل درج کریں&quot;)۔<br>- کی بورڈ صارفین کے لیے فوکس اسٹائلز (سی ایس ایس `:focus`)۔</p></div>
       
       
       <div class="quiz-box no-print" id="fkc-quiz-box">
@@ -412,7 +412,7 @@ function fkcToggleTheme(){
       <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
         margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
       <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
-        “Roz thora seekho, roz thora aagay badho — mustaqil mehnat hi kamiyabi ki asal kunji hai.”
+        “Aaj ka ek chhota qadam, kal ki bari kamiyabi ki buniyad banta hai.”
       </p>
     </div>
     <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;

@@ -19504,7 +19504,42 @@
         ]
       ],
       "answer_key": "button click, fetch(), .json(), console.log(data)",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن ۱۹ — **اے پی آئیز کا تعارف: بیرونی ذرائع سے ڈیٹا حاصل کرنا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "اے پی آئیز (ایپلیکیشن پروگرامنگ انٹرفیسز) ویب سائٹس کو بیرونی سروسز جیسے کہ موسمیات کی ایپس، خبروں کی ویب سائٹس، یا ڈیٹا بیسز سے ڈیٹا حاصل کرنے کی اجازت دیتے ہیں۔ آج ہم سیکھیں گے کہ جاوا اسکرپٹ کے `fetch()` فنکشن کا استعمال کرتے ہوئے کس طرح کسی عوامی اے پی آئی (مثلاً JSONPlaceholder جعلی پوسٹس کے لیے) سے ڈیٹا حاصل کیا جائے اور اسے ویب پیج پر دکھایا جائے۔ اے پی آئیز متحرک مواد کے لیے انتہائی اہم ہیں جس کے لیے دستی اپ ڈیٹس کی ضرورت نہیں ہوتی۔"
+            },
+            {
+              "label": "مثال: ۱",
+              "content": "اے پی آئی اینڈ پوائنٹ: `https://jsonplaceholder.typicode.com/posts` کا استعمال کریں (جو ۱۰۰ جعلی بلاگ پوسٹس واپس کرتا ہے)"
+            },
+            {
+              "label": "مثال: ۲",
+              "content": "ڈیٹا حاصل کرنا:"
+            },
+            {
+              "label": "کوڈ",
+              "content": "```javascript\n   fetch('https://jsonplaceholder.typicode.com/posts')\n     .then(response => response.json())\n     .then(data => {\n       data.slice(0, 5).forEach(post => {\n         document.body.innerHTML += `<div><h3>${post.title}</h3><p>${post.body}</p></div>`;\n       });\n     });\n```"
+            },
+            {
+              "label": "مثال: ۳",
+              "content": "خرابیوں کا انتظام: `.catch(error => console.error('خرابی:', error))` شامل کریں۔"
+            },
+            {
+              "label": "مشق",
+              "content": "ایک بٹن بنائیں جس کی شناخت `loadPosts` ہو۔ جب اس پر کلک کیا جائے تو اسی اے پی آئی سے پہلے تین پوسٹس حاصل کر کے دکھائیں۔ پہلے حاصل شدہ ڈیٹا کو `console.log()` کے ذریعے لاگ کریں۔"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "ایک سادہ **موسمیات کی ایپ** بنائیں جو مفت اے پی آئی جیسے کہ OpenWeatherMap سے حقیقی وقت کا موسمی ڈیٹا حاصل کرے (جس کے لیے مفت اے پی آئی کلید درکار ہوتی ہے)۔ صارف کے ذریعے داخل کردہ شہر کے لیے درجہ حرارت اور موسمی حالات کی تفصیل دکھائیں۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 20,
@@ -19531,7 +19566,30 @@
         ]
       ],
       "answer_key": "alt text, semantic html, keyboard navigation, aria labels",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن ۲۰ — ویب رسائی کا تعارف: ویب سائٹس کو جامع بنانا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "ویب رسائی اس بات کو یقینی بناتی ہے کہ ویب سائٹس ہر شخص کے لیے کام کریں، بشمول معذوریوں (بصری، حرکی، علمی) والے افراد۔ ڈبلیو سی اے جی رہنما خطوط، ایریا رولز، کی بورڈ نیویگیشن، اور سمنٹک ایچ ٹی ایم ایل سیکھیں تاکہ جامع سائٹس بنائی جا سکیں۔ چھوٹی تبدیلیاں بھی (جیسے الٹ ٹیکسٹ، مناسب کنٹراسٹ) بڑا فرق پیدا کرتی ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ اسکرین ریڈرز کے لیے `<img>` میں `alt=\"لکڑی کی میز پر سرخ سیب\"` شامل کریں۔\n۲۔ کلک ایبل عناصر کے لیے `<div>` کی بجائے `<button>` استعمال کریں (کی بورڈ رسائی کے قابل)۔\n۳۔ رنگوں کے درمیان کنٹراسٹ یقینی بنائیں (مثلاً ہلکے پس منظر پر گہرا متن)۔"
+            },
+            {
+              "label": "مشق",
+              "content": "اپنی پورٹ فولیو ویب سائٹ لیں اور:\n- تمام تصاویر میں `alt` ٹیکسٹ شامل کریں۔\n- کی بورڈ نیویگیشن کی جانچ کریں (ٹیب/اینٹر ہر جگہ کام کریں)۔\n- سمنٹک ٹیگز (`<header>`، `<nav>`، `<main>`) استعمال کریں۔"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "ایک سادہ رسائی پذیر رابطہ فارم بنائیں جس میں شامل ہوں:\n- تمام ان پٹس کے لیے لیبلز (`<label for=\"email\">`)۔\n- غلطی کے پیغامات (مثلاً \"براہ کرم درست ای میل درج کریں\")۔\n- کی بورڈ صارفین کے لیے فوکس اسٹائلز (سی ایس ایس `:focus`)۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 21,
@@ -19593,7 +19651,92 @@
         ]
       ],
       "answer_key": "`:root, --main-bg, --text-color, --border-radius, javascript getcomputedstyle`",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن ۲۲ — سی ایس ایس ویری ایبلز اور کسٹم پراپرٹیز: ری یوز ایبل اسٹائلز بنانا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "سی ایس ایس ویری ایبلز (یا کسٹم پراپرٹیز) آپ کو ری یوز ایبل ویلیوز ڈیفائن کرنے کی اجازت دیتے ہیں جو پورے پروجیکٹ میں استعمال ہو سکتی ہیں۔ ان کے ذریعے رنگ، فونٹس، سپیسنگ، اور یہاں تک کہ پیچیدہ کیلکولیشنز کو سینٹرلی مینیج کیا جا سکتا ہے۔ براؤزر سپورٹ مضبوط ہے، اور ڈائنامک تبدیلیاں بھی آسانی سے جاوا اسکرپٹ کے ذریعے اپلائی کی جا سکتی ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "```css\n:root {\n  --primary-color: #3498db;\n  --spacing-unit: 1rem;\n  --font-main: 'Arial', sans-serif;\n}\n\n.button {\n  background: var(--primary-color);\n  padding: var(--spacing-unit);\n  font-family: var(--font-main);\n}\n```\nاب اگر `--primary-color` تبدیل کرنی ہو تو صرف `:root` میں اپڈیٹ کریں، سارے عناصر خود بخود ریفلیکٹ ہو جائیں گے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے موجودہ پروجیکٹ میں تین سی ایس ایس ویری ایبلز ڈیفائن کریں: `--main-bg`، `--text-color`، اور `--border-radius`۔ انہیں `<body>` اور `<button>` عناصر پر اپلائی کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک سادہ \"تھیم سوئچر\" بنائیں جو دو بٹنز کے ذریعے `--main-bg` اور `--text-color` کو ٹوگل کرے (جاوا اسکرپٹ کے ذریعے)۔ پہلے لائٹ تھیم، پھر ڈارک تھیم کا بٹن شامل کریں۔"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "day": 23,
+      "id": "day-023",
+      "date": "2026-09-02",
+      "title": "Day 23 — **Modern CSS: Container Queries aur Scoped Styles**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum **Container Queries** aur **Scoped Styles** seekhenge — yeh CSS ke advanced features hain jo responsive design ko aur behtar banate hain. **Container Queries** se hum kisi parent container ke size ke hisaab se styles apply kar sakte hain (e.g., ek card ka layout desktop par alag, mobile par alag ho sakta hai). **Scoped Styles** (CSS Scoping) se hum styles ko sirf specific components tak limit kar sakte hain, taaki global conflicts na ho."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Container Query ka istemal",
+          "```css\n   .card-container {\n     container-type: inline-size; /* Container query enable karne ke liye */\n   }\n   @container (max-width: 600px) {\n     .card {\n       flex-direction: column;\n     }\n   }\n   ```\n   ```html\n   <div class=\"card-container\">\n     <div class=\"card\">...</div>\n   </div>\n   ```\n   Yahan `.card` ka layout parent container ki width par depend karega.\n\n2."
+        ],
+        [
+          "Scoped Styles ka istemal",
+          "```css\n   @scope (.card) to (.card-content) {\n     .card-content { padding: 1rem; }\n   }\n   ```\n   Yeh styles sirf `.card` ke andar `.card-content` tak apply honge."
+        ],
+        [
+          "Practice",
+          "Ek simple layout banayein jismein 3 cards hain. Har card ke andar ek heading aur paragraph ho. **Container Query** ka istemal karke desktop par cards ko `row` mein aur mobile par `column` mein display karain."
+        ],
+        [
+          "Mini Project",
+          "**\"Responsive Card Gallery\"**\n- 3 cards banayein (heading + paragraph + button).\n- Desktop par cards `display: flex; flex-wrap: wrap;` se arrange hon.\n- Mobile par (width < 600px) har card `width: 100%;` ho jaye.\n- Har card ka background color aur padding container ke size par depend kare (Container Query se)."
+        ]
+      ],
+      "answer_key": "cards, flex-direction: column, container-type: inline-size, @container",
+      "translations": {
+        "ur": {
+          "title": "دن ۲۳ — ماڈرن سی ایس ایس: کنٹینر کوئریز اور سکوپڈ اسٹائلز",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "آج ہم **کنٹینر کوئریز** اور **سکوپڈ اسٹائلز** سیکھیں گے — یہ سی ایس ایس کے ایڈوانسڈ فیچرز ہیں جو رسپانسیو ڈیزائن کو اور بہتر بناتے ہیں۔ **کنٹینر کوئریز** سے ہم کسی پیرنٹ کنٹینر کے سائز کے حساب سے اسٹائلز اپلائی کر سکتے ہیں (مثال کے طور پر، ایک کارڈ کا لی آؤٹ ڈیسک ٹاپ پر الگ، موبائل پر الگ ہو سکتا ہے)۔ **سکوپڈ اسٹائلز** (سی ایس ایس سکوپنگ) سے ہم اسٹائلز کو صرف مخصوص کمپونینٹس تک محدود کر سکتے ہیں، تاکہ گلوبل کنفلکٹس نہ ہوں۔"
+            },
+            {
+              "label": "مثال: ۱۔ کنٹینر کوئری کا استعمال",
+              "content": "```css\n.card-container {\n  container-type: inline-size; /* کنٹینر کوئری اینیبل کرنے کے لیے */\n}\n@container (max-width: 600px) {\n  .card {\n    flex-direction: column;\n  }\n}\n```\n```html\n<div class=\"card-container\">\n  <div class=\"card\">...</div>\n</div>\n```\nیہاں `.card` کا لی آؤٹ پیرنٹ کنٹینر کی چوڑائی پر انحصار کرے گا۔"
+            },
+            {
+              "label": "۲۔ سکوپڈ اسٹائلز کا استعمال",
+              "content": "```css\n@scope (.card) to (.card-content) {\n  .card-content { padding: 1rem; }\n}\n```\nیہ اسٹائلز صرف `.card` کے اندر `.card-content` تک اپلائی ہوں گے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "ایک سادہ لی آؤٹ بنائیں جس میں تین کارڈز ہوں۔ ہر کارڈ کے اندر ایک ہیڈنگ اور پیراگراف ہو۔ **کنٹینر کوئری** کا استعمال کرکے ڈیسک ٹاپ پر کارڈز کو `row` میں اور موبائل پر `column` میں ڈسپلے کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ: \"رسپانسیو کارڈ گیلری\"",
+              "content": "۱۔ تین کارڈز بنائیں (ہیڈنگ + پیراگراف + بٹن)۔\n۲۔ ڈیسک ٹاپ پر کارڈز `display: flex; flex-wrap: wrap;` سے ترتیب ہوں۔\n۳۔ موبائل پر (چوڑائی < ۶۰۰px) ہر کارڈ `width: 100%;` ہو جائے۔\n۴۔ ہر کارڈ کا بیک گراؤنڈ رنگ اور پیڈنگ کنٹینر کے سائز پر انحصار کرے (کنٹینر کوئری سے)।"
+            }
+          ]
+        }
+      }
     }
   ],
   "excel-data-analysis": [
