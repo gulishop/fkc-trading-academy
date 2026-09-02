@@ -17168,6 +17168,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 28,
+      "id": "day-028",
+      "date": "2026-09-02",
+      "title": "Day 28 — **Profit Margin Ko Maximize Karne Ke 5 Advanced Hacks**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Profit margin ko badhana sirf price badhane ka matlab nahi—costs control karne, wastage kam karne, aur customer value badhane ka combination hai. Har product ki actual cost (vendor + shipping + platform fees), hidden expenses (mockup tools, ads, refunds), aur perceived value (design quality, niche demand) ko analyze karna zaroori hai."
+        ],
+        [
+          "Example",
+          "Ek T-shirt ka cost breakdown:\n- Vendor price: $8\n- Shipping: $3\n- Platform fee (Etsy): $0.20 + 6.5% = ~$0.80\n- Payment processing: ~$0.50\n- **Total cost: $12.50**\n- Selling price: $25 → **Profit: $12.50 (50% margin)**\n*Lekin agar tum 10% discount offer karte ho, to profit $10.25 ho jata hai. Isliye hidden costs ko pehle se calculate karna zaroori hai.*"
+        ],
+        [
+          "Practice",
+          "Apne ek best-selling product ka cost breakdown nikalo (vendor website se rates check karke). Excel/Google Sheets mein ek simple table banao:\n`Product | Vendor Cost | Shipping | Platform Fees | Other Costs | Total Cost | Selling Price | Profit Margin (%)`"
+        ],
+        [
+          "Mini Project",
+          "Ek \"Profit Booster\" plan banao:\n1. Apne top 3 products ke margins check karo.\n2. Har product ke liye 1-2 cost-cutting idea socho (e.g., bulk shipping discounts, free mockup tools use karna).\n3. Ek \"premium pricing\" strategy likho—kaise apne product ko higher perceived value de sakte ho (e.g., limited edition, bundled offers)."
+        ]
+      ],
+      "answer_key": "cost breakdown table, 50% margin, discount impact, bulk shipping, premium perceived value",
+      "translations": {
+        "ur": {
+          "title": "دن ۲۸ — **منافع کے مارجن کو زیادہ سے زیادہ کرنے کے ۵ ایڈوانسڈ ہیکس**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "منافع کے مارجن کو بڑھانا صرف قیمت بڑھانے کا مطلب نہیں ہوتا — لاگت پر قابو پانا، ضیاع کو کم کرنا، اور گاہک کی قدر میں اضافہ کرنے کا مجموعہ ہے۔ ہر پروڈکٹ کی اصل لاگت (وینڈر + شپنگ + پلیٹ فارم فیس)، پوشیدہ اخراجات (ماک اپ ٹولز، اشتہارات، ریفنڈز)، اور محسوس شدہ قدر (ڈیزائن کا معیار، نیچ کی مانگ) کا تجزیہ کرنا ضروری ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک ٹی شرٹ کی لاگت کا بریک ڈاؤن:\n- وینڈر قیمت: $۸\n- شپنگ: $۳\n- پلیٹ فارم فیس (ایٹسی): $۰.۲۰ + ۶.۵٪ = ~$۰.۸۰\n- ادائیگی کی پروسیسنگ: ~$۰.۵۰\n- **کل لاگت: $۱۲.۵۰**\n- فروخت کی قیمت: $۲۵ → **منافع: $۱۲.۵۰ (۵۰٪ مارجن)**\n*لیکن اگر تم ۱۰٪ ڈسکاؤنٹ پیش کرتے ہو تو منافع $۱۰.۲۵ ہو جاتا ہے۔ اس لیے پوشیدہ اخراجات کو پہلے سے حساب میں لانا ضروری ہے۔*"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے ایک بہترین فروخت ہونے والے پروڈکٹ کا لاگت بریک ڈاؤن نکالو (وینڈر ویب سائٹ سے ریٹس چیک کر کے)। ایکسل/گوگل شیٹس میں ایک سادہ ٹیبل بناؤ:\n`Product | Vendor Cost | Shipping | Platform Fees | Other Costs | Total Cost | Selling Price | Profit Margin (%)`"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک \"منافع بڑھانے والا\" پلان بناؤ:\n۱۔ اپنے ٹاپ ۳ پروڈکٹس کے مارجنز چیک کرو۔\n۲۔ ہر پروڈکٹ کے لیے ۱-۲ لاگت کم کرنے کے آئیڈیاز سوچو (مثلاً، بلک شپنگ ڈسکاؤنٹس، مفت ماک اپ ٹولز کا استعمال کرنا)।\n۳۔ ایک \"پریمیم پرائسنگ\" حکمت عملی لکھو — کس طرح اپنے پروڈکٹ کو زیادہ محسوس شدہ قدر دے سکتے ہو (مثلاً، محدود ایڈیشن، بنڈلڈ آفرز)।"
+            }
+          ]
+        }
+      }
     }
   ],
   "cpp-daily-coding": [
