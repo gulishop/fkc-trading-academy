@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#4F46E5"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="FKC Trading "><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},15000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});if(reg.waiting){reg.waiting.postMessage({type:'SKIP_WAITING'});}reg.addEventListener('updatefound',function(){var nw=reg.installing;if(!nw)return;nw.addEventListener('statechange',function(){if(nw.state==='installed'&&navigator.serviceWorker.controller){nw.postMessage({type:'SKIP_WAITING'});}}});});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-09-01T05:20:06.976062";
+  var FKC_BUILD = "2026-09-02T04:45:22.689932";
   var checking = false;
   function fkcCheckVersion(){
     if(checking) return;
@@ -262,8 +262,8 @@ function fkcToggleTheme(){
     <div class="card">
       <p class="muted" style="background:#fff7e6;padding:10px 12px;border-radius:10px;margin:0 0 12px;">👨‍👩‍👧 Walidain ke liye: bachay ke sath baith kar ye lesson sunein/dekhein, aur upar wala 🎬 audio zaroor lagayein — chhotay bachay padhne se zyada sun kar behtar samajhte hain.</p>
       <img src="images/day-026.png" alt="Day 26 — Apna saman khud sametna aur safai rakhna" style="width:100%;border-radius:12px;margin-bottom:14px;">
-      
-      <div class="lang-tabs">
+      <p class="muted" style="margin:0 0 6px;">🎬 AI Video Explanation</p><video src="videos/day-026.mp4" controls preload="metadata" poster="images/day-026.png" style="width:100%;border-radius:12px;margin-bottom:14px;background:#000;"></video>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
     <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
       <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
       <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
@@ -278,7 +278,7 @@ function fkcToggleTheme(){
     }
     </script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
-      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Beta, jab tum apne kapde, khilone ya kitaabain khud samete aur apne kamre ko saaf rakhte ho, toh tum ek responsible bachay ban jaate ho! Is se tumhara bhi dil khush rehta hai, aur ammi-abbu ko bhi madad milti hai. Har cheez ko uski jagah par rakhna seekhna bhi ek accha habit hai.</p><h3>Chhoti Kahani</h3><p>Rohan ne apne kamre mein khilone bikhaye the. Jab usne khud unhein saaf kiya, toh usko pata chala ke sab kuch alag-alag jagah par rakhne se usko sab cheezein dhundne mein bhi aasani hoti hai. Usne socha, &quot;Agar main roz thoda saametun, toh mera kamra hamesha saaf rahega!&quot;</p><h3>Ammi Abbu Ke Sath Baat Karein</h3><p>Beta, tum apne kamre mein sabse pehle kya cheez sametoge? Kya tum sochte ho ke isse tumhara kamra kitna saaf ho jayega?</p><h3>Yaad Rakhein</h3><p>Hamesha apni cheezein uski jagah par rakhna, taake tumhe unhein dhundne mein mushkil na ho!</p></div>
+      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Beta, jab tum apne kapde, khilone ya kitaabain khud samete aur apne kamre ko saaf rakhte ho, toh tum ek responsible bachay ban jaate ho! Is se tumhara bhi dil khush rehta hai, aur ammi-abbu ko bhi madad milti hai. Har cheez ko uski jagah par rakhna seekhna bhi ek accha habit hai.</p><h3>Chhoti Kahani</h3><p>Rohan ne apne kamre mein khilone bikhaye the. Jab usne khud unhein saaf kiya, toh usko pata chala ke sab kuch alag-alag jagah par rakhne se usko sab cheezein dhundne mein bhi aasani hoti hai. Usne socha, &quot;Agar main roz thoda saametun, toh mera kamra hamesha saaf rahega!&quot;</p><h3>Ammi Abbu Ke Sath Baat Karein</h3><p>Beta, tum apne kamre mein sabse pehle kya cheez sametoge? Kya tum sochte ho ke isse tumhara kamra kitna saaf ho jayega?</p><h3>Yaad Rakhein</h3><p>Hamesha apni cheezein uski jagah par rakhna, taake tumhe unhein dhundne mein mushkil na ho!</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>تصور</h3><p>بیٹا، جب تم اپنے کپڑے، کھلونے یا کتابیں خود سمیٹتے اور اپنے کمرے کو صاف رکھتے ہو، تو تم ایک ذمہ دار بچہ بن جاتے ہو! اس سے تمہارا دل بھی خوش رہتا ہے، اور امی ابو کو بھی مدد ملتی ہے۔ ہر چیز کو اس کی جگہ پر رکھنا سیکھنا بھی ایک اچھا عادت ہے۔</p><h3>چھوٹی کہانی</h3><p>روہن نے اپنے کمرے میں کھلونے بکھیرے تھے۔ جب اس نے خود انہیں صاف کیا، تو اسے پتا چلا کہ سب کچھ الگ الگ جگہ پر رکھنے سے اسے سب چیزیں ڈھونڈنے میں بھی آسانی ہوتی ہے۔ اس نے سوچا، ’’اگر میں روز تھوڑا سمیٹوں، تو میرا کمرہ ہمیشہ صاف رہے گا!‘‘</p><h3>امی ابو کے ساتھ بات کریں</h3><p>بیٹا، تم اپنے کمرے میں سب سے پہلے کون سی چیز سمیٹو گے؟ کیا تم سمجھتے ہو کہ اس سے تمہارا کمرہ کتنا صاف ہو جائے گا؟</p><h3>یاد رکھیں</h3><p>ہمیشہ اپنی چیزیں اس کی جگہ پر رکھنا، تاکہ تمہیں انہیں ڈھونڈنے میں مشکل نہ ہو!</p></div>
       
       
       
@@ -373,7 +373,7 @@ function fkcToggleTheme(){
       <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
         margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
       <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
-        “Roz thora seekho, roz thora aagay badho — mustaqil mehnat hi kamiyabi ki asal kunji hai.”
+        “Aaj ka ek chhota qadam, kal ki bari kamiyabi ki buniyad banta hai.”
       </p>
     </div>
     <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;
