@@ -22491,6 +22491,56 @@
         ]
       ],
       "answer_key": "ai captions, auto-subtitles, trend prediction, capcut/runway ml",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۶ — ٹک ٹاک پر 'اے آئی ٹولز' سے کُنٹینٹ کریئیشن کو ۱۰ گنا تیز بنائیں",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "اے آئی ٹولز اب ٹک ٹاک کریئٹرز کے لیے گیم چینجر بن چکے ہیں۔ کیپشن لکھنے سے لے کر ویڈیو ایڈیٹنگ تک، اے آئی ہر قدم پر مدد کر سکتی ہے۔ آج ہم سیکھیں گے کہ کیسے اے آئی سے اپنا کُنٹینٹ کریئیشن کا عمل تیز، آسان اور پیشہ ورانہ بنایا جا سکتا ہے—بغیر کوڈنگ یا ایڈوانسڈ سکلز کے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔\nکیپشن جنریشن: اے آئی ٹولز جیسے *Copy.ai* یا *Jasper* کو استعمال کرکے اپنے ویڈیو کے ٹاپک پر ۵ سے ۱۰ دلچسپ کیپشنز جنریٹ کریں۔\n۲۔\nویڈیو ایڈیٹنگ: *CapCut* یا *Runway ML* میں اے آئی سے چلنے والے \"آٹو کیپشننگ\" فیچر سے سب ٹائٹلز شامل کریں—بس دو کلکس میں۔\n۳۔\nٹرینڈ پیشن گوئی: *TikTok Creative Center* کی اے آئی ان سائٹس سے سمجھیں کہ اگلے ہفتے کون سا ٹرینڈ وائرل ہو سکتا ہے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے اگلے ویڈیو کے لیے تین اے آئی ٹولز (کیپشن، ایڈیٹنگ، ٹرینڈ ریسرچ) کا استعمال کرکے ایک ڈرافٹ تیار کریں۔ ہر قدم کے اسکرین شاٹس محفوظ کر لیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **اے آئی جنریٹڈ ٹک ٹاک اسکرپٹ** بنائیں—جس میں:\n- اے آئی سے تین کیپشن آپشنز\n- اے آئی ایڈیٹنگ سے ۱۰ سیکنڈ کی کلپ کا آٹو سب ٹائٹل\n- اے آئی ٹرینڈ پیشن گوئی سے ایک ٹرینڈنگ ساؤنڈ کا سجیشن\nسب کو ایک پی ڈی ایف یا کینوا پوسٹر میں ترتیب دیں۔"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "day": 17,
+      "id": "day-017",
+      "date": "2026-09-02",
+      "title": "Day 17 — **\"TikTok Par ‘Engagement Kaise Track Karein’ — Analytics Se Growth Kaise Badhayein\"**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "TikTok par engagement bas likes/comments se hi nahi, balki **analytics** se bhi hota hai. Aaj seekhein ke kaise TikTok ke **Pro Account** ke analytics section se apne content ka performance check karna hai, konse videos zyada engage ho rahe hain, aur audience ke behavior ko samajh kar future content plan karna hai."
+        ],
+        [
+          "Example",
+          "1. Apne TikTok profile par jayein, teeno lines (☰) par click karen.\n2. **\"Creator Tools\"** > **\"Analytics\"** select karen.\n3. **\"Content\"** tab mein dekhein ke **views, likes, shares, watch time** ka breakdown hai.\n4. **\"Audience\"** tab se pata lagayein ke followers ki age, gender, aur active hours kya hain."
+        ],
+        [
+          "Practice",
+          "Abhi apne TikTok Pro Account ke analytics check karen aur **top 3 videos** ke engagement metrics note karen (views, likes, shares, average watch time)."
+        ],
+        [
+          "Mini Project",
+          "Ek **1-minute ka short video** banayein jisme aap apne **top 3 engagement metrics** (jaise \"Mere videos mein sabse zyada ‘shares’ wale video ne 50K views liye\") ko screen-record karke dikhayein + ek **1-line suggestion** bhi add karen (jaise \"Meri audience 8PM par active hoti hai, isliye main is time par post karunga\")."
+        ]
+      ],
+      "answer_key": "views, likes, shares, watch time",
       "translations": {}
     }
   ],
