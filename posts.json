@@ -4549,7 +4549,124 @@
         ]
       ],
       "answer_key": "trending audio, 3-second hook, text overlay, save rate",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن ۲۴ — انسٹاگرام ریلز اور یوٹیوب شارٹس سے وائرل گروتھ کا راز: الگورتھمک ہیک",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "انسٹاگرام ریلز اور یوٹیوب شارٹس کا الگورتھم آج کل مواد کو ’ڈسکور‘ کرنے کا سب سے طاقتور طریقہ ہے۔ یہ تین چیزیں طے کرتی ہیں کہ آپ کا مواد وائرل ہوگا یا نہیں: **واچ ٹائم (ویورز نے کتنا وقت دیکھا)، انگیجمنٹ ریٹ (لائکس، کمنٹس، شیئرز)، اور شیئر ایبلٹی (کتنے صارفین نے سیو/فارورڈ کیا)**۔ اے آئی پاورڈ ایڈیٹنگ ٹولز (جیسے کیپ کٹ، ان شاٹ) اور ٹرینڈنگ آڈیو کا استعمال کرکے آپ کا مواد الگورتھم کو ’لائک‘ کروا سکتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک فٹنس ٹرینر کا رییل ہے ’30 سیکنڈ فیٹ برننگ ورک آؤٹ‘ جو 5 ملین سے زائد ویوز لے گیا۔ اس کی کامیابی کے پیچھے یہ عوامل تھے:"
+            },
+            {
+              "label": "",
+              "content": "۱۔ ٹرینڈنگ آڈیو: اس نے ’اوہ نو‘ ساؤنڈ (ٹرینڈنگ) استعمال کیا جو اس کے نیچے کے 100 سے زائد ریلز میں بھی چل رہا تھا۔"
+            },
+            {
+              "label": "",
+              "content": "۲۔ ہوک ان 3 سیکنڈز: پہلے فریم میں اس نے کہا ’اگر آپ یہ 30 سیکنڈ نہیں کر سکتے… تو آپ کو یہ ویڈیو دیکھنی چاہیے!‘ (کوریوسٹی گیپ)۔"
+            },
+            {
+              "label": "",
+              "content": "۳۔ ٹیکسٹ اوورلے: ہر قدم پر بولڈ ٹیکسٹ ’ڈو اٹ ناؤ!‘ سے ویورز کو ایکشن لینے پر مجبور کیا۔"
+            },
+            {
+              "label": "",
+              "content": "۴۔ کال ٹو ایکشن: ویڈیو کے آخر میں کہا ’اگر آپ کو یہ پسند آیا تو سیو کرکے رکھ لو!‘ (سیو ریٹ بڑھایا)۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے فون سے 15 سیکنڈ کا ایک رییل بنائیں:"
+            },
+            {
+              "label": "",
+              "content": "• **ٹرینڈنگ آڈیو** انسٹاگرام کے ’آڈیو‘ ٹیب سے لیں یا یوٹیوب شارٹس پر سرچ کریں۔"
+            },
+            {
+              "label": "",
+              "content": "• **پہلے 3 سیکنڈز** میں کوئی سنا ہوا جملہ بولیں جو ویورز کو ’رکنے‘ پر مجبور کردے (مثال کے طور پر، ’یہ ٹرک آپ کو 1000 فالورز کیسے دے گا؟‘)۔"
+            },
+            {
+              "label": "",
+              "content": "• **ٹیکسٹ اوورلے** ضرور شامل کریں (کیپ کٹ میں ’آٹو کیپشنز‘ فیچر استعمال کریں)۔"
+            },
+            {
+              "label": "",
+              "content": "• ہیش ٹیگز: صرف 3-5 متعلقہ ہیش ٹیگز (#فٹنس_موٹیویشن، #وائرل_ریلز) استعمال کریں — بغیر #ٹرینڈنگ کے۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **7 روزہ ریلز چیلنج** شروع کریں:"
+            },
+            {
+              "label": "",
+              "content": "• روزانہ 1 رییل پوسٹ کریں (ایک ہی نیچ پر)۔"
+            },
+            {
+              "label": "",
+              "content": "• ہر رییل کے اینالیٹکس چیک کریں (ویوز، ریچ، سیوز)۔"
+            },
+            {
+              "label": "",
+              "content": "• **ساتویں دن** پر بہترین پرفارمنس والے رییل کو **بوسٹ** کرکے 500 روپے کا ایڈ سپینڈ کریں (میٹا ایڈز مینیجر سے) اور گروتھ ریٹ کا موازنہ کریں۔"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "day": 25,
+      "id": "day-025",
+      "date": "2026-09-02",
+      "title": "Day 25 — **WhatsApp Business: Advanced Growth aur Community Building Ka Powerhouse**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "WhatsApp Business ab sirf customer support nahi—yeh engagement aur community building ka secret weapon hai. AI-powered tools (jaise WhatsApp Business API) se automated responses, broadcast messages, aur community groups banakar brands apne audience ko loyal followers mein badal sakte hain. Ismein personalization aur real-time interaction ka magic hai jo Instagram ya Facebook se bhi zyada engaging hai."
+        ],
+        [
+          "Example",
+          "Ek local bakery ne WhatsApp groups banaye (har product category ke liye ek group). Har roz 10 AM par \"Daily Special\" ka message bhejte the—jo bhi group mein reply karta, usko 10% discount. Result: 30% zyada repeat customers aur 5x engagement."
+        ],
+        [
+          "Practice",
+          "Apne ya kisi brand ke liye ek WhatsApp Community plan banao:\n1. 3 topics/interest groups decide karo (e.g., fitness, tech, fashion).\n2. Har group ke liye 10-15 interested followers ya customers dhundho (existing ya new).\n3. Har group mein 3-5 daily messages ka schedule banao (promos, tips, polls)."
+        ],
+        [
+          "Mini Project",
+          "Ek WhatsApp Community launch karo (real ya dummy brand ke liye). 7 din tak:\n- Har din 1 valuable post share karo (e.g., recipe, tech tip, fashion hack).\n- 3 polls ya questions poocho.\n- Har reply ka personal response do.\n- End mein, engagement rate calculate karo (replies + shares / total members)."
+        ]
+      ],
+      "answer_key": "broadcast messages, automated replies, polls, personalization",
+      "translations": {
+        "ur": {
+          "title": "دن ۲۵ — واٹس ایپ بزنس: ایڈوانسڈ گروتھ اور کمیونٹی بلڈنگ کا پاور ہاؤس",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "واٹس ایپ بزنس اب صرف کسٹمر سپورٹ نہیں—یہ انگیجمنٹ اور کمیونٹی بلڈنگ کا رازدارانہ ہتھیار ہے۔ اے آئی پاورڈ ٹولز (جیسے واٹس ایپ بزنس اے پی آئی) سے آٹومیٹڈ رسپونسز، براڈکاسٹ میسجز، اور کمیونٹی گروپس بنا کر برانڈز اپنے سامعین کو وفادار فالورز میں تبدیل کر سکتے ہیں۔ اس میں پرسنلائزیشن اور ریئل ٹائم انٹرایکشن کا جادو ہے جو انسٹاگرام یا فیس بک سے بھی زیادہ انگیجنگ ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک مقامی بیکری نے واٹس ایپ گروپس بنائے (ہر پروڈکٹ کیٹیگری کے لیے ایک گروپ)۔ ہر روز صبح دس بجے \"ڈیلی سپیشل\" کا میسج بھیجتے تھے—جو بھی گروپ میں ریپلائی کرتا، اسے دس فیصد ڈسکاؤنٹ ملتا۔ نتیجہ: تیس فیصد زیادہ ریپیٹ کسٹمرز اور پانچ گنا انگیجمنٹ۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے یا کسی برانڈ کے لیے ایک واٹس ایپ کمیونٹی پلان بنائیں:\n۱۔ تین موضوعات/دلچسپی کے گروپس کا فیصلہ کریں (مثلاً فٹنس، ٹیک، فیشن)۔\n۲۔ ہر گروپ کے لیے دس سے پندرہ دلچسپی رکھنے والے فالورز یا کسٹمرز ڈھونڈیں (موجودہ یا نئے)۔\n۳۔ ہر گروپ میں روزانہ تین سے پانچ میسجز کا شیڈول بنائیں (پروموشنز، ٹپس، پولز)۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک واٹس ایپ کمیونٹی لانچ کریں (حقیقی یا ڈمی برانڈ کے لیے)۔ سات دن تک:\n- ہر روز ایک قیمتی پوسٹ شیئر کریں (مثلاً ریسیپی، ٹیک ٹپ، فیشن ہیک)۔\n- تین پولز یا سوالات پوچھیں۔\n- ہر ریپلائی کا ذاتی جواب دیں۔\n- آخر میں، انگیجمنٹ ریٹ کا حساب لگائیں (ریپلائز + شیئرز / کل ممبرز)۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "facebook-page-growth": [
