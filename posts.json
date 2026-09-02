@@ -32485,7 +32485,80 @@
         ]
       ],
       "answer_key": "",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن ستائیس — چھوٹی چھوٹی آوازوں سے لفظ بنانا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج ہم سیکھیں گے کہ کیسے چھوٹی آوازوں سے بڑے لفظ بنائے جاتے ہیں! جیسے ’ک-اَ-ٹ‘ سے ’کیٹ‘ بن جاتا ہے۔ یہ تفریح ہے اور ہمارے دماغ کو مضبوط بناتا ہے۔ یاد رکھنا، تمہارا جسم تمہارا ہے—کسی کو تم سے یہ کہنے کا حق نہیں کہ تم ’نا‘ کہو۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "بلی رانی نے اپنے بچے سے کہا، ’بیٹا، ’م-ے‘ بول۔‘ بچہ بولا، ’می!‘ بلی رانی مسکرائی، ’شاباش! اب ’م-ے-او-و‘ بول۔‘ بچہ بولا، ’میاؤ!‘ اس کے بعد سب نے کہا، ’واہ! تم نے تو ’میاؤ‘ بول لیا!‘"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "’بیٹا، اگر کوئی تم سے ’سیکرٹ‘ رکھنے کو کہے، تو کیا تم مجھ سے پوچھو گے؟‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمہارا جسم تمہارا ہے—کسی کو بھی تم سے ’نا‘ کہنے کا حق نہیں! اگر کوئی چیز عجیب لگے، تو فوراً بتانا۔"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "day": 28,
+      "id": "day-028",
+      "date": "2026-09-02",
+      "title": "Day 28 — Phal, Sabzi aur Janwaron ki Angrezi Mein Pehchan",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhein ge ke phal, sabzi aur janwaron ke naam angrezi mein kaise hote hain. Har cheez ka apna naam hota hai, aur yeh seekhna bachon ke liye bohat maza hai! Yeh bhi yaad rakhna zaroori hai ke har cheez ka apna haq hai—chahe woh janwar ho, phal ho ya sabzi—kisi ko bhi pareshan karne ka haq nahi."
+        ],
+        [
+          "Chhoti Kahani",
+          "Aman ko school se aate hi pita ne kaha, \"Beta, aaj tum ne kya khaaya?\" Aman ne muskura kar kaha, \"Pita ji, main ne ek apple, ek banana aur ek orange khaaya!\" Pita ne kaha, \"Wah! Tum ne to teen alag-alag phal khaye. Kya tum inke angrezi naam bhi jaante ho?\" Aman ne soch kar kaha, \"Apple—seb, Banana—kela, Orange—santara!\""
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar tum kisi janwar, phal ya sabzi ka naam angrezi mein jaante ho, to mujhe bata sakte ho? Jaise 'dog' ya 'cat'?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Har cheez ka apna naam hota hai—uske saath pyaar se pesh aao, aur kabhi bhi kisi ko pareshan mat karo. Agar koi cheez ajeeb lage, to turant ammi/abbu ko bata do!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن اٹھائیس — پھل، سبزی اور جانوروں کی انگریزی میں پہچان",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج ہم سیکھیں گے کہ پھل، سبزی اور جانوروں کے نام انگریزی میں کیسے ہوتے ہیں۔ ہر چیز کا اپنا نام ہوتا ہے، اور یہ سیکھنا بچوں کے لیے بہت مزہ ہے! یہ بھی یاد رکھنا ضروری ہے کہ ہر چیز کا اپنا حق ہے—چاہے وہ جانور ہو، پھل ہو یا سبزی—کسی کو بھی پریشان کرنے کا حق نہیں۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "امان کو سکول سے آتے ہی والد نے کہا، ’بیٹا، آج تم نے کیا کھایا؟‘ امان نے مسکرا کر کہا، ’ابّا جی، میں نے ایک سیب، ایک کیلا اور ایک سنترا کھایا!‘ والد نے کہا، ’واہ! تم نے تو تین الگ الگ پھل کھائے۔ کیا تم ان کے انگریزی نام بھی جانتے ہو؟‘ امان نے سوچ کر کہا، ’ایپل—سیب، بنانہ—کیلا، اورنج—سنترا!‘"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "’بیٹا، اگر تم کسی جانور، پھل یا سبزی کا نام انگریزی میں جانتے ہو، تو مجھے بتا سکتے ہو؟ جیسے ’ڈاگ‘ یا ’کیٹ‘؟‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "ہر چیز کا اپنا نام ہوتا ہے—اس کے ساتھ پیار سے پیش آؤ، اور کبھی بھی کسی کو پریشان مت کرو۔ اگر کوئی چیز عجیب لگے، تو فوراً امّی/ابّو کو بتا دو!"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-pg": [
