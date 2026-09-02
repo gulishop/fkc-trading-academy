@@ -20953,6 +20953,33 @@
       ],
       "answer_key": "asic miner, mining pool, electricity cost, profitability calculator",
       "translations": {}
+    },
+    {
+      "day": 11,
+      "id": "day-011",
+      "date": "2026-09-02",
+      "title": "Day 11 — **Smart Contracts: Blockchain Ka Digital Lawyer**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Smart contracts blockchain par automatically execute hone wale digital agreements hain. Inmein predefined rules likhe jaate hain, aur jab conditions fulfill hoti hain, to contract automatically complete ho jati hai—bina kisi third-party (jaise lawyer ya bank) ke. Ye trustless hote hain: ek baar deploy hone ke baad inhe koi change ya hack nahi kar sakta."
+        ],
+        [
+          "Example",
+          "Imagine ek vending machine: tum ₹500 dalte ho, machine automatically tumhe chips de deti hai. Smart contract bhi aisa hi hai—tum \"agar X condition hogi, to Y action execute ho\" likh dete ho, aur blockchain ye automatically handle karti hai."
+        ],
+        [
+          "Practice",
+          "1. **Remix IDE** (browser-based smart contract platform) open karo: https://remix.ethereum.org\n2. \"File Explorer\" mein ek naya file banayo: `SimpleContract.sol`\n3. Ye code paste karo:\n   ```solidity\n   // SPDX-License-Identifier: MIT\n   pragma solidity ^0.8.0;\n   contract SimpleStorage {\n       uint storedData;\n       function set(uint x) public {\n           storedData = x;\n       }\n       function get() public view returns (uint) {\n           return storedData;\n       }\n   }\n   ```\n4. \"Compile\" button dabayo, phir \"Deploy\" karo (Injected Web3 ya \"Remix VM\" select karo)."
+        ],
+        [
+          "Mini Project",
+          "Ek simple smart contract banayo jo:\n- Users ko \"Hello, [Name]!\" message return kare (input ke hisaab se).\n- Har user ka name store kare (taki dobara na poochna pade).\n*Hint:* `mapping(address => string) public greetings;` use karna hai."
+        ]
+      ],
+      "answer_key": "remix ide open, simplestorage.sol compile/deploy, storeddata set/get",
+      "translations": {}
     }
   ],
   "psx-stock-trading": [
