@@ -8436,7 +8436,80 @@
         ]
       ],
       "answer_key": "order confirmed, ready to ship, daraz express, dropshipping tracking",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن ۱۶ — دراز پر آرڈرز اور ڈیلیوری کو ۱۰۰٪ سُمُوتھ بنانے کا مکمل گائیڈ",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "دراز پر آرڈرز اور ڈیلیوری کو مؤثر طریقے سے مینیج کرنا ایک کامیاب سیلر کی پہچان ہے۔ اس سبق میں ہم دراز ایکسپریس (دراز کی اپنی ڈیلیوری سروس) اور ڈراپ شپنگ ماڈل کو قدم بہ قدم سمجھیں گے۔ آرڈرز کو ٹریک کرنا، ڈیلیوری کے وقت کو بہتر بنانا، اور گاہک کو بروقت اپ ڈیٹس دینا سیلز بڑھانے کا راز ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ آرڈر کنفرمیشن: جب کوئی گاہک آرڈر کرے تو \"آرڈر کنفرمڈ\" اسٹیٹس پر کلک کرکے گاہک کو ای میل/ایس ایم ایس نوٹیفیکیشن بھیج دو۔\n۲۔ دراز ایکسپریس: اگر پروڈکٹ دراز ایکسپریس کے ذریعے ڈیلیور کرنا ہے تو \"ریڈی ٹو شپ\" پر کلک کرکے دراز کو پروڈکٹ بھیج دو۔ دراز کی ٹیم ڈیلیوری ہینڈل کرے گی۔\n۳۔ ڈراپ شپنگ: اگر ڈراپ شپنگ ماڈل استعمال کر رہے ہو تو سپلائر کو آرڈر فارورڈ کرکے گاہک کو ٹریکنگ نمبر شیئر کر دو۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے دراز سیلر سینٹر میں جاکر \"آرڈرز\" سیکشن میں جائیں۔ کوئی ایک زیر التواء آرڈر سلیکٹ کرکے \"ریڈی ٹو شپ\" پر کلک کریں۔ اگر دراز ایکسپریس استعمال کر رہے ہیں تو \"دراز ایکسپریس\" آپشن چُنیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک سادہ ایکسل شیٹ بنائیں جس میں آپ اپنے پانچ حالیہ آرڈرز کا اسٹیٹس (کنفرمڈ، ریڈی ٹو شپ، شپڈ، ڈیلیورڈ) ٹریک کریں۔ ہر آرڈر کے لیے اندازہً ڈیلیوری کی تاریخ بھی لکھیں۔"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "day": 17,
+      "id": "day-017",
+      "date": "2026-09-02",
+      "title": "Day 17 — **Daraz Par Negative Reviews Ko Professional Tarike Se Handle Karna**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Negative reviews Daraz par seller ki credibility par asar dalte hain. Inko ignore karne ki jagah, unhe professionally handle karna zaroori hai. Sabse pehle review ke root cause samjho (product defect, delivery issue, ya customer ki expectation mismatch), phir prompt response do taake buyer ka trust bana rahe."
+        ],
+        [
+          "Example",
+          "Ek customer ne \"Product damaged\" ka review diya hai. Aap usko private message karke poochhein: *\"Assalamu Alaikum, hum aapki concern ko samajhte hain. Hum aapke order ko check kar rahe hain. Kya aap humein product ki photo share kar sakte hain?\"* Agar product defect hai, toh replacement ya refund offer karein."
+        ],
+        [
+          "Practice",
+          "Apne Daraz store ke kisi 1 negative review ko dhyaan se padhein. Uske liye 1 professional response draft karein (2-3 lines mein)."
+        ],
+        [
+          "Mini Project",
+          "Ek \"Review Response Template\" taiyar karein jismein common negative reviews (late delivery, wrong product, damaged item) ke liye ready-made responses hon."
+        ]
+      ],
+      "answer_key": "acknowledge issue, apologize, solution offer, follow-up",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۷ — **داراز پر نیگیٹو ریویوز کو پیشہ ورانہ طریقے سے ہینڈل کرنا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "داراز پر نیگیٹو ریویوز سیلر کی کریڈِبِلٹی پر اثر انداز ہوتے ہیں۔ انہیں نظرانداز کرنے کی بجائے، انہیں پیشہ ورانہ انداز میں ہینڈل کرنا ضروری ہے۔ سب سے پہلے ریویو کے بنیادی سبب کو سمجھیں (پروڈکٹ کا نقص، ڈیلیوری کا مسئلہ، یا کسٹمر کی توقعات کا فرق)، پھر فوری جواب دیں تاکہ بائر کا اعتماد برقرار رہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک کسٹمر نے \"پروڈکٹ ڈیمیجڈ\" کا ریویو دیا ہے۔ آپ اسے پرائیویٹ میسج کرکے پوچھیں: *\"السلام علیکم، ہم آپ کی تشویش کو سمجھتے ہیں۔ ہم آپ کے آرڈر کو چیک کر رہے ہیں۔ کیا آپ ہمیں پروڈکٹ کی تصویر شیئر کر سکتے ہیں؟\"* اگر پروڈکٹ میں نقص ہو تو ریپلیسمنٹ یا ریفنڈ کی پیشکش کریں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے داراز اسٹور کے کسی ایک نیگیٹو ریویو کو غور سے پڑھیں۔ اس کے لیے ایک پیشہ ورانہ جواب تیار کریں (دو سے تین لائنوں میں)۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک \"ریویو ریسپانس ٹیمپلیٹ\" تیار کریں جس میں عام نیگیٹو ریویوز (دیر سے ڈیلیوری، غلط پروڈکٹ، ڈیمیجڈ آئٹم) کے لیے تیار شدہ جوابات ہوں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "ai-content-writing": [
