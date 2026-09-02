@@ -1225,6 +1225,96 @@
           ]
         }
       }
+    },
+    {
+      "day": 24,
+      "id": "day-024",
+      "date": "2026-09-02",
+      "title": "Day 24 — **Affiliate Marketing Ke \"Evergreen Content\" Ko Rank Karne Ke Advanced SEO Tips**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Evergreen content rank karne ke liye SEO ke advanced techniques use karna zaroori hai. Keywords research, on-page SEO, technical SEO, aur backlink strategy ko combine karke long-term traffic gain kiya ja sakta hai. Google ke algorithm updates (jaise Core Updates) ko samajh kar content ko optimize karna chahiye."
+        ],
+        [
+          "Example",
+          "Ek \"best budget laptops under 50,000\" article ko rank karne ke liye:\n1."
+        ],
+        [
+          "Keyword Clustering",
+          "\"budget laptop,\" \"affordable laptop,\" \"best laptop under 50k\" ko ek cluster mein include karo.\n2."
+        ],
+        [
+          "On-Page SEO",
+          "Title mein primary keyword, meta description mein benefits mention karo, aur internal linking se related articles se connect karo.\n3."
+        ],
+        [
+          "Technical SEO",
+          "Page speed (Core Web Vitals) improve karo, mobile-friendly design use karo, aur schema markup add karo (jaise \"Product\" schema).\n4."
+        ],
+        [
+          "Backlinks",
+          "Tech blogs ya YouTube reviews se do-follow backlinks gain karo."
+        ],
+        [
+          "Practice",
+          "Apne affiliate content ke liye 1-2 long-tail keywords identify karo aur unhe on-page SEO ke liye optimize karo (title, meta, H2/H3 headings, internal links)."
+        ],
+        [
+          "Mini Project",
+          "Ek existing evergreen article ko lekar usse update karo:\n- 2-3 new sections add karo (jaise \"Buying Guide\" ya \"FAQs\").\n- 1-2 high-authority sites se backlinks gain karne ke liye outreach email draft karo."
+        ]
+      ],
+      "answer_key": "keywords research, on-page optimization, backlinks, technical seo",
+      "translations": {
+        "ur": {
+          "title": "دن ۲۴ — ایفیلیٹ مارکیٹنگ کے \"ایورگرین کنٹینٹ\" کو رینک کرنے کے ایڈوانسڈ ایس ای او ٹپس",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "ایورگرین کنٹینٹ کو رینک کرنے کے لیے ایس ای او کی ایڈوانسڈ تکنیکس کا استعمال ضروری ہے۔ کی ورڈز ریسرچ، آن پیج ایس ای او، ٹیکنیکل ایس ای او، اور بیک لنک اسٹریٹیجی کو ملا کر طویل مدتی ٹریفک حاصل کی جا سکتی ہے۔ گوگل کے الگورتھم اپ ڈیٹس (جیسے کور اپ ڈیٹس) کو سمجھ کر کنٹینٹ کو بہتر بنانا چاہیے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک \"بہترین بجٹ لیپ ٹاپس انڈر ۵۰،۰۰۰\" کے مضمون کو رینک کرنے کے لیے:"
+            },
+            {
+              "label": "۱۔",
+              "content": "کی ورڈ کلسٹرنگ: \"بجٹ لیپ ٹاپ،\" \"سستی لیپ ٹاپ،\" \"بہترین لیپ ٹاپ انڈر ۵۰ ہزار\" کو ایک کلسٹر میں شامل کریں۔"
+            },
+            {
+              "label": "۲۔",
+              "content": "آن پیج ایس ای او: ٹائٹل میں پرائمری کی ورڈ، میٹا ڈسکرپشن میں فوائد کا ذکر کریں، اور انٹرنل لنکنگ سے متعلقہ مضامین سے جوڑیں۔"
+            },
+            {
+              "label": "۳۔",
+              "content": "ٹیکنیکل ایس ای او: پیج سپیڈ (کور ویب وائٹلز) بہتر کریں، موبائل فرینڈلی ڈیزائن استعمال کریں، اور سکیمہ مارک اپ شامل کریں (جیسے \"پروڈکٹ\" سکیمہ)।"
+            },
+            {
+              "label": "۴۔",
+              "content": "بیک لنکس: ٹیک بلاگز یا یوٹیوب ریویوز سے ڈو فالو بیک لنکس حاصل کریں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے ایفیلیٹ کنٹینٹ کے لیے ۱-۲ لانگ ٹیل کی ورڈز شناخت کریں اور انہیں آن پیج ایس ای او کے لیے بہتر بنائیں (ٹائٹل، میٹا، ایچ ۲/ایچ ۳ ہیڈنگز، انٹرنل لنکس)।"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک موجودہ ایورگرین مضمون کو لے کر اسے اپ ڈیٹ کریں:"
+            },
+            {
+              "label": "۱۔",
+              "content": "۲-۳ نئے سیکشنز شامل کریں (جیسے \"بائینگ گائیڈ\" یا \"عمومی سوالات\")۔"
+            },
+            {
+              "label": "۲۔",
+              "content": "۱-۲ اعلیٰ اتھارٹی سائٹس سے بیک لنکس حاصل کرنے کے لیے آؤٹ ریچ ای میل کا مسودہ تیار کریں۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "youtube-automation": [
