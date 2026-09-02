@@ -28613,6 +28613,68 @@
       ],
       "answer_key": "port clean, battery check, cable test, appointment book",
       "translations": {}
+    },
+    {
+      "day": 31,
+      "id": "day-031",
+      "date": "2026-09-02",
+      "title": "Day 31 — **Mobile Charging Port Repair: Cleaning, Replacement & Troubleshooting**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Charging port repair mobile repairing ka sabse common aur zaruri skill hai. 90% users charging issues report karte hain—loose connection, dust blockage, ya broken pins ki wajah se. Aaj hum port cleaning, soldering, aur replacement ke basics seekhenge."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Cleaning",
+          "Toothbrush + isopropyl alcohol se port ke pins saaf karo.\n2."
+        ],
+        [
+          "Inspection",
+          "Microscope ya magnifying glass se check karo ke pins bent na hon.\n3."
+        ],
+        [
+          "Replacement",
+          "Agar port damaged hai, to naya port solder karo (hot air gun se 300°C par)."
+        ],
+        [
+          "Practice",
+          "Apne ek old phone ka charging port kholo, brush aur alcohol se saaf karo, aur check karo ke connection sahi ho raha hai ya nahi."
+        ],
+        [
+          "Mini Project",
+          "Ek dead charging port wale phone ko repair karo (ya kisi friend se lekar practice karo). Video banao ya notes likho ke kaise kaam kiya."
+        ]
+      ],
+      "answer_key": "port cleaning, pins check, soldering, hot air gun",
+      "translations": {
+        "ur": {
+          "title": "دن ۳۱ — موبائل چارجنگ پورٹ ریپئیر: صفائی، تبدیلی اور ٹربل شوٹنگ",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "چارجنگ پورٹ ریپئیر موبائل ریپئیرنگ کا سب سے عام اور ضروری ہنر ہے۔ نوے فیصد صارفین چارجنگ کے مسائل کی رپورٹ کرتے ہیں — ڈھیلا کنکشن، دھول کی رکاوٹ، یا ٹوٹے ہوئے پن کی وجہ سے۔ آج ہم پورٹ کی صفائی، سولڈرنگ، اور تبدیلی کی بنیادی باتیں سیکھیں گے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ صفائی: ٹوتھ برش اور آئسو پروپائل الکحل سے پورٹ کے پن صاف کرو۔ ۲۔ معائنہ: مائیکرو اسکوپ یا میگنیفائنگ گلاس سے چیک کرو کہ پن ٹیڑھے تو نہیں ہیں۔ ۳۔ تبدیلی: اگر پورٹ خراب ہے تو نیا پورٹ سولڈر کرو (ہاٹ ایئر گن سے ۳۰۰ ڈگری سینٹی گریڈ پر)।"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے کسی پرانے موبائل کا چارجنگ پورٹ کھولو، برش اور الکحل سے صاف کرو، اور چیک کرو کہ کنکشن ٹھیک ہو رہا ہے یا نہیں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک مردہ چارجنگ پورٹ والے موبائل کو ریپئیر کرو (یا کسی دوست سے لے کر پریکٹس کرو)۔ ویڈیو بناؤ یا نوٹس لکھو کہ کام کیسے کیا۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-safety-education": [
