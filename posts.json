@@ -19347,7 +19347,100 @@
         ]
       ],
       "answer_key": "api request, json parsing, error handling, http status codes",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن ۱۹ — اے پی آئیز کے ساتھ کام کرنا: بیرونی ڈیٹا حاصل کرنا اور استعمال کرنا",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "اے پی آئیز (ایپلیکیشن پروگرامنگ انٹرفیسز) آپ کے پائیتھن پروگرامز کو بیرونی سروسز جیسے کہ موسمی اطلاع ایپس، سوشل میڈیا، یا ادائیگی کے گیٹ ویز کے ساتھ بات چیت کرنے کی اجازت دیتے ہیں۔ ہم سیکھیں گے کہ کس طرح ایچ ٹی ٹی پی درخواستیں اے پی آئیز کو بھیجی جاتی ہیں، جوابات (جے سن/ایکس ایم ایل) کو ہینڈل کیا جاتا ہے، اور `requests` لائبریری کا استعمال کرتے ہوئے مفید ڈیٹا نکالا جاتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔ `requests` انسٹال کریں (اگر انسٹال نہ ہو): `pip install requests`\n۲۔ مفت اے پی آئی سے ڈیٹا حاصل کریں (مثلاً، جے سن پلیس ہولڈر جعلی پوسٹس کے لیے):\n```python\nimport requests\nresponse = requests.get(\"https://jsonplaceholder.typicode.com/posts/1\")\ndata = response.json()  # جے سن جواب کو پائیتھن ڈکشنری میں تبدیل کریں\nprint(data[\"title\"])    # مخصوص ڈیٹا تک رسائی\n```\n۳۔ غلطیوں کو ہینڈل کریں (مثلاً، غلط یو آر ایل):\n```python\ntry:\n    response = requests.get(\"https://invalid.url\")\n    response.raise_for_status()  # خراب اسٹیٹس کوڈز کے لیے غلطی پیدا کرتا ہے\nexcept requests.exceptions.RequestException as e:\n    print(\"غلطی:\", e)\n```"
+            },
+            {
+              "label": "مشق",
+              "content": "[اوپن ویدر میپ اے پی آئی](https://openweathermap.org/api) کا استعمال کریں (مفت اے پی آئی کلید کے لیے سائن اپ کریں) اور اپنے شہر کا موجودہ درجہ حرارت حاصل کرکے پرنٹ کریں۔ اشارہ: اے پی آئی اینڈ پوائنٹ کے ساتھ `requests.get()` کا استعمال کریں اور جے سن جواب کو پرس کریں۔"
+            },
+            {
+              "label": "چھوٹا پروجیکٹ",
+              "content": "**۵ روزہ موسمی پیش گوئی کمانڈ لائن ٹول** بنائیں جو:\n۱۔ صارف سے شہر کا نام بطور ان پٹ لے۔\n۲۔ اوپن ویدر میپ اے پی آئی سے موسمی ڈیٹا حاصل کرے۔\n۳۔ پیش گوئی کو پڑھنے کے قابل شکل میں پرنٹ کرے (مثلاً، \"دن ۱: دھوپ، ۲۵ سینٹی گریڈ\")۔"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "day": 20,
+      "id": "day-020",
+      "date": "2026-09-02",
+      "title": "Day 20 — Web Scraping: Advanced Techniques aur Data Extraction",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum web scraping ke advanced techniques seekhenge. Hum `BeautifulSoup` aur `requests` libraries ka istemal karke dynamic websites se data extract karenge, aur `selenium` ka use karke JavaScript-rendered content ko scrape karenge. Isse hum un websites se bhi data le sakte hain jo pehle accessible nahi the."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Dynamic Content Scraping",
+          "```python\nfrom selenium import webdriver\nfrom selenium.webdriver.chrome.service import Service\nfrom webdriver_manager.chrome import ChromeDriverManager\n\ndriver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))\ndriver.get(\"https://example.com/dynamic-page\")\nelements = driver.find_elements(\"tag name\", \"h2\")\nfor elem in elements:\n    print(elem.text)\ndriver.quit()\n```\n\n2."
+        ],
+        [
+          "Handling Pagination",
+          "```python\nimport requests\nfrom bs4 import BeautifulSoup\n\nbase_url = \"https://example.com/page=\"\nfor page in range(1, 6):\n    url = base_url + str(page)\n    response = requests.get(url)\n    soup = BeautifulSoup(response.text, 'html.parser')\n    items = soup.find_all(\"div\", class_=\"item\")\n    for item in items:\n        print(item.text.strip())\n```"
+        ],
+        [
+          "Practice",
+          "Ek website (jaise `https://books.toscrape.com/`) se 5 pages ke books ke titles aur prices extract karo. `BeautifulSoup` aur `requests` ka use karo."
+        ],
+        [
+          "Mini Project",
+          "**\"Flipkart Product Scraper\"**\nEk script banaye jo Flipkart se \"laptops\" search kare aur pehle 3 pages ke products ke names, prices, aur ratings ko ek CSV file mein save kare."
+        ]
+      ],
+      "answer_key": "requests.get, beautifulsoup, find_all, csv write",
+      "translations": {
+        "ur": {
+          "title": "دن ۲۰ — ویب سکریپنگ: جدید تکنیکیں اور ڈیٹا ایکسٹریکشن",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم ویب سکریپنگ کی جدید تکنیکیں سیکھیں گے۔ ہم `BeautifulSoup` اور `requests` لائبریریز کا استعمال کرتے ہوئے ڈائنامک ویب سائٹس سے ڈیٹا ایکسٹریکٹ کریں گے، اور `selenium` کا استعمال کرتے ہوئے جاوااسکرپٹ سے رینڈر ہونے والے مواد کو سکریپ کریں گے۔ اس سے ہم ان ویب سائٹس سے بھی ڈیٹا حاصل کر سکیں گے جو پہلے قابل رسائی نہیں تھیں۔"
+            },
+            {
+              "label": "مثال: ۱۔",
+              "content": "ڈائنامک مواد کی سکریپنگ:"
+            },
+            {
+              "label": "ڈائنامک مواد کی سکریپنگ",
+              "content": "```python\nfrom selenium import webdriver\nfrom selenium.webdriver.chrome.service import Service\nfrom webdriver_manager.chrome import ChromeDriverManager\n\ndriver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))\ndriver.get(\"https://example.com/dynamic-page\")\nelements = driver.find_elements(\"tag name\", \"h2\")\nfor elem in elements:\n    print(elem.text)\ndriver.quit()\n```"
+            },
+            {
+              "label": "مثال: ۲۔",
+              "content": "پیجینیشن کو ہینڈل کرنا:"
+            },
+            {
+              "label": "پیجینیشن کو ہینڈل کرنا",
+              "content": "```python\nimport requests\nfrom bs4 import BeautifulSoup\n\nbase_url = \"https://example.com/page=\"\nfor page in range(1, 6):\n    url = base_url + str(page)\n    response = requests.get(url)\n    soup = BeautifulSoup(response.text, 'html.parser')\n    items = soup.find_all(\"div\", class_=\"item\")\n    for item in items:\n        print(item.text.strip())\n```"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "ایک ویب سائٹ (جیسے `https://books.toscrape.com/`) سے ۵ صفحات کی کتابوں کے ٹائٹلز اور قیمتوں کو ایکسٹریکٹ کریں۔ `BeautifulSoup` اور `requests` کا استعمال کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "**\"فلپ کارٹ پروڈکٹ سکریپر\"**\nایک اسکرپٹ بنائیں جو فلپ کارٹ سے \"لیپ ٹاپس\" سرچ کرے اور پہلے ۳ صفحات کے پروڈکٹس کے ناموں، قیمتوں، اور ریٹنگز کو ایک CSV فائل میں محفوظ کرے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "web-development": [

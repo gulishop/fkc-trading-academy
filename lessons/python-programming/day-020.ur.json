@@ -1,0 +1,34 @@
+{
+  "title": "دن ۲۰ — ویب سکریپنگ: جدید تکنیکیں اور ڈیٹا ایکسٹریکشن",
+  "preamble": "",
+  "sections": [
+    {
+      "label": "کنسیپٹ",
+      "content": "آج ہم ویب سکریپنگ کی جدید تکنیکیں سیکھیں گے۔ ہم `BeautifulSoup` اور `requests` لائبریریز کا استعمال کرتے ہوئے ڈائنامک ویب سائٹس سے ڈیٹا ایکسٹریکٹ کریں گے، اور `selenium` کا استعمال کرتے ہوئے جاوااسکرپٹ سے رینڈر ہونے والے مواد کو سکریپ کریں گے۔ اس سے ہم ان ویب سائٹس سے بھی ڈیٹا حاصل کر سکیں گے جو پہلے قابل رسائی نہیں تھیں۔"
+    },
+    {
+      "label": "مثال: ۱۔",
+      "content": "ڈائنامک مواد کی سکریپنگ:"
+    },
+    {
+      "label": "ڈائنامک مواد کی سکریپنگ",
+      "content": "```python\nfrom selenium import webdriver\nfrom selenium.webdriver.chrome.service import Service\nfrom webdriver_manager.chrome import ChromeDriverManager\n\ndriver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))\ndriver.get(\"https://example.com/dynamic-page\")\nelements = driver.find_elements(\"tag name\", \"h2\")\nfor elem in elements:\n    print(elem.text)\ndriver.quit()\n```"
+    },
+    {
+      "label": "مثال: ۲۔",
+      "content": "پیجینیشن کو ہینڈل کرنا:"
+    },
+    {
+      "label": "پیجینیشن کو ہینڈل کرنا",
+      "content": "```python\nimport requests\nfrom bs4 import BeautifulSoup\n\nbase_url = \"https://example.com/page=\"\nfor page in range(1, 6):\n    url = base_url + str(page)\n    response = requests.get(url)\n    soup = BeautifulSoup(response.text, 'html.parser')\n    items = soup.find_all(\"div\", class_=\"item\")\n    for item in items:\n        print(item.text.strip())\n```"
+    },
+    {
+      "label": "پریکٹس",
+      "content": "ایک ویب سائٹ (جیسے `https://books.toscrape.com/`) سے ۵ صفحات کی کتابوں کے ٹائٹلز اور قیمتوں کو ایکسٹریکٹ کریں۔ `BeautifulSoup` اور `requests` کا استعمال کریں۔"
+    },
+    {
+      "label": "منی پروجیکٹ",
+      "content": "**\"فلپ کارٹ پروڈکٹ سکریپر\"**\nایک اسکرپٹ بنائیں جو فلپ کارٹ سے \"لیپ ٹاپس\" سرچ کرے اور پہلے ۳ صفحات کے پروڈکٹس کے ناموں، قیمتوں، اور ریٹنگز کو ایک CSV فائل میں محفوظ کرے۔"
+    }
+  ]
+}

@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#4F46E5"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="FKC Trading "><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},15000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});if(reg.waiting){reg.waiting.postMessage({type:'SKIP_WAITING'});}reg.addEventListener('updatefound',function(){var nw=reg.installing;if(!nw)return;nw.addEventListener('statechange',function(){if(nw.state==='installed'&&navigator.serviceWorker.controller){nw.postMessage({type:'SKIP_WAITING'});}}});});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-09-01T23:49:45.156198";
+  var FKC_BUILD = "2026-09-02T23:52:51.665310";
   var checking = false;
   function fkcCheckVersion(){
     if(checking) return;
@@ -255,15 +255,15 @@ function fkcToggleTheme(){
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "headline": "Day 19 — Working with APIs: Fetching and Using External Data", "name": "Day 19 — Working with APIs: Fetching and Using External Data", "description": "", "learningResourceType": "Lesson", "educationalLevel": "Beginner", "inLanguage": "ur", "isPartOf": {"@type": "Course", "name": "Python Programming"}, "datePublished": "2026-09-01", "publisher": {"@type": "Organization", "name": "FKC Trading Academy"}}</script>
     <div class="top"><a href="../../../index.html">← FKC Trading Academy</a>
     <a href="../index.html" class="course-back-link">/ Python Programming</a></div>
-    <span class="badge">Latest</span>
+    
     <p class="muted">🐍 Python Programming · Day 19</p>
     <h1>Day 19 — Working with APIs: Fetching and Using External Data</h1>
     <p class="muted" style="margin:0 0 10px;">↩️ Pichla lesson: <strong>Day 18 — Web Scraping Basics with Python</strong> — aaj is se aage badhte hain.</p>
     <div class="card">
       
       <img src="images/day-019.png" alt="Day 19 — Working with APIs: Fetching and Using External Data" style="width:100%;border-radius:12px;margin-bottom:14px;">
-      
-      <div class="lang-tabs">
+      <p class="muted" style="margin:0 0 6px;">🎬 AI Video Explanation</p><video src="videos/day-019.mp4" controls preload="metadata" poster="images/day-019.png" style="width:100%;border-radius:12px;margin-bottom:14px;background:#000;"></video>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
     <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
       <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
       <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
@@ -287,7 +287,14 @@ function fkcToggleTheme(){
        response.raise_for_status()  # Raises error for bad status codes
    except requests.exceptions.RequestException as e:
        print(&quot;Error:&quot;, e)
-   </code></pre><h3>Practice</h3><p>Use the [OpenWeatherMap API](https://openweathermap.org/api) (sign up for a free API key) to fetch and print the current temperature of your city. Hint: Use `requests.get()` with the API endpoint and parse the JSON response.</p><h3>Mini Project</h3><p>Build a **5-day weather forecast CLI tool** that:<br>1. Takes a city name as input.<br>2. Fetches weather data from OpenWeatherMap API.<br>3. Prints the forecast in a readable format (e.g., &quot;Day 1: Sunny, 25°C&quot;).</p></div>
+   </code></pre><h3>Practice</h3><p>Use the [OpenWeatherMap API](https://openweathermap.org/api) (sign up for a free API key) to fetch and print the current temperature of your city. Hint: Use `requests.get()` with the API endpoint and parse the JSON response.</p><h3>Mini Project</h3><p>Build a **5-day weather forecast CLI tool** that:<br>1. Takes a city name as input.<br>2. Fetches weather data from OpenWeatherMap API.<br>3. Prints the forecast in a readable format (e.g., &quot;Day 1: Sunny, 25°C&quot;).</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>تصور</h3><p>اے پی آئیز (ایپلیکیشن پروگرامنگ انٹرفیسز) آپ کے پائیتھن پروگرامز کو بیرونی سروسز جیسے کہ موسمی اطلاع ایپس، سوشل میڈیا، یا ادائیگی کے گیٹ ویز کے ساتھ بات چیت کرنے کی اجازت دیتے ہیں۔ ہم سیکھیں گے کہ کس طرح ایچ ٹی ٹی پی درخواستیں اے پی آئیز کو بھیجی جاتی ہیں، جوابات (جے سن/ایکس ایم ایل) کو ہینڈل کیا جاتا ہے، اور `requests` لائبریری کا استعمال کرتے ہوئے مفید ڈیٹا نکالا جاتا ہے۔</p><h3>مثال</h3><p>۱۔ `requests` انسٹال کریں (اگر انسٹال نہ ہو): `pip install requests`<br>۲۔ مفت اے پی آئی سے ڈیٹا حاصل کریں (مثلاً، جے سن پلیس ہولڈر جعلی پوسٹس کے لیے):</p><pre dir="ltr"><code>import requests
+response = requests.get(&quot;https://jsonplaceholder.typicode.com/posts/1&quot;)
+data = response.json()  # جے سن جواب کو پائیتھن ڈکشنری میں تبدیل کریں
+print(data[&quot;title&quot;])    # مخصوص ڈیٹا تک رسائی</code></pre><p>۳۔ غلطیوں کو ہینڈل کریں (مثلاً، غلط یو آر ایل):</p><pre dir="ltr"><code>try:
+    response = requests.get(&quot;https://invalid.url&quot;)
+    response.raise_for_status()  # خراب اسٹیٹس کوڈز کے لیے غلطی پیدا کرتا ہے
+except requests.exceptions.RequestException as e:
+    print(&quot;غلطی:&quot;, e)</code></pre><h3>مشق</h3><p>[اوپن ویدر میپ اے پی آئی](https://openweathermap.org/api) کا استعمال کریں (مفت اے پی آئی کلید کے لیے سائن اپ کریں) اور اپنے شہر کا موجودہ درجہ حرارت حاصل کرکے پرنٹ کریں۔ اشارہ: اے پی آئی اینڈ پوائنٹ کے ساتھ `requests.get()` کا استعمال کریں اور جے سن جواب کو پرس کریں۔</p><h3>چھوٹا پروجیکٹ</h3><p>**۵ روزہ موسمی پیش گوئی کمانڈ لائن ٹول** بنائیں جو:<br>۱۔ صارف سے شہر کا نام بطور ان پٹ لے۔<br>۲۔ اوپن ویدر میپ اے پی آئی سے موسمی ڈیٹا حاصل کرے۔<br>۳۔ پیش گوئی کو پڑھنے کے قابل شکل میں پرنٹ کرے (مثلاً، &quot;دن ۱: دھوپ، ۲۵ سینٹی گریڈ&quot;)۔</p></div>
       
       
       <div class="quiz-box no-print" id="fkc-quiz-box">
@@ -405,7 +412,7 @@ function fkcToggleTheme(){
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <div class="lesson-nav"><a class="btn alt" href="2026-08-31-day-018.html">← Day 18 — Web Scraping Basics with Python</a><span></span></div>
+    <div class="lesson-nav"><a class="btn alt" href="2026-08-31-day-018.html">← Day 18 — Web Scraping Basics with Python</a><a class="btn alt" href="2026-09-02-day-020.html">Day 20 — Web Scraping: Advanced Techniques aur Data Extraction →</a></div>
     <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
     
     
@@ -421,7 +428,7 @@ function fkcToggleTheme(){
       <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
         margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
       <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
-        “Roz thora seekho, roz thora aagay badho — mustaqil mehnat hi kamiyabi ki asal kunji hai.”
+        “Aaj ka ek chhota qadam, kal ki bari kamiyabi ki buniyad banta hai.”
       </p>
     </div>
     <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;

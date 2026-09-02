@@ -4,9 +4,9 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>Day 5 — Functions: Reusable Code Blocks — Python Programming</title>
-<meta property="og:title" content="Day 5 — Functions: Reusable Code Blocks — Python Programming">
-<meta property="og:description" content="FKC Trading Academy · Python Programming · Day 05">
+<title>Day 20 — Web Scraping: Advanced Techniques aur Data Extraction — Python Programming</title>
+<meta property="og:title" content="Day 20 — Web Scraping: Advanced Techniques aur Data Extraction — Python Programming">
+<meta property="og:description" content="FKC Trading Academy · Python Programming · Day 20">
 <meta property="og:image" content="../../../logo.png">
 <meta name="twitter:card" content="summary_large_image">
 <script>
@@ -252,17 +252,17 @@ function fkcToggleTheme(){
 }
 </script>
 
-    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "headline": "Day 5 — Functions: Reusable Code Blocks", "name": "Day 5 — Functions: Reusable Code Blocks", "description": "", "learningResourceType": "Lesson", "educationalLevel": "Beginner", "inLanguage": "ur", "isPartOf": {"@type": "Course", "name": "Python Programming"}, "datePublished": "2026-08-11", "publisher": {"@type": "Organization", "name": "FKC Trading Academy"}}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "headline": "Day 20 — Web Scraping: Advanced Techniques aur Data Extraction", "name": "Day 20 — Web Scraping: Advanced Techniques aur Data Extraction", "description": "", "learningResourceType": "Lesson", "educationalLevel": "Beginner", "inLanguage": "ur", "isPartOf": {"@type": "Course", "name": "Python Programming"}, "datePublished": "2026-09-02", "publisher": {"@type": "Organization", "name": "FKC Trading Academy"}}</script>
     <div class="top"><a href="../../../index.html">← FKC Trading Academy</a>
     <a href="../index.html" class="course-back-link">/ Python Programming</a></div>
-    
-    <p class="muted">🐍 Python Programming · Day 05</p>
-    <h1>Day 5 — Functions: Reusable Code Blocks</h1>
-    <p class="muted" style="margin:0 0 10px;">↩️ Pichla lesson: <strong>Day 4 — Lists, Tuples aur Dictionaries: Data Structures ka Power</strong> — aaj is se aage badhte hain.</p>
+    <span class="badge">Latest</span>
+    <p class="muted">🐍 Python Programming · Day 20</p>
+    <h1>Day 20 — Web Scraping: Advanced Techniques aur Data Extraction</h1>
+    <p class="muted" style="margin:0 0 10px;">↩️ Pichla lesson: <strong>Day 19 — Working with APIs: Fetching and Using External Data</strong> — aaj is se aage badhte hain.</p>
     <div class="card">
       
-      <img src="images/day-005.png" alt="Day 5 — Functions: Reusable Code Blocks" style="width:100%;border-radius:12px;margin-bottom:14px;">
-      <p class="muted" style="margin:0 0 6px;">🎬 AI Video Explanation</p><video src="videos/day-005.mp4" controls preload="metadata" poster="images/day-005.png" style="width:100%;border-radius:12px;margin-bottom:14px;background:#000;"></video>
+      <img src="images/day-020.png" alt="Day 20 — Web Scraping: Advanced Techniques aur Data Extraction" style="width:100%;border-radius:12px;margin-bottom:14px;">
+      <p class="muted" style="margin:0 0 6px;">🎬 AI Video Explanation</p><video src="videos/day-020.mp4" controls preload="metadata" poster="images/day-020.png" style="width:100%;border-radius:12px;margin-bottom:14px;background:#000;"></video>
       <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
     <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
       <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
@@ -278,20 +278,52 @@ function fkcToggleTheme(){
     }
     </script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
-      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Functions ek reusable code block hote hain jo specific task perform karte hain. Inse code ko organize karne, repeat hone se bachne aur program ko modular banane mein help milti hai. Python mein `def` keyword se functions banaye jate hain.</p><h3>Example</h3><pre dir="ltr"><code>def greet(name):
-    print(f&quot;Hello, {name}!&quot;)
+      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Aaj hum web scraping ke advanced techniques seekhenge. Hum `BeautifulSoup` aur `requests` libraries ka istemal karke dynamic websites se data extract karenge, aur `selenium` ka use karke JavaScript-rendered content ko scrape karenge. Isse hum un websites se bhi data le sakte hain jo pehle accessible nahi the.</p><h3>Example</h3><p>1.</p><h3>Dynamic Content Scraping</h3><pre dir="ltr"><code>from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 
-greet(&quot;Ali&quot;)  # Output: Hello, Ali!</code></pre><h3>Practice</h3><p>10 se 20 tak ke numbers ka sum calculate karne ka function `sum_range(start, end)` likhein.</p><h3>Mini Project</h3><p>Ek function `is_prime(num)` banayein jo check kare ke koi number prime hai ya nahi.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>تصور</h3><p>فنکشنز قابلِ استعمال کوڈ بلاکس ہوتے ہیں جو مخصوص کام انجام دیتے ہیں۔ ان سے کوڈ کو منظم کرنے، دہرائے جانے سے بچنے اور پروگرام کو ماڈیولر بنانے میں مدد ملتی ہے۔ پائیتھن میں `def` کلیدی لفظ کے ذریعے فنکشنز بنائے جاتے ہیں۔</p><h3>مثال</h3><pre dir="ltr"><code>def greet(name):
-    print(f&quot;Hello, {name}!&quot;)
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+driver.get(&quot;https://example.com/dynamic-page&quot;)
+elements = driver.find_elements(&quot;tag name&quot;, &quot;h2&quot;)
+for elem in elements:
+    print(elem.text)
+driver.quit()</code></pre><p>2.</p><h3>Handling Pagination</h3><pre dir="ltr"><code>import requests
+from bs4 import BeautifulSoup
 
-greet(&quot;Ali&quot;)  # Output: Hello, Ali!</code></pre><h3>مشق</h3><p>دس سے بیس تک کے نمبرز کا مجموعہ حساب کرنے کے لیے ایک فنکشن `sum_range(start, end)` لکھیں۔</p><h3>چھوٹا پروجیکٹ</h3><p>ایک فنکشن `is_prime(num)` بنائیں جو چیک کرے کہ کوئی عدد اول ہے یا نہیں۔</p></div>
+base_url = &quot;https://example.com/page=&quot;
+for page in range(1, 6):
+    url = base_url + str(page)
+    response = requests.get(url)
+    soup = BeautifulSoup(response.text, &#x27;html.parser&#x27;)
+    items = soup.find_all(&quot;div&quot;, class_=&quot;item&quot;)
+    for item in items:
+        print(item.text.strip())</code></pre><h3>Practice</h3><p>Ek website (jaise `https://books.toscrape.com/`) se 5 pages ke books ke titles aur prices extract karo. `BeautifulSoup` aur `requests` ka use karo.</p><h3>Mini Project</h3><p>**&quot;Flipkart Product Scraper&quot;**<br>Ek script banaye jo Flipkart se &quot;laptops&quot; search kare aur pehle 3 pages ke products ke names, prices, aur ratings ko ek CSV file mein save kare.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>کنسیپٹ</h3><p>آج ہم ویب سکریپنگ کی جدید تکنیکیں سیکھیں گے۔ ہم `BeautifulSoup` اور `requests` لائبریریز کا استعمال کرتے ہوئے ڈائنامک ویب سائٹس سے ڈیٹا ایکسٹریکٹ کریں گے، اور `selenium` کا استعمال کرتے ہوئے جاوااسکرپٹ سے رینڈر ہونے والے مواد کو سکریپ کریں گے۔ اس سے ہم ان ویب سائٹس سے بھی ڈیٹا حاصل کر سکیں گے جو پہلے قابل رسائی نہیں تھیں۔</p><h3>مثال: ۱۔</h3><p>ڈائنامک مواد کی سکریپنگ:</p><h3>ڈائنامک مواد کی سکریپنگ</h3><pre dir="ltr"><code>from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+driver.get(&quot;https://example.com/dynamic-page&quot;)
+elements = driver.find_elements(&quot;tag name&quot;, &quot;h2&quot;)
+for elem in elements:
+    print(elem.text)
+driver.quit()</code></pre><h3>مثال: ۲۔</h3><p>پیجینیشن کو ہینڈل کرنا:</p><h3>پیجینیشن کو ہینڈل کرنا</h3><pre dir="ltr"><code>import requests
+from bs4 import BeautifulSoup
+
+base_url = &quot;https://example.com/page=&quot;
+for page in range(1, 6):
+    url = base_url + str(page)
+    response = requests.get(url)
+    soup = BeautifulSoup(response.text, &#x27;html.parser&#x27;)
+    items = soup.find_all(&quot;div&quot;, class_=&quot;item&quot;)
+    for item in items:
+        print(item.text.strip())</code></pre><h3>پریکٹس</h3><p>ایک ویب سائٹ (جیسے `https://books.toscrape.com/`) سے ۵ صفحات کی کتابوں کے ٹائٹلز اور قیمتوں کو ایکسٹریکٹ کریں۔ `BeautifulSoup` اور `requests` کا استعمال کریں۔</p><h3>منی پروجیکٹ</h3><p>**&quot;فلپ کارٹ پروڈکٹ سکریپر&quot;**<br>ایک اسکرپٹ بنائیں جو فلپ کارٹ سے &quot;لیپ ٹاپس&quot; سرچ کرے اور پہلے ۳ صفحات کے پروڈکٹس کے ناموں، قیمتوں، اور ریٹنگز کو ایک CSV فائل میں محفوظ کرے۔</p></div>
       
       
       <div class="quiz-box no-print" id="fkc-quiz-box">
         <p><b>📝 Practice Check + Score</b></p>
         <p class="muted" style="font-size:.85em;">Lesson ka practice step apne alfaaz mein likhein. Keywords match hone par score milega.</p>
         <textarea id="fkc-quiz-answer" placeholder="Apna jawab yahan likhein..."></textarea>
-        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"sum_range, 155, is_prime, true/false"'>✅ Check &amp; Score</button>
+        <button type="button" class="btn" onclick="fkcCheckQuiz(this)" data-keys='"requests.get, beautifulsoup, find_all, csv write"'>✅ Check &amp; Score</button>
         <div class="quiz-result" id="fkc-quiz-result"></div>
         <div id="fkc-quiz-best" class="muted" style="font-size:.8em;margin-top:6px;"></div>
       </div>
@@ -327,23 +359,23 @@ greet(&quot;Ali&quot;)  # Output: Hello, Ali!</code></pre><h3>مشق</h3><p>دس
       }
       </script>
       
-      <div class="puzzle-box no-print" id="pz-python-programming-5">
+      <div class="puzzle-box no-print" id="pz-python-programming-20">
         <h3>🧩 Dimaghi Kasrat — Jode Milayein</h3>
-        <p class="puzzle-status" id="pz-python-programming-5-status">Cards par tap karke jode (pairs) milayein.</p>
-        <div class="puzzle-grid" id="pz-python-programming-5-grid"></div>
-        <div class="puzzle-win" id="pz-python-programming-5-win">🎉 Shabaash! Sab jode mil gaye — thodi der aur seekhne ke liye tayyar?</div>
+        <p class="puzzle-status" id="pz-python-programming-20-status">Cards par tap karke jode (pairs) milayein.</p>
+        <div class="puzzle-grid" id="pz-python-programming-20-grid"></div>
+        <div class="puzzle-win" id="pz-python-programming-20-win">🎉 Shabaash! Sab jode mil gaye — thodi der aur seekhne ke liye tayyar?</div>
       </div>
       <script>
       (function(){
-        var emojis = ["🐘", "🎪", "🍓", "🧠", "🌻", "🎲"];
+        var emojis = ["🎈", "🧩", "🎵", "🐢", "🌈", "⚽"];
         var deck = emojis.concat(emojis);
         for (var i = deck.length - 1; i > 0; i--) {
           var j = Math.floor(Math.random() * (i + 1));
           var t = deck[i]; deck[i] = deck[j]; deck[j] = t;
         }
-        var grid = document.getElementById("pz-python-programming-5-grid");
-        var statusEl = document.getElementById("pz-python-programming-5-status");
-        var winEl = document.getElementById("pz-python-programming-5-win");
+        var grid = document.getElementById("pz-python-programming-20-grid");
+        var statusEl = document.getElementById("pz-python-programming-20-status");
+        var winEl = document.getElementById("pz-python-programming-20-win");
         var flipped = [], matchedCount = 0, moves = 0, lock = false;
         deck.forEach(function(val){
           var b = document.createElement("button");
@@ -385,24 +417,24 @@ greet(&quot;Ali&quot;)  # Output: Hello, Ali!</code></pre><h3>مشق</h3><p>دس
       
       <div class="no-print" style="margin-top:14px;">
         <label for="fkc-notes" class="muted" style="display:block;margin-bottom:4px;">📝 Apni Note (sirf aapke is browser mein save hoti hai):</label>
-        <textarea id="fkc-notes" data-slug="python-programming" data-lesson="day-005"
+        <textarea id="fkc-notes" data-slug="python-programming" data-lesson="day-020"
           placeholder="Yahan apni note likhein..." rows="3"
           style="width:100%;border-radius:10px;border:1px solid #ddd;padding:8px;font-family:inherit;"
           oninput="fkcSaveNote(this)"></textarea>
       </div>
     
       <div class="no-print">
-        <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Python%20Programming%20%28Day%2005%29%0A%0ADay%205%20%E2%80%94%20Functions%3A%20Reusable%20Code%20Blocks%0A%0AConcept%3A%0AFunctions%20ek%20reusable%20code%20block%20hote%20hain%20jo%20specific%20task%20perform%20karte%20hain.%20Inse%20code%20ko%20organize%20karne%2C%20repeat%20hone%20se%20bachne%20aur%20program%20ko%20modular%20banane%20mein%20help%20milti%20hai.%20Python%20mein%20%60def%60%20keyword%20se%20functions%20banaye%20jate%20hain.%0A%0AExample%3A%0A%60%60%60python%0Adef%20greet%28name%29%3A%0A%20%20%20%20print%28f%22Hello%2C%20%7Bname%7D%21%22%29%0A%0Agreet%28%22Ali%22%29%20%20%23%20Output%3A%20Hello%2C%20Ali%21%0A%60%60%60%0A%0APractice%3A%0A10%20se%2020%20tak%20ke%20numbers%20ka%20sum%20calculate%20karne%20ka%20function%20%60sum_range%28start%2C%20end%29%60%20likhein.%0A%0AMini%20Project%3A%0AEk%20function%20%60is_prime%28num%29%60%20banayein%20jo%20check%20kare%20ke%20koi%20number%20prime%20hai%20ya%20nahi.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
+        <a class="btn" href="https://wa.me/?text=%F0%9F%93%9A%20FKC%20Trading%20Academy%20%E2%80%94%20Python%20Programming%20%28Day%2020%29%0A%0ADay%2020%20%E2%80%94%20Web%20Scraping%3A%20Advanced%20Techniques%20aur%20Data%20Extraction%0A%0AConcept%3A%0AAaj%20hum%20web%20scraping%20ke%20advanced%20techniques%20seekhenge.%20Hum%20%60BeautifulSoup%60%20aur%20%60requests%60%20libraries%20ka%20istemal%20karke%20dynamic%20websites%20se%20data%20extract%20karenge%2C%20aur%20%60selenium%60%20ka%20use%20karke%20JavaScript-rendered%20content%20ko%20scrape%20karenge.%20Isse%20hum%20un%20websites%20se%20bhi%20data%20le%20sakte%20hain%20jo%20pehle%20accessible%20nahi%20the.%0A%0AExample%3A%0A1.%0A%0ADynamic%20Content%20Scraping%3A%0A%60%60%60python%0Afrom%20selenium%20import%20webdriver%0Afrom%20selenium.webdriver.chrome.service%20import%20Service%0Afrom%20webdriver_manager.chrome%20import%20ChromeDriverManager%0A%0Adriver%20%3D%20webdriver.Chrome%28service%3DService%28ChromeDriverManager%28%29.install%28%29%29%29%0Adriver.get%28%22https%3A//example.com/dynamic-page%22%29%0Aelements%20%3D%20driver.find_elements%28%22tag%20name%22%2C%20%22h2%22%29%0Afor%20elem%20in%20elements%3A%0A%20%20%20%20print%28elem.text%29%0Adriver.quit%28%29%0A%60%60%60%0A%0A2.%0A%0AHandling%20Pagination%3A%0A%60%60%60python%0Aimport%20requests%0Afrom%20bs4%20import%20BeautifulSoup%0A%0Abase_url%20%3D%20%22https%3A//example.com/page%3D%22%0Afor%20page%20in%20range%281%2C%206%29%3A%0A%20%20%20%20url%20%3D%20base_url%20%2B%20str%28page%29%0A%20%20%20%20response%20%3D%20requests.get%28url%29%0A%20%20%20%20soup%20%3D%20BeautifulSoup%28response.text%2C%20%27html.parser%27%29%0A%20%20%20%20items%20%3D%20soup.find_all%28%22div%22%2C%20class_%3D%22item%22%29%0A%20%20%20%20for%20item%20in%20items%3A%0A%20%20%20%20%20%20%20%20print%28item.text.strip%28%29%29%0A%60%60%60%0A%0APractice%3A%0AEk%20website%20%28jaise%20%60https%3A//books.toscrape.com/%60%29%20se%205%20pages%20ke%20books%20ke%20titles%20aur%20prices%20extract%20karo.%20%60BeautifulSoup%60%20aur%20%60requests%60%20ka%20use%20karo.%0A%0AMini%20Project%3A%0A%2A%2A%22Flipkart%20Product%20Scraper%22%2A%2A%0AEk%20script%20banaye%20jo%20Flipkart%20se%20%22laptops%22%20search%20kare%20aur%20pehle%203%20pages%20ke%20products%20ke%20names%2C%20prices%2C%20aur%20ratings%20ko%20ek%20CSV%20file%20mein%20save%20kare.%0A%0A%E2%80%94%20Fazul%20Khan%20Chandio%20%E2%80%94%20Founder%20%26%20CEO%20%E2%80%94%20%2B92%20333%203909816" target="_blank" rel="noopener">📲 WhatsApp par Share karein</a>
         <a class="btn alt" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">📘 Facebook par Share karein</a>
         <button type="button" class="btn alt no-print" onclick="window.print()">🖨️ PDF Download / Print</button>
       </div>
       <div class="no-print">
         <button type="button" class="btn complete-btn" id="fkc-complete-btn"
-          data-slug="python-programming" data-lesson="day-005"
+          data-slug="python-programming" data-lesson="day-020"
           onclick="fkcToggleComplete(this)">✅ Complete Mark Karein</button>
       </div>
     </div>
-    <div class="lesson-nav"><a class="btn alt" href="2026-08-08-day-004.html">← Day 4 — Lists, Tuples aur Dictionaries: Data Structures ka Power</a><a class="btn alt" href="2026-08-12-day-006.html">Day 6 — Object-Oriented Programming (OOP) Basics →</a></div>
+    <div class="lesson-nav"><a class="btn alt" href="2026-09-01-day-019.html">← Day 19 — Working with APIs: Fetching and Using External Data</a><span></span></div>
     <p class="no-print"><a class="btn green" href="https://www.effectivecpmnetwork.com/vzqdxpbk97?key=699919418fe2b02eca0fb72d7ff95fea" target="_blank" rel="noopener sponsored">🚀 Watch Next Lesson</a></p>
     
     
@@ -442,9 +474,9 @@ greet(&quot;Ali&quot;)  # Output: Hello, Ali!</code></pre><h3>مشق</h3><p>دس
           slug: "python-programming",
           courseName: "Python Programming",
           courseIcon: "\ud83d\udc0d",
-          title: "Day 5 \u2014 Functions: Reusable Code Blocks",
-          href: 'courses/python-programming/posts/2026-08-11-day-005.html',
-          day: 5
+          title: "Day 20 \u2014 Web Scraping: Advanced Techniques aur Data Extraction",
+          href: 'courses/python-programming/posts/2026-09-02-day-020.html',
+          day: 20
         }));
       } catch (e) {}
       var ta = document.getElementById('fkc-notes');
