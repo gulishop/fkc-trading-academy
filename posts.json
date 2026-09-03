@@ -32727,6 +32727,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 29,
+      "id": "day-029",
+      "date": "2026-09-03",
+      "title": "Day 29 — **Ghussa aane par khud ko kaise sambhalna hai?**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachay, ghussa aana normal hai. Lekin jab tumhara dil gusse se bhara ho, toh pehle thoda ruka kar socho. Gusse ke waqt zyada bolne ya karne se baad mein pachtana pad sakta hai. Chup ho kar 10 tak gintein, ya ek glass pani piyo. Yeh tumhe thoda shant kar dega."
+        ],
+        [
+          "Chhoti Kahani",
+          "Rohan ne apne dost ke saath khelte waqt ek naya toy gira diya. Uske dost ne usko \"careless!\" kaha. Rohan ka dil gusse se ubalne laga. Lekin usne apne aap ko roka, 10 tak gintein, aur phir dhire se bola, \"Mujhe maaf kar dena, main dobara nahi karunga.\" Uske dost ne bhi maaf maang li. Aise hi, tum bhi ghusse ko control kar sakte ho!"
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar tumhara dil kisi cheez se gusse se bhara ho, toh tum kya karoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Ghussa aana normal hai, lekin usko control karna seekhna zyada zaroori hai. Apne dil ki baat sab se share karo, taki sab theek ho sake."
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۲۹ — غصہ آنے پر خود کو کیسے سنبھالنا ہے؟",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "بچو، غصہ آنا نارمل ہے۔ لیکن جب تمہارا دل غصے سے بھرا ہو، تو پہلے تھوڑا رُک کر سوچو۔ غصے کے وقت زیادہ بولنے یا کرنے سے بعد میں پچھتانا پڑ سکتا ہے۔ چپ ہو کر دس تک گنتیاں گنو، یا ایک گلاس پانی پیو۔ یہ تمہیں تھوڑا شانت کر دے گا۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "روہان نے اپنے دوست کے ساتھ کھیلتے ہوئے ایک نیا ٹوائے گرا دیا۔ اس کے دوست نے اسے ’کیئرلیس‘ کہا۔ روہان کا دل غصے سے اُبلنے لگا۔ لیکن اس نے اپنے آپ کو روکا، دس تک گنتیاں گنیں، اور پھر دھیرے سے بولا، ’مجھے معاف کر دو، میں دوبارہ نہیں کروں گا۔‘ اس کے دوست نے بھی معافی مانگ لی۔ ایسے ہی، تم بھی غصے کو کنٹرول کر سکتے ہو!"
+            },
+            {
+              "label": "امی ابّو کے ساتھ بات کریں",
+              "content": "’بیٹا، اگر تمہارا دل کسی چیز سے غصے سے بھرا ہو، تو تم کیا کرو گے؟‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "غصہ آنا نارمل ہے، لیکن اسے کنٹرول کرنا سیکھنا زیادہ ضروری ہے۔ اپنے دل کی بات سب سے شیئر کرو، تاکہ سب ٹھیک ہو سکے۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-nursery": [
