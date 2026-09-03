@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#4F46E5"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="FKC Trading "><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},15000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});if(reg.waiting){reg.waiting.postMessage({type:'SKIP_WAITING'});}reg.addEventListener('updatefound',function(){var nw=reg.installing;if(!nw)return;nw.addEventListener('statechange',function(){if(nw.state==='installed'&&navigator.serviceWorker.controller){nw.postMessage({type:'SKIP_WAITING'});}}});});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-09-02T13:52:16.123735";
+  var FKC_BUILD = "2026-09-03T13:52:24.405675";
   var checking = false;
   function fkcCheckVersion(){
     if(checking) return;
@@ -262,8 +262,8 @@ function fkcToggleTheme(){
     <div class="card">
       
       <img src="images/day-029.png" alt="Day 29 — **Mobile Motherboard IC Replacement: Dead Boot &amp; Power IC Fix**" style="width:100%;border-radius:12px;margin-bottom:14px;">
-      
-      <div class="lang-tabs">
+      <p class="muted" style="margin:0 0 6px;">🎬 AI Video Explanation</p><video src="videos/day-029.mp4" controls preload="metadata" poster="images/day-029.png" style="width:100%;border-radius:12px;margin-bottom:14px;background:#000;"></video>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
     <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
       <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
       <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
@@ -278,7 +278,7 @@ function fkcToggleTheme(){
     }
     </script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
-      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Mobile motherboard par **Boot IC** (CPU ko start karne wali chip) aur **Power IC** (battery voltage ko regulate karne wali chip) ka kharab hona sabse common hardware faults hain. Agar phone chalta nahi, charging nahi hoti, ya dead rehta hai, toh yeh ICs hi sabse pehle check karni chahiye. Replacement ke liye **hot air gun**, **IC extractor**, **soldering iron**, aur **flux** ki zaroorat hoti hai.</p><h3>Example</h3><p>1.</p><h3>Symptoms</h3><p>Samsung Galaxy S7 chalta nahi, charging nahi hoti, screen black rehti hai.<br>2.</p><h3>Diagnosis</h3><p>Multimeter se check karne par Power IC par voltage nahi aa rahi.<br>3.</p><h3>Repair Steps</h3><p>- Back cover remove karke motherboard nikal lo.<br>   - Hot air gun se **Power IC** (PMIC) ko 300°C par heat karke remove karo.<br>   - Naye IC ko flux lagake soldering iron se carefully place karo.<br>   - Phone ko test karo—agar chalta hai toh repair successful.</p><h3>Practice</h3><p>Apne ek kharab phone ka motherboard lekar **Power IC** ki location identify karo (Google par &quot;motherboard diagram&quot; search karke). IC ko remove karne ka practice karo (agar spare part available ho).</p><h3>Mini Project</h3><p>Ek **dead iPhone 6/7** ka motherboard lekar **Power IC** replace karke phone ko chalao. Agar successful ho toh video record karke class group mein share karo.</p></div>
+      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Mobile motherboard par **Boot IC** (CPU ko start karne wali chip) aur **Power IC** (battery voltage ko regulate karne wali chip) ka kharab hona sabse common hardware faults hain. Agar phone chalta nahi, charging nahi hoti, ya dead rehta hai, toh yeh ICs hi sabse pehle check karni chahiye. Replacement ke liye **hot air gun**, **IC extractor**, **soldering iron**, aur **flux** ki zaroorat hoti hai.</p><h3>Example</h3><p>1.</p><h3>Symptoms</h3><p>Samsung Galaxy S7 chalta nahi, charging nahi hoti, screen black rehti hai.<br>2.</p><h3>Diagnosis</h3><p>Multimeter se check karne par Power IC par voltage nahi aa rahi.<br>3.</p><h3>Repair Steps</h3><p>- Back cover remove karke motherboard nikal lo.<br>   - Hot air gun se **Power IC** (PMIC) ko 300°C par heat karke remove karo.<br>   - Naye IC ko flux lagake soldering iron se carefully place karo.<br>   - Phone ko test karo—agar chalta hai toh repair successful.</p><h3>Practice</h3><p>Apne ek kharab phone ka motherboard lekar **Power IC** ki location identify karo (Google par &quot;motherboard diagram&quot; search karke). IC ko remove karne ka practice karo (agar spare part available ho).</p><h3>Mini Project</h3><p>Ek **dead iPhone 6/7** ka motherboard lekar **Power IC** replace karke phone ko chalao. Agar successful ho toh video record karke class group mein share karo.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>کانسپٹ</h3><p>موبائل مدر بورڈ پر **بوٹ آئی سی** (سی پی یو کو سٹارٹ کرنے والی چپ) اور **پاور آئی سی** (بیٹری وولٹیج کو ریگولیٹ کرنے والی چپ) کا خراب ہونا سب سے عام ہارڈویئر فالٹس ہیں۔ اگر فون چلتا نہیں، چارچنگ نہیں ہوتی، یا ڈیڈ رہتا ہے، تو یہ آئی سیز ہی سب سے پہلے چیک کرنی چاہئیں۔ ری پلیسمنٹ کے لیے **ہاٹ ایئر گن**، **آئی سی ایکسٹریکٹر**، **سولڈرنگ آئرن**، اور **ف्लکس** کی ضرورت ہوتی ہے۔</p><h3>مثال</h3><p>۱۔</p><h3>علامات</h3><p>سامسنگ گیلیکسی ایس ۷ چلتا نہیں، چارچنگ نہیں ہوتی، اسکرین بلیک رہتی ہے۔</p><h3>تشخیص</h3><p>۲۔ ملٹی میٹر سے چیک کرنے پر پاور آئی سی پر وولٹیج نہیں آ رہی۔</p><h3>مرمت کے مراحل</h3><p>• بیک کور ہٹا کر مدر بورڈ نکال لو۔<br>• ہاٹ ایئر گن سے **پاور آئی سی** (پی ایم آئی سی) کو ۳۰۰ درجہ سینٹی گریڈ پر ہیٹ کر کے ہٹا دو۔<br>• نئی آئی سی پر ف्लکس لگا کر سولڈرنگ آئرن سے احتیاط سے لگاؤ۔<br>• فون کو ٹیسٹ کرو—اگر چلتا ہے تو مرمت کامیاب ہے۔</p><h3>پریکٹس</h3><p>اپنے ایک خراب فون کا مدر بورڈ لے کر **پاور آئی سی** کی لوکیشن شناخت کرو (گوگل پر &quot;مدر بورڈ ڈایاگرام&quot; سرچ کر کے)۔ آئی سی کو ہٹانے کی پریکٹس کرو (اگر سپیئر پارٹ دستیاب ہو)۔</p><h3>منی پروجیکٹ</h3><p>ایک **ڈیڈ آئی فون ۶/۷** کا مدر بورڈ لے کر **پاور آئی سی** ری پلیس کر کے فون کو چلاو۔ اگر کامیاب ہو تو ویڈیو ریکارڈ کر کے کلاس گروپ میں شیئر کرو۔</p></div>
       
       
       <div class="quiz-box no-print" id="fkc-quiz-box">
@@ -412,7 +412,7 @@ function fkcToggleTheme(){
       <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
         margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
       <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
-        “Aaj ka ek chhota qadam, kal ki bari kamiyabi ki buniyad banta hai.”
+        “Mushkil raste hi un logon ko milte hain jo asal mein kuch ban&#x27;na chahte hain.”
       </p>
     </div>
     <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;
