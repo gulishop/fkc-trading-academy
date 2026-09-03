@@ -34005,7 +34005,30 @@
         ]
       ],
       "answer_key": "",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن ۲۶ — **دن اور موسم کے ساتھ پیار سے ملنا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "آج ہم سیکھیں گے کہ دن کون کون سے ہیں اور موسم کیسا ہوتا ہے۔ ہر دن الگ ہوتا ہے، اور ہر موسم الگ رنگ لائے گا۔ یہ سب ہمارے لیے خوشیوں کا حصہ ہے!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "روہن کو صبح اٹھتے ہی پتا چلتا ہے کہ آج پیر ہے۔ ماں سے پوچھتا ہے، ’’امی، پیر کیا ہوتا ہے؟‘‘ ماں مسکراتی ہیں، ’’بیٹا، پیر پہلا دن ہے جس میں ہم اسکول جاتے ہیں اور نئے دوست ملتے ہیں۔ آج موسم بھی دھوپ والا ہے، تو تم اپنی ٹوپی پہن لینا!‘‘"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "’’بیٹا، تمہیں سب سے زیادہ کون سا دن پسند ہے اور کیوں؟‘‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "ہر موسم الگ ہے، پر تمہارا جسم صرف تمہارا ہے۔ اگر کوئی چیز عجیب لگے، تو چپ مت رہنا—امی ابّو کو ضرور بتانا!"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 27,
@@ -34102,6 +34125,56 @@
             {
               "label": "یاد رکھیں",
               "content": "ہر چیز کا اپنا نام ہوتا ہے—اس کے ساتھ پیار سے پیش آؤ، اور کبھی بھی کسی کو پریشان مت کرو۔ اگر کوئی چیز عجیب لگے، تو فوراً امّی/ابّو کو بتا دو!"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "day": 29,
+      "id": "day-029",
+      "date": "2026-09-03",
+      "title": "Day 29 — **Adab: \"Please\", \"Thank You\", \"Sorry\" kab bolein?**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Bachon, adab se baat karna hamari pehchaan hai. Jab hum \"please\" kehte hain, toh hum doosre ki meherbani ki darkar dikhate hain. \"Thank you\" se shukar ada hota hai, aur \"sorry\" se hum apne galat kaam ki zimmadari lete hain. Yeh teen shabd hamare rishton ko aur bhi meheka dete hain!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Rohan ne apne dost ki pencil maangi, \"Please de dena,\" kehte hue. Dost ne pencil de di, toh Rohan ne \"Thank you\" kaha. Phir ek din, Rohan ki accidental pencil doosre ke paimaan se gir gayi. Usne \"Sorry\" kaha aur doosri pencil le aaya. Dono dost aur bhi khush ho gaye!"
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar tum kisi se kuch maangte ho, toh kaise kehte ho?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Adab se bole gaye shabd dil ko bhi khush karte hain. Hamesha \"please\", \"thank you\", aur \"sorry\" kehte raho!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۲۹ — آداب: \"پلیز\"، \"ٹھیک ہے\"، \"معاف کیجیے\" کب بولیں؟",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "بچو، آداب سے بات کرنا ہماری پہچان ہے۔ جب ہم \"پلیز\" کہتے ہیں، تو ہم دوسرے کی مہربانی کی ضرورت دکھاتے ہیں۔ \"ٹھیک ہے\" سے شکر ادا ہوتا ہے، اور \"معاف کیجیے\" سے ہم اپنے غلط کام کی ذمہ داری لیتے ہیں۔ یہ تین الفاظ ہمارے رشتوں کو اور بھی مہکا دیتے ہیں!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "روہان نے اپنے دوست کی پینسل مانگی، \"پلیز دے دینا\" کہتے ہوئے۔ دوست نے پینسل دے دی، تو روہان نے \"ٹھیک ہے\" کہا۔ پھر ایک دن، روہان کی اتفاقی پینسل دوسرے کے پیمانے سے گر گئی۔ اس نے \"معاف کیجیے\" کہا اور دوسری پینسل لے آیا۔ دونوں دوست اور بھی خوش ہو گئے!"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "\"بیٹا، اگر تم کسی سے کچھ مانگتے ہو، تو کیسے کہتے ہو؟\""
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "آداب سے بولے گئے الفاظ دل کو بھی خوش کرتے ہیں۔ ہمیشہ \"پلیز\"، \"ٹھیک ہے\"، اور \"معاف کیجیے\" کہتے رہو!"
             }
           ]
         }
