@@ -1414,3 +1414,4 @@
 [2026-09-03T13:57:28.082955] [mobile-repairing] Day 32 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: The read operation timed out
 [2026-09-03T22:04:13.342929] [daraz-seller] Day 18 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 503: Service Unavailable
 [2026-09-03T22:37:40.901032] [freelancing] Day 31 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 429: Too Many Requests
+[2026-09-03T23:00:10.623657] [affiliate-marketing] Day 25 Urdu (Nastaliq/Urdu script mein) translation 7 attempts (Mistral + Gemini fallback) ke baad bhi fail, skip: HTTP Error 429: Too Many Requests

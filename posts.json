@@ -1315,6 +1315,33 @@
           ]
         }
       }
+    },
+    {
+      "day": 25,
+      "id": "day-025",
+      "date": "2026-09-03",
+      "title": "Day 25 — **Affiliate Marketing Ke \"Exit Intent Popups\" Se Last-Minute Conversions Kaise Badhayein**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Exit Intent Popups wo popups hain jo user jab website chhodne wala hota hai tab trigger hote hain. Affiliate marketing mein inka istemal karke aap visitors ko last chance dete hain—jaise discount, freebie, ya exclusive offer—taaki woh affiliate link par click karne se pehle hi convert ho jayein. Yeh high-intent traffic ko capture karne ka powerful tool hai, lekin isko overuse na karein."
+        ],
+        [
+          "Example",
+          "Ek blogger \"best budget laptops\" par article likhta hai. User jab scroll karke neeche ja raha hota hai, tab ek popup aata hai: \"Wait! Get 10% extra discount on these laptops—use code **SAVE10** at checkout!\" Agar user ne abhi tak affiliate link par click nahi kiya, toh yeh popup unko ek aur chance deta hai affiliate sale generate karne ka."
+        ],
+        [
+          "Practice",
+          "Apne blog/website par ek exit intent popup tool (jaise OptinMonster, Sumo, ya Elementor Pro) install karein. Ek simple popup banayein jo users ko \"Free Ebook\" ya \"10% Discount\" offer kare—lekin affiliate link ko directly mention na karein. Instead, unko landing page par redirect karein jahan affiliate offer clear ho."
+        ],
+        [
+          "Mini Project",
+          "Ek \"Top 5 Budget Phones Under 20,000\" article ke liye exit intent popup banayein. Popup ka message ho: \"🚀 **Limited Time Offer!** Get our exclusive price comparison sheet + 5% discount on Amazon—[Download Now]\". Link ko affiliate landing page par set karein."
+        ]
+      ],
+      "answer_key": "popup trigger, high-intent traffic, last-chance offer, redirect link",
+      "translations": {}
     }
   ],
   "youtube-automation": [
