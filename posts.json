@@ -36564,6 +36564,56 @@
           ]
         }
       }
+    },
+    {
+      "day": 28,
+      "id": "day-028",
+      "date": "2026-09-03",
+      "title": "Day 28 — \"Apne baaray mein bolna!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhenge ke apne baaray mein kaise shaan se apna naam, umar aur school ka naam batana hai! Yeh isliye zaroori hai kyunke agar koi bhi aapko pooche, toh aap confidently jawab de saken. Lekin yaad rakhna, aapka jism sirf aapka hai - koi bhi aapko \"na\" kehne ka haq nahi rakhta."
+        ],
+        [
+          "Chhoti Kahani",
+          "Rani ne apne school ke pehle din apne naye teacher ko apna naam bataya: \"Main Rani hoon, main 6 saal ki hoon aur main ABC School mein padhti hoon!\" Teacher ne muskurate hue kaha, \"Bahut achha! Tumhara school kitna pyara hai!\" Rani ko bahut khushi hui kyunke usne apne baaray mein poori shaan se baat ki."
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar koi tumse tumhara naam, umar ya school pooche, toh tum kya jawab doge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Aapka jism sirf aapka hai - koi bhi aapko \"na\" kehne ka haq nahi rakhta. Agar koi cheez ajeeb lage, toh turant Ammi Abbu ko batana!"
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن 28 — \"اپنے بارے میں بولنا!\"",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج ہم سیکھیں گے کہ اپنے بارے میں کیسے شان سے اپنا نام، عمر اور اسکول کا نام بتانا ہے! یہ اس لیے ضروری ہے کیونکہ اگر کوئی بھی آپ کو پوچھے، تو آپ پراعتماد طریقے سے جواب دے سکیں۔ لیکن یاد رکھنا، آپ کا جسم صرف آپ کا ہے - کوئی بھی آپ کو \"نا\" کہنے کا حق نہیں رکھتا۔"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "رانی نے اپنے اسکول کے پہلے دن اپنے نئے ٹیچر کو اپنا نام بتایا: \"میں رانی ہوں، میں 6 سال کی ہوں اور میں اے بی سی اسکول میں پڑھتی ہوں!\" ٹیچر نے مسکراتے ہوئے کہا، \"بہت اچھا! تمہارا اسکول کتنا پیارا ہے!\" رانی کو بہت خوشی ہوئی کیونکہ اس نے اپنے بارے میں پوری شان سے بات کی۔"
+            },
+            {
+              "label": "امی ابو کے ساتھ بات کریں",
+              "content": "\"بیٹا، اگر کوئی تم سے تمہارا نام، عمر یا اسکول پوچھے، تو تم کیا جواب دو گے؟\""
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "آپ کا جسم صرف آپ کا ہے - کوئی بھی آپ کو \"نا\" کہنے کا حق نہیں رکھتا۔ اگر کوئی چیز عجیب لگے، تو فوراً امی ابو کو بتانا!"
+            }
+          ]
+        }
+      }
     }
   ]
 }
