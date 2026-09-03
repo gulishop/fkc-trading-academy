@@ -19812,6 +19812,45 @@
           ]
         }
       }
+    },
+    {
+      "day": 21,
+      "id": "day-021",
+      "date": "2026-09-03",
+      "title": "Day 21 — Python Packages aur pip: Libraries Install aur Manage Karna",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Python mein libraries (packages) install karne ke liye `pip` (Package Installer for Python) use hota hai. Ye ek command-line tool hai jo external libraries ko download aur install karta hai. Har Python project mein dependencies manage karne ke liye `pip` essential hai. Aaj hum seekhenge ki kaise `pip` use karke libraries install karni hain aur unhe apne code mein import karna hai."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Check pip version",
+          "Terminal/Command Prompt mein yeh command run karo:\n   ```bash\n   pip --version\n   ```\n   Agar installed hai to version show hoga, nahi to error aayega.\n\n2."
+        ],
+        [
+          "Library install karna",
+          "Ek popular library `requests` install karne ke liye:\n   ```bash\n   pip install requests\n   ```\n\n3."
+        ],
+        [
+          "Library use karna",
+          "Python file mein:\n   ```python\n   import requests\n   response = requests.get(\"https://api.github.com\")\n   print(response.status_code)\n   ```"
+        ],
+        [
+          "Practice",
+          "Apne system par `pip` install karne ke baad, ek aur library `python-dotenv` install karo aur verify karo ki wo successfully install hui hai."
+        ],
+        [
+          "Mini Project",
+          "Ek chhota project banayein jo:\n1. `pip` se `requests` library install kare.\n2. GitHub API se public repositories ki list fetch kare.\n3. Pehle 5 repositories ke names print kare."
+        ]
+      ],
+      "answer_key": "pip install, requests.get(), status_code, python-dotenv",
+      "translations": {}
     }
   ],
   "web-development": [
