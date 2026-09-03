@@ -1,0 +1,30 @@
+{
+  "title": "دن 21 — **CSS اینیمیشنز اور ٹرانزیشنز: ویب پیجز کو زندہ بنانا**",
+  "preamble": "",
+  "sections": [
+    {
+      "label": "تصور",
+      "content": "CSS اینیمیشنز اور ٹرانزیشنز سے ہم ویب پیجز کو زیادہ انٹرایکٹو اور پرکشش بنا سکتے ہیں۔ ٹرانزیشنز سے ایلیمنٹس کی حالت کی تبدیلی (جیسے ہوور پر رنگ بدلنا) ہموار ہوتی ہے، جبکہ اینیمیشنز سے پیچیدہ حرکات (جیسے لوڈنگ انڈیکیٹرز یا سلائیڈنگ بینرز) بنا سکتے ہیں۔ یہ پرفارمنس پر بھی زیادہ اثر نہیں ڈالتے۔"
+    },
+    {
+      "label": "مثال",
+      "content": "1۔"
+    },
+    {
+      "label": "ٹرانزیشن کی مثال",
+      "content": "```css\n.button {\n  background: blue;\n  transition: background 0.3s ease;\n}\n.button:hover {\n  background: red;\n}\n```\n2۔"
+    },
+    {
+      "label": "اینیمیشن کی مثال",
+      "content": "```css\n@keyframes slide-in {\n  from { transform: translateX(-100%); }\n  to { transform: translateX(0); }\n}\n.banner {\n  animation: slide-in 1s forwards;\n}\n```"
+    },
+    {
+      "label": "مشق",
+      "content": "اپنی موجودہ ویب سائٹ کے ایک بٹن یا div پر ہوور کرنے پر رنگ تبدیل کرنے کے لیے CSS ٹرانزیشن شامل کریں۔ مثال:\n```css\n.your-element {\n  background: green;\n  transition: background 0.5s ease;\n}\n.your-element:hover {\n  background: purple;\n}\n```"
+    },
+    {
+      "label": "منی پروجیکٹ",
+      "content": "**\"اینیمیٹڈ کارڈ فلپ\"** – ایک کارڈ بنائیں جو ہوور پر 180 ڈگری گھومے اور پچھلی سائیڈ پر ٹیکسٹ نظر آئے۔ اشارہ: `transform: rotateY(180deg)` اور `backface-visibility: hidden` استعمال کریں۔"
+    }
+  ]
+}

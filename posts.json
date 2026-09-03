@@ -20605,7 +20605,38 @@
         ]
       ],
       "answer_key": "transition, hover, animation, keyframes",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن 21 — **CSS اینیمیشنز اور ٹرانزیشنز: ویب پیجز کو زندہ بنانا**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "CSS اینیمیشنز اور ٹرانزیشنز سے ہم ویب پیجز کو زیادہ انٹرایکٹو اور پرکشش بنا سکتے ہیں۔ ٹرانزیشنز سے ایلیمنٹس کی حالت کی تبدیلی (جیسے ہوور پر رنگ بدلنا) ہموار ہوتی ہے، جبکہ اینیمیشنز سے پیچیدہ حرکات (جیسے لوڈنگ انڈیکیٹرز یا سلائیڈنگ بینرز) بنا سکتے ہیں۔ یہ پرفارمنس پر بھی زیادہ اثر نہیں ڈالتے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "1۔"
+            },
+            {
+              "label": "ٹرانزیشن کی مثال",
+              "content": "```css\n.button {\n  background: blue;\n  transition: background 0.3s ease;\n}\n.button:hover {\n  background: red;\n}\n```\n2۔"
+            },
+            {
+              "label": "اینیمیشن کی مثال",
+              "content": "```css\n@keyframes slide-in {\n  from { transform: translateX(-100%); }\n  to { transform: translateX(0); }\n}\n.banner {\n  animation: slide-in 1s forwards;\n}\n```"
+            },
+            {
+              "label": "مشق",
+              "content": "اپنی موجودہ ویب سائٹ کے ایک بٹن یا div پر ہوور کرنے پر رنگ تبدیل کرنے کے لیے CSS ٹرانزیشن شامل کریں۔ مثال:\n```css\n.your-element {\n  background: green;\n  transition: background 0.5s ease;\n}\n.your-element:hover {\n  background: purple;\n}\n```"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "**\"اینیمیٹڈ کارڈ فلپ\"** – ایک کارڈ بنائیں جو ہوور پر 180 ڈگری گھومے اور پچھلی سائیڈ پر ٹیکسٹ نظر آئے۔ اشارہ: `transform: rotateY(180deg)` اور `backface-visibility: hidden` استعمال کریں۔"
+            }
+          ]
+        }
+      }
     },
     {
       "day": 22,
@@ -20714,6 +20745,56 @@
             {
               "label": "منی پروجیکٹ: \"رسپانسیو کارڈ گیلری\"",
               "content": "۱۔ تین کارڈز بنائیں (ہیڈنگ + پیراگراف + بٹن)۔\n۲۔ ڈیسک ٹاپ پر کارڈز `display: flex; flex-wrap: wrap;` سے ترتیب ہوں۔\n۳۔ موبائل پر (چوڑائی < ۶۰۰px) ہر کارڈ `width: 100%;` ہو جائے۔\n۴۔ ہر کارڈ کا بیک گراؤنڈ رنگ اور پیڈنگ کنٹینر کے سائز پر انحصار کرے (کنٹینر کوئری سے)।"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "day": 24,
+      "id": "day-024",
+      "date": "2026-09-03",
+      "title": "Day 24 — **Introduction to Backend Basics: APIs aur Server-Side Programming**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum backend development ke basics seekhenge. Backend server par chalta hai jo frontend (HTML/CSS/JS) se requests accept karta hai aur responses bhejta hai. APIs (Application Programming Interfaces) backend aur frontend ke beech communication ka bridge hoti hain. Hum `Node.js` aur `Express.js` ka istemal karke ek simple API banayenge jo data send/recieve karegi."
+        ],
+        [
+          "Example",
+          "Ek simple Express server banane ke steps:\n1. Terminal mein `npm init -y` aur `npm install express` run karein.\n2. `server.js` file banayein:\n   ```javascript\n   const express = require('express');\n   const app = express();\n   app.use(express.json());\n\n   app.get('/api/greet', (req, res) => {\n     res.json({ message: \"Hello, World!\" });\n   });\n\n   app.listen(3000, () => {\n     console.log(\"Server running on http://localhost:3000\");\n   });\n   ```\n3. Terminal mein `node server.js` run karein aur browser mein `http://localhost:3000/api/greet` open karein."
+        ],
+        [
+          "Practice",
+          "Apne Express server mein ek `/api/time` endpoint add karein jo current time return kare. (Hint: `new Date()` ka istemal karein)"
+        ],
+        [
+          "Mini Project",
+          "Ek simple REST API banayein jo `GET /api/books` aur `POST /api/books` endpoints support kare. Har book ka object `{ id, title, author }` format mein ho."
+        ]
+      ],
+      "answer_key": "npm init -y, npm install express, app.get, app.listen, localhost:3000",
+      "translations": {
+        "ur": {
+          "title": "دن ۲۴ — بیک اینڈ کی بنیادیات کا تعارف: اے پی آئیز اور سرور سائیڈ پروگرامنگ",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج ہم بیک اینڈ ڈویلپمنٹ کی بنیادیات سیکھیں گے۔ بیک اینڈ سرور پر چلتا ہے جو فرنٹ اینڈ (ایچ ٹی ایم ایل/سی ایس ایس/جے ایس) سے ریکوئسٹس قبول کرتا ہے اور رسپونسز بھیجتا ہے۔ اے پی آئیز (ایپلیکیشن پروگرامنگ انٹرفیسز) بیک اینڈ اور فرنٹ اینڈ کے درمیان کمیونیکیشن کا پل ہوتی ہیں۔ ہم `Node.js` اور `Express.js` کا استعمال کرتے ہوئے ایک سادہ اے پی آئی بنائیں گے جو ڈیٹا بھیجے اور وصول کرے گی۔"
+            },
+            {
+              "label": "مثال",
+              "content": "ایک سادہ ایکسپریس سرور بنانے کے مراحل:\n۱۔ ٹرمینل میں `npm init -y` اور `npm install express` چلائیں۔\n۲۔ `server.js` فائل بنائیں:\n   ```javascript\n   const express = require('express');\n   const app = express();\n   app.use(express.json());\n\n   app.get('/api/greet', (req, res) => {\n     res.json({ message: \"Hello, World!\" });\n   });\n\n   app.listen(3000, () => {\n     console.log(\"Server running on http://localhost:3000\");\n   });\n   ```\n۳۔ ٹرمینل میں `node server.js` چلائیں اور براؤزر میں `http://localhost:3000/api/greet` کھولیں۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے ایکسپریس سرور میں ایک `/api/time` اینڈ پوائنٹ شامل کریں جو موجودہ وقت واپس کرے۔ (اشارہ: `new Date()` کا استعمال کریں)"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک سادہ ریسٹ اے پی آئی بنائیں جو `GET /api/books` اور `POST /api/books` اینڈ پوائنٹس سپورٹ کرے۔ ہر کتاب کا آبجیکٹ `{ id, title, author }` فارمیٹ میں ہو۔"
             }
           ]
         }
