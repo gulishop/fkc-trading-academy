@@ -1,5 +1,5 @@
-// build: 2026-09-03T04:59:44.954684
-const CACHE = "fkc-v-2026-09-03T0459449";
+// build: 2026-09-03T11:35:23.184881
+const CACHE = "fkc-v-2026-09-03T1135231";
 const PRECACHE = ["./", "./index.html", "./manifest.webmanifest"];
 
 self.addEventListener("install", (e) => {
