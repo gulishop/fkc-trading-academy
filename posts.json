@@ -22653,7 +22653,80 @@
         ]
       ],
       "answer_key": "hammer, shooting star, doji, engulfing, harami",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن ۱۵ — موم بتی پیٹرنز: قیمت کی حرکات پڑھنے کا تجربہ",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "پی ایس ایکس پر ٹریڈنگ کرنے کے لیے موم بتی پیٹرنز سب سے زیادہ استعمال ہونے والے ٹولز ہیں۔ ہر \"موم بتی\" چار چیزوں کو ظاہر کرتی ہے: اوپن، ہائی، لو، اور کلوز قیمت۔ ان پیٹرنز سے مارکیٹ کا مزاج (بلش/بیریش) اور مستقبل کی قیمت کی حرکت کا پتہ چلتا ہے۔ جیسے \"ہیمر\" یا \"ڈوجی\" پیٹرنز سے ریورسل کا سگنل ملتا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "پی ایس ایکس پر کے ایس ای-۱۰۰ انڈیکس کے چارٹ پر دیکھیں:\n۱۔ اگر ایک موم بتی کا \"لوئر شیڈو\" (نیچے والا حصہ) اس کی باڈی سے دو گنا زیادہ لمبا ہو اور کلوز قیمت اوپن سے اوپر ہو → **ہیمر پیٹرن** (بلش ریورسل کا سگنل)۔\n۲۔ اگر دو موم بتیاں ہوں: پہلی لمبی سبز موم بتی، دوسری چھوٹی سرخ موم بتی جو پہلی کی \"باڈی\" کے اندر کلوز ہو → **بیریش ہارامی** (ڈاؤن ٹرینڈ کا سگنل)।"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے پی ایس ایکس ٹریڈنگ ایپ (جیسے جے ایس بینک، عارف حبیب یا اے کے ڈی) پر کسی اسٹاک (مثلاً اینگرو، لک) کا ایک دن کا ٹائم فریم چارٹ کھولیں۔ پانچ موم بتی پیٹرنز شناخت کریں (کچھ عام: ہیمر، شوٹنگ اسٹار، ڈوجی، بلش اینگلفنگ، بیریش اینگلفنگ)।"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "۱۔ پی ایس ایکس کے تین اسٹاکس (مثلاً او جی ڈی سی، ایم سی بی، ایچ بی ایل) کے روزانہ چارٹس پر ایک ہفتے کے موم بتی پیٹرنز کا تجزیہ کریں۔\n۲۔ ہر پیٹرن کا ٹائپ لکھیں (بلش/بیریش/ریورسل) اور ایک لائن کا پیش گوئی بھی لکھیں (مثلاً، \"پیٹرن ایکس اگلے دو دنوں میں اوپر کی طرف حرکت کی نشاندہی کرتا ہے\")۔"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "day": 16,
+      "id": "day-016",
+      "date": "2026-09-03",
+      "title": "Day 16 — **Market Orders vs Limit Orders: Apne Trade Ko Kab Aur Kaise Lagana Hai?**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Market order turant execute hota hai lekin price fluctuate hone par thoda zyada cost aa sakta hai. Limit order aapko ek specific price set karne deta hai—agar market uss price tak nahi aata to order execute nahi hota. Risk management ke liye yeh zaroori hai ki aap samajhein ke kab konsa order use karna hai."
+        ],
+        [
+          "Example",
+          "Maana aap XYZ company ka 100 share khareedna chahte hain jo ab ₹50 par hai. Agar aap **Market Order** lagate hain, to ₹50 ke aas-paas hi share mil jayega lekin price badhne par ₹51-52 bhi ho sakta hai. Agar aap **Limit Order** ₹49.50 par lagate hain, to sirf tab hi share milega jab market ₹49.50 tak gir jaye."
+        ],
+        [
+          "Practice",
+          "Apne brokerage app mein ja kar ek **Limit Order** aur ek **Market Order** lagane ka try karein (real trade na karein, sirf practice mode mein). Dono ke price difference ko note karein."
+        ],
+        [
+          "Mini Project",
+          "Ek hypothetical scenario banaein: Agar aap ₹1000 ke budget se shares khareedna chahte hain aur stock ab ₹200 par hai, to:\n1. Kitne shares khareed sakte hain (Market Order se)?\n2. Agar aap Limit Order ₹195 par lagate hain, to kitne shares milenge agar market uss price tak gir jaye?"
+        ]
+      ],
+      "answer_key": "market order: 5 shares, ₹1005, price fluctuate, limit order: 5 shares, ₹975, price fixed",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۶ — مارکیٹ آرڈرز بمقابلہ لمٹ آرڈرز: اپنے ٹریڈ کو کب اور کیسے لگانا ہے؟",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کنسیپٹ",
+              "content": "مارکیٹ آرڈر فوراً ایکزیکٹ ہوتا ہے لیکن قیمت میں اتار چڑھاؤ ہونے پر تھوڑا زیادہ لاگت آ سکتی ہے۔ لمٹ آرڈر آپ کو ایک مخصوص قیمت سیٹ کرنے کی اجازت دیتا ہے—اگر مارکیٹ اس قیمت تک نہیں آتی تو آرڈر ایکزیکٹ نہیں ہوتا۔ رسک مینجمنٹ کے لیے یہ ضروری ہے کہ آپ سمجھیں کہ کب کون سا آرڈر استعمال کرنا ہے۔"
+            },
+            {
+              "label": "مثال",
+              "content": "مانا آپ XYZ کمپنی کے ۱۰۰ شیئرز خریدنا چاہتے ہیں جو اب ۵۰ روپے پر ہیں۔ اگر آپ مارکیٹ آرڈر لگاتے ہیں تو ۵۰ روپے کے آس پاس ہی شیئر مل جائے گا لیکن قیمت بڑھنے پر ۵۱ سے ۵۲ روپے بھی ہو سکتی ہے۔ اگر آپ لمٹ آرڈر ۴۹.۵۰ روپے پر لگاتے ہیں تو صرف تب ہی شیئر ملے گا جب مارکیٹ ۴۹.۵۰ روپے تک گر جائے۔"
+            },
+            {
+              "label": "پریکٹس",
+              "content": "اپنے بروکریج ایپ میں جا کر ایک لمٹ آرڈر اور ایک مارکیٹ آرڈر لگانے کی کوشش کریں (اصل ٹریڈ نہ کریں، صرف پریکٹس موڈ میں)۔ دونوں کے قیمت کے فرق کو نوٹ کریں۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک فرضی منظرنامہ بنائیں: اگر آپ ۱۰۰۰ روپے کے بجٹ سے شیئرز خریدنا چاہتے ہیں اور اسٹاک اب ۲۰۰ روپے پر ہے تو:\n۱۔ کتنے شیئرز خرید سکتے ہیں (مارکیٹ آرڈر سے)؟\n۲۔ اگر آپ لمٹ آرڈر ۱۹۵ روپے پر لگاتے ہیں تو کتنے شیئرز ملیں گے اگر مارکیٹ اس قیمت تک گر جائے؟"
+            }
+          ]
+        }
+      }
     }
   ],
   "tiktok-growth": [
