@@ -31324,7 +31324,80 @@
         ]
       ],
       "answer_key": "",
-      "translations": {}
+      "translations": {
+        "ur": {
+          "title": "دن تیئیس — گِنتی والا ہاپسکوچ: کھیل کے سیکھیں!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "کانسپٹ",
+              "content": "آج ہم سیکھیں گے کہ کیسا ہے جب کوئی ہم سے زیادہ چاہنے کے نام پر اپنا ہاتھ لگائے؟ یا پھر ہماری عزت کا خیال نہ رکھے؟ ایسے وقت میں ہمیں اپنے دل کی آواز سننی چاہیے۔ سب سے پہلے، یاد رکھنا کہ تمہارا جسم تمہارا ہے—کسی کو تمہاری عزت کرنی ہی ہوگی!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "بلال نے دیکھا کہ اس کے چچا نے اس کے دوست کو غصے سے ہاتھ اٹھایا۔ بلال کو برا لگا۔ اس نے اپنے اب्बو کو بتایا۔ ابّو نے کہا، ’’تم نے بالکل ٹھیک کیا، بلال۔ کسی کو تمہاری عزت کرنی ہی چاہیے!‘‘"
+            },
+            {
+              "label": "امّی ابّو کے ساتھ بات کریں",
+              "content": "’’بیٹا، اگر کوئی تم سے ایسی چیز پوچھے جو تمہیں اچھا نہ لگے، تو تم کیا کرو گے؟‘‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمہارا جسم تمہارا ہے—کسی کو تمہاری عزت کرنی ہی ہوگی! اگر کوئی چیز عجیب لگے، تو فوراً امّی/ابّو کو بتانا۔"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "day": 24,
+      "id": "day-024",
+      "date": "2026-09-03",
+      "title": "Day 24 — \"Rang milaan: Har cheez ka apna rang!\"",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Aaj hum seekhein ge ke har cheez ka apna rang hota hai, aur rang milaana bhi ek mazaak khel hai! Lekin yaad rakhna, agar koi cheez tumhare rang se mehsoos na ho, ya tumhe ajeeb lage, toh tumhe usko karne ki zaroorat nahi. Tumhara jism tumhara hai—tumhe koi cheez karne ya na karne ka poora haq hai!"
+        ],
+        [
+          "Chhoti Kahani",
+          "Arsh ki maan ne usko ek khel diya: \"In rang-baato ko alag karo!\" Arsh ne hansa, \"Maa, yeh toh aasan hai!\" Lekin jab usko ek cheez ka rang pasand nahi aaya, toh usne kaha, \"Nahi, main yeh nahi karna.\" Maan ne usko gale lagaya, \"Bilkul theek kaha! Tumhe jo pasand ho, woh karo.\""
+        ],
+        [
+          "Ammi Abbu Ke Sath Baat Karein",
+          "\"Beta, agar koi cheez tumhe ajeeb lage ya tumhe usse karne mein maza na aaye, toh tum kya karoge?\""
+        ],
+        [
+          "Yaad Rakhein",
+          "Tumhara jism tumhara hai—tumhe koi cheez karne ya na karne ka poora haq hai! Agar koi cheez tumhe comfortable na lage, toh foran humein batana."
+        ]
+      ],
+      "answer_key": "",
+      "translations": {
+        "ur": {
+          "title": "دن ۲۴ — رنگ ملائیں: ہر چیز کا اپنا رنگ!",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "آج ہم سیکھیں گے کہ ہر چیز کا اپنا رنگ ہوتا ہے، اور رنگ ملانا بھی ایک مزے کا کھیل ہے! لیکن یاد رکھنا، اگر کوئی چیز تمہارے رنگ سے محسوس نہ ہو، یا تمہیں عجیب لگے، تو تمہیں اسے کرنے کی ضرورت نہیں۔ تمہارا جسم تمہارا ہے—تمہیں کوئی چیز کرنے یا نہ کرنے کا پورا حق ہے!"
+            },
+            {
+              "label": "چھوٹی کہانی",
+              "content": "عرش کی ماں نے اسے ایک کھیل دیا: ’’ان رنگ باتوں کو الگ کرو!‘‘ عرش نے ہنسا، ’’ماں، یہ تو آسان ہے!‘‘ لیکن جب اسے ایک چیز کا رنگ پسند نہیں آیا، تو اس نے کہا، ’’نہیں، میں یہ نہیں کرنا۔‘‘ ماں نے اسے گلے لگایا، ’’بالکل ٹھیک کہا! تمہیں جو پسند ہو، وہ کرو۔‘‘"
+            },
+            {
+              "label": "امی ابّو کے ساتھ بات کریں",
+              "content": "’’بیٹا، اگر کوئی چیز تمہیں عجیب لگے یا تمہیں اسے کرنے میں مزہ نہ آئے، تو تم کیا کرو گے؟‘‘"
+            },
+            {
+              "label": "یاد رکھیں",
+              "content": "تمہارا جسم تمہارا ہے—تمہیں کوئی چیز کرنے یا نہ کرنے کا پورا حق ہے! اگر کوئی چیز تمہیں آرام دہ نہ لگے، تو فوراً ہمیں بتانا۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "kids-good-behavior": [
