@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#4F46E5"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="FKC Trading "><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},15000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});if(reg.waiting){reg.waiting.postMessage({type:'SKIP_WAITING'});}reg.addEventListener('updatefound',function(){var nw=reg.installing;if(!nw)return;nw.addEventListener('statechange',function(){if(nw.state==='installed'&&navigator.serviceWorker.controller){nw.postMessage({type:'SKIP_WAITING'});}}});});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-09-03T23:49:23.533944";
+  var FKC_BUILD = "2026-09-04T23:36:18.626382";
   var checking = false;
   function fkcCheckVersion(){
     if(checking) return;
@@ -262,8 +262,8 @@ function fkcToggleTheme(){
     <div class="card">
       
       <img src="images/day-021.png" alt="Day 21 — Python Packages aur pip: Libraries Install aur Manage Karna" style="width:100%;border-radius:12px;margin-bottom:14px;">
-      
-      <div class="lang-tabs">
+      <p class="muted" style="margin:0 0 6px;">🎬 AI Video Explanation</p><video src="videos/day-021.mp4" controls preload="metadata" poster="images/day-021.png" style="width:100%;border-radius:12px;margin-bottom:14px;background:#000;"></video>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
     <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
       <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
       <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
@@ -283,7 +283,12 @@ function fkcToggleTheme(){
    </code></pre><p>3.</p><h3>Library use karna</h3><p>Python file mein:</p><pre dir="ltr"><code>   import requests
    response = requests.get(&quot;https://api.github.com&quot;)
    print(response.status_code)
-   </code></pre><h3>Practice</h3><p>Apne system par `pip` install karne ke baad, ek aur library `python-dotenv` install karo aur verify karo ki wo successfully install hui hai.</p><h3>Mini Project</h3><p>Ek chhota project banayein jo:<br>1. `pip` se `requests` library install kare.<br>2. GitHub API se public repositories ki list fetch kare.<br>3. Pehle 5 repositories ke names print kare.</p></div>
+   </code></pre><h3>Practice</h3><p>Apne system par `pip` install karne ke baad, ek aur library `python-dotenv` install karo aur verify karo ki wo successfully install hui hai.</p><h3>Mini Project</h3><p>Ek chhota project banayein jo:<br>1. `pip` se `requests` library install kare.<br>2. GitHub API se public repositories ki list fetch kare.<br>3. Pehle 5 repositories ke names print kare.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>تصور</h3><p>Python میں لائبریریز (پیکجز) انسٹال کرنے کے لیے `pip` (Package Installer for Python) استعمال ہوتا ہے۔ یہ ایک کمانڈ لائن ٹول ہے جو بیرونی لائبریریوں کو ڈاؤن لوڈ اور انسٹال کرتا ہے۔ ہر Python پروجیکٹ میں ڈیپینڈینسیز سنبھالنے کے لیے `pip` لازمی ہے۔ آج ہم سیکھیں گے کہ کس طرح `pip` استعمال کر کے لائبریریز انسٹال کرنی ہیں اور انہیں اپنے کوڈ میں امپورٹ کرنا ہے۔</p><h3>مثال</h3><p>۱۔<br>- pip ورژن چیک کرنا: ٹرمینل/کمانڈ پرامپٹ میں یہ کمانڈ چلائیں:</p><pre dir="ltr"><code>   pip --version
+   </code></pre><p>اگر انسٹال ہے تو ورژن ظاہر ہوگا، نہیں تو ایرر آئے گا۔</p><p>۲۔<br>- لائبریری انسٹال کرنا: ایک مقبول لائبریری `requests` انسٹال کرنے کے لیے:</p><pre dir="ltr"><code>   pip install requests
+   </code></pre><p>۳۔<br>- لائبریری استعمال کرنا: Python فائل میں:</p><pre dir="ltr"><code>   import requests
+   response = requests.get(&quot;https://api.github.com&quot;)
+   print(response.status_code)
+   </code></pre><h3>مشق</h3><p>اپنے سسٹم پر `pip` چیک کرنے کے بعد، ایک اور لائبریری `python-dotenv` انسٹال کریں اور تصدیق کریں کہ وہ کامیابی سے انسٹال ہو چکی ہے۔</p><h3>منی پروجیکٹ</h3><p>ایک چھوٹا پروجیکٹ بنائیں جو:<br>۱۔ `pip` سے `requests` لائبریری انسٹال کرے۔<br>۲۔ GitHub API سے پبلک ریپوزیٹریز کی فہرست حاصل کرے۔<br>۳۔ پہلی ۵ ریپوزیٹریز کے نام پرنٹ کرے۔</p></div>
       
       
       <div class="quiz-box no-print" id="fkc-quiz-box">
@@ -417,7 +422,7 @@ function fkcToggleTheme(){
       <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
         margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
       <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
-        “Mushkil raste hi un logon ko milte hain jo asal mein kuch ban&#x27;na chahte hain.”
+        “Seekhna kabhi bekar nahi jata — har naya lesson aap ko aap ki manzil ke ek qadam qareeb le jata hai.”
       </p>
     </div>
     <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;
