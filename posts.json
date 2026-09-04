@@ -28738,6 +28738,45 @@
           ]
         }
       }
+    },
+    {
+      "day": 22,
+      "id": "day-022",
+      "date": "2026-09-04",
+      "title": "Day 22 — **Property Deal Karne Ka Legal Framework: Registration aur Compliance**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Har property deal ke liye legal compliance zaroori hai. Pakistan mein property deal karne ke liye **Sales Deed, Transfer of Property Act, Stamp Duty, aur Registration** jaise steps follow karne hote hain. Agar legal process nahi samjoge to deal future mein problems create kar sakti hai."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Sales Deed Banwana",
+          "Jab koi property beche, to **Sales Deed** (registry paper) banwana zaroori hai. Isme property details, buyer/seller ki details, aur price mention hoti hai.\n2."
+        ],
+        [
+          "Stamp Duty Pay Karna",
+          "Government ko **1-2%** property value ka stamp duty dena hota hai (har province mein alag).\n3."
+        ],
+        [
+          "Registry Karna",
+          "Deed ko **Sub-Registrar Office** mein register karwana hota hai. Bina registry ke deal legally valid nahi hoti."
+        ],
+        [
+          "Practice",
+          "Apne local **Sub-Registrar Office** se poochhein:\n- **Stamp Duty ki rate** kya hai aapke area mein?\n- **Registry ke liye** kon kon se documents chahiye?"
+        ],
+        [
+          "Mini Project",
+          "Ek **hypothetical property deal** ka case study taiyar karo:\n- Property ki details (location, size, price)\n- Buyer/seller ke documents\n- Stamp duty aur registry process ka flowchart"
+        ]
+      ],
+      "answer_key": "sales deed, stamp duty, registry, sub-registrar office",
+      "translations": {}
     }
   ],
   "mobile-repairing": [
