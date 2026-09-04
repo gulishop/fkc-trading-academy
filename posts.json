@@ -21767,6 +21767,64 @@
           ]
         }
       }
+    },
+    {
+      "day": 10,
+      "id": "day-010",
+      "date": "2026-09-04",
+      "title": "Day 10 — **Freelance Kaam Dhoondne ke Liye Excel Skills Ka Use**",
+      "preamble": "",
+      "sections": [
+        [
+          "Concept",
+          "Freelance marketplaces (Upwork, Fiverr, Freelancer) par Excel-based projects dhoondne ke liye apne skills ko showcase karna zaroori hai. Clients ko impress karne ke liye portfolio banana, proposals likhna, aur relevant gigs kaise dhundhna hai—yeh sab seekhaya jayega. Excel se freelance kaam karne ke liye \"Data Entry,\" \"Report Automation,\" aur \"Dashboard Creation\" jaise niches sabse zyada demand mein hain."
+        ],
+        [
+          "Example",
+          "1."
+        ],
+        [
+          "Upwork par profile banaen",
+          "- \"Excel Data Analyst\" ya \"Excel Automation Specialist\" title use karen.\n   - Portfolio mein apne Day 9 ke dashboard ka screenshot add karen.\n   - Skills section mein \"Excel,\" \"PivotTables,\" \"Power Query,\" aur \"Dashboard Design\" add karen.\n2."
+        ],
+        [
+          "Gig post karen",
+          "- Title: *\"I will create a dynamic Excel dashboard for your business reports\"*\n   - Description mein batayein ke aap kaise data clean karte hain, PivotTables se insights nikalte hain, aur automated reports bana sakte hain."
+        ],
+        [
+          "Practice",
+          "Upwork ya Fiverr par jayein aur ek \"Excel Data Entry\" ya \"Dashboard Creation\" ka gig post karne ka draft likhein (3-4 lines ka description)."
+        ],
+        [
+          "Mini Project",
+          "Ek **3-slide PDF portfolio** banayein jismein:\n1. Apna Excel dashboard screenshot (Day 9 ka).\n2. Ek simple data cleaning ka before/after example (Day 4 se).\n3. Ek PivotTable se nikalta hua insight (Day 6 se)."
+        ]
+      ],
+      "answer_key": "portfolio draft, gig description, pdf slides structure",
+      "translations": {
+        "ur": {
+          "title": "دن ۱۰ — **فری لانس کام ڈھونڈنے کے لیے ایکسل اسکلز کا استعمال**",
+          "preamble": "",
+          "sections": [
+            {
+              "label": "تصور",
+              "content": "فری لانس مارکیٹ پلیسز (Upwork، Fiverr، Freelancer) پر ایکسل پر مبنی پروجیکٹس ڈھونڈنے کے لیے اپنی مہارتوں کو دکھانا ضروری ہے۔ کلائنٹس کو متاثر کرنے کے لیے پورٹ فولیو بنانا، پروپوزلز لکھنا، اور متعلقہ گگز کیسے ڈھونڈنی ہیں—یہ سب سکھایا جائے گا۔ ایکسل سے فری لانس کام کرنے کے لیے \"ڈیٹا انٹری\"، \"رپورٹ آٹومیشن\"، اور \"ڈیش بورڈ کریشن\" جیسے شعبے سب سے زیادہ مانگ میں ہیں۔"
+            },
+            {
+              "label": "مثال",
+              "content": "۱۔\n- Upwork پر پروفائل بنائیں: - \"Excel Data Analyst\" یا \"Excel Automation Specialist\" کا عنوان استعمال کریں۔\n   - پورٹ فولیو میں اپنے دن ۹ کے ڈیش بورڈ کا اسکرین شاٹ شامل کریں۔\n   - مہارتوں کے سیکشن میں \"Excel\"، \"PivotTables\"، \"Power Query\"، اور \"Dashboard Design\" شامل کریں۔\n۲۔\n- گگ پوسٹ کریں: - عنوان: *\"I will create a dynamic Excel dashboard for your business reports\"*\n   - ڈسکرپشن میں بتائیں کہ آپ کیسے ڈیٹا صاف کرتے ہیں، پیوٹ ٹیبلز سے نتائج نکالتے ہیں، اور خودکار رپورٹس بنا سکتے ہیں۔"
+            },
+            {
+              "label": "مشق",
+              "content": "Upwork یا Fiverr پر جائیں اور ایک \"Excel Data Entry\" یا \"Dashboard Creation\" کی گگ پوسٹ کرنے کا ڈرافٹ لکھیں (۳-۴ لائنوں کی تفصیل)۔"
+            },
+            {
+              "label": "منی پروجیکٹ",
+              "content": "ایک **۳ سلائیڈز پر مشتمل PDF پورٹ فولیو** بنائیں جس میں:\n۱۔ اپنا ایکسل ڈیش بورڈ اسکرین شاٹ (دن ۹ کا)۔\n۲۔ ایک سادہ ڈیٹا کلیننگ کی پہلے اور بعد کی مثال (دن ۴ سے)۔\n۳۔ پیوٹ ٹیبل سے حاصل کردہ بصیرت (دن ۶ سے)۔"
+            }
+          ]
+        }
+      }
     }
   ],
   "crypto-blockchain": [
