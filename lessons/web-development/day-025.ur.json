@@ -1,0 +1,22 @@
+{
+  "title": "دن 25 — **ویب کمپونینٹس کا تعارف: دوبارہ استعمال کے قابل UI ایلیمنٹس بنانا**",
+  "preamble": "",
+  "sections": [
+    {
+      "label": "تصور",
+      "content": "ویب کمپونینٹس (Web Components) ایک جدید ویب ٹیکنالوجی ہے جو دوبارہ استعمال کے قابل، اینکیپسولیٹڈ HTML ایلیمنٹس بنانے کی سہولت دیتی ہے۔ یہ HTML، CSS اور JavaScript کو ملا کر کسٹم ٹیگز بنانے کی اجازت دیتی ہے، جنہیں کسی بھی ویب سائٹ پر استعمال کیا جا سکتا ہے۔ اس سے کوڈ کا دوبارہ استعمال بڑھتا ہے اور دیکھ بھال آسان ہو جاتی ہے۔"
+    },
+    {
+      "label": "مثال",
+      "content": "ایک سادہ `<custom-button>` کمپوننٹ بنانے کے لیے:\n```html\n<template id=\"customButton\">\n  <style>\n    button { padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 5px; }\n    button:hover { background: #0056b3; }\n  </style>\n  <button><slot>Default Button</slot></button>\n</template>\n\n<script>\n  const template = document.getElementById('customButton');\n  const clone = template.content.cloneNode(true);\n  class CustomButton extends HTMLElement {\n    connectedCallback() { this.appendChild(clone.cloneNode(true)); }\n  }\n  customElements.define('custom-button', CustomButton);\n</script>\n```\nاب HTML میں `<custom-button>Click Me</custom-button>` استعمال کریں۔"
+    },
+    {
+      "label": "مشق",
+      "content": "ایک `<custom-card>` کمپوننٹ بنائیں جو عنوان (title)، تفصیل (description) اور تصویر (image) قبول کرے۔ اسٹائلنگ خود طے کریں۔"
+    },
+    {
+      "label": "منی پروجیکٹ",
+      "content": "ایک سادہ **ٹو ڈو لسٹ کمپوننٹ** بنائیں جو:\n- آئٹمز شامل کرنے کے لیے ایک ان پٹ اور بٹن رکھتا ہو\n- آئٹمز لسٹ میں نظر آئیں\n- ہر آئٹم کے ساتھ ڈیلیٹ بٹن ہو\n- دوبارہ استعمال کے قابل ہو (ایک سے زیادہ انسٹینسز بنائے جا سکتے ہوں)"
+    }
+  ]
+}
