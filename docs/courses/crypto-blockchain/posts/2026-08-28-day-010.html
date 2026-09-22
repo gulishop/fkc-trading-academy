@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#4F46E5"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="FKC Trading "><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},15000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});if(reg.waiting){reg.waiting.postMessage({type:'SKIP_WAITING'});}reg.addEventListener('updatefound',function(){var nw=reg.installing;if(!nw)return;nw.addEventListener('statechange',function(){if(nw.state==='installed'&&navigator.serviceWorker.controller){nw.postMessage({type:'SKIP_WAITING'});}}});});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-09-02T13:35:56.033802";
+  var FKC_BUILD = "2026-09-22T01:06:45.059819";
   var checking = false;
   function fkcCheckVersion(){
     if(checking) return;
@@ -262,8 +262,8 @@ function fkcToggleTheme(){
     <div class="card">
       
       <img src="images/day-010.png" alt="Day 10 — **Crypto Mining: Kaise Kamaen? (Poora Guide Pakistan Mein)**" style="width:100%;border-radius:12px;margin-bottom:14px;">
-      
-      <div class="lang-tabs">
+      <p class="muted" style="margin:0 0 6px;">🎬 AI Video Explanation</p><video src="videos/day-010.mp4" controls preload="metadata" poster="images/day-010.png" style="width:100%;border-radius:12px;margin-bottom:14px;background:#000;"></video>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
     <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
       <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
       <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
@@ -278,7 +278,7 @@ function fkcToggleTheme(){
     }
     </script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script></div>
-      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Crypto mining ek process hai jisme powerful computers blockchain transactions ko validate karte hain aur rewards ke taur par crypto coins (jaise Bitcoin) milte hain. Pakistan mein mining legal hai lekin government ke regulations aur electricity costs ko dhyan mein rakhna zaroori hai. Mining ke liye ASIC miners ya high-end GPUs chahiye, aur electricity consumption bhi zyada hoti hai.</p><h3>Example</h3><p>1.</p><h3>Hardware</h3><p>Bitcoin mining ke liye ASIC miner (jaise Antminer S19) ya Ethereum ke liye GPU (jaise RTX 3080) lena hoga.<br>2.</p><h3>Software</h3><p>Mining software install karen (jaise CGMiner ya PhoenixMiner).<br>3.</p><h3>Pool Join</h3><p>Akela mining mushkil hai, isliye mining pools (jaise F2Pool ya Slush Pool) join karke rewards share karen.</p><h3>Practice</h3><p>Apne local market se mining hardware ki prices check karen aur electricity cost (per kWh) calculate karen. Kya mining se profit hoga? (Hint: [Mining Calculator](https://www.cryptocompare.com/mining/calculator/) use karen).</p><h3>Mini Project</h3><p>Ek simple mining profitability report taiyar karen:<br>- Hardware cost: _____ PKR<br>- Monthly electricity cost: _____ PKR<br>- Expected monthly profit: _____ PKR<br>- Break-even time: _____ months</p></div>
+      <div class="lang-content" data-lang="rm"><h3>Concept</h3><p>Crypto mining ek process hai jisme powerful computers blockchain transactions ko validate karte hain aur rewards ke taur par crypto coins (jaise Bitcoin) milte hain. Pakistan mein mining legal hai lekin government ke regulations aur electricity costs ko dhyan mein rakhna zaroori hai. Mining ke liye ASIC miners ya high-end GPUs chahiye, aur electricity consumption bhi zyada hoti hai.</p><h3>Example</h3><p>1.</p><h3>Hardware</h3><p>Bitcoin mining ke liye ASIC miner (jaise Antminer S19) ya Ethereum ke liye GPU (jaise RTX 3080) lena hoga.<br>2.</p><h3>Software</h3><p>Mining software install karen (jaise CGMiner ya PhoenixMiner).<br>3.</p><h3>Pool Join</h3><p>Akela mining mushkil hai, isliye mining pools (jaise F2Pool ya Slush Pool) join karke rewards share karen.</p><h3>Practice</h3><p>Apne local market se mining hardware ki prices check karen aur electricity cost (per kWh) calculate karen. Kya mining se profit hoga? (Hint: [Mining Calculator](https://www.cryptocompare.com/mining/calculator/) use karen).</p><h3>Mini Project</h3><p>Ek simple mining profitability report taiyar karen:<br>- Hardware cost: _____ PKR<br>- Monthly electricity cost: _____ PKR<br>- Expected monthly profit: _____ PKR<br>- Break-even time: _____ months</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>کانسیپٹ</h3><p>کرپٹو مائننگ ایک ایسا عمل ہے جس میں طاقتور کمپیوٹرز بلاک چین ٹرانزیکشنز کی تصدیق کرتے ہیں اور انعامات کے طور پر کرپٹو کوائنز (جیسے Bitcoin) ملتے ہیں۔ پاکستان میں مائننگ قانونی ہے لیکن حکومت کے ضوابط اور بجلی کی لاگت کو دھیان میں رکھنا ضروری ہے۔ مائننگ کے لیے ASIC miners یا ہائی اینڈ GPUs کی ضرورت ہوتی ہے، اور بجلی کی کھپت بھی زیادہ ہوتی ہے۔</p><h3>مثال</h3><p>1۔<br>- ہارڈویئر: Bitcoin مائننگ کے لیے ASIC miner (جیسے Antminer S19) یا Ethereum کے لیے GPU (جیسے RTX 3080) لینا ہوگا۔<br>2۔<br>- سافٹ ویئر: مائننگ سافٹ ویئر انسٹال کریں (جیسے CGMiner یا PhoenixMiner)۔<br>3۔<br>- پول جوائن کریں: اکیلے مائننگ کرنا مشکل ہے، اس لیے مائننگ پولز (جیسے F2Pool یا Slush Pool) جوائن کر کے انعامات شیئر کریں۔</p><h3>پریکٹس</h3><p>اپنی لوکل مارکیٹ سے مائننگ ہارڈویئر کی قیمتیں چیک کریں اور بجلی کی لاگت (فی kWh) کا حساب لگائیں۔ کیا مائننگ سے منافع ہوگا؟ (اشارہ: [Mining Calculator](https://www.cryptocompare.com/mining/calculator/) استعمال کریں)۔</p><h3>منی پروجیکٹ</h3><p>ایک سادہ مائننگ منافع بخش رپورٹ تیار کریں:<br>- ہارڈویئر کی لاگت: _____ PKR<br>- ماہانہ بجلی کی لاگت: _____ PKR<br>- متوقع ماہانہ منافع: _____ PKR<br>- بریک ایون کا وقت: _____ مہینے</p></div>
       
       
       <div class="quiz-box no-print" id="fkc-quiz-box">
@@ -412,7 +412,7 @@ function fkcToggleTheme(){
       <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
         margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
       <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
-        “Aaj ka ek chhota qadam, kal ki bari kamiyabi ki buniyad banta hai.”
+        “Jab tak haar nahi maanoge, tab tak haare nahi ho.”
       </p>
     </div>
     <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;

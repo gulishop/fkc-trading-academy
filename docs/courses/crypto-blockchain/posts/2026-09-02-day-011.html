@@ -32,7 +32,7 @@
 <link rel="icon" href="../../../logo.png">
 <link rel="manifest" href="../../../manifest.json"><meta name="theme-color" content="#4F46E5"><link rel="apple-touch-icon" href="../../../icons/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="FKC Trading "><script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('../../../service-worker.js').then(function(reg){reg.update();setInterval(function(){reg.update();},15000);document.addEventListener('visibilitychange',function(){if(!document.hidden){reg.update();}});window.addEventListener('focus',function(){reg.update();});if(reg.waiting){reg.waiting.postMessage({type:'SKIP_WAITING'});}reg.addEventListener('updatefound',function(){var nw=reg.installing;if(!nw)return;nw.addEventListener('statechange',function(){if(nw.state==='installed'&&navigator.serviceWorker.controller){nw.postMessage({type:'SKIP_WAITING'});}}});});}}).catch(function(){});var fkcReloaded=false;navigator.serviceWorker.addEventListener('controllerchange',function(){if(fkcReloaded)return;fkcReloaded=true;window.location.reload();});});}</script><script>
 (function(){
-  var FKC_BUILD = "2026-09-02T13:35:56.033802";
+  var FKC_BUILD = "2026-09-22T01:06:45.059819";
   var checking = false;
   function fkcCheckVersion(){
     if(checking) return;
@@ -262,8 +262,8 @@ function fkcToggleTheme(){
     <div class="card">
       
       <img src="images/day-011.png" alt="Day 11 — **Smart Contracts: Blockchain Ka Digital Lawyer**" style="width:100%;border-radius:12px;margin-bottom:14px;">
-      
-      <div class="lang-tabs">
+      <p class="muted" style="margin:0 0 6px;">🎬 AI Video Explanation</p><video src="videos/day-011.mp4" controls preload="metadata" poster="images/day-011.png" style="width:100%;border-radius:12px;margin-bottom:14px;background:#000;"></video>
+      <div class="lang-tabs"><button type="button" class="lang-tab active" data-lang="rm" onclick="fkcSwitchLang(this)">Roman Urdu</button><button type="button" class="lang-tab" data-lang="ur" onclick="fkcSwitchLang(this)">اردو</button>
     <div class="fkc-translate-wrap" style="display:inline-block;margin-left:6px;">
       <button type="button" class="lang-tab" onclick="fkcToggleTranslateWidget()">🌐 Aur Languages</button>
       <div id="google_translate_element" style="display:none;margin-top:6px;"></div>
@@ -289,7 +289,18 @@ function fkcToggleTheme(){
            return storedData;
        }
    }
-   </code></pre><p>4. &quot;Compile&quot; button dabayo, phir &quot;Deploy&quot; karo (Injected Web3 ya &quot;Remix VM&quot; select karo).</p><h3>Mini Project</h3><p>Ek simple smart contract banayo jo:<br>- Users ko &quot;Hello, [Name]!&quot; message return kare (input ke hisaab se).<br>- Har user ka name store kare (taki dobara na poochna pade).<br>*Hint:* `mapping(address =&gt; string) public greetings;` use karna hai.</p></div>
+   </code></pre><p>4. &quot;Compile&quot; button dabayo, phir &quot;Deploy&quot; karo (Injected Web3 ya &quot;Remix VM&quot; select karo).</p><h3>Mini Project</h3><p>Ek simple smart contract banayo jo:<br>- Users ko &quot;Hello, [Name]!&quot; message return kare (input ke hisaab se).<br>- Har user ka name store kare (taki dobara na poochna pade).<br>*Hint:* `mapping(address =&gt; string) public greetings;` use karna hai.</p></div><div class="lang-content" data-lang="ur" dir="rtl" style="display:none"><h3>تصور</h3><p>اسمارٹ کانٹریکٹس بلاک چین پر خودکار طریقے سے نافذ ہونے والے ڈیجیٹل معاہدے ہیں۔ ان میں پہلے سے طے شدہ اصول لکھے جاتے ہیں، اور جب شرائط پوری ہوتی ہیں، تو معاہدہ خود بخود مکمل ہو جاتا ہے—بغیر کسی تیسرے فریق (جیسے وکیل یا بینک) کے۔ یہ ٹرسٹ لیس ہوتے ہیں: ایک بار ڈپلائی ہونے کے بعد انہیں کوئی تبدیل یا ہیک نہیں کر سکتا۔</p><h3>مثال</h3><p>تصور کریں ایک وینڈنگ مشین: آپ 500 روپے ڈالتے ہیں، مشین خود بخود آپ کو چپس دے دیتی ہے۔ اسمارٹ کانٹریکٹ بھی ایسا ہی ہے—آپ &quot;اگر X شرط ہوگی، تو Y ایکشن نافذ ہو&quot; لکھ دیتے ہیں، اور بلاک چین اسے خود بخود سنبھالتی ہے۔</p><h3>مشق</h3><p>1. **Remix IDE** (براؤزر پر مبنی اسمارٹ کانٹریکٹ پلیٹ فارم) کھولیں: https://remix.ethereum.org<br>2. &quot;File Explorer&quot; میں ایک نئی فائل بنائیں: `SimpleContract.sol`<br>3. یہ کوڈ پیسٹ کریں:</p><pre dir="ltr"><code>   // SPDX-License-Identifier: MIT
+   pragma solidity ^0.8.0;
+   contract SimpleStorage {
+       uint storedData;
+       function set(uint x) public {
+           storedData = x;
+       }
+       function get() public view returns (uint) {
+           return storedData;
+       }
+   }
+   </code></pre><p>4. &quot;Compile&quot; بٹن دبائیں، پھر &quot;Deploy&quot; کریں (Injected Web3 یا &quot;Remix VM&quot; منتخب کریں)۔</p><h3>منی پروجیکٹ</h3><p>ایک سادہ اسمارٹ کانٹریکٹ بنائیں جو:<br>- صارفین کو &quot;Hello, [Name]!&quot; میسج واپس کرے (ان پٹ کے حساب سے)۔<br>- ہر صارف کا نام محفوظ کرے (تاکہ دوبارہ نہ پوچھنا پڑے)۔<br>*اشارہ:* `mapping(address =&gt; string) public greetings;` استعمال کرنا ہے۔</p></div>
       
       
       <div class="quiz-box no-print" id="fkc-quiz-box">
@@ -423,7 +434,7 @@ function fkcToggleTheme(){
       <p style="font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#b8860b;
         margin:0 0 6px;font-weight:700;">🌅 Aaj ki Motivation</p>
       <p style="font-size:14px;line-height:1.6;color:#3a2f1e;margin:0;font-style:italic;">
-        “Aaj ka ek chhota qadam, kal ki bari kamiyabi ki buniyad banta hai.”
+        “Jab tak haar nahi maanoge, tab tak haare nahi ho.”
       </p>
     </div>
     <div class="founder-msg" style="max-width:640px;margin:28px auto 8px;padding:22px 20px;
